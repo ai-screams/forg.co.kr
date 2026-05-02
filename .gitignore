@@ -277,16 +277,18 @@ venv.bak/
 
 # Distribution / packaging
 .Python
+# Python distribution outputs — anchored to project root so they do
+# not collide with common src/lib/, etc. names.
 develop-eggs/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg

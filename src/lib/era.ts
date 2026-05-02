@@ -1,0 +1,27 @@
+/**
+ * forg.co.kr era system — 시기별 디자인 토글
+ *
+ * 두 시기를 토글하여 같은 콘텐츠를 다른 시각 셸에서 렌더링한다.
+ * 토글 메커니즘은 ADR-0005, 색공간은 ADR-0006 참조.
+ */
+
+export const ERAS = ["2014", "2003"] as const;
+
+export type Era = (typeof ERAS)[number];
+
+/** 첫 방문자에게 노출할 기본 시기 (ADR-0001). */
+export const DEFAULT_ERA: Era = "2014";
+
+/** 사용자 선호를 영속화할 localStorage 키. */
+export const ERA_STORAGE_KEY = "forg.era";
+
+/** 알 수 없는 값을 안전하게 Era로 좁힌다. */
+export function isEra(value: unknown): value is Era {
+  return typeof value === "string" && (ERAS as readonly string[]).includes(value);
+}
+
+/** 사람이 읽는 시기 라벨 (UI 노출용). */
+export const ERA_LABELS: Record<Era, string> = {
+  "2014": "2014",
+  "2003": "2003",
+};
