@@ -28,6 +28,7 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from urllib.parse import quote, urlsplit, urlunsplit
 
 ROOT = Path("/Users/hanyul/Works/AiScream/forg/.docs/research")
 PLAN_FILE = ROOT / "cdx" / "e-policy-plan.json"
@@ -48,6 +49,30 @@ TIMEOUT = 60
 
 _lock = threading.Lock()
 _stats = {"done": 0, "skipped": 0, "errors": 0, "bytes": 0, "start": time.time()}
+
+
+def _ascii_safe_url(url: str) -> str:
+    """Percent-encode non-ASCII codepoints so urllib's ASCII codec accepts the URL.
+
+    Wayback CDX entries occasionally embed the original (non-ASCII) Korean
+    `keyword=` value the forg user typed when sharing the link. urllib's
+    `Request` constructor refuses such URLs with `UnicodeEncodeError`. We
+    UTF-8 / percent-encode only path + query + fragment, leaving the scheme
+    and host alone (RFC 3986 IRI → URI normalization, conservative variant).
+    """
+    if url.isascii():
+        return url
+    parts = urlsplit(url)
+    safe_path = "/%:@!$&'()*+,;=-._~"
+    safe_query = "=&%:@!$'()*+,;-._~"
+    safe_frag = "%:@!$&'()*+,;=-._~"
+    return urlunsplit((
+        parts.scheme,
+        parts.netloc,
+        quote(parts.path, safe=safe_path),
+        quote(parts.query, safe=safe_query),
+        quote(parts.fragment, safe=safe_frag),
+    ))
 _consecutive_block = 0   # tracks consecutive "Connection refused" to detect IP block
 
 
@@ -120,7 +145,7 @@ def fetch(entry: dict) -> dict:
     last_err = None
     for attempt in range(MAX_RETRIES):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            req = urllib.request.Request(_ascii_safe_url(url), headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 data = resp.read()
                 tmp = out.with_suffix(out.suffix + ".tmp")
