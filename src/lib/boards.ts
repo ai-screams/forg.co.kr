@@ -1,0 +1,321 @@
+/**
+ * Canonical metadata for every forg.co.kr board the museum reproduces.
+ *
+ * This is the single source of truth for Korean display names, engine
+ * provenance, and default era hints. The Python ETL parsers do not
+ * duplicate this catalog — the React side reads `BOARDS[id].nameKr` at
+ * render time. The `boardKr` field on `Post` JSON is legacy (set to the
+ * English id by the parser) and will be removed in a follow-up commit.
+ *
+ * Inventory comes from `.docs/research/FORG-RECONSTRUCTION-GUIDE.md` §4
+ * (메뉴/게시판 전수 목록) cross-referenced with
+ * `.docs/research/cdx/e-policy-plan.json` capture counts. Boards that
+ * never carried meaningful UO content (WOW spinoffs, newbieqna doubles,
+ * forg.kr g5 successors) are intentionally excluded.
+ */
+
+import type { PostEra, SourceEngine } from "@/types/post";
+
+/** Top-level grouping used for sidebar sections and listings. */
+export type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
+
+export interface BoardMeta {
+  /** Stable id matching `Post.board` and post directory names. */
+  id: string;
+  /** Korean display name shown in headers, breadcrumbs, and listings. */
+  nameKr: string;
+  category: BoardCategory;
+  /** Engine that produced the historical markup. Drives parser routing. */
+  engine: SourceEngine;
+  /**
+   * Era this board was primarily active in. The site's runtime era
+   * toggle is independent — this is just a hint so newly-clicked boards
+   * can default to a sensible chrome.
+   */
+  era: PostEra;
+  /** One-line description rendered above the post list. */
+  description?: string;
+}
+
+/**
+ * Board catalog. The `as const satisfies` pattern keeps each entry's
+ * literal types (so `BOARDS.Notice.category` narrows to `"uo"`) while
+ * still validating shape conformance.
+ */
+export const BOARDS = {
+  // ── uo (UO core, 2003 era — Zeroboard) ──
+  Notice: {
+    id: "Notice",
+    nameKr: "공지사항",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description: "UO 패치 노트와 운영 공지",
+  },
+  column: {
+    id: "column",
+    nameKr: "UO 컬럼",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  UoBoard: {
+    id: "UoBoard",
+    nameKr: "자유게시판 (Zeroboard)",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description: "Zeroboard 시절 자유게시판 — 2003~2010 핵심 트래픽",
+  },
+  Q_A: {
+    id: "Q_A",
+    nameKr: "질문답변",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Role: {
+    id: "Role",
+    nameKr: "롤플레이",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  UOForum: {
+    id: "UOForum",
+    nameKr: "우오월드라 (에세이)",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  ScreenShot: {
+    id: "ScreenShot",
+    nameKr: "스크린샷",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  HouseScreenshot: {
+    id: "HouseScreenshot",
+    nameKr: "하우스 스크린샷",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Items: {
+    id: "Items",
+    nameKr: "아이템 스크린샷",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Events: {
+    id: "Events",
+    nameKr: "이벤트",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  events_date: {
+    id: "events_date",
+    nameKr: "이벤트 일정",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Recall: {
+    id: "Recall",
+    nameKr: "컬럼 자료실",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+  },
+
+  // ── uo (UO core, 2014 era — Gnuboard4) ──
+  UoBoard2: {
+    id: "UoBoard2",
+    nameKr: "자유게시판",
+    category: "uo",
+    engine: "gnuboard4",
+    era: "2014",
+    description: "Gnuboard4 시절 자유게시판 — 2014 메인 메뉴 첫 버튼",
+  },
+  Ultima: {
+    id: "Ultima",
+    nameKr: "울티마온라인",
+    category: "uo",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+
+  // ── community ──
+  porato: {
+    id: "porato",
+    nameKr: "포토갤러리",
+    category: "community",
+    engine: "gnuboard4",
+    era: "2014",
+    description: "원래 'photo'의 오타가 표준 ID로 굳어진 갤러리",
+  },
+  FunBoard: {
+    id: "FunBoard",
+    nameKr: "펀게시판",
+    category: "community",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  Trash: {
+    id: "Trash",
+    nameKr: "트래쉬",
+    category: "community",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  Reveal: {
+    id: "Reveal",
+    nameKr: "무비드릴 (폭로)",
+    category: "community",
+    engine: "gnuboard4",
+    era: "2014",
+    description: "2006 진솔 비리 사건이 터졌던 그 게시판",
+  },
+  Boo: {
+    id: "Boo",
+    nameKr: "검색·문서함",
+    category: "community",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+
+  // ── trade ──
+  Shop: {
+    id: "Shop",
+    nameKr: "상점 (거래)",
+    category: "trade",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  Vendor: {
+    id: "Vendor",
+    nameKr: "벤더찾기",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Sell: {
+    id: "Sell",
+    nameKr: "판매",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Tarirang: {
+    id: "Tarirang",
+    nameKr: "아리랑 트레이드",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  Tbalhae: {
+    id: "Tbalhae",
+    nameKr: "발해 트레이드",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+  },
+
+  // ── guide ──
+  Newbie: {
+    id: "Newbie",
+    nameKr: "초보자게시판",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  knowledge: {
+    id: "knowledge",
+    nameKr: "지식",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  monster: {
+    id: "monster",
+    nameKr: "몬스터광장",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+  },
+
+  // ── other (non-UO games, 2014) ──
+  Diablo: {
+    id: "Diablo",
+    nameKr: "디아블로3",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  DF: {
+    id: "DF",
+    nameKr: "던전파이터",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  LoL: {
+    id: "LoL",
+    nameKr: "리그오브레전드",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  Star2: {
+    id: "Star2",
+    nameKr: "스타크래프트2",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+  Console: {
+    id: "Console",
+    nameKr: "콘솔게임",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+  },
+} as const satisfies Record<string, BoardMeta>;
+
+export type BoardId = keyof typeof BOARDS;
+
+/** Display order for board categories in sidebars and indexes. */
+export const BOARD_CATEGORY_ORDER: readonly BoardCategory[] = [
+  "uo",
+  "community",
+  "trade",
+  "guide",
+  "other",
+] as const;
+
+export function isBoardId(id: string): id is BoardId {
+  return Object.hasOwn(BOARDS, id);
+}
+
+export function getBoard(id: string): BoardMeta | undefined {
+  return isBoardId(id) ? BOARDS[id] : undefined;
+}
+
+export function getBoardOrThrow(id: string): BoardMeta {
+  const board = getBoard(id);
+  if (!board) {
+    throw new Error(`Unknown board id: ${id}`);
+  }
+  return board;
+}
+
+export function listBoards(): readonly BoardMeta[] {
+  return Object.values(BOARDS);
+}
+
+export function listBoardsByCategory(category: BoardCategory): readonly BoardMeta[] {
+  return listBoards().filter((board) => board.category === category);
+}
