@@ -10,7 +10,8 @@
 ## 무엇인가
 
 **forg.co.kr**(통칭 "포그홈")은 한국 울티마 온라인 커뮤니티의 본거지였습니다.
-운영자 **Nylugh**와 자매 사이트 Kritz가 함께 운영했으며,
+Wayback 캡처와 수집된 게시글에는 관리자성 계정 **Forg**(`member_no=1`)가 반복 확인되며,
+Kritz와는 `Forg&Kritz`로 함께 표기된 자매 사이트 관계였습니다.
 2006년 [진솔 비리 사건](https://namu.wiki/w/%EC%A7%84%EC%86%94%20%EB%B9%84%EB%A6%AC%20%EC%82%AC%EA%B1%B4)의
 폭로 무대로도 한국 게임사에 기록된 사이트입니다.
 
@@ -21,8 +22,9 @@
 - 약 **13,727개의 게시글**을 정적으로 빌드하여 영구 보존하고
 - 검색·댓글 등 모던 기능을 더해 후세에 전달합니다.
 
-forg.co.kr의 정통 후속 사이트인 **[forg.kr](https://forg.kr)** 은 별도로 활발히 운영되고 있으며,
-이 박물관은 그 자매 프로젝트가 아닌 **2015년 이전 forg.co.kr 시기 기록 보존**을 목적으로 합니다.
+**forg.kr**은 2019년 Wayback 캡처에서 후속 사이트 흔적이 확인되지만,
+2026년 5월 2일 현재 `forg.kr` / `www.forg.kr` DNS 레코드는 확인되지 않습니다.
+이 박물관은 **2015년 이전 forg.co.kr 시기 기록 보존**을 목적으로 합니다.
 
 ---
 
@@ -30,10 +32,10 @@ forg.co.kr의 정통 후속 사이트인 **[forg.kr](https://forg.kr)** 은 별�
 
 | 항목             | 값                                                             |
 | ---------------- | -------------------------------------------------------------- |
-| 원본 도메인      | `forg.co.kr` (1999~2015)                                       |
-| 운영자           | Nylugh (자매 사이트 Kritz와 공동)                              |
+| 원본 도메인      | `forg.co.kr` (1999~2015, 현재는 Hosting.kr 파킹 페이지)        |
+| 관리자 계정      | Forg (`member_no=1`, 자매 사이트 Kritz와 `Forg&Kritz`로 표기)  |
 | 위상             | "한국 울티마 온라인 가장 큰 팬사이트" (namu.wiki 등 공식 표기) |
-| 게시판 엔진      | Zeroboard 4.1pl4 → Gnuboard4 → (forg.kr) Gnuboard5             |
+| 게시판 엔진      | Zeroboard 4.1pl4 → Gnuboard4 → forg.kr 캡처상 Gnuboard5        |
 | 시그니처 색      | `#FFC73B` (골드) — 15년간 변치 않은 상징                       |
 | 게시판 수        | UO 코어 12개 + 커뮤니티/거래/유머 등 22개                      |
 | 누적 방문 (2014) | 약 5,291만                                                     |
@@ -189,8 +191,10 @@ forg/
 
 - **게시글 본문 / 댓글 / 첨부**: forg.co.kr 원본 사용자가 작성한 글로,
   [Internet Archive Wayback Machine](https://web.archive.org)에 보존된 공개 캡처에서 가져옵니다.
-- **사이트 셸 자산** (로고, 버튼 등): forg.co.kr 운영진(Nylugh)이 제작한 디자인 자산.
-- **역사적 설명**: namu.wiki, thewiki.kr, ultimastory.tistory.com 및 운영자 사후 메모.
+- **사이트 셸 자산** (로고, 버튼 등): forg.co.kr 원본 사이트 디자인 자산.
+- **역사적 설명**: Wayback 캡처, namu.wiki, thewiki.kr, ultimastory.tistory.com 및
+  수집된 게시글 원문을 대조해 작성합니다. `Nylugh` 관련 서술은 1차 출처 확인 전까지
+  단정하지 않습니다.
 
 ### 저작권 / 정책
 
@@ -198,7 +202,7 @@ forg/
 영리 활동을 하지 않으며, 광고를 게재하지 않습니다.
 
 - 게시글 작성자가 본인 글의 삭제를 요청하시면 **즉시 비공개 처리**합니다.
-- 운영자 Nylugh 또는 forg.kr 관리자의 의견을 존중합니다.
+- 원 운영자, 관리자 계정 **Forg**, Kritz 관계자 또는 forg.kr 후속 운영자의 의견을 존중합니다.
 - 콘텐츠 자체에 대한 저작권은 각 작성자에게 있습니다.
 
 문의 / 삭제 요청: pignuante &lt;[hanyul.ryu@hanyul.xyz](mailto:hanyul.ryu@hanyul.xyz)&gt;
@@ -222,8 +226,8 @@ forg/
 
 이 프로젝트가 가능한 것은 다음 분들 덕분입니다:
 
-- **Nylugh** — forg.co.kr를 15년간 운영하며 한국 UO 커뮤니티의 거점을 만들어 주신 분
-- **forg.kr 운영진** — forg의 정통을 이어 활발히 커뮤니티를 유지 중
+- **Forg 계정과 원 운영진** — forg.co.kr를 운영하며 한국 UO 커뮤니티의 거점을 만들어 주신 분들
+- **forg.kr 후속 사이트 운영진** — 2019년 Wayback 캡처에서 확인되는 후속 사이트를 유지했던 분들
 - **Internet Archive** — Wayback Machine으로 인터넷의 기억을 보존
 - **forg.co.kr의 모든 글쓴이들** — 익명·실명을 막론하고 한국 UO의 추억을 글로 남겨주신 분들
 - **namu.wiki / thewiki.kr 기여자들** — 한국 UO와 진솔 사건의 사료를 정리
