@@ -64,3 +64,36 @@ class Post(BaseModel):
     capturedAt: str
     originalUrl: str
     sourceEngine: SourceEngine
+
+
+# ── Board index (paginated listing) ──────────────────────────────────
+# Mirrors `BoardIndexEntry` / `BoardIndexPage` in src/types/post.ts.
+# Page size is hard-coded in both languages — keep in sync.
+
+BOARD_INDEX_PAGE_SIZE = 50
+
+
+class BoardIndexEntry(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    postId: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    author: str = Field(min_length=1)
+    authorMemberNo: str | None = None
+    createdAt: datetime
+    commentCount: int = Field(ge=0)
+    attachmentCount: int = Field(ge=0)
+    hits: int | None = None
+    recommend: int | None = None
+    era: PostEra
+
+
+class BoardIndexPage(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    board: str = Field(min_length=1)
+    page: int = Field(ge=1)
+    totalPages: int = Field(ge=1)
+    totalPosts: int = Field(ge=0)
+    generatedAt: datetime
+    entries: list[BoardIndexEntry]

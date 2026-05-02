@@ -35,6 +35,7 @@ archive-utf8/
 .parse-summary.json
 .parse-failures.jsonl
 .parse-progress.jsonl
+.index-summary.json
 
 # Local caches & generated content
 .cache/

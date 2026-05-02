@@ -74,3 +74,45 @@ export interface Post {
   originalUrl: string;
   sourceEngine: SourceEngine;
 }
+
+/**
+ * Lightweight summary used by board listing pages. Built from `Post` JSON
+ * by `scripts/etl/03-build-index.py`. Excludes `bodyHtml`/`bodyText` so the
+ * client bundle for a listing page stays small even when a board has 1k+
+ * posts.
+ */
+export interface BoardIndexEntry {
+  postId: string;
+  title: string;
+  author: string;
+  authorMemberNo: string | null;
+  createdAt: string;
+  commentCount: number;
+  attachmentCount: number;
+  hits: number | null;
+  recommend: number | null;
+  era: PostEra;
+}
+
+/**
+ * One paginated chunk of a board index. Boards are paginated at
+ * `BOARD_INDEX_PAGE_SIZE` entries per chunk, sorted by `createdAt` desc
+ * (newest first). Page numbers are 1-indexed; `index-1.json` is the
+ * landing page for `/board/{board}`.
+ */
+export interface BoardIndexPage {
+  /** Board id (e.g. "Notice", "Q_A"). */
+  board: string;
+  /** 1-indexed page number. */
+  page: number;
+  /** Total number of pages produced for this board. */
+  totalPages: number;
+  /** Total post count across all pages. */
+  totalPosts: number;
+  /** ISO 8601 timestamp the index was built. */
+  generatedAt: string;
+  entries: BoardIndexEntry[];
+}
+
+/** Page size for paginated board indexes. Mirrored in Python. */
+export const BOARD_INDEX_PAGE_SIZE = 50;
