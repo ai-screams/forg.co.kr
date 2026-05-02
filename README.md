@@ -201,7 +201,7 @@ forg/
 - 운영자 Nylugh 또는 forg.kr 관리자의 의견을 존중합니다.
 - 콘텐츠 자체에 대한 저작권은 각 작성자에게 있습니다.
 
-문의 / 삭제 요청: [hanyul.ryu@gmail.com](mailto:hanyul.ryu@gmail.com)
+문의 / 삭제 요청: pignuante &lt;[hanyul.ryu@hanyul.xyz](mailto:hanyul.ryu@hanyul.xyz)&gt;
 
 ---
 
