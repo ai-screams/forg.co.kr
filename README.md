@@ -57,10 +57,10 @@ forg.co.kr의 정통 후속 사이트인 **[forg.kr](https://forg.kr)** 은 별�
 
 ## 기술 스택
 
-```
-프레임워크   Next.js 15 (App Router, Static Export)
+```text
+프레임워크   Next.js 16 (App Router, Turbopack, Static Export)
 런타임       React 19 (Server Components)
-언어         TypeScript 5.x (strict)
+언어         TypeScript 6 (strict)
 스타일       Tailwind CSS v4 (CSS-first config)
 컴포넌트     shadcn/ui
 패키지       pnpm
@@ -135,7 +135,7 @@ pnpm build && pagefind --site out/
 
 ## 프로젝트 구조
 
-```
+```text
 forg/
 ├── README.md                  # 이 파일
 ├── .gitignore
