@@ -1,0 +1,411 @@
+# ─────────────────────────────────────────────────────────────────────
+#  forg-archive — .gitignore
+#  Comprehensive: OS / Editor / Language / Framework / Project
+# ─────────────────────────────────────────────────────────────────────
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Project-specific (PROTECT FIRST)                              ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Internal docs — explicitly excluded by project rule (never commit)
+.docs/
+.docs/**
+
+# Tool state directories
+.omc/
+.serena/
+.claude/
+.cursor/
+.zed/
+.aider*
+
+# Local download artifacts (large, rebuildable from Wayback CDX)
+archive/
+archive-utf8/
+*.run.log
+*.run.pid
+.summary.json
+.progress.jsonl
+.errors.jsonl
+
+# Local caches & generated content
+.cache/
+.tmp/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.cert
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Operating System                                              ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Editors / IDEs                                                ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, GoLand, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*.un~
+*~
+Session.vim
+.netrwhist
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+.\#*
+*.elc
+auto-save-list
+tramp
+.org-id-locations
+*_archive
+.emacs.desktop
+.emacs.desktop.lock
+
+# Eclipse
+.metadata
+bin/
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+.recommenders
+.apt_generated/
+.apt_generated_test/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Node.js / JavaScript / TypeScript                             ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Dependencies
+node_modules/
+jspm_packages/
+bower_components/
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+
+# Lock files (commit ONE of these — do not ignore yours; ignore others' if accidental)
+# package-lock.json   # keep if npm
+# yarn.lock           # keep if yarn
+# pnpm-lock.yaml      # keep if pnpm
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.astro/
+.vercel/
+.netlify/
+.turbo/
+.output/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+*.lcov
+.nyc_output/
+.jest-cache/
+.vitest-cache/
+playwright-report/
+test-results/
+.playwright/
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.rollup.cache/
+.webpack/
+.swc/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Storybook
+storybook-static/
+
+# Bundler analyzer
+analyze/
+stats.json
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Python                                                        ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+.pyenv-version
+
+# Distribution / packaging
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Poetry / pipenv / PDM / uv
+poetry.lock          # commit if you use poetry — ignore otherwise
+Pipfile.lock         # commit if you use pipenv — ignore otherwise
+.pdm.toml
+__pypackages__/
+uv.lock              # commit if you use uv — ignore otherwise
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Other languages (rare in this project, but harmless to keep)  ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Go
+*.test
+*.out
+go.work
+
+# Rust
+target/
+Cargo.lock         # commit if binary, ignore if library
+**/*.rs.bk
+
+# Java / Kotlin
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+.gradle/
+gradle-app.setting
+
+# Ruby
+*.gem
+.bundle/
+vendor/bundle
+log/
+spec/reports/
+
+# PHP
+vendor/
+composer.phar
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Tooling, logs, misc                                           ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Diagnostic / crash reports
+crash.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Compressed archives (usually downloaded artifacts)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Local DB / SQLite (project may not use; safe to ignore)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Direnv / asdf / nvm
+.envrc
+.tool-versions
+.nvmrc       # commit if standardized; remove this line if you do
+
+
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║ Whitelist (re-include things accidentally caught above)       ║
+# ╚═══════════════════════════════════════════════════════════════╝
+
+# Always include these even if patterns above match
+!.gitkeep
+!.gitignore
+!.github/
+!.editorconfig
+!.npmrc
+!.nvmrc
