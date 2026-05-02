@@ -1,65 +1,127 @@
-import Image from "next/image";
+import { EraToggle } from "@/components/era-toggle";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="flex min-h-screen flex-col bg-(--era-page-bg)">
+      <header className="border-b border-(--era-input-border) bg-(--era-content-bg)">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+          <div>
+            <h1 className="text-forg-ink font-forg text-xl font-bold">forg.co.kr</h1>
+            <p className="text-forg-muted text-xs">
+              한국 울티마 온라인 디지털 박물관 — 셸 미리보기
+            </p>
+          </div>
+          <EraToggle />
+        </div>
+      </header>
+
+      <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10">
+        <section aria-labelledby="tokens-heading" className="space-y-6">
+          <header>
+            <h2 id="tokens-heading" className="text-forg-ink text-lg font-bold">
+              디자인 토큰 시연
+            </h2>
+            <p className="text-forg-muted text-sm">
+              우측 상단 <span className="font-mono">era</span> 토글로 시기를 전환하면 시기 의존
+              토큰이 즉시 변합니다. forg 시그니처 골드와 본문 텍스트는 시기 무관입니다.
+            </p>
+          </header>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <SwatchCard
+              title="페이지 배경 (era)"
+              token="--era-page-bg"
+              note="2014: 슬레이트 #61748B / 2003: 흰색"
+              className="text-forg-cream bg-(--era-page-bg)"
+            />
+            <SwatchCard
+              title="콘텐츠 영역 (era)"
+              token="--era-content-bg"
+              note="2014: 크림 / 2003: 라이트 그레이"
+              className="text-forg-ink bg-(--era-content-bg)"
+            />
+            <SwatchCard
+              title="좌측 사이드바 (era)"
+              token="--era-sidebar-bg"
+              note="2014: 라이트 그레이 / 2003: 다크 네이비"
+              className="bg-(--era-sidebar-bg) text-(--era-sidebar-fg)"
+            />
+            <SwatchCard
+              title="forg 시그니처 골드 (변하지 않음)"
+              token="--color-forg-gold"
+              note="15년간 동일 — bg-forg-gold"
+              className="bg-forg-gold text-forg-ink"
+            />
+            <SwatchCard
+              title="2014 액센트 — 세이지"
+              token="--color-forg-sage"
+              note="bg-forg-sage"
+              className="bg-forg-sage text-forg-cream"
+            />
+            <SwatchCard
+              title="다크 푸터 / 사이드 (공통 어두운 톤)"
+              token="--era-footer-bg"
+              note="2014/2003 모두 동일 슬레이트"
+              className="text-forg-cream bg-(--era-footer-bg)"
+            />
+          </div>
+
+          <div className="mt-6 rounded-md bg-(--era-content-bg) p-5 text-sm">
+            <h3 className="text-forg-ink mb-2 font-bold">링크 색 데모</h3>
+            <p className="text-forg-muted leading-relaxed">
+              본문 안의{" "}
+              <a href="#" className="text-(--era-link) underline hover:text-(--era-link-hover)">
+                기본 링크
+              </a>
+              에 마우스를 올리면 forg 골드 hover 색이 적용됩니다. 시기를 바꾸면 기본 색만 달라지고
+              hover는 골드를 유지합니다.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="meta-heading" className="mt-12">
+          <h2 id="meta-heading" className="text-forg-ink mb-3 text-lg font-bold">
+            구현 노트
+          </h2>
+          <ul className="text-forg-muted list-disc space-y-1 pl-5 text-sm">
+            <li>토큰은 Tailwind v4 CSS-first (`@theme`)에 OKLCH로 정의 (ADR-0006).</li>
+            <li>시기별 오버라이드는 `:root[data-era=&quot;...&quot;]` 블록으로 분리.</li>
+            <li>EraToggle 클릭 시 `&lt;html data-era&gt;` 속성만 변경 → 리렌더 없음.</li>
+            <li>FOUC 방지 인라인 스크립트가 hydration 전에 저장된 시기를 적용.</li>
+            <li>Body에 200ms transition을 걸어 시기 전환 시 부드럽게 페이드.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer className="text-forg-cream border-t border-(--era-input-border) bg-(--era-footer-bg)">
+        <div className="mx-auto max-w-5xl px-6 py-4 text-xs">
+          <p>
+            forg.co.kr 디지털 박물관 · 디자인 토큰 셸 · <span className="font-mono">P0.5</span>
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="bg-foreground text-background flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors hover:bg-[#383838] md:w-[158px] dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </footer>
     </div>
+  );
+}
+
+interface SwatchCardProps {
+  title: string;
+  token: string;
+  note: string;
+  className: string;
+}
+
+function SwatchCard({ title, token, note, className }: SwatchCardProps) {
+  return (
+    <article
+      className={[
+        "rounded-md border border-(--era-input-border) p-5 shadow-sm transition-colors",
+        className,
+      ].join(" ")}
+    >
+      <h3 className="text-sm font-bold">{title}</h3>
+      <code className="mt-2 inline-block font-mono text-xs opacity-80">{token}</code>
+      <p className="mt-3 text-xs opacity-90">{note}</p>
+    </article>
   );
 }
