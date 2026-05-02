@@ -19,6 +19,8 @@
 .cursor/
 .zed/
 .aider*
+.agents/
+skills-lock.json
 
 # Local download artifacts (large, rebuildable from Wayback CDX)
 archive/
