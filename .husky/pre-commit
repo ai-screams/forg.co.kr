@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+# Load nvm if available so `pnpm` resolves under non-interactive git hooks.
+# Falls back gracefully when nvm is not installed.
+if [ -s "$HOME/.nvm/nvm.sh" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "$NVM_DIR/nvm.sh" --no-use
+  if [ -f "$(git rev-parse --show-toplevel)/.nvmrc" ]; then
+    nvm use --silent >/dev/null
+  else
+    nvm use default --silent >/dev/null
+  fi
+fi
+
+# Ensure project-local binaries are reachable.
+PATH="$(git rev-parse --show-toplevel)/node_modules/.bin:$PATH"
+export PATH
+
+pnpm exec lint-staged

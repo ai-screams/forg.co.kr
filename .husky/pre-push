@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# Load nvm if available so `pnpm` resolves under non-interactive git hooks.
+if [ -s "$HOME/.nvm/nvm.sh" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "$NVM_DIR/nvm.sh" --no-use
+  if [ -f "$(git rev-parse --show-toplevel)/.nvmrc" ]; then
+    nvm use --silent >/dev/null
+  else
+    nvm use default --silent >/dev/null
+  fi
+fi
+
+PATH="$(git rev-parse --show-toplevel)/node_modules/.bin:$PATH"
+export PATH
+
+echo "▶ Running typecheck and lint before push…"
+pnpm run typecheck && pnpm run lint

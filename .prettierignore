@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Generated
+*.tsbuildinfo
+next-env.d.ts
+
+# Internal docs (gitignored anyway, but skip formatting just in case)
+.docs/
+.omc/
+.serena/
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Coverage / cache
+coverage/
+.cache/
+.turbo/
+
+# Logs
+*.log
+
+# Public assets — don't reformat SVG / images
+public/
+
+# Archive raw data
+archive/
+archive-utf8/
