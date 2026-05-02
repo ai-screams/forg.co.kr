@@ -14,14 +14,20 @@ const config = {
     "no-duplicate-heading": { siblings_only: true },
   },
   globs: ["**/*.md"],
+  // markdownlint-cli2 does not honour .gitignore by default, so we mirror
+  // the project-relevant excludes here.
   ignores: [
     "node_modules/**",
     ".next/**",
     "out/**",
     ".docs/**",
+    ".claude/**",
+    ".agents/**",
+    ".serena/**",
+    ".omc/**",
     "archive/**",
+    "archive-clean/**",
     "AGENTS.md",
-    "CLAUDE.md",
   ],
 };
 
