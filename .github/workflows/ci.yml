@@ -14,6 +14,14 @@ concurrency:
 permissions:
   contents: read
 
+# Force JavaScript actions (checkout, setup-node, pnpm/action-setup, etc.) to
+# run on Node.js 24 ahead of GitHub's 2026-06-02 default switch. Removes the
+# Node 20 deprecation warning and surfaces any incompatibility now rather than
+# on switchover day. Drop this env once these actions ship v5 with Node 24
+# baked in (expected before 2026-09-16 Node 20 removal).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   quality:
     name: Quality (lint · typecheck · format · build · knip · size)
