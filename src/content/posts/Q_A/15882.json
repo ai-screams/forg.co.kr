@@ -1,0 +1,20 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15882",
+  "title": "[울온외] 바이러스 인지 아닌지좀 봐주세요.",
+  "bodyHtml": "\n<br>\n 갑자기 모든 폴더에 desktop.ini<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOLDER.HTT<br>\n 라는 파일 두개가 생겼어요.<br>\n<br>\n desktop.ini 파일에는 <br>\n<br>\n [ExtShellFolderViews]<br>\n Default={5984FFE0-28D4-11CF-AE66-08002B2E1262}<br>\n {5984FFE0-28D4-11CF-AE66-08002B2E1262}={5984FFE0-28D4-11CF-AE66-08002B2E1262}<br>\n<br>\n [{5984FFE0-28D4-11CF-AE66-08002B2E1262}]<br>\n WebViewTemplate.NT5=file://Folder.htt<br>\n PersistMoniker=file://Folder.htt<br>\n<br>\n [.ShellClassInfo]<br>\n ConfirmFileOp=0<br>\n 라는 내용이 적혀 있는데...<br>\n<br>\n 지워도 자꾸자꾸 생깁니다.<br>\n<br>\n 답변 부탁 드립니다<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#424242\" size=\"3\"> \nHolla! If ya Hear Me!\n<img src=\"http://forg.co.kr/_zb/data/ScottStainer.jpg\">\n</font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "갑자기 모든 폴더에 desktop.ini FOLDER.HTT 라는 파일 두개가 생겼어요. desktop.ini 파일에는 [ExtShellFolderViews] Default={5984FFE0-28D4-11CF-AE66-08002B2E1262} {5984FFE0-28D4-11CF-AE66-08002B2E1262}={5984FFE0-28D4-11CF-AE66-08002B2E1262} [{5984FFE0-28D4-11CF-AE66-08002B2E1262}] WebViewTemplate.NT5=file://Folder.htt PersistMoniker=file://Folder.htt [.ShellClassInfo] ConfirmFileOp=0 라는 내용이 적혀 있는데... 지워도 자꾸자꾸 생깁니다. 답변 부탁 드립니다 Holla! If ya Hear Me!",
+  "author": "Gordon",
+  "authorMemberNo": "15191",
+  "authorHomepage": null,
+  "createdAt": "2003-02-14T19:57:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502191117",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15882",
+  "sourceEngine": "zeroboard"
+}

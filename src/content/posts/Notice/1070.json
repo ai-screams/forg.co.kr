@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "1070",
+  "title": "퍼블 28 적용 스케줄",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">Monday, November 22, 2004 at approximately 1:30PM PST (9:30PM GMT) we will be deploying Publish 28 server code to the Pacific shard. This is the same code that has been in test on the TC2 Pub28 Test shard since November 16th.<br>\n<br>\nIf everything goes according to plan, we will be publishing the remainder of the shards as follows:<br>\n<br>\n<br>\n23 November 10:00AM PST (6:00PM GMT) - Chesapeake, Atlantic, Catskills, Siege Perilous, Legends, Great Lakes, Lake Superior <br>\n23 November 11:00AM PST (7:00PM GMT) - Lake Austin, Baja, Napa Valley, Sonoma <br>\n23 November 2:00PM PST (10:00PM GMT) - Oceania <br>\n23 November 3:00PM PST (11:00PM GMT) - Yamato, Izumo, Wakoku, Hokuto, Asuka, Mizuho, Mugen, Sakura <br>\n23 November 4:00PM PST (12:00AM GMT) - Arirang, Balhae, Formosa <br>\n23 November 9:00PM PST (5:00AM GMT) – Europa, Drachenfels <br>\nWe are expecting each publish window downtime to last approximately 1.5 – 2 hours.<br>\n<br>\nWe will keep you updated if any of this information changes.</td></tr></tbody></table>\n",
+  "bodyText": "Monday, November 22, 2004 at approximately 1:30PM PST (9:30PM GMT) we will be deploying Publish 28 server code to the Pacific shard. This is the same code that has been in test on the TC2 Pub28 Test shard since November 16th. If everything goes according to plan, we will be publishing the remainder of the shards as follows: 23 November 10:00AM PST (6:00PM GMT) - Chesapeake, Atlantic, Catskills, Siege Perilous, Legends, Great Lakes, Lake Superior 23 November 11:00AM PST (7:00PM GMT) - Lake Austin, Baja, Napa Valley, Sonoma 23 November 2:00PM PST (10:00PM GMT) - Oceania 23 November 3:00PM PST (11:00PM GMT) - Yamato, Izumo, Wakoku, Hokuto, Asuka, Mizuho, Mugen, Sakura 23 November 4:00PM PST (12:00AM GMT) - Arirang, Balhae, Formosa 23 November 9:00PM PST (5:00AM GMT) – Europa, Drachenfels We are expecting each publish window downtime to last approximately 1.5 – 2 hours. We will keep you updated if any of this information changes.",
+  "author": "Sky",
+  "authorMemberNo": "27419",
+  "authorHomepage": null,
+  "createdAt": "2004-11-23T06:27:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190635",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=1070",
+  "sourceEngine": "zeroboard"
+}

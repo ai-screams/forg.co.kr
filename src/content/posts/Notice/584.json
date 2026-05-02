@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "584",
+  "title": "9월6일자 UOAssist 패치내용",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t [ UOAssist.dll 1.19.11.0 ]<br>\n 오늘(한국시간9월6일) 이루어진 유오어시스트의 패치 내용입니다.<br>\n * 타이틀바에 사용되는 코드의 최적화. 유오에에서 타이틀바표시 기능을 사용하고 있을때 당신이 마법을 사용한 직후에 얼어버리는 경우 그것을 해결합니다.(무슨뜻인지 잘모르겠슴다 ^^;)<br>\n * 매크로버퍼(macro buffer)가 완전히 쌓여버린 상태(200라인)에서 제거 되어버리는 버퍼오버플로우 버그를 발견하고 수정했습니다.<br>\n * DEX가 14이하에서 마법 모자를 쓴경우에도 스테미나와 덱스의 타이틀바는 정확히 표시 됩니다.<br>\n * Great Lakes에서 한종류의 천이 리소스 카운트에 의해 바르게 카운트 되지 않는것을 알았습니다. 현재는 정확하게 카운트되게 수정되었습니다.<br>\n * 에이젠트(Agent)페이지에서 Cartography를 제거했습니다. OSI에서 카토그래피의 사용법을 변경한때부터 이 기능은 작동하지 않았습니다. OSI에 의한 변화로 간단한 매크로를 만들수있기에 제거했습니다.<br>\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 출처 일본 Llama.net&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이상<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "[ UOAssist.dll 1.19.11.0 ] 오늘(한국시간9월6일) 이루어진 유오어시스트의 패치 내용입니다. * 타이틀바에 사용되는 코드의 최적화. 유오에에서 타이틀바표시 기능을 사용하고 있을때 당신이 마법을 사용한 직후에 얼어버리는 경우 그것을 해결합니다.(무슨뜻인지 잘모르겠슴다 ^^;) * 매크로버퍼(macro buffer)가 완전히 쌓여버린 상태(200라인)에서 제거 되어버리는 버퍼오버플로우 버그를 발견하고 수정했습니다. * DEX가 14이하에서 마법 모자를 쓴경우에도 스테미나와 덱스의 타이틀바는 정확히 표시 됩니다. * Great Lakes에서 한종류의 천이 리소스 카운트에 의해 바르게 카운트 되지 않는것을 알았습니다. 현재는 정확하게 카운트되게 수정되었습니다. * 에이젠트(Agent)페이지에서 Cartography를 제거했습니다. OSI에서 카토그래피의 사용법을 변경한때부터 이 기능은 작동하지 않았습니다. OSI에 의한 변화로 간단한 매크로를 만들수있기에 제거했습니다. 출처 일본 Llama.net      이상",
+  "author": "HoHo",
+  "authorMemberNo": "11455",
+  "authorHomepage": null,
+  "createdAt": "2002-09-06T20:05:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190821",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=584",
+  "sourceEngine": "zeroboard"
+}

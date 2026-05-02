@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17949",
+  "title": "손가락 주위에 네모박스가..ㅡ.,ㅡ;",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 오랜만에 울온을 할려고 프로그램을 설치하고...<br>\n<br>\n 접속을 했더니...<br>\n<br>\n 손 주위에 사각형이 따라다니네요....쩝...<br>\n<br>\n 이거 어떻게 해결해야하죠?<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "오랜만에 울온을 할려고 프로그램을 설치하고... 접속을 했더니... 손 주위에 사각형이 따라다니네요....쩝... 이거 어떻게 해결해야하죠?",
+  "author": "attosoft",
+  "authorMemberNo": "17981",
+  "authorHomepage": null,
+  "createdAt": "2003-04-11T23:52:22",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 윈도우에서 커서(마우스화살표) 설정이 원래 디폴트 커서가 아닌 다른것들로(예를들어 애니메이션 커서나<br>\n 다른데서 다운받은 그림등, 아니면 큰 커서등) 이면 가끔 어떤 게임들은 그런 현상이 생길 수 있습니다.<br>\n<br>\n 그것이 아니라면 그래픽카드 드라이버 문제로 보이네요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온 자체 옵션 내에서 개별 쓰래드에서 마우스 실행이란 옵션 체크해 보세요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191408",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17949",
+  "sourceEngine": "zeroboard"
+}

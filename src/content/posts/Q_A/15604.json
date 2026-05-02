@@ -1,0 +1,45 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15604",
+  "title": "울온 관련 질문은 아닌데... 한글이름 그림파일 바로 보이게 하려면...",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 어떻게 해야되나요..ㅡㅜ<br>\n<br>\n 전에 유머게시판에 어떤분이 리플로 쓰셧는데<br>\n 해보려고 다시찾으려니 도저히 못찾겟네요 ;;;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어떻게 해야되나요..ㅡㅜ 전에 유머게시판에 어떤분이 리플로 쓰셧는데 해보려고 다시찾으려니 도저히 못찾겟네요 ;;;",
+  "author": "areinn",
+  "authorMemberNo": "17381",
+  "authorHomepage": null,
+  "createdAt": "2003-02-10T02:03:00",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 익스플로러 도구-&gt; 인터넷 옵션 -&gt; 고급 -&gt; URL을 항상 UTF-8로 보냄 체크(or 체크 해제)<br>\n 그 뒤에 모든 익스플로러를 종료시키시고 다시 실행해 보시길.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 익스플로러 종료가 아니라 시스템 재시작입니다 &gt;_&lt;<br>\n 뭐 언젠간 재부팅 하실거니 상관 없으려나;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 시스템을 재시작할 필요는 없는 것으로 압니다.<br>\n 사실, 익스 종료하시라고 썼지만...<br>\n 새로고침만 해도 되는 것으로 압니다만...<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우..우왓~~!! 굉장하다;;<br>\n 해결됬어요!!<br>\n 정말 고맙습니다~ ^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191038",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15604",
+  "sourceEngine": "zeroboard"
+}

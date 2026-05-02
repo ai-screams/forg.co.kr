@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17834",
+  "title": "수동패치 어디서 받나여??",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 버전이 안맞다고 나오네여.....ㅡ.ㅡ<br>\n 오토는 안되고 수동으로 받아야겠는데...<br>\n 공식홈도 싸이트가 안뜨고 수동패치 어디서 받는지 아시는분<br>\n 주소좀 올려주세여<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "버전이 안맞다고 나오네여.....ㅡ.ㅡ 오토는 안되고 수동으로 받아야겠는데... 공식홈도 싸이트가 안뜨고 수동패치 어디서 받는지 아시는분 주소좀 올려주세여",
+  "author": "starband",
+  "authorMemberNo": "20164",
+  "authorHomepage": null,
+  "createdAt": "2003-04-07T12:52:48",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울티마 디렉토리에 patch &lt;--라는 폴더를 만드시면 패치가 됩니다<br>\n<br>\n 저두 이것땜시 고생했음 =+='"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 만약에 patch 폴더가 있다면 그 안에 있는 파일들을 싹 지우시고 한번 시도 해보시기 바랍니다...<br>\n그래도 안됀다면 verinfo.???(불확실 -_- 울온이 안깔린 컴이라;;;) 파일을 메모장으로 여신다음<br>\n숫자가있는데 그 숫자보다 1을 크게 바꾸신후에 저장하시고 다시 패치를 받아보세요...<br>\n(하지만 불완전하게 패치를 받을수가 있습니다... 저는 마블에 살고있을때... <br>\n접속하니 마블집은 안보이고 문짝만 두개가 보이고 공중부양을 하고있더군요 -_-)<br>\n<br>\n 그것도 안됀다면 수동패치를 하셔야 하는데.... 그 방법은 제가 모르겠네요;; -_-;;;;<br>\n<br>\n 일부 OS나 컴퓨터 사양에 따라 T2A 씨디로 인스톨했을때 오토패치가 돼지않는 버그가 있습니다...<br>\n 그럴땐 EA로 씨디를 스캔해서 받으실 주소와 연락처를 메일로 보내시면 3일후에 블랙쏜의 복수 CD를<br>\n \"착불\"로 받으실수 있습니다 -_-;;;<br>\n<br>\n 수동패치 방법을 찾는대로 코멘트 달겠습니다;;<br>\n<br>\n이곳 질답란에서 \"수동패치\" 라고 검색을 하니 나오네요;; 참고하시길;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191341",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17834",
+  "sourceEngine": "zeroboard"
+}

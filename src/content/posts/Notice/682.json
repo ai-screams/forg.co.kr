@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "682",
+  "title": "오늘부로 패치된 사항",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t The following fixes are now live on all shards: <br>\n<br>\n Guards will now be called if a player goes grey for looting a blue corpse in a Feluccan guard zone.<br>\n - 이제 펠루카 가드지역에서 블루시체를 루팅하는 그레이에게는 가드가 불려질 것입니다.<br>\n Vorpal bunny corpses should no longer stay in the air. <br>\n - 보팔버니의 시체는 더이상 공중에 떠 있지 않을것 입니다.<br>\n An issue involving houses not placing correctly was fixed.<br>\n - 집이 제대로 지어지지 않던걸 수정하였습니다.<br>\n We have fixed a bug that caused some spells to do no damage. <br>\n - 몇몇 마법의 데미지가 0인것을 수정하였습니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "The following fixes are now live on all shards: Guards will now be called if a player goes grey for looting a blue corpse in a Feluccan guard zone. - 이제 펠루카 가드지역에서 블루시체를 루팅하는 그레이에게는 가드가 불려질 것입니다. Vorpal bunny corpses should no longer stay in the air. - 보팔버니의 시체는 더이상 공중에 떠 있지 않을것 입니다. An issue involving houses not placing correctly was fixed. - 집이 제대로 지어지지 않던걸 수정하였습니다. We have fixed a bug that caused some spells to do no damage. - 몇몇 마법의 데미지가 0인것을 수정하였습니다.",
+  "author": "suhksb",
+  "authorMemberNo": "14710",
+  "authorHomepage": null,
+  "createdAt": "2002-12-13T10:42:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190846",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=682",
+  "sourceEngine": "zeroboard"
+}

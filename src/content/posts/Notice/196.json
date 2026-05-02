@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "196",
+  "title": "[주의]은행원외 NPC에 수표주지 말기",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 현재 버그로 은행원(banker, minter)가 아닌 NPC도 은행 수표를<br>\n 플레이어에게서 받을 수가 있습니다.<br>\n 따라서 저희는 플레이어들에게 이 시점에서 수표를 취급하는데 있어서<br>\n 대단히 주의 하실것을 요합니다. 저희는 이것을 가능한한 빨리<br>\n 수정하겠습니다. <br>\n 그러나 그 동안에는 NPC의 페이퍼돌을 열고 그것이 \"the banker\"나<br>\n \"the minter\"인지 확인하신다음에 수표를 주시기바랍니다. <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "현재 버그로 은행원(banker, minter)가 아닌 NPC도 은행 수표를 플레이어에게서 받을 수가 있습니다. 따라서 저희는 플레이어들에게 이 시점에서 수표를 취급하는데 있어서 대단히 주의 하실것을 요합니다. 저희는 이것을 가능한한 빨리 수정하겠습니다. 그러나 그 동안에는 NPC의 페이퍼돌을 열고 그것이 \"the banker\"나 \"the minter\"인지 확인하신다음에 수표를 주시기바랍니다.",
+  "author": "녕이",
+  "authorMemberNo": "2278",
+  "authorHomepage": null,
+  "createdAt": "2001-11-30T18:36:27",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190656",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=196",
+  "sourceEngine": "zeroboard"
+}

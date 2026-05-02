@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17869",
+  "title": "질문입니다.",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 악기 주우면 악기에 xxx 슬레이더 남은갯수421개<br>\n 이렇게 나오던데 이게 먼가여?<br>\n 글구 반지 주우면 그냥 반지라고 써있는거는 감정을 해야 되나여?<br>\n 모르는게 많아서 ^^<br>\n 즐온하세요<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "악기 주우면 악기에 xxx 슬레이더 남은갯수421개 이렇게 나오던데 이게 먼가여? 글구 반지 주우면 그냥 반지라고 써있는거는 감정을 해야 되나여? 모르는게 많아서 ^^ 즐온하세요",
+  "author": "starband",
+  "authorMemberNo": "20164",
+  "authorHomepage": null,
+  "createdAt": "2003-04-08T18:59:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 악기에 붙어있는 해당 몹에대해서만 바드 스킬의 성공률을 20% 높여 줍니다...<br>\n GM악기의 경우는 모든 상황에서의 스킬 성공률을 10% 올려주구요...<br>\n<br>\n 그리고 그냥 반지 라고 나오는 반지는 마법이 깃들지 않은 순수한 \"그냥 반지\" 입니다 -_-<br>\n 버리세요;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 남은 갯수는.. 바드 스킬을 쓸때 감소해서 0이되면 없어집니다..<br>\n 악기도 없어져야 악기장사들도 먹고살죠.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191348",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17869",
+  "sourceEngine": "zeroboard"
+}

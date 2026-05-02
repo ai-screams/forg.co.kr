@@ -1,4 +1,7 @@
-# ETL pipeline dependencies (ADR-0007)
+# ETL pipeline dependencies (ADR-0007, ADR-0008)
 beautifulsoup4>=4.13.0
 lxml>=5.3.0
 html5lib>=1.1
+nh3>=0.2.0
+pydantic>=2.10.0
+pytest>=8.4.0

@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "917",
+  "title": "자동로그인 문제 수정되었습니다.",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">이전된 서버의 PHP 버전이 틀려서 기존 방식으로는 구워지지 않았었습니다.<br><br>수정 되었으니 전처럼 사용하시면 됩니다.<br><br>잠시나마 이용에 불편을 드려 안 죄송합니다.<br><br>배째세요 .. -_-.<br></td></tr></tbody></table>\n",
+  "bodyText": "이전된 서버의 PHP 버전이 틀려서 기존 방식으로는 구워지지 않았었습니다. 수정 되었으니 전처럼 사용하시면 됩니다. 잠시나마 이용에 불편을 드려 안 죄송합니다. 배째세요 .. -_-.",
+  "author": "Kritz",
+  "authorMemberNo": "2248",
+  "authorHomepage": "http://kritz.uospace.net",
+  "createdAt": "2003-08-15T00:09:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190950",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=917",
+  "sourceEngine": "zeroboard"
+}

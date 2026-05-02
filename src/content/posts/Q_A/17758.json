@@ -1,0 +1,45 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17758",
+  "title": "울온을 영문판으로!",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 실행하고 싶은데.. uo,cfg에서 머시기 하니까 되던디.. 까먹었습니다<br>\n<br>\n 제어판에서 하는방법 말고 uo.cfg에서 바꾸는 방법좀 가르쳐 주세요.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "실행하고 싶은데.. uo,cfg에서 머시기 하니까 되던디.. 까먹었습니다 제어판에서 하는방법 말고 uo.cfg에서 바꾸는 방법좀 가르쳐 주세요.",
+  "author": "DoDookNum",
+  "authorMemberNo": "15596",
+  "authorHomepage": null,
+  "createdAt": "2003-04-04T16:40:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 에세이란이나 질문란에서<br>\n \"영문\" 으로 검색해 보세염 "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " UserLanguageCodeString=enu<br>\n<br>\n 이걸 추가하세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흐음 =.=<br>\n<br>\n 영문판으로 하면 더 좋아염??<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 영문판이 더 편한 사람들이 있죠^^;<br>\n<br>\n 그리고 한글판에서 버그인지 차지가 표시안되는 반면 영문판은 제대루 나옵니다*^_^*"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191327",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17758",
+  "sourceEngine": "zeroboard"
+}

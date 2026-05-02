@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18047",
+  "title": "개인벤더에게 물건사는법. -_-;",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 길을 지나가다가 개인밴더가 팔고있는 물건중<br>\n<br>\n 사고싶은 물건을 발견하였습니다..<br>\n<br>\n 근데 사는법을 몰라서 못사고 있네요..ㅠ_ㅠ<br>\n<br>\n 어떻게 사는건지 좀 가르쳐주시면 감사하게씀니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "길을 지나가다가 개인밴더가 팔고있는 물건중 사고싶은 물건을 발견하였습니다.. 근데 사는법을 몰라서 못사고 있네요..ㅠ_ㅠ 어떻게 사는건지 좀 가르쳐주시면 감사하게씀니다.",
+  "author": "killoy",
+  "authorMemberNo": "20019",
+  "authorHomepage": null,
+  "createdAt": "2003-04-15T23:25:48",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그 밴더 가방 열구 <br>\n<br>\n Vendor buy라고 치시면 커서가 드구요 그 커서를 사고 싶은 물건에 대고 찍어주심 뎁니다.<br>\n<br>\n 돈은 은행에서 나가구요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " NPC에 관한 명령어 몇가지는 매클로 설정해두세요.<br>\n 저의경우 명령어는 f5~f11번까지로되있습니다. <br>\n 명령어는 다른 매클설정이랑함께해도 되기땜시..<br>\n 제가 기본 울온자체매클해둔건 다음과 같습니다.<br>\n<br>\n f1  라스트 오브젝트( 무지 편합니다. 마지막쓴물건을 말함)<br>\n f2 라스트 오브젝트-라스트 타겟 (삽질,나무하기등에서 이거해두면 한번 삽더블클릭-땅클릭이 한꺼번에됨)<br>\n f3 라스트 스펠(마지막 쓴 마법이죠. 아주 편해요..)<br>\n f4 라스트 스킬<br>\n<br>\n  (여기부터명령어입니다. 명령어는 중복될수없는것 두세가지를 한매클로 잡았습니다.) <br>\n f5 은행   - all follow me(애완동물이 말안들을때 부르는 명령어....)- vendor buy (물건사기)<br>\n f6 all stay - all stay (애완동물을 그자리에 고정시킴) - vendor sell (물건팔기. UOA있으면 <br>\n                                   이 명령어 하나로, 팔기설정된 가방,상자안의 모든것이 한꺼번에 팔립니다.)<br>\n f7 all kill(템머에게 필수죠.적죽이라고 시키는..) - vendor view (일정범위안의 여러명 벤더가<br>\n                   파는물건이 한꺼번에보입니다. 벤더 일일이 클릭안해도 되니까 편하죠.)<br>\n f8 I wish to release this (락이나 시큐어를 푸는명령이죠)<br>\n f9 I wish to lock this down (물건 락다운)<br>\n f10  Vendor info (이것은 벤더를 운영할경우 해당됩니다. 벤더의 현재상태를 보여주는 창이 이 명령어로<br>\n                            뜨죠.)<br>\n f11  I wish to secure this (상자 잠금)<br>\n<br>\n 명령어를 이런식으로 매클설정해두시면 여러모로 편합니다.<br>\n (근데 F10, F11을 왜 따로놨는지 모르겠네요. 하나로 해도될거같은데..-_-;;)<br>\n<br>\n 제 모든 캐릭터의 울온 자체 매클설정의 일부입니다.<br>\n 모든 캐릭터 동일한 사항이죠. 한가지 더 추하가면, 여기에<br>\n Tab키를 Opendoor로 해두었습니다. 뛰어다니면서 일일이 문 클릭 안해도 되기때문에<br>\n 편하죠. Tab키에 Opendoor와 함께 say매클을 잡아서<br>\n 키하나로 문이 열리면서 \"야 이노마 문열어~~~!\"등의 대사를 하시는분도 계시더군요..-_-;;<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191429",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18047",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "641",
+  "title": "여러가지 버그의 수정",
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 여러가지 버그의 수정<br>\n<br>\n Lake Superior샤드에 다음의 수정항목에 대한 패치를 했습니다.<br>\n<br>\n * 테일러벌크에서 어떤 타입의 가죽에서도 같은 보상이 되는 문제를 수정했습니다. <br>\n * 고난이도의 대규모테일러BOD를 완성했을때 플레이어는 이제부터는 적절한 보상품을 받게됩니다.<br>\n * Elwood퀘스트(헤븐퀘스트)에서 얻게되는 페인트가 [사용중]의 상태로 되어있던 문제는 수정되었습니다.<br>\n * Blade spirits 와 Energy vortices는 현재 범위내의 생물에 대해 올바르게 공격합니다.<br>\n<br>\n 문제가 없다면 나머지 다른샤드는 10월17일 목요일 아침 섭업시간(한국시간기준) 종료후에 변경이 도입될것입니다.<br>\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이상<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "여러가지 버그의 수정 Lake Superior샤드에 다음의 수정항목에 대한 패치를 했습니다. * 테일러벌크에서 어떤 타입의 가죽에서도 같은 보상이 되는 문제를 수정했습니다. * 고난이도의 대규모테일러BOD를 완성했을때 플레이어는 이제부터는 적절한 보상품을 받게됩니다. * Elwood퀘스트(헤븐퀘스트)에서 얻게되는 페인트가 [사용중]의 상태로 되어있던 문제는 수정되었습니다. * Blade spirits 와 Energy vortices는 현재 범위내의 생물에 대해 올바르게 공격합니다. 문제가 없다면 나머지 다른샤드는 10월17일 목요일 아침 섭업시간(한국시간기준) 종료후에 변경이 도입될것입니다. 이상",
+  "author": "HoHo",
+  "authorMemberNo": "11455",
+  "authorHomepage": null,
+  "createdAt": "2002-10-16T09:21:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190836",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=641",
+  "sourceEngine": "zeroboard"
+}

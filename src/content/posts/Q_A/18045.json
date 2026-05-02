@@ -1,0 +1,45 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18045",
+  "title": "울온외) 원도우xp 설치하신분 답변좀 부탁 합니다.",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 제가 오늘 xp설치를 하고 울온접속하고 나서 다른 분이랑 이야기 할려고 키보드를 치니 한글이 써지지 안고 한/영 을 바꾸어도 그저 영어로만 글이 써지네요(한글로 변환 하면 영어 대문자가 써집니다) 다른 분들도 xp로 울온 하면 이런 현상이 나오는지요. 그리고 대처 방법 아시는분 있으시면 알려 주세요. <br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제가 오늘 xp설치를 하고 울온접속하고 나서 다른 분이랑 이야기 할려고 키보드를 치니 한글이 써지지 안고 한/영 을 바꾸어도 그저 영어로만 글이 써지네요(한글로 변환 하면 영어 대문자가 써집니다) 다른 분들도 xp로 울온 하면 이런 현상이 나오는지요. 그리고 대처 방법 아시는분 있으시면 알려 주세요.",
+  "author": "joffs",
+  "authorMemberNo": "17584",
+  "authorHomepage": null,
+  "createdAt": "2003-04-15T22:11:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 xp에 2d로 울온중인데 그런 현상은 없습니다..<br>\n 3d로도 해보았지만 그런현상은 없었어요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 풀모드로 하신다면 창모드로 한번 해보세요.<br>\n 풀모드로하면 한글이 깨져 나온다고 하던데..<br>\n 아주 가끔 창모드로 하는데 한글이 안쳐질적에는 재접속하면 잘 되었는데<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 xp에서 2d 3d다 사용해봤지만.. 문제 없습니다..<br>\n<br>\n xp에서 가끔 한글이 안적혀지는건..<br>\n xp에서는 기본적으로 다중 키보드를 지원하는데.. 그게 모시냐면..<br>\n 단순히 한영전환이 아니라..<br>\n 한글키보드 영문키보드 이런식으로 키보드 자체를 전환하는 기능이 있고..<br>\n 만약 영문키보드로 전환되었다면.. 어떤게 해도 한글이 안되죠..<br>\n 그 키를 단축키로 설정하셨다면.. 가끔 그 단축키를 누를때 한글이 안써지죠..<br>\n 저의 경우 어떤 이유로.. shift+ctrl+1로 지정했었는데..<br>\n 스타할때 랠리찍다가 재빨리 부대지정하다 하면 자주 키보드 전환이 되서 짱났죠..<br>\n 그래도 다행인건.. 이러한 전환히 윈도 전체에 영향을 미치는것이 아니라..<br>\n 프로그램에 해당된거라.. 프로그램을 다시실행하면 돌아오죠..<br>\n (단순히 한영전환키도 그러하죠.. 메모장서 한글로 쓰다가도 새로 브라우져 띄운곳은 영문으로<br>\n 되어있는것처럼요.)<br>\n<br>\n 근제.. 문제는 xp에서는 처음 설치시 기본 옵션으로 그 키보드 전환키가 설정되지 않았으니...<br>\n 위에 관련된 원인은 아닌것 같군요 -_-;<br>\n<br>\n 그냥 이런경우도 있다는 헛소리 였습니다. -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 그 문제 때문에 겜마님과 상의도 해봤는데<br>\n 결론은 창모드로 플레이 하는 방법밖에 없다 였습니다.<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191429",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18045",
+  "sourceEngine": "zeroboard"
+}

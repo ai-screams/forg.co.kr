@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "346",
+  "title": "클라이언트 패치 3.0.7b",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 저희는 2월 15일 오늘 클라이언트 패치를 단행합니다. 이 패치는 다음의 변경사항을<br>\n 담고있습니다:<br>\n<br>\n - 2D 클라이언트 -<br>\n 1. 일쉐나에서 NoDraw 타일문제를 해결했습니다. <br>\n 2. 빠져있는 지형 텍스춰문제가 해결되었습니다. <br>\n 3. 클라이언트 충돌 버그가 해결되었습니다. <br>\n<br>\n - 양쪽 클라이언트 -<br>\n 1. 지혜의 경전 (Codex of Wisdom)가 변경되었습니다: <br>\n a. 만일 검색 결과가 나오지 않으면 RightNow 웹페이지로 가는 링크를 담은 정보 페이지를 보게 될 것입니다.<br>\n b. 타이틀이 더이상 볼드 서체로 나타나지 않을 것입니다.&nbsp;&nbsp;<br>\n c. 관련된 토픽 타이틀을 클릭할 수 있습니다.&nbsp;&nbsp;<br>\n d. 아이템 리스트가 인덱스안에 +대신 [+]로 표시될 것입니다. <br>\n 2. 다양한 지역화 파일. <br>\n<br>\n 현재 버전은 2D와 3D 양쪽 모두 3.0.7b이 될것입니다.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저희는 2월 15일 오늘 클라이언트 패치를 단행합니다. 이 패치는 다음의 변경사항을 담고있습니다: - 2D 클라이언트 - 1. 일쉐나에서 NoDraw 타일문제를 해결했습니다. 2. 빠져있는 지형 텍스춰문제가 해결되었습니다. 3. 클라이언트 충돌 버그가 해결되었습니다. - 양쪽 클라이언트 - 1. 지혜의 경전 (Codex of Wisdom)가 변경되었습니다: a. 만일 검색 결과가 나오지 않으면 RightNow 웹페이지로 가는 링크를 담은 정보 페이지를 보게 될 것입니다. b. 타이틀이 더이상 볼드 서체로 나타나지 않을 것입니다. c. 관련된 토픽 타이틀을 클릭할 수 있습니다. d. 아이템 리스트가 인덱스안에 +대신 [+]로 표시될 것입니다. 2. 다양한 지역화 파일. 현재 버전은 2D와 3D 양쪽 모두 3.0.7b이 될것입니다.",
+  "author": "녕이",
+  "authorMemberNo": "2278",
+  "authorHomepage": null,
+  "createdAt": "2002-02-16T10:36:12",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190729",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=346",
+  "sourceEngine": "zeroboard"
+}

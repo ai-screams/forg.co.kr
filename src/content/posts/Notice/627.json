@@ -1,0 +1,26 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "627",
+  "title": "시나리오5 3주차 퀘스트에 관해서",
+  "bodyHtml": "\n<a href=\"data/matri.JPG\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"159\" src=\"data/matri.JPG\" width=\"193\"></a><br>\n     \t\t\t\n     \t\t\t Solen Matriarch」<br>\n &nbsp;&nbsp; 개미족장등장<br>\n<br>\n Matriarch는 여족장이라는 의미로 2주차의 여왕퀘스트와 마찬가지로 플레이어에게 새로운 퀘스트를 의뢰합니다.<br>\n<br>\n<br>\n<br>\n<br>\n [ Matriarch 퀘스트에 관해서 ]<br>\n<br>\n 오리진공식페이지 [FYI]에 의하면 시나리오5의 3주차부터 시작된 Solen Matriarch 로 부터 받는 퀘스트가 적절하게 작동하지 않는 부분이 있다고 합니다. 본래 Red Matriarch가 의뢰하는 퀘스트는 트라멜에 침입한 Black Solen Infiltrator(침입자)를 죽이는 것이고 Black Solen Matriarch의 의뢰는 펠루카에 침입한 Red Solen Infiltrator를 처치하는 것이었습니다. 그리고 이것은 테스트 샤드에서는 적절하게 작동되었지만 일반샤드에 도입되어서는 정상적으로 작동하지 않고 Black침입자가 펠루카에 Red침입자가 트라멜에 나타나고 있는것입니다.(서로 반대로 나타 나야 정상인데) 이러한 이유로 현재 트라멜에서 퀘스트를 받은 사람은 펠루카에서 , 펠루카에서 퀘스트를 받은 사람은 트라멜에서 수행하지 않으면 안되게 되었습니다. 물론 이방법으로도 퀘스트의 수행완료는 가능합니다. (트라멜이 없는 Siege Perilous 샤드에서는 수행불가능, 일반샤드의 빨갱이도 수행불가능) 이것은 다음주 시나리오5의 4주차가 도입될때 정상상태로 될예정입니다. 즉 다음주차 시나리오 퍼블전에는 Facet(T/F의 측면)를 이동하지않으면 퀘스트수행을 할수없다는 것을 명심하세요.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "Solen Matriarch」 개미족장등장 Matriarch는 여족장이라는 의미로 2주차의 여왕퀘스트와 마찬가지로 플레이어에게 새로운 퀘스트를 의뢰합니다. [ Matriarch 퀘스트에 관해서 ] 오리진공식페이지 [FYI]에 의하면 시나리오5의 3주차부터 시작된 Solen Matriarch 로 부터 받는 퀘스트가 적절하게 작동하지 않는 부분이 있다고 합니다. 본래 Red Matriarch가 의뢰하는 퀘스트는 트라멜에 침입한 Black Solen Infiltrator(침입자)를 죽이는 것이고 Black Solen Matriarch의 의뢰는 펠루카에 침입한 Red Solen Infiltrator를 처치하는 것이었습니다. 그리고 이것은 테스트 샤드에서는 적절하게 작동되었지만 일반샤드에 도입되어서는 정상적으로 작동하지 않고 Black침입자가 펠루카에 Red침입자가 트라멜에 나타나고 있는것입니다.(서로 반대로 나타 나야 정상인데) 이러한 이유로 현재 트라멜에서 퀘스트를 받은 사람은 펠루카에서 , 펠루카에서 퀘스트를 받은 사람은 트라멜에서 수행하지 않으면 안되게 되었습니다. 물론 이방법으로도 퀘스트의 수행완료는 가능합니다. (트라멜이 없는 Siege Perilous 샤드에서는 수행불가능, 일반샤드의 빨갱이도 수행불가능) 이것은 다음주 시나리오5의 4주차가 도입될때 정상상태로 될예정입니다. 즉 다음주차 시나리오 퍼블전에는 Facet(T/F의 측면)를 이동하지않으면 퀘스트수행을 할수없다는 것을 명심하세요.",
+  "author": "HoHo",
+  "authorMemberNo": "11455",
+  "authorHomepage": null,
+  "createdAt": "2002-10-04T19:39:57",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "matri.JPG",
+      "fileNum": 1,
+      "sizeBytes": 44032
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190832",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=627",
+  "sourceEngine": "zeroboard"
+}

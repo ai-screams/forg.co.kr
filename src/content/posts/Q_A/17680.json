@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17680",
+  "title": "(울온외질문)인터넷 관련-_-;;",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 일단 울온외 질문 드려 죄송하구요.(_ _)<br>\n 웹 메일에서 사용하는 메일 클라이언트 프로그램이 뭔지 잘 몰라서-_-;;<br>\n 학교에서 찾아서 적으라는 영...-_-;;<br>\n 혹시 아시는분 계시다면 답변좀...ㅠ_-<br>\n 아..그리고 숨은 참조와 참조의 차이가 뭔지도 갈켜 주신다면 감사하겠습니다.<br>\n 그럼 (_ _)<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "일단 울온외 질문 드려 죄송하구요.(_ _) 웹 메일에서 사용하는 메일 클라이언트 프로그램이 뭔지 잘 몰라서-_-;; 학교에서 찾아서 적으라는 영...-_-;; 혹시 아시는분 계시다면 답변좀...ㅠ_- 아..그리고 숨은 참조와 참조의 차이가 뭔지도 갈켜 주신다면 감사하겠습니다. 그럼 (_ _)",
+  "author": "asasmm",
+  "authorMemberNo": "15433",
+  "authorHomepage": null,
+  "createdAt": "2003-04-01T10:05:08",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 학내메일이신 모양이죠?<br>\n 학내메일에는 그학교의 메일서버가 있어요. 그걸 말하는 모양이네요.<br>\n 받는서버유형은 POP3를 이용하구요<br>\n 받는메일(POP3)에 그학교 특유의 서버명을 적으셔야해요.<br>\n   (ex: hangul.univeristy.co.kr)<br>\n 보내는메일(SMTP) 역시 그학교의 서버명을 적으세요.<br>\n 님이 의도하신게 이게 맞는지 몰르겠군요.<br>\n 그리고 숨은참조와 참조는 몰르겠어요 거의 안써서리..<br>\n 부디 도움이 되셨길.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 웹메일... 클라이언트요?!<br>\n 웹메일은 '웹브라우저'로 사용하는 건데 클라이언트라니요?! @_@<br>\n HTML에서 의사소통을 하려면 CGI를 이용해야 겠지요? (보통...)<br>\n 그놈이 정체가 아닐까 싶네요. (억지로 클라이언트를 꼽아라! ...하신다면 저는 먼저 익스플로러... 를 꼽고 싶네요. 뭐, 하얀편지라는 놈이 웹메일도 확인할 수 있다지만...)<br>\n<br>\n 웹메일 서버의 경우는 아주 많지요...<br>\n 거금을 들여아하는 시스템에서 무료로 사용할 수 있는 시스템까지...<br>\n<br>\n 숨은 참조(BCC)는 참조(CC)와는 달리 이메일에서 다른 사람 메일 주소를 적으면 그 사람에게도 한부가 사본이 가지만 수신인, 참조인, 숨은참조인 모두의 메일 화면에 그사람 메일 주소가 나오지 않지요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191312",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17680",
+  "sourceEngine": "zeroboard"
+}

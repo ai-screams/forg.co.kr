@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "16571",
+  "title": "둠 던전에 나오는 레어에 대해 질문 드리겠습니다...",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 귀찮더라도 답변을 좀 해주세요...<br>\n 레어 아이템이 나온다는곳을 가봤는데 원래 집을수 있는 아이템은 노란색으로 변하잖아요... 보니까 집을수 있는 아이템이 하나두 없더군요... 누가 집어간 상태인가요? 그리고 노랗게 색이변한 상태에서 스틸링을 시도 하면 아이템을 집어 갈수 있는지 궁금합니다...<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "귀찮더라도 답변을 좀 해주세요... 레어 아이템이 나온다는곳을 가봤는데 원래 집을수 있는 아이템은 노란색으로 변하잖아요... 보니까 집을수 있는 아이템이 하나두 없더군요... 누가 집어간 상태인가요? 그리고 노랗게 색이변한 상태에서 스틸링을 시도 하면 아이템을 집어 갈수 있는지 궁금합니다...",
+  "author": "hasi12",
+  "authorMemberNo": "14650",
+  "authorHomepage": null,
+  "createdAt": "2003-02-25T01:31:20",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 현재 둠던젼에 나오는 레어는 아이템을 클릭했을때 <br>\n 아이템 이름과 Artifact Rarity 숫자가 나타나야 스틸링 기술을 사용해서 얻을수 있습니다. <br>\n 집을수 있는 상태가 아닌 고정상태로 되어 있는 것만 남았다면 <br>\n 이미 다른 사람이 가져간 상태라고 보시면 됩니다.<br>\n 레어마다 출현하는 시간이 다르고 플레이어들의 인기가 많은 만큼 <br>\n 던젼 들어가자마자 아이템을 얻기는 힘들겠죠? <br>\n 정기적으로 순찰(?) 하셔서 아이템 나오는 시간을 알아두셔야 할껍니다. <br>\n 참고로 책이나 해골초 등 Artifact Rarity 1에 해당되는 물건은 15분에서 1시간마다 출현한다는 소문이 있으니 확인해 보세요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 1~3까지가 15분에서 1시간사이 출현한다구하데여?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191215",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=16571",
+  "sourceEngine": "zeroboard"
+}

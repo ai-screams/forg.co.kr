@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "826",
+  "title": "샤드 내부 업데이트로 여러가지 문제해결",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">샤드의 내부적인 업데이트로 아래와 같은 문제점들이 해결되었습니다. <br>잦은 샤드 다운문제 해결 <br>상자, 룬북, 마법책과 관련된 문제 수정 <br>여러가지 불안정했던 문제 해결 <br>캐릭터 접속시 Connecting lost라고 나오는 문제 해결 <br>더이상 맞춤 설정한 집의 문에 문제가 발생하지 않음 <br>집의 소유권을 넘긴 집의 전주인이 더이상 고정보관한 아이템이나 잠금보관한 아이템에 접근할수 없음 <br>일반적인 아이템들(문, 간판, 아이템등등)이 더이상 집에서 추방되지 않음 <br><br><br>출처 : <a href=\"http://www.uolbr.co.kr/\">http://www.uolbr.co.kr/</a></td></tr></tbody></table>\n",
+  "bodyText": "샤드의 내부적인 업데이트로 아래와 같은 문제점들이 해결되었습니다. 잦은 샤드 다운문제 해결 상자, 룬북, 마법책과 관련된 문제 수정 여러가지 불안정했던 문제 해결 캐릭터 접속시 Connecting lost라고 나오는 문제 해결 더이상 맞춤 설정한 집의 문에 문제가 발생하지 않음 집의 소유권을 넘긴 집의 전주인이 더이상 고정보관한 아이템이나 잠금보관한 아이템에 접근할수 없음 일반적인 아이템들(문, 간판, 아이템등등)이 더이상 집에서 추방되지 않음 출처 : http://www.uolbr.co.kr/",
+  "author": "주니",
+  "authorMemberNo": "15378",
+  "authorHomepage": null,
+  "createdAt": "2003-03-06T15:59:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190924",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=826",
+  "sourceEngine": "zeroboard"
+}

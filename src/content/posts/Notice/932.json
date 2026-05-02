@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "932",
+  "title": "Hanse Talks About Ancient Smithy Hammers",
+  "bodyHtml": "\n<blockquote><span class=\"osi\">I'm currently researching a fix for an issue with ancient smithy hammers. If you'd like to give some feedback, please let me know in this thread. <br><br>Design: <br>Ancient smithy hammers (ASH's) are designed to allow you to craft high-end smith items with a lower chance to fail, thus taking up less resources. The hammer is not intended to be a replacement for a powerscroll. If you craft with the hammer, it should take a charge off the hammer until it is out of charges. <br><br>To get the blacksmith skill bonus, you must have the ASH equipped. <br><br>If you use a runic hammer from your backpack, it should take a charge from both the runic hammer and the ancient smithy hammer. This is to avoid having an infinite use ancient smithy hammer. <br><br>If you use a normal hammer from your backpack, it should state that you have a hammer equipped and not allow you to craft with it. Use the ancient smithy hammer instead to craft while it is equipped. <br><br>That's it!</span></blockquote>",
+  "bodyText": "I'm currently researching a fix for an issue with ancient smithy hammers. If you'd like to give some feedback, please let me know in this thread. Design: Ancient smithy hammers (ASH's) are designed to allow you to craft high-end smith items with a lower chance to fail, thus taking up less resources. The hammer is not intended to be a replacement for a powerscroll. If you craft with the hammer, it should take a charge off the hammer until it is out of charges. To get the blacksmith skill bonus, you must have the ASH equipped. If you use a runic hammer from your backpack, it should take a charge from both the runic hammer and the ancient smithy hammer. This is to avoid having an infinite use ancient smithy hammer. If you use a normal hammer from your backpack, it should state that you have a hammer equipped and not allow you to craft with it. Use the ancient smithy hammer instead to craft while it is equipped. That's it!",
+  "author": "Pinky",
+  "authorMemberNo": "14545",
+  "authorHomepage": "http://www.yourturn.co.kr",
+  "createdAt": "2003-09-24T19:51:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190955",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=932",
+  "sourceEngine": "zeroboard"
+}

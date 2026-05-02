@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15821",
+  "title": "이지유오로 메졀 올리려는데...",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 에세이란에 스크립 복사해서 실행했는데여<br>\n 캐스트스펠 어쩌구 그래서&nbsp;&nbsp;확인 누르고 어쓰외웠는데<br>\n 어쓰 나간담에 아무 반응이 없네여--;;<br>\n 국가별설정 영어루 했는디... 어메 어찌댄건지 아시는분?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "에세이란에 스크립 복사해서 실행했는데여 캐스트스펠 어쩌구 그래서  확인 누르고 어쓰외웠는데 어쓰 나간담에 아무 반응이 없네여--;; 국가별설정 영어루 했는디... 어메 어찌댄건지 아시는분?",
+  "author": "레온하트",
+  "authorMemberNo": "15319",
+  "authorHomepage": null,
+  "createdAt": "2003-02-14T03:32:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 현재의 easyuo는 제작자가 말했다시피 여러가지<br>\n 문제가 있는 것 같습니다. 대표적으로 어스퀘익의<br>\n event 번호가 맞지 않죠. event macro a b의 형태인테<br>\n b에 해당하는 번호를 하나 올려워야 아마 발동할 겁니다.<br>\n 그리고 finditem 에서 #findx와 #findy에 문제가 있더<br>\n 군요. 제 경우는 올바르게 좌표가 나오지 않아서<br>\n x좌표는 +20, y좌표는 +10하여 조정했습니다.<br>\n 예전처럼 완전하게 작동하기 전에는 조금 힘들지<br>\n 않을까 합니다..<br>\n<br>\n p.s 멀티클라이언트가 2개만 뜨는것도 불편하군요 -0-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191115",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15821",
+  "sourceEngine": "zeroboard"
+}

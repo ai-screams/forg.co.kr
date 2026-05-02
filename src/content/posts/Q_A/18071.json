@@ -1,0 +1,51 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18071",
+  "title": "[울온외] 하드 점퍼",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 거의 4~5년만에 내손으로 컴터에 뭔가를 새로 추가하게 됐네요.<br>\n E-IDE 컨넥터에 지금<br>\n<br>\n Primary Master에 하드(부팅하드)<br>\n Primary Slave에 씨디<br>\n<br>\n 이렇게 달려있는데 하드하나를 추가 할라고 하걸랑요.<br>\n Secondary Master로 잡힐텐데 그러면 하드 점퍼는<br>\n 마스터인지 슬레이브인지.... 예전 기억엔 부팅하드가<br>\n 아니면 무조건 슬레이브였던거 같은데 가물가물...<br>\n 하드는 둘다 삼성 60G. 잘 아는분 답 부탁해요.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "거의 4~5년만에 내손으로 컴터에 뭔가를 새로 추가하게 됐네요. E-IDE 컨넥터에 지금 Primary Master에 하드(부팅하드) Primary Slave에 씨디 이렇게 달려있는데 하드하나를 추가 할라고 하걸랑요. Secondary Master로 잡힐텐데 그러면 하드 점퍼는 마스터인지 슬레이브인지.... 예전 기억엔 부팅하드가 아니면 무조건 슬레이브였던거 같은데 가물가물... 하드는 둘다 삼성 60G. 잘 아는분 답 부탁해요.",
+  "author": "신하균",
+  "authorMemberNo": "20416",
+  "authorHomepage": null,
+  "createdAt": "2003-04-17T12:08:23",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음.. CD-ROM drive를 sec master로 바꾸시고 하드디스크를 pri slave로 설치하시면 될거 같습니다.<br>\n 물론 하드를 sec master로 다셔도 되구여..<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ide 하나에 시디롬과 하드를 같이 달아 놓으면 동기화 클럭 문제로 하드가 좀 느려딘다고<br>\n 들은적이있는데....   사실인지는 확인 못해봤고.....   차이가 그렇게 크지는 않다고 생각합니다만<br>\n 저는 프라이머리에 시디롬 사용 안한답니다.<br>\n 그리고 60기가면 고배속 지원할텐데 지금 쓰시는 케이블인 40핀인가요?  80핀인가요???<br>\n 케이블만 바꿔 주면 100클럭 이상 사용 가능한 것도<br>\n 케이블 안 바꿔줘서 66클럭으로 사용하는 경우가 있습니다.<br>\n 참고가 되셨으면 좋겠네요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 호곡. 그냥 점퍼만 물어본건데... ^^<br>\n 암든 하드든 씨디든 세컨더리 마스터에 꽂으려면 <br>\n 점퍼는 마스터? 슬레이브?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 점퍼는 초기치가 마스터로 되잇어요<br>\n<br>\n 새컨에 하나만 달거면 점퍼는 별 문제가 업구요 <br>\n<br>\n 다른 하드나 시디 달때 변경 해 주어야 되죠<br>\n<br>\n 점퍼는 하드 전면에 그림으루 되잇구요  잘 보시면 알수 잇죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ^^<br>\n 마스터에 꽃으셔야 합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191436",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18071",
+  "sourceEngine": "zeroboard"
+}

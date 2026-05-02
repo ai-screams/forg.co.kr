@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "370",
+  "title": "홈피 개편 후 로그인이 안되시는분들은...",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 메인 맨 상단 ?의 아이콘을 눌러서 확인해주시길 바랍니다.<br>\n<br>\n 해당사항이 없는데도 안되시는분들은 기존홈과 충돌이 있어서<br>\n 생기는 문제인것 같습니다.<br>\n<br>\n 익스플로워창 상단 도구-인터넷옵션에서<br>\n 임시인터넷파일삭제와-쿠키삭제를 해주시고 창을 닫은 후<br>\n 다시 들어오시길 바랍니다.<br>\n 그래도 안되시는분들은<a href=\"mailto:forg@hananet.net\">forg@hananet.net</a>으로 멜주시면 좋겠습니다.<br>\n<br>\n p.s : 윈도우버젼과,익스플로워버젼을 함께 써주시길.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "메인 맨 상단 ?의 아이콘을 눌러서 확인해주시길 바랍니다. 해당사항이 없는데도 안되시는분들은 기존홈과 충돌이 있어서 생기는 문제인것 같습니다. 익스플로워창 상단 도구-인터넷옵션에서 임시인터넷파일삭제와-쿠키삭제를 해주시고 창을 닫은 후 다시 들어오시길 바랍니다. 그래도 안되시는분들은 forg@hananet.net 으로 멜주시면 좋겠습니다. p.s : 윈도우버젼과,익스플로워버젼을 함께 써주시길.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-03-10T11:57:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190734",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=370",
+  "sourceEngine": "zeroboard"
+}

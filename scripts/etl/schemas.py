@@ -1,0 +1,66 @@
+"""Pydantic models for parsed forg.co.kr posts.
+
+These mirror the TypeScript interfaces in `src/types/post.ts` 1:1.
+When changing the schema, update both files together — the React build
+expects the Python parser's JSON output to match the TS types exactly.
+"""
+
+from __future__ import annotations
+
+from datetime import datetime
+from typing import Literal
+
+from pydantic import BaseModel, ConfigDict, Field
+
+PostEra = Literal["2003", "2014"]
+SourceEngine = Literal["zeroboard", "gnuboard4", "gnuboard5"]
+
+
+class Attachment(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    name: str
+    fileNum: int
+    sizeBytes: int | None = None
+
+
+class Comment(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    author: str = Field(min_length=1)
+    authorMemberNo: str | None = None
+    createdAt: datetime
+    bodyHtml: str
+
+
+class Post(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    # Identity
+    board: str = Field(min_length=1)
+    boardKr: str
+    postId: str = Field(min_length=1)
+
+    # Content
+    title: str = Field(min_length=1)
+    bodyHtml: str
+    bodyText: str = Field(min_length=1)
+
+    # Meta
+    author: str = Field(min_length=1)
+    authorMemberNo: str | None = None
+    authorHomepage: str | None = None
+    createdAt: datetime
+
+    hits: int | None = None
+    recommend: int | None = None
+
+    # Children
+    attachments: list[Attachment] = Field(default_factory=list)
+    comments: list[Comment] = Field(default_factory=list)
+
+    # Provenance
+    era: PostEra
+    capturedAt: str
+    originalUrl: str
+    sourceEngine: SourceEngine

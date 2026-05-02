@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "249",
+  "title": "클라이언트 패치 3.0.6f 에 대해",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 몇몇 플레이어가 캐쉬 문제때문에 2D 클라이언트를 켜는데 문제가 발생하고<br>\n 있었습니다. 저희가 방금 적용한 패치는 이 문제를 해결한 것이며 또한 마우스<br>\n 작동이 제대로 되지 않던것 (아이템을 드래깅할때 가장 확연히 드러났을<br>\n 것입니다.)을 해결했습니다.<br>\n<br>\n 저희는 저희가 할수있는한 이전의 3.0.6 e 패치에 대한 다른 문제점을 <br>\n 해결하도록 하겠습니다. 예를 들어 \"기린 문제\" 역시 곧 해결될것입니다. <br>\n<br>\n 디자이너 Tim<br>\n<br>\n &lt;주: 이것은 공식 FYI에 올라온 공지이전에 UO Board에 개발진이 올린 공지<br>\n 입니다. 공식적인 사항은 추후에 다시 공지될것입니다&gt;<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "몇몇 플레이어가 캐쉬 문제때문에 2D 클라이언트를 켜는데 문제가 발생하고 있었습니다. 저희가 방금 적용한 패치는 이 문제를 해결한 것이며 또한 마우스 작동이 제대로 되지 않던것 (아이템을 드래깅할때 가장 확연히 드러났을 것입니다.)을 해결했습니다. 저희는 저희가 할수있는한 이전의 3.0.6 e 패치에 대한 다른 문제점을 해결하도록 하겠습니다. 예를 들어 \"기린 문제\" 역시 곧 해결될것입니다. 디자이너 Tim <주: 이것은 공식 FYI에 올라온 공지이전에 UO Board에 개발진이 올린 공지 입니다. 공식적인 사항은 추후에 다시 공지될것입니다>",
+  "author": "녕이",
+  "authorMemberNo": "2278",
+  "authorHomepage": null,
+  "createdAt": "2001-12-20T14:26:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190707",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=249",
+  "sourceEngine": "zeroboard"
+}

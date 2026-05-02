@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "16766",
+  "title": "네크로 스킬을 올리는데",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 배를 타고 네크로스킬을 올리는데<br>\n 위더를 쓰면<br>\n 배가 움직이다가도<br>\n 위더가 성공하면 배가 멈춰버리네요<br>\n 어떻게 하면 이런 현상을 없앨 수 있는지 아시는분 -ㅁ-<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br><br>\n<font color=\"5685ff\">오래도록 만든 것도 부수는데는 순식간이지</font> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "배를 타고 네크로스킬을 올리는데 위더를 쓰면 배가 움직이다가도 위더가 성공하면 배가 멈춰버리네요 어떻게 하면 이런 현상을 없앨 수 있는지 아시는분 -ㅁ- 오래도록 만든 것도 부수는데는 순식간이지",
+  "author": "滅致{キㅡ-}",
+  "authorMemberNo": "14730",
+  "authorHomepage": null,
+  "createdAt": "2003-02-28T20:45:17",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 해결했습니다.<br>\n 캐릭의 위치가 문제였군요.<br>\n 캐릭을 배의 키잡이(배 조종하는넘) 바로 옆에 붙여놓으면 됩니다.<br>\n 약간 떨어져서 위더가 성공하면 배가 멈춰버리고<br>\n 붙어있으면 상관없군요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191245",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=16766",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "922",
+  "title": "클라이언트 패치 4.0.0p (한글판-_-)",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">아래와 같은 변경 내용을 포함한 클라이언트를 8월 29일 목요일에 적용하였습니다. <br><br><br>2D 클라이언트 적용사항 <br><br>부분적인 인스톨을 받은 분들은 Pulish 21 이후 더이상 부분적 인스톨이 지원되지 않는다는 메세지를 받게 된다는 사실을 확인하시기 바랍니다. <br><br><br>3D 클라이언트 적용사항 <br><br>\"영구적인 어둠\" 과 관련된 문제가 해결됩니다! <br><br>게임상의 그래픽 부분에서 검은 외곽선이 보이는 문제와 글씨가 일그러져 보이는 문제가 해결 되었습니다. 따라서 확대모드에서도 그래픽이 선명하게 보이게 됩니다. 이번 수정으로 보다 좋은 시각적 효과를 경험할 수 있게 되었습니다. 가능한 빠른 시일내에 이 부분과 관련된 추가 수정내용이 적용될 것입니다. <br><br>몇몇 틀안에 들어간 글 관련 문제가 수정됩니다. <br><br><br>2D, 3D 공통적용 사항 <br><br>새로운 UO 패치 소프트웨어를 기념해서, 웹사이트로 바로 연결될 수 있는 메세지가 표시 가능해 졌습니다! <br><br>- 새로운 HTML 패처에 대한 정보는 <a href=\"http://update.uo.com/design_473.html\">http://update.uo.com/design_473.html</a> 에서 확인할 수 있습니다. <br><br>- 새로운 패치 메세지는 <a href=\"http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU\">http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU</a> 에서 확인할 수 있습니다. <br><br>개선된 게임 마스터 메세지 시스템으로 플레이어와의 의사 소통이 보다 원활하게 되었습니다. <br><br>-보다 자세한 내용은 <a href=\"http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU\">http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU</a> 에서 확인하시기 바랍니다. <br><br>울티마 온라인 실행파일을 클릭할때 이미 실행중이라는 잘못된 메세지가 표시되던 문제가 해결되었습니다. <br><br>샤드 선택란에 나타나는 핑이 보다 정확하게 표시되도록 수정 되었습니다. <br><br>밴더 시스템을 보다 확장시키는 게시판이 업데이트 되었습니다. <br><br>- 밴더 개선에 대한 보다 자세한 내용은 <a href=\"http://update.uo.com/design_439.html\">http://update.uo.com/design_439.html</a> 에서 확인하시기 바랍니다. <br><br>번역파일이 추가되었습니다. <br><br><br>패치 후 정상적인 2D/3D 클라이언트 버전은 4.0.0p 입니다. <br><br>UO 개발팀과 웹팀의 노력으로 보다 생동감 있는 패치 메세지를 받게 되었습니다.<br><br>출처 : <a href=\"http://www.uolbr.co.kr/\">http://www.uolbr.co.kr/</a> </td></tr></tbody></table>\n",
+  "bodyText": "아래와 같은 변경 내용을 포함한 클라이언트를 8월 29일 목요일에 적용하였습니다. 2D 클라이언트 적용사항 부분적인 인스톨을 받은 분들은 Pulish 21 이후 더이상 부분적 인스톨이 지원되지 않는다는 메세지를 받게 된다는 사실을 확인하시기 바랍니다. 3D 클라이언트 적용사항 \"영구적인 어둠\" 과 관련된 문제가 해결됩니다! 게임상의 그래픽 부분에서 검은 외곽선이 보이는 문제와 글씨가 일그러져 보이는 문제가 해결 되었습니다. 따라서 확대모드에서도 그래픽이 선명하게 보이게 됩니다. 이번 수정으로 보다 좋은 시각적 효과를 경험할 수 있게 되었습니다. 가능한 빠른 시일내에 이 부분과 관련된 추가 수정내용이 적용될 것입니다. 몇몇 틀안에 들어간 글 관련 문제가 수정됩니다. 2D, 3D 공통적용 사항 새로운 UO 패치 소프트웨어를 기념해서, 웹사이트로 바로 연결될 수 있는 메세지가 표시 가능해 졌습니다! - 새로운 HTML 패처에 대한 정보는 http://update.uo.com/design_473.html 에서 확인할 수 있습니다. - 새로운 패치 메세지는 http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU 에서 확인할 수 있습니다. 개선된 게임 마스터 메세지 시스템으로 플레이어와의 의사 소통이 보다 원활하게 되었습니다. -보다 자세한 내용은 http://patch.uo.com/cgi-bin/patchmsg.pl?lang=ENU 에서 확인하시기 바랍니다. 울티마 온라인 실행파일을 클릭할때 이미 실행중이라는 잘못된 메세지가 표시되던 문제가 해결되었습니다. 샤드 선택란에 나타나는 핑이 보다 정확하게 표시되도록 수정 되었습니다. 밴더 시스템을 보다 확장시키는 게시판이 업데이트 되었습니다. - 밴더 개선에 대한 보다 자세한 내용은 http://update.uo.com/design_439.html 에서 확인하시기 바랍니다. 번역파일이 추가되었습니다. 패치 후 정상적인 2D/3D 클라이언트 버전은 4.0.0p 입니다. UO 개발팀과 웹팀의 노력으로 보다 생동감 있는 패치 메세지를 받게 되었습니다. 출처 : http://www.uolbr.co.kr/",
+  "author": "주니",
+  "authorMemberNo": "15378",
+  "authorHomepage": null,
+  "createdAt": "2003-08-29T23:06:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190951",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=922",
+  "sourceEngine": "zeroboard"
+}

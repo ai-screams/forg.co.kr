@@ -1,0 +1,38 @@
+{
+  "board": "Items",
+  "boardKr": "Items",
+  "postId": "1",
+  "title": "둠파더용 시미터와 특수기용 유미활",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Items/무기0002.jpg\" style=\"cursor:hand\"><br>\n<img border=\"0\" src=\"data/Items/무기0001.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  아템스샷란에 아무것도 없으니 허전해서 이거라도 올려서 빈칸을 채웁니다.</td></tr></tbody></table>\n",
+  "bodyText": "아템스샷란에 아무것도 없으니 허전해서 이거라도 올려서 빈칸을 채웁니다.",
+  "author": "happymetal",
+  "authorMemberNo": "26",
+  "authorHomepage": null,
+  "createdAt": "2005-06-14T17:14:42",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "무기0002.jpg",
+      "fileNum": 1,
+      "sizeBytes": 50790
+    },
+    {
+      "name": "무기0001.jpg",
+      "fileNum": 2,
+      "sizeBytes": 83456
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "앗 등급 매기는게 없어졌다-ㅁ-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190525",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Items&no=1",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,26 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "1068",
+  "title": "큰 물고기 트로피",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Notice/lb_fishtrophy.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"><br>\n이런식으로 낚시꾼의 이름과 물고기의 무게가 새겨지는군요.</td></tr></tbody></table>\n",
+  "bodyText": "이런식으로 낚시꾼의 이름과 물고기의 무게가 새겨지는군요.",
+  "author": "Sky",
+  "authorMemberNo": "27419",
+  "authorHomepage": null,
+  "createdAt": "2004-11-20T08:48:50",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "lb_fishtrophy.jpg",
+      "fileNum": 1,
+      "sizeBytes": 58982
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190634",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=1068",
+  "sourceEngine": "zeroboard"
+}

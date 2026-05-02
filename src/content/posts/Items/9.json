@@ -1,0 +1,68 @@
+{
+  "board": "Items",
+  "boardKr": "Items",
+  "postId": "9",
+  "title": "어느것이 더 좋은가요",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Items/Image1.jpg\" style=\"cursor:hand\"><br>\n<img border=\"0\" src=\"data/Items/Image2.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  -.-a</td></tr></tbody></table>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td bgcolor=\"#D6D3BD\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> 1000만GP </td></tr><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> 500만GP </td></tr><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> 100만GP </td></tr><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> 50만GP </td></tr><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> 10만GP </td></tr><tr><td bgcolor=\"#FFFFEF\" width=\"20\"> </td><td bgcolor=\"#FFFFEF\" width=\"626\"> Trash Barrel </td></tr> <tr>\n<td align=\"center\" colspan=\"2\">\n\n</td>\n</tr>\n</tbody></table>\n</td>\n</tr>\n</tbody></table>\n\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td bgcolor=\"#D6D3BD\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td bgcolor=\"#FFFFFF\">1000만GP<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"160\"></td><td bgcolor=\"#e0e0e0\" width=\"240\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>40%</b>(2)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table>500만GP<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"0\"></td><td bgcolor=\"#e0e0e0\" width=\"400\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>0%</b>(0)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table>100만GP<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"80\"></td><td bgcolor=\"#e0e0e0\" width=\"320\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>20%</b>(1)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table>50만GP<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"0\"></td><td bgcolor=\"#e0e0e0\" width=\"400\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>0%</b>(0)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table>10만GP<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"80\"></td><td bgcolor=\"#e0e0e0\" width=\"320\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>20%</b>(1)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table>Trash Barrel<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td width=\"400\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr><td height=\"12\" width=\"80\"></td><td bgcolor=\"#e0e0e0\" width=\"320\"></td></tr></tbody></table></td><td style=\"padding-left:5px\"> <font style=\"font-family:Verdana;font-size:11px;\"><b>20%</b>(1)</font></td></tr><tr><td colspan=\"2\" height=\"5\"></td></tr></tbody></table></td>\n</tr>\n</tbody></table>\n</td>\n</tr>\n</tbody></table>\n",
+  "bodyText": "-.-a 1000만GP 500만GP 100만GP 50만GP 10만GP Trash Barrel 1000만GP 40% (2) 500만GP 0% (0) 100만GP 20% (1) 50만GP 0% (0) 10만GP 20% (1) Trash Barrel 20% (1)",
+  "author": "sweetjean",
+  "authorMemberNo": "21",
+  "authorHomepage": null,
+  "createdAt": "2005-06-16T17:55:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "Image1.jpg",
+      "fileNum": 1,
+      "sizeBytes": 33894
+    },
+    {
+      "name": "Image2.jpg",
+      "fileNum": 2,
+      "sizeBytes": 30617
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음 둘다좋은데 팔라전사가 쓰기엔 위에께더좋은듯? \n<br>\n<br>개인적으로 저같으면 아래꺼씀 ㅎㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "... 평가란의 메세지가 더 잔혹해졌군요.\n<br>\"다음에 올려주세요\" 가 아니라 곧장 쓰레기통행..ㅡㅡ;;\n<br>\n<br>핵전쟁 이후 파괴된 포그홈월드의 각박한 세태여.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1번"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1번좋네요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "-0- 전2번 피증50이면 ㅡ,.ㅡ부시도전사에게;;;;;;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1번이 좋네용 허지만.... 100만지피는 과분한듯..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190617",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Items&no=9",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "547",
+  "title": "현재 계정편집 문제가 생기시는분은 필독하시길 바랍니다.",
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 현재 계정 웹페이지에서 Edit account를 누르시고, 계정이름과 패스워드를 입력하면 \"Session Expired\"라는 에러메시지가 나오며 계정편집을 하실수 없는 문제가 발생하고 있습니다. <br>\n 이 경우, 에러메시지 후 나오는 'next'을 누르신후 다시한번 \"edit account\"버튼을 눌러서 접속 시도 하시면 영문 상태로 정상적으로 접속 되오니 참고하여 주시기 바랍니다. <br>\n<br>\n 또한 위의 문제는 현재 해결중에 있으며, 이로인해 불편 드린점 사과드립니다.<br>\n<br>\n 출처 : EA KOREA <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "현재 계정 웹페이지에서 Edit account를 누르시고, 계정이름과 패스워드를 입력하면 \"Session Expired\"라는 에러메시지가 나오며 계정편집을 하실수 없는 문제가 발생하고 있습니다. 이 경우, 에러메시지 후 나오는 'next'을 누르신후 다시한번 \"edit account\"버튼을 눌러서 접속 시도 하시면 영문 상태로 정상적으로 접속 되오니 참고하여 주시기 바랍니다. 또한 위의 문제는 현재 해결중에 있으며, 이로인해 불편 드린점 사과드립니다. 출처 : EA KOREA",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-07-23T21:58:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190812",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=547",
+  "sourceEngine": "zeroboard"
+}

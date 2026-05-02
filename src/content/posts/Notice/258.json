@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "258",
+  "title": "2D 클라이언트 패치(3.0.6 h)",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 저희는 오늘 2D 클라이언트를 적용하려 합니다. 이것은 상태바와 관련된<br>\n 문제를 해결했으며 아래의 변경을 포함하고 있습니다. : <br>\n<br>\n 플레이어들은 한번에 한 스크린 화면에 10개의 상태바만을 놓을 수 있습니다.<br>\n 이에는 플레이어의 발아래에 나타나는 작은 푸른 헬쓰 바를 포함하며, <br>\n 타겟된 생물체의 헬쓰바도 포함됩니다. <br>\n<br>\n 현재 버전은 2D 클라이언트에서는 3.0.6h가 되어야 합니다. 3D 클라이언트<br>\n 버젼은 똑같으며 3.0.6g가 됩니다. <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저희는 오늘 2D 클라이언트를 적용하려 합니다. 이것은 상태바와 관련된 문제를 해결했으며 아래의 변경을 포함하고 있습니다. : 플레이어들은 한번에 한 스크린 화면에 10개의 상태바만을 놓을 수 있습니다. 이에는 플레이어의 발아래에 나타나는 작은 푸른 헬쓰 바를 포함하며, 타겟된 생물체의 헬쓰바도 포함됩니다. 현재 버전은 2D 클라이언트에서는 3.0.6h가 되어야 합니다. 3D 클라이언트 버젼은 똑같으며 3.0.6g가 됩니다.",
+  "author": "녕이",
+  "authorMemberNo": "2278",
+  "authorHomepage": null,
+  "createdAt": "2001-12-22T07:57:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190709",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=258",
+  "sourceEngine": "zeroboard"
+}

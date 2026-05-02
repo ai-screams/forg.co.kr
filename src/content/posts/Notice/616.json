@@ -1,0 +1,31 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "616",
+  "title": "케익 20종류+Up!의 이미지입니다.",
+  "bodyHtml": "\n<a href=\"data/cake_1.png\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"60\" src=\"data/cake_1.png\" width=\"150\"></a><br>\n<a href=\"data/cake_2.png\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"60\" src=\"data/cake_2.png\" width=\"150\"></a><br>\n<p><br>\n 추가로 새로운게 있다면 올리겠습니다..<br>\n</p><p><br>\n 아래는 감자님의 도움으로 추가된 케익입니다만, 모니터의 해상도로 인해<br>\n 구별이 쉽지 않습니다........추후 재조정 하겠습니다-9-<img border=\"1\" src=\"http://forg.co.kr/quest/cake.png\"><br>\n<br>\n</p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "추가로 새로운게 있다면 올리겠습니다.. 아래는 감자님의 도움으로 추가된 케익입니다만, 모니터의 해상도로 인해 구별이 쉽지 않습니다........추후 재조정 하겠습니다-9-",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-09-27T12:34:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "cake_1.png",
+      "fileNum": 1,
+      "sizeBytes": 21606
+    },
+    {
+      "name": "cake_2.png",
+      "fileNum": 2,
+      "sizeBytes": 18534
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190830",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=616",
+  "sourceEngine": "zeroboard"
+}

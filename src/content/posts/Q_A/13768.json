@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "13768",
+  "title": "WIN2000에서 mIRC문제..ㅠㅠ",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 왜 mIRC좀만 사용하다보면 프로그램 추가 제거에 2개나 떠있죠? 하나만 인스톨했는데 왜 두개나 떠있는지.. 이것과 동시에 프로세스상에 explore.exe가 두개나 뜹니다. <br>\n<br>\n 왜이럴까요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "왜 mIRC좀만 사용하다보면 프로그램 추가 제거에 2개나 떠있죠? 하나만 인스톨했는데 왜 두개나 떠있는지.. 이것과 동시에 프로세스상에 explore.exe가 두개나 뜹니다. 왜이럴까요?",
+  "author": "Serenade",
+  "authorMemberNo": "0",
+  "authorHomepage": null,
+  "createdAt": "2002-12-15T17:27:01",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 내부 시스템의 문제라면 애기가 다를수 있지만 혹시 바이러스 체크는 해보셨나요?<br>\n 최근 m-irc를 통해서 바이러스 침투가 빈번합니다..저의 경우<br>\n<br>\n 안철수 연구소 게시판에도 최근 기승을 부리는 바이러스로 올라가있습니다.<br>\n<br>\n 체크해보면 explore.exe를 건드립니다(이름만 같은 엉뚱한 화일로 대체).<br>\n<br>\n 모든 문제를 바이러스에 연관 시키기도 뭐하지만 혹시나 해서요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191031",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=13768",
+  "sourceEngine": "zeroboard"
+}

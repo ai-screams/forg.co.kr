@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15538",
+  "title": "패치문제떄문에 그러는데요..",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 비번이 틀리다고 나와요<br>\n<br>\n 패치가 달라서 그런거 같은데 어떻게 패치 받죠?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "비번이 틀리다고 나와요 패치가 달라서 그런거 같은데 어떻게 패치 받죠?",
+  "author": "다르덩",
+  "authorMemberNo": "17404",
+  "authorHomepage": null,
+  "createdAt": "2003-02-08T06:14:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울티마 다시 깔고 패치 처음부터 새로 받으니까 되네요<br>\n 가장 편해요 그 방법이<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " irc 에서 새로나오버젼 클라이언트 보내달라고 하세요<br>\n<br>\n 아니면 #balhae 창에  [JD]Yuuji 찾아주세요 보내드릴게요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191033",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15538",
+  "sourceEngine": "zeroboard"
+}

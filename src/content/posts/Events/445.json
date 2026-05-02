@@ -1,0 +1,39 @@
+{
+  "board": "Events",
+  "boardKr": "Events",
+  "postId": "445",
+  "title": "ToReal Event #1 듀얼대회 경기장 사진입니다.",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/even02.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>&nbsp;이곳에서 경기가 펼쳐질겁니다.<br><br>&nbsp;2층이 관람석이며, <br><br>&nbsp;3층은 선수대기소입니다. <br><br>&nbsp;1층에서 경기가 이루어지고<br><br>&nbsp;경기 타일은 9*9입니다.&nbsp;<br><br>&nbsp;미리 한번 들러보시는것도 좋을거라 생각되며,&nbsp;<br>&nbsp;<br>&nbsp;구찌백화점 앞에다 룬을 락다운시켜두었으니 구경들하시고요,<br><br>&nbsp;이상한점을 말씀해주세요.. 지금은 다 오픈되었고,<br><br>&nbsp;경기날에는 시큐어로 다 문이 잠깁니다.<br><br>&nbsp;그럼..... 즐온들 하세요 </td></tr></tbody></table>\n",
+  "bodyText": "이곳에서 경기가 펼쳐질겁니다. 2층이 관람석이며, 3층은 선수대기소입니다. 1층에서 경기가 이루어지고 경기 타일은 9*9입니다. 미리 한번 들러보시는것도 좋을거라 생각되며, 구찌백화점 앞에다 룬을 락다운시켜두었으니 구경들하시고요, 이상한점을 말씀해주세요.. 지금은 다 오픈되었고, 경기날에는 시큐어로 다 문이 잠깁니다. 그럼..... 즐온들 하세요",
+  "author": "blueharp",
+  "authorMemberNo": "14895",
+  "authorHomepage": null,
+  "createdAt": "2003-03-14T14:38:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "even02.jpg",
+      "fileNum": 1,
+      "sizeBytes": 297676
+    }
+  ],
+  "comments": [
+    {
+      "author": "브리타니안",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "화면이 가려지는것 같습니다.<br>\n<br>\n 아에 전면은 개방하시는게 어떨지 생각됩니다."
+    },
+    {
+      "author": "blueharp",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네 다른분들께서도 지을때 지적해주셨었는데요...<br>\n 지금 경기장내에서 본모습이라 2층이 함께 나온 모습입니다. 안에 들어가서 확인해보시면 알겟지만,<br>\n 2층에 가려진게 아니라 1층에 가려진거지요. 1층에있는 벽에 가려진 것입니다.... <br>\n 뚫으면 공간이 보이긴 결국 1층 벽에 가려집니다. <br>\n 전술에는 크게 차이가 없을듯 하구요.<br>\n<br>\n 완전히 뚫어놓을것이 아니라면,  결국 가려지게 되는거라서 3층만 없애버렸죠...<br>\n 그럼 좋은 의견 감사합니다. 좀더 고민해 볼께요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190449",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Events&no=445",
+  "sourceEngine": "zeroboard"
+}

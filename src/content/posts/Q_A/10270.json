@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "10270",
+  "title": "스킬 한계치에 관한 질문..",
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 전사 캐릭을 키우는데..<br>\n<br>\n 심시해서 중간중간.. 이것저것 여러 스킬을 사용하고 키웠더니..<br>\n 몇몇개의 스킬이.. 10 ~ 40 씩 오른게 있더군요..<br>\n<br>\n 그래서 안쓰는 것들은 전부 아래 화살표로 해놨고<br>\n 사냥 하면 할수록 화살표 아래로 한것들은 쑥쑥 니려가고<br>\n 전사용 스킬은 잘 올라가는데..<br>\n<br>\n 어느날 부터...<br>\n 스킬이 오르지도 않고..<br>\n 내려갈 스킬들도 10 ~ 40 사이에 걸쳐서<br>\n 내려갈 생각은 안하네요..<br>\n<br>\n 이거.. 아래 화살표로 해도 0 까지 안내려가지는 건가요?<br>\n 아니면.. 올리는 스킬들이 꽤 많이 올랐기 때문에<br>\n 속도가 더뎌진것 뿐인가요?<br>\n<br>\n 안쓰는 스킬 0 안되는 안되는데.. ㅠ_ㅠ;;<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "전사 캐릭을 키우는데.. 심시해서 중간중간.. 이것저것 여러 스킬을 사용하고 키웠더니.. 몇몇개의 스킬이.. 10 ~ 40 씩 오른게 있더군요.. 그래서 안쓰는 것들은 전부 아래 화살표로 해놨고 사냥 하면 할수록 화살표 아래로 한것들은 쑥쑥 니려가고 전사용 스킬은 잘 올라가는데.. 어느날 부터... 스킬이 오르지도 않고.. 내려갈 스킬들도 10 ~ 40 사이에 걸쳐서 내려갈 생각은 안하네요.. 이거.. 아래 화살표로 해도 0 까지 안내려가지는 건가요? 아니면.. 올리는 스킬들이 꽤 많이 올랐기 때문에 속도가 더뎌진것 뿐인가요? 안쓰는 스킬 0 안되는 안되는데.. ㅠ_ㅠ;;",
+  "author": "yataje",
+  "authorMemberNo": "9594",
+  "authorHomepage": "http://www.cyworld.com/yataje",
+  "createdAt": "2002-08-12T21:48:20",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스킬은 show 스킬과 real 스킬이 있습니다<br>\n 스킬총합이 700이라는 것은 real스킬치를 말하는거구요<br>\n 100이되면 show 스킬과 real 스킬리 모두 100이됩니다<br>\n 그 전까지는 stat에 영향을 받아서 show 가  real보다 같거나 높습니다<br>\n 알트+k 하면 나오는 스킬창에서 밑에 show real 을 보면 리얼스킬이 나오니<br>\n 그걸 0으로 만들때까지 내리면 됩니다<br>\n real이 0 이라도 show는 0 이 아닐수 있습니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " show 의 것은 힘이나 인트 등의 영향들로 인해 받은 메리트 정도로 생각하면 됩니다.<br>\n 따라서 '정말 스킬치'는 아닌 것이죠.  작용은 그만큼 되겠지만.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191023",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=10270",
+  "sourceEngine": "zeroboard"
+}

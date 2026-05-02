@@ -1,0 +1,45 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15700",
+  "title": "[울온외] 포멧 햇는데 소리가 안나요 ㅜ.ㅜ",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이런거 물어 봐도 될지 모르겟지만<br>\n<br>\n<br>\n<br>\n 포멧을 햇는데 소리가 안나네요 사운드 카드 문제인것 같은데<br>\n<br>\n<br>\n<br>\n 카드가 뭔지 모르겟어요 ㅜ.ㅜ<br>\n<br>\n<br>\n<br>\n 이거 때문에 애니도 맘대로 못보고 ㅜ.ㅜ<br>\n<br>\n<br>\n<br>\n 어떻게 방법이 없을까요?<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이런거 물어 봐도 될지 모르겟지만 포멧을 햇는데 소리가 안나네요 사운드 카드 문제인것 같은데 카드가 뭔지 모르겟어요 ㅜ.ㅜ 이거 때문에 애니도 맘대로 못보고 ㅜ.ㅜ 어떻게 방법이 없을까요?",
+  "author": "darkpdt85",
+  "authorMemberNo": "16434",
+  "authorHomepage": null,
+  "createdAt": "2003-02-11T22:11:42",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 애니만 그런 것이라면 아마도 코덱문제일테고, 모든 부분에서 그렇다면 드라이버 문제일듯 싶네요..<br>\n<br>\n 코덱은 최근의 통합 코덱을 설치하면 문제없을 것이고, 드라이버는 사운드 카드에 따라 해결 방안이 다르겠죠..<br>\n<br>\n 코덱은 포탈 사이트 등에서 검색하심 쉽게 구하실수 있습니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 모두 다그러니까 드라이버 문제인데 어떻게 하면 조을까요 ㅜ.ㅜ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 일단 사운드카드 빼보시면 검고 네모난 칩이 중간쯤에 꾀 큰놈이 있을 껍니다.네모난 4개의 변 부분에 거미발처럼 기판에 납땜이 되있구요.그걸 사운드카드의 칩이라구 할수 있는데요 회색?이나 좀 어두운 글로 뭔가 주절주절 써있는데 저에게 쪽지로 알려주시면 제가 아는한 사운드 종류가 뭔지,어디서 드라이버 받는지 알려드릴께요.<br>\n 답변율은 70%정도로 생각하는데요.못믿이시면 할수없구요.<br>\n 정 안돼시면 윈도우 XP를 깔아보시면 거의 알아서 잡히는수도 있으시 잘 생각해 보세요..."
+    },
+    {
+      "author": "daenyx28",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 추측 ess계열 or ac97<br>\n ㅋㅋㅋㅋㅋ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191053",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15700",
+  "sourceEngine": "zeroboard"
+}

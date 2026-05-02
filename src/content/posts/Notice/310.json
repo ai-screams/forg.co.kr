@@ -1,0 +1,26 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "310",
+  "title": "멤버관리건에 대한 공지사항입니다.",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/mzg.gif\"><br>     \t\t\t     \t\t\t 멤버수가 많아져 관리하기가 힘든데 이런분들까지 저를 고생시키는군요-_-;;\n<br>\n 예제를 들겠습니다..\n<br>\n 아디 : ㄱ 이름 : ㄱ 이멜주소 : ㄱ\n<br>\n 아디 : HONG 이름 : 홍길동 이멜주소 :ㅇㅈㅅㄹ@ㄷㅇ.애ㅡ\n<br>\n 이런분들은 경고없이 삭제토록 하겠습니다.\n<br>\n<br>\n p.s : 가입후 반년이상 로긴을 안하시는 분들도 현재부터 자동 삭제가 \n<br>\n 이루어 지고 있습니다. \n<br>\n 불편하시더라도 본홈을 재방문하시면 재가입해주시길 바랍니다.\n<br>\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "멤버수가 많아져 관리하기가 힘든데 이런분들까지 저를 고생시키는군요-_-;; 예제를 들겠습니다.. 아디 : ㄱ 이름 : ㄱ 이멜주소 : ㄱ 아디 : HONG 이름 : 홍길동 이멜주소 :ㅇㅈㅅㄹ@ㄷㅇ.애ㅡ 이런분들은 경고없이 삭제토록 하겠습니다. p.s : 가입후 반년이상 로긴을 안하시는 분들도 현재부터 자동 삭제가 이루어 지고 있습니다. 불편하시더라도 본홈을 재방문하시면 재가입해주시길 바랍니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-01-22T14:37:02",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "mzg.gif",
+      "fileNum": 1,
+      "sizeBytes": 87654
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190721",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=310",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "535",
+  "title": "Publish 16 변경사항 Q&A",
+  "bodyHtml": "\n<font color=\"#333333\"><b>1. 하우징 시스템 관련사항</b></font>&nbsp;&nbsp; <br>\n 하우징 시스템은 3단계 걸쳐 이루어 집니다.&nbsp;&nbsp;<br>\n<br>\n 1단계 : 각 샤드별로 새로운 하우징 시스템이 적용됩니다. 집의 상태는 'Condamned' 상<br>\n 태와 'Grandfathered' 상태로 표시되며, 'Condamned' 상태는 기존의 경우와 같이 집을 <br>\n 가진 상태에서 집을 새로 짓거나, 구입한 경우와 계정이 정지된 상태 혹은 계정을 Publish <br>\n 16 적용 이후에 다시 활성화 시킨 경우에 발생합니다. 만약 집을 새로 짓거나, 구입한 경<br>\n 우라면 집의 부패는 이전과 같이 적용됩니다. 계정이 정지된 상태 혹은 계정을 Publish 16<br>\n 적용 이후에 다시 활성화 시킨 경우라면, 집은 'Condamned' 상태로 표시될뿐 <br>\n Auto-refresh가 적용되는 현재는 '약간 낡은 상태'이상 부패하지 않습니다.&nbsp;&nbsp;<br>\n<br>\n 2단계 : 전샤드에 계정이 보유한 집의 정보가 정리되며, Primary House의 설정이 가능해 <br>\n 집니다. Primary House로 설정이 되면, 계정이 살아 있는한 그 설정된 집은 Auto-refresh<br>\n 가 되므로 수동으로 리플래쉬를 할 필요가 없습니다. 정지된 계정에 속한 집의 공동 소유<br>\n 주에게 그 집을 넘겨 받을 수 있는 기회가 주어집니다.&nbsp;&nbsp;<br>\n<br>\n 3단계 : Auto-refresh가 중지되며, 부패가 진행됩니다. <br>\n<br>\n<br>\n<font color=\"#333333\"><b>2. Felucca 변경사항</b></font>&nbsp;&nbsp; <br>\n 잃어버린 대륙과 던전에서는 recall 마법과 gate 마법을 사용할 수 없습니다. <br>\n<br>\n<br>\n<font color=\"#333333\"><b>3. 테이머 관련사항 </b></font> <br>\n 각각의 캐릭터는 5개의 슬롯을 가지게 되며, 애완 동물의 종류에따라 이 슬롯을 차지하는 <br>\n 수치가 달라집니다. 만약 플레이어가 5개 슬롯 이상의 동물을 데리고 있다면, 이 동물들<br>\n 은 플레이어의 말을 듣지 않게 됩니다. 플레이어들이 동물과 마굿간을 관리하는 일에 익<br>\n 숙해 질 것이라고 생각되지만, 새로운 방식에 적응하는데에 다소 시간이 걸릴 것이라는 <br>\n 것을 알고 있습니다. 따라서 '캐릭터 슬롯’과 '마굿간 슬롯'을 바꾸는 부분에서 어려움을 <br>\n 겪는 플레이어는 게임마스터를 통해서 한 계정에 한해 한번의 도움을 받을 수 있습니다. <br>\n 단 이 경우는 플레이어가 캐릭터 슬롯과 마굿간 슬릇을 모두 사용한 상태에서 애완 동물<br>\n 을 교환하고자 하는 경우만 해당 됩니다.&nbsp;&nbsp;<br>\n<br>\n<br>\n 출처 : EA KOREA (<a href=\"http://www.kr.uo.com\">http://www.kr.uo.com</a>)<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1. 하우징 시스템 관련사항 하우징 시스템은 3단계 걸쳐 이루어 집니다. 1단계 : 각 샤드별로 새로운 하우징 시스템이 적용됩니다. 집의 상태는 'Condamned' 상 태와 'Grandfathered' 상태로 표시되며, 'Condamned' 상태는 기존의 경우와 같이 집을 가진 상태에서 집을 새로 짓거나, 구입한 경우와 계정이 정지된 상태 혹은 계정을 Publish 16 적용 이후에 다시 활성화 시킨 경우에 발생합니다. 만약 집을 새로 짓거나, 구입한 경 우라면 집의 부패는 이전과 같이 적용됩니다. 계정이 정지된 상태 혹은 계정을 Publish 16 적용 이후에 다시 활성화 시킨 경우라면, 집은 'Condamned' 상태로 표시될뿐 Auto-refresh가 적용되는 현재는 '약간 낡은 상태'이상 부패하지 않습니다. 2단계 : 전샤드에 계정이 보유한 집의 정보가 정리되며, Primary House의 설정이 가능해 집니다. Primary House로 설정이 되면, 계정이 살아 있는한 그 설정된 집은 Auto-refresh 가 되므로 수동으로 리플래쉬를 할 필요가 없습니다. 정지된 계정에 속한 집의 공동 소유 주에게 그 집을 넘겨 받을 수 있는 기회가 주어집니다. 3단계 : Auto-refresh가 중지되며, 부패가 진행됩니다. 2. Felucca 변경사항 잃어버린 대륙과 던전에서는 recall 마법과 gate 마법을 사용할 수 없습니다. 3. 테이머 관련사항 각각의 캐릭터는 5개의 슬롯을 가지게 되며, 애완 동물의 종류에따라 이 슬롯을 차지하는 수치가 달라집니다. 만약 플레이어가 5개 슬롯 이상의 동물을 데리고 있다면, 이 동물들 은 플레이어의 말을 듣지 않게 됩니다. 플레이어들이 동물과 마굿간을 관리하는 일에 익 숙해 질 것이라고 생각되지만, 새로운 방식에 적응하는데에 다소 시간이 걸릴 것이라는 것을 알고 있습니다. 따라서 '캐릭터 슬롯’과 '마굿간 슬롯'을 바꾸는 부분에서 어려움을 겪는 플레이어는 게임마스터를 통해서 한 계정에 한해 한번의 도움을 받을 수 있습니다. 단 이 경우는 플레이어가 캐릭터 슬롯과 마굿간 슬릇을 모두 사용한 상태에서 애완 동물 을 교환하고자 하는 경우만 해당 됩니다. 출처 : EA KOREA ( http://www.kr.uo.com )",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-07-19T20:01:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190809",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=535",
+  "sourceEngine": "zeroboard"
+}

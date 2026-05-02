@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "210",
+  "title": "아이템 아이디 변경",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 디자이너 Hanse가 최근 적용된 아이템 아이디 스킬의 변화 (모든 사람이 아이덴한것을<br>\n 알수 있게 한것)가 의도적인 것인가에 대해 이야기했습니다.&nbsp;&nbsp;<br>\n<br>\n 예. 의도적인 것입니다. 예전에 매직 아이템은 그것을 아이덴한 사람을 순서대로<br>\n 5명까지 기억하고 있었습니다. 만일 소유자가 아이템을 플레이어가 소유한 벤더에<br>\n 넣거나 (손님은 계속 아이덴 해야했죠), 락다운 시키거나, 장비하면 그 리스트를 지울 <br>\n 수도 있었습니다.<br>\n<br>\n 그대신에 이번 패치에서는 물체를 아이덴하는 것이 모든 사람을 위해 아이덴<br>\n 하는 것으로 바뀌었습니다. 이것은 또한 개개의 캐릭터 정보를 추가로 저장해야<br>\n 하는 필요를 줄여주어서 (모든 매직 아이템이 일단 아이덴되면 그 아이덴 정보를<br>\n 가지고 있도록 되었기때문에) 메모리를 덜 사용할 수 있게 해줍니다. <br>\n<br>\n -Hanse<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "디자이너 Hanse가 최근 적용된 아이템 아이디 스킬의 변화 (모든 사람이 아이덴한것을 알수 있게 한것)가 의도적인 것인가에 대해 이야기했습니다. 예. 의도적인 것입니다. 예전에 매직 아이템은 그것을 아이덴한 사람을 순서대로 5명까지 기억하고 있었습니다. 만일 소유자가 아이템을 플레이어가 소유한 벤더에 넣거나 (손님은 계속 아이덴 해야했죠), 락다운 시키거나, 장비하면 그 리스트를 지울 수도 있었습니다. 그대신에 이번 패치에서는 물체를 아이덴하는 것이 모든 사람을 위해 아이덴 하는 것으로 바뀌었습니다. 이것은 또한 개개의 캐릭터 정보를 추가로 저장해야 하는 필요를 줄여주어서 (모든 매직 아이템이 일단 아이덴되면 그 아이덴 정보를 가지고 있도록 되었기때문에) 메모리를 덜 사용할 수 있게 해줍니다. -Hanse",
+  "author": "녕이",
+  "authorMemberNo": "2278",
+  "authorHomepage": null,
+  "createdAt": "2001-12-06T10:13:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190700",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=210",
+  "sourceEngine": "zeroboard"
+}

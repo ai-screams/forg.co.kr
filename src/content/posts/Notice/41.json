@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "41",
+  "title": "악몽의 카토98.5 스킬Up에 대한 수정중인 상황에 대해....",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 개발중인 내용(In Development)에서...<br>\n 예전에는 지도를 그려서 지엠이 되었지만...<br>\n 현재 패치로는 98.5부터는 모아서 지도를 읽어야만 100까지 올릴수 있습니다..<br>\n 하지만 이번패치가 되면 이전상태로 변경됩니다...<br>\n (지도를 그려서 100을 올릴수 있습니다)<br>\n<br>\n 렙별지도표시 : <br>\n ■ a youthful treasure map : level 0<br>\n ■ a plainly drawn treasure map : level 1<br>\n ■ an expertly drawn treasure map : level 2<br>\n ■ an adeptly drawn treasure map : level 3<br>\n ■ a cleverly drawn treasure map : level 4<br>\n ■ a deviously drawn treasure map : level 5<br>\n \"tattered\" - 읽지 않는것은 앞에 이글자가 붙습니다.<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "개발중인 내용(In Development)에서... 예전에는 지도를 그려서 지엠이 되었지만... 현재 패치로는 98.5부터는 모아서 지도를 읽어야만 100까지 올릴수 있습니다.. 하지만 이번패치가 되면 이전상태로 변경됩니다... (지도를 그려서 100을 올릴수 있습니다) 렙별지도표시 : ■ a youthful treasure map : level 0 ■ a plainly drawn treasure map : level 1 ■ an expertly drawn treasure map : level 2 ■ an adeptly drawn treasure map : level 3 ■ a cleverly drawn treasure map : level 4 ■ a deviously drawn treasure map : level 5 \"tattered\" - 읽지 않는것은 앞에 이글자가 붙습니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2001-08-16T09:07:42",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190743",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=41",
+  "sourceEngine": "zeroboard"
+}

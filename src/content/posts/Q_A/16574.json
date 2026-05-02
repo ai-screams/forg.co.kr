@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "16574",
+  "title": "8X8 타일 매크로 프로그램 말입니다",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 원래 8타일은<br>\n 서쪽으로 가다가 스킬이 오르면<br>\n 북쪽으로 꺽는거 아닌가요?<br>\n 그런데 8타일 프로그램은 북쪽으로 꺽질 않더군요;;;<br>\n 왜 이러죠?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "원래 8타일은 서쪽으로 가다가 스킬이 오르면 북쪽으로 꺽는거 아닌가요? 그런데 8타일 프로그램은 북쪽으로 꺽질 않더군요;;; 왜 이러죠?",
+  "author": "이나루스",
+  "authorMemberNo": "14892",
+  "authorHomepage": null,
+  "createdAt": "2003-02-25T04:28:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 8타일 즉 8칸만 이동 - - 암때끼나 한 방향으로 가면서 8타일씩 이동 하고 스킬이나 마법 사용 -0-"
+    },
+    {
+      "author": "smal",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제가 이지유오로 매절올릴때보니깐...<br>\n 남쪽으로 8칸가서 매졀한번쓰고 매절이오르면 다시뒤로8칸가서 또매졀쓰고......<br>\n 그러니까...스킬이 오르면 뒤로8칸가서그스킬을쓰고 않오르면 8칸앞으로가서 그스킬을쓰는거에여..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191216",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=16574",
+  "sourceEngine": "zeroboard"
+}

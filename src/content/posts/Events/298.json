@@ -1,0 +1,33 @@
+{
+  "board": "Events",
+  "boardKr": "Events",
+  "postId": "298",
+  "title": "[발해] 첫번째 파티플레이 공지",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">   발해에서의 파티플레이입니다.<br>\n<br>\n 내용은 아리랑 파티플레이를 참조하시고<br>\n<br>\n장소는 브리튼 대장간 이고 일시는 토요일 7:30입니다.<br>\n<br>\n 처음이라 데스파이즈입니다. 이번 플레이는 시나리오 없습니다만.<br>\n<br>\nIRC는 #partyplay입니다.<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "발해에서의 파티플레이입니다. 내용은 아리랑 파티플레이를 참조하시고 장소는 브리튼 대장간 이고 일시는 토요일 7:30입니다. 처음이라 데스파이즈입니다. 이번 플레이는 시나리오 없습니다만. IRC는 #partyplay입니다.",
+  "author": "TAIJI",
+  "authorMemberNo": "0",
+  "authorHomepage": null,
+  "createdAt": "2002-07-26T00:17:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "TAIJI",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "사람 아무도 안와서 취소입니다~~~<img border=\"0\" src=\"emoticon/m_shades_smile.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\"> -_-"
+    },
+    {
+      "author": "kal-vas-flam",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "호곡-ㅁ-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190405",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Events&no=298",
+  "sourceEngine": "zeroboard"
+}

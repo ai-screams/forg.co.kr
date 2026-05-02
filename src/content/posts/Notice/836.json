@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "836",
+  "title": "추가적인 수정내용 적용",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">추가적인 수정내용이 Chesapeake에 적용되었으며, 이전에 FYI에서 언급되었듯이 모든 AoS가 적용된 샤드에 다음날 아래와 같은 변경 및 수정내용이 적용될 것입니다. <br><br>맞춤 집 관련 충돌 문제가 수정되었습니다. <br>고정 보관이 적절하게 표시되지 않았던 문제가 수정되었습니다. <br>네크로맨서와 팔라딘 마법책의 마법이 고정 보관시에 부패되던 문제가 해결되었습니다. <br>룬북을 고정 보관할 수 있습니다. <br><br>주의사항 : 고정 보관되지 않았거나, 잠금 보관상자에 보관하지 않은 물건은 부패하게 됩니다. 아이템에 마우스 커서를 가져간 다음 왼쪽을 클릭해서 반드시 고정 보관 상태를 확인하시기 바랍니다. <br><br>출처 : <a href=\"http://www.uolbr.co.kr/\">http://www.uolbr.co.kr/</a></td></tr></tbody></table>\n",
+  "bodyText": "추가적인 수정내용이 Chesapeake에 적용되었으며, 이전에 FYI에서 언급되었듯이 모든 AoS가 적용된 샤드에 다음날 아래와 같은 변경 및 수정내용이 적용될 것입니다. 맞춤 집 관련 충돌 문제가 수정되었습니다. 고정 보관이 적절하게 표시되지 않았던 문제가 수정되었습니다. 네크로맨서와 팔라딘 마법책의 마법이 고정 보관시에 부패되던 문제가 해결되었습니다. 룬북을 고정 보관할 수 있습니다. 주의사항 : 고정 보관되지 않았거나, 잠금 보관상자에 보관하지 않은 물건은 부패하게 됩니다. 아이템에 마우스 커서를 가져간 다음 왼쪽을 클릭해서 반드시 고정 보관 상태를 확인하시기 바랍니다. 출처 : http://www.uolbr.co.kr/",
+  "author": "주니",
+  "authorMemberNo": "15378",
+  "authorHomepage": null,
+  "createdAt": "2003-03-17T18:25:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190927",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=836",
+  "sourceEngine": "zeroboard"
+}

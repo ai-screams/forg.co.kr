@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15754",
+  "title": "울티마온라인을 깔고나서 저절로 재부팅이 됨니다",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 다른 게임을 인스톨하거나 인터넷 사이트를 들어가면 저절로 재부팅이 됨니다<br>\n 울온 깔고 부터 이러는데 어떻게 해야하나여<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "다른 게임을 인스톨하거나 인터넷 사이트를 들어가면 저절로 재부팅이 됨니다 울온 깔고 부터 이러는데 어떻게 해야하나여",
+  "author": "ktwod32",
+  "authorMemberNo": "15673",
+  "authorHomepage": null,
+  "createdAt": "2003-02-12T22:57:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "근본적 해결책은 아니지만..<br>\n XP사용하시면 시스템 등록정보-&gt;고급에 보시면 시스템다시시작 이부분 체크를 없애 주시면 재부팅은 되지 않을듯..<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저기 98이라서 ㅡㅡ;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191103",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15754",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,51 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18016",
+  "title": "스킬의 효과는 10단위로 책정되나요?",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 어떻게 측정되나요?<br>\n 패링 109.9면 능력은 100의 능력을 발휘하나요?<br>\n 어떤분들이 스킬은 10단위로 바뀌기 템에 10단위로 끼우라고 하셔서요.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어떻게 측정되나요? 패링 109.9면 능력은 100의 능력을 발휘하나요? 어떤분들이 스킬은 10단위로 바뀌기 템에 10단위로 끼우라고 하셔서요.",
+  "author": "see_99",
+  "authorMemberNo": "18077",
+  "authorHomepage": null,
+  "createdAt": "2003-04-14T20:14:49",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 보통 5단위나 10단위 포커스 같은 스킬은 20단위로 효과가 나타납니다...<br>\n 하지만 힐링처럼 60이상에서 해독 80이상에서 부활 이라는 특수한 효과를 발하는 스킬들도 많습니다...<br>\n 또 생산직은 스킬이 1만 올라도 생산활동에서 만들수있는 아이템의 확률이 오릅니다.. -_-;<br>\n<br>\n 패링은 5단위로 효과가 나타나는걸로 알고있습니다...<br>\n<br>\n 결론은 스킬마다 다르다... 입니다;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 패링은 1.0당 패링확률 0.3% 증가로 알고 있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 생산의 경우 스킬 0.1에 익셉률 0.2가 올라가는걸 본적이 있는데... 기억이 가물.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 그렇군요 패링무조건 10안만들어도 되는군요 답변 감사합니다<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스킬마다 다 틀립니다. -_-; "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191421",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18016",
+  "sourceEngine": "zeroboard"
+}

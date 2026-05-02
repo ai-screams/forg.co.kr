@@ -1,0 +1,31 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "1055",
+  "title": "사무라이 확팩과 지도",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Notice/LM_93004_Box6.jpg\" style=\"cursor:hand\"><br>\n<img border=\"0\" src=\"data/Notice/LM_9_30_04_Map2.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">출처 : UOSS포럼</td></tr></tbody></table>\n",
+  "bodyText": "출처 : UOSS포럼",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2004-10-01T12:36:17",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "LM_93004_Box6.jpg",
+      "fileNum": 1,
+      "sizeBytes": 57446
+    },
+    {
+      "name": "LM_9_30_04_Map2.jpg",
+      "fileNum": 2,
+      "sizeBytes": 183603
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190632",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=1055",
+  "sourceEngine": "zeroboard"
+}

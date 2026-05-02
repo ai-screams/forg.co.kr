@@ -1,0 +1,33 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "102",
+  "title": "All Shards to be Published",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  모든 샤드가 다음 서버 다운때 퍼블리쉬될 것입니다 :<br>\n<br>\n- 이제 Infecting Strike와 Serpent Arrow는 이 특수한 작전 행동으로 상대에게 성공적으로 독에 감염시킬때 약간의 카르마가 감소하게 될 것입니다.<br>\n- 일정한 포션들이 쌓이는 것과 관련된 몇몇의 문제들이 수정되었습니다.<br>\n- ML과 KR에 세계 아트 문제들의 일부가 수정되었습니다.<br>\n- 뉴 헤븐 빵집이 사업을 위해 열었습니다.<br>\n- (KR) 당신이 서버 라인을 지나간 뒤에 집짓기 도구가 작동안되는 문제가 수정되었습니다.<br>\n- 높게 향상된 포션들을 사용할때 큐어 포션이 더 많은 실패가 있던 문제의 버그를 수정하였습니다.<br>\n- 더 많은 것때문에 치유된 대미지를 감소시키던 잠재적으로 \"slips\"의 문제점을 가진 힐링 스킬의 버그가 수정되었습니다.<br>\n- 타겟팅 커서와 드래깅 아이템들에 관련된 문제를 수정하였습니다.<br>\n<br>\n<center>--------------------------------------------------------------</center><br>\n<center>언제나 날림 &amp; 엉터리 번역... -_-;;</center><br>\n<center>--------------------------------------------------------------</center><br>\n</td></tr></tbody></table>\n",
+  "bodyText": "모든 샤드가 다음 서버 다운때 퍼블리쉬될 것입니다 : - 이제 Infecting Strike와 Serpent Arrow는 이 특수한 작전 행동으로 상대에게 성공적으로 독에 감염시킬때 약간의 카르마가 감소하게 될 것입니다. - 일정한 포션들이 쌓이는 것과 관련된 몇몇의 문제들이 수정되었습니다. - ML과 KR에 세계 아트 문제들의 일부가 수정되었습니다. - 뉴 헤븐 빵집이 사업을 위해 열었습니다. - (KR) 당신이 서버 라인을 지나간 뒤에 집짓기 도구가 작동안되는 문제가 수정되었습니다. - 높게 향상된 포션들을 사용할때 큐어 포션이 더 많은 실패가 있던 문제의 버그를 수정하였습니다. - 더 많은 것때문에 치유된 대미지를 감소시키던 잠재적으로 \"slips\"의 문제점을 가진 힐링 스킬의 버그가 수정되었습니다. - 타겟팅 커서와 드래깅 아이템들에 관련된 문제를 수정하였습니다. -------------------------------------------------------------- 언제나 날림 & 엉터리 번역... -_-;; --------------------------------------------------------------",
+  "author": "sirl",
+  "authorMemberNo": "1263",
+  "authorHomepage": "http://club.cyworld.com/sonoma",
+  "createdAt": "2007-06-08T00:49:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "버그와 관련된 패치는 없는거 같군요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이제 Infecting Strike와 Serpent Arrow는 이 특수한 작전 행동으로 상대에게 성공적으로 독에 감염시킬때 약간의 카르마가 감소하게 될 것입니다.\n<br>\n<br>Serpent Arrow 쓴다고 포이즈닝 지엠단지 몇일 되었다고 이따위 패치를... ㅠ.ㅠ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190628",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=102",
+  "sourceEngine": "zeroboard"
+}

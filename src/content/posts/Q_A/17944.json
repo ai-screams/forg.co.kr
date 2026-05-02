@@ -1,0 +1,75 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17944",
+  "title": "힘 100~120사이의 미스테리 -_-",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 문제는 하나 입니다.<br>\n 100 일때 최고로 422 정도 까지 들수있고<br>\n 105 일때 최고로 422 정도 까지 들수있고<br>\n 115 인져도 나오는건 최고 442 정도 까지 들수있는데 꼭 422 에서 오어가 않들어오고 만든 물건이 자리가 없다고 하면서 않만들어지고.<br>\n 이거 버그가 아닐지 -. ,-<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "문제는 하나 입니다. 100 일때 최고로 422 정도 까지 들수있고 105 일때 최고로 422 정도 까지 들수있고 115 인져도 나오는건 최고 442 정도 까지 들수있는데 꼭 422 에서 오어가 않들어오고 만든 물건이 자리가 없다고 하면서 않만들어지고. 이거 버그가 아닐지 -. ,-",
+  "author": "dongswar",
+  "authorMemberNo": "19904",
+  "authorHomepage": null,
+  "createdAt": "2003-04-11T20:25:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 백팩에 물건 갯수를 줄이면 되요.<br>\n<br>\n 무게 개념이랑 갯수개념이 따로있어서."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 백팩에 넣을수 있는 갯수도 정해져있지만.. 무개도 정해져 있습니다..<br>\n 아직 갯수가 안차도 무개가 넘으면 백팩에 못집어 넣습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 버그같진않고 제작자의 의도인거 같습니다.<br>\n aos 이후 한스텟이 125를 넘어 가는경우가 많아 지니 그런 문제가 봉착되는거 같군요.<br>\n 지엠에게 건의 하면 수년대로 패치 될지도.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -0- 이사이트 ㅅㅏ람들 너무친절하셔 *-_-*"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 최고로 들 수 있는 무게는 입고들고 있는 장비와 백팩의 무게를 합한 것입니다<br>\n<br>\n 백팩에는 400스톤이나 125개 이상의 아이템을 넣을 수 없습니다<br>\n<br>\n 대신 몸에 입는 갑옷이나 무기는 백팩과는 별도로 무게가 나갑니다<br>\n<br>\n 따라서 힘에 따라서 백팩 400스톤을 가득 채우고도 어느정도의 장비를 입을 수 있는 것입니다<br>\n<br>\n 그리고 모든 장비를 다 벗어도 기본적인 몸무게가 있습니다<br>\n<br>\n<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아~~~ 그렇구나!!!!<br>\n 그런데 옷만 2개 걸친 제 케릭이 어째서 그런걸까요 -_-?<br>\n겜상에서 까지 다이어트를 해야하다니!!<img border=\"0\" src=\"emoticon/m_cry_smile.gif\"><img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제가 아는바로는 장비에 따라 들수있는량이 틀려지더군요<br>\n 힘 125의 본아머 팔부분만 입고 나머지 두건과 옷으로 치장한 캐릭은 최고 439 까지 들수있었고<br>\n 힘 100에 덜쿠퍼 풀셋을 입은 캐릭은 460 정도 까지는 들수가있더군요<br>\n<br>\n XXX/YYY 에서 힘은 YYY의 수치를 올려주지만 <br>\n XXX 의 맥스 수치를 올려주는건 입고있는 장비에 영향이 있는거 같습니다.<br>\n 참고로 힘 125 캐릭도 아무 옷가지와 장비를 안입은 상태라면 415 인가 그정도 가 최고더군요<br>\n<br>\n 이젠 더 많이 들고 다닐려면 -_- 힘만 높이는게 아니라 장비도 잘 챙겨입고 다녀야될거 같군요;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 장비에 따라 올려주는 수치가 다른지는 모르지만 장비를 벗고있는것보다 입고있는것이 더 많은 양을 들게해주고요 입고있는 갑옷이나 무기는 백팩과 별도로 무게가 계산되지 않더군요; "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 장비를 입고 있는쪽이 벗는쪽보다 더 많이 들수 있다니...<br>\n ...팬티만 입고 돌아다니는 대머리 광부들을 더이상 보기 싫었던 건가, 오리진;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191407",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17944",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "15606",
+  "title": "울온 자체 매크로가 꼬였습니다...",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 2d는 괜찮은데 3d가 문제네요<br>\n<br>\n 캐릭이름이 같은것도 아닌데 매크로키가 똑같이 설정되있습니다.<br>\n<br>\n 해결할 방법 있나요???<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "2d는 괜찮은데 3d가 문제네요 캐릭이름이 같은것도 아닌데 매크로키가 똑같이 설정되있습니다. 해결할 방법 있나요???",
+  "author": "apnidel",
+  "authorMemberNo": "15557",
+  "authorHomepage": null,
+  "createdAt": "2003-02-10T02:14:36",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아마 새로 잡아주셔야 할 듯 싶군요<br>\n 일단 캐릭터마다 매크로를 틀리게 구성했을 경우<br>\n C:\\PROGRAM FILES\\ULTIMA ONLINE\\DESKTOP\\\"샤드명\"\\\"캐릭터명\" 이라는 폴더가 생깁니다<br>\n 이 폴더안에 MACRO.TXT라는 파일이 생셩되는데요<br>\n 이 파일이 매크로 파일입니다<br>\n 이걸 따로 백업을 받아두셨다가 필요하면 복사하는 식으로 사용하시는게 편합니다<br>\n 전 매크로파일을 메일에 올려두고 필요할때 받아서 사용합니다<br>\n UOA CONFIG와 매크로도 마찬가지로 적용할 수 있습니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191039",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=15606",
+  "sourceEngine": "zeroboard"
+}

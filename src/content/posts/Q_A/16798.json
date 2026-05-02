@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "16798",
+  "title": "반지나 링에대한 질문입니다",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 지금스킬이 꽉찬상태에서 만약 파스를발라서 10짜리를 바르고 반지 <br>\n 해당스킬10짜리를 바르면 710이 됩니다.<br>\n 그럼 원래는 700인데 다른스킬을 내려야 스킬이 적용되나요?<br>\n 아님 700이라도 파스바르고 반지10짜리를 껴서 710이라도 710으로 <br>\n 인정하는건가요?<br>\n 아직도 햇갈리네요.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "지금스킬이 꽉찬상태에서 만약 파스를발라서 10짜리를 바르고 반지 해당스킬10짜리를 바르면 710이 됩니다. 그럼 원래는 700인데 다른스킬을 내려야 스킬이 적용되나요? 아님 700이라도 파스바르고 반지10짜리를 껴서 710이라도 710으로 인정하는건가요? 아직도 햇갈리네요.",
+  "author": "see_99",
+  "authorMemberNo": "18077",
+  "authorHomepage": null,
+  "createdAt": "2003-03-01T15:49:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 예전 리얼과 쇼스킬과 거의 같게 적용됩니다.<br>\n 예를들어 리얼로 700 max 인 경우 +스킬 아이템을 착용하였을때<br>\n 리얼은 700 그대로 쇼스킬은 700+@ 로 나타납니다.<br>\n<br>\n 다시 말해서 총 쇼스킬은 계정나이가 없는 경우 700+ (총 +스킬) 이 됩니다.<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191248",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=16798",
+  "sourceEngine": "zeroboard"
+}

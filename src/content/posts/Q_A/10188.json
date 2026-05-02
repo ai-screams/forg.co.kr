@@ -1,0 +1,39 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "10188",
+  "title": "저겨..... iso 파일.....",
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 확장자가 .iso 파일은 어떻게 쓰는 건가요?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "확장자가 .iso 파일은 어떻게 쓰는 건가요?",
+  "author": "kenel",
+  "authorMemberNo": "2508",
+  "authorHomepage": null,
+  "createdAt": "2002-08-11T01:08:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " @@ ...<br>\n 데몬으로 돌리시거나 네로등으로 시디구우실수있습니다<br>\n 가상시디이미지중하나이죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 데몬으로 돌리면 lcd 처럼 사용하게 되는건가요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 네... lcd처럼 쓸수있는거지요.<br>\n 근데 씨디로 뜨긴뜨지만 안도는 프로그램도 있어요... 그럴경우엔 필히 구워서 돌리는게<br>\n 정신건강에 이롭습니다. ㅡ,.ㅡ<br>\n 그냥 이지나 네로최신버전으로 구워서 사용하셔도 됩니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191019",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=10188",
+  "sourceEngine": "zeroboard"
+}

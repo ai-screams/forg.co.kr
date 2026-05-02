@@ -31,6 +31,11 @@ archive-utf8/
 .progress.jsonl
 .errors.jsonl
 
+# ETL pipeline runtime artifacts (regenerable from raw archive)
+.parse-summary.json
+.parse-failures.jsonl
+.parse-progress.jsonl
+
 # Local caches & generated content
 .cache/
 .tmp/

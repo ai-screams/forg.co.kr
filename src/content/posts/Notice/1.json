@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "1",
+  "title": "UO Development Board에 Evocare(Lead Designer UO)님이 쓰신글입니다.",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 1.아나토미의 보너스 데미지에 대해 고려합니다.<br>\n 현재 지엠의아나투미100스킬을 가지면 보너스데미지가 40%(일반플레이어)<br>\n 그리고 20%(몬스터)에게 타격을 주었습니다.<br>\n 하지만 각각 몬스터,플레이어구분없이 양쪽다 30%를 주게 됩니다.<br>\n 즉,듀얼에는 10%하락, 사냥에는 10%상승을 줍니다.<br>\n 2.럼버잭킹은 지엠일때 33%보너스 데미지가 30%로 줄어듭니다.<br>\n p.s : 1번,2번을 합산해서 지엠아나토미+지엠럼잭을 가진사람은 듀얼에는 13%하락과<br>\n 몬스터사냥에는 7%상승을 의미 하는겁니다.<br>\n (물론같은 전사라면 듀얼에는 3%하락&nbsp;&nbsp;마사vs럼잭전사는 13%하락입니다)<br>\n 3.Strength and Max Hit Points(최대히트포인트)는 각각 독립적인 값이 됩니다.<br>\n (예 : Strength힘이 80인데 최대히트포인트가 90인 캐릭이 힘포션(+20)을 먹게되면<br>\n 최대 히트포인트가 110으로 됩니다)<br>\n 4.언급하지 않은 스킬에 관해서는 어떤 변화가 없다고 말할수는 없습니다..<br>\n 추후 언급이 될지도 모릅니다..<br>\n 5.레스링은 계속 고려중입니다(디스암효과가 마법캐스트를 방해 할것입니다)<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1.아나토미의 보너스 데미지에 대해 고려합니다. 현재 지엠의아나투미100스킬을 가지면 보너스데미지가 40%(일반플레이어) 그리고 20%(몬스터)에게 타격을 주었습니다. 하지만 각각 몬스터,플레이어구분없이 양쪽다 30%를 주게 됩니다. 즉,듀얼에는 10%하락, 사냥에는 10%상승을 줍니다. 2.럼버잭킹은 지엠일때 33%보너스 데미지가 30%로 줄어듭니다. p.s : 1번,2번을 합산해서 지엠아나토미+지엠럼잭을 가진사람은 듀얼에는 13%하락과 몬스터사냥에는 7%상승을 의미 하는겁니다. (물론같은 전사라면 듀얼에는 3%하락  마사vs럼잭전사는 13%하락입니다) 3.Strength and Max Hit Points(최대히트포인트)는 각각 독립적인 값이 됩니다. (예 : Strength힘이 80인데 최대히트포인트가 90인 캐릭이 힘포션(+20)을 먹게되면 최대 히트포인트가 110으로 됩니다) 4.언급하지 않은 스킬에 관해서는 어떤 변화가 없다고 말할수는 없습니다.. 추후 언급이 될지도 모릅니다.. 5.레스링은 계속 고려중입니다(디스암효과가 마법캐스트를 방해 할것입니다)",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2001-06-28T22:35:58",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190627",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=1",
+  "sourceEngine": "zeroboard"
+}

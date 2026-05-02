@@ -1,0 +1,39 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "88",
+  "title": "Publish 44 (암즈 로어 추가사항)",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  암즈 로어 변경에 관한 정의를 업데이트 했습니다 :<br>\n<br>\n갑옷의 조각을 익셉 제작 할때 (방패는 포함안됨), 아무 조각에 보통 존재하는 각각의 저항은 암즈 로어 20 포인트당씩 인상 될 것이며 총 보너스는 5이며 랜덤하게 분포됩니다. (예를 들면 그랜드마스터 암즈 로어일때, 총 저항 보너스는 +5%입니다. 한개의 저항에 +5% 보너스를 받을 수도 있습니다. 댄신, 한개의 저항이 +2% 받고 3개의 저항에 +1%씩 받아 총 +5%가 될 수도 있습니다).<br>\n<br>\n<center>--------------------------------------------------------------</center><br>\n<center>SIRL on Sonoma</center><br>\n<center>--------------------------------------------------------------</center><br>\n</td></tr></tbody></table>\n",
+  "bodyText": "암즈 로어 변경에 관한 정의를 업데이트 했습니다 : 갑옷의 조각을 익셉 제작 할때 (방패는 포함안됨), 아무 조각에 보통 존재하는 각각의 저항은 암즈 로어 20 포인트당씩 인상 될 것이며 총 보너스는 5이며 랜덤하게 분포됩니다. (예를 들면 그랜드마스터 암즈 로어일때, 총 저항 보너스는 +5%입니다. 한개의 저항에 +5% 보너스를 받을 수도 있습니다. 댄신, 한개의 저항이 +2% 받고 3개의 저항에 +1%씩 받아 총 +5%가 될 수도 있습니다). -------------------------------------------------------------- SIRL on Sonoma --------------------------------------------------------------",
+  "author": "sirl",
+  "authorMemberNo": "1263",
+  "authorHomepage": "http://club.cyworld.com/sonoma",
+  "createdAt": "2007-05-01T08:03:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이겅 제가 생각했던거랑 약간틀리내요;;\n<br>암즈 올리까말까 고민이내...;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "암즈로어 고고싱 -ㅅ-.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "시즈섭 등지에서 6개 모아서 +30 하는거 말고는 별 효용성이 없을 듯...이미 스탠다드한 워/사냥 캐릭 아티팩트들이 있는데...\n<br>\n<br>그렇다고 임뷰에 적용하는 것도 아니고...(하긴 임뷰에 적용하면 밸런스 무너질지도...-_-)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502190939",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=88",
+  "sourceEngine": "zeroboard"
+}

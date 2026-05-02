@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "16430",
+  "title": "프롭 매클중 악기 교환",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 프롭 매클을 돌리는 중 입니다.<br>\n 돌리다가 악기가 부셔져 버려서 매클이 자꾸 끊기는데<br>\n 자동으로 다른 악기 사용하는 매클은 없나요?<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "프롭 매클을 돌리는 중 입니다. 돌리다가 악기가 부셔져 버려서 매클이 자꾸 끊기는데 자동으로 다른 악기 사용하는 매클은 없나요?",
+  "author": "bloodguy1",
+  "authorMemberNo": "17201",
+  "authorHomepage": "http://honghwan.nafeel.net",
+  "createdAt": "2003-02-22T13:22:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " UOA 있어야 하구요.<br>\n<br>\n UOA서 매클 녹화하실때에 아마 지금은 이렇게 하신듯<br>\n<br>\n 스킬사용 - 프로보<br>\n 타겟지정<br>\n 타겟지정<br>\n<br>\n 이럼 매크로가 악기뿌사지면 끊겨버리죠.^^;<br>\n<br>\n 이걸 방지하기위해서 악기를 여러개 듭니다.(반드시 같은종류여야만 합니다.)<br>\n<br>\n 그리고 UOA녹화시 젤첨에 악기를 걍 더블클릭하는걸 녹화하세요<br>\n<br>\n 그담에 그곳에 마우스 오른쪽클릭하시고<br>\n<br>\n \"Use Item Type\" 으로 바꾸세요.<br>\n<br>\n그리고 그뒤는 전과똑같이 하시면됩니다. <br>\n<br>\n그럼 악기깨져도 자동으로 다른악기쓴답니다.<br>\n<br>\n 단, 반드시 한종류 악기여야 작동합니다. 전 주로 탬버린을쓰죠.<br>\n<br>\n 아 그리고 스킬올리실때는 그냥 상점용으로 하세요. 그게 익셉보다 잘오릅니다.<br>\n<br>\n 사냥시는 당연 익셉쓰셔야되구요.^^;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191152",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=16430",
+  "sourceEngine": "zeroboard"
+}

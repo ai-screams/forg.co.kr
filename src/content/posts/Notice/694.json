@@ -1,0 +1,20 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "694",
+  "title": "현재 유행하고 있는 Mirc 바이러스에 대하여.",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 긴 내용이지만 단계별로 보시면 이해가 되시리라 생각됩니다.<br>\n<br>\n 1. 우선 Mirc를 사용하시는 멤버분들은 아래의 주소로 백신검사를 해보시길 바랍니다. <br>\n 물론 최신 V3가 있으신분은 아래의 설명을 읽으실 필요가 없습니다.<br>\n 노턴에서는 trojan horse로 나올 뿐입니다.<br>\n<br>\n 2. 일단 아래의 사이트에서 백신검사를 받아봅니다<br>\n<a href=\"http://vaccine.empas.com/myv3.asp#\">http://vaccine.empas.com/myv3.asp#</a><br>\n 진단하기 아이콘을 누르시면 무료로 진단 하실 수 있습니다.<br>\n 치료만 유료입니다.<br>\n<br>\n 3. 진단하신분중에 바이러스가 검출이 되었다면 아래의 파일이 있는지 확인해보시길.<br>\n STDE9.EXE, explorer.exe,iiscache.dll<br>\n 위의 파일이 감염 되어있다면 mirc에관련된 바이러스입니다. 이외의 바이러스는<br>\n 바이러스정보란을 보시고 치료하시길-0-<br>\n<br>\n 4. 일단 해당 mirc를 언인스톨하고 폴더채로 날려버립니다.<br>\n 익스플로워창을 연후-도구-인터넷옵션에서 파일삭제를 합니다.<br>\n (아래 단계에 수행할 바이러스검사시간을 단축시킵니다.)<br>\n<br>\n 5. 다시 <a href=\"http://vaccine.empas.com/myv3.asp#\">http://vaccine.empas.com/myv3.asp#</a> 사이트로가셔서<br>\n 진단하기로 진단하신 후 이때는 환경설정에서 모든파일검사를 체크하신 후<br>\n 전체 파일을 체크합니다.<br>\n<br>\n 6. 몇개의 파일이 검출됩니다.<br>\n<br>\n 7. 유료로 치료하실 분은 치료를 합니다.-0-/<br>\n<br>\n<b>8. 무료로 다음과 같은 방법으로 치료합니다.(30일평가판입니다-0-/)<br>\n<a href=\"http://home.ahnlab.com/download/programtest_v3_down.html\">http://home.ahnlab.com/download/programtest_v3_down.html</a></b><br>\n<br>\n 9. mIRC를 다운로드 받는곳은 다음과 같습니다.&nbsp;&nbsp;<a href=\"http://mirc.com/get.html\">http://mirc.com/get.html</a><br>\n XIRC를 다운받는곳은 다음과 같습니다. <a href=\"http://www.dgtalx.net\">http://www.dgtalx.net</a><br>\n<br>\n P.S : 해당바이러스에 관한 관련자료는 다음과 같습니다.<br>\n<a href=\"http://home.ahnlab.com/smart2u/virus_detail_1066.html\">http://home.ahnlab.com/smart2u/virus_detail_1066.html</a><br>\n<br>\n P.S : 마지막으로 윈도우 보안 업데이트를 전혀 하지 않으신분은 다음사이트에서 업데이트를 하시길...<br>\n<a href=\"http://windowsupdate.microsoft.com\">http://windowsupdate.microsoft.com</a><br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "긴 내용이지만 단계별로 보시면 이해가 되시리라 생각됩니다. 1. 우선 Mirc를 사용하시는 멤버분들은 아래의 주소로 백신검사를 해보시길 바랍니다. 물론 최신 V3가 있으신분은 아래의 설명을 읽으실 필요가 없습니다. 노턴에서는 trojan horse로 나올 뿐입니다. 2. 일단 아래의 사이트에서 백신검사를 받아봅니다 http://vaccine.empas.com/myv3.asp# 진단하기 아이콘을 누르시면 무료로 진단 하실 수 있습니다. 치료만 유료입니다. 3. 진단하신분중에 바이러스가 검출이 되었다면 아래의 파일이 있는지 확인해보시길. STDE9.EXE, explorer.exe,iiscache.dll 위의 파일이 감염 되어있다면 mirc에관련된 바이러스입니다. 이외의 바이러스는 바이러스정보란을 보시고 치료하시길-0- 4. 일단 해당 mirc를 언인스톨하고 폴더채로 날려버립니다. 익스플로워창을 연후-도구-인터넷옵션에서 파일삭제를 합니다. (아래 단계에 수행할 바이러스검사시간을 단축시킵니다.) 5. 다시 http://vaccine.empas.com/myv3.asp# 사이트로가셔서 진단하기로 진단하신 후 이때는 환경설정에서 모든파일검사를 체크하신 후 전체 파일을 체크합니다. 6. 몇개의 파일이 검출됩니다. 7. 유료로 치료하실 분은 치료를 합니다.-0-/ 8. 무료로 다음과 같은 방법으로 치료합니다.(30일평가판입니다-0-/) http://home.ahnlab.com/download/programtest_v3_down.html 9. mIRC를 다운로드 받는곳은 다음과 같습니다. http://mirc.com/get.html XIRC를 다운받는곳은 다음과 같습니다. http://www.dgtalx.net P.S : 해당바이러스에 관한 관련자료는 다음과 같습니다. http://home.ahnlab.com/smart2u/virus_detail_1066.html P.S : 마지막으로 윈도우 보안 업데이트를 전혀 하지 않으신분은 다음사이트에서 업데이트를 하시길... http://windowsupdate.microsoft.com",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-12-17T22:19:36",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190848",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=694",
+  "sourceEngine": "zeroboard"
+}

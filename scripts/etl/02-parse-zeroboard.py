@@ -1,0 +1,597 @@
+#!/usr/bin/env python3
+"""ETL Stage 2 — Zeroboard 4.1pl4 (kritz_normal skin) HTML → Post JSON.
+
+Reads UTF-8 HTML from `.docs/research/archive-clean/A/{board}/{id}.html`
+(Stage 1 output, ADR-0007) and emits validated JSON to
+`src/content/posts/{board}/{post_id}.json` (ADR-0004, ADR-0008).
+
+Implements the selectors documented in ADR-0008 §4. nh3 sanitises the
+body and comments using the vintage-friendly whitelist (font/center kept
+on purpose). Pydantic v2 validates every record before it touches disk.
+
+USAGE:
+    python3 scripts/etl/02-parse-zeroboard.py [options]
+
+OPTIONS:
+    --limit N          process only the first N files
+    --force            overwrite already-parsed JSON
+    --dry-run          do not write JSON (still validates)
+    --board BOARD      restrict to one board id
+    --print-every N    progress cadence (default 50)
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+import time
+import unicodedata
+from collections import Counter
+from dataclasses import dataclass, field
+from datetime import datetime
+from pathlib import Path
+from typing import cast
+from urllib.parse import parse_qs, urlparse
+
+import nh3
+from bs4 import BeautifulSoup, Tag
+from pydantic import ValidationError
+
+# Make schemas.py importable when this script is run directly.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from schemas import Attachment, Comment, Post  # noqa: E402
+
+# ── Paths ───────────────────────────────────────────────────────────────
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+INPUT_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "A"
+OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
+FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures.jsonl"
+SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
+
+# ── Era assignment ──────────────────────────────────────────────────────
+# Posts authored before 2011 lived under the frameset/Zeroboard era;
+# posts from 2011 onwards under the Gnuboard4 redesign.
+ERA_BREAKPOINT = datetime(2011, 1, 1)
+
+
+# ── Non-post page detection ────────────────────────────────────────────-
+# Some Wayback captures landed on Zeroboard pages that were never the
+# requested post: the post had been deleted before capture time, the server
+# was returning a DB error, the URL was a plugin redirect, or the capture
+# only contains the Zeroboard licence boilerplate. None of these contain
+# extractable content; the parser classifies them as `skipped_no_content`
+# rather than treating them as parse failures.
+_NON_POST_MARKERS: tuple[tuple[str, str], ...] = (
+    ("선택하신 게시물이 존재하지 않습니다", "deleted_before_capture"),
+    ("DB 접속시 에러가 발생했습니다", "db_error_at_capture"),
+    ("사용권한이 없습니다", "permission_denied"),
+    ("plugin_download", "plugin_redirect"),
+)
+
+
+def detect_non_post_page(html: str) -> str | None:
+    """Return a reason string if this is not a real post, else None."""
+    for marker, reason in _NON_POST_MARKERS:
+        if marker in html:
+            return reason
+    # Last-ditch: a capture that is essentially only the Zeroboard licence
+    # comment plus a stub <html> body. Real posts are >> 2 KB after cleanup
+    # and contain a `title_bg.jpg` table.
+    if len(html) < 4000 and "title_bg.jpg" not in html:
+        return "license_only_stub"
+    return None
+
+
+class _NonPostPage(Exception):
+    """Raised when a capture is structurally a Zeroboard page but not a post."""
+
+    def __init__(self, reason: str) -> None:
+        super().__init__(reason)
+        self.reason = reason
+
+
+# ── Korean date parser ──────────────────────────────────────────────────
+_KOREAN_DATETIME_RE = re.compile(
+    r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일\s*(\d{1,2})시\s*(\d{1,2})분\s*(\d{1,2})초"
+)
+_DATE_ONLY_RE = re.compile(r"(\d{4})/(\d{1,2})/(\d{1,2})")
+
+
+def parse_korean_datetime(text: str) -> datetime | None:
+    """Prefer the second-precision title text, fall back to the visible date."""
+    m = _KOREAN_DATETIME_RE.search(text)
+    if m:
+        y, mo, d, h, mi, s = (int(x) for x in m.groups())
+        return datetime(y, mo, d, h, mi, s)
+    m2 = _DATE_ONLY_RE.search(text)
+    if m2:
+        y, mo, d = (int(x) for x in m2.groups())
+        return datetime(y, mo, d)
+    return None
+
+
+# ── nh3 sanitiser config (ADR-0008 §5) ──────────────────────────────────
+_SANITISER_TAGS = {
+    "p", "br", "b", "i", "u", "strong", "em", "a", "img", "span",
+    "div", "table", "tr", "td", "th", "tbody", "thead", "tfoot",
+    "ul", "ol", "li", "blockquote", "font", "center", "hr",
+    "h1", "h2", "h3", "h4", "h5", "h6", "pre", "code",
+}  # fmt: skip
+_SANITISER_ATTRS: dict[str, set[str]] = {
+    "a": {"href", "title"},
+    "img": {"src", "alt", "width", "height", "border"},
+    "td": {"colspan", "rowspan", "align", "valign", "bgcolor", "width", "height"},
+    "th": {"colspan", "rowspan", "align", "valign", "bgcolor", "width", "height"},
+    "table": {"border", "cellpadding", "cellspacing", "width", "bgcolor"},
+    "font": {"color", "size", "face"},
+    "*": {"style", "class"},
+}
+_SANITISER_URL_SCHEMES = {"http", "https", "mailto"}
+
+
+def sanitise_html(html: str) -> str:
+    return nh3.clean(
+        html,
+        tags=_SANITISER_TAGS,
+        attributes=_SANITISER_ATTRS,
+        url_schemes=_SANITISER_URL_SCHEMES,
+        link_rel=None,
+    )
+
+
+# ── Selectors ──────────────────────────────────────────────────────────-
+
+
+def find_title(soup: BeautifulSoup) -> str | None:
+    """Title sits in a <table> whose style references title_bg.jpg."""
+    for table in soup.find_all("table"):
+        if not isinstance(table, Tag):
+            continue
+        style = table.get("style", "")
+        if isinstance(style, str) and "title_bg.jpg" in style:
+            for td in table.find_all("td"):
+                if not isinstance(td, Tag):
+                    continue
+                if td.get("align") == "left":
+                    bold = td.find("b")
+                    if bold:
+                        return bold.get_text(strip=True)
+                    return td.get_text(strip=True)
+    return None
+
+
+def find_meta_font(soup: BeautifulSoup) -> Tag | None:
+    """The post's meta line lives in a Verdana 10px <font> containing 'write by'."""
+    for font in soup.find_all("font"):
+        if not isinstance(font, Tag):
+            continue
+        style = font.get("style", "")
+        if not (isinstance(style, str) and "Verdana" in style and "10px" in style):
+            continue
+        text = font.get_text(separator=" ", strip=True)
+        if text.startswith("write by"):
+            return font
+    return None
+
+
+def find_comment_fonts(soup: BeautifulSoup) -> list[Tag]:
+    """Comment meta lines look like the post meta but start with 'comment by'."""
+    out: list[Tag] = []
+    for font in soup.find_all("font"):
+        if not isinstance(font, Tag):
+            continue
+        style = font.get("style", "")
+        if not (isinstance(style, str) and "Verdana" in style and "10px" in style):
+            continue
+        text = font.get_text(separator=" ", strip=True)
+        if text.startswith("comment by"):
+            out.append(font)
+    return out
+
+
+def extract_meta(font: Tag) -> dict[str, str | None]:
+    """Pull author, member_no, homepage, and timestamp out of a meta <font>."""
+    text = font.get_text(separator=" ", strip=True)
+    text = unicodedata.normalize("NFKC", text)
+
+    author = None
+    member_no = None
+    cmt_anchor = font.find("a", class_="cmt") or font.find(
+        "a", href=re.compile(r"view_info\.php")
+    )
+    if isinstance(cmt_anchor, Tag):
+        author = cmt_anchor.get_text(strip=True)
+        href = cmt_anchor.get("href", "")
+        if isinstance(href, str):
+            qs = parse_qs(urlparse(href).query)
+            mn = qs.get("member_no") or []
+            if mn:
+                member_no = mn[0]
+
+    homepage = None
+    for a in font.find_all("a"):
+        if not isinstance(a, Tag):
+            continue
+        href = a.get("href")
+        if not isinstance(href, str):
+            continue
+        if "view_info.php" in href:
+            continue
+        if href.strip() in {"http://", "https://", ""}:
+            continue
+        homepage = href.strip()
+        break
+
+    created_at = None
+    span = font.find("span", title=True)
+    if isinstance(span, Tag):
+        title_attr = span.get("title", "")
+        if isinstance(title_attr, str):
+            created_at = parse_korean_datetime(title_attr)
+    if not created_at:
+        created_at = parse_korean_datetime(text)
+
+    return {
+        "author": author,
+        "member_no": member_no,
+        "homepage": homepage,
+        "created_at": created_at.isoformat() if created_at else None,
+    }
+
+
+def find_post_body_td(soup: BeautifulSoup, meta_font: Tag | None) -> Tag | None:
+    """The first body-td appears AFTER the meta font."""
+    if meta_font is None:
+        return None
+    found_meta = False
+    for td in soup.find_all("td"):
+        if not isinstance(td, Tag):
+            continue
+        if not found_meta:
+            if meta_font in td.descendants:
+                found_meta = True
+            continue
+        bgcolor = td.get("bgcolor", "")
+        style = td.get("style", "")
+        if (
+            isinstance(bgcolor, str)
+            and bgcolor.lower() == "#ffffff"
+            and isinstance(style, str)
+            and "padding:10px" in style
+        ):
+            return td
+    return None
+
+
+def find_comment_body_td(comment_font: Tag) -> Tag | None:
+    """Comment body lives in <td class="t140"> immediately after the comment meta."""
+    pivot: Tag | None = comment_font
+    while pivot is not None:
+        nxt = pivot.find_next("td", class_="t140")
+        if isinstance(nxt, Tag):
+            return nxt
+        pivot = pivot.parent if isinstance(pivot.parent, Tag) else None
+    return None
+
+
+_ATTACH_HREF_RE = re.compile(r"download\.php", re.I)
+_FILE_SIZE_RE = re.compile(
+    r"\(\s*([\d.,]+)\s*(KB|MB|GB|B)\s*\)\s*$",
+    re.I,
+)
+
+
+def find_attachments(soup: BeautifulSoup) -> list[dict[str, object]]:
+    out: list[dict[str, object]] = []
+    seen: set[int] = set()
+    for a in soup.find_all("a", href=_ATTACH_HREF_RE):
+        if not isinstance(a, Tag):
+            continue
+        href = a.get("href", "")
+        if not isinstance(href, str):
+            continue
+        qs = parse_qs(urlparse(href).query)
+        filenum_raw = qs.get("filenum") or []
+        if not filenum_raw:
+            continue
+        try:
+            filenum = int(filenum_raw[0])
+        except ValueError:
+            continue
+        if filenum in seen:
+            continue
+        seen.add(filenum)
+
+        full_text = a.get_text(strip=True)
+        m = _FILE_SIZE_RE.search(full_text)
+        size_bytes: int | None = None
+        if m:
+            try:
+                value = float(m.group(1).replace(",", ""))
+                unit = m.group(2).upper()
+                multiplier = {"B": 1, "KB": 1024, "MB": 1024**2, "GB": 1024**3}[unit]
+                size_bytes = int(value * multiplier)
+            except ValueError:
+                size_bytes = None
+            name = full_text[: m.start()].strip()
+        else:
+            name = full_text
+
+        out.append({"name": name or f"file_{filenum}", "fileNum": filenum, "sizeBytes": size_bytes})
+    return out
+
+
+# ── Wayback timestamp recovery ─────────────────────────────────────────-
+_CAPTURED_AT_RE = re.compile(r"\((\d{14})\)$|/web/(\d{14})|capturedAt=(\d{14})")
+
+
+def derive_captured_at(file_path: Path) -> str:
+    """We do not have the timestamp in the cleaned HTML — fall back to mtime
+    encoded as YYYYMMDDHHMMSS so downstream code never sees an empty value.
+    The downloader writes one capture per post so this only loses the original
+    Wayback timestamp; the originalUrl can still be reconstructed if needed."""
+    ts = datetime.fromtimestamp(file_path.stat().st_mtime)
+    return ts.strftime("%Y%m%d%H%M%S")
+
+
+# ── Per-file pipeline ──────────────────────────────────────────────────-
+
+
+def parse_one(html: str, *, board: str, post_id: str, captured_at: str) -> Post:
+    reason = detect_non_post_page(html)
+    if reason is not None:
+        raise _NonPostPage(reason)
+
+    soup = BeautifulSoup(html, "lxml")
+
+    title = find_title(soup) or ""
+    meta_font = find_meta_font(soup)
+    meta = extract_meta(meta_font) if meta_font else {
+        "author": None, "member_no": None, "homepage": None, "created_at": None,
+    }  # fmt: skip
+
+    body_td = find_post_body_td(soup, meta_font)
+    body_html_raw = ""
+    if isinstance(body_td, Tag):
+        inner = body_td.find("span", style=re.compile(r"line-height", re.I))
+        target = inner if isinstance(inner, Tag) else body_td
+        body_html_raw = target.decode_contents()
+    body_html = sanitise_html(body_html_raw)
+    body_text_soup = BeautifulSoup(body_html, "lxml")
+    body_text = body_text_soup.get_text(separator=" ", strip=True)
+
+    comments: list[Comment] = []
+    for cfont in find_comment_fonts(soup):
+        cmeta = extract_meta(cfont)
+        cbody = find_comment_body_td(cfont)
+        chtml = sanitise_html(cbody.decode_contents()) if isinstance(cbody, Tag) else ""
+        comments.append(
+            Comment(
+                author=cmeta["author"] or "anonymous",
+                authorMemberNo=cmeta["member_no"],
+                createdAt=cast(datetime, parse_korean_datetime(cmeta["created_at"] or ""))
+                or datetime(1970, 1, 1),
+                bodyHtml=chtml,
+            )
+        )
+
+    attachments = [Attachment(**a) for a in find_attachments(soup)]
+
+    created_at_iso = meta["created_at"]
+    if not created_at_iso:
+        raise ValueError("missing createdAt in meta line")
+    created_at = datetime.fromisoformat(created_at_iso)
+
+    era = "2014" if created_at >= ERA_BREAKPOINT else "2003"
+
+    return Post(
+        board=board,
+        boardKr=board,  # P1.3 will replace with localised name from src/lib/boards.ts
+        postId=post_id,
+        title=title or "(제목 없음)",
+        bodyHtml=body_html,
+        bodyText=body_text or " ",
+        author=meta["author"] or "anonymous",
+        authorMemberNo=meta["member_no"],
+        authorHomepage=meta["homepage"],
+        createdAt=created_at,
+        hits=None,
+        recommend=None,
+        attachments=attachments,
+        comments=comments,
+        era=era,
+        capturedAt=captured_at,
+        originalUrl=f"http://forg.co.kr/_zb/zboard.php?id={board}&no={post_id}",
+        sourceEngine="zeroboard",
+    )
+
+
+# ── Stats / reporting ──────────────────────────────────────────────────-
+
+
+@dataclass
+class Stats:
+    total: int = 0
+    success: int = 0
+    skipped: int = 0
+    failed_parse: int = 0
+    failed_validate: int = 0
+    skipped_no_content: int = 0
+    skipped_reasons: Counter = field(default_factory=Counter)
+    body_chars: int = 0
+    posts_with_comments: int = 0
+    posts_with_attachments: int = 0
+    per_board: Counter = field(default_factory=Counter)
+    per_board_failed: Counter = field(default_factory=Counter)
+    per_board_skipped: Counter = field(default_factory=Counter)
+    start_ts: float = field(default_factory=time.time)
+
+
+def _append_failure(rec: dict[str, object]) -> None:
+    FAILURES_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with FAILURES_FILE.open("a") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+def _write_summary(stats: Stats) -> None:
+    SUMMARY_FILE.write_text(
+        json.dumps(
+            {
+                "total": stats.total,
+                "success": stats.success,
+                "skipped": stats.skipped,
+                "skipped_no_content": stats.skipped_no_content,
+                "skipped_reasons": dict(stats.skipped_reasons),
+                "failed_parse": stats.failed_parse,
+                "failed_validate": stats.failed_validate,
+                "avg_body_chars": (
+                    stats.body_chars // stats.success if stats.success else 0
+                ),
+                "posts_with_comments": stats.posts_with_comments,
+                "posts_with_attachments": stats.posts_with_attachments,
+                "per_board": dict(stats.per_board),
+                "per_board_failed": dict(stats.per_board_failed),
+                "per_board_skipped": dict(stats.per_board_skipped),
+                "elapsed_s": int(time.time() - stats.start_ts),
+                "ts": int(time.time()),
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+    )
+
+
+# ── Driver ─────────────────────────────────────────────────────────────-
+
+
+def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
+    if not INPUT_DIR.is_dir():
+        sys.exit(f"FATAL: input directory not found: {INPUT_DIR}")
+    files: list[tuple[str, str, Path]] = []
+    for board_dir in sorted(INPUT_DIR.iterdir()):
+        if not board_dir.is_dir():
+            continue
+        if board_filter and board_dir.name != board_filter:
+            continue
+        for f in sorted(board_dir.glob("*.html")):
+            post_id = f.stem
+            files.append((board_dir.name, post_id, f))
+    return files
+
+
+def derive_output_path(board: str, post_id: str) -> Path:
+    return OUTPUT_DIR / board / f"{post_id}.json"
+
+
+def needs_processing(input_path: Path, output_path: Path, force: bool) -> bool:
+    if force:
+        return True
+    if not output_path.exists():
+        return True
+    if output_path.stat().st_size == 0:
+        return True
+    if input_path.stat().st_mtime > output_path.stat().st_mtime:
+        return True
+    return False
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="ETL Stage 2: Zeroboard parser")
+    parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--force", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--board", default=None)
+    parser.add_argument("--print-every", type=int, default=50)
+    args = parser.parse_args()
+
+    inputs = iter_input_files(args.board)
+    todo: list[tuple[str, str, Path]] = []
+    skipped = 0
+    for board, post_id, f in inputs:
+        out = derive_output_path(board, post_id)
+        if needs_processing(f, out, args.force):
+            todo.append((board, post_id, f))
+        else:
+            skipped += 1
+    if args.limit:
+        todo = todo[: args.limit]
+
+    print(
+        f"[02-parse] planned={len(inputs)} todo={len(todo)} skipped={skipped} "
+        f"input={INPUT_DIR} output={OUTPUT_DIR} dry_run={args.dry_run}",
+        file=sys.stderr,
+    )
+    if not todo:
+        print("Nothing to do.", file=sys.stderr)
+        return
+
+    stats = Stats(total=len(todo), skipped=skipped)
+    last_print = 0
+    for i, (board, post_id, in_path) in enumerate(todo, 1):
+        out_path = derive_output_path(board, post_id)
+        try:
+            html = in_path.read_text("utf-8")
+            captured_at = derive_captured_at(in_path)
+            post = parse_one(html, board=board, post_id=post_id, captured_at=captured_at)
+        except _NonPostPage as e:
+            stats.skipped_no_content += 1
+            stats.skipped_reasons[e.reason] += 1
+            stats.per_board_skipped[board] += 1
+            _append_failure(
+                {"input": str(in_path), "error": e.reason, "stage": "skipped_no_content"}
+            )
+            continue
+        except ValidationError as e:
+            stats.failed_validate += 1
+            stats.per_board_failed[board] += 1
+            _append_failure({"input": str(in_path), "error": str(e)[:500], "stage": "validate"})
+            continue
+        except Exception as e:
+            stats.failed_parse += 1
+            stats.per_board_failed[board] += 1
+            _append_failure(
+                {"input": str(in_path), "error": f"{type(e).__name__}: {e}"[:500], "stage": "parse"}
+            )
+            continue
+
+        stats.success += 1
+        stats.per_board[board] += 1
+        stats.body_chars += len(post.bodyText)
+        if post.comments:
+            stats.posts_with_comments += 1
+        if post.attachments:
+            stats.posts_with_attachments += 1
+
+        if not args.dry_run:
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            tmp = out_path.with_suffix(out_path.suffix + ".tmp")
+            tmp.write_text(post.model_dump_json(indent=2), encoding="utf-8")
+            tmp.replace(out_path)
+
+        if i - last_print >= args.print_every or i == len(todo):
+            last_print = i
+            _write_summary(stats)
+            elapsed = time.time() - stats.start_ts
+            rate = stats.success / elapsed if elapsed else 0
+            print(
+                f"[{i:>5}/{len(todo)}] ok={stats.success} parse_err={stats.failed_parse} "
+                f"valid_err={stats.failed_validate} skipped={stats.skipped_no_content} "
+                f"comments={stats.posts_with_comments} attach={stats.posts_with_attachments} "
+                f"{rate:.1f}/s",
+                file=sys.stderr,
+                flush=True,
+            )
+
+    _write_summary(stats)
+    print(
+        f"\n[02-parse] DONE total={stats.total} ok={stats.success} "
+        f"parse_err={stats.failed_parse} valid_err={stats.failed_validate} "
+        f"skipped_no_content={stats.skipped_no_content} ({dict(stats.skipped_reasons)})",
+        file=sys.stderr,
+    )
+    sys.exit(1 if (stats.failed_parse + stats.failed_validate) > 0 else 0)
+
+
+if __name__ == "__main__":
+    main()

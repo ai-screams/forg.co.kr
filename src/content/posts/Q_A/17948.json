@@ -1,0 +1,33 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17948",
+  "title": "울온 자채 매크로 저장해놓은개  울티마 껏다 키기만하면..",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 울티마 자채 매크로 저장해 놓은개 <br>\n 로그아웃 하고 들어오면은.. 사라 져버리내요..자채 매크로가..<br>\n 분명이 저장 다 했는데..<br>\n 오늘 왜이러지.. 뭔가 건드린것도 없는데.. insert로 키를 잡앗는데<br>\n insert 로 되어있는건..오직. 파이어볼 하나 밖에 없는대..<br>\n 로그아웃 하고 나면 사라져 버리내요.. <br>\n 어떻게 하면 안사라지죠? <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<img src=\"http://forg.co.kr/_zb/data/TRICK2_11_013.jpg\"> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "울티마 자채 매크로 저장해 놓은개 로그아웃 하고 들어오면은.. 사라 져버리내요..자채 매크로가.. 분명이 저장 다 했는데.. 오늘 왜이러지.. 뭔가 건드린것도 없는데.. insert로 키를 잡앗는데 insert 로 되어있는건..오직. 파이어볼 하나 밖에 없는대.. 로그아웃 하고 나면 사라져 버리내요.. 어떻게 하면 안사라지죠?",
+  "author": "jhwan18",
+  "authorMemberNo": "19695",
+  "authorHomepage": null,
+  "createdAt": "2003-04-11T23:40:46",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 로그아웃하기전에는 키 잡은게 제대로 다 되나요??<br>\n<br>\n 로그아웃하고 나서 사라지는건 이해할수 없지만..<br>\n 참고로 울온설치된 폴더에 Desktop 폴더로 들어가 샤드랑 캐릭 폴더 찾으면<br>\n 그안에 macro.txt란 파일이 울온 자체 매크로가 저장되는 파일입니다..<br>\n 그게 다시 로그인하면 다른걸로 덮어쓰여진다거나 하면 매클잡은게 지워질수도..(그럴일이 없을텐데요..)<br>\n<br>\n 매크로 추가시키고 확실히 ok버튼 누르셨는지 확인하시고.. 잡은 키가 다른 키랑 겹치는 지도<br>\n 확인해 보세요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 uo desktop폴더 내의 현재 플레이하는 샤드이름 폴더에서 <br>\n<br>\n '보기 -&gt; 폴더 옵션 -&gt; 보기' 로 들어가셔서 파일 및 폴더옵션에<br>\n<br>\n '모든 대문자 이름 허용'이 체크 되어있다면 풀어주십시요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191408",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17948",
+  "sourceEngine": "zeroboard"
+}

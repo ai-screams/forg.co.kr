@@ -1,0 +1,31 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "456",
+  "title": "시나리오 5주분 적용",
+  "bodyHtml": "\n<a href=\"data/lm_5142002_01.jpg\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"472.5\" src=\"data/lm_5142002_01.jpg\" width=\"630\"></a><br>\n<a href=\"data/lm_5142002_03.jpg\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"331\" src=\"data/lm_5142002_03.jpg\" width=\"432\"></a><br>\n     \t\t\t 역시 보통때처럼 체스피크샤드에 적용해서 이상여부를 확인한 후, 특별한 일이 없는 한 다음과 같은 스케쥴에 따라 진행됩니다.<br>\n<br>\n 참고: 이번 시나리오에서 유의 지도가 약간(늪지대로) 변하게 됩니다. 물론 플레이어의 집에 영향을 끼치지는 않을 것입니다.<br>\n<br>\n 미국 동부 샤드 (Atlantic, Catskills, AOL Legends):<br>\n 5:00 am EDT, 수요일, 5/15<br>\n (4:00 am CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 미국 중부 샤드 (Great Lakes, Lake Superior, Siege Perilous):<br>\n 5:00 am CDT, 수요일, 5/15<br>\n<br>\n<br>\n 미국 서부 샤드 (Pacific, Baja, Napa Valley, Sonoma):<br>\n 5:00 am PDT, 수요일, 5/15<br>\n (7:00 am CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 오세아니아:<br>\n 5:00 am AEST, 목요일, 5/16<br>\n (2:00 pm CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 일본 샤드 (Yamato, Izumo, Wakoku, Hokotu, Asuka, Mizuho, Mugen):<br>\n 7:00 am JST, 목요일, 5/16<br>\n (5:00 pm CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 한국 샤드 (Arirang, Balhae, Baekdu):<br>\n 7:00 am KST, 목요일, 5/16<br>\n (5:00 pm CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 타이완:<br>\n 7:00 am Taiwan time, 목요일, 5/16<br>\n (6:00 pm CDT, 수요일, 5/15)<br>\n<br>\n<br>\n 유럽 샤드 (Europa, Drachenfels):<br>\n 5:00 am GMT, 목요일, 5/16<br>\n (11:00 pm CDT, 수요일, 5/15) <br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "역시 보통때처럼 체스피크샤드에 적용해서 이상여부를 확인한 후, 특별한 일이 없는 한 다음과 같은 스케쥴에 따라 진행됩니다. 참고: 이번 시나리오에서 유의 지도가 약간(늪지대로) 변하게 됩니다. 물론 플레이어의 집에 영향을 끼치지는 않을 것입니다. 미국 동부 샤드 (Atlantic, Catskills, AOL Legends): 5:00 am EDT, 수요일, 5/15 (4:00 am CDT, 수요일, 5/15) 미국 중부 샤드 (Great Lakes, Lake Superior, Siege Perilous): 5:00 am CDT, 수요일, 5/15 미국 서부 샤드 (Pacific, Baja, Napa Valley, Sonoma): 5:00 am PDT, 수요일, 5/15 (7:00 am CDT, 수요일, 5/15) 오세아니아: 5:00 am AEST, 목요일, 5/16 (2:00 pm CDT, 수요일, 5/15) 일본 샤드 (Yamato, Izumo, Wakoku, Hokotu, Asuka, Mizuho, Mugen): 7:00 am JST, 목요일, 5/16 (5:00 pm CDT, 수요일, 5/15) 한국 샤드 (Arirang, Balhae, Baekdu): 7:00 am KST, 목요일, 5/16 (5:00 pm CDT, 수요일, 5/15) 타이완: 7:00 am Taiwan time, 목요일, 5/16 (6:00 pm CDT, 수요일, 5/15) 유럽 샤드 (Europa, Drachenfels): 5:00 am GMT, 목요일, 5/16 (11:00 pm CDT, 수요일, 5/15)",
+  "author": "sos550",
+  "authorMemberNo": "5862",
+  "authorHomepage": null,
+  "createdAt": "2002-05-15T10:48:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "lm_5142002_01.jpg",
+      "fileNum": 1,
+      "sizeBytes": 70246
+    },
+    {
+      "name": "lm_5142002_03.jpg",
+      "fileNum": 2,
+      "sizeBytes": 70041
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20260502190752",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=456",
+  "sourceEngine": "zeroboard"
+}

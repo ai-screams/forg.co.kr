@@ -1,0 +1,81 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18090",
+  "title": "민첩과 동물 치료",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 동물한테 붕대를 감아주는건 민첩이 낮아도 그다지 오래 걸리지 않은듯 한데요<br>\n 동물 치료는 민첩 얼마당 몇초씩 차이가 나는지?<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "동물한테 붕대를 감아주는건 민첩이 낮아도 그다지 오래 걸리지 않은듯 한데요 동물 치료는 민첩 얼마당 몇초씩 차이가 나는지?",
+  "author": "pokoso",
+  "authorMemberNo": "20152",
+  "authorHomepage": null,
+  "createdAt": "2003-04-17T21:58:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "민첩 40이상 4초, 40이하 5초라고 하던데...^^*"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그럼 50이면 될까요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 덱스 40이하면 5초<br>\n<br>\n 덱스 40이상이면 4초 <br>\n<br>\n 덱스 100이상이면 3초 입니다<br>\n<br>\n 즉 수학의 사용시 동물에게 붕대질 하는 소요 시간입니다<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 40이상이면 4초 이하면 5초라면..<br>\n 40이면 4초에요 5초에요?? -_-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 39까지 5초고 40부터 4초입니다. "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이상 - 이하 -&gt; 그것을 포함<br>\n 초과 - 미만 -&gt; 그것을 미 포함"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 40이하는<br>\n<br>\n 40보다 낮은수 입니다<br>\n<br>\n 즉 39부터 이겠죠<br>\n<br>\n 40이상은 40을 포함하는수 입니다<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흠.... 제가 배우기론 이하는 자신을 포함한 낮은수... 그리구 미만이 자기자신보다 낮은수.. 라고 배워꺼등요..... "
+    },
+    {
+      "author": "민트초코",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ~이상 : ~수를 포함하여 그 상위 숫자<br>\n ~이하 : ~수를 포함하여 그 하위 숫자<br>\n ~미만 : ~수를 제외한 그 하위 숫자<br>\n ~초과 : ~수를 제외한 그 상위 숫자..<br>\n<br>\n 40이상: 4초<br>\n 40미만: 5초 가 맞겠네요 *^^*"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 쿨럭........이상,이하,미만, 초과라는 개념을<br>\n 잘못알고계시는분이 계실거라곤.........-_-;;<br>\n 민트초코님 말씀 정답입니다........-_-;;;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191441",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18090",
+  "sourceEngine": "zeroboard"
+}

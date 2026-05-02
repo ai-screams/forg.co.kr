@@ -1,0 +1,27 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "17760",
+  "title": "질문!",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 울온에서<br>\n 자꾸 Error [MegaCliloc] : Stringld Not Found&nbsp;&nbsp;: 36605<br>\n 이런식으로 자꾸만 영어가 자꾸 나와요<br>\n 어떻게 된거죠?<br>\n 답변부탁좀요..<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "울온에서 자꾸 Error [MegaCliloc] : Stringld Not Found  : 36605 이런식으로 자꾸만 영어가 자꾸 나와요 어떻게 된거죠? 답변부탁좀요..",
+  "author": "wjdwls14chl",
+  "authorMemberNo": "20185",
+  "authorHomepage": null,
+  "createdAt": "2003-04-04T17:34:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그거 한글화 패치가 제데로 되지 않아서 그렇습니다;<br>\n<br>\n 해결책은 패치가 될때까지 기다리거나 영문판으로 플레이 하는겁니다<br>\n 영문판으로 바꾸는건 질답란에서 영문이라 검색해보세요<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20260502191327",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=17760",
+  "sourceEngine": "zeroboard"
+}
