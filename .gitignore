@@ -36,6 +36,7 @@ archive-utf8/
 .parse-failures.jsonl
 .parse-progress.jsonl
 .index-summary.json
+.image-manifest-summary.json
 
 # Local caches & generated content
 .cache/
