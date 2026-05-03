@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 import { DEFAULT_ERA, ERA_STORAGE_KEY } from "@/lib/era";
 
 import "./globals.css";
@@ -32,7 +34,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
       </head>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col bg-(--era-page-bg)">
+        <SiteHeader />
+        <main className="flex flex-1 flex-col">{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }
