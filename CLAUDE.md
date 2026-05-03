@@ -18,6 +18,7 @@ The README describes the goal in detail. The two non-obvious facts that affect e
 The `.docs/` directory holds the internal context. It is **gitignored on purpose** — never stage it. Future agents must read it to understand intent:
 
 - `.docs/ADR/` — accepted Architecture Decision Records numbered ADR-0001 through ADR-NNNN. The index at `.docs/ADR/README.md` lists all decisions in scope. Read the ADR before changing tokens, era system, ETL, or stack choices.
+- `.docs/considerations/` — forward-looking notes (`CONS-NNNN`) for decisions deliberately deferred. Lighter than ADRs; each one names its re-evaluation trigger (e.g. CONS-0001 captures the future interactive-board / DB scenario). Resolution path is to be promoted to an ADR or rejected.
 - `.docs/plan/ROADMAP.md` — phased checklist (P0–P5). Tasks reference ADR numbers. Update checkboxes as work completes.
 - `.docs/research/` — Wayback CDX results, raw HTML captures, the original `FORG-RECONSTRUCTION-GUIDE.md` describing the historical site's structure (boards, colors, layout). The reconstruction-guide explains things like the original board IDs (UoBoard, Q_A, Role, …) and the Zeroboard 4.1pl4 / Gnuboard4 / Gnuboard5 engine progression — invaluable context for the parser work.
 
