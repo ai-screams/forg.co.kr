@@ -3,11 +3,12 @@
   "page": 6,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "252",
       "title": "아량 결승진출 기원이벤트 후기 :->",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-24T21:22:06",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "251",
-      "title": "[이벤트] 전사들의 영광 (결과/후기)",
+      "title": "전사들의 영광 (결과/후기)",
+      "categoryLabel": "이벤트",
       "author": "vezekiel",
       "authorMemberNo": "8805",
       "createdAt": "2002-06-23T23:24:27",
@@ -32,6 +34,7 @@
     {
       "postId": "250",
       "title": "아랑 최대 이벤트 ^ ^",
+      "categoryLabel": null,
       "author": "arario",
       "authorMemberNo": "3096",
       "createdAt": "2002-06-23T20:50:57",
@@ -43,7 +46,8 @@
     },
     {
       "postId": "249",
-      "title": "[아리랑] 대한민국 결승 진출 기원 패션쑈!!!",
+      "title": "대한민국 결승 진출 기원 패션쑈!!!",
+      "categoryLabel": "아리랑",
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-23T18:04:57",
@@ -55,7 +59,8 @@
     },
     {
       "postId": "248",
-      "title": "[이벤트]베틀로얄-후기",
+      "title": "베틀로얄-후기",
+      "categoryLabel": "이벤트",
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-06-23T04:01:03",
@@ -68,6 +73,7 @@
     {
       "postId": "247",
       "title": "(이벤트) 전사들의 영광 - 추가사항(2)",
+      "categoryLabel": null,
       "author": "vezekiel",
       "authorMemberNo": "8805",
       "createdAt": "2002-06-22T23:46:45",
@@ -80,6 +86,7 @@
     {
       "postId": "246",
       "title": "안정환 오빠 한골더 쪼오옥~~ 차두리 오빠 한명더!!!",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-21T21:47:11",
@@ -91,7 +98,8 @@
     },
     {
       "postId": "245",
-      "title": "[이벤트] 아리랑 4차 무한소환대전 이벤트 후기!",
+      "title": "아리랑 4차 무한소환대전 이벤트 후기!",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-21T15:25:04",
@@ -104,6 +112,7 @@
     {
       "postId": "244",
       "title": "드디어!!! 아리랑 배틀로열 이벤트~~~",
+      "categoryLabel": null,
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-06-21T14:25:30",
@@ -115,7 +124,8 @@
     },
     {
       "postId": "243",
-      "title": "[이벤트] 전사들의 영광 (추가)",
+      "title": "전사들의 영광 (추가)",
+      "categoryLabel": "이벤트",
       "author": "vezekiel",
       "authorMemberNo": "8805",
       "createdAt": "2002-06-20T20:55:57",
@@ -127,7 +137,8 @@
     },
     {
       "postId": "242",
-      "title": "[이벤트] '전사들의 영광'을 개최합니다! (발해)",
+      "title": "'전사들의 영광'을 개최합니다! (발해)",
+      "categoryLabel": "이벤트",
       "author": "vezekiel",
       "authorMemberNo": "8805",
       "createdAt": "2002-06-20T19:39:05",
@@ -140,6 +151,7 @@
     {
       "postId": "241",
       "title": "4강 기원 응원 이벤트 후기",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-19T21:27:54",
@@ -151,7 +163,8 @@
     },
     {
       "postId": "240",
-      "title": "[이벤트] (발해) 전사들의 영광 - 데스타드 섬멸전",
+      "title": "(발해) 전사들의 영광 - 데스타드 섬멸전",
+      "categoryLabel": "이벤트",
       "author": "vezekiel",
       "authorMemberNo": "8805",
       "createdAt": "2002-06-19T16:34:19",
@@ -163,7 +176,8 @@
     },
     {
       "postId": "239",
-      "title": "[이벤트] 제 4차 아리랑 무소대 이벤트가 내일!!",
+      "title": "제 4차 아리랑 무소대 이벤트가 내일!!",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-19T14:50:31",
@@ -175,7 +189,8 @@
     },
     {
       "postId": "238",
-      "title": "[이벤트-아리랑] 4강 기원 응원 패션쑈 이벤트!!!",
+      "title": "4강 기원 응원 패션쑈 이벤트!!!",
+      "categoryLabel": "이벤트-아리랑",
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-19T14:44:45",
@@ -187,7 +202,8 @@
     },
     {
       "postId": "237",
-      "title": "[응원전] 아리랑 서은에서 붉은 옷입고 8강 기원 응원합시다.",
+      "title": "아리랑 서은에서 붉은 옷입고 8강 기원 응원합시다.",
+      "categoryLabel": "응원전",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-18T13:38:54",
@@ -199,7 +215,8 @@
     },
     {
       "postId": "236",
-      "title": "[아리랑] 둥둥둥~~제 9차 복권이벤트",
+      "title": "둥둥둥~~제 9차 복권이벤트",
+      "categoryLabel": "아리랑",
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-18T04:35:57",
@@ -211,7 +228,8 @@
     },
     {
       "postId": "235",
-      "title": "[아량-트라멜] 고물상 이벤뚜!",
+      "title": "고물상 이벤뚜!",
+      "categoryLabel": "아량-트라멜",
       "author": "Dongury",
       "authorMemberNo": "8690",
       "createdAt": "2002-06-17T04:36:20",
@@ -224,6 +242,7 @@
     {
       "postId": "234",
       "title": "8강 기원 응원 이벤트 후기 및 개그 패션쑈 공지",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-15T22:13:31",
@@ -236,6 +255,7 @@
     {
       "postId": "233",
       "title": "아리랑 응원 이벤트 9시부터 트라멜 뉴젤롬 체스보드앞!",
+      "categoryLabel": null,
       "author": "신타",
       "authorMemberNo": "8358",
       "createdAt": "2002-06-15T20:34:40",
@@ -248,6 +268,7 @@
     {
       "postId": "232",
       "title": "(아리랑) 베리떼 루닉 이벤트.",
+      "categoryLabel": null,
       "author": "PolPol",
       "authorMemberNo": "8509",
       "createdAt": "2002-06-15T16:05:30",
@@ -260,6 +281,7 @@
     {
       "postId": "231",
       "title": "오늘 우리의 월드컵 정말 결정적인 날입니다...",
+      "categoryLabel": null,
       "author": "KataPila",
       "authorMemberNo": "8348",
       "createdAt": "2002-06-14T11:21:01",
@@ -271,7 +293,8 @@
     },
     {
       "postId": "230",
-      "title": "[이벤트] 6월 20일에 아리랑 제 4 차 무소대 이벤트가 열립니다!!",
+      "title": "6월 20일에 아리랑 제 4 차 무소대 이벤트가 열립니다!!",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-14T04:56:12",
@@ -284,6 +307,7 @@
     {
       "postId": "229",
       "title": "16강 진출기원 8차 복권이벤트및 고사 이벤트 후기",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-13T23:58:31",
@@ -296,6 +320,7 @@
     {
       "postId": "228",
       "title": "고물상 이벤트 (아리랑)",
+      "categoryLabel": null,
       "author": "Dongury",
       "authorMemberNo": "8690",
       "createdAt": "2002-06-13T13:53:26",
@@ -308,6 +333,7 @@
     {
       "postId": "227",
       "title": "16강 진출기원 8차 복권이벤트및 고사 이벤트(상품 공지)",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-12T23:31:33",
@@ -319,7 +345,8 @@
     },
     {
       "postId": "226",
-      "title": "[이벤트] 아리랑-베틀로얄 다음주로 연기.",
+      "title": "아리랑-베틀로얄 다음주로 연기.",
+      "categoryLabel": "이벤트",
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-06-12T11:17:32",
@@ -331,7 +358,8 @@
     },
     {
       "postId": "225",
-      "title": "[이벤트]베틀로얄 - 아리랑",
+      "title": "베틀로얄 - 아리랑",
+      "categoryLabel": "이벤트",
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-06-11T11:58:06",
@@ -344,6 +372,7 @@
     {
       "postId": "224",
       "title": "대한민국 16강 진출 기원 8차 복권이벤트",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-11T03:59:28",
@@ -356,6 +385,7 @@
     {
       "postId": "223",
       "title": "(아리랑) 베리떼 루닉 이벤트",
+      "categoryLabel": null,
       "author": "PolPol",
       "authorMemberNo": "8509",
       "createdAt": "2002-06-09T02:14:06",
@@ -368,6 +398,7 @@
     {
       "postId": "221",
       "title": "발해 배틀로열 수정 공지!!!",
+      "categoryLabel": null,
       "author": "신타",
       "authorMemberNo": "8358",
       "createdAt": "2002-06-07T07:04:19",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "220",
-      "title": "[이벤-아리랑] 2002 월드컵 8강 진출 기원 응원 패션쑈!!!",
+      "title": "2002 월드컵 8강 진출 기원 응원 패션쑈!!!",
+      "categoryLabel": "이벤-아리랑",
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-05T22:30:26",
@@ -391,7 +423,8 @@
     },
     {
       "postId": "218",
-      "title": "[아리랑] 팀 대항 퀴즈 이벤트 취소",
+      "title": "팀 대항 퀴즈 이벤트 취소",
+      "categoryLabel": "아리랑",
       "author": "해오라기",
       "authorMemberNo": "2544",
       "createdAt": "2002-06-03T09:43:31",
@@ -404,6 +437,7 @@
     {
       "postId": "217",
       "title": "기습 이벤트 제 7차 복권이벤트 시상 내역과 후기",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-02T02:45:29",
@@ -415,7 +449,8 @@
     },
     {
       "postId": "216",
-      "title": "[아리랑]백팩아트 투표 마감및 시상식 날~~",
+      "title": "백팩아트 투표 마감및 시상식 날~~",
+      "categoryLabel": "아리랑",
       "author": "Kaura",
       "authorMemberNo": "2446",
       "createdAt": "2002-06-01T12:05:18",
@@ -427,7 +462,8 @@
     },
     {
       "postId": "214",
-      "title": "[이벤트-발해] 배틀로열이벤트 공지입니다.",
+      "title": "배틀로열이벤트 공지입니다.",
+      "categoryLabel": "이벤트-발해",
       "author": "신타",
       "authorMemberNo": "0",
       "createdAt": "2002-06-01T09:36:08",
@@ -439,7 +475,8 @@
     },
     {
       "postId": "213",
-      "title": "[이벤트] 제 3 차 아리랑 무소대 이벤트 후기입니다.",
+      "title": "제 3 차 아리랑 무소대 이벤트 후기입니다.",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-05-31T04:53:31",
@@ -451,7 +488,8 @@
     },
     {
       "postId": "212",
-      "title": "[이벤트] 3차 아리랑 무소대 이벤트 상품 추가.",
+      "title": "3차 아리랑 무소대 이벤트 상품 추가.",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-05-30T09:00:42",
@@ -464,6 +502,7 @@
     {
       "postId": "211",
       "title": "베리떼 루닉",
+      "categoryLabel": null,
       "author": "PolPol",
       "authorMemberNo": "0",
       "createdAt": "2002-05-30T01:34:19",
@@ -475,7 +514,8 @@
     },
     {
       "postId": "210",
-      "title": "[이벤트] 제 3차 아리랑 무소대 이벤트가 목요일 8시에....",
+      "title": "제 3차 아리랑 무소대 이벤트가 목요일 8시에....",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-05-29T07:43:05",
@@ -487,7 +527,8 @@
     },
     {
       "postId": "209",
-      "title": "[이벤트] 제 2차 아리랑 무소대 이벤트 후기입니다.",
+      "title": "제 2차 아리랑 무소대 이벤트 후기입니다.",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-05-29T07:34:07",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "208",
-      "title": "[아리랑]백팩아트 이벤트 투표 개시",
+      "title": "백팩아트 이벤트 투표 개시",
+      "categoryLabel": "아리랑",
       "author": "Kaura",
       "authorMemberNo": "2446",
       "createdAt": "2002-05-27T22:05:17",
@@ -511,7 +553,8 @@
     },
     {
       "postId": "207",
-      "title": "[아리랑] 팀 대항 퀴즈 이벤트 업그레이드 버전!",
+      "title": "팀 대항 퀴즈 이벤트 업그레이드 버전!",
+      "categoryLabel": "아리랑",
       "author": "해오라기",
       "authorMemberNo": "2544",
       "createdAt": "2002-05-27T20:42:14",
@@ -523,7 +566,8 @@
     },
     {
       "postId": "206",
-      "title": "[아리랑] 팀 대항 퀴즈 이벤트",
+      "title": "팀 대항 퀴즈 이벤트",
+      "categoryLabel": "아리랑",
       "author": "해오라기",
       "authorMemberNo": "2544",
       "createdAt": "2002-05-26T16:07:58",
@@ -535,7 +579,8 @@
     },
     {
       "postId": "205",
-      "title": "[이벤트] 아리랑 2차 무소대 이벤트.",
+      "title": "아리랑 2차 무소대 이벤트.",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-05-26T14:37:44",
@@ -547,7 +592,8 @@
     },
     {
       "postId": "204",
-      "title": "[그림 발표]-0-",
+      "title": "-0-",
+      "categoryLabel": "그림 발표",
       "author": "kombatrav",
       "authorMemberNo": "4121",
       "createdAt": "2002-05-26T07:05:47",
@@ -559,7 +605,8 @@
     },
     {
       "postId": "203",
-      "title": "[아리랑] 팀 대항 퀴즈 대회 팀 확정",
+      "title": "팀 대항 퀴즈 대회 팀 확정",
+      "categoryLabel": "아리랑",
       "author": "해오라기",
       "authorMemberNo": "2544",
       "createdAt": "2002-05-25T22:53:41",
@@ -571,7 +618,8 @@
     },
     {
       "postId": "202",
-      "title": "[아리랑][발해]백팩아트 이벤트 장소 공개및 투표 준비",
+      "title": "[발해]백팩아트 이벤트 장소 공개및 투표 준비",
+      "categoryLabel": "아리랑",
       "author": "Kaura",
       "authorMemberNo": "2446",
       "createdAt": "2002-05-25T21:49:22",
@@ -583,7 +631,8 @@
     },
     {
       "postId": "200",
-      "title": "[아리랑][발해]백팩아트 접수일입니다.",
+      "title": "[발해]백팩아트 접수일입니다.",
+      "categoryLabel": "아리랑",
       "author": "Kaura",
       "authorMemberNo": "2446",
       "createdAt": "2002-05-25T19:24:23",
@@ -595,7 +644,8 @@
     },
     {
       "postId": "199",
-      "title": "[이벤트]아리랑 사람찾기",
+      "title": "아리랑 사람찾기",
+      "categoryLabel": "이벤트",
       "author": "브리타니안",
       "authorMemberNo": "2545",
       "createdAt": "2002-05-25T16:18:08",

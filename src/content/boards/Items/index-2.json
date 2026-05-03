@@ -3,11 +3,12 @@
   "page": 2,
   "totalPages": 5,
   "totalPosts": 229,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "885",
       "title": "팔찌 한점외",
+      "categoryLabel": null,
       "author": "danakim",
       "authorMemberNo": "8506",
       "createdAt": "2007-05-14T18:32:55",
@@ -20,6 +21,7 @@
     {
       "postId": "884",
       "title": "메이스 감정요.",
+      "categoryLabel": null,
       "author": "jmjool",
       "authorMemberNo": "587",
       "createdAt": "2007-05-14T03:10:12",
@@ -32,6 +34,7 @@
     {
       "postId": "883",
       "title": "아티펙트들은 시세가 어떻게 형성되나요?",
+      "categoryLabel": null,
       "author": "xkdhkwhs",
       "authorMemberNo": "2104",
       "createdAt": "2007-05-13T00:21:47",
@@ -44,6 +47,7 @@
     {
       "postId": "882",
       "title": "활 감정 부탁드립니다.",
+      "categoryLabel": null,
       "author": "howareyou",
       "authorMemberNo": "1346",
       "createdAt": "2007-05-11T20:49:24",
@@ -56,6 +60,7 @@
     {
       "postId": "880",
       "title": "에쿠링,대석궁,크리스",
+      "categoryLabel": null,
       "author": "에반",
       "authorMemberNo": "2264",
       "createdAt": "2007-05-09T22:04:22",
@@ -68,6 +73,7 @@
     {
       "postId": "879",
       "title": "득템",
+      "categoryLabel": null,
       "author": "seforyou",
       "authorMemberNo": "6311",
       "createdAt": "2007-05-09T14:21:41",
@@ -80,6 +86,7 @@
     {
       "postId": "878",
       "title": "99%",
+      "categoryLabel": null,
       "author": "saladin",
       "authorMemberNo": "971",
       "createdAt": "2007-05-07T23:41:41",
@@ -92,6 +99,7 @@
     {
       "postId": "877",
       "title": "합성활",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-05-07T23:35:17",
@@ -104,6 +112,7 @@
     {
       "postId": "876",
       "title": "마사 에쿠반지 한점",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-05-07T20:42:01",
@@ -116,6 +125,7 @@
     {
       "postId": "875",
       "title": "예전 할때 모았던 레어...3",
+      "categoryLabel": null,
       "author": "ragon11",
       "authorMemberNo": "8597",
       "createdAt": "2007-05-06T20:39:33",
@@ -128,6 +138,7 @@
     {
       "postId": "874",
       "title": "예전 할때 모았던 레어...2",
+      "categoryLabel": null,
       "author": "ragon11",
       "authorMemberNo": "8597",
       "createdAt": "2007-05-06T20:38:56",
@@ -140,6 +151,7 @@
     {
       "postId": "873",
       "title": "예전 할때 모았던 레어...",
+      "categoryLabel": null,
       "author": "ragon11",
       "authorMemberNo": "8597",
       "createdAt": "2007-05-06T20:37:53",
@@ -152,6 +164,7 @@
     {
       "postId": "872",
       "title": "이런 아템 요즘에 팔리는지 모르겠군요..",
+      "categoryLabel": null,
       "author": "브리타니안",
       "authorMemberNo": "1155",
       "createdAt": "2007-05-05T22:44:25",
@@ -164,6 +177,7 @@
     {
       "postId": "871",
       "title": "워용 팔찌 감정 가는?",
+      "categoryLabel": null,
       "author": "ryuda",
       "authorMemberNo": "277",
       "createdAt": "2007-05-05T14:20:48",
@@ -176,6 +190,7 @@
     {
       "postId": "868",
       "title": "에쿠링 질렀어요 ㅠ_ㅠ",
+      "categoryLabel": null,
       "author": "iamamber",
       "authorMemberNo": "829",
       "createdAt": "2007-05-02T23:14:23",
@@ -188,6 +203,7 @@
     {
       "postId": "867",
       "title": "에쿠링 한점",
+      "categoryLabel": null,
       "author": "energybolt",
       "authorMemberNo": "6194",
       "createdAt": "2007-05-02T16:50:21",
@@ -200,6 +216,7 @@
     {
       "postId": "866",
       "title": "그냥 궁금해서 올려봐요 워포크입니다.",
+      "categoryLabel": null,
       "author": "howareyou",
       "authorMemberNo": "1346",
       "createdAt": "2007-05-01T12:34:00",
@@ -212,6 +229,7 @@
     {
       "postId": "865",
       "title": "제 전사가 사용중인 보쿠도인데 감정안상하게 감정좀 해주세요 ^^",
+      "categoryLabel": null,
       "author": "kenwpark",
       "authorMemberNo": "4510",
       "createdAt": "2007-05-01T00:12:39",
@@ -224,6 +242,7 @@
     {
       "postId": "864",
       "title": "룬 비틀 슬레잉(.....!?)",
+      "categoryLabel": null,
       "author": "일레인 말리",
       "authorMemberNo": "296",
       "createdAt": "2007-04-30T22:59:34",
@@ -236,6 +255,7 @@
     {
       "postId": "863",
       "title": "이건 좋은건지 아닌지...",
+      "categoryLabel": null,
       "author": "iamamber",
       "authorMemberNo": "829",
       "createdAt": "2007-04-30T21:38:16",
@@ -248,6 +268,7 @@
     {
       "postId": "861",
       "title": "아가파이트에쿠링4점",
+      "categoryLabel": null,
       "author": "penblan",
       "authorMemberNo": "412",
       "createdAt": "2007-04-28T17:33:46",
@@ -260,6 +281,7 @@
     {
       "postId": "860",
       "title": "페이 (휴먼, 엘프) 비교",
+      "categoryLabel": null,
       "author": "주키로스",
       "authorMemberNo": "5321",
       "createdAt": "2007-04-28T10:58:46",
@@ -272,6 +294,7 @@
     {
       "postId": "859",
       "title": "팔찌 한점",
+      "categoryLabel": null,
       "author": "주키로스",
       "authorMemberNo": "5321",
       "createdAt": "2007-04-28T10:57:45",
@@ -284,6 +307,7 @@
     {
       "postId": "858",
       "title": "방패 한점.",
+      "categoryLabel": null,
       "author": "주키로스",
       "authorMemberNo": "5321",
       "createdAt": "2007-04-28T10:49:53",
@@ -296,6 +320,7 @@
     {
       "postId": "857",
       "title": "레지만 붙은 팔뚝",
+      "categoryLabel": null,
       "author": "주키로스",
       "authorMemberNo": "5321",
       "createdAt": "2007-04-28T10:44:22",
@@ -308,6 +333,7 @@
     {
       "postId": "856",
       "title": "SOS 로 건져서 나온 반지 2점",
+      "categoryLabel": null,
       "author": "elf",
       "authorMemberNo": "1826",
       "createdAt": "2007-04-28T01:18:29",
@@ -320,6 +346,7 @@
     {
       "postId": "855",
       "title": "반지인데요  스텟이 괜찮게 붙은거 같아서;;",
+      "categoryLabel": null,
       "author": "sikboy",
       "authorMemberNo": "8130",
       "createdAt": "2007-04-27T21:23:45",
@@ -332,6 +359,7 @@
     {
       "postId": "854",
       "title": "저도 카타나 한점 ㅎㅎ",
+      "categoryLabel": null,
       "author": "NINA",
       "authorMemberNo": "8188",
       "createdAt": "2007-04-27T15:25:24",
@@ -344,6 +372,7 @@
     {
       "postId": "852",
       "title": "카타나",
+      "categoryLabel": null,
       "author": "lYle",
       "authorMemberNo": "7454",
       "createdAt": "2007-04-26T19:03:52",
@@ -356,6 +385,7 @@
     {
       "postId": "851",
       "title": "그의 친구 보쿠토 'w'",
+      "categoryLabel": null,
       "author": "wwWww",
       "authorMemberNo": "6725",
       "createdAt": "2007-04-24T01:22:47",
@@ -368,6 +398,7 @@
     {
       "postId": "850",
       "title": "버그 보쿠토 인듯",
+      "categoryLabel": null,
       "author": "sicinjong",
       "authorMemberNo": "5273",
       "createdAt": "2007-04-23T17:59:10",
@@ -380,6 +411,7 @@
     {
       "postId": "849",
       "title": "카타나 한점",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-04-21T10:06:12",
@@ -392,6 +424,7 @@
     {
       "postId": "845",
       "title": "다이아몬드 메이스",
+      "categoryLabel": null,
       "author": "sicinjong",
       "authorMemberNo": "5273",
       "createdAt": "2007-04-12T12:58:59",
@@ -404,6 +437,7 @@
     {
       "postId": "844",
       "title": "반지 팔지 에쿠링 - 해외대행.",
+      "categoryLabel": null,
       "author": "wwWww",
       "authorMemberNo": "6725",
       "createdAt": "2007-04-11T15:03:59",
@@ -416,6 +450,7 @@
     {
       "postId": "843",
       "title": "에 또 워포크",
+      "categoryLabel": null,
       "author": "yjs1g",
       "authorMemberNo": "254",
       "createdAt": "2007-04-10T18:55:11",
@@ -428,6 +463,7 @@
     {
       "postId": "842",
       "title": "반지하나 올려봅니다. 감정 부탁 드려요 ^^",
+      "categoryLabel": null,
       "author": "ssonda72",
       "authorMemberNo": "2141",
       "createdAt": "2007-04-08T22:55:07",
@@ -440,6 +476,7 @@
     {
       "postId": "841",
       "title": "안습 에쿠링...",
+      "categoryLabel": null,
       "author": "whitewirm",
       "authorMemberNo": "743",
       "createdAt": "2007-04-07T19:22:27",
@@ -452,6 +489,7 @@
     {
       "postId": "840",
       "title": "매지컬 숏보우",
+      "categoryLabel": null,
       "author": "yjs1g",
       "authorMemberNo": "254",
       "createdAt": "2007-04-07T03:10:56",
@@ -464,6 +502,7 @@
     {
       "postId": "838",
       "title": "감정좀 부탁바랍니다.",
+      "categoryLabel": null,
       "author": "ㅋㅋㅋㅋ",
       "authorMemberNo": "7741",
       "createdAt": "2007-04-03T23:34:37",
@@ -476,6 +515,7 @@
     {
       "postId": "836",
       "title": "마재팔찌",
+      "categoryLabel": null,
       "author": "penblan",
       "authorMemberNo": "412",
       "createdAt": "2007-04-01T14:00:02",
@@ -488,6 +528,7 @@
     {
       "postId": "835",
       "title": "그럭저럭 팔찌",
+      "categoryLabel": null,
       "author": "NINA",
       "authorMemberNo": "8188",
       "createdAt": "2007-04-01T03:54:55",
@@ -500,6 +541,7 @@
     {
       "postId": "834",
       "title": "에쿠링~ ㅜㅜ 회복은 읍네여,,,",
+      "categoryLabel": null,
       "author": "penblan",
       "authorMemberNo": "412",
       "createdAt": "2007-03-29T11:43:36",
@@ -512,6 +554,7 @@
     {
       "postId": "833",
       "title": "마재 팔찌",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-03-26T22:23:57",
@@ -524,6 +567,7 @@
     {
       "postId": "832",
       "title": "워포크...",
+      "categoryLabel": null,
       "author": "yjs1g",
       "authorMemberNo": "254",
       "createdAt": "2007-03-26T19:25:23",
@@ -536,6 +580,7 @@
     {
       "postId": "831",
       "title": "에쿠스링인데 스샷은 없습니다.",
+      "categoryLabel": null,
       "author": "amiqus",
       "authorMemberNo": "669",
       "createdAt": "2007-03-25T19:05:13",
@@ -548,6 +593,7 @@
     {
       "postId": "830",
       "title": "에쿠링 가격 조언 부탁드립니다!",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-03-24T12:48:15",
@@ -560,6 +606,7 @@
     {
       "postId": "828",
       "title": "비슷한 옵션의 곰가면",
+      "categoryLabel": null,
       "author": "루다",
       "authorMemberNo": "8132",
       "createdAt": "2007-03-20T23:59:50",
@@ -572,6 +619,7 @@
     {
       "postId": "826",
       "title": "대세를 잃어버린 활",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-03-19T12:28:03",
@@ -584,6 +632,7 @@
     {
       "postId": "825",
       "title": "이거 임뷰하실 강심장이신분 -_-",
+      "categoryLabel": null,
       "author": "yjs1g",
       "authorMemberNo": "254",
       "createdAt": "2007-03-19T00:07:02",
@@ -596,6 +645,7 @@
     {
       "postId": "824",
       "title": "팔찌 감정좀..",
+      "categoryLabel": null,
       "author": "ㅋㅋㅋㅋ",
       "authorMemberNo": "7741",
       "createdAt": "2007-03-17T15:33:31",

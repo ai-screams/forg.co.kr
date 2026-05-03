@@ -3,11 +3,12 @@
   "page": 3,
   "totalPages": 5,
   "totalPosts": 229,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "821",
       "title": "땅파서 보석은 어캐 구해염?",
+      "categoryLabel": null,
       "author": "kdksks",
       "authorMemberNo": "8036",
       "createdAt": "2007-03-13T22:05:10",
@@ -20,6 +21,7 @@
     {
       "postId": "820",
       "title": "팔찌랑 링 감정가격좀 알려주세욤 고수님들~!",
+      "categoryLabel": null,
       "author": "kdksks",
       "authorMemberNo": "8036",
       "createdAt": "2007-03-13T21:02:04",
@@ -32,6 +34,7 @@
     {
       "postId": "819",
       "title": "대세는 에쿠?",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-03-13T18:12:23",
@@ -44,6 +47,7 @@
     {
       "postId": "816",
       "title": "스피어 !",
+      "categoryLabel": null,
       "author": "gihans",
       "authorMemberNo": "4959",
       "createdAt": "2007-03-13T17:31:06",
@@ -56,6 +60,7 @@
     {
       "postId": "815",
       "title": "팔찌 얼마나 할까요?",
+      "categoryLabel": null,
       "author": "kdksks",
       "authorMemberNo": "8036",
       "createdAt": "2007-03-12T19:38:10",
@@ -68,6 +73,7 @@
     {
       "postId": "814",
       "title": "이에쿠링 얼마정도할까요?",
+      "categoryLabel": null,
       "author": "kdksks",
       "authorMemberNo": "8036",
       "createdAt": "2007-03-12T08:01:09",
@@ -80,6 +86,7 @@
     {
       "postId": "813",
       "title": "운이나 샥감이 아까운 팔찌",
+      "categoryLabel": null,
       "author": "V9100",
       "authorMemberNo": "8022",
       "createdAt": "2007-03-11T10:18:17",
@@ -92,6 +99,7 @@
     {
       "postId": "811",
       "title": "반지요..",
+      "categoryLabel": null,
       "author": "lie9587",
       "authorMemberNo": "8173",
       "createdAt": "2007-03-09T10:28:32",
@@ -104,6 +112,7 @@
     {
       "postId": "810",
       "title": "그럭저럭 쓸만한 링?",
+      "categoryLabel": null,
       "author": "yjs1g",
       "authorMemberNo": "254",
       "createdAt": "2007-03-09T09:46:33",
@@ -116,6 +125,7 @@
     {
       "postId": "809",
       "title": "허접 애쿠링이요",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-03-07T12:12:59",
@@ -128,6 +138,7 @@
     {
       "postId": "808",
       "title": "에쿠링 한점",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-03-06T19:15:20",
@@ -140,6 +151,7 @@
     {
       "postId": "807",
       "title": "바드템머용 반지-_-",
+      "categoryLabel": null,
       "author": "coco",
       "authorMemberNo": "128",
       "createdAt": "2007-03-04T21:33:40",
@@ -152,6 +164,7 @@
     {
       "postId": "802",
       "title": "팔찌 한점",
+      "categoryLabel": null,
       "author": "tae9604",
       "authorMemberNo": "7002",
       "createdAt": "2007-03-02T13:45:41",
@@ -164,6 +177,7 @@
     {
       "postId": "801",
       "title": "여러가지~",
+      "categoryLabel": null,
       "author": "teamkim",
       "authorMemberNo": "20",
       "createdAt": "2007-03-01T23:27:34",
@@ -176,6 +190,7 @@
     {
       "postId": "800",
       "title": "옵션 수치는 높지만..",
+      "categoryLabel": null,
       "author": "[SoK]Pooh",
       "authorMemberNo": "1410",
       "createdAt": "2007-02-25T06:23:16",
@@ -188,6 +203,7 @@
     {
       "postId": "799",
       "title": "에쿠링..-_-;",
+      "categoryLabel": null,
       "author": "에반",
       "authorMemberNo": "2264",
       "createdAt": "2007-02-24T23:00:57",
@@ -200,6 +216,7 @@
     {
       "postId": "798",
       "title": "에쿠 러쉬 ???",
+      "categoryLabel": null,
       "author": "ICARUS",
       "authorMemberNo": "22",
       "createdAt": "2007-02-24T20:01:42",
@@ -212,6 +229,7 @@
     {
       "postId": "797",
       "title": "에쿠 대충 쓸만하심",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-02-24T19:56:31",
@@ -224,6 +242,7 @@
     {
       "postId": "796",
       "title": "에쿠 한점 더 추가~!",
+      "categoryLabel": null,
       "author": "abcdefg",
       "authorMemberNo": "7831",
       "createdAt": "2007-02-20T12:51:44",
@@ -236,6 +255,7 @@
     {
       "postId": "795",
       "title": "본레깅스하나",
+      "categoryLabel": null,
       "author": "penblan",
       "authorMemberNo": "412",
       "createdAt": "2007-02-20T00:21:43",
@@ -248,6 +268,7 @@
     {
       "postId": "794",
       "title": "임뷰 성공한 허접 아템들ㅎ",
+      "categoryLabel": null,
       "author": "balgyu",
       "authorMemberNo": "7865",
       "createdAt": "2007-02-18T22:01:40",
@@ -260,6 +281,7 @@
     {
       "postId": "793",
       "title": "와~ 에쿠 30개 들고 질렀는데.... -_-;",
+      "categoryLabel": null,
       "author": "abcdefg",
       "authorMemberNo": "7831",
       "createdAt": "2007-02-15T01:06:58",
@@ -272,6 +294,7 @@
     {
       "postId": "792",
       "title": "허접 운템만 자꾸 올려서 송구스럽내요...",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-02-15T00:02:35",
@@ -284,6 +307,7 @@
     {
       "postId": "791",
       "title": "삼지창 하나 평가 부탁드립니다",
+      "categoryLabel": null,
       "author": "버버리",
       "authorMemberNo": "6995",
       "createdAt": "2007-02-12T20:47:58",
@@ -296,6 +320,7 @@
     {
       "postId": "790",
       "title": "운장갑...",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-02-11T21:58:13",
@@ -308,6 +333,7 @@
     {
       "postId": "789",
       "title": "어설푼 에쿠",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-02-10T17:28:06",
@@ -320,6 +346,7 @@
     {
       "postId": "788",
       "title": "여러분들 땅 열심히 파세요~",
+      "categoryLabel": null,
       "author": "해머딘",
       "authorMemberNo": "7780",
       "createdAt": "2007-02-10T16:47:53",
@@ -332,6 +359,7 @@
     {
       "postId": "784",
       "title": "에쿠링 한점 평가부탁",
+      "categoryLabel": null,
       "author": "ijg76",
       "authorMemberNo": "7533",
       "createdAt": "2007-02-09T16:35:30",
@@ -344,6 +372,7 @@
     {
       "postId": "783",
       "title": "미늘루닉 질러서.. 2개",
+      "categoryLabel": null,
       "author": "hsu911",
       "authorMemberNo": "5390",
       "createdAt": "2007-02-09T13:33:20",
@@ -356,6 +385,7 @@
     {
       "postId": "782",
       "title": "링인데...",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-02-07T23:37:25",
@@ -368,6 +398,7 @@
     {
       "postId": "781",
       "title": "마사 에쿠링 한점",
+      "categoryLabel": null,
       "author": "ijg76",
       "authorMemberNo": "7533",
       "createdAt": "2007-02-07T09:08:54",
@@ -380,6 +411,7 @@
     {
       "postId": "779",
       "title": "허트우드로 나온 공성29",
+      "categoryLabel": null,
       "author": "디아티마",
       "authorMemberNo": "7307",
       "createdAt": "2007-02-02T05:19:32",
@@ -392,6 +424,7 @@
     {
       "postId": "777",
       "title": "멜리가 준 전사링",
+      "categoryLabel": null,
       "author": "alima01",
       "authorMemberNo": "7310",
       "createdAt": "2007-01-30T02:42:25",
@@ -404,6 +437,7 @@
     {
       "postId": "776",
       "title": "운바지...",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-01-29T23:06:22",
@@ -416,6 +450,7 @@
     {
       "postId": "775",
       "title": "이래저래 아쉬운...",
+      "categoryLabel": null,
       "author": "비슈",
       "authorMemberNo": "91",
       "createdAt": "2007-01-28T22:05:47",
@@ -428,6 +463,7 @@
     {
       "postId": "774",
       "title": "몇가지 올려봅니다",
+      "categoryLabel": null,
       "author": "Povar128",
       "authorMemberNo": "3487",
       "createdAt": "2007-01-28T16:54:16",
@@ -440,6 +476,7 @@
     {
       "postId": "772",
       "title": "스웁님과 멜리님이 주신악세들",
+      "categoryLabel": null,
       "author": "운명을인도하는자",
       "authorMemberNo": "4131",
       "createdAt": "2007-01-26T20:05:23",
@@ -452,6 +489,7 @@
     {
       "postId": "769",
       "title": "얼마전에 구입한 악셋",
+      "categoryLabel": null,
       "author": "Povar128",
       "authorMemberNo": "3487",
       "createdAt": "2007-01-26T17:11:55",
@@ -464,6 +502,7 @@
     {
       "postId": "768",
       "title": "아이템 바위",
+      "categoryLabel": null,
       "author": "ㅋㅋㅋㅋ",
       "authorMemberNo": "7741",
       "createdAt": "2007-01-26T13:12:21",
@@ -476,6 +515,7 @@
     {
       "postId": "767",
       "title": "OTL 에쿠링..",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-01-26T01:09:01",
@@ -488,6 +528,7 @@
     {
       "postId": "766",
       "title": "모 그냥 이런 활...",
+      "categoryLabel": null,
       "author": "Zip",
       "authorMemberNo": "573",
       "createdAt": "2007-01-25T00:17:50",
@@ -500,6 +541,7 @@
     {
       "postId": "765",
       "title": "보쿠토,대석궁,그리고 숏보우몇개올려요.",
+      "categoryLabel": null,
       "author": "에반",
       "authorMemberNo": "2264",
       "createdAt": "2007-01-22T00:55:13",
@@ -512,6 +554,7 @@
     {
       "postId": "763",
       "title": "이런것?",
+      "categoryLabel": null,
       "author": "naga",
       "authorMemberNo": "70",
       "createdAt": "2007-01-21T02:49:44",
@@ -524,6 +567,7 @@
     {
       "postId": "762",
       "title": "미남님 염장용 세트 -_-",
+      "categoryLabel": null,
       "author": "iamamber",
       "authorMemberNo": "829",
       "createdAt": "2007-01-20T05:00:48",
@@ -536,6 +580,7 @@
     {
       "postId": "761",
       "title": "영어네임 아이템!",
+      "categoryLabel": null,
       "author": "mazingaz",
       "authorMemberNo": "7120",
       "createdAt": "2007-01-19T01:07:13",
@@ -548,6 +593,7 @@
     {
       "postId": "760",
       "title": "쓸만한건가요??",
+      "categoryLabel": null,
       "author": "빨갱이",
       "authorMemberNo": "7607",
       "createdAt": "2007-01-18T22:39:41",
@@ -560,6 +606,7 @@
     {
       "postId": "757",
       "title": "바드템머깔끔한악세",
+      "categoryLabel": null,
       "author": "불길",
       "authorMemberNo": "909",
       "createdAt": "2007-01-18T10:02:53",
@@ -572,6 +619,7 @@
     {
       "postId": "756",
       "title": "팔찌 하나 감정 부탁드립니다.",
+      "categoryLabel": null,
       "author": "mineoff",
       "authorMemberNo": "605",
       "createdAt": "2007-01-18T01:43:19",
@@ -584,6 +632,7 @@
     {
       "postId": "755",
       "title": "방금 먹은 링인데...",
+      "categoryLabel": null,
       "author": "Povar128",
       "authorMemberNo": "3487",
       "createdAt": "2007-01-17T23:27:20",
@@ -596,6 +645,7 @@
     {
       "postId": "753",
       "title": "이 마스크 가격 감정 부탁드립니다.",
+      "categoryLabel": null,
       "author": "kima",
       "authorMemberNo": "1029",
       "createdAt": "2007-01-17T14:29:48",

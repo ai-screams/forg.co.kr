@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "222",
   "title": "클라이언트 패치(버전 업데이트)",
+  "categoryLabel": null,
   "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 버젼 관리를 위하여, 저희는 12월 8일 토요일 저녁(미중부 시간)<br>\n 2D와 3D 양쪽 클라이언트에 로그인 암호화를 변경하는 작은 패치를 적용했습니다.<br>\n 이 패치에는 실행에 관련된 변경사항은 없습니다. <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "버젼 관리를 위하여, 저희는 12월 8일 토요일 저녁(미중부 시간) 2D와 3D 양쪽 클라이언트에 로그인 암호화를 변경하는 작은 패치를 적용했습니다. 이 패치에는 실행에 관련된 변경사항은 없습니다.",
   "author": "녕이",

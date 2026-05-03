@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "66",
   "title": "신종 컴터 바이러스-_-;;(Win32/Nimda)",
+  "categoryLabel": null,
   "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 아웃룩 주소록을 검색하여 사용자에게 readme.exe 파일을 첨부해 메일을 발송한다. <br>\n 읽기/쓰기 가능하도록 공유된 컴퓨터의 경우 네트워크를 통해서도 전파된다. <br>\n 각 폴더마다 *.eml 혹은 *.nws 파일을 생성한다. <br>\n 사용자 컴퓨터의 모든 드라이브를 공유시킨다. <br>\n<br>\n * 웜이 첨부된 메일을(또는 확장자 *.NWS 파일을) 읽기만 하거나 미리보기 하여도 웜에 감염되는 것은 \"Incorrect MIME Header Can Cause IE to Execute E-mailAttachment\" 취약점 때문이며 다음의 사이트를 참고하여 반드시 패치한다. <br>\n<br>\n 출처 : 안철수 연구소<br>\n<a href=\"http://ahnlab.com/\">http://ahnlab.com/</a><br>\n<br>\n<br>\n p.s : 고맙게도 저에게 멜주신분이 많으시더군요-_-;;;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "아웃룩 주소록을 검색하여 사용자에게 readme.exe 파일을 첨부해 메일을 발송한다. 읽기/쓰기 가능하도록 공유된 컴퓨터의 경우 네트워크를 통해서도 전파된다. 각 폴더마다 *.eml 혹은 *.nws 파일을 생성한다. 사용자 컴퓨터의 모든 드라이브를 공유시킨다. * 웜이 첨부된 메일을(또는 확장자 *.NWS 파일을) 읽기만 하거나 미리보기 하여도 웜에 감염되는 것은 \"Incorrect MIME Header Can Cause IE to Execute E-mailAttachment\" 취약점 때문이며 다음의 사이트를 참고하여 반드시 패치한다. 출처 : 안철수 연구소 http://ahnlab.com/ p.s : 고맙게도 저에게 멜주신분이 많으시더군요-_-;;;",
   "author": "Forg",

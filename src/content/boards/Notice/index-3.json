@@ -3,11 +3,12 @@
   "page": 3,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "908",
       "title": "Publish 19 업데이트 내용",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-07-04T18:59:44",
@@ -20,6 +21,7 @@
     {
       "postId": "907",
       "title": "AOS 기념선물 기술 보상관련 업데이트",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-07-04T02:23:38",
@@ -32,6 +34,7 @@
     {
       "postId": "906",
       "title": "수정내용 활성화",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-07-02T14:32:46",
@@ -44,6 +47,7 @@
     {
       "postId": "905",
       "title": "블랙쏜 패배!",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-07-01T19:59:04",
@@ -56,6 +60,7 @@
     {
       "postId": "904",
       "title": "Client Patch 4.0.0o",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-07-01T19:57:17",
@@ -68,6 +73,7 @@
     {
       "postId": "903",
       "title": "Survivor Stories of the Blackthorn Raid v2.5",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-26T09:49:42",
@@ -80,6 +86,7 @@
     {
       "postId": "902",
       "title": "울티마 온라인 GM 서비스 일시적으로 불가",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-20T11:44:39",
@@ -92,6 +99,7 @@
     {
       "postId": "901",
       "title": "대량 주문 보관서",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-20T11:41:05",
@@ -104,6 +112,7 @@
     {
       "postId": "899",
       "title": "집패치 3단계",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-19T16:06:35",
@@ -116,6 +125,7 @@
     {
       "postId": "898",
       "title": "컨셉란에 올라온 BOD북에 관하여.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-06-19T13:58:16",
@@ -128,6 +138,7 @@
     {
       "postId": "897",
       "title": "아리랑 샤드의 올드비 보상창 문제",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-18T22:10:27",
@@ -140,6 +151,7 @@
     {
       "postId": "896",
       "title": "UO 공개토론 내용 (6월)",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-06-11T08:47:43",
@@ -152,6 +164,7 @@
     {
       "postId": "895",
       "title": "벤더개선 [구상]",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-06-11T07:20:44",
@@ -164,6 +177,7 @@
     {
       "postId": "894",
       "title": "Kal Ort Por란에 풀자투명화일이 복구되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-06-10T16:00:49",
@@ -176,6 +190,7 @@
     {
       "postId": "893",
       "title": "BOD북이 컨셉란에 올라왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-06-09T13:09:01",
@@ -188,6 +203,7 @@
     {
       "postId": "892",
       "title": "둠보스에게서 레어획득 확율이 높아질 예정입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-06-04T12:21:30",
@@ -200,6 +216,7 @@
     {
       "postId": "891",
       "title": "장터란 가격미기입 멤버분들은 1달간 밴처리 하겠습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-30T19:22:26",
@@ -212,6 +229,7 @@
     {
       "postId": "890",
       "title": "개인용 축복디드를 환원 시킬 수 있습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-30T08:52:42",
@@ -224,6 +242,7 @@
     {
       "postId": "889",
       "title": "약관위반에 따른 제재",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-30T04:04:33",
@@ -236,6 +255,7 @@
     {
       "postId": "888",
       "title": "AOS 출시기념 선물 관련 중요 내용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-30T04:02:14",
@@ -248,6 +268,7 @@
     {
       "postId": "887",
       "title": "노스아메리카 등에 퍼블리시 18적용 (한국샤드포함)",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-28T13:28:44",
@@ -260,6 +281,7 @@
     {
       "postId": "886",
       "title": "AOS선물",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-28T09:56:48",
@@ -272,6 +294,7 @@
     {
       "postId": "885",
       "title": "백팩 불법 사용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-27T16:09:34",
@@ -283,7 +306,8 @@
     },
     {
       "postId": "883",
-      "title": "[속보] UO 게임 이용료 인상",
+      "title": "UO 게임 이용료 인상",
+      "categoryLabel": "속보",
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-05-23T06:30:35",
@@ -296,6 +320,7 @@
     {
       "postId": "882",
       "title": "바자샤드에 Publish 18 곧 적용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-22T12:02:35",
@@ -308,6 +333,7 @@
     {
       "postId": "881",
       "title": "새로운 의상 적용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-20T11:32:24",
@@ -320,6 +346,7 @@
     {
       "postId": "880",
       "title": "기초토대의형태및 크기변경에 따른문제",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-17T23:22:10",
@@ -332,6 +359,7 @@
     {
       "postId": "878",
       "title": "클라이언트 패치 4.0.0l",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-05-15T15:36:02",
@@ -344,6 +372,7 @@
     {
       "postId": "877",
       "title": "www.uo.com의 길드 정보 업데이트 문제",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-05-15T15:30:45",
@@ -356,6 +385,7 @@
     {
       "postId": "876",
       "title": "컨뎀상태인 집의 정보",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-12T16:31:52",
@@ -368,6 +398,7 @@
     {
       "postId": "875",
       "title": "Publish 18 수정 및 교정 내용",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-12T14:16:49",
@@ -380,6 +411,7 @@
     {
       "postId": "874",
       "title": "본홈 하단에 검색기능이 추가되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-12T13:23:46",
@@ -392,6 +424,7 @@
     {
       "postId": "873",
       "title": "퍼블리쉬18패치에 고대해머등이 포함하여 수정됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-10T18:47:02",
@@ -404,6 +437,7 @@
     {
       "postId": "872",
       "title": "맞춤집과 관련된 문과 텔레포터 문제",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-05-10T09:36:30",
@@ -416,6 +450,7 @@
     {
       "postId": "871",
       "title": "몇 주동안 사이트 운영이 중단되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-09T15:01:01",
@@ -428,6 +463,7 @@
     {
       "postId": "870",
       "title": "UO 공개토론 내용 (5월)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-05-09T14:38:57",
@@ -440,6 +476,7 @@
     {
       "postId": "868",
       "title": "아라링과 발해샤드 서버점검",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-28T22:24:15",
@@ -452,6 +489,7 @@
     {
       "postId": "867",
       "title": "아리랑 샤드 케릭터중 접속 안되는 케릭터",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-26T19:38:15",
@@ -464,6 +502,7 @@
     {
       "postId": "866",
       "title": "Q&A: '운'이 어떤 역할을 하나요?",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-23T16:33:56",
@@ -476,6 +515,7 @@
     {
       "postId": "865",
       "title": "Custom House Design Contest Grand Prize Winner!",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-04-18T06:48:43",
@@ -488,6 +528,7 @@
     {
       "postId": "864",
       "title": "Q&A : UO에 곧 적용될 내용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-17T20:26:18",
@@ -500,6 +541,7 @@
     {
       "postId": "863",
       "title": "UO 공개토론 내용 (4월)",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-04-17T02:08:22",
@@ -512,6 +554,7 @@
     {
       "postId": "862",
       "title": "친구를 브리타니아로 끌어들이면 엄청난 아이템을!?",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-04-16T11:06:57",
@@ -524,6 +567,7 @@
     {
       "postId": "861",
       "title": "아시아 지역 샤드들 새로운 패치적용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-15T12:21:35",
@@ -536,6 +580,7 @@
     {
       "postId": "860",
       "title": "Q&A : AoS 이후 대인전 관련 내용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-04-11T12:13:41",
@@ -548,6 +593,7 @@
     {
       "postId": "859",
       "title": "시그니쳐게시판을 잠정 폐쇄조치합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-04-07T11:01:22",
@@ -560,6 +606,7 @@
     {
       "postId": "858",
       "title": "Origin 운영진들과의 대화",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-04-04T11:06:17",
@@ -571,7 +618,8 @@
     },
     {
       "postId": "857",
-      "title": "[폭로] 포그님 장가갑니다.",
+      "title": "포그님 장가갑니다.",
+      "categoryLabel": "폭로",
       "author": "Kritz",
       "authorMemberNo": "2248",
       "createdAt": "2003-04-04T09:33:02",
@@ -584,6 +632,7 @@
     {
       "postId": "856",
       "title": "캐릭터 네이밍 콘테스트 결과",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-04-03T18:09:57",
@@ -596,6 +645,7 @@
     {
       "postId": "853",
       "title": "이미지가 올라가지 않는 버그 수정하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-30T10:05:04",

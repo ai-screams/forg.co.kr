@@ -3,11 +3,12 @@
   "page": 12,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "392",
       "title": "4월 말경에 새 시나리오 도입 예정",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-04-02T12:43:48",
@@ -20,6 +21,7 @@
     {
       "postId": "391",
       "title": "UO.ESSAY와 100문100답 게시판에 대해서.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-02T11:57:44",
@@ -32,6 +34,7 @@
     {
       "postId": "390",
       "title": "초보자를 위한 100문 100답 공동 작업란이 개설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-01T14:13:47",
@@ -44,6 +47,7 @@
     {
       "postId": "389",
       "title": "UO.POLL란에 일본식 무기와 갑옷류에 대해 설문조사가.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-30T14:10:34",
@@ -56,6 +60,7 @@
     {
       "postId": "388",
       "title": "LBR_몬스터 목록입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-30T11:52:06",
@@ -68,6 +73,7 @@
     {
       "postId": "387",
       "title": "새로운 무기와 갑옷,의류들에 관한 보고서",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-29T12:36:43",
@@ -80,6 +86,7 @@
     {
       "postId": "384",
       "title": "블랙쏜 구입하였습니다-0-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-28T14:10:32",
@@ -92,6 +99,7 @@
     {
       "postId": "383",
       "title": "여러분이 기다리는 몬스터란은..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-23T14:37:04",
@@ -104,6 +112,7 @@
     {
       "postId": "382",
       "title": "\"가방속의 애완동물\" 버그",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-03-20T16:20:18",
@@ -116,6 +125,7 @@
     {
       "postId": "381",
       "title": "UO NEWS LETTER",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-03-20T16:09:11",
@@ -128,6 +138,7 @@
     {
       "postId": "378",
       "title": "개발중인 내용\"테이밍 변경사항\"",
+      "categoryLabel": null,
       "author": "Cnosos",
       "authorMemberNo": "2467",
       "createdAt": "2002-03-15T18:54:35",
@@ -139,7 +150,8 @@
     },
     {
       "postId": "377",
-      "title": "[개발중]바드 변경사항 3",
+      "title": "바드 변경사항 3",
+      "categoryLabel": "개발중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-15T17:34:33",
@@ -152,6 +164,7 @@
     {
       "postId": "376",
       "title": "UO Fan Fair 2002 in Korea개최건에 대해서",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-14T15:24:17",
@@ -164,6 +177,7 @@
     {
       "postId": "375",
       "title": "잡란에 보우어,쿠킹,인스크립션이 업뎃 되어습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-14T14:16:11",
@@ -176,6 +190,7 @@
     {
       "postId": "374",
       "title": "새로 적용될 벌크디드 타임",
+      "categoryLabel": null,
       "author": "Cnosos",
       "authorMemberNo": "2467",
       "createdAt": "2002-03-13T22:26:07",
@@ -188,6 +203,7 @@
     {
       "postId": "373",
       "title": "새로나올 가죽유형에 대하여",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-12T11:37:57",
@@ -200,6 +216,7 @@
     {
       "postId": "372",
       "title": "클라이언트 패치 3.0.7d",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-12T07:37:25",
@@ -211,7 +228,8 @@
     },
     {
       "postId": "371",
-      "title": "[개발중] 재단사 벌크주문디드",
+      "title": "재단사 벌크주문디드",
+      "categoryLabel": "개발중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-11T11:23:21",
@@ -224,6 +242,7 @@
     {
       "postId": "370",
       "title": "홈피 개편 후 로그인이 안되시는분들은...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-10T11:57:15",
@@ -236,6 +255,7 @@
     {
       "postId": "369",
       "title": "Forg홈 재구성으로 여러분을 보는군요-0-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-09T23:41:52",
@@ -248,6 +268,7 @@
     {
       "postId": "368",
       "title": "토요일저녁 홈개편이 될 예정입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-08T17:37:03",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "366",
-      "title": "[개발중] 자비의 미덕",
+      "title": "자비의 미덕",
+      "categoryLabel": "개발중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-08T13:29:17",
@@ -272,6 +294,7 @@
     {
       "postId": "365",
       "title": "Publish 16 패치에 대한 테일러벌크디드와 시즈적용..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-08T09:49:29",
@@ -283,7 +306,8 @@
     },
     {
       "postId": "364",
-      "title": "[계획중] 정의의 미덕",
+      "title": "정의의 미덕",
+      "categoryLabel": "계획중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-08T09:18:28",
@@ -295,7 +319,8 @@
     },
     {
       "postId": "363",
-      "title": "[계획중]바드 변경사항에 추가된 사항",
+      "title": "바드 변경사항에 추가된 사항",
+      "categoryLabel": "계획중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-07T08:53:42",
@@ -308,6 +333,7 @@
     {
       "postId": "362",
       "title": "아리랑 & 발해 샤드의 컴패니언 팀에서 새로운 멤버를 모집합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-06T18:17:46",
@@ -319,7 +345,8 @@
     },
     {
       "postId": "361",
-      "title": "[FYI] 새로운 가죽유형 추가예정",
+      "title": "새로운 가죽유형 추가예정",
+      "categoryLabel": "FYI",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-06T11:35:24",
@@ -332,6 +359,7 @@
     {
       "postId": "360",
       "title": "자주색 시즐아이템",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-03-06T11:34:25",
@@ -344,6 +372,7 @@
     {
       "postId": "359",
       "title": "In Concept에 올려진 테이머의 향후 패치계획 내용에 대해서.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-05T16:51:55",
@@ -356,6 +385,7 @@
     {
       "postId": "358",
       "title": "화분에 관한 추가 보고서가 나왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-03-02T22:25:17",
@@ -368,6 +398,7 @@
     {
       "postId": "357",
       "title": "사용못하는집 부패시작",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-28T13:58:33",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "356",
-      "title": "[계획중] 수정된 바드스킬",
+      "title": "수정된 바드스킬",
+      "categoryLabel": "계획중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-27T14:59:55",
@@ -391,7 +423,8 @@
     },
     {
       "postId": "355",
-      "title": "[계획중]수정된 PvP와 펠루카지역 강화",
+      "title": "수정된 PvP와 펠루카지역 강화",
+      "categoryLabel": "계획중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-26T23:23:32",
@@ -404,6 +437,7 @@
     {
       "postId": "354",
       "title": "크리스마스 트리 철거 및 기타",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-26T21:22:41",
@@ -416,6 +450,7 @@
     {
       "postId": "353",
       "title": "새로운 머더러 시스템에 대한 정보",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-21T15:22:11",
@@ -427,7 +462,8 @@
     },
     {
       "postId": "352",
-      "title": "[계획중] 펠루카와 머더 시스템 변경",
+      "title": "펠루카와 머더 시스템 변경",
+      "categoryLabel": "계획중",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-21T14:47:31",
@@ -440,6 +476,7 @@
     {
       "postId": "351",
       "title": "포그홈 서버점검으로 인한 접속불량이 있을수도 있습니다.",
+      "categoryLabel": null,
       "author": "Kritz",
       "authorMemberNo": "2248",
       "createdAt": "2002-02-21T09:30:26",
@@ -452,6 +489,7 @@
     {
       "postId": "350",
       "title": "스탯로스 폐지와 머더 카운트 변경",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-20T18:06:58",
@@ -464,6 +502,7 @@
     {
       "postId": "348",
       "title": "희생미덕의 감소율및 상한선",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-20T14:41:13",
@@ -476,6 +515,7 @@
     {
       "postId": "347",
       "title": "화분[식물을 키우는것에대한 보고서]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-02-19T11:57:37",
@@ -488,6 +528,7 @@
     {
       "postId": "346",
       "title": "클라이언트 패치 3.0.7b",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-16T10:36:12",
@@ -500,6 +541,7 @@
     {
       "postId": "345",
       "title": "새로운 컴퓨터바이러스가 출현 하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-02-14T17:02:00",
@@ -512,6 +554,7 @@
     {
       "postId": "344",
       "title": "확장팩의 새로운 2디 그래픽 업데이트",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-14T15:20:41",
@@ -524,6 +567,7 @@
     {
       "postId": "343",
       "title": "올해는 발렌타인데이 선물 없음",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-02-14T15:17:51",
@@ -536,6 +580,7 @@
     {
       "postId": "342",
       "title": "Hanse와 Evocare로 부터의 대량주문서에 대한 정보",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-14T13:42:33",
@@ -548,6 +593,7 @@
     {
       "postId": "341",
       "title": "GM 리뷰 상자",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-14T13:06:12",
@@ -560,6 +606,7 @@
     {
       "postId": "340",
       "title": "새로운 3D 아트과 해외의 LBR",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-14T12:21:58",
@@ -572,6 +619,7 @@
     {
       "postId": "339",
       "title": "은행원과 수표",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-12T06:28:35",
@@ -584,6 +632,7 @@
     {
       "postId": "338",
       "title": "UO:LBR의 발매일 !!",
+      "categoryLabel": null,
       "author": "Rei_KGB",
       "authorMemberNo": "272",
       "createdAt": "2002-02-11T14:16:17",
@@ -596,6 +645,7 @@
     {
       "postId": "337",
       "title": "샤드별게시판에 대한 설문조사가 메인 UO.POLL에서...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-02-09T12:52:38",

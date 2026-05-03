@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "234",
   "title": "멤버화에 관한 상세 내용입니다.",
+  "categoryLabel": null,
   "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 대부분의 게시판의 각란마다 9렙 제한이 걸려있습니다. <br>\n 멤버등록을 하시는분께 바로 오픈해야 하지만. <br>\n 현재 처음 로긴상태의 10렙은 비멤버분들과 동일취급을 합니다.<br>\n<br>\n 하지만 이제 400명의 인원을 방금 다 해결했습니다.<br>\n 10렙이신분들을 모두 9렙으로 올려 드렸습니다.<br>\n<br>\n 또한 지금부터 멤버가입을 하시는분들은 자동으로 9렙으로 조정됩니다. <br>\n<br>\n 자세한 란들 허용렙은 <a href=\"http://forg.uospace.net/intro.html\">http://forg.uospace.net/intro.html</a> <br>\n 참조하시길... <br>\n<br>\n 따라서 모든란의 이용은 가입 후 +1렙만 오르시면 됩니다... <br>\n<br>\n<br>\n 이 기안은 확정된것이 아니고 추후 고려해보겠습니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "대부분의 게시판의 각란마다 9렙 제한이 걸려있습니다. 멤버등록을 하시는분께 바로 오픈해야 하지만. 현재 처음 로긴상태의 10렙은 비멤버분들과 동일취급을 합니다. 하지만 이제 400명의 인원을 방금 다 해결했습니다. 10렙이신분들을 모두 9렙으로 올려 드렸습니다. 또한 지금부터 멤버가입을 하시는분들은 자동으로 9렙으로 조정됩니다. 자세한 란들 허용렙은 http://forg.uospace.net/intro.html 참조하시길... 따라서 모든란의 이용은 가입 후 +1렙만 오르시면 됩니다... 이 기안은 확정된것이 아니고 추후 고려해보겠습니다.",
   "author": "Forg",

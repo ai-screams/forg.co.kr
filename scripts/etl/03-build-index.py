@@ -52,6 +52,7 @@ def _entry_from_post(post: Post) -> BoardIndexEntry:
     return BoardIndexEntry(
         postId=post.postId,
         title=post.title,
+        categoryLabel=post.categoryLabel,
         author=post.author,
         authorMemberNo=post.authorMemberNo,
         createdAt=post.createdAt,

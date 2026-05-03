@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "774",
   "title": "현재 울온 패치 에러 나시는분은",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">아래의 해당 파일을 받으신 후 울온폴더에 덮어씌우시거나 <br><br>Vercfg파일을 마우스 우클릭-연결프로그램-메모장을 선택하시어 compassion.owo.com 8888를 patch-kr.owo.com 8888으로 바꾸어 주시면 됩니다.<br><br>또한 UOA를 사용하지 않는 분은 일시적으로 다음 패치가 될때까지<br>Client.EXE를 실행시키어 패치서버를 거치지 않고 바로 울온을 실행 하실 수도 있습니다.<br><br></td></tr></tbody></table>\n",
   "bodyText": "아래의 해당 파일을 받으신 후 울온폴더에 덮어씌우시거나 Vercfg파일을 마우스 우클릭-연결프로그램-메모장을 선택하시어 compassion.owo.com 8888를 patch-kr.owo.com 8888으로 바꾸어 주시면 됩니다. 또한 UOA를 사용하지 않는 분은 일시적으로 다음 패치가 될때까지 Client.EXE를 실행시키어 패치서버를 거치지 않고 바로 울온을 실행 하실 수도 있습니다.",
   "author": "Forg",

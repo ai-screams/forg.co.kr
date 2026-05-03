@@ -3,6 +3,7 @@
   "boardKr": "Q_A",
   "postId": "16923",
   "title": "mirc,xirc전부 접속 안되거든여",
+  "categoryLabel": null,
   "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 누리넷 접속하면<br>\n irc.nuri.net *** Looking up your hostname<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** Checking ident<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** Couldn't looking up your hostname<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** God ident response<br>\n 라는 메세지만 계속 뜨네여 갈켜 주세여~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "누리넷 접속하면 irc.nuri.net *** Looking up your hostname *** Checking ident *** Couldn't looking up your hostname *** God ident response 라는 메세지만 계속 뜨네여 갈켜 주세여~",
   "author": "lezent",

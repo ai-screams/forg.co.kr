@@ -43,6 +43,8 @@ class Post(BaseModel):
 
     # Content
     title: str = Field(min_length=1)
+    # `[xxx]` prefix stripped from the title; null when no prefix was present.
+    categoryLabel: str | None = None
     bodyHtml: str
     bodyText: str = Field(min_length=1)
 
@@ -78,6 +80,7 @@ class BoardIndexEntry(BaseModel):
 
     postId: str = Field(min_length=1)
     title: str = Field(min_length=1)
+    categoryLabel: str | None = None
     author: str = Field(min_length=1)
     authorMemberNo: str | None = None
     createdAt: datetime

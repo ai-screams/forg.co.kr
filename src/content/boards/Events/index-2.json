@@ -3,11 +3,12 @@
   "page": 2,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "472",
       "title": "경매 이벤트 후기",
+      "categoryLabel": null,
       "author": "아바타",
       "authorMemberNo": "15555",
       "createdAt": "2003-07-08T21:51:10",
@@ -20,6 +21,7 @@
     {
       "postId": "471",
       "title": "아리랑 복권이벤트",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "15579",
       "createdAt": "2003-07-04T14:08:39",
@@ -32,6 +34,7 @@
     {
       "postId": "470",
       "title": "아리랑 경매 이벤트!",
+      "categoryLabel": null,
       "author": "아바타",
       "authorMemberNo": "15555",
       "createdAt": "2003-07-03T18:20:20",
@@ -44,6 +47,7 @@
     {
       "postId": "469",
       "title": "울티마 온라인과 함께 하는 섬머 페스티발!!",
+      "categoryLabel": null,
       "author": "뮤직",
       "authorMemberNo": "15196",
       "createdAt": "2003-07-03T17:22:27",
@@ -56,6 +60,7 @@
     {
       "postId": "468",
       "title": "광대 데르카즈군과 함께하는 즐거운 사냥 이벤트",
+      "categoryLabel": null,
       "author": "데르카즈",
       "authorMemberNo": "0",
       "createdAt": "2003-07-03T16:49:30",
@@ -68,6 +73,7 @@
     {
       "postId": "467",
       "title": "EA공식이벤트!! (깜작이벤트에 참여하세요)",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-06-25T01:49:25",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "466",
-      "title": "[아리랑]금일 21시에 공개 슈챔 이벤트 있습니다.",
+      "title": "금일 21시에 공개 슈챔 이벤트 있습니다.",
+      "categoryLabel": "아리랑",
       "author": "sexyfra",
       "authorMemberNo": "18333",
       "createdAt": "2003-06-21T17:46:52",
@@ -92,6 +99,7 @@
     {
       "postId": "465",
       "title": "울티마 온라인, 나만의 팁 大 공개 이벤트!!",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-05-16T12:23:17",
@@ -104,6 +112,7 @@
     {
       "postId": "464",
       "title": "★ 구찌백화점 무기한 휴업에 따른 서비스 세일 이벤트 ★",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-04-28T15:52:01",
@@ -116,6 +125,7 @@
     {
       "postId": "463",
       "title": "듀얼 이벤트 본선 결과",
+      "categoryLabel": null,
       "author": "옹헤야",
       "authorMemberNo": "14902",
       "createdAt": "2003-04-06T00:45:12",
@@ -128,6 +138,7 @@
     {
       "postId": "462",
       "title": "듀얼이벤트 대진표 변경사항 및 시간",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-04-05T17:52:06",
@@ -140,6 +151,7 @@
     {
       "postId": "461",
       "title": "듀얼대회 본선 연기안내 및 대진표",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-03-28T18:23:49",
@@ -152,6 +164,7 @@
     {
       "postId": "460",
       "title": "듀얼 이벤트 본선 안내",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-03-27T16:07:40",
@@ -164,6 +177,7 @@
     {
       "postId": "459",
       "title": "ToReal 공식홈페이지를 오픈합니다.",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-22T18:10:48",
@@ -176,6 +190,7 @@
     {
       "postId": "456",
       "title": "ToReal Event #2 미로타워 이벤트",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-21T03:47:02",
@@ -188,6 +203,7 @@
     {
       "postId": "455",
       "title": "ToReal Event #1 듀얼대회 예선",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-21T03:39:53",
@@ -200,6 +216,7 @@
     {
       "postId": "454",
       "title": "ToReal System No 5. Our Strory",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-21T03:34:58",
@@ -212,6 +229,7 @@
     {
       "postId": "453",
       "title": "미로 이벤트 해보고픈데;;;",
+      "categoryLabel": null,
       "author": "rapel21",
       "authorMemberNo": "15561",
       "createdAt": "2003-03-21T02:10:09",
@@ -224,6 +242,7 @@
     {
       "postId": "452",
       "title": "ToReal Event #1 듀얼대회 추가공지",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-20T18:18:18",
@@ -236,6 +255,7 @@
     {
       "postId": "451",
       "title": "ToReal Event #1 듀얼대회 경기장 변경!",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-20T18:14:50",
@@ -248,6 +268,7 @@
     {
       "postId": "450",
       "title": "ToReal Event #1 듀얼대회 관람안내 [상품추첨]",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-17T20:27:44",
@@ -260,6 +281,7 @@
     {
       "postId": "449",
       "title": "ToReal Event #1 듀얼대회 접수방법",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-16T22:05:29",
@@ -272,6 +294,7 @@
     {
       "postId": "448",
       "title": "ToReal Event #1 듀얼대회 참가자분들 필독해주세요.",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-15T14:21:18",
@@ -284,6 +307,7 @@
     {
       "postId": "447",
       "title": "ToReal Event #1 듀얼대회 공지 [참고사항]",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-14T16:00:43",
@@ -296,6 +320,7 @@
     {
       "postId": "446",
       "title": "ToReal Event #1 듀얼대회 공지 [시간/장소/상품]",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-14T15:30:36",
@@ -308,6 +333,7 @@
     {
       "postId": "445",
       "title": "ToReal Event #1 듀얼대회 경기장 사진입니다.",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-14T14:38:45",
@@ -320,6 +346,7 @@
     {
       "postId": "444",
       "title": "ToReal Event #1 듀얼대회 간단한 추가 및 수정 공지",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-03-13T09:09:22",
@@ -332,6 +359,7 @@
     {
       "postId": "443",
       "title": "ToReal Event #1 듀얼대회 두번째 공지",
+      "categoryLabel": null,
       "author": "freedisc",
       "authorMemberNo": "16030",
       "createdAt": "2003-03-13T02:04:30",
@@ -344,6 +372,7 @@
     {
       "postId": "442",
       "title": "ToReal Event #1 듀얼대회",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-11T03:31:34",
@@ -356,6 +385,7 @@
     {
       "postId": "440",
       "title": "ToReal System No 4. Circulation",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-10T23:31:34",
@@ -368,6 +398,7 @@
     {
       "postId": "439",
       "title": "ToReal System No 3. Guardian",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-08T15:32:12",
@@ -380,6 +411,7 @@
     {
       "postId": "438",
       "title": "ToReal System No 2. Quest",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-07T00:31:19",
@@ -392,6 +424,7 @@
     {
       "postId": "437",
       "title": "ToReal System No 1. Real PvP",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-05T19:00:09",
@@ -404,6 +437,7 @@
     {
       "postId": "436",
       "title": "ToReal이 여러분곁에 다가갑니다.",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-03-04T20:44:03",
@@ -416,6 +450,7 @@
     {
       "postId": "434",
       "title": "오늘 백볼 약식경기 있습니다.",
+      "categoryLabel": null,
       "author": "soloture",
       "authorMemberNo": "16653",
       "createdAt": "2003-02-25T09:48:40",
@@ -428,6 +463,7 @@
     {
       "postId": "433",
       "title": "백볼협회 부활! 팀 및 심판 모집.",
+      "categoryLabel": null,
       "author": "soloture",
       "authorMemberNo": "16653",
       "createdAt": "2003-02-24T11:41:08",
@@ -440,6 +476,7 @@
     {
       "postId": "431",
       "title": "오늘 아리랑 백타임으로 인해서....",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-02-17T20:58:29",
@@ -452,6 +489,7 @@
     {
       "postId": "430",
       "title": "오늘 8시 한국샤드 집모형 대거 트레이드 합니다.",
+      "categoryLabel": null,
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-02-16T13:41:58",
@@ -464,6 +502,7 @@
     {
       "postId": "429",
       "title": "-_-; 치킨파이터~!",
+      "categoryLabel": null,
       "author": "soulload",
       "authorMemberNo": "16479",
       "createdAt": "2003-02-14T18:57:16",
@@ -475,7 +514,8 @@
     },
     {
       "postId": "428",
-      "title": "[AEA] 아리랑이벤연합을 폐쇄합니다.",
+      "title": "아리랑이벤연합을 폐쇄합니다.",
+      "categoryLabel": "AEA",
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-02-13T23:16:31",
@@ -487,7 +527,8 @@
     },
     {
       "postId": "427",
-      "title": "[한국샤드] 아리랑과 발해 대규모 트레이드를 진행합니다.",
+      "title": "아리랑과 발해 대규모 트레이드를 진행합니다.",
+      "categoryLabel": "한국샤드",
       "author": "blueharp",
       "authorMemberNo": "14895",
       "createdAt": "2003-02-11T10:17:55",
@@ -500,6 +541,7 @@
     {
       "postId": "426",
       "title": "사과의글과 변명의글 그리고 바라는점.",
+      "categoryLabel": null,
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-02-09T01:54:02",
@@ -511,7 +553,8 @@
     },
     {
       "postId": "425",
-      "title": "[반지의제왕]최종공지 시간 및 완벽한룰.[필독]",
+      "title": "최종공지 시간 및 완벽한룰.[필독]",
+      "categoryLabel": "반지의제왕",
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-02-07T22:08:25",
@@ -523,7 +566,8 @@
     },
     {
       "postId": "421",
-      "title": "[반지의제왕]이벤트장소 및 추가사항",
+      "title": "이벤트장소 및 추가사항",
+      "categoryLabel": "반지의제왕",
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-02-04T16:06:35",
@@ -536,6 +580,7 @@
     {
       "postId": "419",
       "title": "신년맞이 부어라 마셔라 죽어라 파티.",
+      "categoryLabel": null,
       "author": "Anna-_-",
       "authorMemberNo": "15204",
       "createdAt": "2003-01-31T23:23:42",
@@ -548,6 +593,7 @@
     {
       "postId": "418",
       "title": "(공식)자원봉사 홍보 이벤트",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-01-29T16:10:29",
@@ -559,7 +605,8 @@
     },
     {
       "postId": "417",
-      "title": "[반지의제왕]상품리스트 및 시상방식",
+      "title": "상품리스트 및 시상방식",
+      "categoryLabel": "반지의제왕",
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-01-29T01:19:20",
@@ -571,7 +618,8 @@
     },
     {
       "postId": "416",
-      "title": "[반지의제왕]참가자 접수!!!및 추가적룰.",
+      "title": "참가자 접수!!!및 추가적룰.",
+      "categoryLabel": "반지의제왕",
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-01-27T09:39:33",
@@ -583,7 +631,8 @@
     },
     {
       "postId": "415",
-      "title": "[아리랑] 백볼협회 #아리랑백볼",
+      "title": "백볼협회 #아리랑백볼",
+      "categoryLabel": "아리랑",
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-01-27T08:20:48",
@@ -595,7 +644,8 @@
     },
     {
       "postId": "414",
-      "title": "[반지의제왕]GM지원및 개최날짜,장소추가사항",
+      "title": "GM지원및 개최날짜,장소추가사항",
+      "categoryLabel": "반지의제왕",
       "author": "abbaddall",
       "authorMemberNo": "18097",
       "createdAt": "2003-01-23T22:56:56",

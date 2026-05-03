@@ -3,11 +3,12 @@
   "page": 7,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "688",
       "title": "하우스 데코레이팅 이벤트 시작!",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2002-12-15T03:32:03",
@@ -20,6 +21,7 @@
     {
       "postId": "687",
       "title": "[한국샤드 In game event] 울티마 온라인에 크리스마스의 악몽이?",
+      "categoryLabel": null,
       "author": "Mulan",
       "authorMemberNo": "15552",
       "createdAt": "2002-12-15T00:01:57",
@@ -32,6 +34,7 @@
     {
       "postId": "686",
       "title": "3단계 집 시스템의 연기 이유.....",
+      "categoryLabel": null,
       "author": "Mini",
       "authorMemberNo": "14629",
       "createdAt": "2002-12-14T11:18:27",
@@ -44,6 +47,7 @@
     {
       "postId": "684",
       "title": "지엠서비스 일시중단",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2002-12-13T20:21:48",
@@ -56,6 +60,7 @@
     {
       "postId": "682",
       "title": "오늘부로 패치된 사항",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2002-12-13T10:42:24",
@@ -67,7 +72,8 @@
     },
     {
       "postId": "681",
-      "title": "[긴급]Return to Britannia!",
+      "title": "Return to Britannia!",
+      "categoryLabel": "긴급",
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2002-12-13T07:47:40",
@@ -80,6 +86,7 @@
     {
       "postId": "680",
       "title": "UO Designer Vex와의 AoS 집 관련 인터뷰 내용",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2002-12-13T02:07:41",
@@ -92,6 +99,7 @@
     {
       "postId": "679",
       "title": "AoS - 누가 집을 수정할 수 있는가?",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2002-12-12T23:31:38",
@@ -104,6 +112,7 @@
     {
       "postId": "678",
       "title": "고대의 땅 Malas에 대하여......",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2002-12-12T14:57:29",
@@ -116,6 +125,7 @@
     {
       "postId": "677",
       "title": "AOS의 배경 시나리오",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-11T11:50:28",
@@ -128,6 +138,7 @@
     {
       "postId": "676",
       "title": "신규 계정 등록 방법 재변경",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-11T11:45:47",
@@ -140,6 +151,7 @@
     {
       "postId": "675",
       "title": "시체에서 물건 꺼내기(looting) - 과거와 현재",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-11T11:43:04",
@@ -152,6 +164,7 @@
     {
       "postId": "671",
       "title": "각란 도움주실 분 명단입니다[시세란포함]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-10T09:58:50",
@@ -164,6 +177,7 @@
     {
       "postId": "670",
       "title": "AoS 스샷에 올라온 Keep Size House에 관련된 정보",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2002-12-10T02:10:50",
@@ -176,6 +190,7 @@
     {
       "postId": "669",
       "title": "쿠킹에 관한 소식 -수정-",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2002-12-09T22:52:53",
@@ -188,6 +203,7 @@
     {
       "postId": "668",
       "title": "UO 프로듀서 SunSword의 AOS 관련 내용 인터뷰.",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2002-12-09T19:36:56",
@@ -200,6 +216,7 @@
     {
       "postId": "667",
       "title": "겨울 명절 맞이! 집장식 콘테스트!~",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2002-12-09T18:27:24",
@@ -212,6 +229,7 @@
     {
       "postId": "666",
       "title": "각란 도움주실분 명단 발표",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-09T13:06:10",
@@ -224,6 +242,7 @@
     {
       "postId": "665",
       "title": "KWAS 1.0.6 업데이트",
+      "categoryLabel": null,
       "author": "Kritz",
       "authorMemberNo": "2248",
       "createdAt": "2002-12-07T11:53:42",
@@ -236,6 +255,7 @@
     {
       "postId": "664",
       "title": "Forg홈 운영에 도움주실 분을 찿습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-06T18:16:05",
@@ -248,6 +268,7 @@
     {
       "postId": "663",
       "title": "현재까지 가입하신 회원님들은 수정 좀 부탁드립니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-06T16:12:20",
@@ -260,6 +281,7 @@
     {
       "postId": "662",
       "title": "AOS 전투관련 변경사항",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-06T00:43:51",
@@ -272,6 +294,7 @@
     {
       "postId": "661",
       "title": "현재 일부회원가입문제를 해결하였습니다",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-05T17:39:08",
@@ -284,6 +307,7 @@
     {
       "postId": "660",
       "title": "회원가입이 안되시는분은",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-04T23:36:39",
@@ -296,6 +320,7 @@
     {
       "postId": "659",
       "title": "회원가입을 하시기전에 유의사항입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-04T20:51:35",
@@ -308,6 +333,7 @@
     {
       "postId": "658",
       "title": "AOS의 커스텀 하우스 디자인 툴에 대하여",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-04T20:49:01",
@@ -320,6 +346,7 @@
     {
       "postId": "657",
       "title": "AOS의 네크로멘서에 대하여",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-04T20:47:29",
@@ -332,6 +359,7 @@
     {
       "postId": "656",
       "title": "AOS FAQ.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-04T20:45:33",
@@ -344,6 +372,7 @@
     {
       "postId": "655",
       "title": "본홈 변경사항입니다. <멤버필독>",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-12-02T17:42:13",
@@ -356,6 +385,7 @@
     {
       "postId": "654",
       "title": "Age of Shadow에 관한 약간의 추가사항",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "4143",
       "createdAt": "2002-12-02T06:22:46",
@@ -368,6 +398,7 @@
     {
       "postId": "653",
       "title": "The Necromancer : 네크로멘서에 대하여.......",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "4143",
       "createdAt": "2002-12-02T05:28:52",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "652",
-      "title": "[AoS] 집 디자인에 관한 설명",
+      "title": "집 디자인에 관한 설명",
+      "categoryLabel": "AoS",
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-11-23T00:23:19",
@@ -392,6 +424,7 @@
     {
       "postId": "651",
       "title": "울티마 온라인, 5번째(AOS) 확장팩 발표",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-11-22T16:03:21",
@@ -404,6 +437,7 @@
     {
       "postId": "650",
       "title": "울티마 온라인 한국 공식 사이트 새 단장 맞이 이벤트",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-11-19T16:16:30",
@@ -416,6 +450,7 @@
     {
       "postId": "649",
       "title": "현재 서버이상으로 인해 신규가입이 되지를 않습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-11-12T18:36:50",
@@ -428,6 +463,7 @@
     {
       "postId": "648",
       "title": "UO.여행기를 도와주실분을 찾습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-11-05T09:07:48",
@@ -440,6 +476,7 @@
     {
       "postId": "647",
       "title": "현재 일시적으로 신규가입이 되지를 않고 있습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-11-04T00:06:06",
@@ -452,6 +489,7 @@
     {
       "postId": "646",
       "title": "3단계 집시스템 속보",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-29T12:30:53",
@@ -464,6 +502,7 @@
     {
       "postId": "645",
       "title": "새로운샤드에 관한 공지및 GMReviews",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-22T07:35:07",
@@ -476,6 +515,7 @@
     {
       "postId": "644",
       "title": "AoS 소식과  Death Shroud에 관해서",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-19T08:11:46",
@@ -488,6 +528,7 @@
     {
       "postId": "643",
       "title": "집시스템 제3단계와 Death Shroud",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-18T14:14:24",
@@ -500,6 +541,7 @@
     {
       "postId": "642",
       "title": "새로운 의복그래픽과 제로데미지에 관해서",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-17T18:26:31",
@@ -512,6 +554,7 @@
     {
       "postId": "641",
       "title": "여러가지 버그의 수정",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-16T09:21:44",
@@ -524,6 +567,7 @@
     {
       "postId": "640",
       "title": "10월15일자 UOAssist패치내용",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-15T10:31:10",
@@ -536,6 +580,7 @@
     {
       "postId": "638",
       "title": "시나리오5 최종주 퀘스트",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-14T07:21:24",
@@ -548,6 +593,7 @@
     {
       "postId": "637",
       "title": "좌측 UO.퀘스트란에 마녀퀘스트가 추가되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-13T21:16:02",
@@ -560,6 +606,7 @@
     {
       "postId": "636",
       "title": "이번 퀘스트의 전문",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-12T18:19:10",
@@ -572,6 +619,7 @@
     {
       "postId": "634",
       "title": "시나리오5 4주차 (최종회)",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-10T17:50:06",
@@ -584,6 +632,7 @@
     {
       "postId": "633",
       "title": "My.Set에 저장하신 개인파일을 백업하시길 바랍니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-10T10:18:36",
@@ -596,6 +645,7 @@
     {
       "postId": "632",
       "title": "시나리오및 AoS관련 최신정보",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-05T20:46:01",

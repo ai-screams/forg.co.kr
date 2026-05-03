@@ -3,11 +3,12 @@
   "page": 1,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "18108",
       "title": "피스전사 스킬을 어떻게 잡는게 좋을까요;;",
+      "categoryLabel": null,
       "author": "whitemist",
       "authorMemberNo": "15941",
       "createdAt": "2003-04-18T17:55:47",
@@ -20,6 +21,7 @@
     {
       "postId": "18107",
       "title": "AOS 깔았는데두 말라스는 무슨 말라 비틀어질...T.T",
+      "categoryLabel": null,
       "author": "jrtoyman",
       "authorMemberNo": "20379",
       "createdAt": "2003-04-18T17:44:51",
@@ -32,6 +34,7 @@
     {
       "postId": "18105",
       "title": "물약으로 해독 가능한 래벨은 어디까지 인가요?",
+      "categoryLabel": null,
       "author": "metalgear0",
       "authorMemberNo": "19728",
       "createdAt": "2003-04-18T12:08:26",
@@ -44,6 +47,7 @@
     {
       "postId": "18104",
       "title": "당파 명령어좀 알려주세요.",
+      "categoryLabel": null,
       "author": "Dark",
       "authorMemberNo": "14947",
       "createdAt": "2003-04-18T11:47:43",
@@ -56,6 +60,7 @@
     {
       "postId": "18103",
       "title": "휴지통 게시판이 있나요?",
+      "categoryLabel": null,
       "author": "유레카",
       "authorMemberNo": "15138",
       "createdAt": "2003-04-18T11:10:54",
@@ -68,6 +73,7 @@
     {
       "postId": "18102",
       "title": "이제 전사는 더이상 갈 곳이 없는가여...?",
+      "categoryLabel": null,
       "author": "szryu",
       "authorMemberNo": "17254",
       "createdAt": "2003-04-18T10:57:16",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "18101",
-      "title": "[잡담]노래여 가사를",
+      "title": "노래여 가사를",
+      "categoryLabel": "잡담",
       "author": "jylluck",
       "authorMemberNo": "17977",
       "createdAt": "2003-04-18T10:55:15",
@@ -92,6 +99,7 @@
     {
       "postId": "18100",
       "title": "Window2000에서의...",
+      "categoryLabel": null,
       "author": "sylian",
       "authorMemberNo": "14823",
       "createdAt": "2003-04-18T09:57:15",
@@ -104,6 +112,7 @@
     {
       "postId": "18099",
       "title": "네크전사는 스텟을 어떻게 줘야 할까요?",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "18077",
       "createdAt": "2003-04-18T05:28:17",
@@ -116,6 +125,7 @@
     {
       "postId": "18098",
       "title": "무기나 방어구 임뷰 할때~",
+      "categoryLabel": null,
       "author": "greas5511",
       "authorMemberNo": "14690",
       "createdAt": "2003-04-18T02:31:57",
@@ -128,6 +138,7 @@
     {
       "postId": "18097",
       "title": "aos 이후 이벨+아나토미 와 프로텍션에 대해",
+      "categoryLabel": null,
       "author": "kissmeplz",
       "authorMemberNo": "19935",
       "createdAt": "2003-04-18T02:29:23",
@@ -140,6 +151,7 @@
     {
       "postId": "18096",
       "title": "나메덱스가 105가 최고아니였던가요 --?",
+      "categoryLabel": null,
       "author": "Britz",
       "authorMemberNo": "20435",
       "createdAt": "2003-04-18T02:27:58",
@@ -152,6 +164,7 @@
     {
       "postId": "18094",
       "title": "네크 리치폼......",
+      "categoryLabel": null,
       "author": "cloud4701",
       "authorMemberNo": "20001",
       "createdAt": "2003-04-17T23:31:11",
@@ -164,6 +177,7 @@
     {
       "postId": "18093",
       "title": "테임과 피스, 마비",
+      "categoryLabel": null,
       "author": "pokoso",
       "authorMemberNo": "20152",
       "createdAt": "2003-04-17T23:15:33",
@@ -175,7 +189,8 @@
     },
     {
       "postId": "18092",
-      "title": "[울온외] DVMT가 뭔가요?",
+      "title": "DVMT가 뭔가요?",
+      "categoryLabel": "울온외",
       "author": "ExoduS",
       "authorMemberNo": "14837",
       "createdAt": "2003-04-17T22:43:50",
@@ -188,6 +203,7 @@
     {
       "postId": "18091",
       "title": "울온외] 저 윈98에서...",
+      "categoryLabel": null,
       "author": "히긍",
       "authorMemberNo": "15651",
       "createdAt": "2003-04-17T22:14:33",
@@ -200,6 +216,7 @@
     {
       "postId": "18090",
       "title": "민첩과 동물 치료",
+      "categoryLabel": null,
       "author": "pokoso",
       "authorMemberNo": "20152",
       "createdAt": "2003-04-17T21:58:06",
@@ -212,6 +229,7 @@
     {
       "postId": "18089",
       "title": "디스코때문에요~",
+      "categoryLabel": null,
       "author": "dajms",
       "authorMemberNo": "19070",
       "createdAt": "2003-04-17T21:45:30",
@@ -224,6 +242,7 @@
     {
       "postId": "18088",
       "title": "언데드슬레이어악기에 대해서...",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-04-17T21:30:39",
@@ -236,6 +255,7 @@
     {
       "postId": "18087",
       "title": "왜 ea는 프리샤드를 냅둘까요 -_-?",
+      "categoryLabel": null,
       "author": "wind-jo",
       "authorMemberNo": "19855",
       "createdAt": "2003-04-17T20:28:10",
@@ -247,7 +267,8 @@
     },
     {
       "postId": "18086",
-      "title": "[질문] 계정날짜에 관해서..",
+      "title": "계정날짜에 관해서..",
+      "categoryLabel": "질문",
       "author": "goehrgkeksl",
       "authorMemberNo": "15052",
       "createdAt": "2003-04-17T20:21:58",
@@ -260,6 +281,7 @@
     {
       "postId": "18085",
       "title": "벤더에서요",
+      "categoryLabel": null,
       "author": "nami",
       "authorMemberNo": "15229",
       "createdAt": "2003-04-17T20:07:09",
@@ -272,6 +294,7 @@
     {
       "postId": "18084",
       "title": "으앗 대인전용 캐릭 스킬에 대한 조언 해주세요 ㅜ_ㅜ",
+      "categoryLabel": null,
       "author": "Azellos1",
       "authorMemberNo": "17355",
       "createdAt": "2003-04-17T20:00:27",
@@ -284,6 +307,7 @@
     {
       "postId": "18083",
       "title": "이지유오 피스메크로,..",
+      "categoryLabel": null,
       "author": "lkw0213",
       "authorMemberNo": "19153",
       "createdAt": "2003-04-17T18:55:16",
@@ -296,6 +320,7 @@
     {
       "postId": "18082",
       "title": "아주 단순한 질문. 운에 관한 질문입니다.",
+      "categoryLabel": null,
       "author": "samid",
       "authorMemberNo": "17297",
       "createdAt": "2003-04-17T18:52:48",
@@ -308,6 +333,7 @@
     {
       "postId": "18081",
       "title": "레지올리는데요",
+      "categoryLabel": null,
       "author": "korjae",
       "authorMemberNo": "15098",
       "createdAt": "2003-04-17T18:48:23",
@@ -320,6 +346,7 @@
     {
       "postId": "18079",
       "title": "스킬을 조정하려고 합니다만..",
+      "categoryLabel": null,
       "author": "sylian",
       "authorMemberNo": "14823",
       "createdAt": "2003-04-17T18:10:50",
@@ -332,6 +359,7 @@
     {
       "postId": "18078",
       "title": "마사 인트를 125로 마추려 합니다...",
+      "categoryLabel": null,
       "author": "moonspir",
       "authorMemberNo": "15136",
       "createdAt": "2003-04-17T17:11:59",
@@ -344,6 +372,7 @@
     {
       "postId": "18077",
       "title": "이동 분말 가루 개미궤스트 질문입니다",
+      "categoryLabel": null,
       "author": "qnrtkaehd",
       "authorMemberNo": "14834",
       "createdAt": "2003-04-17T16:13:50",
@@ -356,6 +385,7 @@
     {
       "postId": "18076",
       "title": "만약 슴스나 테일러가 운이 높으면",
+      "categoryLabel": null,
       "author": "kissmeplz",
       "authorMemberNo": "19935",
       "createdAt": "2003-04-17T16:12:51",
@@ -368,6 +398,7 @@
     {
       "postId": "18075",
       "title": "피스로 괴물들 잡을때~",
+      "categoryLabel": null,
       "author": "dajms",
       "authorMemberNo": "19070",
       "createdAt": "2003-04-17T14:59:58",
@@ -380,6 +411,7 @@
     {
       "postId": "18074",
       "title": "둠던전아이템중에 나오는무기 임뷰가능한가요?",
+      "categoryLabel": null,
       "author": "天上有愛",
       "authorMemberNo": "0",
       "createdAt": "2003-04-17T13:39:29",
@@ -392,6 +424,7 @@
     {
       "postId": "18073",
       "title": "퀘스트로 받은 아이템은 임뷰가 불가능하나요??",
+      "categoryLabel": null,
       "author": "reguls",
       "authorMemberNo": "18912",
       "createdAt": "2003-04-17T12:51:01",
@@ -404,6 +437,7 @@
     {
       "postId": "18072",
       "title": "물리저항 질문",
+      "categoryLabel": null,
       "author": "Elvan",
       "authorMemberNo": "20028",
       "createdAt": "2003-04-17T12:47:33",
@@ -415,7 +449,8 @@
     },
     {
       "postId": "18071",
-      "title": "[울온외] 하드 점퍼",
+      "title": "하드 점퍼",
+      "categoryLabel": "울온외",
       "author": "신하균",
       "authorMemberNo": "20416",
       "createdAt": "2003-04-17T12:08:23",
@@ -428,6 +463,7 @@
     {
       "postId": "18070",
       "title": "수리가 불가능한 아이템에 대하여..",
+      "categoryLabel": null,
       "author": "mars",
       "authorMemberNo": "19291",
       "createdAt": "2003-04-17T11:36:55",
@@ -440,6 +476,7 @@
     {
       "postId": "18069",
       "title": "집문제 입니다.",
+      "categoryLabel": null,
       "author": "onurmark",
       "authorMemberNo": "16202",
       "createdAt": "2003-04-17T11:35:53",
@@ -452,6 +489,7 @@
     {
       "postId": "18068",
       "title": "배에 관해서 질문입니다.",
+      "categoryLabel": null,
       "author": "D-Ryo",
       "authorMemberNo": "19564",
       "createdAt": "2003-04-17T10:45:48",
@@ -464,6 +502,7 @@
     {
       "postId": "18067",
       "title": "팔라를 킬라구 하는데요~~",
+      "categoryLabel": null,
       "author": "greas5511",
       "authorMemberNo": "14690",
       "createdAt": "2003-04-17T05:13:22",
@@ -476,6 +515,7 @@
     {
       "postId": "18066",
       "title": "갑옷 감정좀 해주세염",
+      "categoryLabel": null,
       "author": "뢰연",
       "authorMemberNo": "0",
       "createdAt": "2003-04-17T03:42:02",
@@ -488,6 +528,7 @@
     {
       "postId": "18064",
       "title": "타임쿠폰 온라인으로 살곳 없습니까?",
+      "categoryLabel": null,
       "author": "hlboys",
       "authorMemberNo": "14966",
       "createdAt": "2003-04-17T00:02:34",
@@ -500,6 +541,7 @@
     {
       "postId": "18063",
       "title": "래지 혼자 올릴순 없나요?",
+      "categoryLabel": null,
       "author": "ongone1",
       "authorMemberNo": "19531",
       "createdAt": "2003-04-16T22:08:55",
@@ -512,6 +554,7 @@
     {
       "postId": "18062",
       "title": "듀얼용 마사 스텟...",
+      "categoryLabel": null,
       "author": "moonspir",
       "authorMemberNo": "15136",
       "createdAt": "2003-04-16T21:07:26",
@@ -524,6 +567,7 @@
     {
       "postId": "18061",
       "title": "꾸에엑! 뱀파이어릭 엠브레이스의 압박! 쀍!",
+      "categoryLabel": null,
       "author": "dongswar",
       "authorMemberNo": "19904",
       "createdAt": "2003-04-16T20:01:38",
@@ -536,6 +580,7 @@
     {
       "postId": "18060",
       "title": "스샷 어떻게 찍죠?",
+      "categoryLabel": null,
       "author": "leegnwoo",
       "authorMemberNo": "20107",
       "createdAt": "2003-04-16T19:25:00",
@@ -548,6 +593,7 @@
     {
       "postId": "18059",
       "title": "임뷰할라는데",
+      "categoryLabel": null,
       "author": "korjae",
       "authorMemberNo": "15098",
       "createdAt": "2003-04-16T18:44:56",
@@ -560,6 +606,7 @@
     {
       "postId": "18058",
       "title": "개미퀘스트중에서 그 침입자불개미 말이에요.",
+      "categoryLabel": null,
       "author": "dlshfkd",
       "authorMemberNo": "17076",
       "createdAt": "2003-04-16T18:04:44",
@@ -572,6 +619,7 @@
     {
       "postId": "18057",
       "title": "모니터 이상...",
+      "categoryLabel": null,
       "author": "kenel",
       "authorMemberNo": "16048",
       "createdAt": "2003-04-16T17:23:17",
@@ -584,6 +632,7 @@
     {
       "postId": "18056",
       "title": "화마는 펠루카서만 나오나여? 트라멜화여던젼엔 음써여?",
+      "categoryLabel": null,
       "author": "5ryeun",
       "authorMemberNo": "19830",
       "createdAt": "2003-04-16T15:47:10",
@@ -596,6 +645,7 @@
     {
       "postId": "18055",
       "title": "스미스를 키울려고 하는데요..",
+      "categoryLabel": null,
       "author": "ipvision43",
       "authorMemberNo": "20203",
       "createdAt": "2003-04-16T15:10:05",

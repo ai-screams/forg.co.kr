@@ -3,11 +3,12 @@
   "page": 12,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "16547",
       "title": "여기가 어딘지 모르겠어요ㅜ.ㅜ",
+      "categoryLabel": null,
       "author": "codename417",
       "authorMemberNo": "19139",
       "createdAt": "2003-02-24T19:07:22",
@@ -20,6 +21,7 @@
     {
       "postId": "16544",
       "title": "UOAssist Macro Settings ㅡ.,ㅡ;;이게 무엇인가요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-24T16:40:42",
@@ -32,6 +34,7 @@
     {
       "postId": "16543",
       "title": "루닉바느질도구에대해 설명점...해주실분?",
+      "categoryLabel": null,
       "author": "Alexander",
       "authorMemberNo": "18401",
       "createdAt": "2003-02-24T15:49:24",
@@ -44,6 +47,7 @@
     {
       "postId": "16542",
       "title": "1년쉬고 UOA 할려니간 사용정지래요...",
+      "categoryLabel": null,
       "author": "robinto",
       "authorMemberNo": "19481",
       "createdAt": "2003-02-24T15:46:53",
@@ -56,6 +60,7 @@
     {
       "postId": "16540",
       "title": "아짜증나서..",
+      "categoryLabel": null,
       "author": "백마탄병신",
       "authorMemberNo": "18682",
       "createdAt": "2003-02-24T15:12:07",
@@ -68,6 +73,7 @@
     {
       "postId": "16539",
       "title": "블랙쏜 업글했는뒤요! 왜아직도 비틀이 라마로 ㅡ,ㅡ;",
+      "categoryLabel": null,
       "author": "ryuda",
       "authorMemberNo": "15412",
       "createdAt": "2003-02-24T14:55:04",
@@ -80,6 +86,7 @@
     {
       "postId": "16538",
       "title": "easy uo 슴스매클 더이상않되나요?",
+      "categoryLabel": null,
       "author": "ryuda",
       "authorMemberNo": "15412",
       "createdAt": "2003-02-24T14:53:36",
@@ -92,6 +99,7 @@
     {
       "postId": "16537",
       "title": "이벨 올리는 법좀 소개해주세여",
+      "categoryLabel": null,
       "author": "hack100",
       "authorMemberNo": "19423",
       "createdAt": "2003-02-24T14:50:41",
@@ -104,6 +112,7 @@
     {
       "postId": "16536",
       "title": "꼭 답변 해주세용",
+      "categoryLabel": null,
       "author": "elkardian",
       "authorMemberNo": "19510",
       "createdAt": "2003-02-24T14:34:03",
@@ -116,6 +125,7 @@
     {
       "postId": "16535",
       "title": "도득 길마는 어디에 있나요 ?",
+      "categoryLabel": null,
       "author": "silicon6",
       "authorMemberNo": "15674",
       "createdAt": "2003-02-24T13:58:40",
@@ -128,6 +138,7 @@
     {
       "postId": "16534",
       "title": "아처에관한 질문",
+      "categoryLabel": null,
       "author": "sean",
       "authorMemberNo": "19509",
       "createdAt": "2003-02-24T13:43:25",
@@ -140,6 +151,7 @@
     {
       "postId": "16533",
       "title": "소드전사에관한질문;",
+      "categoryLabel": null,
       "author": "sean",
       "authorMemberNo": "19509",
       "createdAt": "2003-02-24T13:42:54",
@@ -152,6 +164,7 @@
     {
       "postId": "16532",
       "title": "UOA 키 오류 저1년 쉬고 다쉬 울온 하는데..",
+      "categoryLabel": null,
       "author": "robinto",
       "authorMemberNo": "19481",
       "createdAt": "2003-02-24T13:08:18",
@@ -164,6 +177,7 @@
     {
       "postId": "16531",
       "title": "Aos 이후 식물기르기에 관한 집문입니다 -매우간단 (__)",
+      "categoryLabel": null,
       "author": "joycap",
       "authorMemberNo": "18626",
       "createdAt": "2003-02-24T12:59:57",
@@ -176,6 +190,7 @@
     {
       "postId": "16530",
       "title": "다시 여쭤봅니다.",
+      "categoryLabel": null,
       "author": "akadoaka",
       "authorMemberNo": "17865",
       "createdAt": "2003-02-24T12:45:33",
@@ -188,6 +203,7 @@
     {
       "postId": "16529",
       "title": "질문..테임된 동물 이름을..",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-02-24T12:21:12",
@@ -200,6 +216,7 @@
     {
       "postId": "16528",
       "title": "안녕하세요~ ggs궁금한게잇어요 ㅠ_ㅠ",
+      "categoryLabel": null,
       "author": "dasuag",
       "authorMemberNo": "0",
       "createdAt": "2003-02-24T12:02:30",
@@ -212,6 +229,7 @@
     {
       "postId": "16526",
       "title": "뉴비광부 진인데요 광부질 효율적으로 하는법좀--;;",
+      "categoryLabel": null,
       "author": "jin2000s",
       "authorMemberNo": "18559",
       "createdAt": "2003-02-24T11:05:50",
@@ -224,6 +242,7 @@
     {
       "postId": "16524",
       "title": "윈드...",
+      "categoryLabel": null,
       "author": "tornado9",
       "authorMemberNo": "18248",
       "createdAt": "2003-02-24T09:38:09",
@@ -236,6 +255,7 @@
     {
       "postId": "16523",
       "title": "울온 2D로그인 창에서 계정명 세이브가 안되네요",
+      "categoryLabel": null,
       "author": "accackd",
       "authorMemberNo": "17003",
       "createdAt": "2003-02-24T09:29:26",
@@ -248,6 +268,7 @@
     {
       "postId": "16522",
       "title": "여러가지 문의합니다...",
+      "categoryLabel": null,
       "author": "akadoaka",
       "authorMemberNo": "17865",
       "createdAt": "2003-02-24T09:03:10",
@@ -260,6 +281,7 @@
     {
       "postId": "16520",
       "title": "\"눈물을 마시는 새\" 가 보구싶은뎅..",
+      "categoryLabel": null,
       "author": "JeffKim",
       "authorMemberNo": "18523",
       "createdAt": "2003-02-24T07:16:23",
@@ -272,6 +294,7 @@
     {
       "postId": "16519",
       "title": "8타일 쓰다가 물정령이 자꾸 나타나는데..",
+      "categoryLabel": null,
       "author": "kamionao",
       "authorMemberNo": "17040",
       "createdAt": "2003-02-24T05:33:34",
@@ -284,6 +307,7 @@
     {
       "postId": "16518",
       "title": "음...",
+      "categoryLabel": null,
       "author": "다르덩",
       "authorMemberNo": "17404",
       "createdAt": "2003-02-24T05:28:17",
@@ -296,6 +320,7 @@
     {
       "postId": "16517",
       "title": "메이스 키우고있는데여",
+      "categoryLabel": null,
       "author": "브리타니안",
       "authorMemberNo": "14581",
       "createdAt": "2003-02-24T05:24:27",
@@ -308,6 +333,7 @@
     {
       "postId": "16516",
       "title": "스웜프 드래곤 어디서 템 하나여..?",
+      "categoryLabel": null,
       "author": "c1014114",
       "authorMemberNo": "17151",
       "createdAt": "2003-02-24T02:41:41",
@@ -320,6 +346,7 @@
     {
       "postId": "16515",
       "title": "울온외질문..",
+      "categoryLabel": null,
       "author": "ICJJANG",
       "authorMemberNo": "15972",
       "createdAt": "2003-02-24T00:42:01",
@@ -332,6 +359,7 @@
     {
       "postId": "16514",
       "title": "색잉갓 가격좀 알려주세요~",
+      "categoryLabel": null,
       "author": "scenasign",
       "authorMemberNo": "0",
       "createdAt": "2003-02-24T00:15:13",
@@ -344,6 +372,7 @@
     {
       "postId": "16513",
       "title": "드레이크끼리 프롭시키면 스킬 몇까지 오를까욤?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-02-24T00:05:45",
@@ -356,6 +385,7 @@
     {
       "postId": "16512",
       "title": "8타일로 메저리 올리는법좀 갈켜주세요",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-23T21:48:49",
@@ -368,6 +398,7 @@
     {
       "postId": "16510",
       "title": "전사 특수기 사용 단축기가  있나요..?",
+      "categoryLabel": null,
       "author": "reu",
       "authorMemberNo": "15333",
       "createdAt": "2003-02-23T21:35:35",
@@ -380,6 +411,7 @@
     {
       "postId": "16511",
       "title": "헤븐 퀘스트에서....질문이요",
+      "categoryLabel": null,
       "author": "zebu7",
       "authorMemberNo": "19217",
       "createdAt": "2003-02-23T21:35:35",
@@ -392,6 +424,7 @@
     {
       "postId": "16509",
       "title": "끄아악 집 꾸미기관련.. 답변 부탁드립니다",
+      "categoryLabel": null,
       "author": "redskele",
       "authorMemberNo": "14740",
       "createdAt": "2003-02-23T21:27:47",
@@ -404,6 +437,7 @@
     {
       "postId": "16507",
       "title": "스미스 & 마법사 어케 키우종???",
+      "categoryLabel": null,
       "author": "7635309",
       "authorMemberNo": "16661",
       "createdAt": "2003-02-23T20:58:08",
@@ -416,6 +450,7 @@
     {
       "postId": "16506",
       "title": "빠른 주문회복<<이게 대체..하는 일이 머졍?",
+      "categoryLabel": null,
       "author": "sohnsohn",
       "authorMemberNo": "15582",
       "createdAt": "2003-02-23T20:55:18",
@@ -428,6 +463,7 @@
     {
       "postId": "16505",
       "title": "스펠북이 마법 책인가요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-23T20:23:59",
@@ -440,6 +476,7 @@
     {
       "postId": "16503",
       "title": "테임 파스 +5 +10 짜리 가격이 얼마정도 하나요?",
+      "categoryLabel": null,
       "author": "TheTP",
       "authorMemberNo": "17737",
       "createdAt": "2003-02-23T19:29:54",
@@ -452,6 +489,7 @@
     {
       "postId": "16501",
       "title": "루나에서 네크로 풀북 파는곳 아시는분~?(냉무)",
+      "categoryLabel": null,
       "author": "scenasign",
       "authorMemberNo": "0",
       "createdAt": "2003-02-23T18:39:16",
@@ -464,6 +502,7 @@
     {
       "postId": "16500",
       "title": "십일조가 얼마나 돼는지 볼수는 없나용?",
+      "categoryLabel": null,
       "author": "roiental",
       "authorMemberNo": "15151",
       "createdAt": "2003-02-23T18:29:45",
@@ -476,6 +515,7 @@
     {
       "postId": "16499",
       "title": "케릭이 접속이 안됍니다..ㅡ.ㅜ",
+      "categoryLabel": null,
       "author": "sp2030",
       "authorMemberNo": "19247",
       "createdAt": "2003-02-23T18:08:26",
@@ -488,6 +528,7 @@
     {
       "postId": "16497",
       "title": "팔라딘 마법 쓸라면 팔라딘 마법 책기 따로 필요한가용?",
+      "categoryLabel": null,
       "author": "roiental",
       "authorMemberNo": "15151",
       "createdAt": "2003-02-23T17:37:22",
@@ -500,6 +541,7 @@
     {
       "postId": "16496",
       "title": "개미 이벤트 하는데 질문 있습니다",
+      "categoryLabel": null,
       "author": "akesis",
       "authorMemberNo": "17799",
       "createdAt": "2003-02-23T17:25:58",
@@ -512,6 +554,7 @@
     {
       "postId": "16495",
       "title": "저기 전사로는 돈 못버나여?",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-02-23T17:14:05",
@@ -524,6 +567,7 @@
     {
       "postId": "16493",
       "title": "무너질 위험이 있는 집",
+      "categoryLabel": null,
       "author": "hack100",
       "authorMemberNo": "19423",
       "createdAt": "2003-02-23T17:08:18",
@@ -536,6 +580,7 @@
     {
       "postId": "16492",
       "title": "안녕하세요 뉴비 광부 진인데요^^;",
+      "categoryLabel": null,
       "author": "jin2000s",
       "authorMemberNo": "18559",
       "createdAt": "2003-02-23T17:05:15",
@@ -548,6 +593,7 @@
     {
       "postId": "16491",
       "title": "이벨+8 얼마정도?",
+      "categoryLabel": null,
       "author": "bloodguy1",
       "authorMemberNo": "17201",
       "createdAt": "2003-02-23T16:25:42",
@@ -560,6 +606,7 @@
     {
       "postId": "16490",
       "title": "테이머님들 질문있습니다.........",
+      "categoryLabel": null,
       "author": "rapter2",
       "authorMemberNo": "15855",
       "createdAt": "2003-02-23T16:17:10",
@@ -572,6 +619,7 @@
     {
       "postId": "16489",
       "title": "이지유오가 안 되는군요",
+      "categoryLabel": null,
       "author": "elfkayla",
       "authorMemberNo": "16416",
       "createdAt": "2003-02-23T16:05:41",
@@ -584,6 +632,7 @@
     {
       "postId": "16488",
       "title": "종속된 비틀이 없어져 버렸어여...",
+      "categoryLabel": null,
       "author": "shcho934",
       "authorMemberNo": "16124",
       "createdAt": "2003-02-23T16:00:22",
@@ -596,6 +645,7 @@
     {
       "postId": "16472",
       "title": "개미퀘스트 깨신분?",
+      "categoryLabel": null,
       "author": "steelbell",
       "authorMemberNo": "19094",
       "createdAt": "2003-02-23T05:04:07",

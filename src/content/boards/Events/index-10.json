@@ -3,11 +3,12 @@
   "page": 10,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "25",
-      "title": "[발해] 르네 문글로우 세번째 마시장 공지",
+      "title": "르네 문글로우 세번째 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-10-31T11:45:17",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "24",
-      "title": "[발해] 문글로우 두번째 마시장 후기",
+      "title": "문글로우 두번째 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-10-28T20:13:22",
@@ -31,7 +33,8 @@
     },
     {
       "postId": "23",
-      "title": "[이벤트시나리오] 가고일의 복수 제 4 화- 피로 쓴 글씨",
+      "title": "가고일의 복수 제 4 화- 피로 쓴 글씨",
+      "categoryLabel": "이벤트시나리오",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-10-27T08:28:01",
@@ -43,7 +46,8 @@
     },
     {
       "postId": "22",
-      "title": "[발해] 문글로우 테이머의 광장 두번째 만남.",
+      "title": "문글로우 테이머의 광장 두번째 만남.",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-10-23T13:14:02",
@@ -55,7 +59,8 @@
     },
     {
       "postId": "21",
-      "title": "[발해] 나눔의 만찬회 및 마시장 공지",
+      "title": "나눔의 만찬회 및 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-10-20T16:17:29",
@@ -67,7 +72,8 @@
     },
     {
       "postId": "20",
-      "title": "[아리랑] 트린식의 도살자 이벤트 최후공지",
+      "title": "트린식의 도살자 이벤트 최후공지",
+      "categoryLabel": "아리랑",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-10-06T00:17:44",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "19",
-      "title": "[아리랑] 트린식의 도살자 이벤트",
+      "title": "트린식의 도살자 이벤트",
+      "categoryLabel": "아리랑",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-10-04T01:02:27",
@@ -92,6 +99,7 @@
     {
       "postId": "18",
       "title": "가고일 이벤트 - 자세한 스토리 업데이트",
+      "categoryLabel": null,
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-29T01:07:40",
@@ -103,7 +111,8 @@
     },
     {
       "postId": "17",
-      "title": "[아리랑/발해] 가고일이벤트",
+      "title": "가고일이벤트",
+      "categoryLabel": "아리랑/발해",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-29T01:04:44",
@@ -116,6 +125,7 @@
     {
       "postId": "16",
       "title": "아리랑/발해 듀얼 리그 잠정 연기",
+      "categoryLabel": null,
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-28T17:38:23",
@@ -127,7 +137,8 @@
     },
     {
       "postId": "15",
-      "title": "[아리랑] 트린식의 도살자 이벤트가 곧 시작됩니다.",
+      "title": "트린식의 도살자 이벤트가 곧 시작됩니다.",
+      "categoryLabel": "아리랑",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-25T00:03:37",
@@ -139,7 +150,8 @@
     },
     {
       "postId": "14",
-      "title": "[듀얼리그] 아리랑 / 발해 듀얼 리그 연기",
+      "title": "아리랑 / 발해 듀얼 리그 연기",
+      "categoryLabel": "듀얼리그",
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-19T10:35:53",
@@ -152,6 +164,7 @@
     {
       "postId": "13",
       "title": "울티마 온라인 한국 세번째 샤드 이름 공모전 결과",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-03T18:17:47",
@@ -163,7 +176,8 @@
     },
     {
       "postId": "12",
-      "title": "[오크이벤트] 오크 이벤트 - 사베지 역습 이벤트",
+      "title": "오크 이벤트 - 사베지 역습 이벤트",
+      "categoryLabel": "오크이벤트",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-14T18:41:47",
@@ -175,7 +189,8 @@
     },
     {
       "postId": "11",
-      "title": "[발표] 길드 듀얼 이벤트 대진표 & 예선전 연기",
+      "title": "길드 듀얼 이벤트 대진표 & 예선전 연기",
+      "categoryLabel": "발표",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-14T08:56:11",
@@ -188,6 +203,7 @@
     {
       "postId": "10",
       "title": "지명 수배 : 모든 해적들 소집!",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-05T16:07:54",
@@ -199,7 +215,8 @@
     },
     {
       "postId": "9",
-      "title": "[커플이벤트] 게임 안의 커플을 찾아라!",
+      "title": "게임 안의 커플을 찾아라!",
+      "categoryLabel": "커플이벤트",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-20T12:06:45",
@@ -212,6 +229,7 @@
     {
       "postId": "8",
       "title": "Orc던전이 새로 생겼습니다...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T16:10:20",
@@ -223,7 +241,8 @@
     },
     {
       "postId": "7",
-      "title": "[오크이벤트] 일곱째주 첫번째 힌트 : 반격!!!",
+      "title": "일곱째주 첫번째 힌트 : 반격!!!",
+      "categoryLabel": "오크이벤트",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T12:19:25",
@@ -235,7 +254,8 @@
     },
     {
       "postId": "6",
-      "title": "[오크이벤트]사베지 샤만 & 사베지 라이더 & 릿지백",
+      "title": "사베지 샤만 & 사베지 라이더 & 릿지백",
+      "categoryLabel": "오크이벤트",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T12:00:36",
@@ -248,6 +268,7 @@
     {
       "postId": "5",
       "title": "Orc이벤도 막바지에 접어든것 같습니다.[오타탄머더러]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T11:59:50",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "4",
-      "title": "[오크이벤트] 여섯째 주 두번째 힌트 : 양심의 가책!!",
+      "title": "여섯째 주 두번째 힌트 : 양심의 가책!!",
+      "categoryLabel": "오크이벤트",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T11:59:05",
@@ -272,6 +294,7 @@
     {
       "postId": "3",
       "title": "화이트머더러의 바디페인트가 나왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T11:58:03",
@@ -284,6 +307,7 @@
     {
       "postId": "2",
       "title": "화이트머더러 젠 포인트와 가면29종에 대해서.....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T11:51:07",
@@ -296,6 +320,7 @@
     {
       "postId": "1",
       "title": "불길한 징조...[오크 이벤 4째주 힌트]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T11:45:03",
@@ -308,6 +333,7 @@
     {
       "postId": "188",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -320,6 +346,7 @@
     {
       "postId": "189",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",

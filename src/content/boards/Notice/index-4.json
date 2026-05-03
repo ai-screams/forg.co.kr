@@ -3,11 +3,12 @@
   "page": 4,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "852",
       "title": "집아이템이 바닥으로 빠진경우",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-28T14:20:47",
@@ -20,6 +21,7 @@
     {
       "postId": "851",
       "title": "패치 실패 그리고 연기",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-03-28T04:03:01",
@@ -32,6 +34,7 @@
     {
       "postId": "850",
       "title": "다양한 수정 내용적용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-27T16:44:27",
@@ -44,6 +47,7 @@
     {
       "postId": "849",
       "title": "설문조사란참여부탁드립니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-27T15:48:53",
@@ -56,6 +60,7 @@
     {
       "postId": "848",
       "title": "Forg홈 운영에 도움주실 분을 찿습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-26T20:55:16",
@@ -68,6 +73,7 @@
     {
       "postId": "847",
       "title": "장터란이 좌측메뉴로 이동되었습니다",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-26T20:52:04",
@@ -80,6 +86,7 @@
     {
       "postId": "846",
       "title": "UOSS의 House Contest 시작",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-03-25T20:58:15",
@@ -92,6 +99,7 @@
     {
       "postId": "845",
       "title": "각종유용한정보란이 업뎃 되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-23T16:19:55",
@@ -104,6 +112,7 @@
     {
       "postId": "844",
       "title": "Tugsoft 'UOASpeed' 계발중",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-03-22T14:01:45",
@@ -116,6 +125,7 @@
     {
       "postId": "843",
       "title": "저항(Resist) 관련 문제",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-21T00:20:20",
@@ -128,6 +138,7 @@
     {
       "postId": "841",
       "title": "임시 공동 작업란이 신설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T17:14:36",
@@ -140,6 +151,7 @@
     {
       "postId": "840",
       "title": "클라이언트 4.0.0.e 패치",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-19T20:45:13",
@@ -152,6 +164,7 @@
     {
       "postId": "839",
       "title": "AoS 출시 기념 네이밍이벤트",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-19T07:07:15",
@@ -164,6 +177,7 @@
     {
       "postId": "838",
       "title": "보통 잉갓(철잉갓)을 거래할 시 유의사항입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-18T15:22:20",
@@ -176,6 +190,7 @@
     {
       "postId": "837",
       "title": "UO 공개 토론 내용",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-03-18T00:24:05",
@@ -188,6 +203,7 @@
     {
       "postId": "836",
       "title": "추가적인 수정내용 적용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-17T18:25:54",
@@ -200,6 +216,7 @@
     {
       "postId": "835",
       "title": "셀란 가격기입 안하시고 올리시는분은",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-17T00:39:34",
@@ -212,6 +229,7 @@
     {
       "postId": "834",
       "title": "팬사이트 커스텀 하우스 디자인 콘테스트~!",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-03-15T10:48:00",
@@ -224,6 +242,7 @@
     {
       "postId": "833",
       "title": "AOS 초기 정착자 프로그램 중단",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-03-14T08:37:18",
@@ -236,6 +255,7 @@
     {
       "postId": "832",
       "title": "AoS 출시기념 Gift",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-03-13T09:57:02",
@@ -248,6 +268,7 @@
     {
       "postId": "831",
       "title": "새로 젹용될 패치",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-03-13T07:18:47",
@@ -260,6 +281,7 @@
     {
       "postId": "830",
       "title": "국내샤드 하드웨어 업그레이드",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-03-11T21:52:55",
@@ -272,6 +294,7 @@
     {
       "postId": "829",
       "title": "무기와 새로운 아이템",
+      "categoryLabel": null,
       "author": "Mulan",
       "authorMemberNo": "15552",
       "createdAt": "2003-03-11T19:23:08",
@@ -284,6 +307,7 @@
     {
       "postId": "828",
       "title": "미녹문게이트 정상화",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-07T16:08:03",
@@ -296,6 +320,7 @@
     {
       "postId": "827",
       "title": "올드비 보상창 문제해결",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-06T16:00:32",
@@ -308,6 +333,7 @@
     {
       "postId": "826",
       "title": "샤드 내부 업데이트로 여러가지 문제해결",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-06T15:59:35",
@@ -320,6 +346,7 @@
     {
       "postId": "825",
       "title": "장터란에 관한 울온설문조사가 실시되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-03-06T13:19:17",
@@ -332,6 +359,7 @@
     {
       "postId": "824",
       "title": "DOOM 던젼에서 나오는 강력한 특수 아이템 리스트",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2003-03-05T19:01:51",
@@ -344,6 +372,7 @@
     {
       "postId": "823",
       "title": "발해 샤드 다운",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-05T10:28:00",
@@ -356,6 +385,7 @@
     {
       "postId": "822",
       "title": "아이템고정보관 관련 문제",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-05T10:07:59",
@@ -368,6 +398,7 @@
     {
       "postId": "821",
       "title": "올드비 보상문제",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-05T10:06:35",
@@ -380,6 +411,7 @@
     {
       "postId": "820",
       "title": "아리랑샤드 오픈 지연",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-04T09:56:59",
@@ -392,6 +424,7 @@
     {
       "postId": "819",
       "title": "초기 정착자 프로그램 연장",
+      "categoryLabel": null,
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-03-03T16:20:12",
@@ -404,6 +437,7 @@
     {
       "postId": "818",
       "title": "아리랑서버 - 사라진 케릭터들",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-01T16:34:41",
@@ -416,6 +450,7 @@
     {
       "postId": "817",
       "title": "아리랑 서버 다운",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-03-01T15:38:33",
@@ -428,6 +463,7 @@
     {
       "postId": "816",
       "title": "서버 안정 및 물건 보관 관련 사항",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-03-01T10:21:47",
@@ -440,6 +476,7 @@
     {
       "postId": "814",
       "title": "미녹문게이트 임시 폐쇄",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-24T02:15:26",
@@ -452,6 +489,7 @@
     {
       "postId": "813",
       "title": "(수정) Malas의 숨겨진 집자리 모두 공개",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-21T22:32:58",
@@ -464,6 +502,7 @@
     {
       "postId": "811",
       "title": "마법책과 마법관련사항",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-21T15:59:17",
@@ -476,6 +515,7 @@
     {
       "postId": "812",
       "title": "말라스 둠던전의 각종 레어들",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-21T15:58:57",
@@ -488,6 +528,7 @@
     {
       "postId": "810",
       "title": "당분간은 레어아이템 거래는 자중하시길 바랍니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-21T01:13:40",
@@ -500,6 +541,7 @@
     {
       "postId": "809",
       "title": "GM서비스 제개",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-21T01:05:01",
@@ -512,6 +554,7 @@
     {
       "postId": "808",
       "title": "In-Game GM 서비스 지연",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-19T17:12:12",
@@ -524,6 +567,7 @@
     {
       "postId": "807",
       "title": "Q&A: 집설치, 부패, 그리고 집패치 3단계",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-19T17:09:48",
@@ -536,6 +580,7 @@
     {
       "postId": "806",
       "title": "케릭터 접속 관련사항",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-19T17:07:08",
@@ -548,6 +593,7 @@
     {
       "postId": "804",
       "title": "일본서버의 AoS적용..그리고 로그인,계정사이트의 폭주..",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-02-19T14:41:13",
@@ -560,6 +606,7 @@
     {
       "postId": "803",
       "title": "둠던전에 관해서 [버젼1.0]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-19T11:17:15",
@@ -572,6 +619,7 @@
     {
       "postId": "802",
       "title": "AoS 집짓기 버그",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-19T03:11:34",
@@ -584,6 +632,7 @@
     {
       "postId": "801",
       "title": "집 수정 가격에 관한 정보",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-19T03:08:11",
@@ -596,6 +645,7 @@
     {
       "postId": "800",
       "title": "루닉해머 최대 차지수 변경 사항입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-18T17:57:52",

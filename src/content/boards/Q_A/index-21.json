@@ -3,11 +3,12 @@
   "page": 21,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "14082",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -20,6 +21,7 @@
     {
       "postId": "14084",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -32,6 +34,7 @@
     {
       "postId": "14089",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -44,6 +47,7 @@
     {
       "postId": "14090",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -56,6 +60,7 @@
     {
       "postId": "14091",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -68,6 +73,7 @@
     {
       "postId": "14092",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -80,6 +86,7 @@
     {
       "postId": "14094",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -92,6 +99,7 @@
     {
       "postId": "14095",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -104,6 +112,7 @@
     {
       "postId": "14096",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -116,6 +125,7 @@
     {
       "postId": "14099",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -128,6 +138,7 @@
     {
       "postId": "14100",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -140,6 +151,7 @@
     {
       "postId": "14102",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -152,6 +164,7 @@
     {
       "postId": "14104",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -164,6 +177,7 @@
     {
       "postId": "14105",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -176,6 +190,7 @@
     {
       "postId": "17891",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",

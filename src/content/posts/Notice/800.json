@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "800",
   "title": "루닉해머 최대 차지수 변경 사항입니다.",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"><p>Dull Copper: 50<br>Shadow: 45<br>Copper: 40<br>Bronze: 35<br>Golden: 30<br>Agapite: 25<br>Verite: 20<br>Valorite: 15</p></td></tr></tbody></table>\n",
   "bodyText": "Dull Copper: 50 Shadow: 45 Copper: 40 Bronze: 35 Golden: 30 Agapite: 25 Verite: 20 Valorite: 15",
   "author": "Forg",

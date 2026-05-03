@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "822",
   "title": "아이템고정보관 관련 문제",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"><p>간혹 집안에서의 아이템들이 \"이미 고정보관 되어 있습니다.\"라고 나오면서 고정보관 되어 있지 않은 경우가 있습니다. 이 경우, 원클릭 해보아서 \"고정보관\"이라고 적혀 있으면 실제로 고정보관 된것이지만 그렇지 않은 경우에는 고정보관 되지 않은것이니 주의하시기 바랍니다.<br><br>출처 : <a href=\"http://www.uolbr.co.kr/\">http://www.uolbr.co.kr/</a></p></td></tr></tbody></table>\n",
   "bodyText": "간혹 집안에서의 아이템들이 \"이미 고정보관 되어 있습니다.\"라고 나오면서 고정보관 되어 있지 않은 경우가 있습니다. 이 경우, 원클릭 해보아서 \"고정보관\"이라고 적혀 있으면 실제로 고정보관 된것이지만 그렇지 않은 경우에는 고정보관 되지 않은것이니 주의하시기 바랍니다. 출처 : http://www.uolbr.co.kr/",
   "author": "주니",

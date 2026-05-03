@@ -3,11 +3,12 @@
   "page": 11,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "459",
       "title": "현재 백두샤드의 존립에 관하여.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-15T11:14:14",
@@ -20,6 +21,7 @@
     {
       "postId": "458",
       "title": "플레이그 비스트의 상자",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-05-15T10:58:09",
@@ -32,6 +34,7 @@
     {
       "postId": "457",
       "title": "집부패 시스템이 6월에 있을 예정입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-15T10:52:26",
@@ -44,6 +47,7 @@
     {
       "postId": "456",
       "title": "시나리오 5주분 적용",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-05-15T10:48:44",
@@ -56,6 +60,7 @@
     {
       "postId": "455",
       "title": "가입하실때 @Orgio.net으로 이멜주소를 쓰시는분중에",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-15T00:39:55",
@@ -68,6 +73,7 @@
     {
       "postId": "453",
       "title": "클라이언트 패치",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-05-14T10:56:16",
@@ -80,6 +86,7 @@
     {
       "postId": "452",
       "title": "일쉐나명성타이틀이 업뎃되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T17:39:32",
@@ -92,6 +99,7 @@
     {
       "postId": "451",
       "title": "식물기르기 추가 업뎃(접붙이기)입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-11T20:11:48",
@@ -103,7 +111,8 @@
     },
     {
       "postId": "450",
-      "title": "[공지] 울티마 온라인의 버그악용자",
+      "title": "울티마 온라인의 버그악용자",
+      "categoryLabel": "공지",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-05-11T08:01:02",
@@ -116,6 +125,7 @@
     {
       "postId": "449",
       "title": "식물을 안자라게 하고 싶을 경우의 방법",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-05-10T21:43:14",
@@ -128,6 +138,7 @@
     {
       "postId": "448",
       "title": "쌓이는 아이템 트레이드시 주의하세요.",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-05-10T07:41:58",
@@ -140,6 +151,7 @@
     {
       "postId": "447",
       "title": "돌연변이 식물에 관하여",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-05-10T07:36:48",
@@ -152,6 +164,7 @@
     {
       "postId": "446",
       "title": "또 한차례의 복사버그로 인해-0-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-09T17:54:49",
@@ -164,6 +177,7 @@
     {
       "postId": "445",
       "title": "오토패치 안되시는분들 받으시길 바랍니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-09T11:26:48",
@@ -176,6 +190,7 @@
     {
       "postId": "444",
       "title": "매크로이벤은 사정상 취소가 되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-08T23:13:43",
@@ -188,6 +203,7 @@
     {
       "postId": "443",
       "title": "화분 식물에 대한 유용한 추가 정보 ver.3",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-08T23:11:49",
@@ -200,6 +216,7 @@
     {
       "postId": "442",
       "title": "화분 식물에 대한 유용한 추가 정보 ver.2",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-08T23:09:55",
@@ -212,6 +229,7 @@
     {
       "postId": "441",
       "title": "서버상의 문제로..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-08T22:03:23",
@@ -224,6 +242,7 @@
     {
       "postId": "439",
       "title": "화분 식물에 대한 유용한 추가 정보",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-06T02:35:41",
@@ -236,6 +255,7 @@
     {
       "postId": "438",
       "title": "식물기르기 Q&A",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-05-05T10:42:34",
@@ -248,6 +268,7 @@
     {
       "postId": "437",
       "title": "화분 식물의 종류에 대해",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-04T20:13:10",
@@ -260,6 +281,7 @@
     {
       "postId": "436",
       "title": "식물기르기에 대한 추가 업뎃이 되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-03T13:42:54",
@@ -272,6 +294,7 @@
     {
       "postId": "435",
       "title": "새로운 아이템 식물기르기에 대해서.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-02T18:12:40",
@@ -284,6 +307,7 @@
     {
       "postId": "434",
       "title": "울온 설문조사란에 향후 홈피 계획에 대한 설문이..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-02T18:12:09",
@@ -296,6 +320,7 @@
     {
       "postId": "433",
       "title": "보안작업을 위해 하루동안 홈페이지접속이 불능되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-02T17:50:38",
@@ -308,6 +333,7 @@
     {
       "postId": "430",
       "title": "100문100답 블랙쏜타기 이벤트 당첨자 발표입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-29T15:55:06",
@@ -320,6 +346,7 @@
     {
       "postId": "428",
       "title": "울온자체매크로 이벤트를 개최합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-27T15:02:54",
@@ -332,6 +359,7 @@
     {
       "postId": "426",
       "title": "울온 수동패치에 대하여.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-26T22:33:52",
@@ -344,6 +372,7 @@
     {
       "postId": "425",
       "title": "100문 100답의 이벤트 종료합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-26T10:58:09",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "421",
-      "title": "[공지] 시나리오4 제 2주분 지연",
+      "title": "시나리오4 제 2주분 지연",
+      "categoryLabel": "공지",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-04-25T07:29:53",
@@ -367,7 +397,8 @@
     },
     {
       "postId": "420",
-      "title": "[뒷북공지]3-0-7e 패치 이상없음",
+      "title": "3-0-7e 패치 이상없음",
+      "categoryLabel": "뒷북공지",
       "author": "고요한 설원",
       "authorMemberNo": "6586",
       "createdAt": "2002-04-24T16:52:21",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "419",
-      "title": "[공지] 시나리오4 제 2주분 적용",
+      "title": "시나리오4 제 2주분 적용",
+      "categoryLabel": "공지",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-04-24T12:13:18",
@@ -392,6 +424,7 @@
     {
       "postId": "416",
       "title": "홈피 로긴이 이상하거나 안되시는분은 필독을..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-23T22:28:42",
@@ -404,6 +437,7 @@
     {
       "postId": "415",
       "title": "리눅스에서 울온을 할 수 있습니다.",
+      "categoryLabel": null,
       "author": "해오라기",
       "authorMemberNo": "2544",
       "createdAt": "2002-04-23T10:42:26",
@@ -416,6 +450,7 @@
     {
       "postId": "412",
       "title": "금번 시나리오에 새로나온 아이템및 탈것정리",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-04-19T12:39:28",
@@ -428,6 +463,7 @@
     {
       "postId": "411",
       "title": "금번 시나리오에 시서펜 비늘 추가",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-04-19T10:07:56",
@@ -439,7 +475,8 @@
     },
     {
       "postId": "410",
-      "title": "[공지]시나리오 4의 제 1주분 적용",
+      "title": "시나리오 4의 제 1주분 적용",
+      "categoryLabel": "공지",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-04-19T10:02:22",
@@ -452,6 +489,7 @@
     {
       "postId": "409",
       "title": "울온직업기술 메뉴의 목공(카펜)과 광부(마이닝)가 업뎃-보완되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-17T13:30:06",
@@ -464,6 +502,7 @@
     {
       "postId": "408",
       "title": "울티마온라인 한국 백두 샤드 지역화 해제에 대한 공지",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-12T16:27:05",
@@ -476,6 +515,7 @@
     {
       "postId": "406",
       "title": "좌측 메뉴 몬스터와 던전란에 대해서.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-11T17:25:13",
@@ -488,6 +528,7 @@
     {
       "postId": "405",
       "title": "울온 이벤트의 활성화를 위해 이벤트란 공지를",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-11T10:38:55",
@@ -500,6 +541,7 @@
     {
       "postId": "403",
       "title": "좌측 메뉴에 이벤트일정표가  신설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-10T10:25:41",
@@ -512,6 +554,7 @@
     {
       "postId": "401",
       "title": "100문 100답이 좌측 메뉴로 옴겨졌습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-09T17:49:09",
@@ -523,7 +566,8 @@
     },
     {
       "postId": "400",
-      "title": "[하마] Japan Shard 핑에 대한 뉴스입니다.",
+      "title": "Japan Shard 핑에 대한 뉴스입니다.",
+      "categoryLabel": "하마",
       "author": "hamagun",
       "authorMemberNo": "4728",
       "createdAt": "2002-04-09T07:48:50",
@@ -536,6 +580,7 @@
     {
       "postId": "399",
       "title": "블랙쏜 상품타기 이벤트를 개최합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-08T18:11:39",
@@ -548,6 +593,7 @@
     {
       "postId": "397",
       "title": "이벤트공지란도 코멘트를 허가하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-04-07T10:16:18",
@@ -560,6 +606,7 @@
     {
       "postId": "396",
       "title": "LBOD와 SBOD의 비율 변경",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-04-05T19:25:49",
@@ -572,6 +619,7 @@
     {
       "postId": "395",
       "title": "벌크오더 시스템과 관련된 Hanse의 Comments from the team",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-04-05T18:37:26",
@@ -584,6 +632,7 @@
     {
       "postId": "394",
       "title": "OSI 뉴스레터 이름짓기 설문조사",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-04-02T12:59:12",
@@ -596,6 +645,7 @@
     {
       "postId": "393",
       "title": "피타일에 관하여",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-04-02T12:48:35",

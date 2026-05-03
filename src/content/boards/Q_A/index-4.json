@@ -3,11 +3,12 @@
   "page": 4,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "17932",
       "title": "골렘에 관한 질문..",
+      "categoryLabel": null,
       "author": "nicesniper",
       "authorMemberNo": "18342",
       "createdAt": "2003-04-11T10:32:45",
@@ -20,6 +21,7 @@
     {
       "postId": "17931",
       "title": "마사 인스에 대한 질문..",
+      "categoryLabel": null,
       "author": "joruba",
       "authorMemberNo": "15269",
       "createdAt": "2003-04-11T10:18:41",
@@ -32,6 +34,7 @@
     {
       "postId": "17930",
       "title": "체인메일과 플레이트 메일의 차이점이 지금 있을까요?",
+      "categoryLabel": null,
       "author": "anilevol",
       "authorMemberNo": "15114",
       "createdAt": "2003-04-11T10:12:06",
@@ -44,6 +47,7 @@
     {
       "postId": "17929",
       "title": "마나흡수에 관한 옵션에 대해서..",
+      "categoryLabel": null,
       "author": "nicesniper",
       "authorMemberNo": "18342",
       "createdAt": "2003-04-11T07:15:11",
@@ -56,6 +60,7 @@
     {
       "postId": "17928",
       "title": "아악~ 미쵸...후회되기도 하구...ㅜㅜ 어케할까염..",
+      "categoryLabel": null,
       "author": "khm0311",
       "authorMemberNo": "15961",
       "createdAt": "2003-04-11T04:53:05",
@@ -68,6 +73,7 @@
     {
       "postId": "17927",
       "title": "집터에 관한 질문....",
+      "categoryLabel": null,
       "author": "kms249",
       "authorMemberNo": "18187",
       "createdAt": "2003-04-11T02:30:50",
@@ -80,6 +86,7 @@
     {
       "postId": "17925",
       "title": "테이머로 바론 잡을때.......디스코의 효율은?",
+      "categoryLabel": null,
       "author": "makumaku",
       "authorMemberNo": "15470",
       "createdAt": "2003-04-11T02:07:14",
@@ -92,6 +99,7 @@
     {
       "postId": "17924",
       "title": "브론즈루닉 쓰면서 햇갈려서 질문.",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "18077",
       "createdAt": "2003-04-11T01:58:05",
@@ -104,6 +112,7 @@
     {
       "postId": "17923",
       "title": "디스코 올리는 것에 대하여~~",
+      "categoryLabel": null,
       "author": "roiental",
       "authorMemberNo": "15151",
       "createdAt": "2003-04-11T01:07:26",
@@ -116,6 +125,7 @@
     {
       "postId": "17922",
       "title": "초고수만 보새욧+_+",
+      "categoryLabel": null,
       "author": "teil",
       "authorMemberNo": "19179",
       "createdAt": "2003-04-10T23:33:22",
@@ -128,6 +138,7 @@
     {
       "postId": "17921",
       "title": "조언좀 부탁드립니다~~",
+      "categoryLabel": null,
       "author": "starband",
       "authorMemberNo": "20164",
       "createdAt": "2003-04-10T22:22:14",
@@ -139,7 +150,8 @@
     },
     {
       "postId": "17920",
-      "title": "[시세질문] 카타나 시세에 대해서...",
+      "title": "카타나 시세에 대해서...",
+      "categoryLabel": "시세질문",
       "author": "wind-jo",
       "authorMemberNo": "19855",
       "createdAt": "2003-04-10T22:02:42",
@@ -152,6 +164,7 @@
     {
       "postId": "17919",
       "title": "스미스100이상은 뭘로 올리나염?",
+      "categoryLabel": null,
       "author": "jackiz",
       "authorMemberNo": "16292",
       "createdAt": "2003-04-10T20:37:12",
@@ -164,6 +177,7 @@
     {
       "postId": "17918",
       "title": "덱스 100 과 120의 차이",
+      "categoryLabel": null,
       "author": "dongswar",
       "authorMemberNo": "19904",
       "createdAt": "2003-04-10T19:30:19",
@@ -176,6 +190,7 @@
     {
       "postId": "17917",
       "title": "팔라딘은 랠포를 할수있나요?",
+      "categoryLabel": null,
       "author": "Amplifier",
       "authorMemberNo": "15404",
       "createdAt": "2003-04-10T18:25:39",
@@ -187,7 +202,8 @@
     },
     {
       "postId": "17915",
-      "title": "[질문] 아쳐에 대해서;;",
+      "title": "아쳐에 대해서;;",
+      "categoryLabel": "질문",
       "author": "holyzard",
       "authorMemberNo": "20054",
       "createdAt": "2003-04-10T15:28:24",
@@ -200,6 +216,7 @@
     {
       "postId": "17914",
       "title": "볼텍스로 바론 잡는거 힘든가요?",
+      "categoryLabel": null,
       "author": "jokulhaups",
       "authorMemberNo": "18563",
       "createdAt": "2003-04-10T11:40:46",
@@ -212,6 +229,7 @@
     {
       "postId": "17913",
       "title": "이벨을 잠구거나 내리면 메졀이 잘 안 오를까요?",
+      "categoryLabel": null,
       "author": "in10ss",
       "authorMemberNo": "19483",
       "createdAt": "2003-04-10T10:58:07",
@@ -224,6 +242,7 @@
     {
       "postId": "17911",
       "title": "피해증가 20 링 얼마에 팔수있을까요.",
+      "categoryLabel": null,
       "author": "spinella",
       "authorMemberNo": "15207",
       "createdAt": "2003-04-10T05:14:43",
@@ -236,6 +255,7 @@
     {
       "postId": "17910",
       "title": "생산 케릭 팅거+알케미로 사냥 가능할까요?",
+      "categoryLabel": null,
       "author": "metalgear0",
       "authorMemberNo": "19728",
       "createdAt": "2003-04-10T01:46:34",
@@ -248,6 +268,7 @@
     {
       "postId": "17909",
       "title": "무기스킬이 높아지면 회피율 도 -ㅅ-?",
+      "categoryLabel": null,
       "author": "dongswar",
       "authorMemberNo": "19904",
       "createdAt": "2003-04-09T23:08:09",
@@ -260,6 +281,7 @@
     {
       "postId": "17908",
       "title": "패링!",
+      "categoryLabel": null,
       "author": "dongswar",
       "authorMemberNo": "19904",
       "createdAt": "2003-04-09T22:55:55",
@@ -272,6 +294,7 @@
     {
       "postId": "17907",
       "title": "질문있습니다 본디드가 뭐져?",
+      "categoryLabel": null,
       "author": "tangojaxy",
       "authorMemberNo": "18902",
       "createdAt": "2003-04-09T22:53:18",
@@ -284,6 +307,7 @@
     {
       "postId": "17906",
       "title": "구대륙에서 오거로드 나오는곳좀 알려주세요.",
+      "categoryLabel": null,
       "author": "mint",
       "authorMemberNo": "15257",
       "createdAt": "2003-04-09T22:47:19",
@@ -296,6 +320,7 @@
     {
       "postId": "17905",
       "title": "Ultima Online : Age of Shadows 에 대한 질문 몇가지;",
+      "categoryLabel": null,
       "author": "HikariTakeru",
       "authorMemberNo": "14678",
       "createdAt": "2003-04-09T22:34:40",
@@ -308,6 +333,7 @@
     {
       "postId": "17903",
       "title": "전송가방은 어디서 구하나욤?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-09T21:34:48",
@@ -320,6 +346,7 @@
     {
       "postId": "17902",
       "title": "당벤더를 찾는 방법이?",
+      "categoryLabel": null,
       "author": "breyes",
       "authorMemberNo": "19822",
       "createdAt": "2003-04-09T19:38:40",
@@ -332,6 +359,7 @@
     {
       "postId": "17901",
       "title": "럼젝전사를 키우는중에....",
+      "categoryLabel": null,
       "author": "khm0311",
       "authorMemberNo": "15961",
       "createdAt": "2003-04-09T19:31:49",
@@ -344,6 +372,7 @@
     {
       "postId": "17899",
       "title": "빌라 잠금보관 몇개되나요?",
+      "categoryLabel": null,
       "author": "wind-jo",
       "authorMemberNo": "19855",
       "createdAt": "2003-04-09T17:00:16",
@@ -356,6 +385,7 @@
     {
       "postId": "17897",
       "title": "아이템이 들어있는 이동틀도 부식하나요?[자문자답-_-]",
+      "categoryLabel": null,
       "author": "arminius",
       "authorMemberNo": "18234",
       "createdAt": "2003-04-09T15:35:19",
@@ -368,6 +398,7 @@
     {
       "postId": "17896",
       "title": "트린싯의 사슴섬이 어디에 있나요?",
+      "categoryLabel": null,
       "author": "joycap",
       "authorMemberNo": "18626",
       "createdAt": "2003-04-09T15:26:03",
@@ -380,6 +411,7 @@
     {
       "postId": "17895",
       "title": "더블어텍?",
+      "categoryLabel": null,
       "author": "wangbam7",
       "authorMemberNo": "17196",
       "createdAt": "2003-04-09T15:20:43",
@@ -392,6 +424,7 @@
     {
       "postId": "17894",
       "title": "mirc 자동메세지 스크립은 어디서 받나요?",
+      "categoryLabel": null,
       "author": "[OTR]준",
       "authorMemberNo": "14924",
       "createdAt": "2003-04-09T14:42:08",
@@ -404,6 +437,7 @@
     {
       "postId": "17892",
       "title": "테일러에 대한질문이 있습니다.",
+      "categoryLabel": null,
       "author": "근로소년",
       "authorMemberNo": "19704",
       "createdAt": "2003-04-09T11:20:54",
@@ -416,6 +450,7 @@
     {
       "postId": "17890",
       "title": "4년차 보상이 나왔는데 무었을 선택해야 할까요?",
+      "categoryLabel": null,
       "author": "denggi",
       "authorMemberNo": "17608",
       "createdAt": "2003-04-09T10:51:38",
@@ -428,6 +463,7 @@
     {
       "postId": "17889",
       "title": "화웜 받아서 조종할수 있는 최소 템/로어 스킬이 얼마인가요?",
+      "categoryLabel": null,
       "author": "jokulhaups",
       "authorMemberNo": "18563",
       "createdAt": "2003-04-09T10:10:53",
@@ -440,6 +476,7 @@
     {
       "postId": "17888",
       "title": "읔... 2틀이 지났는데 답메일이 안오는 uoa ㅠ.ㅠ",
+      "categoryLabel": null,
       "author": "sagara1",
       "authorMemberNo": "15493",
       "createdAt": "2003-04-09T09:40:50",
@@ -452,6 +489,7 @@
     {
       "postId": "17887",
       "title": "테이밍으로 어떡 ㄱㅔ돈버나요?",
+      "categoryLabel": null,
       "author": "hotan86",
       "authorMemberNo": "20294",
       "createdAt": "2003-04-09T09:15:18",
@@ -464,6 +502,7 @@
     {
       "postId": "17886",
       "title": "몇GM까지되나여?",
+      "categoryLabel": null,
       "author": "hotan86",
       "authorMemberNo": "20294",
       "createdAt": "2003-04-09T07:13:09",
@@ -476,6 +515,7 @@
     {
       "postId": "17885",
       "title": "다시시작할려합니다",
+      "categoryLabel": null,
       "author": "hshwani",
       "authorMemberNo": "20308",
       "createdAt": "2003-04-09T04:16:20",
@@ -487,7 +527,8 @@
     },
     {
       "postId": "17884",
-      "title": "[스미스]대량벌크디드에 관한 질문이요.",
+      "title": "대량벌크디드에 관한 질문이요.",
+      "categoryLabel": "스미스",
       "author": "nicesniper",
       "authorMemberNo": "18342",
       "createdAt": "2003-04-09T03:34:45",
@@ -500,6 +541,7 @@
     {
       "postId": "17883",
       "title": "디스코는 100만 있어두 괜찬은가요?",
+      "categoryLabel": null,
       "author": "roiental",
       "authorMemberNo": "15151",
       "createdAt": "2003-04-09T00:59:53",
@@ -512,6 +554,7 @@
     {
       "postId": "17882",
       "title": "공개된 펠루광산룬북...",
+      "categoryLabel": null,
       "author": "foodt",
       "authorMemberNo": "17461",
       "createdAt": "2003-04-09T00:23:14",
@@ -524,6 +567,7 @@
     {
       "postId": "17881",
       "title": "힐봉..(꼭봐주세요 시그니쳐 이쁨;;;)",
+      "categoryLabel": null,
       "author": "DoDookNum",
       "authorMemberNo": "15596",
       "createdAt": "2003-04-09T00:16:25",
@@ -536,6 +580,7 @@
     {
       "postId": "17880",
       "title": "팔라 키우고싶은데 고수님들 조언부탁드립니다.",
+      "categoryLabel": null,
       "author": "Richard",
       "authorMemberNo": "20295",
       "createdAt": "2003-04-08T23:54:29",
@@ -548,6 +593,7 @@
     {
       "postId": "17879",
       "title": "아이템 수리에 관한 질문",
+      "categoryLabel": null,
       "author": "Yoojin",
       "authorMemberNo": "15331",
       "createdAt": "2003-04-08T23:33:15",
@@ -560,6 +606,7 @@
     {
       "postId": "17878",
       "title": "질문입니다..",
+      "categoryLabel": null,
       "author": "starband",
       "authorMemberNo": "20164",
       "createdAt": "2003-04-08T23:15:26",
@@ -572,6 +619,7 @@
     {
       "postId": "17877",
       "title": "피스 초반에 어떻게 돌리나욤?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-08T23:06:28",
@@ -584,6 +632,7 @@
     {
       "postId": "17876",
       "title": "당벤더 어디로 옮겼나요??",
+      "categoryLabel": null,
       "author": "안개",
       "authorMemberNo": "18550",
       "createdAt": "2003-04-08T22:41:49",
@@ -596,6 +645,7 @@
     {
       "postId": "17875",
       "title": "음...네크전사 스킬을 어떻게 주는것이 효율적일까요",
+      "categoryLabel": null,
       "author": "프록시마",
       "authorMemberNo": "15092",
       "createdAt": "2003-04-08T22:13:01",

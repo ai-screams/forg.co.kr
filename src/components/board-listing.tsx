@@ -86,6 +86,11 @@ function PostTable({ board, entries }: { board: BoardId; entries: BoardIndexPage
                   href={`/${board}/${entry.postId}`}
                   className="text-forg-ink inline-flex items-baseline gap-2 leading-snug hover:text-(--era-link-hover)"
                 >
+                  {entry.categoryLabel ? (
+                    <span className="bg-forg-gold/15 text-forg-ink border-forg-gold/30 shrink-0 rounded-sm border px-1.5 py-0.5 font-mono text-[10px] tracking-wide uppercase">
+                      {entry.categoryLabel}
+                    </span>
+                  ) : null}
                   <span className="line-clamp-1">{entry.title}</span>
                   {entry.commentCount > 0 ? (
                     <span className="text-forg-gold-hover font-mono text-[11px] tabular-nums">

@@ -3,11 +3,12 @@
   "page": 5,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "799",
       "title": "사라지는 아이템과 사용할 수 없는 문",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-02-17T09:10:23",
@@ -20,6 +21,7 @@
     {
       "postId": "798",
       "title": "집인테리어와 집관련 스샷은 좌측 인테리어스샷란으로..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-16T19:10:10",
@@ -32,6 +34,7 @@
     {
       "postId": "797",
       "title": "한국샤드 AoS 적용 완료",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-14T22:09:25",
@@ -44,6 +47,7 @@
     {
       "postId": "796",
       "title": "암흑의 시대 적용 연기",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-13T10:53:17",
@@ -56,6 +60,7 @@
     {
       "postId": "795",
       "title": "포커스 스킬에 관한 주의 사항",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-02-13T10:20:31",
@@ -68,6 +73,7 @@
     {
       "postId": "794",
       "title": "AoS - 북미샤드 다운",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-13T09:26:17",
@@ -80,6 +86,7 @@
     {
       "postId": "793",
       "title": "신규 계정 Pending(일시 정지) 문제 해결",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-02-13T03:57:24",
@@ -92,6 +99,7 @@
     {
       "postId": "792",
       "title": "사용되지 않은 지역 출입",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-02-13T03:56:44",
@@ -104,6 +112,7 @@
     {
       "postId": "791",
       "title": "밴더와 AoS관련 업데이트",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-02-12T11:40:28",
@@ -116,6 +125,7 @@
     {
       "postId": "790",
       "title": "한국샤드 AoS패치 또다시 하루연기",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-12T11:00:42",
@@ -128,6 +138,7 @@
     {
       "postId": "789",
       "title": "현재 AOS서버 업데이트 작업 예상 시간",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-12T09:03:55",
@@ -140,6 +151,7 @@
     {
       "postId": "788",
       "title": "검정수의 보상품에 대한 내용",
+      "categoryLabel": null,
       "author": "sos440",
       "authorMemberNo": "15307",
       "createdAt": "2003-02-12T08:59:12",
@@ -152,6 +164,7 @@
     {
       "postId": "787",
       "title": "AoS-미국에 거주하시는 분들을 위한 정보",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-12T02:28:00",
@@ -164,6 +177,7 @@
     {
       "postId": "786",
       "title": "AoS 패치 하루 연기",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-11T09:43:59",
@@ -176,6 +190,7 @@
     {
       "postId": "785",
       "title": "AOS의 집짓기 방법",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-10T23:16:06",
@@ -188,6 +203,7 @@
     {
       "postId": "784",
       "title": "AOS의 집터가격과 루나,움브라마을 게이트 정보",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-10T22:48:17",
@@ -200,6 +216,7 @@
     {
       "postId": "783",
       "title": "AOS 추가 정보들.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-10T17:33:54",
@@ -212,6 +229,7 @@
     {
       "postId": "782",
       "title": "지형 탐색 도구도 집 설치 도구로 바뀝니다",
+      "categoryLabel": null,
       "author": "sos440",
       "authorMemberNo": "15307",
       "createdAt": "2003-02-10T14:30:58",
@@ -224,6 +242,7 @@
     {
       "postId": "781",
       "title": "한국 서버 암흑의 시대(AOS) 적용 일자 확정!",
+      "categoryLabel": null,
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-02-07T11:06:09",
@@ -236,6 +255,7 @@
     {
       "postId": "780",
       "title": "AoS - 팔라딘 북의 모습",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-06T21:26:27",
@@ -248,6 +268,7 @@
     {
       "postId": "779",
       "title": "새로운 아이템에 대한 추측성 정보입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-06T10:54:15",
@@ -260,6 +281,7 @@
     {
       "postId": "778",
       "title": "암흑의 시대 준비 : 클라이언트 패치 3.0.8z",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2003-02-05T16:14:32",
@@ -272,6 +294,7 @@
     {
       "postId": "777",
       "title": "유럽샤드 AoS 릴리즈 날짜",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-02-05T11:50:41",
@@ -284,6 +307,7 @@
     {
       "postId": "776",
       "title": "AOS에 대한 몇장의 이미지들 입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-05T11:02:28",
@@ -296,6 +320,7 @@
     {
       "postId": "775",
       "title": "AOS 배경 시나리오",
+      "categoryLabel": null,
       "author": "Mulan",
       "authorMemberNo": "15552",
       "createdAt": "2003-02-05T00:27:03",
@@ -308,6 +333,7 @@
     {
       "postId": "774",
       "title": "현재 울온 패치 에러 나시는분은",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-02-04T16:07:16",
@@ -320,6 +346,7 @@
     {
       "postId": "773",
       "title": "패치 문제에 대하여 +@",
+      "categoryLabel": null,
       "author": "Mini",
       "authorMemberNo": "14629",
       "createdAt": "2003-02-04T01:22:25",
@@ -331,7 +358,8 @@
     },
     {
       "postId": "771",
-      "title": "[정보]AOS 언저리 뉴스 (2월2일자)",
+      "title": "AOS 언저리 뉴스 (2월2일자)",
+      "categoryLabel": "정보",
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-02-03T16:08:31",
@@ -344,6 +372,7 @@
     {
       "postId": "770",
       "title": "오늘 패치에 대해서..",
+      "categoryLabel": null,
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-02-03T16:05:15",
@@ -356,6 +385,7 @@
     {
       "postId": "769",
       "title": "AOS- MAGIC ITEM 관련글 마지막(루닉추가속성)",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2003-01-30T12:02:14",
@@ -368,6 +398,7 @@
     {
       "postId": "768",
       "title": "AOS- MAGIC ITEM 관련글 세번째(색잉갓&고급가죽보너스)",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2003-01-30T11:38:28",
@@ -380,6 +411,7 @@
     {
       "postId": "767",
       "title": "AOS - MAGIC ITEM 관련글 두번째(기본속성)",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2003-01-30T11:22:22",
@@ -392,6 +424,7 @@
     {
       "postId": "760",
       "title": "AOS - MAGIC ITEM 관련글(overview)",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2003-01-30T11:09:36",
@@ -404,6 +437,7 @@
     {
       "postId": "758",
       "title": "자원봉사에 대해 Q&A (In game)",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-01-29T19:48:02",
@@ -416,6 +450,7 @@
     {
       "postId": "757",
       "title": "AOS추가신청예정을 취소합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-29T18:34:42",
@@ -428,6 +463,7 @@
     {
       "postId": "756",
       "title": "AOS추가 예약에 대한 설문조사가 실시되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-28T11:38:12",
@@ -440,6 +476,7 @@
     {
       "postId": "755",
       "title": "울티마 온라인 접속 문제시 참고 하세요.",
+      "categoryLabel": null,
       "author": "Mini",
       "authorMemberNo": "14629",
       "createdAt": "2003-01-27T12:01:53",
@@ -452,6 +489,7 @@
     {
       "postId": "753",
       "title": "AOS에 늪지대 타일도 추가될 예정입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-25T10:04:49",
@@ -464,6 +502,7 @@
     {
       "postId": "752",
       "title": "AoS - 물 타일과 용암타일!?",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-01-24T13:06:46",
@@ -476,6 +515,7 @@
     {
       "postId": "751",
       "title": "AOS의 백볼 경기장 소개",
+      "categoryLabel": null,
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-01-24T11:47:44",
@@ -488,6 +528,7 @@
     {
       "postId": "750",
       "title": "서버이전으로 인해 속도가 많이 향상되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-24T08:51:22",
@@ -500,6 +541,7 @@
     {
       "postId": "749",
       "title": "UO.Com에 Cynthe 가 올린 AOS에 대해서 FAQ 내용",
+      "categoryLabel": null,
       "author": "ChangSoKi",
       "authorMemberNo": "15029",
       "createdAt": "2003-01-23T15:52:35",
@@ -512,6 +554,7 @@
     {
       "postId": "748",
       "title": "Angelma의 AoS 재고량",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-01-22T22:12:04",
@@ -524,6 +567,7 @@
     {
       "postId": "747",
       "title": "아리랑 렉 수정에 대한 내용",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-01-22T15:09:55",
@@ -536,6 +580,7 @@
     {
       "postId": "745",
       "title": "예약판매 3시간 만에 1,000명 돌파",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-20T21:43:28",
@@ -548,6 +593,7 @@
     {
       "postId": "744",
       "title": "무인메크로에대한 경고문!",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-01-18T20:19:11",
@@ -560,6 +606,7 @@
     {
       "postId": "743",
       "title": "공지,이벤,컬럼란의 게시판이 바뀌었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-18T17:56:03",
@@ -572,6 +619,7 @@
     {
       "postId": "742",
       "title": "AoS - House Design Tool DEMO PROGRAM",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "14710",
       "createdAt": "2003-01-18T13:11:05",
@@ -584,6 +632,7 @@
     {
       "postId": "740",
       "title": "후드달린 검정수의(Hooded Shroud of Shadows) 2디와 3디 그래픽",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-01-18T11:24:37",
@@ -596,6 +645,7 @@
     {
       "postId": "739",
       "title": "자원봉사 시스템 개편",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "15378",
       "createdAt": "2003-01-18T01:06:00",

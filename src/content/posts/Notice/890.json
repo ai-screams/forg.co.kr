@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "890",
   "title": "개인용 축복디드를 환원 시킬 수 있습니다.",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">원하시는 아이템에 축복디드를 사용하였지만, 이것을 해제 하고 싶다면<br>해당 아이템을 쉬프트+원클릭하신 후&nbsp;메뉴에서 <strong>Unbless Item</strong>을 선택하시면 디드로 환원이 다시 됩니다. </td></tr></tbody></table>\n",
   "bodyText": "원하시는 아이템에 축복디드를 사용하였지만, 이것을 해제 하고 싶다면 해당 아이템을 쉬프트+원클릭하신 후 메뉴에서 Unbless Item 을 선택하시면 디드로 환원이 다시 됩니다.",
   "author": "Forg",

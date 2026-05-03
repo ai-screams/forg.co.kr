@@ -3,11 +3,12 @@
   "page": 8,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "16916",
       "title": "rarity가 붙은 아이템들...",
+      "categoryLabel": null,
       "author": "woojehun",
       "authorMemberNo": "16217",
       "createdAt": "2003-03-04T21:25:32",
@@ -20,6 +21,7 @@
     {
       "postId": "16912",
       "title": "이게 무슨뜻이죠?",
+      "categoryLabel": null,
       "author": "redyan",
       "authorMemberNo": "16998",
       "createdAt": "2003-03-04T20:26:06",
@@ -32,6 +34,7 @@
     {
       "postId": "16909",
       "title": "요즘 집은.....",
+      "categoryLabel": null,
       "author": "yaisal",
       "authorMemberNo": "15796",
       "createdAt": "2003-03-04T18:51:44",
@@ -44,6 +47,7 @@
     {
       "postId": "16906",
       "title": "마우스가 잘 안먹어요....",
+      "categoryLabel": null,
       "author": "뮤직",
       "authorMemberNo": "15196",
       "createdAt": "2003-03-04T14:54:52",
@@ -55,7 +59,8 @@
     },
     {
       "postId": "16903",
-      "title": "[질문]목걸이에 대해서..",
+      "title": "목걸이에 대해서..",
+      "categoryLabel": "질문",
       "author": "hdh0346",
       "authorMemberNo": "15946",
       "createdAt": "2003-03-04T13:42:26",
@@ -68,6 +73,7 @@
     {
       "postId": "16900",
       "title": "일주일 안에 죽였던 계정 살려서 들어가면 집과 물건 그대로 있나요?",
+      "categoryLabel": null,
       "author": "Naban",
       "authorMemberNo": "14718",
       "createdAt": "2003-03-04T13:29:16",
@@ -80,6 +86,7 @@
     {
       "postId": "16899",
       "title": "스미스 파워 스크롤은 어떤 대규모르 얻을 수 있나요?",
+      "categoryLabel": null,
       "author": "elfkayla",
       "authorMemberNo": "16416",
       "createdAt": "2003-03-04T13:18:42",
@@ -92,6 +99,7 @@
     {
       "postId": "16897",
       "title": "생산직 매크로에 대해서",
+      "categoryLabel": null,
       "author": "bloodguy1",
       "authorMemberNo": "17201",
       "createdAt": "2003-03-04T09:04:23",
@@ -104,6 +112,7 @@
     {
       "postId": "16895",
       "title": "마전사면 텍스가 적어도 되나요?",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "18077",
       "createdAt": "2003-03-04T07:47:35",
@@ -116,6 +125,7 @@
     {
       "postId": "16894",
       "title": "누비 피스 관련 질문이여",
+      "categoryLabel": null,
       "author": "mj4517",
       "authorMemberNo": "19668",
       "createdAt": "2003-03-04T06:52:47",
@@ -128,6 +138,7 @@
     {
       "postId": "16892",
       "title": "uo 이지 사용법좀 알려주세여^^",
+      "categoryLabel": null,
       "author": "kys1473",
       "authorMemberNo": "0",
       "createdAt": "2003-03-04T00:48:40",
@@ -140,6 +151,7 @@
     {
       "postId": "16890",
       "title": "너무 잘 죽어요.. 이거 도대체 어떠케 된거져?",
+      "categoryLabel": null,
       "author": "bloody99",
       "authorMemberNo": "18594",
       "createdAt": "2003-03-04T00:03:08",
@@ -152,6 +164,7 @@
     {
       "postId": "16889",
       "title": "UOA사용법좀...ㅜㅜ",
+      "categoryLabel": null,
       "author": "nyao",
       "authorMemberNo": "18827",
       "createdAt": "2003-03-03T23:44:59",
@@ -164,6 +177,7 @@
     {
       "postId": "16886",
       "title": "울온영문설정하는것좀 알려주세요",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "18077",
       "createdAt": "2003-03-03T22:48:42",
@@ -176,6 +190,7 @@
     {
       "postId": "16885",
       "title": "저기 카오스성향 길드원이 오더방패 차면...",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-03-03T21:44:49",
@@ -188,6 +203,7 @@
     {
       "postId": "16882",
       "title": "aos로 업글하구요 블랙손3d로 깔면..",
+      "categoryLabel": null,
       "author": "winnercdh",
       "authorMemberNo": "0",
       "createdAt": "2003-03-03T21:19:19",
@@ -200,6 +216,7 @@
     {
       "postId": "16881",
       "title": "서드돈 시디로 깔아서 패치 다 받았는데 말라스대륙을 못 가네요.",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-03-03T20:41:17",
@@ -212,6 +229,7 @@
     {
       "postId": "16879",
       "title": "희생의미덕 질문",
+      "categoryLabel": null,
       "author": "isiorilove",
       "authorMemberNo": "17821",
       "createdAt": "2003-03-03T20:03:57",
@@ -224,6 +242,7 @@
     {
       "postId": "16877",
       "title": "네크로 질문점 여~~",
+      "categoryLabel": null,
       "author": "TheMarine",
       "authorMemberNo": "19499",
       "createdAt": "2003-03-03T19:19:38",
@@ -236,6 +255,7 @@
     {
       "postId": "16875",
       "title": "3월 1일부터 집이 부패하고 있습니다.",
+      "categoryLabel": null,
       "author": "쟈나저씨",
       "authorMemberNo": "19336",
       "createdAt": "2003-03-03T18:44:33",
@@ -248,6 +268,7 @@
     {
       "postId": "16873",
       "title": "질문이요 -.-;;",
+      "categoryLabel": null,
       "author": "렉맨",
       "authorMemberNo": "18067",
       "createdAt": "2003-03-03T18:09:34",
@@ -260,6 +281,7 @@
     {
       "postId": "16872",
       "title": "으..왜 인 로어가 안먹을 까여...",
+      "categoryLabel": null,
       "author": "veldandy",
       "authorMemberNo": "16384",
       "createdAt": "2003-03-03T18:02:38",
@@ -272,6 +294,7 @@
     {
       "postId": "16870",
       "title": "easyuo 질문입니다..^^",
+      "categoryLabel": null,
       "author": "alsgmdrl",
       "authorMemberNo": "15417",
       "createdAt": "2003-03-03T16:02:50",
@@ -284,6 +307,7 @@
     {
       "postId": "16868",
       "title": "아쳐 스킬...이렇게 하는거 괜찮을지요.",
+      "categoryLabel": null,
       "author": "Sunshine",
       "authorMemberNo": "16052",
       "createdAt": "2003-03-03T15:28:19",
@@ -296,6 +320,7 @@
     {
       "postId": "16867",
       "title": "네크로인가.. 하튼 누구는 칼들고 마법쓰던데...",
+      "categoryLabel": null,
       "author": "mukmok",
       "authorMemberNo": "15199",
       "createdAt": "2003-03-03T14:28:17",
@@ -308,6 +333,7 @@
     {
       "postId": "16865",
       "title": "화분 락다운에 대해서 질문 입니다.",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-03-03T13:46:40",
@@ -320,6 +346,7 @@
     {
       "postId": "16863",
       "title": "발해 잼제 락픽상자 벤더",
+      "categoryLabel": null,
       "author": "grape",
       "authorMemberNo": "15992",
       "createdAt": "2003-03-03T13:17:02",
@@ -332,6 +359,7 @@
     {
       "postId": "16862",
       "title": "리치 사냥시 셋팅법?",
+      "categoryLabel": null,
       "author": "nodingja",
       "authorMemberNo": "18747",
       "createdAt": "2003-03-03T12:20:08",
@@ -344,6 +372,7 @@
     {
       "postId": "16861",
       "title": "둠던전 레어 램프~~~",
+      "categoryLabel": null,
       "author": "nodingja",
       "authorMemberNo": "18747",
       "createdAt": "2003-03-03T12:17:56",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "16860",
-      "title": "[질문] 식물의 성장타임에 관한 정원사분들의 의견을 듣고싶습니다.",
+      "title": "식물의 성장타임에 관한 정원사분들의 의견을 듣고싶습니다.",
+      "categoryLabel": "질문",
       "author": "heaye",
       "authorMemberNo": "14671",
       "createdAt": "2003-03-03T11:54:42",
@@ -368,6 +398,7 @@
     {
       "postId": "16856",
       "title": "궁금합니다",
+      "categoryLabel": null,
       "author": "백마탄병신",
       "authorMemberNo": "18682",
       "createdAt": "2003-03-03T09:09:23",
@@ -380,6 +411,7 @@
     {
       "postId": "16851",
       "title": "발해에서 색산달 가격이?",
+      "categoryLabel": null,
       "author": "lkw0213",
       "authorMemberNo": "19153",
       "createdAt": "2003-03-03T05:48:02",
@@ -392,6 +424,7 @@
     {
       "postId": "16850",
       "title": "네크로 질문점요",
+      "categoryLabel": null,
       "author": "TheMarine",
       "authorMemberNo": "19499",
       "createdAt": "2003-03-03T04:06:09",
@@ -404,6 +437,7 @@
     {
       "postId": "16849",
       "title": "용가리 테임하는 방법 좀...?",
+      "categoryLabel": null,
       "author": "woojehun",
       "authorMemberNo": "16217",
       "createdAt": "2003-03-03T04:01:35",
@@ -416,6 +450,7 @@
     {
       "postId": "16845",
       "title": "kr-loop 질문입니다.",
+      "categoryLabel": null,
       "author": "hasi12",
       "authorMemberNo": "14650",
       "createdAt": "2003-03-03T01:33:38",
@@ -428,6 +463,7 @@
     {
       "postId": "16842",
       "title": "스틸10파스 얼마나할까요?",
+      "categoryLabel": null,
       "author": "hasi12",
       "authorMemberNo": "14650",
       "createdAt": "2003-03-03T01:03:52",
@@ -440,6 +476,7 @@
     {
       "postId": "16841",
       "title": "바보 같은 뉴비의 질문",
+      "categoryLabel": null,
       "author": "nomaaba",
       "authorMemberNo": "18066",
       "createdAt": "2003-03-02T23:49:03",
@@ -452,6 +489,7 @@
     {
       "postId": "16840",
       "title": "몬스터 던전란에 쥐굴 클릭해서 스켈드래곤 있는곳보면..",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-03-02T22:57:06",
@@ -464,6 +502,7 @@
     {
       "postId": "16837",
       "title": "저겨!! 울온에서 집에 2층에 술집 주제로 인테리어할려는대..",
+      "categoryLabel": null,
       "author": "DeaNa",
       "authorMemberNo": "18847",
       "createdAt": "2003-03-02T21:22:29",
@@ -476,6 +515,7 @@
     {
       "postId": "16835",
       "title": "음제가 울온을 않한지가 꽤되서 그런데 이게먼지-_;;",
+      "categoryLabel": null,
       "author": "rudtjq87",
       "authorMemberNo": "0",
       "createdAt": "2003-03-02T21:11:04",
@@ -488,6 +528,7 @@
     {
       "postId": "16834",
       "title": "아쳐 60에서 뭘 잡아야 되요?",
+      "categoryLabel": null,
       "author": "na1004yaa",
       "authorMemberNo": "15426",
       "createdAt": "2003-03-02T21:02:45",
@@ -500,6 +541,7 @@
     {
       "postId": "16832",
       "title": "카토그라피 키우는데요...",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-03-02T19:55:48",
@@ -512,6 +554,7 @@
     {
       "postId": "16831",
       "title": "바드테이머 질문입니다.",
+      "categoryLabel": null,
       "author": "Derkaz",
       "authorMemberNo": "0",
       "createdAt": "2003-03-02T18:52:15",
@@ -524,6 +567,7 @@
     {
       "postId": "16830",
       "title": "테이머 뭐뭐 올리는것이 좋은지점 알리주세여",
+      "categoryLabel": null,
       "author": "mj4517",
       "authorMemberNo": "19668",
       "createdAt": "2003-03-02T18:09:56",
@@ -536,6 +580,7 @@
     {
       "postId": "16829",
       "title": "트레져헌터 해보신분? 피스가 나을까요 이벨이 나을까요?",
+      "categoryLabel": null,
       "author": "Angelheart",
       "authorMemberNo": "18700",
       "createdAt": "2003-03-02T17:43:49",
@@ -548,6 +593,7 @@
     {
       "postId": "16828",
       "title": "유니콘 탈려고만 하면 클라이언트 에러가나네요",
+      "categoryLabel": null,
       "author": "afocus",
       "authorMemberNo": "19128",
       "createdAt": "2003-03-02T16:34:30",
@@ -560,6 +606,7 @@
     {
       "postId": "16825",
       "title": "레지 올리는 쉬운 방법좀 알려주세염",
+      "categoryLabel": null,
       "author": "likeys2",
       "authorMemberNo": "18506",
       "createdAt": "2003-03-02T14:59:25",
@@ -572,6 +619,7 @@
     {
       "postId": "16824",
       "title": "모형 집디드 짓고나서 다시 디드로 못바꾸나요?",
+      "categoryLabel": null,
       "author": "costa",
       "authorMemberNo": "16608",
       "createdAt": "2003-03-02T12:47:18",
@@ -583,7 +631,8 @@
     },
     {
       "postId": "16822",
-      "title": "[질문] 스텟이 안 올라가네요..",
+      "title": "스텟이 안 올라가네요..",
+      "categoryLabel": "질문",
       "author": "pcehfdl",
       "authorMemberNo": "19445",
       "createdAt": "2003-03-02T12:31:58",
@@ -596,6 +645,7 @@
     {
       "postId": "16821",
       "title": "(질문)범위피스가 템머로 사냥시 쓸만한가여?",
+      "categoryLabel": null,
       "author": "nlights",
       "authorMemberNo": "14985",
       "createdAt": "2003-03-02T11:13:30",

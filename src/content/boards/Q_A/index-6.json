@@ -3,11 +3,12 @@
   "page": 6,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "17798",
       "title": "아템의 스탯 증가옵과 스탯 보너스옵의 차이가 뭔가요?",
+      "categoryLabel": null,
       "author": "in10ss",
       "authorMemberNo": "19483",
       "createdAt": "2003-04-05T22:08:22",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "17794",
-      "title": "[스킬] 마사에게 아나토니가 필요한가요 ? (냉무)",
+      "title": "마사에게 아나토니가 필요한가요 ? (냉무)",
+      "categoryLabel": "스킬",
       "author": "krislee",
       "authorMemberNo": "19874",
       "createdAt": "2003-04-05T18:36:33",
@@ -32,6 +34,7 @@
     {
       "postId": "17792",
       "title": "패링 100 이후에는 어떻게 올려야 하나여??",
+      "categoryLabel": null,
       "author": "Saga",
       "authorMemberNo": "19391",
       "createdAt": "2003-04-05T16:06:25",
@@ -44,6 +47,7 @@
     {
       "postId": "17790",
       "title": "슬레이어 무기를 만들수있나요?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-05T15:23:10",
@@ -56,6 +60,7 @@
     {
       "postId": "17788",
       "title": "오일천 자르는 매크로가....",
+      "categoryLabel": null,
       "author": "muzik373",
       "authorMemberNo": "17452",
       "createdAt": "2003-04-05T14:11:12",
@@ -68,6 +73,7 @@
     {
       "postId": "17787",
       "title": "빈계정 하나 사고싶은데 ^^;",
+      "categoryLabel": null,
       "author": "maskttt",
       "authorMemberNo": "19412",
       "createdAt": "2003-04-05T14:00:00",
@@ -80,6 +86,7 @@
     {
       "postId": "17785",
       "title": "아이템으로 생산 스킬 올렸을 경우=_=/",
+      "categoryLabel": null,
       "author": "랍스터",
       "authorMemberNo": "16862",
       "createdAt": "2003-04-05T12:34:42",
@@ -92,6 +99,7 @@
     {
       "postId": "17784",
       "title": "코베투스 던젼 어딨나요?",
+      "categoryLabel": null,
       "author": "mania414",
       "authorMemberNo": "20004",
       "createdAt": "2003-04-05T11:58:39",
@@ -104,6 +112,7 @@
     {
       "postId": "17783",
       "title": "무기스킬 레전까지 이제 어디서 올리나요?",
+      "categoryLabel": null,
       "author": "babooda79",
       "authorMemberNo": "15414",
       "createdAt": "2003-04-05T11:44:30",
@@ -116,6 +125,7 @@
     {
       "postId": "17782",
       "title": "아이탬 옵션에 대한 질문",
+      "categoryLabel": null,
       "author": "peaceya",
       "authorMemberNo": "18975",
       "createdAt": "2003-04-05T08:38:25",
@@ -128,6 +138,7 @@
     {
       "postId": "17781",
       "title": "UOA질문..",
+      "categoryLabel": null,
       "author": "sugizos",
       "authorMemberNo": "19853",
       "createdAt": "2003-04-05T08:26:36",
@@ -140,6 +151,7 @@
     {
       "postId": "17780",
       "title": "이거 해석 좀 해주세요.... ㅠ.ㅠ",
+      "categoryLabel": null,
       "author": "sagara1",
       "authorMemberNo": "15493",
       "createdAt": "2003-04-05T03:30:33",
@@ -152,6 +164,7 @@
     {
       "postId": "17778",
       "title": "머리스타일변경쿠폰은 어떤기술스킬,어떤무기로 만들수있어요?",
+      "categoryLabel": null,
       "author": "5ryeun",
       "authorMemberNo": "19830",
       "createdAt": "2003-04-05T03:14:33",
@@ -164,6 +177,7 @@
     {
       "postId": "17777",
       "title": "이것이 잉갓버그?;;",
+      "categoryLabel": null,
       "author": "breyes",
       "authorMemberNo": "19822",
       "createdAt": "2003-04-05T02:31:14",
@@ -176,6 +190,7 @@
     {
       "postId": "17776",
       "title": "집에 있는 시큐어상자가 모두 사라졌습니다.ㅜㅜ",
+      "categoryLabel": null,
       "author": "breyes",
       "authorMemberNo": "19822",
       "createdAt": "2003-04-05T01:39:14",
@@ -188,6 +203,7 @@
     {
       "postId": "17774",
       "title": "전사와 테이머에대한질문입니다.",
+      "categoryLabel": null,
       "author": "gaelstory",
       "authorMemberNo": "19982",
       "createdAt": "2003-04-05T01:10:26",
@@ -200,6 +216,7 @@
     {
       "postId": "17773",
       "title": "예전부터 궁금한게 있었는데 스미스 레젼이신분들..",
+      "categoryLabel": null,
       "author": "wannets",
       "authorMemberNo": "17745",
       "createdAt": "2003-04-04T23:55:17",
@@ -212,6 +229,7 @@
     {
       "postId": "17772",
       "title": "테일러 스킬이 낮아도, 숨은 포인트가 높으면 좋은 디드를 줄까요?",
+      "categoryLabel": null,
       "author": "makumaku",
       "authorMemberNo": "15470",
       "createdAt": "2003-04-04T23:46:48",
@@ -224,6 +242,7 @@
     {
       "postId": "17771",
       "title": "음 무기나. 방패 잡동사니 등등요. 어떻케 보는거죠?",
+      "categoryLabel": null,
       "author": "jhwan18",
       "authorMemberNo": "19695",
       "createdAt": "2003-04-04T23:42:32",
@@ -236,6 +255,7 @@
     {
       "postId": "17770",
       "title": "디드의 종류 좀 알려주세요=_=",
+      "categoryLabel": null,
       "author": "랍스터",
       "authorMemberNo": "16862",
       "createdAt": "2003-04-04T22:22:17",
@@ -248,6 +268,7 @@
     {
       "postId": "17769",
       "title": "질문!!!",
+      "categoryLabel": null,
       "author": "wjdwls14chl",
       "authorMemberNo": "20185",
       "createdAt": "2003-04-04T22:05:56",
@@ -260,6 +281,7 @@
     {
       "postId": "17768",
       "title": "분말가루 받는 퀘스트 돼나여??",
+      "categoryLabel": null,
       "author": "bluedaysky",
       "authorMemberNo": "17471",
       "createdAt": "2003-04-04T21:51:19",
@@ -272,6 +294,7 @@
     {
       "postId": "17767",
       "title": "배에 바위가 끼었는데여 접혀지질 않네여.. 답변좀 부탁드립니다",
+      "categoryLabel": null,
       "author": "shcho934",
       "authorMemberNo": "16124",
       "createdAt": "2003-04-04T21:28:40",
@@ -284,6 +307,7 @@
     {
       "postId": "17766",
       "title": "주문전달무기들고 마법쓸경우?",
+      "categoryLabel": null,
       "author": "afocus",
       "authorMemberNo": "19128",
       "createdAt": "2003-04-04T21:15:50",
@@ -296,6 +320,7 @@
     {
       "postId": "17764",
       "title": "로어 110과 120의 차이 질문!",
+      "categoryLabel": null,
       "author": "Freely",
       "authorMemberNo": "15245",
       "createdAt": "2003-04-04T20:35:18",
@@ -308,6 +333,7 @@
     {
       "postId": "17763",
       "title": "스탯이 안올라요!~!!!!!",
+      "categoryLabel": null,
       "author": "saint1225",
       "authorMemberNo": "18692",
       "createdAt": "2003-04-04T20:32:25",
@@ -320,6 +346,7 @@
     {
       "postId": "17762",
       "title": "계정만료일의 정확한 만료시간이 궁금합니다.",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-04-04T20:00:20",
@@ -332,6 +359,7 @@
     {
       "postId": "17761",
       "title": "붕대로 사람살리는 스킬이 어케 되졍?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-04T19:58:28",
@@ -344,6 +372,7 @@
     {
       "postId": "17760",
       "title": "질문!",
+      "categoryLabel": null,
       "author": "wjdwls14chl",
       "authorMemberNo": "20185",
       "createdAt": "2003-04-04T17:34:11",
@@ -356,6 +385,7 @@
     {
       "postId": "17759",
       "title": "에니멀 로어 말이에요..",
+      "categoryLabel": null,
       "author": "dlshfkd",
       "authorMemberNo": "17076",
       "createdAt": "2003-04-04T16:43:06",
@@ -368,6 +398,7 @@
     {
       "postId": "17758",
       "title": "울온을 영문판으로!",
+      "categoryLabel": null,
       "author": "DoDookNum",
       "authorMemberNo": "15596",
       "createdAt": "2003-04-04T16:40:32",
@@ -380,6 +411,7 @@
     {
       "postId": "17756",
       "title": "무기에 관한질문",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-04T16:25:20",
@@ -391,7 +423,8 @@
     },
     {
       "postId": "17754",
-      "title": "[질문] 득템하신 분들 노하우좀 알려주세요~",
+      "title": "득템하신 분들 노하우좀 알려주세요~",
+      "categoryLabel": "질문",
       "author": "inuyasha",
       "authorMemberNo": "14672",
       "createdAt": "2003-04-04T15:45:05",
@@ -404,6 +437,7 @@
     {
       "postId": "17752",
       "title": "계정 나이에 관해서",
+      "categoryLabel": null,
       "author": "varian",
       "authorMemberNo": "20048",
       "createdAt": "2003-04-04T14:28:56",
@@ -416,6 +450,7 @@
     {
       "postId": "17751",
       "title": "메모리 문제",
+      "categoryLabel": null,
       "author": "park11n6",
       "authorMemberNo": "19815",
       "createdAt": "2003-04-04T13:59:12",
@@ -428,6 +463,7 @@
     {
       "postId": "17750",
       "title": "도망간 동물들?",
+      "categoryLabel": null,
       "author": "breyes",
       "authorMemberNo": "19822",
       "createdAt": "2003-04-04T13:01:17",
@@ -440,6 +476,7 @@
     {
       "postId": "17748",
       "title": "챔피언 잡는 캐릭의 필수 스킬은 먼가요?",
+      "categoryLabel": null,
       "author": "jokulhaups",
       "authorMemberNo": "18563",
       "createdAt": "2003-04-04T09:26:46",
@@ -452,6 +489,7 @@
     {
       "postId": "17746",
       "title": "어스엘리를 비롯한 오어엘리..",
+      "categoryLabel": null,
       "author": "Anna-_-",
       "authorMemberNo": "15204",
       "createdAt": "2003-04-04T03:16:16",
@@ -464,6 +502,7 @@
     {
       "postId": "17744",
       "title": "베리때 카타나 얼마나 하나욤?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-04-04T00:56:48",
@@ -476,6 +515,7 @@
     {
       "postId": "17743",
       "title": "인벌 발러 풀플 인뷰해서 나온거 가격 감정좀해주세요^^;",
+      "categoryLabel": null,
       "author": "kissume",
       "authorMemberNo": "19893",
       "createdAt": "2003-04-04T00:50:24",
@@ -488,6 +528,7 @@
     {
       "postId": "17742",
       "title": "배네터리가 타겟제한으로 바뀌었나요?",
+      "categoryLabel": null,
       "author": "spinella",
       "authorMemberNo": "15207",
       "createdAt": "2003-04-04T00:37:26",
@@ -500,6 +541,7 @@
     {
       "postId": "17741",
       "title": "울온유저님들 온라인으로 탐쿠폰 살수있는 싸이트좀 알려주시면 ..",
+      "categoryLabel": null,
       "author": "joycap",
       "authorMemberNo": "18626",
       "createdAt": "2003-04-03T23:47:33",
@@ -512,6 +554,7 @@
     {
       "postId": "17739",
       "title": "질문! 블랙손 어디서 다운받아요?",
+      "categoryLabel": null,
       "author": "wjdwls14chl",
       "authorMemberNo": "20185",
       "createdAt": "2003-04-03T23:05:08",
@@ -524,6 +567,7 @@
     {
       "postId": "17737",
       "title": "이제 매직아이템에 귀걸이는 안나오나요?;;;",
+      "categoryLabel": null,
       "author": "aspar",
       "authorMemberNo": "15358",
       "createdAt": "2003-04-03T20:22:47",
@@ -535,7 +579,8 @@
     },
     {
       "postId": "17736",
-      "title": "[질문] 연달아 질문이라서 죄송하지만 -_-;;",
+      "title": "연달아 질문이라서 죄송하지만 -_-;;",
+      "categoryLabel": "질문",
       "author": "hi84",
       "authorMemberNo": "19114",
       "createdAt": "2003-04-03T19:56:44",
@@ -547,7 +592,8 @@
     },
     {
       "postId": "17735",
-      "title": "[질문] 에니메이트 데드 질문인데요...",
+      "title": "에니메이트 데드 질문인데요...",
+      "categoryLabel": "질문",
       "author": "hi84",
       "authorMemberNo": "19114",
       "createdAt": "2003-04-03T19:38:33",
@@ -560,6 +606,7 @@
     {
       "postId": "17734",
       "title": "둠레어 리스폰시간",
+      "categoryLabel": null,
       "author": "sv",
       "authorMemberNo": "17060",
       "createdAt": "2003-04-03T18:55:10",
@@ -572,6 +619,7 @@
     {
       "postId": "17732",
       "title": "죽은 애완동물로 유령더미 가능한가요???",
+      "categoryLabel": null,
       "author": "metalgear0",
       "authorMemberNo": "19728",
       "createdAt": "2003-04-03T17:21:36",
@@ -584,6 +632,7 @@
     {
       "postId": "17731",
       "title": "애니메이트 데드 질문입니다",
+      "categoryLabel": null,
       "author": "jokulhaups",
       "authorMemberNo": "18563",
       "createdAt": "2003-04-03T16:33:17",
@@ -596,6 +645,7 @@
     {
       "postId": "17729",
       "title": "보장설정 관련 질문",
+      "categoryLabel": null,
       "author": "Naban",
       "authorMemberNo": "14718",
       "createdAt": "2003-04-03T15:29:11",

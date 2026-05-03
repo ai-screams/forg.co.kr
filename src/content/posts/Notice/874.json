@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "874",
   "title": "본홈 하단에 검색기능이 추가되었습니다.",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">BGM을 대신하여 홈피 정보를 손쉽게 검색을 할 수 있게 됩니다.<br>현재 진행중인 검색은 \"각종유용한 정보\"란이며 전투,협력,직업기술쪽은<br>추가 업뎃을 한 후 검색하실 수 있을것입니다.<br><br>p.s : 좌측메뉴의 각 정보란의 검색이고 각 게시판의 검색은 아닙니다.<br><br><br>이번 작업도 Kritz님이 수고하셧습니다-0-/<br>성은을 받으시길...<br></td></tr></tbody></table>\n",
   "bodyText": "BGM을 대신하여 홈피 정보를 손쉽게 검색을 할 수 있게 됩니다. 현재 진행중인 검색은 \"각종유용한 정보\"란이며 전투,협력,직업기술쪽은 추가 업뎃을 한 후 검색하실 수 있을것입니다. p.s : 좌측메뉴의 각 정보란의 검색이고 각 게시판의 검색은 아닙니다. 이번 작업도 Kritz님이 수고하셧습니다-0-/ 성은을 받으시길...",
   "author": "Forg",

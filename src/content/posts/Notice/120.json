@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "120",
   "title": "캐릭 삭제 계획 최종 버젼입니다.",
+  "categoryLabel": null,
   "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t ■ 6개월단위로 기준으로 하여 스킬 총합이 350이 넘지 않는다면 그캐릭은 삭제됩니다.<br>\n 삭제하는것을 원치 않는 다면 해당캐릭으로 로긴을 하셔셔 리플레쉬를 해줘야 합니다.<br>\n 집리플과 마찬가지로 로긴부터 시작하여 다시 6개월 타이머가 돌아갑니다.<br>\n<br>\n ■ 스킬합이 350이 넘는다면 삭제대상에서 제외됩니다.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "■ 6개월단위로 기준으로 하여 스킬 총합이 350이 넘지 않는다면 그캐릭은 삭제됩니다. 삭제하는것을 원치 않는 다면 해당캐릭으로 로긴을 하셔셔 리플레쉬를 해줘야 합니다. 집리플과 마찬가지로 로긴부터 시작하여 다시 6개월 타이머가 돌아갑니다. ■ 스킬합이 350이 넘는다면 삭제대상에서 제외됩니다.",
   "author": "Forg",

@@ -3,11 +3,12 @@
   "page": 17,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "15728",
-      "title": "[질문]몽유병게임",
+      "title": "몽유병게임",
+      "categoryLabel": "질문",
       "author": "yobgi",
       "authorMemberNo": "15271",
       "createdAt": "2003-02-12T15:18:30",
@@ -20,6 +21,7 @@
     {
       "postId": "15727",
       "title": "aos설치후 클라에러!",
+      "categoryLabel": null,
       "author": "PastelShade",
       "authorMemberNo": "16587",
       "createdAt": "2003-02-12T15:16:27",
@@ -32,6 +34,7 @@
     {
       "postId": "15726",
       "title": "스탯 525짜리 나메 요즘 얼마인가요?",
+      "categoryLabel": null,
       "author": "소",
       "authorMemberNo": "16069",
       "createdAt": "2003-02-12T14:32:47",
@@ -44,6 +47,7 @@
     {
       "postId": "15725",
       "title": "AoS 에러메세지 같은건데요... 왜이런건지 좀 부탁드립니다..",
+      "categoryLabel": null,
       "author": "chw1209",
       "authorMemberNo": "17617",
       "createdAt": "2003-02-12T13:42:08",
@@ -56,6 +60,7 @@
     {
       "postId": "15724",
       "title": "질문요..",
+      "categoryLabel": null,
       "author": "tomagilove",
       "authorMemberNo": "16086",
       "createdAt": "2003-02-12T13:24:36",
@@ -68,6 +73,7 @@
     {
       "postId": "15723",
       "title": "uoa 한계정당 하나 인가여?",
+      "categoryLabel": null,
       "author": "hwani79",
       "authorMemberNo": "18741",
       "createdAt": "2003-02-12T12:23:50",
@@ -80,6 +86,7 @@
     {
       "postId": "15722",
       "title": "북미서버 관련 질문입니다.",
+      "categoryLabel": null,
       "author": "소풍",
       "authorMemberNo": "14570",
       "createdAt": "2003-02-12T11:33:14",
@@ -92,6 +99,7 @@
     {
       "postId": "15721",
       "title": "펠루카에도 버그나무가 있을까요? (말라스도 있을까?)",
+      "categoryLabel": null,
       "author": "uyfuyo",
       "authorMemberNo": "18772",
       "createdAt": "2003-02-12T11:22:27",
@@ -104,6 +112,7 @@
     {
       "postId": "15720",
       "title": "염치불구하고 부탁드립니다..AOS 시디좀보내주세요...",
+      "categoryLabel": null,
       "author": "Gackt",
       "authorMemberNo": "15139",
       "createdAt": "2003-02-12T10:49:43",
@@ -116,6 +125,7 @@
     {
       "postId": "15719",
       "title": "업글코드에 대해서 질문입니다...",
+      "categoryLabel": null,
       "author": "rapter2",
       "authorMemberNo": "15855",
       "createdAt": "2003-02-12T10:45:01",
@@ -127,7 +137,8 @@
     },
     {
       "postId": "15717",
-      "title": "[질문] 흠 패치가 안되서 그런건가요??",
+      "title": "흠 패치가 안되서 그런건가요??",
+      "categoryLabel": "질문",
       "author": "serpans",
       "authorMemberNo": "18288",
       "createdAt": "2003-02-12T08:51:27",
@@ -140,6 +151,7 @@
     {
       "postId": "15716",
       "title": "신규계정입력시 결제방법선택창에서 어떻게 해야 하나요?",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-02-12T08:43:04",
@@ -152,6 +164,7 @@
     {
       "postId": "15715",
       "title": "영어좀할줄아시는분...보세요",
+      "categoryLabel": null,
       "author": "ggameboy",
       "authorMemberNo": "18324",
       "createdAt": "2003-02-12T08:08:16",
@@ -164,6 +177,7 @@
     {
       "postId": "15714",
       "title": "2D와 3D의 여러분은 어느걸로?",
+      "categoryLabel": null,
       "author": "goehrgkeksl",
       "authorMemberNo": "15052",
       "createdAt": "2003-02-12T08:07:56",
@@ -176,6 +190,7 @@
     {
       "postId": "15713",
       "title": "언제부터 말라스 갈수 있나요?",
+      "categoryLabel": null,
       "author": "meanhero",
       "authorMemberNo": "19003",
       "createdAt": "2003-02-12T07:28:51",
@@ -188,6 +203,7 @@
     {
       "postId": "15712",
       "title": "폰트 문제질문입니다.",
+      "categoryLabel": null,
       "author": "보물섬",
       "authorMemberNo": "16261",
       "createdAt": "2003-02-12T06:09:15",
@@ -200,6 +216,7 @@
     {
       "postId": "15710",
       "title": "AOS신규 등록하면 Pending상태로 나오는데..",
+      "categoryLabel": null,
       "author": "h2knight",
       "authorMemberNo": "16283",
       "createdAt": "2003-02-12T02:57:45",
@@ -212,6 +229,7 @@
     {
       "postId": "15709",
       "title": "달리기",
+      "categoryLabel": null,
       "author": "cnddkawnd",
       "authorMemberNo": "18890",
       "createdAt": "2003-02-12T02:32:15",
@@ -224,6 +242,7 @@
     {
       "postId": "15708",
       "title": "말라스에서 섬에 가는방법 아시는분~~",
+      "categoryLabel": null,
       "author": "costa",
       "authorMemberNo": "16608",
       "createdAt": "2003-02-12T02:01:19",
@@ -236,6 +255,7 @@
     {
       "postId": "15707",
       "title": "aos말인데요 계정업글이 머죠?",
+      "categoryLabel": null,
       "author": "killlyou",
       "authorMemberNo": "19112",
       "createdAt": "2003-02-12T01:39:32",
@@ -248,6 +268,7 @@
     {
       "postId": "15706",
       "title": "Aos에관한질문입니다",
+      "categoryLabel": null,
       "author": "goldzera",
       "authorMemberNo": "18365",
       "createdAt": "2003-02-12T01:18:03",
@@ -260,6 +281,7 @@
     {
       "postId": "15705",
       "title": "진짜 기본적인거지만 전 모릅니다 -_-",
+      "categoryLabel": null,
       "author": "cnddkawnd",
       "authorMemberNo": "18890",
       "createdAt": "2003-02-12T01:07:20",
@@ -272,6 +294,7 @@
     {
       "postId": "15704",
       "title": "AOS 3D....",
+      "categoryLabel": null,
       "author": "bullet",
       "authorMemberNo": "15242",
       "createdAt": "2003-02-12T00:14:26",
@@ -284,6 +307,7 @@
     {
       "postId": "15703",
       "title": "-- aos 업글후 테섭에서 하는중인데요;;",
+      "categoryLabel": null,
       "author": "dididia",
       "authorMemberNo": "16591",
       "createdAt": "2003-02-11T23:01:46",
@@ -296,6 +320,7 @@
     {
       "postId": "15702",
       "title": "aos를 첨으로 울온시작하려는데요..답변좀",
+      "categoryLabel": null,
       "author": "ggameboy",
       "authorMemberNo": "18324",
       "createdAt": "2003-02-11T22:29:07",
@@ -308,6 +333,7 @@
     {
       "postId": "15701",
       "title": "AOS 설치후 클라에러에 대한 질문입니다.",
+      "categoryLabel": null,
       "author": "faust",
       "authorMemberNo": "14891",
       "createdAt": "2003-02-11T22:26:54",
@@ -319,7 +345,8 @@
     },
     {
       "postId": "15700",
-      "title": "[울온외] 포멧 햇는데 소리가 안나요 ㅜ.ㅜ",
+      "title": "포멧 햇는데 소리가 안나요 ㅜ.ㅜ",
+      "categoryLabel": "울온외",
       "author": "darkpdt85",
       "authorMemberNo": "16434",
       "createdAt": "2003-02-11T22:11:42",
@@ -332,6 +359,7 @@
     {
       "postId": "15699",
       "title": "화면이 너무 작군요. 크게 늘리는 방법이 있나요?",
+      "categoryLabel": null,
       "author": "Beelzebub",
       "authorMemberNo": "18745",
       "createdAt": "2003-02-11T22:11:15",
@@ -344,6 +372,7 @@
     {
       "postId": "15698",
       "title": "블래스디드 맨처음 켠 캐릭터에 주는건가....",
+      "categoryLabel": null,
       "author": "YuKaRi",
       "authorMemberNo": "18319",
       "createdAt": "2003-02-11T22:01:23",
@@ -356,6 +385,7 @@
     {
       "postId": "15697",
       "title": "헐...이럴수가... 신규계정 접속 안되시는분들 보세요.",
+      "categoryLabel": null,
       "author": "Beelzebub",
       "authorMemberNo": "18745",
       "createdAt": "2003-02-11T22:00:49",
@@ -368,6 +398,7 @@
     {
       "postId": "15696",
       "title": "마우스 문제 답변해주세요",
+      "categoryLabel": null,
       "author": "likeys2",
       "authorMemberNo": "18506",
       "createdAt": "2003-02-11T21:34:10",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "15695",
-      "title": "[질문] 집을 남에게 팔고 다시 집을 지으려고 합니다.",
+      "title": "집을 남에게 팔고 다시 집을 지으려고 합니다.",
+      "categoryLabel": "질문",
       "author": "Tweety",
       "authorMemberNo": "14884",
       "createdAt": "2003-02-11T21:21:00",
@@ -392,6 +424,7 @@
     {
       "postId": "15694",
       "title": "제가 메일을 보냈더니 양키놈이 이렇게 말하는데... -_- 뭔 소리인지.",
+      "categoryLabel": null,
       "author": "Beelzebub",
       "authorMemberNo": "18745",
       "createdAt": "2003-02-11T20:34:09",
@@ -404,6 +437,7 @@
     {
       "postId": "15693",
       "title": "집 락단수질문..-_-;;",
+      "categoryLabel": null,
       "author": "zeromonk",
       "authorMemberNo": "15416",
       "createdAt": "2003-02-11T20:22:49",
@@ -416,6 +450,7 @@
     {
       "postId": "15690",
       "title": "집 패치에대한 질문입니다. 냉유.",
+      "categoryLabel": null,
       "author": "pshan01",
       "authorMemberNo": "15939",
       "createdAt": "2003-02-11T19:44:36",
@@ -428,6 +463,7 @@
     {
       "postId": "15689",
       "title": "디스텁? 이게 뭔가요?",
+      "categoryLabel": null,
       "author": "yaisal",
       "authorMemberNo": "15796",
       "createdAt": "2003-02-11T19:39:06",
@@ -440,6 +476,7 @@
     {
       "postId": "15687",
       "title": "말라스대륙에 새 집을 지으면...",
+      "categoryLabel": null,
       "author": "dogwise",
       "authorMemberNo": "15089",
       "createdAt": "2003-02-11T19:02:31",
@@ -452,6 +489,7 @@
     {
       "postId": "15685",
       "title": "검정수의인증코드가 모죠",
+      "categoryLabel": null,
       "author": "didi",
       "authorMemberNo": "15413",
       "createdAt": "2003-02-11T18:31:37",
@@ -464,6 +502,7 @@
     {
       "postId": "15684",
       "title": "AOS 계정 업글 했는데요....",
+      "categoryLabel": null,
       "author": "king21king",
       "authorMemberNo": "18194",
       "createdAt": "2003-02-11T18:27:31",
@@ -476,6 +515,7 @@
     {
       "postId": "15683",
       "title": "지금 게임 되나요??",
+      "categoryLabel": null,
       "author": "meanhero",
       "authorMemberNo": "19003",
       "createdAt": "2003-02-11T18:27:18",
@@ -488,6 +528,7 @@
     {
       "postId": "15681",
       "title": "외국샤드의 aos 적용 시기는 언제죠?",
+      "categoryLabel": null,
       "author": "illuzion",
       "authorMemberNo": "17036",
       "createdAt": "2003-02-11T18:06:02",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "15664",
-      "title": "[질문] AOS 그래픽 변화",
+      "title": "AOS 그래픽 변화",
+      "categoryLabel": "질문",
       "author": "mnknight",
       "authorMemberNo": "15021",
       "createdAt": "2003-02-11T15:12:19",
@@ -512,6 +554,7 @@
     {
       "postId": "15660",
       "title": "aos배달왓습니다...슈퍼뉴비에요 제발답변좀",
+      "categoryLabel": null,
       "author": "BOSS",
       "authorMemberNo": "18520",
       "createdAt": "2003-02-11T14:26:47",
@@ -524,6 +567,7 @@
     {
       "postId": "15659",
       "title": "aos 씨디깔고 클라에러[알려주세요]",
+      "categoryLabel": null,
       "author": "Amplifier",
       "authorMemberNo": "15404",
       "createdAt": "2003-02-11T14:19:44",
@@ -536,6 +580,7 @@
     {
       "postId": "15658",
       "title": "신규계정 문제  -답변-",
+      "categoryLabel": null,
       "author": "Falcon",
       "authorMemberNo": "15320",
       "createdAt": "2003-02-11T14:07:52",
@@ -548,6 +593,7 @@
     {
       "postId": "15654",
       "title": "저기요 급질~~~~~~~~`",
+      "categoryLabel": null,
       "author": "deviator11",
       "authorMemberNo": "18558",
       "createdAt": "2003-02-11T13:04:56",
@@ -560,6 +606,7 @@
     {
       "postId": "15653",
       "title": "레지의 변화,,, 레지의 향방",
+      "categoryLabel": null,
       "author": "syro",
       "authorMemberNo": "15624",
       "createdAt": "2003-02-11T12:38:19",
@@ -572,6 +619,7 @@
     {
       "postId": "15649",
       "title": "후움.. aos가 도착했는데..",
+      "categoryLabel": null,
       "author": "scol24",
       "authorMemberNo": "16640",
       "createdAt": "2003-02-11T12:13:14",
@@ -584,6 +632,7 @@
     {
       "postId": "15647",
       "title": "말라스 지도에서 우주처럼 표시된곳은 배타고 갈수있나요?",
+      "categoryLabel": null,
       "author": "costa",
       "authorMemberNo": "16608",
       "createdAt": "2003-02-11T11:43:12",
@@ -596,6 +645,7 @@
     {
       "postId": "15643",
       "title": "집 계조에 대한질문",
+      "categoryLabel": null,
       "author": "babudang",
       "authorMemberNo": "18557",
       "createdAt": "2003-02-11T10:43:16",

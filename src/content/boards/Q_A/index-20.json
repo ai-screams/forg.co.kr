@@ -3,11 +3,12 @@
   "page": 20,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "10181",
-      "title": "[팅커] 어제 그 팅커입니다....ㅠ_ㅠ",
+      "title": "어제 그 팅커입니다....ㅠ_ㅠ",
+      "categoryLabel": "팅커",
       "author": "neofunk",
       "authorMemberNo": "9334",
       "createdAt": "2002-08-10T19:09:21",
@@ -20,6 +21,7 @@
     {
       "postId": "10178",
       "title": "자꾸질문만... -_-;; 제 나메가...",
+      "categoryLabel": null,
       "author": "imiceman",
       "authorMemberNo": "10094",
       "createdAt": "2002-08-10T16:15:50",
@@ -32,6 +34,7 @@
     {
       "postId": "10177",
       "title": "음...몹 나오는곳 질문입니다!",
+      "categoryLabel": null,
       "author": "atropos43",
       "authorMemberNo": "8501",
       "createdAt": "2002-08-10T16:04:44",
@@ -44,6 +47,7 @@
     {
       "postId": "10176",
       "title": "오랫만에 하니 까먹은것들이...-_-;;;",
+      "categoryLabel": null,
       "author": "imiceman",
       "authorMemberNo": "10094",
       "createdAt": "2002-08-10T15:51:01",
@@ -56,6 +60,7 @@
     {
       "postId": "10174",
       "title": "스탯 바꿀때요...",
+      "categoryLabel": null,
       "author": "이익헌",
       "authorMemberNo": "3690",
       "createdAt": "2002-08-10T15:34:43",
@@ -68,6 +73,7 @@
     {
       "postId": "10172",
       "title": "이상하네요. 낚시 스킬 질문 좀..",
+      "categoryLabel": null,
       "author": "chpuk",
       "authorMemberNo": "4489",
       "createdAt": "2002-08-10T15:07:03",
@@ -80,6 +86,7 @@
     {
       "postId": "10126",
       "title": "베네터리와 프로보 질문입니다",
+      "categoryLabel": null,
       "author": "atropos43",
       "authorMemberNo": "8501",
       "createdAt": "2002-08-09T05:25:51",
@@ -92,6 +99,7 @@
     {
       "postId": "10122",
       "title": "스킬 100 넘으면 하루에 올릴수 있는 스킬이 1밖에 안돼는건가요?",
+      "categoryLabel": null,
       "author": "spigel",
       "authorMemberNo": "3366",
       "createdAt": "2002-08-09T02:10:42",
@@ -104,6 +112,7 @@
     {
       "postId": "10120",
       "title": "색앨리맨탈 없어졋나여 아시는분 답변좀..자비말고는없나여?",
+      "categoryLabel": null,
       "author": "임상현",
       "authorMemberNo": "2391",
       "createdAt": "2002-08-09T00:50:48",
@@ -115,7 +124,8 @@
     },
     {
       "postId": "10118",
-      "title": "[질문]마을에서 던젼으로 리콜하면 이곳에서는 안된다고 나오네요.",
+      "title": "마을에서 던젼으로 리콜하면 이곳에서는 안된다고 나오네요.",
+      "categoryLabel": "질문",
       "author": "bloody99",
       "authorMemberNo": "10394",
       "createdAt": "2002-08-08T23:58:50",
@@ -128,6 +138,7 @@
     {
       "postId": "10117",
       "title": "블랙숀 3디루하면 팅기는현상",
+      "categoryLabel": null,
       "author": "gpgk1234",
       "authorMemberNo": "8047",
       "createdAt": "2002-08-08T23:46:31",
@@ -140,6 +151,7 @@
     {
       "postId": "10115",
       "title": "집에 관해 질문이요",
+      "categoryLabel": null,
       "author": "pjw114",
       "authorMemberNo": "9280",
       "createdAt": "2002-08-08T23:29:24",
@@ -152,6 +164,7 @@
     {
       "postId": "10114",
       "title": "스크롤 만드는거 질문",
+      "categoryLabel": null,
       "author": "seraphims9",
       "authorMemberNo": "9982",
       "createdAt": "2002-08-08T22:58:51",
@@ -164,6 +177,7 @@
     {
       "postId": "10112",
       "title": "지능과 힘을 올리는 방법은 뭐죠?",
+      "categoryLabel": null,
       "author": "냥냥이",
       "authorMemberNo": "9865",
       "createdAt": "2002-08-08T22:41:57",
@@ -176,6 +190,7 @@
     {
       "postId": "10108",
       "title": "세비지페인트 파는벤더 없나요???",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "9380",
       "createdAt": "2002-08-08T20:25:25",
@@ -188,6 +203,7 @@
     {
       "postId": "10081",
       "title": "barbed 가죽이 뭐죠?",
+      "categoryLabel": null,
       "author": "mika",
       "authorMemberNo": "4754",
       "createdAt": "2002-08-08T02:23:01",
@@ -200,6 +216,7 @@
     {
       "postId": "10078",
       "title": "UOE 에 관한 간단한..",
+      "categoryLabel": null,
       "author": "yataje",
       "authorMemberNo": "9594",
       "createdAt": "2002-08-08T00:11:24",
@@ -212,6 +229,7 @@
     {
       "postId": "10075",
       "title": "물품 수리에 관하여...",
+      "categoryLabel": null,
       "author": "yataje",
       "authorMemberNo": "9594",
       "createdAt": "2002-08-07T23:05:08",
@@ -224,6 +242,7 @@
     {
       "postId": "10073",
       "title": "오늘 울온삿는데요 질문이 좀많내요^^;;",
+      "categoryLabel": null,
       "author": "jepir",
       "authorMemberNo": "10243",
       "createdAt": "2002-08-07T21:52:15",
@@ -236,6 +255,7 @@
     {
       "postId": "10072",
       "title": "쿠폰을 샀는데 궁금한점이...",
+      "categoryLabel": null,
       "author": "dadumbye",
       "authorMemberNo": "9066",
       "createdAt": "2002-08-07T21:29:02",
@@ -248,6 +268,7 @@
     {
       "postId": "10071",
       "title": "발러라이트 베라이트 잉갓 시세는'_'z?",
+      "categoryLabel": null,
       "author": "withplus",
       "authorMemberNo": "2880",
       "createdAt": "2002-08-07T21:19:55",
@@ -260,6 +281,7 @@
     {
       "postId": "10070",
       "title": "카타나랑 브로드 소드 가격에 대한 질문이요 ^^",
+      "categoryLabel": null,
       "author": "ukinong00",
       "authorMemberNo": "4760",
       "createdAt": "2002-08-07T20:44:09",
@@ -272,6 +294,7 @@
     {
       "postId": "10069",
       "title": "스탭에 대한 질문",
+      "categoryLabel": null,
       "author": "송 영관",
       "authorMemberNo": "3673",
       "createdAt": "2002-08-07T19:25:54",
@@ -284,6 +307,7 @@
     {
       "postId": "10066",
       "title": "락픽용 젬제 상자 파는 벤더 아시는 분..",
+      "categoryLabel": null,
       "author": "air2300",
       "authorMemberNo": "3296",
       "createdAt": "2002-08-07T18:00:09",
@@ -296,6 +320,7 @@
     {
       "postId": "10065",
       "title": "레슈 서버 irc 서버 이름 아시는분?",
+      "categoryLabel": null,
       "author": "osirisjr",
       "authorMemberNo": "10153",
       "createdAt": "2002-08-07T17:54:02",
@@ -307,7 +332,8 @@
     },
     {
       "postId": "10064",
-      "title": "[질문]악마에 스킬 아쳐-_-;",
+      "title": "악마에 스킬 아쳐-_-;",
+      "categoryLabel": "질문",
       "author": "fodofong",
       "authorMemberNo": "0",
       "createdAt": "2002-08-07T17:04:49",
@@ -320,6 +346,7 @@
     {
       "postId": "10063",
       "title": "벌크디드 궁금증...",
+      "categoryLabel": null,
       "author": "pjw114",
       "authorMemberNo": "9280",
       "createdAt": "2002-08-07T16:40:35",
@@ -332,6 +359,7 @@
     {
       "postId": "10062",
       "title": "벌크디드정보란에 있는거요.",
+      "categoryLabel": null,
       "author": "gundalim",
       "authorMemberNo": "8391",
       "createdAt": "2002-08-07T15:01:32",
@@ -344,6 +372,7 @@
     {
       "postId": "10061",
       "title": "심시티3000 질문..",
+      "categoryLabel": null,
       "author": "FanTa",
       "authorMemberNo": "8412",
       "createdAt": "2002-08-07T14:50:50",
@@ -356,6 +385,7 @@
     {
       "postId": "10060",
       "title": "생선스테이크어디다가 팔죠?",
+      "categoryLabel": null,
       "author": "cosmosv",
       "authorMemberNo": "10226",
       "createdAt": "2002-08-07T14:24:53",
@@ -368,6 +398,7 @@
     {
       "postId": "10056",
       "title": "irc에관한질문을드릴게여!",
+      "categoryLabel": null,
       "author": "Komando",
       "authorMemberNo": "8877",
       "createdAt": "2002-08-07T12:46:31",
@@ -380,6 +411,7 @@
     {
       "postId": "10054",
       "title": "로어 버그로 테임",
+      "categoryLabel": null,
       "author": "osirisjr",
       "authorMemberNo": "10153",
       "createdAt": "2002-08-07T10:43:51",
@@ -392,6 +424,7 @@
     {
       "postId": "10051",
       "title": "집 패치 관련 질문입니다.",
+      "categoryLabel": null,
       "author": "hamagun",
       "authorMemberNo": "4728",
       "createdAt": "2002-08-07T09:14:39",
@@ -404,6 +437,7 @@
     {
       "postId": "10029",
       "title": "팅커링에관한 질문.....",
+      "categoryLabel": null,
       "author": "oopsarena",
       "authorMemberNo": "10135",
       "createdAt": "2002-08-06T18:37:56",
@@ -416,6 +450,7 @@
     {
       "postId": "10026",
       "title": "당벤더 제거하는 명령어좀 알려주세요...",
+      "categoryLabel": null,
       "author": "myth-tamer",
       "authorMemberNo": "294",
       "createdAt": "2002-08-06T16:15:17",
@@ -428,6 +463,7 @@
     {
       "postId": "10025",
       "title": "디텍히든..",
+      "categoryLabel": null,
       "author": "iluvmun",
       "authorMemberNo": "4195",
       "createdAt": "2002-08-06T15:32:51",
@@ -440,6 +476,7 @@
     {
       "postId": "10021",
       "title": "본아머를 만들기 위한 뼈는 어디서 구할수있나요",
+      "categoryLabel": null,
       "author": "yijinyi",
       "authorMemberNo": "10253",
       "createdAt": "2002-08-06T10:43:36",
@@ -452,6 +489,7 @@
     {
       "postId": "10019",
       "title": "새비지 페인터 구할 수 없을까요 ㅠ.ㅠ",
+      "categoryLabel": null,
       "author": "lovely",
       "authorMemberNo": "8502",
       "createdAt": "2002-08-06T07:38:23",
@@ -464,6 +502,7 @@
     {
       "postId": "10018",
       "title": "도둑을 키워볼까하는데 스킬좀봐주세요",
+      "categoryLabel": null,
       "author": "kaizer",
       "authorMemberNo": "9294",
       "createdAt": "2002-08-06T07:20:31",
@@ -476,6 +515,7 @@
     {
       "postId": "10017",
       "title": "저겨 울티마 초본데요",
+      "categoryLabel": null,
       "author": "jepir",
       "authorMemberNo": "0",
       "createdAt": "2002-08-06T02:53:07",
@@ -488,6 +528,7 @@
     {
       "postId": "10013",
       "title": "블랙스미스가..",
+      "categoryLabel": null,
       "author": "neofunk",
       "authorMemberNo": "9334",
       "createdAt": "2002-08-06T00:17:45",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "10009",
-      "title": "[질문] 보물지도에 관련된질문 -두번째 ^^-",
+      "title": "보물지도에 관련된질문 -두번째 ^^-",
+      "categoryLabel": "질문",
       "author": "rkwmdi",
       "authorMemberNo": "9435",
       "createdAt": "2002-08-05T23:01:29",
@@ -512,6 +554,7 @@
     {
       "postId": "14059",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -524,6 +567,7 @@
     {
       "postId": "14061",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -536,6 +580,7 @@
     {
       "postId": "14063",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -548,6 +593,7 @@
     {
       "postId": "14071",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -560,6 +606,7 @@
     {
       "postId": "14076",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -572,6 +619,7 @@
     {
       "postId": "14077",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -584,6 +632,7 @@
     {
       "postId": "14078",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
@@ -596,6 +645,7 @@
     {
       "postId": "14080",
       "title": "(제목 없음)",
+      "categoryLabel": null,
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",

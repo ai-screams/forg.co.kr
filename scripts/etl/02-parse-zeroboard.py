@@ -161,6 +161,32 @@ def find_title(soup: BeautifulSoup) -> str | None:
     return None
 
 
+_CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
+
+
+def split_category_prefix(raw_title: str) -> tuple[str | None, str]:
+    """Extract a leading `[xxx]` category marker from a Zeroboard title.
+
+    Zeroboard posters routinely prepend a Korean tag like `[질문]`, `[자료]`,
+    `[공지]`, `[울온외]` to surface the post's intent in board listings.
+    Capture it as a separate field so listings can render it as a badge
+    while the canonical `title` stays clean. Inner content is bounded
+    to 12 chars so we don't accidentally swallow something that just
+    happens to start with `[` (long English bracketed phrases, etc.).
+
+    Returns `(category_label_or_None, stripped_title)`.
+    """
+    m = _CATEGORY_PREFIX_RE.match(raw_title)
+    if not m:
+        return None, raw_title.strip()
+    label = m.group(1).strip()
+    rest = m.group(2).strip()
+    if not label or not rest:
+        # `[xxx]` with no body, or empty bracket — keep title as-is.
+        return None, raw_title.strip()
+    return label, rest
+
+
 def find_meta_font(soup: BeautifulSoup) -> Tag | None:
     """The post's meta line lives in a Verdana 10px <font> containing 'write by'."""
     for font in soup.find_all("font"):
@@ -345,7 +371,8 @@ def parse_one(html: str, *, board: str, post_id: str, captured_at: str) -> Post:
 
     soup = BeautifulSoup(html, "lxml")
 
-    title = find_title(soup) or ""
+    raw_title = find_title(soup) or ""
+    category_label, title = split_category_prefix(raw_title)
     meta_font = find_meta_font(soup)
     meta = extract_meta(meta_font) if meta_font else {
         "author": None, "member_no": None, "homepage": None, "created_at": None,
@@ -390,6 +417,7 @@ def parse_one(html: str, *, board: str, post_id: str, captured_at: str) -> Post:
         boardKr=board,  # P1.3 will replace with localised name from src/lib/boards.ts
         postId=post_id,
         title=title or "(제목 없음)",
+        categoryLabel=category_label,
         bodyHtml=body_html,
         bodyText=body_text or " ",
         author=meta["author"] or "anonymous",

@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "946",
   "title": "Pacific 샤드가 왜 퍼플20을 위한 테스트 샤드로 쓰여졌는가?",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"><p>한 유저가 OSI에게 왜 퍼플20을 위해 퍼시픽샤드가 쓰여졌는지를 물었습니다.<br><br>그에대한 답변으로 리드 서버 프로그래머 MrTact에 의하면 현재 테스트서버는 여러개가 있는게 그중 몇개는 동부에 있고 몇개는 서부에 있다고 합니다. 그 테스트샤드중 Test Shard 3 는 새 하드웨어를 장착해 퍼플20을 테스트하고있었는데, 새 하드웨어에 의해 발생한 문제로 인해 Test Shard 4로 샤드를 옮겼다고 합니다. <br><br>그 Test Shard 4는 Pacific과 같은 서부에 있어 혹시나 발생할지 모르는 사태를 대비에 효율적으로 백업을 가능하게 하기위해 Pacific 샤드를 가장 처음으로 퍼플20에 적용했었다고 합니다.<br><br>게임에 별 도움은 안되지만 그래도 몰랐던거라 올립니다-_-<br><br>출처: UOSS</p></td></tr></tbody></table>\n",
   "bodyText": "한 유저가 OSI에게 왜 퍼플20을 위해 퍼시픽샤드가 쓰여졌는지를 물었습니다. 그에대한 답변으로 리드 서버 프로그래머 MrTact에 의하면 현재 테스트서버는 여러개가 있는게 그중 몇개는 동부에 있고 몇개는 서부에 있다고 합니다. 그 테스트샤드중 Test Shard 3 는 새 하드웨어를 장착해 퍼플20을 테스트하고있었는데, 새 하드웨어에 의해 발생한 문제로 인해 Test Shard 4로 샤드를 옮겼다고 합니다. 그 Test Shard 4는 Pacific과 같은 서부에 있어 혹시나 발생할지 모르는 사태를 대비에 효율적으로 백업을 가능하게 하기위해 Pacific 샤드를 가장 처음으로 퍼플20에 적용했었다고 합니다. 게임에 별 도움은 안되지만 그래도 몰랐던거라 올립니다-_- 출처: UOSS",
   "author": "suhksb",

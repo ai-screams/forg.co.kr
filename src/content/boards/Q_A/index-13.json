@@ -3,11 +3,12 @@
   "page": 13,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "16471",
       "title": "업글코드 팔아도 상관없나요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-23T04:37:46",
@@ -20,6 +21,7 @@
     {
       "postId": "16470",
       "title": "힘 125일때...",
+      "categoryLabel": null,
       "author": "jokulhaups",
       "authorMemberNo": "18563",
       "createdAt": "2003-02-23T03:36:21",
@@ -32,6 +34,7 @@
     {
       "postId": "16468",
       "title": "도둑 질문입니다.",
+      "categoryLabel": null,
       "author": "hasi12",
       "authorMemberNo": "14650",
       "createdAt": "2003-02-23T02:16:19",
@@ -44,6 +47,7 @@
     {
       "postId": "16466",
       "title": "울온 자체 매크로로요 낚시 f1눌르면 되게 하는거 어떻게 하나요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-23T00:48:11",
@@ -56,6 +60,7 @@
     {
       "postId": "16465",
       "title": "개인밴더 질문이요",
+      "categoryLabel": null,
       "author": "라연",
       "authorMemberNo": "14576",
       "createdAt": "2003-02-23T00:46:10",
@@ -68,6 +73,7 @@
     {
       "postId": "16462",
       "title": "저기 메이스 전사 키우던중에..",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-02-22T22:57:31",
@@ -80,6 +86,7 @@
     {
       "postId": "16461",
       "title": "보물캐려는데 헌터룬북으로는 이제 못캐나요",
+      "categoryLabel": null,
       "author": "레이스",
       "authorMemberNo": "15401",
       "createdAt": "2003-02-22T22:48:59",
@@ -91,7 +98,8 @@
     },
     {
       "postId": "16460",
-      "title": "[울온외] 핸펀관련,,",
+      "title": "핸펀관련,,",
+      "categoryLabel": "울온외",
       "author": "syro",
       "authorMemberNo": "15624",
       "createdAt": "2003-02-22T22:33:18",
@@ -104,6 +112,7 @@
     {
       "postId": "16459",
       "title": "케릭이 접속이 안됍니다",
+      "categoryLabel": null,
       "author": "sp2030",
       "authorMemberNo": "19247",
       "createdAt": "2003-02-22T22:28:55",
@@ -116,6 +125,7 @@
     {
       "postId": "16458",
       "title": "매져리라는 스킬은 뭘해야 오르는거죠?",
+      "categoryLabel": null,
       "author": "모나미",
       "authorMemberNo": "19414",
       "createdAt": "2003-02-22T22:26:12",
@@ -128,6 +138,7 @@
     {
       "postId": "16457",
       "title": "발해 골드 풀풀셋 파는 벤더샵 추천부탁드려요..",
+      "categoryLabel": null,
       "author": "dlwnsahr",
       "authorMemberNo": "0",
       "createdAt": "2003-02-22T22:07:07",
@@ -140,6 +151,7 @@
     {
       "postId": "16455",
       "title": "스샷란에 있는 사진이 안보여요",
+      "categoryLabel": null,
       "author": "ubu99",
       "authorMemberNo": "16082",
       "createdAt": "2003-02-22T21:51:30",
@@ -152,6 +164,7 @@
     {
       "postId": "16454",
       "title": "필살 공격에 대하여!",
+      "categoryLabel": null,
       "author": "muzik373",
       "authorMemberNo": "17452",
       "createdAt": "2003-02-22T21:37:58",
@@ -164,6 +177,7 @@
     {
       "postId": "16453",
       "title": "울온 시작떄 동영상 업에는 방법좀",
+      "categoryLabel": null,
       "author": "mukmok",
       "authorMemberNo": "15199",
       "createdAt": "2003-02-22T21:19:05",
@@ -176,6 +190,7 @@
     {
       "postId": "16450",
       "title": "uoa돌릴때 글자가 깨져서  나오거든요.",
+      "categoryLabel": null,
       "author": "Angelheart",
       "authorMemberNo": "18700",
       "createdAt": "2003-02-22T20:44:42",
@@ -188,6 +203,7 @@
     {
       "postId": "16449",
       "title": "아템개량에 질문",
+      "categoryLabel": null,
       "author": "tankpo",
       "authorMemberNo": "15803",
       "createdAt": "2003-02-22T20:43:47",
@@ -200,6 +216,7 @@
     {
       "postId": "16448",
       "title": "프롭메클돌리는데요.. 악기가 문제가 있네요..",
+      "categoryLabel": null,
       "author": "killlyou",
       "authorMemberNo": "19112",
       "createdAt": "2003-02-22T20:36:30",
@@ -212,6 +229,7 @@
     {
       "postId": "16433",
       "title": "2틀째 되가는 울온....Horrific Beast 이 마법 어디서 구하나요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-22T14:30:32",
@@ -224,6 +242,7 @@
     {
       "postId": "16430",
       "title": "프롭 매클중 악기 교환",
+      "categoryLabel": null,
       "author": "bloodguy1",
       "authorMemberNo": "17201",
       "createdAt": "2003-02-22T13:22:51",
@@ -236,6 +255,7 @@
     {
       "postId": "16428",
       "title": "마구간에 맡긴 동물에 대한 질문입니다.............",
+      "categoryLabel": null,
       "author": "rapter2",
       "authorMemberNo": "15855",
       "createdAt": "2003-02-22T12:30:44",
@@ -248,6 +268,7 @@
     {
       "postId": "16426",
       "title": "방어구중 붙은 레지옵션중..",
+      "categoryLabel": null,
       "author": "cju4943",
       "authorMemberNo": "17315",
       "createdAt": "2003-02-22T12:09:05",
@@ -260,6 +281,7 @@
     {
       "postId": "16425",
       "title": "전사 특수기술이요~",
+      "categoryLabel": null,
       "author": "런투넌",
       "authorMemberNo": "16321",
       "createdAt": "2003-02-22T12:06:41",
@@ -272,6 +294,7 @@
     {
       "postId": "16424",
       "title": "전사 스킬 7개여~~",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-02-22T12:01:20",
@@ -284,6 +307,7 @@
     {
       "postId": "16423",
       "title": "그물 요새 가격 얼마 정도 하나요?",
+      "categoryLabel": null,
       "author": "대칸바투",
       "authorMemberNo": "16921",
       "createdAt": "2003-02-22T11:55:47",
@@ -296,6 +320,7 @@
     {
       "postId": "16422",
       "title": "둠던젼 동서남북 4개의 스위치 이용방법좀",
+      "categoryLabel": null,
       "author": "jnmadd",
       "authorMemberNo": "16218",
       "createdAt": "2003-02-22T11:31:09",
@@ -308,6 +333,7 @@
     {
       "postId": "16421",
       "title": "숨겨진 집자리, 지금 지어지나요?",
+      "categoryLabel": null,
       "author": "ondal",
       "authorMemberNo": "15534",
       "createdAt": "2003-02-22T11:18:50",
@@ -320,6 +346,7 @@
     {
       "postId": "16420",
       "title": "세미레어 스틸",
+      "categoryLabel": null,
       "author": "sylian",
       "authorMemberNo": "14823",
       "createdAt": "2003-02-22T10:22:34",
@@ -332,6 +359,7 @@
     {
       "postId": "16419",
       "title": "안녕하세요 뉴비광부 진인데요^^;",
+      "categoryLabel": null,
       "author": "jin2000s",
       "authorMemberNo": "18559",
       "createdAt": "2003-02-22T09:37:39",
@@ -344,6 +372,7 @@
     {
       "postId": "16418",
       "title": "여러분들은 페링 잘올라요?",
+      "categoryLabel": null,
       "author": "heyu8210",
       "authorMemberNo": "19284",
       "createdAt": "2003-02-22T09:36:55",
@@ -356,6 +385,7 @@
     {
       "postId": "16417",
       "title": "잡상인",
+      "categoryLabel": null,
       "author": "hack100",
       "authorMemberNo": "19423",
       "createdAt": "2003-02-22T09:31:38",
@@ -368,6 +398,7 @@
     {
       "postId": "16338",
       "title": "show skill이 없어졌네요..",
+      "categoryLabel": null,
       "author": "sdwastes",
       "authorMemberNo": "17609",
       "createdAt": "2003-02-20T19:03:08",
@@ -380,6 +411,7 @@
     {
       "postId": "16337",
       "title": "캐릭 만드는 것에 대한 질문입니다..",
+      "categoryLabel": null,
       "author": "serpans",
       "authorMemberNo": "18288",
       "createdAt": "2003-02-20T18:39:33",
@@ -392,6 +424,7 @@
     {
       "postId": "16336",
       "title": "본디드에관해서 질문이요~",
+      "categoryLabel": null,
       "author": "마린",
       "authorMemberNo": "0",
       "createdAt": "2003-02-20T18:35:20",
@@ -404,6 +437,7 @@
     {
       "postId": "16334",
       "title": "양털을 모을 수 있는 곳 좀 알려주세요.",
+      "categoryLabel": null,
       "author": "bloodguy1",
       "authorMemberNo": "17201",
       "createdAt": "2003-02-20T18:33:17",
@@ -416,6 +450,7 @@
     {
       "postId": "16333",
       "title": "팔라딘 스킬...",
+      "categoryLabel": null,
       "author": "Sunshine",
       "authorMemberNo": "16052",
       "createdAt": "2003-02-20T18:13:07",
@@ -428,6 +463,7 @@
     {
       "postId": "16332",
       "title": "울티마 온라인 관련 몇가지 질문..",
+      "categoryLabel": null,
       "author": "diablosv",
       "authorMemberNo": "16032",
       "createdAt": "2003-02-20T18:04:30",
@@ -440,6 +476,7 @@
     {
       "postId": "16331",
       "title": "소드네꾸로가좋을까요마사네꾸로가좋을까요..",
+      "categoryLabel": null,
       "author": "welcoomm",
       "authorMemberNo": "19379",
       "createdAt": "2003-02-20T18:03:53",
@@ -452,6 +489,7 @@
     {
       "postId": "16330",
       "title": "포커스VS 메디...",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-02-20T18:01:54",
@@ -464,6 +502,7 @@
     {
       "postId": "16328",
       "title": "불빛의 밝기가 너무 밝습니다.",
+      "categoryLabel": null,
       "author": "kamionao",
       "authorMemberNo": "17040",
       "createdAt": "2003-02-20T17:53:25",
@@ -476,6 +515,7 @@
     {
       "postId": "16326",
       "title": "무기 옵션 물리적피해에 대해서 궁금한데요..",
+      "categoryLabel": null,
       "author": "chally",
       "authorMemberNo": "18833",
       "createdAt": "2003-02-20T17:00:08",
@@ -488,6 +528,7 @@
     {
       "postId": "16325",
       "title": "화마를 본디드 대게 할려고 하는데....",
+      "categoryLabel": null,
       "author": "krakkm84",
       "authorMemberNo": "15911",
       "createdAt": "2003-02-20T16:48:06",
@@ -500,6 +541,7 @@
     {
       "postId": "16324",
       "title": "동물 명령어 drop 이제 안먹어요?",
+      "categoryLabel": null,
       "author": "krakkm84",
       "authorMemberNo": "15911",
       "createdAt": "2003-02-20T16:44:30",
@@ -512,6 +554,7 @@
     {
       "postId": "16323",
       "title": "UO를 시작하게된 뉴비로써 스킬 조합에 대한 질문 드립니다.",
+      "categoryLabel": null,
       "author": "star1211",
       "authorMemberNo": "17429",
       "createdAt": "2003-02-20T16:29:37",
@@ -524,6 +567,7 @@
     {
       "postId": "16322",
       "title": "네크로에대해서~아나~",
+      "categoryLabel": null,
       "author": "welcoomm",
       "authorMemberNo": "19379",
       "createdAt": "2003-02-20T16:18:59",
@@ -536,6 +580,7 @@
     {
       "postId": "16321",
       "title": "길드스톤에 관하여",
+      "categoryLabel": null,
       "author": "petrarch",
       "authorMemberNo": "17238",
       "createdAt": "2003-02-20T16:05:25",
@@ -548,6 +593,7 @@
     {
       "postId": "16320",
       "title": "집을 가진 상태에서,  새 집을 구했는데....",
+      "categoryLabel": null,
       "author": "김슬기",
       "authorMemberNo": "0",
       "createdAt": "2003-02-20T15:49:22",
@@ -560,6 +606,7 @@
     {
       "postId": "16319",
       "title": "집 무너뜨리고 짓기 관련 질문",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-02-20T15:38:10",
@@ -572,6 +619,7 @@
     {
       "postId": "16318",
       "title": "영어잘하시는분..이거 해석좀..ㅠ.ㅠ",
+      "categoryLabel": null,
       "author": "veldandy",
       "authorMemberNo": "16384",
       "createdAt": "2003-02-20T15:25:37",
@@ -584,6 +632,7 @@
     {
       "postId": "16281",
       "title": "펜슁115를발랏는데요..어디서쳐야..",
+      "categoryLabel": null,
       "author": "welcoomm",
       "authorMemberNo": "19379",
       "createdAt": "2003-02-19T22:07:59",
@@ -596,6 +645,7 @@
     {
       "postId": "16278",
       "title": "코우너나 프렌집의 시큐어문제",
+      "categoryLabel": null,
       "author": "란테르트",
       "authorMemberNo": "18846",
       "createdAt": "2003-02-19T20:38:17",

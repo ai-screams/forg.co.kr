@@ -3,11 +3,12 @@
   "page": 15,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "15978",
-      "title": "[질문]네크로퀘스트 처음시작~",
+      "title": "네크로퀘스트 처음시작~",
+      "categoryLabel": "질문",
       "author": "xlimx",
       "authorMemberNo": "14732",
       "createdAt": "2003-02-15T18:28:45",
@@ -20,6 +21,7 @@
     {
       "postId": "15976",
       "title": "시큐어 상자에 관련한..",
+      "categoryLabel": null,
       "author": "serpans",
       "authorMemberNo": "18288",
       "createdAt": "2003-02-15T17:58:28",
@@ -32,6 +34,7 @@
     {
       "postId": "15974",
       "title": "전사 스킬을 어떻게 올려야할까요??",
+      "categoryLabel": null,
       "author": "woodchuk",
       "authorMemberNo": "15556",
       "createdAt": "2003-02-15T17:06:00",
@@ -44,6 +47,7 @@
     {
       "postId": "15973",
       "title": "힘이10추가 되는 반지가 있는데요..",
+      "categoryLabel": null,
       "author": "moonspir",
       "authorMemberNo": "15136",
       "createdAt": "2003-02-15T17:00:18",
@@ -56,6 +60,7 @@
     {
       "postId": "15972",
       "title": "지금 스텟 버그 있나여.?..ㅠㅠ",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-02-15T16:52:45",
@@ -68,6 +73,7 @@
     {
       "postId": "15971",
       "title": "도와주세요..",
+      "categoryLabel": null,
       "author": "nomaaba",
       "authorMemberNo": "18066",
       "createdAt": "2003-02-15T16:52:17",
@@ -80,6 +86,7 @@
     {
       "postId": "15969",
       "title": "이번패치 에러나는데 어떻해야 하죠..? 게임은 잘되는데.",
+      "categoryLabel": null,
       "author": "nlights",
       "authorMemberNo": "14985",
       "createdAt": "2003-02-15T16:29:04",
@@ -92,6 +99,7 @@
     {
       "postId": "15945",
       "title": "AOS 에서 주는 몇가지들 질문~",
+      "categoryLabel": null,
       "author": "맨수니",
       "authorMemberNo": "18242",
       "createdAt": "2003-02-15T13:09:18",
@@ -104,6 +112,7 @@
     {
       "postId": "15944",
       "title": "네크로스킬...",
+      "categoryLabel": null,
       "author": "smal",
       "authorMemberNo": "18643",
       "createdAt": "2003-02-15T13:01:15",
@@ -115,7 +124,8 @@
     },
     {
       "postId": "15941",
-      "title": "[질문]루나 주변 집터에 대해서",
+      "title": "루나 주변 집터에 대해서",
+      "categoryLabel": "질문",
       "author": "woojehun",
       "authorMemberNo": "16217",
       "createdAt": "2003-02-15T12:22:33",
@@ -128,6 +138,7 @@
     {
       "postId": "15940",
       "title": "UOAM에서 문게이트나 상점, 도시이름이 안나오는데..",
+      "categoryLabel": null,
       "author": "pseudo96",
       "authorMemberNo": "18522",
       "createdAt": "2003-02-15T11:52:01",
@@ -140,6 +151,7 @@
     {
       "postId": "15938",
       "title": "브레스 디드",
+      "categoryLabel": null,
       "author": "sshyeon1",
       "authorMemberNo": "17971",
       "createdAt": "2003-02-15T11:19:51",
@@ -152,6 +164,7 @@
     {
       "postId": "15936",
       "title": "물리저항이 갑자기 -1 로 되버리네요",
+      "categoryLabel": null,
       "author": "노상객",
       "authorMemberNo": "14774",
       "createdAt": "2003-02-15T11:10:59",
@@ -164,6 +177,7 @@
     {
       "postId": "15934",
       "title": "블래스 디드..",
+      "categoryLabel": null,
       "author": "krakkm84",
       "authorMemberNo": "15911",
       "createdAt": "2003-02-15T10:57:36",
@@ -176,6 +190,7 @@
     {
       "postId": "15929",
       "title": "울온외 질문 하나와 울온내 질문 하나..",
+      "categoryLabel": null,
       "author": "ICJJANG",
       "authorMemberNo": "15972",
       "createdAt": "2003-02-15T10:32:40",
@@ -188,6 +203,7 @@
     {
       "postId": "15928",
       "title": "필살기에 관해서 ~~ ``;",
+      "categoryLabel": null,
       "author": "silvercoin",
       "authorMemberNo": "18204",
       "createdAt": "2003-02-15T10:14:27",
@@ -200,6 +216,7 @@
     {
       "postId": "15924",
       "title": "시그니처 만드는 방법 좀 알려주세요",
+      "categoryLabel": null,
       "author": "chally",
       "authorMemberNo": "18833",
       "createdAt": "2003-02-15T10:02:44",
@@ -212,6 +229,7 @@
     {
       "postId": "15920",
       "title": "AOS적용 되믄서 몬스터 들이 더 쎄진거 같던뎅~",
+      "categoryLabel": null,
       "author": "greas5511",
       "authorMemberNo": "14690",
       "createdAt": "2003-02-15T08:44:49",
@@ -224,6 +242,7 @@
     {
       "postId": "15919",
       "title": "급한 질문입니다",
+      "categoryLabel": null,
       "author": "meanhero",
       "authorMemberNo": "19003",
       "createdAt": "2003-02-15T08:35:05",
@@ -236,6 +255,7 @@
     {
       "postId": "15918",
       "title": "매직무기 유용성이 없어지는건가요??",
+      "categoryLabel": null,
       "author": "세롯군",
       "authorMemberNo": "16992",
       "createdAt": "2003-02-15T08:16:53",
@@ -247,7 +267,8 @@
     },
     {
       "postId": "15917",
-      "title": "[질문] 음식 고정보관하고 먹을수 없나요?",
+      "title": "음식 고정보관하고 먹을수 없나요?",
+      "categoryLabel": "질문",
       "author": "inuyasha",
       "authorMemberNo": "14672",
       "createdAt": "2003-02-15T08:04:03",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "15916",
-      "title": "[질문] 아이템 보장기능 아시는분",
+      "title": "아이템 보장기능 아시는분",
+      "categoryLabel": "질문",
       "author": "inuyasha",
       "authorMemberNo": "14672",
       "createdAt": "2003-02-15T07:52:28",
@@ -272,6 +294,7 @@
     {
       "postId": "15915",
       "title": "패치가 제대로 되지 않네요..",
+      "categoryLabel": null,
       "author": "Jack",
       "authorMemberNo": "15017",
       "createdAt": "2003-02-15T07:38:52",
@@ -284,6 +307,7 @@
     {
       "postId": "15914",
       "title": "오늘 패치..",
+      "categoryLabel": null,
       "author": "goehrgkeksl",
       "authorMemberNo": "15052",
       "createdAt": "2003-02-15T07:27:14",
@@ -296,6 +320,7 @@
     {
       "postId": "15913",
       "title": "옛날에 블럭당한 계정을...?",
+      "categoryLabel": null,
       "author": "h2shaha",
       "authorMemberNo": "19180",
       "createdAt": "2003-02-15T06:50:40",
@@ -308,6 +333,7 @@
     {
       "postId": "15910",
       "title": "식물 질문입니다",
+      "categoryLabel": null,
       "author": "manydragon",
       "authorMemberNo": "14864",
       "createdAt": "2003-02-15T04:06:11",
@@ -320,6 +346,7 @@
     {
       "postId": "15908",
       "title": "집 소유한 계정으로 집 지었을시..",
+      "categoryLabel": null,
       "author": "ave801",
       "authorMemberNo": "15795",
       "createdAt": "2003-02-15T02:55:37",
@@ -332,6 +359,7 @@
     {
       "postId": "15906",
       "title": "검은수의에 대한 질문..",
+      "categoryLabel": null,
       "author": "bullet",
       "authorMemberNo": "15242",
       "createdAt": "2003-02-14T23:31:16",
@@ -344,6 +372,7 @@
     {
       "postId": "15905",
       "title": "집지었는데..",
+      "categoryLabel": null,
       "author": "hisu113",
       "authorMemberNo": "18121",
       "createdAt": "2003-02-14T23:14:54",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "15904",
-      "title": "[질문] 계정에 관한 질문인데요..",
+      "title": "계정에 관한 질문인데요..",
+      "categoryLabel": "질문",
       "author": "hi84",
       "authorMemberNo": "19114",
       "createdAt": "2003-02-14T23:05:52",
@@ -368,6 +398,7 @@
     {
       "postId": "15901",
       "title": "집 이동틀에 대한 질문입니다!",
+      "categoryLabel": null,
       "author": "strider_aragon",
       "authorMemberNo": "14595",
       "createdAt": "2003-02-14T22:25:44",
@@ -380,6 +411,7 @@
     {
       "postId": "15900",
       "title": "울온 에이지 오브 쉐도우의 사향이....",
+      "categoryLabel": null,
       "author": "zrovez",
       "authorMemberNo": "19269",
       "createdAt": "2003-02-14T22:07:40",
@@ -392,6 +424,7 @@
     {
       "postId": "15896",
       "title": "집중 스킬이 무엇인가요?",
+      "categoryLabel": null,
       "author": "maberick",
       "authorMemberNo": "15844",
       "createdAt": "2003-02-14T21:48:09",
@@ -404,6 +437,7 @@
     {
       "postId": "15893",
       "title": "타워 맞춤으로 바꾸면 어떻게 돼나요?",
+      "categoryLabel": null,
       "author": "ayn70",
       "authorMemberNo": "17664",
       "createdAt": "2003-02-14T21:25:56",
@@ -416,6 +450,7 @@
     {
       "postId": "15891",
       "title": "텔포타일여~~",
+      "categoryLabel": null,
       "author": "신사장",
       "authorMemberNo": "14621",
       "createdAt": "2003-02-14T21:05:34",
@@ -428,6 +463,7 @@
     {
       "postId": "15889",
       "title": "프렌걸린집 시큐어상자가 안열려요",
+      "categoryLabel": null,
       "author": "란테르트",
       "authorMemberNo": "18846",
       "createdAt": "2003-02-14T20:56:28",
@@ -440,6 +476,7 @@
     {
       "postId": "15887",
       "title": "스텟이 안오릅니다.. 버그인가요??",
+      "categoryLabel": null,
       "author": "cju4943",
       "authorMemberNo": "17315",
       "createdAt": "2003-02-14T20:46:48",
@@ -452,6 +489,7 @@
     {
       "postId": "15886",
       "title": "으음. 포이즈닝 관련 질문인데요.;",
+      "categoryLabel": null,
       "author": "leania",
       "authorMemberNo": "17551",
       "createdAt": "2003-02-14T20:44:08",
@@ -464,6 +502,7 @@
     {
       "postId": "15885",
       "title": "루닉무기 질문",
+      "categoryLabel": null,
       "author": "eispein",
       "authorMemberNo": "18407",
       "createdAt": "2003-02-14T20:41:47",
@@ -476,6 +515,7 @@
     {
       "postId": "15884",
       "title": "AOS패치되고 생긴 버그...",
+      "categoryLabel": null,
       "author": "halford81",
       "authorMemberNo": "17458",
       "createdAt": "2003-02-14T20:25:15",
@@ -488,6 +528,7 @@
     {
       "postId": "15883",
       "title": "집설계중인데요!!",
+      "categoryLabel": null,
       "author": "moonspir",
       "authorMemberNo": "15136",
       "createdAt": "2003-02-14T20:14:45",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "15882",
-      "title": "[울온외] 바이러스 인지 아닌지좀 봐주세요.",
+      "title": "바이러스 인지 아닌지좀 봐주세요.",
+      "categoryLabel": "울온외",
       "author": "Gordon",
       "authorMemberNo": "15191",
       "createdAt": "2003-02-14T19:57:04",
@@ -512,6 +554,7 @@
     {
       "postId": "15881",
       "title": "AOS집짓지////",
+      "categoryLabel": null,
       "author": "신사장",
       "authorMemberNo": "14621",
       "createdAt": "2003-02-14T19:48:28",
@@ -524,6 +567,7 @@
     {
       "postId": "15878",
       "title": "스틸링의 대해서",
+      "categoryLabel": null,
       "author": "백마탄병신",
       "authorMemberNo": "18682",
       "createdAt": "2003-02-14T19:13:23",
@@ -536,6 +580,7 @@
     {
       "postId": "15877",
       "title": "하이딩 아처스킬조합은 어떤가요?",
+      "categoryLabel": null,
       "author": "show2me",
       "authorMemberNo": "14742",
       "createdAt": "2003-02-14T19:07:53",
@@ -548,6 +593,7 @@
     {
       "postId": "15876",
       "title": "검정수의가",
+      "categoryLabel": null,
       "author": "ghkrma",
       "authorMemberNo": "17712",
       "createdAt": "2003-02-14T19:04:40",
@@ -560,6 +606,7 @@
     {
       "postId": "15874",
       "title": "이동틀 설치하는방법",
+      "categoryLabel": null,
       "author": "Dadol2",
       "authorMemberNo": "14989",
       "createdAt": "2003-02-14T19:02:48",
@@ -572,6 +619,7 @@
     {
       "postId": "15873",
       "title": "락된상자에서 물건이 집어집니다.",
+      "categoryLabel": null,
       "author": "spinella",
       "authorMemberNo": "15207",
       "createdAt": "2003-02-14T18:50:28",
@@ -584,6 +632,7 @@
     {
       "postId": "15821",
       "title": "이지유오로 메졀 올리려는데...",
+      "categoryLabel": null,
       "author": "레온하트",
       "authorMemberNo": "15319",
       "createdAt": "2003-02-14T03:32:04",
@@ -596,6 +645,7 @@
     {
       "postId": "15820",
       "title": "질문.....집모형이 총 몇종류에요?",
+      "categoryLabel": null,
       "author": "cy1214",
       "authorMemberNo": "17787",
       "createdAt": "2003-02-14T03:02:12",

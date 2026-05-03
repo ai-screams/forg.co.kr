@@ -3,11 +3,12 @@
   "page": 1,
   "totalPages": 5,
   "totalPosts": 229,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "949",
       "title": "각종 에쿠링들~~",
+      "categoryLabel": null,
       "author": "nets1999",
       "authorMemberNo": "580",
       "createdAt": "2007-10-07T15:58:50",
@@ -20,6 +21,7 @@
     {
       "postId": "948",
       "title": "팔찌 & 반지 들입니다.",
+      "categoryLabel": null,
       "author": "nets1999",
       "authorMemberNo": "580",
       "createdAt": "2007-10-07T15:56:47",
@@ -32,6 +34,7 @@
     {
       "postId": "946",
       "title": "마사용 악세들..",
+      "categoryLabel": null,
       "author": "nets1999",
       "authorMemberNo": "580",
       "createdAt": "2007-10-07T15:00:15",
@@ -44,6 +47,7 @@
     {
       "postId": "945",
       "title": "팔거 2개 세트",
+      "categoryLabel": null,
       "author": "gihans",
       "authorMemberNo": "4959",
       "createdAt": "2007-10-07T13:53:21",
@@ -56,6 +60,7 @@
     {
       "postId": "944",
       "title": "카타나 & 크리스",
+      "categoryLabel": null,
       "author": "vincentvg37",
       "authorMemberNo": "9174",
       "createdAt": "2007-10-05T20:37:38",
@@ -68,6 +73,7 @@
     {
       "postId": "943",
       "title": "아리랑 장터용..",
+      "categoryLabel": null,
       "author": "sternig",
       "authorMemberNo": "5572",
       "createdAt": "2007-10-03T23:45:30",
@@ -80,6 +86,7 @@
     {
       "postId": "941",
       "title": "좀전에 구입한 헤머픽...",
+      "categoryLabel": null,
       "author": "Povar128",
       "authorMemberNo": "3487",
       "createdAt": "2007-10-03T01:42:58",
@@ -92,6 +99,7 @@
     {
       "postId": "940",
       "title": "주전 마법사 무기",
+      "categoryLabel": null,
       "author": "newptboy",
       "authorMemberNo": "7334",
       "createdAt": "2007-10-02T20:07:42",
@@ -104,6 +112,7 @@
     {
       "postId": "939",
       "title": "이반지는 어떤가요?",
+      "categoryLabel": null,
       "author": "kenwpark",
       "authorMemberNo": "4510",
       "createdAt": "2007-09-16T17:31:40",
@@ -116,6 +125,7 @@
     {
       "postId": "938",
       "title": "석궁한번 봐주세요~",
+      "categoryLabel": null,
       "author": "saveme14",
       "authorMemberNo": "8242",
       "createdAt": "2007-09-16T00:28:53",
@@ -128,6 +138,7 @@
     {
       "postId": "937",
       "title": "반지 감정의뢰요~",
+      "categoryLabel": null,
       "author": "auzo0826",
       "authorMemberNo": "3517",
       "createdAt": "2007-09-13T22:50:55",
@@ -140,6 +151,7 @@
     {
       "postId": "935",
       "title": "사냥중나온 반지",
+      "categoryLabel": null,
       "author": "나무꾼",
       "authorMemberNo": "9250",
       "createdAt": "2007-08-29T23:06:26",
@@ -152,6 +164,7 @@
     {
       "postId": "934",
       "title": "몽둥이... 이거 쓸만 한건가요???",
+      "categoryLabel": null,
       "author": "ns0159",
       "authorMemberNo": "8472",
       "createdAt": "2007-08-24T19:17:12",
@@ -164,6 +177,7 @@
     {
       "postId": "933",
       "title": "워포크 감정의뢰합니다.",
+      "categoryLabel": null,
       "author": "소마당",
       "authorMemberNo": "47",
       "createdAt": "2007-08-23T22:44:40",
@@ -176,6 +190,7 @@
     {
       "postId": "932",
       "title": "운칼 만들어본거 (테섭)",
+      "categoryLabel": null,
       "author": "소마당",
       "authorMemberNo": "47",
       "createdAt": "2007-08-20T01:51:39",
@@ -188,6 +203,7 @@
     {
       "postId": "931",
       "title": "운칼 만들어본것(테스트서버;;)",
+      "categoryLabel": null,
       "author": "kokos",
       "authorMemberNo": "4076",
       "createdAt": "2007-08-15T21:27:36",
@@ -200,6 +216,7 @@
     {
       "postId": "930",
       "title": "컥~본글러브 저항이....",
+      "categoryLabel": null,
       "author": "limpossible",
       "authorMemberNo": "301",
       "createdAt": "2007-08-15T17:13:54",
@@ -212,6 +229,7 @@
     {
       "postId": "927",
       "title": "사냥하다나온 팔찌",
+      "categoryLabel": null,
       "author": "cucu",
       "authorMemberNo": "9163",
       "createdAt": "2007-08-03T00:55:55",
@@ -224,6 +242,7 @@
     {
       "postId": "925",
       "title": "최저 마법사 무기",
+      "categoryLabel": null,
       "author": "newptboy",
       "authorMemberNo": "7334",
       "createdAt": "2007-07-27T19:53:16",
@@ -236,6 +255,7 @@
     {
       "postId": "924",
       "title": "이 탈리스만 감정 좀...그리고 사용법도..알려주세요...",
+      "categoryLabel": null,
       "author": "kuroo0",
       "authorMemberNo": "8160",
       "createdAt": "2007-07-24T13:25:46",
@@ -248,6 +268,7 @@
     {
       "postId": "923",
       "title": "카지노에서 7 7 7이 나오면 그날은 운이 좋은날?",
+      "categoryLabel": null,
       "author": "newptboy",
       "authorMemberNo": "7334",
       "createdAt": "2007-07-17T20:29:15",
@@ -260,6 +281,7 @@
     {
       "postId": "920",
       "title": "ring~~  에쿠땀시 빛바랜링",
+      "categoryLabel": null,
       "author": "hasuho1",
       "authorMemberNo": "1262",
       "createdAt": "2007-07-11T16:51:13",
@@ -272,6 +294,7 @@
     {
       "postId": "919",
       "title": "아~ 템머용 팔찌가 드뎌 나오긴했는데 ㅡ.ㅡ",
+      "categoryLabel": null,
       "author": "bibabba",
       "authorMemberNo": "1835",
       "createdAt": "2007-07-10T12:26:22",
@@ -284,6 +307,7 @@
     {
       "postId": "918",
       "title": "뭐여 이건 데체 -_-;;;",
+      "categoryLabel": null,
       "author": "iamamber",
       "authorMemberNo": "829",
       "createdAt": "2007-07-06T08:08:56",
@@ -296,6 +320,7 @@
     {
       "postId": "916",
       "title": "음.. 팔찌 하나.. 뭔가 부족한 느낌;;",
+      "categoryLabel": null,
       "author": "Neilys",
       "authorMemberNo": "4624",
       "createdAt": "2007-06-22T08:53:58",
@@ -308,6 +333,7 @@
     {
       "postId": "915",
       "title": "팔찌임둥",
+      "categoryLabel": null,
       "author": "tkfkdgo",
       "authorMemberNo": "5487",
       "createdAt": "2007-06-20T11:05:15",
@@ -320,6 +346,7 @@
     {
       "postId": "914",
       "title": "전사팔찌인데...",
+      "categoryLabel": null,
       "author": "hyun",
       "authorMemberNo": "8678",
       "createdAt": "2007-06-19T23:13:41",
@@ -332,6 +359,7 @@
     {
       "postId": "912",
       "title": "전사팔찌입니다...",
+      "categoryLabel": null,
       "author": "bibabba",
       "authorMemberNo": "1835",
       "createdAt": "2007-06-19T13:01:16",
@@ -344,6 +372,7 @@
     {
       "postId": "911",
       "title": "오랜만에 질러본 미늘루닉.",
+      "categoryLabel": null,
       "author": "iamamber",
       "authorMemberNo": "829",
       "createdAt": "2007-06-16T16:21:06",
@@ -356,6 +385,7 @@
     {
       "postId": "910",
       "title": "아랫거 보다 더더 약한거...-_-",
+      "categoryLabel": null,
       "author": "hirocon",
       "authorMemberNo": "1961",
       "createdAt": "2007-06-16T08:35:40",
@@ -368,6 +398,7 @@
     {
       "postId": "908",
       "title": "밑에거랑 비슷한 팔찌.. (+ 쓸만한팔찌?)",
+      "categoryLabel": null,
       "author": "NN",
       "authorMemberNo": "8626",
       "createdAt": "2007-06-15T14:07:58",
@@ -380,6 +411,7 @@
     {
       "postId": "907",
       "title": "전사 팔찌.",
+      "categoryLabel": null,
       "author": "ICARUS",
       "authorMemberNo": "22",
       "createdAt": "2007-06-15T10:30:48",
@@ -392,6 +424,7 @@
     {
       "postId": "906",
       "title": "목.머리 감정좀 부탁드립니다.",
+      "categoryLabel": null,
       "author": "lsgpower",
       "authorMemberNo": "990",
       "createdAt": "2007-06-13T13:17:23",
@@ -404,6 +437,7 @@
     {
       "postId": "905",
       "title": "장갑 두점 감정좀 부탁드립니다.",
+      "categoryLabel": null,
       "author": "lsgpower",
       "authorMemberNo": "990",
       "createdAt": "2007-06-13T12:56:32",
@@ -416,6 +450,7 @@
     {
       "postId": "903",
       "title": "완전할순 없지만",
+      "categoryLabel": null,
       "author": "siun",
       "authorMemberNo": "4296",
       "createdAt": "2007-06-07T12:27:47",
@@ -428,6 +463,7 @@
     {
       "postId": "902",
       "title": "에쿠2500개 ...날렸다 ㅜㅜ",
+      "categoryLabel": null,
       "author": "jung",
       "authorMemberNo": "6892",
       "createdAt": "2007-06-06T18:30:32",
@@ -440,6 +476,7 @@
     {
       "postId": "901",
       "title": "갑옷두점 임뷰전이네요..",
+      "categoryLabel": null,
       "author": "ns0159",
       "authorMemberNo": "8472",
       "createdAt": "2007-06-05T09:41:50",
@@ -452,6 +489,7 @@
     {
       "postId": "900",
       "title": "대석궁...",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-06-04T17:40:07",
@@ -464,6 +502,7 @@
     {
       "postId": "899",
       "title": "감정좀 부탁드려용 합성활 입니다.",
+      "categoryLabel": null,
       "author": "ㅋㅋㅋㅋ",
       "authorMemberNo": "7741",
       "createdAt": "2007-06-01T21:28:49",
@@ -476,6 +515,7 @@
     {
       "postId": "898",
       "title": "리프 블레이드",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-05-31T00:11:06",
@@ -488,6 +528,7 @@
     {
       "postId": "897",
       "title": "팔지 감정요;;",
+      "categoryLabel": null,
       "author": "jmjool",
       "authorMemberNo": "587",
       "createdAt": "2007-05-26T02:36:52",
@@ -500,6 +541,7 @@
     {
       "postId": "895",
       "title": "갑옷 몇 점...",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-05-24T21:58:56",
@@ -512,6 +554,7 @@
     {
       "postId": "894",
       "title": "토템한개 감정좀해주세요",
+      "categoryLabel": null,
       "author": "window2233",
       "authorMemberNo": "8647",
       "createdAt": "2007-05-24T21:18:29",
@@ -524,6 +567,7 @@
     {
       "postId": "893",
       "title": "보구토 아놔 진상",
+      "categoryLabel": null,
       "author": "siun",
       "authorMemberNo": "4296",
       "createdAt": "2007-05-23T16:25:44",
@@ -536,6 +580,7 @@
     {
       "postId": "891",
       "title": "여러 활들 감정 부탁드립니다.",
+      "categoryLabel": null,
       "author": "ohenry",
       "authorMemberNo": "2827",
       "createdAt": "2007-05-21T16:55:26",
@@ -548,6 +593,7 @@
     {
       "postId": "890",
       "title": "ornate axe 감정좀~",
+      "categoryLabel": null,
       "author": "kenwpark",
       "authorMemberNo": "4510",
       "createdAt": "2007-05-21T16:16:13",
@@ -560,6 +606,7 @@
     {
       "postId": "889",
       "title": "활좀 감정 부탁 해영~~",
+      "categoryLabel": null,
       "author": "whitewirm",
       "authorMemberNo": "743",
       "createdAt": "2007-05-20T13:41:47",
@@ -572,6 +619,7 @@
     {
       "postId": "888",
       "title": "반지, 팔찌 몇개...",
+      "categoryLabel": null,
       "author": "hirocon",
       "authorMemberNo": "1961",
       "createdAt": "2007-05-17T18:41:52",
@@ -584,6 +632,7 @@
     {
       "postId": "887",
       "title": "좋다 말았네요=_=;;",
+      "categoryLabel": null,
       "author": "hiper",
       "authorMemberNo": "603",
       "createdAt": "2007-05-17T13:47:59",
@@ -596,6 +645,7 @@
     {
       "postId": "886",
       "title": "스크롤 2000장으로 마법책을 만들어 보았습니다.",
+      "categoryLabel": null,
       "author": "danakim",
       "authorMemberNo": "8506",
       "createdAt": "2007-05-16T01:49:14",

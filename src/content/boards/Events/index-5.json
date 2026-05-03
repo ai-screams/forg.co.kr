@@ -3,11 +3,12 @@
   "page": 5,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "305",
-      "title": "[발해] 제27회 문글로우 마시장 공지",
+      "title": "제27회 문글로우 마시장 공지",
+      "categoryLabel": "발해",
       "author": "HikariTakeru",
       "authorMemberNo": "8912",
       "createdAt": "2002-07-30T23:16:01",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "304",
-      "title": "[아리랑]뉴비들을 위한 브리튼에서 사람찾기",
+      "title": "뉴비들을 위한 브리튼에서 사람찾기",
+      "categoryLabel": "아리랑",
       "author": "xionge",
       "authorMemberNo": "7147",
       "createdAt": "2002-07-30T22:36:35",
@@ -31,7 +33,8 @@
     },
     {
       "postId": "303",
-      "title": "[아리랑] 카오스신전 제사. (성지순례3)",
+      "title": "카오스신전 제사. (성지순례3)",
+      "categoryLabel": "아리랑",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-30T22:02:34",
@@ -43,7 +46,8 @@
     },
     {
       "postId": "302",
-      "title": "[발해] 제26회 문글로우 마시장 후기",
+      "title": "제26회 문글로우 마시장 후기",
+      "categoryLabel": "발해",
       "author": "HikariTakeru",
       "authorMemberNo": "8912",
       "createdAt": "2002-07-30T21:02:40",
@@ -55,7 +59,8 @@
     },
     {
       "postId": "301",
-      "title": "[발해] [PM 10시] 제26회 문글로우 마시장 공지",
+      "title": "[PM 10시] 제26회 문글로우 마시장 공지",
+      "categoryLabel": "발해",
       "author": "HikariTakeru",
       "authorMemberNo": "8912",
       "createdAt": "2002-07-27T22:08:39",
@@ -68,6 +73,7 @@
     {
       "postId": "300",
       "title": "성지순례.",
+      "categoryLabel": null,
       "author": "fedung",
       "authorMemberNo": "3077",
       "createdAt": "2002-07-27T17:22:59",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "299",
-      "title": "[발해] 두번째 파티 플레이 공지",
+      "title": "두번째 파티 플레이 공지",
+      "categoryLabel": "발해",
       "author": "nenya",
       "authorMemberNo": "3300",
       "createdAt": "2002-07-26T02:20:26",
@@ -91,7 +98,8 @@
     },
     {
       "postId": "298",
-      "title": "[발해] 첫번째 파티플레이 공지",
+      "title": "첫번째 파티플레이 공지",
+      "categoryLabel": "발해",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-26T00:17:29",
@@ -103,7 +111,8 @@
     },
     {
       "postId": "297",
-      "title": "[아리랑]밑에거 참가할분꼭보세요!!!",
+      "title": "밑에거 참가할분꼭보세요!!!",
+      "categoryLabel": "아리랑",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-24T15:35:18",
@@ -115,7 +124,8 @@
     },
     {
       "postId": "296",
-      "title": "[아리랑] 세번째파티플레이,두번째성지순례 공지",
+      "title": "세번째파티플레이,두번째성지순례 공지",
+      "categoryLabel": "아리랑",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-23T11:44:52",
@@ -127,7 +137,8 @@
     },
     {
       "postId": "295",
-      "title": "[발해] 제25회 문글로우 마시장 후기..",
+      "title": "제25회 문글로우 마시장 후기..",
+      "categoryLabel": "발해",
       "author": "미르-쿨",
       "authorMemberNo": "2346",
       "createdAt": "2002-07-22T23:22:08",
@@ -140,6 +151,7 @@
     {
       "postId": "294",
       "title": "던젼 게이트 이벤트 후기",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-22T22:29:31",
@@ -152,6 +164,7 @@
     {
       "postId": "292",
       "title": "아리랑 던젼 게이트 이벤트 (Arirang Dungeon gate event)",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-20T22:14:33",
@@ -163,7 +176,8 @@
     },
     {
       "postId": "290",
-      "title": "[발해] 제 25회 문글로우 마시장 ^^:",
+      "title": "제 25회 문글로우 마시장 ^^:",
+      "categoryLabel": "발해",
       "author": "미르-쿨",
       "authorMemberNo": "2346",
       "createdAt": "2002-07-20T18:42:33",
@@ -176,6 +190,7 @@
     {
       "postId": "289",
       "title": "제메몹 찾기 이벤트(?!)<발해><시한:지금당장부터 19일 새벽 1시까지>",
+      "categoryLabel": null,
       "author": "kodkiller",
       "authorMemberNo": "1861",
       "createdAt": "2002-07-18T23:28:04",
@@ -188,6 +203,7 @@
     {
       "postId": "288",
       "title": "7월 19일 복권이벤투요!!!",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-07-18T22:19:15",
@@ -200,6 +216,7 @@
     {
       "postId": "287",
       "title": "핫핫 성지순례 이벤트",
+      "categoryLabel": null,
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-18T09:56:25",
@@ -212,6 +229,7 @@
     {
       "postId": "286",
       "title": "아리랑 무소대이벤트",
+      "categoryLabel": null,
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-07-17T21:37:25",
@@ -224,6 +242,7 @@
     {
       "postId": "285",
       "title": "몽뱃 전투대회!!를! -_-<발해> 도그 파이팅(투견)으로 바꾸겠습니다.",
+      "categoryLabel": null,
       "author": "kodkiller",
       "authorMemberNo": "1861",
       "createdAt": "2002-07-17T01:00:23",
@@ -235,7 +254,8 @@
     },
     {
       "postId": "284",
-      "title": "[아리랑] 아주특별한 사냥 이벤트 시작합니다. 6시정각 시작",
+      "title": "아주특별한 사냥 이벤트 시작합니다. 6시정각 시작",
+      "categoryLabel": "아리랑",
       "author": "바위처럼",
       "authorMemberNo": "2981",
       "createdAt": "2002-07-13T17:45:22",
@@ -248,6 +268,7 @@
     {
       "postId": "283",
       "title": "7월 12일 금요일에 무소대 이벤트 나갑니다...",
+      "categoryLabel": null,
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-07-11T20:01:53",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "282",
-      "title": "[아리랑] 7월 13일 저녁 6시 아주 특별한 사냥 이벤트 합니다.",
+      "title": "7월 13일 저녁 6시 아주 특별한 사냥 이벤트 합니다.",
+      "categoryLabel": "아리랑",
       "author": "바위처럼",
       "authorMemberNo": "2981",
       "createdAt": "2002-07-11T19:39:17",
@@ -272,6 +294,7 @@
     {
       "postId": "281",
       "title": "보물 찾기 이벤트 추가",
+      "categoryLabel": null,
       "author": "pyosj",
       "authorMemberNo": "3578",
       "createdAt": "2002-07-11T07:17:51",
@@ -284,6 +307,7 @@
     {
       "postId": "280",
       "title": "자~~~ 복권이벤트 입니다.",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-07-10T22:30:26",
@@ -296,6 +320,7 @@
     {
       "postId": "279",
       "title": "7월 10일 (수요일날)열리는 백볼이벤트",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-09T22:49:37",
@@ -308,6 +333,7 @@
     {
       "postId": "278",
       "title": "오늘 아리랑 배틀로열이벤~~",
+      "categoryLabel": null,
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-07-09T14:29:42",
@@ -320,6 +346,7 @@
     {
       "postId": "277",
       "title": "오늘 죽기 아니면 까무러치기 이벤트",
+      "categoryLabel": null,
       "author": "Dongury",
       "authorMemberNo": "8690",
       "createdAt": "2002-07-08T16:16:03",
@@ -332,6 +359,7 @@
     {
       "postId": "275",
       "title": "죽기 아니면 까무러 치기 이벤트",
+      "categoryLabel": null,
       "author": "Dongury",
       "authorMemberNo": "8690",
       "createdAt": "2002-07-07T22:19:46",
@@ -343,7 +371,8 @@
     },
     {
       "postId": "274",
-      "title": "[아리랑] 오늘 패션쇼 이벤트 합니다~!",
+      "title": "오늘 패션쇼 이벤트 합니다~!",
+      "categoryLabel": "아리랑",
       "author": "바위처럼",
       "authorMemberNo": "2981",
       "createdAt": "2002-07-06T18:36:35",
@@ -356,6 +385,7 @@
     {
       "postId": "273",
       "title": "축구 경기 한번더~~~",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-06T15:19:33",
@@ -367,7 +397,8 @@
     },
     {
       "postId": "272",
-      "title": "[아리랑] 축구이벤트 후기 ^^",
+      "title": "축구이벤트 후기 ^^",
+      "categoryLabel": "아리랑",
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-05T22:43:11",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "271",
-      "title": "[이벤트 제안]Britannia Fast. 2002",
+      "title": "Britannia Fast. 2002",
+      "categoryLabel": "이벤트 제안",
       "author": "크리스티나",
       "authorMemberNo": "2383",
       "createdAt": "2002-07-05T20:50:27",
@@ -392,6 +424,7 @@
     {
       "postId": "270",
       "title": "드디어 내일 백볼 축구경기 이벤트가!!!",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-07-04T17:52:56",
@@ -404,6 +437,7 @@
     {
       "postId": "269",
       "title": "아리랑 大보물 찾기 이벤트 추가 내용",
+      "categoryLabel": null,
       "author": "pyosj",
       "authorMemberNo": "3578",
       "createdAt": "2002-07-04T16:53:09",
@@ -416,6 +450,7 @@
     {
       "postId": "268",
       "title": "이번엔 좀 쏩니다~~",
+      "categoryLabel": null,
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-07-03T13:18:27",
@@ -428,6 +463,7 @@
     {
       "postId": "267",
       "title": "복권이벤트요~~",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-07-01T17:01:07",
@@ -440,6 +476,7 @@
     {
       "postId": "266",
       "title": "패션쇼 이벤트 개최합니다~!",
+      "categoryLabel": null,
       "author": "Beauty~☆",
       "authorMemberNo": "9104",
       "createdAt": "2002-07-01T01:36:26",
@@ -452,6 +489,7 @@
     {
       "postId": "265",
       "title": "아리랑 이벤트 [아주 특별한 사냥]",
+      "categoryLabel": null,
       "author": "바위처럼",
       "authorMemberNo": "2981",
       "createdAt": "2002-06-30T14:22:58",
@@ -464,6 +502,7 @@
     {
       "postId": "264",
       "title": "백볼 축구 경기...",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-29T20:48:40",
@@ -476,6 +515,7 @@
     {
       "postId": "263",
       "title": "아리랑 대 이벤트 ``보물찾기``이벤트 시작합니다.^ ^",
+      "categoryLabel": null,
       "author": "arario",
       "authorMemberNo": "3096",
       "createdAt": "2002-06-29T16:40:43",
@@ -488,6 +528,7 @@
     {
       "postId": "262",
       "title": "일본 플레이어가...",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-29T12:07:00",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "261",
-      "title": "[아리랑] 배틀로열이벤트",
+      "title": "배틀로열이벤트",
+      "categoryLabel": "아리랑",
       "author": "아바타",
       "authorMemberNo": "8595",
       "createdAt": "2002-06-28T18:40:15",
@@ -512,6 +554,7 @@
     {
       "postId": "260",
       "title": "마지막 월드컵 우승 기원 패션쑈~쑈~쑈!!!",
+      "categoryLabel": null,
       "author": "lars99",
       "authorMemberNo": "0",
       "createdAt": "2002-06-28T14:59:39",
@@ -523,7 +566,8 @@
     },
     {
       "postId": "259",
-      "title": "[이벤트] 어제 있었던 무소대 이벤트에 대한 이야기....",
+      "title": "어제 있었던 무소대 이벤트에 대한 이야기....",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-28T12:01:02",
@@ -535,7 +579,8 @@
     },
     {
       "postId": "258",
-      "title": "[아리랑] 배틀로얄 이벤트 계획중...",
+      "title": "배틀로얄 이벤트 계획중...",
+      "categoryLabel": "아리랑",
       "author": "rapel",
       "authorMemberNo": "6415",
       "createdAt": "2002-06-27T15:03:14",
@@ -548,6 +593,7 @@
     {
       "postId": "257",
       "title": "오늘 제 5차 아리랑 무소대 이벤트!!!",
+      "categoryLabel": null,
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-27T00:51:14",
@@ -560,6 +606,7 @@
     {
       "postId": "256",
       "title": "아리랑 대 이벤트 2번째 공모 ^ ^ 보물찾기",
+      "categoryLabel": null,
       "author": "arario",
       "authorMemberNo": "3096",
       "createdAt": "2002-06-26T22:08:32",
@@ -572,6 +619,7 @@
     {
       "postId": "255",
       "title": "백볼이라는 울티마에서의 경기!!",
+      "categoryLabel": null,
       "author": "KataPila",
       "authorMemberNo": "8348",
       "createdAt": "2002-06-26T12:25:54",
@@ -583,7 +631,8 @@
     },
     {
       "postId": "254",
-      "title": "[이벤트] 아리랑 제 5차 무소대 이벤트",
+      "title": "아리랑 제 5차 무소대 이벤트",
+      "categoryLabel": "이벤트",
       "author": "MATRIX",
       "authorMemberNo": "6831",
       "createdAt": "2002-06-26T12:05:12",
@@ -596,6 +645,7 @@
     {
       "postId": "253",
       "title": "대~~ 한민국!!! 제 10회 아리랑 복권이벤트 (당첨 확률조정)",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-06-26T00:56:16",

@@ -3,11 +3,12 @@
   "page": 9,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "87",
       "title": "안녕하세요. 브리타니아 크로니클 그 아홉번째 이벤트입니다.",
+      "categoryLabel": null,
       "author": "kyan74",
       "authorMemberNo": "2727",
       "createdAt": "2002-01-24T03:28:48",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "86",
-      "title": "[발해]제2회 스카라브레 어시장&레어마켓 공지",
+      "title": "제2회 스카라브레 어시장&레어마켓 공지",
+      "categoryLabel": "발해",
       "author": "크리스티나",
       "authorMemberNo": "2383",
       "createdAt": "2002-01-23T18:08:29",
@@ -31,7 +33,8 @@
     },
     {
       "postId": "85",
-      "title": "[호쿠토]Wrong Dungeon 주카족 섬멸작전.",
+      "title": "Wrong Dungeon 주카족 섬멸작전.",
+      "categoryLabel": "호쿠토",
       "author": "SIRL",
       "authorMemberNo": "3493",
       "createdAt": "2002-01-23T18:02:22",
@@ -43,7 +46,8 @@
     },
     {
       "postId": "84",
-      "title": "[발해]제1회 스카라브레 어시장후기.",
+      "title": "제1회 스카라브레 어시장후기.",
+      "categoryLabel": "발해",
       "author": "크리스티나",
       "authorMemberNo": "2383",
       "createdAt": "2002-01-21T15:24:43",
@@ -56,6 +60,7 @@
     {
       "postId": "83",
       "title": "오늘 있을 온겜넷 브리타니아 크로니클 이벤트 공지입니다.",
+      "categoryLabel": null,
       "author": "kyan74",
       "authorMemberNo": "2727",
       "createdAt": "2002-01-19T11:13:41",
@@ -68,6 +73,7 @@
     {
       "postId": "82",
       "title": "시나리오 3: 블랙쏜과 엑소더스 - 권력으로의 추락",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-01-18T21:14:14",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "81",
-      "title": "[발해] 문글로우 제14회 마시장 공지",
+      "title": "문글로우 제14회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-01-18T15:37:49",
@@ -92,6 +99,7 @@
     {
       "postId": "80",
       "title": "시나리오 3: 미어와 주카-제 7화 변화",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-01-15T18:31:04",
@@ -104,6 +112,7 @@
     {
       "postId": "79",
       "title": "시나리오 3: 미어와 주카-제 6화 지옥",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-01-15T15:33:02",
@@ -115,7 +124,8 @@
     },
     {
       "postId": "77",
-      "title": "[발해]제1회 스카라브레 어시장 공지",
+      "title": "제1회 스카라브레 어시장 공지",
+      "categoryLabel": "발해",
       "author": "크리스티나",
       "authorMemberNo": "2383",
       "createdAt": "2002-01-14T17:59:25",
@@ -127,7 +137,8 @@
     },
     {
       "postId": "75",
-      "title": "[발해] 문글로우 제13회 마시장 후기",
+      "title": "문글로우 제13회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-01-14T17:09:48",
@@ -139,7 +150,8 @@
     },
     {
       "postId": "74",
-      "title": "[아리랑 & 발해] 차후 던젼탐험대 배경 스토리 및 공지 사항.",
+      "title": "차후 던젼탐험대 배경 스토리 및 공지 사항.",
+      "categoryLabel": "아리랑 & 발해",
       "author": "Christian",
       "authorMemberNo": "0",
       "createdAt": "2002-01-13T01:15:12",
@@ -151,7 +163,8 @@
     },
     {
       "postId": "73",
-      "title": "[발해] 제 1차 던젼탐험대 후기.",
+      "title": "제 1차 던젼탐험대 후기.",
+      "categoryLabel": "발해",
       "author": "Christian",
       "authorMemberNo": "0",
       "createdAt": "2002-01-13T00:38:59",
@@ -163,7 +176,8 @@
     },
     {
       "postId": "72",
-      "title": "[발해] 문글로우 제13회 마시장 공지",
+      "title": "문글로우 제13회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-01-11T14:57:28",
@@ -175,7 +189,8 @@
     },
     {
       "postId": "71",
-      "title": "[발해] 문글로우 제12회 마시장 후기",
+      "title": "문글로우 제12회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-01-09T20:21:59",
@@ -187,7 +202,8 @@
     },
     {
       "postId": "70",
-      "title": "[호쿠토]제 1회 '돌탁의 기사들' 듀얼 대회",
+      "title": "제 1회 '돌탁의 기사들' 듀얼 대회",
+      "categoryLabel": "호쿠토",
       "author": "SIRL",
       "authorMemberNo": "3493",
       "createdAt": "2002-01-08T01:13:55",
@@ -199,7 +215,8 @@
     },
     {
       "postId": "69",
-      "title": "[발해] 제 1차 던젼탐험대 공지.",
+      "title": "제 1차 던젼탐험대 공지.",
+      "categoryLabel": "발해",
       "author": "Christian",
       "authorMemberNo": "0",
       "createdAt": "2002-01-07T17:22:06",
@@ -211,7 +228,8 @@
     },
     {
       "postId": "67",
-      "title": "[발해] 문글로우 제12회 마시장 공지",
+      "title": "문글로우 제12회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-01-03T11:01:31",
@@ -223,7 +241,8 @@
     },
     {
       "postId": "66",
-      "title": "[발해] 문글로우 제11회 마시장 후기",
+      "title": "문글로우 제11회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-01-02T13:02:48",
@@ -235,7 +254,8 @@
     },
     {
       "postId": "65",
-      "title": "[호쿠토]돌탁의 기사들 - 1월 2일 수요일 퀘스트",
+      "title": "돌탁의 기사들 - 1월 2일 수요일 퀘스트",
+      "categoryLabel": "호쿠토",
       "author": "SIRL",
       "authorMemberNo": "3493",
       "createdAt": "2002-01-01T22:16:23",
@@ -248,6 +268,7 @@
     {
       "postId": "64",
       "title": "시나리오 3: 미르와 주카-제 5화 복수",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-12-29T18:44:04",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "63",
-      "title": "[아리랑]제 5회 문글로우 마시장 공지",
+      "title": "제 5회 문글로우 마시장 공지",
+      "categoryLabel": "아리랑",
       "author": "Death",
       "authorMemberNo": "2295",
       "createdAt": "2001-12-27T21:18:51",
@@ -271,7 +293,8 @@
     },
     {
       "postId": "62",
-      "title": "[발해] 문글로우 제11회 마시장 공지",
+      "title": "문글로우 제11회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-27T18:10:49",
@@ -283,7 +306,8 @@
     },
     {
       "postId": "61",
-      "title": "[발해] 문글로우 제10회 마시장 후기",
+      "title": "문글로우 제10회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-26T13:30:12",
@@ -295,7 +319,8 @@
     },
     {
       "postId": "60",
-      "title": "[발해] 친선 눈덩이 야구 경기.",
+      "title": "친선 눈덩이 야구 경기.",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-23T12:44:20",
@@ -307,7 +332,8 @@
     },
     {
       "postId": "59",
-      "title": "[발해] 문글로우 제10회 마시장 공지",
+      "title": "문글로우 제10회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-20T15:46:05",
@@ -320,6 +346,7 @@
     {
       "postId": "58",
       "title": "시나리오 3: 미르와 주카 -제 4화: 짐승",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-12-20T10:15:41",
@@ -331,7 +358,8 @@
     },
     {
       "postId": "57",
-      "title": "[발해] 문글로우 제9회 마시장 후기",
+      "title": "문글로우 제9회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-19T14:35:13",
@@ -344,6 +372,7 @@
     {
       "postId": "56",
       "title": "시나리오 3: 미르와 주카 -제 3화: 어둠속의 칼소리",
+      "categoryLabel": null,
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-12-14T14:18:07",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "55",
-      "title": "[아리랑] 제 3회 문글로우 마시장 공지",
+      "title": "제 3회 문글로우 마시장 공지",
+      "categoryLabel": "아리랑",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-12-13T16:03:21",
@@ -367,7 +397,8 @@
     },
     {
       "postId": "54",
-      "title": "[발해] 문글로우 제9회 마시장 공지",
+      "title": "문글로우 제9회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-12T14:18:40",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "53",
-      "title": "[발해]8회 마시장 뒷풀이 (데스타드편..)",
+      "title": "8회 마시장 뒷풀이 (데스타드편..)",
+      "categoryLabel": "발해",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-12T04:08:31",
@@ -391,7 +423,8 @@
     },
     {
       "postId": "52",
-      "title": "[발해] 8회 문글로우 마시장 후기",
+      "title": "8회 문글로우 마시장 후기",
+      "categoryLabel": "발해",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-12T02:50:08",
@@ -403,7 +436,8 @@
     },
     {
       "postId": "51",
-      "title": "[발해] 7회 문글로우 마시장 후기",
+      "title": "7회 문글로우 마시장 후기",
+      "categoryLabel": "발해",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-11T03:52:29",
@@ -415,7 +449,8 @@
     },
     {
       "postId": "50",
-      "title": "[아리랑] 1회 문글로우 마시장 후기",
+      "title": "1회 문글로우 마시장 후기",
+      "categoryLabel": "아리랑",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-11T02:09:54",
@@ -427,7 +462,8 @@
     },
     {
       "postId": "49",
-      "title": "[시나리오 3]미르와 주카-제 2화 도전",
+      "title": "미르와 주카-제 2화 도전",
+      "categoryLabel": "시나리오 3",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-12-07T12:25:21",
@@ -439,7 +475,8 @@
     },
     {
       "postId": "48",
-      "title": "[아리랑] 제 2회 문글로우 마시장 공지",
+      "title": "제 2회 문글로우 마시장 공지",
+      "categoryLabel": "아리랑",
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-12-07T10:10:50",
@@ -451,7 +488,8 @@
     },
     {
       "postId": "47",
-      "title": "[이벤트정보] \" 온게임넷 브리타니아 크로니클 \"",
+      "title": "\" 온게임넷 브리타니아 크로니클 \"",
+      "categoryLabel": "이벤트정보",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-07T02:32:43",
@@ -463,7 +501,8 @@
     },
     {
       "postId": "46",
-      "title": "[발해] 문글로우 제8회 마시장 공지",
+      "title": "문글로우 제8회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-12-06T20:21:56",
@@ -475,7 +514,8 @@
     },
     {
       "postId": "45",
-      "title": "[아리랑] 제 1회 문글로우 마시장 공지",
+      "title": "제 1회 문글로우 마시장 공지",
+      "categoryLabel": "아리랑",
       "author": "미르쿨",
       "authorMemberNo": "2346",
       "createdAt": "2001-12-01T16:17:48",
@@ -487,7 +527,8 @@
     },
     {
       "postId": "44",
-      "title": "[발해] 문글로우 제7회 마시장 공지",
+      "title": "문글로우 제7회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-30T13:20:57",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "43",
-      "title": "[발해] 문글로우 제6회 마시장 후기",
+      "title": "문글로우 제6회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-27T16:55:24",
@@ -511,7 +553,8 @@
     },
     {
       "postId": "41",
-      "title": "[발해] 문글로우 제5회 마시장 후기",
+      "title": "문글로우 제5회 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-21T19:51:10",
@@ -523,7 +566,8 @@
     },
     {
       "postId": "35",
-      "title": "[새 이벤트]미르와 주카 - 시작",
+      "title": "미르와 주카 - 시작",
+      "categoryLabel": "새 이벤트",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-11-20T10:20:21",
@@ -535,7 +579,8 @@
     },
     {
       "postId": "34",
-      "title": "[발해] 문글로우 제5회 마시장 공지",
+      "title": "문글로우 제5회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-15T12:56:30",
@@ -547,7 +592,8 @@
     },
     {
       "postId": "32",
-      "title": "[발해] 문글로우 제4회 마시장 공지",
+      "title": "문글로우 제4회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-08T13:44:37",
@@ -559,7 +605,8 @@
     },
     {
       "postId": "31",
-      "title": "[발해] 11월 10일 토요일 오후 9시에 합동 결혼식",
+      "title": "11월 10일 토요일 오후 9시에 합동 결혼식",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-07T11:42:37",
@@ -571,7 +618,8 @@
     },
     {
       "postId": "30",
-      "title": "[발해] 문글로우 마시장 일시 변경 안내.",
+      "title": "문글로우 마시장 일시 변경 안내.",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-07T11:29:10",
@@ -583,7 +631,8 @@
     },
     {
       "postId": "29",
-      "title": "[발해] 문글로우 세번째 마시장 후기",
+      "title": "문글로우 세번째 마시장 후기",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2001-11-05T17:40:42",
@@ -595,7 +644,8 @@
     },
     {
       "postId": "27",
-      "title": "[이벤트시나리오] 제 5화 동기 -로드 블랙쏜의 등장",
+      "title": "제 5화 동기 -로드 블랙쏜의 등장",
+      "categoryLabel": "이벤트시나리오",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2001-11-01T13:01:31",

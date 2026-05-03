@@ -43,7 +43,15 @@ export interface Post {
   /** Post id within the board (`no=` / `wr_id=`). */
   postId: string;
 
+  /** Title with the leading `[xxx]` category prefix stripped. */
   title: string;
+  /**
+   * Korean category marker the original poster prepended to the title
+   * (e.g. `[질문]`, `[자료]`, `[공지]`). Stripped from `title` and stored
+   * separately so listings can render it as a badge while keeping the
+   * canonical title clean. Null when the original title had no prefix.
+   */
+  categoryLabel: string | null;
   bodyHtml: string;
   /** Plain-text projection of bodyHtml for search indexing and previews. */
   bodyText: string;
@@ -84,6 +92,9 @@ export interface Post {
 export interface BoardIndexEntry {
   postId: string;
   title: string;
+  /** Mirrors `Post.categoryLabel` so listing pages can show the badge
+   *  without having to load the full Post JSON. */
+  categoryLabel: string | null;
   author: string;
   authorMemberNo: string | null;
   createdAt: string;

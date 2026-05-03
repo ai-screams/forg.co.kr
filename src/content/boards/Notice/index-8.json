@@ -3,11 +3,12 @@
   "page": 8,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "631",
       "title": "AoS의 발매일과 가격",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-05T17:29:31",
@@ -20,6 +21,7 @@
     {
       "postId": "630",
       "title": "5주년 당첨자 인터뷰",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-05T08:55:31",
@@ -32,6 +34,7 @@
     {
       "postId": "629",
       "title": "테일러 벌크디드중 스파인가죽과 노말가죽 보상품에 문제가 있습니다.",
+      "categoryLabel": null,
       "author": "cbm31",
       "authorMemberNo": "4564",
       "createdAt": "2002-10-05T02:02:14",
@@ -44,6 +47,7 @@
     {
       "postId": "628",
       "title": "[ 집의 리플불가에 주의 ]",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-04T20:02:31",
@@ -56,6 +60,7 @@
     {
       "postId": "627",
       "title": "시나리오5 3주차 퀘스트에 관해서",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-04T19:39:57",
@@ -68,6 +73,7 @@
     {
       "postId": "626",
       "title": "10월5일까지 BOD교환란 업뎃 하지 않는 분은",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-03T20:28:18",
@@ -80,6 +86,7 @@
     {
       "postId": "625",
       "title": "시나리오 3 스케쥴 & 중대한 버그 수정",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-10-02T15:37:00",
@@ -92,6 +99,7 @@
     {
       "postId": "624",
       "title": "UO5주년 기념 케익에 관한",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-02T09:47:49",
@@ -104,6 +112,7 @@
     {
       "postId": "623",
       "title": "울티마 온라인 5주년 기념 이벤트 당첨자 공지",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-02T09:38:30",
@@ -116,6 +125,7 @@
     {
       "postId": "622",
       "title": "시나리오5 3주차 스케쥴및 변경점",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-10-02T07:55:02",
@@ -128,6 +138,7 @@
     {
       "postId": "621",
       "title": "아리랑 유저분들에게 부탁드리겠습니다-9-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-30T15:24:43",
@@ -140,6 +151,7 @@
     {
       "postId": "620",
       "title": "좌측메뉴에 UO퀘스트가 신설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-29T05:56:43",
@@ -152,6 +164,7 @@
     {
       "postId": "618",
       "title": "Dreamwiz메일로 가입하시는분은....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-28T09:04:57",
@@ -164,6 +177,7 @@
     {
       "postId": "617",
       "title": "4년차올드비보상의 룬북색 이미지...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-27T13:39:27",
@@ -176,6 +190,7 @@
     {
       "postId": "616",
       "title": "케익 20종류+Up!의 이미지입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-27T12:34:09",
@@ -188,6 +203,7 @@
     {
       "postId": "615",
       "title": "Age of Shadows 소식",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-27T07:43:47",
@@ -200,6 +216,7 @@
     {
       "postId": "614",
       "title": "몇가지 최신뉴스 모음",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-26T21:24:30",
@@ -212,6 +229,7 @@
     {
       "postId": "613",
       "title": "개미시나리오에 대한 보고서 2번째",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-26T15:40:54",
@@ -224,6 +242,7 @@
     {
       "postId": "612",
       "title": "9월26일자 패치내용",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-26T13:01:26",
@@ -236,6 +255,7 @@
     {
       "postId": "610",
       "title": "시나리오5 2주차 내용그림소개",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-26T12:28:53",
@@ -248,6 +268,7 @@
     {
       "postId": "609",
       "title": "시나리오5 2주차 스케쥴수정",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-26T08:17:33",
@@ -260,6 +281,7 @@
     {
       "postId": "608",
       "title": "3단계집시스템도입 연기소식",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-25T18:12:21",
@@ -272,6 +294,7 @@
     {
       "postId": "606",
       "title": "[ 클라이언트 패치 3.0.8.q ]",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-25T06:40:28",
@@ -284,6 +307,7 @@
     {
       "postId": "605",
       "title": "새로운 샤드 Lake Austin",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-20T18:32:58",
@@ -296,6 +320,7 @@
     {
       "postId": "604",
       "title": "몇가지 공지 묶음(재수정)",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-20T12:13:33",
@@ -308,6 +333,7 @@
     {
       "postId": "603",
       "title": "개미시나리오에 대한 보고서-9-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-19T09:49:48",
@@ -320,6 +346,7 @@
     {
       "postId": "602",
       "title": "추석 이벤트",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-19T08:50:09",
@@ -332,6 +359,7 @@
     {
       "postId": "601",
       "title": "OX 퀴즈 이벤트 (2회)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-19T08:48:20",
@@ -344,6 +372,7 @@
     {
       "postId": "600",
       "title": "시나리오 5에서의 개미의 등장 [수정]",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-18T21:14:55",
@@ -356,6 +385,7 @@
     {
       "postId": "599",
       "title": "서버 문제로 인해 배경음악은 삭제됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-18T17:57:20",
@@ -368,6 +398,7 @@
     {
       "postId": "598",
       "title": "울티마 온라인 5주년 기념 이벤트!",
+      "categoryLabel": null,
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-09-18T13:18:19",
@@ -380,6 +411,7 @@
     {
       "postId": "597",
       "title": "시나리오5 진행 제 1주",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-17T14:46:09",
@@ -392,6 +424,7 @@
     {
       "postId": "596",
       "title": "시나리오 연기 추가사항",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-12T16:10:42",
@@ -404,6 +437,7 @@
     {
       "postId": "595",
       "title": "시나리오5 제1주의 연기",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-12T06:39:00",
@@ -416,6 +450,7 @@
     {
       "postId": "594",
       "title": "하우스시스템 데이터베이스와의 접속에 관해서",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-11T07:06:00",
@@ -428,6 +463,7 @@
     {
       "postId": "593",
       "title": "이번 시나리오의 시작에 관한 짧은 소식",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-10T22:02:54",
@@ -440,6 +476,7 @@
     {
       "postId": "592",
       "title": "[ 클라이언트 패치 3.0.8.o  ]",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-10T09:01:34",
@@ -452,6 +489,7 @@
     {
       "postId": "591",
       "title": "테스트 샤드의 집과 관련된 버그",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-08T07:25:04",
@@ -464,6 +502,7 @@
     {
       "postId": "590",
       "title": "잘못된 맞춤집 관련 소문에 대한 정정",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-07T23:16:49",
@@ -476,6 +515,7 @@
     {
       "postId": "589",
       "title": "집의 자동리플레쉬 종료연기",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-07T20:55:10",
@@ -488,6 +528,7 @@
     {
       "postId": "588",
       "title": "시나리오5의 식물시스템 업데이트",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-07T20:31:32",
@@ -500,6 +541,7 @@
     {
       "postId": "587",
       "title": "9월7일자 UOAssist 패치내용",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-07T10:46:23",
@@ -512,6 +554,7 @@
     {
       "postId": "586",
       "title": "새로운 하우징시스템에 대해서 Vex와 인텨뷰",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-07T10:39:22",
@@ -524,6 +567,7 @@
     {
       "postId": "585",
       "title": "현재 집 짓기와 집 양도 불가",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-07T07:52:02",
@@ -536,6 +580,7 @@
     {
       "postId": "584",
       "title": "9월6일자 UOAssist 패치내용",
+      "categoryLabel": null,
       "author": "HoHo",
       "authorMemberNo": "11455",
       "createdAt": "2002-09-06T20:05:44",
@@ -548,6 +593,7 @@
     {
       "postId": "583",
       "title": "O,X 퀴즈 문제!",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-05T12:41:04",
@@ -560,6 +606,7 @@
     {
       "postId": "582",
       "title": "GM과 함께하는 In-game 놀이마당",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-09-05T11:31:49",
@@ -572,6 +619,7 @@
     {
       "postId": "581",
       "title": "짐말이나 짐라마에 대한 중대한 버그",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-09-04T15:47:45",
@@ -584,6 +632,7 @@
     {
       "postId": "580",
       "title": "UO 수기 공모!",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-08-29T08:50:42",
@@ -596,6 +645,7 @@
     {
       "postId": "579",
       "title": "울티마 온라인 팬사이트 大 모집",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-08-28T08:53:55",

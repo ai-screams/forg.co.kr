@@ -3,11 +3,12 @@
   "page": 4,
   "totalPages": 10,
   "totalPosts": 477,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "360",
-      "title": "[아리랑] 복권이벤트 11월 22일",
+      "title": "복권이벤트 11월 22일",
+      "categoryLabel": "아리랑",
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-11-21T16:40:47",
@@ -19,7 +20,8 @@
     },
     {
       "postId": "359",
-      "title": "[발해] 문글로우 제29회 마시장 공지",
+      "title": "문글로우 제29회 마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-11-20T16:50:04",
@@ -31,7 +33,8 @@
     },
     {
       "postId": "358",
-      "title": "[후기]아리랑 복권이벤트",
+      "title": "아리랑 복권이벤트",
+      "categoryLabel": "후기",
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-11-14T21:47:54",
@@ -43,7 +46,8 @@
     },
     {
       "postId": "357",
-      "title": "[발해] 문글로우 제28회  마시장 공지",
+      "title": "문글로우 제28회  마시장 공지",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-11-14T15:33:32",
@@ -55,7 +59,8 @@
     },
     {
       "postId": "356",
-      "title": "[확정]아리랑 복권이벤트!",
+      "title": "아리랑 복권이벤트!",
+      "categoryLabel": "확정",
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-11-13T21:22:58",
@@ -67,7 +72,8 @@
     },
     {
       "postId": "354",
-      "title": "[컴백스페셜] 아리랑 이벤트~~",
+      "title": "아리랑 이벤트~~",
+      "categoryLabel": "컴백스페셜",
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-11-12T23:29:56",
@@ -79,7 +85,8 @@
     },
     {
       "postId": "353",
-      "title": "[발해] 문글로우 마시장 거듭나기.",
+      "title": "문글로우 마시장 거듭나기.",
+      "categoryLabel": "발해",
       "author": "Bogus",
       "authorMemberNo": "2263",
       "createdAt": "2002-11-11T11:27:56",
@@ -92,6 +99,7 @@
     {
       "postId": "352",
       "title": "소노마 뉴비 이벤트를 개최할까합니다.....",
+      "categoryLabel": null,
       "author": "byunyoun",
       "authorMemberNo": "9747",
       "createdAt": "2002-11-02T19:24:54",
@@ -104,6 +112,7 @@
     {
       "postId": "351",
       "title": "제 10회 아리랑 던젼탐험대 - 트린식 대탈환!!!",
+      "categoryLabel": null,
       "author": "Christian",
       "authorMemberNo": "0",
       "createdAt": "2002-11-01T18:46:47",
@@ -116,6 +125,7 @@
     {
       "postId": "350",
       "title": "Lake Austin Shard 한국인 길드 창설과 안내",
+      "categoryLabel": null,
       "author": "suhksb",
       "authorMemberNo": "12032",
       "createdAt": "2002-10-23T22:33:20",
@@ -128,6 +138,7 @@
     {
       "postId": "349",
       "title": "13차 파티플레이 공지입니다<수정>",
+      "categoryLabel": null,
       "author": "◀eXodUs▷",
       "authorMemberNo": "2058",
       "createdAt": "2002-10-20T22:42:16",
@@ -140,6 +151,7 @@
     {
       "postId": "346",
       "title": "5주년기념으로 받은 타워 집들이..",
+      "categoryLabel": null,
       "author": "cocosara",
       "authorMemberNo": "10524",
       "createdAt": "2002-10-13T11:38:52",
@@ -152,6 +164,7 @@
     {
       "postId": "345",
       "title": "울온 10월 셋째 주 UO 수기 공모.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-07T08:42:45",
@@ -164,6 +177,7 @@
     {
       "postId": "344",
       "title": "울온 제 3회 OX퀴즈 이벤트",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-10-07T08:42:22",
@@ -176,6 +190,7 @@
     {
       "postId": "343",
       "title": "파티플레이 12차 공지",
+      "categoryLabel": null,
       "author": "datgiri",
       "authorMemberNo": "8301",
       "createdAt": "2002-10-05T13:48:17",
@@ -187,7 +202,8 @@
     },
     {
       "postId": "342",
-      "title": "[아리랑] 드래곤 데스메치 이벤트 두번째 잡담",
+      "title": "드래곤 데스메치 이벤트 두번째 잡담",
+      "categoryLabel": "아리랑",
       "author": "redangwel101",
       "authorMemberNo": "8816",
       "createdAt": "2002-10-04T10:36:19",
@@ -199,7 +215,8 @@
     },
     {
       "postId": "341",
-      "title": "[아리랑]자그마한 이벤트를 할까 합니다",
+      "title": "자그마한 이벤트를 할까 합니다",
+      "categoryLabel": "아리랑",
       "author": "redangwel101",
       "authorMemberNo": "8816",
       "createdAt": "2002-10-02T11:19:44",
@@ -211,7 +228,8 @@
     },
     {
       "postId": "340",
-      "title": "[깜장토끼가게] 이벤트 대진표~* (마지막 공지)",
+      "title": "이벤트 대진표~* (마지막 공지)",
+      "categoryLabel": "깜장토끼가게",
       "author": "에쥬마마",
       "authorMemberNo": "8308",
       "createdAt": "2002-09-28T14:06:23",
@@ -223,7 +241,8 @@
     },
     {
       "postId": "339",
-      "title": "[깜장토끼가게 창립1주년] 이벤트 선물 목록공개",
+      "title": "이벤트 선물 목록공개",
+      "categoryLabel": "깜장토끼가게 창립1주년",
       "author": "에쥬마마",
       "authorMemberNo": "8308",
       "createdAt": "2002-09-25T22:02:45",
@@ -235,7 +254,8 @@
     },
     {
       "postId": "338",
-      "title": "[깜장토끼 창립 1주년] 이벤참가등록과 이벤진행방식 (발해)",
+      "title": "이벤참가등록과 이벤진행방식 (발해)",
+      "categoryLabel": "깜장토끼 창립 1주년",
       "author": "에쥬마마",
       "authorMemberNo": "8308",
       "createdAt": "2002-09-24T01:02:44",
@@ -247,7 +267,8 @@
     },
     {
       "postId": "337",
-      "title": "[깜장토끼가게 창립1주년] 이벤트 선물 + 장소 공개(발해)",
+      "title": "이벤트 선물 + 장소 공개(발해)",
+      "categoryLabel": "깜장토끼가게 창립1주년",
       "author": "에쥬마마",
       "authorMemberNo": "8308",
       "createdAt": "2002-09-24T00:33:36",
@@ -259,7 +280,8 @@
     },
     {
       "postId": "336",
-      "title": "[발해] 9월 3차 배틀로얄 대회 및 배틀로얄 왕중왕전 공지입니다.",
+      "title": "9월 3차 배틀로얄 대회 및 배틀로얄 왕중왕전 공지입니다.",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-09-22T22:44:10",
@@ -272,6 +294,7 @@
     {
       "postId": "335",
       "title": "파티플레이 10차 공지",
+      "categoryLabel": null,
       "author": "◀eXodUs▷",
       "authorMemberNo": "2058",
       "createdAt": "2002-09-17T23:55:18",
@@ -284,6 +307,7 @@
     {
       "postId": "333",
       "title": "파티플레이 9차 공지",
+      "categoryLabel": null,
       "author": "◀eXodUs▷",
       "authorMemberNo": "2058",
       "createdAt": "2002-09-11T00:06:32",
@@ -295,7 +319,8 @@
     },
     {
       "postId": "332",
-      "title": "[공식아리랑]백볼이벤트",
+      "title": "백볼이벤트",
+      "categoryLabel": "공식아리랑",
       "author": "주니",
       "authorMemberNo": "7665",
       "createdAt": "2002-09-10T09:32:44",
@@ -307,7 +332,8 @@
     },
     {
       "postId": "331",
-      "title": "[발해] 9월 2차 배틀로얄 대회에 관한 자세한 사항입니다.",
+      "title": "9월 2차 배틀로얄 대회에 관한 자세한 사항입니다.",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-09-09T23:40:03",
@@ -319,7 +345,8 @@
     },
     {
       "postId": "330",
-      "title": "[발해] 9월 2차 배틀로얄 대회 접수 받습니다.",
+      "title": "9월 2차 배틀로얄 대회 접수 받습니다.",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-09-08T22:12:16",
@@ -332,6 +359,7 @@
     {
       "postId": "329",
       "title": "8차 파티플레이 공지",
+      "categoryLabel": null,
       "author": "◀eXodUs▷",
       "authorMemberNo": "2058",
       "createdAt": "2002-09-06T14:47:38",
@@ -343,7 +371,8 @@
     },
     {
       "postId": "328",
-      "title": "[공식아리랑]RPG듀얼이벤트",
+      "title": "RPG듀얼이벤트",
+      "categoryLabel": "공식아리랑",
       "author": "주니",
       "authorMemberNo": "7665",
       "createdAt": "2002-09-01T20:11:34",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "327",
-      "title": "[발해] 2차 배틀로얄 연기합니다 =_=",
+      "title": "2차 배틀로얄 연기합니다 =_=",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-29T00:51:14",
@@ -368,6 +398,7 @@
     {
       "postId": "326",
       "title": "7차 파티플레이 공지.",
+      "categoryLabel": null,
       "author": "◀eXodUs▷",
       "authorMemberNo": "2058",
       "createdAt": "2002-08-28T23:50:55",
@@ -379,7 +410,8 @@
     },
     {
       "postId": "325",
-      "title": "[발해] 2차 배틀로얄 대회 참가신청 받습니다. 그리고 이벤트 진행방식도 기재했습니다.",
+      "title": "2차 배틀로얄 대회 참가신청 받습니다. 그리고 이벤트 진행방식도 기재했습니다.",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-26T23:37:24",
@@ -391,7 +423,8 @@
     },
     {
       "postId": "323",
-      "title": "[발해] 배틀로얄 이벤트 참가자 목록!!",
+      "title": "배틀로얄 이벤트 참가자 목록!!",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-25T00:54:03",
@@ -404,6 +437,7 @@
     {
       "postId": "322",
       "title": "아리랑 공식 RPG듀얼이벤트!!!",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-08-23T15:29:04",
@@ -415,7 +449,8 @@
     },
     {
       "postId": "321",
-      "title": "[발해] 배틀로얄 이벤트 장소",
+      "title": "배틀로얄 이벤트 장소",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-22T00:30:40",
@@ -427,7 +462,8 @@
     },
     {
       "postId": "320",
-      "title": "[발해] 배틀로얄 이벤트 진행시 지급 물품 목록(수정)",
+      "title": "배틀로얄 이벤트 진행시 지급 물품 목록(수정)",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-19T23:37:10",
@@ -439,7 +475,8 @@
     },
     {
       "postId": "319",
-      "title": "[발해] 배틀로얄 이벤트 상품...(수정)",
+      "title": "배틀로얄 이벤트 상품...(수정)",
+      "categoryLabel": "발해",
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-19T23:35:54",
@@ -452,6 +489,7 @@
     {
       "postId": "318",
       "title": "이런 파티플레이 어떨까요?",
+      "categoryLabel": null,
       "author": "Phoenix",
       "authorMemberNo": "9265",
       "createdAt": "2002-08-18T22:42:35",
@@ -463,7 +501,8 @@
     },
     {
       "postId": "317",
-      "title": "[맛간제안]가능한가.? 80분 간의 브리타니아 일주",
+      "title": "가능한가.? 80분 간의 브리타니아 일주",
+      "categoryLabel": "맛간제안",
       "author": "Moonset",
       "authorMemberNo": "7488",
       "createdAt": "2002-08-18T15:11:22",
@@ -475,7 +514,8 @@
     },
     {
       "postId": "316",
-      "title": "[발해] 3번째 파티플레이",
+      "title": "3번째 파티플레이",
+      "categoryLabel": "발해",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-08-17T23:35:17",
@@ -488,6 +528,7 @@
     {
       "postId": "315",
       "title": "발해 배틀로얄 이벤트입니다.",
+      "categoryLabel": null,
       "author": "digicharat01",
       "authorMemberNo": "9135",
       "createdAt": "2002-08-17T08:57:40",
@@ -499,7 +540,8 @@
     },
     {
       "postId": "314",
-      "title": "[공식아리랑]RPG듀얼이벤트",
+      "title": "RPG듀얼이벤트",
+      "categoryLabel": "공식아리랑",
       "author": "주니",
       "authorMemberNo": "7665",
       "createdAt": "2002-08-13T05:54:04",
@@ -511,7 +553,8 @@
     },
     {
       "postId": "313",
-      "title": "[아리랑] 6차 파티플레이 공지",
+      "title": "6차 파티플레이 공지",
+      "categoryLabel": "아리랑",
       "author": "Edge",
       "authorMemberNo": "2856",
       "createdAt": "2002-08-12T22:28:34",
@@ -524,6 +567,7 @@
     {
       "postId": "312",
       "title": "아리랑듀얼이벤트내용이없어서 올립니다",
+      "categoryLabel": null,
       "author": "주니",
       "authorMemberNo": "7665",
       "createdAt": "2002-08-10T18:57:32",
@@ -535,7 +579,8 @@
     },
     {
       "postId": "311",
-      "title": "[아리랑] 다섯번째파티플레이 공지",
+      "title": "다섯번째파티플레이 공지",
+      "categoryLabel": "아리랑",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-08-05T20:17:16",
@@ -547,7 +592,8 @@
     },
     {
       "postId": "310",
-      "title": "[발해]제1회 샤드제일 식신(食神)선발대회(수정)",
+      "title": "제1회 샤드제일 식신(食神)선발대회(수정)",
+      "categoryLabel": "발해",
       "author": "크리스티나",
       "authorMemberNo": "2383",
       "createdAt": "2002-08-02T23:24:45",
@@ -559,7 +605,8 @@
     },
     {
       "postId": "309",
-      "title": "[제안] 인간체스듀얼!",
+      "title": "인간체스듀얼!",
+      "categoryLabel": "제안",
       "author": "Anna-_-",
       "authorMemberNo": "3706",
       "createdAt": "2002-08-01T17:03:47",
@@ -571,7 +618,8 @@
     },
     {
       "postId": "308",
-      "title": "[발해] 제1회 샤드제일 도신(賭神) 뽑기 이벤트 공지",
+      "title": "제1회 샤드제일 도신(賭神) 뽑기 이벤트 공지",
+      "categoryLabel": "발해",
       "author": "nenya",
       "authorMemberNo": "3300",
       "createdAt": "2002-08-01T15:07:02",
@@ -584,6 +632,7 @@
     {
       "postId": "307",
       "title": "8월 1일 아리랑 복권이벤트",
+      "categoryLabel": null,
       "author": "chriscross",
       "authorMemberNo": "7012",
       "createdAt": "2002-07-31T19:23:50",
@@ -595,7 +644,8 @@
     },
     {
       "postId": "306",
-      "title": "[아리랑] 네번째파티플레이 공지",
+      "title": "네번째파티플레이 공지",
+      "categoryLabel": "아리랑",
       "author": "TAIJI",
       "authorMemberNo": "0",
       "createdAt": "2002-07-31T14:09:32",

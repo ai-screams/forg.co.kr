@@ -3,11 +3,12 @@
   "page": 11,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "16678",
       "title": "AoS 무기모습들에관하여 ~~",
+      "categoryLabel": null,
       "author": "netwolf",
       "authorMemberNo": "16070",
       "createdAt": "2003-02-27T04:43:21",
@@ -20,6 +21,7 @@
     {
       "postId": "16677",
       "title": "질문 팔라딘.....",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-02-27T04:27:06",
@@ -31,7 +33,8 @@
     },
     {
       "postId": "16629",
-      "title": "[그것이 알고싶다]기사도란무엇인가?",
+      "title": "기사도란무엇인가?",
+      "categoryLabel": "그것이 알고싶다",
       "author": "sean",
       "authorMemberNo": "19509",
       "createdAt": "2003-02-26T08:58:38",
@@ -44,6 +47,7 @@
     {
       "postId": "16627",
       "title": "여러분 메탈 체스트를 얻기위해 플레그 비스트를 상대하는법좀...",
+      "categoryLabel": null,
       "author": "cju4943",
       "authorMemberNo": "17315",
       "createdAt": "2003-02-26T05:51:57",
@@ -56,6 +60,7 @@
     {
       "postId": "16626",
       "title": "테임된 애완동물 스킬...",
+      "categoryLabel": null,
       "author": "hybg486",
       "authorMemberNo": "17958",
       "createdAt": "2003-02-26T04:45:49",
@@ -68,6 +73,7 @@
     {
       "postId": "16625",
       "title": "울온외에질문여^^",
+      "categoryLabel": null,
       "author": "백마탄병신",
       "authorMemberNo": "18682",
       "createdAt": "2003-02-26T03:25:45",
@@ -80,6 +86,7 @@
     {
       "postId": "16624",
       "title": "듀얼용인데 멀 내려야 할지 고민이네요 ㅠ.ㅠ",
+      "categoryLabel": null,
       "author": "segasa99",
       "authorMemberNo": "17257",
       "createdAt": "2003-02-25T23:37:16",
@@ -92,6 +99,7 @@
     {
       "postId": "16623",
       "title": "버그신고하면...보상없습니까?",
+      "categoryLabel": null,
       "author": "dlwnsahr",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T23:35:26",
@@ -104,6 +112,7 @@
     {
       "postId": "16621",
       "title": "테이머 키우시는 분들 레지 어떻게 하섰나여?",
+      "categoryLabel": null,
       "author": "jea9080",
       "authorMemberNo": "16579",
       "createdAt": "2003-02-25T23:27:20",
@@ -116,6 +125,7 @@
     {
       "postId": "16620",
       "title": "스킬들을 한글로 뭐라고 하는지 모르겠어요",
+      "categoryLabel": null,
       "author": "codename417",
       "authorMemberNo": "19139",
       "createdAt": "2003-02-25T22:21:57",
@@ -128,6 +138,7 @@
     {
       "postId": "16619",
       "title": "신규계정 코드에관해.",
+      "categoryLabel": null,
       "author": "WoodStock",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T21:37:53",
@@ -139,7 +150,8 @@
     },
     {
       "postId": "16617",
-      "title": "[질문] 레스링 104인데 몰 쳐야될지여?",
+      "title": "레스링 104인데 몰 쳐야될지여?",
+      "categoryLabel": "질문",
       "author": "hack100",
       "authorMemberNo": "19423",
       "createdAt": "2003-02-25T20:42:01",
@@ -152,6 +164,7 @@
     {
       "postId": "16616",
       "title": "시피유 400 에 램 64 인데 ..",
+      "categoryLabel": null,
       "author": "shinzi86",
       "authorMemberNo": "19464",
       "createdAt": "2003-02-25T20:24:14",
@@ -164,6 +177,7 @@
     {
       "postId": "16615",
       "title": "포이즈닝말이죠..",
+      "categoryLabel": null,
       "author": "tgjm95",
       "authorMemberNo": "17694",
       "createdAt": "2003-02-25T20:04:44",
@@ -176,6 +190,7 @@
     {
       "postId": "16614",
       "title": "프롭20,뮤지20",
+      "categoryLabel": null,
       "author": "sec551",
       "authorMemberNo": "19489",
       "createdAt": "2003-02-25T19:56:58",
@@ -188,6 +203,7 @@
     {
       "postId": "16613",
       "title": "스틸링 60넘었는데 말린꽃이 스틸이 안되나여?",
+      "categoryLabel": null,
       "author": "silicon6",
       "authorMemberNo": "15674",
       "createdAt": "2003-02-25T19:46:32",
@@ -200,6 +216,7 @@
     {
       "postId": "16611",
       "title": "질문 테임은 한번하면 스킬 다시않주는데..",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-02-25T19:22:30",
@@ -212,6 +229,7 @@
     {
       "postId": "16605",
       "title": "테이밍 60-70에는..",
+      "categoryLabel": null,
       "author": "Genesis",
       "authorMemberNo": "19434",
       "createdAt": "2003-02-25T17:40:51",
@@ -223,7 +241,8 @@
     },
     {
       "postId": "16597",
-      "title": "[이지유오]CUI는 뭐고 TRI는 뭐죠?",
+      "title": "CUI는 뭐고 TRI는 뭐죠?",
+      "categoryLabel": "이지유오",
       "author": "Apple",
       "authorMemberNo": "15300",
       "createdAt": "2003-02-25T14:59:10",
@@ -236,6 +255,7 @@
     {
       "postId": "16595",
       "title": "둠던젼의스위치 조작방법좀 알려주세요!",
+      "categoryLabel": null,
       "author": "jnmadd",
       "authorMemberNo": "16218",
       "createdAt": "2003-02-25T14:39:53",
@@ -247,7 +267,8 @@
     },
     {
       "postId": "16592",
-      "title": "[질문]aos이후..레지 이벨이 어케 변햇나여?",
+      "title": "aos이후..레지 이벨이 어케 변햇나여?",
+      "categoryLabel": "질문",
       "author": "evaho",
       "authorMemberNo": "17876",
       "createdAt": "2003-02-25T13:26:39",
@@ -260,6 +281,7 @@
     {
       "postId": "16589",
       "title": "배타신 분들~~",
+      "categoryLabel": null,
       "author": "scenasign",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T12:45:04",
@@ -271,7 +293,8 @@
     },
     {
       "postId": "16587",
-      "title": "[질문] 삽이나 곡괭이 만드는 방법좀..",
+      "title": "삽이나 곡괭이 만드는 방법좀..",
+      "categoryLabel": "질문",
       "author": "greatlee",
       "authorMemberNo": "19530",
       "createdAt": "2003-02-25T12:25:06",
@@ -284,6 +307,7 @@
     {
       "postId": "16585",
       "title": "텔러 bod..궁금",
+      "categoryLabel": null,
       "author": "isiorilove",
       "authorMemberNo": "17821",
       "createdAt": "2003-02-25T11:22:46",
@@ -296,6 +320,7 @@
     {
       "postId": "16582",
       "title": "uoa 등록은 어디서???",
+      "categoryLabel": null,
       "author": "7635309",
       "authorMemberNo": "16661",
       "createdAt": "2003-02-25T10:11:53",
@@ -308,6 +333,7 @@
     {
       "postId": "16581",
       "title": "영어 잘하시는분...해석좀 부탁함니다...ㅡ_ㅡ;",
+      "categoryLabel": null,
       "author": "veldandy",
       "authorMemberNo": "16384",
       "createdAt": "2003-02-25T10:04:29",
@@ -320,6 +346,7 @@
     {
       "postId": "16580",
       "title": "EasyUO 4.00 b 버젼 가지고 계신분 있나요?",
+      "categoryLabel": null,
       "author": "kh10002",
       "authorMemberNo": "18993",
       "createdAt": "2003-02-25T09:43:37",
@@ -332,6 +359,7 @@
     {
       "postId": "16579",
       "title": "스턴펀치와 디스암펀치",
+      "categoryLabel": null,
       "author": "오케바리",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T09:42:28",
@@ -344,6 +372,7 @@
     {
       "postId": "16578",
       "title": "울온 영문 으로 할래면 다시 깔아야하나요?",
+      "categoryLabel": null,
       "author": "backaway",
       "authorMemberNo": "19459",
       "createdAt": "2003-02-25T09:18:54",
@@ -356,6 +385,7 @@
     {
       "postId": "16577",
       "title": "으억 컴이 바보됐어요 항상 컨트롤 누른것처럼 되고 ㅡㅡ",
+      "categoryLabel": null,
       "author": "Otwozin",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T09:11:24",
@@ -368,6 +398,7 @@
     {
       "postId": "16576",
       "title": "집모형 디드 이제 안나오나요?",
+      "categoryLabel": null,
       "author": "kys68",
       "authorMemberNo": "18068",
       "createdAt": "2003-02-25T09:05:03",
@@ -380,6 +411,7 @@
     {
       "postId": "16575",
       "title": "루나에 있는던전 왜 안가지죠? ㅡㅡ;",
+      "categoryLabel": null,
       "author": "kys8809",
       "authorMemberNo": "19072",
       "createdAt": "2003-02-25T07:15:28",
@@ -392,6 +424,7 @@
     {
       "postId": "16574",
       "title": "8X8 타일 매크로 프로그램 말입니다",
+      "categoryLabel": null,
       "author": "이나루스",
       "authorMemberNo": "14892",
       "createdAt": "2003-02-25T04:28:25",
@@ -404,6 +437,7 @@
     {
       "postId": "16573",
       "title": "저에게 이런 현상이 있습니다 -_-",
+      "categoryLabel": null,
       "author": "Homesickness",
       "authorMemberNo": "15533",
       "createdAt": "2003-02-25T04:00:54",
@@ -416,6 +450,7 @@
     {
       "postId": "16572",
       "title": "xp  screen keybord?",
+      "categoryLabel": null,
       "author": "rapel21",
       "authorMemberNo": "15561",
       "createdAt": "2003-02-25T01:44:07",
@@ -428,6 +463,7 @@
     {
       "postId": "16571",
       "title": "둠 던전에 나오는 레어에 대해 질문 드리겠습니다...",
+      "categoryLabel": null,
       "author": "hasi12",
       "authorMemberNo": "14650",
       "createdAt": "2003-02-25T01:31:20",
@@ -440,6 +476,7 @@
     {
       "postId": "16570",
       "title": "애완동물 스킬 보는방법이 궁긍합니다",
+      "categoryLabel": null,
       "author": "Dwarf",
       "authorMemberNo": "0",
       "createdAt": "2003-02-25T01:24:38",
@@ -452,6 +489,7 @@
     {
       "postId": "16569",
       "title": "피스 올리는 방법?",
+      "categoryLabel": null,
       "author": "타임걸",
       "authorMemberNo": "15086",
       "createdAt": "2003-02-25T01:12:04",
@@ -464,6 +502,7 @@
     {
       "postId": "16566",
       "title": "레지 깍아 먹는 스펠이 뭐죠 -_-??",
+      "categoryLabel": null,
       "author": "hi84",
       "authorMemberNo": "19114",
       "createdAt": "2003-02-25T00:04:28",
@@ -476,6 +515,7 @@
     {
       "postId": "16562",
       "title": "울온 쿠폰을 넣었는데 계정이 계속 블럭상태이네여... 이거 어케해야 하나여....",
+      "categoryLabel": null,
       "author": "bluedaysky",
       "authorMemberNo": "17471",
       "createdAt": "2003-02-24T23:35:21",
@@ -487,7 +527,8 @@
     },
     {
       "postId": "16561",
-      "title": "[울온외]다운로드 폴더 변경....",
+      "title": "다운로드 폴더 변경....",
+      "categoryLabel": "울온외",
       "author": "Tempest",
       "authorMemberNo": "15593",
       "createdAt": "2003-02-24T23:25:42",
@@ -500,6 +541,7 @@
     {
       "postId": "16558",
       "title": "1년6개월만에 다시하는 뉴비가 aos뉴캐릭에 대한 질문드려욤.",
+      "categoryLabel": null,
       "author": "in10ss",
       "authorMemberNo": "19483",
       "createdAt": "2003-02-24T22:52:15",
@@ -512,6 +554,7 @@
     {
       "postId": "16557",
       "title": "팔라딘마법중 상처봉합에대한..",
+      "categoryLabel": null,
       "author": "aguila84",
       "authorMemberNo": "14755",
       "createdAt": "2003-02-24T22:15:27",
@@ -524,6 +567,7 @@
     {
       "postId": "16556",
       "title": "캐그병 룬북 락할때 -_-;;",
+      "categoryLabel": null,
       "author": "jskoo",
       "authorMemberNo": "15929",
       "createdAt": "2003-02-24T21:57:27",
@@ -536,6 +580,7 @@
     {
       "postId": "16555",
       "title": "sos 병 건지는데 낚시스킬 없으면 안돼는가요?",
+      "categoryLabel": null,
       "author": "madhorse",
       "authorMemberNo": "15420",
       "createdAt": "2003-02-24T21:56:38",
@@ -548,6 +593,7 @@
     {
       "postId": "16553",
       "title": "울온하고 싶어요..어케해요??",
+      "categoryLabel": null,
       "author": "blackhyuk542",
       "authorMemberNo": "19517",
       "createdAt": "2003-02-24T21:53:31",
@@ -560,6 +606,7 @@
     {
       "postId": "16552",
       "title": "방어구 질문이요",
+      "categoryLabel": null,
       "author": "akesis",
       "authorMemberNo": "17799",
       "createdAt": "2003-02-24T21:12:35",
@@ -572,6 +619,7 @@
     {
       "postId": "16551",
       "title": "가죽 인벌은 물리가 몇나오나요?",
+      "categoryLabel": null,
       "author": "see_99",
       "authorMemberNo": "18077",
       "createdAt": "2003-02-24T20:47:26",
@@ -584,6 +632,7 @@
     {
       "postId": "16549",
       "title": "최고무기스킬에 관한 질문",
+      "categoryLabel": null,
       "author": "DrQuest",
       "authorMemberNo": "19479",
       "createdAt": "2003-02-24T19:22:52",
@@ -596,6 +645,7 @@
     {
       "postId": "16548",
       "title": "블레스걸면 피즐만나요",
+      "categoryLabel": null,
       "author": "mktyburn",
       "authorMemberNo": "17643",
       "createdAt": "2003-02-24T19:13:51",

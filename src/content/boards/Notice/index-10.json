@@ -3,11 +3,12 @@
   "page": 10,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "525",
       "title": "블랙손타기 이벤트와 인테리어 이벤트 추가사항입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-13T10:47:15",
@@ -20,6 +21,7 @@
     {
       "postId": "524",
       "title": "발해샤드의 하드웨어 문제",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-12T21:26:01",
@@ -32,6 +34,7 @@
     {
       "postId": "523",
       "title": "UO 디자이너 Oaks와의 인터뷰",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-07-12T18:46:23",
@@ -44,6 +47,7 @@
     {
       "postId": "522",
       "title": "퍼블리쉬 16 스케쥴 (시즈형 샤드 제외)",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-07-12T11:43:01",
@@ -56,6 +60,7 @@
     {
       "postId": "521",
       "title": "한국 울온 사이트가 재 오픈하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-12T09:53:16",
@@ -68,6 +73,7 @@
     {
       "postId": "519",
       "title": "현재 Forg홈 운영변경 공지입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-10T11:16:19",
@@ -80,6 +86,7 @@
     {
       "postId": "517",
       "title": "각 게시판 상단 이미지에 파티사냥 메모장을 링크 시켜놨습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-07T18:09:16",
@@ -92,6 +99,7 @@
     {
       "postId": "516",
       "title": "제1회 인테리어 이벤트를 연기합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-06T11:28:00",
@@ -104,6 +112,7 @@
     {
       "postId": "515",
       "title": "간단한 이미지 편집 메뉴얼이 업뎃되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-07-03T15:00:43",
@@ -116,6 +125,7 @@
     {
       "postId": "513",
       "title": "TC2에서 the horrower의 발견",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-06-28T21:57:30",
@@ -128,6 +138,7 @@
     {
       "postId": "511",
       "title": "퍼블리쉬 16 퍼시픽 샤드에 적용",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-28T09:15:03",
@@ -140,6 +151,7 @@
     {
       "postId": "510",
       "title": "정전사고로 인한 퍼블리쉬 16 연기",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-28T00:48:43",
@@ -152,6 +164,7 @@
     {
       "postId": "508",
       "title": "제1회 인테리어 이벤트를 개최합니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-26T16:41:58",
@@ -164,6 +177,7 @@
     {
       "postId": "507",
       "title": "클라이언트 패치 3.08j",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-26T11:26:10",
@@ -176,6 +190,7 @@
     {
       "postId": "505",
       "title": "새로나올 파랑색그물",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-06-24T22:15:34",
@@ -188,6 +203,7 @@
     {
       "postId": "506",
       "title": "새로나올 각종 아이템의 종류와 상세정보",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-24T21:26:11",
@@ -200,6 +216,7 @@
     {
       "postId": "503",
       "title": "Publish 16에 대하여",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-06-24T20:41:50",
@@ -212,6 +229,7 @@
     {
       "postId": "502",
       "title": "새로운 집 시스템 업데이트와 기타 뉴스",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-21T18:34:28",
@@ -224,6 +242,7 @@
     {
       "postId": "500",
       "title": "공지쓰는 권한을 현재 5렙에서 2렙으로 상승하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-18T13:18:45",
@@ -236,6 +255,7 @@
     {
       "postId": "499",
       "title": "현재 본홈 오토멜의 이상으로 인하여",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-18T10:32:49",
@@ -248,6 +268,7 @@
     {
       "postId": "498",
       "title": "Kritz님 홈피가 리뉴얼 하였습니다-0-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-17T22:02:56",
@@ -260,6 +281,7 @@
     {
       "postId": "497",
       "title": "좌측 메뉴 몬스터란이 OPEN되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-17T14:04:01",
@@ -272,6 +294,7 @@
     {
       "postId": "493",
       "title": "타운 크라이어의 16강 진출 안내 뉴스",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-06-14T23:35:59",
@@ -284,6 +307,7 @@
     {
       "postId": "491",
       "title": "식물에 대한 마지막 보고서",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-12T13:50:59",
@@ -296,6 +320,7 @@
     {
       "postId": "490",
       "title": "식물에 대한 추가 보고서입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-10T17:47:13",
@@ -308,6 +333,7 @@
     {
       "postId": "489",
       "title": "코리아팀 2:0 완승에 타운크라이어도 뉴스를..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-04T23:15:18",
@@ -320,6 +346,7 @@
     {
       "postId": "488",
       "title": "백두의 생성과 소멸을 앞에둔 공지일지모음입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-04T15:17:00",
@@ -332,6 +359,7 @@
     {
       "postId": "487",
       "title": "IGR Beta Test Suspended - PC방 베타 테스트 정지",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-04T13:07:28",
@@ -344,6 +372,7 @@
     {
       "postId": "486",
       "title": "백두 샤드 폐쇄(6월8일 폐쇄)에 대한 상세 결정",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-03T14:36:12",
@@ -356,6 +385,7 @@
     {
       "postId": "485",
       "title": "소환된 생명체와 애완동물 다루기 슬롯",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-03T14:12:15",
@@ -368,6 +398,7 @@
     {
       "postId": "484",
       "title": "새로 도입될 색상들",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-06-03T12:34:22",
@@ -380,6 +411,7 @@
     {
       "postId": "483",
       "title": "퍼블리시16에 새로운 스킬 시스템인 GGS도 도입하게 됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-01T23:56:44",
@@ -392,6 +424,7 @@
     {
       "postId": "482",
       "title": "UOA물건 쌓기 기능으로 인해 버그가 있는것으로 추정됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-06-01T18:15:03",
@@ -404,6 +437,7 @@
     {
       "postId": "481",
       "title": "퍼블리쉬16에 포함될 테스트 내용(테이머, 바드, 벌크오더 등등)",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-05-31T14:31:44",
@@ -416,6 +450,7 @@
     {
       "postId": "480",
       "title": "테일러 BOD 내용",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-05-31T13:29:22",
@@ -428,6 +463,7 @@
     {
       "postId": "478",
       "title": "테일러BOD 예상 목록 이미지입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-31T13:16:21",
@@ -440,6 +476,7 @@
     {
       "postId": "477",
       "title": "우려했던 백두샤드 폐쇄에 대한 내용이 올라왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-31T12:00:54",
@@ -452,6 +489,7 @@
     {
       "postId": "475",
       "title": "업데이트될 식물 메뉴 내용",
+      "categoryLabel": null,
       "author": "sos550",
       "authorMemberNo": "5862",
       "createdAt": "2002-05-30T22:10:48",
@@ -464,6 +502,7 @@
     {
       "postId": "474",
       "title": "식물기르기가 꾸준히 업뎃 되고 있습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-29T18:16:26",
@@ -476,6 +515,7 @@
     {
       "postId": "473",
       "title": "UOSpace의 도움을 받아 Forg홈 카스서버가 Open되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-28T18:28:35",
@@ -488,6 +528,7 @@
     {
       "postId": "472",
       "title": "홈페이지 배경음악 설정기능 추가 됐습니다.",
+      "categoryLabel": null,
       "author": "Kritz",
       "authorMemberNo": "2248",
       "createdAt": "2002-05-24T13:23:29",
@@ -500,6 +541,7 @@
     {
       "postId": "470",
       "title": "Yew를 구하는 정화운동[퀘스트완료]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-24T00:14:52",
@@ -512,6 +554,7 @@
     {
       "postId": "469",
       "title": "Yew를 구하는 첫걸음[코어퍼즐가이드]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-23T23:13:19",
@@ -524,6 +567,7 @@
     {
       "postId": "468",
       "title": "시나리오 6주분 적용에 관하여",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-23T06:42:07",
@@ -536,6 +580,7 @@
     {
       "postId": "467",
       "title": "퍼블리쉬 16의 집 시스템에 관하여 (추가 Q&A)",
+      "categoryLabel": null,
       "author": "zephuros",
       "authorMemberNo": "3717",
       "createdAt": "2002-05-23T06:20:56",
@@ -548,6 +593,7 @@
     {
       "postId": "466",
       "title": "좌측메뉴에 UO.만화가 신설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-22T16:59:58",
@@ -560,6 +606,7 @@
     {
       "postId": "464",
       "title": "Publish 16에서 이루어질 집 부패 시스템에 관한 공지",
+      "categoryLabel": null,
       "author": "cindee",
       "authorMemberNo": "2381",
       "createdAt": "2002-05-22T12:56:13",
@@ -572,6 +619,7 @@
     {
       "postId": "463",
       "title": "EA코리아에서 올라온 계정해킹건에대한 공지입니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-17T11:58:14",
@@ -584,6 +632,7 @@
     {
       "postId": "462",
       "title": "우측메뉴에 SITE MAP이 신설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-05-16T20:06:30",
@@ -595,7 +644,8 @@
     },
     {
       "postId": "460",
-      "title": "[공지] 시나라오4의 제 5주분 적용(아래에 추가)",
+      "title": "시나라오4의 제 5주분 적용(아래에 추가)",
+      "categoryLabel": "공지",
       "author": "녕이",
       "authorMemberNo": "2278",
       "createdAt": "2002-05-16T18:42:47",

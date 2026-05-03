@@ -3,11 +3,12 @@
   "page": 17,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "72",
       "title": "컨셉란에 GGS라는 스킬시스템의 도입여부가 나왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-22T09:55:16",
@@ -20,6 +21,7 @@
     {
       "postId": "71",
       "title": "백두샤드 오픈기념 이벤트",
+      "categoryLabel": null,
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-22T01:55:10",
@@ -32,6 +34,7 @@
     {
       "postId": "70",
       "title": "UO파일을 뒤져본 결과 새로운 메뉴바가 있는것으로 알려져 있습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-21T10:07:27",
@@ -44,6 +47,7 @@
     {
       "postId": "69",
       "title": "백두샤드 가능 PC방 목록이 업뎃되었습니다.",
+      "categoryLabel": null,
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-20T22:39:23",
@@ -56,6 +60,7 @@
     {
       "postId": "68",
       "title": "올드비 보상 : 그림과 함께보는 상품상세목록입니다",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-20T17:06:08",
@@ -68,6 +73,7 @@
     {
       "postId": "67",
       "title": "투표란에 장기판 지원에 대해 의견을 묻습니다...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-20T14:35:44",
@@ -80,6 +86,7 @@
     {
       "postId": "66",
       "title": "신종 컴터 바이러스-_-;;(Win32/Nimda)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-20T12:48:06",
@@ -92,6 +99,7 @@
     {
       "postId": "64",
       "title": "클라이언트 3.0.4p 패치",
+      "categoryLabel": null,
       "author": "Avatar",
       "authorMemberNo": "0",
       "createdAt": "2001-09-20T01:13:48",
@@ -104,6 +112,7 @@
     {
       "postId": "63",
       "title": "Diablo사이트를 Open하였습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-19T16:33:52",
@@ -116,6 +125,7 @@
     {
       "postId": "62",
       "title": "GM 그들은 누구인가? (GM Ragnarok편)",
+      "categoryLabel": null,
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-19T10:46:48",
@@ -128,6 +138,7 @@
     {
       "postId": "61",
       "title": "GM 그들은 누구인가? (GM Garam편)",
+      "categoryLabel": null,
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-19T10:45:15",
@@ -140,6 +151,7 @@
     {
       "postId": "60",
       "title": "GM 그들은 누구인가? (GM Zeus편)",
+      "categoryLabel": null,
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-19T10:43:07",
@@ -152,6 +164,7 @@
     {
       "postId": "59",
       "title": "GM 그들은 누구인가? (GM Blue편)",
+      "categoryLabel": null,
       "author": "lius",
       "authorMemberNo": "1931",
       "createdAt": "2001-09-19T10:41:14",
@@ -164,6 +177,7 @@
     {
       "postId": "57",
       "title": "멤버 5렙이상이신분은 본란(notice)란과 아래 이벤츠란에...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-12T16:13:21",
@@ -176,6 +190,7 @@
     {
       "postId": "56",
       "title": "잡란에 카토그라피와 팁란에 울온명령어가 업뎃되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-05T23:05:34",
@@ -188,6 +203,7 @@
     {
       "postId": "54",
       "title": "2D클라이언트로 일쉐나 들어가는것은 불법입니다-_-;;",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-09-03T18:26:21",
@@ -200,6 +216,7 @@
     {
       "postId": "53",
       "title": "컨셉란에 직업캐릭의 메뉴바에 대한 변동이 올라왔습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-29T13:25:32",
@@ -212,6 +229,7 @@
     {
       "postId": "52",
       "title": "시즈샤드에 대한 Forg의 사견",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-28T12:25:13",
@@ -224,6 +242,7 @@
     {
       "postId": "51",
       "title": "올드비보상 스케쥴이 발표되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-28T09:20:12",
@@ -236,6 +255,7 @@
     {
       "postId": "50",
       "title": "한국형 시즈 샤드에 관한....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-28T09:05:09",
@@ -248,6 +268,7 @@
     {
       "postId": "49",
       "title": "리니지에 대해서 글쓰시는분들께.....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-27T09:02:19",
@@ -260,6 +281,7 @@
     {
       "postId": "48",
       "title": "UO.Poll란에 새로운 항목의 투표가 개설되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-25T11:14:02",
@@ -272,6 +294,7 @@
     {
       "postId": "47",
       "title": "울티마 온라인 한국 세번째 샤드 이름 공모전",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-24T16:24:25",
@@ -284,6 +307,7 @@
     {
       "postId": "46",
       "title": "올드비 보상이 거의 다가오고 있습니다(상품상세목록입니다)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-23T22:40:01",
@@ -296,6 +320,7 @@
     {
       "postId": "45",
       "title": "\"lights\"라는 섭레어 아템에 관하여-_-;;",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-22T16:01:06",
@@ -308,6 +333,7 @@
     {
       "postId": "44",
       "title": "뮤의 뮤핵?-_-;;;",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-22T10:04:27",
@@ -320,6 +346,7 @@
     {
       "postId": "43",
       "title": "메인좌측 Voluntary란에 관하여...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-21T14:09:47",
@@ -332,6 +359,7 @@
     {
       "postId": "42",
       "title": "홈피 업뎃상황과 도움을 주실분을 찿습니다-\"-",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-19T12:37:21",
@@ -344,6 +372,7 @@
     {
       "postId": "41",
       "title": "악몽의 카토98.5 스킬Up에 대한 수정중인 상황에 대해....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-16T09:07:42",
@@ -356,6 +385,7 @@
     {
       "postId": "40",
       "title": "섭레어 FullJars를 좀더 쉽게 얻기 위한 파일과 설명입니다...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-08T19:48:07",
@@ -368,6 +398,7 @@
     {
       "postId": "39",
       "title": "같은 내용으로 올드비 보상이 딜레이 됬다는 공지입니다...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-07T15:10:32",
@@ -380,6 +411,7 @@
     {
       "postId": "38",
       "title": "계정 정보 상기 사항",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-08-05T16:07:13",
@@ -392,6 +424,7 @@
     {
       "postId": "37",
       "title": "UO.Tip란에 비밀장소가 추가로 업뎃되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-28T18:19:48",
@@ -404,6 +437,7 @@
     {
       "postId": "34",
       "title": "다른 사람을 괴롭히는 플레이에 대한 공지 (About Grief Tactics)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-27T12:24:54",
@@ -416,6 +450,7 @@
     {
       "postId": "33",
       "title": "UO.Jobs란에 마이닝이 업뎃 되었습니다",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-26T20:02:21",
@@ -428,6 +463,7 @@
     {
       "postId": "32",
       "title": "올드비 보상이 서서이  다가오고 있습니다(상품상세목록입니다)",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-26T11:26:35",
@@ -440,6 +476,7 @@
     {
       "postId": "31",
       "title": "UO.Jobs란에 애니멀테이밍이 업뎃되었습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-24T15:43:55",
@@ -452,6 +489,7 @@
     {
       "postId": "30",
       "title": "리얼화이트웜(렬화웜)이 다시 리젠되기 시작과 각종 지역패치....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-24T13:13:35",
@@ -464,6 +502,7 @@
     {
       "postId": "29",
       "title": "저에게 메일을 보내셨던 수많은 분들중에 멜바이러스-_-;;;",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-24T11:58:24",
@@ -476,6 +515,7 @@
     {
       "postId": "28",
       "title": "UO.Essay란에 글쓰시는분들은...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-21T11:29:12",
@@ -488,6 +528,7 @@
     {
       "postId": "27",
       "title": "이번주의 업뎃스킬은 테임입니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-20T13:05:05",
@@ -500,6 +541,7 @@
     {
       "postId": "26",
       "title": "메인화면이 일부 방문자분들이 일본어로 나오는 버그를 수정하였습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-16T22:58:09",
@@ -512,6 +554,7 @@
     {
       "postId": "25",
       "title": "다음 Publish 12 Update 에 약초 리젠이 10-15분마다 400--999개가 리젠이 됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-15T20:24:04",
@@ -524,6 +567,7 @@
     {
       "postId": "24",
       "title": "telestorm이 지나간후 백탐이 됨으로써 겹치는것이 제자리로..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-14T19:20:43",
@@ -536,6 +580,7 @@
     {
       "postId": "23",
       "title": "르네에도 몬스터를 지나갈수 없게 되었습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-14T14:04:51",
@@ -548,6 +593,7 @@
     {
       "postId": "22",
       "title": "좌측 UO.Poll란에 새로운 설문조사가 업뎃되었습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T23:02:59",
@@ -560,6 +606,7 @@
     {
       "postId": "21",
       "title": "Kal Ort Por란에 현재 운영중인 길드 사이트....",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T22:59:02",
@@ -572,6 +619,7 @@
     {
       "postId": "20",
       "title": "뉴스란을 2개로 나누었습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-13T16:53:41",
@@ -584,6 +632,7 @@
     {
       "postId": "16",
       "title": "릴레이롤플레이어란이 메인 좌측 네버엔딩스토리로...",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-09T01:15:24",
@@ -596,6 +645,7 @@
     {
       "postId": "15",
       "title": "UO.Jobs란에 테일러가 업뎃되었습니다..",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2001-07-06T22:40:53",

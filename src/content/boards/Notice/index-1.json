@@ -3,11 +3,12 @@
   "page": 1,
   "totalPages": 18,
   "totalPosts": 861,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "103",
       "title": "2D Client Patch 6.0.1.5",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-06-25T11:33:06",
@@ -20,6 +21,7 @@
     {
       "postId": "102",
       "title": "All Shards to be Published",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-06-08T00:49:37",
@@ -32,6 +34,7 @@
     {
       "postId": "101",
       "title": "Welcome to the KR Beta!",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-06-01T23:20:36",
@@ -44,6 +47,7 @@
     {
       "postId": "100",
       "title": "KR Client Patch 2.45.1.2",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-05-31T09:38:49",
@@ -56,6 +60,7 @@
     {
       "postId": "99",
       "title": "KR Beta Info",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-05-25T15:32:20",
@@ -68,6 +73,7 @@
     {
       "postId": "98",
       "title": "All Shards to be Published",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-05-25T08:52:00",
@@ -80,6 +86,7 @@
     {
       "postId": "91",
       "title": "Client Patch 6.0.1.1",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-05-03T07:35:15",
@@ -92,6 +99,7 @@
     {
       "postId": "88",
       "title": "Publish 44 (암즈 로어 추가사항)",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-05-01T08:03:10",
@@ -104,6 +112,7 @@
     {
       "postId": "87",
       "title": "Publish 44",
+      "categoryLabel": null,
       "author": "swc9292",
       "authorMemberNo": "3795",
       "createdAt": "2007-04-29T07:15:52",
@@ -116,6 +125,7 @@
     {
       "postId": "86",
       "title": "Event Issues on Seige",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-04-21T08:47:15",
@@ -128,6 +138,7 @@
     {
       "postId": "85",
       "title": "All Shards to be Published",
+      "categoryLabel": null,
       "author": "sirl",
       "authorMemberNo": "1263",
       "createdAt": "2007-04-20T10:20:01",
@@ -140,6 +151,7 @@
     {
       "postId": "55",
       "title": "9주년 토큰 3개",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "2",
       "createdAt": "2006-12-22T13:14:18",
@@ -152,6 +164,7 @@
     {
       "postId": "3",
       "title": "Evil Home Décor Collection!",
+      "categoryLabel": null,
       "author": "cl",
       "authorMemberNo": "266",
       "createdAt": "2005-06-24T18:51:54",
@@ -164,6 +177,7 @@
     {
       "postId": "1082",
       "title": "Publish 30 Updates and Bug Fixes",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-30T09:11:48",
@@ -176,6 +190,7 @@
     {
       "postId": "1081",
       "title": "Treasures of Tokuno FAQ",
+      "categoryLabel": null,
       "author": "cl",
       "authorMemberNo": "24858",
       "createdAt": "2005-01-29T20:20:09",
@@ -188,6 +203,7 @@
     {
       "postId": "1080",
       "title": "Treasures of Tokuno I",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-28T17:51:00",
@@ -200,6 +216,7 @@
     {
       "postId": "1079",
       "title": "말라스 성을 얻으십시오!",
+      "categoryLabel": null,
       "author": "Wislem68",
       "authorMemberNo": "33264",
       "createdAt": "2005-01-23T16:41:34",
@@ -212,6 +229,7 @@
     {
       "postId": "1077",
       "title": "Despise Invasion II",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-21T10:54:17",
@@ -224,6 +242,7 @@
     {
       "postId": "1076",
       "title": "Despise Invasion I",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-21T10:53:00",
@@ -236,6 +255,7 @@
     {
       "postId": "1075",
       "title": "PB29 패치 일정",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-17T11:04:25",
@@ -248,6 +268,7 @@
     {
       "postId": "1074",
       "title": "Origin샤드의 캐릭이동서비스 연기일정",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2005-01-17T11:01:17",
@@ -260,6 +281,7 @@
     {
       "postId": "1073",
       "title": "새로운 샤드 'Origin' 오픈 예정!!",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-12-10T10:54:04",
@@ -272,6 +294,7 @@
     {
       "postId": "1072",
       "title": "Publish 28 Out-of-Cycle Update #1",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-12-02T15:05:27",
@@ -284,6 +307,7 @@
     {
       "postId": "1071",
       "title": "새로운 패링 공식",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-11-26T11:41:08",
@@ -296,6 +320,7 @@
     {
       "postId": "1070",
       "title": "퍼블 28 적용 스케줄",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-11-23T06:27:24",
@@ -308,6 +333,7 @@
     {
       "postId": "1069",
       "title": "한국샤드 SE지역 집짓기 일정.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-11-21T14:50:50",
@@ -320,6 +346,7 @@
     {
       "postId": "1068",
       "title": "큰 물고기 트로피",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-11-20T08:48:50",
@@ -332,6 +359,7 @@
     {
       "postId": "1067",
       "title": "Publish 28 내용",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-11-17T18:51:32",
@@ -344,6 +372,7 @@
     {
       "postId": "1066",
       "title": "퍼블28부터 Leviathan이 주게 될 마이너들...",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-11-14T10:59:06",
@@ -355,7 +384,8 @@
     },
     {
       "postId": "1058",
-      "title": "[UOSE]새로 추가된 집 타일과 아이템들",
+      "title": "새로 추가된 집 타일과 아이템들",
+      "categoryLabel": "UOSE",
       "author": "뮤직",
       "authorMemberNo": "15196",
       "createdAt": "2004-10-15T16:56:35",
@@ -368,6 +398,7 @@
     {
       "postId": "1057",
       "title": "클라이어트 패치 4.0.5a 정보",
+      "categoryLabel": null,
       "author": "Nylugh86",
       "authorMemberNo": "31609",
       "createdAt": "2004-10-14T16:22:30",
@@ -380,6 +411,7 @@
     {
       "postId": "1056",
       "title": "길드정보란을 리셋 하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-10-04T15:57:26",
@@ -392,6 +424,7 @@
     {
       "postId": "1055",
       "title": "사무라이 확팩과 지도",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-10-01T12:36:17",
@@ -404,6 +437,7 @@
     {
       "postId": "1054",
       "title": "PB27이 진행되며 파라곤이 출현하게 됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-09-14T08:13:36",
@@ -416,6 +450,7 @@
     {
       "postId": "1053",
       "title": "Client patch 4.0.4b예정과 여러가지 사항.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-09-10T12:39:55",
@@ -428,6 +463,7 @@
     {
       "postId": "1052",
       "title": "마이너아티팩트[옵션변경]",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-08-24T16:24:40",
@@ -440,6 +476,7 @@
     {
       "postId": "1029",
       "title": "7주년 기념 패키지",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2004-06-16T07:23:54",
@@ -452,6 +489,7 @@
     {
       "postId": "1028",
       "title": "불법 게임 타임 코드에 대한 추가적인 정보",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2004-06-16T07:16:10",
@@ -464,6 +502,7 @@
     {
       "postId": "1027",
       "title": "7주년 기념 확장팩의 한국 판매",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2004-06-16T07:14:57",
@@ -476,6 +515,7 @@
     {
       "postId": "1026",
       "title": "울티마 온라인 내의 그래픽 조작에 대한 공지",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2004-06-16T07:14:07",
@@ -488,6 +528,7 @@
     {
       "postId": "1025",
       "title": "지피를 이용하여 타임쿠폰 구매건에대해",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-06-12T09:07:44",
@@ -500,6 +541,7 @@
     {
       "postId": "1024",
       "title": "선택 가능한 7주년 기념 선물",
+      "categoryLabel": null,
       "author": "Sky",
       "authorMemberNo": "27419",
       "createdAt": "2004-06-11T11:17:49",
@@ -512,6 +554,7 @@
     {
       "postId": "1023",
       "title": "발해샤드 집짓기, 캐릭이동에 대하여",
+      "categoryLabel": null,
       "author": "SIRL",
       "authorMemberNo": "15220",
       "createdAt": "2004-06-01T06:55:23",
@@ -524,6 +567,7 @@
     {
       "postId": "986",
       "title": "올게임즈라는 쇼핑물이 Open하였습니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2004-02-19T18:01:20",
@@ -536,6 +580,7 @@
     {
       "postId": "985",
       "title": "차기 퍼블리시들에 관한 Sannio의 코멘트",
+      "categoryLabel": null,
       "author": "gony",
       "authorMemberNo": "25952",
       "createdAt": "2004-02-18T11:09:25",
@@ -548,6 +593,7 @@
     {
       "postId": "984",
       "title": "다음 확장팩에 관한 SunSword의 코멘트",
+      "categoryLabel": null,
       "author": "gony",
       "authorMemberNo": "25952",
       "createdAt": "2004-02-18T10:42:19",
@@ -560,6 +606,7 @@
     {
       "postId": "981",
       "title": "발해 어제로 백타임",
+      "categoryLabel": null,
       "author": "Banana Milk",
       "authorMemberNo": "14964",
       "createdAt": "2004-02-14T07:12:24",
@@ -572,6 +619,7 @@
     {
       "postId": "980",
       "title": "OSI 소식",
+      "categoryLabel": null,
       "author": "gony",
       "authorMemberNo": "25952",
       "createdAt": "2004-02-13T09:28:49",
@@ -584,6 +632,7 @@
     {
       "postId": "968",
       "title": "PB21이 수요일 오전8시에 적용됩니다.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-11-25T16:28:26",
@@ -596,6 +645,7 @@
     {
       "postId": "965",
       "title": "Pb21 적용시 가격변동이 될 예상 아이템 품목.",
+      "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-11-22T21:55:58",

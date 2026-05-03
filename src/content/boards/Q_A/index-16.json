@@ -3,11 +3,12 @@
   "page": 16,
   "totalPages": 21,
   "totalPosts": 1015,
-  "generatedAt": "2026-05-02T12:10:32Z",
+  "generatedAt": "2026-05-03T01:43:55Z",
   "entries": [
     {
       "postId": "15817",
       "title": "업글코드말인데요..",
+      "categoryLabel": null,
       "author": "jillmr",
       "authorMemberNo": "18349",
       "createdAt": "2003-02-14T01:24:12",
@@ -20,6 +21,7 @@
     {
       "postId": "15816",
       "title": "(울온外) 가상메모리 말인데요.",
+      "categoryLabel": null,
       "author": "yrurill",
       "authorMemberNo": "15867",
       "createdAt": "2003-02-14T00:54:40",
@@ -32,6 +34,7 @@
     {
       "postId": "15814",
       "title": "블튼 서은위 텔레포트 타일 언제 치웠죠?",
+      "categoryLabel": null,
       "author": "ytsejam",
       "authorMemberNo": "15170",
       "createdAt": "2003-02-14T00:22:47",
@@ -44,6 +47,7 @@
     {
       "postId": "15812",
       "title": "막 광부로 시작한 초보입니다.",
+      "categoryLabel": null,
       "author": "neoed",
       "authorMemberNo": "19227",
       "createdAt": "2003-02-13T23:55:00",
@@ -56,6 +60,7 @@
     {
       "postId": "15811",
       "title": "집 지었다 허물었을 때..",
+      "categoryLabel": null,
       "author": "aura40",
       "authorMemberNo": "18946",
       "createdAt": "2003-02-13T23:34:16",
@@ -68,6 +73,7 @@
     {
       "postId": "15809",
       "title": "집짓는것에 대한 질문.",
+      "categoryLabel": null,
       "author": "Beelzebub",
       "authorMemberNo": "18745",
       "createdAt": "2003-02-13T23:26:11",
@@ -80,6 +86,7 @@
     {
       "postId": "15808",
       "title": "이런 경우 어떻게 하죠?",
+      "categoryLabel": null,
       "author": "lkw0213",
       "authorMemberNo": "19153",
       "createdAt": "2003-02-13T23:01:07",
@@ -92,6 +99,7 @@
     {
       "postId": "15805",
       "title": "AoS 한정판 남아 있는 홈쇼핑 어디 없나요?",
+      "categoryLabel": null,
       "author": "killlyou",
       "authorMemberNo": "19112",
       "createdAt": "2003-02-13T21:40:58",
@@ -104,6 +112,7 @@
     {
       "postId": "15804",
       "title": "약간 어려운질문...",
+      "categoryLabel": null,
       "author": "ldh2508",
       "authorMemberNo": "17395",
       "createdAt": "2003-02-13T21:35:01",
@@ -116,6 +125,7 @@
     {
       "postId": "15800",
       "title": "집디드때문에 질문드립니다 -ㅁ-;;",
+      "categoryLabel": null,
       "author": "zardzard",
       "authorMemberNo": "17768",
       "createdAt": "2003-02-13T19:52:54",
@@ -128,6 +138,7 @@
     {
       "postId": "15798",
       "title": "아니 이게 무슨일인가~!! 가슴이 ...철렁~!!",
+      "categoryLabel": null,
       "author": "징어도리",
       "authorMemberNo": "16747",
       "createdAt": "2003-02-13T19:24:13",
@@ -140,6 +151,7 @@
     {
       "postId": "15795",
       "title": "The IGR time limit has been met 이라는 에러가...",
+      "categoryLabel": null,
       "author": "ISMIRU",
       "authorMemberNo": "18224",
       "createdAt": "2003-02-13T18:21:57",
@@ -151,7 +163,8 @@
     },
     {
       "postId": "15794",
-      "title": "[AoS]인비아이템에 대해 질문합니다.",
+      "title": "인비아이템에 대해 질문합니다.",
+      "categoryLabel": "AoS",
       "author": "lenybie",
       "authorMemberNo": "15046",
       "createdAt": "2003-02-13T18:16:46",
@@ -164,6 +177,7 @@
     {
       "postId": "15793",
       "title": "집에관한 질문 답변바랍니다.",
+      "categoryLabel": null,
       "author": "jskoo",
       "authorMemberNo": "15929",
       "createdAt": "2003-02-13T18:15:54",
@@ -176,6 +190,7 @@
     {
       "postId": "15792",
       "title": "뉴비계정으로 집을 지었는데",
+      "categoryLabel": null,
       "author": "=^.^=",
       "authorMemberNo": "15520",
       "createdAt": "2003-02-13T18:05:53",
@@ -188,6 +203,7 @@
     {
       "postId": "15791",
       "title": "질문이요",
+      "categoryLabel": null,
       "author": "라연",
       "authorMemberNo": "14576",
       "createdAt": "2003-02-13T17:58:32",
@@ -200,6 +216,7 @@
     {
       "postId": "15790",
       "title": "으음. 저.; 울온 갑옷과 방패에 대해서 질문이 있는데요.",
+      "categoryLabel": null,
       "author": "leania",
       "authorMemberNo": "17551",
       "createdAt": "2003-02-13T17:52:01",
@@ -212,6 +229,7 @@
     {
       "postId": "15789",
       "title": "저 울온 초짜에다가 설치 문제까지..",
+      "categoryLabel": null,
       "author": "yunhaln",
       "authorMemberNo": "19209",
       "createdAt": "2003-02-13T17:26:45",
@@ -224,6 +242,7 @@
     {
       "postId": "15788",
       "title": "코오너 상태에서 집질수 있나여?",
+      "categoryLabel": null,
       "author": "silicon6",
       "authorMemberNo": "15674",
       "createdAt": "2003-02-13T17:18:50",
@@ -235,7 +254,8 @@
     },
     {
       "postId": "15787",
-      "title": "[Aos] 집값에 대하여..",
+      "title": "집값에 대하여..",
+      "categoryLabel": "Aos",
       "author": "cloud76",
       "authorMemberNo": "17408",
       "createdAt": "2003-02-13T16:38:38",
@@ -248,6 +268,7 @@
     {
       "postId": "15786",
       "title": "말라스 대륙에 왜 못갈가여?",
+      "categoryLabel": null,
       "author": "khkingka",
       "authorMemberNo": "15100",
       "createdAt": "2003-02-13T16:21:06",
@@ -260,6 +281,7 @@
     {
       "postId": "15785",
       "title": "아쳐올리고있느중인데요~~",
+      "categoryLabel": null,
       "author": "sun99pcm",
       "authorMemberNo": "15566",
       "createdAt": "2003-02-13T15:26:08",
@@ -272,6 +294,7 @@
     {
       "postId": "15783",
       "title": "팔라딘 퀘스트에서 쉬멘드릭의 제자는 어디 있나요?",
+      "categoryLabel": null,
       "author": "Dusk",
       "authorMemberNo": "15024",
       "createdAt": "2003-02-13T15:14:11",
@@ -284,6 +307,7 @@
     {
       "postId": "15782",
       "title": "AoS 나오면",
+      "categoryLabel": null,
       "author": "aosman",
       "authorMemberNo": "0",
       "createdAt": "2003-02-13T14:48:34",
@@ -295,7 +319,8 @@
     },
     {
       "postId": "15781",
-      "title": "[질문] 집 7일 딜레이에 대한 의견들에 대해...",
+      "title": "집 7일 딜레이에 대한 의견들에 대해...",
+      "categoryLabel": "질문",
       "author": "fenril",
       "authorMemberNo": "18279",
       "createdAt": "2003-02-13T13:48:06",
@@ -308,6 +333,7 @@
     {
       "postId": "15779",
       "title": "바드가 피스/디스코/이벨 중 하나밖에 선택할 수 없다면?",
+      "categoryLabel": null,
       "author": "Sunshine",
       "authorMemberNo": "16052",
       "createdAt": "2003-02-13T13:38:37",
@@ -320,6 +346,7 @@
     {
       "postId": "15778",
       "title": "중요한 허접질문  !",
+      "categoryLabel": null,
       "author": "wangbam7",
       "authorMemberNo": "17196",
       "createdAt": "2003-02-13T13:24:58",
@@ -332,6 +359,7 @@
     {
       "postId": "15777",
       "title": "팔라딘 퀘스트에서 십일조를 어떻게 내죠?",
+      "categoryLabel": null,
       "author": "Dusk",
       "authorMemberNo": "15024",
       "createdAt": "2003-02-13T13:01:51",
@@ -344,6 +372,7 @@
     {
       "postId": "15775",
       "title": "테스트 센터에 집짓는 것에 대한 질문...",
+      "categoryLabel": null,
       "author": "Dark Knight",
       "authorMemberNo": "15279",
       "createdAt": "2003-02-13T11:29:27",
@@ -356,6 +385,7 @@
     {
       "postId": "15774",
       "title": "이제신규등록하면..",
+      "categoryLabel": null,
       "author": "pierpont",
       "authorMemberNo": "15419",
       "createdAt": "2003-02-13T11:03:43",
@@ -368,6 +398,7 @@
     {
       "postId": "15772",
       "title": "저기 aos 집 짓는거여...",
+      "categoryLabel": null,
       "author": "Nan★나야",
       "authorMemberNo": "0",
       "createdAt": "2003-02-13T10:55:46",
@@ -380,6 +411,7 @@
     {
       "postId": "15768",
       "title": "루팅이 어떻게 치는 건가요 ?",
+      "categoryLabel": null,
       "author": "nlights",
       "authorMemberNo": "14985",
       "createdAt": "2003-02-13T09:32:19",
@@ -392,6 +424,7 @@
     {
       "postId": "15767",
       "title": "3d를 깔앗는데",
+      "categoryLabel": null,
       "author": "lolus",
       "authorMemberNo": "18738",
       "createdAt": "2003-02-13T08:52:22",
@@ -404,6 +437,7 @@
     {
       "postId": "15765",
       "title": "업글 했는데도 말라스로 못가고 있어요... 도움을...",
+      "categoryLabel": null,
       "author": "bbosco",
       "authorMemberNo": "15996",
       "createdAt": "2003-02-13T07:53:11",
@@ -416,6 +450,7 @@
     {
       "postId": "15764",
       "title": "18*18집자리 시큐어 갯수가 타워보다 못한거 아닌가요?",
+      "categoryLabel": null,
       "author": "bioes",
       "authorMemberNo": "15488",
       "createdAt": "2003-02-13T07:52:33",
@@ -428,6 +463,7 @@
     {
       "postId": "15763",
       "title": "aos이후하루올릴수있는스텟양이6?",
+      "categoryLabel": null,
       "author": "pierpont",
       "authorMemberNo": "15419",
       "createdAt": "2003-02-13T07:36:40",
@@ -440,6 +476,7 @@
     {
       "postId": "15761",
       "title": "LoN , RoN 론길드를 아시는분?? 오래전...",
+      "categoryLabel": null,
       "author": "killlyou",
       "authorMemberNo": "19112",
       "createdAt": "2003-02-13T02:00:40",
@@ -452,6 +489,7 @@
     {
       "postId": "15759",
       "title": "계정 업글하는 홈피가 연결이 안돼여..ㅠㅠ",
+      "categoryLabel": null,
       "author": "miuoo",
       "authorMemberNo": "15043",
       "createdAt": "2003-02-13T01:10:48",
@@ -464,6 +502,7 @@
     {
       "postId": "15758",
       "title": "외국서버하는데 이상한 오류 메세지가 자꾸 뜨네 -_-;",
+      "categoryLabel": null,
       "author": "leejeyoung",
       "authorMemberNo": "15915",
       "createdAt": "2003-02-13T00:49:10",
@@ -476,6 +515,7 @@
     {
       "postId": "15757",
       "title": "계정 업그레이드에 대해서 질문.",
+      "categoryLabel": null,
       "author": "7635309",
       "authorMemberNo": "16661",
       "createdAt": "2003-02-13T00:12:16",
@@ -488,6 +528,7 @@
     {
       "postId": "15756",
       "title": "저기 스미스 스킬에 관한 질문입니다",
+      "categoryLabel": null,
       "author": "hemos86",
       "authorMemberNo": "17108",
       "createdAt": "2003-02-12T23:47:54",
@@ -500,6 +541,7 @@
     {
       "postId": "15754",
       "title": "울티마온라인을 깔고나서 저절로 재부팅이 됨니다",
+      "categoryLabel": null,
       "author": "ktwod32",
       "authorMemberNo": "15673",
       "createdAt": "2003-02-12T22:57:44",
@@ -512,6 +554,7 @@
     {
       "postId": "15752",
       "title": "울온..옜날에는. 락픽기술로...",
+      "categoryLabel": null,
       "author": "aguila84",
       "authorMemberNo": "14755",
       "createdAt": "2003-02-12T21:16:56",
@@ -524,6 +567,7 @@
     {
       "postId": "15751",
       "title": "페스트 케스트에 대해서 아시는분?",
+      "categoryLabel": null,
       "author": "Entertainer",
       "authorMemberNo": "17864",
       "createdAt": "2003-02-12T21:10:57",
@@ -536,6 +580,7 @@
     {
       "postId": "15750",
       "title": "AoS에서 스텟총합 250으로 올랐나요?",
+      "categoryLabel": null,
       "author": "Serenade",
       "authorMemberNo": "0",
       "createdAt": "2003-02-12T20:34:53",
@@ -548,6 +593,7 @@
     {
       "postId": "15736",
       "title": "Aos 설치가 안됩니다. 조언부탁드려요.",
+      "categoryLabel": null,
       "author": "seraphim87",
       "authorMemberNo": "17605",
       "createdAt": "2003-02-12T17:52:21",
@@ -560,6 +606,7 @@
     {
       "postId": "15734",
       "title": "UOA 에서요 마이닝 메클좀 알려주세요.",
+      "categoryLabel": null,
       "author": "killlyou",
       "authorMemberNo": "19112",
       "createdAt": "2003-02-12T17:31:29",
@@ -572,6 +619,7 @@
     {
       "postId": "15733",
       "title": "말라스에서 집짓기...",
+      "categoryLabel": null,
       "author": "kong878",
       "authorMemberNo": "15059",
       "createdAt": "2003-02-12T16:56:38",
@@ -584,6 +632,7 @@
     {
       "postId": "15731",
       "title": "뉴비라서.ㅡㅡ; 사원이 어디죠?",
+      "categoryLabel": null,
       "author": "kys8809",
       "authorMemberNo": "19072",
       "createdAt": "2003-02-12T16:17:48",
@@ -596,6 +645,7 @@
     {
       "postId": "15729",
       "title": "말라스 집짓기에 대해서 질문 있습니다..",
+      "categoryLabel": null,
       "author": "[SoK]Helldiver",
       "authorMemberNo": "14934",
       "createdAt": "2003-02-12T15:41:05",

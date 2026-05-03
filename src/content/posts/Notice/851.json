@@ -3,6 +3,7 @@
   "boardKr": "Notice",
   "postId": "851",
   "title": "패치 실패 그리고 연기",
+  "categoryLabel": null,
   "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">어젯밤에 Great Lakes샤드에 패치한 새로운 Publish가 20가지의 서버 크래쉬를 일으켰다고 합니다. 그래서 적용한 코드를 다시 되돌리고 다음주로 패치를 연기했다고 합니다.<br>&nbsp;<br>출처: http://www.uo.com/fyi </td></tr></tbody></table>\n",
   "bodyText": "어젯밤에 Great Lakes샤드에 패치한 새로운 Publish가 20가지의 서버 크래쉬를 일으켰다고 합니다. 그래서 적용한 코드를 다시 되돌리고 다음주로 패치를 연기했다고 합니다. 출처: http://www.uo.com/fyi",
   "author": "suhksb",
