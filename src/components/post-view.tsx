@@ -11,6 +11,8 @@
  * for a static-export read-only museum.
  */
 
+import Link from "next/link";
+
 import { getBoardOrThrow } from "@/lib/boards";
 import type { Post } from "@/types/post";
 
@@ -26,9 +28,9 @@ export function PostView({ post }: PostViewProps) {
     <article className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm">
       <header className="border-b border-(--era-input-border) px-6 py-5">
         <p className="text-forg-muted text-xs">
-          <a href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
+          <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
             {board.nameKr}
-          </a>
+          </Link>
         </p>
         <h1 className="text-forg-ink mt-2 text-2xl font-bold">{post.title}</h1>
         <dl className="text-forg-muted mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
