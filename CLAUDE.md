@@ -39,11 +39,33 @@ Two visual eras share the same content:
 
 Three tiers of data, all under `.docs/research/`:
 
-- **bronze** `archive/A/{board}/{post_id}.html` — raw Wayback captures, EUC-KR-encoded, treated as immutable. The downloader (`scripts/etl/download.py`) reads `cdx/e-policy-plan.json` and writes here.
+- **bronze** `archive/A/{board}/{post_id}.html` — raw Wayback captures, EUC-KR-encoded, treated as immutable. The downloader (`scripts/etl/download.py`) reads `cdx/e-policy-plan.json` and writes here. Phase A finished at 11,034/11,035; the missing one (`ScreenShot/10481`) is a fixed URL-encoding bug (`_ascii_safe_url` patch) that recovers on the next downloader run.
 - **silver** `archive-clean/A/{board}/{post_id}.html` — UTF-8 + Wayback chrome stripped, produced by `scripts/etl/01-decode.py` using BeautifulSoup4 + lxml (html5lib fallback). Atomic writes (`.tmp` then `rename`); idempotent so re-running only processes new files.
-- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON (P1.0+, not yet implemented). This is the only tier that ships in git and is consumed by Next.js.
+- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON. Produced by `scripts/etl/02-parse-zeroboard.py` (Pydantic-validated). 2,582 posts across 4 boards (Notice / Q_A / Events / Items) ship in git. P2.1 will expand this to ~11k posts across 10 boards once the full ETL pass runs.
+- **gold (index)** `src/content/boards/{board}/index-{N}.json` — paginated board index, 50 entries per page, `createdAt` desc. Produced by `scripts/etl/03-build-index.py`. 54 chunks ship today; auto-rebuilds when posts grow.
 
 Wayback was downloaded with the `id_` modifier so the captures arrive without Wayback's chrome to begin with — `01-decode.py`'s chrome counters are normally 0. They become non-zero only if someone re-downloads with `if_`/`fw_`. Don't remove the cleanup logic on that basis.
+
+### Routing structure (App Router, static export)
+
+The site has three dynamic route shapes under the `(board)` route group (the
+`(board)` segment is stripped from the URL):
+
+- `/[board]/` — board listing page 1 (canonical). `(board)/[board]/page.tsx`.
+- `/[board]/page/[N]/` — board listing pages 2..N. The literal `page` segment
+  exists to keep `/[board]/[postId]` from colliding with paginated URLs.
+- `/[board]/[postId]/` — single post (P1.4). `(board)/[board]/[postId]/page.tsx`.
+
+All three set `export const dynamicParams = false` and enumerate via
+`generateStaticParams`, so unknown boards / pages / post ids become **build
+errors** rather than runtime 404s — appropriate for a frozen archive.
+
+`<SiteHeader>` and `<SiteFooter>` live in the root layout (`src/app/layout.tsx`),
+so every page inherits the chrome and routes only render the article container.
+The current home (`src/app/page.tsx`) is an **interim card grid** that reads
+real board indexes; it is not the final 2014 layout. P2.4 replaces it with the
+6-box grid + game-category sidebar + 7-button menu that recreates the original
+forg.co.kr 2014 visual identity.
 
 ### Background downloads
 
