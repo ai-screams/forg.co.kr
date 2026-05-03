@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18314",
+  "title": "컴퓨터 속도가 '극.악'으로 느려졌습니다.",
+  "categoryLabel": "울온외",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 사건의 발단은 이틀전.<br>\n<br>\n 아버지깨서 컴퓨터를 둘러보시다 'RefreshLock'이란 프로그램을 발견하셨습니다.<br>\n<br>\n<br>\n<br>\n<br>\n \"이게 뭐냐?\"<br>\n \"글쎄요?\"<br>\n<br>\n<br>\n<br>\n 저도 처음 보는 것이였죠.<br>\n 그래서 한번 실행을 해보았더니 해상도가 320*XXX로 변하더군요.<br>\n<br>\n<br>\n \"아버지이이이이이-!\"<br>\n<br>\n<br>\n ...어떻게 어떻게 해서 원래 해상도로 돌아오긴 했습니다만<br>\n 컴퓨터 속도가 '너무너무' 느려졌습니다.<br>\n<br>\n<br>\n 윈도우 창이든, 익스플로러든 무슨 창이건간에 한번 뜨는데 걸리는 시간은 5초에서 10초.<br>\n X버튼을 눌러도 창이 사라지는 시간은 5초에서 10초.<br>\n<br>\n<br>\n 미칩니다(...)<br>\n 포멧해서 빨라졌다고 환호하고 있었는데 말이죠.<br>\n<br>\n<br>\n<br>\n 해결책을 알려주세요-<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#C651D3\" size=\"2\"><b>\"마니쉬칸 쉬드라칵타호 코라-!!\"<br>\"쏘미칸! 쏘미칸!\"\t\t\t\t</b></font></div></td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "사건의 발단은 이틀전. 아버지깨서 컴퓨터를 둘러보시다 'RefreshLock'이란 프로그램을 발견하셨습니다. \"이게 뭐냐?\" \"글쎄요?\" 저도 처음 보는 것이였죠. 그래서 한번 실행을 해보았더니 해상도가 320*XXX로 변하더군요. \"아버지이이이이이-!\" ...어떻게 어떻게 해서 원래 해상도로 돌아오긴 했습니다만 컴퓨터 속도가 '너무너무' 느려졌습니다. 윈도우 창이든, 익스플로러든 무슨 창이건간에 한번 뜨는데 걸리는 시간은 5초에서 10초. X버튼을 눌러도 창이 사라지는 시간은 5초에서 10초. 미칩니다(...) 포멧해서 빨라졌다고 환호하고 있었는데 말이죠. 해결책을 알려주세요- \"마니쉬칸 쉬드라칵타호 코라-!!\" \"쏘미칸! 쏘미칸!\"",
+  "author": "Apple",
+  "authorMemberNo": "15300",
+  "authorHomepage": null,
+  "createdAt": "2003-04-28T00:12:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -0- 포멧을 한번더 해보세요...<br>\n<br>\n 쿨럭..리푸레쉬 롹이라.. 그거 저도 있는데;; -0-;;;<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 리프레시 락...<br>\n 아마 통합 코덱에 함께 들어있는 유틸리티일겁니다. --)a<br>\n 지워도 관계 없습니다. -O-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 리프레쉬 락은 각 해상도에서 모니터의 최대 주파수를 지원하도록 해줍니다...<br>\n 통합코덱에도 포함돼어 있는건데... 리프레쉬락이 해제가 안돼시면<br>\n통합코덱을 언인스톨하시고... 다시 깔아보시길..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030511132634",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18314",
+  "sourceEngine": "zeroboard"
+}

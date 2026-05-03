@@ -1,0 +1,53 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "559",
+  "title": "카토 Krloop 으로 빨리 올리기",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 저는 uoa를 등록하지 않아서 오로지 krloop이랑 uoloop로만 매클을 돌립니다. krloop이랑 uoloop만 사용하다보니 이 두 프로그램이 엄청 편하네요.\n<br>\n<br>\n 1. krloop으로 세계지도 만들기\n<br>\n<br>\n 세계지도를 만드니 스킬이 빨리 오르는것 같은 느낌이 들더라구요. 글구 돈도 많이 벌구^^a\n<br>\n<br>\n 클&nbsp;&nbsp;&nbsp;&nbsp;릭 - 0286,0199,세계지도\n<br>\n 딜 레 이 - 20\n<br>\n [Mouse]\n<br>\n 001 / 0286 / 0199 / 세계지도\n<br>\n [Color]\n<br>\n $0010506F\n<br>\n [Option]\n<br>\n 3\n<br>\n 10\n<br>\n 300\n<br>\n 0\n<br>\n 3\n<br>\n<br>\n 이걸 메모장으로 불러오셔서 carto.klp로 저장하세요. 그리고 play 누르시면 됩니다. 첨에 돌리실때 '지도제작자의 펜' 더블클릭만 해주시면 되요. \n<br>\n 그런데, 중간에 펜이 닳아서 멈추는 경우가 있는데 그때는 다시 '펜' 더블클릭해줘야 합니다.\n<br>\n<br>\n 2. 완성된 지도 되팔기\n<br>\n<br>\n 세계지도 다 만들구 다시 팔면 돈을 4배나 더 쳐줍니다. 스킬 높아지면 26원으로 거의 5배죠. vendor sell 해서 일일이 하나하나 더블클릭하는 번거로움이 있는데요. 이것두 krloop으로 처리하면 빨리 팔수 있겠죠.\n<br>\n<br>\n 더블클릭 - 0267,0105,클릭1\n<br>\n 더블클릭 - 0236,0165,클릭2\n<br>\n 더블클릭 - 0224,0236,클릭3\n<br>\n 클&nbsp;&nbsp;&nbsp;&nbsp;릭 - 0342,0218,아래로1\n<br>\n 딜 레 이 - 1\n<br>\n 클&nbsp;&nbsp;&nbsp;&nbsp;릭 - 0344,0219,아래로2\n<br>\n 딜 레 이 - 1\n<br>\n 클&nbsp;&nbsp;&nbsp;&nbsp;릭 - 0344,0218,아래로3\n<br>\n 딜 레 이 - 1\n<br>\n [Mouse]\n<br>\n 001 / 0267 / 0105 / 클릭1\n<br>\n 002 / 0236 / 0165 / 클릭2\n<br>\n 003 / 0224 / 0236 / 클릭3\n<br>\n 004 / 0342 / 0218 / 아래로1\n<br>\n 005 / 0344 / 0219 / 아래로2\n<br>\n 006 / 0344 / 0218 / 아래로3\n<br>\n [Color]\n<br>\n $0090B0BF\n<br>\n $0080AFAF\n<br>\n $0090BFCF\n<br>\n $004F7090\n<br>\n $006F9FAF\n<br>\n $00709FB0\n<br>\n [Option]\n<br>\n 3\n<br>\n 10\n<br>\n 100\n<br>\n 0\n<br>\n 3\n<br>\n<br>\n 윗 글을 복사해서 sell.klp로 저장하세요. 그리고 불러와서 플레이 누르시면 자동으로 팔아줍니다. 마지막에 팔기 체크는 직접 눌려줘야 합니다.\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저는 uoa를 등록하지 않아서 오로지 krloop이랑 uoloop로만 매클을 돌립니다. krloop이랑 uoloop만 사용하다보니 이 두 프로그램이 엄청 편하네요. 1. krloop으로 세계지도 만들기 세계지도를 만드니 스킬이 빨리 오르는것 같은 느낌이 들더라구요. 글구 돈도 많이 벌구^^a 클    릭 - 0286,0199,세계지도 딜 레 이 - 20 [Mouse] 001 / 0286 / 0199 / 세계지도 [Color] $0010506F [Option] 3 10 300 0 3 이걸 메모장으로 불러오셔서 carto.klp로 저장하세요. 그리고 play 누르시면 됩니다. 첨에 돌리실때 '지도제작자의 펜' 더블클릭만 해주시면 되요. 그런데, 중간에 펜이 닳아서 멈추는 경우가 있는데 그때는 다시 '펜' 더블클릭해줘야 합니다. 2. 완성된 지도 되팔기 세계지도 다 만들구 다시 팔면 돈을 4배나 더 쳐줍니다. 스킬 높아지면 26원으로 거의 5배죠. vendor sell 해서 일일이 하나하나 더블클릭하는 번거로움이 있는데요. 이것두 krloop으로 처리하면 빨리 팔수 있겠죠. 더블클릭 - 0267,0105,클릭1 더블클릭 - 0236,0165,클릭2 더블클릭 - 0224,0236,클릭3 클    릭 - 0342,0218,아래로1 딜 레 이 - 1 클    릭 - 0344,0219,아래로2 딜 레 이 - 1 클    릭 - 0344,0218,아래로3 딜 레 이 - 1 [Mouse] 001 / 0267 / 0105 / 클릭1 002 / 0236 / 0165 / 클릭2 003 / 0224 / 0236 / 클릭3 004 / 0342 / 0218 / 아래로1 005 / 0344 / 0219 / 아래로2 006 / 0344 / 0218 / 아래로3 [Color] $0090B0BF $0080AFAF $0090BFCF $004F7090 $006F9FAF $00709FB0 [Option] 3 10 100 0 3 윗 글을 복사해서 sell.klp로 저장하세요. 그리고 불러와서 플레이 누르시면 자동으로 팔아줍니다. 마지막에 팔기 체크는 직접 눌려줘야 합니다.",
+  "author": "britdew",
+  "authorMemberNo": "4270",
+  "authorHomepage": null,
+  "createdAt": "2002-04-01T08:09:50",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅋㅅㅋㅅ~<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 참고루 이틀만에 99.5 만들어져요.. 물론 엄청 빡시게 ㅡㅡ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스크롤은 어디가야 대량으로 구할수있나요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스크롤은 보통 르네 불튼 샥상 문글샥상 불튼 항구정도.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헤헤\n<br>\n 올려주신 예제 유용하게 잘쓰고있습니다..^^\n<br>\n 감사요....\n<br>\n 음\n<br>\n 그런데 락픽예제나 슴스예제좀 올려주실수있으신가요??\n<br>\n ㅠㅠ 제가 이거 사용법을 하나도 모르거든요...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020407000142",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UOForum&no=559",
+  "sourceEngine": "zeroboard"
+}

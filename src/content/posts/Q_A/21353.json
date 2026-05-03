@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21353",
+  "title": "UAP7.tmp 에러...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 저러면서 안되네욤...<br>\n<br>\n 미치겠어욤...<br>\n<br>\n 패치하다가 실패 하는거 같은데...증상을 아시는분 답변 부탁 드립니다...<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#FF6699\" size=\"14\">\n열혈남아라면 マジン-ガ\n<img src=\"http://www.thismart.co.kr/bbs/MAZINKAISEimg001.jpg\"></font></div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저러면서 안되네욤... 미치겠어욤... 패치하다가 실패 하는거 같은데...증상을 아시는분 답변 부탁 드립니다... 열혈남아라면 マジン-ガ",
+  "author": "akadoaka",
+  "authorMemberNo": "17865",
+  "authorHomepage": null,
+  "createdAt": "2003-10-01T20:51:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이론...UOA 삭제후 재인스톨후 정사을 찾았습니다<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\"><img border=\"0\" src=\"emoticon/u_logo.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아..UOA 패치하는데 해결방법 나오던데.<br>\n 첫번째 방법은 UOA 폴더에 들어가면 다운로드 폴더가 있습니다.<br>\n 거기서 UOAssist.exe 파일을 복사해서 그냥 UOA 폴더에 넣으면 됩니다.<br>\n 그럼 똑같은 파일이 있다고 나오는데요.<br>\n 그냥 덮어씌우세요.<br>\n 전 그렇게 해서 해결했습니다.<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이왕 쓴김에 두번쨰 세번째 방법도....<br>\n 두번째 방법은 www.tugsoft.com 에서 UOAssist.exe 파일을 받으셔서<br>\n UOA 폴더에 덮어씌우면 됩니다.<br>\n 세번째 방법은 제어판 - 프로그램추가/제거 - UOAssist 고르시고 언인스톨 누르시면<br>\n 지울꺼냐고 나오는데 오케이 누르시면 세개 고르는게 나옵니다.<br>\n 거기서 맨 밑에꺼 'None - leave all settings' 이걸로 누르신후<br>\n 다시 설치 하시면 됩니다.(다시 설치해도 설정은 안없어집니다)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031003050854",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21353",
+  "sourceEngine": "zeroboard"
+}

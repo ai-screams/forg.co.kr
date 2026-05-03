@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20673",
+  "title": "금번패치후 uoa가 100time에러? 이상한걸 내네여..",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 자그마한 창이 뜨면서...<br>\n 자꾸 에러멧세지를..<br>\n 혹시 비슷한 경험하신분 도움말 부탁드립니다.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#FF6699\" size=\"2\">\nHeAYe\n<img src=\"http://forg.co.kr/_zb/data/Pa290017.jpg\">\n</font>\n</div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "자그마한 창이 뜨면서... 자꾸 에러멧세지를.. 혹시 비슷한 경험하신분 도움말 부탁드립니다. HeAYe",
+  "author": "heaye",
+  "authorMemberNo": "14671",
+  "authorHomepage": null,
+  "createdAt": "2003-08-30T18:22:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 패치 완료후 컴퓨터 껏다 다시 하면 됩니다.<br>\n 그게 귀찬으시다면 ctrl+atl+del 누르시고 작업관리자메뉴의 프로세스 부분에서 uoassist 를 강제 종료하신다음에 유오를 다시 실행시키세요.  <br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030922210034",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20673",
+  "sourceEngine": "zeroboard"
+}

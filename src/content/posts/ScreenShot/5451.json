@@ -1,0 +1,33 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5451",
+  "title": "발해 이벤트 뒷풀이 스샷#2",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/i3.jpg\"><br> <img border=\"0\" src=\"data/i4.jpg\"><br>     \t\t\t 냉무입니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "냉무입니다.",
+  "author": "myth-tamer",
+  "authorMemberNo": "294",
+  "authorHomepage": null,
+  "createdAt": "2002-10-03T00:46:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "i3.jpg",
+      "fileNum": 1,
+      "sizeBytes": 101273
+    },
+    {
+      "name": "i4.jpg",
+      "fileNum": 2,
+      "sizeBytes": 83353
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20021008143754",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5451",
+  "sourceEngine": "zeroboard"
+}

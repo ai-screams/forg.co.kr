@@ -1,0 +1,29 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "32344",
+  "title": "그냥 무게에 관해 참고사항",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 들수 있는 최고무게 439스톤 (몸무게 포함)<br>\n<br>\n 몸무게 14 스톤<br>\n<br>\n<br>\n 짐말/비틀등 : 1600스톤 (철광석 133개)<br>\n<br>\n 마법책 : 0스톤<br>\n<br>\n 룬북 : 가변<br>\n<br>\n 지피 : 1:50 (100지피 가 2스톤)<br>\n<br>\n<br>\n 쉽게 알아낼수 있지만... 귀찮고 자꾸 까먹어서 나중에 보고 참고하기 위해 남겨둔글. -_-<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<img src=\"http://forg.co.kr/_zb/data/시그니처.jpg\">\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "들수 있는 최고무게 439스톤 (몸무게 포함) 몸무게 14 스톤 짐말/비틀등 : 1600스톤 (철광석 133개) 마법책 : 0스톤 룬북 : 가변 지피 : 1:50 (100지피 가 2스톤) 쉽게 알아낼수 있지만... 귀찮고 자꾸 까먹어서 나중에 보고 참고하기 위해 남겨둔글. -_-",
+  "author": "tojiny",
+  "authorMemberNo": "17221",
+  "authorHomepage": null,
+  "createdAt": "2003-06-18T03:25:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 보충&gt; 무게 공식 40+STRX3.5<br>\n<br>\n 최고로 들수 있는 무게는 최고 439스톤이므로<br>\n<br>\n 힘  x = (439-40) / 3.5 = 114<br>\n<br>\n 즉, 짐꾼으로써 114 이상의 힘은 필요없다.<img border=\"0\" src=\"emoticon/u_5.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621050510",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=32344",
+  "sourceEngine": "zeroboard"
+}

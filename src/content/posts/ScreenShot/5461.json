@@ -1,0 +1,33 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5461",
+  "title": "미확인 퀘스트 (여왕개미에게 시앗줄때) 4",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/ant(021003_094758_35).jpg\"><br> <img border=\"0\" src=\"data/ant(021003_094828_87).jpg\"><br>     \t\t\t 으음.... <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "으음....",
+  "author": "파란바다",
+  "authorMemberNo": "10061",
+  "authorHomepage": "http://uoboard.wo.to",
+  "createdAt": "2002-10-03T10:02:57",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "ant(021003_094758_35).jpg",
+      "fileNum": 1,
+      "sizeBytes": 240537
+    },
+    {
+      "name": "ant(021003_094828_87).jpg",
+      "fileNum": 2,
+      "sizeBytes": 202854
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20021008140930",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5461",
+  "sourceEngine": "zeroboard"
+}

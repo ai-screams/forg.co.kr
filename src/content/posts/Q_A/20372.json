@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20372",
+  "title": "잉갓 분리해줄수 있는 분을 찾습니당.....ㅠㅠ",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 제가 철잉갓 관리를 어찌어찌 하다가<br>\n<br>\n 잉갓이 합쳐졌는데......최대 6만개로 합쳐지죠?<br>\n<br>\n 근데 65536개로 합쳐졌답니다.<br>\n<br>\n 그리고 생긴건 잉갓 1개짜리 모양입니다.<br>\n<br>\n<br>\n<br>\n 아스키 코드가 65535가 만땅이라고 치고 65536이 됐으니 <br>\n<br>\n 다시 1이 된걸로 인식을 한다고 칩시다.<br>\n<br>\n<br>\n 근데..이걸 분리할 방법이 없어요......ㅠㅠ<br>\n<br>\n 현재 은행에 상품디드로 바꿔 놓긴 했는데....이걸 옮길 방법도 없고 ....<br>\n<br>\n<br>\n 무게는 65536개의 수만큼 여겨지거든요....들지도 못해요 ㅠㅠ<br>\n<br>\n 그렇다고 30000개씩 일케 나눌수도 없어요...<br>\n<br>\n 아까도 말했지만....잉갓그림은 하나로 되어있거든요....<br>\n<br>\n<br>\n 거참 미치고 환장하고 팔딱 뛸 노릇이죠? 이거 무슨 방법 없을까요?<br>\n<br>\n 흠흠.........ㅡㅡz<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제가 철잉갓 관리를 어찌어찌 하다가 잉갓이 합쳐졌는데......최대 6만개로 합쳐지죠? 근데 65536개로 합쳐졌답니다. 그리고 생긴건 잉갓 1개짜리 모양입니다. 아스키 코드가 65535가 만땅이라고 치고 65536이 됐으니 다시 1이 된걸로 인식을 한다고 칩시다. 근데..이걸 분리할 방법이 없어요......ㅠㅠ 현재 은행에 상품디드로 바꿔 놓긴 했는데....이걸 옮길 방법도 없고 .... 무게는 65536개의 수만큼 여겨지거든요....들지도 못해요 ㅠㅠ 그렇다고 30000개씩 일케 나눌수도 없어요... 아까도 말했지만....잉갓그림은 하나로 되어있거든요.... 거참 미치고 환장하고 팔딱 뛸 노릇이죠? 이거 무슨 방법 없을까요? 흠흠.........ㅡㅡz",
+  "author": "angelma",
+  "authorMemberNo": "18119",
+  "authorHomepage": null,
+  "createdAt": "2003-08-16T05:29:22",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 겜마를 부르십쇼!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 고의가아닌 버그는 겜마가 해결해줍니다. ^^ 자신있게 콜하십시요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 겜마 -_-/"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030918062509",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20372",
+  "sourceEngine": "zeroboard"
+}

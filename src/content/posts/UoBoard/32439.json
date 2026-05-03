@@ -1,0 +1,77 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "32439",
+  "title": "윈도우.. 버튼이 숫자로 나오네요 -_-;",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 전에 어느분이 이거 고치는거 올려주셧는데..<br>\n 어딘지 모르겠다는.. ㅠ_-<br>\n 창 닫는거랑 크게 하는거..<br>\n 이런것들이랑..<br>\n 체크하고 안하고 하는것들..<br>\n 그게막 찌프러지고.. 아님 숫자로 나오는데..<br>\n -_-;<br>\n 윈도우에 대해서 아는게 없어서..<br>\n 이렇게 무식하게 표현해서 죄송합니다 ㅠ_-<br>\n 도스가 그리워.. ㅠ_-<br>\n 이거 원상복구 시키는것좀 가르쳐주세요 ㅠ_-<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "전에 어느분이 이거 고치는거 올려주셧는데.. 어딘지 모르겠다는.. ㅠ_- 창 닫는거랑 크게 하는거.. 이런것들이랑.. 체크하고 안하고 하는것들.. 그게막 찌프러지고.. 아님 숫자로 나오는데.. -_-; 윈도우에 대해서 아는게 없어서.. 이렇게 무식하게 표현해서 죄송합니다 ㅠ_- 도스가 그리워.. ㅠ_- 이거 원상복구 시키는것좀 가르쳐주세요 ㅠ_-",
+  "author": "아유미짱",
+  "authorMemberNo": "20509",
+  "authorHomepage": null,
+  "createdAt": "2003-06-19T10:29:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 홈피 운영하면서 이문제는 10번정도 답해드린것 같군요..-_-;<br>\n<br>\n 1. 안전모드로 부팅 후 정상모드로 부팅합니다.<br>\n 2. TTFCACHE파일을 찿기하신 후 삭제후 리붓합니다.<br>\n<br>\n 1번이 안되시면 2번 해보시길."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 2번이 짱이져;;<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 감사합니다 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포그님만세//"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포그님 만세 //"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그거 걱정할 거 없습니다. 저도 반년에 2번정도 그런 현상이 일어나는데 한 일주일쯤 있다보면 어느새 정상으로 돌아오더라고요.-0-/"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 저 파일도 없고 일주일있어도 정상으로 안돌아와요 ㅠ,.ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그렇다면 윈도를 다시 설치해야지요. ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅋ Forg님 정확히 알고계시네.. 움.. <br>\n 1번뿐이 몰라서.. 한 10번 반복해서 리붓하면서 지난 몇년간 고쳐썼다는.. ㅎ..<br>\n 안철수연구소 가면 가장 많이 QnA하나 질문에도 1번이 바로 이 질문이져. :)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621050641",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=32439",
+  "sourceEngine": "zeroboard"
+}

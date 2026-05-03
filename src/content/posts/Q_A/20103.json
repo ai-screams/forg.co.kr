@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20103",
+  "title": "2D화면에서...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 3D 프로필이나 가방같은건 이용할 수 없나요?<br>\n<br>\n 3D프로필은 반지나 팔찌따위를 빼기 더 쉽게 해두었던데..<br>\n<br>\n 가방도 넓고...<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "3D 프로필이나 가방같은건 이용할 수 없나요? 3D프로필은 반지나 팔찌따위를 빼기 더 쉽게 해두었던데.. 가방도 넓고...",
+  "author": "winnethe",
+  "authorMemberNo": "15203",
+  "authorHomepage": null,
+  "createdAt": "2003-08-04T14:53:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 형님 님꼐서 올리신 검프파일을 사용해 보시지요.<br>\n 에세이에서 검프 라고 쳐 보세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 에세이 검색해보시면 설치방법도 나오는데요...참고로 그냥 울온2d폴더에 복사하시면 됩니다.<br>\n 혹시 클라이언트 에라나시면 원본파일크기(다운시 전부 다운안되는 경우가 가끔 있는듯)확인하시고...<br>\n 제경우는 3d를 인스톨 하지않고 2d만 깔고 썻는데 클라이언트 에러가 나더군요 그래서 3d깔고 해보니 되더군요..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030822113729",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20103",
+  "sourceEngine": "zeroboard"
+}

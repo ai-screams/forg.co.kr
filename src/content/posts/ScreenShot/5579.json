@@ -1,0 +1,46 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5579",
+  "title": "일쉐나의 이쁜곳......",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0169.jpg\"><br> <img border=\"0\" src=\"data/UO0172.jpg\"><br> <br>\n 괜찮구려...... <br>\n<br>\n 호수도 그렇고..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "괜찮구려...... 호수도 그렇고..",
+  "author": "kenel",
+  "authorMemberNo": "2508",
+  "authorHomepage": null,
+  "createdAt": "2002-10-08T11:33:21",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0169.jpg",
+      "fileNum": 1,
+      "sizeBytes": 813670
+    },
+    {
+      "name": "UO0172.jpg",
+      "fileNum": 2,
+      "sizeBytes": 745676
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 호곡 숭고쪽이네영 거기 비올때 짱이에여 ``ㅎㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 앗..하트모양 연꽃...<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008113331",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5579",
+  "sourceEngine": "zeroboard"
+}

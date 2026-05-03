@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7720",
+  "title": "계정 등록하고 괄성화 되는데...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t &nbsp;&nbsp;보통 계정 등록하고 활성화 될때까지 몇일정도 걸려여?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "보통 계정 등록하고 활성화 될때까지 몇일정도 걸려여?",
+  "author": "snowsostorm",
+  "authorMemberNo": "7078",
+  "authorHomepage": null,
+  "createdAt": "2002-04-07T11:46:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 몇십분,몇시간,..서버상황에 따라 달라집니다.\n<br>\n 느긋하게 기다려 보시길..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 어제 재등록했는데 약 10분정도? 걸렸음.\n<br>\n 밤 11시경\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어제 5시경에 계정을 새로 만들언는데 아직두 활성화가 안데네염...패치가 잘못된건가?\n<br>\n  아님 다른 문제가 있는건가여?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 계정이 활성화됬는지 한번 사이트가서 보시길 바랍니다.\n<br>\n https://www.ultima-registration.com/kr/index.html\n<br>\n 여기서 계정편집을 누르시면 나옵니다.\n<br>\n 이표시를 학인 : 현재 상태: Active \n<br>\n 만약 계정편집이 안된다면 계정을 다시 만들어 주시고요\n<br>\n<br>\n 두번째는\n<br>\n 패치가 제대로 안되어서 일것입니다.\n<br>\n 현재 lbr버젼은 3.0.7d입니다.\n<br>\n<br>\n 패치가 안되엇다면 울온 폴더에 patch폴더가 있을것입니다.\n<br>\n 해당폴더안에 모든파일을 다지우고 다시한번 울온을 실행 시키시길 바랍니다.\n<br>\n 이때 먼저 바이러스검사부터 해보시길 바랍니다.\n<br>\n 바이러스검사는 http://www.ahnlab.com 입니다\n<br>\n<br>\n 간혹 xp버젼 방화벽문제로 안되는경우가 있는데\n<br>\n<a href=\"http://www.dshield.org/clients/windows_xp_firewall_setup.html\">http://www.dshield.org/clients/windows_xp_firewall_setup.html</a>\n<br>\n 이사이트를 참조하시길 바랍니다.\n<br>\n<br>\n 또한 모든 방화벽에 관련된 프로그램을 종료후 패치를 다시받아보시길 바랍니다.\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 문제가 있음..uohelp@ea.co.kr로 한글로 이메일 보내면 된다고 합니다. www.kr.uo.com 출처"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020517121730",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7720",
+  "sourceEngine": "zeroboard"
+}

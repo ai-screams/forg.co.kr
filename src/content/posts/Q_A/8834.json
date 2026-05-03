@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8834",
+  "title": "시큐어상자질문",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 시큐어상자안에 물건을 넣을때요<br>\n<br>\n 가방안에 물건들을 꽉채워서(가령15개)<br>\n<br>\n 시큐어상자에 넣으면 1개넣은게 되나요<br>\n<br>\n 아니면 15개 넣는게되나요?<br>\n<br>\n 답변 부탁합니다<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "시큐어상자안에 물건을 넣을때요 가방안에 물건들을 꽉채워서(가령15개) 시큐어상자에 넣으면 1개넣은게 되나요 아니면 15개 넣는게되나요? 답변 부탁합니다",
+  "author": "kktcat",
+  "authorMemberNo": "8448",
+  "authorHomepage": null,
+  "createdAt": "2002-06-24T19:27:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 가방까지 해서 16개 넣은게 됩니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 그리구 질문 한가지더<br>\n<br>\n 퍼블16되면 집가격이 하락하나요 상승하나요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 당분간은 하락세 다시 상승 어느정도 적정 수준 유지"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020709072736",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8834",
+  "sourceEngine": "zeroboard"
+}

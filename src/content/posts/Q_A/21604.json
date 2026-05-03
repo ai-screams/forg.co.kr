@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21604",
+  "title": "저기 질문요",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 어떻게 해야지 캐릭터를 삭제 할수 있나요?? 삭제하고 싶은데... 빨리 알려주세요<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어떻게 해야지 캐릭터를 삭제 할수 있나요?? 삭제하고 싶은데... 빨리 알려주세요",
+  "author": "just2001",
+  "authorMemberNo": "23237",
+  "authorHomepage": null,
+  "createdAt": "2003-10-15T16:56:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 접속하고서.. 샤드 선택후에..<br>\n 삭제하고 싶은 캐릭터 클릭(더블클릭말고) 해서 이름색이 변하면 선택된거죠..<br>\n 그다음 삭제 버튼..<br>\n<br>\n 참고로.. 캐릭은 만들고 일주일 후부터나 삭제할 수 있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031113050929",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21604",
+  "sourceEngine": "zeroboard"
+}

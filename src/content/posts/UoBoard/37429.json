@@ -1,0 +1,53 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37429",
+  "title": "AoS 오류 문제에 대해서",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 다깔구나서 게임실행하면 <br>\n<br>\n DirectSound SetPan failed 이라고 뜨면서 오류가계속 나네요<br>\n<br>\n 그냥 무시하고 계속 하다보면 아예 팅기네요 <br>\n<br>\n xp 구여 그래픽카드는 지포스2 입니다<br>\n<br>\n 다른 온라인겜은 문제가 없는데 후움<br>\n<br>\n 예전에 서드돈 할때도 잘돌아가던걸로 기억하느데 왜그런지 몰겠네요 ..<br>\n<br>\n 다이렉트도 9.0 으로 깔아놓았구 <br>\n<br>\n 후움 이 오류에 대해서 알려주시면 정말감사하겠습니다 ^^:<br>\n<br>\n 하루빨리 울온을 다시하구픈데 ㅠㅠ<br>\n<br>\n 아그리고 검색해보니깐 3월달에도 저랑 똑같은 사운드 카드 써서 <br>\n<br>\n 게임 못하던 분이계셧던거 같은데 그때도 검색하세요 라고만 써있더군요 ㅠㅠ<br>\n<br>\n 후움.. 사운드 카드 회사가 ess 라서 예전거라서 그런지 ..<br>\n<br>\n 서드돈 할때는 안그랬는데 왜그런지 몰겠네요 <br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "다깔구나서 게임실행하면 DirectSound SetPan failed 이라고 뜨면서 오류가계속 나네요 그냥 무시하고 계속 하다보면 아예 팅기네요 xp 구여 그래픽카드는 지포스2 입니다 다른 온라인겜은 문제가 없는데 후움 예전에 서드돈 할때도 잘돌아가던걸로 기억하느데 왜그런지 몰겠네요 .. 다이렉트도 9.0 으로 깔아놓았구 후움 이 오류에 대해서 알려주시면 정말감사하겠습니다 ^^: 하루빨리 울온을 다시하구픈데 ㅠㅠ 아그리고 검색해보니깐 3월달에도 저랑 똑같은 사운드 카드 써서 게임 못하던 분이계셧던거 같은데 그때도 검색하세요 라고만 써있더군요 ㅠㅠ 후움.. 사운드 카드 회사가 ess 라서 예전거라서 그런지 .. 서드돈 할때는 안그랬는데 왜그런지 몰겠네요",
+  "author": "forsure87",
+  "authorMemberNo": "22091",
+  "authorHomepage": "http://s",
+  "createdAt": "2003-08-13T00:57:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뮤직폴더가서 ea로고동영상지우세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헐 지워도 그러는데.. 쩝 왜이러져 이거 ...<br>\n<br>\n 게임까진 다 들어가지는데요 <br>\n<br>\n 게임하다보면 이렇게 되는거라서... ㅠㅠ<br>\n<br>\n 아그리고 엠알씨 가서 한번 물어볼려고 했는데 이상하게 엠알씨 접속이 안되네요 .."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 사운드카드 업글하셨어요? 최신버전으로요?<br>\n<br>\n 아까 리플 달았는데..<br>\n<br>\n 그거한번 해보세요.<br>\n<br>\n 아마 될껍니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 지금 최신버전으로 업그레이드 했더니 오류 안뜨고여 계정 비번 입력하고 게임들어가자 마자 화면 검은색 되더니 리셋되어 버리네요 허허 .. ㅠㅠ<br>\n<br>\n 더 난감해졌네요 ㅠㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지포스등의 엔비디아 그래픽 카드가 공통적으로 사용하는 드라이버인 디토네이터는 구 디토네이터 위에 신 버젼 디토네이터를 깔면 두 드라이버가 충돌을 일으켜서 컴을 다운시켜 버립니다...디토네이터를 새 버젼으로 깔려면 구 버젼을 완전히 삭제 한 다음에 깔아야 합니다..<br>\n 저도 사운드카드 ess솔로 사용했었는데...별 문제는 없었던걸로 기억합니다..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030812210711",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37429",
+  "sourceEngine": "zeroboard"
+}

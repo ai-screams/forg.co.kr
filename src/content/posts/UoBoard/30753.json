@@ -1,0 +1,29 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30753",
+  "title": "그래픽이 깨져서 나와요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 제가 쓰던 컴이 인터넷이 끊겨서 이번에 형꺼에다가 깔았거듣여~<br>\n<br>\n 형깨 제꺼보다 사양도 좋고 그런데 그래픽이 깨져서 나오네요...<br>\n<br>\n 이건 뭐가 잘못된거져??<br>\n<br>\n 3번이나깔어는데도 똑같구여..<br>\n<br>\n 저로썬 도저히 뭐가 문젠지 모르갰내영......<br>\n<br>\n 아시는분 말씀점여..ㅠ,.ㅜ<br>\n<br>\n 그럼 즐온 하세영~~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제가 쓰던 컴이 인터넷이 끊겨서 이번에 형꺼에다가 깔았거듣여~ 형깨 제꺼보다 사양도 좋고 그런데 그래픽이 깨져서 나오네요... 이건 뭐가 잘못된거져?? 3번이나깔어는데도 똑같구여.. 저로썬 도저히 뭐가 문젠지 모르갰내영...... 아시는분 말씀점여..ㅠ,.ㅜ 그럼 즐온 하세영~~",
+  "author": "1700won",
+  "authorMemberNo": "19729",
+  "authorHomepage": null,
+  "createdAt": "2003-05-22T18:17:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울티마가 GeForce2 계열에서 가끔 문제를 일으키더군요.<br>\n 3D 클라이언트로 하시던가 화면을 16bit로 되어 있다면 32bit로, 32bit로 되어 있다면 16Bit로 바꾸어 보세요.<br>\n 그래도 안되신다면 다른 드라이버를 설치해보세요.<br>\n ...끝까지 안되신다면 1700won님의 컴퓨터에 쓰시던 그래픽카드를 써보세요. ;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030530031752",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30753",
+  "sourceEngine": "zeroboard"
+}

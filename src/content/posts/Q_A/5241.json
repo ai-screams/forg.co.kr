@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "5241",
+  "title": "글읽어볼때영~",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 다른사람들이 글쓰신거보면<br>\n 그글을 보고 리플을단 코멘트가 있자나여?<br>\n 그 코멘트 오른쪽부분에 3개의 조그마한 검은작대기는 머졍??<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "다른사람들이 글쓰신거보면 그글을 보고 리플을단 코멘트가 있자나여? 그 코멘트 오른쪽부분에 3개의 조그마한 검은작대기는 머졍??",
+  "author": "AoA_라핌",
+  "authorMemberNo": "2468",
+  "authorHomepage": null,
+  "createdAt": "2001-11-27T16:19:02",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자신의 글을 지울때 사용하는 버튼입니다.  ^^;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 그러쿠나...여태 코멘트는 못지우는건줄 알았는데..ㅡ;;감사"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020622043545",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=5241",
+  "sourceEngine": "zeroboard"
+}

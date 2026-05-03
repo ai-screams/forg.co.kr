@@ -1,0 +1,40 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5938",
+  "title": "레이크 오스틴 몇분 안오셨지만",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1035732262/UO0012.jpg\"><br> <img border=\"0\" src=\"data/1035732262/UO0010.jpg\"><br>     \t\t\t 트린식 로얄 뱅크앞에서 한장찍었습니다<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "트린식 로얄 뱅크앞에서 한장찍었습니다",
+  "author": "romadsw",
+  "authorMemberNo": "5694",
+  "authorHomepage": null,
+  "createdAt": "2002-10-28T00:24:22",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0012.jpg",
+      "fileNum": 1,
+      "sizeBytes": 178483
+    },
+    {
+      "name": "UO0010.jpg",
+      "fileNum": 2,
+      "sizeBytes": 168755
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 며칠간 컴텨를 못했습니다<br>\n 가츠입니다 ^^ 집에가서 뵙죠<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021113135858",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5938",
+  "sourceEngine": "zeroboard"
+}

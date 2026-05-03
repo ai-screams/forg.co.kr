@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22628",
+  "title": "트레져 질문이요",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  음...<br>\n<br>\n계정을 다시 살려서 보물이나 캐볼까하는데요..<br>\n<br>\n보물지도 위치가 바뀌었다고들하던데...심하게 변동되었나요??<br>\n<br>\n아니면 어느정도??</td></tr></tbody></table>\n",
+  "bodyText": "음... 계정을 다시 살려서 보물이나 캐볼까하는데요.. 보물지도 위치가 바뀌었다고들하던데...심하게 변동되었나요?? 아니면 어느정도??",
+  "author": "너부리",
+  "authorMemberNo": "14851",
+  "authorHomepage": null,
+  "createdAt": "2003-12-08T20:55:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Pinky",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "거의 차이 없습니다.<br>\n 간혹 바뀐위치가 있는것은 uo.com 에 트레져 포럼에 가면 지도가 올라와 있을겁니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040101212943",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22628",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18468",
+  "title": "울온패치시 에러가 나고 이런메세지가 나오는데.... 알려주세요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t Error during session<br>\n Your client may not be the most recent version.<br>\n You may be able to play the game with your current client.<br>\n Check http:\\www.uo.com for help on resolving patching issues.<br>\n Click OK to play the game or Cancel to abort.<br>\n<br>\n<br>\n 전 패치가 된줄 알았는데 에러란 메세지가 나오네요.... <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#FF6699\" size=\"12\">\n앉으나 서나 료코님 생각!!\n<img src=\"http://www.diablo2gate.com/cgi-bin/ikonboard/imageup_0301/rh.jpg\">\n</font>\n</div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "Error during session Your client may not be the most recent version. You may be able to play the game with your current client. Check http:\\www.uo.com for help on resolving patching issues. Click OK to play the game or Cancel to abort. 전 패치가 된줄 알았는데 에러란 메세지가 나오네요.... 앉으나 서나 료코님 생각!!",
+  "author": "Zephy",
+  "authorMemberNo": "14666",
+  "authorHomepage": null,
+  "createdAt": "2003-05-17T01:43:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 님 버젼 최신버젼아니라서 패치 안된다는데영..<br>\n uoa 아니에영?<br>\n 패치안하구 지금 버젼으론 겜할수있데여..<br>\n 단지 지금버전에서 패치를 받을수 없는 상황같은데요..<br>\n 위의 싸이트 가셔서 체크해보세염."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 허거덩... -_-;;<br>\n<br>\n AOS 클라이고...  계정도 AOS인데 -_-;;;<br>\n<br>\n 답변 감사합니다.. (__)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030522083032",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18468",
+  "sourceEngine": "zeroboard"
+}

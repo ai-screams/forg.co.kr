@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37201",
+  "title": "아시는 분만 보세요 - 시그니쳐로 코멘트 등록 폼 바꾸기",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t &lt;br&gt;&lt;br&gt;&lt;img src=\"http://forg.co.kr/_zb/data/weda.jpg\"&gt;&lt;br&gt;그래도 술은 안 되!&lt;br&gt;&lt;br&gt;&lt;img src=\"http://forg.co.kr/_zb/data/guattack_2.gif\" loadFin=\"0\"&nbsp;&nbsp;onload=\"if (this.loadFin == 0){var Txarea = document.forms[0].tags(\\'textarea\\')[0]; Txarea.style.backgroundImage = \\'url(<a href=\"http://forg.co.kr/_zb/data/gu.gif\">http://forg.co.kr/_zb/data/gu.gif</a>)\\'; var Subinp = document.forms[0].tags(\\'input\\'); var Smsg = new Array(\\'클릭n클릭\\',\\'살짝 눌러 주사와요\\',\\'눌러 주세요\\',\\'오우 클릭 미\\',\\'-Λ+ Click me now!\\',\\'글 등록 안하면...!\\',\\'살포시 클릭.\\',\\'CLICK IT\\',\\'-_- 리플 원츄\\',\\'我望答\\'); var Scol = new Array(\\'skyblue\\',\\'khaki\\',\\'silver\\',\\'lemon\\',\\'pink\\'); for(i=0; Subinp.length&gt;i; i++){if (Subinp[i].type.toString() == \\'submit\\'){Subinp[i].value = Smsg[Math.round(Math.random() * 40)%Smsg.length]; Subinp[i].style.backgroundColor = Scol[Math.round(Math.random() * 40)%Scol.length]; Subinp[i].style.border = \\'1 black solid\\'; Subinp[i].style.color = \\'black\\';}} document.all.gShow.innerText = \\'제 멋진 시그니쳐 - 코멘트 등록 폼!\\'; this.loadFin = 1}\"&gt;&lt;br&gt;구우님의 일격의 펀치!&lt;br&gt;&lt;br&gt;우리말 다듬기에 한 몫 하도록 노력하겠습니다.&lt;br&gt;[&lt;a href=\"http://www.ganada.org/\"&gt;가나다 한글사랑 홈페이지&lt;/a&gt;]&lt;br&gt;&lt;br&gt;&lt;a name=\"gShow\"&gt;&lt;font color=\"red\"&gt;&lt;b&gt;시그니쳐를 이용한 코멘트 등록 폼의 업그레이드가 실패하였습니다.&lt;/b&gt;&lt;/font&gt;&lt;/a&gt;<br>\n<br>\n<br>\n 이상이 제가 사용한 시그니쳐 전문입니다. 중요한 부분만 따로 떼어서... 구가 크레이브를 강타하고 있는 gif 파일의 onload 이벤트(gif 파일의 경우에는 루프가 한 번 반복 될 때마다 이 이벤트가 발생하여 스크립트가 작동하지 않는 경우를 막아줍니다)의 내용을 살펴보겠습니다.<br>\n<br>\n if (this.loadFin == 0){<br>\n var Txarea = document.forms[0].tags(\\'textarea\\')[0];<br>\n Txarea.style.backgroundImage = \\'url(<a href=\"http://forg.co.kr/_zb/data/gu.gif\">http://forg.co.kr/_zb/data/gu.gif</a>)\\';<br>\n<br>\n var Subinp = document.forms[0].tags(\\'input\\');<br>\n var Smsg = new Array(\\'클릭n클릭\\',\\'살짝 눌러 주사와요\\',\\'눌러 주세요\\',\\'오우 클릭 미\\',\\'-Λ+ Click me now!\\',\\'글 등록 안하면...!\\',\\'살포시 클릭.\\',\\'CLICK IT\\',\\'-_- 리플 원츄\\',\\'我望答\\');<br>\n var Scol = new Array(\\'skyblue\\',\\'khaki\\',\\'silver\\',\\'lemon\\',\\'pink\\');<br>\n<br>\n for(i=0; Subinp.length&gt;i; i++){<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Subinp[i].type.toString() == \\'submit\\'){<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subinp[i].value = Smsg[Math.round(Math.random() * 40)%Smsg.length];<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subinp[i].style.backgroundColor = Scol[Math.round(Math.random() * 40)%Scol.length];<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subinp[i].style.border = \\'1 black solid\\'; Subinp[i].style.color = \\'black\\';<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>\n }<br>\n<br>\n document.all.gShow.innerText = \\'제 멋진 시그니쳐 - 코멘트 등록 폼!\\';<br>\n this.loadFin = 1;<br>\n }<br>\n<br>\n 그리고 위에서 말한 gif 파일을 표시한 img 태그에 다음과 같은 속성을 집어넣었습니다.&nbsp;&nbsp;이는 일종의 스위치 역할을 하게 하기 위함입니다.<br>\n<br>\n loadFin=\"0\"<br>\n<br>\n 이 원리를 이해하시는 분은 자신의 코멘트 등록 폼도 쉽게 꾸밀 수 있을 거라고 생각합니다. (모르시는 분께는 죄송하지만, 위의 내용을 자바스크립트를 전혀 모르시는 분께 설명하려면 많은 시간이 걸리기 때문에 생략합니다. 그래도 조금 아신다면 충분히 바꿔 쓰실 수 있을 듯)<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br><br><img src=\"http://forg.co.kr/_zb/data/weda.jpg\"><br>그래도 술은 안 되!<br><br><img src=\"http://forg.co.kr/_zb/data/guattack_2.gif\"><br>구우님의 일격의 펀치!<br><br>우리말 다듬기에 한 몫 하도록 노력하겠습니다.<br>[<a href=\"http://www.ganada.org/\">가나다 한글사랑 홈페이지</a>]<br><br><a><font color=\"red\"><b>시그니쳐를 이용한 코멘트 등록 폼의 업그레이드가 실패하였습니다.</b></font></a> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "<br><br><img src=\"http://forg.co.kr/_zb/data/weda.jpg\"><br>그래도 술은 안 되!<br><br><img src=\"http://forg.co.kr/_zb/data/guattack_2.gif\" loadFin=\"0\"  onload=\"if (this.loadFin == 0){var Txarea = document.forms[0].tags(\\'textarea\\')[0]; Txarea.style.backgroundImage = \\'url( http://forg.co.kr/_zb/data/gu.gif )\\'; var Subinp = document.forms[0].tags(\\'input\\'); var Smsg = new Array(\\'클릭n클릭\\',\\'살짝 눌러 주사와요\\',\\'눌러 주세요\\',\\'오우 클릭 미\\',\\'-Λ+ Click me now!\\',\\'글 등록 안하면...!\\',\\'살포시 클릭.\\',\\'CLICK IT\\',\\'-_- 리플 원츄\\',\\'我望答\\'); var Scol = new Array(\\'skyblue\\',\\'khaki\\',\\'silver\\',\\'lemon\\',\\'pink\\'); for(i=0; Subinp.length>i; i++){if (Subinp[i].type.toString() == \\'submit\\'){Subinp[i].value = Smsg[Math.round(Math.random() * 40)%Smsg.length]; Subinp[i].style.backgroundColor = Scol[Math.round(Math.random() * 40)%Scol.length]; Subinp[i].style.border = \\'1 black solid\\'; Subinp[i].style.color = \\'black\\';}} document.all.gShow.innerText = \\'제 멋진 시그니쳐 - 코멘트 등록 폼!\\'; this.loadFin = 1}\"><br>구우님의 일격의 펀치!<br><br>우리말 다듬기에 한 몫 하도록 노력하겠습니다.<br>[<a href=\"http://www.ganada.org/\">가나다 한글사랑 홈페이지</a>]<br><br><a name=\"gShow\"><font color=\"red\"><b>시그니쳐를 이용한 코멘트 등록 폼의 업그레이드가 실패하였습니다.</b></font></a> 이상이 제가 사용한 시그니쳐 전문입니다. 중요한 부분만 따로 떼어서... 구가 크레이브를 강타하고 있는 gif 파일의 onload 이벤트(gif 파일의 경우에는 루프가 한 번 반복 될 때마다 이 이벤트가 발생하여 스크립트가 작동하지 않는 경우를 막아줍니다)의 내용을 살펴보겠습니다. if (this.loadFin == 0){ var Txarea = document.forms[0].tags(\\'textarea\\')[0]; Txarea.style.backgroundImage = \\'url( http://forg.co.kr/_zb/data/gu.gif )\\'; var Subinp = document.forms[0].tags(\\'input\\'); var Smsg = new Array(\\'클릭n클릭\\',\\'살짝 눌러 주사와요\\',\\'눌러 주세요\\',\\'오우 클릭 미\\',\\'-Λ+ Click me now!\\',\\'글 등록 안하면...!\\',\\'살포시 클릭.\\',\\'CLICK IT\\',\\'-_- 리플 원츄\\',\\'我望答\\'); var Scol = new Array(\\'skyblue\\',\\'khaki\\',\\'silver\\',\\'lemon\\',\\'pink\\'); for(i=0; Subinp.length>i; i++){ if (Subinp[i].type.toString() == \\'submit\\'){ Subinp[i].value = Smsg[Math.round(Math.random() * 40)%Smsg.length]; Subinp[i].style.backgroundColor = Scol[Math.round(Math.random() * 40)%Scol.length]; Subinp[i].style.border = \\'1 black solid\\'; Subinp[i].style.color = \\'black\\'; } } document.all.gShow.innerText = \\'제 멋진 시그니쳐 - 코멘트 등록 폼!\\'; this.loadFin = 1; } 그리고 위에서 말한 gif 파일을 표시한 img 태그에 다음과 같은 속성을 집어넣었습니다.  이는 일종의 스위치 역할을 하게 하기 위함입니다. loadFin=\"0\" 이 원리를 이해하시는 분은 자신의 코멘트 등록 폼도 쉽게 꾸밀 수 있을 거라고 생각합니다. (모르시는 분께는 죄송하지만, 위의 내용을 자바스크립트를 전혀 모르시는 분께 설명하려면 많은 시간이 걸리기 때문에 생략합니다. 그래도 조금 아신다면 충분히 바꿔 쓰실 수 있을 듯) 그래도 술은 안 되! 구우님의 일격의 펀치! 우리말 다듬기에 한 몫 하도록 노력하겠습니다. [ 가나다 한글사랑 홈페이지 ] 시그니쳐를 이용한 코멘트 등록 폼의 업그레이드가 실패하였습니다.",
+  "author": "sos440",
+  "authorMemberNo": "15307",
+  "authorHomepage": null,
+  "createdAt": "2003-08-11T17:02:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 호옷! 감사합니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 반복되는 gif 파일이 아닌 경우의 이미지들은 첫 번째 로딩이 실패할 수 있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 구구"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030830051530",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37201",
+  "sourceEngine": "zeroboard"
+}

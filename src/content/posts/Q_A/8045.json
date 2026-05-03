@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8045",
+  "title": "UOA 포션만 종류인식이 안되고 있어요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 전 포이즈닝 올리구 있는데여\n<br>\n 독포션의 종류별 인식이 안되서\n<br>\n 환장하게씀돠...\n<br>\n 오늘 새벽에는 잘되었구요.\n<br>\n 아침에 할라고 보니까 갑자기 종류별 인식이 안되드라구요.\n<br>\n 매클은 이렇습니다.\n<br>\n<br>\n 망치더블클릭(종류)\n<br>\n 단도 맹글구\n<br>\n 딜레이\n<br>\n 케그 더블클릭(종류)\n<br>\n 딜레이\n<br>\n 포이즌 스킬사용\n<br>\n 독포션 선택(종류)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;------ 이넘이 문제임...\n<br>\n 타겟 선택(종류)\n<br>\n 딜레이\n<br>\n 망치더블클릭(종류)\n<br>\n 단도 녹이기(종류)\n<br>\n 딜레이\n<br>\n<br>\n 전에는 종류인식 안될때 무슨 방법 없을까여?\n<br>\n 적어도 딜레이 문제는 아님......<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "전 포이즈닝 올리구 있는데여 독포션의 종류별 인식이 안되서 환장하게씀돠... 오늘 새벽에는 잘되었구요. 아침에 할라고 보니까 갑자기 종류별 인식이 안되드라구요. 매클은 이렇습니다. 망치더블클릭(종류) 단도 맹글구 딜레이 케그 더블클릭(종류) 딜레이 포이즌 스킬사용 독포션 선택(종류)       <------ 이넘이 문제임... 타겟 선택(종류) 딜레이 망치더블클릭(종류) 단도 녹이기(종류) 딜레이 전에는 종류인식 안될때 무슨 방법 없을까여? 적어도 딜레이 문제는 아님......",
+  "author": "띨똘이",
+  "authorMemberNo": "0",
+  "authorHomepage": null,
+  "createdAt": "2002-05-10T23:10:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "띨똘이",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 문제 해결했습니다...........!!!!!!!!!!!!!!!!!!!!!!!!\n<br>\n UOAssist 쪽에 문의한 결과.......\n<br>\n 너무나 간단해서 까먹고 있던거...--;;;\n<br>\n 카운트 리소스였슴돠...\n<br>\n 에겅...... 쩍팔료랑.....\n<br>\n ㄴ(-_-ㆀ)ㄱ =3 =3 =3 텨텨텨 ~~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그거 의외로 자주 까먹게 되더군요 -_-\n<br>\n 하긴 얼마나 플레이어들이 자주 까먹으면 uoa로 울온 접속하면 첫 화면에 \n<br>\n 카운트 리소스 하는게 좋을껄~ 하는 메시지를 띄웠을까요 |^_^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527145418",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8045",
+  "sourceEngine": "zeroboard"
+}

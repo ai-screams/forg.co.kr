@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26731",
+  "title": "질문..네크8타일에 관해서..",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 안녕하세요..네크로를 키워보려고..하는데..이지유오8타일 스크립을 받았더니<br>\n<br>\n 울온 영문판뿐이 안된다네요 ㅡ,.ㅡ;&nbsp;&nbsp;혹시 다른식으로..8타일 할 수 있는 방버<br>\n<br>\n 을 아시는분 좀 알려주세요..^^/(누가8타일 프로그램에 네크로맨시 추가 안<br>\n<br>\n 시키나요)<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "안녕하세요..네크로를 키워보려고..하는데..이지유오8타일 스크립을 받았더니 울온 영문판뿐이 안된다네요 ㅡ,.ㅡ;  혹시 다른식으로..8타일 할 수 있는 방버 을 아시는분 좀 알려주세요..^^/(누가8타일 프로그램에 네크로맨시 추가 안 시키나요)",
+  "author": "thisboy",
+  "authorMemberNo": "17791",
+  "authorHomepage": "http://www.cfacpc.com",
+  "createdAt": "2003-03-09T00:09:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ... 울온을 영문판으로 바꾸세요..[퍽!]"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온 랭귀지를 영어로 바꾸세요<br>\n<br>\n 제어판 - 국가별 설정 에서 언어를 영어로 바꾸시거나<br>\n<br>\n uo.cfg 에<br>\n<br>\n UserLanguageCodeString=eng<br>\n<br>\n 라고 삽입해주세요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030620001135",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26731",
+  "sourceEngine": "zeroboard"
+}

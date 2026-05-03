@@ -1,0 +1,33 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5391",
+  "title": "백두의 추억4",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/ee_Crimson_Eyes3.jpg\"><br> <img border=\"0\" src=\"data/ee_병신스타.jpg\"><br>     \t\t\t ㅠ_ㅠ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "ㅠ_ㅠ",
+  "author": "야투",
+  "authorMemberNo": "7759",
+  "authorHomepage": null,
+  "createdAt": "2002-09-30T09:44:46",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "ee_Crimson_Eyes3.jpg",
+      "fileNum": 1,
+      "sizeBytes": 289075
+    },
+    {
+      "name": "ee_병신스타.jpg",
+      "fileNum": 2,
+      "sizeBytes": 269004
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20021020154847",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5391",
+  "sourceEngine": "zeroboard"
+}

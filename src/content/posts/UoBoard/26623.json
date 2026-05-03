@@ -1,0 +1,47 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26623",
+  "title": "오에카키 게시판을 설치하던중",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t ......원본의 문제같아서 설치중단..한 상태지만<br>\n<br>\n 왜 자꾸 안되는지 모르겠군요..755에 맞추고..그런거 다 했는데<br>\n<br>\n -_-;;<br>\n<br>\n 역시 천리안의 문제인가.<br>\n<br>\n 천리안은 이런 문제도 잘 생기더니만.[음침]<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#99999C\" size=\"2\"><img src=\"http://sazabi.uospace.net/cgi_bin/irisnx-nyam/data/01_12_13.jpg\"><br>\nFree, You have Freedom<br>\n네가 찾는것은<br>\n그곳에 있다<br>\nFree, You have Freedom<br>\n네가 움직이지 않아도<br>\n세상은 돌아간다<br>\n</font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "......원본의 문제같아서 설치중단..한 상태지만 왜 자꾸 안되는지 모르겠군요..755에 맞추고..그런거 다 했는데 -_-;; 역시 천리안의 문제인가. 천리안은 이런 문제도 잘 생기더니만.[음침] Free, You have Freedom 네가 찾는것은 그곳에 있다 Free, You have Freedom 네가 움직이지 않아도 세상은 돌아간다",
+  "author": "Iriet",
+  "authorMemberNo": "15087",
+  "authorHomepage": "http://piriah.ce.ro",
+  "createdAt": "2003-03-06T23:45:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 천리안은 바꿔야할 부분들이 조금씩 있죠... 오에카키는 설치 안해봐서 잘 모르겠지만..;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 천리안은 cgi 설정이 좀 까다로운..-_-<br>\n<br>\n 도움드리고 싶지만 기억이 가물하네요<br>\n<br>\n 예전기억으론 천리안 같은경우엔 cgiwrap인가 때문에<br>\n<br>\n 다른 계정과 다른 방법으로 세팅해야 할거에요<br>\n<br>\n 나머지 부분은 직접 검색하셔서 알아보시는 수밖엔 (; -_-)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ftp를 사용법 쉬운걸로 해봐 냠군. 개인적으로는 써니 ftp가 좋던데.<br>\n 바이너리 모드니 뭐니 해서 업할 때 모드 꼼꼼히 맞춰서 해주는 건 알지?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ........그냥 알FTP로 했는데<br>\n ......으음<br>\n<br>\n .......으음[....]"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030611000454",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26623",
+  "sourceEngine": "zeroboard"
+}

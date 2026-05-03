@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30749",
+  "title": "울온 외 질문....물어볼대가 없어요ㅠ.ㅠ",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t arcsin(1/2)을 어케 구하죠?<br>\n arcsin(1/2)=x<br>\n sinx=1/2<br>\n 라는거 까지는 알겠는데...... 이 담부터 잘 못하겠네요 <br>\n 수학 잘하시는분 도움 좀....ㅠ_ㅠ<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "arcsin(1/2)을 어케 구하죠? arcsin(1/2)=x sinx=1/2 라는거 까지는 알겠는데...... 이 담부터 잘 못하겠네요 수학 잘하시는분 도움 좀....ㅠ_ㅠ",
+  "author": "loki",
+  "authorMemberNo": "15317",
+  "authorHomepage": null,
+  "createdAt": "2003-05-22T17:32:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아... 아크사인은 뭐의 역수..역수가 맞나..- _-우우욱 우헉 공업수학  F임다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅠㅠ 교수님이 풀어주셨던걸 보자믄....<br>\n arcsec(-루트2) = x<br>\n secx = -루트2<br>\n cosx = -1/루트2       &lt;---바로 이부분이 이해가 안되네요...ㅠㅠ<br>\n x=3/4파이,5/4파이<br>\n 라는데 "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 30 아닌가요???<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 30은 맞는데 그 과정이 중요한거죠......"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헐 저희는 토목과라서 그냥 외우라고 하더라는........... ㅜㅜ<br>\n 하기사 계산기 없으믄 이제 나누기도 못한다는..... 계산기에 길들여진 인생...<br>\n 도움이 못되서 죄성...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아녀요 ㅠ_ㅠ 신경써 주셔서 감사드려요 ^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030530031429",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30749",
+  "sourceEngine": "zeroboard"
+}

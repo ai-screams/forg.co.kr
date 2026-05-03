@@ -1,0 +1,52 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5564",
+  "title": "황당한 힐러 하우스의 옆집",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0203.jpg\"><br> <img border=\"0\" src=\"data/UO0204.jpg\"><br>     \t\t\t 문이...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "문이...",
+  "author": "hogoom",
+  "authorMemberNo": "5817",
+  "authorHomepage": null,
+  "createdAt": "2002-10-07T18:27:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0203.jpg",
+      "fileNum": 1,
+      "sizeBytes": 198348
+    },
+    {
+      "name": "UO0204.jpg",
+      "fileNum": 2,
+      "sizeBytes": 197017
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 문짝수리중"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 초능력 문인가..--"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 별 희한한 문도 다 있군...<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021026005051",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5564",
+  "sourceEngine": "zeroboard"
+}

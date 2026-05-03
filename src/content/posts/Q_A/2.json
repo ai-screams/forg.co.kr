@@ -1,0 +1,101 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2",
+  "title": "질답 게시판입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  이곳에 질문글을 올리시기전에 가급적 하단의 검색을 먼저 활용하여 주시길 바랍니다.<br>\n<br>\n질문하시는분들은 되도록 상세하게 설명을 해주셔야 양질의 답글을 기대하실 수 있습니다. <br>\n</td></tr></tbody></table>\n",
+  "bodyText": "이곳에 질문글을 올리시기전에 가급적 하단의 검색을 먼저 활용하여 주시길 바랍니다. 질문하시는분들은 되도록 상세하게 설명을 해주셔야 양질의 답글을 기대하실 수 있습니다.",
+  "author": "Forg",
+  "authorMemberNo": "2",
+  "authorHomepage": null,
+  "createdAt": "2005-06-14T14:09:40",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<img border=\"0\" src=\"emoticon/m_girl_hug.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "3등?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "수니건"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "적절한 5등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 2등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 1월 24일 1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2월달 1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음?...일단 기록을 남겨볼까나..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 하반기 1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 8월 1등"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "2007년 10월 1등"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071015092804",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=2",
+  "sourceEngine": "zeroboard"
+}

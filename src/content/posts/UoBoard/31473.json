@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "31473",
+  "title": "1.1 튜알 오버클럭 시도중....",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 에...시도중입니다....<br>\n<br>\n 시도중이죠....<br>\n<br>\n CMOS서 FSB있는곳을 몰라서...<br>\n<br>\n CMOS 우측 매뉴 맨 위 (F로 시작하는 -_-)<br>\n<br>\n 그걸 살짝 바꿔주니....<br>\n<br>\n FSB 133MHz가 나오는데......<br>\n<br>\n 오버클럭이아닌것 같은 -_-...<br>\n<br>\n 인텔 CPU인데......<br>\n<br>\n 도움좀 주실분 없나요 ~_~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "에...시도중입니다.... 시도중이죠.... CMOS서 FSB있는곳을 몰라서... CMOS 우측 매뉴 맨 위 (F로 시작하는 -_-) 그걸 살짝 바꿔주니.... FSB 133MHz가 나오는데...... 오버클럭이아닌것 같은 -_-... 인텔 CPU인데...... 도움좀 주실분 없나요 ~_~",
+  "author": "sijac",
+  "authorMemberNo": "20553",
+  "authorHomepage": null,
+  "createdAt": "2003-06-05T01:35:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " FSB만 올려도 오버가 되긴하죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 메인보드가 무엇인지 잘모르겟지만 .....저렴한 투알을 구입하실때 같이 저렴한 보드를 구입한걸로 예상되고<br>\n 오버클럭의 지원이 미비하리라 생각됩니다. 그리고 대부분의 메인보드에서 비정규클럭 오버클럭은 위험한것입니다. (엔포스2는 예외이구요) FSB 정규 클럭이라함은 100 133 정도가 되겠는데 (200ㄷ 나왔죠..) <br>\n 133으로 FSB만 높이신것은 안전적인 \"오버클러킬\"이라 할수 있구요. 100, 133 이 아닌 수로 오버클러킬을 한다면 PCI 등의 주변카드까지도 망칠수 있습니다 . 결론은 133오버클럭에 만족ㄱ하시라는거죠 ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 펑~~ ㅠ_ㅠ<br>\n<br>\n 했던경험이... -_-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 튜알셀 1.1 씁니다만 속도에 충분히 만족하거든요?<br>\n 솔직히 심적 부담을 가지고 오버를 할 필요가 있을지...<br>\n<br>\n 당혹스러운게, 사용에 무리가 하나도 없을만한 사양이나 평균 이상의 사용에도 전혀 꿀림이 없을 컴을 가지고 계시면서도 끝까지 오버에 몰두하시는분들 계시는데요.<br>\n 솔직히 저로서는 이해하기가 어려운..-_-;  체감 속도 향상은 사실상 없다고 봐야하고 (설사있다해도 영화 상영 시간이 2시간이냐 2시간 3분이냐 수준의 차이인것을..-_-;;;) 사람이라면 어쩔수없이 가지게되는 불안감에 비하면 이조차도 득볼게 없다는.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " FSB만 133으로 높아지셨다면 다행이겠지만 AGP, PCI 등의 클럭 또한 오버가 되지 않았나 살펴보세요.<br>\n 무리가 갈 수 있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 오버는 AGP PCI RIMM FSB 동시에 맞아 떨어져야 한다고 알고있어요 ㅇ_ㅇ;<br>\n<br>\n 제가 들은 이야기의 출처는 CrossOverLab 의 어떤 과장님 말이였습니다 -0-/"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030620001314",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=31473",
+  "sourceEngine": "zeroboard"
+}

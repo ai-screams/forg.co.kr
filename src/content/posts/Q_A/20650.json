@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20650",
+  "title": "Use Item Type이 안 먹히네요",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 디스코를 돌리고 있는데요<br>\n<br>\n 매클을<br>\n<br>\n Use Item Type<br>\n Delay 2000<br>\n 디스코 스킬 <br>\n 타겟<br>\n Delay 4000<br>\n<br>\n 이렇게 해놨는데요<br>\n<br>\n 악기가 부서져도 다른 악기로 자동으로 되지 않고<br>\n<br>\n 계속 악기가 없다고 나오네요<br>\n<br>\n 물론 악기 종류는 같은 종류 입니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n강아지 키우고 싶당~♡\n<img height=\"300\" src=\"http://user.chollian.net/~pouter07/forgsign/data/강아지.jpg\" width=\"400\">\n</div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "디스코를 돌리고 있는데요 매클을 Use Item Type Delay 2000 디스코 스킬 타겟 Delay 4000 이렇게 해놨는데요 악기가 부서져도 다른 악기로 자동으로 되지 않고 계속 악기가 없다고 나오네요 물론 악기 종류는 같은 종류 입니다. 강아지 키우고 싶당~♡",
+  "author": "elfkayla",
+  "authorMemberNo": "16416",
+  "authorHomepage": null,
+  "createdAt": "2003-08-29T19:25:33",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 카운트 리소스 한번 해주세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅡㅛㅡ?<br>\n 악기는 유즈아이템 타입으로 안되는걸루 아는디요.<br>\n 케알루프를 보시면 포인트 지정하는게 있습니다.<br>\n<br>\n 일단 악기중에 포인트 잡기 가장 쉬운건 북이구요.<br>\n 그걸 가방 가장자리에 모아두고 돌리면 되겠습니다.<br>\n<br>\n 매크로는 다음과 같이.<br>\n<br>\n 더블 클릭 - 포인트 지정(북)<br>\n 딜레이 - 2000<br>\n 키누르기(프로보키 설정된 것)<br>\n 딜레이 - 500<br>\n 클릭 - 첫번째 타겟(포인트 지정된 것)<br>\n 딜레이 - 500<br>\n 클릭 - 두분째 타겟(역시 포인트 지정된 것)<br>\n 딜레이 - 10000<br>\n<br>\n 요렇게 하고 옵션에 보면 마우스활성화 III 으로 맞추고 하심됩니다.<br>\n 단!!  울온화면 최소화를 하면 포인트체크를 못하니 그상태로 두고 다른 작업을 하셔야 할듯.<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 악기 유즈 아이템 타입 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 유오에이의 자원세기 한번 해주세요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030928205457",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20650",
+  "sourceEngine": "zeroboard"
+}

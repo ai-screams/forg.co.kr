@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21678",
+  "title": "네크로 마법 성공률",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 스킬에 따른 마법 성공률을 알고 싶네요.<br>\n 알려주시면 정말 감사하겠습니다<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "스킬에 따른 마법 성공률을 알고 싶네요. 알려주시면 정말 감사하겠습니다",
+  "author": "kypepperon",
+  "authorMemberNo": "15223",
+  "authorHomepage": null,
+  "createdAt": "2003-10-20T11:17:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 공식적으로 나온건없습니다..<br>\n 다만 최소 요구치 스킬에서의 성공률이 적습니다.<br>\n 보통 네크20에서 쓸수 있는 스킬을 100%성공하려면 40정도는 되야하죠..<br>\n 뱀파이어변신같은 경우 최소 요구 스킬이 99인데 네크 gm에서 성공률이 한 30%~40%정도 되는 것 같습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 성공률이 100% 되는 스킬은 최소스킬 + 40입니다.<br>\n 다만 예외적으로 뱀파이어변신은 최소 요구치는 99이지만 지엠에서의 성공률은 50%정도입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스킬                       //      필요스킬치     //   99%성공율스킬치    //   스팰시간 <br>\n Curse Weapon                   0                         40                         1초<br>\n Pain Spike                          20                       60                         1초 <br>\n Blood Oath                         20                       60                         1.5초<br>\n Evil Omen                           20                       60                         1초<br>\n Corpse Skin                        20                       60                         2초<br>\n Wraith Form                        20                       60                         4초<br>\n Mind Rot                              30                       70                         1.5초<br>\n Horrific Beast                       40                       80                         4초<br>\n Animate Dead                      40                       80                         1.5초<br>\n Poison Strike                        50                       90                          2초<br>\n Wither                                  60                       100                        1.5초<br>\n Strangle                               65                       105                        2.5초<br>\n Lich Form                             70                        110                        4초<br>\n Vengeful Spirit                     80                        120                         8초<br>\n Vampiric Embrace                 99                        120.1                      4초 <br>\n Summon Familiar                 (밑에참조)                                              4초<br>\n Horde Minion                        30                          30    <br>\n Shadow Wisp                       50                          50<br>\n Dark Wolf                             60                          60 <br>\n Death Adder                         80                         80 <br>\n Vampire Bat                         100                      100 <br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031126051403",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21678",
+  "sourceEngine": "zeroboard"
+}

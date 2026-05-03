@@ -1,0 +1,53 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5495",
+  "title": "확실히 정상은 아닌데...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1033667132/제목_없음.jpg\"><br>     \t\t\t     \t\t\t 잘 되던 샤드가 갑자기 10여시간째 이런 상태....<br>\n<br>\n 딴데 접속이나 다운로드는 잘 되는데...<br>\n<br>\n 예전 일본샤드 처럼....되는건 아닌지..<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "잘 되던 샤드가 갑자기 10여시간째 이런 상태.... 딴데 접속이나 다운로드는 잘 되는데... 예전 일본샤드 처럼....되는건 아닌지..",
+  "author": "일당100GP",
+  "authorMemberNo": "10789",
+  "authorHomepage": null,
+  "createdAt": "2002-10-04T02:45:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "제목_없음.jpg",
+      "fileNum": 1,
+      "sizeBytes": 119500
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그렇다고 소노마 버리시면 저 슬퍼할꼬예요 ㅠ.ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 얼마전부터 하나로가 일본 쪽으로 배드 게이트 웨이가 뜨던데..-0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헉? 저거 어떻게 하는거에요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  핑체크 물어보시는 것이라면라면 시작버튼 클릭-&gt; 실행-&gt; ping [host sever] 를 치시면 됩니다. 윈도우<br>\n 기본 명령어 중에 하나지요. 도스 모드로 가셔서 저렇게 하셔도 됩니다.<br>\n<br>\n  ex)ping forg.co.kr"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008141108",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5495",
+  "sourceEngine": "zeroboard"
+}

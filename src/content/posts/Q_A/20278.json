@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20278",
+  "title": "퍼블19 패링패치에관해서...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 19퍼블패치때문에<br>\n 패링 계산방법이 달라졋다는데,,,\\<br>\n 어떻게계산하면대나요??<br>\n 그리고 옛날패링계산방법은 무엇인가요???<br>\n 그리고 패링은 완전 방어이죠?<br>\n 워할때는 아쳐가좋나요???(컨트롤상관하지말고)<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<img src=\"http://myhome.hanafos.com/~csj8585/1.gif\"> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "19퍼블패치때문에 패링 계산방법이 달라졋다는데,,,\\ 어떻게계산하면대나요?? 그리고 옛날패링계산방법은 무엇인가요??? 그리고 패링은 완전 방어이죠? 워할때는 아쳐가좋나요???(컨트롤상관하지말고)",
+  "author": "charsoom",
+  "authorMemberNo": "21488",
+  "authorHomepage": null,
+  "createdAt": "2003-08-11T11:56:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 워에 아처는 그다지 비추천입니다. 느리고 잘 안맞는 활을 무슨방법으로 감당하실지는...<br>\n 굳이 아처리 광팬이시라면 말리진 않겠습니다만 좋지 못하다는 것만은 아셨으면 합니다.<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 퍼블 19로 패링 스킬에 의한 방어는 변경사항이 없어요<br>\n 최종적 공격 당할 확률에서 패링 성공률만큼 방어함<br>\n 패링 스킬 *0.3 = 패링 성공률,    방패 미착용시는 패링스킬*0.15<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  패링의 계산 방법은 달라지지 않았지만, 검술과 아이템에 의한 1,2차 타격성공률 판정이 달라졌기 때문에 자연히 영향을 받습니다. <br>\n<br>\n  예전에 비해서 약 2배 정도 패링의 성능이 향상되었다고 생각하시면 될겁니다.<br>\n  그렇다고 해서 패링이 있는 캐릭이 이전보다 더 방어율이 좋아졌다는 뜻이 아니구요.<br>\n<br>\n  패링이 없던 캐릭터가 방어율이 20%가 감소할때 패링이 있는 캐릭터는 방어율이 10%만 감소했다는 뜻입니다. (결국 둘다 힘들어 졌죠.),<br>\n<br>\n  더 자세한 내용을 원하시면 에세이 란에 최근에 제가 올려놓은 글이 있습니다, 허접하지만 참고 하시면.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030909143647",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20278",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "27147",
+  "title": "웹호스팅을 하나 구하려는데 ... 쉽질 않군요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 흠... 윈도우 서버류는 비싸서 엄두도안나고...<br>\n (사실 ASP공부하고 있었는데 -_-;)<br>\n<br>\n 리눅스 서버는 회사마다 다르지만... 뭐 대충 1년에 3만3천원선<br>\n<br>\n 이더라구요... (PHP를 배워야 하다니... ㅠ,.-)<br>\n<br>\n 흠... 그러나.. 여기저기 돌아다녀 보았지만.. <br>\n<br>\n 주머니 사정이 좋지 않아서 조금은 어렵군요...<br>\n<br>\n 대략 어디가 좋을까요?<br>\n<br>\n 아니면 회사를 선택할때 주의사항 같은거라도 ..... <br>\n<br>\n 감사합니다.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<img src=\"http://forg.co.kr/_zb/data/1046092789/sign.jpg\">\n</div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "흠... 윈도우 서버류는 비싸서 엄두도안나고... (사실 ASP공부하고 있었는데 -_-;) 리눅스 서버는 회사마다 다르지만... 뭐 대충 1년에 3만3천원선 이더라구요... (PHP를 배워야 하다니... ㅠ,.-) 흠... 그러나.. 여기저기 돌아다녀 보았지만.. 주머니 사정이 좋지 않아서 조금은 어렵군요... 대략 어디가 좋을까요? 아니면 회사를 선택할때 주의사항 같은거라도 ..... 감사합니다.",
+  "author": "nambak",
+  "authorMemberNo": "14550",
+  "authorHomepage": "http://my.dreamwiz.com/uolot",
+  "createdAt": "2003-03-17T00:59:21",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <a href=\"http://www.okjsp.pe.kr/\">http://www.okjsp.pe.kr/</a> <br>\n 여기 가셔서 고르세요 ... <br>\n 음 php 로군요 ... 그래도 지원하는 곳은 있으니 ... <br>\n<br>\n 아니면 이곳 <a href=\"http://www.x-y.net/\">http://www.x-y.net/</a><br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 공부용이시라면 직접 -- 서버를 돌리는 방법도 있습니다. -o-/"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030620004612",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=27147",
+  "sourceEngine": "zeroboard"
+}

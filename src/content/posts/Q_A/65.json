@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "65",
+  "title": "캐릭터 이동 코인에 대하여....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  에세이란에 선물받자는 글을 보고<br>\n<br>\n코드를 받아서 입력해보니 캐릭터 이동 코인이 나왔는데요.<br>\n<br>\n어떻게 사용해야하고 캐릭만 움직이는건지 은행도 같이 움직이는건지<br>\n<br>\n잘 모르겠네요..사용법을 아시는분은 좀 알려주세요. ^^</td></tr></tbody></table>\n",
+  "bodyText": "에세이란에 선물받자는 글을 보고 코드를 받아서 입력해보니 캐릭터 이동 코인이 나왔는데요. 어떻게 사용해야하고 캐릭만 움직이는건지 은행도 같이 움직이는건지 잘 모르겠네요..사용법을 아시는분은 좀 알려주세요. ^^",
+  "author": "ansqudcjs",
+  "authorMemberNo": "265",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T18:47:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "은행과 타고있는 비틀까지 이동가능하므로 은행과 비틀(단, 비틀은 아이템이 사라질수도있다고 하니 중요한건 은행에), 백팩에 중요한거 가득넣고 차원을 넘어가세요!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "타고있는비틀뿐만아니라 데리고있는 짐말도 됩니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "흠 근데요.. 토큰과 코드랑 무슨 차이가 있나요? 장터란에 어떤분에 코드를 구하신다던데.. 코드는 무슨 메리트가 잇나??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "토큰은 이미 만들어진거라서 만들어진 샤드에서만 쓰는거고요 코드는 만들고자하는 샤드에서 토큰을 만들수있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "토큰은 코드의 거래를 양성화하기 위해 만들어진 겁니다.\n<br>그걸로 거래하면 더 안전하다는 거죠. 코드가 틀릴 위험도 있고..\n<br>밴더에서는 550만 정도에 파는 듯 합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071114113838",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=65",
+  "sourceEngine": "zeroboard"
+}

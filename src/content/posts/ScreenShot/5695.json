@@ -1,0 +1,64 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5695",
+  "title": "마녀지도(10)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1034663947/UO0019.jpg\"><br> <img border=\"0\" src=\"data/1034663947/UO0020.jpg\"><br>     \t\t\t 저랑 옆집 사람, 그리고 아리랑에서 플레이 하시는 Rinor님의 도움으로<br>\n 확인된 지도들이 모두 20종입니다.<br>\n 더있을지도 모르겠지만 확인 된것들만 올립니다.<br>\n 이 그림들을 일괄적으로 원하시는 분들은 발해 아얄시 PoB방에서<br>\n 한가락(또는 가락|XXX)에게 쿼리 주시면 압축으로 드리도록 하겠습니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저랑 옆집 사람, 그리고 아리랑에서 플레이 하시는 Rinor님의 도움으로 확인된 지도들이 모두 20종입니다. 더있을지도 모르겠지만 확인 된것들만 올립니다. 이 그림들을 일괄적으로 원하시는 분들은 발해 아얄시 PoB방에서 한가락(또는 가락|XXX)에게 쿼리 주시면 압축으로 드리도록 하겠습니다.",
+  "author": "한가락",
+  "authorMemberNo": "2497",
+  "authorHomepage": null,
+  "createdAt": "2002-10-15T15:39:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0019.jpg",
+      "fileNum": 1,
+      "sizeBytes": 188928
+    },
+    {
+      "name": "UO0020.jpg",
+      "fileNum": 2,
+      "sizeBytes": 199372
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아참!!!  아리랑에서 룬북을 이용하시는 분들은 안에서 마크 버그땜에 (리콜 안되는)<br>\n 탑 이나 그런곳은 밖에 마크 해 뒀습니다.<br>\n 몇발자국 걸어 들어 가세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 에 사족이지만 이번 uoam 에서 점이 삼각형으로 찍힌 문양이 있는곳(Ruins 아고 뜨죠)<br>\n 이 대부분 나오더군요.<br>\n 지도에서 대략의 위치를 알아보시고 uoam의 그장소에 가보시면 쉽게 찾으실수있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그냥 제가 개발한 보물지도 도우미에 해당 장소를 찍어 대략적인 좌표를 얻어내 거기를 UOAM에 마크해서 찾아가면 됩니다. 정확도 보장~ (선전중... Advertising...)"
+    },
+    {
+      "author": "티파선녀",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 마크는 되고 리콜이 안되는 곳은 트린식부근에 있는 비밀타워 하나 뿐입니다~<br>\n<br>\n그리고 제가 확인바로도 전부 20개뿐인거 같네요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 살려줘님...<br>\n 이미 수정해서 퀘스트란에 지도 올린지 오래된것 같은데요<br>\n직접 링크는 http://forg.co.kr/uoquest/hagtm.html 입니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021118203056",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5695",
+  "sourceEngine": "zeroboard"
+}

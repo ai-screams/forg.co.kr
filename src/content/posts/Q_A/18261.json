@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18261",
+  "title": "Uoa 메클 관련 질문입니다. 답변 부탁드릴게요",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t uoa로 마이닝 메클 만들때 <br>\n use item 부분을 use item type 으로 <br>\n 바꿔야 포치에 놔둔 삽이나 곡괭이가<br>\n 없어질때까지 하지않습니까?<br>\n 근데 이상하게 어떨땐 바로 되고<br>\n 어떨땐 use item type으로 안바뀔때가<br>\n 있던데 그건 왜그런지요?<br>\n 그리고 바로 되게 하는방법은 어떤건지 좀<br>\n 가르쳐 주십시오....<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "uoa로 마이닝 메클 만들때 use item 부분을 use item type 으로 바꿔야 포치에 놔둔 삽이나 곡괭이가 없어질때까지 하지않습니까? 근데 이상하게 어떨땐 바로 되고 어떨땐 use item type으로 안바뀔때가 있던데 그건 왜그런지요? 그리고 바로 되게 하는방법은 어떤건지 좀 가르쳐 주십시오....",
+  "author": "D-Ryo",
+  "authorMemberNo": "19564",
+  "authorHomepage": null,
+  "createdAt": "2003-04-25T05:30:00",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 바로 되게 하는법은 삽이 부러졌을때 손으로 한번 더블클릭을 해주는겁니다. :)<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 버그인것 같더군요. 한번씩 유즈 아템이 종류별 타입형으로 되지 않을때가 있습니다. 해결방법은 없습니다. 기다리는 수 밖에. uoa 다시 재설치 해 하고 영문, 한글 다 바꾸어 보아도 소용없더군요. 아마 버그 아니면 렉때문에 일어난 현상 같더군요. 다만, 그럴때 손 좀 이용하셔야 해요. 위에 pian님 답변처럼 새로운 삽이나 곡괭이를 클릭해 주는 수 밖에..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 삽을 포치나 가방에 넣어두시구요<br>\n use item 클릭하신 후 왼쪽에 Load Item 'Bag' 선택하시고<br>\n 삽이 들어있는 가방을 더블클릭 해보세요<br>\n 그럼 use item항목에 그 가방에 들어있는 삽 갯수가 나오구<br>\n 가방안에 삽을 계속 쓰게 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " uoa-settings 에서 해당캐릭의 매크로<br>\n 폴더를 완전히 제거하시고 다시한번<br>\n 해보세요...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우선 Recount resources(자원 다시 세기)를 한번 해보세요. 주로 아이템 타입 변경이나 사용이 안되는 경우는 실제로 가방안에 들어있는 아이템이 어떤것이 있는지 uoa가 인식을 못한 경우가 대부분입니다.<br>\n<br>\n 이걸 하시고 나서도 변경이 안된다면 처음에 매크로 녹화할 때 사용한 삽이 어떤 것이냐에 따라 다를 수도 있습니다. tinkering 기술로 직접 만들거나 팅커샵에서 구입한 일반적인 물건이 아니라 몬스터에게서 룻해서 얻었다거나...한 물건이라면 가끔 안되는 경우도 있는데 이때는 삽을 바꿔서 다시 녹화해 보시는것도 좋습니다. 아참 튼삽은 잘 됩니다;;;<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030521112339",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18261",
+  "sourceEngine": "zeroboard"
+}

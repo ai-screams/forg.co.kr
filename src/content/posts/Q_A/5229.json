@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "5229",
+  "title": "음...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 저기 컴퓨터에 관해서 질문이...-_-;<br>\n<br>\n 으...<br>\n<br>\n 제가 옜날에 쓰던 64M 램을 256M 으로 교체 한지 거의 세달 가까이 되어<br>\n<br>\n 가는데 그래도 요즘 게임 들을 돌리 라니 약간 버거운 검도 있고 해서 <br>\n<br>\n 램을 더 살까 했습니다.<br>\n<br>\n 그런데 제 친구 놈이 전 256M 에다가 64M<br>\n<br>\n 를 껴도 된다고 하길래<br>\n<br>\n 껴보았더니 램이 늘어 나질 않더군요.<br>\n<br>\n 울온 상에서도 물어 본 바로는<br>\n<br>\n 256 은 256 끼리 해야 된다는 분도 있었고<br>\n<br>\n 256 에 64 도 된다는 분도 있었는데요.<br>\n<br>\n 참고로 256 은 양면<br>\n<br>\n 64 는 단면 입니다.<br>\n<br>\n 양면, 단면 이게 달라서 그런가...-_-;<br>\n<br>\n 좀 알려 주세요...--_--;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저기 컴퓨터에 관해서 질문이...-_-; 으... 제가 옜날에 쓰던 64M 램을 256M 으로 교체 한지 거의 세달 가까이 되어 가는데 그래도 요즘 게임 들을 돌리 라니 약간 버거운 검도 있고 해서 램을 더 살까 했습니다. 그런데 제 친구 놈이 전 256M 에다가 64M 를 껴도 된다고 하길래 껴보았더니 램이 늘어 나질 않더군요. 울온 상에서도 물어 본 바로는 256 은 256 끼리 해야 된다는 분도 있었고 256 에 64 도 된다는 분도 있었는데요. 참고로 256 은 양면 64 는 단면 입니다. 양면, 단면 이게 달라서 그런가...-_-; 좀 알려 주세요...--_--;",
+  "author": "sarevok",
+  "authorMemberNo": "1647",
+  "authorHomepage": null,
+  "createdAt": "2001-11-26T19:54:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 예...<br>\n 보드에 따라 양면 단면 , 133클럭수 제한이 있습니다..<br>\n 해당 메인보더사에 문의 해주시면 됩니다..<br>\n 양면은 예전 보드가 인식을 합니다..<br>\n 그래서 약간 더 비쌌는데 지금은 모르겠군요 100짜리가 133보다도 더 비쌌던<br>\n 이유는 그래서입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 64램이 이전에 쓰던 램 아닌가요 -0-... 쓰던건. 별 상관이 음는데요... 단면 양면.. 다 지원한다는 소리니께... 램 회사가 틀리거나.. 종류가 틀릴때.. 가끔 위치를 바꾸어보면 작동을 할때도 있습니다..."
+    },
+    {
+      "author": "eclipse",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 램을 꽂을적에 용량이 많은 넘이 뱅크 1번부터 들가야 할겁니다.<br>\n 쉽게 이야기 하자면 256을 시퓨가까운 쪽으로 꽂고 그다음 뱅크에 64를 꽂아 보세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 256에서 64를 더단다고 큰 속도향상은 느끼 실 수없을텐데.. 근본적인 씨퓨를 바꿔야 할듯 보여집니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헐...좀더 자세히 설명해 드릴게요 ...댓글이 많이 달려져 있군요.. 위에서 말한 내용 그대로 메인보드에 따라 RAM 사용이 틀려집니다... intel 850 =&gt; RDRAM 2개씩 사용, intel 845/VIA 845 =&gt; SDRAM/DDRAM intel 815/via694 =&gt; SDRAM사용가능하며, intel 440bx/via693 =&gt; 256MB 단면을 사용할 수 없습니다. 좌측 표시는 메인보드에 꽃힌 칩셋을 설명합니다.. 보통 비아694보드 등등으로 용산에선 말하기도 합니다. 무론 세부적인 적용과 변수가 있을수도 있습니다...위에 열거한것은 근본적인 내용입니다.. 우선 첫째로 적용해봐야할 내용이라는 뜻입니다. <br>\n 세부적인 적용과변수는 램을 잘꽃았는지 램이 불량인지 등등입니다. "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020622044110",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=5229",
+  "sourceEngine": "zeroboard"
+}

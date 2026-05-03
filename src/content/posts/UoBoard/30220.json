@@ -1,0 +1,71 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30220",
+  "title": "포그 지식인.. 도와주세욧~",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 거의 자료 요청인거 같네요..;;<br>\n<br>\n 제가 이번에 졸작으로 4족 로봇을 만들 예정인데 아는게 하나도 없네요<br>\n<br>\n 센서는 되는데 RC 서보 모터 제어 회로도가 문제네요..<br>\n<br>\n RC 서보 모터를 동시에 12개 정도 제어 할때 <br>\n<br>\n 제어 드라이버 회로가 구할수가 없어요..<br>\n<br>\n 예제 회로 하나만 있으면 좋을꺼 같은데요..ㅠ.ㅠ <br>\n<br>\n 쪽지좀 날려 주세용...징징..<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n\t\t\t\t\t[Spirit of Britania] 1St GuildMember<br>\nThe Prominent Athena,Grandmaster Archer, Heart of Bard \n\t\t\t\t</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "거의 자료 요청인거 같네요..;; 제가 이번에 졸작으로 4족 로봇을 만들 예정인데 아는게 하나도 없네요 센서는 되는데 RC 서보 모터 제어 회로도가 문제네요.. RC 서보 모터를 동시에 12개 정도 제어 할때 제어 드라이버 회로가 구할수가 없어요.. 예제 회로 하나만 있으면 좋을꺼 같은데요..ㅠ.ㅠ 쪽지좀 날려 주세용...징징.. [Spirit of Britania] 1St GuildMember The Prominent Athena,Grandmaster Archer, Heart of Bard",
+  "author": "Athena",
+  "authorMemberNo": "15103",
+  "authorHomepage": "http://www.sob.rg.ro",
+  "createdAt": "2003-05-12T00:56:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 -ㅁ- 회로도.....는 당장 어렵고...<br>\n 제가 전에 본게 AVR인데  구글같은데서 AVR관련해서 검색하면 사이트가 몇 나올껍니다.<br>\n 거기에 보면 서보12개구동이 있습니다. AVR예제로서 들어있는 것이라 어느사이트든지 있을 것입니다.<br>\n 으음...-_-; 링크를 거치다보면 그림이 나올지도...<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스텝모터로 만드는게 더 편하고 정밀할수도 있다는 모선배의 조언 ㅡㅡ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헉...포그지식인...이 이정도수진인가-_-;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ^^ kk님은 '수진'미달인듯...<br>\n 헤헤헤 농담이니까 기분나쁘게 생각하지 마세염 ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...2족 보행 로봇으로!!! -O-!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 선..행..자..같은...-_-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " AVR같은걸로는 12개 모터 제어 무립니다.<br>\n 일단 모터를 PWM제어한다고 볼때, PWM출력이 많은 것이 유리하겠죠.<br>\n 대부분 8비트 마이컴은 2~4개, 많은 것은 8개정도 지원합니다만, 4족 보행이면 2개면 됩니다--;<br>\n 모터 2개를 엇갈려서 제어하죠.<br>\n 시중에 나와있는 보행 로봇키트등은 4족, 6족 로봇이라도 모터는 2개만 씁니다.<br>\n 서보 2개면 된다는....<br>\n 참고로 서보 제어는 시중에 가면 8051마이컴 길라잡이나, C로 미는 로보트 라는 책에 자세히 나와있습니다.<br>\n<br>\n 4족 로봇을 서보 12개로 제어할려면, 다리하나당 3개의 서보를 쓰신다는...<br>\n 문젠 회로 구성은 그렇다치더라도, 그거 제어프로그램 작성 장난 아닙니다.<br>\n 제가지금 모터 하나 피드백 제어하는데, 프로그램 라인이 무려 200K 가까이 됩니다....<br>\n 일반 마이컴으로는 모터하나 정밀 제어하는것도 무리죠...<br>\n 참고로, 일반 스텝모터보다, PWM제어를 하고 RC용 서보를 사용하는것이 훨 낫습니다.<br>\n RC서보는 기어까지 포함되어 있고, PWM주기를 바꾸어서 왕복운동 제어가 훨 편합니다.<br>\n 그럼..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 답변 모두 감사합니다. <br>\n<br>\n aromie 님 저도 8051책이 있어서 서보 3개로 움직이는 6족은 있습니다.. <br>\n<br>\n 제가 하고 싶은건 관절이 따로 움직이는 4족이 만들고 싶어서죠..(무리한 감이 없진 않지만..^^)<br>\n<br>\n 변변한 자료는 없지만 열심히 해볼랍니당~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030518170217",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30220",
+  "sourceEngine": "zeroboard"
+}

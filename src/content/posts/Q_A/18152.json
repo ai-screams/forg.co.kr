@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18152",
+  "title": "바드스킬에 뮤지가 미치는 영향은 뭐죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 뮤지는 성공률인가요 아니면 몹의 최소난이도를 줄여주는 건가요?<br>\n<br>\n 어느 정도면 블러드&amp;화웜 100%로 피스 걸릴까요...<br>\n<br>\n 피스 110 뮤지 110, 피스 115 뮤지 100 이거 2개 중에서 블러드&amp;화웜 성공률 어느게 더 높은가요? <br>\n<br>\n 답변좀 해주세요...<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "뮤지는 성공률인가요 아니면 몹의 최소난이도를 줄여주는 건가요? 어느 정도면 블러드&화웜 100%로 피스 걸릴까요... 피스 110 뮤지 110, 피스 115 뮤지 100 이거 2개 중에서 블러드&화웜 성공률 어느게 더 높은가요? 답변좀 해주세요...",
+  "author": "lkw0213",
+  "authorMemberNo": "19153",
+  "authorHomepage": null,
+  "createdAt": "2003-04-20T12:02:33",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뮤지는 100 이상일경우 뮤지스킬-100 의 성공율 보너스를 줍니다.<br>\n 110일경우 바드 스킬 사용시 뮤지젬 보다 성공율이 10%증가합니다.<br>\n 더 자세한 내용은 <br>\n 에세이 게시판의 바드 카탈로그에 가시면 질 패밀리님이 아주 자세히 설명해 준 글이 ^^<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 피스 110 뮤지 110의 성공율과 피스 115 뮤지 100의 성공율은 같겠네요<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뮤지는 젬까진 특별한 것은 없다. 다만 바드 기술을 사용할때 뮤지 스킬을 체크해 뮤지가 성공하면 해당 바드 스킬을 체크해 성공여부가 가려진다. (뮤지가 낮아서 음악연주에 실패하면 아무리 바드 기술이 높아도 실패하게 된다.)<br>\n 그러나 뮤지 100을 넘어서면 1오를때마다 모든 바드 스킬 성공률이 1%씩 올라 간다. 즉 뮤지 120이되면 20%의 프롭, 불협화음, 피스의 성공률이 올라간다고 보면 됨<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030520164512",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18152",
+  "sourceEngine": "zeroboard"
+}

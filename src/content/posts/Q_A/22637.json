@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22637",
+  "title": "태그에 대해서 잘아시는분...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  밑줄이하 태그입니다<br>\n____________________________________________________<br>\n<br>\nPosted on Monday, December 8, 2003, 5:31 PM EST by Dragonrider (GeneralNews) <br>\n&lt;html&gt;<br>\n&lt;body link=\"#0000FF\" vlink=\"#0000FF\" alink=\"#0000FF\"&gt;<br>\nSpeedman and &lt;a href=\"<a href=\"http://uo.stratics.com/content/interviews/fertbert.shtml&quot;\">http://uo.stratics.com/content/interviews/fertbert.shtml\"</a> target=\"blank\"&gt;Fertbert&lt;/a&gt; posted about the Publish to Test Sosaria in &lt;a href\"<a href=\"http://boards.stratics.com/php-bin/uo/postlist.php?Cat=&amp;Board=uouhall&quot;\">http://boards.stratics.com/php-bin/uo/postlist.php?Cat=&amp;Board=uouhall\"</a> target=\"blank\"&gt;UO Hall&lt;/a&gt;: <br>\n<br>\nTest Sosaria has received Publish 22, and therefore has received some of the bandwidth optimizations that I've been working on. I'd appreciate it if you could stop by and see how the changes are working for you, especially dial-up users. <br>\nYou might notice changes in highly populated areas where people are coming and going often as that's where most of the changes are targetted. Also situations where people might be using up items (i.e. casting spells, crafting, etc) are slightly optimized as well. <br>\n<br>\nspeedman <br>\nUO Server Programmer <br>\nOrigin Systems <br>\n<br>\n...and...<br>\n<br>\nOh, and if you are having lag problems, do try the \"Single Click\" item properties mode as some of Speedman's optimizations futher improve performance under that item properties mode. <br>\n<br>\nCheers,&nbsp;&nbsp;<br>\n<br>\nFertbert<br>\nSenior Client Programmer <br>\nOrigin Systems<br>\n<br>\nFrom : &lt;a href=\"<a href=\"http://uo.stratics.com&quot;\">http://uo.stratics.com\"</a> target=\"blank\"&gt;UOSS&lt;/a&gt;<br>\n&lt;/body&gt;<br>\n&lt;/html&gt;<br>\n<br>\n____________________________________________________<br>\n<br>\n<br>\n저 위에서 link alink vlink 의 색깔을 설정했습니다. 그런데 제로보드에 저렇게 해서 게시물을 올리니 링크가 걸리긴 걸리는데 색깔은 바끼질 않드라구요... 제가 쓴 태그가 잘못된것인가요? 아니면 다른 문제일까요... 답변좀 부탁드립니다--<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "밑줄이하 태그입니다 ____________________________________________________ Posted on Monday, December 8, 2003, 5:31 PM EST by Dragonrider (GeneralNews) <html> <body link=\"#0000FF\" vlink=\"#0000FF\" alink=\"#0000FF\"> Speedman and <a href=\" http://uo.stratics.com/content/interviews/fertbert.shtml\" target=\"blank\">Fertbert</a> posted about the Publish to Test Sosaria in <a href\" http://boards.stratics.com/php-bin/uo/postlist.php?Cat=&Board=uouhall\" target=\"blank\">UO Hall</a>: Test Sosaria has received Publish 22, and therefore has received some of the bandwidth optimizations that I've been working on. I'd appreciate it if you could stop by and see how the changes are working for you, especially dial-up users. You might notice changes in highly populated areas where people are coming and going often as that's where most of the changes are targetted. Also situations where people might be using up items (i.e. casting spells, crafting, etc) are slightly optimized as well. speedman UO Server Programmer Origin Systems ...and... Oh, and if you are having lag problems, do try the \"Single Click\" item properties mode as some of Speedman's optimizations futher improve performance under that item properties mode. Cheers, Fertbert Senior Client Programmer Origin Systems From : <a href=\" http://uo.stratics.com\" target=\"blank\">UOSS</a> </body> </html> ____________________________________________________ 저 위에서 link alink vlink 의 색깔을 설정했습니다. 그런데 제로보드에 저렇게 해서 게시물을 올리니 링크가 걸리긴 걸리는데 색깔은 바끼질 않드라구요... 제가 쓴 태그가 잘못된것인가요? 아니면 다른 문제일까요... 답변좀 부탁드립니다--",
+  "author": "Hagen",
+  "authorMemberNo": "16206",
+  "authorHomepage": "http://hagen.cafe24.com",
+  "createdAt": "2003-12-09T13:43:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "hephaistos",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "제로보드내의  스타일 화일의 적용때문일겁니다."
+    },
+    {
+      "author": "Hagen",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "흐흐 해결의 기미가 보입니다 감사"
+    },
+    {
+      "author": "Hagen",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "라고 생각한것 혼자만의 착각 이었는지 ㅠ.ㅠ style.css 파일이 있는데... 어느곳에 있는 파일을 고쳐야지 게시판에 적용대는지 몰겠네요--;; 이것 저것 만져보는중 ㅠ.,ㅠ"
+    },
+    {
+      "author": "Hagen",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "...해결 --"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040101213304",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22637",
+  "sourceEngine": "zeroboard"
+}

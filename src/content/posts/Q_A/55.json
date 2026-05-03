@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "55",
+  "title": "'추천보상'에 대해서 알고싶습니다",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  '추천 보상'이 구체적으로 어떤 건가요?</td></tr></tbody></table>\n",
+  "bodyText": "'추천 보상'이 구체적으로 어떤 건가요?",
+  "author": "moses",
+  "authorMemberNo": "204",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T02:25:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "신규계정을 만드시면 추천人(금지어)같은거 쓰는게 있거든요 거기에 추천人 이멜주소를 넣으시고\n<br>신규계정을 만든날로부터 90일동안 안끊기고 활성화(돈내고)되어있으면 90일뒤에 추천人이멜주소로 \n<br>코드가하나오는데요 이코드하나로 겜상에서입력하면 운목이 은행에들어오고요 어카운트페이지에 겜탐넣는곳에넣으시면 1달계정이 연장됩니다..\n<br>대부분 첨에 타임넣고하니까 추천받는건 첨에 이멜만 넣으시면 기다리기만하면 되는거고요.\n<br>카드로 했을시는 중간에 끊기면 못받습니다 90일 연속으로 계정이 살아있어야 합니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "명쾌한 답변 감사합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115124240",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=55",
+  "sourceEngine": "zeroboard"
+}

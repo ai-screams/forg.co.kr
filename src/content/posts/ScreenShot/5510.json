@@ -1,0 +1,47 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5510",
+  "title": "본디드 된 나의 벌레",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/본디드된_나의_벌레.JPG\"><br>     \t\t\t     \t\t\t 결국 본디드가 되버렸습니다. 헤헤~~<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "결국 본디드가 되버렸습니다. 헤헤~~",
+  "author": "다크슈나이더",
+  "authorMemberNo": "9150",
+  "authorHomepage": null,
+  "createdAt": "2002-10-05T00:32:03",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "본디드된_나의_벌레.JPG",
+      "fileNum": 1,
+      "sizeBytes": 234803
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아니 벌써 일주일이나 지났나요??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 내껀 어제 죽어버리느라...ㅠ.ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 나무 뒤에 나도있네 ;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021026003638",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5510",
+  "sourceEngine": "zeroboard"
+}

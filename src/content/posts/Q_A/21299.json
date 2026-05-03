@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21299",
+  "title": "울온 자제 메크로 질문입니다",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 예전에 광부하면서 곡괭이로 땅을 팔때<br>\n<br>\n 한번 찍어놓으면 계속파는걸 자체매크로로 하는걸 봤는데<br>\n<br>\n 하는 방법을 잘 모르겠습니다<br>\n<br>\n 누가 그러는데<br>\n<br>\n 라스트오브잭트<br>\n<br>\n 웨잇포타겟 <br>\n<br>\n 라스트타겟<br>\n<br>\n 해주라는데 그렇게 안되네요<br>\n<br>\n 자세히 가르쳐 주세요<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "예전에 광부하면서 곡괭이로 땅을 팔때 한번 찍어놓으면 계속파는걸 자체매크로로 하는걸 봤는데 하는 방법을 잘 모르겠습니다 누가 그러는데 라스트오브잭트 웨잇포타겟 라스트타겟 해주라는데 그렇게 안되네요 자세히 가르쳐 주세요",
+  "author": "jeongmin77",
+  "authorMemberNo": "22843",
+  "authorHomepage": null,
+  "createdAt": "2003-09-29T09:03:01",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자체 메클로 지정한 키를 눌러주셔야 누를때마다 매클짠 동작을 합니다. 간혹 해당 단축키에 다른 메클이 들어있는경우가 있으니 자체 매클한번더 확인해 보세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 질문하신글에 적으신 메크로가 맞습니다. 윗분말씀대로 단축키에 다른메클이 들어가 있는것이 아닐지??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 라스트오브젝트-&gt;라스트타겟(2줄) 으로 지정하시고 매크로 옵션에서 중복키확인하신후<br>\n 그 키를 눌러주거나 아니면 루프를 받아서 사용하세요. 크리츠님 홈피에 가면 막죽자 루프를<br>\n 다운받으실수 있습니다.<br>\n 이경우 자리를 옮길경우 한번 땅을 파줘야 계속 파게 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 웨이트포타겟이 모죠?ㅡ.ㅡ;; 전 라오+라타만 지정하는데...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031101132905",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21299",
+  "sourceEngine": "zeroboard"
+}

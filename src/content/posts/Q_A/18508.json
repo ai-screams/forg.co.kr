@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18508",
+  "title": "도와주세요 포그 지식인",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이지유오에서 악기 부서지면 다른 악기 자동으로<br>\n<br>\n 선택하게 하는 스크립 좀 알려주세요 ㅠㅠ<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이지유오에서 악기 부서지면 다른 악기 자동으로 선택하게 하는 스크립 좀 알려주세요 ㅠㅠ",
+  "author": "yjs1g",
+  "authorMemberNo": "14651",
+  "authorHomepage": null,
+  "createdAt": "2003-05-19T14:11:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 에세이란에서 이지유오로 검색하시면<br>\n 자동 붕대질 스크립을 예제로한 강좌가 있습니다<br>\n 거기서 붕대선택 부분을 악기 아이디로 대체해서 사용하시면 <br>\n 간단히 만들수 있습니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅡ.,ㅡ;<br>\n 악기는 스킬을 쓰면 내구도가 달면서 부서지죠?<br>\n ㅡㅡ;<br>\n 그럼 스킬을 올리려는 악기선택은 어떻게 하죠?<br>\n 원하는 악기 더블클릭이잔아요<br>\n<br>\n<br>\n 그럼 매크로 제일 시작할때 악기 더블클릭하는거 하나 넣어주고<br>\n initevents<br>\n finditem 악기<br>\n set %a #findid<br>\n set #lobjectid %a<br>\n event macro 17 0<br>\n<br>\n 이런식으로 맨 매크로 시작에 넣어주고<br>\n<br>\n 스킬 쓰고나서 <br>\n finditem %a <br>\n if #findkind = -1<br>\n {<br>\n 악기 찾고 다시 더블클릭하는 루틴을 넣어주면 되죠<br>\n }<br>\n<br>\n<br>\n<br>\n 아니면 아에 스킬 쓰기전에 finditem 악기<br>\n set #lobjectid #findid <br>\n event macro 17 0 해주면 악기 부셔저도 다른 악기 찾아 쓰겟죠 머<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030524102114",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18508",
+  "sourceEngine": "zeroboard"
+}

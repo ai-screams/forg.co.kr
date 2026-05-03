@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20543",
+  "title": "각종 스텟이나 스킬 마스터시 보너스가 있다던데...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t STR over 100 bonus is +5% (Damage)<br>\n Tactics GM bonus is +6.25% (Damage)<br>\n Lumberack GM bonus is +10% (Damage)<br>\n<br>\n 그런데 Dex나 Int는 보너스가 어떻게되는지...없나요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><b>Written by <font color=\"navy\">매직핸드(mhand) </font></b><img src=\"http://myhome.shinbiro.com/~mymas/mhand.gif\"></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "STR over 100 bonus is +5% (Damage) Tactics GM bonus is +6.25% (Damage) Lumberack GM bonus is +10% (Damage) 그런데 Dex나 Int는 보너스가 어떻게되는지...없나요? Written by 매직핸드(mhand)",
+  "author": "mhand",
+  "authorMemberNo": "21796",
+  "authorHomepage": "http://www.cyworld.com/mhand",
+  "createdAt": "2003-08-23T13:31:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 덱스는 높아지면 그냥 무기속도 빨라지는 것 뿐 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 질답란에서 읽은게 기억나는데 인트도 100이면 데미지가<br>\n 추가된다고 들은거 같은데요..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030922205823",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20543",
+  "sourceEngine": "zeroboard"
+}

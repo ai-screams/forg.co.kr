@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21452",
+  "title": "울티마2D LBR 인스톨시 뜨는 에러 도와주세요;",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 인스톨시에 인스톨 경로 설정후&nbsp;&nbsp;ok를 누르니 <br>\n<br>\n 잘못된 연산을 수행하여 종료됩니다 라는 글자가 뜨네요;;<br>\n<br>\n 04x!:00007eba의 모듈 KRNL386.EXE에서 SETUP2D 잘못된 페이지 오류 발생. <br>\n Registers:<br>\n EAX=000b015f CS=014f EIP=00007eba EFLGS=00000286<br>\n EBX=00008278 SS=3d07 ESP=0000825a EBP=0000826e<br>\n ECX=0000b05a DS=016f ESI=009cd000 FS=0000<br>\n EDX=0000000b ES=016f EDI=814be5b0 GS=0000<br>\n BCS:EIP:에 바이트 수<br>\n f3 67 a4 66 5b 66 59 66 5f 66 5e 07 1f 5d ca 0c <br>\n Stack dump:<br>\n 00008278 00000000 0000054e 0000006e 015f3cff 80e382a6 b82a014f c830000b dde00091 3d078140 00be006e 00001787 9d500040 3cff0044 c83082a0 dde00091 <br>\n<br>\n 라는 오류가 뜨더군요;;; 컴퓨터에 대한 지식이 부족해서 그러니 컴퓨터 지식<br>\n<br>\n 높으신 분들 이나 이문제를 겪어 보신분들 많은 도움 부탁드립니다;;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "인스톨시에 인스톨 경로 설정후  ok를 누르니 잘못된 연산을 수행하여 종료됩니다 라는 글자가 뜨네요;; 04x!:00007eba의 모듈 KRNL386.EXE에서 SETUP2D 잘못된 페이지 오류 발생. Registers: EAX=000b015f CS=014f EIP=00007eba EFLGS=00000286 EBX=00008278 SS=3d07 ESP=0000825a EBP=0000826e ECX=0000b05a DS=016f ESI=009cd000 FS=0000 EDX=0000000b ES=016f EDI=814be5b0 GS=0000 BCS:EIP:에 바이트 수 f3 67 a4 66 5b 66 59 66 5f 66 5e 07 1f 5d ca 0c Stack dump: 00008278 00000000 0000054e 0000006e 015f3cff 80e382a6 b82a014f c830000b dde00091 3d078140 00be006e 00001787 9d500040 3cff0044 c83082a0 dde00091 라는 오류가 뜨더군요;;; 컴퓨터에 대한 지식이 부족해서 그러니 컴퓨터 지식 높으신 분들 이나 이문제를 겪어 보신분들 많은 도움 부탁드립니다;;",
+  "author": "hwlyoo",
+  "authorMemberNo": "23049",
+  "authorHomepage": null,
+  "createdAt": "2003-10-06T18:40:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 보통 잘못된 연산의 경우는 윈도우가 뭐라 설명하기 곤란한경우 남발하는 대표적 메세지라서..;;<br>\n 그냥 재부팅해보시고 temp폴더 비우시고....마음도 비우시고...재시도를.;;<br>\n 새로 받아보시는것도..;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아;; 친구방에 인스톨 하니 친구네 컴은 되더군요;; 윈도우 문제 인건가 ;ㅁ;;;  아직 안돼네 ;ㅁ;  왜이럴까요;; 윈도우 다시 깔아야 할까요;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031104014030",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21452",
+  "sourceEngine": "zeroboard"
+}

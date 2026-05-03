@@ -1,0 +1,41 @@
+{
+  "board": "Role",
+  "boardKr": "Role",
+  "postId": "200",
+  "title": "우체부님...한달이 다돼가는데...ㅡㅡ;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 어여 올려줘여~<br>\n<br>\n 우체부님 여행기 넘넘 잼떠여~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어여 올려줘여~ 우체부님 여행기 넘넘 잼떠여~",
+  "author": "Judge",
+  "authorMemberNo": "0",
+  "authorHomepage": null,
+  "createdAt": "2001-03-23T21:21:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "karin",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "마자마자~~ 빨리 올려줘엽^^"
+    },
+    {
+      "author": "우체부",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "올렸습니다!!!"
+    },
+    {
+      "author": "Judge",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "와우!!!잼따!!근데 집이어디져?ㅡㅡ?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030508131133",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Role&no=200",
+  "sourceEngine": "zeroboard"
+}

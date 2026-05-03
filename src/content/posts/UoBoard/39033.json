@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "39033",
+  "title": "디버그창이 뜨는데요",
+  "categoryLabel": "포그님- 질문요",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t VC깔고 나니 포그홈 에서 디버그 창이 움직일때마다 뜨는데요,<br>\n 이거 막는 옵션이 어딘가 있나요?<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<img src=\"http://cgi.chollian.net/~pouter07/forgsign/data/horoscop1.jpg\"><br>\n<font color=\"#EF5900\" size=\"3\">\n냐앙~\n</font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "VC깔고 나니 포그홈 에서 디버그 창이 움직일때마다 뜨는데요, 이거 막는 옵션이 어딘가 있나요? 냐앙~",
+  "author": "horoscop",
+  "authorMemberNo": "14561",
+  "authorHomepage": "http://gaesabal.hihome.com",
+  "createdAt": "2003-08-30T17:56:59",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 옵션에서 고급-탐색-스크립트 디버깅 사용 안 함 체크 해보세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 오옷 -ㅁ-<br>\n 감사합니다~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030922212238",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=39033",
+  "sourceEngine": "zeroboard"
+}

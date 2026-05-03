@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8141",
+  "title": "또다시 울온과 관계 없는 --;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n  에거.. 이곳이 답변이 빨리 올라 오다 보니 -0-\n<br>\n<br>\n  일단 제가 포맷을 하려고 부팅 디스크 넣고\n<br>\n<br>\n  리붓 하고 포맷 하는데\n<br>\n<br>\n  FAT,FAT32 이 파일에 문제가 있다면서\n<br>\n<br>\n  실행이 안되는군요...\n<br>\n<br>\n  혹시 with cdrom 으로 포맷하면 괜찮아 지는지..\n<br>\n<br>\n  아님 다른 방법이 있는것인지..\n<br>\n<br>\n  하드 분할 유틸은 쓰지 않고여.. 바이러스도 없고..\n<br>\n<br>\n  답변 부탁 드립니다...\n<br>\n<br>\n  아무튼..&nbsp;&nbsp;컴 괜히 만지다가 거의 반년을 제대로 게임 해본적이 --;;\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "에거.. 이곳이 답변이 빨리 올라 오다 보니 -0- 일단 제가 포맷을 하려고 부팅 디스크 넣고 리붓 하고 포맷 하는데 FAT,FAT32 이 파일에 문제가 있다면서 실행이 안되는군요... 혹시 with cdrom 으로 포맷하면 괜찮아 지는지.. 아님 다른 방법이 있는것인지.. 하드 분할 유틸은 쓰지 않고여.. 바이러스도 없고.. 답변 부탁 드립니다... 아무튼..  컴 괜히 만지다가 거의 반년을 제대로 게임 해본적이 --;;",
+  "author": "나훈아",
+  "authorMemberNo": "6937",
+  "authorHomepage": null,
+  "createdAt": "2002-05-15T21:44:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아마 님의 디스켓의 포멧이 fat16인거 같아요 아주 오래된 디스켓\n<br>\n fat는 하드나 드시켓의 포멧 방식인데요 옛날엔 fat16\n<br>\n 지금은 fat32나 ntfs를  사용해요 \n<br>\n 그리고 즉 님의 하드로 부팅해서\n<br>\n format a:/s/u라는 명령어를 치고\n<br>\n 다시 부팅했어 하면\n<br>\n 되요\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 디스크 포맷이 FAT 16 시스템인거 같습니다.\n<br>\n 윈도우 98 부터는 FAT 32 시스템을 기본적으로 지원하며 NT,2k,XP 등은 NTFS 라는 NT 전용 파티션 시스템(NT Fatition System, 맞을겝니다 -0-;)을 지원합니다.\n<br>\n 윈도우 98로 다시 설치하시기 위해선 format C: /s /u 명령어를 이용해 FAT 32 시스템으로 만들어 주시면 되겠습니다. 'ㅅ'"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527160733",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8141",
+  "sourceEngine": "zeroboard"
+}

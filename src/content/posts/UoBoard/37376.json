@@ -1,0 +1,47 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37376",
+  "title": "컴에 관한 질문요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t svchost 오류라는게 뭔가요?<br>\n<br>\n 컴을 키면 저 말이 뜨면서....<br>\n -----------------------------------<br>\n 컴퓨터를 재부팅 해야 합니다.<br>\n 오류 로그를 작성하고 있습니다.<br>\n<br>\n [확인]<br>\n -----------------------------------<br>\n 이라고 나옵니다...<br>\n<br>\n 증세는 익스플로러에서 링크된것들이 클릭해도 아무런 반응도 보이지 않습니다...제어판을 열어보니 제어판 메뉴가 왼쪽에 몰려버립니다...<br>\n<br>\n 공지에 나온 그 파일 찾아봐도 없는거 같구요...<br>\n<br>\n 저 증세는 다섯번 부팅하면 3~4번 정도 뜹니다...<br>\n<br>\n 바이러스 일까요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "svchost 오류라는게 뭔가요? 컴을 키면 저 말이 뜨면서.... ----------------------------------- 컴퓨터를 재부팅 해야 합니다. 오류 로그를 작성하고 있습니다. [확인] ----------------------------------- 이라고 나옵니다... 증세는 익스플로러에서 링크된것들이 클릭해도 아무런 반응도 보이지 않습니다...제어판을 열어보니 제어판 메뉴가 왼쪽에 몰려버립니다... 공지에 나온 그 파일 찾아봐도 없는거 같구요... 저 증세는 다섯번 부팅하면 3~4번 정도 뜹니다... 바이러스 일까요?",
+  "author": "COFFEE마나",
+  "authorMemberNo": "14986",
+  "authorHomepage": null,
+  "createdAt": "2003-08-12T15:07:46",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 네. 밑에서 받으심이."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 바이러스입니다.<br>\n 8월 15일까지 치료하셔야 합니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run<br>\n<br>\n 여기서 \"windows auto update\"=\"msblast.exe\"<br>\n 라는 녀석을 찾을 수가 없습니다..<br>\n<br>\n 다른곳에 있기도 하나요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 없어도 공격받는듯"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826124334",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37376",
+  "sourceEngine": "zeroboard"
+}

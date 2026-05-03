@@ -1,0 +1,65 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5709",
+  "title": "나도 아티스트!!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/EVA.JPG\"><br>     \t\t\t     \t\t\t 못햇다고 뭐라하지마세요 ㅠ,.ㅠ <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "못햇다고 뭐라하지마세요 ㅠ,.ㅠ",
+  "author": "파란바다",
+  "authorMemberNo": "10061",
+  "authorHomepage": "http://uoboard.wo.to",
+  "createdAt": "2002-10-16T19:12:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "EVA.JPG",
+      "fileNum": 1,
+      "sizeBytes": 31539
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <img border=\"0\" src=\"emoticon/u_31.gif\"><img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 옆에다가 초호기 반쪽 얼굴이라도...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅡㅡ;;; 그건 무리일텐데 ㅠㅠ,. "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 허억..-_- 네르프..당신은 네르프소속이요? 그렇담..미사토상?--;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 사도가 그대를 방문할거요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021115082111",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5709",
+  "sourceEngine": "zeroboard"
+}

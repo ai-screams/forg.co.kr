@@ -1,0 +1,40 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5584",
+  "title": "일쉐나! 그곳은?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0185.jpg\"><br> <img border=\"0\" src=\"data/UO0186.jpg\"><br>     \t\t\t 랫맨 레어래요~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "랫맨 레어래요~",
+  "author": "kenel",
+  "authorMemberNo": "2508",
+  "authorHomepage": null,
+  "createdAt": "2002-10-08T11:59:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0185.jpg",
+      "fileNum": 1,
+      "sizeBytes": 839577
+    },
+    {
+      "name": "UO0186.jpg",
+      "fileNum": 2,
+      "sizeBytes": 824524
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저기 잘못가면 화살을 온몸에 맞고 고슴도치가 되서 사망을..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008114704",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5584",
+  "sourceEngine": "zeroboard"
+}

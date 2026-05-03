@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21807",
+  "title": "게임 실행문제입니다 ㅠ_ㅠ",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 얼마전 울온을 다시 시작할려고하는 사람입니다<br>\n 울온Aos시디를 넣고 2d인스톨한다음 첫게임은 되는데 컴터 재부팅하고나면 UO.exe 에서 오류나서 안된다는 (Xp사용자분들은 1번씩은 봤을 보내지않기와 보내기라는 거중 선택해야하는 오류났을떄 뜨는창)것만뜹니다. <br>\n 지금 5번쨰 다시 까는중인데 미치겠습니다 왜이러죠 ㅠ_ㅠ (참고로 옛날에는 쓩쓩 잘됬음) 아..또 울온 게임상에서 걷는속도가 무지느립니다. 이것도 추가답변을;; 컴사양은 팬티 3 701메가헤르쯔 램 256+128 (384) 인터넷 두루넷 그래픽 TNT2Model64 (그악명높은그래픽카드) 입니다;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "얼마전 울온을 다시 시작할려고하는 사람입니다 울온Aos시디를 넣고 2d인스톨한다음 첫게임은 되는데 컴터 재부팅하고나면 UO.exe 에서 오류나서 안된다는 (Xp사용자분들은 1번씩은 봤을 보내지않기와 보내기라는 거중 선택해야하는 오류났을떄 뜨는창)것만뜹니다. 지금 5번쨰 다시 까는중인데 미치겠습니다 왜이러죠 ㅠ_ㅠ (참고로 옛날에는 쓩쓩 잘됬음) 아..또 울온 게임상에서 걷는속도가 무지느립니다. 이것도 추가답변을;; 컴사양은 팬티 3 701메가헤르쯔 램 256+128 (384) 인터넷 두루넷 그래픽 TNT2Model64 (그악명높은그래픽카드) 입니다;",
+  "author": "darkwolfs",
+  "authorMemberNo": "21330",
+  "authorHomepage": null,
+  "createdAt": "2003-10-27T18:16:17",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온 실행문제는 거의 대부분 글픽카드 문제라고 알고 있습니다.<br>\n<br>\n 글픽카드 드라이버 최신으로 바꾸신다음....<br>\n<br>\n 디스플레이등록정보에서 24비트나 32로 변경해보고, 그래도 이상하시면<br>\n<br>\n 해상도를 조절해보시고, 그래도 안되면 다시 질문하세요..^^;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 운영체제 확 바꿔보아요<br>\n ㅡ.ㅡ 전 98에서 2000으로.. "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031121072646",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21807",
+  "sourceEngine": "zeroboard"
+}

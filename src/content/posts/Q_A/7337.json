@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7337",
+  "title": "활제작에 관련된 질문입니다.(전문가답변요망)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  활 제작에서 궁금한 사항이 있어서 질문을 드립니다.<br>\n<br>\n만일 예유루닉이나 허트우드루닉으로 지를때 재료는 어떤것이 좋고 이유를<br>\n설명 부탁드립니다.<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "활 제작에서 궁금한 사항이 있어서 질문을 드립니다. 만일 예유루닉이나 허트우드루닉으로 지를때 재료는 어떤것이 좋고 이유를 설명 부탁드립니다.",
+  "author": "Namisys",
+  "authorMemberNo": "8257",
+  "authorHomepage": null,
+  "createdAt": "2007-10-10T04:46:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "보통 유나 애쉬 나무로 하죠. 유는 공성+5% 뎀증 10%의 효과가 있고 애쉬는 휘속 10%의 효과가 있으니까요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네 감사합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115124953",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7337",
+  "sourceEngine": "zeroboard"
+}

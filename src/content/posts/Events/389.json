@@ -340,7 +340,8 @@
     }
   ],
   "era": "2003",
-  "capturedAt": "20260502190433",
+  "capturedAt": "20030902081111",
+  "parsedAt": "2026-05-03T17:22:08.021073",
   "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Events&no=389",
   "sourceEngine": "zeroboard"
 }

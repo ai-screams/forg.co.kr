@@ -1,0 +1,191 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26355",
+  "title": "포그홈 유저들의 데스크탑 해상도",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <table bgcolor=\"#CCCCCC\" border=\"0\" cellpadding=\"1\" cellspacing=\"0\" width=\"90%\"> <tbody><tr> <td bgcolor=\"#CCCCCC\"><table bgcolor=\"#FFFFFF\" cellpadding=\"0\" cellspacing=\"1\" width=\"100%\"> <tbody><tr> <td bgcolor=\"#EEEEEE\"><div></div></td> <td bgcolor=\"#EEEEEE\"><div> <div> <div> <div>해상도</div> </div> </div> </div></td> <td bgcolor=\"#EEEEEE\"><div>유저수</div></td> <td bgcolor=\"#EEEEEE\" height=\"30\"><div>백분률</div></td> </tr> <tr> <td><div>1.</div></td> <td><div> <div> <div></div> <div>1024x768</div> </div> </div></td> <td><div>20,207 </div></td> <td><div>34.25%</div></td> </tr> <tr> <td><div>2.</div></td> <td><div> <div> <div></div> <div>1280x1024</div> </div> </div></td> <td><div>17,884 </div></td> <td><div>30.31%</div></td> </tr> <tr> <td><div>3.</div></td> <td><div> <div> <div></div> <div>1152x864</div> </div> </div></td> <td><div>5,337 </div></td> <td><div>9.05%</div></td> </tr> <tr> <td><div>4.</div></td> <td><div> <div> <div></div> <div>1680x1050</div> </div> </div></td> <td><div>4,840 </div></td> <td><div>8.20%</div></td> </tr> <tr> <td><div>5.</div></td> <td><div> <div> <div></div> <div>1280x800</div> </div> </div></td> <td><div>2,591 </div></td> <td><div>4.39%</div></td> </tr> <tr> <td><div>6.</div></td> <td><div> <div> <div></div> <div>1440x900</div> </div> </div></td> <td><div>1,738 </div></td> <td><div>2.95%</div></td> </tr> <tr> <td><div>7.</div></td> <td><div> <div> <div></div> <div>1280x960</div> </div> </div></td> <td><div>1,509 </div></td> <td><div>2.56%</div></td> </tr> <tr> <td><div>8.</div></td> <td><div> <div> <div></div> <div>1600x1200</div> </div> </div></td> <td><div>1,363 </div></td> <td><div>2.31%</div></td> </tr> <tr> <td><div>9.</div></td> <td><div> <div> <div></div> <div>1920x1200</div> </div> </div></td> <td><div>1,169 </div></td> <td><div>1.98%</div></td> </tr> <tr> <td><div>10.</div></td> <td><div></div> <div>1280x768</div></td> <td><div>1,021 </div></td> <td><div>1.73%</div></td> </tr> </tbody></table></td> </tr></tbody></table></td></tr></tbody></table>\n",
+  "bodyText": "해상도 유저수 백분률 1. 1024x768 20,207 34.25% 2. 1280x1024 17,884 30.31% 3. 1152x864 5,337 9.05% 4. 1680x1050 4,840 8.20% 5. 1280x800 2,591 4.39% 6. 1440x900 1,738 2.95% 7. 1280x960 1,509 2.56% 8. 1600x1200 1,363 2.31% 9. 1920x1200 1,169 1.98% 10. 1280x768 1,021 1.73%",
+  "author": "kritz",
+  "authorMemberNo": "4",
+  "authorHomepage": null,
+  "createdAt": "2007-10-17T09:18:08",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "한달간 집계한 내용입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "어떻게 아시는지[덜덜]"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1600 1200 저도 마이너 한건가요?\n<br>그래도 회사선 1152x864 이니 휩쓸려 가는거군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "허억ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오옷 제가 쓰는건 4위군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "주소창에\n<br>javascript:alert(screen.width+' x '+screen.height)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "어라 1400 1050 제껀 없네요 -ㅇ-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 노트북인데요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음.. 아직도 1024*768을 쓰는 분들이 제일 많군요. \n<br>1280*1024하고 합하면 60%를 넘는군요.\n<br>\n<br>UI만드는데 참고 하겠습니다 ^^;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음..포그 유저가 이렇게 많았나요 'ㅅ';"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "중복이 되는거면 자주 오는 분들로 인해서 'ㅅ';;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "역시 1024/768이 제일 보편적이군요.\n<br>\n<br>그 다음이 1280/1024..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1600 * 1200"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<table border=\"0\" cellspacing=\"1\" width=\"90%\"> <tbody><tr> <td bgcolor=\"#CCCCCC\"><table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" width=\"100%\"> <tbody><tr> <td bgcolor=\"#E5E5E5\" width=\"33%\"><div><strong>방문수</strong></div></td> <td bgcolor=\"#E5E5E5\"><div><strong>방문수</strong></div></td> <td bgcolor=\"#E5E5E5\" width=\"33%\"><div><strong>방문자수의 비율 </strong></div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>1회</div></td> <td bgcolor=\"#F0F0F0\"><div>9,888 </div></td> <td bgcolor=\"#FFFFFF\"><div>16.76% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>2회</div></td> <td bgcolor=\"#E5E5E5\"><div>2,560</div></td> <td bgcolor=\"#FFFFFF\"><div>4.34% </div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>3회</div></td> <td bgcolor=\"#F0F0F0\"><div>1,694 </div></td> <td bgcolor=\"#FFFFFF\"><div>2.87% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>4회</div></td> <td bgcolor=\"#E5E5E5\"><div>1,315</div></td> <td bgcolor=\"#FFFFFF\"><div>2.23%</div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>5회</div></td> <td bgcolor=\"#F0F0F0\"><div>1,128</div></td> <td bgcolor=\"#FFFFFF\"><div>1.91% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>6회 </div></td> <td bgcolor=\"#E5E5E5\"><div>961</div></td> <td bgcolor=\"#FFFFFF\"><div>1.63% </div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>7회</div></td> <td bgcolor=\"#F0F0F0\"><div>881</div></td> <td bgcolor=\"#FFFFFF\"><div>1.49% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>8회</div></td> <td bgcolor=\"#E5E5E5\"><div>812</div></td> <td bgcolor=\"#FFFFFF\"><div>1.38%</div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>9-14회</div></td> <td bgcolor=\"#F0F0F0\"><div>3,877</div></td> <td bgcolor=\"#FFFFFF\"><div>6.57%</div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>15-25회</div></td> <td bgcolor=\"#E5E5E5\"> <div>4,839</div></td> <td bgcolor=\"#FFFFFF\"><div>8.20% </div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>26-50회</div></td> <td bgcolor=\"#F0F0F0\"><div>6,120</div></td> <td bgcolor=\"#FFFFFF\"><div>10.37% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>51-100회</div></td> <td bgcolor=\"#E5E5E5\"> <div>6,866</div></td> <td bgcolor=\"#FFFFFF\"><div>11.64% </div></td> </tr> <tr> <td bgcolor=\"#FFFFFF\"><div>101-200회</div></td> <td bgcolor=\"#F0F0F0\"> <div>6,935</div></td> <td bgcolor=\"#FFFFFF\"><div>11.76% </div></td> </tr> <tr> <td bgcolor=\"#F0F0F0\"><div>201+회</div></td> <td bgcolor=\"#E5E5E5\"><div>11,119</div></td> <td bgcolor=\"#FFFFFF\"><div>18.85%</div></td> </tr> </tbody></table> </td> </tr></tbody></table><br><br>한달간 접속한 유저들의 방문횟수 통계입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "200회 이상 접속하는 멤버가 압도적 1위 입니다. -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "폵홈 유저분들만큼 커뮤니티에 충성도가 높은 곳도 드물죠...저같아도 하루에 20번이상은 접속;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 즐겨찾기 이름이 ' 포그훼인 사이트 ' 라고 쓸만큼 커뮤니티가 젤루 좋죠."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "위 통계를 보면 실질적으로 포그홈 왔다갔다거리시는분들을 알 수 있을듯 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저도 1400 x 1050.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오호..4위에 해당하네요. 좋은편인가 ^^a"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 9등이군요..<img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "방문수 통계 ㄷㄷㄷ...\n<br>저도 1680 1050-ㅅ-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저도 1600 1200"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "대한민국 1% .."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1600 * 1200\n<br>\n<br>모니터가 잠시 사망하셔서 저해상도로 써본적이 있는데 도저히 못하겠더군요.\n<br>\n<br>포그홈은 컴퓨터가 보통 한달에 한두번 리셋할때 빼고는 24시간 켜있어서 매일 켜저있는..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "허허.. 1920x1200 유저가 1000명이 넘네..\n<br>이런 굄훌들.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "... 1280 * 1024 ..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저는 1920x1200 23인치 풀 HD라..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071216121730",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26355",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "5248",
+  "title": "포그님 ID바꾸는건 불가능한가영??",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 갈켜주세영~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "갈켜주세영~",
+  "author": "AoA_라핌",
+  "authorMemberNo": "2468",
+  "authorHomepage": null,
+  "createdAt": "2001-11-27T17:09:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "단군",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음.. 이름만 바꾸면 돼요. 아니면 멤버 탈퇴해서 다시 가입 하는 방법 밖에는 없어요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이름바꾸니까 글쓸때 글쓴이이름도 바껴서영...구냥 Id만 바꾸고 싶었는데<br>\n 신속정확빠른답변 감사^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020622045225",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=5248",
+  "sourceEngine": "zeroboard"
+}

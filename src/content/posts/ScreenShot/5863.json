@@ -1,0 +1,53 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5863",
+  "title": "개굴 아저씨 집",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/개굴아저씨집.jpg\"><br>     \t\t\t     \t\t\t -냉무-<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "-냉무-",
+  "author": "알아리요",
+  "authorMemberNo": "6782",
+  "authorHomepage": null,
+  "createdAt": "2002-10-23T21:31:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "개굴아저씨집.jpg",
+      "fileNum": 1,
+      "sizeBytes": 175104
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 무가 얼엇군요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 얼쑤~~~<br>\n<br>\n 개굴형 집이 나왔네요^&amp;^<br>\n<br>\n 양탄자 받으신다니 축하드려요<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 개구리는 늪지에 살아욧.[.....]"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 2층은 왜 없어요 ㅜ_ㅜ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021128102333",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5863",
+  "sourceEngine": "zeroboard"
+}

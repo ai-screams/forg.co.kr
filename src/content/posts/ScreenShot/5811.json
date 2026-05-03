@@ -1,0 +1,77 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5811",
+  "title": "질문이 있습니다 꼭 문제해결좀",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1035143441/UO0030.jpg\"><br>     \t\t\t     \t\t\t 가끔 오락중에 3d 오락중에<br>\n 이런현상이 별생합니다 <br>\n 저번에 어캐했더니 없어졌는데 어캐한지가 기억이 안나네요<br>\n ㅡ.ㅡ;<br>\n<br>\n 참고루 제 그래픽 카드는 슈마지포스4 ti 4500 입니다<br>\n<br>\n 제발 아시는분 해결좀 ㅠ ㅠ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "가끔 오락중에 3d 오락중에 이런현상이 별생합니다 저번에 어캐했더니 없어졌는데 어캐한지가 기억이 안나네요 ㅡ.ㅡ; 참고루 제 그래픽 카드는 슈마지포스4 ti 4500 입니다 제발 아시는분 해결좀 ㅠ ㅠ",
+  "author": "niin6675",
+  "authorMemberNo": "2408",
+  "authorHomepage": null,
+  "createdAt": "2002-10-21T04:50:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0030.jpg",
+      "fileNum": 1,
+      "sizeBytes": 75878
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 드라이버 업그레이드 해보시고 만약그래도 이상있으실경우 드라이버를 완전히 삭제후 다시<br>\n 잡아주시는 방법이 좋을듯 하네요..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온이 문제가 생겼을때 최고의 해결법중에 하나.. 리인스톨.. 도 있답니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포멧도 좋은 만병 통치약이죠;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 sp3 다시 깔았더니 되던데....."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저건..저도 처음울티마할때..당한.. 현상이군요.^^ 첫번째분 말씀대로.. 그래픽 드라이버 업그레이드하시면됩니다.^^ 그럼 될겁니다.^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 저런 현상이 일어나구 있는데 다시 깔아도 보았구 버젼 업글도 해봤는데 변함이 없더군요 ㅜㅜ<br>\n 3D 하고시퍼라 ㅡㅡ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 슈마 쥐포스 ti 4500이라..는 그래픽카드도 있으신지 ㅡㅡ..<br>\n<br>\n 4200.. 4400.. 4600 있는걸로 아는데^^;<br>\n<br>\n 잘못쓰신듯"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시나 해서요...<br>\n<br>\n 최근에 디토네이터 업글 하지 않으셨나요?<br>\n 지포스면 디토네이터 쓰실껀데...디토네이터는 중복으로 깔면 지들끼리 충돌 나더라구요...먼저 있던 디토네이터를 없애고 깔리는게 아니라 두개가 다 남아서(안남는거 처럼 보이지만) 둘이 충돌 내면서 별 짓 다 하더군요...3d를 멈춘다던가...컴을 다운시켜 버린다던가...등등..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021115082007",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5811",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,77 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37404",
+  "title": "정말 속타서 올리는 글",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이짓 저짓 요짓 손짓 발짓 다 해봐도 CD 굽기 관련 문제가 해결이 안되니 지난번의 말을 번복하고 다시 푸념질을 하게 되었습니다.<br>\n<br>\n DiscJuggler에서 일어났던 문제(물론 다른 굽기 프로그램에서도 동일한 현상을 보였지만)를 중심으로 설명할까 합니다.<br>\n<br>\n * Cache가 급속하게 100%까지 찬 후 진행을 멈춤<br>\n * 종료 후의 CD는 전혀 구워지지 않음<br>\n * \"Event 17891 (CDB:2a00fffffff6a000010000000, Status: 040002, Sense: 037303) OPC or PMA update error\" 라는 에러가 표시됩니다.<br>\n<br>\n 컴퓨터 고수님들에게 또 다시 구차한 구걸을 합니다. CD를 며칠 째 못 구우니 눈알이 톡 터질 것 같아 미치겠습니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br>\n<br>\n<img src=\"http://forg.co.kr/_zb/data/weda.jpg\">\n<br>그래도 술은 안 되요!\n<br>\n<br>\n<img src=\"http://forg.co.kr/_zb/data/guattack_2.gif\">\n<br>구우님의 일격의 펀치!\n<br>\n<br>우리말 다듬기에 한 몫 하도록 노력하겠습니다.\n<br>[<a href=\"http://www.ganada.org/\">가나다 한글사랑 홈페이지</a>]\n<br>\n<br><a style=\"filter:progid:DXImageTransform.Microsoft.Glow(color=blue, Strength=3); color:white; width:100%\">빛이 밝을수록 그림자는 어둡다.</a>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이짓 저짓 요짓 손짓 발짓 다 해봐도 CD 굽기 관련 문제가 해결이 안되니 지난번의 말을 번복하고 다시 푸념질을 하게 되었습니다. DiscJuggler에서 일어났던 문제(물론 다른 굽기 프로그램에서도 동일한 현상을 보였지만)를 중심으로 설명할까 합니다. * Cache가 급속하게 100%까지 찬 후 진행을 멈춤 * 종료 후의 CD는 전혀 구워지지 않음 * \"Event 17891 (CDB:2a00fffffff6a000010000000, Status: 040002, Sense: 037303) OPC or PMA update error\" 라는 에러가 표시됩니다. 컴퓨터 고수님들에게 또 다시 구차한 구걸을 합니다. CD를 며칠 째 못 구우니 눈알이 톡 터질 것 같아 미치겠습니다. 그래도 술은 안 되요! 구우님의 일격의 펀치! 우리말 다듬기에 한 몫 하도록 노력하겠습니다. [ 가나다 한글사랑 홈페이지 ] 빛이 밝을수록 그림자는 어둡다.",
+  "author": "sos440",
+  "authorMemberNo": "15307",
+  "authorHomepage": null,
+  "createdAt": "2003-08-12T19:53:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " OPC 에러는 말 그대로 레코딩 픽업 에러입니다. 불량같은데 새걸로 교환해오세요.-라는군요...ㅋ; 뭐...기존에 사용하시던 거니까 어찌어찌해서 픽업 에러 나신듯...;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그 말은 CD RW를 바꿔야 한다는 말씀입니까? 캬아아악~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 딴 친구꺼 뻇어다가 실험해보시고 잘돌아가면.....교체의 시기가...두둥~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 근데... 저 디스크 저글러를 다시 설치한 이후로 저런 증상이..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 포맷해보실 생각은?;;; 말끔히 정리하고 저글러 깔아서도 저런다면.....뭐 확인방법은 많습니다만...귀찮죠..ㅎㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포맷한 다음에 다시 깔 윈도우즈가... 없다는 게 문제에요... ㅜ^ㅜ (근데 포맷한 다음에 윈도우즈가 날아가는지... 컴맹으로서 매우 부끄러운 질문)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 날아갑니다.<br>\n<br>\n 멋도 모르고 포멧했다 대략 정신이 멍해졌던 기억이-_-<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이짓 저짓 요짓 손짓 발짓을 먼저 알려주세요<br>\n 빠진것중에 얘기해보게요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 몇 가지 해봤는데... dungfly님 말씀대로 보조 IDE 삭제한 후 재시작한다던가... 프로그램 싹 다 지웠다 다시 깐다던가... 이것 저것 뒤져보면서 방법을 찾아본다던가... 대략 그런 것들을 해 봤거든요. 그런데도 아직 해결책을 찾지 못했군요. 악~~~ 컴맹의 서러움~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826124218",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37404",
+  "sourceEngine": "zeroboard"
+}

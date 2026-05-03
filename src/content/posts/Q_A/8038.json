@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8038",
+  "title": "급질문입니다. 겜방에서 포그홈 아뒤가 저장되어버려서..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 인터넷으로 포그열때마다 제 아뒤로 로그인되네요\n<br>\n 이거 없앨려면 어떻하죠?\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "인터넷으로 포그열때마다 제 아뒤로 로그인되네요 이거 없앨려면 어떻하죠?",
+  "author": "Resurrection",
+  "authorMemberNo": "2413",
+  "authorHomepage": null,
+  "createdAt": "2002-05-10T17:49:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 쿠키 지우면 되는것 아니나요?\n<br>\n 인터넷 설정에서 없애 주셔도 되구요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 예 쿠키지워주시면 되고요.\n<br>\n 두번째방법은 집에가셔서 홈 상단 My.Info에서 비번 바꾸어주시면 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 답변 감사드립니다.<img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527151417",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8038",
+  "sourceEngine": "zeroboard"
+}

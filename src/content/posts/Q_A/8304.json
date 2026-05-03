@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8304",
+  "title": "에구 또 질문인데 좀 봐주세요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t  uoa 등록하면 코드주자나요... 그 코드를 두개의 계정에서 쓸수있나요 1번째 계정에서 쓰다가 1번째 계정에서 안쓸때 2번째 계정에서 사용하고 이렇게 안되나요???&nbsp;&nbsp;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "uoa 등록하면 코드주자나요... 그 코드를 두개의 계정에서 쓸수있나요 1번째 계정에서 쓰다가 1번째 계정에서 안쓸때 2번째 계정에서 사용하고 이렇게 안되나요???",
+  "author": "sagara1",
+  "authorMemberNo": "6111",
+  "authorHomepage": null,
+  "createdAt": "2002-05-24T08:17:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " uoa 코드는 1인 1계정입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  유오에이 계정 카드루 등록할때 자신의 울온계정도 적나여??  "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " uoa를 등록할때에.. uoa를 다운로드 받은후.<br>\n 실행을 합니다.<br>\n 그런후 계정에 따른 코드가 생깁니다. <br>\n 그걸 이용해 등록을 하고 결재를 하면 사용가능하게 되는건가.<br>\n 뭐 그런식입니다. 울온계정은 적지 않습니다.<br>\n<br>\n 어떠한 경우에도 계정이름을 요구하는 사람은 없습니다. "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 답변 감사"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618202725",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8304",
+  "sourceEngine": "zeroboard"
+}

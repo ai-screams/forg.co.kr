@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18331",
+  "title": "서버 정기 다운 시간 알수 있나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 밑에 질문에 아무도 대답을 안 해 주시네요.<br>\n 보통 질문에 문제가 있으면 이런 현상이 있던데.....음...<br>\n<br>\n 우리나라 시간으로 각 서버 다운 시간대를 어디서 확인할 수 있을까요?<br>\n<br>\n 나파, 시즈의 다운 시간을 알아보려고 합니다.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "밑에 질문에 아무도 대답을 안 해 주시네요. 보통 질문에 문제가 있으면 이런 현상이 있던데.....음... 우리나라 시간으로 각 서버 다운 시간대를 어디서 확인할 수 있을까요? 나파, 시즈의 다운 시간을 알아보려고 합니다.",
+  "author": "Naban",
+  "authorMemberNo": "14718",
+  "authorHomepage": null,
+  "createdAt": "2003-04-29T09:55:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  MAINTENANCE TIMES <br>\n<br>\nThe Ultima Online servers are brought down on a regular schedule in order to do database maintenance, hardware maintenance, and game updates. This page gives the current schedule of planned downtimes. <br>\n<br>\nIf a server is down, and it is outside of the following scheduled downtimes, please check Shard Issues for information. <br>\n<br>\nThe downtimes listed are all approximate ?the shards will go down for maintenance as close to the listed time as is possible. <br>\n<br>\nDAILY SCHEDULE <br>\n<br>\nShard Monday Tuesday Wednesday Thursday Friday Saturday Sunday <br>\nJapan (JST)<br>\nAsuka,<br>\nHokuto,<br>\nIzumo,<br>\nMizuho,<br>\nMugen,<br>\nSakura,<br>\nWakoku,<br>\nYamato 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM <br>\nEurope (GMT/UTC)<br>\nDrachenfels,<br>\nEuropa 5:00AM 5:00AM  5:00AM 5:00AM  5:00AM 5:00AM  5:00AM  <br>\nKorea (KST)<br>\nArirang,<br>\nBalhae 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM <br>\nEastern USA (EST/EDT)<br>\nAtlantic,<br>\nCatskills,<br>\nChesapeake 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM <br>\nGreat Lakes,<br>\nLake Superior 6:00AM 6:00AM 6:00AM 6:00AM 6:00AM 6:00AM 6:00AM <br>\nWestern USA (PST/PDT)<br>\nBaja,<br>\nLake Austin,<br>\nNapa Valley,<br>\nPacific,<br>\nSonoma 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM <br>\nSiege Perilous (CST/CDT) 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM <br>\nTaiwan<br>\nFormosa 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM 8:00AM <br>\nAustralia (AEST)<br>\nOceania 7:00AM 7:00AM 7:00AM 7:00AM 7:00AM 7:00AM 7:00AM <br>\nAOL Legends (EST/EDT) 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM 5:00AM <br>\n<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울티마 온라인 한국 공식 홈페이지에도 있습니다.. 찾아보세요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030521112653",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18331",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "75464",
+  "title": "드디어 뼈 1000개 다 모았다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  잇힝</td></tr></tbody></table>\n",
+  "bodyText": "잇힝",
+  "author": "Padet",
+  "authorMemberNo": "30531",
+  "authorHomepage": null,
+  "createdAt": "2004-12-31T08:52:21",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이제부터 한달간 메뉴는 곰탕이다\n<br>존내 퍼먹어라\n<br>김치찌개도 없고 된장찌개도 없다\n<br>한끼에 딱 곰탕 10그릇만 먹어라\n<br>9그릇도 안되고 11그릇도 안된다 딱 10그릇이다\n<br>형이 국물이 남아있어서 이러는 거니 존내 퍼먹어라"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20041231104909",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=75464",
+  "sourceEngine": "zeroboard"
+}

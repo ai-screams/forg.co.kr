@@ -2,8 +2,8 @@
   "board": "Notice",
   "page": 2,
   "totalPages": 18,
-  "totalPosts": 861,
-  "generatedAt": "2026-05-03T01:43:55Z",
+  "totalPosts": 862,
+  "generatedAt": "2026-05-03T08:18:00Z",
   "entries": [
     {
       "postId": "964",
@@ -331,6 +331,19 @@
       "era": "2003"
     },
     {
+      "postId": "936",
+      "title": "울티마 온라인 6주년 기념!",
+      "categoryLabel": null,
+      "author": "주니",
+      "authorMemberNo": "15378",
+      "createdAt": "2003-10-01T14:21:27",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
       "postId": "935",
       "title": "클라이언트 패치 4.0.0p 업데이트",
       "categoryLabel": null,
@@ -636,19 +649,6 @@
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2003-07-25T11:37:45",
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "909",
-      "title": "Publish 19 업데이트 변경사항 (루닉피증)",
-      "categoryLabel": null,
-      "author": "Banana Milk",
-      "authorMemberNo": "14964",
-      "createdAt": "2003-07-24T07:20:20",
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,

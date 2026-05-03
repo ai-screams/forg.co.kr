@@ -63,7 +63,11 @@ class Post(BaseModel):
 
     # Provenance
     era: PostEra
+    # Real Wayback ts ("YYYYMMDDhhmmss") loaded from e-policy-plan.json (1차)
+    # or .progress.jsonl (2차). ADR-0010 §Decision #7 — fail loud if missing.
     capturedAt: str
+    # ISO 8601 — when the parser last wrote this record. Not archival.
+    parsedAt: datetime
     originalUrl: str
     sourceEngine: SourceEngine
 

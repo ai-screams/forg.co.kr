@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7276",
+  "title": "베터랑 샤드질문요!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  뮤겐에서 육성중인데 스킬이 70부터 제한이 걸린다는건 알고있는데<br>\n<br>\n스킬합이 높아 지면서 어느순간부터 70이하의 스킬도 조금씩 오릅니다 <br>\n<br>\n이 시스템에 대해 자세히 알려주세요!</td></tr></tbody></table>\n",
+  "bodyText": "뮤겐에서 육성중인데 스킬이 70부터 제한이 걸린다는건 알고있는데 스킬합이 높아 지면서 어느순간부터 70이하의 스킬도 조금씩 오릅니다 이 시스템에 대해 자세히 알려주세요!",
+  "author": "kirtina1004",
+  "authorMemberNo": "3331",
+  "authorHomepage": null,
+  "createdAt": "2007-10-02T23:42:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "자세히는 아닌데요, 70이하의 스킬이 조금씩 오르는 건 그냥 기분 탓일 거에요. 그런 건 없습니다.\n<br>70이하는 보통의 샤드와 똑같이 올라갑니다. 70 이후부터는 그냥 하실 거 하시다가 시간 맞춰서 올려주시면 좋습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "70부터 80까지  하루에  5분에 0.1씩 최대 3.6 업\n<br>\n<br>80부터 99까지 하루에 10분에 0.1씩 최대 2.1 업\n<br>\n<br>99부터 ~  하루에 15분에 0.1씩 최대 2.1 업\n<br>\n<br>스킬은 100% 오릅니다...\n<br>다만 그스킬에 맞는 스킬을 써야 합니다 예를 들어서 템이 90넘었는데 말꼬시면 안오르죠 그기에 맞는놈을 템하란 말.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116143947",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7276",
+  "sourceEngine": "zeroboard"
+}

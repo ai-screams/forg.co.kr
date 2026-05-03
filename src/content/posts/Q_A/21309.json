@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21309",
+  "title": "자동 어택 질문입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 예~ㅅ 날에는 몹이 절치면 반응하여 제가 몹을 자동 공격을 했었는데<br>\n 이제는 몹이 절공격해도 반응을 안합니다.<br>\n 가끔 타겟이 자동으로 될뙤도 있긴하지만<br>\n 옛날처럼 몹이 절치는순간 자동반응하여 치게 했으면 합니다.<br>\n 방법이 없을까요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "예~ㅅ 날에는 몹이 절치면 반응하여 제가 몹을 자동 공격을 했었는데 이제는 몹이 절공격해도 반응을 안합니다. 가끔 타겟이 자동으로 될뙤도 있긴하지만 옛날처럼 몹이 절치는순간 자동반응하여 치게 했으면 합니다. 방법이 없을까요?",
+  "author": "mikeroo",
+  "authorMemberNo": "22852",
+  "authorHomepage": null,
+  "createdAt": "2003-09-29T16:47:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그거 예전부터 그랬던거 같은데요... 두몹과 동시에 싸울때 한몹이 죽으면<br>\n 자동으로 다음 타켓으로 넘어가야 하는데... 그저 멍청히 맞고 있죠...<br>\n<br>\n 자동타켓은 싸우고 있지 않을시 그 몹이 나를 타켓 잡으면 자동타켓이 되고...<br>\n 저도 자동으로 넘어갈 수 있는 방법이 있는지 참 궁금하네요..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자동반격의 경우..몹이 자기를 타겟으로 하면 활성화 됩니다...<br>\n<br>\n 다만 다른 몹을 강제공격하게되면 자동반격은 멈추게 됩니다.<br>\n<br>\n 즉 ..어떤몹이 당신을 타겟으로 하고 스스슥 하고 다가오고 잇는데.<br>\n<br>\n 다른 몹을 공격하고 있다면... 그몹이 죽어도 반격을 안합니다...<br>\n<br>\n 공격하던 몹이 피스..등으로 타겟이 풀렸다가 다시 타겟을 잡으면 반격을 하지요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031101132508",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21309",
+  "sourceEngine": "zeroboard"
+}

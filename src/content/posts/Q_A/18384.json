@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18384",
+  "title": "AOS 이후에 2디 탈것 그래픽 변환 법 좀 알려주세요",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 블랙손 버젼에선 bodyconv.def 에서<br>\n<br>\n 코드만 지워버리면 됐었는데 이제 그렇게 하면<br>\n<br>\n 아예 안보여져 버리네요 유니콘 예전 하얀 것으로<br>\n<br>\n 돌려버리고 싶은데 아... 미치겠더요<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "블랙손 버젼에선 bodyconv.def 에서 코드만 지워버리면 됐었는데 이제 그렇게 하면 아예 안보여져 버리네요 유니콘 예전 하얀 것으로 돌려버리고 싶은데 아... 미치겠더요",
+  "author": "yjs1g",
+  "authorMemberNo": "14651",
+  "authorHomepage": null,
+  "createdAt": "2003-05-11T00:45:27",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으흠..에세이란에.. 있을텐데.ㅡ,.ㅡ;<br>\n<br>\n 탈것이라고 찾아보세요<br>\n 저도 받아서 바꺼 보는중인데..<br>\n<br>\n 음.. ㅡ,.ㅡ; 지금 자기 직전이라 검색의 귀차니즘!!! ㅡ,.ㅡ; 하이튼 에세이란에 있을꺼에요<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ..바꺼 보는게 아니라<br>\n 바꿨어요 ㅡㅡ;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 유니콘 코드가 있어여 그것만 지우시면 되요 -0-<br>\n 코드가 뭐더라 에 잠시 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " AOS 버젼에서 그 코드 (122번) 지우면 아예 안보이던데요??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 정 그러시면<br>\n 제꺼 보내드리지요 -0-<br>\n 전 옛날꺼가 좋아서 다 그렇거 보거든요 -0-<br>\n 유니콘, 기린, 리지백,뭐 기타 등 -0-<br>\n 필요 하시믄 쪽지 마세요 -0-/"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030517162809",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18384",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7245",
+  "title": "다른 케릭으로 재접속시에....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  집에의 장소에서 다른케릭으로 재접속시에는<br>\n<br>\n전케릭이 로그아웃 되지 않아서 기다려야 한다고 <br>\n<br>\n접속이 안되는데..<br>\n<br>\n접속이 바로 될수 있는 지역이 집외에 있나요??<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "집에의 장소에서 다른케릭으로 재접속시에는 전케릭이 로그아웃 되지 않아서 기다려야 한다고 접속이 안되는데.. 접속이 바로 될수 있는 지역이 집외에 있나요??",
+  "author": "kfatima",
+  "authorMemberNo": "9536",
+  "authorHomepage": null,
+  "createdAt": "2007-09-30T22:24:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "각 마을의 여관이나\n<br>\n<br>캠핑스킬을 이용하여 바로 로그아웃하실수있어요\n<br>\n<br>하지만 여관이나 집이여도 전투 후에는 기달리셔야해요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전투상황 풀리는 시간이 5분정도내외인거 같던데 정확히 재본적은없습니다.\n<br>\n<br>다만 간접적으로 알수있는 방법은 집에 소울스톤이 있으면 확인가능합니다.\n<br>\n<br>소울스톤에 접근못한다는 메시지가 뜨면(대기메시지재외) 전투상황이 안풀린거고\n<br>\n<br>정상적으로 소울스톤이 접근된다면 전투상황이 풀린겁니다.\n<br>\n<br>전투상황이 풀린거라면 바로 다른케릭으로 접속가능하죠"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115125858",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7245",
+  "sourceEngine": "zeroboard"
+}

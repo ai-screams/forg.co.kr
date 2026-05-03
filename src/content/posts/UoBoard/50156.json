@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "50156",
+  "title": "프린터가 안되네요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  용지는 충분히 넣어놨는데 용지부족이라고 -_-;<br>\n<br>\n대체 왜이럴까요 -_-;</td></tr></tbody></table>\n",
+  "bodyText": "용지는 충분히 넣어놨는데 용지부족이라고 -_-; 대체 왜이럴까요 -_-;",
+  "author": "goo1212",
+  "authorMemberNo": "14549",
+  "authorHomepage": null,
+  "createdAt": "2003-12-16T20:39:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "구님 있었군요 --;; 결판은 ?!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "실패했군요 (끄덕끄덕)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040123133903",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=50156",
+  "sourceEngine": "zeroboard"
+}

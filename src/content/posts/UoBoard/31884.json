@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "31884",
+  "title": "윈도우 깔때..",
+  "categoryLabel": "울온외질문",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 삼성컴퓨터사면 주는 윈도우 씨디는 씨스템복원 씨디라구카믄서 나오자나요..<br>\n 그걸 딴 회사(조립)컴퓨터엔 못쓰나요? <br>\n 글구 씨디로 부팅하라던댕 어케 해야씨디로 부팅을 할수 있죠???<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "삼성컴퓨터사면 주는 윈도우 씨디는 씨스템복원 씨디라구카믄서 나오자나요.. 그걸 딴 회사(조립)컴퓨터엔 못쓰나요? 글구 씨디로 부팅하라던댕 어케 해야씨디로 부팅을 할수 있죠???",
+  "author": "kgh199",
+  "authorMemberNo": "18368",
+  "authorHomepage": null,
+  "createdAt": "2003-06-11T16:26:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 삼성에서준 씨디에는 그컴에 맞는 드라이버가 고스트로 압축되어서 자동으로 설치가 되죠<br>\n 그 씨디를 다른컴푸터에서 설치를 한다면,, 윈도우야 어찌 깔리겠지만,, 싸운드카드나 그래픽카드..등 기타 장치를 다시 잡아야 하는 번거로움이 생깁니다...<br>\n<br>\n<br>\n 자신만의 부팅씨디를 만들고 싶으시면 고스트란 플그램에 조금 관심을 같고 보시면 금방 알수있읍니다<br>\n<br>\n<br>\n 시디로 부팅하는건 부팅이 될때 Del키 눌르면 나오는 메뉴에서 부팅순서를 씨디롬을 젤로 먼저해주심 됩니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흠.. 그 xp시디를 말씀하시는 건가요?<br>\n<br>\n 다른 컴에서 사용가능 합니다..만! 오토런으로 실행시키면 삼성꺼 컴터에서만 실행하라는 그런종류의 문구가 뜹니다. <br>\n<br>\n 오토런으로 실행할때 인스톨(셋업인가 ㅡ ㅡ?)파일을 실행시키지 않고 그 삼성에서 주는 시디안에만 들어있는 특별한 파일을 실행시키기에 이런 현상이 발생하는데 뭐 해결법은 간단합니다.<br>\n<br>\n 윈도우탐색기나 시디드라이브를 오른 클릭하시면 나오는 '탐색'이라는 걸로 들어가시면 오토런 실행시키지 않고 시디 내용을 보실수 있으실 겁니다.<br>\n<br>\n 그 담부터야 잘 아시다시피 인스톨 더블클릭...<br>\n<br>\n<br>\n 시디로 부팅이라.. 뭐 메인보드에 따라 다를수도 있겠습니다마는 맨처음 컴터를 키면 메모리체크하고 del키를 누르면 바이오스 들어갈수 있는 때가 있습니다.(에.. 정확히 그 때를 뭐라 해야할지;;) 아무튼 그 때 esc키를 누르면 어느 드라이브로 부팅시킬꺼냐... 를 물어보는 메뉴가 뜨더군요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " CD부팅.. <br>\n 바이오스에서 첫번째 부팅 디바이스를 CD롬으로 바꾼다음에<br>\n 부팅가능한 윈도우 CD넣고 컴퓨터 켜면 됩니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030611202909",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=31884",
+  "sourceEngine": "zeroboard"
+}

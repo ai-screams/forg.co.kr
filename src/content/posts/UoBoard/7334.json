@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "7334",
+  "title": "IRC 작은 상식 하나.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t IRC에서 소위 '운영자' 라 불리우는 사람들은 두 부류입니다.<br>\n<br>\n 1.IRC Operator<br>\n IRC Operator 라 불리는 분들은 주로 #abuse 채널에 상주해 있으신<br>\n 분들이며, whois 를 해봤을때 운영자라는 메시지가 뜹니다.<br>\n 대개 HanIRC에 연동된 각각의 서버의 관리자들이며,<br>\n Operserv 라 불리는 오퍼용 봇이나 전용 명령어 등을 이용해서<br>\n IRC서버 전반적인 관리를 합니다. 이분들이 표면적으로하시는 건 주로<br>\n 옵테러범의 처벌(g-line,k-line 등)과 서버의 유지보수 등입니다.<br>\n 중요한건 <b>옵 복구는 해주지 않습니다.</b> 라는 겁니다.<br>\n 왜인지는 저도 오퍼가 아니라 모르겠군요.<br>\n<br>\n 2.Chanserv Administrator<br>\n Chanserv Administrator 들은 #chanserv 채널에 상주해 있으며,<br>\n 주로 챈섭 에 대한 일(?)을 합니다. 신청서의 접수와 인원점검,<br>\n 채널점검(이거 다 수작업 노가다로 하는겁니다..진짜 죽어납니다..)<br>\n 챈섭에 관련된 질답과 방장 마스크의 추가 등을 합니다.<br>\n IRC Operator 와는 달리 챈섭이 없는 채널에서는 일반유저와 완전히 동등하고,<br>\n 챈섭이 있다고 쳐도 인증을 하지 않으면 일반유저와 같습니다.<br>\n Operator 보다는 권한이 상당히 적으며, operserv 를 이용하거나 하지는<br>\n 못합니다.(고로 옵복구와 G라인 등은 불가능합니다)<br>\n<br>\n 챈섭어드민=IRC오퍼 로 혼동하고 계시는 분들이 많이 계시더군요.<br>\n<br>\n --<br>\n 제발 챈섭채널 와서 옵복구해달라고 하지 맙시다 -_-<br>\n 능력도 없을뿐더러 어드민 담당도 아닙니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "IRC에서 소위 '운영자' 라 불리우는 사람들은 두 부류입니다. 1.IRC Operator IRC Operator 라 불리는 분들은 주로 #abuse 채널에 상주해 있으신 분들이며, whois 를 해봤을때 운영자라는 메시지가 뜹니다. 대개 HanIRC에 연동된 각각의 서버의 관리자들이며, Operserv 라 불리는 오퍼용 봇이나 전용 명령어 등을 이용해서 IRC서버 전반적인 관리를 합니다. 이분들이 표면적으로하시는 건 주로 옵테러범의 처벌(g-line,k-line 등)과 서버의 유지보수 등입니다. 중요한건 옵 복구는 해주지 않습니다. 라는 겁니다. 왜인지는 저도 오퍼가 아니라 모르겠군요. 2.Chanserv Administrator Chanserv Administrator 들은 #chanserv 채널에 상주해 있으며, 주로 챈섭 에 대한 일(?)을 합니다. 신청서의 접수와 인원점검, 채널점검(이거 다 수작업 노가다로 하는겁니다..진짜 죽어납니다..) 챈섭에 관련된 질답과 방장 마스크의 추가 등을 합니다. IRC Operator 와는 달리 챈섭이 없는 채널에서는 일반유저와 완전히 동등하고, 챈섭이 있다고 쳐도 인증을 하지 않으면 일반유저와 같습니다. Operator 보다는 권한이 상당히 적으며, operserv 를 이용하거나 하지는 못합니다.(고로 옵복구와 G라인 등은 불가능합니다) 챈섭어드민=IRC오퍼 로 혼동하고 계시는 분들이 많이 계시더군요. -- 제발 챈섭채널 와서 옵복구해달라고 하지 맙시다 -_- 능력도 없을뿐더러 어드민 담당도 아닙니다.",
+  "author": "cypher",
+  "authorMemberNo": "6210",
+  "authorHomepage": null,
+  "createdAt": "2002-03-25T07:18:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그러니 얼렁 챈섭이나 넣어 달래두 <img border=\"0\" src=\"emoticon/m_wink_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...찬섭이..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 영감님 신청부터 우선 하라니께요 -_-<br>\n 지난번에 신청한 기록이 있으니 이번엔 채널개설시간은 신경 안써도 되요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저 혹시 cypher님 얼마전에 geekforum에 \"새로운 제어 구조를 가진 언어?\" 라는 <br>\n 주제로 글 올리신 분이신가요? 걍 궁금해서.....제가 Geekforum을 매일 들 가보는데 아뒤하고<br>\n 메일주소가 같은 거 같아서요.....^^;;; (뭐....스토킹 아님;;;)<br>\n<br>\n 새로운 제어 구조를 가지는 언어를 만들겠다는 생각이 기발한 거 같네요.....글은 잘 읽었습니다^^;;<br>\n (컴터에 해박한 지식을 가지신 분이신가봐요 부러워부러워~*.*)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 초록의미님 저 cypher가 그 cypher 맞아요 "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 엌..저 맞아요..그글 보셨군요<br>\n 만들겠다는건 아니고..하다보니 무한히 많은 조건문과 반복문을 가진 소스에 신물이 나서 바로 위에 글쓴<br>\n Siyann 럼이랑 이야기하다가..#kldp 에서도 떠들다가 geekforum 에까지 올려봤는데..보셨군요<br>\n<br>\n 하튼 전 컴터 잘하는건 아니고..그냥 취미로 깨작인답니다 :)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020622031845",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=7334",
+  "sourceEngine": "zeroboard"
+}

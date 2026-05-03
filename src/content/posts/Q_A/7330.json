@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7330",
+  "title": "도둑길마한테 뭐라고말해야가입이되는거죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  뭐라고말해야 가입되죠?</td></tr></tbody></table>\n",
+  "bodyText": "뭐라고말해야 가입되죠?",
+  "author": "kismp123",
+  "authorMemberNo": "2778",
+  "authorHomepage": null,
+  "createdAt": "2007-10-09T17:24:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "\"너의 마음을 훔칠꺼야\""
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<a href=\"http://forg.co.kr/skill_index/uo_combat_steal.html\">http://forg.co.kr/skill_index/uo_combat_steal.html</a>"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115125424",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7330",
+  "sourceEngine": "zeroboard"
+}

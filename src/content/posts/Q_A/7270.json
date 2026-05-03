@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7270",
+  "title": "활은 어떤걸로 수리하죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  스미스도 안되고..어떤걸로 수리가능하죠?</td></tr></tbody></table>\n",
+  "bodyText": "스미스도 안되고..어떤걸로 수리가능하죠?",
+  "author": "playnews",
+  "authorMemberNo": "8427",
+  "authorHomepage": null,
+  "createdAt": "2007-10-02T20:55:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "활제작술이 아닐까요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네 보크로 수리합니다..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116144153",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7270",
+  "sourceEngine": "zeroboard"
+}

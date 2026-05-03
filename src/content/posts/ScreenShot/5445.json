@@ -1,0 +1,35 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5445",
+  "title": "포그홈의 버그1",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/YGG.jpg\"><br>     \t\t\t     \t\t\t 어쩌다 보니 -_-;;;<br>\n 업로드제한때문에 색이 좀 구립니다요<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어쩌다 보니 -_-;;; 업로드제한때문에 색이 좀 구립니다요",
+  "author": "타이거스핀",
+  "authorMemberNo": "12363",
+  "authorHomepage": null,
+  "createdAt": "2002-10-02T22:12:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "YGG.jpg",
+      "fileNum": 1,
+      "sizeBytes": 210841
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자주 있는 현상이라오<br>\n (....먼산.......)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008135028",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5445",
+  "sourceEngine": "zeroboard"
+}

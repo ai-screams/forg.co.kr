@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8191",
+  "title": "초보적인 질문",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 스킬치 보는 거에서...\n<br>\n 자기가 원하는 스킬치만 보는거 어떻게 하져?\n<br>\n -_-;; 넘 초보적인 질문인가여?\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "스킬치 보는 거에서... 자기가 원하는 스킬치만 보는거 어떻게 하져? -_-;; 넘 초보적인 질문인가여?",
+  "author": "김태환",
+  "authorMemberNo": "3744",
+  "authorHomepage": null,
+  "createdAt": "2002-05-18T14:49:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 필요없는 스킬들을요\n<br>\n<br>\n 드래그해서 딴 목록으로 옮겨버리세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 일단 Alt+k 나 캐릭창의 스킬을 누르시면 창이 뜹니다.\n<br>\n 아래에 있는 New Group 을 한번 클릭하시면 위스킬창에 매뉴가 하나 더 만들어지죠.\n<br>\n 그다음 원하시는 스킬을 드래그하신다음 그쪽에 톡 떨어뜨리면 됩니다.\n<br>\n New Group 라는 걸 두번클릭하시면 이름도 바꿀수있으니 해보세요\n<br>\n"
+    },
+    {
+      "author": "Ran",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그룹 원클릭 다음 딜리트 키 누르시면 그 안에 있는 모든 스킬이 제일위에 있는 그룹(이름이..;;)\n<br>\n 으로 샤샥 넘어가거든요 필요없는그룹 다 지우시고 원하는 스킬 몇개만 새 그룹 만드셔서 넣어보세요 보기 참 좋거든요..<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 네...감사합니다.-0- 답변 \n<br>\n 무지 빠르네여."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527151240",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8191",
+  "sourceEngine": "zeroboard"
+}

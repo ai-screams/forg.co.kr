@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18192",
+  "title": "벤더를 먼저 세우고 집 디자인을 하면..",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 벤더를 세워놓고<br>\n 나중에 집 디자인을 고치면<br>\n 어떻게 되는지?<br>\n 집 고치는 메뉴로요..<br>\n 또 상자들은?<br>\n 벤더가 서있는 자리는 손을 못대게 되나요?<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "벤더를 세워놓고 나중에 집 디자인을 고치면 어떻게 되는지? 집 고치는 메뉴로요.. 또 상자들은? 벤더가 서있는 자리는 손을 못대게 되나요?",
+  "author": "pokoso",
+  "authorMemberNo": "20152",
+  "authorHomepage": null,
+  "createdAt": "2003-04-21T22:06:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 냠 냠 "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 벤더가 몸속으로 들어가게 됩니다<br>\n<br>\n 자세한건 직접 해보세요<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 몸 -.-?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 락다운이나 시큐어됀 물건들은 모두 이동툴로 들어가게 돼구요...<br>\n 나머지 락다운 돼지않은 물건이나 벤더들은 집 간판 아래에 사이좋게 겹쳐집니다...<br>\n 물론 아이템이야 들고올수있지만 벤더들은 그자리에서 꿈적도 안하조 -_-<br>\n 물건도 못뺄듯... -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 벤더를 세워둔상태에서 집꾸미기 모드로 들어가면, 서잇던 벤더들이 안보입니다.<br>\n 맞춤집모드에서 빠져나오면 벤더는 원래 있던 그 위치에 그래로 서있지요.<br>\n<br>\n 여기서, 맞춤집모드에서 집을 꾸미고 이것을 \"Commit\"하면, 서있던 벤더들은 모두<br>\n 이동틀안으로 디드화되서 들어갑니다. 하지만, 다시 설치하기위해선 이 디드를 이용하는것이<br>\n 아니라, 벤더 주인인 캐릭을 한번 클릭하면 메뉴에\"벤더 설치\"항목이 있습니다.<br>\n 그걸 클릭하면, 자신이 서있는장소에 세울수있는 벤더의 이름이 쭈욱 뜨죠.<br>\n 따라서, 집을 새로고쳐서 commit하고나면, 벤더는 모두 사라져 이동틀안으로 들어가지만,<br>\n 벤더주인장캐릭을 원클릭해서 메뉴를통해 벤더를 다시 설치할수있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030519155324",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18192",
+  "sourceEngine": "zeroboard"
+}

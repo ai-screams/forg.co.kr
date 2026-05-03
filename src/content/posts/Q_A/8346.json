@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8346",
+  "title": "두가지 질문..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 전혀 다른 두가지 질문인데요..<br>\n 우선 첫째는..<br>\n 전투시 상대방 바로 앞에서 하이딩 하는방법이 있는지...<br>\n 텔포말고..<br>\n 아이템 쓰는거 말고요..<br>\n<br>\n 그리고 둘때는..<br>\n KRLOOP에서..<br>\n 더블클릭 항목은 어떻게 추가하는건가요..<br>\n 녹화 기능을 이용해서.. 두번 클릭해도....<br>\n 그냥 클릭.... 이.. 두번 들어가던데..<br>\n 더블클릭은 어떻게 쓰는지..<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "전혀 다른 두가지 질문인데요.. 우선 첫째는.. 전투시 상대방 바로 앞에서 하이딩 하는방법이 있는지... 텔포말고.. 아이템 쓰는거 말고요.. 그리고 둘때는.. KRLOOP에서.. 더블클릭 항목은 어떻게 추가하는건가요.. 녹화 기능을 이용해서.. 두번 클릭해도.... 그냥 클릭.... 이.. 두번 들어가던데.. 더블클릭은 어떻게 쓰는지..",
+  "author": "pokoso",
+  "authorMemberNo": "6773",
+  "authorHomepage": null,
+  "createdAt": "2002-05-27T00:02:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 상대방 앞에서는 힘들거에요...젬이라도..화면 밖에 나가야..가능할거 같은데<br>\n 더블클릭은..따로 더블클릭이 있을겁니다..(KR루프 지워서..확인이..)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 하딩 스킬은 젬일 경우 나를 어택 잡는 상대와 팔타일 이상 떨어져 있어서 숨을수 있구여. 바로 앞에서 하딩하는 방법은 인비(마법)밖에 없읍니다..  그리고 케알룹에 더블클릭 따로 있읍니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 케이알룹에서 떠블클릭은요 일단 포인트로 들어가셔서 좌표추가하시고  원하시는곳  떠블클릭하세요<br>\n 그다음에 추가하시고 스크립트상에서 떠블클릭선택하시고 <br>\n 아까 저장한 더블클릭좌표 선택하시면됩니다^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618204019",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8346",
+  "sourceEngine": "zeroboard"
+}

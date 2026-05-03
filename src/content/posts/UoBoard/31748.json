@@ -1,0 +1,53 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "31748",
+  "title": "포그지식인 ㅡㅡ;...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 저기 링크해서 새로 열리는 창의 크기를 조절할수 있는 태그가 잇나요?<br>\n<br>\n<a href=\"http://pian.ce.ro\">http://pian.ce.ro</a> 여기처럼 메뉴바 없고 창 크기 조절 안되는게 아니라..<br>\n<br>\n 정상적인 익스플로어 창이 열리면서.. 크기를 정할수 있고..<br>\n<br>\n 나중에 창 크기도 조절할수 있는 그런거요<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n\t\t\t\t\t내가 본것중 제일 아름다운 꽃 <br>\n<img height=\"300\" src=\"http://home.megapass.co.kr/~daewoo5922/image/92.jpg\" width=\"400\">\n<img src=\"http://home.megapass.co.kr/~hongssang/2.gif\"> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저기 링크해서 새로 열리는 창의 크기를 조절할수 있는 태그가 잇나요? http://pian.ce.ro 여기처럼 메뉴바 없고 창 크기 조절 안되는게 아니라.. 정상적인 익스플로어 창이 열리면서.. 크기를 정할수 있고.. 나중에 창 크기도 조절할수 있는 그런거요 내가 본것중 제일 아름다운 꽃",
+  "author": "pian",
+  "authorMemberNo": "14691",
+  "authorHomepage": null,
+  "createdAt": "2003-06-09T16:01:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 은근히 자기 홈패이지 선전한다. 그러면 안되요 피안씨~♡(...)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...저 홈에 들어가지 마세요, 토끼와 닭의 해부 사진이 있습니다<br>\n 너무 무서워(덜덜덜)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자바스크립트로..;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <a href=\"http://infocom.chonan.ac.kr/~mildol/study/dj_12.html\">http://infocom.chonan.ac.kr/~mildol/study/dj_12.html</a><br>\n 참조하세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포그홈을 예로<br>\n<br>\n &lt;script&gt;<br>\n var a = window.open();<br>\n a.resizeTo(500,400);<br>\n a.location.href = \"http://www.forg.co.kr\";<br>\n &lt;/script&gt;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030610162450",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=31748",
+  "sourceEngine": "zeroboard"
+}

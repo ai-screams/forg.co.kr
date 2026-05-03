@@ -1,0 +1,40 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5804",
+  "title": "3D 클리이언트에서 조명 효과",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/lighting0.jpg\"><br> <img border=\"0\" src=\"data/lighting1.jpg\"><br>     \t\t\t 조명효과는 3D클리언트에서 어떻게 보면 그림자 다음으로 중요한 부분 입니다. 조명효과가 켜지고 꺼지는 거에 따라서 지형의 입체감이 다르게 보이는걸 볼수 있을겁니다.<br>\n<br>\n PS : 문제는 저의경우 조명 효과가 물가쪽으로 가면 자동으로 풀려 버린다는 거죠ㅠ_ㅠ;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "조명효과는 3D클리언트에서 어떻게 보면 그림자 다음으로 중요한 부분 입니다. 조명효과가 켜지고 꺼지는 거에 따라서 지형의 입체감이 다르게 보이는걸 볼수 있을겁니다. PS : 문제는 저의경우 조명 효과가 물가쪽으로 가면 자동으로 풀려 버린다는 거죠ㅠ_ㅠ;;",
+  "author": "hamoni",
+  "authorMemberNo": "2690",
+  "authorHomepage": null,
+  "createdAt": "2002-10-20T22:06:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "lighting0.jpg",
+      "fileNum": 1,
+      "sizeBytes": 486809
+    },
+    {
+      "name": "lighting1.jpg",
+      "fileNum": 2,
+      "sizeBytes": 465408
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 mipmap 끄고 하시나요? 키는게 더 이쁘던데..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021115084331",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5804",
+  "sourceEngine": "zeroboard"
+}

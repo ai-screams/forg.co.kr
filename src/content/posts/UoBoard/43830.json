@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "43830",
+  "title": "가상 메모리를 어떻게 늘리나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 알려주세요~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br>\n<br>\n<br>\n<br><a href=\"http://myhome.hanafos.com/~sos440\">신변잡기 홈페이지 들어가기</a>\n<br>\n<div>\n<a style=\"filter:progid:DXImageTransform.Microsoft.Glow(color=skyblue, Strength=3); color:black; font-family:한컴돋움; width:300px; padding:5px;\">숫자 표기에는 네 자리 표기법을 사용합시다.<br>우리말은 맞춤법에 맞게 씁시다.\n<br>\n<br>世․솅宗御․엉製․졩訓․훈民민正․音\n<br>\n<br>\n나․랏：말․미中國․귁․에달․아文문字․와․로서르․디아․니․․이런젼․․로어․린百․姓․․이니르․고․져․․배이․셔․도․：내제․․들시․러펴․디：몯․노․미하․니․라․내․이․爲․윙․․야：어엿․비너․겨․새․로․스․믈․여․듧․字․․․노․니：사：마․다：․：수․니․겨․날․로․․메便뼌安․킈․고․져․미니․라</a></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "알려주세요~ 신변잡기 홈페이지 들어가기 숫자 표기에는 네 자리 표기법을 사용합시다. 우리말은 맞춤법에 맞게 씁시다. 世․솅宗御․엉製․졩訓․훈民민正․音 나․랏：말․미中國․귁․에달․아文문字․와․로서르․디아․니․․이런젼․․로어․린百․姓․․이니르․고․져․․배이․셔․도․：내제․․들시․러펴․디：몯․노․미하․니․라․내․이․爲․윙․․야：어엿․비너․겨․새․로․스․믈․여․듧․字․․․노․니：사：마․다：․：수․니․겨․날․로․․메便뼌安․킈․고․져․미니․라",
+  "author": "sos440",
+  "authorMemberNo": "15307",
+  "authorHomepage": "http://myhome.hanafos.com/~sos440",
+  "createdAt": "2003-10-21T21:38:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 늘리는 방법은... 윈 XP라 가정하고<br>\n 제어판-&gt; 내 컴퓨터 -&gt; 고급 -&gt; 성능(설정) -&gt; 고급 -&gt; 가상메모리(설정)에 들어가셔서<br>\n 기본 몇메가 최대 몇메가 그렇게 나오는데 그걸 조절하시면 됩니다.<br>\n 기본값과 최대값은 동일한 용량으로 해주시고(용량 바꿔봐야 하드 스왑핑만 늘어나서 버벅댑니다)<br>\n 보통 통상 메모리의 3배정도 가상메모리를 잡아주지만<br>\n 메모리가 넉넉하다면 가상메모리를 안잡아줘도 무방합니다<br>\n<br>\n 가상메모리 늘린다고 컴터 성능이 향상되는건 아닙니다.<br>\n 메모리 부족시 하드디스크의 일부분을 임시파일로 쓰는거기 떄문에 많이 잡아줘봐야 하드 읽는 시간만 오래 걸립니다... 512M 메모리일때 128M정도만 잡아주시면 괜찮을듯 하네요. 전 아예 가상메모리를 안쓰고 있지만요. (태클 환영... 이러면서 배우는거죠 ~~ )"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " .... 가상메모리 쓰면 하드디스크 램프가 항상 불켜져있는것 때문에 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 메모리의 대략 1.5배를 잡습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031115193805",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=43830",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22623",
+  "title": "헉,,,왜 발해서버가 없어졌을까....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  매크로를 돌려서 그런가...늘 접속하던 발해가 사라졌다...</td></tr></tbody></table>\n",
+  "bodyText": "매크로를 돌려서 그런가...늘 접속하던 발해가 사라졌다...",
+  "author": "microdevice",
+  "authorMemberNo": "23819",
+  "authorHomepage": null,
+  "createdAt": "2003-12-08T15:04:42",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Siegfried68",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "서버 다운"
+    },
+    {
+      "author": "microdevice",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아 서버다운이에요? ;ㅁ; 울온도 서버다운이있구나....감샤"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040101212653",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22623",
+  "sourceEngine": "zeroboard"
+}

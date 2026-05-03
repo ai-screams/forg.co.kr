@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "64",
+  "title": "프로보도 미덕 버그 걸수 있나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  디스코는 미덕버그로 딜레이 없앨수 있는데요<br>\n<br>\n프로보도 가능한가요?<br>\n<br>\n가능하면 하는 법을 좀 알려주세요<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "디스코는 미덕버그로 딜레이 없앨수 있는데요 프로보도 가능한가요? 가능하면 하는 법을 좀 알려주세요",
+  "author": "spigel",
+  "authorMemberNo": "147",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T15:05:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "프로보는 예전에는 되었으나 지금은 안됩니다.  \n<br>미덕되는건 피스랑 디스코"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071114114539",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=64",
+  "sourceEngine": "zeroboard"
+}

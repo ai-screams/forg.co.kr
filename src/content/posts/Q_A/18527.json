@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18527",
+  "title": "뮤겐 서버에 대한 질문",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t  뮤겐 서버가 베테랑 서버라고 해서 이번에 캐릭을하나 만들고 틈틈히 해 보려고 합니다.<br>\n  근데 몇가지 의문점과 문제점이 있으서 질문을..<br>\n<br>\n  1. 아이템의 속성이 전혀 보이지 않습니다.<br>\n &nbsp;&nbsp;&nbsp;&nbsp; (베테랑 서버라서 원래 그런건가요?)<br>\n<br>\n  2. 철잉갓같은 물품도 클릭해서 들어보기 전까지는 마우스를 대도 몇개인지<br>\n &nbsp;&nbsp; 표시되지 않습니다.<br>\n<br>\n  3. AOS가 적용되지 않습니다 -_-;<br>\n<br>\n  아시는 분 계시면 질문에 대답해 주시면 감사하겠구요.<br>\n  혹시 AOS가 적용된 베테랑 서버 있으면 추천좀 해 주세요.<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "뮤겐 서버가 베테랑 서버라고 해서 이번에 캐릭을하나 만들고 틈틈히 해 보려고 합니다. 근데 몇가지 의문점과 문제점이 있으서 질문을.. 1. 아이템의 속성이 전혀 보이지 않습니다. (베테랑 서버라서 원래 그런건가요?) 2. 철잉갓같은 물품도 클릭해서 들어보기 전까지는 마우스를 대도 몇개인지 표시되지 않습니다. 3. AOS가 적용되지 않습니다 -_-; 아시는 분 계시면 질문에 대답해 주시면 감사하겠구요. 혹시 AOS가 적용된 베테랑 서버 있으면 추천좀 해 주세요.",
+  "author": "mars",
+  "authorMemberNo": "19291",
+  "authorHomepage": null,
+  "createdAt": "2003-05-20T12:00:21",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 베테랑 샤드는 aos적용안될껍니다<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음 그건 왠지 마우스 모양키 있죠? 그거 더블클릭할떄마다 눈깔모양 , 화살표 모양, 등등<br>\n<br>\n 으로 바뀌는데 그 이유인것 같습니다. 마우스 모양으로 바꾸시면 굳이 클릭을 안하더라도<br>\n<br>\n 속성이나 숫자 등이 나올꺼에요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 피안님 슬픈 사실이지만 베테랑 샤드도 AOS 적용됐습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 너무나 슬퍼서 눈물이 펑펑 나는군요<img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030526093114",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18527",
+  "sourceEngine": "zeroboard"
+}

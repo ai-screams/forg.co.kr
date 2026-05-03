@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7339",
+  "title": "레시피아이템 루닉으로 제작시 궁금한점",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  보통 레시피로 아이템 제작할때 루닉으로 제작하면 다른옵션이 붙을수 있다고 하던데<br>\n만약 루미너스나 닥셋같은것도 루닉으로 제작하면 다른옵션이 추가될 가능성이 있나요?<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "보통 레시피로 아이템 제작할때 루닉으로 제작하면 다른옵션이 붙을수 있다고 하던데 만약 루미너스나 닥셋같은것도 루닉으로 제작하면 다른옵션이 추가될 가능성이 있나요?",
+  "author": "pchun95",
+  "authorMemberNo": "6282",
+  "authorHomepage": null,
+  "createdAt": "2007-10-10T13:16:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아참 또 궁금한점 루닉으로 제작시 원래 나오는 옵션에 추가되는 형식인가요?\n<br>아니면 원래옵션이 바뀔수도 있나요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "위 아이템에는 다른옵션이 안 붙는걸로 알고 있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "레시피 제작아이템들..중에서 루닉보너스를 받을 수 있는것이 있고, 없는것들도 있습니다.\n<br>\n<br>보석 외에 다른 상위 재료가 필요한 물품들은 루닉도구로 제작해도 보너스를 받지 못합니다.\n<br>(Grizzled Bones나 Corruption같은것들..이 들어가는 물품들)\n<br>\n<br>에.. 그러니까...\n<br>\n<br>질문하신 Luminous Blade같은 경우는 보너스를 받지 못하지만\n<br>\n<br>True Leafblade와 같이 보석과 철괴만을 사용하는 물건의 경우에는 보너스를 받게됩니다.\n<br>\n<br>\n<br>두번째 // 원래의 효과에 추가되는 형식입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "일레인 말리님이 친절히 설명해주셨습니다만 조금 더 자세한걸 원하실까봐 적어보자면\n<br>에세이란에 복귀자들을 위한 ML총정리에보시면 상급레시피정리한게있고 하급레시피 정리한게 있습니다.\n<br>그걸 일단 참고 하시구요.\n<br>상급레시피는 루닉도구로 만들어도 효과를 보지 못합니다.\n<br>하급레시피는 좀 복잡한데 종류마다 효과가 다르게 적용됩니다.\n<br>기본적으로는 옵션이 추가된다고 보시면 되는데 루닉옵션과 레시피추가옵션이 중복되는경우는\n<br>제품별로 다르게 적용되는것들이 있습니다.\n<br>\n<br>다음은 루닉도구로 하위레시피를 작성했을경우의 마법옵션별로 적용되는것을 정리한것입니다.\n<br>\n<br>1.마법사갑옷(명상가능)옵션, 빠른주문시전-1(true spellblade, mystical shortbow ) \n<br>루닉옵션으로 FC1 가산시는, 레시피의 FC-1과 상쇄되어 명상가능만 표기되며 1루닉옵션을 소비합니다. \n<br>루닉옵션으로 명상가능＋FC-1 가산시는, 효과는 변함없으며 1루닉옵션 소비합니다. \n<br>루닉옵션으로 명상가능＋FC-1 와 FC1 가산시는, 명상가능만 표기되며 2루닉옵션 소비됩니다. \n<br>\n<br>\n<br>2.빠른주문시전 1(mage's rune blade ) \n<br>FC1 가산시는, 효과는 변함없고 1루닉옵션 소비. \n<br>명상가능＋FC-1 가산시는, FC1 과 상쇄되어 명상가능만 표기됩니다. 소비 옵션수는 1이 됩니다. \n<br>명상가능＋FC-1 과 FC1 가산시는, 명상가능＋FC1 이 됩니다.소비 옵션수는 2가 됩니다. \n<br>\n<br>\n<br>3.속성 저항 증가(Corrupted Rune Blade) \n<br>Runic tool 로 부가되는 속성 저항 증가와 레시피 고정의 속성 저항 증가는 가산됩니다.\n<br>다만, 상한은＋15 %까지되고 있습니다. \n<br>\n<br>\n<br>4.명중, 회피(TC ,assassin's shortbow) \n<br>Runic tool 로 부가되는 명중, 회피와 레시피 고정의 명중, 회피는 가산됩니다.\n<br>그러나, 상한은 강도100 %가 된다＋15 %까지입니다. \n<br>활Runic tool 사용시의 명중·회피 상한은25 %입니다만,assassin's shortbow 를 고급Runic 으로\n<br>작성했을 경우, 명중가산이15 %로 억제되어 버립니다. \n<br>(보통 목재로 작성 후,Yew 목재등에서 강화하는 것으로써＋15 %를 넘는 것은 가능합니다.) \n<br>\n<br>\n<br>5.무기 데미지 \n<br>Runic tool (35 %~) 또는 고품질(35 %)에 의한 데미지 증가와 레시피 고정의 데미지 증가는 가산됩니다. 다만, 상한은＋50 %까지되고 있습니다. \n<br>Runic 으로 작성 후,Yew 목재등으로 강화하는 것으로써＋50 %를 넘는 것은 가능합니다. \n<br>\n<br>\n<br>6.추가 마법 공격(Lightning, Harm, Dispel 인화성의 무기) \n<br>Runic tool 과 레시피 고정의 추가 마법이 부가되었을 경우, 그 마법의 발동 확률이 가산됩니다만,\n<br>최대로25 %까지되고 있습니다. \n<br>일례로서icy scimitar(Harm:15%) 를Runic hammer 로 작성해,Harm 이 부가되었을 경우.\n<br>\n<br>Runic tool 과 레시피 고정 이외의 추가 마법이 부가되었을 경우, 양쪽 모두 유효가 됩니다. \n<br>일례로서icy scimitar(Harm:15%) 를Runic hammer 로 작성해,Magic arrow, Fireball 또는 Lightning \n<br>이 부가되었을 경우. \n<br>이런경우 데미지 타이밍이 다릅니다.\n<br>Magic arrow 또는Fireball 이 부가되었을 경우,\n<br>Harm →통상 공격 명중→Magic arrow 또는Fireball 되는 경우도 있습니다. \n<br>\n<br>\n<br>7.행운(luckblade, adventurer's machete ) \n<br>Runic tool 로 부가되는 행운과 레시피 고정의 행운은 가산됩니다.\n<br>상한은 없고,Valorite runic 과Gold 잉곳의 편성으로, 최대160 까지 가능성이 있습니다. \n<br>\n<br>\n<br>8.마나흡수(magekiller assassin spike, magekiller leafblade ) \n<br>Runic tool 의 매직 효과로서 마나흡수가 부가되었을 경우, 루닉이 우선됩니다. \n<br>그래서 저급Runic tool 로 작성하면, 레시피 고정치의16 %보다 저하할 가능성이 있습니다. \n<br>\n<br>\n<br>9.마법사 무기-29 (runesabre ) \n<br>Runic tool 로 마법사 무기가 부가되었을 경우, 루닉이 우선됩니다. \n<br>\n<br>\n<br>10.속도(frozen longbow, ranger's shortbow ) \n<br>활Runic tool 로 속도＋가 부가되었을 경우, 일률적으로 속도＋6 %가 되어 버리는 불편한점이 있습니다.\n<br>속도＋10 %의 특성이 있는 Ash 목재로 작성해도 같습니다.\n<br>\n<br>\n<br>11.슬레이어(butcher's war cleaver, silver-etched mace, slayer longbow ) \n<br>Runic tool 에 추가로 슬레이어 효과가1 개추가되는 경우도 있습니다. \n<br>\n<br>\n<br>출처 : <a href=\"http://www.geocities.co.jp/Playtown-Yoyo/4812/\">http://www.geocities.co.jp/Playtown-Yoyo/4812/\n</a><br>\n<br>나름대로 네이버 번역한걸 보기쉽게 편집해서 적었습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "와우 대단하십니다.  ^^ 감사합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115125439",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7339",
+  "sourceEngine": "zeroboard"
+}

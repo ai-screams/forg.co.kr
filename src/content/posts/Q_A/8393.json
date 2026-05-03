@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8393",
+  "title": "이론 말도 안되는 사태가...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 벌써 울온깔고 등록하고 못하고 있는지 3일째입니다.<br>\n 이상하게 패치가 되지 않아 울온을 접속할수가 없는것 같은데..<br>\n 패치할때 나오는 메세지입니다.<br>\n<br>\n Connecting to patch server 216.141.8.15:8888<br>\n Connected to patch server<br>\n Diverting to 159.153.162.119:8888<br>\n Connecting to patch server 159.153.162.119:8888<br>\n Connected to patch server<br>\n Reading message<br>\n Displaying message<br>\n Done displaying message<br>\n Exchanging version information with patch server<br>\n Received file name \"uotd_win32_2-0-8_b55.rtp\" of length 444356<br>\n Received file name \"uotd_win32_2-0-8_b55.pat\" of length 15<br>\n Getting required files<br>\n Using existing file \"uotd_win32_2-0-8_b55.rtp\" of size 444356<br>\n Processing files<br>\n Applying patch patch\\uotd_win32_2-0-8_b55.rtp on path .<br>\n Error applying patch<br>\n Error during session<br>\n Your client may not be the most recent version.<br>\n You may be able to play the game with your current client.<br>\n Check http:\\www.uo.com for help on resolving patching issues.<br>\n Click OK to play the game or Cancel to abort.<br>\n<br>\n<br>\n 이걸 uohelp인가~ 메일을 보냈더니.. 답변이 없네용..<br>\n 혹시 수동패치라도 있으면 보내주라고.. 했더니..<br>\n<br>\n 도대체 해결방법이 없는겁니까..<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "벌써 울온깔고 등록하고 못하고 있는지 3일째입니다. 이상하게 패치가 되지 않아 울온을 접속할수가 없는것 같은데.. 패치할때 나오는 메세지입니다. Connecting to patch server 216.141.8.15:8888 Connected to patch server Diverting to 159.153.162.119:8888 Connecting to patch server 159.153.162.119:8888 Connected to patch server Reading message Displaying message Done displaying message Exchanging version information with patch server Received file name \"uotd_win32_2-0-8_b55.rtp\" of length 444356 Received file name \"uotd_win32_2-0-8_b55.pat\" of length 15 Getting required files Using existing file \"uotd_win32_2-0-8_b55.rtp\" of size 444356 Processing files Applying patch patch\\uotd_win32_2-0-8_b55.rtp on path . Error applying patch Error during session Your client may not be the most recent version. You may be able to play the game with your current client. Check http:\\www.uo.com for help on resolving patching issues. Click OK to play the game or Cancel to abort. 이걸 uohelp인가~ 메일을 보냈더니.. 답변이 없네용.. 혹시 수동패치라도 있으면 보내주라고.. 했더니.. 도대체 해결방법이 없는겁니까..",
+  "author": "webswing",
+  "authorMemberNo": "3643",
+  "authorHomepage": null,
+  "createdAt": "2002-05-29T15:53:27",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온깐방에 패치 폴더가 있는데...<br>\n<br>\n 거기 안에 파일들 지우시구 다시 해보세요<br>\n<br>\n 그래도 안된다면..동시접속 플그램을 활성화 시켜놔서 그럴수도..<br>\n<br>\n 저도 그런적이 종종 잇어서...<br>\n<br>\n 안된다면 울온 언인스톨을..&gt;ㅁ&lt;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 마지막은 칼오프란에 수동패치 사이트에서  수동으로 깔아보시길.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제 경우는 울온 깐 방에 patch 폴더가 지워져 있어서 패치가 안되고 있더라구여..<br>\n<br>\n 그래서 patch 라고 방 하나 만들어 주니깐 잘 되었어여 ㅡㅡ "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618201834",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8393",
+  "sourceEngine": "zeroboard"
+}

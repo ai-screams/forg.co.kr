@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18265",
+  "title": "울온에 대한 질문......허접한 질문 ..^^v",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 울온에서 생활을 하다가 보면 일반 창에가 은행이나 all kill 같은 명령어을 실행하는데 그걸 일일이 적어서 보내지 않아도&nbsp;&nbsp;입력만시키면 일상 울온에서 하는 모든 명령어을 실행시키는 프로그램이 있다는 소리을 들었는데요 구하고 싶은데 구하질 못하고 있네요 <br>\n 혹시 가지고 계신분은 보내주시든지 않이면 다운 받는 사이트좀 알려주세요<br>\n 부탁드릴게요 ^^v<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "울온에서 생활을 하다가 보면 일반 창에가 은행이나 all kill 같은 명령어을 실행하는데 그걸 일일이 적어서 보내지 않아도  입력만시키면 일상 울온에서 하는 모든 명령어을 실행시키는 프로그램이 있다는 소리을 들었는데요 구하고 싶은데 구하질 못하고 있네요 혹시 가지고 계신분은 보내주시든지 않이면 다운 받는 사이트좀 알려주세요 부탁드릴게요 ^^v",
+  "author": "youngman0100",
+  "authorMemberNo": "19327",
+  "authorHomepage": null,
+  "createdAt": "2003-04-25T12:46:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 굳이 다른 프로그램을 사용하실 필요가 없습니다.<br>\n 울온 자체 매크로를 사용하세요.<br>\n 옵션에 보시면 매크로 옵션이라고 있습니다.<br>\n<br>\n 여기서 Say를 이용하시면 되죠<br>\n 예를 들면 <br>\n          단축키는 Ctrl + C, <br>\n          Say는 은행 all kill <br>\n<br>\n 이렇게 하시고 확인 누르신 다음 울온 창에서 단축키(Ctrl + C)를 누르시면 은행 all kill이라고 말을 하게 됩니다.<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 크리츠 님 홈페이지에 가보세요. -O-/"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030524103547",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18265",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21286",
+  "title": "ARM/DISARM 인가? 이거에 대해 질문이요..",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 디스암키 해 놓은 다음에 레프트 핸드 이렇게 매크로를 정했습니다.<br>\n<br>\n 제 아쳐가 이렇게 해 놨는데.. 이 키를 누르면 어쩔 땐 활을 들었다가<br>\n<br>\n 놨다가 되는데 또 어쩔 떄에는 안되고 그러는데 이유를 알 수가 없습니다.<br>\n<br>\n 또 활을 바꾸니까 전에 들었던 게 들리질 않나..<br>\n<br>\n 설명 좀 해 주세요..<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "디스암키 해 놓은 다음에 레프트 핸드 이렇게 매크로를 정했습니다. 제 아쳐가 이렇게 해 놨는데.. 이 키를 누르면 어쩔 땐 활을 들었다가 놨다가 되는데 또 어쩔 떄에는 안되고 그러는데 이유를 알 수가 없습니다. 또 활을 바꾸니까 전에 들었던 게 들리질 않나.. 설명 좀 해 주세요..",
+  "author": "chocobor",
+  "authorMemberNo": "16830",
+  "authorHomepage": null,
+  "createdAt": "2003-09-28T18:11:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음 무기를 내리고 올릴때 약간의 딜레이가 있습니다.<br>\n 포션한잔 걸칠정도의 딜레이........^^;;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아이에 되질 않던데..-_ㅠ 뭘 잘못한거지...<br>\n<br>\n Arm/Disarm   Left Hand<br>\n<br>\n 이렇게만 매크로 지정해 놨어요. 그런데 아무리 해도..You must first disarm a weapon in order to arm one.<br>\n<br>\n 이렇게 나오네요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 무기를 먼저 들고 그키로 내린담에 사용할수있습니다.<br>\n<br>\n 그 메세지 해석만 해봐도 쉽게 아셨을텐데.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 알았는데도 안돼서... 질문한거죠..^^:; 음.. 매크로키 지우고 다시 만들고 해 봐야겠다... 감사합니다.^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031101122627",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21286",
+  "sourceEngine": "zeroboard"
+}

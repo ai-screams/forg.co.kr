@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7352",
+  "title": "계정 메일 주소를 네이버로 쓰시는분들 좀 봐주세요~",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  다름이 아니라 계정 변경사항 및 비번 변경 했을때 <br>\n<br>\n메일로 변경사항 잘 오시나요?<br>\n<br>\n한달전쯤엔 잘 왔는데 최근에 친구 보상으로 코드를 발송했다는 사항을 봤는데<br>\n<br>\n메일이 안와서 비번변경해보고 기타 계정 사항 변경해 봤는데 메일이 오지 <br>\n<br>\n않터군요 혹시 계정 메일 주소가 네이버 이신분들 확인 한번 해보시고<br>\n<br>\n리풀좀 달아주세요~</td></tr></tbody></table>\n",
+  "bodyText": "다름이 아니라 계정 변경사항 및 비번 변경 했을때 메일로 변경사항 잘 오시나요? 한달전쯤엔 잘 왔는데 최근에 친구 보상으로 코드를 발송했다는 사항을 봤는데 메일이 안와서 비번변경해보고 기타 계정 사항 변경해 봤는데 메일이 오지 않터군요 혹시 계정 메일 주소가 네이버 이신분들 확인 한번 해보시고 리풀좀 달아주세요~",
+  "author": "소마당",
+  "authorMemberNo": "47",
+  "authorHomepage": null,
+  "createdAt": "2007-10-11T23:12:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "보통 메일이 잘 도착하지 않습니다.\n<br>\n<br>이유는 네이버측에서 스팸매일로 간주되면 정상적인 메일도 잘 안오는 경우가 많습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071117151449",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7352",
+  "sourceEngine": "zeroboard"
+}

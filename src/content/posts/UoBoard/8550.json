@@ -1,0 +1,29 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "8550",
+  "title": "울온지도에서 일쉐나 지도가 좀 잘못된듯...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t '정직'과 '자비'게이트에 둘다 '동정심'이라고 되어있습니다.\n<br>\n 이름이 잘못된것 같네요.^^\n<br>\n (이궁. 맞나?)\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "'정직'과 '자비'게이트에 둘다 '동정심'이라고 되어있습니다. 이름이 잘못된것 같네요.^^ (이궁. 맞나?)",
+  "author": "[PoB]매직",
+  "authorMemberNo": "7678",
+  "authorHomepage": null,
+  "createdAt": "2002-05-15T14:14:49",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 예..현재 지도쪽은 던전란과 맞물리게 되어있습니다.\n<br>\n 일쉐나쪽도 마음에 안들어서 재작업중에 있습니다. 당분간 참아주시길-0-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527180039",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=8550",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7247",
+  "title": "맞춤집에 대한 질문입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  1. 맞춤집에서 디자인을 한다음<br>\n<br>\nBackup : 임시저장<br>\n<br>\nSynch :<br>\n<br>\ncommit : 실제로 짓기<br>\n<br>\nRestore : 임시저장 불러오기<br>\n<br>\nClear : 모두 지우고 다시짓기<br>\n<br>\nRevert :<br>\n<br>\n이런거 같던데...<br>\n<br>\n빠진곳의 정확한 의미와 눌렀을시에 어떤 상황이 벌어지는지 궁금합니다.<br>\n<br>\n2. Commit로 건물을 짓고 돈을 지불한다음에 나중에 다시 수정하고 싶은맘이 생긴다면 지우기버튼을 이용할텐데요. 그렇게 되면 돈들이 고스란히 은행으로 들어오는건가요?<br>\n만들었다 지웠따 했을때 어떠한 불이익이 생기지는 않는지 궁금합니다.<br>\n1층 짓어보니 전재산 다 나가네요..2층까지는 엄두도 못내겠어요.<br>\n이거&nbsp;&nbsp;4층 바닥까지 올려야하는데..2층부터는 바닥값두 500골드씩 나가는거 같더군요. 언능 언능 돈벌어 올려야겠는뎅...ㅜㅜ<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "1. 맞춤집에서 디자인을 한다음 Backup : 임시저장 Synch : commit : 실제로 짓기 Restore : 임시저장 불러오기 Clear : 모두 지우고 다시짓기 Revert : 이런거 같던데... 빠진곳의 정확한 의미와 눌렀을시에 어떤 상황이 벌어지는지 궁금합니다. 2. Commit로 건물을 짓고 돈을 지불한다음에 나중에 다시 수정하고 싶은맘이 생긴다면 지우기버튼을 이용할텐데요. 그렇게 되면 돈들이 고스란히 은행으로 들어오는건가요? 만들었다 지웠따 했을때 어떠한 불이익이 생기지는 않는지 궁금합니다. 1층 짓어보니 전재산 다 나가네요..2층까지는 엄두도 못내겠어요. 이거  4층 바닥까지 올려야하는데..2층부터는 바닥값두 500골드씩 나가는거 같더군요. 언능 언능 돈벌어 올려야겠는뎅...ㅜㅜ",
+  "author": "kfatima",
+  "authorMemberNo": "9536",
+  "authorHomepage": null,
+  "createdAt": "2007-10-01T01:29:13",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "옙. 전혀 불이익 없습니다. 벽하나 없애면 벽하나 가격만큼 다시 은행으로 들어갑니다- \n<br>Synch 는 아마 서버에 디자인을 저장하는 걸로 기억합니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115130208",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7247",
+  "sourceEngine": "zeroboard"
+}

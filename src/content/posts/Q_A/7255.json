@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7255",
+  "title": "아이템들의 스킬업 수치..???",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  기본적 스킬수치가 700이상이 되면 올라가지 않는것으로 알고 있습니다.<br>\n<br>\n기본스킬들을 순수 700을 만들었다고 가정하고요.<br>\n<br>\n아이템에서 +10 등이 붙는 아템을 착용하게된다면..<br>\n<br>\n스킬치가 700을 넘길수 있는건가요?<br>\n<br>\n아이템 착용시 붙는 +10까지도 포함시키고 다른 스킬을 내려줘야 하는건가요??<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "기본적 스킬수치가 700이상이 되면 올라가지 않는것으로 알고 있습니다. 기본스킬들을 순수 700을 만들었다고 가정하고요. 아이템에서 +10 등이 붙는 아템을 착용하게된다면.. 스킬치가 700을 넘길수 있는건가요? 아이템 착용시 붙는 +10까지도 포함시키고 다른 스킬을 내려줘야 하는건가요??",
+  "author": "kfatima",
+  "authorMemberNo": "9536",
+  "authorHomepage": null,
+  "createdAt": "2007-10-01T22:10:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아이템으로 올라가는 수치는 스킬 최대치에 영향을 받지 않습니다.\n<br>700에서 10짜리 아이템을 착용하면 710이되죠..\n<br>Show real로는 700이지만.. 710에 해당하는 능력치를 얻게 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "단, 파워스크롤을 발라야 됩니다^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116143833",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7255",
+  "sourceEngine": "zeroboard"
+}

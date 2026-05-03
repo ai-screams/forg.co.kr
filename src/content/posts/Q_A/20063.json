@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20063",
+  "title": "핑퐁",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 아직도 스탯 핑퐁되나요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "아직도 스탯 핑퐁되나요?",
+  "author": "rladustlrqkqh",
+  "authorMemberNo": "19342",
+  "authorHomepage": null,
+  "createdAt": "2003-08-02T18:09:50",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 핑퐁이 됀다해도 하루에 15정도 밖에 안올라가는걸로 알고이써요 틀릴수도 있구요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스텟올라가는 제한이 15분에 한번인가 하기 때문에 효과없음."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 15분마다 올라가며<br>\n 하루에 15 올라갑니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030830140619",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20063",
+  "sourceEngine": "zeroboard"
+}

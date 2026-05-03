@@ -1,0 +1,59 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20104",
+  "title": "X-irc 연결이 안되는데 어떻게해야하나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t X-irc 를 깔아뒀는데<br>\n 연결이 잘 안되네요.<br>\n<br>\n 포트는 6667로 돼있던데....<br>\n 아얄씨 연결안될때 포트바꿔주는 방법 아시는분계시다면<br>\n 조언을 부탁드립니다...^^<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "X-irc 를 깔아뒀는데 연결이 잘 안되네요. 포트는 6667로 돼있던데.... 아얄씨 연결안될때 포트바꿔주는 방법 아시는분계시다면 조언을 부탁드립니다...^^",
+  "author": "spinella",
+  "authorMemberNo": "15207",
+  "authorHomepage": null,
+  "createdAt": "2003-08-04T15:14:19",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 서버는 어떤거로 하셧어요?<br>\n 혹시 irc.hanirc.org 서버주소가 이게 아니라면 <br>\n 이렇게 바꿔보시고 연결해보세요^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 1.수동 연결 방법 <br>\n  x-irc를 켜고 입력하는 곳에         <br>\n          /server irc.nuri.net 6664<br>\n  를 입력.<br>\n<br>\n 2. 포트 변환<br>\n<br>\n  x-irc 실행<br>\n<br>\n -&gt;Alt+o 를 누르고(또는 기본-설정)<br>\n -&gt; 접속설정 중 '옵션들' 을 클릭<br>\n -&gt;기본서버포트에 6664를 입력<br>\n<br>\n  x-irc 재실행.<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포트를 6661로 해보세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 공유기쓰시면 그 공유기 만든 회사 사이트에 가보시는 것이 가장 빠를 겁니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이런문제가 꽤 자주 생기던데<br>\n 리플 카피해두고  유용하게 쓸께요.<br>\n 답변 고맙습니다...^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " XP이시면..방화벽 제거해주시면 될지도..<br>\n 저도 그랬거덩요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030822111048",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20104",
+  "sourceEngine": "zeroboard"
+}

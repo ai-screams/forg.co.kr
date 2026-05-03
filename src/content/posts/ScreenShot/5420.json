@@ -1,0 +1,46 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5420",
+  "title": "-____-",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1033454081/UO0003.jpg\"><br> <img border=\"0\" src=\"data/1033454081/UO0004.jpg\"><br>     \t\t\t 이힛..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이힛..",
+  "author": "아이스서펜트",
+  "authorMemberNo": "3831",
+  "authorHomepage": null,
+  "createdAt": "2002-10-01T15:34:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0003.jpg",
+      "fileNum": 1,
+      "sizeBytes": 114483
+    },
+    {
+      "name": "UO0004.jpg",
+      "fileNum": 2,
+      "sizeBytes": 114688
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -0-대단 하시다^^ 어디섭이세여?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 프리섭 아닐까..ㅡㅡ;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021020153234",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5420",
+  "sourceEngine": "zeroboard"
+}

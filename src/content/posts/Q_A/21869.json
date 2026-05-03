@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21869",
+  "title": "팔라스킬은 어떻게 사용하나요?",
+  "categoryLabel": "이지유오",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 안녕하세요 질문있습니다 ^^;; <br>\n 이지유오를 공부(?) 하면서 모르는것이 많지만 하나 만들다가 막히는 부분이 있어서 이렇게 올립니다..<br>\n<br>\n 제가 워를 할것이 아니기 때문에. 그냥 이지로 사냥을 하기 위해 만들려는 매크로인데요 팔라 스킬 값은 어디서 알수 있는건가요? 책을 펼쳐야지만 사용한수 있는건지<br>\n<br>\n 스킬을 사용해도 어느부분에 값이 있는지 모르겠네요 ㅠ_ㅠ<br>\n<br>\n 자세히 알려주세요 ^^<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "안녕하세요 질문있습니다 ^^;; 이지유오를 공부(?) 하면서 모르는것이 많지만 하나 만들다가 막히는 부분이 있어서 이렇게 올립니다.. 제가 워를 할것이 아니기 때문에. 그냥 이지로 사냥을 하기 위해 만들려는 매크로인데요 팔라 스킬 값은 어디서 알수 있는건가요? 책을 펼쳐야지만 사용한수 있는건지 스킬을 사용해도 어느부분에 값이 있는지 모르겠네요 ㅠ_ㅠ 자세히 알려주세요 ^^",
+  "author": "hanerror",
+  "authorMemberNo": "23471",
+  "authorHomepage": null,
+  "createdAt": "2003-10-30T09:47:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 책 값은 알겠는데 그 안에 스킬값은 어디를 찾아야할지 찾아도 않보여요 ㅠ_ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <a href=\"http://www.easyuo.com/docs/Command_event_Macro.php\">http://www.easyuo.com/docs/Command_event_Macro.php</a><br>\n<br>\n 오피셜 홈페이지 정도는 한번 찾아보시는게 :)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 감사감사"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031127105816",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21869",
+  "sourceEngine": "zeroboard"
+}

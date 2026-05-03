@@ -1,0 +1,47 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "27330",
+  "title": "걍 아주 간단한 기초적인 뉴비가 모르는질문..;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 정섭에서 케알룹 써도 되나요?? <br>\n<br>\n 아님 자체메크로만 써야 하나여?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "정섭에서 케알룹 써도 되나요?? 아님 자체메크로만 써야 하나여?",
+  "author": "sagjjang",
+  "authorMemberNo": "19716",
+  "authorHomepage": null,
+  "createdAt": "2003-03-20T03:57:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 됩니다 krloop맞죠?<br>\n -_-/ 질문은 Question란으로 해주세요 *^^*"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 써도되지만 걸리면 처벌받아요오~UOA외에는 공식이 아니라서.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  KR-loop를 쓰면 처벌 받는다구요?<br>\n  금시초문 이네요. <br>\n<br>\n  메크로 자체가 울온 프로그램에 어떤 변형을 가하거나 영향을 주지 않는 이상 불법이 아닐 텐데요, 무엇을 근거로 처벌 한다는 것인지.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " KRLOOP은 자체적으로 루프 기능을 내장하고 있기 때문에 두말할것도 없이 블럭입니다. (UOA의 상용화 조건이 루프 프로그램을 삭제하는 것이었죠 아마?) UOA, UOAM같은 유틸리티를 제외하고는 전부 불법 서드파티 프로그램으로 단정된 상태고, 사용하다 적발시 계정 영구블럭을 초래할수도 있습니다.<br>\n 다만 KRLOOP은 패킷을 건드리는 방식이 아니라서,(고스트마우스 응용이라죠) 적발하기가 쉽지 않을 겝니다. '나 KRLOOP 쓰고있소이다!'라고 광고하지 않는이상, 적발당하지는 않으니 그냥 쓰시면 되겟습니다.<br>\n<br>\n -mars란분께-<br>\n EA에서 규정된 공식 서드파티 프로그램이 아닌 다른 프로그램을 사용하다 적발됬을경우엔 유저의 합의 없이 바로 어카운트 블럭을 넣어버릴수 있습니다. 걸렷을때 폴폴님이 가끔 봐주는정도고(약한 경우만) 다른 겜마의 경우는 무한루프 걸리면 짤없이 보내버립니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621054318",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=27330",
+  "sourceEngine": "zeroboard"
+}

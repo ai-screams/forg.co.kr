@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20529",
+  "title": "uo.essay란에잇는 easyuo힐링 매크로에대해서 질문!",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t initevents<br>\n start:<br>\n onhotkey f5<br>\n gosub healself<br>\n if #hits &lt; #maxhits<br>\n gosub healself<br>\n goto start<br>\n<br>\n<br>\n<br>\n sub healself<br>\n finditem ZLF C<br>\n if #findkind = -1 2<br>\n sound c:\\windows\\ding.wav<br>\n return<br>\n set #lobjectid #findid<br>\n event macro 17<br>\n target<br>\n event macro 23<br>\n set %timer #scnt + 13<br>\n loop:<br>\n<br>\n scanjournal 1<br>\n if YOU_FINISH_APPLYING in #journal || BARELY_HELP in #journal<br>\n {<br>\n deletejournal<br>\n return<br>\n }<br>\n<br>\n if #scnt &gt;= %timer<br>\n return<br>\n goto loop<br>\n ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ<br>\n 저 스크립에서 사용해보니까는 에너지가 달면 붕대를 찾아서 타겟셀프 하는식으로 작동이 잘되는데.<br>\n<br>\n 여기서 질문은 울온 자체매클에서 [bandself 하면 타겟셀프같이 타겟이 뜨지않고 바로 힐링이 되는데 이런 형식으로 바꾸는 방법을 알고 싶습니다.<br>\n<br>\n 저걸 사용하다가 불편을 격은건 에너지가 달면 붕대를 감는상황에서 타겟이 뜨고 자신에게 치료할떄쯤에 잘못해서 몹에게 워모드로 더블클릭하는순간 클릭이 되서 힐링을 못하고 몹에게힐링이되는경우가 생겨서..난감함을.. ..[bandself 요명령으로 힐링매클하는 방법을 알고 싶어서 이렇게 글을 썹보앗습니다.<br>\n<br>\n 지금까지 읽어주신분들감사하고욥 ...<br>\n 이지유오에 대해 조금 아시는분들 매클설정 조언해주시면 감사하겟습니다 .<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "initevents start: onhotkey f5 gosub healself if #hits < #maxhits gosub healself goto start sub healself finditem ZLF C if #findkind = -1 2 sound c:\\windows\\ding.wav return set #lobjectid #findid event macro 17 target event macro 23 set %timer #scnt + 13 loop: scanjournal 1 if YOU_FINISH_APPLYING in #journal || BARELY_HELP in #journal { deletejournal return } if #scnt >= %timer return goto loop ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 저 스크립에서 사용해보니까는 에너지가 달면 붕대를 찾아서 타겟셀프 하는식으로 작동이 잘되는데. 여기서 질문은 울온 자체매클에서 [bandself 하면 타겟셀프같이 타겟이 뜨지않고 바로 힐링이 되는데 이런 형식으로 바꾸는 방법을 알고 싶습니다. 저걸 사용하다가 불편을 격은건 에너지가 달면 붕대를 감는상황에서 타겟이 뜨고 자신에게 치료할떄쯤에 잘못해서 몹에게 워모드로 더블클릭하는순간 클릭이 되서 힐링을 못하고 몹에게힐링이되는경우가 생겨서..난감함을.. ..[bandself 요명령으로 힐링매클하는 방법을 알고 싶어서 이렇게 글을 썹보앗습니다. 지금까지 읽어주신분들감사하고욥 ... 이지유오에 대해 조금 아시는분들 매클설정 조언해주시면 감사하겟습니다 .",
+  "author": "darksai",
+  "authorMemberNo": "21712",
+  "authorHomepage": null,
+  "createdAt": "2003-08-22T20:57:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헛소리 적어놨었네 ㅡㅡ;<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 옷 울온 자체 매클에 band self 라는 매크로가 있었나요?;;<br>\n 난 왜 몰랐지;;;;<br>\n 그런데 자체 매클에 있으면 event macro 리스트에 있을텐데 왜 없죠?<br>\n<a href=\"http://codename-alex.sourceforge.net/easyuo-docs/HTML/Command_event_Macro.html\">http://codename-alex.sourceforge.net/easyuo-docs/HTML/Command_event_Macro.html</a>"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " Bandage self는 울온 자체 메클이 아니고 UOAssist에서 지원하는 것입니다.<br>\n<br>\n 아직은 이지유오를 이용해서 UOAssist의 Bandage self 만큼 빠르게 붕대질하는것은 어렵습니다.<br>\n 이지유오가 UOAssist만큼 빠르지 않아서.... "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그러니까 재말은 울온명령어로 \"[bandself\"치면 붕대가 감기는데 이걸로 바꾸어서 사용하는방법을 알고 싶어서 적은겁니다 ㅡ.ㅡ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제가 적어노은 저위매클만드신분은 붕대를 찾아서 라스트 오브잭트 하고 타겟 셀프 형식인데..그걸 say자체매클에서 \"[bandself\"로 바꾸는 방법이 힘드네요 ㅠ.ㅠ "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030924183406",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20529",
+  "sourceEngine": "zeroboard"
+}

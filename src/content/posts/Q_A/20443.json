@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20443",
+  "title": "울티마7-2말입니다.[거미 잇힝~'~'~]",
+  "categoryLabel": "울온외질문",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 7-2 serpent isle인가..<br>\n<br>\n 하는 게임말인데요 :) 도스메모리를 관리해줘야 되는걸로 알고있습니다<br>\n<br>\n 그런데 config랑 autoexec 만지는방법을 까먹었네요..;;<br>\n<br>\n (후~ 윈도만쓰다보니-_;; 이걸 다까먹고 참..)<br>\n<br>\n 혹시 7-2가 될정도로 도스메모리를 올리는방법 아시는분 계신가요?<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#FF6699\" size=\"2\">\n<img src=\"http://home.freechal.com/~nibe001/_hompy/hompyalbum/20030521_1_m.jpg\">\n</font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "7-2 serpent isle인가.. 하는 게임말인데요 :) 도스메모리를 관리해줘야 되는걸로 알고있습니다 그런데 config랑 autoexec 만지는방법을 까먹었네요..;; (후~ 윈도만쓰다보니-_;; 이걸 다까먹고 참..) 혹시 7-2가 될정도로 도스메모리를 올리는방법 아시는분 계신가요?",
+  "author": "ahja",
+  "authorMemberNo": "20711",
+  "authorHomepage": null,
+  "createdAt": "2003-08-19T07:47:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " emm386이던가?? 그거랑 하이 매모리였던가 ㅡㅡ<br>\n 오래전꺼라서리 ㅡㅡ;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이거 그대로 치십시요<br>\n<br>\n device=c:\\windows\\himem.sys<br>\n device=c:\\windows\\emm386.exe<br>\n<br>\n<br>\n 이거 두개가 위에 들어가 있으면 됩니다<br>\n<br>\n 만약에 울티마가 ems 메모리를 필요하지 않으면<br>\n<br>\n device=c:\\windows\\emm386.exe noems<br>\n<br>\n 이렇게 해주세요<br>\n<br>\n ....<br>\n<br>\n 아직 안까먹고 있는이유는<br>\n<br>\n 지긋지긋하게 바꿔봤기 때문에..<br>\n<br>\n 일본 dos/v 게임이 ems필요했다가 안필요했다가 그랬죠 아마 ㅡㅡ;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 감사합니다 :) dos=umb,high 도 있어야 하겠죠;;?? 보니 생각이 새록새록 나는듯도한-_;;<br>\n<br>\n 잇힝~'~'~ 되나 이리저리 만져봐야지;;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그냥 윈도에서 하세요<br>\n exult.sourceforge.net 참조"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 잇힝~'~'~ 엑설트라.. 잘되네요 :) 감사합니다 ^^<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030911215220",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20443",
+  "sourceEngine": "zeroboard"
+}

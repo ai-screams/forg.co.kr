@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18326",
+  "title": "uoa질문요",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t uoa등록된상태에서<br>\n<br>\n 만약다른컴퓨터에서울온한다면<br>\n<br>\n 유오에이코드알아보는법좀가르쳐주세요<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "uoa등록된상태에서 만약다른컴퓨터에서울온한다면 유오에이코드알아보는법좀가르쳐주세요",
+  "author": "teamkim",
+  "authorMemberNo": "18556",
+  "authorHomepage": null,
+  "createdAt": "2003-04-28T21:03:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " seed 키는 로그인하면 확인 되구여,<br>\n tug홈피 오른쪽 메뉴에 locate key 버튼 클릭하구 seed 붙여넣으세여."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " regedit 사용법을 아신다면 tugsoft로 search하셔서 해당 키만 export하셔서 사용하셔도 됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 캐릭 로긴한다음 유오에이 오른쪽하단에 ?누르고 seed붙여주면 되요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030511132743",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18326",
+  "sourceEngine": "zeroboard"
+}

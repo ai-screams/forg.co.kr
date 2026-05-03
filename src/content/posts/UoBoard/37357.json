@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37357",
+  "title": "요새 RPC어쩌구하면서 컴터1분카운트로꺼지시는분들~",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 안녕하세요..<br>\n<br>\n 요새 포그를 별로 못들렀는데...<br>\n<br>\n 어제부터 엄청 황당한 일이 있어가지구 포그인들에게 알려주려고 와봤습니다^^<br>\n<br>\n 음..제가 하나 알려드리려고 하는데 저 말구 포그인들도 피해를 입어서 포맷을 여러번 하지않나 싶어서요<br>\n<br>\n xp사용자들중에 요즘에 인터넷만 연결하면 generic process 어쩌구 RPC 라면서 1분카운트 들어가고 컴퓨터가 재부팅 되는데요<br>\n<br>\n 정말 이거땜에 어제부터 환장했습니다 -.-<br>\n<br>\n 인터넷만 연결하믄 막 1분만에 꺼지니까여<br>\n<br>\n 바이러스 검사도 안잡히고...야후 검색으로 컴터 꺼지기전에 1분만에 지식검색좀 해보니 보안이 약한 xp에 해커가 침입해서 자동으로 끄게만드는 거라더군요<br>\n<br>\n 당하신분들이 어제 그제부터 많은것 같은데...포그인들에게 해결방법을 알려주러 왔습니당 ^^;<br>\n<br>\n 아직 안당하신분들이라도 깔아두시길~;;; xp쓰는 분들만^^<br>\n<br>\n 맨아래 보시믄 보안파일 받는법과 하는법이 나와있습니당^^<br>\n<br>\n 아래는 야후검색-------------------<br>\n<br>\n 질문 : 윈도우xp사용자인데요, rpc에관한 오류가 납니다 <br>\n rpc서비스가 예기치 않게 종료되어 지금 다시 시작해야 한다고 합니다<br>\n<br>\n 갑자기 종료한다는 창이 뜨고 일분동안 카운트가 들어가는데<br>\n<br>\n 도대체 멀쩡히 잘되던 컴퓨터가 왜 안되는지 모르겠습니다.<br>\n<br>\n 제발 누가 가르쳐 주새ㅔ요<br>\n<br>\n 2.<br>\n 헉 저랑 똑같은 현상이,,, <br>\n<br>\n Remote Procedure Call (RPC),... &lt;===요게 뜨면서 칸트 시작하죠?<br>\n<br>\n 저도 8월 11일 오후부터 계속 팅기던데 ㅡ.ㅡ<br>\n<br>\n 환장하겠어요 <br>\n<br>\n 당연히 저도 xp 사용하고 잇거든요 <br>\n<br>\n 제목 : 저두 그것땜에 밤샜는데 <br>\n 갑자기 저도 새벽 3시부텀 그런증상이...<br>\n<br>\n 하드포맷하고 다시 xp 깔았는데도 똑같은 증상이 자쭈나더군요<br>\n<br>\n 그런데 신기한것은 렌선을 안꽂으면 그증상이 없구요<br>\n<br>\n 새벽 3시부터 7시까지 두번 엑스피 까느라 밤샜네요<br>\n<br>\n 나쁜 해커놈......눈꺼플이 감기네요<br>\n<br>\n 노트북 A/S 받으려했는데 감사합니다... <br>\n<br>\n<br>\n 3. -해결방법-<br>\n RPC 인터페이스의 버퍼 오버런으로 인한 코드 실행 문제입니다. <br>\n 여기에 가셔서 패치 다운 받고 설치하세요. 그리고 지금 그런일이 없는 분이라 하더라도<br>\n<br>\n 윈도 XP나 2000을 쓰시는 분들께도 미리미리 패치 설치하시라고 소문 좀 내주세요.^^<br>\n<br>\n Windows XP <br>\n<br>\n<a href=\"http://download.microsoft.com/download/e/3/1/e31b9d29-f650-4078-8a76-3e81eb4554f6/WindowsXP-KB823980-x86-KOR.exe\">http://download.microsoft.com/download/e/3/1/e31b9d29-f650-4078-8a76-3e81eb4554f6/WindowsXP-KB823980-x86-KOR.exe</a> <br>\n<br>\n<br>\n<br>\n 혹시 패치를 했는데도 재부팅이 계속되면 msblast.exe라는 파일이 그대로 <br>\n<br>\n system32폴더에 남아 있어서 그런겁니다. CTL+ALT+DEL을 눌러서 [프로세서] 창 띄우고 msblast.exe 프로세스 죽이고 이 파일을 지워주세요.<br>\n<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n뉴비의 로망스..ㅅㅅ;\n<img src=\"http://my.netian.com/~slayxls/love3.jpg\">\n</div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "안녕하세요.. 요새 포그를 별로 못들렀는데... 어제부터 엄청 황당한 일이 있어가지구 포그인들에게 알려주려고 와봤습니다^^ 음..제가 하나 알려드리려고 하는데 저 말구 포그인들도 피해를 입어서 포맷을 여러번 하지않나 싶어서요 xp사용자들중에 요즘에 인터넷만 연결하면 generic process 어쩌구 RPC 라면서 1분카운트 들어가고 컴퓨터가 재부팅 되는데요 정말 이거땜에 어제부터 환장했습니다 -.- 인터넷만 연결하믄 막 1분만에 꺼지니까여 바이러스 검사도 안잡히고...야후 검색으로 컴터 꺼지기전에 1분만에 지식검색좀 해보니 보안이 약한 xp에 해커가 침입해서 자동으로 끄게만드는 거라더군요 당하신분들이 어제 그제부터 많은것 같은데...포그인들에게 해결방법을 알려주러 왔습니당 ^^; 아직 안당하신분들이라도 깔아두시길~;;; xp쓰는 분들만^^ 맨아래 보시믄 보안파일 받는법과 하는법이 나와있습니당^^ 아래는 야후검색------------------- 질문 : 윈도우xp사용자인데요, rpc에관한 오류가 납니다 rpc서비스가 예기치 않게 종료되어 지금 다시 시작해야 한다고 합니다 갑자기 종료한다는 창이 뜨고 일분동안 카운트가 들어가는데 도대체 멀쩡히 잘되던 컴퓨터가 왜 안되는지 모르겠습니다. 제발 누가 가르쳐 주새ㅔ요 2. 헉 저랑 똑같은 현상이,,, Remote Procedure Call (RPC),... <===요게 뜨면서 칸트 시작하죠? 저도 8월 11일 오후부터 계속 팅기던데 ㅡ.ㅡ 환장하겠어요 당연히 저도 xp 사용하고 잇거든요 제목 : 저두 그것땜에 밤샜는데 갑자기 저도 새벽 3시부텀 그런증상이... 하드포맷하고 다시 xp 깔았는데도 똑같은 증상이 자쭈나더군요 그런데 신기한것은 렌선을 안꽂으면 그증상이 없구요 새벽 3시부터 7시까지 두번 엑스피 까느라 밤샜네요 나쁜 해커놈......눈꺼플이 감기네요 노트북 A/S 받으려했는데 감사합니다... 3. -해결방법- RPC 인터페이스의 버퍼 오버런으로 인한 코드 실행 문제입니다. 여기에 가셔서 패치 다운 받고 설치하세요. 그리고 지금 그런일이 없는 분이라 하더라도 윈도 XP나 2000을 쓰시는 분들께도 미리미리 패치 설치하시라고 소문 좀 내주세요.^^ Windows XP http://download.microsoft.com/download/e/3/1/e31b9d29-f650-4078-8a76-3e81eb4554f6/WindowsXP-KB823980-x86-KOR.exe 혹시 패치를 했는데도 재부팅이 계속되면 msblast.exe라는 파일이 그대로 system32폴더에 남아 있어서 그런겁니다. CTL+ALT+DEL을 눌러서 [프로세서] 창 띄우고 msblast.exe 프로세스 죽이고 이 파일을 지워주세요. 뉴비의 로망스..ㅅㅅ;",
+  "author": "shadywind",
+  "authorMemberNo": "17677",
+  "authorHomepage": null,
+  "createdAt": "2003-08-12T12:48:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 나....xp쓰는데... 집에가서 얼렁 해야지 ㅠ,ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 카운트 뜨면 메뉴 실행 에서 shutdown -a 쳐주시면 종료안됨..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음-_;; me써서 행복해요 ㅠ_ㅠ;;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ....98써서 행복해요<br>\n<br>\n ..........젠장!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 저는 이거때문에.. 아주 고생했습니다.. ㅠ.ㅠ 기어이는. 저는 microsoft에 들어가서 보안패치를 했지요 -_-<br>\n 그게..다행히도 종료를 7초 남기고 패치가 끝났드랬습니다 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 95써서 정말 살람해요~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826124514",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37357",
+  "sourceEngine": "zeroboard"
+}

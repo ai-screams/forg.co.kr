@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8233",
+  "title": "룬북에 룬을 꽂으면 ...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 룬북에 룬을 꽂으면 \n<br>\n 룬의 이름이랑 룬이 기록된 곳의 좌표가 나오는 것으로\n<br>\n 알고 있는데요, 실제 룬에 기록된 좌표랑 룬북에 나오는\n<br>\n 좌표가 완전히 딴판입니다 . \n<br>\n<br>\n 제 주변 분들 보니까 정확히 일치한다고 이야기하시는데\n<br>\n 왜 저만 일치 하지 않는지 알 수가 없네요.\n<br>\n<br>\n 특별히 필요한 기능은 아니지만 잘못됐다는걸 알고 나니\n<br>\n 찝찝하구 짜증이 나서 ^^;\n<br>\n<br>\n 혹시 잘못된 룬북좌표 바로 잡는법아시는 분이나, 왜 \n<br>\n 이런 현상이 생기는지 아시는분은 좀 알려주십시오 ~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "룬북에 룬을 꽂으면 룬의 이름이랑 룬이 기록된 곳의 좌표가 나오는 것으로 알고 있는데요, 실제 룬에 기록된 좌표랑 룬북에 나오는 좌표가 완전히 딴판입니다 . 제 주변 분들 보니까 정확히 일치한다고 이야기하시는데 왜 저만 일치 하지 않는지 알 수가 없네요. 특별히 필요한 기능은 아니지만 잘못됐다는걸 알고 나니 찝찝하구 짜증이 나서 ^^; 혹시 잘못된 룬북좌표 바로 잡는법아시는 분이나, 왜 이런 현상이 생기는지 아시는분은 좀 알려주십시오 ~",
+  "author": "truehyo",
+  "authorMemberNo": "7447",
+  "authorHomepage": null,
+  "createdAt": "2002-05-20T03:50:01",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으헤? 음. .저는 제대로 나오는 거 같은데....... 한번 겜마에게 물어보세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저두 제대로 나오는데~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제 경우에는 룬북 중 앞쪽에 있는 절반 정도는 제대로 나오고 뒤쪽에 있는 건 바로 앞 페이지의 좌표로 잘못 나오더군요\n<br>\n 그것때매 트레저 룬북 제맘대로 번호 매겨논거 표준-_-번호로 바꾸면서 무지 고생했어요\n<br>\n 번호 제대로 나온 것들 앞에서부터 하나씩 기록하고 빼면 뒤쪽의 잘못 나오던 것도 제대로 된 좌표를 알 수는 있어요\n<br>\n 근데 룬북 꽉 채우면 다시 이상해지더라구요 -_-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 재꺼두 엉망으로 나와여 -_-;;\n<br>\n 꽉안채우면 어케되는지는 몰겠는데 트래져룬북만큼은 정말 엉망으로 나옴 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 엉망으로 나옵니다.\n<br>\n<br>\n 근데.. 별로 신경 안써요 ㅡㅡ "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020530012045",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8233",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,65 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26597",
+  "title": "Windows XP 다음버전 Longhorn Build 4008",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t Windows 2000 -&gt; NT 5.0<br>\n Windows XP -&gt; NT 5.1 (2000의 마이너 업그레이드 버전.)<br>\n<br>\n Windows Longhorn -&gt; NT 6.0<br>\n<br>\n 내부 버전이 6.0으로 올라간거 보니 꽤 많은 성능 향상이 있는거 같습니다. 2000의 인터페이스와 멀티미디어적인 요소 조금 추가한 XP보다는 훨 난거 같습니다. 보통 OS출시 6~12개월전에 이미 베타를 테스트해본 소감중에 XP가 젤 최악이였는데. MS에서 지금까지도 인정하는 제일 안정적이고 탄탄한 OS인 Win2000을 기반으로 했음에도 불구하고 껍데기를 이쁘게 하고 인터페이스의 수정 멀티미디어적 요소를 추가하다 XP는 오히려 엄청난 버그와 OS가 상당히 무겁다는 것이 일반적인 얘기지요. 호환성이나 연산오류등도 많구요.<br>\n Longhorn 에서는 Win2000처럼 모양은 XP와 유사하지만 아주 탄탄한 OS로 만들고 있다고 하는군요. NTFS와 FAT32를 대체할 WinFS(Windows Future Storage)라는 새로운 화일 시스템도 꽤 인상깊었고 다른 여러 기능들에서도 아주 탄탄하게 만들고 있다고 하더군요.<br>\n<br>\n Longhorn은 XP 프로폐셔날같은 일반버전이고 Windows .NET Server 2003이라고 개발중인 서버 버전도 인터페이스는 유사합니다만 아직까지는 상당히 불안해 보이지만 아마도 정식 출시후에는 꽤 매력이 있을듯 싶네요. 베타버전들은 디버깅에 관련된 부분이 많이 탑재되있어서 나중에 정식 출시되는 RTM버전은 지금보다 좀더 가볍고 빠른 동작을 보여주리라 예상됩니다.<br>\n<br>\n 또하나 Longhorn을 설치해보면서 재미있었던 점은 씨디로부팅을 하면서 설치준비가시작니 화면에 이렇게 뜨더군요. \"설치하는데 10~15분정도 걸리니 자리를 비웠다가 조금있다 와보세요. 아마 설치가 다 돼있을겁니다.\"라는 말에 샤워를 하고 15분정도 있다 와보니 정말 설치가 끝나고 OS가 이미 실행되있더라는 -_-;<br>\n<br>\n<center><br>\n<img src=\"http://www.azlib.com/z/longhorn1.jpg\"><br>\n<img src=\"http://www.azlib.com/z/longhorn2.jpg\"><br>\n<img src=\"http://www.azlib.com/z/longhorn3.jpg\"><br>\n<img src=\"http://www.azlib.com/z/longhorn4.jpg\"><br>\n</center><br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><a href=\"http://www.azlib.com/one\"><img src=\"http://www.azlib.com/z/sign.jpg\"></a></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "Windows 2000 -> NT 5.0 Windows XP -> NT 5.1 (2000의 마이너 업그레이드 버전.) Windows Longhorn -> NT 6.0 내부 버전이 6.0으로 올라간거 보니 꽤 많은 성능 향상이 있는거 같습니다. 2000의 인터페이스와 멀티미디어적인 요소 조금 추가한 XP보다는 훨 난거 같습니다. 보통 OS출시 6~12개월전에 이미 베타를 테스트해본 소감중에 XP가 젤 최악이였는데. MS에서 지금까지도 인정하는 제일 안정적이고 탄탄한 OS인 Win2000을 기반으로 했음에도 불구하고 껍데기를 이쁘게 하고 인터페이스의 수정 멀티미디어적 요소를 추가하다 XP는 오히려 엄청난 버그와 OS가 상당히 무겁다는 것이 일반적인 얘기지요. 호환성이나 연산오류등도 많구요. Longhorn 에서는 Win2000처럼 모양은 XP와 유사하지만 아주 탄탄한 OS로 만들고 있다고 하는군요. NTFS와 FAT32를 대체할 WinFS(Windows Future Storage)라는 새로운 화일 시스템도 꽤 인상깊었고 다른 여러 기능들에서도 아주 탄탄하게 만들고 있다고 하더군요. Longhorn은 XP 프로폐셔날같은 일반버전이고 Windows .NET Server 2003이라고 개발중인 서버 버전도 인터페이스는 유사합니다만 아직까지는 상당히 불안해 보이지만 아마도 정식 출시후에는 꽤 매력이 있을듯 싶네요. 베타버전들은 디버깅에 관련된 부분이 많이 탑재되있어서 나중에 정식 출시되는 RTM버전은 지금보다 좀더 가볍고 빠른 동작을 보여주리라 예상됩니다. 또하나 Longhorn을 설치해보면서 재미있었던 점은 씨디로부팅을 하면서 설치준비가시작니 화면에 이렇게 뜨더군요. \"설치하는데 10~15분정도 걸리니 자리를 비웠다가 조금있다 와보세요. 아마 설치가 다 돼있을겁니다.\"라는 말에 샤워를 하고 15분정도 있다 와보니 정말 설치가 끝나고 OS가 이미 실행되있더라는 -_-;",
+  "author": "chan",
+  "authorMemberNo": "16203",
+  "authorHomepage": "http://www.azlib.com/one/",
+  "createdAt": "2003-03-06T16:34:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시나 해서 추신하나 적습니다.<br>\n<br>\n 울티마는 Windows 2000 과 Windows XP 에서 둘다 속도 같습니다. 가끔 XP에서 더 빠르더라는 그런분들이 있어서. -_-;<br>\n"
+    },
+    {
+      "author": "holly86",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 오 찬님이다^~^ win 2003도 저런 인터페이스로 나오나여~?ㅡ_ㅡ;;<br>\n<br>\n 오 디자인은 이뿌네요.^_^ 과연 나오면 어떨지.~굼굼~ 이제곧 출시한다는데."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저게 32비트 커널과 64비트 커널을 함께 사용한다 해서 윈98 꼴 날수도 있다는 불안감이 생깁니다.<br>\n 아시다시피 윈 98이 16비트와 32비트 커널을 함께 사용해서 시스템이 불안정한 것 처럼 말이죠."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으흠... 일단 보기에는 멋집니다 그려"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " XP 에서 훨씬 빠릅니다. <br>\n<br>\n 워나 싸움을 해보시면 압니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " Take a tour of Windows XP, Longhorn XP Professional..<br>\n그나저나 M$ 에서도 fat종류나 ntfs 가지곤 더이상 못해먹겠다는 건가."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 머니머니해두.. 수명이 오래되야..<br>\n 게임용os....가 될수잇는데..<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621054804",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26597",
+  "sourceEngine": "zeroboard"
+}

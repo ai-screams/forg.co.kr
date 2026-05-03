@@ -1,0 +1,40 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5452",
+  "title": "발해 이벤트 뒷풀이 스샷#3",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/i5.jpg\"><br> <img border=\"0\" src=\"data/i6.jpg\"><br>     \t\t\t .<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": ".",
+  "author": "myth-tamer",
+  "authorMemberNo": "294",
+  "authorHomepage": null,
+  "createdAt": "2002-10-03T00:46:49",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "i5.jpg",
+      "fileNum": 1,
+      "sizeBytes": 143974
+    },
+    {
+      "name": "i6.jpg",
+      "fileNum": 2,
+      "sizeBytes": 100556
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " (자주 찍혔군..^-.-^;;;)<br>\n 아랫글 사진중에 하나 빠지구. 아직까진 개근이네..^-.-^;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008133540",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5452",
+  "sourceEngine": "zeroboard"
+}

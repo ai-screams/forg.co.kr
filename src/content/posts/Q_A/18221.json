@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18221",
+  "title": "uoa의 유즈 아이템 타입이 안돼는거 같습니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 카토를 오릴대나 디스코를 오릴떄나 펜이나 악기가 부서지면 더이상 메크로아 안돌아갑니다.<br>\n<br>\n 물론 팬은 유즈 아이템 타입으로 했구 악기도 디스코 스킬 쓰기전에 더블 클릭해줬습니다. 유즈 아이템 타입으로요..<br>\n<br>\n 근데 분명 다른 악기나 팬이 있는데도 안돼네요...<br>\n<br>\n 왜이런걸까요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "카토를 오릴대나 디스코를 오릴떄나 펜이나 악기가 부서지면 더이상 메크로아 안돌아갑니다. 물론 팬은 유즈 아이템 타입으로 했구 악기도 디스코 스킬 쓰기전에 더블 클릭해줬습니다. 유즈 아이템 타입으로요.. 근데 분명 다른 악기나 팬이 있는데도 안돼네요... 왜이런걸까요?",
+  "author": "roiental",
+  "authorMemberNo": "15151",
+  "authorHomepage": null,
+  "createdAt": "2003-04-23T04:38:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 2가지 방법이 있을수 있겠네요<br>\n<br>\n 첫째는 자원읽기를 안했줘다거나영...........<br>\n<br>\n 둘째는 매클을 잘못 짜거나 꼬여서 그럴수 있습니다<br>\n<br>\n 저의 생각입니다만 uoa루프 사용하섯나영<br>\n<br>\n 혹시 사용을 안했으면 <a href=\"http://www.judang.org/main.htm\">http://www.judang.org/main.htm</a> 이곳에<br>\n<br>\n 자료실 가시면 UOAloop 라는 프로그램이 있습니다<br>\n<br>\n 다운 받으시고 실행시키시면 모니터화면 오른쪽 하단에 빨간동그라미가 생깁니다<br>\n<br>\n 그걸 떠블클릭해주시면 유오에이 메클짠 프로그램이 무한으러 돌아 갑니다<br>\n<br>\n 스톰 하실때도 떠블클릭하시면 됩니다<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " --;<br>\n 저도 그문제때문에 퀘스천에 검색해봤더니<br>\n 지우고 다시깔면 되네요...;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030520165737",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18221",
+  "sourceEngine": "zeroboard"
+}

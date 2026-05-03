@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "9934",
+  "title": "UOA낚시메클이요..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 저장시작하고<br>\n 낚시대 더블클릭하고<br>\n 바다 클릭하고<br>\n 타켓 바꾼다음에<br>\n 딜레이 7초딜레이 하면요<br>\n 자꾸<br>\n 한번 낚시대 휘두르자마자 바로 한번더 눌러지면서<br>\n 당신은 이미 낚시중입니다 뜨네요<br>\n 어케해야하나요..<br>\n 아..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저장시작하고 낚시대 더블클릭하고 바다 클릭하고 타켓 바꾼다음에 딜레이 7초딜레이 하면요 자꾸 한번 낚시대 휘두르자마자 바로 한번더 눌러지면서 당신은 이미 낚시중입니다 뜨네요 어케해야하나요.. 아..",
+  "author": "gundalim",
+  "authorMemberNo": "8391",
+  "authorHomepage": null,
+  "createdAt": "2002-08-03T00:50:12",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 낚시 딜레이는 12초나 13초 잡으셔야 합니다. 딜레이 시간을 늘려보시고요.. 몇번 하다 보면 요령이 생길꺼예요. 알고 계실지 모르겠지만 UO-Loop 프로그램 사용하시면 계속 반복해서 낚시질 시킬 수 있습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 밀리초 단위때문에 그런게 아닐까요?<br>\n 아마 UOA에서 1초가 100밀리초라구 표시 되있긴하지만<br>\n 1000밀리초 가 맞는거 같더라구요...<br>\n아마 700으로 해놓으셨을텐데 7000으로 놓구 해보세요...<br>\n<br>\n 배 조종과 겸해서 하실려면 KR-Loop같은걸 사용해 보시는 것두 좋을듯..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020812082409",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=9934",
+  "sourceEngine": "zeroboard"
+}

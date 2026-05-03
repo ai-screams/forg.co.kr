@@ -1,0 +1,53 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5833",
+  "title": "낚싯대버그 -_-;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/버그다~.jpg\"><br>     \t\t\t     \t\t\t 얼럴럴러...뒷북인가?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "얼럴럴러...뒷북인가?",
+  "author": "타이거스핀",
+  "authorMemberNo": "12363",
+  "authorHomepage": null,
+  "createdAt": "2002-10-22T18:54:02",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "버그다~.jpg",
+      "fileNum": 1,
+      "sizeBytes": 597299
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뭘의미하는지-0-?<img border=\"0\" src=\"emoticon/m_confused_smile.gif\"><img border=\"0\" src=\"emoticon/m_confused_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뜻을 전혀 파악할 수 없으므로 無효"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자유게시판에 설명하셨네요. ^^<br>\n 만드는 낚시대가 모두 익셉만 나오신다고. ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 테일러링이 높으신거 아닌지? <br>\n 그러면 익셉만 나올수도..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021104223224",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5833",
+  "sourceEngine": "zeroboard"
+}

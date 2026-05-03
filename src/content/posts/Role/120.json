@@ -1,0 +1,41 @@
+{
+  "board": "Role",
+  "boardKr": "Role",
+  "postId": "120",
+  "title": "NPC의 인공지능 #1",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 사공한테 모르고 타이트부츠를 줬는데 하는말\n<br>\n<br>\n '에잇, 난 그걸 원하지 않아 지도를 보여달라구!'\n<br>\n<br>\n ^^;\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "사공한테 모르고 타이트부츠를 줬는데 하는말 '에잇, 난 그걸 원하지 않아 지도를 보여달라구!' ^^;",
+  "author": "anonymous",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-01-13T21:40:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Avatar",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "켁 이런거 많은데 -_-"
+    },
+    {
+      "author": "[SoF]Zechs",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "책을 도끼러 찍을려고 하면 '음 ...그렇게 나븐 생각은 아닌데여'라고 뜸"
+    },
+    {
+      "author": "swa",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "크헉...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527170440",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Role&no=120",
+  "sourceEngine": "zeroboard"
+}

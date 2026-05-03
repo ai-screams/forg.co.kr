@@ -1,0 +1,95 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "27585",
+  "title": "혹시.. C++의 고수분 계신가요?? ^ㅅ^??",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 에고고- \"자료구조\"라는 과목을 듣구 있는데요..<br>\n 학기 초부터 교수님이 숙제를 마구마구 내주시네요.. 흑흑..<br>\n C++로 코드를 짜구요.. Visual C++를 이용해서 컴파일을 돌리는데..<br>\n<br>\n \"Error spawning cl.exe\" 에러가 나요..<br>\n<br>\n 여기저기 책 찾아보구.. 인터넷 뒤져봐도 뾰족한 답은 없네요..<br>\n 큰일입니다.. 혹시 에러 해결책을 아시는 고수분은 꼭 리플을!!!! ^ㅅ^<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "에고고- \"자료구조\"라는 과목을 듣구 있는데요.. 학기 초부터 교수님이 숙제를 마구마구 내주시네요.. 흑흑.. C++로 코드를 짜구요.. Visual C++를 이용해서 컴파일을 돌리는데.. \"Error spawning cl.exe\" 에러가 나요.. 여기저기 책 찾아보구.. 인터넷 뒤져봐도 뾰족한 답은 없네요.. 큰일입니다.. 혹시 에러 해결책을 아시는 고수분은 꼭 리플을!!!! ^ㅅ^",
+  "author": "Wonny",
+  "authorMemberNo": "15395",
+  "authorHomepage": null,
+  "createdAt": "2003-03-23T23:17:48",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 소스를 줘보세요..<a href=\"mailto:hd925@hananet.net\">hd925@hananet.net</a> 이메일로 보내주세요... ^^; 함 보고 싶퍼서..<br>\n 고수는 아님.. 코딩쟁이일뿐.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 앗.. 소스의 에러는 없구요..(다른 컴터에선 모두 컴파일이 되었답니다..)<br>\n 뭔가 여기 컴터가 이상하단 생각이.. ㅠㅅㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 앞서 실행했던 결과물들을 전부 닫고 컴파일 해보세요 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " \"결과물을 닫는다\"가 정확히 지칭하는 뜻을 알 수가 없어요..<br>\n 에고고- 죄송해요.. (저 바보인가 보아요.. ㅠㅅㅠ) 재부팅해두 컴파일 결과는 마찬가지 였답니다....<br>\n<br>\n (ChangSoKi님.. 메일 보냈습니다.. 잘 부탁 드려요!! ^ㅅ^)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " cl.exe는 컴파일러 프로그램이에요.<br>\n 보통 이런 에러 메시지는 메모리가 모자랄경우 발생하는데요.<br>\n 시작 프로그램에서 불필요한것들을 다 삭제하시고 가능하면 컴텨 수행시 불필요한 프로그램은<br>\n 다 닫고 컴파일 해보세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 메모리문제에 저도 한표.. 물리적 메모리 외에..<br>\n 가상메모리(하드디스크에 잡죠..)도 충분해야 합니다..<br>\n vc가 깔린 하드에 충분한 free space를 확보하세요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어렵다 이런것도 공부해야아는것이겠지 나도알고싶다 C언어 -0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " gcc 를 사용하심이.. ;)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 학교의 공용 PC라면 PC 상태가 문제일 수도 있습니다. (워낙 그런 경험이 많아서. -_-;)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " gcc 당첨! -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " spawning-&gt;스폰<br>\n 몹스폰과 유사한<br>\n 불러오기라고 할까<br>\n cl.exe이파일 불러오기 에러<br>\n 씨언어<br>\n 빠지면 잼잇죠<br>\n -_-;<br>\n 지금 씨언어 코드짜는 놀이중^^<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " \"결국은.. 다른 컴에서 컴파일 하기로 결정..!! 과제는 모두 해결 했습니다!!\"<br>\n 그치만.. 에고고- 다음 과제는 어찌 할지.. 고민고민.. ㅠㅅㅠ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621051427",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=27585",
+  "sourceEngine": "zeroboard"
+}

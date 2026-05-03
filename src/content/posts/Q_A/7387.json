@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7387",
+  "title": "파티 어떻게 하나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  신청해서 /승인 하라는데<br>\n/ 누르면 Party 란 영문이 뜨면서 / 가 입력이 안되네요;</td></tr></tbody></table>\n",
+  "bodyText": "신청해서 /승인 하라는데 / 누르면 Party 란 영문이 뜨면서 / 가 입력이 안되네요;",
+  "author": "nayacom",
+  "authorMemberNo": "9460",
+  "authorHomepage": null,
+  "createdAt": "2007-10-14T17:47:13",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "/add 가 파티원 추가하는거구요\n<br>/accept 가 승인하는것입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그냥 accept 하면 되네요 감사합니다; 전 / 안쳐지길래;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071113105228",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7387",
+  "sourceEngine": "zeroboard"
+}

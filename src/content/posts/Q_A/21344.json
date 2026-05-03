@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21344",
+  "title": "이번패치후 UOA가 갑자기 안됩니다...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 처음 게임실행을 UOA로 늘 하는데 (당연한거지만..;;)<br>\n 이번패치후 컴 재붓하고 게임접속하려니까<br>\n UOA창뜨면서 무언가 다운로드받더니<br>\n Continue 클릭하면 <br>\n \"이 프로그램은 잘못된 연산을 수행하여..어쩌구..\"하면서<br>\n 에러창뜨고는 더이상진행이 안됩니다.<br>\n 이게 왜 이러는건지요.<br>\n 어제까지만해도 게임 잘돌아갔는데,<br>\n 울온패치가 아닌 UOA패치가 문제인것같은데<br>\n 혹시 같은문제 겪고있는분 계신지요.<br>\n 도움을 부탁드립니다...(--)(__)<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "처음 게임실행을 UOA로 늘 하는데 (당연한거지만..;;) 이번패치후 컴 재붓하고 게임접속하려니까 UOA창뜨면서 무언가 다운로드받더니 Continue 클릭하면 \"이 프로그램은 잘못된 연산을 수행하여..어쩌구..\"하면서 에러창뜨고는 더이상진행이 안됩니다. 이게 왜 이러는건지요. 어제까지만해도 게임 잘돌아갔는데, 울온패치가 아닌 UOA패치가 문제인것같은데 혹시 같은문제 겪고있는분 계신지요. 도움을 부탁드립니다...(--)(__)",
+  "author": "spinella",
+  "authorMemberNo": "15207",
+  "authorHomepage": null,
+  "createdAt": "2003-10-01T15:55:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 요오에이 폴더에 다운로드 가시면 uoa.exe인가있거든요..이걸 uoa폴더에 복사하세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <a href=\"http://www.tugsoft.com\">http://www.tugsoft.com</a><br>\n<br>\n 여기에 가서 새로운 유오에이 다운받아서<br>\n 그걸로 실행하세요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " uoa실행하면 거기 공지사항에 3가지 방법이 적혀 있더군요...<br>\n 첫번째 방법으로 하니 되더군요... roiental님 말씀처럼 uoa폴더의 아래 download폴더를에서<br>\n UOAssist.exe 복사해서 uoa폴더에 덮어쓰기 하시면 됩니다..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이런 ㅡㅡ; 저장을 했어야 했구나.<br>\n 난 귀찬아서 그냥 열기 해서 실행했는데<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음...저 그냥 새로 유오에이 다운받아 설치하니 되네여..<br>\n (무엇이 문제였을까..;;)<br>\n 답변 감사합니다....^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031011054144",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21344",
+  "sourceEngine": "zeroboard"
+}

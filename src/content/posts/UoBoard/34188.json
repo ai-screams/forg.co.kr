@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "34188",
+  "title": "하드디스크 추천좀 해주세요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t Seagate 120G 7200rpm (7200.7)&nbsp;&nbsp;&nbsp;&nbsp; (8MB)<br>\n Seagate 120G 7200rpm (바라쿠다5)&nbsp;&nbsp;(8MB)<br>\n<br>\n 위 모델 7200.7 과 바라쿠다5 어떤것이 더 좋을까요?<br>\n 차이점을 자세하게 가르쳐 주셨으면 좋겠습니다.<br>\n 가격은 같습니다.<br>\n<br>\n 100G 이상 다른 회사 하드 추천해 주셔도 좋겠습니다.<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "Seagate 120G 7200rpm (7200.7)     (8MB) Seagate 120G 7200rpm (바라쿠다5)  (8MB) 위 모델 7200.7 과 바라쿠다5 어떤것이 더 좋을까요? 차이점을 자세하게 가르쳐 주셨으면 좋겠습니다. 가격은 같습니다. 100G 이상 다른 회사 하드 추천해 주셔도 좋겠습니다.",
+  "author": "페이오스",
+  "authorMemberNo": "14764",
+  "authorHomepage": null,
+  "createdAt": "2003-07-12T17:56:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 가격이 비싼거 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 바라7이 좀더 좋지 않나요?<br>\n 흐음........=_="
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 120G 이상이면 10000RPM 짜리를 사셔야죠.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 10k짜리는 비싸요=_="
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "내부적으로 가장 큰 차이는 80G의 용량의 경우 바라쿠다5는 40G용량의 디스크(플래터)가 2장, 헤드가 3개가 있는 반면에, 7200.7은 80G 용량의 디스크가 1장, 헤드가 2개 있습니다.<br>\n<br>\n모든 데이터를 하나의 디스크에 저장하기 때문에, 7200.7 의 평균seek time 및 성능이 좀 더 좋습니다. (8.5ms vs 9.0ms) 단, 바라쿠다5에 비해 소음이 약간 더 발생한다는 단점이 있습니다. (바라쿠다5의 저소음능력이 좋기 때문에 상대적으로 그렇게 들리죠.)<br>\n<br>\n웬디 하드디스크도 유명하며 성능적으로도 좋습니다. 그리고 하드디스크의 버퍼가 많을 수록 성능이 향상되는 것은 맞는말이죠. 다만 버퍼의 용량을 늘리면서 추가적으로 발생하는 비용이 많이 들기 때문에 가격이 좀 더 높습니다.<br>\n<br>\n속도를 최고로 생각하시고, 비용도 넉넉하게 생각하고 계신다면, 웬디 (8M) 제품도 좋은 선택입니다. 그런데 제가 볼때는 가격대비 성능은 좀 떨어진다고 생각합니다. 가격을 투자한만큼의 성능향상이 그리 크지 않기 때문이죠. <br>\n<br>\n개인적으로는 씨게이트 7200.7 정도 제품이 더 마음에 끌립니다. 충분히 좋은 성능을 가지고 있으면서도 상대적으로 저렴한 가격대를 형성하고 있는 제품이기 때문이죠^^<br>\n<br>\n지식인에서..ㅋ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " tuna128 님 명쾌한 답변 감사드립니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030801060714",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=34188",
+  "sourceEngine": "zeroboard"
+}

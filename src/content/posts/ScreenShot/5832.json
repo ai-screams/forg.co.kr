@@ -1,0 +1,59 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5832",
+  "title": "스샷란의 LBR홍보용 샷으로 만든 배경화면...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/abc.jpg\"><br>     \t\t\t     \t\t\t ~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "~",
+  "author": "Christian",
+  "authorMemberNo": "8184",
+  "authorHomepage": null,
+  "createdAt": "2002-10-22T18:20:13",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "abc.jpg",
+      "fileNum": 1,
+      "sizeBytes": 117145
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저 홍보에 이끌려 울온을 접한 플레이어가 글픽이 왜이래? 라고말한다면 할말이 없을듯...^^:"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-; 저거보고 울온본후에 글픽이 왜이래?라고 할수가 없을듯...-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음유시인이 악기 집을수 있으면 울온 다시 해야지 -_- (...............)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음유시인이 악기잡으면 마법 못 쓸텐데요 -_-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 침대에 눕는거 됐으믄 좋겠다 -0-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021104223944",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5832",
+  "sourceEngine": "zeroboard"
+}

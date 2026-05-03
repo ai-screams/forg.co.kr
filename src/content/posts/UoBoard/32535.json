@@ -1,0 +1,29 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "32535",
+  "title": "Mbps 와 Mb를 착각하지 맙시다!",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t ..... 많은 분들이<br>\n<br>\n Mbps 와 Mb 를 착각하시더군요..<br>\n<br>\n 벤치비 등에서 나오는 속도체크 결과는 모두<br>\n<br>\n Mbps 로 나오고.. 실제 다운로드시의 속도는 .. Mb입니다<br>\n<br>\n Mbps를 Mb로 환산하려면<br>\n<br>\n Mbps / 8 = Mb ..<br>\n<br>\n 참고하세요<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"skyblue\">현재 사용중  -&gt;- 한국통신 ADSL - <br>\n------------------------------------------- <br>\n다운로드 속도: 3.8 Mbps (475 kB/s, 3802495 cps) \n<br>\n업로드 속도: 488 kbps (61 kB/s, 487866 cps) <br>\n\n------------------------------------------- \n<br><br>\n<font color=\"pink\">- 한국통신 엔토피아 -<br>\n------------------------------------------- <br>\n다운로드 속도: 94.9 Mbps (11.9 MB/s, 94881207 cps) <br>\n\n업로드 속도: 90.3 Mbps (11.3 MB/s, 90275884 cps)\n<br>\n------------------------------------------- <br>\n<img src=\"http://user.chollian.net/~sj401/ntopia.JPG\">\n<br>\n<br>\n<font color=\"black\">주택에도 Ntopia 보급하라!<br>\n</font>\n</font></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "..... 많은 분들이 Mbps 와 Mb 를 착각하시더군요.. 벤치비 등에서 나오는 속도체크 결과는 모두 Mbps 로 나오고.. 실제 다운로드시의 속도는 .. Mb입니다 Mbps를 Mb로 환산하려면 Mbps / 8 = Mb .. 참고하세요 현재 사용중  ->- 한국통신 ADSL - ------------------------------------------- 다운로드 속도: 3.8 Mbps (475 kB/s, 3802495 cps) 업로드 속도: 488 kbps (61 kB/s, 487866 cps) ------------------------------------------- - 한국통신 엔토피아 - ------------------------------------------- 다운로드 속도: 94.9 Mbps (11.9 MB/s, 94881207 cps) 업로드 속도: 90.3 Mbps (11.3 MB/s, 90275884 cps) ------------------------------------------- 주택에도 Ntopia 보급하라!",
+  "author": "이나루스",
+  "authorMemberNo": "14892",
+  "authorHomepage": "http://inarus.wo.to/",
+  "createdAt": "2003-06-20T17:02:19",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-)a 하하 이나루스님 저희동내에 한통 VDSL 들어왔더군요 (...)<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030715124650",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=32535",
+  "sourceEngine": "zeroboard"
+}

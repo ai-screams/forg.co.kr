@@ -1,0 +1,65 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5668",
+  "title": "오류메시지... 아시는 분은 답변을...T_T",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/logforg.jpg\"><br>     \t\t\t     \t\t\t 왜 이런 오류메시지가...<br>\n 뭐 잘못한거 없는데 왜 이러는지 아시는 분은 답변좀 해 주세요.<br>\n 하나로 케이블 프로 사용하구요.<br>\n 윈도우때문인가 하구 다시 설치해도 없어지지 않네요.<br>\n 그럼~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "왜 이런 오류메시지가... 뭐 잘못한거 없는데 왜 이러는지 아시는 분은 답변좀 해 주세요. 하나로 케이블 프로 사용하구요. 윈도우때문인가 하구 다시 설치해도 없어지지 않네요. 그럼~",
+  "author": "saintip",
+  "authorMemberNo": "10736",
+  "authorHomepage": null,
+  "createdAt": "2002-10-14T00:26:49",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "logforg.jpg",
+      "fileNum": 1,
+      "sizeBytes": 95436
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포그님께 문의하세요 @o@"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " IP를 바꾸면 될지도.. 포그님꼐 해서 안되면 하나로통신에게.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 다시 설치까쥐 -_-??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 저리 되서 고생좀 했습니다 ㅠ_ㅠ<br>\n 아피가 바뀌면서 저래서 포그님께 문의해서 겨우 다시 복귀"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저도 그런 경우를 당한 적이 있었습니다. 저는 한통 ADSL을 사용하는데 다들 아시다시피 유동아이피죠. 접속할 때 마다 아이피가 변하는데 하루는 접속을 하고 포그홈에 들어오니 게시판이 안열려지는 거에요. 차단당했다고 메세지가 뜨고요. 아마도 일전에 홈에서 밴당한 분의 아이피를 제가 우연히 접속할때 통신회사로 부터 활당을 받았던게 아닌가 싶습니다. --;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 혹시나 남의IP가 내껏일것이다 라는생각을했는데 밴이였었다는......-_-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021104221924",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5668",
+  "sourceEngine": "zeroboard"
+}

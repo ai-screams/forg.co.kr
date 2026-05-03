@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20859",
+  "title": "숲속을 다닐때 장애물에 걸려도 계속 걷는것 처럼 보이는 현상.",
+  "categoryLabel": "질문",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t AOS유저인데요. <br>\n 예전에 르네시절에는 안그랬는데.. 요즘 AOS를 다시 시작하면서보니,<br>\n 숲속같이 장애물이 많은 곳을 다닐때, 돌이나.. 수풀같은것에 걸리면 딱 멈춰야 되는데.. 계속 앞으로 뛰어가는것 처럼 보이더라구요.<br>\n 패럴에 걸렸을때도 마찬가지 이구요..<br>\n<br>\n 이거 해결하는 방법 없을까요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "AOS유저인데요. 예전에 르네시절에는 안그랬는데.. 요즘 AOS를 다시 시작하면서보니, 숲속같이 장애물이 많은 곳을 다닐때, 돌이나.. 수풀같은것에 걸리면 딱 멈춰야 되는데.. 계속 앞으로 뛰어가는것 처럼 보이더라구요. 패럴에 걸렸을때도 마찬가지 이구요.. 이거 해결하는 방법 없을까요?",
+  "author": "zektorte",
+  "authorMemberNo": "20172",
+  "authorHomepage": null,
+  "createdAt": "2003-09-09T18:50:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저는 언제나 그랬는데 -_-;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저두 언제나 그랬는뎅 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 퍼블 19에서 패치 됐습니다. "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 패럴은 원래 그랬습니다.. 단 다른 사람이 볼때는 딱 멈춘걸로 보입니다만..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그건 게임하는 유저 입장에서, 최대한 게임이 빠른것처럼 느껴지게 하기 위해서 -_- <br>\n 유저가 이동을 입력을 하면, 서버에서 데이터가 돌아오기도 전에 그냥 자체 하드에서는 이미 그곳으로 <br>\n 이동한걸로 표시를 하죠....그래야 최대한 버벅대지 않고 빠르다는 느낌을 줄테니 -_-<br>\n 그런데 만약 무언가의 사유, 특수한 장애물이라던가 스태미너저하나 패럴 등으로 '이동할수 없음' 이라고 <br>\n 서버에서 정보가 돌아오면, 그냥 다시 원래자리로 빠꾸 -_-;; <br>\n<br>\n 원래는 유저가 마우스로 이동요청-서버 이동가능 확인-모니터에서 이동한 결과 표시<br>\n 하지만 그럴듯해 보이기 위해서 <br>\n<br>\n 유저가 마우스로 이동요청-일단 모니터에서는 이동한 결과를 일단 표시함-서버 이동가능(혹은 불가능)확인<br>\n -모니터에서 내비두든지, 빠꾸시킴 -_-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030928210727",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20859",
+  "sourceEngine": "zeroboard"
+}

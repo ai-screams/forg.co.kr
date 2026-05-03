@@ -1,0 +1,58 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5558",
+  "title": "울온아님.... 그냥 요즘 즐기는 게임....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/a.gif\"><br> <img border=\"0\" src=\"data/b.gif\"><br>     \t\t\t 서브커맨드.... ㅡㅡ;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "서브커맨드.... ㅡㅡ;;",
+  "author": "mana",
+  "authorMemberNo": "7169",
+  "authorHomepage": "http://trpg.wo.to/",
+  "createdAt": "2002-10-07T15:33:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "a.gif",
+      "fileNum": 1,
+      "sizeBytes": 45465
+    },
+    {
+      "name": "b.gif",
+      "fileNum": 2,
+      "sizeBytes": 37683
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 왠지 멋진"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 고래가 되어보는 게임인가...?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저 이거 예전에 받았다가 조종법을 몰라서 -_-;;<br>\n 포기 _-_ 잠수함 게임;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  어디서 만들었나요? 인터페이스(특히 저 맵 화면)이 상당히 플릿 커맨드랑 닮았네요 -_- 제인에서 만들었나...<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021026003753",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5558",
+  "sourceEngine": "zeroboard"
+}

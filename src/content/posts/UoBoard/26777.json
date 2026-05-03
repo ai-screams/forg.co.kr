@@ -1,0 +1,65 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26777",
+  "title": "매직아이템 속성에 관해서...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t uoss에 보다가. 잼있는걸 발견했습니다<br>\n<br>\n 각 매직 옵션의 최소 최대 수치인데요<br>\n<br>\n Stat Bonuses <br>\n Stat Bonuses increase the wearer's basic stats. Stat Bonuses come in the range from 1 to 8 points.<br>\n<br>\n Strength Bonus – Increases a player’s strength while the object is equipped.<br>\n Intelligence Bonus – Increases a player’s intelligence while the object is equipped.<br>\n Dexterity Bonus – Increases a player’s dexterity while the object is equipped.<br>\n<br>\n Applies to: Jewelry<br>\n Note: Some items that used to have the 'Bless' spell effect attached to them have incorrectly been converted to items that add 10 points to Str, Int and/or Dex. This is believed to be a bug and will most probably be fixed in an upcoming patch.<br>\n<br>\n ....<br>\n<br>\n 1-8까지 왔다갔다 하는겁니다.... 아래 어떤분이 인트증가 11 짜리 바지 날렸다고 하는데<br>\n<br>\n 혹시..<br>\n<br>\n 매직 아이템 속성이 중복되지 않을까요?<br>\n<br>\n<a href=\"http://uo.stratics.com/content/arms-armor/magicarmsarmor.shtml\">http://uo.stratics.com/content/arms-armor/magicarmsarmor.shtml</a><br>\n<br>\n 저기 가셔서 자기가 가직 좋은 매직무기중.. <br>\n<br>\n 속성이 중복된거 같다! 라고 생각하시는분 아이템 스샷좀.. 왼쪽 아이템 스샷란에다 올려주세요<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "uoss에 보다가. 잼있는걸 발견했습니다 각 매직 옵션의 최소 최대 수치인데요 Stat Bonuses Stat Bonuses increase the wearer's basic stats. Stat Bonuses come in the range from 1 to 8 points. Strength Bonus – Increases a player’s strength while the object is equipped. Intelligence Bonus – Increases a player’s intelligence while the object is equipped. Dexterity Bonus – Increases a player’s dexterity while the object is equipped. Applies to: Jewelry Note: Some items that used to have the 'Bless' spell effect attached to them have incorrectly been converted to items that add 10 points to Str, Int and/or Dex. This is believed to be a bug and will most probably be fixed in an upcoming patch. .... 1-8까지 왔다갔다 하는겁니다.... 아래 어떤분이 인트증가 11 짜리 바지 날렸다고 하는데 혹시.. 매직 아이템 속성이 중복되지 않을까요? http://uo.stratics.com/content/arms-armor/magicarmsarmor.shtml 저기 가셔서 자기가 가직 좋은 매직무기중.. 속성이 중복된거 같다! 라고 생각하시는분 아이템 스샷좀.. 왼쪽 아이템 스샷란에다 올려주세요",
+  "author": "pian",
+  "authorMemberNo": "14691",
+  "authorHomepage": null,
+  "createdAt": "2003-03-10T00:35:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 호오-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 속성의 중복이 없는거 같군요 ㅡㅡ;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 나 있어요 -_-;<br>\n 마법사 무기 -24 던가에<br>\n 최고 무기 기술 사용 활 -_-<br>\n 데체 어느 기술이 적용되는지.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-그럼 올스탯+10짜리 아이템은 뭐라고 설명 하실련지?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 블레스차지아이템"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 엠버님 // <br>\n 마법사 무기에 의해 -2x된 상태의 메저리와 가지고있는 무기 스킬중 둘중에 높은걸로 대처하게 됩니다 +_+"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_- UO 공식홈 뒤져보면 다나와있는데.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030619064016",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26777",
+  "sourceEngine": "zeroboard"
+}

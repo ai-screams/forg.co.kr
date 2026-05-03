@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7537",
+  "title": "울온과 전혀 관계없는 인터넷 익스플로러 질문임돠",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t IE를 켜면\n<br>\n 내용 관리자가 박살이 났다며 궁시렁대는뎁쇼.\n<br>\n 적당히 고쳐서 인터넷은 되는데\n<br>\n 미디어플레이어등등이 실행불가능입니다.\n<br>\n 정확한 내용은\n<br>\n<br>\n 손상된 정보에 관한 내용 관리자 설정을 확인하십쇼.\n<br>\n<br>\n 입니다.\n<br>\n<br>\n 역시, 윈도는 외계인의 우주선에나 깔아야...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "IE를 켜면 내용 관리자가 박살이 났다며 궁시렁대는뎁쇼. 적당히 고쳐서 인터넷은 되는데 미디어플레이어등등이 실행불가능입니다. 정확한 내용은 손상된 정보에 관한 내용 관리자 설정을 확인하십쇼. 입니다. 역시, 윈도는 외계인의 우주선에나 깔아야...",
+  "author": "kkh0228",
+  "authorMemberNo": "2836",
+  "authorHomepage": null,
+  "createdAt": "2002-03-25T19:48:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 도구 -&gt; 인터넷옵션 -&gt; 내용 에 가보시면 내용관리자 메뉴가 있습니다.\n<br>\n<br>\n 확인해보시고 초기값으로 설정을 해보고 해보시면...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 설정은 되는데, 인터넷 익스를 껏다 키면 다시 안되요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020424114904",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7537",
+  "sourceEngine": "zeroboard"
+}

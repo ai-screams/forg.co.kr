@@ -1,0 +1,113 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "538",
+  "title": "무기의 내구력에 관해서",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 무기의 내구력은 두 가지 값을 갖습니다\n<br>\n<br>\n 최대 내구력과 현재 내구력입니다&nbsp;&nbsp;&nbsp;&nbsp;현재/최대\n<br>\n<br>\n 최대 내구력은 무기 수리시마다 1씩 떨어져서 무기 고유의 최소 내구력까지\n<br>\n<br>\n 계속 떨어집니다&nbsp;&nbsp;최소 내구력까지 떨어지면 더 이상 떨어지지 않습니다\n<br>\n<br>\n 즉 최소내구력은 0이 되지 않습니다\n<br>\n<br>\n 현재 내구력은 무기 사용시 즉 적중시마다 떨어지는데 최소 내구력 아래로도\n<br>\n<br>\n 떨어집니다 현재 내구력이 0이되면(혹은 -1이 되면) 무기는 부셔집니다\n<br>\n<br>\n 가끔가다가 수리하다가 무기가 부셔졌다고 하는 경우가 있는데\n<br>\n<br>\n 그 이유는 현재 내구력이 1인 상태까지&nbsp;&nbsp;무기를 사용한 후에 수리가 실패해서\n<br>\n<br>\n 현재 내구력이 0이 되어서 부셔지는 경우입니다\n<br>\n<br>\n 자주 수리하면 최소 내구력까지 떨어지는데 이렇게되면\n<br>\n<br>\n 새것일때보다 더 자주 무기를 수리해줘야 합니다\n<br>\n<br>\n 아시다시피 무기의 현재 내구력이 낮으면 무기 성능이 저하되고\n<br>\n<br>\n 부셔질 수 있기 때문입니다<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "무기의 내구력은 두 가지 값을 갖습니다 최대 내구력과 현재 내구력입니다    현재/최대 최대 내구력은 무기 수리시마다 1씩 떨어져서 무기 고유의 최소 내구력까지 계속 떨어집니다  최소 내구력까지 떨어지면 더 이상 떨어지지 않습니다 즉 최소내구력은 0이 되지 않습니다 현재 내구력은 무기 사용시 즉 적중시마다 떨어지는데 최소 내구력 아래로도 떨어집니다 현재 내구력이 0이되면(혹은 -1이 되면) 무기는 부셔집니다 가끔가다가 수리하다가 무기가 부셔졌다고 하는 경우가 있는데 그 이유는 현재 내구력이 1인 상태까지  무기를 사용한 후에 수리가 실패해서 현재 내구력이 0이 되어서 부셔지는 경우입니다 자주 수리하면 최소 내구력까지 떨어지는데 이렇게되면 새것일때보다 더 자주 무기를 수리해줘야 합니다 아시다시피 무기의 현재 내구력이 낮으면 무기 성능이 저하되고 부셔질 수 있기 때문입니다",
+  "author": "아리랑인",
+  "authorMemberNo": "2871",
+  "authorHomepage": null,
+  "createdAt": "2002-03-24T12:58:46",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음 최소 내구력까지 내려온 무기를 수리하면 적에게 입히는 데미지는 어떻게 되나여?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 낮아지죠."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그래서 실뱅 슈프림 할버드 블레스 예전에 걸린건 사지 말라는거죠. 닳고 달아서 언제 부서질지 모르니까..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 질문 하나..\n<br>\n 무기를 얼만큼이나 써야 부서지죠?;\n<br>\n 한무기를 계속 써본적이 없어서..(-- 맨날 조은 무기는 워하다가 죽어서..쿨럭.)\n<br>\n 경험이..쿨럭.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 내구력과 데미지는 상관없는거 아닌가 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 현제의 내구력은 무기의 경우는 공격력과 방어구의 경우는 방어력과 직접적으로 연관이 있습니다.\n<br>\n 전사로 사냥해보시면 당연하게 느끼는거 아닌가????"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 무기를 얼마나 써야 부셔지냐는\n<br>\n<br>\n 무기마다 내구력이 다릅니다 또 무기의 속도도 다르기때문에 한마디로 얼마다라고 말 못합니다\n<br>\n<br>\n 대신 카타나의 경우는 내구력이 낮은편이고 또 무기의 속도가 빨라서\n<br>\n<br>\n 할버드 1시간 사냥한거하고 카타나 1시간 사냥한거하고 비교해보면\n<br>\n<br>\n 할버드는 계속 써도 무리가 없겠지만 카타나는 수리가 필요한 상태일 겁니다\n<br>\n<br>\n 무기를 쓸때마다 즉 무기로 적을 때릴때마다 현재내구력이 줄어드니까\n<br>\n<br>\n 적게 때리더라도 빨리 때리는 무기가 빨리 닳겠죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " edge님 전사로 갑옷 입고 사냥하시다 보면 ar이 점점 낮아지는걸 알 수 있죠?\n<br>\n 마찬가지로 무기의 데미지도 점점 줄어듭니다\n<br>\n 그래서 수리를 해줘야 하지요\n<br>\n 즉 위에 doppler님 말씀대로 현재 내구력은 무기의 경우에는 데미지와\n<br>\n 갑옷의 경우엔 ar과 직접적인 상관이 있습니다\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그리고 많이 낡으면 공격이 잘 안들어간다는 속설도...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그래서 HQ무기들은 데미지가 높다는말도 나오는거죠."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 내구성과 뎀쥐는 관계가 팍팍 있숨당. 무기도 한번 망치질로 수리할때마다 매직무기 한단계씩 떨어짐당. 뱅퀴 망치질하면 파워로 떨어짐당. 쩝..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 허거덩...넘하시네요\n<br>\n 그정도는 아님당 어떻게 벵퀴무기가 한번수리에 파워루 떨어집디까...\n<br>\n 그정도까지는 아님당\n<br>\n 그럼 4번수리하면 루인되겠네요...ㅡㅡ+\n<br>\n 제가 벵퀴무기 죽으라고 써본결과(소드류,도끼류,팬싱류) 약5회~8회이상 수리들어가면 약해졌다는걸 체감할정도 되더만요...\n<br>\n 타격감도 떨어지고 더블힛팅(무기류 보너스 뎀쥐 종류)이 잘안나요 헛손질이 많아지더만요...나만그런가??\n<br>\n 그래도 여전히 벵퀴는 동급 파워보다 쌥니당....\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 구렇습니까? 잘 몰랐숩니당. 찌그러 지겠숨당. 쭈구르르르르르~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 자기가 직접해보지도 않고 추측이나 어디서 들은말로 확신하는거보면..\n<br>\n 쯧쯧.. 마음에 전혀 안들어..<img border=\"0\" src=\"emoticon/m_thumbs_down.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_sad_smile.gif\"> 무기의 내구도가 떨어지면 특정 내구만큼 떨어졌을때 뎀쥐가 약하게 나오는거죠.\n<br>\n 즉 무기를 오래 사용해서 내구가 걸래가 된 무기라도 수리한 직후에 내구가 떨어지지 않은 상태에서의 \n<br>\n 뎀쥐는 똑같습니다. 다만 무기의 내구가 떨어졌기때문에 무기가 수리를 요구할만큼 뎀쥐 떨어진 폭을 느끼는 속도가 빠를뿐입니다. 솔직히 블레싱이나 실버같이 사서 뽕뽑는 무기 아니면 무기 뎀쥐 체감하기 전에 잃어버리는 경우가 태반입니다. <img border=\"0\" src=\"emoticon/m_bat.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020416224433",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UOForum&no=538",
+  "sourceEngine": "zeroboard"
+}

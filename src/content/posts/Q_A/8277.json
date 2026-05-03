@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8277",
+  "title": "마법([블레이드스피리츠] ㅡ,ㅡ;; 맞나?)이 안나가네요 어째서인지 ..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 지금 메절은 88정도입니다. 이벨은 91이구요 메디도 한90대이지요. <br>\n 딴마법은 다쓰는데 유난히 블레이드만 쓰면 나오질안습니다. 분명히 엠피닳구<br>\n 시약 다쓰는데 말이죠 그렇다구 해서 방귀를 풍풍 끼는 것두 아닙니다. 어째서<br>\n 그런지 좀 알려주세요 ^^ 부탁드립니다`~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "지금 메절은 88정도입니다. 이벨은 91이구요 메디도 한90대이지요. 딴마법은 다쓰는데 유난히 블레이드만 쓰면 나오질안습니다. 분명히 엠피닳구 시약 다쓰는데 말이죠 그렇다구 해서 방귀를 풍풍 끼는 것두 아닙니다. 어째서 그런지 좀 알려주세요 ^^ 부탁드립니다`~",
+  "author": "penblan",
+  "authorMemberNo": "7875",
+  "authorHomepage": null,
+  "createdAt": "2002-05-22T21:58:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " a. 발사한 위치가 서버경계일 경우<br>\n     이경우는 아무런 효과도 없습니다.<br>\n b. 발사를 했으나 오버젝트에 클릭했을 시 (나무나 몬스터 등)<br>\n     이 경우 penblan 님의 현상처럼 시약과 MP는 소모되나 블레이드가 나오질 않습니다.<br>\n     타켓을 잘 지정해주시면 문제는 사라집니다.<br>\n     강한 몬스터를 잡고 계신다면 아무때나(그 몬스터에게 가까운 곳에) 소환하면<br>\n     블레이드가 알아서 갑니다 ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 상대 되는 것(몬스터)에게 직접 타겟을 하나요? 만일 그렇다면 그 주변에 타켓을 해보세요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 감사합니다 몬스터를 클릭했거든요 ^^; 전 그러는줄 알구 "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618201908",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8277",
+  "sourceEngine": "zeroboard"
+}

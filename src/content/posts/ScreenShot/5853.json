@@ -1,0 +1,59 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5853",
+  "title": "저건 나잖앗!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/저건_나잖앗!!.jpg\"><br> <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": " ",
+  "author": "yjs1g",
+  "authorMemberNo": "8409",
+  "authorHomepage": null,
+  "createdAt": "2002-10-23T06:40:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "저건_나잖앗!!.jpg",
+      "fileNum": 1,
+      "sizeBytes": 239616
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 가끔... 이런 일이 발생하지요. ^^;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 가방정리 저랑 비슷하시군요...^^<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 가방정리하면 난 징크스 있는데.. "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저두 전에 저런일이 ..일어났었던"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 앗 당신...이런거나 찍구 실망이여요...<br>\n<br>\n 내가 누구냐구여....난 잠수쟁이..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021128102835",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5853",
+  "sourceEngine": "zeroboard"
+}

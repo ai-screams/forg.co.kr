@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20287",
+  "title": "포그분들 지식이 필요해여~~",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 게시판에 글열자마자 윈미디어 뜨면서 동영상 나오는건 <br>\n 어떤 테그를 이용하나요 ?&nbsp;&nbsp;ㅠㅠ <br>\n 좀 알려주세요 <br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "게시판에 글열자마자 윈미디어 뜨면서 동영상 나오는건 어떤 테그를 이용하나요 ?  ㅠㅠ 좀 알려주세요",
+  "author": "enix74",
+  "authorMemberNo": "15986",
+  "authorHomepage": null,
+  "createdAt": "2003-08-11T19:46:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그건 그냥 링크하면 되는겁니다..<br>\n &lt;a href=\"http://예제.com/vod/test.asf\"&gt;볼려면클릭&lt;/a&gt; 이런식으로<br>\n 그냥 다른 홈피 링크하는거랑 같죠"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030830134921",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20287",
+  "sourceEngine": "zeroboard"
+}

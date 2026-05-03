@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22642",
+  "title": "이지유오 포이즈닝 Ceed's apple poisoner대해 질문좀..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  Ceed's apple poisoner이 매크로를 받아서 실행시켜봤는데요..<br>\n<br>\n체크 해주고 실행시키니 사과 드래그 한상태서 멈춰버리네요..;<br>\n<br>\n드래그 취소 시키니 다시 또 드래그..해서 계속 그상태;<br>\n<br>\n스크립을 봐도...뭔소린지=_= 눈만 돌아가고..<br>\n<br>\n혹시 해결방법 아시는분..좀 가르켜 주세요 _ _)</td></tr></tbody></table>\n",
+  "bodyText": "Ceed's apple poisoner이 매크로를 받아서 실행시켜봤는데요.. 체크 해주고 실행시키니 사과 드래그 한상태서 멈춰버리네요..; 드래그 취소 시키니 다시 또 드래그..해서 계속 그상태; 스크립을 봐도...뭔소린지=_= 눈만 돌아가고.. 혹시 해결방법 아시는분..좀 가르켜 주세요 _ _)",
+  "author": "chaos",
+  "authorMemberNo": "24540",
+  "authorHomepage": null,
+  "createdAt": "2003-12-09T18:20:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "wings273",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "업데이트가 안되서 그럽니다<br>\n 클라이언트와 스크립의 버젼이 맞질 않습니다<br>\n 저역시 엄청 고민 했습니다 ㅡ_ㅡㅋ"
+    },
+    {
+      "author": "chaos",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그럼 클라와 스크립 버전을 어떻게 맞춰야하는지...?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040101201640",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22642",
+  "sourceEngine": "zeroboard"
+}

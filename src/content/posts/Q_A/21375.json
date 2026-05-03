@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21375",
+  "title": "Mirc 오류땜시...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 아이피 공유기를 사용하고 있는데...<br>\n 아마도 그겄대문에 Mirc 접속이 안되는거 같아요...<br>\n 이럴때는 어떻게 접속을 하나여?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "아이피 공유기를 사용하고 있는데... 아마도 그겄대문에 Mirc 접속이 안되는거 같아요... 이럴때는 어떻게 접속을 하나여?",
+  "author": "kuroo0",
+  "authorMemberNo": "22653",
+  "authorHomepage": null,
+  "createdAt": "2003-10-03T06:21:03",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 113 번 포트를 해당 PC로 연결해주시면 됩니다.<br>\n 버쳘서버라든지 마스커레이팅 관련 설정이 있을 거에요.<br>\n 설정 안해도 끈질기게 기다리면 접속 됩니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031019082114",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21375",
+  "sourceEngine": "zeroboard"
+}

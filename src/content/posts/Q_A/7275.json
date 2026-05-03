@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7275",
+  "title": "잠금, 고정보관이 안되요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  타겟찍으라고 해서 찍기는 하는데 그걸로 끝<br>\n<br>\n고정과 잠금안되는데 이유 아시는분 은행이 터질라고 해요 <br>\n<br>\nㅜ,.ㅠ<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "타겟찍으라고 해서 찍기는 하는데 그걸로 끝 고정과 잠금안되는데 이유 아시는분 은행이 터질라고 해요 ㅜ,.ㅠ",
+  "author": "jjongssun",
+  "authorMemberNo": "9547",
+  "authorHomepage": null,
+  "createdAt": "2007-10-02T23:21:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "명령어가  잠금 설정\n<br>\n<br>해제할때는  고정 보관 해제\n<br>\n<br>이걸로 해보세요..\n<br>\n<br>아니면 집에서 고정보관 할수있는 최대치가 넘어서 일수도..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116144304",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7275",
+  "sourceEngine": "zeroboard"
+}

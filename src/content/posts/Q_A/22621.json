@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22621",
+  "title": "easyUO 사용하다가...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  easyUO 커놓고...다른거 할때..<br>\n<br>\n보통 포그글 읽어 보거나 하는데..<br>\n<br>\n그럴때 마우스 커서가 이리갔다 저리갔다 하잖아요<br>\n<br>\n이거 안되게 하는방법 없을까요???<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "easyUO 커놓고...다른거 할때.. 보통 포그글 읽어 보거나 하는데.. 그럴때 마우스 커서가 이리갔다 저리갔다 하잖아요 이거 안되게 하는방법 없을까요???",
+  "author": "dust1213",
+  "authorMemberNo": "22286",
+  "authorHomepage": null,
+  "createdAt": "2003-12-08T14:46:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "dynastes",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이지유오 option-&gt;configuration-&gt;don't move cursor 한번 체크해보세욤."
+    },
+    {
+      "author": "dust1213",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오! 되네요..<br>\n<br>\n dynastes 님....감사합니다...<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040101211917",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22621",
+  "sourceEngine": "zeroboard"
+}

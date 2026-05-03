@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7231",
+  "title": "킹덤 판으로 즐기는데 문제점이 있어서~",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  상자쌓아놓기로 3단을 상자를 쌓아놨는데, 몬데인에서는 3개가 보이는데 킹덤에서는 1단만 보이네요.. 2단이나 3단에 있는 상자를 열려면 어찌 해야 할까요?</td></tr></tbody></table>\n",
+  "bodyText": "상자쌓아놓기로 3단을 상자를 쌓아놨는데, 몬데인에서는 3개가 보이는데 킹덤에서는 1단만 보이네요.. 2단이나 3단에 있는 상자를 열려면 어찌 해야 할까요?",
+  "author": "geunone",
+  "authorMemberNo": "2847",
+  "authorHomepage": null,
+  "createdAt": "2007-09-29T13:45:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "킹덤판은 아무레도 한글이 미지원 에다가 알려진게 국내에서는 많이 부족해서\n<br>문제해결에는 부족한점이 많네요 ㅠㅠ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "uokr패치를 실행 안하셔서 그런거 같은데요^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071113103933",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7231",
+  "sourceEngine": "zeroboard"
+}

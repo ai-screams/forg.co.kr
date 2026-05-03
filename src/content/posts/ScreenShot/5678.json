@@ -1,0 +1,70 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5678",
+  "title": "마녀 퀘스트 지도 룬북(1)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/WQMAP01.jpg\"><br> <img border=\"0\" src=\"data/WQMAP02.jpg\"><br>     \t\t\t 좀 헤멘 경험에 옆집 사람의 도음으로 아예 잘나오는곳 <br>\n 룬북을 만들었습니다.<br>\n 이용하세요.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "좀 헤멘 경험에 옆집 사람의 도음으로 아예 잘나오는곳 룬북을 만들었습니다. 이용하세요.",
+  "author": "한가락",
+  "authorMemberNo": "2497",
+  "authorHomepage": null,
+  "createdAt": "2002-10-14T20:21:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "WQMAP01.jpg",
+      "fileNum": 1,
+      "sizeBytes": 171724
+    },
+    {
+      "name": "WQMAP02.jpg",
+      "fileNum": 2,
+      "sizeBytes": 178585
+    }
+  ],
+  "comments": [
+    {
+      "author": "kmg20",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 난 5번이랑 10번 나왔따!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 무슨 샤드인지...?<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 16개 뿐인가요? 음 더 있는걸로 알고 있는데요..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지도의 갯수는 총 18가지 입니다..<br>\n 1번 -- 킹스 브리지(다리 건너편에 석상 서있는 곳)<br>\n 2번 -- 데스타드 남동쪽<br>\n .....<br>\n 등등인데 제가 정한 번호와는 조금 다르신듯..<br>\n 그리고 저 장소들은 특이한 풍경들이 있는 곳이므로 근처까지 가신다면 아주 찾기 쉬울것입니다.<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 옆집사람입니다 <br>\n 이궁 저희땜싱 풀롯 버리신분 있으신거 같은데<br>\n 지송합니다 4군데 더 추가 했구요<br>\n 이 이상은 없는것같네요<br>\n 저땜에 잘못가신분있으신가 하고 띄웁니다 풀롯 첮어가세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 14번 옆에 한곳 더있습니다 제가 확인했습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021104222858",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5678",
+  "sourceEngine": "zeroboard"
+}

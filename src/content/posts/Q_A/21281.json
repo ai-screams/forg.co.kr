@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "21281",
+  "title": "글읽다가 본건데",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 스핵이 도대체 뭔가요? 그리고 네크로랑 매저리가 물리레지네 마법레지네 하는거 같은데... 둘다 마법레지로 하는거 아닌가요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "스핵이 도대체 뭔가요? 그리고 네크로랑 매저리가 물리레지네 마법레지네 하는거 같은데... 둘다 마법레지로 하는거 아닌가요?",
+  "author": "rladustlrqkqh",
+  "authorMemberNo": "19342",
+  "authorHomepage": null,
+  "createdAt": "2003-09-28T15:14:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스핵= 스피드핵<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그리고 패치내용에서 아나+이벨 나누기 2로 레슬회피율 얻는다고 햇는데 그럼 소드아나이벨마사랑 소드이벨마사랑 회피율같습니까?(어차피아나로 레슬회피얻는다고 해도 무기를차버리므로 회피율이득은 없지 않나요?)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " (아나+이벨+20)/2 로 회피율을 얻습니다. 레슬의 회피율이라는 말은 잘못된거구요.<br>\n<br>\n 아나+이벨 의 회피율 보다 소드 스킬로 통해 얻는 회피율이 높으면 소드를 따라가고<br>\n<br>\n 그렇지 않으면 아나이벨의 회피율을 가지게 됩니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031101121954",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=21281",
+  "sourceEngine": "zeroboard"
+}

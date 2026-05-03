@@ -1,0 +1,33 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5692",
+  "title": "마녀지도(7)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0013.jpg\"><br> <img border=\"0\" src=\"data/1034663607/UO0014.jpg\"><br>     \t\t\t 7<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "7",
+  "author": "한가락",
+  "authorMemberNo": "2497",
+  "authorHomepage": null,
+  "createdAt": "2002-10-15T15:33:27",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0013.jpg",
+      "fileNum": 1,
+      "sizeBytes": 180019
+    },
+    {
+      "name": "UO0014.jpg",
+      "fileNum": 2,
+      "sizeBytes": 178892
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20021104222252",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5692",
+  "sourceEngine": "zeroboard"
+}

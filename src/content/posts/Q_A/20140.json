@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20140",
+  "title": "컨테이너가 열리는 위치를 고정시키고 싶습니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n<br>\n<br>\n  은행의 컨테이너 라던지,<br>\n<br>\n<br>\n  몬스터를 죽이고 나서 전리품을 획득하기 위해서<br>\n<br>\n<br>\n  더블클릭 했을시 나오는 컨테이너의 위치를,<br>\n<br>\n<br>\n  제가 원하는 곳에서 나오게 하도록,<br>\n<br>\n<br>\n  고정시키고 싶습니다.<br>\n<br>\n<br>\n  방법이 무엇이죠?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "은행의 컨테이너 라던지, 몬스터를 죽이고 나서 전리품을 획득하기 위해서 더블클릭 했을시 나오는 컨테이너의 위치를, 제가 원하는 곳에서 나오게 하도록, 고정시키고 싶습니다. 방법이 무엇이죠?",
+  "author": "siaman",
+  "authorMemberNo": "21795",
+  "authorHomepage": null,
+  "createdAt": "2003-08-05T20:39:02",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 원하는 곳에서 나오게 하기는 불가능 합니다.<br>\n 옵션-마우스 모양- offset 어쩌구..체크 해제 하세요.<br>\n 한글판이시면 4번째 있는 거군요.<br>\n 이거 체크 해제 하시면 항상 오른쪽 위에서 상자가 열립니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이지유오 스크립으로 맞춰준다면 가능할거같은데요?<br>\n 이지유오 기능중 그런게 있으니"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826123048",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20140",
+  "sourceEngine": "zeroboard"
+}

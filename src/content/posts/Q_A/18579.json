@@ -1,0 +1,53 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18579",
+  "title": "저기요 실시간 동영상 링크된거",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 실시간 동영상 링크된거 그 동영상 주소는 어떻게 가져와요?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "실시간 동영상 링크된거 그 동영상 주소는 어떻게 가져와요?",
+  "author": "kenel",
+  "authorMemberNo": "16048",
+  "authorHomepage": null,
+  "createdAt": "2003-05-24T12:37:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 마우스 오른쪽 클릭 -&gt; 등록정보 보면 나와있어요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 근데 등록정보에 있는 주소만 복사해서 돌려보면 안나오더라구요.. ㅠㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시.. 전체 디렉토리 복사하셨나요? 파일명 포함해서 전체를 넣어야 나와요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 등록정보를 보면 제일 위에 파일명이 나와있고<br>\n 아래쪽에 http나 mms를 포함하고 있는 건 위치만을 나타냅니다.<br>\n<br>\n 그러니까 위에 것은 '이름' 아래 것은 '주소'인 셈입니다.<br>\n 편지 쓸 때는 주소적고 이름까지 적어줘야하죠?<br>\n<br>\n 위쪽에 abc.asf(mpeg, asx...etc.)라고 되어 있고 아래쪽에 <a href=\"http://www.any.where/no/where\">http://www.any.where/no/where</a> 라고<br>\n 되어있다면, <a href=\"http://www.any.where/no/where/abc.asf\">http://www.any.where/no/where/abc.asf</a> 가 되는 겁니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아.. 그렇군요.. 답변 갑사합니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030529024744",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18579",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30506",
+  "title": "디아2 확팩깔때 플레이디스크를 인식못하내요",
+  "categoryLabel": "울온외질문",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이유가 몰까요-_-);<br>\n 데몬으로 돌리고있어요참고로 플레이디스크를<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이유가 몰까요-_-); 데몬으로 돌리고있어요참고로 플레이디스크를",
+  "author": "더인",
+  "authorMemberNo": "16334",
+  "authorHomepage": null,
+  "createdAt": "2003-05-17T18:07:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 데몬이 지정된 드라이브가 d:이어야만 읽더군요<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어떻게 바꿔줄수 있죠?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030524105103",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30506",
+  "sourceEngine": "zeroboard"
+}

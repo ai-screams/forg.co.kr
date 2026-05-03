@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18595",
+  "title": "무기 마법스킬사용 옵이 붙으면...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 기술이 0이여도 회피율과 명중률이 높아지는지...?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "기술이 0이여도 회피율과 명중률이 높아지는지...?",
+  "author": "Jackc",
+  "authorMemberNo": "20353",
+  "authorHomepage": null,
+  "createdAt": "2003-05-25T13:25:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...무슨 질문인지 잘 모르겠군요.<br>\n<br>\n 혹시 \"마법사 무기 -2x 기술\"에 대한 질문인가요? 맞다면 다음부터 질문을 정확히 해주세요.<br>\n<br>\n 이 옵이 붙은 무기를 착용하면 메저리가 -2x만큰 떨어진 대신에..<br>\n<br>\n 그 떨어진 만큼의 메저리가 무기스킬로 작용하게 됩니다.<br>\n<br>\n 물론 원래 가지고 있는 무기스킬이 높다면 메저리가 작용하지 않겠지요.<br>\n<br>\n ...저 질문에 답하자면,<br>\n<br>\n 무기스킬이 0이어도, -2x 마이너스된 메저리값 만큼의 무기스킬 효과(명중,회피율)를 볼수 있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030530203536",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18595",
+  "sourceEngine": "zeroboard"
+}

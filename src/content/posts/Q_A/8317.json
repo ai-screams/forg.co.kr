@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8317",
+  "title": "당파에 질문",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 음 사냥을 하는데 실코를 당파에서 십일조 형식으로 가져가는데 얼마나 가져 가는지 음 궁금해 알려 주세여<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "음 사냥을 하는데 실코를 당파에서 십일조 형식으로 가져가는데 얼마나 가져 가는지 음 궁금해 알려 주세여",
+  "author": "송 영관",
+  "authorMemberNo": "3673",
+  "authorHomepage": null,
+  "createdAt": "2002-05-25T09:06:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 몹을 잡아서 나오는 실코는 당마가 정한 세금을 때고 플레이어에게 지급됍니다<br>\n<br>\n 당마가 세율(마을세율이 아닌 당세금)을 0%로 하면 몹에서 나오는 실코의 전부가 지급되고<br>\n<br>\n 100%로 하면 몹을 잡을당시 십일조의 형식으로...라는 메시지가 나오면서 실코가<br>\n<br>\n 플레이어에게 전혀 지급되지 않습니다.<br>\n<br>\n 이 세율은 하루에 한번만 조정가능하므로 다음날 당마가 세율을 조정하기 전까지는<br>\n<br>\n 실코를 버는것은 불가능 하겠죠..<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 감사.....<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618203047",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8317",
+  "sourceEngine": "zeroboard"
+}

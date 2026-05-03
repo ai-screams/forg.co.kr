@@ -1,0 +1,29 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30422",
+  "title": "클라이언트 패치해서 이지유오를 못쓰시는 분들은...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이전버전으로(4.0.0.e)버전을 내려서 이지유오를 돌리면 제대로 됩니다.<br>\n<br>\n 이전버전은<br>\n<br>\n Kal Ort Por에서 울온자료사이트 링크쪽을 가서 수동패치가 있는 사이트를 찾아보면 있습니다.<br>\n 수동패치를 복사한 다음에<br>\n 꼭 울온폴더의 \"client.exe\"로 실행하십시오.<br>\n 시작메뉴나 바탕화면의 울온실행파일은 uo.exe로, 그것으로 실행하게 되면 다시 패치가 되어버립니다(!!)<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br><br>\n<font color=\"5685ff\">입학뒤로 쉴틈이 없어요 TT_TT</font> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이전버전으로(4.0.0.e)버전을 내려서 이지유오를 돌리면 제대로 됩니다. 이전버전은 Kal Ort Por에서 울온자료사이트 링크쪽을 가서 수동패치가 있는 사이트를 찾아보면 있습니다. 수동패치를 복사한 다음에 꼭 울온폴더의 \"client.exe\"로 실행하십시오. 시작메뉴나 바탕화면의 울온실행파일은 uo.exe로, 그것으로 실행하게 되면 다시 패치가 되어버립니다(!!) 입학뒤로 쉴틈이 없어요 TT_TT",
+  "author": "滅致{キㅡ-}",
+  "authorMemberNo": "14730",
+  "authorHomepage": null,
+  "createdAt": "2003-05-15T23:20:43",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으허 감사합니다!!! :]<br>\n 에세이 란에 올려야 할 거군요!!!"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030524104250",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30422",
+  "sourceEngine": "zeroboard"
+}

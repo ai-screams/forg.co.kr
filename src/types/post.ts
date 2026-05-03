@@ -76,8 +76,21 @@ export interface Post {
 
   /** Authored-in era (not display era — that toggles at runtime). */
   era: PostEra;
-  /** Wayback timestamp the capture came from, YYYYMMDDHHMMSS. */
+  /**
+   * Real Wayback timestamp the capture came from, `YYYYMMDDHHMMSS`. Sourced
+   * from `e-policy-plan.json` (1차) with `.progress.jsonl` as a fallback
+   * (2차) — see ADR-0010 §Decision #7. The ETL fails loud if neither source
+   * has a timestamp for this `(board, postId)`, so this field is always
+   * truthful for downstream stages (image-recovery anchor, etc.).
+   */
   capturedAt: string;
+  /**
+   * ISO 8601 timestamp the parser last wrote this JSON. Used for debugging
+   * and re-run tracking — not an archival fact. Replaces the old
+   * `derive_captured_at(file_mtime)` semantics that conflated parse time
+   * with Wayback capture time.
+   */
+  parsedAt: string;
   /** The forg.co.kr URL we got the capture from. */
   originalUrl: string;
   sourceEngine: SourceEngine;

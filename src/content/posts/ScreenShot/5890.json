@@ -1,0 +1,47 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5890",
+  "title": "일본 울온5주년 기념 패키지 (2)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/uo_warrior.jpg\"><br>     \t\t\t     \t\t\t 크 <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "크",
+  "author": "assagood",
+  "authorMemberNo": "6203",
+  "authorHomepage": null,
+  "createdAt": "2002-10-25T18:13:33",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "uo_warrior.jpg",
+      "fileNum": 1,
+      "sizeBytes": 72089
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우와.........분위기가 틀리다.......@_@ "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 죽이네.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으으으;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021101104907",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5890",
+  "sourceEngine": "zeroboard"
+}

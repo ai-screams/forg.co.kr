@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7301",
+  "title": "저기 휴먼페이레깅즈",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  아직 있나요?<br>\n있으면 얼마정도 하나요?</td></tr></tbody></table>\n",
+  "bodyText": "아직 있나요? 있으면 얼마정도 하나요?",
+  "author": "gihans",
+  "authorMemberNo": "4959",
+  "authorHomepage": null,
+  "createdAt": "2007-10-05T21:20:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "20-50만 정도로 팔리던데요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116142156",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7301",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,46 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5581",
+  "title": "일쉐나의 멋진마을!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1034044927/UO0176.jpg\"><br> <img border=\"0\" src=\"data/1034044927/UO0177.jpg\"><br>     \t\t\t 마을은 아니고... 히히<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "마을은 아니고... 히히",
+  "author": "kenel",
+  "authorMemberNo": "2508",
+  "authorHomepage": null,
+  "createdAt": "2002-10-08T11:42:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0176.jpg",
+      "fileNum": 1,
+      "sizeBytes": 840396
+    },
+    {
+      "name": "UO0177.jpg",
+      "fileNum": 2,
+      "sizeBytes": 838348
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 경관이 넘조아여~~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저기 근처에 픽시들 살텐데..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021008113215",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5581",
+  "sourceEngine": "zeroboard"
+}

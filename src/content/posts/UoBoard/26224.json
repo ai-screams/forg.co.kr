@@ -1,0 +1,53 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26224",
+  "title": "램1기가를 끼워놨는데 512라고 나옵니다.....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  왜이런거죠..심심해서 등록정보 들어가보니 512램이라고 써있네요 --;<br>\n<br>\n분명 몇달전에 1기가 채워넣었는데...<br>\n그리고 1024RAM이란 자랑스런 숫자도 써있었고...왜이럴까요</td></tr></tbody></table>\n",
+  "bodyText": "왜이런거죠..심심해서 등록정보 들어가보니 512램이라고 써있네요 --; 분명 몇달전에 1기가 채워넣었는데... 그리고 1024RAM이란 자랑스런 숫자도 써있었고...왜이럴까요",
+  "author": "padet",
+  "authorMemberNo": "637",
+  "authorHomepage": "http://blog.naver.com/padet666",
+  "createdAt": "2007-10-08T17:08:00",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "CPU-Z같은 프로그램으로 보면 분명 슬롯2개에 512채워논걸로 나오는디"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "메모리 슬롯 같은 색에 끼우세요 한칸씩 띄워서"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "불과 며칠전까지만해도 정상이엇는데;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "당했다!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "메모리 슬롯에 뽑았다가 다시 꽂으세요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071216123456",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26224",
+  "sourceEngine": "zeroboard"
+}

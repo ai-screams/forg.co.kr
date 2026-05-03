@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "32462",
+  "title": "본격적인 울온복귀 ^^",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 드디어 졸업논문을 마치고 울온에 본격적으로 복귀합니다.<br>\n 괜히 시맨틱 웹이 라는 황당한 주제로 논문을 선택해서 고생했습니다. ㅠ.ㅠ<br>\n 제본 맡기구 지금 띵가거리구 있습니다.<br>\n<br>\n 혹시 시맨틱 웹에 대해서 들어보신분 리플...<br>\n<br>\n 제 개인적 조사결과 100중에 5정도 들어봤다.<br>\n 5중에 1대충안다.<br>\n 나머지는 구냥 말만들어봤다 -_-;;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "드디어 졸업논문을 마치고 울온에 본격적으로 복귀합니다. 괜히 시맨틱 웹이 라는 황당한 주제로 논문을 선택해서 고생했습니다. ㅠ.ㅠ 제본 맡기구 지금 띵가거리구 있습니다. 혹시 시맨틱 웹에 대해서 들어보신분 리플... 제 개인적 조사결과 100중에 5정도 들어봤다. 5중에 1대충안다. 나머지는 구냥 말만들어봤다 -_-;;",
+  "author": "s424",
+  "authorMemberNo": "14571",
+  "authorHomepage": "http://www.s424.net",
+  "createdAt": "2003-06-19T17:20:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 알려주세요;; ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 시맨틱 웹이면....<br>\n<br>\n 정보처리와 지식을 자체적으로 처리 가능한 인공지능개념의 웹 아닌가요?<br>\n<br>\n 컴퓨터 스스로가 정보의 의미를 파악해서 사용자에게 정보를 제공하는.... 그런 의미였던가??<br>\n<br>\n 제 전공분야는 아니여서.. 자세히는 모르겠군요....<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지금까지 열어본분이 180여명 그중에 개념을 아시는 분이 한 분! ㅜ.ㅜ<br>\n 아우라님이 말씀하신 개념이 맞구요.<br>\n 기존의 자연어와 달리 시맨틱 웹이 구현되면 컴퓨터가 스스로 개인의 취향과 특성을 검색하여 원하는 정보를 찾아서 인간이 읽을 수있도록 정리해준다는 것입니다.<br>\n 단 그러기 위해선 모든 웹정보에는 컴퓨터가 인지 할 수있는 정보가 탑재가 되어야 합니다.<br>\n RDF라고 해서 컴퓨터가 인지하도록 정보를 미리 입력해야하는데....<br>\n 이게 문제입니다.<br>\n 기존의 웹문서에는 그 문서를 위한 정보가 없다!<br>\n 현재 나와 있는 방식으로는 자동추출이 거의 불가능하며 결과적으로 수십억개의 웹사이트에 수동입력만이 방법입니다.<br>\n 천문학적인 금액이 요구되리라 생각합니다. ^^;;<br>\n 현재 국내에서는 개념정리와 부분적인 연구만 진행되고 있습니다.<br>\n 이게 나오면 검색엔진은 다 깡통찹니다. -_-;;<br>\n 구래서 검색엔진쪽에서 개발에 열을 올리는데..... 아직은 답이 없네요<br>\n 예를들어 실비아 라고 사람의 이름을 치면 제가 기존에 찾았던 실비아라는 이름의 사람을 컴퓨터가 스스로 정리 판단하여 미국의 포르노 배우 실비아 세인트에 관해서 자세하게 정리해서 뿌려줍니다. 퍼~어~억(^^;;)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030715045515",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=32462",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,53 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "49617",
+  "title": "시그니쳐테스트",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  뿍!</td></tr></tbody></table>\n",
+  "bodyText": "뿍!",
+  "author": "moxnix",
+  "authorMemberNo": "18382",
+  "authorHomepage": null,
+  "createdAt": "2003-12-13T22:15:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헉 -__;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "여자라서 다행이다....-_-;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이런 변태틱한 시그니처는 +_+;;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "크핳 ㅏ-_;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040109190732",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=49617",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,64 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5816",
+  "title": "uoa가..ㅜㅠ 쫌 고쳐주세요...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1035185776/UO0010.jpg\"><br> <img border=\"0\" src=\"data/1035185753/UO0012.jpg\"><br>     \t\t\t 삭재했다 까니.. 이러케 됬어요......ㅜㅠ<br>\n<br>\n 고치는 방법좀...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "삭재했다 까니.. 이러케 됬어요......ㅜㅠ 고치는 방법좀...",
+  "author": "Dadol2",
+  "authorMemberNo": "11128",
+  "authorHomepage": "http://forg.co.kr",
+  "createdAt": "2002-10-21T16:35:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0010.jpg",
+      "fileNum": 1,
+      "sizeBytes": 25088
+    },
+    {
+      "name": "UO0012.jpg",
+      "fileNum": 2,
+      "sizeBytes": 14950
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 원래 그런거 아니에요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 윗사진은 어떤지 모르겠지만<br>\n<br>\n 아래는 전부 같을 껍니다.. 언젠가부터 그 화면이 엄청 커지고 안에 홈페이지가 안뜨더군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 위에는 아래 부분에 #1 #2 #3 이 짤렸네요 @@"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " uoa패치 이후 사이트가 안 뜨는것 같더군요.. ^^''<br>\n 참고로 시작=&gt;설정=&gt;제어판=&gt;국가별설정에 가셔서 언어를 영어로 하니깐 제대로 뜨네요 *^-^*''"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그냥 영어로 쓰세요.  한글로 쓰면 좀... "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021115083728",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5816",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,64 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5392",
+  "title": "백두의 추억5",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Booster.jpg\"><br> <img border=\"0\" src=\"data/Baekdu.jpg\"><br>     \t\t\t 휴~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "휴~",
+  "author": "야투",
+  "authorMemberNo": "7759",
+  "authorHomepage": null,
+  "createdAt": "2002-09-30T09:45:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "Booster.jpg",
+      "fileNum": 1,
+      "sizeBytes": 288563
+    },
+    {
+      "name": "Baekdu.jpg",
+      "fileNum": 2,
+      "sizeBytes": 255897
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 부스터~ 캬캬캬캬캬"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 야투아자씨 할롱 =_=<br>\n 휴.. 백두라.. 그러고보니 난 야투아자씨는 못봤군 울온에서 -_-<br>\n 다행이라 여겨야 하나..<br>\n<br>\n 한때의 추억 ..;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 야투면 캐릭중에 야야야2라는 캐릭이 있는건가요??<br>\n 굼굼하군요... 쪽지를 한번 날려 봤는데 답장이 없군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 야투 케릭 IXI-_- 야퉁 군대 언넝 가삐려 ㅋ ㅑㅋ ㅑ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 걱정마 군대 얼마안있습가<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021020154922",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5392",
+  "sourceEngine": "zeroboard"
+}

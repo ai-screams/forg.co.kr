@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8198",
+  "title": "핑체크 할떄..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t time = &lt;10ms 이렇게 나오는데..\n<br>\n 이거 숫자로 볼수없나여 ㅡㅡ\n<br>\n 10이하는 그냥 저렇게 나오는디..\n<br>\n<br>\n ping baekdu.owo.com -t 전이렇게 치고 핑체크하는디-_-;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "time = <10ms 이렇게 나오는데.. 이거 숫자로 볼수없나여 ㅡㅡ 10이하는 그냥 저렇게 나오는디.. ping baekdu.owo.com -t 전이렇게 치고 핑체크하는디-_-;",
+  "author": "RushWind",
+  "authorMemberNo": "2661",
+  "authorHomepage": "http://h19h19.wo.to",
+  "createdAt": "2002-05-18T17:07:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흠 유오 트레이스인가 그거로 1ms까지 체킹이 가능했던걸로 기억이 되요 ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 윈도98까세요.....-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 나도 time=&lt;10ms 이런거좀 보고싶어-_-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020528225355",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8198",
+  "sourceEngine": "zeroboard"
+}

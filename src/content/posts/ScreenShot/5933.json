@@ -1,0 +1,64 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5933",
+  "title": "죽어라 아크틱 오거로드!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/e.jpg\"><br> <img border=\"0\" src=\"data/f.jpg\"><br>     \t\t\t 죽어라!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "죽어라!",
+  "author": "Christian",
+  "authorMemberNo": "8184",
+  "authorHomepage": null,
+  "createdAt": "2002-10-27T22:42:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "e.jpg",
+      "fileNum": 1,
+      "sizeBytes": 105472
+    },
+    {
+      "name": "f.jpg",
+      "fileNum": 2,
+      "sizeBytes": 107724
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 악틱 오로-_- 징그럽다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 피스전사신가 ㅡ,.ㅡ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 호오..등에 해골이 ㅎㅎㅎ <br>\n 여자를 잡아먹고 있었나 보군요 +_+<br>\n 머..머리부터 먹었네..쿨럭.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저기 죽은게 저랍니다 ㅜ.ㅜ<br>\n 아머 82에 성능이 어떤지 테스트 해보려다가..<br>\n 크리스틴님하고 말하다..꽉 ㅜ.ㅜ<br>\n 우힝..<br>\n 역쉬 팬씽은 힘든가 <br>\n<br>\n 쵸코라라애플이였슴다 ㅜ.ㅜ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 으흐흐 정말 3D그래픽은 못봐주겟다--;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021113140834",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5933",
+  "sourceEngine": "zeroboard"
+}

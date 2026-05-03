@@ -1,0 +1,47 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "30242",
+  "title": "밑에 검색바 오류가있네요..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n Serch = Search<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#61748B\" size=\"2\"> \n::Too GoOd tO bE trUe::\n<img src=\"http://forg.co.kr/_zb/data/sirin.jpg\">\n</font>\n</div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "Serch = Search ::Too GoOd tO bE trUe::",
+  "author": "sirin",
+  "authorMemberNo": "14552",
+  "authorHomepage": null,
+  "createdAt": "2003-05-12T17:45:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헊-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ... 'Search'인데요? (수정된건가?)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 처음 오타난걸 수정했는데 이미지가 겹쳐서 이전걸로 계속 나온 이유일것입니다.<br>\n 새로고침 해보시길-0-/"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지금보니 바겻내여 케케케 --;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030518172422",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=30242",
+  "sourceEngine": "zeroboard"
+}

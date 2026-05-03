@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7289",
+  "title": "2마리의 볼텍스 동시에 디스펠하기??",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  메스 디스펠을 쓰는데요.<br>\n<br>\n2마리의 한번에 동시에 디스펠하려면 어떻게 해야하나요???</td></tr></tbody></table>\n",
+  "bodyText": "메스 디스펠을 쓰는데요. 2마리의 한번에 동시에 디스펠하려면 어떻게 해야하나요???",
+  "author": "kfatima",
+  "authorMemberNo": "9536",
+  "authorHomepage": null,
+  "createdAt": "2007-10-04T08:15:23",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "Mass Dispel  쓰세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "한놈만 사라지게 하는건 6서클 Dispel , 여러놈 사라지게 하는건  7서클 Mass Dispel - 타켓하는 볼텍스(소환물) 근처 몇타일 안에 볼텍스(소환물)가 있어야 같이 사라집니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071115131734",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7289",
+  "sourceEngine": "zeroboard"
+}

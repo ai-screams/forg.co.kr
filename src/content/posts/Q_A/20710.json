@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20710",
+  "title": "패치 해결방법좀...",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t &nbsp;&nbsp;이번 패치가 첨에는 되는거 같더니 어느순간 멈추고 에러 메세지가 뜨면서 적용이 되질않습니다.&nbsp;&nbsp;다른분 글올린거 보구 다시 켜보기도 하구 다해봤는데 진전이 없네요.&nbsp;&nbsp;아시는분 해결 방법좀 부탁드립니다.&nbsp;&nbsp;아그리구 게임은 실행이 되는군요&nbsp;&nbsp;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이번 패치가 첨에는 되는거 같더니 어느순간 멈추고 에러 메세지가 뜨면서 적용이 되질않습니다.  다른분 글올린거 보구 다시 켜보기도 하구 다해봤는데 진전이 없네요.  아시는분 해결 방법좀 부탁드립니다.  아그리구 게임은 실행이 되는군요",
+  "author": "wangbam7",
+  "authorMemberNo": "17196",
+  "authorHomepage": null,
+  "createdAt": "2003-09-01T08:59:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지우고 다시 까시거나<br>\n 포멧<br>\n 바이러스 검사<br>\n 수동패치를 이용하세요<br>\n kal ort por 란에가면 수동패치 사이트 있습니다<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 게임이 실행돼면요<br>\n<br>\n 울온 폴더에 패치폴더안에 다지우고 다시 패치 받으면 됍니다.^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030922205013",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20710",
+  "sourceEngine": "zeroboard"
+}

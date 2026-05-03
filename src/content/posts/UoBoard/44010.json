@@ -1,0 +1,71 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "44010",
+  "title": "컴퓨터를 키면 삐~ 하고 나는 소리가",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 12번 넘게 납니다-_-<br>\n<br>\n 대략 연결이 잘못된거라는거만 어디서 주워들었는데<br>\n<br>\n 으음<br>\n<br>\n 어디가 잘못됬을까요 -_-; <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<img src=\"http://jinro4.cafe24.com/zb41/data/1st_screen/break.gif\">\n</div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "12번 넘게 납니다-_- 대략 연결이 잘못된거라는거만 어디서 주워들었는데 으음 어디가 잘못됬을까요 -_-;",
+  "author": "goo1212",
+  "authorMemberNo": "14549",
+  "authorHomepage": null,
+  "createdAt": "2003-10-23T13:29:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그럴 때에는<br>\n<br>\n 램을 그냥 한번 뺐다가 끼워보는 방법도 좋아요+_+ (저같은 경우는 그러니깐 해결되더라고요)<br>\n<br>\n 아니면 접촉상태만 봐도 대부분은 OK고요<br>\n (심각한 문제는 발로 찬다던지 충격을 받았다던지 그런게 아니면 접촉불량이 대부분이니깐요 -ㅁ-;;)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 비프음이 몇번 들리는가를 확실하게 아신후 해당메인보드의 홈피에 가셔서 증상을 아시면 수월히 해결할수 있을겁니다. 아님 메뉴얼에도 나와있을수 있구요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 조용히해<br>\n<br>\n 라고 하세요.<br>\n<br>\n 안되면 패야합니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 경고음의 대부분은 VGA에서 나오죠.. 어설프게 끼워져있으면 안나오는 경우도 있지만..<br>\n<br>\n 본체를 뜯어서 살짝 빠져있는 카드는 없는지.. 램부분도 체크해보시고...<br>\n<br>\n 모르시겠으면 메인보드 구입처 A/S센터에 문의해보시는게 젤 좋습니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 메인보드 메뉴얼 보면 비프음(삐소리)에 대해서 나옵니다.<br>\n 삐 소리가 몇번이 나면 어디가 문제고 그런거...<br>\n 근데 12번이 넘게 난다는 소리는 처음 들어보네요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 램, 비디오카드, 사운드카드, 랜카드등 꽂혀있는걸 몽땅 뺀 상태에서 하나씩 꽂고 부팅을 해보세요<br>\n 분명히 어디 한군데서 걸릴겁니다<br>\n 걸린 놈을 슬롯을 바꿔 끼워보시고.. 같은 증상이 또 나온다면 바꾸셔야죠 뭐.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 비디오 카드가 잘 안꽃혀 있으면 화면이 안나오면서 삐비비비비 하고 무지 울어댑니다.<br>\n 램에 문제가 있으면 완전 침묵 -x- 합니다. 화면도 안나오구요.<br>\n 12번 울리는건요...회사 따라 다르다고 합니다.<br>\n 어느 보드사는 8번, 어디는 12번? 뭐 이렇게요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 보드 메뉴얼에 나옵니다...비프음 횟수에따라..이상있는곳을 가르쳐주죠..<br>\n<br>\n 근데 좀 무식한 보드군요-_- 12번이나 세기도힘들겟다..보통 두세번인데..;;<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031114114713",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=44010",
+  "sourceEngine": "zeroboard"
+}

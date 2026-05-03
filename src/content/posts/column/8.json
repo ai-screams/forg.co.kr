@@ -1,0 +1,35 @@
+{
+  "board": "column",
+  "boardKr": "column",
+  "postId": "8",
+  "title": "::주의!::",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n<br>\n 제가 쓰는 칼럼은<br>\n<br>\n '사전적 의미의 칼럼'의 조건을 갖추지&nbsp;&nbsp;않고 있으며<br>\n<br>\n 객관적이기보다는 주관적성향이 짙을 수 있기에<br>\n<br>\n 이런부분을 콕콕찌르실분은 '뒤로'버튼을 눌러주시기바랍니다.<br>\n<br>\n 그럼. 열심히 쓰겠습니다. <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제가 쓰는 칼럼은 '사전적 의미의 칼럼'의 조건을 갖추지  않고 있으며 객관적이기보다는 주관적성향이 짙을 수 있기에 이런부분을 콕콕찌르실분은 '뒤로'버튼을 눌러주시기바랍니다. 그럼. 열심히 쓰겠습니다.",
+  "author": "사발면",
+  "authorMemberNo": "3147",
+  "authorHomepage": "http://sazabi.uospace.net",
+  "createdAt": "2002-03-31T19:57:19",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ^^ 저두 그냥 칼럼을 써본거 뿐입니다. \"칼럼은 이렇게 써야한다!\" 라구 주장한건 아니에요. 물론 반말로 쓰다보니까 끝까지 반말써서 좀 강압적으로 들리지만...ㅡ0ㅡ;; 어디까지나 저두 제 주관적인 생각인 칼럼을 써본것 뿐입니다. 맘에 담아두지 마세요^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 사발면님의 재미있는 칼럼 기대할게요~^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20031026174953",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=column&no=8",
+  "sourceEngine": "zeroboard"
+}

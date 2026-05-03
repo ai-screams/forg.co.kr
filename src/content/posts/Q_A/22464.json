@@ -1,0 +1,29 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "22464",
+  "title": "으..forg로긴이 안되요..ㅡㅡ",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n 이건 다른운영체제구요<br>\n<br>\n 윈2000에서 왜 로긴이 안되는지..ㅡㅡ 옜날엔 됫던게..<br>\n<br>\n 포그홈 가면 화면 뜨자마자 <br>\n<br>\n '현재보안상태로는 active X 를 실행할수없습니다. 페이지가 제대로뜨지않을수도있습니다'<br>\n<br>\n 라는창이 나오네요.. 로긴도 안되고..ㅡㅡ <br>\n<br>\n 인터넷옵션가서 보안창에서 active X 사용으로도 해보고 보안설정<br>\n<br>\n 최소로도 해봤는데 안됨..ㅜ_ㅜ 어찌해야하는지..</td></tr></tbody></table>\n",
+  "bodyText": "이건 다른운영체제구요 윈2000에서 왜 로긴이 안되는지..ㅡㅡ 옜날엔 됫던게.. 포그홈 가면 화면 뜨자마자 '현재보안상태로는 active X 를 실행할수없습니다. 페이지가 제대로뜨지않을수도있습니다' 라는창이 나오네요.. 로긴도 안되고..ㅡㅡ 인터넷옵션가서 보안창에서 active X 사용으로도 해보고 보안설정 최소로도 해봤는데 안됨..ㅜ_ㅜ 어찌해야하는지..",
+  "author": "volcy",
+  "authorMemberNo": "23519",
+  "authorHomepage": null,
+  "createdAt": "2003-11-29T09:24:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "kyrandia",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "익스플로러에서 도구 -&gt; 인터넷 옵션 -&gt; 개인정보 -&gt; 낮음 으로 바꾸고 다시 해보세요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20040109191501",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=22464",
+  "sourceEngine": "zeroboard"
+}

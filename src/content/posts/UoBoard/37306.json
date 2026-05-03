@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37306",
+  "title": "xp 쓰시는분 RPC서비스 에러로 강제리붓되는분있나요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t RPC서비스의 에러로 50초의시간을주고 강제로 컴터를 리붓합니다..<br>\n<br>\n 제어판 -&gt; 관리도구 -&gt; 서비스 -&gt; RPC (Remote procedure call)<br>\n -&gt;복구-&gt;3가지옵션을모두 동작하지않음<br>\n<br>\n 이렇게하믄.. 강제로 종료되는일은 없어지네요..<br>\n<br>\n 그러나..-_- 이설정이 과연 좋은방향인지는 장담못합니다..<br>\n<br>\n 지금 컴키자마자 계속 강제로 리붓되서 이렇게해봤습니다.<br>\n<br>\n 예전에 메신저서비스로 윈도우창이뜨면서 광고창뜨던게 생각나는군요..<br>\n<br>\n XP.........-_-................<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<img src=\"http://host13.wotonet.com/~rvmm/unju.jpg\">\n</div></td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "RPC서비스의 에러로 50초의시간을주고 강제로 컴터를 리붓합니다.. 제어판 -> 관리도구 -> 서비스 -> RPC (Remote procedure call) ->복구->3가지옵션을모두 동작하지않음 이렇게하믄.. 강제로 종료되는일은 없어지네요.. 그러나..-_- 이설정이 과연 좋은방향인지는 장담못합니다.. 지금 컴키자마자 계속 강제로 리붓되서 이렇게해봤습니다. 예전에 메신저서비스로 윈도우창이뜨면서 광고창뜨던게 생각나는군요.. XP.........-_-................",
+  "author": "kisslov2",
+  "authorMemberNo": "15213",
+  "authorHomepage": "http://kisslov2.ce.ro/",
+  "createdAt": "2003-08-12T03:01:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이솔레스티군의 도움으로 가까스로 복구했습니다<br>\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=2354406C-C5B6-44AC-9532-3DE40F69C074&amp;displaylang=ko\">http://www.microsoft.com/downloads/details.aspx?FamilyId=2354406C-C5B6-44AC-9532-3DE40F69C074&amp;displaylang=ko</a> <br>\n 에서 패치 받고 인터넷 끊고 리붓해서 설치해서 다시 리붓했더니<br>\n 이제 됐군요<br>\n 이게 무슨 난리람..... ㅜ_ㅡ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지금 게시판마다 난리도 아니네요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뒷북은 -_-;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826130628",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37306",
+  "sourceEngine": "zeroboard"
+}

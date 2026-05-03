@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7228",
+  "title": "하나의 컴퓨터로 두 계정 접속이 되는 프로그램이 있었는데요",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  요즘 그 프로그램 다운 받을 수 있나해서요..<br>\n<br>\n혹 가지고 계신분 멜로 보내 주시면 감사하겠습니다<br>\n<br>\n<a href=\"mailto:kimmosi01@hanmail.net\">kimmosi01@hanmail.net</a></td></tr></tbody></table>\n",
+  "bodyText": "요즘 그 프로그램 다운 받을 수 있나해서요.. 혹 가지고 계신분 멜로 보내 주시면 감사하겠습니다 kimmosi01@hanmail.net",
+  "author": "kimmosi01",
+  "authorMemberNo": "292",
+  "authorHomepage": null,
+  "createdAt": "2007-09-29T12:02:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "한 5년전에 쓰던걸로 기억하는데요 막혀서 이제는 사용불가능 한걸로 기억해요 -0-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "razor란 프로그램이 다중접속되게해줘요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "쉬운유오로도 가능합니다.\n<br>Tools -&gt; UOXL -&gt; New client 누르심 하나 더 뜰거예요\n<br>\n<br>그리고 단축키로는 Ctrl + Alt + N 키입니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071113104821",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7228",
+  "sourceEngine": "zeroboard"
+}

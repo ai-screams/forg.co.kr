@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8446",
+  "title": "워시 마법 타겟을 빨리잡는 방법을 알고시포요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 지금 하는방법은 아나토미(매크로키)를 스킬을 찍어 멈추어져있는 타겟을<br>\n 잡는데..뛰는타겟은 무척잡기가 힘들어요.<br>\n 쉽게 잡는방법이 없나여?<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "지금 하는방법은 아나토미(매크로키)를 스킬을 찍어 멈추어져있는 타겟을 잡는데..뛰는타겟은 무척잡기가 힘들어요. 쉽게 잡는방법이 없나여?",
+  "author": "김태환",
+  "authorMemberNo": "3744",
+  "authorHomepage": null,
+  "createdAt": "2002-06-01T14:56:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음 다른 분들은 모르겠지만. 제가 쓰는 방법을 설명하자면.. (좀 허접할지도 -0-)<br>\n<br>\n  마사는 우선 매클을 짤때.. 이벨키 하나 이벨 + 라스트 타겟키 하나.. 이렇게 매클을 짜고 하나더 추가 타겟넥스트 키를 만들어놔여.. 그리고.. 타겟넥스트로 타겟바를 타겟으로 옮기구.. 여기서 바로 라스트 타겟으로 마법을쓰면 그전에 잡힌 라스트 타겟에게로 마법이 나가므로  안되구여. . 이벨+라스트 타겟 매클키를 누르는거져.. 그럼 그 상대를 라스트 타겟으로 인식 되거든여.  주로 이런 방법을 쓰는 편이져.. <br>\n<br>\n 쫌 횡설수설 한것 같군여. . . 도움이 되셨기를. -0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그방법두있죠...근데 만약 타겟이 많으면 제가 원하는 타겟을 한번에 잡는건 불가능하지않나욤?혹시 실수로 파랭이 한테 마법을쏘아버리면 가드한테...퍽..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 커서 뜬 상태로.. 달리는 적을.. 더블클릭...^-.-^;;;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 눈깔 열라부라리고 뿌러져라 10년동안만 그거연습하면<br>\n<br>\n 완벽하게해짐<br>\n<br>\n 울티마나오기전부터   미래를 예측하고  <br>\n<br>\n 돌아다니는 쥐를 쏘는 눈부라리로 그런연습 하신분들만이 가능<br>\n -0-<br>\n ~~~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020618202642",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8446",
+  "sourceEngine": "zeroboard"
+}

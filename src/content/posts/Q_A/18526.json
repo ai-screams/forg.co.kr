@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "18526",
+  "title": "포이즈닝 질문..",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t  데들리를 만든다고 가정할때 생산캐릭에게 포이즈닝이 필요합니까?<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "데들리를 만든다고 가정할때 생산캐릭에게 포이즈닝이 필요합니까?",
+  "author": "thiefj",
+  "authorMemberNo": "20759",
+  "authorHomepage": "http://www.apfjd.com",
+  "createdAt": "2003-05-20T06:37:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 독바른 칼을 만든다면 필요하겠죠..<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 필요없습니다. 알케미만 있으면 됩니다.<br>\n 포이즈닝은 이미 만들어져있는 독을 이용해서 무기나 음식에 바를때,<br>\n 전사스킬 인펙팅으로 한단계 높은 독을 걸때만 사용됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  또한 인펙팅 기술은 적은 마나로 사용할 수 있게 해 주죠.<br>\n  또, 독 관련 마법의 데미지를 큰 폭으로 증가 시킵니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030526073351",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=18526",
+  "sourceEngine": "zeroboard"
+}

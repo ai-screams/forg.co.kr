@@ -1,0 +1,35 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5671",
+  "title": "답변...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/레드바부.jpg\"><br>     \t\t\t     \t\t\t ㅡ_ㅡ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "ㅡ_ㅡ",
+  "author": "울랄라",
+  "authorMemberNo": "8029",
+  "authorHomepage": null,
+  "createdAt": "2002-10-14T04:25:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "레드바부.jpg",
+      "fileNum": 1,
+      "sizeBytes": 402329
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 말그대로 레드바부"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021104222300",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5671",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,47 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "8090",
+  "title": "지도 렙 몇인지 몰겠네요",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t  몹을 죽이고 지도가나와도 렙이 몇인지 몰겠네요 리치잡고 숙달된솜씨?? 이거는 3렙??&nbsp;&nbsp;친구가 쉐도웜잡고 나온 사악하게 그려진 지도는 5렙인가여?? \n<br>\n 에고 지도 렙별 뭐라고 적혀있는지 갈켜주셈 허접한질문 죄송<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "몹을 죽이고 지도가나와도 렙이 몇인지 몰겠네요 리치잡고 숙달된솜씨?? 이거는 3렙??  친구가 쉐도웜잡고 나온 사악하게 그려진 지도는 5렙인가여?? 에고 지도 렙별 뭐라고 적혀있는지 갈켜주셈 허접한질문 죄송",
+  "author": "kang1896",
+  "authorMemberNo": "7501",
+  "authorHomepage": null,
+  "createdAt": "2002-05-13T00:12:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 1레벨은 간결한게 그려진 2레벨은 잘그려진 3레벨은 숙달된 쏨씨로 그려진 4레벨은 교묘하게 그려진 5레벨은 사악하게 그려진... 인걸로 알아요. 그럼 즐거운 하루되시길.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 감사.... 에거 그리거 irc에서 장사할때 자동으로 말하기 어케하죠??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " /timer 00 30 say 할말 \n<br>\n 앞에 00은 말하는 횟수 적는부분이구요( 00은 무한) 뒤에 30은 반복주기 사간입니다.(30이상이 매너 -_ㅋ)\n<br>\n 타이머 해지하실려면 그방 나갔다 새로 들어가세용~ -0-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " /timer(타이머번호) (횟수) (시간-초) say 메시지...\n<br>\n 타이머번호는 끌때 쓰는데.. /timer번호 off 하면 꺼지구...\n<br>\n 횟수는 몇번 반복할지를... 시간은 몇초마다 반복할지를 선택합니다.. 괄호는 빼시고..^-.-^;;;\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527160710",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=8090",
+  "sourceEngine": "zeroboard"
+}

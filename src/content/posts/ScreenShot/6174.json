@@ -1,0 +1,41 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "6174",
+  "title": "이거 뭔지 아세요..? ^-.-^;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/044a.JPG\"><br>     \t\t\t     \t\t\t 뭘까....<br>\n 사라짐..<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "뭘까.... 사라짐..",
+  "author": "하느",
+  "authorMemberNo": "10048",
+  "authorHomepage": "http://홈.페.쥐/",
+  "createdAt": "2002-11-14T10:57:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "044a.JPG",
+      "fileNum": 1,
+      "sizeBytes": 197017
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...매직 천이었다는......."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아이덴 해 보셨어야죠!"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021130074901",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=6174",
+  "sourceEngine": "zeroboard"
+}

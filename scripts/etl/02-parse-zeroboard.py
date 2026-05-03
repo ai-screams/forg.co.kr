@@ -49,6 +49,18 @@ OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures.jsonl"
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
 
+# Wayback timestamp sources (ADR-0010 §Decision #7).
+# 1차: the canonical CDX plan we downloaded from. 2차: the downloader's
+# per-file progress log — fills any gap left by manual plan edits.
+PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
+PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
+
+# Boards downloaded into bronze tier but parsed by a different engine.
+# UoBoard2 ran on Gnuboard4 — a separate parser handles it (P2.2 / ROADMAP).
+# Keeping it in EXCLUDE_BOARDS makes the skip explicit instead of letting
+# every record fail Zeroboard selectors silently.
+EXCLUDE_BOARDS: frozenset[str] = frozenset({"UoBoard2"})
+
 # ── Era assignment ──────────────────────────────────────────────────────
 # Posts authored before 2011 lived under the frameset/Zeroboard era;
 # posts from 2011 onwards under the Gnuboard4 redesign.
@@ -348,23 +360,68 @@ def find_attachments(soup: BeautifulSoup) -> list[dict[str, object]]:
     return out
 
 
-# ── Wayback timestamp recovery ─────────────────────────────────────────-
-_CAPTURED_AT_RE = re.compile(r"\((\d{14})\)$|/web/(\d{14})|capturedAt=(\d{14})")
+# ── Wayback timestamp index (ADR-0010 §Decision #7) ────────────────────-
+# `Post.capturedAt` MUST be a real Wayback ts so it can anchor downstream
+# stages (image recovery, etc.). The previous `derive_captured_at(file_mtime)`
+# conflated parse time with capture time — Notice/1 reported 20260502190627
+# (today) instead of 20030902080926 (the 2003 capture). Phase A2 of ADR-0010
+# corrects this by sourcing the ts from the canonical CDX plan.
 
 
-def derive_captured_at(file_path: Path) -> str:
-    """We do not have the timestamp in the cleaned HTML — fall back to mtime
-    encoded as YYYYMMDDHHMMSS so downstream code never sees an empty value.
-    The downloader writes one capture per post so this only loses the original
-    Wayback timestamp; the originalUrl can still be reconstructed if needed."""
-    ts = datetime.fromtimestamp(file_path.stat().st_mtime)
-    return ts.strftime("%Y%m%d%H%M%S")
+def load_wayback_ts_index() -> dict[tuple[str, str], str]:
+    """Build a `(board, post_id) -> wayback ts` lookup.
+
+    Source priority:
+      1차: e-policy-plan.json — the CDX plan we downloaded against.
+      2차: .progress.jsonl — the downloader's record of what it actually
+           fetched (downloader uses the same ts as the plan, so this is
+           a sanity safety net for partial replays / manual plan edits).
+
+    Both sources should agree. The dual lookup catches edge cases without
+    hiding them — if a post is in neither, the parser fails loud (caller
+    raises ValueError) rather than silently faking a timestamp.
+    """
+    index: dict[tuple[str, str], str] = {}
+
+    if PLAN_FILE.exists():
+        plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
+        for entry in plan:
+            board = entry.get("board")
+            post_id = entry.get("post_id")
+            ts = entry.get("ts")
+            if board and post_id and ts:
+                index[(board, str(post_id))] = ts
+
+    if PROGRESS_FILE.exists():
+        for raw_line in PROGRESS_FILE.read_text(encoding="utf-8").splitlines():
+            try:
+                rec = json.loads(raw_line)
+            except json.JSONDecodeError:
+                continue
+            board = rec.get("board")
+            post_id = rec.get("post_id")
+            ts = rec.get("ts")
+            if not (board and post_id and ts):
+                continue
+            key = (board, str(post_id))
+            # Only fill gaps left by the plan; do not overwrite the canonical
+            # plan ts with the downloader's record.
+            index.setdefault(key, ts)
+
+    return index
 
 
 # ── Per-file pipeline ──────────────────────────────────────────────────-
 
 
-def parse_one(html: str, *, board: str, post_id: str, captured_at: str) -> Post:
+def parse_one(
+    html: str,
+    *,
+    board: str,
+    post_id: str,
+    captured_at: str,
+    parsed_at: datetime,
+) -> Post:
     reason = detect_non_post_page(html)
     if reason is not None:
         raise _NonPostPage(reason)
@@ -430,6 +487,7 @@ def parse_one(html: str, *, board: str, post_id: str, captured_at: str) -> Post:
         comments=comments,
         era=era,
         capturedAt=captured_at,
+        parsedAt=parsed_at,
         originalUrl=f"http://forg.co.kr/_zb/zboard.php?id={board}&no={post_id}",
         sourceEngine="zeroboard",
     )
@@ -500,6 +558,8 @@ def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
     for board_dir in sorted(INPUT_DIR.iterdir()):
         if not board_dir.is_dir():
             continue
+        if board_dir.name in EXCLUDE_BOARDS:
+            continue
         if board_filter and board_dir.name != board_filter:
             continue
         for f in sorted(board_dir.glob("*.html")):
@@ -554,14 +614,35 @@ def main() -> None:
         print("Nothing to do.", file=sys.stderr)
         return
 
+    ts_index = load_wayback_ts_index()
+    if not ts_index:
+        sys.exit(
+            "FATAL: empty wayback ts index. Neither e-policy-plan.json nor "
+            ".progress.jsonl yielded any (board, post_id) -> ts entries. "
+            "Cannot stamp Post.capturedAt — refusing to write fake values."
+        )
+
     stats = Stats(total=len(todo), skipped=skipped)
     last_print = 0
+    parsed_at = datetime.now()
     for i, (board, post_id, in_path) in enumerate(todo, 1):
         out_path = derive_output_path(board, post_id)
         try:
             html = in_path.read_text("utf-8")
-            captured_at = derive_captured_at(in_path)
-            post = parse_one(html, board=board, post_id=post_id, captured_at=captured_at)
+            captured_at = ts_index.get((board, post_id))
+            if not captured_at:
+                raise ValueError(
+                    f"missing Wayback ts for ({board}, {post_id}) — neither "
+                    "e-policy-plan.json nor .progress.jsonl has it. ADR-0010 "
+                    "fail-loud: refusing to silently fake Post.capturedAt."
+                )
+            post = parse_one(
+                html,
+                board=board,
+                post_id=post_id,
+                captured_at=captured_at,
+                parsed_at=parsed_at,
+            )
         except _NonPostPage as e:
             stats.skipped_no_content += 1
             stats.skipped_reasons[e.reason] += 1
@@ -594,7 +675,9 @@ def main() -> None:
         if not args.dry_run:
             out_path.parent.mkdir(parents=True, exist_ok=True)
             tmp = out_path.with_suffix(out_path.suffix + ".tmp")
-            tmp.write_text(post.model_dump_json(indent=2), encoding="utf-8")
+            # Trailing newline keeps the file prettier-compatible — without it
+            # `pnpm format:check` reports every gold-tier JSON as a style miss.
+            tmp.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")
             tmp.replace(out_path)
 
         if i - last_print >= args.print_every or i == len(todo):

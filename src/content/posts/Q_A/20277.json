@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20277",
+  "title": "마법 저항과. 이벨과 관계가 있나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 이벨을 올리면 마법 저항에 + 가 발생하는지 알고 싶습니다.. ^^<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이벨을 올리면 마법 저항에 + 가 발생하는지 알고 싶습니다.. ^^",
+  "author": "zepiross",
+  "authorMemberNo": "21836",
+  "authorHomepage": null,
+  "createdAt": "2003-08-11T11:48:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 플러스는 아니고 저주계열에 관해서 적용하는것은 시전자의 이벨스킬과 공격당한자의 레지스킬에<br>\n 따라 결정된다고 들었습니다. 저주뿐만이 아닌 패럴라이즈도 같은 경우겠지요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그게 아주 버그성이 많죠..<br>\n 만약 저주를 날리면 힘이 92돼는데 피가 86돼버린다던가...<br>\n 힘이 92면 피가 92보다 높아야 돼는뎅 100에서 저주맞음 86돼버리는 거죠..<br>\n 레지0일경우 스탯이 24정도 깍인다고 들엇는뎅 아마 그런이유에서 일케돼버리지 않나 생각해봅니다.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030909143806",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20277",
+  "sourceEngine": "zeroboard"
+}

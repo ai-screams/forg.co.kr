@@ -1,0 +1,59 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "26871",
+  "title": "아 !!! 패치가 안되는데 어떻게 된거죠???",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t AoS 깔고 실행하면 3-0-8 z 패치 받고 applying 머시기에서 멈췄다가<br>\n 패치가 안되네요 이거 어떠케 해야 하져??<br>\n ㅜ.ㅜ 빠른 답변을 부탁드려요!<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "AoS 깔고 실행하면 3-0-8 z 패치 받고 applying 머시기에서 멈췄다가 패치가 안되네요 이거 어떠케 해야 하져?? ㅜ.ㅜ 빠른 답변을 부탁드려요!",
+  "author": "dhwizard",
+  "authorMemberNo": "15159",
+  "authorHomepage": null,
+  "createdAt": "2003-03-11T20:15:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " V3나 기타 백신프로그램 사용하신다면....우선 실시간 인터넷감시와 시스템감시를 OFF시키신후에 패치<br>\n 받아보시기 바랍니다...제친구가 한번 그런일이있길래 그렇게 했더니 됐다고하더군요....<br>\n 패치후엔 다시 ON 시키셔두 무방합니다.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온 폴더안에 패치 폴더가 있습니다 거기 안에 파일이 있으면 다 지우시고... 다시 패치를 해보시면 될듯... 하네요 (아마도... -0-) 그리구 V3시스템감시 같은거 돌아가구 있으면 잠시 중지시키구 하면 될때가 있더군요 (아마도... -0-) 이렇게해도 안되면.... 모니터를 두손으로 잡고 하늘을 바라보면서 이렇게 외치세요 저주다!!! -0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 벨단디님..흑..그런 명언을...[저주다아아아아아아..엉엉~~]"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저와 같은 경우이군요...<br>\n 집에서 안되..... 피방으로 갔습니다...  돈 아까워 죽는줄 알았습니다..... ㅠ,.ㅠ<br>\n<br>\n 그런데 신기한건 피방서는 패치가 잘되더군요.....<br>\n<br>\n 아마도 인터넷 회선에 문제가 있지 않을까 하는 개인적인 생각입니다....<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " OS문제가 아닐까요????2000에선 아무문제가 없던데.....98등에서 문제가 보이더군요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 멀티유오를 쓰신다면 client화일을 원상복귀시키고, 패치해야됩니다.<br>\n 간혹 잊어먹기 쉽죠...<br>\n 원상복귀는 멀티유오에서 undo버튼을 누르면 될겁니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030611000032",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=26871",
+  "sourceEngine": "zeroboard"
+}

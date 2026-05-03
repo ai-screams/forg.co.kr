@@ -1,0 +1,47 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "9600",
+  "title": "Client Patch 3.08d (2D)/3.08f (3D)",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t We have released a client patch today, Wednesday, June 5th. This patch contains the following changes (note that this patch does not contain the upcoming wearable art for the 3D client, which is still in progress):<br>\n<br>\n 1. 3D client only <br>\n The default brightness level for character and creature models has been lowered. <br>\n An option has been added to allow players to manually tweak the brightness level of models. <br>\n Hidden players appear more translucent.<br>\n<br>\n 2. Both 2D and 3D clients <br>\n Both clients have received a fix for a log cabin stairs bug.<br>\n The current version should be 3.0.8d for the 2D client and 3.0.8f for the 3D client.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "We have released a client patch today, Wednesday, June 5th. This patch contains the following changes (note that this patch does not contain the upcoming wearable art for the 3D client, which is still in progress): 1. 3D client only The default brightness level for character and creature models has been lowered. An option has been added to allow players to manually tweak the brightness level of models. Hidden players appear more translucent. 2. Both 2D and 3D clients Both clients have received a fix for a log cabin stairs bug. The current version should be 3.0.8d for the 2D client and 3.0.8f for the 3D client.",
+  "author": "corean",
+  "authorMemberNo": "5310",
+  "authorHomepage": "http://my.dreamwiz.com/bach147",
+  "createdAt": "2002-06-06T11:03:18",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 여..영어다 -_-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우리는 6월 5일 오늘 클라이언트 패치를 릴리즈시켰습니다. 이 패치는 다음의 것들을 포함하고 있습니다.(이 패치는 앞으로 다가올 3D 클라이언트의 의상아트들은 포함하고 잇지 않습니다.)<br>\n<br>\n 1. 오직 3D클라이언트에만 적용되는 것.<br>\n 케릭터와 생물체의 기본적인 밝기레벨을 낮추었습니다.<br>\n 밝기레벨의 원형을 수동으로 플레이어가 바꿀수있도록 하게하는 옵션이 추가되었습니다.<br>\n 숨어있는 유저는 좀더 반투명하게 나타납니다.<br>\n<br>\n 2. 2D와 3D 양쪽 모두에 적용되는 것<br>\n 두 클라이언트 모두 로그캐빈 사다리계단버그가 수정되었습니다.<br>\n 올바른 버젼은 2D클라이언트는 3.0.8d 3D 클라이언트는 3.0.8f 이어야 합니다.<br>\n<br>\n<br>\np.s - brightness 가 미덕 맞죠?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 밝기조정같은데요-0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그렇군요 수정했습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020622045229",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=9600",
+  "sourceEngine": "zeroboard"
+}

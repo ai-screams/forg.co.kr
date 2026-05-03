@@ -1,0 +1,47 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "5383",
+  "title": "구대스카라브래 텔러샵 폐업했나?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/closed.jpg\"><br>     \t\t\t     \t\t\t 우엉...<br>\n 몇일전에는 문이 안열리길래 버그인가 했는데<br>\n 오늘보니 아예 벽을 쌓아놓았네요..<br>\n 이거..<br>\n 왜이런거여..-.-;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "우엉... 몇일전에는 문이 안열리길래 버그인가 했는데 오늘보니 아예 벽을 쌓아놓았네요.. 이거.. 왜이런거여..-.-;",
+  "author": "Resurrection",
+  "authorMemberNo": "2413",
+  "authorHomepage": null,
+  "createdAt": "2002-09-29T23:49:59",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "closed.jpg",
+      "fileNum": 1,
+      "sizeBytes": 115814
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 구대는 모두 문닫았어요.<br>\n 천 사서 붕대 만들어 떼돈 버는 유저들 때문이었죠.<br>\n 하루빨리 정상 영업하길 바래요.<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그럼.. 저 안에 점원들도 갇혀있단 말인가..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 안쪽 룬을 가지고 잇다는..-_-;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021020155116",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=5383",
+  "sourceEngine": "zeroboard"
+}

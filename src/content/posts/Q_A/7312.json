@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7312",
+  "title": "KR 닌자 애니멀폼 딜레이?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  KR클라에서 닌자 애니멀폼으로 동물로 변신할땐 이전 클라에서와<br>\n<br>\n마찬가지로 딜레이가 없는데 사람으로 돌아갈땐 3~4초 정도 렉과 같은<br>\n<br>\n현상이 일어나면서 화면이 멈추네요.. 그러다 연기와 함께 사람으로...<br>\n<br>\n수시로 변신하는 걸 막기위한 딜레이 패치가 된건지 아니면 이것도 KR버그<br>\n<br>\n인지 궁금합니다.</td></tr></tbody></table>\n",
+  "bodyText": "KR클라에서 닌자 애니멀폼으로 동물로 변신할땐 이전 클라에서와 마찬가지로 딜레이가 없는데 사람으로 돌아갈땐 3~4초 정도 렉과 같은 현상이 일어나면서 화면이 멈추네요.. 그러다 연기와 함께 사람으로... 수시로 변신하는 걸 막기위한 딜레이 패치가 된건지 아니면 이것도 KR버그 인지 궁금합니다.",
+  "author": "visiter",
+  "authorMemberNo": "7261",
+  "authorHomepage": null,
+  "createdAt": "2007-10-07T00:59:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "KR이 아니라 일반 2D 클라버전에서도 마찬가지 현상이 일어납니다.\n<br>컴퓨터를 바꿔서 해봐도 똑같고요. 시스템적인 문제인듯"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아..그랬군요.. 답변 감사드립니다^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071116141902",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7312",
+  "sourceEngine": "zeroboard"
+}

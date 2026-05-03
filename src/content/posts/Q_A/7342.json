@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7342",
+  "title": "부시도의 퍼펙션 스킬에 대해서....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  부시도 스킬중에 패시브 기능으로 퍼펙션이란 스킬이 있더군요.<br>\n<br>\n명예의 미덕을 이용하여 10단계까지 하면 100%의 추가 데미지를 <br>\n<br>\n줄수 있다고 하는데요.<br>\n<br>\n도대체 어떻게 명예의 미덕을 올려야 한다는거고 어떻게 사용하여야 <br>\n<br>\n한다는건지 모르겠네요.<br>\n<br>\n그냥 명예미덕 10단계까지만 올려놓으면 지속적으로 효과가 생기는건가요?<br>\n<br>\n아니면 사용할때마다 사용하여 다시 명예미덕을 얻어서 단계를 올려놓아야<br>\n<br>\n하는건가요?<br>\n<br>\n퍼펙션에 대한 설명좀 부탁드리겠습니다.<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "부시도 스킬중에 패시브 기능으로 퍼펙션이란 스킬이 있더군요. 명예의 미덕을 이용하여 10단계까지 하면 100%의 추가 데미지를 줄수 있다고 하는데요. 도대체 어떻게 명예의 미덕을 올려야 한다는거고 어떻게 사용하여야 한다는건지 모르겠네요. 그냥 명예미덕 10단계까지만 올려놓으면 지속적으로 효과가 생기는건가요? 아니면 사용할때마다 사용하여 다시 명예미덕을 얻어서 단계를 올려놓아야 하는건가요? 퍼펙션에 대한 설명좀 부탁드리겠습니다.",
+  "author": "kfatima",
+  "authorMemberNo": "9536",
+  "authorHomepage": null,
+  "createdAt": "2007-10-10T19:30:58",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "페이퍼볼의 미덕창을 클릭하시거나(자체 매크로에 기능이 있음) 하셔서 호너 선택하신다음에요\n<br>1시방향 컵모양일꺼예요. 몹을 타켓하시는데 몹이 에너지가 떨어져있으면 안됩니다.\n<br>명성이 높은 몹일수록 많은 명예의 미덕을 주겠죠.\n<br>그렇게 명예의 미덕을 쌓아서 몹에서 미덕을 걸고 치면 확실히 데미지가 차이 납니다.\n<br>라이트닝 스트라이크 크리티컬이 터질때면 더욱더 차이가 나고요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "메뉴중 단축키 설정하는 란에서 죽 아래로 내리시면 명예 미덕 단축키 설정하실 수 있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071117151539",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7342",
+  "sourceEngine": "zeroboard"
+}

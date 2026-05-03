@@ -1,0 +1,41 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20183",
+  "title": "레슬과 패링의 궁금점!!",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 레슬하고 패링하고 둘다 같이 적용대나요?<br>\n 제가 알기론 레슬은 방패 안들때 적용대고 방패들면 패링에 적용대는거로<br>\n 알고잇거든요.. 궁금.. 알려주세용~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "레슬하고 패링하고 둘다 같이 적용대나요? 제가 알기론 레슬은 방패 안들때 적용대고 방패들면 패링에 적용대는거로 알고잇거든요.. 궁금.. 알려주세용~",
+  "author": "jjini",
+  "authorMemberNo": "16059",
+  "authorHomepage": null,
+  "createdAt": "2003-08-07T00:41:01",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 둘다 적용됩니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흠 근데 요즘 레슬링을 올리는데 초나 횟불을 들면 치지를 않더군요... "
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제가 알고 있는 내용은 aos패치되기전의 사항입니다<br>\n<br>\n 즉 레슬링이 잼일경우 방패를 들 경우에 방패를 들지 않을때보다 50%회피률이 떨어짐니다<br>\n<br>\n 레슬링은 양손이 비었을때 100%의 성능을 발휘 합니다<br>\n<br>\n 여기서 방패를 들 경우에 패링이 젬이라면 패링잼의 회피률이 있으며 그기에 레슬링잼의 효과의 <br>\n<br>\n 50%확률이 있습니다<br>\n<br>\n 쉽게 이야기 하자면 패링과 레슬링이 잼인데 방패를 들경우에 패링잼의 효과 100% 하고 레슬링잼의<br>\n<br>\n 효과50%를 발휘 할수 있다는 말이죠<br>\n<br>\n<br>\n<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826122144",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20183",
+  "sourceEngine": "zeroboard"
+}

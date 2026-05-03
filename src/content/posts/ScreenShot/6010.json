@@ -1,0 +1,53 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "6010",
+  "title": "제 배경화면입니다...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/배경화면.JPG\"><br>     \t\t\t     \t\t\t 쓸쓸 &amp; 심심한 제 마음을 잘 표현하고 있는듯....<br>\n<br>\n 여자친구랑... 헤어질거 같습니다 ㅠㅠ <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "쓸쓸 & 심심한 제 마음을 잘 표현하고 있는듯.... 여자친구랑... 헤어질거 같습니다 ㅠㅠ",
+  "author": "yjs1g",
+  "authorMemberNo": "8409",
+  "authorHomepage": null,
+  "createdAt": "2002-11-03T03:35:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "배경화면.JPG",
+      "fileNum": 1,
+      "sizeBytes": 159846
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어쩌면 저도.... <img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 힘내세요..<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 배경화면 굿입니다요..ㅠ0ㅠ)b"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 힘내세요...<img border=\"0\" src=\"emoticon/m_heart.gif\">"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20021117012017",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=ScreenShot&no=6010",
+  "sourceEngine": "zeroboard"
+}

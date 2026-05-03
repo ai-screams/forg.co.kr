@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "20074",
+  "title": "저항력은 방어구 안차면 마이너스로 떨어 지나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 제 템머 케릭과 전사케릭 등등 몇케릭이 방어구를 하나도 안차면 <br>\n<br>\n 물리가 마이너스로 떨어져 버립니다<br>\n<br>\n 템머는 방어구 안찬 물리 방어력이 -25정도 밖에 안돼는데<br>\n<br>\n 원래 마이너스로 떨어지는 건가요?<br>\n<br>\n 에드온 케릭을 보면 전부 0이어서요<br>\n<br>\n 답변 부탁드립니다~<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제 템머 케릭과 전사케릭 등등 몇케릭이 방어구를 하나도 안차면 물리가 마이너스로 떨어져 버립니다 템머는 방어구 안찬 물리 방어력이 -25정도 밖에 안돼는데 원래 마이너스로 떨어지는 건가요? 에드온 케릭을 보면 전부 0이어서요 답변 부탁드립니다~",
+  "author": "zembi",
+  "authorMemberNo": "21922",
+  "authorHomepage": null,
+  "createdAt": "2003-08-03T11:37:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " Magic Reflect 마법이 걸려 있기 때문입니다.<br>\n<br>\n 이 마법을 한 번 실행하면.... Physical Resistance가 (25 - (Inscription / 20)) 만큼 떨어지고, Fire/Cold/Energy/Poison Resistance가 10 포인트씩 올라갑니다. Inscription이 0이면 -25<br>\n<br>\n Magic Reflect 마법을 한 번 더 외우면 0 으로 돌아옵니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 매직리플렉션 한번 쌔려주세요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826123909",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=20074",
+  "sourceEngine": "zeroboard"
+}

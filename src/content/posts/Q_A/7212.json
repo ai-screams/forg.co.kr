@@ -1,0 +1,35 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "7212",
+  "title": "도서관 기부하기...(uoa)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  uoa로 기부하는 법이 있다던데 어케하는지 궁금합니다<br>\n<br>\n그리고 메절 5 알켐부적을 구할려는데 뭘로 기부하는게 젤 좋을까요?</td></tr></tbody></table>\n",
+  "bodyText": "uoa로 기부하는 법이 있다던데 어케하는지 궁금합니다 그리고 메절 5 알켐부적을 구할려는데 뭘로 기부하는게 젤 좋을까요?",
+  "author": "pyxis",
+  "authorMemberNo": "9458",
+  "authorHomepage": null,
+  "createdAt": "2007-09-28T00:54:19",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "안경을 제외한 물품은 어떤 NPC에게줘도 구할수있습니다.\n<br>  잉곳이나 가죽이나 나무가 그나마 젤 편하죠.\n<br>기부할때도 수량만 기입하면 일일히 클릭안해도 되고요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "얼마전 자원채취패치 이전에는 나무랑 광석이 고정장소에서 스폰되서 채취하기 쉬웠지만\n<br>이제는 고정장소에서 스폰이 안되서 그전보다는 힘들어졌습니다.\n<br>그래서 도서관 부적도 예전엔 저렴했었는데 이젠 비싸질거 같네요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071113104526",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=7212",
+  "sourceEngine": "zeroboard"
+}

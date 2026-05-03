@@ -1,0 +1,41 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "37383",
+  "title": "바이러스에서 발견된 메세지!",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t \"빌 게이츠, 왜 이런 일이 생기게 하지? <br>\n  돈은 그만벌고 소프트웨어나 고쳐\"<br>\n<br>\n .................<br>\n<br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#FF6699\" size=\"2\"><img src=\"http://cgi.chollian.net/~pouter07/forgsign/data/signblue.GIF\"></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "\"빌 게이츠, 왜 이런 일이 생기게 하지? 돈은 그만벌고 소프트웨어나 고쳐\" .................",
+  "author": "blueharp",
+  "authorMemberNo": "14895",
+  "authorHomepage": null,
+  "createdAt": "2003-08-12T16:07:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 멋지구만."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저,정말?!"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030826124436",
+  "parsedAt": "2026-05-03T17:22:08.021073",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=UoBoard&no=37383",
+  "sourceEngine": "zeroboard"
+}
