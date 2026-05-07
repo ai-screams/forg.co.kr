@@ -77,3 +77,20 @@ body {
     background-color 200ms ease,
     color 200ms ease;
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+ * Image recovery markers (ADR-0010 §Decision #5)
+ *
+ * Phase F (`04-rewrite-image-urls.py`) stamps every <img> with a
+ * `data-recovery` attribute set to either "ok" (Wayback fetch saved into
+ * /img/posts/...) or "failed" (placeholder swapped in for an unrecoverable
+ * URL). The original src is preserved on `data-original-src` for citation
+ * and future re-attempts. CSS only paints the failed state; the native
+ * `title` attribute carries the hover tooltip — `::after` does not render
+ * reliably on replaced elements.
+ * ───────────────────────────────────────────────────────────────────── */
+img[data-recovery="failed"] {
+  opacity: 0.5;
+  outline: 1px dashed var(--era-input-border);
+  outline-offset: 2px;
+}

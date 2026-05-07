@@ -132,7 +132,13 @@ _SANITISER_TAGS = {
 }  # fmt: skip
 _SANITISER_ATTRS: dict[str, set[str]] = {
     "a": {"href", "title"},
-    "img": {"src", "alt", "width", "height", "border"},
+    # `data-recovery` and `data-original-src` are stamped by Phase F
+    # (`04-rewrite-image-urls.py`) — keep them on the allowlist so a future
+    # nh3 pass cannot silently strip the recovery metadata. ADR-0010 §5.
+    "img": {
+        "src", "alt", "width", "height", "border", "title",
+        "data-recovery", "data-original-src",
+    },  # fmt: skip
     "td": {"colspan", "rowspan", "align", "valign", "bgcolor", "width", "height"},
     "th": {"colspan", "rowspan", "align", "valign", "bgcolor", "width", "height"},
     "table": {"border", "cellpadding", "cellspacing", "width", "bgcolor"},
