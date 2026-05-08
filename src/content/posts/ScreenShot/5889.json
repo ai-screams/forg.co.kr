@@ -4,7 +4,7 @@
   "postId": "5889",
   "title": "일본 울온5주년 기념 패키지",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/uo_mage.jpg\"><br>     \t\t\t     \t\t\t 흠 뒷북이 아니길 빌며 우리나라는 저런거 안나오남<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/uo_mage.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/uo_mage.jpg\"><br>     \t\t\t     \t\t\t 흠 뒷북이 아니길 빌며 우리나라는 저런거 안나오남<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "흠 뒷북이 아니길 빌며 우리나라는 저런거 안나오남",
   "author": "assagood",
   "authorMemberNo": "6203",
@@ -60,7 +60,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 180..일이라니..<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 180..일이라니..<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5889/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",

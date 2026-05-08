@@ -4,7 +4,7 @@
   "postId": "6116",
   "title": "울티마 온라인 피규어 6종",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/ULTIMA_ONLINE_set.jpg\"><br>     \t\t\t     \t\t\t 이중 절반은 수준 이하의 피규어라고 하더군여.................<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/ULTIMA_ONLINE_set.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/ULTIMA_ONLINE_set.jpg\"><br>     \t\t\t     \t\t\t 이중 절반은 수준 이하의 피규어라고 하더군여.................<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "이중 절반은 수준 이하의 피규어라고 하더군여.................",
   "author": "glittering",
   "authorMemberNo": "12904",
@@ -90,7 +90,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 카부르의 손을 보면..<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 카부르의 손을 보면..<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6116/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

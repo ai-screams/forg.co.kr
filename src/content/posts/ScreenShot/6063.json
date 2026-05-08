@@ -4,7 +4,7 @@
   "postId": "6063",
   "title": "쩝... 골드 이상 루닉해머좀 얻어보자...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/runic.jpg\"><br>     \t\t\t     \t\t\t 희망사항~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/runic.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/runic.jpg\"><br>     \t\t\t     \t\t\t 희망사항~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "희망사항~",
   "author": "Christian",
   "authorMemberNo": "8184",

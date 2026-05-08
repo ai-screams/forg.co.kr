@@ -4,7 +4,7 @@
   "postId": "5409",
   "title": "이거 왜그러죠,....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0166.jpg\"><br> <br>\n 어떻게 해결해야 하나요..... <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/UO0166.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/UO0166.jpg\"><br> <br>\n 어떻게 해결해야 하나요..... <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "어떻게 해결해야 하나요.....",
   "author": "kenel",
   "authorMemberNo": "2508",
@@ -48,7 +48,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 한글화가 제대로 이루어지지 않아서 그런것 같습니다. 다음번 패치를 기다리면 나오겠지요. 구속반지 라고 뜨겠죠? <img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+      "bodyHtml": " 한글화가 제대로 이루어지지 않아서 그런것 같습니다. 다음번 패치를 기다리면 나오겠지요. 구속반지 라고 뜨겠죠? <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_regular_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5409/m_regular_smile.gif\">"
     },
     {
       "author": "anonymous",

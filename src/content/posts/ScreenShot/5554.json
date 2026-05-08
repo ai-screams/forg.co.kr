@@ -4,7 +4,7 @@
   "postId": "5554",
   "title": "저희 챗창에서의 제 인기도는....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/dma.GIF\"><br>     \t\t\t     \t\t\t 이정도랍니다..<br>\n 모두 제가 되고싶어하죠.. -_-;;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/dma.GIF\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/dma.GIF\"><br>     \t\t\t     \t\t\t 이정도랍니다..<br>\n 모두 제가 되고싶어하죠.. -_-;;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "이정도랍니다.. 모두 제가 되고싶어하죠.. -_-;;;",
   "author": "minani7",
   "authorMemberNo": "0",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 닉네임 유지하시기 힘드시겠군요 ... 저는 아무도 안써서 좋던데 .. (그렇다고 이글보시고 제 닉네임 사용하시면 곤란해요!) <img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+      "bodyHtml": " 닉네임 유지하시기 힘드시겠군요 ... 저는 아무도 안써서 좋던데 .. (그렇다고 이글보시고 제 닉네임 사용하시면 곤란해요!) <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_regular_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5554/m_regular_smile.gif\">"
     },
     {
       "author": "minani7",

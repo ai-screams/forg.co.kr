@@ -4,7 +4,7 @@
   "postId": "5923",
   "title": "우드스탁님 퇴장 씬",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/WOODSTOCK.jpg\"><br>     \t\t\t     \t\t\t -ㅅㅠ;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/WOODSTOCK.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/WOODSTOCK.jpg\"><br>     \t\t\t     \t\t\t -ㅅㅠ;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "-ㅅㅠ;",
   "author": "chonox2",
   "authorMemberNo": "3381",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 나도 나왔네..<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 나도 나왔네..<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5923/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",

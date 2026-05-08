@@ -4,7 +4,7 @@
   "postId": "38845",
   "title": "출석체크하면?",
   "categoryLabel": null,
-  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 누구누구 있으려나.<br>\n<br>\n (난 자러가야지 = =;)<br>\n<br>\n 일찍자고 늦게일어나는 <br>\n<br>\n 나는야 조금 덜 착한 어린....어른<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#FF6699\" size=\"2\"><img src=\"http://cgi.chollian.net/~pouter07/forgsign/data/signblue.GIF\"></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 누구누구 있으려나.<br>\n<br>\n (난 자러가야지 = =;)<br>\n<br>\n 일찍자고 늦게일어나는 <br>\n<br>\n 나는야 조금 덜 착한 어린....어른<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#FF6699\" size=\"2\"><img data-original-src=\"http://cgi.chollian.net/~pouter07/forgsign/data/signblue.GIF\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: cgi.chollian.net/~pouter07/forgsign/data/signblue.GIF\"></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "누구누구 있으려나. (난 자러가야지 = =;) 일찍자고 늦게일어나는 나는야 조금 덜 착한 어린....어른",
   "author": "blueharp",
   "authorMemberNo": "14895",
@@ -108,7 +108,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 3:31 <img border=\"0\" src=\"emoticon/m_moon.gif\">"
+      "bodyHtml": " 3:31 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_moon.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/38845/m_moon.gif\">"
     },
     {
       "author": "anonymous",

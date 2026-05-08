@@ -4,7 +4,7 @@
   "postId": "5928",
   "title": "텔레토비 친구중 한명을 발견했다!!",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0249.jpg\"><br>     \t\t\t     \t\t\t 텔레토비 동산을 어디에 두고, 다른 텔레토비 친구들은 어디에 두고<br>\n 여기로 혼자 온거냔말이닷!! _-_<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/UO0249.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/UO0249.jpg\"><br>     \t\t\t     \t\t\t 텔레토비 동산을 어디에 두고, 다른 텔레토비 친구들은 어디에 두고<br>\n 여기로 혼자 온거냔말이닷!! _-_<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "텔레토비 동산을 어디에 두고, 다른 텔레토비 친구들은 어디에 두고 여기로 혼자 온거냔말이닷!! _-_",
   "author": "digicharat01",
   "authorMemberNo": "9135",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 무슨 잼을 드릴까요 <img border=\"0\" src=\"emoticon/m_embaressed_smile.gif\">"
+      "bodyHtml": " 무슨 잼을 드릴까요 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_embaressed_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5928/m_embaressed_smile.gif\">"
     },
     {
       "author": "anonymous",

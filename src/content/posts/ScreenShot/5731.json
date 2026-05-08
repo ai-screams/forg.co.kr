@@ -4,7 +4,7 @@
   "postId": "5731",
   "title": "120/120 아가파이트 폴플 대규모디드 보상품",
   "categoryLabel": "베리떼",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/둥둥둥.JPG\"><br> <img border=\"0\" src=\"data/베라이트루닉.JPG\"><br>     \t\t\t 후아아아앙 드뎌 성공 -_-<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/둥둥둥.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/둥둥둥.JPG\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/베라이트루닉.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/베라이트루닉.JPG\"><br>     \t\t\t 후아아아앙 드뎌 성공 -_-<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "후아아아앙 드뎌 성공 -_-",
   "author": "징징언냐∼♡",
   "authorMemberNo": "10511",
@@ -65,7 +65,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 굿 <img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+      "bodyHtml": " 굿 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5731/m_omg_smile.gif\">"
     },
     {
       "author": "anonymous",

@@ -4,7 +4,7 @@
   "postId": "5747",
   "title": "바탕화면6번주자 릴레이는 계속된다",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1034930509/batang.jpg\"><br>     \t\t\t     \t\t\t 릴레이는 계속된다<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1034930509/batang.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1034930509/batang.jpg\"><br>     \t\t\t     \t\t\t 릴레이는 계속된다<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "릴레이는 계속된다",
   "author": "interflo",
   "authorMemberNo": "12597",
@@ -66,7 +66,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 데스크탑 이뿌네여 <img border=\"0\" src=\"emoticon/m_wink_smile.gif\">"
+      "bodyHtml": " 데스크탑 이뿌네여 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_wink_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5747/m_wink_smile.gif\">"
     },
     {
       "author": "anonymous",

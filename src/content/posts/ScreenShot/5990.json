@@ -4,7 +4,7 @@
   "postId": "5990",
   "title": "타워 마블로 개조하다 (기대는 하지 마시길)",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0537.jpg\"><br> <img border=\"0\" src=\"data/UO0538.jpg\"><br>     \t\t\t -_- 푸른 대리석 계단을 찾을 수 없었기에 좀 노란빛을 사용했습니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/UO0537.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/UO0537.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/UO0538.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/UO0538.jpg\"><br>     \t\t\t -_- 푸른 대리석 계단을 찾을 수 없었기에 좀 노란빛을 사용했습니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "-_- 푸른 대리석 계단을 찾을 수 없었기에 좀 노란빛을 사용했습니다.",
   "author": "sos550",
   "authorMemberNo": "5862",
@@ -89,7 +89,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 우와 멋있어요<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 우와 멋있어요<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5990/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

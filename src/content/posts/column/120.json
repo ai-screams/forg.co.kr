@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 멋있습니다 <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 멋있습니다 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_thumbs_up.gif\">"
     },
     {
       "author": "Leviathan",
@@ -66,7 +66,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 글을 일고 잠시 저만의 생각에 빠지게 되더군요. <br>\n 재밋게 잘읽엇습니다.<img border=\"0\" src=\"emoticon/m_beer_yum.gif\"><img border=\"0\" src=\"emoticon/m_martini_shaken.gif\"><img border=\"0\" src=\"emoticon/m_cake.gif\"><img border=\"0\" src=\"emoticon/m_camera.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 글을 일고 잠시 저만의 생각에 빠지게 되더군요. <br>\n 재밋게 잘읽엇습니다.<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_beer_yum.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_beer_yum.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_martini_shaken.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_martini_shaken.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_cake.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_cake.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_camera.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_camera.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/column/120/m_thumbs_up.gif\">"
     }
   ],
   "era": "2003",

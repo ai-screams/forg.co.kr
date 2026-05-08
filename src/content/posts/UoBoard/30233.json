@@ -4,7 +4,7 @@
   "postId": "30233",
   "title": "포그님",
   "categoryLabel": null,
-  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 성은은 필요 없슈 -_-;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><a href=\"http://kritz.uospace.net\"><img border=\"0\" src=\"http://kritz.uospace.net/kritz_sn.jpg\"></a></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 성은은 필요 없슈 -_-;<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><a href=\"http://kritz.uospace.net\"><img border=\"0\" data-original-src=\"http://kritz.uospace.net/kritz_sn.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: kritz.uospace.net/kritz_sn.jpg\"></a></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "성은은 필요 없슈 -_-;",
   "author": "Kritz",
   "authorMemberNo": "2248",
@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " -_-<img border=\"0\" src=\"emoticon/m_dude_hug.gif\">"
+      "bodyHtml": " -_-<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_dude_hug.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_dude_hug.gif\">"
     },
     {
       "author": "anonymous",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " =_=<img border=\"0\" src=\"emoticon/m_dude_hug.gif\">"
+      "bodyHtml": " =_=<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_dude_hug.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_dude_hug.gif\">"
     },
     {
       "author": "anonymous",
@@ -54,13 +54,13 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_dude_hug.gif\"><img border=\"0\" src=\"emoticon/m_beer_yum.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_dude_hug.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_dude_hug.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_beer_yum.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_beer_yum.gif\">"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_beer_yum.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\"><img border=\"0\" src=\"emoticon/m_tounge_smile.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_beer_yum.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_beer_yum.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_thumbs_up.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_tounge_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_tounge_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -84,7 +84,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 설마 아마겟돈 <img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 설마 아마겟돈 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -108,7 +108,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/u_14.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_14.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/30233/u_14.gif\">"
     }
   ],
   "era": "2003",

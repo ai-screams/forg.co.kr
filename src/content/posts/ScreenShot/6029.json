@@ -4,7 +4,7 @@
   "postId": "6029",
   "title": "앰버의 버그나라 -ㅂ-/ 3",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/뭐..뭐야_이건____.jpg\"><br> <img border=\"0\" src=\"data/비틀.jpg\"><br>     \t\t\t ㅡ.ㅡ;;<br>\n 알수없는 버그...<br>\n<br>\n 그리고 비틀 벽에 쑤셔넣기<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/뭐..뭐야_이건____.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/뭐..뭐야_이건____.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/비틀.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/비틀.jpg\"><br>     \t\t\t ㅡ.ㅡ;;<br>\n 알수없는 버그...<br>\n<br>\n 그리고 비틀 벽에 쑤셔넣기<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "ㅡ.ㅡ;; 알수없는 버그... 그리고 비틀 벽에 쑤셔넣기",
   "author": "iamamber",
   "authorMemberNo": "5837",
@@ -29,7 +29,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\"><img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6029/m_thumbs_up.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6029/m_thumbs_up.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6029/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

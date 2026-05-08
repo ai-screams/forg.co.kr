@@ -4,7 +4,7 @@
   "postId": "5709",
   "title": "나도 아티스트!!",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/EVA.JPG\"><br>     \t\t\t     \t\t\t 못햇다고 뭐라하지마세요 ㅠ,.ㅠ <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/EVA.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/EVA.JPG\"><br>     \t\t\t     \t\t\t 못햇다고 뭐라하지마세요 ㅠ,.ㅠ <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "못햇다고 뭐라하지마세요 ㅠ,.ㅠ",
   "author": "파란바다",
   "authorMemberNo": "10061",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/u_31.gif\"><img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_31.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5709/u_31.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5709/m_omg_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -48,7 +48,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5709/m_omg_smile.gif\">"
     },
     {
       "author": "anonymous",

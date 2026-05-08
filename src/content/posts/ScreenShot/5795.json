@@ -4,7 +4,7 @@
   "postId": "5795",
   "title": "울온의 D&D화...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/d&amp;d.gif\"><br> <br>\n 하지만 이건 울온이 아니겠죠...<br>\n<br>\n -_- 그나저나 실력이 딸려서 의도한 생각을 표현하지도 못하고.. -0- 지저분하게 되버렸군요 <br>\n<br>\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/d&d.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/d&d.gif\"><br> <br>\n 하지만 이건 울온이 아니겠죠...<br>\n<br>\n -_- 그나저나 실력이 딸려서 의도한 생각을 표현하지도 못하고.. -0- 지저분하게 되버렸군요 <br>\n<br>\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "하지만 이건 울온이 아니겠죠... -_- 그나저나 실력이 딸려서 의도한 생각을 표현하지도 못하고.. -0- 지저분하게 되버렸군요",
   "author": "◀eXodUs▷",
   "authorMemberNo": "2058",
@@ -84,7 +84,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 구..굿임다..   <img border=\"0\" src=\"emoticon/u_14.gif\">"
+      "bodyHtml": " 구..굿임다..   <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_14.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5795/u_14.gif\">"
     },
     {
       "author": "anonymous",

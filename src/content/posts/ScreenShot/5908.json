@@ -4,7 +4,7 @@
   "postId": "5908",
   "title": "무언의 2컷.",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1035633560/1.jpg\"><br>     \t\t\t     \t\t\t ...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1035633560/1.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1035633560/1.jpg\"><br>     \t\t\t     \t\t\t ...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "...",
   "author": "crimsn",
   "authorMemberNo": "2594",
@@ -24,13 +24,13 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_cry_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5908/m_cry_smile.gif\">"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "  용과 썸씽이 <img border=\"0\" src=\"emoticon/m_embaressed_smile.gif\"><img border=\"0\" src=\"emoticon/m_embaressed_smile.gif\">"
+      "bodyHtml": "  용과 썸씽이 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_embaressed_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5908/m_embaressed_smile.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_embaressed_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5908/m_embaressed_smile.gif\">"
     },
     {
       "author": "anonymous",

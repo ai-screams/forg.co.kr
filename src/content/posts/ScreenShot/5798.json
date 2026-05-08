@@ -4,7 +4,7 @@
   "postId": "5798",
   "title": "뱅퀴싱...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/뱅퀴싱픽액스.jpg\"><br>     \t\t\t     \t\t\t 집정리를 하다보니...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/뱅퀴싱픽액스.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/뱅퀴싱픽액스.jpg\"><br>     \t\t\t     \t\t\t 집정리를 하다보니...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "집정리를 하다보니...",
   "author": "타이거스핀",
   "authorMemberNo": "12363",
@@ -72,7 +72,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 이런이런 전 실뱅 양치기 지팡이가 -_-<img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+      "bodyHtml": " 이런이런 전 실뱅 양치기 지팡이가 -_-<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_regular_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5798/m_regular_smile.gif\">"
     }
   ],
   "era": "2003",

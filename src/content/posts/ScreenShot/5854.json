@@ -4,7 +4,7 @@
   "postId": "5854",
   "title": "일본 야마토 샤드엔 발러 루닉이 있었다....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/일본엔_발러_루닉이_있다.jpg\"><br>     \t\t\t     \t\t\t 울나란 왜 없는겁니깡!!!!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/일본엔_발러_루닉이_있다.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/일본엔_발러_루닉이_있다.jpg\"><br>     \t\t\t     \t\t\t 울나란 왜 없는겁니깡!!!!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "울나란 왜 없는겁니깡!!!!",
   "author": "yjs1g",
   "authorMemberNo": "8409",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 저건 뭐죠 나메탄 사람 뒤에 아이스몽뱃 같이 보이는거요<img border=\"0\" src=\"emoticon/u_20.gif\">"
+      "bodyHtml": " 저건 뭐죠 나메탄 사람 뒤에 아이스몽뱃 같이 보이는거요<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_20.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5854/u_20.gif\">"
     },
     {
       "author": "anonymous",

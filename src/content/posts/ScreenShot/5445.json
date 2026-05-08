@@ -4,7 +4,7 @@
   "postId": "5445",
   "title": "포그홈의 버그1",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/YGG.jpg\"><br>     \t\t\t     \t\t\t 어쩌다 보니 -_-;;;<br>\n 업로드제한때문에 색이 좀 구립니다요<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/YGG.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/YGG.jpg\"><br>     \t\t\t     \t\t\t 어쩌다 보니 -_-;;;<br>\n 업로드제한때문에 색이 좀 구립니다요<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "어쩌다 보니 -_-;;; 업로드제한때문에 색이 좀 구립니다요",
   "author": "타이거스핀",
   "authorMemberNo": "12363",

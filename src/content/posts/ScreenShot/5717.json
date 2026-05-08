@@ -4,7 +4,7 @@
   "postId": "5717",
   "title": "여러분도 해보세요",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1034825237/UO0039.jpg\"><br>     \t\t\t     \t\t\t 소리를 크게 틀어놓구<br>\n 많은종을 차례로 쳐보니<br>\n 아주 예쁜소리가 나더군요 <br>\n 여러분도 해보세요 :)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1034825237/UO0039.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1034825237/UO0039.jpg\"><br>     \t\t\t     \t\t\t 소리를 크게 틀어놓구<br>\n 많은종을 차례로 쳐보니<br>\n 아주 예쁜소리가 나더군요 <br>\n 여러분도 해보세요 :)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "소리를 크게 틀어놓구 많은종을 차례로 쳐보니 아주 예쁜소리가 나더군요 여러분도 해보세요 :)",
   "author": "rjskcjswo",
   "authorMemberNo": "8704",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 오 집 이쁘네요 <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 오 집 이쁘네요 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5717/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

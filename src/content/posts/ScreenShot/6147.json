@@ -4,7 +4,7 @@
   "postId": "6147",
   "title": "이사람들이 겜마 맞나여?",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/illus52.jpg\"><br>     \t\t\t     \t\t\t ㅡ,.ㅡ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/illus52.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/illus52.jpg\"><br>     \t\t\t     \t\t\t ㅡ,.ㅡ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "ㅡ,.ㅡ",
   "author": "romadsw",
   "authorMemberNo": "5694",
@@ -66,7 +66,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 헛...<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 헛...<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6147/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -186,7 +186,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 윽 내가 생각한 겜마 이미지는 저런 것(?)이 아니야~ 절망~~~<img border=\"0\" src=\"emoticon/u_logo.gif\">"
+      "bodyHtml": " 윽 내가 생각한 겜마 이미지는 저런 것(?)이 아니야~ 절망~~~<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_logo.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6147/u_logo.gif\">"
     },
     {
       "author": "anonymous",

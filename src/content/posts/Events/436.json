@@ -4,7 +4,7 @@
   "postId": "436",
   "title": "ToReal이 여러분곁에 다가갑니다.",
   "categoryLabel": null,
-  "bodyHtml": "\n<a href=\"data/pr1e.jpg\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" height=\"800\" src=\"data/pr1e.jpg\" width=\"630\"></a><br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#FF6699\" size=\"2\"><img src=\"http://forg.co.kr/_zb/data/signblue.GIF\"></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<a href=\"data/pr1e.jpg\" title=\"클릭하면 원본을 볼수 있습니다.\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/pr1e.jpg\" data-recovery=\"failed\" height=\"800\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/pr1e.jpg\" width=\"630\"></a><br>\n<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div><font color=\"#FF6699\" size=\"2\"><img data-original-src=\"http://forg.co.kr/_zb/data/signblue.GIF\" data-recovery=\"ok\" src=\"/img/posts/Events/436/signblue.GIF\"></font></div> </td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": " ",
   "author": "blueharp",
   "authorMemberNo": "14895",
@@ -54,7 +54,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 움...<br>\n 이뿌당,,,<br>\n 으네사진인가?!!!!?<img border=\"0\" src=\"emoticon/m_teeth_smile.gif\">"
+      "bodyHtml": " 움...<br>\n 이뿌당,,,<br>\n 으네사진인가?!!!!?<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_teeth_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/Events/436/m_teeth_smile.gif\">"
     },
     {
       "author": "anonymous",

@@ -4,7 +4,7 @@
   "postId": "6004",
   "title": "제 모습 제 2탄!",
   "categoryLabel": "NOT SS",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1036235014/my_face.jpg\"><br>     \t\t\t     \t\t\t 저거와 좀 닮았다고 생각하시면 됩니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1036235014/my_face.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1036235014/my_face.jpg\"><br>     \t\t\t     \t\t\t 저거와 좀 닮았다고 생각하시면 됩니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "저거와 좀 닮았다고 생각하시면 됩니다.",
   "author": "sos550",
   "authorMemberNo": "5862",

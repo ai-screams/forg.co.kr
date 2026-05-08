@@ -4,7 +4,7 @@
   "postId": "558",
   "title": "♧ 천하제일 무투회 - 아리랑편 -",
   "categoryLabel": "이벤트",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/Events/no1.jpg\" style=\"cursor:hand\"><br>\n<img border=\"0\" src=\"data/Events/no2.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ◎ 일&nbsp;&nbsp;시&nbsp;&nbsp;:&nbsp;&nbsp;04.&nbsp;&nbsp;10.&nbsp;&nbsp;7. (목)&nbsp;&nbsp;밤 10시 . <br>\n<br>\n◎ 장&nbsp;&nbsp;소&nbsp;&nbsp;:&nbsp;&nbsp;트라멜&nbsp;&nbsp;희생의 사원 근처,&nbsp;&nbsp;사설 이벤트 하우스.<br>\n<br>\n◎ 내&nbsp;&nbsp;용&nbsp;&nbsp;:&nbsp;&nbsp;아량 최고의 용사를 뽑는 무투회.<br>\n<br>\n<br>\n<br>\n스크린샷란을 이용해 주세요.^^<br>\n<br>\n내용이 업데이트 되거든요.&amp;^^</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Events/no1.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/Events/no1.jpg\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Events/no2.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/Events/no2.jpg\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ◎ 일&nbsp;&nbsp;시&nbsp;&nbsp;:&nbsp;&nbsp;04.&nbsp;&nbsp;10.&nbsp;&nbsp;7. (목)&nbsp;&nbsp;밤 10시 . <br>\n<br>\n◎ 장&nbsp;&nbsp;소&nbsp;&nbsp;:&nbsp;&nbsp;트라멜&nbsp;&nbsp;희생의 사원 근처,&nbsp;&nbsp;사설 이벤트 하우스.<br>\n<br>\n◎ 내&nbsp;&nbsp;용&nbsp;&nbsp;:&nbsp;&nbsp;아량 최고의 용사를 뽑는 무투회.<br>\n<br>\n<br>\n<br>\n스크린샷란을 이용해 주세요.^^<br>\n<br>\n내용이 업데이트 되거든요.&^^</td></tr></tbody></table>\n",
   "bodyText": "◎ 일  시  :  04.  10.  7. (목)  밤 10시 . ◎ 장  소  :  트라멜  희생의 사원 근처,  사설 이벤트 하우스. ◎ 내  용  :  아량 최고의 용사를 뽑는 무투회. 스크린샷란을 이용해 주세요.^^ 내용이 업데이트 되거든요.&^^",
   "author": "swordrim",
   "authorMemberNo": "28338",
@@ -29,7 +29,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "우...우와...<img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": "우...우와...<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/Events/558/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

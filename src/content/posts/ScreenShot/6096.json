@@ -4,7 +4,7 @@
   "postId": "6096",
   "title": "RCT2 제가 만든 공원이에요~",
   "categoryLabel": "울온외",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/SCR2.jpg\"><br>     \t\t\t     \t\t\t 자랑하고 싶은데 올릴곳은 없어서 ,,,<br>\n<br>\n 한번만 봐주세요~~^^<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/SCR2.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/SCR2.jpg\"><br>     \t\t\t     \t\t\t 자랑하고 싶은데 올릴곳은 없어서 ,,,<br>\n<br>\n 한번만 봐주세요~~^^<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "자랑하고 싶은데 올릴곳은 없어서 ,,, 한번만 봐주세요~~^^",
   "author": "브리타니안",
   "authorMemberNo": "2545",
@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6096/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

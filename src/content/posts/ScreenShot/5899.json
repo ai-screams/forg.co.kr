@@ -4,7 +4,7 @@
   "postId": "5899",
   "title": "밑에 내 캐릭 스샷들을 이용해서 만든 배경화면...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/abx.jpg\"><br>     \t\t\t     \t\t\t 괜찮나요? 걍 윈도우 그림판하고... 유오 홈피 그림 따와서 만들었음.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/abx.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/abx.jpg\"><br>     \t\t\t     \t\t\t 괜찮나요? 걍 윈도우 그림판하고... 유오 홈피 그림 따와서 만들었음.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "괜찮나요? 걍 윈도우 그림판하고... 유오 홈피 그림 따와서 만들었음.",
   "author": "Christian",
   "authorMemberNo": "8184",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5899/m_thumbs_up.gif\">"
     },
     {
       "author": "티파선녀",

@@ -4,7 +4,7 @@
   "postId": "5325",
   "title": "드디어~~ 완성 했습니다~!~!!!!",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1033132699/UO0007.jpg\"><br>     \t\t\t     \t\t\t 프로보 120..ㅠ.ㅠ<br>\n<br>\n 우오오.....ㅠ.ㅠ<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1033132699/UO0007.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1033132699/UO0007.jpg\"><br>     \t\t\t     \t\t\t 프로보 120..ㅠ.ㅠ<br>\n<br>\n 우오오.....ㅠ.ㅠ<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "프로보 120..ㅠ.ㅠ 우오오.....ㅠ.ㅠ",
   "author": "likyo",
   "authorMemberNo": "10566",
@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 축하드려요<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 축하드려요<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5325/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 이럴수가<img border=\"0\" src=\"emoticon/m_cry_smile.gif\">"
+      "bodyHtml": " 이럴수가<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_cry_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5325/m_cry_smile.gif\">"
     },
     {
       "author": "anonymous",

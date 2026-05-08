@@ -4,7 +4,7 @@
   "postId": "5770",
   "title": "여기가 어디지요?",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/map1.jpg\"><br>     \t\t\t     \t\t\t 아시는 분 리플 부탁 ^^/<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/map1.jpg\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5770/map1.jpg\"><br>     \t\t\t     \t\t\t 아시는 분 리플 부탁 ^^/<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "아시는 분 리플 부탁 ^^/",
   "author": "해오라기",
   "authorMemberNo": "2544",

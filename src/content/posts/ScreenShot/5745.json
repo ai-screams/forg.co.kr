@@ -4,7 +4,7 @@
   "postId": "5745",
   "title": "제 배경화면",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/britney01_a.jpg\"><br>     \t\t\t     \t\t\t 임니당..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/britney01_a.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/britney01_a.jpg\"><br>     \t\t\t     \t\t\t 임니당..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "임니당..",
   "author": "rjskcjswo",
   "authorMemberNo": "8704",
@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 데스크탑 릴레이의 시작 인가 -_-;;<br>\n 울온 하다보면 저 아이 생각 많이 난다는...브리트니 장창들...<img border=\"0\" src=\"emoticon/m_teeth_smile.gif\">"
+      "bodyHtml": " 데스크탑 릴레이의 시작 인가 -_-;;<br>\n 울온 하다보면 저 아이 생각 많이 난다는...브리트니 장창들...<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_teeth_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5745/m_teeth_smile.gif\">"
     },
     {
       "author": "anonymous",

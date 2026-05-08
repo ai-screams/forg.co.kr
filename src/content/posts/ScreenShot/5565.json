@@ -4,7 +4,7 @@
   "postId": "5565",
   "title": "0.1!!!!!!",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1033984420/UO0205.jpg\"><br>     \t\t\t     \t\t\t 몇개월의 모험 끝에 지엠이 다가오는...<br>\n 0.1!<br>\n 0.1!<br>\n 흠... 엘더까지 무난하게 가기를.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1033984420/UO0205.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1033984420/UO0205.jpg\"><br>     \t\t\t     \t\t\t 몇개월의 모험 끝에 지엠이 다가오는...<br>\n 0.1!<br>\n 0.1!<br>\n 흠... 엘더까지 무난하게 가기를.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "몇개월의 모험 끝에 지엠이 다가오는... 0.1! 0.1! 흠... 엘더까지 무난하게 가기를.",
   "author": "hogoom",
   "authorMemberNo": "5817",
@@ -30,7 +30,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " .set skill Musicianship 1200 <img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+      "bodyHtml": " .set skill Musicianship 1200 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_regular_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5565/m_regular_smile.gif\">"
     }
   ],
   "era": "2003",

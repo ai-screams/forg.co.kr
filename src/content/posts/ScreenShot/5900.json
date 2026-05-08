@@ -4,7 +4,7 @@
   "postId": "5900",
   "title": "울온 5주년기념으로 만든..",
   "categoryLabel": "바탕화면",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/LlamaMild_1280x960.jpg\"><br>     \t\t\t     \t\t\t 출처는 .. 에 기억이 안남..-0-<br>\n bmp버전이나 낮은 해상도 버전을 원하시는분은 쪽지..; 주세요..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/LlamaMild_1280x960.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/LlamaMild_1280x960.jpg\"><br>     \t\t\t     \t\t\t 출처는 .. 에 기억이 안남..-0-<br>\n bmp버전이나 낮은 해상도 버전을 원하시는분은 쪽지..; 주세요..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "출처는 .. 에 기억이 안남..-0- bmp버전이나 낮은 해상도 버전을 원하시는분은 쪽지..; 주세요..",
   "author": "crimsn",
   "authorMemberNo": "2594",
@@ -42,7 +42,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 푸하하하핫~ <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": " 푸하하하핫~ <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5900/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

@@ -4,7 +4,7 @@
   "postId": "37434",
   "title": "갑니다 출석체크!",
   "categoryLabel": null,
-  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 포스가 함께하길.......<br>\n<br>\n 1:58!!!<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#EF5900\" size=\"2\">\n맘에 안들어...\n<img src=\"http://user.chollian.net/~pouter07/forgsign/data/karrot2.gif\">\n</font></div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 포스가 함께하길.......<br>\n<br>\n 1:58!!!<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<div>\n<font color=\"#EF5900\" size=\"2\">\n맘에 안들어...\n<img data-original-src=\"http://user.chollian.net/~pouter07/forgsign/data/karrot2.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: user.chollian.net/~pouter07/forgsign/data/karrot2.gif\">\n</font></div>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "포스가 함께하길....... 1:58!!! 맘에 안들어...",
   "author": "karrot",
   "authorMemberNo": "22079",
@@ -48,7 +48,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 2:17 <img border=\"0\" src=\"emoticon/m_moon.gif\">"
+      "bodyHtml": " 2:17 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_moon.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/37434/m_moon.gif\">"
     },
     {
       "author": "anonymous",

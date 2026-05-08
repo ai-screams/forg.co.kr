@@ -4,7 +4,7 @@
   "postId": "5746",
   "title": "데스크탑 릴레이 5번 주자. 저의 배경화면 입니다...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/푸.jpg\"><br>     \t\t\t     \t\t\t 곰돌이.. 푸우.... 입니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/푸.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/푸.jpg\"><br>     \t\t\t     \t\t\t 곰돌이.. 푸우.... 입니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "곰돌이.. 푸우.... 입니다.",
   "author": "kenel",
   "authorMemberNo": "2508",

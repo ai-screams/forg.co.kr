@@ -4,7 +4,7 @@
   "postId": "7",
   "title": "밤을 느껴보자...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/night.jpg\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  많은 온라인 게임중에 밤이라는것을 느낄수 있는 온라인 게임은 드물다. <br>\n울온에서는 비록 밤이 있지만 밤을 느끼는 플레이어들은 얼마나 될까? 어둠이 드리우면 바로 인로어를 해 밤을 느낄수가 거의 없을것이다. 뉴비 시절에는 어두운 브리타니아를 거닐어본 경험이 다들 있을것이다. 하지만 지금은 모두 인로어를 하고 있을것이다... 물론 아닌사람도 있겠지만... 어두운 밤에 랜턴이나 촛불하나를 들고 서있어 보자... 항상 환한 세상에 있었을때와는 다른 느낌이 들것이다.</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/night.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/night.jpg\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  많은 온라인 게임중에 밤이라는것을 느낄수 있는 온라인 게임은 드물다. <br>\n울온에서는 비록 밤이 있지만 밤을 느끼는 플레이어들은 얼마나 될까? 어둠이 드리우면 바로 인로어를 해 밤을 느낄수가 거의 없을것이다. 뉴비 시절에는 어두운 브리타니아를 거닐어본 경험이 다들 있을것이다. 하지만 지금은 모두 인로어를 하고 있을것이다... 물론 아닌사람도 있겠지만... 어두운 밤에 랜턴이나 촛불하나를 들고 서있어 보자... 항상 환한 세상에 있었을때와는 다른 느낌이 들것이다.</td></tr></tbody></table>\n",
   "bodyText": "많은 온라인 게임중에 밤이라는것을 느낄수 있는 온라인 게임은 드물다. 울온에서는 비록 밤이 있지만 밤을 느끼는 플레이어들은 얼마나 될까? 어둠이 드리우면 바로 인로어를 해 밤을 느낄수가 거의 없을것이다. 뉴비 시절에는 어두운 브리타니아를 거닐어본 경험이 다들 있을것이다. 하지만 지금은 모두 인로어를 하고 있을것이다... 물론 아닌사람도 있겠지만... 어두운 밤에 랜턴이나 촛불하나를 들고 서있어 보자... 항상 환한 세상에 있었을때와는 다른 느낌이 들것이다.",
   "author": "[RoK]뮤직",
   "authorMemberNo": "0",
@@ -48,7 +48,7 @@
       "author": "HYUN",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "흐...전 바닥에 랜턴 마구 깔아놓구 ....잡았죠......-0-;<br>\n 갈때마다 한 10개씩 사서.....흐흐....<img border=\"0\" src=\"emoticon/u_17.gif\">"
+      "bodyHtml": "흐...전 바닥에 랜턴 마구 깔아놓구 ....잡았죠......-0-;<br>\n 갈때마다 한 10개씩 사서.....흐흐....<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_17.gif\" data-recovery=\"ok\" src=\"/img/posts/column/7/u_17.gif\">"
     }
   ],
   "era": "2003",

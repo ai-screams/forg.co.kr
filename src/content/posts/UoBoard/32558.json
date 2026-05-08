@@ -4,7 +4,7 @@
   "postId": "32558",
   "title": "데르군 드디어 질렀다.",
   "categoryLabel": null,
-  "bodyHtml": "\n<a href=\"http://tplin.nahome.org/cgi-bin/br/\">http://tplin.nahome.org/cgi-bin/br/</a><br>\n 앗싸 좋구나!<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br><div><img src=\"http://cgi.chollian.net/~pouter07/forgsign/data/sasimi.jpg\"><br><font color=\"#333333\">다들 잘 알았죠~?</font> </div></td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<a href=\"http://tplin.nahome.org/cgi-bin/br/\">http://tplin.nahome.org/cgi-bin/br/</a><br>\n 앗싸 좋구나!<br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n<br><div><img data-original-src=\"http://cgi.chollian.net/~pouter07/forgsign/data/sasimi.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: cgi.chollian.net/~pouter07/forgsign/data/sasimi.jpg\"><br><font color=\"#333333\">다들 잘 알았죠~?</font> </div></td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "http://tplin.nahome.org/cgi-bin/br/ 앗싸 좋구나! 다들 잘 알았죠~?",
   "author": "데르카즈",
   "authorMemberNo": "20432",
@@ -144,7 +144,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 그건 경험자다 보니까..  부끄<img border=\"0\" src=\"emoticon/m_embaressed_smile.gif\"><br>\n<br>\n"
+      "bodyHtml": " 그건 경험자다 보니까..  부끄<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_embaressed_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/UoBoard/32558/m_embaressed_smile.gif\"><br>\n<br>\n"
     },
     {
       "author": "anonymous",

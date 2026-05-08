@@ -4,7 +4,7 @@
   "postId": "6151",
   "title": "나는 데몬이다~",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/1037028789/데몬.jpg\"><br>     \t\t\t     \t\t\t 얼쑤<br>\n<br>\n 그래픽카드 바꾸고 처음해보는 써드돈~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/1037028789/데몬.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/1037028789/데몬.jpg\"><br>     \t\t\t     \t\t\t 얼쑤<br>\n<br>\n 그래픽카드 바꾸고 처음해보는 써드돈~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "얼쑤 그래픽카드 바꾸고 처음해보는 써드돈~",
   "author": "브리타니안",
   "authorMemberNo": "2545",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 트루 오우거다!<img border=\"0\" src=\"emoticon/m_tounge_smile.gif\">"
+      "bodyHtml": " 트루 오우거다!<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_tounge_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/6151/m_tounge_smile.gif\">"
     },
     {
       "author": "anonymous",

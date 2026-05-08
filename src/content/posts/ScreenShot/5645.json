@@ -4,7 +4,7 @@
   "postId": "5645",
   "title": "무게가 잘못 표시되네요.....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/strange.JPG\"><br>     \t\t\t     \t\t\t .....<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/strange.JPG\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5645/strange.JPG\"><br>     \t\t\t     \t\t\t .....<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": ".....",
   "author": "shulgi",
   "authorMemberNo": "3596",

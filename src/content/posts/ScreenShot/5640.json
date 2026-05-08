@@ -4,7 +4,7 @@
   "postId": "5640",
   "title": "나의 ~~스텟",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/UoCap13455341.jpg\"><br>     \t\t\t     \t\t\t 나의 머찐케릭의 스텟입니당~_~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/UoCap13455341.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/UoCap13455341.jpg\"><br>     \t\t\t     \t\t\t 나의 머찐케릭의 스텟입니당~_~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "나의 머찐케릭의 스텟입니당~_~",
   "author": "Akari",
   "authorMemberNo": "4268",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " ..<br>\n<br>\n 그림판으로 편집을...?<img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+      "bodyHtml": " ..<br>\n<br>\n 그림판으로 편집을...?<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/ScreenShot/5640/m_omg_smile.gif\">"
     },
     {
       "author": "anonymous",
