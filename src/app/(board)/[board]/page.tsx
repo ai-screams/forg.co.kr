@@ -2,8 +2,11 @@
  * Board landing — page 1 of `/[board]`.
  *
  * Static export with `dynamicParams = false`. `generateStaticParams`
- * lists every board id whose `index-1.json` exists, so unparsed boards
- * just 404 (and quietly start working once their parser lands).
+ * enumerates every board id from `src/lib/boards.ts` so ALL documented
+ * boards have a stable URL — boards whose posts haven't been parsed yet
+ * (Gnuboard4 / Phase B / forg.kr) render a `<BoardPlaceholder>` rather
+ * than 404. The museum's promise: every documented board lives at a
+ * URL, even if it's still empty.
  *
  * Page 1 is canonical at `/{board}/`; pages 2+ live under
  * `/{board}/page/{N}/` to avoid colliding with the post route at
@@ -14,7 +17,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
-import { getBoard, isBoardId, listBoards, type BoardId } from "@/lib/boards";
+import { BoardPlaceholder } from "@/components/board-placeholder";
+import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardIndex } from "@/lib/posts";
 
 export const dynamicParams = false;
@@ -28,14 +32,8 @@ interface RouteProps {
 }
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  const boards = listBoards();
-  const checks = await Promise.all(
-    boards.map(async (b) => {
-      const index = await getBoardIndex(b.id as BoardId, 1);
-      return index ? { board: b.id } : null;
-    }),
-  );
-  return checks.filter((p): p is RouteParams => p !== null);
+  // All registered boards get a /{board} URL, parsed or not.
+  return listBoards().map((b) => ({ board: b.id }));
 }
 
 export async function generateMetadata({ params }: RouteProps): Promise<Metadata> {
@@ -43,8 +41,15 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   if (!isBoardId(board)) return {};
 
   const meta = getBoard(board);
+  if (!meta) return {};
+
   const index = await getBoardIndex(board, 1);
-  if (!meta || !index) return {};
+  if (!index) {
+    return {
+      title: `${meta.nameKr} (준비 중) — forg.co.kr`,
+      description: `${meta.nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
+    };
+  }
 
   return {
     title: `${meta.nameKr} — forg.co.kr`,
@@ -56,8 +61,17 @@ export default async function BoardPageOne({ params }: RouteProps) {
   const { board } = await params;
   if (!isBoardId(board)) notFound();
 
+  const meta = getBoard(board);
+  if (!meta) notFound();
+
   const index = await getBoardIndex(board, 1);
-  if (!index) notFound();
+  if (!index) {
+    return (
+      <div className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
+        <BoardPlaceholder meta={meta} />
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
