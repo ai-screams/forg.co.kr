@@ -16,7 +16,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { isBoardId, type BoardId } from "@/lib/boards";
-import type { BoardIndexPage, Post } from "@/types/post";
+import type { BoardIndexEntry, BoardIndexPage, Post } from "@/types/post";
 
 const CONTENT_ROOT = path.join(process.cwd(), "src", "content");
 
@@ -110,4 +110,48 @@ export async function getBoardIndex(board: BoardId, page: number): Promise<Board
     if (isENOENT(err)) return null;
     throw err;
   }
+}
+
+export interface AdjacentPosts {
+  prev: BoardIndexEntry | null; // older, "이전글"
+  next: BoardIndexEntry | null; // newer, "다음글"
+}
+
+/**
+ * Return the chronologically adjacent posts (within the same board) for the
+ * given postId. Ordering matches the board listing: `createdAt` desc
+ * (newest first). `next` = one step newer (lower array index), `prev` = one
+ * step older (higher array index).
+ *
+ * Walks every paginated index file for the board. If the post is not found in
+ * any page, returns `{ prev: null, next: null }` — does NOT throw.
+ */
+export async function getAdjacentPosts(board: BoardId, postId: string): Promise<AdjacentPosts> {
+  // Load page 1 first to learn totalPages, then fetch the rest in parallel.
+  const firstPage = await getBoardIndex(board, 1);
+  if (!firstPage) return { prev: null, next: null };
+
+  const { totalPages } = firstPage;
+
+  // Fetch remaining pages (2..totalPages) in parallel.
+  const remainingPages =
+    totalPages > 1
+      ? await Promise.all(
+          Array.from({ length: totalPages - 1 }, (_, i) => getBoardIndex(board, i + 2)),
+        )
+      : [];
+
+  // Flatten all entries into one array (createdAt desc, same as the listing).
+  const allEntries: BoardIndexEntry[] = [
+    ...firstPage.entries,
+    ...remainingPages.flatMap((page) => page?.entries ?? []),
+  ];
+
+  const idx = allEntries.findIndex((e) => e.postId === postId);
+  if (idx === -1) return { prev: null, next: null };
+
+  return {
+    next: idx > 0 ? (allEntries[idx - 1] ?? null) : null,
+    prev: idx < allEntries.length - 1 ? (allEntries[idx + 1] ?? null) : null,
+  };
 }

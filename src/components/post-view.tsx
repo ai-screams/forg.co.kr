@@ -13,14 +13,16 @@
 
 import Link from "next/link";
 
-import { getBoardOrThrow } from "@/lib/boards";
-import type { Post } from "@/types/post";
+import { getBoardOrThrow, type BoardId } from "@/lib/boards";
+import type { AdjacentPosts } from "@/lib/posts";
+import type { BoardIndexEntry, Post } from "@/types/post";
 
 interface PostViewProps {
   post: Post;
+  adjacent?: AdjacentPosts;
 }
 
-export function PostView({ post }: PostViewProps) {
+export function PostView({ post, adjacent }: PostViewProps) {
   const board = getBoardOrThrow(post.board);
   const created = formatKoreanDateTime(post.createdAt);
 
@@ -135,6 +137,15 @@ export function PostView({ post }: PostViewProps) {
           </ol>
         </section>
       )}
+
+      {adjacent && (adjacent.prev ?? adjacent.next) ? (
+        <PostNavigation
+          board={board.id as BoardId}
+          boardKr={board.nameKr}
+          prev={adjacent.prev}
+          next={adjacent.next}
+        />
+      ) : null}
     </article>
   );
 }
@@ -158,4 +169,67 @@ function formatBytes(bytes: number): string {
   if (bytes < 1024) return `${bytes} B`;
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+function PostNavigation({
+  board,
+  boardKr,
+  prev,
+  next,
+}: {
+  board: BoardId;
+  boardKr: string;
+  prev: BoardIndexEntry | null;
+  next: BoardIndexEntry | null;
+}) {
+  if (!prev && !next) return null;
+
+  return (
+    <nav aria-label="게시글 네비게이션" className="border-t border-(--era-input-border) px-6 py-4">
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        {/* 이전글 — older, higher array index */}
+        <div className="flex min-w-0 flex-col gap-0.5">
+          {prev ? (
+            <Link
+              href={`/${board}/${prev.postId}`}
+              className="group flex items-start gap-2 text-sm"
+            >
+              <span className="text-forg-muted mt-0.5 shrink-0 text-xs">← 이전글</span>
+              <span className="line-clamp-1 min-w-0 text-(--era-link) group-hover:text-(--era-link-hover)">
+                {prev.title}
+              </span>
+            </Link>
+          ) : (
+            <span className="text-forg-muted text-sm">처음 글입니다</span>
+          )}
+        </div>
+
+        {/* 다음글 — newer, lower array index */}
+        <div className="flex min-w-0 flex-col items-end gap-0.5">
+          {next ? (
+            <Link
+              href={`/${board}/${next.postId}`}
+              className="group flex items-start gap-2 text-sm"
+            >
+              <span className="line-clamp-1 min-w-0 text-right text-(--era-link) group-hover:text-(--era-link-hover)">
+                {next.title}
+              </span>
+              <span className="text-forg-muted mt-0.5 shrink-0 text-xs">다음글 →</span>
+            </Link>
+          ) : (
+            <span className="text-forg-muted text-sm">마지막 글입니다</span>
+          )}
+        </div>
+      </div>
+
+      <div className="mt-3 border-t border-(--era-input-border) pt-3">
+        <Link
+          href={`/${board}`}
+          className="text-sm text-(--era-link) hover:text-(--era-link-hover)"
+        >
+          ← {boardKr} 게시판
+        </Link>
+      </div>
+    </nav>
+  );
 }

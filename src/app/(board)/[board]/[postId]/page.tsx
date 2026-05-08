@@ -16,7 +16,7 @@ import { notFound } from "next/navigation";
 
 import { PostView } from "@/components/post-view";
 import { getBoard, isBoardId } from "@/lib/boards";
-import { getAllPostParams, getPost } from "@/lib/posts";
+import { getAdjacentPosts, getAllPostParams, getPost } from "@/lib/posts";
 
 export const dynamicParams = false;
 
@@ -62,12 +62,15 @@ export default async function PostPage({ params }: RouteProps) {
 
   if (!isBoardId(board)) notFound();
 
-  const post = await getPost(board, postId);
+  const [post, adjacent] = await Promise.all([
+    getPost(board, postId),
+    getAdjacentPosts(board, postId),
+  ]);
   if (!post) notFound();
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
-      <PostView post={post} />
+      <PostView post={post} adjacent={adjacent} />
     </div>
   );
 }
