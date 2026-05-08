@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "111.GIF",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/111.GIF",
+    "capturedAt": "20071024231848",
+    "sizeBytes": 19857,
+    "sha256": "4ca20b232e6c8197839a8f610643edfa5d4fa23a732b01c3304bd082ff1d5772"
+  },
+  {
+    "filename": "112.GIF",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/112.GIF",
+    "capturedAt": "20071024231900",
+    "sizeBytes": 15629,
+    "sha256": "3099c982749fb637e8c35a1f9df57cd983d339ac614fabce97c0de0363700dd6"
+  }
+]

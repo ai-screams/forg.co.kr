@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "Ring_1.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/Ring_1.jpg",
+    "capturedAt": "20071023015727",
+    "sizeBytes": 36895,
+    "sha256": "ac708a801f5fbf3962ba97fe1b3d0b57824ba1a690fdbf23f70a201442dc7abc"
+  },
+  {
+    "filename": "Ring_2.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/Ring_2.jpg",
+    "capturedAt": "20071023015743",
+    "sizeBytes": 37183,
+    "sha256": "e90de7c506a32d35f36ff1a0e62b2e02f8919a4d8a926bdf25b9cb94c2e11277"
+  }
+]

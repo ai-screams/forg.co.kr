@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "m_film.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_film.gif",
+    "capturedAt": "20021009213714",
+    "sizeBytes": 1026,
+    "sha256": "ef5570cd5727c3928c6cc02b30c3f73ba3c7ee7cf3fdb8e64355ba18bacce4ac"
+  },
+  {
+    "filename": "m_thumbs_down.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_thumbs_down.gif",
+    "capturedAt": "20021028143956",
+    "sizeBytes": 992,
+    "sha256": "774b2ded37ce0cde97ac8f957e81f06f2580a45b3543db5dc076361ef5511b50"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "Pusan_Galmaegi.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/Pusan_Galmaegi.jpg",
+    "capturedAt": "20021119125925",
+    "sizeBytes": 281138,
+    "sha256": "8fd4ce3904f942bc00f091bfc4910206b4ad835db1a60db9288c69761b97924e"
+  },
+  {
+    "filename": "Roche.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/Roche.jpg",
+    "capturedAt": "20021119130302",
+    "sizeBytes": 299925,
+    "sha256": "746b9a05c8678a9d96439e11c771ee62b6e8673e5ab87c72ce7c414827b3286b"
+  }
+]

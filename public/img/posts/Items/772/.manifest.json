@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "accessory.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/accessory.jpg",
+    "capturedAt": "20071022021048",
+    "sizeBytes": 196307,
+    "sha256": "cfca10a516b09efd3ed88ef71e7acc4c53d35f3be6e0f321f1551e78b05684e9"
+  },
+  {
+    "filename": "accessory2.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/accessory2.jpg",
+    "capturedAt": "20071022021029",
+    "sizeBytes": 145313,
+    "sha256": "d79c66b0a94a123be2f31a88b91727493d6263ecca78b9259c0ec03ca266c393"
+  }
+]

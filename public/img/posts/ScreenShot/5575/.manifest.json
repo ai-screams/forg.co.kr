@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "love.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/love.jpg",
+    "capturedAt": "20021009191706",
+    "sizeBytes": 247768,
+    "sha256": "16bf3409a3eacfd1ee9f79a9b25006c5464f4be6cd01120d016f319a7b11c6ea"
+  },
+  {
+    "filename": "m_teeth_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_teeth_smile.gif",
+    "capturedAt": "20021008185608",
+    "sizeBytes": 1057,
+    "sha256": "09a13cab8bdee83aec8331a2b93de63f8dcd168c0e14513a7867338ddc6ec529"
+  }
+]

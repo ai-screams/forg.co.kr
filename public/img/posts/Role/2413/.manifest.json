@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "kill.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/Role/kill.jpg",
+    "capturedAt": "20050120203255",
+    "sizeBytes": 39472,
+    "sha256": "858205e5249010f4196af557479a3fb4c112cd22d145e5b0214d36ed7a090b85"
+  },
+  {
+    "filename": "m_teeth_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_teeth_smile.gif",
+    "capturedAt": "20050120234852",
+    "sizeBytes": 1057,
+    "sha256": "09a13cab8bdee83aec8331a2b93de63f8dcd168c0e14513a7867338ddc6ec529"
+  },
+  {
+    "filename": "m_thumbs_up.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_thumbs_up.gif",
+    "capturedAt": "20050121001521",
+    "sizeBytes": 987,
+    "sha256": "286982bbc5fd8a4a909c931701485e0716ec804e1b8ed5f41ef879d959444cfa"
+  },
+  {
+    "filename": "m_wink_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_wink_smile.gif",
+    "capturedAt": "20050121004507",
+    "sizeBytes": 1868,
+    "sha256": "fb8a6a55e80275031aecdd47ab63c93b447445cbe68bb2885a4b7e9b7514518f"
+  },
+  {
+    "filename": "steal.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/Role/steal.jpg",
+    "capturedAt": "20050120213740",
+    "sizeBytes": 24361,
+    "sha256": "e0ab99e20d1e094d6ea3ff3190f5023fd1176f4ad1004480a646fcbb60a81522"
+  }
+]

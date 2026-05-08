@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "m_angel_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_angel_smile.gif",
+    "capturedAt": "20030607133257",
+    "sizeBytes": 454,
+    "sha256": "c062c06507d8a147ddede96e032aa7addc15a0ed8df37d8c63c3482e0c5d271c"
+  },
+  {
+    "filename": "m_devil_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_devil_smile.gif",
+    "capturedAt": "20021028125111",
+    "sizeBytes": 1047,
+    "sha256": "f7ffe463df75a6363886721214534ceac3acaaf43f365b85d196d2ee541f63fe"
+  },
+  {
+    "filename": "m_regular_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_regular_smile.gif",
+    "capturedAt": "20030607074426",
+    "sizeBytes": 1034,
+    "sha256": "d238d5b85e6be61f092f792df9e067cdebf50325b5392f81d9646aba42e07524"
+  },
+  {
+    "filename": "m_rose.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_rose.gif",
+    "capturedAt": "20030607081116",
+    "sizeBytes": 953,
+    "sha256": "640468b88e8f8eaf307a053b8a403e1acaa5906a7edc13da698aa14aed7f13cb"
+  },
+  {
+    "filename": "m_wilted_rose.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_wilted_rose.gif",
+    "capturedAt": "20030814121708",
+    "sizeBytes": 968,
+    "sha256": "14ff37e4c119f80600d6b658ed28606ea837b08b9bcd8fa49fb0970edddb8ca5"
+  }
+]

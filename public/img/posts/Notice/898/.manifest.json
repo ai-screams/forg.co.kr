@@ -1,0 +1,23 @@
+[
+  {
+    "filename": "bodbk2.jpg",
+    "originalUrl": "http://www.uo.com/images/bodbk2.jpg",
+    "capturedAt": "20051026115126",
+    "sizeBytes": 15200,
+    "sha256": "cad9b525b471e8c0ec44d97e026dd99cd68290ec5cb0e89141e9f458f3e37e40"
+  },
+  {
+    "filename": "bodbk3.jpg",
+    "originalUrl": "http://www.uo.com/images/bodbk3.jpg",
+    "capturedAt": "20051026115417",
+    "sizeBytes": 83366,
+    "sha256": "9a68de8b9c1f4ffb03ba49f6119225f76df599767ffeb16798cdd008a49b1540"
+  },
+  {
+    "filename": "bodbk4.jpg",
+    "originalUrl": "http://www.uo.com:80/images/bodbk4.jpg",
+    "capturedAt": "20051226085804",
+    "sizeBytes": 57792,
+    "sha256": "f361f5b2a44d07ae7d906c8c770fe15949f7253867ee4889fe4fef8852cb5f83"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "banners_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/banners_1.gif",
+    "capturedAt": "20011224105505",
+    "sizeBytes": 144849,
+    "sha256": "361e9fcdcc361ff92163a6183e4291f5d5b29eb630e9d5e941c2689577452650"
+  },
+  {
+    "filename": "e_horse.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/e_horse.gif",
+    "capturedAt": "20011224105808",
+    "sizeBytes": 35347,
+    "sha256": "efec3be30b233d7da4b25c5e6ce25647b8a70ad9c72289ff351c83fdbe0ceddb"
+  },
+  {
+    "filename": "flame.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/flame.gif",
+    "capturedAt": "20011224110150",
+    "sizeBytes": 14119,
+    "sha256": "b58a683a25c81e88f1c381f54876e68a07a662340a0d7ed80e4ba3d9bab18f19"
+  },
+  {
+    "filename": "leather_dyed.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/leather_dyed.gif",
+    "capturedAt": "20011224110923",
+    "sizeBytes": 96773,
+    "sha256": "271d171173869bc11aed3418f32628a7d0334e3d441df74e92afae4e023d1de0"
+  },
+  {
+    "filename": "spe_dyed.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/spe_dyed.gif",
+    "capturedAt": "20011224111736",
+    "sizeBytes": 58826,
+    "sha256": "d61ddcd77a4fd85ce202f289a3b7fa898e89c1e53f156134dcbf7b79fa48c3be"
+  },
+  {
+    "filename": "statue_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/statue_1.gif",
+    "capturedAt": "20011224111836",
+    "sizeBytes": 18020,
+    "sha256": "8f8951f4dcc65a78cc0f18b846ba83597bcf6f99292bd4fe6b0c1ec8c02324fa"
+  },
+  {
+    "filename": "statue_2.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/statue_2.gif",
+    "capturedAt": "20011224112427",
+    "sizeBytes": 4653,
+    "sha256": "ff9e39a1c4250986267d12449f56c7f3378e74a692d7a89fdbe5906d87536d47"
+  },
+  {
+    "filename": "v4_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/v4_1.gif",
+    "capturedAt": "20011224112721",
+    "sizeBytes": 11602,
+    "sha256": "4edaf09ffbbe486732567d92537943e30c7ad30c9614547bc372ab1128f52203"
+  },
+  {
+    "filename": "v4_2.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/v4_2.gif",
+    "capturedAt": "20011224113001",
+    "sizeBytes": 10252,
+    "sha256": "72dce7a8264680e2d8925b6850775666b7aa860bc76e0a887422bf7b216630a8"
+  },
+  {
+    "filename": "v4_3.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/v4_3.gif",
+    "capturedAt": "20011224113720",
+    "sizeBytes": 15060,
+    "sha256": "7d0c800f13ad3c21b92bfe02f1db092b0510182231d1528273be5a4e80fbee4b"
+  },
+  {
+    "filename": "vet_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/vet_1.gif",
+    "capturedAt": "20010820212809",
+    "sizeBytes": 11373,
+    "sha256": "8828c6cefe93b038854353894b2630fec6eaf43a220260997e3119b5d6e0ea03"
+  },
+  {
+    "filename": "vet_3.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/vet_3.gif",
+    "capturedAt": "20011224115251",
+    "sizeBytes": 11189,
+    "sha256": "51a1714fd22e6bfcec980b631b0f685ae4d186811b85f615a8fc9c8c520ac763"
+  }
+]

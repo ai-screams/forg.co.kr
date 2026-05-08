@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "news_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/news_1.gif",
+    "capturedAt": "20010813015058",
+    "sizeBytes": 55361,
+    "sha256": "0c860589387a5e10f7a2c99c339b038e115d204975fa6837e8da7cc77e1592a2"
+  },
+  {
+    "filename": "news_2.gif",
+    "originalUrl": "http://forg.uospace.net:80/screen/news_2.gif",
+    "capturedAt": "20010820201617",
+    "sizeBytes": 69917,
+    "sha256": "51f3571fc04009e6adecb9d8115506449450113c7767028646ad4d7c171b14e6"
+  }
+]

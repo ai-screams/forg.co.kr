@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "beetle0001.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/beetle0001.jpg",
+    "capturedAt": "20021119092428",
+    "sizeBytes": 85757,
+    "sha256": "af0f93b2659e8c80ba19ae402c3a40e419a9e2e77fa3dfaa3c17b2b6b71e50e9"
+  },
+  {
+    "filename": "beetle0003.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/beetle0003.jpg",
+    "capturedAt": "20021119092559",
+    "sizeBytes": 91563,
+    "sha256": "e8c7d3665a7a77147a0ab6d0858e93e33b07c0cfa9b81c2415dc21bdd79f0f1b"
+  }
+]

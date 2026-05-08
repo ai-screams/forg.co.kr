@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "eggs.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/eggs.jpg",
+    "capturedAt": "20021009213248",
+    "sizeBytes": 42295,
+    "sha256": "34f9aacd0c4ae1e34ccad42f287bba7c1fcc8d782826c9e30220030374f826d0"
+  },
+  {
+    "filename": "m_shades_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_shades_smile.gif",
+    "capturedAt": "20020810163129",
+    "sizeBytes": 1052,
+    "sha256": "db75c929eea1ecc5c961f7f759ae24644096439ddf3fb556bf9d8eed24fdb7c5"
+  }
+]

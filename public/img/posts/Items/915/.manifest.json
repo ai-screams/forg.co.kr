@@ -1,0 +1,23 @@
+[
+  {
+    "filename": "a.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Items/1182305115/a.jpg",
+    "capturedAt": "20071024232423",
+    "sizeBytes": 67590,
+    "sha256": "be9cb6b0c40e98daf4b5e4da443e919da75f21e390c1701ff88d5c120f514ed5"
+  },
+  {
+    "filename": "m_angel_smile.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_angel_smile.gif",
+    "capturedAt": "20030607133257",
+    "sizeBytes": 454,
+    "sha256": "c062c06507d8a147ddede96e032aa7addc15a0ed8df37d8c63c3482e0c5d271c"
+  },
+  {
+    "filename": "m_clock.gif",
+    "originalUrl": "http://forg.co.kr/_zb/emoticon/m_clock.gif",
+    "capturedAt": "20061113041323",
+    "sizeBytes": 2727,
+    "sha256": "d58de7d75bdafa87c652b4e0cfddd99e5bd33203837fa710c0bb5636c3701e10"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "m_coffee.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_coffee.gif",
+    "capturedAt": "20031020162526",
+    "sizeBytes": 1015,
+    "sha256": "47159b3fb7c850dc052119ab44a3d7517dca2d446c0592beacac388be9340f7a"
+  },
+  {
+    "filename": "m_thumbs_up.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_thumbs_up.gif",
+    "capturedAt": "20050121001521",
+    "sizeBytes": 987,
+    "sha256": "286982bbc5fd8a4a909c931701485e0716ec804e1b8ed5f41ef879d959444cfa"
+  },
+  {
+    "filename": "u_19.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/u_19.gif",
+    "capturedAt": "20031020184512",
+    "sizeBytes": 1328,
+    "sha256": "2739b03811ebfe04da3e890e9dcdc0be683c3841f5a4c4ecbef1a3561ef8edf0"
+  },
+  {
+    "filename": "u_logo.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/emoticon/u_logo.gif",
+    "capturedAt": "20071214071426",
+    "sizeBytes": 57,
+    "sha256": "57dce96006e4590562d52d4193cef3cd9f660c49370216c7082e24390e0ea298"
+  }
+]

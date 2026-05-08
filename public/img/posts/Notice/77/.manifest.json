@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "gem.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/gem.gif",
+    "capturedAt": "20011224141619",
+    "sizeBytes": 878,
+    "sha256": "9ed0660e06a8c33fb5ec7184eb8485d071a14252ca41f30baf75c3de564186a7"
+  },
+  {
+    "filename": "z1.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/z1.gif",
+    "capturedAt": "20011224103608",
+    "sizeBytes": 46753,
+    "sha256": "503c44a6280549f6976d9c0992664f044dc9ccfa43077e95b87c84fc8a4ca7dc"
+  },
+  {
+    "filename": "z3.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/z3.gif",
+    "capturedAt": "20011224103933",
+    "sizeBytes": 23899,
+    "sha256": "5997bc3786b625be9d824eac2b0e4c720714063049faaf96c00fd6c6a71712b0"
+  },
+  {
+    "filename": "z5.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/z5.gif",
+    "capturedAt": "20011224105036",
+    "sizeBytes": 110004,
+    "sha256": "9b7857f9cc9bc077a2a6d9f04d48c9b6e085685c1a65bebf4206c9e20bc7cb64"
+  },
+  {
+    "filename": "z6.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/z6.gif",
+    "capturedAt": "20011224105117",
+    "sizeBytes": 12370,
+    "sha256": "98f31a698346bcd603ad2f7d35fc8db6a8c73d340d4b82525ed7108c985eeca5"
+  }
+]

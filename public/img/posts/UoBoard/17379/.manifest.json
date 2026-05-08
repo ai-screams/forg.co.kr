@@ -1,0 +1,23 @@
+[
+  {
+    "filename": "m_cake.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_cake.gif",
+    "capturedAt": "20031020153653",
+    "sizeBytes": 1059,
+    "sha256": "2d51e507020836ebc72cc8062d6115c6e0db0a36b0c2e5f59babc43ca2711b08"
+  },
+  {
+    "filename": "m_musical_note.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_musical_note.gif",
+    "capturedAt": "20030426120213",
+    "sizeBytes": 972,
+    "sha256": "af753c1fdf3a028f29da6f071a78c06027ea54af9fd90890c14832f2a52a9f62"
+  },
+  {
+    "filename": "m_present.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_present.gif",
+    "capturedAt": "20030607073228",
+    "sizeBytes": 1056,
+    "sha256": "3f908cf7add093a3b2856224b13f82bd17a94cb967630bf28b4aac76404abc30"
+  }
+]
