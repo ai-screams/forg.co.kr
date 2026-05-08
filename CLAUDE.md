@@ -17,7 +17,10 @@ The README describes the goal in detail. The two non-obvious facts that affect e
 
 The `.docs/` directory holds the internal context. It is **gitignored on purpose** — never stage it. Future agents must read it to understand intent:
 
-- `.docs/ADR/` — accepted Architecture Decision Records numbered ADR-0001 through ADR-NNNN. The index at `.docs/ADR/README.md` lists all decisions in scope. Read the ADR before changing tokens, era system, ETL, or stack choices.
+- `.docs/ADR/` — accepted Architecture Decision Records numbered ADR-0001 through ADR-NNNN. The index at `.docs/ADR/README.md` lists all decisions in scope. Read the ADR before changing tokens, era system, ETL, or stack choices. Current: **13 ADRs** (ADR-0001 through ADR-0013; ADR-0009 superseded). Key decisions:
+  - ADR-0011: Image storage — git-direct commit (56 MB / 2,715 files across 9 boards)
+  - ADR-0012: single-URL CDX fallback layer for body images (Phase G, ~15% → 30~50% recovery target)
+  - ADR-0013: All registered boards enumerated (32 boards total; unparsed boards use placeholder component)
 - `.docs/considerations/` — forward-looking notes (`CONS-NNNN`) for decisions deliberately deferred. Lighter than ADRs; each one names its re-evaluation trigger (e.g. CONS-0001 captures the future interactive-board / DB scenario). Resolution path is to be promoted to an ADR or rejected.
 - `.docs/plan/ROADMAP.md` — phased checklist (P0–P5). Tasks reference ADR numbers. Update checkboxes as work completes.
 - `.docs/research/` — Wayback CDX results, raw HTML captures, the original `FORG-RECONSTRUCTION-GUIDE.md` describing the historical site's structure (boards, colors, layout). The reconstruction-guide explains things like the original board IDs (UoBoard, Q_A, Role, …) and the Zeroboard 4.1pl4 / Gnuboard4 / Gnuboard5 engine progression — invaluable context for the parser work.
@@ -47,6 +50,30 @@ Three tiers of data, all under `.docs/research/`:
 
 Wayback was downloaded with the `id_` modifier so the captures arrive without Wayback's chrome to begin with — `01-decode.py`'s chrome counters are normally 0. They become non-zero only if someone re-downloads with `if_`/`fw_`. Don't remove the cleanup logic on that basis.
 
+#### Image recovery layer (ADR-0010 P3.0~3.2 + ADR-0012 Phase G)
+
+Gold-tier posts contain embedded images that must be recovered from Wayback. The recovery pipeline spans two strategies:
+
+**Phase A–F (ADR-0010, completed):** Prefix-based CDX discovery + manifest-first inventory
+
+- **A1** `wayback_client.py` — shared polite rate limiter (fcntl.flock, strict 1-worker cross-process, 4s delay, exponential backoff)
+- **A2** `Post.capturedAt` — corrected to real Wayback timestamp (sourced from `e-policy-plan.json` + `.progress.jsonl`); new field `Post.parsedAt` tracks parse time
+- **B** `extract-image-urls.py` — gold tier posts → `image-manifest.jsonl` with `urljoin`-based URL normalization + candidate variants (port, percent-encoding, host)
+- **C** `cdx-image.py` — 12-prefix CDX sharding (`_zb/data/`, `_zb/emoticon/`, etc.) + canonical-key multimap join + valid image row filtering (status 200, image/\*, non-zero length)
+- **D** `download-images.py` — resumable batch fetch to `public/img/posts/{board}/{post_id}/{filename}` + per-post `.manifest.json` sidecars
+- **E** `measure-recovery.py` — metrics (recovery rate by board, host distribution, unrecoverable classification)
+- **F** `04-rewrite-image-urls.py` — src rewrite (recovered → `/img/posts/...`, failed → `/img/placeholder/missing.svg`); `data-recovery` + `data-original-src` attributes preserved for accessibility + future retry
+
+**Result (P2.4):** 2,715 files / 56 MB across 9 boards; **49.9% body image recovery** (1,077 references, 569 recovered). Chrome assets: **68/73 = 93%** via single-URL probe.
+
+**Phase G (ADR-0012, in flight, ETA 6–9h):** Single-URL fallback for no_canonical_match entries
+
+- `cdx-image-fallback.py` — probe unrecoverable candidates individually against Wayback CDX
+- Expected: body image recovery → **30–50%** (conservative estimate based on chrome recovery rate)
+- Melts into Phase D (re-run download) + Phase F (re-run rewrite) automatically
+
+**Storage decision (ADR-0011):** 56 MB < 200 MB threshold → git-direct commit (same model as gold JSON tier). Re-evaluate at 150 / 200 MB / 1 GB milestones.
+
 ### Routing structure (App Router, static export)
 
 The site has three dynamic route shapes under the `(board)` route group (the
@@ -63,10 +90,44 @@ errors** rather than runtime 404s — appropriate for a frozen archive.
 
 `<SiteHeader>` and `<SiteFooter>` live in the root layout (`src/app/layout.tsx`),
 so every page inherits the chrome and routes only render the article container.
-The current home (`src/app/page.tsx`) is an **interim card grid** that reads
-real board indexes; it is not the final 2014 layout. P2.4 replaces it with the
-6-box grid + game-category sidebar + 7-button menu that recreates the original
-forg.co.kr 2014 visual identity.
+
+#### 2014 main page layout (P2.4 completed)
+
+The home (`src/app/page.tsx`) is now the **final 2014 forg.co.kr visual identity** — a 5-column layout:
+
+```text
+<header> (53px, chrome assets)
+  └─ logo + login/signup (inactive) + 7-button menu (free/photo/fun/movie/boo/tra/trash)
+
+<body>
+  ┌──────────────────────────────────────────────────┐
+  │  width: 10/100/680/7/AdSense (pixel widths)      │
+  │                                                   │
+  │  [10px]  [100px sidebar]  [680px content]  [7px] │
+  │            (game category        (8-box grid)    │
+  │             6 buttons)                            │
+  │                                                   │
+  │            Box 1: 자유게시판 (UoBoard)           │
+  │            Box 2: 펀게시판 (column)               │
+  │            Box 3: Reveal                         │
+  │            Box 4: 포라토 (외부 link)              │
+  │            Box 5: Trash                          │
+  │            Box 6: Ultima                         │
+  │            Box 7: Events                         │
+  │            Box 8: Items                          │
+  │                                                   │
+  │            [32 total registered boards]          │
+  │            [unparsed boards → <BoardPlaceholder>]│
+  │                                                   │
+  └──────────────────────────────────────────────────┘
+
+<footer>
+  24px visitor counter (frozen at 5,291만 in 2014)
+  chrome assets: 68/73 recovered (93% via single-URL CDX probe)
+  5 missing (hover variants, CSS fallback)
+```
+
+All 32 registered boards are enumerated at build time via `generateStaticParams` in `(board)/[board]/page.tsx`. Unparsed boards (those with `parsed: false` in `src/lib/boards.ts`) render `<BoardPlaceholder>` instead of live data — maintains URL structure without ETL completion burden.
 
 ### Background downloads
 
@@ -134,4 +195,4 @@ python3 -m venv .venv
 ## What is _not_ in the repo (intentionally)
 
 - The 14k Wayback HTML captures (~140MB silver tier, more in raw). They live in `.docs/research/archive/` and `archive-clean/`. Reproducible from Wayback CDX.
-- Site chrome assets (forg's original GIFs/icons — logo, button accents). Wayback CDX returned **0 rows** for `forg.co.kr/images/`, `/skin/`, `_zb/images/`, `_zb/skin/` prefixes, so the museum-toned placeholder SVG (`public/img/placeholder/missing.svg`) is the current stand-in. P2.4 (2014 main page) entry will revisit chrome recovery — possibly via single-URL CDX probes against specific known asset paths or external mirror cooperation.
+- Site chrome assets — **68/73 now in the repo** at `public/img/chrome/` (P2.4, commit `3a18aca8`). Originally Wayback CDX returned **0 rows** for `forg.co.kr/images/` / `/skin/` / `_zb/images/` / `_zb/skin/` prefixes, but single-URL probes against known asset filenames recovered 93%. The 5 remaining (mostly hover variants) use CSS fallback; placeholder SVG (`public/img/placeholder/missing.svg`) bridges missing assets with graceful degradation.

@@ -1,0 +1,93 @@
+# forg.co.kr 박물관 라이선스
+
+forg.co.kr 재현 프로젝트는 두 가지 계층으로 나뉜 dual-license 모델을 채택합니다.
+
+- **Code** (src/, scripts/, configuration): MIT License
+- **Content** (gold-tier JSON, recovered images): CC BY-NC-SA 4.0 with fair-use assertion
+
+---
+
+## MIT License
+
+Copyright 2026 pignuante <hanyul.ryu@hanyul.xyz>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+**Scope of MIT License:**
+- Source code under `src/`, `scripts/`, `.github/`
+- Configuration files: `tsconfig.json`, `next.config.ts`, `tailwind.config.*`, `.eslintrc.*`, `prettier.config.*`, `package.json`, etc.
+- Documentation (this README, CLAUDE.md, .docs/ internal guidance)
+
+**Explicit exclusions from MIT:**
+- `src/content/` — gold-tier parsed post JSON (covered by CC BY-NC-SA 4.0)
+- `public/img/` — recovered images and chrome assets (covered by CC BY-NC-SA 4.0)
+- `.docs/research/archive/` — bronze/silver tier HTML (Wayback original content, covered by CC BY-NC-SA 4.0)
+
+---
+
+## Content License — CC BY-NC-SA 4.0 with Fair-Use Assertion
+
+**콘텐츠 저작권 고지 (한국어)**
+
+### 출처 및 저작권
+
+본 박물관에 수록된 모든 게시글, 댓글, 이미지는 Wayback Machine 을 통해 보존된 forg.co.kr (1999~2015) 의 원본입니다. 각 게시글과 댓글의 저작권은 원 작성자에게 있습니다.
+
+### 재배포 정책
+
+본 박물관의 콘텐츠 (src/content/posts, public/img/posts 등) 를 재배포, 2차 저작, 또는 활용하는 경우 다음을 준수해야 합니다:
+
+1. **출처 표시 (Attribution)**: "forg.co.kr 박물관" 및 원본 작성자 표시 의무
+2. **비영리 목적 (Non-commercial)**: 영리 목적의 이용 및 판매 금지
+3. **동일 라이선스 적용 (Share-alike)**: 2차 저작물도 CC BY-NC-SA 4.0 로 공개
+
+### 박물관의 fair-use 입장
+
+본 박물관은 **forg.co.kr (1999~2015) 의 한국 Ultima Online 커뮤니티 문화 보존을 위한 비영리 교육·보존 목적의 프로젝트**입니다. 따라서:
+
+- 원본 콘텐츠의 대량 보존과 정확한 재현이 fair-use 의 본질과 부합
+- 원문 보존 (원본 게시글, 댓글, 구조) 에 한정하며, 수정·변형은 최소화
+- 사용자 참여 (댓글 작성, 게시글 추가 등) 는 명시적으로 비활성
+
+### 저작권 이의 및 삭제 요청
+
+forg.co.kr 운영자, 원작자, 또는 영향받는 당사자가 콘텐츠 삭제를 요청하는 경우, 다음 주소로 즉시 연락하시기 바랍니다:
+
+**hanyul.ryu@hanyul.xyz**
+
+삭제 요청은 합리적인 기간 내에 처리됩니다. 요청 시 다음을 명시하시면 처리가 신속합니다:
+
+- 대상 게시글 ID 또는 URL
+- 삭제 사유 (저작권 보유, 개인정보 보호 등)
+- 연락처 (확인용)
+
+---
+
+## Summary
+
+| 대상 | 라이선스 | 조건 |
+|------|---------|------|
+| Code (src, scripts, config) | MIT | 자유 사용, 수정, 배포 (저작권 표시) |
+| Posts, comments (gold tier) | CC BY-NC-SA 4.0 | 비영리 + 출처 표시 + 동일 라이선스 |
+| Images (recovered) | CC BY-NC-SA 4.0 | 비영리 + 출처 표시 + 동일 라이선스 |
+| Bronze/silver tier HTML | Wayback + CC BY-NC-SA 4.0 | 원본 저작권 존중, fair-use 박물관 입장 |
+
+---
+
+**Last updated: 2026-05-08**
