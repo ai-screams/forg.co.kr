@@ -33,10 +33,14 @@ archive-utf8/
 
 # ETL pipeline runtime artifacts (regenerable from raw archive)
 .parse-summary.json
+.parse-summary-*.json
 .parse-failures.jsonl
+.parse-failures-*.jsonl
 .parse-progress.jsonl
 .index-summary.json
 .image-manifest-summary.json
+.chrome-recovery-report.json
+.image-recovery-report.json
 
 # Local caches & generated content
 .cache/
