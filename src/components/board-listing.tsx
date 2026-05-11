@@ -13,6 +13,7 @@
 import Link from "next/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
+import { formatShortDate } from "@/lib/dates";
 import type { BoardIndexPage } from "@/types/post";
 
 interface BoardListingProps {
@@ -175,16 +176,4 @@ function PageLink({ href, disabled, label }: { href: string; disabled: boolean; 
 function pageHref(board: BoardId, page: number): string {
   if (page <= 1) return `/${board}`;
   return `/${board}/page/${page}`;
-}
-
-const SHORT_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
-  year: "2-digit",
-  month: "2-digit",
-  day: "2-digit",
-});
-
-function formatShortDate(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return iso;
-  return SHORT_DATE_FORMATTER.format(d).replace(/\s/g, "");
 }

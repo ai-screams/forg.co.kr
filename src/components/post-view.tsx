@@ -14,6 +14,7 @@
 import Link from "next/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
+import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
 import type { AdjacentPosts } from "@/lib/posts";
 import type { BoardIndexEntry, Post } from "@/types/post";
 
@@ -25,6 +26,9 @@ interface PostViewProps {
 export function PostView({ post, adjacent }: PostViewProps) {
   const board = getBoardOrThrow(post.board);
   const created = formatKoreanDateTime(post.createdAt);
+  // 작성일이 1970년인 Zeroboard NULL placeholder는 캡처 시점을 보조 표시.
+  const createdUnknown = isUnknownDate(post.createdAt);
+  const capturedDate = createdUnknown ? formatWaybackTs(post.capturedAt) : null;
 
   return (
     <article className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm">
@@ -57,6 +61,11 @@ export function PostView({ post, adjacent }: PostViewProps) {
             <dt className="font-bold">날짜</dt>
             <dd>
               <time dateTime={post.createdAt}>{created}</time>
+              {capturedDate && (
+                <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
+                  (캡처 {capturedDate})
+                </span>
+              )}
             </dd>
           </div>
           {post.hits !== null && (
@@ -148,21 +157,6 @@ export function PostView({ post, adjacent }: PostViewProps) {
       ) : null}
     </article>
   );
-}
-
-const KOREAN_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-  hour: "2-digit",
-  minute: "2-digit",
-  hour12: false,
-});
-
-function formatKoreanDateTime(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return iso;
-  return KOREAN_DATE_FORMATTER.format(d);
 }
 
 function formatBytes(bytes: number): string {
