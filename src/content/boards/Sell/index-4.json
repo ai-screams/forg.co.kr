@@ -1,0 +1,61 @@
+{
+  "board": "Sell",
+  "page": 4,
+  "totalPages": 4,
+  "totalPosts": 154,
+  "generatedAt": "2026-05-11T03:03:45Z",
+  "entries": [
+    {
+      "postId": "855",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "868",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "883",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "94",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    }
+  ]
+}

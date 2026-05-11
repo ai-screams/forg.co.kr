@@ -1,0 +1,113 @@
+{
+  "board": "Console",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 8,
+  "generatedAt": "2026-05-11T03:03:45Z",
+  "entries": [
+    {
+      "postId": "1357",
+      "title": "PS3을 구입하려고 합니다",
+      "categoryLabel": null,
+      "author": "fellex",
+      "authorMemberNo": null,
+      "createdAt": "2011-11-07T00:00:00",
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 4263,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1356",
+      "title": "던전디팬더.",
+      "categoryLabel": null,
+      "author": "체이즈",
+      "authorMemberNo": null,
+      "createdAt": "2011-11-04T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 4218,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1350",
+      "title": "배트맨 아캄시티 소감",
+      "categoryLabel": null,
+      "author": "체이즈",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-22T00:00:00",
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 3556,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1351",
+      "title": "포르자 모터스포츠4 소감",
+      "categoryLabel": null,
+      "author": "체이즈",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-22T00:00:00",
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 3473,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1341",
+      "title": "아스트랄할 게임 세인츠로우 : 써드",
+      "categoryLabel": null,
+      "author": "mydream",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-20T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 3666,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1342",
+      "title": "다크소울 처음 해본 유저들의 소감",
+      "categoryLabel": null,
+      "author": "mydream",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-20T00:00:00",
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 3893,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1346",
+      "title": "위닝 2012 소감..",
+      "categoryLabel": null,
+      "author": "babobagsa",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-20T00:00:00",
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 3319,
+      "recommend": null,
+      "era": "2014"
+    },
+    {
+      "postId": "1339",
+      "title": "레고로 만든 기어즈 오브 워",
+      "categoryLabel": null,
+      "author": "mydream",
+      "authorMemberNo": null,
+      "createdAt": "2011-10-18T00:00:00",
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 3360,
+      "recommend": null,
+      "era": "2014"
+    }
+  ]
+}
