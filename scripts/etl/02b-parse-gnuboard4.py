@@ -78,21 +78,34 @@ PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jso
 
 # Boards using the Gnuboard4 webbus2009_basic skin (the only G4 skin this
 # parser supports — it relies on the "게시글 보기 시작" landmark comment
-# and `gray6s`/`gray8s` meta classes).  Verified by inspecting the skin
-# markers in archive-clean/{A,B}/{board}/*.html:
-#   - UoBoard2 (Phase A, 23 files)        — webbus2009_basic ✓
-#   - Shop     (Phase B, 10 files, 8 ok)  — webbus2009_basic ✓
-#   - Console  (Phase B, 8 files, 8 ok)   — webbus2009_basic ✓
+# and `gray6s`/`gray8s` meta classes).
 #
-# Other Phase B boards use different skins and need separate parsers
-# (deferred to ROADMAP P2.2b):
-#   - FunBoard / Reveal / porato  → skin/kritz_normal   (≈852 files)
-#   - Trash                        → skin/kritz_trash    (207 files)
-#   - Ultima                       → forg.kr theme/st-basic = Gnuboard5
-#   - DF / LoL / Star2 / Diablo    → not present in bronze (zero files)
+# Verified by inspecting the skin markers in archive-clean/{A,B}/{board}/*.html:
+#   - UoBoard2 (Phase A, 23 files)         — pure webbus2009_basic
+#   - Shop     (Phase B, 10 files)          — pure webbus2009_basic
+#   - Console  (Phase B, 8 files)           — pure webbus2009_basic
+#   - FunBoard (Phase B, 576 files)         — 47 webbus2009_basic mixed
+#                                              with 529 zb kritz_normal*
+#   - porato   (Phase B, 243 files)         — webbus2009 mix with kritz_normal
+#   - Reveal   (Phase B, 33 files)          — webbus2009 mix with kritz_normal
+#   - Trash    (Phase B, 207 files)         — 21 webbus2009_Trash mixed
+#                                              with 186 zb kritz_trash
+#
+# `detect_non_post_page` returns `g4_skin_unsupported` for the kritz
+# (Zeroboard 4.1) captures inside these boards so this parser writes
+# only the webbus2009 G4 posts. The Zeroboard parser (`02-parse-zeroboard.py`)
+# handles the kritz captures from the same source files (no output
+# collision because each parser checks skin before writing).
+#
+# Other Phase B boards still deferred:
+#   - Ultima (Phase B, 33 files) → forg.co.kr Gnuboard5 (theme/st-basic),
+#     ROADMAP P2.3 (forg.co.kr Ultima parser pair to forg.kr g5 parser).
+#   - DF / LoL / Star2 / Diablo / Boo → no bronze data; placeholder-only.
 INCLUDE_BOARDS: frozenset[str] = frozenset({
     "UoBoard2",  # Phase A
-    "Shop", "Console",  # Phase B (webbus2009_basic)
+    "Shop", "Console",  # Phase B — pure webbus2009_basic
+    "FunBoard", "porato", "Reveal",  # Phase B — webbus2009_basic mixed with kritz_normal
+    "Trash",  # Phase B — webbus2009_Trash mixed with kritz_trash
 })
 
 # All G4 boards are post-2011 (Gnuboard4 era, redesign ~2011).

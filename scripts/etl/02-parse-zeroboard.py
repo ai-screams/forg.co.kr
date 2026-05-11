@@ -58,19 +58,31 @@ SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
 PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
 PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
 
-# Boards downloaded into bronze tier but parsed by a different engine —
-# leaving them in EXCLUDE_BOARDS makes the skip explicit instead of letting
-# every record fail Zeroboard selectors silently (and miscount as
-# `_NonPostPage` in the summary). The Gnuboard4 parser
-# (`02b-parse-gnuboard4.py`) handles the gnuboard4 list; the gnuboard5
-# forg.kr successor boards are deferred to ROADMAP P2.3.
+# Boards parsed by a different engine. Listed explicitly so wrong-engine
+# captures never reach the Zeroboard selectors silently.
+#
+# UoBoard2 / Shop / Console: Gnuboard4 webbus2009_basic — `02b` parser.
+# Ultima (capitalised): Gnuboard5 theme/st-basic — ROADMAP P2.3 (not the
+# forg.kr lowercase `ultima`, which is a different g5 board on the
+# forg.kr successor site).
+# Boo / DF / LoL / Star2 / Diablo: zero bronze files; placeholder-only.
+#
+# FunBoard / porato / Reveal / Trash are NOT excluded — they use Zeroboard
+# 4.1's kritz_normal / kritz_normal2 / kritz_trash skins which share the
+# same `title_bg.jpg` table + `write by`/`comment by` meta fonts as the
+# default A-tier skin. The 47 + 21 webbus2009_basic captures mixed into
+# those boards skip via `_skin_other` in `detect_non_post_page` and route
+# to `02b` via its INCLUDE_BOARDS instead.
 EXCLUDE_BOARDS: frozenset[str] = frozenset({
-    # Gnuboard4 — forg.co.kr 2014 era (P2.2 parser)
-    "UoBoard2", "Ultima", "porato", "FunBoard", "Trash", "Reveal",
-    "Boo", "Shop", "Diablo", "DF", "LoL", "Star2", "Console",
-    # Gnuboard5 — forg.kr successor site (P2.3, parser not yet written)
-    # NOTE: case-sensitive — `ultima` (lowercase) is forg.kr g5,
-    # `Ultima` (capitalized) is forg.co.kr g4.
+    # Gnuboard4 (P2.2 — handled by 02b parser)
+    "UoBoard2", "Shop", "Console",
+    # No bronze data (placeholder-only)
+    "Boo", "Diablo", "DF", "LoL", "Star2",
+    # Gnuboard5 — forg.co.kr Ultima board
+    "Ultima",
+    # Gnuboard5 — forg.kr successor site (P2.3)
+    # NOTE: case-sensitive — `ultima` (lowercase) is forg.kr,
+    # `Ultima` (capitalised) is forg.co.kr.
     "aseeee", "dataaa", "free", "gonggg", "humorrr",
     "notice", "qnaaa", "screee", "trtrtr", "ultima",
 })
@@ -95,10 +107,23 @@ _NON_POST_MARKERS: tuple[tuple[str, str], ...] = (
     ("plugin_download", "plugin_redirect"),
 )
 
+# Wrong-engine skin markers — these route to a different parser, not us.
+# Each captures the substring that uniquely identifies the foreign skin.
+_FOREIGN_SKIN_MARKERS: tuple[tuple[str, str], ...] = (
+    # Gnuboard4 webbus2009_basic / webbus2009_Trash — `02b-parse-gnuboard4.py`
+    ("webbus2009_basic", "skin_gnuboard4_webbus"),
+    ("webbus2009_Trash", "skin_gnuboard4_webbus"),
+    # Gnuboard5 theme — ROADMAP P2.3
+    ("theme/st-basic", "skin_gnuboard5"),
+)
+
 
 def detect_non_post_page(html: str) -> str | None:
     """Return a reason string if this is not a real post, else None."""
     for marker, reason in _NON_POST_MARKERS:
+        if marker in html:
+            return reason
+    for marker, reason in _FOREIGN_SKIN_MARKERS:
         if marker in html:
             return reason
     # Last-ditch: a capture that is essentially only the Zeroboard licence
@@ -266,6 +291,16 @@ def extract_meta(font: Tag) -> dict[str, str | None]:
             mn = qs.get("member_no") or []
             if mn:
                 member_no = mn[0]
+    else:
+        # kritz_trash skin: `<font class="ver11px">PseudoName</font>` with no
+        # member_no link (Trash board lets non-members post under aliases).
+        # Fallback so the post still has a usable author field instead of
+        # collapsing to the "anonymous" default downstream.
+        ver11 = font.find("font", class_="ver11px")
+        if isinstance(ver11, Tag):
+            ver11_text = ver11.get_text(strip=True)
+            if ver11_text:
+                author = ver11_text
 
     homepage = None
     for a in font.find_all("a"):
