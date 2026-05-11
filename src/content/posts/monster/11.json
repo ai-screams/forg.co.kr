@@ -1,0 +1,41 @@
+{
+  "board": "monster",
+  "boardKr": "monster",
+  "postId": "11",
+  "title": "Harrower[챔피언]",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 1.전리품 2.상세정보 <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1.전리품 2.상세정보",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2003-03-20T13:40:24",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " Attributes<br>\n   Hits                  ???/???<br>\n   Stamina          128/128<br>\n   Mana          5000/5000<br>\n   Strength                904<br>\n   Dexterity               128<br>\n   Intelligence         1141<br>\n -----------------------------<br>\n Resistance<br>\n   Physical                58%<br>\n   Fire                       78%<br>\n   Cold                      78%<br>\n   Energy                  61%<br>\n -----------------------------<br>\n Damage<br>\n   Physical                 50%<br>\n   Fire                           ---<br>\n   Cold                          ---<br>\n   Energy                   50%<br>\n -----------------------------<br>\n Preferred Foods<br>\n   None<br>\n -----------------------------<br>\n Pack Instincts<br>\n   None<br>\n<br>\n p.s : 저게 진짜 스텟인지 블레스한 스텟인지 모르겠군요 수치가딱 안떨어져서 - -;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 수치는 이미 몬스터란에 업했습니다.<br>\n 각종 몬스터들도 약70%완성된 상태이므로 잡는방법을 서술해주시길-0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 수십명이서 에너지 볼택스 깔면 됩니다..용가리는 너무 약하더군용..<br>\n<br>\n 그래서 볼택으루 계속깔면 하러우가 못움직입니다 그떄 폭탄포션계속던저주시던가 <br>\n<br>\n 코포쏘시던가..흐흐... 맞다.. <br>\n<br>\n 그전에 짜라 하러우는 블레이드깔면됩니다 수십명이서.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030512213703",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=monster&no=11",
+  "sourceEngine": "zeroboard"
+}

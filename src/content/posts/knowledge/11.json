@@ -1,0 +1,47 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "11",
+  "title": "팔씨름 이기는 법.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  팔씨름을 하기 전에 사용할손의 방향으로 10번을 빙글빙글 회전하신 후 <br>\n팔씨름을 하면 75% 정도의 확률로 이길 수 있습니다.<br>\n저는 반대쪽으로 돌고해도 되더군요-0-;</td></tr></tbody></table>\n",
+  "bodyText": "팔씨름을 하기 전에 사용할손의 방향으로 10번을 빙글빙글 회전하신 후 팔씨름을 하면 75% 정도의 확률로 이길 수 있습니다. 저는 반대쪽으로 돌고해도 되더군요-0-;",
+  "author": "미끼벌레",
+  "authorMemberNo": "556",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T18:39:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "--\n<br>근데 서로 힘이 비슷해야지\n<br>저 같이 초허약 약골에겐\n<br>힘든..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "....지금 고1인데 초등학생한테도 지는데 하면 효과가 있을런지[.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그런거 안해도 다이기는데.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "초딩한테 털렷3"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203212157",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=11",
+  "sourceEngine": "zeroboard"
+}

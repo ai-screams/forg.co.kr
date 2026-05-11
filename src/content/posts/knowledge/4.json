@@ -1,0 +1,41 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "4",
+  "title": "팁 두가지+α",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  1. Ctrl+W 신공<br>\n<br>\n인터넷에서 얄딱꾸리한 이미지를 감상하거나 혹은 스팸 메일에서 튀어나온<br>\n얄딱꾸리한 이미지가 튀어나오는 찰나에 뒤에서 문 여는 소리가 들려오면<br>\n잽싸게 Ctrl+W키를 눌러줍니다. 왠만한 男은 기본적으로 연마한<br>\n신공이죠. -_-;<br>\n손가락 위치가 Alt+F4 보다 누르기 간편합니다.<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n2. Comet Cursor<br>\n<br>\nComet Cursor 라는 필요가 없는 스파이 웨어가 있습니다.<br>\n인터넷 돌아다니다 보면 커서가 바뀌어버리는-_-; <br>\n조금은 짜증납니다.<br>\n<br>\n<br>\n이 Comet Cursor 를 원천적으로 막을 수 있는 방법이 있습니다. <br>\n<br>\n1. 메모장을 실행 시킵니다. <br>\n<br>\n2. 아무렇게나 내용을 적고(안적어도 상관이 없습니다.) <br>\n<br>\n3. 파일메뉴 - 저장 에서 파일형식을 모든파일(*.*) 합니다. <br>\n<br>\n4. 파일의 이름을 \" comet.dll \" 으로 합니다. 반드시 이렇게 해야 합니다.. <br>\n<br>\n5. 저장위치는 윈도 98 / Me 는 Windows \\ System 폴더에, 윈도 2000은 Winnt \\ System32 폴더에, 윈도 XP 는 Windows \\ System32 폴더에<br>\n저장을 시켜줍니다. <br>\n<br>\n이렇게 해놓으면 나중에 혹시나 Comet Cursor 가 설치가 되려고 할 때는<br>\n설치할 것인가를 물어보게 됩니다. <br>\n<br>\n그때 No 를 선택하시면 됩니다. <br>\n<br>\n한마디로 메모장에서 만든 가상의 Comet.dll 파일 때문에 설치가 되지 않는 것이죠.. <br>\n<br>\n예전에는 설치를 할 것인가 물을 때, No 를 선택을 해도 설치가 되어버리지만, 임의로 Comet.dll 파일을 만들어 두었기 때문에 설치가 되지 않게 됩니다. <br>\n<br>\n가상으로 Comet.dll 파일을 만들면 Comet Cursor 와 Comet Toolbar 가 모두 설치가 되지 않게 됩니다. <br>\n<br>\n<br>\n출처 : <a href=\"http://winbbs.intizen.com/board/content.asp?db=wxptip&amp;number=3250\">http://winbbs.intizen.com/board/content.asp?db=wxptip&amp;number=3250</a><br>\n<br>\n<br>\n<br>\n3. 그밖에 간단한 단축키 몇가지...<br>\n<br>\n윈도우 탐색기 열기=윈도우키+E<br>\n<br>\n바탕 화면 보기(전체 창 최소화)=윈도우키+M<br>\n<br>\n제어판의 시스템 항목=윈도우키+Pause<br>\n<br>\n탐색기 혹은 익스플로러에서 앞으로=Alt+→<br>\n<br>\n&nbsp;&nbsp;\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;뒤로=Alt+←<br>\n<br>\n<br>\n자주 사용하는 프로그램은(메모장 등등...) 마우스 오른쪽 버튼을 클릭하고<br>\n나오는 속성 창에서 단축키 설정을 할 수 있습니다.&nbsp;&nbsp;바로 가기 키라는 항목을<br>\n작성하시면 되는데, Ctrl+Alt와 함께 눌러주는 것만으로 자주 사용하시는<br>\n프로그램을 간단히 실행시키실 수 있습니다만, 마우스 클릭이 더 편하시다면<br>\n굳이 필요없는 이야기인것 같습니다.<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "1. Ctrl+W 신공 인터넷에서 얄딱꾸리한 이미지를 감상하거나 혹은 스팸 메일에서 튀어나온 얄딱꾸리한 이미지가 튀어나오는 찰나에 뒤에서 문 여는 소리가 들려오면 잽싸게 Ctrl+W키를 눌러줍니다. 왠만한 男은 기본적으로 연마한 신공이죠. -_-; 손가락 위치가 Alt+F4 보다 누르기 간편합니다. 2. Comet Cursor Comet Cursor 라는 필요가 없는 스파이 웨어가 있습니다. 인터넷 돌아다니다 보면 커서가 바뀌어버리는-_-; 조금은 짜증납니다. 이 Comet Cursor 를 원천적으로 막을 수 있는 방법이 있습니다. 1. 메모장을 실행 시킵니다. 2. 아무렇게나 내용을 적고(안적어도 상관이 없습니다.) 3. 파일메뉴 - 저장 에서 파일형식을 모든파일(*.*) 합니다. 4. 파일의 이름을 \" comet.dll \" 으로 합니다. 반드시 이렇게 해야 합니다.. 5. 저장위치는 윈도 98 / Me 는 Windows \\ System 폴더에, 윈도 2000은 Winnt \\ System32 폴더에, 윈도 XP 는 Windows \\ System32 폴더에 저장을 시켜줍니다. 이렇게 해놓으면 나중에 혹시나 Comet Cursor 가 설치가 되려고 할 때는 설치할 것인가를 물어보게 됩니다. 그때 No 를 선택하시면 됩니다. 한마디로 메모장에서 만든 가상의 Comet.dll 파일 때문에 설치가 되지 않는 것이죠.. 예전에는 설치를 할 것인가 물을 때, No 를 선택을 해도 설치가 되어버리지만, 임의로 Comet.dll 파일을 만들어 두었기 때문에 설치가 되지 않게 됩니다. 가상으로 Comet.dll 파일을 만들면 Comet Cursor 와 Comet Toolbar 가 모두 설치가 되지 않게 됩니다. 출처 : http://winbbs.intizen.com/board/content.asp?db=wxptip&number=3250 3. 그밖에 간단한 단축키 몇가지... 윈도우 탐색기 열기=윈도우키+E 바탕 화면 보기(전체 창 최소화)=윈도우키+M 제어판의 시스템 항목=윈도우키+Pause 탐색기 혹은 익스플로러에서 앞으로=Alt+→ \"       \"             \"            뒤로=Alt+← 자주 사용하는 프로그램은(메모장 등등...) 마우스 오른쪽 버튼을 클릭하고 나오는 속성 창에서 단축키 설정을 할 수 있습니다.  바로 가기 키라는 항목을 작성하시면 되는데, Ctrl+Alt와 함께 눌러주는 것만으로 자주 사용하시는 프로그램을 간단히 실행시키실 수 있습니다만, 마우스 클릭이 더 편하시다면 굳이 필요없는 이야기인것 같습니다.",
+  "author": "미끼벌레",
+  "authorMemberNo": "556",
+  "authorHomepage": null,
+  "createdAt": "2005-06-17T19:18:50",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오 좋다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "sp2만써도 팝업차단은 거의 확실하더군요 -ㅁ-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "바탕화면 보기는 윈도우키+D 도 된답니다..\n<br>M보단 더 가깝죠;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203213051",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=4",
+  "sourceEngine": "zeroboard"
+}

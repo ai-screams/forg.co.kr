@@ -1,0 +1,53 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "23",
+  "title": "인터넷이 아무 이유없이 느려지는 경우에...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  PC에서 이 패치에 의한 장애가 있는 것으로 의심되는 이용자는 제어판의 프로그 램 추가/제거 <br>\n<br>\n항목에서 'Windows XP 핫픽스 - KB839645'를 찾아 제거하면 된다.<br>\n<br>\n----------------------------------------------------------------------------------<br>\n원인:<br>\n<br>\n윈도우 xp 보안 패치중 위의 항목 핫픽스 KB839645의 결함으로 인하여 네트워크 데이터전송불안 인터넷공유위반 메세지발생등의 에러가 발생함에따라 위의 패치번호를 삭제하면 되고 윈도우사측에서는 보안패치 2.0 을 곧 내놓는다고 하네요. 자세한사항은 안철수 연구소나 한국MS 사이트에서 참조하세요.<br>\n<br>\n<br>\n[펌]<br>\n<br>\n<br>\n========================================================<br>\n<br>\n저는 이걸 깔고 나니 90메가 나오던 속도가 60메가로 뚝 떨어졌습니다.</td></tr></tbody></table>\n",
+  "bodyText": "PC에서 이 패치에 의한 장애가 있는 것으로 의심되는 이용자는 제어판의 프로그 램 추가/제거 항목에서 'Windows XP 핫픽스 - KB839645'를 찾아 제거하면 된다. ---------------------------------------------------------------------------------- 원인: 윈도우 xp 보안 패치중 위의 항목 핫픽스 KB839645의 결함으로 인하여 네트워크 데이터전송불안 인터넷공유위반 메세지발생등의 에러가 발생함에따라 위의 패치번호를 삭제하면 되고 윈도우사측에서는 보안패치 2.0 을 곧 내놓는다고 하네요. 자세한사항은 안철수 연구소나 한국MS 사이트에서 참조하세요. [펌] ======================================================== 저는 이걸 깔고 나니 90메가 나오던 속도가 60메가로 뚝 떨어졌습니다.",
+  "author": "쟈나저씨",
+  "authorMemberNo": "643",
+  "authorHomepage": null,
+  "createdAt": "2005-07-17T04:58:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "요즘 느리다 생각했는데 떠억하니 깔려있군요\n<br>\n<br> m$ 잊지않겠다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "랜선을 한번 닦아 보세요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 랜선 뽑으니까 더 빨라지던데요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "키보드를 청소해주면 빨라진답니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "근데 저 고양이는..메인쿤..맞져?\n<br>\n<br>지구상에서 제일 큰 고양이.....\n<br>\n<br>숫컷의 경우 최대 10kg 까지 나간다던데....고양이가 아니라...시라소니..수준...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203212228",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=23",
+  "sourceEngine": "zeroboard"
+}

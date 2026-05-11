@@ -1,0 +1,35 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "36",
+  "title": "나도 캡쳐 프로그램",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  실행하시고 포맷에서 bmp이냐 jpg냐 여부와 퀄리티를 지정하시고<br>\n저장될 경로를 지정해줘야 합니다<br>\n<br>\nC:\\Documents and Settings\\Mypc\\My Documents<br>\n<br>\n이런 식으로 지정해주시면 저장이 됩니다<br>\n아마 디폴트는 C:/ 일거예요<br>\nhide버튼을 누르면 트레이 아이콘으로 들어가게되고<br>\n캡쳐버튼은 프린트 스크린입니다<br>\n참고로 스샷을 찍은후 프로그램을 종료하면 스샷상태는 초기화가 됩니다<br>\n고로 찍힌 샷들은 다른 폴더로 옮기거나 이름을 바꿀필요가 있지요<br>\n이거보다 나은 버젼이 있었던 것 같은데<br>\n구하기가 버겁네요</td></tr></tbody></table>\n",
+  "bodyText": "실행하시고 포맷에서 bmp이냐 jpg냐 여부와 퀄리티를 지정하시고 저장될 경로를 지정해줘야 합니다 C:\\Documents and Settings\\Mypc\\My Documents 이런 식으로 지정해주시면 저장이 됩니다 아마 디폴트는 C:/ 일거예요 hide버튼을 누르면 트레이 아이콘으로 들어가게되고 캡쳐버튼은 프린트 스크린입니다 참고로 스샷을 찍은후 프로그램을 종료하면 스샷상태는 초기화가 됩니다 고로 찍힌 샷들은 다른 폴더로 옮기거나 이름을 바꿀필요가 있지요 이거보다 나은 버젼이 있었던 것 같은데 구하기가 버겁네요",
+  "author": "jgdc",
+  "authorMemberNo": "988",
+  "authorHomepage": null,
+  "createdAt": "2005-08-04T06:31:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "cps13.exe",
+      "fileNum": 1,
+      "sizeBytes": 211968
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "무플...불쌍해..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203212108",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=36",
+  "sourceEngine": "zeroboard"
+}

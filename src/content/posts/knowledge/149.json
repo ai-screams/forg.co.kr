@@ -1,0 +1,59 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "149",
+  "title": "모니터 크기에 따른 비교...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/knowledge/lcdsizejx5.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n30인치는 15인치의 4배군요 아주-_-;;</td></tr></tbody></table>\n",
+  "bodyText": "30인치는 15인치의 4배군요 아주-_-;;",
+  "author": "썩은사과",
+  "authorMemberNo": "1092",
+  "authorHomepage": "http://blog.paran.com/treeny",
+  "createdAt": "2007-02-19T11:22:00",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "lcdsizejx5.gif",
+      "fileNum": 1,
+      "sizeBytes": 83148
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "비율은 16:10이죠?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "뽐뿌게시판에 가야하는게 아닌가!\n<br>하앍.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "와이드랗고 나와있는건 아마 16:10 이고 그냥 와이드 표기 안된건 4:3 이겠죠?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "으흐 30짜리 갖고싶다..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "면적이니까 4배인게 당연...\n<br>저거 보다 더 중요한 사실은 모니터를 판매할때 적힌 크기는 '모니터정면'의 크기고.\n<br>'실제스크린 크기' 따로 있다는거지요.\n<br>\n<br>일반적으로 -1인치.\n<br>골때리는놈은 -1 인치 이상.\n<br>같은 크기라고 적혀있어도 CRT가 더 작다고 적힌게 보통 CRT가 테두리가 두꺼워서 그렇지요.\n<br>정확히 저대로는 절대 아닌것이지요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071017120200",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=149",
+  "sourceEngine": "zeroboard"
+}

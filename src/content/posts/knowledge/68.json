@@ -1,0 +1,35 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "68",
+  "title": "XP 팁",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  아시는 분 많으시겠지만... 모르시는 분들을 위해. -O-</td></tr></tbody></table>\n",
+  "bodyText": "아시는 분 많으시겠지만... 모르시는 분들을 위해. -O-",
+  "author": "shinhwi",
+  "authorMemberNo": "1319",
+  "authorHomepage": "http://www.shinhwi.com",
+  "createdAt": "2006-01-17T09:38:01",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "gpedit.msc 을 찾을수 없습니다 라고 나오네요 ㅠ.,ㅜ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "xp professional edition에서만 gpedit.msc가 될겁니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203210417",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=68",
+  "sourceEngine": "zeroboard"
+}

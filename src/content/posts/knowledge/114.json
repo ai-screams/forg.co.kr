@@ -1,0 +1,41 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "114",
+  "title": "이 콘트롤을 활성화하고 사용하려면 클릭하십시오",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  MS가 이올라스라는 회사와의 특허분쟁에서 지는 바람에 액티브X관련 기술중 일부를 사용할 수 없게 되는 바람에&nbsp;&nbsp;액티브X의 사용에 제한이 생기게 되었습니다. <br>\n<br>\nXP업데이트 이후, 플래시 버튼이 한 번으로 작동이 되질 않으며 \"이 콘트롤을 활성화하고 사용하려면 클릭하십시오.\" 라는 글이 떠서 상당히 신경쓰이게 만들어 져서 불편하신 분들은 다음을 참고하세요.<br>\n<br>\n<br>\n<b>방법 1</b><br>\n<br>\nKB912812 라는 패치를 삭제해 주시면 됩니다. 물론 자동업데이트에서 깔리지 않도록 신경 써주시는 것도 필요합니다. <br>\n<br>\n삭제는 제어판 - 프로그램추가/제거 에서 하실 수 있습니다. 안보이시면 위에 '업데이트 표시' 항목에 체크해 보시고 찾아보세요.<br>\n<br>\n<b>방법 2</b><br>\n<br>\n위에 방법이 귀찮으면 아래 링크로 가서 파일을 다운 받으신뒤 실행해주면 해당 패치가 제거 됩니다.<br>\n<br>\n<a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=ko&amp;FamilyID=B7D9801B-4FB5-492E-903E-3400ABF1D731\">http://www.microsoft.com/downloads/details.aspx?displaylang=ko&amp;FamilyID=B7D9801B-4FB5-492E-903E-3400ABF1D731</a><br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "MS가 이올라스라는 회사와의 특허분쟁에서 지는 바람에 액티브X관련 기술중 일부를 사용할 수 없게 되는 바람에  액티브X의 사용에 제한이 생기게 되었습니다. XP업데이트 이후, 플래시 버튼이 한 번으로 작동이 되질 않으며 \"이 콘트롤을 활성화하고 사용하려면 클릭하십시오.\" 라는 글이 떠서 상당히 신경쓰이게 만들어 져서 불편하신 분들은 다음을 참고하세요. 방법 1 KB912812 라는 패치를 삭제해 주시면 됩니다. 물론 자동업데이트에서 깔리지 않도록 신경 써주시는 것도 필요합니다. 삭제는 제어판 - 프로그램추가/제거 에서 하실 수 있습니다. 안보이시면 위에 '업데이트 표시' 항목에 체크해 보시고 찾아보세요. 방법 2 위에 방법이 귀찮으면 아래 링크로 가서 파일을 다운 받으신뒤 실행해주면 해당 패치가 제거 됩니다. http://www.microsoft.com/downloads/details.aspx?displaylang=ko&FamilyID=B7D9801B-4FB5-492E-903E-3400ABF1D731",
+  "author": "kritz",
+  "authorMemberNo": "4",
+  "authorHomepage": null,
+  "createdAt": "2006-08-30T12:34:40",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "감사합니다 ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "영윈쓰는건 이럴때 불편하군요=_= 일일히 언어변경해줘야되니;ㅅ;\n<br>\n<br>잘쓰겠습니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그보단 피씨방 그런데 가서 서명되지 않은 activeX 차단때문에 보안 푸느라 귀찮아효;ㅂ;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071202213851",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=114",
+  "sourceEngine": "zeroboard"
+}

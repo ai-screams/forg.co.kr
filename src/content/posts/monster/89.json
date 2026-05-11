@@ -1,0 +1,41 @@
+{
+  "board": "monster",
+  "boardKr": "monster",
+  "postId": "89",
+  "title": "Semidar[일쉐나챔피언]",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n 1.전리품<br>\n 2.상세정보<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1.전리품 2.상세정보",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-05-13T23:44:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1.전리품<br>\n<br>\n?????<br>\n<br>\n2.상세정보<br>\n<br>\nAbyss계열의 챔피온이다.<br>\n<br>\n 50명의 인원이덤벼서 사냥해서 반 이상이죽고 고전해서 잡혔다고한다.<br>\n<br>\n 큰 서큐버스의 형태이며 매우빠른 움직임을 가지고있다.<br>\n<br>\n 체력이 떨어지면 스스로 체력을 체운다.(풀헬스를 맨든다고함..)<br>\n<br>\n<br>\n<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 1 전리품 : 6000 Gp, Magic 무기와 방어구"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 풀헬스만들면 어떻게 잡는데요?<br>\n 50명이 동시에 칼바를...?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020613111043",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=monster&no=89",
+  "sourceEngine": "zeroboard"
+}

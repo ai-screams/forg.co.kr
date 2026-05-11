@@ -1,0 +1,29 @@
+{
+  "board": "monster",
+  "boardKr": "monster",
+  "postId": "16",
+  "title": "Flesh Renderer[둠챔피언]",
+  "categoryLabel": null,
+  "bodyHtml": "\n\n     \t\t\t\n     \t\t\t\n     \t\t\t 1.전리품 2.상세정보 <br>\n<br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr>\n<td>\n</td>\n</tr>\n</tbody></table>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1.전리품 2.상세정보",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2003-03-20T13:57:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 힘: 401 <br>\n 민첩: 207 <br>\n 지능: 222 <br>\n 체력: 4500 <br>\n 스태미나: 207 <br>\n 마나: 222 <br>\n 피해: 47-58 <br>\n 타격: 물리 80%, 독 20% 피해 <br>\n 물리저항: 87 <br>\n 불저항: 55 <br>\n 냉기저항: 51 <br>\n 독저항: 100 <br>\n 에너지저항: 77 <br>\n 루팅: 1500~1600 금화, 수많은 마법무기와 갑옷들 <br>\n 스킬- 마법저항 : 156.3 <br>\n 전술 : 100 <br>\n 레슬링 : 99.4 "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030512213735",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=monster&no=16",
+  "sourceEngine": "zeroboard"
+}

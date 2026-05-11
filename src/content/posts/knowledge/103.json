@@ -1,0 +1,53 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "103",
+  "title": "네이버 블로그에서 채팅하기.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <a href=\"http://gabbly.com/blog.naver.com/자신의\">http://gabbly.com/blog.naver.com/자신의</a> 아이디&nbsp;&nbsp; =&gt; 이렇게요!!!<br>\n<br>\n<br>\n자신의 블로그 주소에 다가.....<br>\n<br>\n<br>\n<br>\ngabbly.com 만 추가 해주면.......<br>\n<br>\n<br>\n<br>\n실시간 채팅..!!<br>\n<br>\n<br>\n그러면 방문한 블로그또는 자신의 블로그에서는 계속 떠있더라구요...<br>\n<br>\n재미있어요....</td></tr></tbody></table>\n",
+  "bodyText": "http://gabbly.com/blog.naver.com/자신의 아이디   => 이렇게요!!! 자신의 블로그 주소에 다가..... gabbly.com 만 추가 해주면....... 실시간 채팅..!! 그러면 방문한 블로그또는 자신의 블로그에서는 계속 떠있더라구요... 재미있어요....",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://blog.naver.com/selic",
+  "createdAt": "2006-06-19T18:28:23",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네이버 블로그가 아니라 어떤 사이트든 되는 건가보군요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네.....그러네요...@@"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오우 좋은 잡식이네요... 퍼갑니다. ^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<a href=\"http://gabbly.com/forg.co.kr/\">http://gabbly.com/forg.co.kr/\n</a><br>응용으로 포그도 되죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "신기하당...쵝오!!"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071202213805",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=103",
+  "sourceEngine": "zeroboard"
+}

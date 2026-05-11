@@ -1,0 +1,41 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "123",
+  "title": "영문판 울온홈피 한글로 보십시다 ㅋㅋ",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  밑에 누르고 가시면 한글로 번역해서 보여주는군요 ^^<br>\n포그홈 바끼고 소식에 답답하신분들 보실만 하던데요 ㅋㅋ</td></tr></tbody></table>\n",
+  "bodyText": "밑에 누르고 가시면 한글로 번역해서 보여주는군요 ^^ 포그홈 바끼고 소식에 답답하신분들 보실만 하던데요 ㅋㅋ",
+  "author": "버버리",
+  "authorMemberNo": "6995",
+  "authorHomepage": null,
+  "createdAt": "2006-09-30T22:13:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "좋내요 ㅎㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "ㄱ-..  영어 해석하는게 더 좋겠군요;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "좌측메뉴 클릭하면 왜 원상복귀 된요 ㅠㅠ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071201221033",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=123",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Vendor",
+  "boardKr": "Vendor",
+  "postId": "36",
+  "title": "마코토짐마 위치 고급 한옥가구 전문점!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Vendor/UO0001.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  한옥 가구 고급 명품만 취급 합니다!<br>\n위치는 토구노섬 마코토짐마 문게이트 동쪽, 담벼락 뒤에 초가 지붕!</td></tr></tbody></table>\n",
+  "bodyText": "한옥 가구 고급 명품만 취급 합니다! 위치는 토구노섬 마코토짐마 문게이트 동쪽, 담벼락 뒤에 초가 지붕!",
+  "author": "남포동",
+  "authorMemberNo": "5612",
+  "authorHomepage": null,
+  "createdAt": "2007-01-16T06:30:20",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0001.jpg",
+      "fileNum": 1,
+      "sizeBytes": 176128
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "동열님 멋져요 홧팅"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071013063229",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Vendor&no=36",
+  "sourceEngine": "zeroboard"
+}

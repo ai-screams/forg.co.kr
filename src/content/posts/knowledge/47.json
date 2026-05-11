@@ -1,0 +1,88 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "47",
+  "title": "Forg 버튼.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/knowledge/forg.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  도움이 될지 모르겠습니다.<br>\n<br>\n우선 이 파일을 압축을 풀고 아무데나 복사해 넣습니다.<br>\n<br>\n아마 이전 기본 버튼 주소는 C:\\Program Files\\forg's world 로 기억합니다.<br>\n<br>\n익스플로러 버튼창에 등록을 해야합니다.<br>\n<br>\n시작 - 실행 - gpedit.msc <br>\n<br>\n그룹 정책이 실행됩니다. <br>\n그곳서 <br>\n\"사용자구성 - Windows 설정 - Internet Explorer 유지/보수 - 브라우저 사용자 인터페이스\" 을 들어가시면<br>\n\"도구모음 사용자 지정\" 이 있습니다. 그걸 더블클릭 합니다.<br>\n<br>\n\"단추\" 칸에서 \"추가\" 버튼을 클릭합니다.<br>\n<br>\n도구 모음 캡션에는 Forg라던가 폵이라던가 입력하시고,<br>\n도구 모음 동작에는 <a href=\"http://forg.co.kr을\">http://forg.co.kr을</a> 적어주세요.<br>\n<br>\n그리고 도구모음 컬러 아이콘에는 on.ico<br>\n흑백 아이콘에는 off.ico<br>\n를 선택합니다. <br>\n\"기본으로 이 단추를 도구모음에 선택\" 을 누르시고 확인 버튼을 누르세요.<br>\n<br>\n익스플로러를 재 실행하면 위에 아이콘이 붙어 있을껍니다.<br>\n<br>\nXP밖에 모릅니다.<br>\n<br>\n<a href=\"http://kin.naver.com/browse/db_detail.php?d1id=1&amp;dir_id=113&amp;eid=W2TwJoL%2FyIhIAlCh%2F42qLbDNfjJqv02s\">http://kin.naver.com/browse/db_detail.php?d1id=1&amp;dir_id=113&amp;eid=W2TwJoL%2FyIhIAlCh%2F42qLbDNfjJqv02s</a> 여기에 XP밖에 안적혀 있더라구요.</td></tr></tbody></table>\n",
+  "bodyText": "도움이 될지 모르겠습니다. 우선 이 파일을 압축을 풀고 아무데나 복사해 넣습니다. 아마 이전 기본 버튼 주소는 C:\\Program Files\\forg's world 로 기억합니다. 익스플로러 버튼창에 등록을 해야합니다. 시작 - 실행 - gpedit.msc 그룹 정책이 실행됩니다. 그곳서 \"사용자구성 - Windows 설정 - Internet Explorer 유지/보수 - 브라우저 사용자 인터페이스\" 을 들어가시면 \"도구모음 사용자 지정\" 이 있습니다. 그걸 더블클릭 합니다. \"단추\" 칸에서 \"추가\" 버튼을 클릭합니다. 도구 모음 캡션에는 Forg라던가 폵이라던가 입력하시고, 도구 모음 동작에는 http://forg.co.kr을 적어주세요. 그리고 도구모음 컬러 아이콘에는 on.ico 흑백 아이콘에는 off.ico 를 선택합니다. \"기본으로 이 단추를 도구모음에 선택\" 을 누르시고 확인 버튼을 누르세요. 익스플로러를 재 실행하면 위에 아이콘이 붙어 있을껍니다. XP밖에 모릅니다. http://kin.naver.com/browse/db_detail.php?d1id=1&dir_id=113&eid=W2TwJoL%2FyIhIAlCh%2F42qLbDNfjJqv02s 여기에 XP밖에 안적혀 있더라구요.",
+  "author": "Nitro",
+  "authorMemberNo": "342",
+  "authorHomepage": null,
+  "createdAt": "2005-08-17T15:53:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "forg_world.zip",
+      "fileNum": 1,
+      "sizeBytes": 249548
+    },
+    {
+      "name": "forg.gif",
+      "fileNum": 2,
+      "sizeBytes": 4096
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "우선 이 파일을 압축을 풀고 '아데나 복사'해 넣습니다.\n<br>\n<br>...리니지 붕괴"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "......모를줄 알았는데"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "pro 버전에서만 됩니다 ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음.. 찾아보니까\n<br>\n<br><a href=\"http://manian.dreamwiz.com/board/view.asp?bid=A020107&amp;no=74587\">http://manian.dreamwiz.com/board/view.asp?bid=A020107&amp;no=74587\n</a><br>\n<br>이런 프로그램이 있다는군요. 작동 보장은 못합니다 ~_~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "'연결' 에다가 바로가기 추가시켜놓고 쓰셔도 간단하면서도 비슷한 효과를.. \n<br>아이콘 같은건 기대할수 없지만서도.. <img border=\"0\" src=\"emoticon/m_bowwow.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "포그버튼이 뭔가요??"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "인터넷 도구모음(뒤로, 앞으로, 중지, 새로고침, 홈, 검색, 즐겨찾기 같은)이 있는 곳에 포그홈에 올수있는 바로가기 버튼을 만드는 겁니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "익스플로러 기본페이지 포그홈이라서 패스~_~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아데나..-_-?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071202215656",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=47",
+  "sourceEngine": "zeroboard"
+}

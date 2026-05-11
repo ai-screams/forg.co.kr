@@ -1,0 +1,59 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "78",
+  "title": "부싯돌에 불똥이 튀는 원리.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  오개념 정정합니다. 부싯돌에서 불꽃튀는것은 마찰열 아닙니다! 부싯돌의 불꽃은 압전현상에 의한 것으로, 전자팁을 생각하시면 됩니다. 석영의 결정구조가 외부에서 힘을 받을 경우 결정구조가 찌그러지면서 양단에 전압이 걸리고, 그 전압이 방전되는 과정에서 전기스파크가 발생하는 것입니다. 절!대!로! 마찰열에 의한 불꽃이 아닙니다<br>\n<br>\n<br>\n..... 지식인의 어느 한 리플에서..<br>\n<br>\n불펌입니다. </td></tr></tbody></table>\n",
+  "bodyText": "오개념 정정합니다. 부싯돌에서 불꽃튀는것은 마찰열 아닙니다! 부싯돌의 불꽃은 압전현상에 의한 것으로, 전자팁을 생각하시면 됩니다. 석영의 결정구조가 외부에서 힘을 받을 경우 결정구조가 찌그러지면서 양단에 전압이 걸리고, 그 전압이 방전되는 과정에서 전기스파크가 발생하는 것입니다. 절!대!로! 마찰열에 의한 불꽃이 아닙니다 ..... 지식인의 어느 한 리플에서.. 불펌입니다.",
+  "author": "pian",
+  "authorMemberNo": "240",
+  "authorHomepage": null,
+  "createdAt": "2006-04-01T11:39:53",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아... 그래서 아무 돌이나 부딛친다고 불꽃튀는게 아니였구나."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아 그런거였군요~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "마찰이란거 자체가 전자기학적 작용입니다. 마찰하는 양편의 물체에 존재하고 있는 입자들의 전자기적작용으로 마찰현상이 일어 나는 것입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "하지만 부싯돌에서 불똥이 튀는건 마찰열이 아니죠"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "수정을 누르면 전기통하나 -ㅁ-;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "통합니다 -ㅁ-\n<br>\n<br>가스버너에 점화기 불꽃이 수정을 압축해서 나오는 압전기죠"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203210449",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=78",
+  "sourceEngine": "zeroboard"
+}

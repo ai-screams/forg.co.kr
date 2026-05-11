@@ -1,0 +1,35 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "143",
+  "title": "마우스우클릭방지 해제하기",
+  "categoryLabel": "링크",
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <a href=\"http://www.happycgi.com/detail.cgi?number=13411\">http://www.happycgi.com/detail.cgi?number=13411</a><br>\n<br>\n음;; alert 기능을 제가 좁게 알고있었나보군요 -ㅁ-<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "http://www.happycgi.com/detail.cgi?number=13411 음;; alert 기능을 제가 좁게 알고있었나보군요 -ㅁ-",
+  "author": "εεΜΓΞ",
+  "authorMemberNo": "383",
+  "authorHomepage": "http://yunspark.x-y.net",
+  "createdAt": "2007-01-23T08:49:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "적절한줄넘기는 건강에 최고란다\n<br>\n<br>이 시그 오랜만에 보네요 ㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "쇼킹하네요.. 응용한 방법으로 문서내의 거의 모든 값들과 오브젝트에 대한 컨트롤이 가능하네요..\n<br>매우(?) 세심한 배려가 없는 사이트라면.. 결제금액의 조작까지 매우 쉽게 가능하겠네요..\n<br>후아.. 살짝 끔찍해지는군요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071201220803",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=143",
+  "sourceEngine": "zeroboard"
+}

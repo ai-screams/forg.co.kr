@@ -1,0 +1,53 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "34",
+  "title": "캡쳐프로그램",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  캡쳐는 print screen키로,<br>\n<br>\n윈도우 좌 하단에 작은 아이콘으로 활성화됩니다.<br>\n<br>\n캡쳐프로그램 종료도 윈도우 좌 하단에 작은 아이콘으로 우클릭으로 종료.<br>\n<br>\n인스톨 필요없고 프로그램 삭제시 실행화일만 휴지통에 버려주시면 끝-_-;<br>\n<br>\n전체캡쳐, 부분영역캡쳐, 실행중인 프로그램캡쳐 지원-_-;</td></tr></tbody></table>\n",
+  "bodyText": "캡쳐는 print screen키로, 윈도우 좌 하단에 작은 아이콘으로 활성화됩니다. 캡쳐프로그램 종료도 윈도우 좌 하단에 작은 아이콘으로 우클릭으로 종료. 인스톨 필요없고 프로그램 삭제시 실행화일만 휴지통에 버려주시면 끝-_-; 전체캡쳐, 부분영역캡쳐, 실행중인 프로그램캡쳐 지원-_-;",
+  "author": "Forg",
+  "authorMemberNo": "2",
+  "authorHomepage": null,
+  "createdAt": "2005-08-02T13:26:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "KalMuRi.exe",
+      "fileNum": 1,
+      "sizeBytes": 465408
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "땽쓰.............................."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오메메 이거 좋군요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이거좋네요 잘쓸깨요 ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전, 아직도 UOSU만 고집합니다.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071203213149",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=34",
+  "sourceEngine": "zeroboard"
+}

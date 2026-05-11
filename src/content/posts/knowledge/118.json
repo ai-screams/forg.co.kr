@@ -1,0 +1,29 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "118",
+  "title": "자신의 플래시가 도데체 어디까지 떠돌아다니는지??",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <a href=\"http://www.mochibot.com/\">http://www.mochibot.com/</a><br>\n추적하는 사이트 라고 합니다.<br>\n설명을 보자니 플래시 제작시에 지정 코드를 넣으면 된다는군요.<br>\n저는 못써봤지만 만드시는 분들에게는 꽤 유용할듯...<br>\n<br>\nFunshop 설명:<br>\n내가 만든 FLASH 컨텐츠가 도대체 어디로 돌아다니고 있는지 궁금한 분들이 계실것입니다.<br>\nMochiBot은 그 FLASH가 어떤 서버에서 몇명의 사람들이 보는지 모니터링 해주는 추적 서비스입니다.<br>\n사이트에서 주는 코드를 FLASH의 액션 스크립트에 넣는것 만으로 가능. <br>\n</td></tr></tbody></table>\n",
+  "bodyText": "http://www.mochibot.com/ 추적하는 사이트 라고 합니다. 설명을 보자니 플래시 제작시에 지정 코드를 넣으면 된다는군요. 저는 못써봤지만 만드시는 분들에게는 꽤 유용할듯... Funshop 설명: 내가 만든 FLASH 컨텐츠가 도대체 어디로 돌아다니고 있는지 궁금한 분들이 계실것입니다. MochiBot은 그 FLASH가 어떤 서버에서 몇명의 사람들이 보는지 모니터링 해주는 추적 서비스입니다. 사이트에서 주는 코드를 FLASH의 액션 스크립트에 넣는것 만으로 가능.",
+  "author": "Isyx",
+  "authorMemberNo": "5694",
+  "authorHomepage": null,
+  "createdAt": "2006-09-03T19:02:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이건 일종의 스파이웨어 아닌가요?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071201220210",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=118",
+  "sourceEngine": "zeroboard"
+}

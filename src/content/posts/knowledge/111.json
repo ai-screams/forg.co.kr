@@ -1,0 +1,22 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "111",
+  "title": "WMP 누적패치..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  윈도 미디어플레이어9 설치후 인터넷 실시간 동영상 안 나올 때<br>\n그 증상은 윈도 미디어 플레이어 누적패치를 실행함으로<br>\n고칠 수 있다고 알려져 있습니다.<br>\n<br>\n<br>\n<br>\n윈도 XP용 누적패치<br>\n<a href=\"http://simfile.chol.com/view.php?fnum=31110\">http://simfile.chol.com/view.php?fnum=31110</a><br>\n<br>\n<br>\n윈도 9X, Me, 2000용 누적패치 <br>\n<a href=\"http://simfile.chol.com/view.php?fnum=31109\">http://simfile.chol.com/view.php?fnum=31109</a><br>\n<br>\n/<br>\n<br>\nregsvr32 wmnetmgr.dll<br>\n시작 - 실행에서 위의것을 실행하면 된다고도 하지만<br>\n저는 안되더군요<br>\n<br>\n혹시 누적패치란게 맘에 안드시는분은 일단 저거부터 실행해보세요<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "윈도 미디어플레이어9 설치후 인터넷 실시간 동영상 안 나올 때 그 증상은 윈도 미디어 플레이어 누적패치를 실행함으로 고칠 수 있다고 알려져 있습니다. 윈도 XP용 누적패치 http://simfile.chol.com/view.php?fnum=31110 윈도 9X, Me, 2000용 누적패치 http://simfile.chol.com/view.php?fnum=31109 / regsvr32 wmnetmgr.dll 시작 - 실행에서 위의것을 실행하면 된다고도 하지만 저는 안되더군요 혹시 누적패치란게 맘에 안드시는분은 일단 저거부터 실행해보세요",
+  "author": "pian",
+  "authorMemberNo": "240",
+  "authorHomepage": "http://pians.cafe24.com",
+  "createdAt": "2006-08-14T18:43:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071201220408",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=111",
+  "sourceEngine": "zeroboard"
+}

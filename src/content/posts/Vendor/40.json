@@ -1,0 +1,28 @@
+{
+  "board": "Vendor",
+  "boardKr": "Vendor",
+  "postId": "40",
+  "title": "루나 벤더입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Vendor/vender.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  스크린샷 에 나온 뻘건색 부분이 벤더 자리이고요<br>\n<br>\n파는 아이템은 주로: <br>\n<br>\n* 잉갓<br>\n* ML 아이템 <br>\n* 기부 아이템<br>\n* 드래곤디드<br>\n* 단련분말<br>\n* 시약<br>\n* 나무<br>\n* 파스<br>\n* 음악기어<br>\n<br>\n등입니다.<br>\n<br>\nps. 벤더 자리 하나 있는데.필요하신분은 쪽지주세요~ <br>\n&nbsp;&nbsp;&nbsp;&nbsp; (리필가능한분만요 ^^)</td></tr></tbody></table>\n",
+  "bodyText": "스크린샷 에 나온 뻘건색 부분이 벤더 자리이고요 파는 아이템은 주로: * 잉갓 * ML 아이템 * 기부 아이템 * 드래곤디드 * 단련분말 * 시약 * 나무 * 파스 * 음악기어 등입니다. ps. 벤더 자리 하나 있는데.필요하신분은 쪽지주세요~ (리필가능한분만요 ^^)",
+  "author": "ㅋㅋㅋㅋ",
+  "authorMemberNo": "7741",
+  "authorHomepage": null,
+  "createdAt": "2007-03-14T19:25:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "vender.jpg",
+      "fileNum": 1,
+      "sizeBytes": 85606
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071013062943",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Vendor&no=40",
+  "sourceEngine": "zeroboard"
+}

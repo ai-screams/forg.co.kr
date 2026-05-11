@@ -1,0 +1,47 @@
+{
+  "board": "monster",
+  "boardKr": "monster",
+  "postId": "90",
+  "title": "Barracoon the Piper[일쉐나챔피언]",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/bara.gif\"><br>     \t\t\t     \t\t\t 1.전리품<br>\n 2.상세정보<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1.전리품 2.상세정보",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": "http://www.forg.co.kr",
+  "createdAt": "2002-05-13T23:53:51",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "bara.gif",
+      "fileNum": 1,
+      "sizeBytes": 45260
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전리품 : 지피:6000지피대 가량, 미덕무기 브로드 소드(전갈의 독), 뱅퀴 크리스 택 20 민첩둔화 61차지,<br>\n             뱅퀴 대석궁 택 20, 그리구 별루 옵션 안좋은 매직무기 2개, 보석류 종류별루 약간, 잡다한 여러가지<br>\n<br>\n 방금 2시간 30분에 걸처서 용맹에서 다리건너서 나오는 챔피언 스폰지역 방금 2시간 30분에 걸처서 쥐돌이하구 다이어 울프 등 죽였는뎅 단계에 따라 새로운 몹이 나오는거 같지는 않고 중심부에는 주로 쥐돌이 다이어 울프, 화이어 울프 등이구 외곽에 드래곤,드래이크, 머미, 와이번 등이 있음,거기 한가운데서 돌들에 둘러 싸여 있는곳에서 갑자기 빨갱이가  스폰 되던데 쥐돌이 한테 쫓기느라 정신 없어서 맞는지 모르겠지만 위 이름하구 비슷한것 같음(블랙손 2디로 가서 머덜 npc 처럼 보였는지도 모르구).암튼 칼둔에 나오는 머덜 NPC 같이 생겼구 용가리로 죽이는뎅 별루 어렵지는 않은것 같음 사람 모양하고 있어서 그런지 잡다한 것들이 상당히 많음  매직 안 붙은 옷이라든가 신발 망토 무기 방패 등등, 값나가는한 거는 시체안에 백팩에 들어 있음. 죽이구 나서 명성을 보니 eradicator of the vermin horde . 그리구 돌아오는 길에 메이지 쥐돌이 죽이고 가방을 한번 봤더니 저번 크리스마스 선물과 같은 모양인 흉상이 있던데 그거 원래 쥐돌이 한테 나오나? 모르것다 색은 흰색(리얼 화이트아님)이던뎅 이름은 흉상 이라구 되잇구<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 타이틀이라도 스샷에 올려주심 좋겠군요-0-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그 흉상은 쥐돌이 메이지가 주죠"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020613111112",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=monster&no=90",
+  "sourceEngine": "zeroboard"
+}

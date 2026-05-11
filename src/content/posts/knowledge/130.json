@@ -1,0 +1,35 @@
+{
+  "board": "knowledge",
+  "boardKr": "knowledge",
+  "postId": "130",
+  "title": "와우 플포 플래쉬 베너 없애기",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/knowledge/bann.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ads.playforum.net<br>\n127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ads1.playforum.net<br>\n127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataninfo.playforum.net<br>\n<br>\n이걸 윈도우 \\system32\\driver\\etc에 host 파일 끝에 추가하면 됩니다.<br>\n<br>\n작업을 마쳤으나 페이지에 오류가 있을수도 있는데<br>\n<br>\n그게 싫으시면 마지막 데이탄인포를 지우시면 됩니다.<br>\n<br>\n대신 리니지 1천 아데나 광고가 생기죠<br>\n아 그리고 미묘하게 플포 로딩이 길어질수도 있는데<br>\n<br>\n짜증나는 플래쉬 베너 광고 보는것보다 덜 짜증나더라구요<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "127.0.0.1       ads.playforum.net 127.0.0.1       ads1.playforum.net 127.0.0.1       dataninfo.playforum.net 이걸 윈도우 \\system32\\driver\\etc에 host 파일 끝에 추가하면 됩니다. 작업을 마쳤으나 페이지에 오류가 있을수도 있는데 그게 싫으시면 마지막 데이탄인포를 지우시면 됩니다. 대신 리니지 1천 아데나 광고가 생기죠 아 그리고 미묘하게 플포 로딩이 길어질수도 있는데 짜증나는 플래쉬 베너 광고 보는것보다 덜 짜증나더라구요",
+  "author": "pian",
+  "authorMemberNo": "240",
+  "authorHomepage": "http://pians.cafe24.com",
+  "createdAt": "2006-11-18T03:41:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "bann.jpg",
+      "fileNum": 1,
+      "sizeBytes": 191897
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저파일 이용해서 겟츄 막히는것도 뚫을수 있다지요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071202213914",
+  "parsedAt": "2026-05-11T10:38:24.833859",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=knowledge&no=130",
+  "sourceEngine": "zeroboard"
+}
