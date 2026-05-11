@@ -4,7 +4,7 @@
   "postId": "55",
   "title": "9주년 토큰 3개",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Notice/2.gif\" data-recovery=\"ok\" src=\"/img/posts/Notice/55/2.gif\" style=\"cursor:hand\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  좌측으로부터 크리스탈토큰, 쉐도우토큰, 전승토큰으로 되어 있습니다.<br>\n<br>\n<br>\n<a href=\"http://www.uo.com/uo9/earlybuyer.shtml\">http://www.uo.com/uo9/earlybuyer.shtml</a><br>\n<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Notice/2.gif\" data-recovery=\"ok\" src=\"/img/posts/Notice/55/2.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  좌측으로부터 크리스탈토큰, 쉐도우토큰, 전승토큰으로 되어 있습니다.<br>\n<br>\n<br>\n<a href=\"http://www.uo.com/uo9/earlybuyer.shtml\">http://www.uo.com/uo9/earlybuyer.shtml</a><br>\n<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
   "bodyText": "좌측으로부터 크리스탈토큰, 쉐도우토큰, 전승토큰으로 되어 있습니다. http://www.uo.com/uo9/earlybuyer.shtml",
   "author": "Forg",
   "authorMemberNo": "2",
@@ -77,7 +77,7 @@
   ],
   "era": "2003",
   "capturedAt": "20071117152025",
-  "parsedAt": "2026-05-03T17:22:08.021073",
+  "parsedAt": "2026-05-11T10:38:24.833859",
   "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Notice&no=55",
   "sourceEngine": "zeroboard"
 }
