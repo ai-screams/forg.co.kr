@@ -44,7 +44,10 @@ from schemas import Attachment, Comment, Post  # noqa: E402
 
 # ── Paths ───────────────────────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INPUT_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "A"
+# INPUT_BASE walks both archive-clean/A (Phase A) and archive-clean/B
+# (Phase B, downloaded after the initial 11k pass) so a single --force
+# run regenerates every Zeroboard board's gold tier in one pass.
+INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures.jsonl"
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
@@ -55,11 +58,22 @@ SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
 PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
 PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
 
-# Boards downloaded into bronze tier but parsed by a different engine.
-# UoBoard2 ran on Gnuboard4 — a separate parser handles it (P2.2 / ROADMAP).
-# Keeping it in EXCLUDE_BOARDS makes the skip explicit instead of letting
-# every record fail Zeroboard selectors silently.
-EXCLUDE_BOARDS: frozenset[str] = frozenset({"UoBoard2"})
+# Boards downloaded into bronze tier but parsed by a different engine —
+# leaving them in EXCLUDE_BOARDS makes the skip explicit instead of letting
+# every record fail Zeroboard selectors silently (and miscount as
+# `_NonPostPage` in the summary). The Gnuboard4 parser
+# (`02b-parse-gnuboard4.py`) handles the gnuboard4 list; the gnuboard5
+# forg.kr successor boards are deferred to ROADMAP P2.3.
+EXCLUDE_BOARDS: frozenset[str] = frozenset({
+    # Gnuboard4 — forg.co.kr 2014 era (P2.2 parser)
+    "UoBoard2", "Ultima", "porato", "FunBoard", "Trash", "Reveal",
+    "Boo", "Shop", "Diablo", "DF", "LoL", "Star2", "Console",
+    # Gnuboard5 — forg.kr successor site (P2.3, parser not yet written)
+    # NOTE: case-sensitive — `ultima` (lowercase) is forg.kr g5,
+    # `Ultima` (capitalized) is forg.co.kr g4.
+    "aseeee", "dataaa", "free", "gonggg", "humorrr",
+    "notice", "qnaaa", "screee", "trtrtr", "ultima",
+})
 
 # ── Era assignment ──────────────────────────────────────────────────────
 # Posts authored before 2011 lived under the frameset/Zeroboard era;
@@ -558,19 +572,32 @@ def _write_summary(stats: Stats) -> None:
 
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    if not INPUT_DIR.is_dir():
-        sys.exit(f"FATAL: input directory not found: {INPUT_DIR}")
+    """Walk `INPUT_BASE/{A,B}/{board}/*.html` and yield `(board, post_id, path)`.
+
+    Phase A and Phase B share the same Zeroboard parser, so we collapse
+    them here. Each (board, post_id) pair is unique across phases — the
+    downloader writes to distinct archive subdirs. EXCLUDE_BOARDS guards
+    the wrong-engine skip; `--board` further narrows for ad-hoc reruns.
+    """
     files: list[tuple[str, str, Path]] = []
-    for board_dir in sorted(INPUT_DIR.iterdir()):
-        if not board_dir.is_dir():
+    found_any_phase = False
+    for phase in ("A", "B"):
+        root = INPUT_BASE / phase
+        if not root.is_dir():
             continue
-        if board_dir.name in EXCLUDE_BOARDS:
-            continue
-        if board_filter and board_dir.name != board_filter:
-            continue
-        for f in sorted(board_dir.glob("*.html")):
-            post_id = f.stem
-            files.append((board_dir.name, post_id, f))
+        found_any_phase = True
+        for board_dir in sorted(root.iterdir()):
+            if not board_dir.is_dir():
+                continue
+            if board_dir.name in EXCLUDE_BOARDS:
+                continue
+            if board_filter and board_dir.name != board_filter:
+                continue
+            for f in sorted(board_dir.glob("*.html")):
+                post_id = f.stem
+                files.append((board_dir.name, post_id, f))
+    if not found_any_phase:
+        sys.exit(f"FATAL: no phase subdirs under {INPUT_BASE}")
     return files
 
 
@@ -613,7 +640,7 @@ def main() -> None:
 
     print(
         f"[02-parse] planned={len(inputs)} todo={len(todo)} skipped={skipped} "
-        f"input={INPUT_DIR} output={OUTPUT_DIR} dry_run={args.dry_run}",
+        f"input={INPUT_BASE}/{{A,B}} output={OUTPUT_DIR} dry_run={args.dry_run}",
         file=sys.stderr,
     )
     if not todo:

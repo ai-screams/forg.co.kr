@@ -39,6 +39,7 @@ archive-utf8/
 .parse-progress.jsonl
 .index-summary.json
 .image-manifest-summary.json
+.image-cdx-summary.json
 .chrome-recovery-report.json
 .image-recovery-report.json
 
@@ -424,3 +425,9 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 !.editorconfig
 !.npmrc
 !.nvmrc
+
+# Re-include archive content for the "Vendor" board (forg.co.kr Zeroboard
+# board id). The PHP/Composer `vendor/` ignore above is case-insensitive on
+# macOS APFS and would otherwise swallow this museum-content directory.
+!src/content/posts/Vendor/
+!src/content/boards/Vendor/

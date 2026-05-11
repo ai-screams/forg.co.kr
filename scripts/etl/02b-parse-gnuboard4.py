@@ -67,7 +67,7 @@ from schemas import Attachment, Comment, Post  # noqa: E402
 
 # ── Paths ───────────────────────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INPUT_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "A"
+INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures-g4.jsonl"
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary-g4.json"
@@ -76,11 +76,23 @@ SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary-g4.json"
 PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
 PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
 
-# Only process boards that ran on Gnuboard4.  This prevents accidental
-# cross-engine parsing when archive-clean/ is later expanded with more boards.
+# Boards using the Gnuboard4 webbus2009_basic skin (the only G4 skin this
+# parser supports — it relies on the "게시글 보기 시작" landmark comment
+# and `gray6s`/`gray8s` meta classes).  Verified by inspecting the skin
+# markers in archive-clean/{A,B}/{board}/*.html:
+#   - UoBoard2 (Phase A, 23 files)        — webbus2009_basic ✓
+#   - Shop     (Phase B, 10 files, 8 ok)  — webbus2009_basic ✓
+#   - Console  (Phase B, 8 files, 8 ok)   — webbus2009_basic ✓
+#
+# Other Phase B boards use different skins and need separate parsers
+# (deferred to ROADMAP P2.2b):
+#   - FunBoard / Reveal / porato  → skin/kritz_normal   (≈852 files)
+#   - Trash                        → skin/kritz_trash    (207 files)
+#   - Ultima                       → forg.kr theme/st-basic = Gnuboard5
+#   - DF / LoL / Star2 / Diablo    → not present in bronze (zero files)
 INCLUDE_BOARDS: frozenset[str] = frozenset({
-    "UoBoard2", "Reveal", "Trash", "Console", "Shop",
-    "Ultima", "DF", "LoL", "Star2", "Diablo",
+    "UoBoard2",  # Phase A
+    "Shop", "Console",  # Phase B (webbus2009_basic)
 })
 
 # All G4 boards are post-2011 (Gnuboard4 era, redesign ~2011).
@@ -591,19 +603,31 @@ def _write_summary(stats: Stats) -> None:
 # ── Driver ──────────────────────────────────────────────────────────────
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    if not INPUT_DIR.is_dir():
-        sys.exit(f"FATAL: input directory not found: {INPUT_DIR}")
+    """Walk `INPUT_BASE/{A,B}/{board}/*.html` for Gnuboard4 boards only.
+
+    INCLUDE_BOARDS gates the engine selection: anything outside the
+    allowlist (Zeroboard or Gnuboard5 boards) is silently skipped so a
+    cross-engine misroute can't produce garbage gold-tier JSON.
+    """
     files: list[tuple[str, str, Path]] = []
-    for board_dir in sorted(INPUT_DIR.iterdir()):
-        if not board_dir.is_dir():
+    found_any_phase = False
+    for phase in ("A", "B"):
+        root = INPUT_BASE / phase
+        if not root.is_dir():
             continue
-        if board_dir.name not in INCLUDE_BOARDS:
-            continue
-        if board_filter and board_dir.name != board_filter:
-            continue
-        for f in sorted(board_dir.glob("*.html")):
-            post_id = f.stem
-            files.append((board_dir.name, post_id, f))
+        found_any_phase = True
+        for board_dir in sorted(root.iterdir()):
+            if not board_dir.is_dir():
+                continue
+            if board_dir.name not in INCLUDE_BOARDS:
+                continue
+            if board_filter and board_dir.name != board_filter:
+                continue
+            for f in sorted(board_dir.glob("*.html")):
+                post_id = f.stem
+                files.append((board_dir.name, post_id, f))
+    if not found_any_phase:
+        sys.exit(f"FATAL: no phase subdirs under {INPUT_BASE}")
     return files
 
 
@@ -646,7 +670,7 @@ def main() -> None:
 
     print(
         f"[02b-parse-g4] planned={len(inputs)} todo={len(todo)} skipped={skipped} "
-        f"input={INPUT_DIR} output={OUTPUT_DIR} dry_run={args.dry_run}",
+        f"input={INPUT_BASE}/{{A,B}} output={OUTPUT_DIR} dry_run={args.dry_run}",
         file=sys.stderr,
     )
     if not todo:

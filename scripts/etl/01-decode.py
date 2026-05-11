@@ -351,19 +351,41 @@ def process_file(
 # ── Main ────────────────────────────────────────────────────────────────
 
 
+# forg.kr g5 (Gnuboard5) successor-site boards. They share the bronze
+# archive with forg.co.kr Phase A/B downloads but use a different engine.
+# Skipping them here keeps silver pristine until P2.3 lands the g5 parser;
+# the bronze tier still preserves the raw HTML so re-decoding is one-shot.
+_PHASE_B_G5_SKIP: frozenset[str] = frozenset({
+    "aseeee", "dataaa", "free", "gonggg", "humorrr",
+    "notice", "qnaaa", "screee", "trtrtr", "ultima",
+})
+
+
 def iter_input_files(board_filter: Optional[str]) -> list[Path]:
-    """Walk archive/A/* and yield HTML files. Stable order for resumable runs."""
-    root_a = INPUT_DIR / "A"
-    if not root_a.is_dir():
-        sys.exit(f"FATAL: input directory not found: {root_a}")
+    """Walk archive/{A,B}/* and yield HTML files. Stable order for resumable runs.
+
+    Phase A and Phase B both ship under `INPUT_DIR/{phase}/{board}/*.html`;
+    the output mirror in `OUTPUT_DIR/{phase}/{board}/*.html` is preserved by
+    `derive_output_path` using `relative_to(INPUT_DIR)`. forg.kr g5 boards
+    (case-sensitive ids — note `ultima` vs `Ultima` are different engines)
+    skip decode until P2.3 introduces the g5 parser.
+    """
     files: list[Path] = []
-    for board_dir in sorted(root_a.iterdir()):
-        if not board_dir.is_dir():
+    for phase in ("A", "B"):
+        root = INPUT_DIR / phase
+        if not root.is_dir():
             continue
-        if board_filter and board_dir.name != board_filter:
-            continue
-        for f in sorted(board_dir.glob("*.html")):
-            files.append(f)
+        for board_dir in sorted(root.iterdir()):
+            if not board_dir.is_dir():
+                continue
+            if phase == "B" and board_dir.name in _PHASE_B_G5_SKIP:
+                continue
+            if board_filter and board_dir.name != board_filter:
+                continue
+            for f in sorted(board_dir.glob("*.html")):
+                files.append(f)
+    if not files:
+        sys.exit(f"FATAL: no input HTML found under {INPUT_DIR}/{{A,B}}/")
     return files
 
 
@@ -404,7 +426,7 @@ def main() -> None:
 
     print(
         f"[01-decode] planned={len(files)} todo={len(todo)} skipped={skipped_count} "
-        f"input={INPUT_DIR}/A output={OUTPUT_DIR}/A "
+        f"input={INPUT_DIR}/{{A,B}} output={OUTPUT_DIR}/{{A,B}} "
         f"dry_run={args.dry_run} keep_wayback={args.keep_wayback}",
         file=sys.stderr,
     )
