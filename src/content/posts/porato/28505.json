@@ -1,0 +1,47 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "28505",
+  "title": "또 올립니다",
+  "categoryLabel": null,
+  "bodyHtml": "대충 이래요",
+  "bodyText": "대충 이래요",
+  "author": "omr0o",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2014-01-28T00:00:00",
+  "hits": 3310,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "syaoran911",
+      "authorMemberNo": null,
+      "createdAt": "2016-01-29T22:25:00",
+      "bodyHtml": "오...일단은 끌리는군요 헉\b헉"
+    },
+    {
+      "author": "mukmok",
+      "authorMemberNo": null,
+      "createdAt": "2016-01-30T11:04:00",
+      "bodyHtml": "스샷만봐서는 그래픽 업글된 다옥같네요.;"
+    },
+    {
+      "author": "sran",
+      "authorMemberNo": null,
+      "createdAt": "2016-02-12T12:47:00",
+      "bodyHtml": "부럽네요.\n<br>\n<br>할시간이 없는게 안타까울뿐"
+    },
+    {
+      "author": "무명인",
+      "authorMemberNo": null,
+      "createdAt": "2016-02-15T07:27:00",
+      "bodyHtml": "호오 이정도 그래픽이면 끌리내요"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20160331123557",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28505",
+  "sourceEngine": "gnuboard4"
+}

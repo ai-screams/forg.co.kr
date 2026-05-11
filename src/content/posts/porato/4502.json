@@ -1,0 +1,40 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4502",
+  "title": "예산 사과",
+  "categoryLabel": "과일",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/PT_022.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/PT_023.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n15kg에 택배비까지 45,000원. 아는분의 아는분의 아는분의 농장에서 구입<br>\n-_-.</td></tr></tbody></table>\n",
+  "bodyText": "15kg에 택배비까지 45,000원. 아는분의 아는분의 아는분의 농장에서 구입 -_-.",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-10-06T16:07:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "PT_022.jpg",
+      "fileNum": 1,
+      "sizeBytes": 125542
+    },
+    {
+      "name": "PT_023.jpg",
+      "fileNum": 2,
+      "sizeBytes": 128921
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헐 지금시기에 킹왕짱싼듯"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213104604",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4502",
+  "sourceEngine": "zeroboard"
+}

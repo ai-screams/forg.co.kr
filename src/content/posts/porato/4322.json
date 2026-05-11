@@ -1,0 +1,41 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4322",
+  "title": "전 지금입니다!!",
+  "categoryLabel": "던파",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/imnow.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  던파 패러디 그려봐써연</td></tr></tbody></table>\n",
+  "bodyText": "던파 패러디 그려봐써연",
+  "author": "DarkElves",
+  "authorMemberNo": "1136",
+  "authorHomepage": null,
+  "createdAt": "2007-07-07T00:39:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "imnow.JPG",
+      "fileNum": 1,
+      "sizeBytes": 511590
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "우와~ 굿굿~~^^b"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "어제 보고\n<br>또 지나가다 봐도 멋져요\n<br>\n<br>지금 네이버 검색순위에 '전성기'가 있는데\n<br>이 만화때문이려나.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215004902",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4322",
+  "sourceEngine": "zeroboard"
+}

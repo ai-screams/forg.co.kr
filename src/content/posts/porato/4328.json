@@ -1,0 +1,40 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4328",
+  "title": "daum 에서 연재중인 '브이' 보다가...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/).jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1183885607/6.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  윗 그림은 웃대펌입니다만........ <br>\n<br>\n아랫 그림의 리플 4번째가 와닿더군요.</td></tr></tbody></table>\n",
+  "bodyText": "윗 그림은 웃대펌입니다만........ 아랫 그림의 리플 4번째가 와닿더군요.",
+  "author": "夜雪",
+  "authorMemberNo": "3127",
+  "authorHomepage": null,
+  "createdAt": "2007-07-08T18:06:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": ").jpg",
+      "fileNum": 1,
+      "sizeBytes": 217497
+    },
+    {
+      "name": "6.JPG",
+      "fileNum": 2,
+      "sizeBytes": 35532
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "프리크리5화의 그녀석같은 느낌"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215003150",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4328",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,53 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4516",
+  "title": "시그용",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/텔미텔미.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  텔미텔미</td></tr></tbody></table>\n",
+  "bodyText": "텔미텔미",
+  "author": "로드까까",
+  "authorMemberNo": "131",
+  "authorHomepage": null,
+  "createdAt": "2007-10-12T16:08:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "텔미텔미.gif",
+      "fileNum": 1,
+      "sizeBytes": 260812
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "히..히익!!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "처음볼땐 깜짝 놀랐다가 보니깐 또 익숙해지네요~_~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "허억! 텔미 텔미"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "우움;; 혹시..; 나가씨윗치 \"레이디 바쉬\"인가요?\n<br>와우는 합니다만 아직 캘타스고 바쉬고 못만나봐서[...]"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071204223122",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4516",
+  "sourceEngine": "zeroboard"
+}

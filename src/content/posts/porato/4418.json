@@ -1,0 +1,70 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4418",
+  "title": "골드 키위",
+  "categoryLabel": "과일",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/1187700776/1.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1187700776/2.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n<br>\n시지 않고 매우 달더군요. 맛있습니다. -_-</td></tr></tbody></table>\n",
+  "bodyText": "시지 않고 매우 달더군요. 맛있습니다. -_-",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-08-21T21:52:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "1.jpg",
+      "fileNum": 1,
+      "sizeBytes": 88883
+    },
+    {
+      "name": "2.jpg",
+      "fileNum": 2,
+      "sizeBytes": 108032
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 그냥 키위가 좋아요 신맛 때문에 ㅎㅎ\n<br>\n<br>골드 키위는 그냥 달기 만해서 별루 ㅎ\n<br>\n<br>결정적으로 비싸지요!!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저도 신맛이 좋아서 그냥 키위를 ㅎㅎ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "키위는 시큼한맛이 좋지요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "보기만해도 침이 꿀꺽.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "골드 키위가 더 맛있던데요. -_-."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "골드키위가 잘익은건 좋은데, 잘 안익은거는 달지도않고 시지도않고 이상해요 ㅠㅠ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071211131717",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4418",
+  "sourceEngine": "zeroboard"
+}

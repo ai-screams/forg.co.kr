@@ -1,0 +1,29 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "10634",
+  "title": "난 게임에만 집중하지...",
+  "categoryLabel": null,
+  "bodyHtml": "통증따위 나에겐...",
+  "bodyText": "통증따위 나에겐...",
+  "author": "쟈나저씨",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2012-12-15T00:00:00",
+  "hits": 1201,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "달기",
+      "authorMemberNo": null,
+      "createdAt": "2013-12-15T16:04:00",
+      "bodyHtml": "미국 배우 닮은거 같은데...."
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20130812104829",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10634",
+  "sourceEngine": "gnuboard4"
+}

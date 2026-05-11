@@ -1,0 +1,35 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "53",
+  "title": "갑자기 생각난 케릭터",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/사진_054.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  무역연합 특제 드로이드+그리버스+나즈굴-_-</td></tr></tbody></table>\n",
+  "bodyText": "무역연합 특제 드로이드+그리버스+나즈굴-_-",
+  "author": "카티너빌리티",
+  "authorMemberNo": "1015",
+  "authorHomepage": "http://blog.naver.com/illukartin.do",
+  "createdAt": "2005-06-19T00:09:11",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "사진_054.jpg",
+      "fileNum": 1,
+      "sizeBytes": 126566
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그리비어스 같군요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214071229",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=53",
+  "sourceEngine": "zeroboard"
+}

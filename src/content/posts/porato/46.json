@@ -1,0 +1,35 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "46",
+  "title": "본인의 아트한 손속도",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/손.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  참고로 잘나온것들만 골라서 두개<br>\n.......</td></tr></tbody></table>\n",
+  "bodyText": "참고로 잘나온것들만 골라서 두개 .......",
+  "author": "Mutsumi",
+  "authorMemberNo": "744",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T18:38:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "손.jpg",
+      "fileNum": 1,
+      "sizeBytes": 67584
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그야말로 아스트랄의 속도군요. 평소에  전완근을 잘 단련(...) 한 게 느껴집니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214070916",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=46",
+  "sourceEngine": "zeroboard"
+}

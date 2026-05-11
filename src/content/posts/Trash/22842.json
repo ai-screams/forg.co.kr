@@ -1,0 +1,35 @@
+{
+  "board": "Trash",
+  "boardKr": "Trash",
+  "postId": "22842",
+  "title": "ytn 날씨 기사쓰는새끼 또라이인가봄",
+  "categoryLabel": null,
+  "bodyHtml": "오늘 포근하셨다는데\n<br>아침에 영하10도는 되는거 같던데\n<br>낮에도 추웠고\n<br>\n<br>미친듯",
+  "bodyText": "오늘 포근하셨다는데 아침에 영하10도는 되는거 같던데 낮에도 추웠고 미친듯",
+  "author": "Baal",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2015-01-20T00:00:00",
+  "hits": 1910,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2016-01-29T10:33:00",
+      "bodyHtml": "아침 7시 30분에 자전거 타고 서울 한강변으로 달려서 출근. 영하 2~3도밖에 안되는거 같던데.\n<br>\n<br>무슨 영하10도? 너 어디 사는데?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2016-02-24T20:09:00",
+      "bodyHtml": "대도시는 추워봤자지...\n<br>솔직히 신촌만 가도 한겨울인데 후끈후끈 함 진짜 추운데 있다가 가면\n<br>열기가 엄청나더만"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20160331124127",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=22842",
+  "sourceEngine": "gnuboard4"
+}

@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4350",
+  "title": "세상은 고양이를 원한다!(2)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/c0010362_13571542.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1146132192174.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  위는 제트스트림?<br>\n아래는 으음...</td></tr></tbody></table>\n",
+  "bodyText": "위는 제트스트림? 아래는 으음...",
+  "author": "김인문소프트웨어",
+  "authorMemberNo": "661",
+  "authorHomepage": null,
+  "createdAt": "2007-07-18T18:11:20",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "c0010362_13571542.jpg",
+      "fileNum": 1,
+      "sizeBytes": 115916
+    },
+    {
+      "name": "1146132192174.jpg",
+      "fileNum": 2,
+      "sizeBytes": 195584
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "와우 ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214063600",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4350",
+  "sourceEngine": "zeroboard"
+}

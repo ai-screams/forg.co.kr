@@ -1,0 +1,33 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1831",
+  "title": "북두의 퀸오브 하트3",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/鬪!!破惡斗_死_05.jpg\"><br> <img border=\"0\" src=\"data/鬪!!破惡斗_死_06.jpg\"><br>     \t\t\t ㅡㅡ.<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "ㅡㅡ.",
+  "author": "Lubi",
+  "authorMemberNo": "7006",
+  "authorHomepage": null,
+  "createdAt": "2002-06-10T02:35:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "鬪!!破惡斗_死_05.jpg",
+      "fileNum": 1,
+      "sizeBytes": 137011
+    },
+    {
+      "name": "鬪!!破惡斗_死_06.jpg",
+      "fileNum": 2,
+      "sizeBytes": 158720
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020626051420",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1831",
+  "sourceEngine": "zeroboard"
+}

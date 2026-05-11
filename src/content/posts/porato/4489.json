@@ -1,0 +1,52 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4489",
+  "title": "광주 무등산(4)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/사진070925_31.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/사진070925_33.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ......</td></tr></tbody></table>\n",
+  "bodyText": "......",
+  "author": "mydream",
+  "authorMemberNo": "104",
+  "authorHomepage": null,
+  "createdAt": "2007-09-28T06:32:18",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "사진070925_31.jpg",
+      "fileNum": 1,
+      "sizeBytes": 184217
+    },
+    {
+      "name": "사진070925_33.jpg",
+      "fileNum": 2,
+      "sizeBytes": 227123
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "와~~ 밑에 사진 길 정말 멋지네요\n<br>한번 가봐야할듯~!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그 꼭대기에 보이던 뾰족한 탑이 저거였군요.\n<br>\n<br>사진 잘보고갑니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저 바로 증심사 자락에 사는데... 아직 저기까지는 못가봤는데... 훔... 고향이 거기라는겁니다. 지금은 서울쪽..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214065909",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4489",
+  "sourceEngine": "zeroboard"
+}

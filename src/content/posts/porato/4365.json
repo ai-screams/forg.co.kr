@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4365",
+  "title": "쟤들 좀 보세요!",
+  "categoryLabel": "GE",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/_capture_00026.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/_capture_00008.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  요새 할만한 온라인 게임 찾기가 힘들어서..<br>\n<br>\n마땅히 할것도 없고 해서 해봤는데 재밌네요^^<br>\n<br>\n던전시즈를 무척 좋아하는 저로서는<br>\n<br>\nGE를 하면서 던전시즈를 하는 느낌이 계속 들더군요.<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "요새 할만한 온라인 게임 찾기가 힘들어서.. 마땅히 할것도 없고 해서 해봤는데 재밌네요^^ 던전시즈를 무척 좋아하는 저로서는 GE를 하면서 던전시즈를 하는 느낌이 계속 들더군요.",
+  "author": "체이즈",
+  "authorMemberNo": "4000",
+  "authorHomepage": "http://blog.naver.com/a32167.do",
+  "createdAt": "2007-07-27T01:00:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "_capture_00026.jpg",
+      "fileNum": 1,
+      "sizeBytes": 328601
+    },
+    {
+      "name": "_capture_00008.jpg",
+      "fileNum": 2,
+      "sizeBytes": 359731
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그라는 초반에 좀 하다가...맵 울거 먹기에 지쳐서;;; 요즘은 패치 많이 됐담서요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "날개가 생겼네요~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071207155651",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4365",
+  "sourceEngine": "zeroboard"
+}

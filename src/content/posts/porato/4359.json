@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4359",
+  "title": "마비] 정말 올만에 ...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/mabinogi_2007_07_23_003.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/mabinogi_2007_07_23_004.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  새로 날것이 나와서 올려 보아용..와우삘인가;;</td></tr></tbody></table>\n",
+  "bodyText": "새로 날것이 나와서 올려 보아용..와우삘인가;;",
+  "author": "chocoraraapple",
+  "authorMemberNo": "516",
+  "authorHomepage": null,
+  "createdAt": "2007-07-24T00:14:58",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "mabinogi_2007_07_23_003.jpg",
+      "fileNum": 1,
+      "sizeBytes": 147251
+    },
+    {
+      "name": "mabinogi_2007_07_23_004.jpg",
+      "fileNum": 2,
+      "sizeBytes": 296550
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "하지만 한정된 지역에서만 날수있다는거.ㅡㅡ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "한정된 지역이 일단 꽤나 넓죠..\n<br>이리아 전역이니..\n<br>마을안과 기존 진입불가지역, 구조물 지역 정도가 이착륙 불가지점정도 입니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213105645",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4359",
+  "sourceEngine": "zeroboard"
+}

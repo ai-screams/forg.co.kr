@@ -1,0 +1,53 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1951",
+  "title": "단군.넷 다운로드 경이적인 스피드 ㅡㅡ;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/h__.JPG\"><br>     \t\t\t     \t\t\t 이런 경악할 속도가 ㅡㅡ;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이런 경악할 속도가 ㅡㅡ;",
+  "author": "inarus",
+  "authorMemberNo": "3860",
+  "authorHomepage": "http://user.chollian.net/~inarus/",
+  "createdAt": "2002-06-15T13:35:04",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "h__.JPG",
+      "fileNum": 1,
+      "sizeBytes": 53862
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흐음...꽤 빠르군요..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 평상시 속도..인데."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 단군넷 원리가 다른 사용자에게 받는 거라서<br>\n 다른 사용자의 속도가 빠르지 않으면<br>\n 저건 불가능. 근데 저사람은 서버용 랜 뽑아서 쓰나보요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 2.2기가를 1시간 30분에받는걸봤습니다 -_-;경악.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050611",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1951",
+  "sourceEngine": "zeroboard"
+}

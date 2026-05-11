@@ -1,0 +1,47 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1493",
+  "title": "열받아서 녹아버린 컴퓨터",
+  "categoryLabel": "엽기",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/열받아서_녹아버린_컴퓨터.jpg\"><br>     \t\t\t     \t\t\t 내 컴퓨터도 조만간 저렇게 되려나..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "내 컴퓨터도 조만간 저렇게 되려나..",
+  "author": "tangwang1014",
+  "authorMemberNo": "3029",
+  "authorHomepage": null,
+  "createdAt": "2002-05-12T11:42:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "열받아서_녹아버린_컴퓨터.jpg",
+      "fileNum": 1,
+      "sizeBytes": 39219
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 멋진 캐이슨데 업글은 불가능할듯?-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-;;;저컴은 아마 안에 공기가 안들어가서 엄청난 온실이..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 뒤가 없을수도...켈켈..;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527115617",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1493",
+  "sourceEngine": "zeroboard"
+}

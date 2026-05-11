@@ -1,0 +1,65 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4478",
+  "title": "추석의 묘미는!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/추석.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  보름달인가요-..-;<br>\n바람쐬러 나갔다가 잘 보이길래 카메라 집어들고 찍은 사진~<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "보름달인가요-..-; 바람쐬러 나갔다가 잘 보이길래 카메라 집어들고 찍은 사진~",
+  "author": "주니",
+  "authorMemberNo": "3740",
+  "authorHomepage": null,
+  "createdAt": "2007-09-26T00:10:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "추석.JPG",
+      "fileNum": 1,
+      "sizeBytes": 135680
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오오 너무 잘나왔는데요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "화투속의 보름달..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아..데스스타 같아보여..;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "도대체 어떤 렌즈와 어떤 카메라를 써야 달을 저렇게 찍을 수 있는것이지요 ... OTL ....\n<br>보통 디카로는 달 모양도 못 만드는데 -_ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이정도는 보급형 DSLR 에  250미리 이상의 아무 렌즈만 있으면 찍을 수 있습니다.\n<br>디카로는 250미리가 안되기때문에...(되더라도 화소가 후달려서..)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "달이 은근히 밝기때문에 찍을라믄 팍~ 어둡게 해야하는데.... 웬만해선 저정도로 어둡게 설정이 안되죠-ㅁ-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214064802",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4478",
+  "sourceEngine": "zeroboard"
+}

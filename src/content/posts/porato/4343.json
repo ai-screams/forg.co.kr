@@ -1,0 +1,35 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4343",
+  "title": "군대에서 심심할때마다 한...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/fallen.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">   틈날때마다 했는데 벌써 34까지 올렸네요&nbsp;&nbsp;- -;;<br>\n<br>\n은근히 재미있는 매력에 빠져서...</td></tr></tbody></table>\n",
+  "bodyText": "틈날때마다 했는데 벌써 34까지 올렸네요  - -;; 은근히 재미있는 매력에 빠져서...",
+  "author": "LSB",
+  "authorMemberNo": "201",
+  "authorHomepage": "http://blog.naver.com/hanbalgun",
+  "createdAt": "2007-07-17T07:42:15",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "fallen.JPG",
+      "fileNum": 1,
+      "sizeBytes": 161792
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "homm2의 크루세이더다.... 더블스트라잌 특수기 '0'"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213105930",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4343",
+  "sourceEngine": "zeroboard"
+}

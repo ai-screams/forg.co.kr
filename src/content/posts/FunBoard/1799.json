@@ -1,0 +1,41 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1799",
+  "title": "동방선생 멋있어요>ㅅ<",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/20020519025550.jpg\"><br>     \t\t\t     \t\t\t 아싸-_-<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "아싸-_-",
+  "author": "Schweigen",
+  "authorMemberNo": "7687",
+  "authorHomepage": null,
+  "createdAt": "2002-06-09T11:08:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "20020519025550.jpg",
+      "fileNum": 1,
+      "sizeBytes": 168140
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 사나이의 프렛셔가..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헉.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626054807",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1799",
+  "sourceEngine": "zeroboard"
+}

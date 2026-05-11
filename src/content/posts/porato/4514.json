@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4514",
+  "title": "완소 아오이 유우 (Yu Aoi / 蒼井 優)  !!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/aoiyu2.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/aoiyu.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  이쁘게 자라주었구나 ;_;<br>\n현재 지구 상에서 제일 좋아하는 연예인</td></tr></tbody></table>\n",
+  "bodyText": "이쁘게 자라주었구나 ;_; 현재 지구 상에서 제일 좋아하는 연예인",
+  "author": "Johnnie Walker",
+  "authorMemberNo": "3085",
+  "authorHomepage": "http://jungbim.net",
+  "createdAt": "2007-10-11T02:41:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "aoiyu2.JPG",
+      "fileNum": 1,
+      "sizeBytes": 145510
+    },
+    {
+      "name": "aoiyu.JPG",
+      "fileNum": 2,
+      "sizeBytes": 48537
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "려원인줄 알았..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "우주최강"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213104914",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4514",
+  "sourceEngine": "zeroboard"
+}

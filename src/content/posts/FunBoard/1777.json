@@ -1,0 +1,35 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1777",
+  "title": "지엠들과 떠나는 세계 자연 여행 - 계곡",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/travel_with_gm_01.gif\"><br>     \t\t\t     \t\t\t 해석 :<br>\n<br>\n 라쿠카라차!<br>\n<br>\n 이야후~~~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "해석 : 라쿠카라차! 이야후~~~",
+  "author": "sos550",
+  "authorMemberNo": "5862",
+  "authorHomepage": null,
+  "createdAt": "2002-06-08T15:25:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "travel_with_gm_01.gif",
+      "fileNum": 1,
+      "sizeBytes": 97382
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-;;;;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050412",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1777",
+  "sourceEngine": "zeroboard"
+}

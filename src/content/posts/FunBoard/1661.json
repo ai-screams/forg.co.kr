@@ -1,0 +1,52 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1661",
+  "title": "니가 웃으면 나도 좋아~~~(토이: 좋은 사람)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/김또임.jpg\"><br> <img border=\"0\" src=\"data/동명퀸카5.jpg\"><br>     \t\t\t 밑에는 강병규가<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "밑에는 강병규가",
+  "author": "lostnumber",
+  "authorMemberNo": "4283",
+  "authorHomepage": null,
+  "createdAt": "2002-05-30T01:47:08",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "김또임.jpg",
+      "fileNum": 1,
+      "sizeBytes": 65228
+    },
+    {
+      "name": "동명퀸카5.jpg",
+      "fileNum": 2,
+      "sizeBytes": 67072
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 참고로 ┗여 중┓입니다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_thumbs_down.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅡㅡ;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020624195245",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1661",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4341",
+  "title": "이 나무 이름을 아시는분 계시나요?",
+  "categoryLabel": "나무꽃사진",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/p070714190918.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/p070714192250.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n.......</td></tr></tbody></table>\n",
+  "bodyText": ".......",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-07-14T20:51:36",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "p070714190918.jpg",
+      "fileNum": 1,
+      "sizeBytes": 159846
+    },
+    {
+      "name": "p070714192250.jpg",
+      "fileNum": 2,
+      "sizeBytes": 91545
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네이버 지식인에 질문해서 알아 냈습니다. -_-\n<br>\n<br><a href=\"http://jhd.new21.org/arwsa.htm\">http://jhd.new21.org/arwsa.htm\n</a><br>\n<br>스님들이 사용하는 염주가 열매로 나오는 ' 염주나무(모감주나무) ' 라고 한다네요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아.. 염주가 열매로 나오는 그 나무였군요.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215003555",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4341",
+  "sourceEngine": "zeroboard"
+}

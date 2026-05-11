@@ -1,0 +1,35 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1923",
+  "title": "인천 상륙 작전",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/savingprivate.jpg\"><br>     \t\t\t     \t\t\t ㅡㅡ.<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "ㅡㅡ.",
+  "author": "Lubi",
+  "authorMemberNo": "7006",
+  "authorHomepage": null,
+  "createdAt": "2002-06-13T23:38:20",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "savingprivate.jpg",
+      "fileNum": 1,
+      "sizeBytes": 55398
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 유상철은 사진빨이 영......-_-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050029",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1923",
+  "sourceEngine": "zeroboard"
+}

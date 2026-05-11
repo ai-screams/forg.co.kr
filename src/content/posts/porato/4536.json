@@ -1,0 +1,33 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4536",
+  "title": "아래 저명인사 찾기...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/coll03.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/coll04.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  여러 사진으로 해봤는데...그때마다 다 틀리네요..<br>\n<br>\n그중에 젤 재밌는거;;;</td></tr></tbody></table>\n",
+  "bodyText": "여러 사진으로 해봤는데...그때마다 다 틀리네요.. 그중에 젤 재밌는거;;;",
+  "author": "chocoraraapple",
+  "authorMemberNo": "516",
+  "authorHomepage": null,
+  "createdAt": "2007-10-18T09:32:31",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "coll03.JPG",
+      "fileNum": 1,
+      "sizeBytes": 118886
+    },
+    {
+      "name": "coll04.JPG",
+      "fileNum": 2,
+      "sizeBytes": 116838
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071211140451",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4536",
+  "sourceEngine": "zeroboard"
+}

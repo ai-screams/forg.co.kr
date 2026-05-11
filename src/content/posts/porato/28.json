@@ -1,0 +1,47 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "28",
+  "title": "명작 그린그린3 발매 예정! 8.5",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/34.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  오호호~ 지름신 강림</td></tr></tbody></table>\n",
+  "bodyText": "오호호~ 지름신 강림",
+  "author": "shinjj87",
+  "authorMemberNo": "425",
+  "authorHomepage": null,
+  "createdAt": "2005-06-16T18:35:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "34.jpg",
+      "fileNum": 1,
+      "sizeBytes": 125747
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그림이 모 회사처럼 퇴화하는건지\n<br>아니면 발전하는건지\n<br>... ..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그린그린 애로루션즈 ......................\n<br>\n<br>\n<br>\n<br>감상평 : 그아아아아아아아앍"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "...이게 3까지 나온다니\n<br>-_-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215001546",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=28",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,28 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4449",
+  "title": "시그 교체용..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/ShibataJun.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">   에효.</td></tr></tbody></table>\n",
+  "bodyText": "에효.",
+  "author": "Faust",
+  "authorMemberNo": "6914",
+  "authorHomepage": null,
+  "createdAt": "2007-09-06T21:32:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "ShibataJun.jpg",
+      "fileNum": 2,
+      "sizeBytes": 104345
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071211140855",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4449",
+  "sourceEngine": "zeroboard"
+}

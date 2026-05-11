@@ -1,0 +1,29 @@
+{
+  "board": "Reveal",
+  "boardKr": "Reveal",
+  "postId": "2623",
+  "title": "애프터어스",
+  "categoryLabel": null,
+  "bodyHtml": "간만에 돈 아까웠어요",
+  "bodyText": "간만에 돈 아까웠어요",
+  "author": "달기",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2013-05-31T00:00:00",
+  "hits": 1207,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "달기",
+      "authorMemberNo": null,
+      "createdAt": "2015-05-31T13:01:00",
+      "bodyHtml": "스미스 아들내미가 보는 내내 거슬려서 더욱더 재미없는 영화"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20150405130947",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Reveal&wr_id=2623",
+  "sourceEngine": "gnuboard4"
+}

@@ -1,0 +1,53 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1634",
+  "title": "noname.***",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/cuba.jpg\"><br>     \t\t\t     \t\t\t -_-;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "-_-;",
+  "author": "cuba7811",
+  "authorMemberNo": "7098",
+  "authorHomepage": null,
+  "createdAt": "2002-05-29T04:15:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "cuba.jpg",
+      "fileNum": 1,
+      "sizeBytes": 32051
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우습다"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 모텔( --)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아테나는..97때랑 00때가 젤 이쁜거 가탔는데.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아테나의 저 굶은 다리를 보라 -_-;;\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020529184839",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1634",
+  "sourceEngine": "zeroboard"
+}

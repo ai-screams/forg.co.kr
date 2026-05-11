@@ -1,0 +1,76 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1537",
+  "title": "그림 두장입니다. 하난 윈엠 스킨.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/1021892823/03.jpg\"><br> <img border=\"0\" src=\"data/HolofoilCover.jpg\"><br>     \t\t\t 1번 그림 코멘트 : ..;\n<br>\n 2번 그림 코멘트 : 어렷을적에 본!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "1번 그림 코멘트 : ..; 2번 그림 코멘트 : 어렷을적에 본!",
+  "author": "crimsn",
+  "authorMemberNo": "2594",
+  "authorHomepage": null,
+  "createdAt": "2002-05-20T20:07:03",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "03.jpg",
+      "fileNum": 1,
+      "sizeBytes": 74137
+    },
+    {
+      "name": "HolofoilCover.jpg",
+      "fileNum": 2,
+      "sizeBytes": 836096
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헉 1번은 후르츠바스켓의 그......-_-;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅋㅋㅋㅋ..그 아줌마...ㅋㅋㅋ 고메나사이...;;;아줌마라고 하면 되나 ㅡㅡ;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 트랜스포머닷!!!!!!!!!!!!!&gt;_&lt;/"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 심오하군"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 후르츠 바스켓의.. 음.. 매우 이상한..."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아아 트랜스 포머 ㅠ.ㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 나어릴때 저로봇 변신로봇필통으로 나왓는대 ㅋㅋㅋ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527120239",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1537",
+  "sourceEngine": "zeroboard"
+}

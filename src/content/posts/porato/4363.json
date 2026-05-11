@@ -1,0 +1,41 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4363",
+  "title": "마구 삐뚤어져버린 애",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/2saki.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  삐뚤어져버렸네요<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "삐뚤어져버렸네요",
+  "author": "acubens",
+  "authorMemberNo": "176",
+  "authorHomepage": null,
+  "createdAt": "2007-07-26T22:45:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "2saki.jpg",
+      "fileNum": 1,
+      "sizeBytes": 9932
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "누구였더라.. 설마 베리즈코보 그 여자애 인건가"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "뉑\n<br>시미즈 사키, 리더요\n<br>요즘 '일부' 우리 학교 애들의 대세예요 -0-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213105619",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4363",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,33 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1832",
+  "title": "북두의 퀸오브 하트4",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/鬪!!破惡斗_死_07.jpg\"><br> <img border=\"0\" src=\"data/鬪!!破惡斗_死_08.jpg\"><br>     \t\t\t 아무래도<br>\n 또 잘리거 같은 느낌이<br>\n ㅡㅡ.<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "아무래도 또 잘리거 같은 느낌이 ㅡㅡ.",
+  "author": "Lubi",
+  "authorMemberNo": "7006",
+  "authorHomepage": null,
+  "createdAt": "2002-06-10T02:37:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "鬪!!破惡斗_死_07.jpg",
+      "fileNum": 1,
+      "sizeBytes": 142028
+    },
+    {
+      "name": "鬪!!破惡斗_死_08.jpg",
+      "fileNum": 2,
+      "sizeBytes": 138956
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020626052058",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1832",
+  "sourceEngine": "zeroboard"
+}

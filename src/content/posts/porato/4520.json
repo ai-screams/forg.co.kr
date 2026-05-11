@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4520",
+  "title": "The Orange Box 샀습니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/d1_trainstation_050004.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/cp_dustbowl0005.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <a href=\"http://orange.half-life2.com/\">http://orange.half-life2.com/</a><br>\n<br>\n하프라이프 2, 하프 2 에피 1&amp;2, 포탈, 팀 포트리스 2가 한 번에 들어있는 패키지입니다.<br>\n10월 10일에 발매되었고, 전 어제 달려가서 구매했지요:p<br>\n한국엔 pc판은 안 나오고 삼돌이용만 나온다고 합니다.<br>\n팀 포트리스 2는 재미는있는데, 인간들 실력이 너무 좋아서 도대체가 3분 이상을 버틴적이-_-</td></tr></tbody></table>\n",
+  "bodyText": "http://orange.half-life2.com/ 하프라이프 2, 하프 2 에피 1&2, 포탈, 팀 포트리스 2가 한 번에 들어있는 패키지입니다. 10월 10일에 발매되었고, 전 어제 달려가서 구매했지요:p 한국엔 pc판은 안 나오고 삼돌이용만 나온다고 합니다. 팀 포트리스 2는 재미는있는데, 인간들 실력이 너무 좋아서 도대체가 3분 이상을 버틴적이-_-",
+  "author": "썩은사과",
+  "authorMemberNo": "1092",
+  "authorHomepage": "http://blog.paran.com/treeny",
+  "createdAt": "2007-10-15T01:12:00",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "d1_trainstation_050004.jpg",
+      "fileNum": 1,
+      "sizeBytes": 258764
+    },
+    {
+      "name": "cp_dustbowl0005.jpg",
+      "fileNum": 2,
+      "sizeBytes": 90419
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "팀포트리스2!!!!!!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "하프2 에피2 한글판 피시용으로 안나온다는거???:?\n<br>그것만 기다리고있었는데.;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071204222921",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4520",
+  "sourceEngine": "zeroboard"
+}

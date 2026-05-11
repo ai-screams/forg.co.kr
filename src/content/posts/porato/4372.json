@@ -1,0 +1,53 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4372",
+  "title": "시그 입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/af.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  별겁니다..</td></tr></tbody></table>\n",
+  "bodyText": "별겁니다..",
+  "author": "Zip",
+  "authorMemberNo": "573",
+  "authorHomepage": null,
+  "createdAt": "2007-08-01T23:55:28",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "af.jpg",
+      "fileNum": 1,
+      "sizeBytes": 93900
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이거슨...카논?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "밑에건 셔플같.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저 머린 투하트 같은데요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "교복이 셔플같네요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071207155907",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4372",
+  "sourceEngine": "zeroboard"
+}

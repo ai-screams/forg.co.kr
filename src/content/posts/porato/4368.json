@@ -1,0 +1,33 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4368",
+  "title": "던파 짤방 모음1",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/launch.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/WAKA.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  던겔 짤노예 생활중이에요.<br>\n왠지 카틴님도 보이는 것 같고...<br>\n<br>\n동기가 없으면 그림을 그리지 않아 손이 굳을것 같아서 그리고 있습니다.<br>\n일이라도 하나 잡혔으면....</td></tr></tbody></table>\n",
+  "bodyText": "던겔 짤노예 생활중이에요. 왠지 카틴님도 보이는 것 같고... 동기가 없으면 그림을 그리지 않아 손이 굳을것 같아서 그리고 있습니다. 일이라도 하나 잡혔으면....",
+  "author": "DarkElves",
+  "authorMemberNo": "1136",
+  "authorHomepage": null,
+  "createdAt": "2007-07-29T11:45:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "launch.JPG",
+      "fileNum": 1,
+      "sizeBytes": 47001
+    },
+    {
+      "name": "WAKA.JPG",
+      "fileNum": 2,
+      "sizeBytes": 50892
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071207160730",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4368",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4503",
+  "title": "인민의 락",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/mr.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1191382554223.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  그것을 위한 AK기타;;<br>\n저 기타 갖고 싶습니다</td></tr></tbody></table>\n",
+  "bodyText": "그것을 위한 AK기타;; 저 기타 갖고 싶습니다",
+  "author": "김인문소프트웨어",
+  "authorMemberNo": "661",
+  "authorHomepage": null,
+  "createdAt": "2007-10-06T22:32:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "mr.jpg",
+      "fileNum": 1,
+      "sizeBytes": 64716
+    },
+    {
+      "name": "1191382554223.jpg",
+      "fileNum": 2,
+      "sizeBytes": 14540
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저도 갖고 싶아요 ㅠㅠ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그런데 AK 아니지 않나요?;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213105033",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4503",
+  "sourceEngine": "zeroboard"
+}

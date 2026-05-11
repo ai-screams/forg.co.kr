@@ -1,0 +1,47 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4493",
+  "title": "타뷸라 라사;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/K_20070930_708290.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  프리오더 되길레 잠깐 해봤는데..<br>\n리차드 게리엇의 네임밸류를 제외하고 얘기하자면<br>\n확 와닿지는 않는것 같습니다.</td></tr></tbody></table>\n",
+  "bodyText": "프리오더 되길레 잠깐 해봤는데.. 리차드 게리엇의 네임밸류를 제외하고 얘기하자면 확 와닿지는 않는것 같습니다.",
+  "author": "아르젠트",
+  "authorMemberNo": "8",
+  "authorHomepage": "http://codweb.tistory.com/",
+  "createdAt": "2007-10-01T19:27:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "K_20070930_708290.jpg",
+      "fileNum": 1,
+      "sizeBytes": 170905
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "앗 한글 기본지원?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "미흡하게나마 지원하지만 퀘스트 내용도 번역기 돌린것처럼 엉성할뿐더러... 다~는 아닌듯 싶습니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저도 필받아 지금 인스톨중입니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214064708",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4493",
+  "sourceEngine": "zeroboard"
+}

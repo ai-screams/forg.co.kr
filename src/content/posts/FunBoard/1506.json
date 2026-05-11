@@ -1,0 +1,71 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1506",
+  "title": "엇 노크를 어케 하죠 ㅡㅡ;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/yubgi.jpg\"><br>     \t\t\t     \t\t\t 민망해라 ...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "민망해라 ...",
+  "author": "MiRa",
+  "authorMemberNo": "7521",
+  "authorHomepage": null,
+  "createdAt": "2002-05-15T07:18:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "yubgi.jpg",
+      "fileNum": 1,
+      "sizeBytes": 44339
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅎㅎ 무서운 영화 2군용~ 노크하던데요. 노크하면 소리가 경쾌~"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아 이영화 진짜 보구 재미없고 더럽고 징그럽고-_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 표정이..^^;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이야(...)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 노크하면 소리가 아마 굵직한 비명소리가 났던것으로 기억하는데 아닌가..\n<br>\n<br>\n 아님 말겅.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 툭툭 칠때 안에서 비명소리가 나오는데 금방 지나가서 잘 안들리죠."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저 여자.. 계속 보다 보니.. 괜찮던데.. ㅡ.ㅡ  몸매도 좋은거 같고.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527120109",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1506",
+  "sourceEngine": "zeroboard"
+}

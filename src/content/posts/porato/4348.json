@@ -1,0 +1,35 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4348",
+  "title": "시그용",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/1184681313/1.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  새로운 울티마 캐릭터 컨셉이 생겼으므로 새로운 시그로 교체합니다 ㅋㅋ</td></tr></tbody></table>\n",
+  "bodyText": "새로운 울티마 캐릭터 컨셉이 생겼으므로 새로운 시그로 교체합니다 ㅋㅋ",
+  "author": "dprwpfhtm",
+  "authorMemberNo": "424",
+  "authorHomepage": null,
+  "createdAt": "2007-07-17T23:08:33",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "1.jpg",
+      "fileNum": 1,
+      "sizeBytes": 17920
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "왠지 안티엘리어싱을 먹이고 싶은 시그군요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071214063126",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4348",
+  "sourceEngine": "zeroboard"
+}

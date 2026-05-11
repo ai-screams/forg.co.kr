@@ -1,0 +1,41 @@
+{
+  "board": "Trash",
+  "boardKr": "Trash",
+  "postId": "228",
+  "title": "수표의 숫자 표기에 관해",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 다음 중에서... 기타는 설명을 덧붙여서 코멘트를!\n<br>\n -by Hyoung-nim-\n<br>\n<br>\n 36445이란 숫자ㅡㄹ 예로 들면\n<br>\n<br>\n 1) 36,445\n<br>\n 2) 3,6445\n<br>\n 3) 3만6446\n<br>\n 4) 기타<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "다음 중에서... 기타는 설명을 덧붙여서 코멘트를! -by Hyoung-nim- 36445이란 숫자ㅡㄹ 예로 들면 1) 36,445 2) 3,6445 3) 3만6446 4) 기타",
+  "author": "Heramael",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-05-30T22:58:32",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Fleurety",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 36,445가 제일 보편적이고 좋은거 같은데요"
+    },
+    {
+      "author": "Trimasel",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 기타 \n<br>\n 금)삼만육천사백사십오.\n<br>\n -위조방지용.\n<br>\n<br>\n ......아 게임내에서요? 그럼(1)"
+    },
+    {
+      "author": "Marbas",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 1번이 가장 낳네요 일단 평소에도 생활화가 돼어있으니^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020605204048",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Trash&no=228",
+  "sourceEngine": "zeroboard"
+}

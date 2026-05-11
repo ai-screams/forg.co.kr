@@ -1,0 +1,59 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1628",
+  "title": "정말.. 뭐하는 곳이지 --",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/제목_없음.jpg\"><br>\n<br>\n  gta3 하다가... 위에 간판좀 보세요 --;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "gta3 하다가... 위에 간판좀 보세요 --;;",
+  "author": "나훈아",
+  "authorMemberNo": "6937",
+  "authorHomepage": null,
+  "createdAt": "2002-05-28T19:36:17",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "제목_없음.jpg",
+      "fileNum": 1,
+      "sizeBytes": 921702
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ..;;; 경찰들은 저런데 수사 않가고 뭐하는겨!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 흐미...이거 겁나게 비싸던데 ㅡㅡ; 직수입이라 그런가"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이거 영화 폴리스 아카데미 패러디 같군요^^"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "  GTA3 요즘 하는건뎅 ㅋㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 제가 보기엔 경찰들이 잡으러 온걸 여기서 찍은거가튼뎅 ㅋㅋ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020529185617",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1628",
+  "sourceEngine": "zeroboard"
+}

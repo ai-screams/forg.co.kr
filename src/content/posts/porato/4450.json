@@ -1,0 +1,64 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4450",
+  "title": "인사동 쌈지길",
+  "categoryLabel": "외출",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/PT_025.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/PT_027.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n젋은 사람들이 많더군요. 저도 젊긴 하지만. -_-. DSLR로 무장한 여.남자들이 많더군요. 전 뚝딱이 들고 열심히 찍었습니다. ^.^</td></tr></tbody></table>\n",
+  "bodyText": "젋은 사람들이 많더군요. 저도 젊긴 하지만. -_-. DSLR로 무장한 여.남자들이 많더군요. 전 뚝딱이 들고 열심히 찍었습니다. ^.^",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-09-10T18:54:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "PT_025.jpg",
+      "fileNum": 1,
+      "sizeBytes": 141312
+    },
+    {
+      "name": "PT_027.jpg",
+      "fileNum": 2,
+      "sizeBytes": 109977
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "여기 데이트코스로 유명합니다. 꼭 가보세요. 춧현입니다."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "입장료 받는다고 시끄럽던 데가 여기죠?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네. 근데 여자분끼리 오는 경우가 더 많은것 같네요.\n<br>입장료는 받지 않더군요. 하지만. 물건이 넘 비싸더군요."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "가봐야하는데.. 하면서 게속 못가구있는.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "여자랑 가세요. 꼭. \n<br>남자끼리 DSLR 카메라 들고 가면 아무 소용이..-_-. 왜냐하면 사진을 못찍게 하거든요. -_@"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071212123902",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4450",
+  "sourceEngine": "zeroboard"
+}

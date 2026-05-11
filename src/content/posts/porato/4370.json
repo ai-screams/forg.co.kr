@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4370",
+  "title": "던파 짤방 모음3",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/rori.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/ilsi.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  이제 끝이네요<br>\n보느라 수고하셨어요</td></tr></tbody></table>\n",
+  "bodyText": "이제 끝이네요 보느라 수고하셨어요",
+  "author": "DarkElves",
+  "authorMemberNo": "1136",
+  "authorHomepage": null,
+  "createdAt": "2007-07-29T11:46:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "rori.JPG",
+      "fileNum": 1,
+      "sizeBytes": 46387
+    },
+    {
+      "name": "ilsi.JPG",
+      "fileNum": 2,
+      "sizeBytes": 55193
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "좋은 그림 잘봤습니다 ㅇ.ㅇ/"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "유후"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071207155441",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4370",
+  "sourceEngine": "zeroboard"
+}

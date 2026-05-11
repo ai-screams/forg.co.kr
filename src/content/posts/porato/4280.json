@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4280",
+  "title": "가방(Bag)",
+  "categoryLabel": "손뜨게질",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/1182253814/IMG_0201.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1182253814/IMG_0203.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n손뜨게질 가방입니다!</td></tr></tbody></table>\n",
+  "bodyText": "손뜨게질 가방입니다!",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-06-19T20:50:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "IMG_0201.jpg",
+      "fileNum": 1,
+      "sizeBytes": 105676
+    },
+    {
+      "name": "IMG_0203.jpg",
+      "fileNum": 2,
+      "sizeBytes": 110899
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "멋있네요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "..손재주 있으시군요. 어릴때 하고 포기했습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071208162804",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4280",
+  "sourceEngine": "zeroboard"
+}

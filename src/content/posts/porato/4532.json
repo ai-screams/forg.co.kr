@@ -1,0 +1,41 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4532",
+  "title": "나와 닮은 저명인사 찾아 봅시다",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/닮은꼴.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n<br>\n<br>\n여자가 7명이네...-_-;</td></tr></tbody></table>\n",
+  "bodyText": "여자가 7명이네...-_-;",
+  "author": "장포갈매기",
+  "authorMemberNo": "123",
+  "authorHomepage": null,
+  "createdAt": "2007-10-17T21:37:03",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "닮은꼴.JPG",
+      "fileNum": 1,
+      "sizeBytes": 122572
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<a href=\"http://www.myheritage.com/FP/Company/celebrity-collage.php?lang=KO\">http://www.myheritage.com/FP/Company/celebrity-collage.php?lang=KO</a>\n<br>\n<br>요기서 해보세요 ㅋ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 해보니까...눈에 띄는 사람이...\n<br>\n<br>우마서먼 (좋아하는 배우라) 그리고...\n<br>\n<br>김위원장 ㅡㅡㅋ 이건머;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071211140806",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4532",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,28 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4360",
+  "title": "오겜..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/gg.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  헐..흠좀무..</td></tr></tbody></table>\n",
+  "bodyText": "헐..흠좀무..",
+  "author": "padet",
+  "authorMemberNo": "637",
+  "authorHomepage": "http://blog.naver.com/padet666",
+  "createdAt": "2007-07-24T17:29:38",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "gg.JPG",
+      "fileNum": 1,
+      "sizeBytes": 2560
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20071214063748",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4360",
+  "sourceEngine": "zeroboard"
+}

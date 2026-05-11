@@ -1,0 +1,47 @@
+{
+  "board": "Trash",
+  "boardKr": "Trash",
+  "postId": "186",
+  "title": "울온에 접속이 안되는데 어캐해영??",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 제가 계정이 갑자기&nbsp;&nbsp;울온에 접속이 안되는군여<br>\n 모 나오는말은 비밀번호가 잘못됐거나 또는 새로 해야한다는 말뿐이..<br>\n 황당하게 uo로 들어가서 내 아디랑 비번을 치면 잘 들어가진다는 거에여.<br>\n 제 컴의 문제 같은데.. 어디가 이상한지좀 알려주세여..<br>\n 아님 새로 깔아야 하나.. ?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "제가 계정이 갑자기  울온에 접속이 안되는군여 모 나오는말은 비밀번호가 잘못됐거나 또는 새로 해야한다는 말뿐이.. 황당하게 uo로 들어가서 내 아디랑 비번을 치면 잘 들어가진다는 거에여. 제 컴의 문제 같은데.. 어디가 이상한지좀 알려주세여.. 아님 새로 깔아야 하나.. ?",
+  "author": "Marbas",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-05-09T08:03:39",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Pursan",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그러면- 패치 확실하게 다시 하세요.<br>\n 혹여 패치시에 제대로 안됐다는 메세지 안나왔나요"
+    },
+    {
+      "author": "Aiwaz",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 훔냥..저도 접속 않되네요 비번이나 아이디가 틀렸을거라고..<br>\n<br>\n 현재 버젼은 3.0.7e (106 Patch) 인데 이거 맞지 않나요..냠...<br>\n<br>\n 아무튼 접속이 안된다는...ㅜ0ㅜ"
+    },
+    {
+      "author": "Segal",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 계정이 끝난게 아닐까요<br>\n"
+    },
+    {
+      "author": "Bucon",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그 버젼에서 클라패치 한번 더해서 3.0.8 a 일꺼에요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020713212311",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Trash&no=186",
+  "sourceEngine": "zeroboard"
+}

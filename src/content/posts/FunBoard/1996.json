@@ -1,0 +1,47 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1996",
+  "title": "포토샵 내장 이미지레디 3.0 개발자 중에 로리가 -_-;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/loli.jpg\"><br>     \t\t\t     \t\t\t 써얼렁 ㅡㅡ;<br>\n 네모난 칸안에 봐요 ㅡㅡ;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "써얼렁 ㅡㅡ; 네모난 칸안에 봐요 ㅡㅡ;",
+  "author": "inarus",
+  "authorMemberNo": "3860",
+  "authorHomepage": "http://user.chollian.net/~inarus/",
+  "createdAt": "2002-06-18T00:13:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "loli.jpg",
+      "fileNum": 1,
+      "sizeBytes": 68300
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어...어째서!;<br>\n<br>\n [애니 로리]라는건!;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 눈도 좋으시지 -_-;<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "외국인들 이름이 '로리'면...(애칭으로...)<br>\n보통 남자던데...('작은 아씨들'을 봐도 그렇고...)<br>\n'로리타'라는 이름의 애칭은 '로리'가 아니라 '로'입니다.<br>\n뭔가 옆의 섬나라 애들이 일부 한국인들에게까지 어떤 단어(?)에 민감하게 만들어 놓은 듯...(쳇!)"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050534",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1996",
+  "sourceEngine": "zeroboard"
+}

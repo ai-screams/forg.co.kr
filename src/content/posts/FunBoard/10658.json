@@ -1,0 +1,29 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "10658",
+  "title": "목 없는 운전자",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n<br>하하하하!",
+  "bodyText": "하하하하!",
+  "author": "썩은사과",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2013-04-05T00:00:00",
+  "hits": 879,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "[SoK]Pooh",
+      "authorMemberNo": null,
+      "createdAt": "2013-04-05T18:32:00",
+      "bodyHtml": "자..자연스럽...다.."
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20130812101801",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10658",
+  "sourceEngine": "gnuboard4"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4323",
+  "title": "뇌구조라길래..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/r_brain.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  잠수중에 잠깐 들러서 스윽.<br>\n<br>\n...<br>\n<br>\n그럴리가 없는데..........<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "잠수중에 잠깐 들러서 스윽. ... 그럴리가 없는데..........",
+  "author": "blacksazabi",
+  "authorMemberNo": "16",
+  "authorHomepage": "http://www.Wayfaring.net",
+  "createdAt": "2007-07-07T06:12:08",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "r_brain.jpg",
+      "fileNum": 1,
+      "sizeBytes": 86937
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "으악"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215005003",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4323",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,41 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1597",
+  "title": "열심히 공부한 당신...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/2002_05_23_crazy.JPG\"><br>     \t\t\t     \t\t\t 미쳐라!...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "미쳐라!...",
+  "author": "나훈아",
+  "authorMemberNo": "6937",
+  "authorHomepage": null,
+  "createdAt": "2002-05-25T00:51:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "2002_05_23_crazy.JPG",
+      "fileNum": 1,
+      "sizeBytes": 75366
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ...미치는게 좋지.흐흐흐!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 우리학교넹\n<br>\n 행사보니까 설이구만"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527192512",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1597",
+  "sourceEngine": "zeroboard"
+}

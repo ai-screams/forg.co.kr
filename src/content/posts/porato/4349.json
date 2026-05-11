@@ -1,0 +1,52 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4349",
+  "title": "세상은 고양이를 원한다!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/1130065513472.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/1137532694911d3c5.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  아래는 뭐시기 폴드-_;</td></tr></tbody></table>\n",
+  "bodyText": "아래는 뭐시기 폴드-_;",
+  "author": "김인문소프트웨어",
+  "authorMemberNo": "661",
+  "authorHomepage": null,
+  "createdAt": "2007-07-18T18:08:54",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "1130065513472.jpg",
+      "fileNum": 1,
+      "sizeBytes": 114995
+    },
+    {
+      "name": "1137532694911d3c5.jpg",
+      "fileNum": 2,
+      "sizeBytes": 23040
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아아아아아아아아아아아 ㅠ.,ㅠ\n<br>\n<br>귀엽네요<img border=\"0\" src=\"emoticon/m_0503.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스코티시폴드인가 그거군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "위의 아이는 꾹꾹이 할 자세가..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071213110106",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4349",
+  "sourceEngine": "zeroboard"
+}

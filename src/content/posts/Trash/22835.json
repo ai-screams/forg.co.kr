@@ -1,0 +1,29 @@
+{
+  "board": "Trash",
+  "boardKr": "Trash",
+  "postId": "22835",
+  "title": "조현아",
+  "categoryLabel": null,
+  "bodyHtml": "ㅇㅇ",
+  "bodyText": "ㅇㅇ",
+  "author": "Clitheret",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2014-12-16T00:00:00",
+  "hits": 1673,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2016-12-17T10:30:00",
+      "bodyHtml": "종편에서도 까는거보면, 그놈들 희석시킬려고 일부러 난리인듯.\n<br>근데 X같이생겼네;"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20160331123944",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=22835",
+  "sourceEngine": "gnuboard4"
+}

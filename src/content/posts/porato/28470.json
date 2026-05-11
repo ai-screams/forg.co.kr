@@ -1,0 +1,47 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "28470",
+  "title": "허리케인 샌디 피해",
+  "categoryLabel": null,
+  "bodyHtml": "집에서 한 15미터가량 떨어져있는 나무가 쓰러졌습니다.\n<br>나무들이 덩치는 큰데 뿌리가 되게 부실하더군요. 뻗어나갈 공간이 적어서 그렇겠지만...",
+  "bodyText": "집에서 한 15미터가량 떨어져있는 나무가 쓰러졌습니다. 나무들이 덩치는 큰데 뿌리가 되게 부실하더군요. 뻗어나갈 공간이 적어서 그렇겠지만...",
+  "author": "썩은사과",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2012-10-31T00:00:00",
+  "hits": 885,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "로드까까",
+      "authorMemberNo": null,
+      "createdAt": "2013-10-31T07:20:00",
+      "bodyHtml": "추석에 산소에 가보니 저것보다 조금 더 굵은 나무가 똑같은 식으로 뽑혀서 누워계시더군요\n<br>집 바로 옆에서 그랬으니 엄청 무서웠겠습니다\n<br>사과님 거처는 아니었기를"
+    },
+    {
+      "author": "썩은사과",
+      "authorMemberNo": null,
+      "createdAt": "2013-10-31T07:29:00",
+      "bodyHtml": "저희 집은 멀쩡해요. 정전도 안ㅤㄷㅚㅆ고."
+    },
+    {
+      "author": "tzecheleaf",
+      "authorMemberNo": null,
+      "createdAt": "2013-11-19T02:19:00",
+      "bodyHtml": "헐...뿌리 거하게 뽑혔네\n<br>근데 사진 자료용으로 써도 됌?"
+    },
+    {
+      "author": "썩은사과",
+      "authorMemberNo": null,
+      "createdAt": "2013-11-19T11:58:00",
+      "bodyHtml": "네 쓰세요"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20130812101956",
+  "parsedAt": "2026-05-11T16:52:51.713788",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28470",
+  "sourceEngine": "gnuboard4"
+}

@@ -1,0 +1,41 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "35",
+  "title": "그린그린2 -0-;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/t1.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  랄랄라~<br>\n모모해줘 님의 요청으로 다시플레이중 찰칵~</td></tr></tbody></table>\n",
+  "bodyText": "랄랄라~ 모모해줘 님의 요청으로 다시플레이중 찰칵~",
+  "author": "shinjj87",
+  "authorMemberNo": "425",
+  "authorHomepage": null,
+  "createdAt": "2005-06-18T02:16:47",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "t1.JPG",
+      "fileNum": 1,
+      "sizeBytes": 69529
+    }
+  ],
+  "comments": [
+    {
+      "author": "Apple",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "요청하신 분이 요청한 장면은 이런 것이 아닐 듯 싶습니다!\n<br>......"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스나이퍼"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215002326",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=35",
+  "sourceEngine": "zeroboard"
+}

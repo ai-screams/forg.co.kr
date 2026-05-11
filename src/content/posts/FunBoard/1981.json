@@ -1,0 +1,71 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1981",
+  "title": "우악.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/sea1.jpg\"><br>     \t\t\t     \t\t\t 나머지는 나중에(...)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "나머지는 나중에(...)",
+  "author": "Iriet",
+  "authorMemberNo": "2752",
+  "authorHomepage": "http://piriah.ce.ro",
+  "createdAt": "2002-06-16T22:50:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "sea1.jpg",
+      "fileNum": 1,
+      "sizeBytes": 27852
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 도....도...~~<br>\n ㄹ    ㄹ    <img border=\"0\" src=\"emoticon/u_34.gif\"> 자아...던져랏..!<br>\n 저건 콥서인가..<br>\n 빨판 있는거보면..크라켄..?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 크라켄이닷"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 토우챠우!!"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 산낙지"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아앗. 냠군~ &gt;_&lt;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 빠..빨콩인가.ㅡ,.ㅡ<br>\n"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 문어같은데요 ㅡㅡ;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626053033",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1981",
+  "sourceEngine": "zeroboard"
+}

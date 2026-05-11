@@ -1,0 +1,47 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4541",
+  "title": "1871, 조선 남자",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/8607_11192673566.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n 느껴지십니까 <br>\n<br>\n 토종의 냄새.<br>\n</td></tr></tbody></table>\n",
+  "bodyText": "느껴지십니까 토종의 냄새.",
+  "author": "acidist",
+  "authorMemberNo": "2630",
+  "authorHomepage": null,
+  "createdAt": "2007-10-18T20:33:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "8607_11192673566.jpg",
+      "fileNum": 1,
+      "sizeBytes": 291020
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오른쪽은 남희석씨 고조 할아버지 인거 같네요.\n<br>\n<br>그래도 은근히 잘생겼네요.``"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음 버선은 안신었네요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "하하?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071211140606",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4541",
+  "sourceEngine": "zeroboard"
+}

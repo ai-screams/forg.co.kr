@@ -1,0 +1,47 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1322",
+  "title": "닥스",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/Dsc00059_1.jpg\"><br>     \t\t\t     \t\t\t .............<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": ".............",
+  "author": "Iriet",
+  "authorMemberNo": "2752",
+  "authorHomepage": "http://piriah.ce.ro",
+  "createdAt": "2002-04-25T18:21:09",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 쿨럭.. 밥 먹으러 가야하는데..\n<br>\n 저걸로 만든 반찬이 나오면..ㅜ.ㅜ"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헐... 취미한번 고상하시군요.."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 쩝...육식안하길 잘햇다는 -_-;;;;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 얼핏보면 마치 목욕탕같다는;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020529184758",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1322",
+  "sourceEngine": "zeroboard"
+}

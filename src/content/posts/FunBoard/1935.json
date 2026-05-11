@@ -1,0 +1,47 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1935",
+  "title": "공유프로그램 4종 한번에 띄운 -_-;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/shard.JPG\"><br>     \t\t\t     \t\t\t 이걸 모두 가동시키면 <br>\n 한통에서 선 짜를지도 ㅡㅡ;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이걸 모두 가동시키면 한통에서 선 짜를지도 ㅡㅡ;",
+  "author": "inarus",
+  "authorMemberNo": "3860",
+  "authorHomepage": "http://user.chollian.net/~inarus/",
+  "createdAt": "2002-06-14T16:34:44",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "shard.JPG",
+      "fileNum": 1,
+      "sizeBytes": 140800
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " AFTP 만 가동시키면 저쪽에서 전화를 하겠군요 --"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저랑 엇비슷한듯-_-... 구루, 팝폴더, 당나귀, 그리고 하나넷이랑 신비로 동호회서 받고나면...컴퓨터가 엄청 버벅대죠... 평소에 팝폴더는 잘 안씁니다만...."
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저기 진소님 하나넷이랑 신비로에서 애니메이션 다운 받기 좋은 동호회가 어디죠??<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626052012",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1935",
+  "sourceEngine": "zeroboard"
+}

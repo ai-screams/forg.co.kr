@@ -1,0 +1,52 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "38",
+  "title": "아침에 떴던 쿠앤크 로즈입니다.",
+  "categoryLabel": "마비",
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/C4EDBED8B7CEC1EE.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/test4.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  전..<br>\n돈이 안되서 못샀구요....<br>\n그저 다른 분들이 몰려들어서 사시는 걸 침 쥘쥘 흘리며 구경했습니다.ㄱ-<br>\n<br>\n...이거 사다가 나중에 되팔면 이득인데.. 아쉽군요.<br>\n<br>\n<br>\n아래 사진은 덤.</td></tr></tbody></table>\n",
+  "bodyText": "전.. 돈이 안되서 못샀구요.... 그저 다른 분들이 몰려들어서 사시는 걸 침 쥘쥘 흘리며 구경했습니다.ㄱ- ...이거 사다가 나중에 되팔면 이득인데.. 아쉽군요. 아래 사진은 덤.",
+  "author": "nekojjyang",
+  "authorMemberNo": "67",
+  "authorHomepage": "http://blog.naver.com/catling23",
+  "createdAt": "2005-06-18T11:01:17",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "C4EDBED8B7CEC1EE.jpg",
+      "fileNum": 1,
+      "sizeBytes": 32563
+    },
+    {
+      "name": "test4.jpg",
+      "fileNum": 2,
+      "sizeBytes": 15462
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아 저거 사람들이 사려고 아주 난리를 치던데(..................)"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그것보다. 저 방패는... 어떤거죠 -_-? 처음 보는거 같아서..;;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헤테르(인지 헤테로 인지 둘중하나;) 쉴드.. 도면은 두갈드 아일의 필드 보스 곰땡이가 준다는것 같....\n<br>\n<br>도면으로만 만들수 있는 카이트 쉴드 로 알고 있어요 ㅎ\n<br>\n<br>그나저나 저 노랑색...으로 물들인 처자... 감탄이 ㅇ_ㅇbbb"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215001937",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=38",
+  "sourceEngine": "zeroboard"
+}

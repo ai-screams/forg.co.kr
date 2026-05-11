@@ -1,0 +1,46 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4321",
+  "title": "선물 사진",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/rs_IMG_3294.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/rs_IMG_3296.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  검은손 사진은 잘 찾아보면 어딘가 많을껍니다-ㅁ-;;</td></tr></tbody></table>\n",
+  "bodyText": "검은손 사진은 잘 찾아보면 어딘가 많을껍니다-ㅁ-;;",
+  "author": "Music",
+  "authorMemberNo": "1129",
+  "authorHomepage": null,
+  "createdAt": "2007-07-05T18:48:59",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "rs_IMG_3294.JPG",
+      "fileNum": 1,
+      "sizeBytes": 69222
+    },
+    {
+      "name": "rs_IMG_3296.JPG",
+      "fileNum": 2,
+      "sizeBytes": 75980
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "검은손 사진 이거 같네요\n<br><a href=\"http://www.forg.co.kr/_zb/zboard.php?id=porato&amp;page=1&amp;sn1=&amp;divpage=1&amp;sn=on&amp;ss=on&amp;sc=on&amp;keyword=babobagsa&amp;select_arrange=headnum&amp;desc=asc&amp;no=2989\">http://www.forg.co.kr/_zb/zboard.php?id=porato&amp;page=1&amp;sn1=&amp;divpage=1&amp;sn=on&amp;ss=on&amp;sc=on&amp;keyword=babobagsa&amp;select_arrange=headnum&amp;desc=asc&amp;no=2989</a>"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "벳지 멋지네여"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071215004439",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4321",
+  "sourceEngine": "zeroboard"
+}

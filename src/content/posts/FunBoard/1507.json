@@ -1,0 +1,41 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1507",
+  "title": "속도 쥑이네요.. -0-",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/UO0072.jpg\"><br>     \t\t\t     \t\t\t 참고로 이 곡은 요즘 나오는 교통문화켐페인 cf 배경음악 이에요....<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "참고로 이 곡은 요즘 나오는 교통문화켐페인 cf 배경음악 이에요....",
+  "author": "kenel",
+  "authorMemberNo": "2508",
+  "authorHomepage": null,
+  "createdAt": "2002-05-15T13:45:29",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0072.jpg",
+      "fileNum": 1,
+      "sizeBytes": 310476
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 옆에 44054 말하는 거에요.. 신기해서,,,"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어떻게 저런핑이...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527120305",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1507",
+  "sourceEngine": "zeroboard"
+}

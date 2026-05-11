@@ -1,0 +1,41 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1779",
+  "title": "지엠들과 떠나는 세계 자연 여행 - 자갈산(?)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/travel_with_gm_03.gif\"><br>     \t\t\t     \t\t\t 해석 :<br>\n<br>\n 이 산의 정상이 보이는걸!<br>\n<br>\n 잠시만 기다려!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "해석 : 이 산의 정상이 보이는걸! 잠시만 기다려!",
+  "author": "sos550",
+  "authorMemberNo": "5862",
+  "authorHomepage": null,
+  "createdAt": "2002-06-08T15:58:02",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "travel_with_gm_03.gif",
+      "fileNum": 1,
+      "sizeBytes": 101580
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 헉;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 잘하시네용.. 멋지다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050111",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1779",
+  "sourceEngine": "zeroboard"
+}

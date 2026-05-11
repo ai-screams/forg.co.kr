@@ -1,0 +1,59 @@
+{
+  "board": "porato",
+  "boardKr": "porato",
+  "postId": "4431",
+  "title": "누군지 아시는분2",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/npe58_namaxnamoon.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n..</td></tr></tbody></table>\n",
+  "bodyText": "..",
+  "author": "selic",
+  "authorMemberNo": "122",
+  "authorHomepage": "http://selic.tistory.com/",
+  "createdAt": "2007-08-27T15:45:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "npe58_namaxnamoon.jpg",
+      "fileNum": 1,
+      "sizeBytes": 132915
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이건..이글루 어딘가에서 안경 패티쉬 글에서 본 것 같은데 -_- 좋은사진 감사 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아 이 밑에 글이 그 글에서 본거엿군요"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "조금 다르지 않아요?"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "옷이 다르군요 <img border=\"0\" src=\"emoticon/m_0502.gif\">"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이쪽분이 슴가가 조금 더 작은듯?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20071211132220",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=porato&no=4431",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1776",
+  "title": "오토바이 타는 지엠",
+  "categoryLabel": null,
+  "bodyHtml": "\n<img border=\"0\" src=\"data/gm_rides_motercycle.gif\"><br>     \t\t\t     \t\t\t -_- 눈이 썩지 않으셨길...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "-_- 눈이 썩지 않으셨길...",
+  "author": "sos550",
+  "authorMemberNo": "5862",
+  "authorHomepage": null,
+  "createdAt": "2002-06-08T15:12:23",
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "gm_rides_motercycle.gif",
+      "fileNum": 1,
+      "sizeBytes": 5734
+    }
+  ],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -ㅅ-;;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020626050430",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1776",
+  "sourceEngine": "zeroboard"
+}

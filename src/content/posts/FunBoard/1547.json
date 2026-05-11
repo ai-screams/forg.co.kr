@@ -1,0 +1,35 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "1547",
+  "title": "어느 프로그래머의 시",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 컴퓨터를 우러러 \n<br>\n 한 점 에러가 없기를 \n<br>\n 모니터에 뜨는 \n<br>\n 사소한 경고 메세지에도 \n<br>\n 나는 괴로워했다. \n<br>\n<br>\n 앗싸리 자포자기하는 마음으로 \n<br>\n 버그도 사랑해야지. \n<br>\n 그리고 나에게 맡겨진 모듈을 \n<br>\n 끝내야겠다. \n<br>\n<br>\n 오늘 밤에도 \n<br>\n 손가락이 자판 위에 스치운다\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "컴퓨터를 우러러 한 점 에러가 없기를 모니터에 뜨는 사소한 경고 메세지에도 나는 괴로워했다. 앗싸리 자포자기하는 마음으로 버그도 사랑해야지. 그리고 나에게 맡겨진 모듈을 끝내야겠다. 오늘 밤에도 손가락이 자판 위에 스치운다",
+  "author": "crimsn",
+  "authorMemberNo": "2594",
+  "authorHomepage": null,
+  "createdAt": "2002-05-21T08:48:56",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 프로그래머는 버그까지 자기 자식으로 생각하고 사랑할 수 있지만 프로젝트 매니저는 안그럴껄요 -_-"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 크흐흐흐."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020527121217",
+  "parsedAt": "2026-05-11T16:52:23.339805",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=FunBoard&no=1547",
+  "sourceEngine": "zeroboard"
+}
