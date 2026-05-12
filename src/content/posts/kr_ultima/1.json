@@ -1,0 +1,35 @@
+{
+  "board": "kr_ultima",
+  "boardKr": "kr_ultima",
+  "postId": "1",
+  "title": "울티마 온라인 게시판.............",
+  "categoryLabel": null,
+  "bodyHtml": "샤드별로 따로 만들어야 할까요?\n<br>아니면 분류로 지정 해야 할가요?\n<br>의견 부탁드립니다.",
+  "bodyText": "샤드별로 따로 만들어야 할까요? 아니면 분류로 지정 해야 할가요? 의견 부탁드립니다.",
+  "author": "runup",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-26T01:56:07",
+  "hits": 343,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "김베",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-27T19:49:00+09:00",
+      "bodyHtml": "\n\t\t\t            샤드가 몇개 없으니 분류가 좋지 않을까요?ㅎㅎ 한표던집니다        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T15:42:00+09:00",
+      "bodyHtml": "\n\t\t\t            일단 거래게시판은 분류 추가하였습니다.\n<br>많은 이용 부탁드립니다.        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191017162343",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=ultima&wr_id=1",
+  "sourceEngine": "gnuboard5"
+}

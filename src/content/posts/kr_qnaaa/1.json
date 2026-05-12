@@ -1,0 +1,47 @@
+{
+  "board": "kr_qnaaa",
+  "boardKr": "kr_qnaaa",
+  "postId": "1",
+  "title": "아리랑 샤드 개인상점이 많은 곳은 어디인가요~?",
+  "categoryLabel": null,
+  "bodyHtml": "제목과 같습니다. 사람들이 많은 곳이나 메인 상점가가 있나요?<br><br>[이 게시물은 runup님에 의해 2019-02-10 15:16:25 팁,노하우에서 이동 됨]",
+  "bodyText": "제목과 같습니다. 사람들이 많은 곳이나 메인 상점가가 있나요? [이 게시물은 runup님에 의해 2019-02-10 15:16:25 팁,노하우에서 이동 됨]",
+  "author": "Zensia",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-02-06T11:33:42",
+  "hits": 359,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Zensia",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-06T16:40:00+09:00",
+      "bodyHtml": "\n\t\t\t            자문자답이지만 루나에 있었습니다. 문게이트 말라스에 루나로 가면 있더군요~        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-07T10:49:00+09:00",
+      "bodyHtml": "\n\t\t\t            룬게&nbsp; 말라스&gt;루나\n<br>저도 여기저기 구경을 다니는 중인데..........................\n<br>현재 루나마을이 제일활성화되어있더군요\n<br>탈것이나 에완동물은 \n<br>트라멜 &gt; 메진시아로가보세요\n<br>저도 거기서 비틀하나 샀음.        "
+    },
+    {
+      "author": "말차",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-10T08:50:00+09:00",
+      "bodyHtml": "\n\t\t\t            질문&amp;답 게시판을 신설 하는것이 어떻까 하네요.\n<br>팁과 노하우 인데 질문 글이 있으면 맞지 않는다고 생각되네요.\n<br>해결이 된문제를 일정 기간마다 정리해서 올린다면 팁과 노화우가 맞겠지만.\n<br>해당 글은 단순 질문 글로 보여서 게시판 이름이랑 맞질 않는다고 생각됩니다.        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-10T15:16:00+09:00",
+      "bodyHtml": "\n\t\t\t            질문답변 게시판 생성하였습니다.        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191017162440",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=qnaaa&wr_id=1",
+  "sourceEngine": "gnuboard5"
+}

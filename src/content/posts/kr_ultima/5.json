@@ -1,0 +1,29 @@
+{
+  "board": "kr_ultima",
+  "boardKr": "kr_ultima",
+  "postId": "5",
+  "title": "울티마온라인",
+  "categoryLabel": null,
+  "bodyHtml": "거래게시판이나 기타 공략게시판이요",
+  "bodyText": "거래게시판이나 기타 공략게시판이요",
+  "author": "Ruru",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-27T17:53:41",
+  "hits": 397,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-27T18:45:00+09:00",
+      "bodyHtml": "\n<a href=\"http://forg.kr/bbs/board.php?bo_table=ultima&amp;wr_id=1\">http://forg.kr/bbs/board.php?bo_table=ultima&amp;wr_id=1</a>\n<br>이곳에 질문처럼...\n<br>게시판을 따로 뺄지 분류로 할지^^.\n<br>각각 게시판을 만드는게 좋다고생각하시는 군요?        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191212064740",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=ultima&wr_id=5",
+  "sourceEngine": "gnuboard5"
+}

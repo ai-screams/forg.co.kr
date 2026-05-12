@@ -1,0 +1,35 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "42",
+  "title": "제가 알던 그 포그가 맞나요?",
+  "categoryLabel": null,
+  "bodyHtml": "S.E.N.S의 Like wind가 흘러나오던 그 포그\n<br>우연히 접속해봤는데 살아있다니 너무 신기해요",
+  "bodyText": "S.E.N.S의 Like wind가 흘러나오던 그 포그 우연히 접속해봤는데 살아있다니 너무 신기해요",
+  "author": "Binch",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-02-24T00:01:48",
+  "hits": 399,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-25T14:01:00+09:00",
+      "bodyHtml": "\n\t\t\t            맞습니다 맞고요~~~~\n<br>자주 놀러오세요 ^^\n<br>테마곡 한곡 투척하고갑니다.\n<br><a href=\"http://forg.kr/musicqqq/Ultima%20Online%20Official%20Theme.mp3\">http://forg.kr/musicqqq/Ultima%20Online%20Official%20Theme.mp3</a> "
+    },
+    {
+      "author": "saeall",
+      "authorMemberNo": null,
+      "createdAt": "2019-03-09T21:06:00+09:00",
+      "bodyHtml": "\n\t\t\t            화이팅입니다\n<br>역시 울온의 음악은 짱이에요        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191017162650",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=42",
+  "sourceEngine": "gnuboard5"
+}

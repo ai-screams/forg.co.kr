@@ -1,0 +1,35 @@
+{
+  "board": "kr_qnaaa",
+  "boardKr": "kr_qnaaa",
+  "postId": "36",
+  "title": "요세 지피 시세가 어떻게 돼요?",
+  "categoryLabel": null,
+  "bodyHtml": "아리랑인데\n<br>지피가 없어서 ......",
+  "bodyText": "아리랑인데 지피가 없어서 ......",
+  "author": "소리야",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-09-28T19:24:58",
+  "hits": 240,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "검둥개",
+      "authorMemberNo": null,
+      "createdAt": "2019-10-04T19:56:00+09:00",
+      "bodyHtml": "\n\t\t\t            무료계정에 지피가 들어있으면 팔수 있나요?        "
+    },
+    {
+      "author": "김베",
+      "authorMemberNo": null,
+      "createdAt": "2019-10-22T01:27:00+09:00",
+      "bodyHtml": "\n\t\t\t            양키지피 시세 1억당 1.35정도 입니다. \n<br>여로계정도 접속되시면 팔면되죠        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191212061432",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=qnaaa&wr_id=36",
+  "sourceEngine": "gnuboard5"
+}

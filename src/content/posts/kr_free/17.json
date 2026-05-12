@@ -1,0 +1,35 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "17",
+  "title": "안녕하세요",
+  "categoryLabel": null,
+  "bodyHtml": "오또케 찾아 찾아 다시 왔네요 ㅠㅠ\n<br>예전 폵홈 그리워요...",
+  "bodyText": "오또케 찾아 찾아 다시 왔네요 ㅠㅠ 예전 폵홈 그리워요...",
+  "author": "syaoran911",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-28T22:26:15",
+  "hits": 127,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T22:28:00+09:00",
+      "bodyHtml": "\n\t\t\t            저도 예전 포그 처럼 만들고싶어요 ㅎㅎ\n<br>근데 저도 매번 쉬다 복귀하고 하는지라\n<br>계정도 다날리고 ㅠㅠ\n<br>어제 신규 계정으로 접했어요\n<br>잘 부탁드립니다.\n<br>\n<br>자주 놀러오셔서 정보같은것도 뿌려주세요 ^^.        "
+    },
+    {
+      "author": "솔로부대장",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-29T10:30:00+09:00",
+      "bodyHtml": "\n\t\t\t            샤오랑님이시다..        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20190719084910",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=17",
+  "sourceEngine": "gnuboard5"
+}

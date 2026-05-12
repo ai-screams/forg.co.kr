@@ -1,0 +1,22 @@
+{
+  "board": "kr_trtrtr",
+  "boardKr": "kr_trtrtr",
+  "postId": "1",
+  "title": "기타거래 게시판 분류추가.",
+  "categoryLabel": null,
+  "bodyHtml": "거래 게시판에 각 샤드별로 분류를 추가 하였습니다.\n<br>^^.",
+  "bodyText": "거래 게시판에 각 샤드별로 분류를 추가 하였습니다. ^^.",
+  "author": "runup",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-28T15:40:02",
+  "hits": 175,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2014",
+  "capturedAt": "20191017163558",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=trtrtr&wr_id=1",
+  "sourceEngine": "gnuboard5"
+}

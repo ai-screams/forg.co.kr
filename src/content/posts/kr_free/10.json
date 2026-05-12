@@ -1,0 +1,71 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "10",
+  "title": "필요하다고 생각되시는 메뉴 또는 게시판을 알려주세요.",
+  "categoryLabel": null,
+  "bodyHtml": "^^.",
+  "bodyText": "^^.",
+  "author": "runup",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-26T02:01:42",
+  "hits": 269,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "솔로부대장",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T15:38:00+09:00",
+      "bodyHtml": "\n\t\t\t            유머게시판\n<br>취미게시판        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T16:46:00+09:00",
+      "bodyHtml": "\n\t\t\t            추천하신 게시판 설정 하였습니다.\n<br>자주 놀러오세요.        "
+    },
+    {
+      "author": "syaoran911",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T22:27:00+09:00",
+      "bodyHtml": "\n\t\t\t            휴게가 없네요!!        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T23:33:00+09:00",
+      "bodyHtml": "\n\t\t\t            익명 게시판 설정에서 에러가 나네요..\n<br>시간이 좀 걸릴듯 ㅠㅠ.        "
+    },
+    {
+      "author": "만두",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-30T09:19:00+09:00",
+      "bodyHtml": "\n\t\t\t            팁/노하우 게시판 만들어주세요        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-30T15:59:00+09:00",
+      "bodyHtml": "\n\t\t\t            공약게시판을 저는 비슷한 생각으로 만든것 이었습니다.\n<br>게시판 이름을 팁,노하우 게시판으로 바꿨습니다.\n<br>감사합니다.        "
+    },
+    {
+      "author": "킁냥",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-01T11:40:00+09:00",
+      "bodyHtml": "\n\t\t\t            서드파티, 이지유오 스크립..        "
+    },
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-09T23:38:00+09:00",
+      "bodyHtml": "\n\t\t\t            스크립트 등은 자료실을 이용하면 되지 않을가요??        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20190719083027",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=10",
+  "sourceEngine": "gnuboard5"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "101",
+  "title": "은행에요",
+  "categoryLabel": null,
+  "bodyHtml": "꽉차서 뺄수가 없다는데 어떻게 빼요?",
+  "bodyText": "꽉차서 뺄수가 없다는데 어떻게 빼요?",
+  "author": "십전서생",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-09-25T21:29:05",
+  "hits": 94,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "kuro",
+      "authorMemberNo": null,
+      "createdAt": "2019-10-04T10:26:00+09:00",
+      "bodyHtml": "\n\t\t\t            혹시 자신의가방에 한도 이상의 아이템이 들어있거나(125개), 무게가 많이 나가면 들수없어요.        "
+    },
+    {
+      "author": "십전서생",
+      "authorMemberNo": null,
+      "createdAt": "2019-10-09T21:08:00+09:00",
+      "bodyHtml": "\n\t\t\t            넵..고맙습니다..        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20191017162446",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=101",
+  "sourceEngine": "gnuboard5"
+}

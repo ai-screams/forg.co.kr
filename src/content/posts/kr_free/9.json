@@ -1,0 +1,29 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "9",
+  "title": "포그 홈페이지 리부트 중입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "많이들 오셔서 격려와 충고 부탁드립니다.",
+  "bodyText": "많이들 오셔서 격려와 충고 부탁드립니다.",
+  "author": "runup",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-26T01:55:10",
+  "hits": 227,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "솔로부대장",
+      "authorMemberNo": null,
+      "createdAt": "2019-01-28T15:36:00+09:00",
+      "bodyHtml": "\n\t\t\t            빠이팅!        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20190719082954",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=9",
+  "sourceEngine": "gnuboard5"
+}

@@ -1,0 +1,29 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "35",
+  "title": "오오오.. 추억이 돌아왔네요",
+  "categoryLabel": null,
+  "bodyHtml": "오...\n<br>\n<br>어릴적부터 놀던 홈페이지가 다시 살아나니 기쁘군요!!",
+  "bodyText": "오... 어릴적부터 놀던 홈페이지가 다시 살아나니 기쁘군요!!",
+  "author": "샤오",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-02-10T16:43:15",
+  "hits": 120,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "saeall",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-10T22:35:00+09:00",
+      "bodyHtml": "\n\t\t\t            저도 추억챃으러 다시 들렀습니다\n<br>계정&nbsp; 다시 파야하나..........        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20190826032713",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=35",
+  "sourceEngine": "gnuboard5"
+}

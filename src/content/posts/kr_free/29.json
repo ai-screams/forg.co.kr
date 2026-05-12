@@ -1,0 +1,29 @@
+{
+  "board": "kr_free",
+  "boardKr": "kr_free",
+  "postId": "29",
+  "title": "축하..축하...^^",
+  "categoryLabel": null,
+  "bodyHtml": "자주 들를게요..",
+  "bodyText": "자주 들를게요..",
+  "author": "십전서생",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2019-01-31T21:21:16",
+  "hits": 140,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": "2019-02-01T09:29:00+09:00",
+      "bodyHtml": "\n\t\t\t            네.......\n<br>자주 오셔서 정보 만히 풀고가세요..        "
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20190826032754",
+  "parsedAt": "2026-05-12T13:43:15.505121",
+  "originalUrl": "http://forg.kr/bbs/board.php?bo_table=free&wr_id=29",
+  "sourceEngine": "gnuboard5"
+}
