@@ -233,10 +233,12 @@ function FrameTop2003() {
         </div>
       </div>
 
-      {/* 7-button menu bar (white background, original chrome assets). */}
+      {/* 7-button menu bar — gray background matches the original
+         frame-top-2003 chrome (the GIF buttons themselves are
+         transparent / cream so the surrounding bar reads gray). */}
       <nav
         aria-label="2003 상단 메뉴"
-        className="flex items-center gap-[1px] bg-white px-2 py-[1px]"
+        className="flex items-center gap-[1px] bg-[#dcdcdc] px-2 py-[1px]"
       >
         {TOP_MENU_2003.map((item) => (
           <TopMenuButton2003 key={item.id} item={item} />
