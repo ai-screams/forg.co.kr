@@ -333,9 +333,9 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
         <img
           src={headerUrl}
           alt={section.fallback}
-          width={120}
-          height={18}
-          className="mb-1 block"
+          width={100}
+          height={25}
+          className="mb-1 block h-[25px] w-[100px]"
         />
       ) : (
         <h3 className="text-forg-gold-hover mb-1 text-[11px] font-bold tracking-wide uppercase">
