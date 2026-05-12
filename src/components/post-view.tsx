@@ -31,14 +31,32 @@ export function PostView({ post, adjacent }: PostViewProps) {
   const capturedDate = createdUnknown ? formatWaybackTs(post.capturedAt) : null;
 
   return (
-    <article className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm">
+    <article
+      className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm"
+      data-pagefind-body
+      data-pagefind-sort={`date:${post.createdAt}`}
+    >
+      {/* Pagefind filter/meta attributes — screen-reader-only, not visible */}
+      <span className="sr-only" data-pagefind-filter="board">
+        {post.board}
+      </span>
+      <span className="sr-only" data-pagefind-filter="era">
+        {post.era}
+      </span>
+
       <header className="border-b border-(--era-input-border) px-6 py-5">
-        <p className="text-forg-muted text-xs">
+        <p className="text-forg-muted text-xs" data-pagefind-ignore>
           <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
             {board.nameKr}
           </Link>
         </p>
-        <h1 className="text-forg-ink mt-2 text-2xl font-bold">{post.title}</h1>
+        <h1
+          className="text-forg-ink mt-2 text-2xl font-bold"
+          data-pagefind-meta="title"
+          data-pagefind-weight="2"
+        >
+          {post.title}
+        </h1>
         <dl className="text-forg-muted mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
           <div className="flex gap-1">
             <dt className="font-bold">작성</dt>
@@ -49,11 +67,12 @@ export function PostView({ post, adjacent }: PostViewProps) {
                   rel="nofollow noreferrer external"
                   target="_blank"
                   className="text-(--era-link) hover:text-(--era-link-hover)"
+                  data-pagefind-meta="author"
                 >
                   {post.author}
                 </a>
               ) : (
-                post.author
+                <span data-pagefind-meta="author">{post.author}</span>
               )}
             </dd>
           </div>
@@ -148,12 +167,14 @@ export function PostView({ post, adjacent }: PostViewProps) {
       )}
 
       {adjacent && (adjacent.prev ?? adjacent.next) ? (
-        <PostNavigation
-          board={board.id as BoardId}
-          boardKr={board.nameKr}
-          prev={adjacent.prev}
-          next={adjacent.next}
-        />
+        <div data-pagefind-ignore>
+          <PostNavigation
+            board={board.id as BoardId}
+            boardKr={board.nameKr}
+            prev={adjacent.prev}
+            next={adjacent.next}
+          />
+        </div>
       ) : null}
     </article>
   );
