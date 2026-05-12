@@ -4,7 +4,7 @@
   "postId": "14",
   "title": "Cat's Shop",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/Vendor/catsshop.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  루나 북쪽에 위치한 아담한 벤더 입니다.<br>\n취급 품목은 <br>\n<br>\n*.MAF<br>\n*.활퀘스트 관련물품<br>\n*.고급 파워스크롤<br>\n*.그 외<br>\n*.기타 주문물품(MLMAF, MLAF, ML보스아이템, ML보스재료, 레어염색약 등)<br>\n<br>\n기타에 해당하는 물품은 게시판을 통해 연락 부탁드립니다.<br>\n리플은 비정기적입니다만, 리플후엔 벤더명 뒤에 날짜가 붙으니 이용에 참고 하여주십시오.<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Vendor/catsshop.JPG\" data-recovery=\"ok\" src=\"/img/posts/Vendor/14/catsshop.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  루나 북쪽에 위치한 아담한 벤더 입니다.<br>\n취급 품목은 <br>\n<br>\n*.MAF<br>\n*.활퀘스트 관련물품<br>\n*.고급 파워스크롤<br>\n*.그 외<br>\n*.기타 주문물품(MLMAF, MLAF, ML보스아이템, ML보스재료, 레어염색약 등)<br>\n<br>\n기타에 해당하는 물품은 게시판을 통해 연락 부탁드립니다.<br>\n리플은 비정기적입니다만, 리플후엔 벤더명 뒤에 날짜가 붙으니 이용에 참고 하여주십시오.<br>\n<br>\n<br>\n</td></tr></tbody></table>\n",
   "bodyText": "루나 북쪽에 위치한 아담한 벤더 입니다. 취급 품목은 *.MAF *.활퀘스트 관련물품 *.고급 파워스크롤 *.그 외 *.기타 주문물품(MLMAF, MLAF, ML보스아이템, ML보스재료, 레어염색약 등) 기타에 해당하는 물품은 게시판을 통해 연락 부탁드립니다. 리플은 비정기적입니다만, 리플후엔 벤더명 뒤에 날짜가 붙으니 이용에 참고 하여주십시오.",
   "author": "milks",
   "authorMemberNo": "446",
