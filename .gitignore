@@ -431,3 +431,4 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # macOS APFS and would otherwise swallow this museum-content directory.
 !src/content/posts/Vendor/
 !src/content/boards/Vendor/
+!public/img/posts/Vendor/

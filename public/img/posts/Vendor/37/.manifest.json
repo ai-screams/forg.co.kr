@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "sell_1.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Vendor/sell_1.jpg",
+    "capturedAt": "20071013062725",
+    "sizeBytes": 209243,
+    "sha256": "ce39dca8ce0714b14ebfcb53f351f02a053100c57eded965da9109c53cf68205"
+  },
+  {
+    "filename": "sell_2.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/Vendor/sell_2.jpg",
+    "capturedAt": "20071013062705",
+    "sizeBytes": 152814,
+    "sha256": "7335cf3213a153415d77c4a853b112de020dce51a0c448a93a23cb6bd70b8d02"
+  }
+]
