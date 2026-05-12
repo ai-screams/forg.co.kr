@@ -259,6 +259,9 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
         className="hover:bg-forg-gold/15 inline-block shrink-0"
         title={item.label}
       >
+        {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
+           into the chrome bar's gray (white × gray = gray), so the buttons
+           blend instead of floating as white tiles. */}
         {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
         <img
           src={assetUrl}
@@ -266,6 +269,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
           width={80}
           height={20}
           className="block h-[20px] w-[80px]"
+          style={{ mixBlendMode: "multiply" }}
         />
         <span className="sr-only">{item.label}</span>
       </Link>
@@ -291,7 +295,14 @@ function FaqIcon2003() {
       className="inline-block shrink-0 opacity-80"
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-      <img src={url} alt="Site FAQ" width={20} height={20} className="block h-[20px] w-[20px]" />
+      <img
+        src={url}
+        alt="Site FAQ"
+        width={20}
+        height={20}
+        className="block h-[20px] w-[20px]"
+        style={{ mixBlendMode: "multiply" }}
+      />
     </span>
   );
 }
