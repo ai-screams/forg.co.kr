@@ -22,7 +22,16 @@ export function SiteHeader() {
           <span className="text-forg-ink text-lg font-bold tracking-tight">forg.co.kr</span>
           <span className="text-forg-muted text-xs">디지털 박물관</span>
         </Link>
-        <EraToggle />
+        <div className="flex items-center gap-4">
+          <Link
+            href="/search"
+            className="text-forg-muted text-sm hover:text-(--era-link-hover)"
+            aria-label="검색"
+          >
+            검색
+          </Link>
+          <EraToggle />
+        </div>
       </div>
     </header>
   );
