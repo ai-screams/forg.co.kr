@@ -283,6 +283,82 @@ export const BOARDS = {
     engine: "gnuboard4",
     era: "2014",
   },
+
+  // ── forg.kr successor site (Gnuboard5, 2019+) — `kr_` prefix avoids
+  // case collisions with forg.co.kr boards on macOS APFS. Lowercase
+  // forg.kr ids (`ultima` ↔ forg.co.kr `Ultima`, `notice` ↔ `Notice`)
+  // would otherwise resolve to the same filesystem inode.
+  kr_notice: {
+    id: "kr_notice",
+    nameKr: "공지 (forg.kr)",
+    category: "uo",
+    engine: "gnuboard5",
+    era: "2014",
+    description: "forg.kr 후속 사이트 공지사항",
+  },
+  kr_ultima: {
+    id: "kr_ultima",
+    nameKr: "울티마온라인 (forg.kr)",
+    category: "uo",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_free: {
+    id: "kr_free",
+    nameKr: "자유 (forg.kr)",
+    category: "community",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_humorrr: {
+    id: "kr_humorrr",
+    nameKr: "유머 (forg.kr)",
+    category: "community",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_qnaaa: {
+    id: "kr_qnaaa",
+    nameKr: "질문답변 (forg.kr)",
+    category: "guide",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_aseeee: {
+    id: "kr_aseeee",
+    nameKr: "팁/노하우 (forg.kr)",
+    category: "guide",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_dataaa: {
+    id: "kr_dataaa",
+    nameKr: "자료실 (forg.kr)",
+    category: "guide",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_gonggg: {
+    id: "kr_gonggg",
+    nameKr: "공략 (forg.kr)",
+    category: "guide",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_screee: {
+    id: "kr_screee",
+    nameKr: "스크린샷 (forg.kr)",
+    category: "community",
+    engine: "gnuboard5",
+    era: "2014",
+  },
+  kr_trtrtr: {
+    id: "kr_trtrtr",
+    nameKr: "거래 (forg.kr)",
+    category: "trade",
+    engine: "gnuboard5",
+    era: "2014",
+  },
 } as const satisfies Record<string, BoardMeta>;
 
 export type BoardId = keyof typeof BOARDS;
