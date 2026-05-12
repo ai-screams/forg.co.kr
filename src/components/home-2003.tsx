@@ -182,8 +182,12 @@ export async function Home2003() {
 /*  Frame: top — logo + login bar + 7-button menu                         */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameTop2003() {
-  // Original used `left_logo.gif` (top-left forg logo) — not in our chrome
-  // assets, fallback to typography.
+  // `left_logo1.gif` is the 100×42 forg logo from frame-top-2003 — the
+  // Wayback rename of the original `left_logo.gif`. `t_login.gif` and
+  // `t_sign.gif` (70×15 each) carry their own banner art with the
+  // "Welcome to Forg's World" / "Forg's Family" text baked in, so we
+  // don't add separate text spans next to them.
+  const leftLogo = chromeUrl("left_logo1.gif");
   const tLogin = chromeUrl("t_login.gif");
   const tSign = chromeUrl("t_sign.gif");
 
@@ -192,30 +196,57 @@ function FrameTop2003() {
       <div className="flex items-center justify-between">
         <Link
           href="/"
-          className="text-forg-ink font-bold tracking-tight"
-          aria-label="forg.co.kr 메인"
+          className="text-forg-ink shrink-0 font-bold tracking-tight"
+          aria-label="forg.co.kr 메인으로"
         >
-          <span className="font-mono text-lg">
-            <span className="text-forg-gold-hover">forg</span>
-            <span className="text-forg-muted">.co.kr</span>
-          </span>
-          <span className="text-forg-muted ml-3 text-[10px]">Welcome to Forg&apos;s World</span>
+          {leftLogo ? (
+            // eslint-disable-next-line @next/next/no-img-element -- static export, ~4 KB GIF
+            <img
+              src={leftLogo}
+              alt="forg.co.kr — Ultima Online of Forg"
+              width={100}
+              height={42}
+              className="block h-[42px] w-[100px]"
+            />
+          ) : (
+            <span className="font-mono text-lg">
+              <span className="text-forg-gold-hover">forg</span>
+              <span className="text-forg-muted">.co.kr</span>
+            </span>
+          )}
         </Link>
-        <nav aria-label="로그인 / 가입 (박물관 모드, 비활성)" className="flex items-center gap-2">
+        <nav
+          aria-label="로그인 / 가입 (박물관 모드, 비활성)"
+          className="flex shrink-0 items-center gap-1"
+        >
           {tLogin ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~3 KB GIF
-            <img src={tLogin} alt="Welcome to Forg's World" width={120} height={20} />
+            // eslint-disable-next-line @next/next/no-img-element -- static export, ~2 KB GIF
+            <img
+              src={tLogin}
+              alt="Login — Welcome to Forg's World"
+              width={70}
+              height={15}
+              className="block h-[15px] w-[70px] opacity-90"
+              title="박물관 모드 — 로그인 비활성"
+            />
           ) : (
             <span className="text-forg-muted bg-forg-gold/10 rounded px-2 py-1 text-[10px]">
-              LOGIN (박물관)
+              LOGIN
             </span>
           )}
           {tSign ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~3 KB GIF
-            <img src={tSign} alt="Forg's Family" width={80} height={20} />
+            // eslint-disable-next-line @next/next/no-img-element -- static export, ~2 KB GIF
+            <img
+              src={tSign}
+              alt="Sign Up — Forg's Family"
+              width={70}
+              height={15}
+              className="block h-[15px] w-[70px] opacity-90"
+              title="박물관 모드 — 가입 비활성"
+            />
           ) : (
             <span className="text-forg-muted bg-forg-gold/10 rounded px-2 py-1 text-[10px]">
-              SIGNUP
+              SIGN UP
             </span>
           )}
         </nav>
