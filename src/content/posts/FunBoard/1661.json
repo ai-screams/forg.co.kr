@@ -4,7 +4,7 @@
   "postId": "1661",
   "title": "니가 웃으면 나도 좋아~~~(토이: 좋은 사람)",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/김또임.jpg\"><br> <img border=\"0\" src=\"data/동명퀸카5.jpg\"><br>     \t\t\t 밑에는 강병규가<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/김또임.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/김또임.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/동명퀸카5.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/동명퀸카5.jpg\"><br>     \t\t\t 밑에는 강병규가<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "밑에는 강병규가",
   "author": "lostnumber",
   "authorMemberNo": "4283",
@@ -35,7 +35,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_thumbs_down.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_down.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1661/m_thumbs_down.gif\">"
     },
     {
       "author": "anonymous",

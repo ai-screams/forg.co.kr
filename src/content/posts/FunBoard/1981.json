@@ -4,7 +4,7 @@
   "postId": "1981",
   "title": "우악.",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/sea1.jpg\"><br>     \t\t\t     \t\t\t 나머지는 나중에(...)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/sea1.jpg\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1981/sea1.jpg\"><br>     \t\t\t     \t\t\t 나머지는 나중에(...)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "나머지는 나중에(...)",
   "author": "Iriet",
   "authorMemberNo": "2752",
@@ -24,7 +24,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 도....도...~~<br>\n ㄹ    ㄹ    <img border=\"0\" src=\"emoticon/u_34.gif\"> 자아...던져랏..!<br>\n 저건 콥서인가..<br>\n 빨판 있는거보면..크라켄..?"
+      "bodyHtml": " 도....도...~~<br>\n ㄹ    ㄹ    <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/u_34.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/emoticon/u_34.gif\"> 자아...던져랏..!<br>\n 저건 콥서인가..<br>\n 빨판 있는거보면..크라켄..?"
     },
     {
       "author": "anonymous",

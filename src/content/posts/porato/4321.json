@@ -4,7 +4,7 @@
   "postId": "4321",
   "title": "선물 사진",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/rs_IMG_3294.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/rs_IMG_3296.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  검은손 사진은 잘 찾아보면 어딘가 많을껍니다-ㅁ-;;</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/rs_IMG_3294.JPG\" data-recovery=\"ok\" src=\"/img/posts/porato/4321/rs_IMG_3294.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/rs_IMG_3296.JPG\" data-recovery=\"ok\" src=\"/img/posts/porato/4321/rs_IMG_3296.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  검은손 사진은 잘 찾아보면 어딘가 많을껍니다-ㅁ-;;</td></tr></tbody></table>\n",
   "bodyText": "검은손 사진은 잘 찾아보면 어딘가 많을껍니다-ㅁ-;;",
   "author": "Music",
   "authorMemberNo": "1129",

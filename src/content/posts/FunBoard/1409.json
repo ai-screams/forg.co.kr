@@ -4,7 +4,7 @@
   "postId": "1409",
   "title": "글쓰기",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/earth.jpg\"><br>     \t\t\t     \t\t\t 지금 3시 22분.. -_-\n<br>\n<br>\n 시험이 뭔지.. 쯥\n<br>\n<br>\n 출처 : 디씨 인사이드 (dcinside.co.kr)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/earth.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/earth.jpg\"><br>     \t\t\t     \t\t\t 지금 3시 22분.. -_-\n<br>\n<br>\n 시험이 뭔지.. 쯥\n<br>\n<br>\n 출처 : 디씨 인사이드 (dcinside.co.kr)<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "지금 3시 22분.. -_- 시험이 뭔지.. 쯥 출처 : 디씨 인사이드 (dcinside.co.kr)",
   "author": "◀eXodUs▷",
   "authorMemberNo": "2058",
@@ -186,7 +186,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "푸... 어제까지만해도 별로없던 코멘트가 왜이리 늘어났나했더니... <img border=\"0\" src=\"emoticon/m_thumbs_up.gif\">"
+      "bodyHtml": "푸... 어제까지만해도 별로없던 코멘트가 왜이리 늘어났나했더니... <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_thumbs_up.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1409/m_thumbs_up.gif\">"
     },
     {
       "author": "anonymous",

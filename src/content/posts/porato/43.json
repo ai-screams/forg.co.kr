@@ -4,7 +4,7 @@
   "postId": "43",
   "title": "학급 야외 사진....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/사진_208.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/181.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ....<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n오늘 야외 사진 찍길래 같이 카메라 들고 놀았습니다 -ㅅ-<br>\n<br>\n<br>\n<br>\n아래는 제 사진</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/사진_208.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/사진_208.jpg\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/181.jpg\" data-recovery=\"ok\" src=\"/img/posts/porato/43/181.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ....<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n오늘 야외 사진 찍길래 같이 카메라 들고 놀았습니다 -ㅅ-<br>\n<br>\n<br>\n<br>\n아래는 제 사진</td></tr></tbody></table>\n",
   "bodyText": ".... 오늘 야외 사진 찍길래 같이 카메라 들고 놀았습니다 -ㅅ- 아래는 제 사진",
   "author": "goo1212",
   "authorMemberNo": "224",
@@ -35,7 +35,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "사진사 아저씨 카메라의 렌즈가........<img border=\"0\" src=\"emoticon/m_girl_hug.gif\">"
+      "bodyHtml": "사진사 아저씨 카메라의 렌즈가........<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_girl_hug.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/43/m_girl_hug.gif\">"
     }
   ],
   "era": "2003",

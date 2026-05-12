@@ -4,7 +4,7 @@
   "postId": "4341",
   "title": "이 나무 이름을 아시는분 계시나요?",
   "categoryLabel": "나무꽃사진",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/p070714190918.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/p070714192250.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n.......</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/p070714190918.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/p070714190918.jpg\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/p070714192250.jpg\" data-recovery=\"ok\" src=\"/img/posts/porato/4341/p070714192250.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n.......</td></tr></tbody></table>\n",
   "bodyText": ".......",
   "author": "selic",
   "authorMemberNo": "122",

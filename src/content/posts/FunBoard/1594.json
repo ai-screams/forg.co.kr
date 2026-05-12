@@ -4,7 +4,7 @@
   "postId": "1594",
   "title": "욕이 아니라....",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/Img_1168.jpg\"><br> <img border=\"0\" src=\"data/Img_1169.jpg\"><br>     \t\t\t ..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Img_1168.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/Img_1168.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/Img_1169.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/Img_1169.jpg\"><br>     \t\t\t ..<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "..",
   "author": "나훈아",
   "authorMemberNo": "6937",
@@ -29,19 +29,19 @@
       "author": "New™",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_kittykay.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_kittykay.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1594/m_kittykay.gif\">"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 서..설마....아니겠지..<img border=\"0\" src=\"emoticon/m_shades_smile.gif\">"
+      "bodyHtml": " 서..설마....아니겠지..<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_shades_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1594/m_shades_smile.gif\">"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " <img border=\"0\" src=\"emoticon/m_confused_smile.gif\">"
+      "bodyHtml": " <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_confused_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1594/m_confused_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -53,7 +53,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": " 조팝나무는 확실히 있음 ㅋㅋ 위에건 몰겠당 ㅡㅡ;?<img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": " 조팝나무는 확실히 있음 ㅋㅋ 위에건 몰겠당 ㅡㅡ;?<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1594/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",

@@ -4,7 +4,7 @@
   "postId": "4536",
   "title": "아래 저명인사 찾기...",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/coll03.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/coll04.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  여러 사진으로 해봤는데...그때마다 다 틀리네요..<br>\n<br>\n그중에 젤 재밌는거;;;</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/coll03.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/coll03.JPG\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/coll04.JPG\" data-recovery=\"ok\" src=\"/img/posts/porato/4536/coll04.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  여러 사진으로 해봤는데...그때마다 다 틀리네요..<br>\n<br>\n그중에 젤 재밌는거;;;</td></tr></tbody></table>\n",
   "bodyText": "여러 사진으로 해봤는데...그때마다 다 틀리네요.. 그중에 젤 재밌는거;;;",
   "author": "chocoraraapple",
   "authorMemberNo": "516",

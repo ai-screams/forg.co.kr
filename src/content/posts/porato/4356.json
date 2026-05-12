@@ -4,7 +4,7 @@
   "postId": "4356",
   "title": "링크용",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/rs_IMG_3301.JPG\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  자게 링크용 사진</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/rs_IMG_3301.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/rs_IMG_3301.JPG\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  자게 링크용 사진</td></tr></tbody></table>\n",
   "bodyText": "자게 링크용 사진",
   "author": "Music",
   "authorMemberNo": "1129",

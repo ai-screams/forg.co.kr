@@ -4,7 +4,7 @@
   "postId": "45",
   "title": "15세 미만 열람 금지 + 사진 (...)",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/사진_184.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/사진_185.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n<br>\n<br>\n...<br>\n<br>\n교실 책상에 저딴거 붙여놓는 색히는 누구야</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/사진_184.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/사진_184.jpg\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/사진_185.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/사진_185.jpg\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\"> <br>\n<br>\n<br>\n...<br>\n<br>\n교실 책상에 저딴거 붙여놓는 색히는 누구야</td></tr></tbody></table>\n",
   "bodyText": "... 교실 책상에 저딴거 붙여놓는 색히는 누구야",
   "author": "goo1212",
   "authorMemberNo": "224",
@@ -29,7 +29,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "goo1212님 책상인거 다 알고 있습니다... <img border=\"0\" src=\"emoticon/m_0506.gif\">"
+      "bodyHtml": "goo1212님 책상인거 다 알고 있습니다... <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_0506.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/45/m_0506.gif\">"
     },
     {
       "author": "anonymous",
@@ -53,7 +53,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "goo1212님 전에 친구와 트러블 있었던건 어떻게 됐어요? <img border=\"0\" src=\"emoticon/m_0510.gif\">"
+      "bodyHtml": "goo1212님 전에 친구와 트러블 있었던건 어떻게 됐어요? <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_0510.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/45/m_0510.gif\">"
     },
     {
       "author": "anonymous",

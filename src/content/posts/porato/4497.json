@@ -4,7 +4,7 @@
   "postId": "4497",
   "title": "이병의 그림",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/scan279display.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" src=\"data/porato/scan281display.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ...<br>\n아 진짜 그림 캐안습해졌다<br>\n</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/scan279display.jpg\" data-recovery=\"ok\" src=\"/img/posts/porato/4497/scan279display.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/scan281display.jpg\" data-recovery=\"ok\" src=\"/img/posts/porato/4497/scan281display.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  ...<br>\n아 진짜 그림 캐안습해졌다<br>\n</td></tr></tbody></table>\n",
   "bodyText": "... 아 진짜 그림 캐안습해졌다",
   "author": "IP",
   "authorMemberNo": "7196",
@@ -47,7 +47,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "치마가 너무 깁니다\n<br>좀 더 노력해보세요<img border=\"0\" src=\"emoticon/m_0501.gif\">"
+      "bodyHtml": "치마가 너무 깁니다\n<br>좀 더 노력해보세요<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_0501.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4497/m_0501.gif\">"
     },
     {
       "author": "anonymous",

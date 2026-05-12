@@ -4,7 +4,7 @@
   "postId": "4362",
   "title": "인증샷",
   "categoryLabel": "염장",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/noname074.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  뽀샵빨이 아닌 후진 폰카빨....<br>\n<br>\n왼쪽이 저<br>\n오른쪽이 울아가씨...<br>\n<br>\n<br>\n<br>\n<br>\n..... 시그로 쓸까..</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/noname074.jpg\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/noname074.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  뽀샵빨이 아닌 후진 폰카빨....<br>\n<br>\n왼쪽이 저<br>\n오른쪽이 울아가씨...<br>\n<br>\n<br>\n<br>\n<br>\n..... 시그로 쓸까..</td></tr></tbody></table>\n",
   "bodyText": "뽀샵빨이 아닌 후진 폰카빨.... 왼쪽이 저 오른쪽이 울아가씨... ..... 시그로 쓸까..",
   "author": "Athena",
   "authorMemberNo": "401",
@@ -36,13 +36,13 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "아니지금 뭐하시는 겁니까 <img border=\"0\" src=\"emoticon/m_0505.gif\">\n<br>\n<br>덥습니다 떨어지세요<img border=\"0\" src=\"emoticon/m_bowwow.gif\">"
+      "bodyHtml": "아니지금 뭐하시는 겁니까 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_0505.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_0505.gif\">\n<br>\n<br>덥습니다 떨어지세요<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_bowwow.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_bowwow.gif\">"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "부러우면 지는거다...<img border=\"0\" src=\"emoticon/m_omg_smile.gif\"><img border=\"0\" src=\"emoticon/m_omg_smile.gif\">"
+      "bodyHtml": "부러우면 지는거다...<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_omg_smile.gif\"><img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_omg_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_omg_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -84,7 +84,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "테나님 미워졌어... <img border=\"0\" src=\"emoticon/m_whatchutalkingabout_smile.gif\">"
+      "bodyHtml": "테나님 미워졌어... <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_whatchutalkingabout_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_whatchutalkingabout_smile.gif\">"
     },
     {
       "author": "anonymous",
@@ -96,7 +96,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "저는 님을 모르지만 합성이군요 <img border=\"0\" src=\"emoticon/m_regular_smile.gif\">"
+      "bodyHtml": "저는 님을 모르지만 합성이군요 <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_regular_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4362/m_regular_smile.gif\">"
     }
   ],
   "era": "2003",

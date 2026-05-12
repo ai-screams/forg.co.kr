@@ -4,7 +4,7 @@
   "postId": "46",
   "title": "본인의 아트한 손속도",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/손.jpg\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  참고로 잘나온것들만 골라서 두개<br>\n.......</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/손.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" style=\"cursor:hand\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/porato/손.jpg\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  참고로 잘나온것들만 골라서 두개<br>\n.......</td></tr></tbody></table>\n",
   "bodyText": "참고로 잘나온것들만 골라서 두개 .......",
   "author": "Mutsumi",
   "authorMemberNo": "744",

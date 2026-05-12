@@ -4,7 +4,7 @@
   "postId": "4473",
   "title": "이거 보세요",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/porato/chuseokchillymoon.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  보름달이 아니라 죄송하게됐네요.<br>\n헹</td></tr></tbody></table>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/porato/chuseokchillymoon.gif\" data-recovery=\"ok\" src=\"/img/posts/porato/4473/chuseokchillymoon.gif\" style=\"cursor:hand\" title=\"클릭하면 원본을 볼수 있습니다.\"><br>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  보름달이 아니라 죄송하게됐네요.<br>\n헹</td></tr></tbody></table>\n",
   "bodyText": "보름달이 아니라 죄송하게됐네요. 헹",
   "author": "acubens",
   "authorMemberNo": "176",

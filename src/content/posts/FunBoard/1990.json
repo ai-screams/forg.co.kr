@@ -4,7 +4,7 @@
   "postId": "1990",
   "title": "아주 이~쁜 태극기.",
   "categoryLabel": "펌",
-  "bodyHtml": "\n<img border=\"0\" src=\"data/taeguk.jpg\"><br>     \t\t\t     \t\t\t 좀 오래된 거라고 해서 보신 분들도 있으시겠지만....<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/taeguk.jpg\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1990/taeguk.jpg\"><br>     \t\t\t     \t\t\t 좀 오래된 거라고 해서 보신 분들도 있으시겠지만....<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "좀 오래된 거라고 해서 보신 분들도 있으시겠지만....",
   "author": "Klloita™",
   "authorMemberNo": "8437",

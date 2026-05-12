@@ -4,7 +4,7 @@
   "postId": "1221",
   "title": "교회옆 하켄크로이츠",
   "categoryLabel": null,
-  "bodyHtml": "\n<img border=\"0\" src=\"data/nazi.jpg\"><br> <img border=\"0\" src=\"data/nazi2.jpg\"><br>     \t\t\t 오오. 멋진동네\n<br>\n 출처는 DC인사이드<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyHtml": "\n<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/nazi.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/nazi.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/data/nazi2.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/_zb/data/nazi2.jpg\"><br>     \t\t\t 오오. 멋진동네\n<br>\n 출처는 DC인사이드<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
   "bodyText": "오오. 멋진동네 출처는 DC인사이드",
   "author": "Iriet",
   "authorMemberNo": "2752",
@@ -36,7 +36,7 @@
       "author": "anonymous",
       "authorMemberNo": null,
       "createdAt": "1970-01-01T00:00:00",
-      "bodyHtml": "나찌의 십자가<img border=\"0\" src=\"emoticon/m_shades_smile.gif\">"
+      "bodyHtml": "나찌의 십자가<img border=\"0\" data-original-src=\"http://forg.co.kr/_zb/emoticon/m_shades_smile.gif\" data-recovery=\"ok\" src=\"/img/posts/FunBoard/1221/m_shades_smile.gif\">"
     },
     {
       "author": "anonymous",
