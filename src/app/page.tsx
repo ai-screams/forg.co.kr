@@ -24,6 +24,7 @@
 
 import Link from "next/link";
 
+import { Home2003 } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
 import { getBoardIndex } from "@/lib/posts";
@@ -104,20 +105,29 @@ async function loadBox(config: BoxConfig): Promise<BoxData> {
 export default async function HomePage() {
   const boxes = await Promise.all(MAIN_BOXES.map(loadBox));
 
+  // Both era variants render server-side; the runtime `<html data-era>`
+  // attribute hides one via CSS in globals.css (`.era-2014-only` /
+  // `.era-2003-only`). This keeps the era toggle instantaneous (CSS-only,
+  // no React re-render) and lets the static export ship both layouts.
   return (
-    <div className="flex flex-1 justify-center bg-(--era-page-bg)">
-      <div className="forg-2014-shell flex w-full max-w-[900px] gap-0">
-        <LeftRail />
-        <GameCategorySidebar />
-        <main className="flex flex-1 flex-col bg-(--era-content-bg)">
-          <SiteHeader2014 />
-          <BoxGrid boxes={boxes} />
-          <VisitorCounter total={TOTAL_VISITORS} />
-        </main>
-        <RightRail />
-        <AdSenseColumn />
+    <>
+      <div className="era-2014-only flex flex-1 justify-center bg-(--era-page-bg)">
+        <div className="forg-2014-shell flex w-full max-w-[900px] gap-0">
+          <LeftRail />
+          <GameCategorySidebar />
+          <main className="flex flex-1 flex-col bg-(--era-content-bg)">
+            <SiteHeader2014 />
+            <BoxGrid boxes={boxes} />
+            <VisitorCounter total={TOTAL_VISITORS} />
+          </main>
+          <RightRail />
+          <AdSenseColumn />
+        </div>
       </div>
-    </div>
+      <div className="era-2003-only flex flex-1">
+        <Home2003 />
+      </div>
+    </>
   );
 }
 

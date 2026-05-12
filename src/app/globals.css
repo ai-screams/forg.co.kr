@@ -79,6 +79,20 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────────────
+ * Era-scoped visibility — used on the home page (and any future routes
+ * that ship side-by-side 2003 / 2014 markup). Both era variants render
+ * into the static SSG output; the runtime `<html data-era>` attribute
+ * picks which DOM subtree is visible. Pure CSS = instant toggle, no
+ * React re-render, no FOUC.
+ * ───────────────────────────────────────────────────────────────────── */
+:root[data-era="2003"] .era-2014-only {
+  display: none !important;
+}
+:root[data-era="2014"] .era-2003-only {
+  display: none !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
  * Image recovery markers (ADR-0010 §Decision #5)
  *
  * Phase F (`04-rewrite-image-urls.py`) stamps every <img> with a
