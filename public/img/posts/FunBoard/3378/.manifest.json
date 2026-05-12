@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "haha.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/FunBoard/haha.jpg",
+    "capturedAt": "20071107024833",
+    "sizeBytes": 124380,
+    "sha256": "56540d407ac01f41a37d77897e05190d397c6c6e6ef0687e4716e8f55425c727"
+  },
+  {
+    "filename": "huk.jpg",
+    "originalUrl": "http://www.forg.co.kr/_zb/data/FunBoard/huk.jpg",
+    "capturedAt": "20071107024855",
+    "sizeBytes": 73321,
+    "sha256": "1de46fdc307ca636841e91be8d445bb624d5b877e40dd9de58bf15c5316dd956"
+  }
+]

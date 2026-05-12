@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "m_heart.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_heart.gif",
+    "capturedAt": "20021009135500",
+    "sizeBytes": 1013,
+    "sha256": "7d2fd62f361807812e81cb27edb275d2452e4acbd264592104096aeb9c95ab4b"
+  },
+  {
+    "filename": "m_kiss.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_kiss.gif",
+    "capturedAt": "20030607053418",
+    "sizeBytes": 975,
+    "sha256": "93c6fdf9c2b2b0ce8dc0c092664a52ee48548c991cfbfe6119e6583c3a017786"
+  },
+  {
+    "filename": "u_14.gif",
+    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/u_14.gif",
+    "capturedAt": "20021025072644",
+    "sizeBytes": 1097,
+    "sha256": "bb2a3d4bc2d78488639b3f7a91f2adbf6fe7d9f0b2d3a32082d7cd17537a55c4"
+  },
+  {
+    "filename": "u_9.gif",
+    "originalUrl": "http://forg.co.kr/_zb/emoticon/u_9.gif",
+    "capturedAt": "20051020155042",
+    "sizeBytes": 995,
+    "sha256": "0c964f0dfb44bfdaf8efaa15b19ecb8d979f1894a99a4a39b3af5827b5e7aac8"
+  }
+]
