@@ -7,32 +7,33 @@
  * layout with modern CSS flex/grid because framesets are deprecated and
  * incompatible with React + Next.js static export.
  *
- *   ┌────────────────────────── frame-top (680, 100h) ──────────────────────────┐
- *   │  [forg-logo]  [login bar]   [signup]                                       │
- *   │                                                                            │
- *   │  자유 · 질답 · 영상 · 룰플 · 칼럼 · 스샷 · 트래시   (7-button menu)         │
- *   ├────────────────────┬───────────────────────────────────────────────────────┤
- *   │                    │                                                       │
- *   │  frame-left        │  frame-main (645w)                                    │
- *   │  (sidebar)         │                                                       │
- *   │                    │  m_notice    │   r_freeboard                          │
- *   │  - 초보자지침서    │  • post …    │   • post …                             │
- *   │  - 초보자게시판    │              │                                        │
- *   │  - 쿠폰/시디       │  m_role      │   r_role                               │
- *   │  - 울온전투기술    │  • post …    │   • post …                             │
- *   │  - 울온협력기술    │                                                       │
- *   │  - 울온직업기술    │  m_column    │   r_essay                              │
- *   │  - 각종유용정보    │  • post …    │   • post …                             │
- *   │  - UO.퀘스트정보   │                                                       │
- *   │                    │                                                       │
- *   ├────────────────────┴──────── frame-bottom (24h) ──────────────────────────┤
- *   │  visitor counter (frozen)                                                  │
- *   └────────────────────────────────────────────────────────────────────────────┘
+ * Layout (mirrors the Wayback render visible in `.docs/research/
+ * era-screenshots/`):
+ *
+ *   ┌── frame-top ─────────────────────────────────────────────────────┐
+ *   │  [forg-logo]                                  (clock) Login│Sign Up │
+ *   │  Free Board · Question?! · UO.Roleplay · UO.Essay ·               │
+ *   │  HouseInterior · ScreenShot · Kal Ort Por · (?)                   │
+ *   ├──────────────┬──────────────────────┬────────────────────────────┤
+ *   │ Information  │ "We Created World."  │  FreeBoard                 │
+ *   │ -지침서      │  game artwork        │  · post …                  │
+ *   │ -게시판      │                      │  UO.Roleplay               │
+ *   │ ...          │ NOTICE - UO          │  · post …                  │
+ *   │ Cooperation  │ · post                │  UO.Essay                  │
+ *   │ -벤더광고란  │  Roleplay & Events    │  · post …                  │
+ *   │ ...          │ · post                │  BestScreenShot            │
+ *   │ Reminisce    │  Online News          │  [thumbnail]               │
+ *   │ Forg.Board   │ · post                │                            │
+ *   │ Friend Site  │                       │                            │
+ *   ├──────────────┴──────────────────────┴────────────────────────────┤
+ *   │  Copyright 1999-2002 Forg.                                        │
+ *   └───────────────────────────────────────────────────────────────────┘
  *
  * Chrome assets come from `public/img/chrome/` (Wayback-recovered in P2.4).
- * 22 of 29 required 2003 assets are already on disk from the 2014 recovery
- * pass; the 6 missing ones (`5px.gif`, `count.gif`, `left_logo.gif` etc.)
- * fall back to typography / OKLCH CSS so the layout never breaks.
+ * Most section headers (`m_*.gif`, `r_*.gif`) and menu buttons
+ * (`t_b_*.gif`, `t_hi.gif`) are present. Missing decorative assets
+ * (`m_middle_logo.gif`, `r_logo_1.gif`, `forg_main_logo_1.gif`) fall back
+ * to typography so the layout never breaks.
  */
 
 import Link from "next/link";
@@ -47,28 +48,27 @@ const BOX_RECENT_COUNT = 6;
 interface BoardBoxConfig {
   /** Board id matching `src/lib/boards.ts`. Drives the data fetch. */
   id: BoardId;
-  /** Korean section label used as fallback when the chrome GIF is missing. */
+  /** Korean label used as accessible name (alt fallback). */
   label: string;
   /** Chrome asset filename in `public/img/chrome/`. */
   asset: string;
 }
 
-// Left column of the 2-column post-listing grid (m_* assets in the original).
+// Left content column — m_* assets in the original frame-main-2003.
 const LEFT_BOXES: BoardBoxConfig[] = [
-  { id: "Notice", label: "공지사항", asset: "m_notice.gif" },
-  { id: "Role", label: "롤플레잉", asset: "m_role.gif" },
-  { id: "column", label: "UO 컬럼", asset: "m_column.gif" },
+  { id: "Notice", label: "NOTICE - ULTIMA ONLINE", asset: "m_notice.gif" },
+  { id: "Role", label: "ROLEPLAY & EVENTS", asset: "m_role.gif" },
+  { id: "column", label: "ONLINE NEWS", asset: "m_column.gif" },
 ];
 
-// Right column (r_* assets in the original).
+// Right content column — r_* assets in the original.
 const RIGHT_BOXES: BoardBoxConfig[] = [
-  { id: "UoBoard", label: "자유게시판", asset: "r_freeboard.gif" },
-  { id: "Q_A", label: "질문/답변", asset: "r_role.gif" }, // r_role.gif is the closest available chrome
-  { id: "UOForum", label: "에세이", asset: "r_essay.gif" },
-  { id: "ScreenShot", label: "스크린샷", asset: "r_freeboard.gif" }, // fallback
+  { id: "UoBoard", label: "FreeBoard", asset: "r_freeboard.gif" },
+  { id: "Role", label: "UO.Roleplay", asset: "r_role.gif" },
+  { id: "UOForum", label: "UO.Essay", asset: "r_essay.gif" },
 ];
 
-// 2003-era top menu — Zeroboard frameset's 7-button bar across the top.
+// Top 7-button menu (frame-top-2003.html) — 80×20 each + 20×20 FAQ icon.
 interface TopMenuConfig {
   id: BoardId;
   asset: string;
@@ -84,55 +84,71 @@ const TOP_MENU_2003: TopMenuConfig[] = [
   { id: "Items", asset: "t_b_kal.gif", label: "울온자료실" },
 ];
 
-// 2003 sidebar nav — flat list of 8 sections matching frame-left-2003.html.
+// Sidebar (frame-left-2003) — 5 sections with English chrome-bar
+// headers and Korean dash-prefixed link rows. Static-page links route
+// to `/` because the museum doesn't reproduce skill/dungeon HTML.
 const SIDEBAR_SECTIONS: {
-  header: string;
+  /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
+  /** Plain-text fallback when the asset can't load. */
+  fallback: string;
   links: { label: string; href: string }[];
 }[] = [
   {
-    header: "초보 가이드",
     asset: "m_info.gif",
+    fallback: "Information",
     links: [
-      { label: "초보자 지침서", href: "/Notice" },
-      { label: "초보자 게시판", href: "/Q_A" },
-      { label: "쿠폰/시디 구입처", href: "/Items" },
+      { label: "-초보자지침서", href: "/" },
+      { label: "-초보자게시판", href: "/Q_A" },
+      { label: "-쿠폰,시디구입처", href: "/" },
+      { label: "-울온전투기술", href: "/" },
+      { label: "-울온협력기술", href: "/" },
+      { label: "-울온직업기술", href: "/" },
+      { label: "-각종유용한정보", href: "/column" },
+      { label: "-UO.퀘스트정보", href: "/Events" },
+      { label: "-몬스터&던전란", href: "/monster" },
+      { label: "-울온지도란", href: "/Recall" },
     ],
   },
   {
-    header: "UO 기술",
     asset: "m_co.gif",
+    fallback: "Cooperation",
     links: [
-      { label: "울온 전투기술", href: "/Role" },
-      { label: "울온 협력기술", href: "/Role" },
-      { label: "울온 직업기술", href: "/Role" },
-      { label: "각종 유용한 정보", href: "/column" },
+      { label: "-벤더광고란", href: "/Vendor" },
+      { label: "-아리랑장터란", href: "/Tarirang" },
+      { label: "-발해장터란", href: "/Tbalhae" },
+      { label: "-길드정보란", href: "/" },
+      { label: "-벌크디드정보란", href: "/" },
     ],
   },
   {
-    header: "퀘스트/이벤트",
     asset: "m_remember.gif",
+    fallback: "Reminisce",
     links: [
-      { label: "UO 퀘스트 정보", href: "/Events" },
-      { label: "이벤트 일정", href: "/Events" },
+      { label: "-UO.만화", href: "/" },
+      { label: "-UO.여행기", href: "/" },
+      { label: "-인테리어정보", href: "/" },
+      { label: "-아이템스샷란", href: "/Items" },
     ],
   },
   {
-    header: "Forg 커뮤니티",
     asset: "m_forg.gif",
+    fallback: "Forg.Board",
     links: [
-      { label: "Forg 자유게시판", href: "/UoBoard" },
-      { label: "Forg 칼럼", href: "/column" },
-      { label: "Forg 포럼", href: "/UOForum" },
+      { label: "-공동작업란", href: "/monster" },
+      { label: "-포토갤러리", href: "/porato" },
+      { label: "-휴지통게시판", href: "/Trash" },
+      { label: "-유머게시판", href: "/FunBoard" },
+      { label: "-Forg.멤버란", href: "/" },
+      { label: "-울온설문조사란", href: "/" },
     ],
   },
   {
-    header: "친구사이트",
     asset: "m_friend.gif",
+    fallback: "Friend Site",
     links: [
-      { label: "포라토", href: "/porato" },
-      { label: "타리랑섭", href: "/Tarirang" },
-      { label: "트발해섭", href: "/Tbalhae" },
+      { label: "SiteMap", href: "/" },
+      { label: "EA Korea", href: "https://www.ea.com" },
     ],
   },
 ];
@@ -162,10 +178,10 @@ export async function Home2003() {
   ]);
 
   return (
-    <div className="flex w-full flex-1 justify-center bg-(--era-page-bg) py-4 font-[Verdana,'돋움',Dotum,sans-serif]">
+    <div className="flex w-full flex-1 justify-center bg-[#dcdcdc] py-3">
       <div
-        className="flex w-full max-w-[800px] flex-col gap-1 border border-(--era-input-border) bg-(--era-content-bg) shadow-md"
-        style={{ fontFamily: "Verdana, '돋움', Dotum, sans-serif" }}
+        className="border-forg-gold/60 flex w-full max-w-[920px] flex-col gap-0 border bg-white text-[11px] shadow-md"
+        style={{ fontFamily: "Verdana, '돋움', Dotum, '굴림', Gulim, sans-serif" }}
       >
         <FrameTop2003 />
         <div className="flex flex-1">
@@ -179,88 +195,53 @@ export async function Home2003() {
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
-/*  Frame: top — logo + login bar + 7-button menu                         */
+/*  Frame: top — forg logo + small login/signup links + 7-button menu     */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameTop2003() {
-  // `left_logo1.gif` is the 100×42 forg logo from frame-top-2003 — the
-  // Wayback rename of the original `left_logo.gif`. `t_login.gif` and
-  // `t_sign.gif` (70×15 each) carry their own banner art with the
-  // "Welcome to Forg's World" / "Forg's Family" text baked in, so we
-  // don't add separate text spans next to them.
-  const leftLogo = chromeUrl("left_logo1.gif");
-  const tLogin = chromeUrl("t_login.gif");
-  const tSign = chromeUrl("t_sign.gif");
-
+  const leftLogo = chromeUrl("left_logo1.gif"); // 100×42 forg logo
   return (
-    <header className="bg-(--era-content-bg) px-3 py-3">
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-forg-ink shrink-0 font-bold tracking-tight"
-          aria-label="forg.co.kr 메인으로"
-        >
+    <header className="border-b border-(--era-input-border) bg-[#FFC73B]">
+      {/* Header row — logo on left, tiny login/signup on right. */}
+      <div className="flex items-end justify-between px-2 pt-1 pb-0">
+        <Link href="/" aria-label="forg.co.kr 메인" className="shrink-0">
           {leftLogo ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~4 KB GIF
+            // eslint-disable-next-line @next/next/no-img-element -- static export
             <img
               src={leftLogo}
-              alt="forg.co.kr — Ultima Online of Forg"
+              alt="Forg's World"
               width={100}
               height={42}
               className="block h-[42px] w-[100px]"
             />
           ) : (
-            <span className="font-mono text-lg">
-              <span className="text-forg-gold-hover">forg</span>
-              <span className="text-forg-muted">.co.kr</span>
+            <span className="text-forg-ink block font-mono text-base leading-tight font-bold tracking-tight">
+              forg<span className="text-forg-ink/70">&apos;s World</span>
             </span>
           )}
         </Link>
-        <nav
+        <div
           aria-label="로그인 / 가입 (박물관 모드, 비활성)"
-          className="flex shrink-0 items-center gap-1"
+          className="text-forg-ink mb-1 flex items-center gap-1 text-[10px] select-none"
+          title="박물관 모드 — 로그인 비활성"
         >
-          {tLogin ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~2 KB GIF
-            <img
-              src={tLogin}
-              alt="Login — Welcome to Forg's World"
-              width={70}
-              height={15}
-              className="block h-[15px] w-[70px] opacity-90"
-              title="박물관 모드 — 로그인 비활성"
-            />
-          ) : (
-            <span className="text-forg-muted bg-forg-gold/10 rounded px-2 py-1 text-[10px]">
-              LOGIN
-            </span>
-          )}
-          {tSign ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~2 KB GIF
-            <img
-              src={tSign}
-              alt="Sign Up — Forg's Family"
-              width={70}
-              height={15}
-              className="block h-[15px] w-[70px] opacity-90"
-              title="박물관 모드 — 가입 비활성"
-            />
-          ) : (
-            <span className="text-forg-muted bg-forg-gold/10 rounded px-2 py-1 text-[10px]">
-              SIGN UP
-            </span>
-          )}
-        </nav>
+          <span aria-hidden className="text-[9px] opacity-60">
+            ⌚
+          </span>
+          <span className="font-bold">Login</span>
+          <span className="opacity-60">|</span>
+          <span className="font-bold">Sign Up</span>
+        </div>
       </div>
 
-      {/* 7-button top menu + small FAQ icon — matches frame-top-2003.html
-         exactly (7 × 80×20 board buttons + 1 × 20×20 right decoration). */}
+      {/* 7-button menu bar (white background, original chrome assets). */}
       <nav
         aria-label="2003 상단 메뉴"
-        className="mt-3 flex items-center justify-center gap-[2px] border-y border-(--era-input-border) bg-(--era-content-bg) py-1"
+        className="flex items-center gap-[1px] bg-white px-2 py-[1px]"
       >
         {TOP_MENU_2003.map((item) => (
           <TopMenuButton2003 key={item.id} item={item} />
         ))}
+        <span className="grow" />
         <FaqIcon2003 />
       </nav>
     </header>
@@ -273,7 +254,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
     return (
       <Link
         href={`/${item.id}`}
-        className="group hover:bg-forg-gold/15 inline-block shrink-0 px-[1px]"
+        className="hover:bg-forg-gold/15 inline-block shrink-0"
         title={item.label}
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
@@ -298,8 +279,6 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
   );
 }
 
-/** Small "Site FAQ" question-mark icon (t_b_right.gif, 20×20) on the
- *  right edge of the 2003 chrome bar — same place the original had it. */
 function FaqIcon2003() {
   const url = chromeUrl("t_b_right.gif");
   if (!url) return null;
@@ -307,7 +286,7 @@ function FaqIcon2003() {
     <span
       aria-label="Site FAQ (박물관 모드, 비활성)"
       title="Site FAQ"
-      className="ml-1 inline-block shrink-0 opacity-70"
+      className="inline-block shrink-0 opacity-80"
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
       <img src={url} alt="Site FAQ" width={20} height={20} className="block h-[20px] w-[20px]" />
@@ -316,18 +295,30 @@ function FaqIcon2003() {
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
-/*  Frame: left — nav sidebar                                              */
+/*  Frame: left — Information / Cooperation / Reminisce / Forg.Board ...  */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameLeft2003() {
   return (
     <aside
-      aria-label="2003 사이드바 네비"
-      className="hidden w-[150px] shrink-0 border-r border-(--era-input-border) bg-(--era-sidebar-bg) px-2 py-3 text-(--era-sidebar-fg) sm:block"
+      aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
+      className="hidden w-[140px] shrink-0 border-r border-(--era-input-border) bg-[#1f3147] px-2 py-2 text-white sm:block"
     >
-      <nav className="flex flex-col gap-3 text-[11px]">
+      <nav className="flex flex-col gap-2.5">
         {SIDEBAR_SECTIONS.map((section) => (
-          <SidebarSection2003 key={section.header} section={section} />
+          <SidebarSection2003 key={section.fallback} section={section} />
         ))}
+        {/* Footer-of-sidebar links from frame-left-2003 (Login?(SP2), EA Korea) */}
+        <div className="mt-1 space-y-0.5 border-t border-white/15 pt-2 text-[10px]">
+          <p className="text-forg-gold-hover font-bold opacity-80">Login?(SP2)</p>
+          <Link
+            href="https://www.ea.com"
+            rel="noopener noreferrer external"
+            target="_blank"
+            className="hover:text-forg-gold-hover block text-white"
+          >
+            EA Korea
+          </Link>
+        </div>
       </nav>
     </aside>
   );
@@ -339,20 +330,26 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
     <div>
       {headerUrl ? (
         // eslint-disable-next-line @next/next/no-img-element -- static export
-        <img src={headerUrl} alt={section.header} width={130} height={18} className="mb-1 block" />
+        <img
+          src={headerUrl}
+          alt={section.fallback}
+          width={120}
+          height={18}
+          className="mb-1 block"
+        />
       ) : (
-        <h3 className="text-forg-ink mb-1 border-b border-(--era-input-border) pb-0.5 text-[11px] font-bold">
-          {section.header}
+        <h3 className="text-forg-gold-hover mb-1 text-[11px] font-bold tracking-wide uppercase">
+          {section.fallback}
         </h3>
       )}
-      <ul className="ml-1 space-y-0.5">
+      <ul className="space-y-[1px] pl-1">
         {section.links.map((link) => (
           <li key={link.label}>
             <Link
               href={link.href}
-              className="hover:text-forg-gold-hover text-[10.5px] leading-tight text-(--era-sidebar-fg)"
+              className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
             >
-              · {link.label}
+              {link.label}
             </Link>
           </li>
         ))}
@@ -362,37 +359,50 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
-/*  Frame: main — 2-column post-listing grid                               */
+/*  Frame: main — 3-column content (left m_*, right r_*, no decoration)   */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightBoxes: BoxData[] }) {
   return (
     <section
       aria-label="2003 메인 콘텐츠"
-      className="flex flex-1 flex-col gap-2 bg-(--era-content-bg) px-3 py-3"
+      className="flex flex-1 flex-col gap-2 bg-white px-3 py-2"
     >
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <div className="space-y-3">
+      <MainHeading />
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-[1fr_220px]">
+        <div className="space-y-2">
           {leftBoxes.map((box) => (
-            <BoxCard2003 key={box.config.id} box={box} variant="left" />
+            <SectionBox2003 key={box.config.asset} box={box} />
           ))}
         </div>
-        <div className="space-y-3">
+        <div className="space-y-2">
           {rightBoxes.map((box) => (
-            <BoxCard2003 key={box.config.id + box.config.asset} box={box} variant="right" />
+            <SectionBox2003 key={box.config.asset} box={box} compact />
           ))}
+          <BestScreenShotBox />
         </div>
       </div>
     </section>
   );
 }
 
-function BoxCard2003({ box, variant }: { box: BoxData; variant: "left" | "right" }) {
+function MainHeading() {
+  return (
+    <div className="border-b border-(--era-input-border) pb-1">
+      <p className="text-[11px] font-bold">
+        <span className="text-forg-ink">We Created World.</span>{" "}
+        <span className="text-forg-muted">Origin System Inc.</span>
+      </p>
+    </div>
+  );
+}
+
+function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
   const headerUrl = chromeUrl(box.config.asset);
   return (
-    <section className="border-forg-gold/30 border-b" aria-label={box.config.label}>
+    <section className="border-forg-gold/40 border-b bg-white" aria-label={box.config.label}>
       <Link
         href={`/${box.config.id}`}
-        className="bg-forg-gold/10 hover:bg-forg-gold/20 block h-[22px] w-full overflow-hidden"
+        className="bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[20px] items-center px-1"
         style={
           headerUrl
             ? {
@@ -404,28 +414,22 @@ function BoxCard2003({ box, variant }: { box: BoxData; variant: "left" | "right"
         }
       >
         {!headerUrl && (
-          <div className="flex h-full items-center justify-between px-2">
-            <span className="text-forg-ink text-[11px] font-bold">{box.config.label}</span>
-            <span className="text-forg-muted font-mono text-[9px] uppercase">
-              {variant === "left" ? "←" : "→"} zeroboard
-            </span>
-          </div>
+          <span className="text-forg-ink text-[11px] font-bold">{box.config.label}</span>
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
-      <ul className="bg-(--era-content-bg) p-2">
+      <ul className="px-1 py-1.5">
         {box.totalPosts === null ? (
-          <li className="text-forg-muted py-1 text-[10.5px] italic">
-            준비 중 (해당 보드 아직 미수집)
-          </li>
+          <li className="text-forg-muted py-1 text-[10.5px] italic">준비 중</li>
         ) : box.entries.length === 0 ? (
           <li className="text-forg-muted py-1 text-[10.5px] italic">아직 게시글이 없습니다.</li>
         ) : (
-          box.entries.map((entry) => (
+          box.entries.slice(0, compact ? 5 : BOX_RECENT_COUNT).map((entry) => (
             <li key={entry.postId}>
               <Link
                 href={`/${box.config.id}/${entry.postId}`}
-                className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.4] text-(--era-link)"
+                className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link)"
+                style={{ color: "#3563a6" }}
               >
                 <span className="text-forg-muted mr-1.5 font-mono text-[9px]">
                   {monthDayFromIso(entry.createdAt)}
@@ -440,17 +444,33 @@ function BoxCard2003({ box, variant }: { box: BoxData; variant: "left" | "right"
             </li>
           ))
         )}
-        {box.totalPosts !== null && box.totalPosts > BOX_RECENT_COUNT && (
-          <li className="mt-1 text-right">
-            <Link
-              href={`/${box.config.id}`}
-              className="text-forg-muted hover:text-forg-gold-hover text-[9px]"
-            >
-              전체 {box.totalPosts.toLocaleString("ko-KR")}건 →
-            </Link>
-          </li>
-        )}
       </ul>
+    </section>
+  );
+}
+
+function BestScreenShotBox() {
+  const headerUrl = chromeUrl("r_essay.gif"); // closest available — actual was r_screen.gif (missing)
+  return (
+    <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
+      <div
+        className="bg-forg-gold/10 flex h-[20px] items-center px-1"
+        style={
+          headerUrl
+            ? {
+                backgroundImage: `url(${headerUrl})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "left center",
+              }
+            : undefined
+        }
+      >
+        {!headerUrl && <span className="text-forg-ink text-[11px] font-bold">BestScreenShot</span>}
+        <span className="sr-only">BestScreenShot</span>
+      </div>
+      <div className="text-forg-muted flex h-[80px] items-center justify-center bg-[#f6f4e8] text-[10px] italic">
+        스크린샷 박물관 준비 중
+      </div>
     </section>
   );
 }
@@ -462,21 +482,18 @@ function monthDayFromIso(iso: string): string {
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
-/*  Frame: bottom — visitor counter                                        */
+/*  Frame: bottom — copyright                                              */
 /* ────────────────────────────────────────────────────────────────────── */
-const VISITORS_2003 = 12_543_217; // approximate 2003-era frozen visitor count
-
 function FrameBottom2003() {
   return (
     <footer
-      aria-label="2003 방문자 카운터 (박물관 박제)"
-      className="border-t border-(--era-input-border) bg-(--era-content-bg) px-3 py-1 text-center text-[10px]"
+      aria-label="2003 푸터"
+      className="border-t border-(--era-input-border) bg-[#dcdcdc] px-3 py-2 text-center text-[10px]"
     >
-      <span className="text-forg-muted">방문자 </span>
-      <strong className="text-forg-gold-hover font-mono tabular-nums">
-        {VISITORS_2003.toLocaleString("ko-KR")}
-      </strong>
-      <span className="text-forg-muted"> · 2003 시기 박물관 박제 표기</span>
+      <span className="text-forg-muted">
+        All Contents Copyright 1999~2015 Forg. All Rights Reserved. ·{" "}
+      </span>
+      <span className="text-forg-muted/80">디지털 박물관 박제 — forg.co.kr 2003</span>
     </footer>
   );
 }
