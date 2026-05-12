@@ -76,12 +76,12 @@ interface TopMenuConfig {
 }
 const TOP_MENU_2003: TopMenuConfig[] = [
   { id: "UoBoard", asset: "t_b_freeboard.gif", label: "자유게시판" },
-  { id: "Q_A", asset: "t_b_question.gif", label: "질문답변" },
-  { id: "Role", asset: "t_b_roleplay.gif", label: "롤플레잉" },
-  { id: "Events", asset: "t_b_essay.gif", label: "이벤트" },
-  { id: "ScreenShot", asset: "t_b_screenshot.gif", label: "스크린샷" },
-  { id: "Items", asset: "t_b_kal.gif", label: "거래" },
-  { id: "Trash", asset: "t_b_right.gif", label: "트래시" },
+  { id: "Q_A", asset: "t_b_question.gif", label: "질답란" },
+  { id: "Role", asset: "t_b_roleplay.gif", label: "롤플레이게시판" },
+  { id: "UOForum", asset: "t_b_essay.gif", label: "울온에세이란" },
+  { id: "HouseScreenshot", asset: "t_hi.gif", label: "하우스인테리어란" },
+  { id: "ScreenShot", asset: "t_b_screenshot.gif", label: "스크린샷란" },
+  { id: "Items", asset: "t_b_kal.gif", label: "울온자료실" },
 ];
 
 // 2003 sidebar nav — flat list of 8 sections matching frame-left-2003.html.
@@ -221,7 +221,8 @@ function FrameTop2003() {
         </nav>
       </div>
 
-      {/* 7-button top menu (the iconic 2003 chrome bar) */}
+      {/* 7-button top menu + small FAQ icon — matches frame-top-2003.html
+         exactly (7 × 80×20 board buttons + 1 × 20×20 right decoration). */}
       <nav
         aria-label="2003 상단 메뉴"
         className="mt-3 flex items-center justify-center gap-[2px] border-y border-(--era-input-border) bg-(--era-content-bg) py-1"
@@ -229,6 +230,7 @@ function FrameTop2003() {
         {TOP_MENU_2003.map((item) => (
           <TopMenuButton2003 key={item.id} item={item} />
         ))}
+        <FaqIcon2003 />
       </nav>
     </header>
   );
@@ -240,11 +242,17 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
     return (
       <Link
         href={`/${item.id}`}
-        className="group hover:bg-forg-gold/15 inline-block px-[1px]"
+        className="group hover:bg-forg-gold/15 inline-block shrink-0 px-[1px]"
         title={item.label}
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-        <img src={assetUrl} alt={item.label} width={80} height={20} className="block" />
+        <img
+          src={assetUrl}
+          alt={item.label}
+          width={80}
+          height={20}
+          className="block h-[20px] w-[80px]"
+        />
         <span className="sr-only">{item.label}</span>
       </Link>
     );
@@ -252,10 +260,27 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
   return (
     <Link
       href={`/${item.id}`}
-      className="border-forg-gold/40 hover:bg-forg-gold/20 inline-block border-b-2 bg-white px-2 py-1 text-[10px] font-bold"
+      className="border-forg-gold/40 hover:bg-forg-gold/20 inline-block h-[20px] w-[80px] shrink-0 border-b-2 bg-white px-1 text-[10px] leading-[16px] font-bold"
     >
       {item.label}
     </Link>
+  );
+}
+
+/** Small "Site FAQ" question-mark icon (t_b_right.gif, 20×20) on the
+ *  right edge of the 2003 chrome bar — same place the original had it. */
+function FaqIcon2003() {
+  const url = chromeUrl("t_b_right.gif");
+  if (!url) return null;
+  return (
+    <span
+      aria-label="Site FAQ (박물관 모드, 비활성)"
+      title="Site FAQ"
+      className="ml-1 inline-block shrink-0 opacity-70"
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+      <img src={url} alt="Site FAQ" width={20} height={20} className="block h-[20px] w-[20px]" />
+    </span>
   );
 }
 
