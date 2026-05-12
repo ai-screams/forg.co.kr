@@ -106,6 +106,13 @@ INCLUDE_BOARDS: frozenset[str] = frozenset({
     "Shop", "Console",  # Phase B — pure webbus2009_basic
     "FunBoard", "porato", "Reveal",  # Phase B — webbus2009_basic mixed with kritz_normal
     "Trash",  # Phase B — webbus2009_Trash mixed with kritz_trash
+    # Phase B — forg.co.kr `Ultima` is Gnuboard4 webbus (not G5 as originally
+    # presumed). 33 files in the case-collided `Ultima/ultima` dir split:
+    #   - 19 forg.co.kr posts have `<!-- 게시글 보기 시작 -->` → parsed here
+    #   - 5 forg.co.kr posts are "글이 존재하지 않습니다" JS redirects → skipped
+    #   - 9 forg.kr `ultima` posts use Gnuboard5 theme/st-basic → routed
+    #     to 02d-parse-gnuboard5.py via skin landmark mismatch
+    "Ultima",
 })
 
 # All G4 boards are post-2011 (Gnuboard4 era, redesign ~2011).
@@ -707,6 +714,14 @@ def main() -> None:
             html = in_path.read_text("utf-8")
             captured_at = ts_index.get((board, post_id))
             if not captured_at:
+                # Skin guard: case-collided dirs (e.g. forg.co.kr `Ultima`
+                # mixed with forg.kr `ultima` Gnuboard5) bring in files
+                # whose plan entry uses a different case. Skip silently
+                # if the file is obviously not a webbus2009 capture —
+                # 02d-parse-gnuboard5.py owns those instead. Preserve
+                # ADR-0010 fail-loud for in-engine posts missing a ts.
+                if "게시글 보기 시작" not in html:
+                    raise _NonPostPage("skin_mismatch_no_ts")
                 raise ValueError(
                     f"missing Wayback ts for ({board}, {post_id}) — neither "
                     "e-policy-plan.json nor .progress.jsonl has it. ADR-0010 "

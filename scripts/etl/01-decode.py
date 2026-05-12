@@ -152,12 +152,20 @@ def write_summary(stats: Stats) -> None:
 
 
 def decode_bytes(raw: bytes) -> tuple[str, int]:
-    """Decode raw EUC-KR bytes. Returns (text, error_count).
+    """Decode raw bytes to text. Returns (text, error_count).
 
-    EUC-KR is a strict superset that aliases CP949 in many capture cases
-    (Wayback often labels it euc-kr while content is CP949). We try
-    cp949 first (more permissive), then fall back to euc_kr with replace.
+    Most forg.co.kr captures are CP949 (Wayback often labels them
+    euc-kr while content is the CP949 superset). The forg.kr successor
+    and the Gnuboard5 era (forg.co.kr Ultima Phase B, P2.3) are
+    already UTF-8 — decoding those as CP949 silently produces garbled
+    Korean (about half the multi-byte codepoints become `�`
+    replacement chars). Detect UTF-8 first by strict-decoding; only
+    fall back to CP949 / EUC-KR on UnicodeDecodeError.
     """
+    try:
+        return codecs.decode(raw, "utf-8", errors="strict"), 0
+    except UnicodeDecodeError:
+        pass
     try:
         return codecs.decode(raw, "cp949", errors="strict"), 0
     except UnicodeDecodeError:
@@ -351,14 +359,11 @@ def process_file(
 # ── Main ────────────────────────────────────────────────────────────────
 
 
-# forg.kr g5 (Gnuboard5) successor-site boards. They share the bronze
-# archive with forg.co.kr Phase A/B downloads but use a different engine.
-# Skipping them here keeps silver pristine until P2.3 lands the g5 parser;
-# the bronze tier still preserves the raw HTML so re-decoding is one-shot.
-_PHASE_B_G5_SKIP: frozenset[str] = frozenset({
-    "aseeee", "dataaa", "free", "gonggg", "humorrr",
-    "notice", "qnaaa", "screee", "trtrtr", "ultima",
-})
+# Boards skipped in Phase B decode. Empty now that P2.3 (Gnuboard5
+# parser) is online — forg.kr g5 boards (`aseeee` … `ultima`) and the
+# forg.co.kr Ultima G5 board are decoded alongside the rest. The
+# decoder's UTF-8 detection picks up their charset automatically.
+_PHASE_B_G5_SKIP: frozenset[str] = frozenset()
 
 
 def iter_input_files(board_filter: Optional[str]) -> list[Path]:
