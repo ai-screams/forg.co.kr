@@ -1,0 +1,59 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "520",
+  "title": "UONAV 사용법 좀 알려주세요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n 열심히 물고기 잡고 에틴 잡아서 배를 샀습니다.<br>\n 그리곤 UONAV 다운 받고, 신나서 배 띄웠는데<br>\n 문제는 이걸 사용하는 법을 전혀 모르겠습니다.<br>\n<br>\n 그냥 구석에다 실행시키고<br>\n 화살표 누르면 되는 거 아니라 뭔가 다른<br>\n 사용법이 있는건가요? 아님 역시 망할놈의<br>\n win xp 탓인 건가요?<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "열심히 물고기 잡고 에틴 잡아서 배를 샀습니다. 그리곤 UONAV 다운 받고, 신나서 배 띄웠는데 문제는 이걸 사용하는 법을 전혀 모르겠습니다. 그냥 구석에다 실행시키고 화살표 누르면 되는 거 아니라 뭔가 다른 사용법이 있는건가요? 아님 역시 망할놈의 win xp 탓인 건가요?",
+  "author": "a daemon",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-09-04T10:34:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Sergulath",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그냥 화살표 누르면 될겁니다..<br>\n 전 UONAV는 안써봤고 비슷한 다른걸 쓰지만(H2O)<br>\n 다 같을거라고 봅니다..<br>\n 혹시 안움직여서 그러신거라면<br>\n 닻을 올리셨는지 확인하세요.."
+    },
+    {
+      "author": "Minoson",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아마 단순히 명령어를 글자로 치는 대신 버튼을 누르신다고 생각하면 될듯...<br>\n 명령어는 기본 매크로 옵션으로 저장되어 있읍니다.<br>\n 옵션에서 매크로 들어가서 죽 훑어보시면 키도 나오고, 명령어도 나오져"
+    },
+    {
+      "author": "Cthulhu",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 최신 버전으로 H2O 란게 있습니다. 그걸 써보세요.(kritz.uospace.net에 있슴.)"
+    },
+    {
+      "author": "Naberrs",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그딴거 없던데여 ㅡㅡ"
+    },
+    {
+      "author": "Naberrs",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 크리츠님 홈피에서(위 주소) Downlord =&gt; By Kritz 에 들어가면 있습니다."
+    },
+    {
+      "author": "Wormius",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아마도 닻을 올리지 않았을지도 ㅡㅡ;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030926142626",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=520",
+  "sourceEngine": "zeroboard"
+}

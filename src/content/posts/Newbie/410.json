@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "410",
+  "title": "계정 사용하지 않으면 사라지나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 사정이 생겨서 얼마간 겜을 못하게 될거 같거든요<br>\n<br>\n 그래서 담달에는 울온 사용등록을 안할 생각인데 <br>\n<br>\n 그럴때 문제는 없나요?<br>\n<br>\n 등록한 캐릭터가 모두 지워진다거나... 초기화된다거나..<br>\n<br>\n 최대한 어느정도까지 쓰지 않아도 괜찮은지 궁금하네요 <br>\n<br>\n<br>\n<br>\n<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "사정이 생겨서 얼마간 겜을 못하게 될거 같거든요 그래서 담달에는 울온 사용등록을 안할 생각인데 그럴때 문제는 없나요? 등록한 캐릭터가 모두 지워진다거나... 초기화된다거나.. 최대한 어느정도까지 쓰지 않아도 괜찮은지 궁금하네요",
+  "author": "Sargatans",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-07-06T21:44:45",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Musisin",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그런건 없습니다. 다음에 하실때 그냥 계정 등록 다시 하시면되고요 집이 잇다면 다음패치되면 집이 무너지겠죠"
+    },
+    {
+      "author": "Starr",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 등록한 케릭터의 경우, 만약 총 스킬이 350을 넘지안으면 1달후 지워짐,<br>\n 하지만 계정은 영원히 지속."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927180014",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=410",
+  "sourceEngine": "zeroboard"
+}

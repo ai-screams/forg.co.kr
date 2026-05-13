@@ -1,0 +1,41 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "5",
+  "title": "으음...질문게시판과 이 게시판의 차이점은 뭐죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 별다른거 없는거 같은데...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "별다른거 없는거 같은데...",
+  "author": "Morail",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-11-27T16:46:25",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Bathsin",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 이름이 다르잖아요.<br>\n<br>\n (저격당함)<br>\n"
+    },
+    {
+      "author": "Nyarlathotep",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 휴지통 게시판의 확장판이라고 할까나...근데 왜 초보자게시판이 익명일지...=_=; 안면도 익히면 좋을터인데"
+    },
+    {
+      "author": "Botis",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 밑에분 돌날라갑니다 -_-<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030527074052",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=5",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "336",
+  "title": "용병이 모죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 글들 읽어보면 용병을 친다는대??<br>\n 저도 이번에 처음 전사를 키울려고 하는대 용병은 어디서 나오는건가요?<br>\n -_-;;<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "글들 읽어보면 용병을 친다는대?? 저도 이번에 처음 전사를 키울려고 하는대 용병은 어디서 나오는건가요? -_-;;",
+  "author": "Bechard",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-05-11T22:43:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Ba'al",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 젤롬에 가시면 fighter가 있고<br>\n 트린식과 델루시아에 가시면 paladin이 있습니다.<br>\n"
+    },
+    {
+      "author": "Humots",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그리고 일정금액을 주면 준금액/하루금액 만큼의 일수만큼 따릅니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030521114318",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=336",
+  "sourceEngine": "zeroboard"
+}

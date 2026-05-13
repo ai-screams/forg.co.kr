@@ -1,0 +1,41 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "276",
+  "title": "룬 에대한 질문 한가지 더...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n &nbsp;&nbsp; 한번 마크된 룬을 쓰다보면 마크된 장소에 못갈때도 많은 것 같습니다.<br>\n &nbsp;&nbsp;초보가 되서 그런지 메절 이나 메디 이벨 이 낮아서<br>\n &nbsp;&nbsp;그런지 몰라도...<br>\n &nbsp;&nbsp;이렇게 구동이 잘 안되는 룬을 다시금 마크하고 싶습니다.<br>\n &nbsp;&nbsp;가능합니까?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "한번 마크된 룬을 쓰다보면 마크된 장소에 못갈때도 많은 것 같습니다. 초보가 되서 그런지 메절 이나 메디 이벨 이 낮아서 그런지 몰라도... 이렇게 구동이 잘 안되는 룬을 다시금 마크하고 싶습니다. 가능합니까?",
+  "author": "Wormius",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-03-22T09:29:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Morail",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음 마크된 장소에 잘 못가다니...<br>\n 말씀이 잘 이해되지 않네요 -0-;;<br>\n 아 뿌직하면서 마법이 실패하는것을 말씀하시는거라면 룬에는 아무 하자가 없구요<br>\n 메절을 좀 올리는것으로 해결하실수 있습니다.<br>\n 음 덧붙이자면 이미 쓰여져있는룬에 새 장소를 덮어씌울수 있답니다 -0-"
+    },
+    {
+      "author": "Zoray",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " <br>\n   아... 매절에 따라서 갈수있는장소가 다르단 말이군요....<br>\n   아까와서 어쩌나 안되는거 버렸는데... 에구에구"
+    },
+    {
+      "author": "Agalierept",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 리콜이 실패하는 경우는 2가지입니다만...<br>\n 하나는 메젤이 낮아서 <br>\n 둘은 마크 해놓은 자리에 다른 캐릭이나 몹이 있어서 <br>\n 메젤 50정도면 리콜하고 다니는데는 문제가 없을것이고 <br>\n 마크 해놓은 자리에 누군가가 있다면 시간이 흐른후에 다시 시도하면 갈수 있겠지요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030516131009",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=276",
+  "sourceEngine": "zeroboard"
+}

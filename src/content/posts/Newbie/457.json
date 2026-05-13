@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "457",
+  "title": "리퍼버그 질문입니다",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 리퍼버그 어케하나요?<br>\n<br>\n 가르쳐주세요<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "리퍼버그 어케하나요? 가르쳐주세요",
+  "author": "Azmodaeus",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-08-05T12:47:46",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Fleurety",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 일단 레지 파스는 바르지 마세요..<br>\n<br>\n 일단.. 레지가 70~80이어야 합니다..<br>\n 이유는 반지랑 팔찌로 레지를 100가득 채워야 합니다..<br>\n 악세사리에 최대 붙을수 있는 스킬옵은 +15 이므로 반지 팔찌로 최대 30까지 올릴수 있으므로<br>\n 아템이 있다면 70부터 할수 있고 대체로 두개 합쳐서 20정도 아템을 구하는게 대부분이라 80부터 라고 하는<br>\n 것입니다.<br>\n 이렇게 아이템으로 100을 만들면 리퍼버그를 할수 있습니다.<br>\n 위에 레지파스 바르지 말라고 한건.. 만약 10파스를 발라 레지만땅이 110이라면.. 80에서도<br>\n 아템빨이 +30이어야 하기 때문에 그렇습니다.(전 이걸모르고 발랐다 망했죠 ㅠ_ㅠ)<br>\n<br>\n 문제는 레지를 80까지 만드는게 장난 아니게 힘들죠..<br>\n<br>\n 일단 80까지 만들어서 아템빨로 100이 되면..<br>\n 미녹 북쪽에 있는 리퍼숲으로 갑니다..<br>\n 가서 한놈에게 마법을 맞아 봅니다.<br>\n 이때 저주계열(마나드레인, 커스, 포이즌, 패럴) 마법을 맞았을때..<br>\n 레지가 0.1올랐나 확인합니다.(ggs로 올라간것 제외, 또 일단 레지가 아템으로 인해 110이 꽉차서<br>\n 0.1이 올랐다는 메세지나 uoa에 표시가 안되므로 주의깊게 잘 봐야 합니다.)<br>\n 안올랐다면.. 그 리퍼 죽이던지 말던지 하시고 다른 리퍼에게 또 맞아봅니다.<br>\n 0.1이 올랐다면.. 그 리퍼 죽이지 마시고..<br>\n 자기도 안죽게 잘 힐하면서 계속 그 리퍼에게 마법을 맞으면..<br>\n 저주계열 마법을 맞을때마다 레지가 계속 오르는것을 볼 수 있습니다.<br>\n 이렇게 끝까지 다 올릴수 있습니다.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927175653",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=457",
+  "sourceEngine": "zeroboard"
+}

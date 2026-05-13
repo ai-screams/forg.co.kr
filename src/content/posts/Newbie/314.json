@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "314",
+  "title": "울온 첨하는 사람인데욤 X-IRC   나 MIRC 사용법점",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 오늘 시디사서 겜 하는 데여<br>\n 겜상에서 모르는거 물어볼라구 하는데 사람도 안보이고해서 <br>\n 물어볼대가 없네여<br>\n 우연히 채팅 플그램이라고해서 다운받앗는데<br>\n 사용법을 모르겠네여<br>\n 제발 알려주세여<br>\n 울온 첨 시작하는 샛삭을 밟지마시고 예쁘게 봐주세여<br>\n ㅜ.ㅡ 꼭 하고 싶었던 겜이라 ㅜ.ㅡ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "오늘 시디사서 겜 하는 데여 겜상에서 모르는거 물어볼라구 하는데 사람도 안보이고해서 물어볼대가 없네여 우연히 채팅 플그램이라고해서 다운받앗는데 사용법을 모르겠네여 제발 알려주세여 울온 첨 시작하는 샛삭을 밟지마시고 예쁘게 봐주세여 ㅜ.ㅡ 꼭 하고 싶었던 겜이라 ㅜ.ㅡ",
+  "author": "Nebiros",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-04-17T20:48:26",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Tarihimal",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포그홈의 각종유용한정보란을 확인하시면 가장 밑부분에 사용법이 나와 잇는걸 볼수잇을겁니다..^^;<br>\n<br>\n 그게 복잡하다 싶으시면<br>\n 1. 프로그램을 설치한다<br>\n 2.프로그램을 실행시킨다<br>\n 3.설정창이뜨면 ADD버튼을 누른다.<br>\n 4.IRC SERVER 란에 \"irc.nuri.net\"이라고 입력한다<br>\n 5.PORT 넘버는 6667인지 확인한고 작은활성창의 ADD버튼을 눌러준다(없으면 적어준다.)<br>\n 7.Full Name란에 자기 이름을 적어준다<br>\n 8.Email-Address란에 자기 메일주소를 적어준다<br>\n 9.NickName란에 IRC체팅상에서 사용할 이름을 적어준다<br>\n 10.OK버튼을 눌러준다.<br>\n<br>\n 위의 내용은 MIRC의 설정방법입니다.<br>\n X-IRC의 경우도 적어주는 순서나 서식은 달라도 적는내용은 같을겁니다..<br>\n 그럼이만..^_^;<br>\n<br>\nps.이런..ㅡ.ㅡ;<br>\n사용법은 일단 설정을 완료한후에 상단 메뉴바에서 #모양의 버튼이나 채널폴더란 이름의 버튼을 누르시면 채널을 적어주는곳이 나타납니다..<br>\n거기에 자기가 원하는 채널의 이름을 적어주시면됩니다.<br>\n#arirang, #뉴비,등등과 같이 이름을 적어주고 ok를 눌러주시면<br>\n해당 채널의창의 활성화되면서 채팅을 하실수 잇게됩니다<br>\n그리고 채팅방법은 보편적인 인터페이스로 되어잇습니다<br>\n하단에 글적는 부분에 글적고 엔터치면올라가는 아주 상식적인방법으로 채팅을 즐기실수 있습니다..^_^;<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030511133535",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=314",
+  "sourceEngine": "zeroboard"
+}

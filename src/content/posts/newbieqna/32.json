@@ -1,0 +1,35 @@
+{
+  "board": "newbieqna",
+  "boardKr": "newbieqna",
+  "postId": "32",
+  "title": "Q:마법중에 방어 마법을 자신에게 겹쳐서 사용할순없나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 마법중에 매직리플렉션,리액티브아머,프로택션 같은 방어적인 마법들을\n<br>\n 자신이나 남한테 겹쳐서 사용할수 없는건가요?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "마법중에 매직리플렉션,리액티브아머,프로택션 같은 방어적인 마법들을 자신이나 남한테 겹쳐서 사용할수 없는건가요?",
+  "author": "대남자",
+  "authorMemberNo": "6355",
+  "authorHomepage": null,
+  "createdAt": "2002-04-02T11:35:41",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 매직리플렉션과 리액티브아머는 동시에 사용할 수 없습니다.\n<br>\n 둘 중에 먼저 시전된 것만 유효할 것이며, 후에 시전된 것은 사용할 수 없다고 나옵니다.\n<br>\n<br>\n 다른 보조 마법들은 잘 사용하지 않아서 모르겠군요.  -0-;;"
+    },
+    {
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 매직 리플렉션 , 리액티브 아머, 프로텍션 등의 보호 마법은 동시에 시전할수없습니다.\n<br>\n 한가지의 보호마법을 걸으셨다면. 그 마법을 깨시든지 하셔서 다른 마법을 시전하실수있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020424084500",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=newbieqna&no=32",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "50",
+  "title": "순수 바드 질문 드리옵니다!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n  초기 스탯은 어떻게 잡아야하고...<br>\n<br>\n  또한...<br>\n<br>\n  스탯의 끝은 어떻게 끝내야 하는지요? +_+;<br>\n<br>\n  가르쳐 주세요!<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "초기 스탯은 어떻게 잡아야하고... 또한... 스탯의 끝은 어떻게 끝내야 하는지요? +_+; 가르쳐 주세요!",
+  "author": "Humots",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-12-10T01:06:13",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Cthulhu",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스탯의 정석이라면<br>\n 저는 마사류 쪽은 힘 100 마나 100 덱스 25<br>\n 전사류는 힘 100 덱스 100 마나 25 로 배웠는데 <br>\n 맞는가 모르겠네요 =_=;;;<br>\n 초기 스탯은 편하신데로 -0-;;;<br>\n 허접한 답변 이라도 도움이 됬으면 하는 =_=;"
+    },
+    {
+      "author": "Beelzebuth",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 순수 바드시라면 힘과 매절이 있어야 합니다.<br>\n 덱스는 그리 많이 요구되지 않습니다.  <br>\n<br>\n 저의 경우에는 덱스를 15에 잡았습니다.<br>\n 힘을 100 잡았구요.  지력은 110을 잡았습니다.<br>\n<br>\n 스텟을 게임을 진행하시다 보면 이쪽을 더 올려야겠다는 생각이 듭니다.  ^_^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927182759",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=50",
+  "sourceEngine": "zeroboard"
+}

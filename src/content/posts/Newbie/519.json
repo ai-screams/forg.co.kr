@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "519",
+  "title": "대장장이요",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 울온 직업 기술의 블랙 스미스 코너에서 스킬당 만드는거요<br>\n 거기 나오는대로 했더니 60까지는 잘만 올려지는데 60부터<br>\n 잘안올려 지거든요 여기 나와 있는데로도 했는데 잘 안올려지는데<br>\n 어떡하면 좋죠?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "울온 직업 기술의 블랙 스미스 코너에서 스킬당 만드는거요 거기 나오는대로 했더니 60까지는 잘만 올려지는데 60부터 잘안올려 지거든요 여기 나와 있는데로도 했는데 잘 안올려지는데 어떡하면 좋죠?",
+  "author": "Segal",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-09-04T02:00:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Sergulath",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 원래 60부터는 모든 스킬이 더디게 올라갑니다..<br>\n 에세이에 나온대로 계속 밀고나가세요..<br>\n 그리고.. 스미스의 경우 꼭 한가지만 만들지 말고 가끔 섞으면 좋습니다.<br>\n 만약 50~60까지 A를 만들고<br>\n        60~70까지 B를 만들고<br>\n        70~80까지 C를 만들라고 했다면..<br>\n 현재 60~65까지는 B를 만들면서 가끔 너무 안오른다 싶을때 A를 섞어 만들고..<br>\n 65~70까지는 역시 B를 만들면서 가끔 너무 안오른다 싶을때 C를 섞어 만드는 식으로하시면 됩니다."
+    },
+    {
+      "author": "Beelzebuth",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 도구(대장장이 망치나 슬레지 햄머 등등..) 메뉴 클릭 했을 때, 오른 쪽에 상세 정보가 뜨죠?<br>\n (들어가는 잉갓 숫자라거나, 성공률, 아이템의 모양등..) 거기서 성공률 45%`55% 사이인 물건 중에서<br>\n 재료 적게 드는걸루 만드세요. 물론 스킬이 오르면서 그 수치가 변하니까 전체적으로 만들어 보셔야죠.<br>\n 그리고 95부터 100까지는 플레이트 몸통으로 하면서 가끔 레그 만들어 주시고요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030926142657",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=519",
+  "sourceEngine": "zeroboard"
+}

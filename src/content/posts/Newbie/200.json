@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "200",
+  "title": "마법사스텟 질문 [수정]",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 코멘트 다신분이 <br>\n 스텟은 100 25 100 이라고 적어주셨는데요<br>\n 정석 마법사는 왜 이렇게 되는지 궁금해서 수정했습니다.<br>\n 덱스는 최소 10이니 뉴비의 짧은소견으로는 차라리 인트 115를 만드는게 <br>\n 낫다고 생각되네요. 힘역시 100까진 필요 없을꺼 같고요<br>\n 뉴비라서 이렇게 생각되니 죄송하지만 자세한 설명 부탁드립니다. <br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "코멘트 다신분이 스텟은 100 25 100 이라고 적어주셨는데요 정석 마법사는 왜 이렇게 되는지 궁금해서 수정했습니다. 덱스는 최소 10이니 뉴비의 짧은소견으로는 차라리 인트 115를 만드는게 낫다고 생각되네요. 힘역시 100까진 필요 없을꺼 같고요 뉴비라서 이렇게 생각되니 죄송하지만 자세한 설명 부탁드립니다.",
+  "author": "Humots",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-02-17T10:20:49",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Minoson",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 마법사의 기본 스탯은 힘100 덱스25 인트100 입니당 ^^<br>\n 글구<br>\n 스킬은 기본적으로 이벨 메졀 메디 가 필수구요..<br>\n 순수 마사라면..<br>\n 레슬 이벨 메졀 메디 레지 가 기본입니다..<br>\n 남는 부분은 포이즈닝이나 인스를 넣으시는 것도<br>\n 좋습니다..<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030523091950",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=200",
+  "sourceEngine": "zeroboard"
+}

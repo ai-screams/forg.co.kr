@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "307",
+  "title": "시큐어",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 글 읽다보면 시큐어 시큐어 란 말이 계속 나오는데요.<br>\n 뭘 시큐어라고 하는거죠???<br>\n ^^<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "글 읽다보면 시큐어 시큐어 란 말이 계속 나오는데요. 뭘 시큐어라고 하는거죠??? ^^",
+  "author": "Vaelfar",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-04-13T22:29:52",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Aiwaz",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 집에 설치하는 보관함의 개념입니다<br>\n 락다운과 시큐어 두가지가 있는데요<br>\n 락다운은 말 그대로 고정시키는 옵션입니다<br>\n 락다운을 시켰을 경우 락다운이 풀리지 않으면 옮기거나 집을 수가 없습니다<br>\n 시큐어는 집안에 있는 은행상자라고 보시면 됩니다<br>\n 제대로 부르자면 시큐어 컨테이너라고 불러야 하지만<br>\n 줄여서 시큐어라고 부릅니다<br>\n 집에 시큐어 컨테이너가 설치되면 그 안에 보관된 아이템은 집주인이 설정한 접근허용자 이외에는 접근이<br>\n 불가능합니다"
+    },
+    {
+      "author": "Satanciae",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 답변 감사합니다 ^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030516130520",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=307",
+  "sourceEngine": "zeroboard"
+}

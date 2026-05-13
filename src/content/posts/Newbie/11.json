@@ -1,0 +1,53 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "11",
+  "title": "물어볼께있는데요",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 통신수정구슬 어디에쓰이나여?<br>\n 그리고 어떻게써여?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "통신수정구슬 어디에쓰이나여? 그리고 어떻게써여?",
+  "author": "Guland",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-11-28T19:26:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Gusoyn",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 몰라여-_-<br>\n"
+    },
+    {
+      "author": "Astaroth",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 통신 수정구슬은 음..... irc 나오기 전에 좀 쓰엿던 걸로 알고 있어염(게임 자체에서)<br>\n 세컨 떄 정도....<br>\n 지금은 mirc를 쓰죠&lt;-- 채팅 프로그램<br>\n"
+    },
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 보석으로 충전한 다음에 두 통신구슬을 연결해서... 역시 써본적은 없어서 -_-;;;"
+    },
+    {
+      "author": "Nebirots",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 모,..몰라여...;;;"
+    },
+    {
+      "author": "a daemon",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " irc 는 세컨때도 썼습니다... 한글패치가 전혀 되지 않을때에도 썼습니다.<br>\n 오히려 그것때문에 irc 를 쓰는것일지도...<br>\n 죄다 외국인이니 소수의 한국인들이라도 뭉쳐보자는...; <br>\n 온통 #$%#^ 알아들을수 없는 말들을 하니 -_-;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030621045815",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=11",
+  "sourceEngine": "zeroboard"
+}

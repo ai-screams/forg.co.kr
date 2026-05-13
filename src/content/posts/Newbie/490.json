@@ -1,0 +1,47 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "490",
+  "title": "로그아웃이 잘 안되요..ㅠㅠ",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 본캐릭과.. 생삭 캐릭을 왔다갔다.. 하면서 지루함을 줄이려구 했는데요..<br>\n<br>\n 꼭 한번 체인지 하려면 어느정도 기다려야 되더라구요..<br>\n<br>\n 타임 아웃.. 어쩌구 하면서요..<br>\n<br>\n 옛날에는 안그랬는데.. 어떻게 하면 이런 걸 없앨 수 있죠?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "본캐릭과.. 생삭 캐릭을 왔다갔다.. 하면서 지루함을 줄이려구 했는데요.. 꼭 한번 체인지 하려면 어느정도 기다려야 되더라구요.. 타임 아웃.. 어쩌구 하면서요.. 옛날에는 안그랬는데.. 어떻게 하면 이런 걸 없앨 수 있죠?",
+  "author": "Surgat",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-08-19T20:22:14",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Nebirots",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 집이나 여관에서 로그아웃하셔야 합니다. 로그아웃즉시 케릭이 없어져요...필드나 던전에서 로그아웃하시면<br>\n<br>\n 일정시간(5분이였던가?)케릭이 게임상에 남아있거든요..^^"
+    },
+    {
+      "author": "Moloch",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 마져여 자기 집이나 여관에서 로그아웃해야 안기다리고 좋죠,... 집을사시거나.. 아니면 여관앞에 룬을 박아서 리콜로 왔다 갔다 하세요"
+    },
+    {
+      "author": "Surgat",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 집이나 여관에서 로그아웃하더라도 타임아웃이 적용되는 경우가 있습니다. 로그 아웃 직전에 전투중이었던 경우에는 전투상황이 종료되는 시점까지 기다려야 다른 캐릭이 로그인 됩니다. 이 시간은 저도 정확히는 모르겠고 좀 빨리 로그아웃하는 방법이 있습니다. 일단 집이나 여관에서 로그아웃하고... 다른 캐릭이 로그인이 안된다면 로그아웃한 캐릭으로 다시 로그인합니다. 그러고 로그아웃한 후에 다른 캐릭으로 로그인하면 거의 로그인 됩니다. 단 범죄상태일때는 범죄상태가 풀려야 가능할겁니다. "
+    },
+    {
+      "author": "Pentagnony",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 술집에서도 로그아웃딜레이 없습니다...^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030907110257",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=490",
+  "sourceEngine": "zeroboard"
+}

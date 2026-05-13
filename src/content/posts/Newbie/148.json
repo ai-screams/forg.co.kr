@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "148",
+  "title": "케알룹에 대해 좀 무러 볼께 이씁니다....",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 케알룹이 제대로 작동하질 않는군요.......딴건 되는데 더블클릭과 끌기가 안되네요.....여러개 뭉쳐 잇는건 끌기가 되는데 바닥에 떨어진 물건이 끌기가 안되요...되는물건도 잇고 안되는것도 잇고.....작동이 되다 안되다 이러는데 이런건 어찌 해야 되죠?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "케알룹이 제대로 작동하질 않는군요.......딴건 되는데 더블클릭과 끌기가 안되네요.....여러개 뭉쳐 잇는건 끌기가 되는데 바닥에 떨어진 물건이 끌기가 안되요...되는물건도 잇고 안되는것도 잇고.....작동이 되다 안되다 이러는데 이런건 어찌 해야 되죠?",
+  "author": "Vaelfar",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-02-02T18:20:35",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Rofocale",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 포인트를 바꿔주세요. "
+    },
+    {
+      "author": "Moloch",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " '포인트'탭에 가서 밑에 가로줄 세개짜리 버튼이 있습니다. 먼저 바꿀 포인트를 고르고 나서 버튼 찍고 울온에서 포인트 찍으면 자동으로 수정이 됩니다.<br>\n<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030619054418",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=148",
+  "sourceEngine": "zeroboard"
+}

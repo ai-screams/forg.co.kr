@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "404",
+  "title": "뮤지션쉽 질문...",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 저기요..<br>\n 바드를 하고 싶은데요?<br>\n 뮤지션쉽있잖아요??<br>\n 그거 매크로로 올릴수있다고 하는데요<br>\n 무한항로인가??그걸루 매크로 돌릴수 있다는데 어떠케 하는건가요?<br>\n 자세히 설명점^^;;<br>\n 부탁합니다~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "저기요.. 바드를 하고 싶은데요? 뮤지션쉽있잖아요?? 그거 매크로로 올릴수있다고 하는데요 무한항로인가??그걸루 매크로 돌릴수 있다는데 어떠케 하는건가요? 자세히 설명점^^;; 부탁합니다~",
+  "author": "a daemon",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-07-03T22:39:16",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Ba'al",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 라스트오브젝트로 하면 되요 -_-;; 악기를 더블클릭하고 그다음은 키설정가셔서 라스트오브젝트 선택하시고나서 돌리면되요"
+    },
+    {
+      "author": "Wormius",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "    매크로에서 자동실행창에서 저장시작이나 동작녹화인가를 누르고 악기를 더블클릭후 정지 누르시구요<br>\n  단축키창 가셔어 자동실행 중 선택하신 번호에 가셨어 단축키 설정&lt;자동실행 창에서 선택한 #1(예)이면 단축키창의 자동실행 키를 #1 [키보드상 방향키의 숫자키 말구요]을 선택합니다. 그리고 다시 자동실행창으로 오셔서 uoakoop프로그램의 아이콘을 더블 클릭하시면 계속 반복적으로 악기를 연주합니다. 그러므로 8파일이라는 말 들어 보셨죠 그러니 연주를 반복적으로 실행하면 그 때부터는 마을을 이리저리 돌아 다녀셔야 합니다.<br>\n  여행하기를 좋아하시면 좋구요 이 마을 저 마을 리콜이나 걸어서 가면서 한 몇 시간안에 젬 다실 걸요 전 넘<br>\n  잘 올라서 중단 중 입니다. 틴커 젬을 먼저 달고 싶어서요. 호호호 "
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927175620",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=404",
+  "sourceEngine": "zeroboard"
+}

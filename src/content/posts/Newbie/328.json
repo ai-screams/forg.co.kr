@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "328",
+  "title": "마이닝 질문입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 안녕하세요.스미스 젬을 따고 나니 마이닝이 절실하게 느껴지더라구요.<br>\n 그래서 마이닝에 들어갔지만 너무 지루하고 시간이 오래 걸려서...<br>\n 메크로에 대한 질문을 좀 하려고 합니다.<br>\n<br>\n uoa를 이용해서 알아서 땅파는건 알겠는데요.<br>\n<br>\n kr loop으로 지정된 포인트를 걷는걸 못 하겠습니다. ㅜㅜ<br>\n 포인트 지정까지는 알겠지만.<br>\n<br>\n 어떤 명령어로 워킹을 시키는지...좀 알려주시면 감사하겠습니다.<br>\n (워킹만 알면 됩니다 ㅠㅠ)<br>\n 꾸벅.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "안녕하세요.스미스 젬을 따고 나니 마이닝이 절실하게 느껴지더라구요. 그래서 마이닝에 들어갔지만 너무 지루하고 시간이 오래 걸려서... 메크로에 대한 질문을 좀 하려고 합니다. uoa를 이용해서 알아서 땅파는건 알겠는데요. kr loop으로 지정된 포인트를 걷는걸 못 하겠습니다. ㅜㅜ 포인트 지정까지는 알겠지만. 어떤 명령어로 워킹을 시키는지...좀 알려주시면 감사하겠습니다. (워킹만 알면 됩니다 ㅠㅠ) 꾸벅.",
+  "author": "Nyarlathotep",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-04-27T18:39:55",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Eliezer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온 처음깔면 키패드 상하좌우와 <br>\n<br>\n 고 위에 있는 6개의 키 중 4개 홈 페이지업 엔드 페이지 다운이 <br>\n<br>\n 워킹에 해당하는 키입력법입니다. <br>\n<br>\n 자체매크로로는 지정이 안되는 이상한 매클 키 -_-;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030607210945",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=328",
+  "sourceEngine": "zeroboard"
+}

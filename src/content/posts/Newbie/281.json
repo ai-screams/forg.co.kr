@@ -1,0 +1,41 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "281",
+  "title": "명상성공확률에 대해서..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 명상이 75거든요..<br>\n 근데 왜이리 실패를 많이하죠..?<br>\n 마나는 충분히 빨리차거든요...<br>\n 지능이 225에다가 포커스도 어느정도 되니깐..<br>\n 근데 확률이 너무 낮습니다..<br>\n 특히 마나가 적을때는 거의 90%이상 실패하고요...<br>\n 혹시 스킬수치에 따라 성공확률이 틀려지나요..?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "명상이 75거든요.. 근데 왜이리 실패를 많이하죠..? 마나는 충분히 빨리차거든요... 지능이 225에다가 포커스도 어느정도 되니깐.. 근데 확률이 너무 낮습니다.. 특히 마나가 적을때는 거의 90%이상 실패하고요... 혹시 스킬수치에 따라 성공확률이 틀려지나요..?",
+  "author": "Satanciae",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-03-23T19:57:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Ayperos",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 네 스킬이 낮으면 낮을수록 명상을 할수있는 성공치가 줄어듭니다..<br>\n<br>\n 마치 대장장이가 물건을 만드는것처럼.."
+    },
+    {
+      "author": "Nebiros",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 지능이 225 -_-;;;;"
+    },
+    {
+      "author": "Aamon",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 그리고... 같은 명상치에서도 마나가 바닥일때랑 어느정도 차 있을때랑 액티브메디 들어가는 확률이 다릅니다.<br>\n 마나가 1/100 인 상태라면 액티브 들어가기 상당히 힘들어짐.. 90대에서도"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030516131043",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=281",
+  "sourceEngine": "zeroboard"
+}

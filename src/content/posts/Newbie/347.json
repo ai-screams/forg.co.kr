@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "347",
+  "title": "저기 뮤지션에 관한질문",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 누군가 배를타고 kr-loop으로 돌리면<br>\n 편하다고 해서 돌리면요<br>\n 전 더블클릭하고 딜레이써서<br>\n 배는 슬로우포워드 하고<br>\n 이렇게 하는데요.. 좀만 시간이지나면 주머니(?) 백팩인가 그게 닫혀버려요<br>\n 왜그렇죠?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "누군가 배를타고 kr-loop으로 돌리면 편하다고 해서 돌리면요 전 더블클릭하고 딜레이써서 배는 슬로우포워드 하고 이렇게 하는데요.. 좀만 시간이지나면 주머니(?) 백팩인가 그게 닫혀버려요 왜그렇죠?",
+  "author": "Proculo",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-05-15T14:32:21",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Sergulath",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 물살이 거칠어져서 백팩이 닫힙니다.<br>\n<br>\n 무한항해 유오에세이 가면 명확하게 빨간 줄 세 개로 표시되어 있습니다.<br>\n 그 중 왼쪽 것은 물살이 거칠어져서... 백팩이 닫혀요.."
+    },
+    {
+      "author": "Proculo",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 무한항해 유오에세이 이게 모죠?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927183114",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=347",
+  "sourceEngine": "zeroboard"
+}

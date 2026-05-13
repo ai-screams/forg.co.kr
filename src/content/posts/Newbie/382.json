@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "382",
+  "title": "양손무기써두 패링이 적용되나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 글 읽다 보니까 칼들구 있어두 칼루 막는다는둥 해서<br>\n<br>\n 패링이 된다는거 같은데 양손무기두 적용되는건가 해서여.. ^^:<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "글 읽다 보니까 칼들구 있어두 칼루 막는다는둥 해서 패링이 된다는거 같은데 양손무기두 적용되는건가 해서여.. ^^:",
+  "author": "Astaroth",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-06-08T00:53:59",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Frucissiere",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 패링적용 댈꺼에요..<br>\n<br>\n 제 마사가 패링 50인데도 번쩍하면서 잘 막더군요 "
+    },
+    {
+      "author": "Clitheret",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 음.. 확실하진 않습니다<br>\n 패링스킬은 방패를 들었을땐 100%그 스킬이 적용됩니다<br>\n 방패를 내렸을 경우는 50%만 적용됩니다<br>\n 또한 무기를 사용하실경우 예를들어 소드,택틱일때<br>\n 택틱은 데미지에 영향을 주고 소드가 방어에 영향을 줍니다<br>\n 즉 무기 스킬도 막아준다는거죠<br>\n 무기와 방패를 같이 든다면 둘다 적용돼겠죠<br>\n 양손이라면 무기+50%패링인가? ㅡㅡ;;<br>\n ㅡ 믿거나 말거나 ㅡ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927183158",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=382",
+  "sourceEngine": "zeroboard"
+}

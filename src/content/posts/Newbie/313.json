@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "313",
+  "title": "라스트오브젝트 키설정 어디서 합니까?",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 2년만에 다시하는 뉴비입니다.ㅜ.ㅜ<br>\n 울온 자체 매크로에서 라스트 오브젝트 라스트 스펠 뭐 이런거 지정해둘라고 그러는데 option에 들어가서 메크로로 가보니깐 say, yell, close 뭐 이런거 밖에 안나오네요. 옛날에는 거기서 했던 거 같은데... <br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "2년만에 다시하는 뉴비입니다.ㅜ.ㅜ 울온 자체 매크로에서 라스트 오브젝트 라스트 스펠 뭐 이런거 지정해둘라고 그러는데 option에 들어가서 메크로로 가보니깐 say, yell, close 뭐 이런거 밖에 안나오네요. 옛날에는 거기서 했던 거 같은데...",
+  "author": "Frucissiere",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-04-17T12:56:22",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Zoray",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " say에 클릭하신채로 뜨는 메뉴에서 주욱 아래로 드래그 해보시면 내려갑니다.<br>\n 거기서 찾으시면 나올겁니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030511133052",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=313",
+  "sourceEngine": "zeroboard"
+}

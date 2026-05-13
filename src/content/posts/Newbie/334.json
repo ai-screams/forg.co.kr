@@ -1,0 +1,47 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "334",
+  "title": "초보인데여 ㅠ,ㅠ",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 어제 처음으로 게임을 시작했습니다.<br>\n 전사로 시작을 했는데여<br>\n 건물 3층으로 가니깐 훈련용 더미가 있더라구여<br>\n 그거 때리구 있는데<br>\n 그냥 계속 때리는 방법은 없습니까?<br>\n 마우스로 그냥 계속 클릭해야하는겁니까?<br>\n 눌러놓으면 계속 때려지는 방법있으면 가르쳐주세여 ㅠㅡㅠ<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "어제 처음으로 게임을 시작했습니다. 전사로 시작을 했는데여 건물 3층으로 가니깐 훈련용 더미가 있더라구여 그거 때리구 있는데 그냥 계속 때리는 방법은 없습니까? 마우스로 그냥 계속 클릭해야하는겁니까? 눌러놓으면 계속 때려지는 방법있으면 가르쳐주세여 ㅠㅡㅠ",
+  "author": "Azmodaeus",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-05-10T11:18:30",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Aiwaz",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 써드파티 프로그램인 UOA와 EasyUO를 이용하시면 되는데, EasyUO를 사용하기 위해선 스크립트에 대한<br>\n 지식이 있어야 하죠. UOA는 채험 사용기간동안만 무료로 이용하고 그 이후부터 사용하기 위해서 요금 결재를<br>\n 하셔야 합니다."
+    },
+    {
+      "author": "Proculo",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " kr-loop 라는 무료프로그램도 있습니다. 왼쪽 메뉴 아래쪽에 Friend Site 에 보시면<br>\n kritz 를 참고하세요."
+    },
+    {
+      "author": "Rofocale",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 글 올린 사람은 아니지만 위 두분께 감사.<br>\n 무료프로그램도 있었군요..^^;;"
+    },
+    {
+      "author": "Bechard",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 좀더 구체적으로..........일단 kr-loop를 구하시고..........<br>\n<br>\n 울온 '자체매크로' 에서 단축키 하나를 만드세요..........그 내용은 last object로......<br>\n<br>\n 예를들어 F1을 last object로 맞추시면.......<br>\n<br>\n 더미 첨에 한번만 더블클릭 하시고.....그담에 F1만 누르시면 저절로 떄립니다.......<br>\n<br>\n 여기서 계속F1을 직접 누르고 있을수가 없으니 <br>\n<br>\n kr-loop같은 프로그램으로 F1을 반복입력 하게끔 하는거죠.......<br>\n<br>\n 아니면 임시책으로 F1키보드 위에 무슨 물건으로 F1이 눌러지게끔 하셔도 될듯 -_-;;<br>\n<br>\n<br>\n 하지만 사실 일반샤드에서 하시는거라면 더미는 치실필요가 없습니다.........<br>\n<br>\n 그 무기스킬을 돈주고 배워야죠.........더미치는 시간에 그 돈을 버는게 훨씬 빠르니까요...."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030516130342",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=334",
+  "sourceEngine": "zeroboard"
+}

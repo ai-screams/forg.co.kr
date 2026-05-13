@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "488",
+  "title": "한번 죽고 나서.. 물리방어가 엄청 내려갔어요..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 이게.. 어찌된 일인거죠? ㅠㅠ<br>\n<br>\n 분명 죽기전에는 물리방어 -1 로 나왔는데..<br>\n<br>\n 한번 죽고 났더니.. 물리방어가 -11이 되버렸네요..ㅠㅠ<br>\n<br>\n 무서워서.. 몬스터 근처에는 가지도 못하구..<br>\n<br>\n 갑자기 왜 그런거죠??<br>\n<br>\n p.s 이건 꼽사리 질문인데요..<br>\n<br>\n 스웜프 최소 테임 스킬이 93이란게 맞나요?<br>\n<br>\n 몬스터&amp;던젼란.. 에 이렇게 나와있긴 한데.. 왠지 아닌거 같아서요..<br>\n<br>\n 답변 부탁드립니다~<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "이게.. 어찌된 일인거죠? ㅠㅠ 분명 죽기전에는 물리방어 -1 로 나왔는데.. 한번 죽고 났더니.. 물리방어가 -11이 되버렸네요..ㅠㅠ 무서워서.. 몬스터 근처에는 가지도 못하구.. 갑자기 왜 그런거죠?? p.s 이건 꼽사리 질문인데요.. 스웜프 최소 테임 스킬이 93이란게 맞나요? 몬스터&던젼란.. 에 이렇게 나와있긴 한데.. 왠지 아닌거 같아서요.. 답변 부탁드립니다~",
+  "author": "Barbatos",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-08-18T02:47:34",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Sergulath",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 버그 걸린듯 하네요.<br>\n 저녁에 겜마 불러서 교정 가능할 겁니다."
+    },
+    {
+      "author": "Guland",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 버그가 아니라<br>\n 혹시 매직리플렉션(마법반사) 프로텍션(보호) 마법 사용하신적없으신지요<br>\n 만약 그걸 사용하셧다면 물리저항이 내려가는대신 다른 원소 저항이 올라가게됩니다<br>\n 원상태로 되돌리시려면 다시 저마법을을 한번더 사용하시면 될겁니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030926142728",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=488",
+  "sourceEngine": "zeroboard"
+}

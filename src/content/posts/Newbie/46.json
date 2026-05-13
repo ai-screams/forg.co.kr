@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "46",
+  "title": "영 풀리기전에..",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 영 풀리기전에 팔라치면 아무소용없나요?<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "영 풀리기전에 팔라치면 아무소용없나요?",
+  "author": "Sergulath",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-12-06T23:51:06",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Zoray",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " -_-;;<br>\n 소용 있지요<br>\n<br>\n하지만 스킬이 일정량 이상 늘어나면 영마크가 자동으로 떨어지니까 주의하세요.<br>\n"
+    },
+    {
+      "author": "Wormius",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 안올라갑니다;;<br>\n 제가 영때 팔라딘이나 파이터 데려다가 쳐봤는데<br>\n 영때 안오름-_-;;<br>\n 1시간동안쳐두요<br>\n 영때고 치지 오르더라구요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927180758",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=46",
+  "sourceEngine": "zeroboard"
+}

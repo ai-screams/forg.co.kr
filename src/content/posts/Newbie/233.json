@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "233",
+  "title": "채팅창에서 글자가 깨지네요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t  국가설정에도 한국어라고 되어있는데도 불구하고,<br>\n 자꾸 채팅장에서 한국어가 깨집니다. 왜 그렇습니까?<br>\n 해답을 알려주세요. 초보자인데 정말 답답합니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "국가설정에도 한국어라고 되어있는데도 불구하고, 자꾸 채팅장에서 한국어가 깨집니다. 왜 그렇습니까? 해답을 알려주세요. 초보자인데 정말 답답합니다.",
+  "author": "Sergutthy",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-03-03T21:10:10",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Hael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 혹시 전체화면으로 하시는지요?<br>\n 저도 전체화면으로 하면 한글이 깨지는데요..<br>\n 창모드로 해보세요.. 잘나와요~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030608002826",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=233",
+  "sourceEngine": "zeroboard"
+}

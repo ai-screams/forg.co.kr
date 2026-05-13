@@ -1,0 +1,71 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "498",
+  "title": "이거 큰 애러사항이군요.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 게임내 문제는 아니고 그보다 더욱 심각한 것이지요.<br>\n<br>\n 게임을 하려고 하는데 울티마 프로그램 자체가 실행이 안되는 겁니다.. =ㅁ=<br>\n<br>\n 어제만 해도 잘 돌아가던 놈이 오늘 갑자기<br>\n<br>\n Out of memory라는 제목의 애러 매세지로 날 압박하는 애러 내용은<br>\n<br>\n There is no euough memory to continue executin. if you do nit have cirtual memory enabled this could be the problem. Otherwise, you may be low on disk space. or may need to increase the amount of spcce allocated for virtual memory.<br>\n<br>\n 라는 전혀 해독불가능한 영문으로 절 압박하는군요.<br>\n<br>\n 이럴땐 어떤 조치를 취해야 하지요?! 다시 깔기는 귀차니즘으로 안하고 있지만. 왠지 다시깔아도 이런식으로 될것같은 두려움에...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "게임내 문제는 아니고 그보다 더욱 심각한 것이지요. 게임을 하려고 하는데 울티마 프로그램 자체가 실행이 안되는 겁니다.. =ㅁ= 어제만 해도 잘 돌아가던 놈이 오늘 갑자기 Out of memory라는 제목의 애러 매세지로 날 압박하는 애러 내용은 There is no euough memory to continue executin. if you do nit have cirtual memory enabled this could be the problem. Otherwise, you may be low on disk space. or may need to increase the amount of spcce allocated for virtual memory. 라는 전혀 해독불가능한 영문으로 절 압박하는군요. 이럴땐 어떤 조치를 취해야 하지요?! 다시 깔기는 귀차니즘으로 안하고 있지만. 왠지 다시깔아도 이런식으로 될것같은 두려움에...",
+  "author": "Satanchia",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-08-22T21:10:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Botis",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 저게 해독불능이라.....<br>\n 메모리가 부족하니 쓸데없는 프로세서를 날려버리고 하시면 될듯합네다"
+    },
+    {
+      "author": "Pursan",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 아는한 말씀드릴께요 <br>\n \"실행을 계속할만한 메모리가 충분하지 않습니다. 만약 당신이 이것이 가능한 버추어메모리(버추어메모리란것은 시피유가 실행파일을 읽을려면 램에 파일을 가져가야되는데 그것이 램의 용량의 한계로 인해 부족할 때 하드에 메모리를 대신하여 사용하는 가상메모리를 뜻합니다.)가 없다면 아마 문제가 될 것입니다. 달리말하면 당신의 디스크의 공간이 부족하거나 또는 아마 필요할 것입니다. 버추어메모리의 허용량을 늘이는 것이.. 시스템 도구에서 가상메모리를 한 1000메가로 늘여보세영 ^^ 괜찮아질겁니당."
+    },
+    {
+      "author": "Bechard",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " C 드라이브에 빈공간을 1기가 이상 남기는 것이 좋습니다."
+    },
+    {
+      "author": "Clauneck",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 밀어버리는게 최고입니다;<br>\n"
+    },
+    {
+      "author": "Azatoth",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ;;저기 지금 현제 24GB쯤 남아있는데도 저런 현상이;;<br>\n"
+    },
+    {
+      "author": "Be'elzebubba",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 스와핑용량이라나요? 그 가상메모리가 부족하다는 말이 떳으니 제어판-&gt;시스템-&gt;가상메모리부분을 늘이시는게 필요한거 같은데... 아닐수도 있구요... 엑스피라면 제어판 시스템-&gt;고급-&gt;가상메모리 에 있어요.. 밑져야 본전인데 한팡 해보시는게 ^^;<br>\n"
+    },
+    {
+      "author": "Astaroth",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " ㅡㅡ저거 별루 재부팅 하면 됀다는;;; 쩝;; 저두 대략 20gb남는데 어쩔때 노래틀고 여러게 키구 하면 저런현상이 있더래죠??? 그래서 부팅하구~울온부터 킨다음에 다른것들을 키는 방식으로 하니까 해결이;;;쿨럭;;;"
+    },
+    {
+      "author": "Buer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 전 윈도 98쓰는데 울온하기전에 다른거 좀 하면 그런 메세지가 나오더군요...근본적인 해결방법도 있겠지만<br>\n<br>\n 저역시 컴맹인지라 재부팅으로 해결하고 있습니다...로그오프해도 되더군요...시간도 재부팅보다 짧고...<br>\n<br>\n 근본적인 해결방법이 가상메로리 늘려주는건가요? 저도 한번 해봐야겠습니다..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927181834",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=498",
+  "sourceEngine": "zeroboard"
+}

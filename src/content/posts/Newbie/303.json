@@ -1,0 +1,35 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "303",
+  "title": "정말 처음입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 방금전에 인터넷으로 구매해서 2시간전에 계정을 만들고 접속하려 하니 안되네요<br>\n 얼마나 기다려야 하죠?(혹시 뭐가 잘못 된건가 해서요....^^)<br>\n<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "방금전에 인터넷으로 구매해서 2시간전에 계정을 만들고 접속하려 하니 안되네요 얼마나 기다려야 하죠?(혹시 뭐가 잘못 된건가 해서요....^^)",
+  "author": "Fruitimiere",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-04-12T11:34:58",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Eligor",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 종종 그런 일이 발생합니다.<br>\n 길게는 3~4일 정도 걸리니 인내심을 가지고 기다리세요.<br>\n 그리고<a href=\"mailto:uohelp@ea.co.kr\">uohelp@ea.co.kr</a>로 메일도 한통 보내 놓으세요."
+    },
+    {
+      "author": "Be'elzebubba",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 새로만들면 메일보내는게 신상에 좋을겁니다<br>\n"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030607211118",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=303",
+  "sourceEngine": "zeroboard"
+}

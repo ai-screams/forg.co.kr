@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "434",
+  "title": "초보 질문 입니다...익셉이 뭔가요??",
+  "categoryLabel": null,
+  "bodyHtml": "\n<br>\n 대부분 사람들이 익셉익셉 그러든데...<br>\n 무슨 무기랑 관련된것 같은데..<br>\n 정확한 정의를 알기가 힘드네요..꼭 좋은 답변바랍니다...<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "대부분 사람들이 익셉익셉 그러든데... 무슨 무기랑 관련된것 같은데.. 정확한 정의를 알기가 힘드네요..꼭 좋은 답변바랍니다...",
+  "author": "Moloch",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-07-23T18:35:37",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Vaelfar",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 울온은 생산관련 스킬이 있어서 직접 물건을 만들수 있습니다..<br>\n 갑옷이나 무기는 스미스가..<br>\n 가죽갑옷이나 옷들은 테일러가...<br>\n 기타.. 곡괭이 가위.. 각종 도구는 팅커가...<br>\n 가구는 카펜터가...<br>\n 이런식으로요..<br>\n 그런데 이렇게 만드는 제품중에..<br>\n 특별히 품질이 좋은 제품이 있습니다... 해당 관련 스킬이 높을경우에 나오죠..<br>\n 이럴경우 물건에 영어로 Exceptional이라고 붙고(한글은 아마 고급 일겁니다.)<br>\n 이걸 줄여서 익셉이라고 말하는 겁니다..<br>\n 또한 해당 스킬이 GM(100)일경우에 이 익셉 제품을 만들게 되면 물건에 만든 캐릭터의<br>\n 이름이 붙는 영광(?)을 누리죠"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030927182408",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=434",
+  "sourceEngine": "zeroboard"
+}

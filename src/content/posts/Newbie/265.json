@@ -1,0 +1,29 @@
+{
+  "board": "Newbie",
+  "boardKr": "Newbie",
+  "postId": "265",
+  "title": "집에 관한 질문입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n     \t\t\t     \t\t\t     \t\t\t 공동 소유주로 맞춰 놓은 집 안에.<br>\n 잠금보관하지 않은 아이템을 몇개(돈 조금이랑 시약들)을 떨고 놨었는데.<br>\n 몇 시간 지나고 와보니.사라졌습니다...<br>\n<br>\n 집을 자동갱신으로 해놔서 시간이 지나면 바닥에 떨어진 물건들이 자동으로<br>\n 청소되는걸까요??? -_-<br>\n 아니면 도둑이 와서 훔쳐간걸까요.<br>\n<br>\n 뉴비이다보니.도둑의 손길이 어디 까지 미치는지도 잘 모르겠네요.<br>\n<br>\n 그리고 집안의 물건들 고정보관이나 잠금보관을 어떻게 시키는지도<br>\n 정말 알고 싶네요.<br>\n<br>\n 감사합니다.<br> <br>\n<div style=\"font-family:Tahoma;font-size:7pt;color:999999;\"></div>\n",
+  "bodyText": "공동 소유주로 맞춰 놓은 집 안에. 잠금보관하지 않은 아이템을 몇개(돈 조금이랑 시약들)을 떨고 놨었는데. 몇 시간 지나고 와보니.사라졌습니다... 집을 자동갱신으로 해놔서 시간이 지나면 바닥에 떨어진 물건들이 자동으로 청소되는걸까요??? -_- 아니면 도둑이 와서 훔쳐간걸까요. 뉴비이다보니.도둑의 손길이 어디 까지 미치는지도 잘 모르겠네요. 그리고 집안의 물건들 고정보관이나 잠금보관을 어떻게 시키는지도 정말 알고 싶네요. 감사합니다.",
+  "author": "a cacodaemon",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2003-03-17T04:33:07",
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Ba'al",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": " 어떤 아이템이든 집 안에서 고정이나 잠금보관 하지 않은 아이템들은<br>\n 시간이 지나면 사라집니다.<br>\n 아이템은 반드시 고정한 상자나 잠금보관 상자에 넣어야 합니다.<br>\n 물건을 고정하는 명령어는<br>\n 여기 화면 왼쪽에 보면 각종유용한정보란이 있습니다<br>\n 그곳을 참고하세여<br>\n 울온에서 사용하는 모든 명령어가 있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20030523103513",
+  "parsedAt": "2026-05-13T10:04:35.731550",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Newbie&no=265",
+  "sourceEngine": "zeroboard"
+}
