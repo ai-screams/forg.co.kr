@@ -1,0 +1,87 @@
+{
+  "board": "events_date",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 6,
+  "generatedAt": "2026-05-13T05:41:00Z",
+  "entries": [
+    {
+      "postId": "108",
+      "title": "2002-08-01",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-01T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 276,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "94",
+      "title": "2002-07-19",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-07-19T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 55,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "95",
+      "title": "2002-07-18",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-07-18T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 71,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "90",
+      "title": "2002-07-11",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-07-11T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 65,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "88",
+      "title": "2002-07-07",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-07-07T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 35,
+      "recommend": null,
+      "era": "2003"
+    },
+    {
+      "postId": "87",
+      "title": "2002-07-06",
+      "categoryLabel": null,
+      "author": "익명",
+      "authorMemberNo": null,
+      "createdAt": "2002-07-06T00:00:00",
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 72,
+      "recommend": null,
+      "era": "2003"
+    }
+  ]
+}

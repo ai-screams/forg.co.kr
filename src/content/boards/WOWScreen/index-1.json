@@ -1,0 +1,22 @@
+{
+  "board": "WOWScreen",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 1,
+  "generatedAt": "2026-05-13T05:41:00Z",
+  "entries": [
+    {
+      "postId": "2",
+      "title": "항해",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-14T18:57:20",
+      "commentCount": 26,
+      "attachmentCount": 1,
+      "hits": null,
+      "recommend": null,
+      "era": "2003"
+    }
+  ]
+}
