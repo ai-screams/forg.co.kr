@@ -9,9 +9,13 @@
  *
  * Inventory comes from `.docs/research/FORG-RECONSTRUCTION-GUIDE.md` §4
  * (메뉴/게시판 전수 목록) cross-referenced with
- * `.docs/research/cdx/e-policy-plan.json` capture counts. Boards that
- * never carried meaningful UO content (WOW spinoffs, newbieqna doubles,
- * forg.kr g5 successors) are intentionally excluded.
+ * `.docs/research/cdx/e-policy-plan.json` capture counts.
+ *
+ * forg.co.kr 의 WoW 부속 보드 (WOWNotice / WowForum / WOWEvents /
+ * WOWScreen / WowRole) 와 newbieqna 는 P3.3 Phase C 에서 다운로드 +
+ * 등록 (대다수는 회원전용 권한 페이지였으나 박물관 promise 보존을 위해
+ * URL 유지 — `<BoardPlaceholder>` 자동 렌더링, ADR-0013).
+ * forg.kr 후속 사이트 보드는 `kr_` prefix 로 별도 등록 (P2.3).
  */
 
 import type { PostEra, SourceEngine } from "@/types/post";
@@ -231,6 +235,15 @@ export const BOARDS = {
     category: "guide",
     engine: "zeroboard",
     era: "2003",
+    description: "초보자 안내 게시판 (UO 입문 + 자유 토픽)",
+  },
+  newbieqna: {
+    id: "newbieqna",
+    nameKr: "초보 질문답변",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+    description: "초보자 Q&A — Newbie 보드의 자매 게시판",
   },
   knowledge: {
     id: "knowledge",
@@ -282,6 +295,45 @@ export const BOARDS = {
     category: "other",
     engine: "gnuboard4",
     era: "2014",
+  },
+
+  // ── other (forg.co.kr WoW 부속 보드, 2003 era — Zeroboard) ──
+  // 대부분 회원 전용 권한 페이지였음. WOWScreen 만 1건의 공개 캡처 존재.
+  // 나머지는 `<BoardPlaceholder>` 자동 렌더링 (ADR-0013).
+  WOWNotice: {
+    id: "WOWNotice",
+    nameKr: "WoW 공지",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  WowForum: {
+    id: "WowForum",
+    nameKr: "WoW 포럼",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  WOWEvents: {
+    id: "WOWEvents",
+    nameKr: "WoW 이벤트",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  WOWScreen: {
+    id: "WOWScreen",
+    nameKr: "WoW 스크린샷",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+  },
+  WowRole: {
+    id: "WowRole",
+    nameKr: "WoW 롤플레이",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
   },
 
   // ── forg.kr successor site (Gnuboard5, 2019+) — `kr_` prefix avoids
