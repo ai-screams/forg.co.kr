@@ -17,10 +17,11 @@ The README describes the goal in detail. The two non-obvious facts that affect e
 
 The `.docs/` directory holds the internal context. It is **gitignored on purpose** — never stage it. Future agents must read it to understand intent:
 
-- `.docs/ADR/` — accepted Architecture Decision Records numbered ADR-0001 through ADR-NNNN. The index at `.docs/ADR/README.md` lists all decisions in scope. Read the ADR before changing tokens, era system, ETL, or stack choices. Current: **13 ADRs** (ADR-0001 through ADR-0013; ADR-0009 superseded). Key decisions:
+- `.docs/ADR/` — accepted Architecture Decision Records numbered ADR-0001 through ADR-NNNN. The index at `.docs/ADR/README.md` lists all decisions in scope. Read the ADR before changing tokens, era system, ETL, or stack choices. Current: **14 ADRs** (ADR-0001 through ADR-0014; ADR-0009 superseded). Key decisions:
   - ADR-0011: Image storage — git-direct commit (56 MB / 2,715 files across 9 boards)
   - ADR-0012: single-URL CDX fallback layer for body images (Phase G, ~15% → 30~50% recovery target)
-  - ADR-0013: All registered boards enumerated (32 boards total; unparsed boards use placeholder component)
+  - ADR-0013: All registered boards enumerated (42 boards total; unparsed boards use placeholder component)
+  - ADR-0014: Licensing — dual MIT (code) + original-authors-retain (content) with takedown SLA
 - `.docs/considerations/` — forward-looking notes (`CONS-NNNN`) for decisions deliberately deferred. Lighter than ADRs; each one names its re-evaluation trigger (e.g. CONS-0001 captures the future interactive-board / DB scenario). Resolution path is to be promoted to an ADR or rejected.
 - `.docs/plan/ROADMAP.md` — phased checklist (P0–P5). Tasks reference ADR numbers. Update checkboxes as work completes.
 - `.docs/research/` — Wayback CDX results, raw HTML captures, the original `FORG-RECONSTRUCTION-GUIDE.md` describing the historical site's structure (boards, colors, layout). The reconstruction-guide explains things like the original board IDs (UoBoard, Q_A, Role, …) and the Zeroboard 4.1pl4 / Gnuboard4 / Gnuboard5 engine progression — invaluable context for the parser work.
@@ -44,8 +45,8 @@ Three tiers of data, all under `.docs/research/`:
 
 - **bronze** `archive/A/{board}/{post_id}.html` — raw Wayback captures, EUC-KR-encoded, treated as immutable. The downloader (`scripts/etl/download.py`) reads `cdx/e-policy-plan.json` and writes here. Phase A finished at 11,034/11,035; the missing one (`ScreenShot/10481`) is a fixed URL-encoding bug (`_ascii_safe_url` patch) that recovers on the next downloader run.
 - **silver** `archive-clean/A/{board}/{post_id}.html` — UTF-8 + Wayback chrome stripped, produced by `scripts/etl/01-decode.py` using BeautifulSoup4 + lxml (html5lib fallback). Atomic writes (`.tmp` then `rename`); idempotent so re-running only processes new files.
-- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON. Produced by `scripts/etl/02-parse-zeroboard.py` (Pydantic-validated). **10,734 posts across 9 boards** (UoBoard 4393 / Q_A 2735 / Role 1197 / Notice 862 / ScreenShot 656 / Events 477 / Items 229 / column 167 / UOForum 18) ship in git. UoBoard2 (Gnuboard4 23건) excluded via `EXCLUDE_BOARDS` and deferred to P2.2's separate parser. `Post.capturedAt` is the real Wayback timestamp (sourced from `e-policy-plan.json` → `.progress.jsonl`, fail-loud if missing); `Post.parsedAt` is the ISO 8601 parse-time stamp.
-- **gold (index)** `src/content/boards/{board}/index-{N}.json` — paginated board index, 50 entries per page, `createdAt` desc. Produced by `scripts/etl/03-build-index.py`. **219 chunks** ship today; auto-rebuilds when posts grow.
+- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON. Produced by `scripts/etl/02-parse-zeroboard.py` (Pydantic-validated). **13,290 posts across 37 boards** ship in git: UoBoard 4393 / Q_A 2735 / Role 1197 / Notice 862 / ScreenShot 656 / Events 477 / Items 229 / column 167 / UOForum 18 / Newbie 345 / newbieqna 39 / WOWNotice 7 / WowForum 2 / WOWEvents 1 / WOWScreen 1 / WowRole 1 (Phase B/C, P3.3). UoBoard2 (Gnuboard4 23건) excluded via `EXCLUDE_BOARDS` and deferred to P2.2's separate parser. `Post.capturedAt` is the real Wayback timestamp (sourced from `e-policy-plan.json` → `.progress.jsonl`, fail-loud if missing); `Post.parsedAt` is the ISO 8601 parse-time stamp.
+- **gold (index)** `src/content/boards/{board}/index-{N}.json` — paginated board index, 50 entries per page, `createdAt` desc. Produced by `scripts/etl/03-build-index.py`. **289 chunks** ship today; auto-rebuilds when posts grow.
 - **recovered images** `public/img/posts/{board}/{post_id}/{filename}` — Wayback-fetched binaries plus per-post `.manifest.json` sidecars (`{filename, originalUrl, capturedAt, sizeBytes, sha256}`). Produced by ADR-0010 Phase D (`scripts/etl/download-images.py`). **2,715 files / 56 MB across 9 boards.** Gold-tier `<img src>` is rewritten to `/img/posts/...` (recoverable) or `/img/placeholder/missing.svg` (unrecoverable) by Phase F (`scripts/etl/04-rewrite-image-urls.py`); both states preserve the original Wayback URL on `data-original-src`. ADR-0011 records the git-direct storage decision (re-evaluate at 150 / 200 MB / 1 GB thresholds).
 
 Wayback was downloaded with the `id_` modifier so the captures arrive without Wayback's chrome to begin with — `01-decode.py`'s chrome counters are normally 0. They become non-zero only if someone re-downloads with `if_`/`fw_`. Don't remove the cleanup logic on that basis.
@@ -116,7 +117,7 @@ The home (`src/app/page.tsx`) is now the **final 2014 forg.co.kr visual identity
   │            Box 7: Events                         │
   │            Box 8: Items                          │
   │                                                   │
-  │            [32 total registered boards]          │
+  │            [42 total registered boards]          │
   │            [unparsed boards → <BoardPlaceholder>]│
   │                                                   │
   └──────────────────────────────────────────────────┘
@@ -127,7 +128,9 @@ The home (`src/app/page.tsx`) is now the **final 2014 forg.co.kr visual identity
   5 missing (hover variants, CSS fallback)
 ```
 
-All 32 registered boards are enumerated at build time via `generateStaticParams` in `(board)/[board]/page.tsx`. Unparsed boards (those with `parsed: false` in `src/lib/boards.ts`) render `<BoardPlaceholder>` instead of live data — maintains URL structure without ETL completion burden.
+All 42 registered boards are enumerated at build time via `generateStaticParams` in `(board)/[board]/page.tsx`. Unparsed boards (those with `parsed: false` in `src/lib/boards.ts`) render `<BoardPlaceholder>` instead of live data — maintains URL structure without ETL completion burden.
+
+**Phase C (P3.3, completed):** Added 391 posts across 4 new gold-tier boards (Newbie 345 / newbieqna 39 / events_date 6 / WOWScreen 1) plus 5 placeholder boards for WoW family (WOWNotice / WowForum / WOWEvents / WowRole / others). New `buzzard` skin parser added to `02-parse-zeroboard.py` for `events_date` event-calendar support. Total gold tier: 37 boards / 13,290 posts.
 
 ### Background downloads
 
