@@ -367,7 +367,7 @@ _PHASE_B_G5_SKIP: frozenset[str] = frozenset()
 
 
 def iter_input_files(board_filter: Optional[str]) -> list[Path]:
-    """Walk archive/{A,B}/* and yield HTML files. Stable order for resumable runs.
+    """Walk archive/{A,B,C}/* and yield HTML files. Stable order for resumable runs.
 
     Phase A and Phase B both ship under `INPUT_DIR/{phase}/{board}/*.html`;
     the output mirror in `OUTPUT_DIR/{phase}/{board}/*.html` is preserved by
@@ -376,7 +376,7 @@ def iter_input_files(board_filter: Optional[str]) -> list[Path]:
     skip decode until P2.3 introduces the g5 parser.
     """
     files: list[Path] = []
-    for phase in ("A", "B"):
+    for phase in ("A", "B", "C"):
         root = INPUT_DIR / phase
         if not root.is_dir():
             continue
@@ -390,7 +390,7 @@ def iter_input_files(board_filter: Optional[str]) -> list[Path]:
             for f in sorted(board_dir.glob("*.html")):
                 files.append(f)
     if not files:
-        sys.exit(f"FATAL: no input HTML found under {INPUT_DIR}/{{A,B}}/")
+        sys.exit(f"FATAL: no input HTML found under {INPUT_DIR}/{{A,B,C}}/")
     return files
 
 
@@ -431,7 +431,7 @@ def main() -> None:
 
     print(
         f"[01-decode] planned={len(files)} todo={len(todo)} skipped={skipped_count} "
-        f"input={INPUT_DIR}/{{A,B}} output={OUTPUT_DIR}/{{A,B}} "
+        f"input={INPUT_DIR}/{{A,B,C}} output={OUTPUT_DIR}/{{A,B,C}} "
         f"dry_run={args.dry_run} keep_wayback={args.keep_wayback}",
         file=sys.stderr,
     )

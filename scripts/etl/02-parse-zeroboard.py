@@ -117,6 +117,11 @@ _FOREIGN_SKIN_MARKERS: tuple[tuple[str, str], ...] = (
     ("theme/st-basic", "skin_gnuboard5"),
 )
 
+# Buzzard skin — calendar-style Zeroboard skin used by `events_date`. Posts are
+# dated calendar entries with no explicit title or author (write-time only had
+# a date subject and anonymous body). Routed to `parse_buzzard_post` below.
+_BUZZARD_SKIN_MARKER: str = "skin/buzzard/"
+
 
 def detect_non_post_page(html: str) -> str | None:
     """Return a reason string if this is not a real post, else None."""
@@ -469,6 +474,87 @@ def load_wayback_ts_index() -> dict[tuple[str, str], str]:
 # ── Per-file pipeline ──────────────────────────────────────────────────-
 
 
+def _parse_buzzard_date(text: str) -> datetime | None:
+    """Parse buzzard skin date 'YYYY/M/D' (no time component) → datetime."""
+    m = re.match(r"^\s*(\d{4})/(\d{1,2})/(\d{1,2})\s*$", text)
+    if not m:
+        return None
+    return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+
+
+def parse_buzzard_post(
+    soup: BeautifulSoup,
+    *,
+    board: str,
+    post_id: str,
+    captured_at: str,
+    parsed_at: datetime,
+) -> Post:
+    """Parse a buzzard-skin Zeroboard post (calendar event entry).
+
+    The buzzard skin (used by `events_date`) has no explicit title or author
+    field — the date itself is the subject and posts are anonymous. We
+    synthesise `title = "YYYY-MM-DD"` and `author = "익명"` to satisfy the
+    schema's min_length=1 invariant while preserving the original data shape.
+    """
+    created_at: datetime | None = None
+    hits: int | None = None
+    for b in soup.find_all("b"):
+        label = b.get_text(strip=True).replace(" ", "")  # "날 짜 :" → "날짜:"
+        td = b.find_parent("td") if hasattr(b, "find_parent") else None
+        if not isinstance(td, Tag):
+            continue
+        next_td = td.find_next_sibling("td")
+        if not isinstance(next_td, Tag):
+            continue
+        val = next_td.get_text(strip=True)
+        if label.startswith("날짜"):
+            created_at = _parse_buzzard_date(val)
+        elif label.startswith("조회"):
+            try:
+                hits = int(val.replace(",", ""))
+            except ValueError:
+                hits = None
+
+    if created_at is None:
+        raise ValueError("missing date in buzzard skin meta")
+
+    body_td = soup.find("td", style=re.compile(r"word-break:break-all.*padding:10px"))
+    body_html_raw = ""
+    if isinstance(body_td, Tag):
+        inner = body_td.find("span", style=re.compile(r"line-height", re.I))
+        target = inner if isinstance(inner, Tag) else body_td
+        body_html_raw = target.decode_contents()
+    body_html = sanitise_html(body_html_raw)
+    body_text_soup = BeautifulSoup(body_html, "lxml")
+    body_text = body_text_soup.get_text(separator=" ", strip=True)
+
+    era = "2014" if created_at >= ERA_BREAKPOINT else "2003"
+
+    return Post(
+        board=board,
+        boardKr=board,
+        postId=post_id,
+        title=created_at.strftime("%Y-%m-%d"),
+        categoryLabel=None,
+        bodyHtml=body_html,
+        bodyText=body_text or " ",
+        author="익명",
+        authorMemberNo=None,
+        authorHomepage=None,
+        createdAt=created_at,
+        hits=hits,
+        recommend=None,
+        attachments=[],
+        comments=[],
+        era=era,
+        capturedAt=captured_at,
+        parsedAt=parsed_at,
+        originalUrl=f"http://forg.co.kr/_zb/zboard.php?id={board}&no={post_id}",
+        sourceEngine="zeroboard",
+    )
+
+
 def parse_one(
     html: str,
     *,
@@ -482,6 +568,16 @@ def parse_one(
         raise _NonPostPage(reason)
 
     soup = BeautifulSoup(html, "lxml")
+
+    # Buzzard skin (calendar-style — `events_date`) — divergent layout, no
+    # meta-font / title-row pattern. Route to dedicated parser before the
+    # standard meta-font path runs and fails on missing createdAt.
+    if _BUZZARD_SKIN_MARKER in html:
+        return parse_buzzard_post(
+            soup,
+            board=board, post_id=post_id,
+            captured_at=captured_at, parsed_at=parsed_at,
+        )
 
     raw_title = find_title(soup) or ""
     category_label, title = split_category_prefix(raw_title)
@@ -607,7 +703,7 @@ def _write_summary(stats: Stats) -> None:
 
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    """Walk `INPUT_BASE/{A,B}/{board}/*.html` and yield `(board, post_id, path)`.
+    """Walk `INPUT_BASE/{A,B,C}/{board}/*.html` and yield `(board, post_id, path)`.
 
     Phase A and Phase B share the same Zeroboard parser, so we collapse
     them here. Each (board, post_id) pair is unique across phases — the
@@ -616,7 +712,7 @@ def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
     """
     files: list[tuple[str, str, Path]] = []
     found_any_phase = False
-    for phase in ("A", "B"):
+    for phase in ("A", "B", "C"):
         root = INPUT_BASE / phase
         if not root.is_dir():
             continue
@@ -675,7 +771,7 @@ def main() -> None:
 
     print(
         f"[02-parse] planned={len(inputs)} todo={len(todo)} skipped={skipped} "
-        f"input={INPUT_BASE}/{{A,B}} output={OUTPUT_DIR} dry_run={args.dry_run}",
+        f"input={INPUT_BASE}/{{A,B,C}} output={OUTPUT_DIR} dry_run={args.dry_run}",
         file=sys.stderr,
     )
     if not todo:
