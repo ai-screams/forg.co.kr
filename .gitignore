@@ -414,6 +414,9 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 .tool-versions
 .nvmrc       # commit if standardized; remove this line if you do
 
+# Local tool marker files (not read by the build)
+.scuv-version
+
 
 # ╔═══════════════════════════════════════════════════════════════╗
 # ║ Whitelist (re-include things accidentally caught above)       ║
