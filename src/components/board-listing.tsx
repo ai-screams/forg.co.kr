@@ -10,7 +10,7 @@
  *                                 `/{board}/{postId}` route disambiguated)
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatShortDate } from "@/lib/dates";

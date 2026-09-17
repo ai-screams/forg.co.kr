@@ -11,7 +11,7 @@
  * for a static-export read-only museum.
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
