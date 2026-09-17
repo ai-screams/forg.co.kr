@@ -1,6 +1,10 @@
-# Cloudflare Pages strips `charset=utf-8` from the default HTML
-# Content-Type for static export builds. Force it back so Korean Hangul
-# renders without browser sniffing. Tracked upstream as
-# cloudflare/workers-sdk#9599.
-/*
-  Content-Type: text/html; charset=utf-8
+# Cloudflare Pages custom headers.
+#
+# Do not set Content-Type here. A path rule applies to every file it matches,
+# so `/*` with `Content-Type: text/html` also relabels JS, CSS and SVG. Pages
+# sends `X-Content-Type-Options: nosniff`, so browsers then refuse to run the
+# scripts or apply the stylesheets.
+#
+# Pages may omit `charset=utf-8` on HTML (cloudflare/workers-sdk#9599). Korean
+# text still decodes correctly because Next.js emits `<meta charSet="utf-8"/>`
+# as the first element of every page's <head>.
