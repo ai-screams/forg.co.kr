@@ -36,7 +36,7 @@
  * to typography so the layout never breaks.
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";

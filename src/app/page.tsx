@@ -22,7 +22,7 @@
  * falls back to typography / OKLCH CSS — see `chromeUrl` in `lib/chrome`.
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import { Home2003 } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";

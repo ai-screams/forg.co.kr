@@ -6,7 +6,7 @@
  * come from the `:root[data-era]` CSS variables in `globals.css`.
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import { EraToggle } from "@/components/era-toggle";
 

@@ -8,7 +8,7 @@
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
  */
 
-import Link from "next/link";
+import Link from "@/components/link";
 
 import { type BoardMeta } from "@/lib/boards";
 
