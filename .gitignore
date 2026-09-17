@@ -222,6 +222,7 @@ lerna-debug.log*
 
 # Build outputs
 dist/
+dist-search/
 build/
 out/
 .next/

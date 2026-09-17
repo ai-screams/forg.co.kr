@@ -1,14 +1,17 @@
 /**
  * /search — global full-text search powered by Pagefind.
  *
- * Pagefind is a postbuild artifact (`out/pagefind/`). During `pnpm dev` the
- * index does not exist, so the load fails gracefully and a dev-mode notice
- * is shown instead. In production (`pnpm build` + postbuild) the index is
- * served as static files from `/pagefind/`.
+ * Pagefind is a postbuild artifact. Locally (`pnpm dev`) the index does not
+ * exist, so the load fails gracefully and a dev-mode notice is shown.
  *
- * We load `/pagefind/pagefind.js` at runtime via an indirect `import()`
+ * In production the Pagefind bundle is hosted on Cloudflare R2 (separated
+ * from the Cloudflare Pages site to satisfy the 20,000-file deploy cap —
+ * see ADR-0015). The base URL is provided at build time via
+ * `NEXT_PUBLIC_PAGEFIND_BASE` (default `/pagefind/` for local preview).
+ *
+ * We load `${PAGEFIND_BASE}pagefind.js` at runtime via an indirect `import()`
  * expression so TypeScript does not attempt to resolve the URL as a module
- * path at typecheck time (the file only exists after the postbuild step).
+ * path at typecheck time.
  *
  * Tailwind v4 era-aware tokens (`bg-(--era-content-bg)` etc.) are used
  * throughout — no era-specific branching in JS, pure CSS variable resolution.
@@ -42,12 +45,19 @@ function useDebouncedValue(value: string, delayMs: number): string {
  * never attempts to resolve `/pagefind/pagefind.js` as a module path during
  * typecheck — it only exists after the postbuild step.
  */
+/**
+ * Resolves to e.g. `/pagefind/` (local) or `https://search.forg.co.kr/`
+ * (production R2 bundle). Always ends with `/` so we can concatenate.
+ */
+const PAGEFIND_BASE_RAW = process.env["NEXT_PUBLIC_PAGEFIND_BASE"] ?? "/pagefind/";
+const PAGEFIND_BASE = PAGEFIND_BASE_RAW.endsWith("/") ? PAGEFIND_BASE_RAW : `${PAGEFIND_BASE_RAW}/`;
+
 async function loadPagefind(): Promise<{
   search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
 } | null> {
   try {
     // Indirect expression import — prevents TS module resolution
-    const url = "/pagefind/pagefind.js";
+    const url = `${PAGEFIND_BASE}pagefind.js`;
     const pf = await (Function("u", "return import(u)")(url) as Promise<unknown>);
     return pf as {
       search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
@@ -141,7 +151,7 @@ export default function SearchPage() {
         {/* Search header */}
         <div className="border-b border-(--era-input-border) px-6 py-5">
           <h1 className="text-forg-ink text-xl font-bold">검색</h1>
-          <p className="text-forg-muted mt-1 text-xs">forg.co.kr 아카이브 전체 (12,899 게시글)</p>
+          <p className="text-forg-muted mt-1 text-xs">forg.co.kr 아카이브 전체 (13,290 게시글)</p>
           <div className="mt-4">
             <input
               type="search"
