@@ -183,9 +183,9 @@ export async function Home2003() {
   ]);
 
   return (
-    <div className="bg-forg-slate flex w-full flex-1 justify-center">
+    <div className="bg-forg-slate flex w-full flex-1">
       <div
-        className="flex w-full max-w-[797px] flex-col gap-0 bg-white text-[11px]"
+        className="flex w-full max-w-[797px] shrink-0 flex-col gap-0 bg-white text-[11px]"
         style={{ fontFamily: "Verdana, '굴림', Gulim, Tahoma, sans-serif" }}
       >
         <FrameTop2003 />

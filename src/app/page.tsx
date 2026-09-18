@@ -117,11 +117,11 @@ export default async function HomePage() {
   // no React re-render) and lets the static export ship both layouts.
   return (
     <>
-      <div className="era-2014-only flex flex-1 justify-center bg-(--era-page-bg)">
-        <div className="forg-2014-shell flex w-full max-w-[900px] gap-0">
+      <div className="era-2014-only flex flex-1 bg-(--era-page-bg)">
+        <div className="forg-2014-shell flex w-full gap-0">
           <LeftRail />
           <GameCategorySidebar />
-          <main className="flex flex-1 flex-col bg-(--era-content-bg)">
+          <main className="flex w-full flex-col bg-(--era-content-bg) sm:w-[680px] sm:shrink-0">
             <SiteHeader2014 />
             <BoxGrid boxes={boxes} />
             <VisitorCounter total={TOTAL_VISITORS} />
