@@ -203,52 +203,86 @@ export async function Home2003() {
 /*  Frame: top — forg logo + small login/signup links + 7-button menu     */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameTop2003() {
-  const leftLogo = chromeUrl("left_logo1.gif"); // 100×42 forg logo
+  // frame-top-2003: `<table width="680">` with `<td width="100" height="37"
+  // rowspan="3">` holding left_logo.gif (100×42 — the 2003 logo, distinct
+  // from 2014's left_logo1.gif), then three 580px rows: the #FFC73B login
+  // bar, a 4px t_bar.gif rule and the menu row of 80×20 buttons. 18+4+20
+  // equals the logo height, so the art spans all three rows.
+  const leftLogo = chromeUrl("left_logo.gif");
+  const tBarUrl = chromeUrl("t_bar.gif");
+  const tLineUrl = chromeUrl("t_line.gif");
+
   return (
-    <header className="bg-forg-gold border-b border-(--era-input-border)">
-      {/* Header row — logo on left, tiny login/signup on right. */}
-      <div className="flex items-end justify-between px-2 pt-1 pb-0">
-        <Link href="/" aria-label="forg.co.kr 메인" className="shrink-0">
+    <header>
+      <div className="grid grid-cols-[100px_1fr] items-stretch">
+        <Link
+          href="/"
+          aria-label="forg.co.kr 메인"
+          className="row-span-3 flex items-start justify-start"
+        >
           {leftLogo ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export
-            <img
-              src={leftLogo}
-              alt="Forg's World"
-              width={100}
-              height={42}
-              className="block h-[42px] w-[100px]"
-            />
+            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
+            <img src={leftLogo} alt="Forg's World" width={100} height={42} className="block" />
           ) : (
-            <span className="text-forg-ink block font-mono text-base leading-tight font-bold tracking-tight">
+            <span className="text-forg-ink block px-1 font-mono text-base leading-tight font-bold">
               forg<span className="text-forg-ink/70">&apos;s World</span>
             </span>
           )}
         </Link>
-        <div
-          aria-label="로그인 / 가입 (박물관 모드, 비활성)"
-          className="text-forg-ink mb-1 flex items-center gap-1 text-[10px] select-none"
-          title="박물관 모드 — 로그인 비활성"
-        >
-          <span aria-hidden className="text-[9px] opacity-60">
-            ⌚
-          </span>
-          <span className="font-bold">Login</span>
-          <span className="opacity-60">|</span>
-          <span className="font-bold">Sign Up</span>
-        </div>
-      </div>
 
-      {/* 7-button menu bar — gray background matches the original
-         frame-top-2003 chrome (the GIF buttons themselves are
-         transparent / cream so the surrounding bar reads gray). */}
-      <nav aria-label="2003 상단 메뉴" className="bg-forg-menu flex items-center px-2 py-[1px]">
-        {TOP_MENU_2003.map((item) => (
-          <TopMenuButton2003 key={item.id} item={item} />
-        ))}
-        <span className="grow" />
-        <FaqIcon2003 />
-      </nav>
+        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
+          <InertChrome2003 asset="t_login.gif" label="Login" title="박물관 모드 — 로그인 비활성" />
+          <InertChrome2003
+            asset="t_sign.gif"
+            label="Sign Up"
+            title="박물관 모드 — 회원가입 비활성"
+          />
+        </div>
+
+        <div
+          className="bg-forg-gold h-[4px] w-full"
+          style={
+            tBarUrl
+              ? { backgroundImage: `url(${tBarUrl})`, backgroundRepeat: "repeat-x" }
+              : undefined
+          }
+        />
+
+        <nav aria-label="2003 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center">
+          {TOP_MENU_2003.map((item) => (
+            <TopMenuButton2003 key={item.id} item={item} />
+          ))}
+          <span className="grow" />
+          <FaqIcon2003 />
+        </nav>
+      </div>
+      {/* `<td width="680" height="12" background=t_line.gif bgcolor="#F1F1F2">` */}
+      <div
+        aria-hidden
+        className="bg-forg-menu h-[12px] w-full"
+        style={
+          tLineUrl
+            ? { backgroundImage: `url(${tLineUrl})`, backgroundRepeat: "repeat-x" }
+            : undefined
+        }
+      />
     </header>
+  );
+}
+
+/** Recovered 2003 chrome button the museum leaves inert. */
+function InertChrome2003({ asset, label, title }: { asset: string; label: string; title: string }) {
+  const url = chromeUrl(asset);
+  if (!url) {
+    return (
+      <span title={title} className="text-forg-ink text-[10px] font-bold select-none">
+        {label}
+      </span>
+    );
+  }
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 70×15 chrome
+    <img src={url} alt={label} title={title} width={70} height={15} className="block" />
   );
 }
 
@@ -374,24 +408,54 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
 /*  Frame: main — 3-column content (left m_*, right r_*, no decoration)   */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightBoxes: BoxData[] }) {
+  // frame-main-2003: `<table width="645" align="center">` with four columns —
+  // 350 (boxes, background m_bar.gif) / 30 (m_middle_logo.gif, unrecovered) /
+  // 185 (boxes, background r_bar.gif) / 80 (r_logo_1.gif, unrecovered).
+  // The two decorative columns stay empty rather than hold a stand-in.
+  const mBar = chromeUrl("m_bar.gif");
+  const rBar = chromeUrl("r_bar.gif");
+  const mBarLogo = chromeUrl("m_bar_logo.gif");
+
   return (
-    <section
-      aria-label="2003 메인 콘텐츠"
-      className="flex flex-1 flex-col gap-2 bg-white px-3 py-2"
-    >
+    <section aria-label="2003 메인 콘텐츠" className="flex flex-1 flex-col bg-white px-3 py-2">
       <MainHeading />
-      <div className="grid grid-cols-1 gap-[5px] md:grid-cols-[350px_185px]">
-        <div className="space-y-2">
+      <div className="mx-auto grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
+        <div
+          className="space-y-2"
+          style={
+            mBar ? { backgroundImage: `url(${mBar})`, backgroundRepeat: "repeat-y" } : undefined
+          }
+        >
           {leftBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} />
           ))}
         </div>
-        <div className="space-y-2">
+        <div aria-hidden className="hidden md:block" />
+        <div
+          className="space-y-2"
+          style={
+            rBar ? { backgroundImage: `url(${rBar})`, backgroundRepeat: "repeat-y" } : undefined
+          }
+        >
           {rightBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} compact />
           ))}
           <LastExpansionPackBox />
         </div>
+        <div aria-hidden className="hidden md:block" />
+      </div>
+      {/* Closing rule row: m_bar_logo.gif 350×20 over the 350px column, the
+          rest `bgcolor="#5A6269"`. */}
+      <div className="mx-auto mt-2 grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
+        {mBarLogo ? (
+          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
+          <img src={mBarLogo} alt="" width={350} height={20} className="block" />
+        ) : (
+          <div className="h-[20px]" />
+        )}
+        <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
+        <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
+        <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
       </div>
     </section>
   );
