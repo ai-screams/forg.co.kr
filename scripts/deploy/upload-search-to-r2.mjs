@@ -75,11 +75,30 @@ function* walk(dir) {
   }
 }
 
+// aws4fetch retries 5xx/429 itself, but a network error ("fetch failed")
+// throws straight through — retry those here. A first full run lost 9 of
+// 13,346 files that way.
+const NETWORK_ATTEMPTS = 4;
+
+async function putWithRetry(url, init) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await aws.fetch(url, init);
+    } catch (e) {
+      if (attempt >= NETWORK_ATTEMPTS) {
+        const code = e.cause?.code ? ` (${e.cause.code})` : "";
+        throw new Error(`${e.message}${code} after ${attempt} attempts`);
+      }
+      await new Promise((r) => setTimeout(r, 500 * 2 ** (attempt - 1)));
+    }
+  }
+}
+
 async function uploadOne(file) {
   const key = relative(SRC, file).split(/[\\/]/).join("/");
   const body = readFileSync(file);
   const url = `${ENDPOINT}/${BUCKET}/${key}`;
-  const res = await aws.fetch(url, {
+  const res = await putWithRetry(url, {
     method: "PUT",
     body,
     headers: { "Content-Type": mime(file) },
