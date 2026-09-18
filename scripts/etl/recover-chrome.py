@@ -140,6 +140,68 @@ CHROME_TARGETS: list[tuple[str, str]] = [
     ("/skin/latest/last_forg/img/icon_hot.gif",   "skin_icon_hot.gif"),
     ("/skin/latest/last_forg/img/icon_file.gif",  "skin_icon_file.gif"),
     ("/skin/latest/last_forg/img/icon_reply.gif", "skin_icon_reply.gif"),
+    # ── Second pass (2026-09-18) ────────────────────────────────────────
+    # Diffing every image referenced by .docs/research/snapshots/*.html
+    # against this list found 51 assets that had never been probed at all —
+    # a gap in the inventory, not a Wayback miss. The board-skin block is
+    # what the board-list pages need to look like the original rather than
+    # an approximation. Paths outside /images/ keep a source-marking prefix
+    # so flattened filenames cannot collide (e.g. /images/t.gif vs
+    # /_zb/images/t.gif).
+    # Zeroboard 4.1 `kritz_normal2` board skin (uoboard-2007, notice-2007)
+    ("/_zb/skin/kritz_normal2/title_name.gif",   "zb_kritz_title_name.gif"),
+    ("/_zb/skin/kritz_normal2/title_title.gif",  "zb_kritz_title_title.gif"),
+    ("/_zb/skin/kritz_normal2/title_date.gif",   "zb_kritz_title_date.gif"),
+    ("/_zb/skin/kritz_normal2/title_hit.gif",    "zb_kritz_title_hit.gif"),
+    ("/_zb/skin/kritz_normal2/title_icon.gif",   "zb_kritz_title_icon.gif"),
+    ("/_zb/skin/kritz_normal2/list_notice.gif",  "zb_kritz_list_notice.gif"),
+    ("/_zb/skin/kritz_normal2/new_head.gif",     "zb_kritz_new_head.gif"),
+    ("/_zb/skin/kritz_normal2/old_head.gif",     "zb_kritz_old_head.gif"),
+    ("/_zb/skin/kritz_normal2/subject_on.gif",   "zb_kritz_subject_on.gif"),
+    ("/_zb/skin/kritz_normal2/name_off.gif",     "zb_kritz_name_off.gif"),
+    ("/_zb/skin/kritz_normal2/content_on.gif",   "zb_kritz_content_on.gif"),
+    ("/_zb/skin/kritz_normal2/level1_write.gif", "zb_kritz_level1_write.gif"),
+    ("/_zb/skin/kritz_normal2/level2_write.gif", "zb_kritz_level2_write.gif"),
+    ("/_zb/skin/kritz_normal2/images/search_left.gif",   "zb_kritz_search_left.gif"),
+    ("/_zb/skin/kritz_normal2/images/search_right.gif",  "zb_kritz_search_right.gif"),
+    ("/_zb/skin/kritz_normal2/images/search_right2.gif", "zb_kritz_search_right2.gif"),
+    ("/_zb/images/t.gif",                        "zb_t.gif"),
+    # 2014 sidebar rules + right column, referenced by 2014-12-18.html
+    ("/images/l_bar.gif",                        "l_bar.gif"),
+    ("/images/blank_l_line.gif",                 "blank_l_line.gif"),
+    ("/images/right_bg.gif",                     "right_bg.gif"),
+    # 2014 login box skin (inert in the museum, but part of the header art)
+    ("/skin/outlogin/forg/img/btn_register.gif",        "outlogin_btn_register.gif"),
+    ("/skin/outlogin/forg/img/btn_password_forget.gif", "outlogin_btn_password_forget.gif"),
+    ("/skin/outlogin/forg/img/close.gif",               "outlogin_close.gif"),
+    ("/skin/outlogin/forg/img/icon.gif",                "outlogin_icon.gif"),
+    # 2003 / 2007 front page furniture
+    ("/best_22.gif",                             "best_22.gif"),
+    ("/UObox_1.gif",                             "UObox_1.gif"),
+    ("/count.gif",                               "count.gif"),
+    ("/bgm/en.gif",                              "bgm_en.gif"),
+    ("/bgm/ser.gif",                             "bgm_ser.gif"),
+    ("/images/left_logo.gif",                    "left_logo.gif"),
+    ("/images/r_bar.gif",                        "r_bar.gif"),
+    ("/images/5px.gif",                          "5px.gif"),
+    ("/images/t.gif",                            "t.gif"),
+    ("/images/_cl.gif",                          "_cl.gif"),
+    ("/images/new.gif",                          "new.gif"),
+    ("/images/notice_logo.gif",                  "notice_logo.gif"),
+    ("/images/forg_main_logo_4.gif",             "forg_main_logo_4.gif"),
+    # Newbie guide art (skill_newbie), referenced by newbie-guide.html
+    ("/skill_newbie/images/main_dragon.gif",        "newbie_main_dragon.gif"),
+    ("/skill_newbie/images/forg_background.gif",    "newbie_forg_background.gif"),
+    ("/skill_newbie/images/alpha_background.gif",   "newbie_alpha_background.gif"),
+    ("/skill_newbie/images/alpha_background_1.gif", "newbie_alpha_background_1.gif"),
+    ("/skill_newbie/images/b_logo.gif",             "newbie_b_logo.gif"),
+    ("/skill_newbie/images/ball.gif",               "newbie_ball.gif"),
+    ("/skill_newbie/images/g.gif",                  "newbie_g.gif"),
+    ("/skill_newbie/images/memo_t.gif",             "newbie_memo_t.gif"),
+    ("/skill_newbie/images/memo_m.gif",             "newbie_memo_m.gif"),
+    ("/skill_newbie/images/memo_b.gif",             "newbie_memo_b.gif"),
+    ("/skill_newbie/images/menu.gif",               "newbie_menu.gif"),
+    ("/skill_newbie/images/top.gif",                "newbie_top.gif"),
 ]
 
 
