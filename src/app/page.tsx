@@ -210,6 +210,12 @@ function GameCategorySidebar() {
 /*  Header (53px) — logo + login bar + 7-button menu                      */
 /* ──────────────────────────────────────────────────────────────────── */
 
+// Row heights come straight from the original: `<td height="18px">` gold
+// login bar, `<td height="4px" background="t_bar.gif">`, then the menu row
+// whose 80×20 buttons make it 20px. 18+4+20 = 42, exactly the height of
+// left_logo1.gif — the logo art is drawn to span all three rows, its top
+// edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
+// as a white gap under the logo and breaks that blend.
 function SiteHeader2014() {
   const logoUrl = chromeUrl("left_logo1.gif");
   const tBarUrl = chromeUrl("t_bar.gif");
@@ -239,7 +245,7 @@ function SiteHeader2014() {
         </div>
 
         <div
-          className="bg-forg-gold h-[5px] w-full"
+          className="bg-forg-gold h-[4px] w-full"
           style={
             tBarUrl
               ? { backgroundImage: `url(${tBarUrl})`, backgroundRepeat: "repeat-x" }
@@ -247,7 +253,7 @@ function SiteHeader2014() {
           }
         />
 
-        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[24px] items-center px-2">
+        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center px-2">
           {TOP_MENU.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
