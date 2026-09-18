@@ -70,14 +70,20 @@ const TOP_MENU: MenuConfig[] = [
   { id: "Trash", asset: "t_b_trash.gif", hoverAsset: "t_b_trash_1.gif", label: "트래쉬" },
 ];
 
-const GAME_CATEGORIES: { id: BoardId; label: string }[] = [
-  { id: "Ultima", label: "울티마온라인" },
-  { id: "Diablo", label: "디아블로3" },
-  { id: "DF", label: "던전파이터" },
-  { id: "LoL", label: "리그오브레전드" },
-  { id: "Star2", label: "스타크래프트2" },
-  { id: "Console", label: "콘솔게임" },
+// Labels and `title`s are the 2014-12-18 sidebar verbatim, including the
+// leading dash the original used as its bullet.
+const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
+  { id: "Ultima", label: "-울티마온라인", title: ":::UltimaOnline:::" },
+  { id: "Diablo", label: "-디아블로3", title: ":::Diablo3:::" },
+  { id: "DF", label: "-던전앤파이터", title: ":::DF Board:::" },
+  { id: "LoL", label: "-리그오브레전드", title: ":::LoL:::" },
+  { id: "Star2", label: "-스타크래프트2", title: ":::Starcraft2:::" },
+  { id: "Console", label: "-콘솔게임", title: ":::XBOX,PS3,Wii,PSP:::" },
 ];
+
+/** Comment count at which a row gets the original's `icon_hot` marker.
+ *  Zeroboard keyed "hot" off hit counts, which survive for ~1% of posts. */
+const HOT_COMMENT_THRESHOLD = 10;
 
 const BOX_RECENT_COUNT = 8;
 /** Static carry-over from the 2014-12-18 snapshot footer. HITL #3:
@@ -140,22 +146,22 @@ function LeftRail() {
 }
 
 function RightRail() {
-  return <div className="bg-forg-slate hidden w-[7px] shrink-0 sm:block" />;
+  const bgUrl = chromeUrl("right_bg.gif");
+  return (
+    <div
+      className="bg-forg-slate hidden w-[7px] shrink-0 sm:block"
+      style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat" } : undefined}
+    />
+  );
 }
 
 function AdSenseColumn() {
-  return (
-    <aside
-      aria-label="광고 영역 (2014 원본 자리)"
-      className="bg-forg-slate hidden shrink-0 px-2 py-6 lg:block lg:w-[120px]"
-    >
-      <div className="bg-forg-cream/10 text-forg-cream/60 mx-auto flex h-[600px] w-[120px] items-center justify-center rounded text-[10px] tracking-wide">
-        AdSense
-        <br />
-        120×600
-      </div>
-    </aside>
-  );
+  // `<td width="*" bgcolor="61748b">` held a 120×600 AdSense unit. A
+  // non-commercial museum shows neither an ad nor a sign advertising its
+  // absence, and to a 2014 visitor with a blocker this column *was* plain
+  // slate. Keeping the column matters: it is what makes the 680px content
+  // read as a narrow band rather than a centred page.
+  return <aside aria-hidden className="bg-forg-slate hidden flex-1 lg:block" />;
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -170,36 +176,27 @@ function GameCategorySidebar() {
       }
     : undefined;
 
-  const logoUrl = chromeUrl("l_forg_logo.gif");
+  // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
+  // appears only in frame-left-2007 and never in 2014-12-18.
+  const barUrl = chromeUrl("l_bar.gif");
 
   return (
     <aside
       aria-label="게임 카테고리"
-      className="hidden w-[100px] shrink-0 flex-col items-center gap-2 bg-(--era-sidebar-bg) px-1 py-4 text-(--era-sidebar-fg) sm:flex"
+      className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) sm:flex"
       style={sidebarStyle}
     >
-      {logoUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element -- static export, ~16 KB GIF, no LCP cost
-        <img
-          src={logoUrl}
-          alt="forg 마스코트"
-          width={90}
-          height={160}
-          className="block opacity-90"
-        />
-      ) : (
-        <div className="bg-forg-gold/20 text-forg-cream/80 mb-3 flex h-[120px] w-[80px] items-center justify-center rounded text-center text-[10px] leading-tight">
-          forg
-          <br />
-          mascot
-        </div>
+      {barUrl && (
+        // eslint-disable-next-line @next/next/no-img-element -- static export, 53 B rule
+        <img src={barUrl} alt="" width={86} height={2} className="block" />
       )}
-      <nav className="mt-2 flex flex-col gap-1 text-center text-[11px]">
+      <nav className="flex flex-col gap-[3px] text-left text-[11px]">
         {GAME_CATEGORIES.map((cat) => (
           <Link
             key={cat.id}
             href={`/${cat.id}`}
-            className="hover:text-forg-gold-hover block rounded px-1 py-1 leading-tight text-(--era-sidebar-fg) transition-colors hover:bg-(--era-page-bg)/40"
+            title={cat.title}
+            className="hover:text-forg-gold-hover block leading-tight text-(--era-sidebar-link) transition-colors"
           >
             {cat.label}
           </Link>
@@ -233,23 +230,13 @@ function SiteHeader2014() {
           )}
         </div>
 
-        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-2 px-2 text-[10px]">
-          <span
-            aria-disabled
-            className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] font-bold uppercase select-none"
-          >
-            Login (박물관 모드)
-          </span>
-          <span
-            aria-disabled
-            className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] font-bold uppercase select-none"
-          >
-            Sign-up
-          </span>
+        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2 text-[10px]">
+          <InertChrome asset="t_login.gif" label="Login" title="박물관 모드 — 로그인 비활성" />
+          <InertChrome asset="t_sign.gif" label="Sign Up" title="박물관 모드 — 회원가입 비활성" />
         </div>
 
         <div
-          className="bg-forg-gold h-[4px] w-full"
+          className="bg-forg-gold h-[5px] w-full"
           style={
             tBarUrl
               ? { backgroundImage: `url(${tBarUrl})`, backgroundRepeat: "repeat-x" }
@@ -257,10 +244,7 @@ function SiteHeader2014() {
           }
         />
 
-        <nav
-          aria-label="2014 상단 메뉴"
-          className="flex h-[24px] items-center gap-[1px] bg-[#F1F1F2] px-2"
-        >
+        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[24px] items-center px-2">
           {TOP_MENU.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
@@ -269,7 +253,7 @@ function SiteHeader2014() {
       {tLineUrl && (
         <div
           aria-hidden
-          className="h-[12px] w-full"
+          className="h-[11px] w-full"
           style={{
             backgroundImage: `url(${tLineUrl})`,
             backgroundRepeat: "repeat-x",
@@ -277,6 +261,26 @@ function SiteHeader2014() {
         />
       )}
     </div>
+  );
+}
+
+/** A recovered chrome button the museum deliberately does not wire up. */
+function InertChrome({ asset, label, title }: { asset: string; label: string; title: string }) {
+  const url = chromeUrl(asset);
+  if (!url) {
+    return (
+      <span
+        aria-disabled
+        title={title}
+        className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] text-[10px] font-bold uppercase select-none"
+      >
+        {label}
+      </span>
+    );
+  }
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 70×15 chrome
+    <img src={url} alt={label} title={title} width={70} height={15} className="block" />
   );
 }
 
@@ -328,7 +332,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
 function BoxGrid({ boxes }: { boxes: BoxData[] }) {
   return (
     <div className="grow bg-(--era-content-bg) px-3 py-4">
-      <div className="mx-auto grid max-w-[640px] grid-cols-1 gap-x-3 gap-y-4 sm:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-[640px] grid-cols-1 gap-0 sm:grid-cols-[320px_320px]">
         {boxes.map((box) => (
           <BoxCard key={box.config.id} box={box} />
         ))}
@@ -393,18 +397,44 @@ function BoxCard({ box }: { box: BoxData }) {
 }
 
 function BoxRow({ board, entry }: { board: BoardId; entry: BoardIndexEntry }) {
+  // `line-clamp-1` compiles to `display:-webkit-box`, which is block-level
+  // and pushed the count onto its own line. The original kept title, count
+  // and state icons on one baseline.
+  const fileIcon = entry.attachmentCount > 0 ? chromeUrl("skin_icon_file.gif") : null;
+  const hotIcon =
+    entry.commentCount >= HOT_COMMENT_THRESHOLD ? chromeUrl("skin_icon_hot.gif") : null;
+
   return (
     <Link
       href={`/${board}/${entry.postId}`}
-      className="text-forg-muted hover:text-forg-gold-hover block truncate text-[11px] leading-tight"
+      className="text-forg-muted hover:text-forg-gold-hover flex items-center gap-[3px] text-[11px] leading-tight"
     >
-      <span className="line-clamp-1">{entry.title}</span>
+      <span className="truncate">{entry.title}</span>
       {entry.commentCount > 0 && (
-        <span className="text-forg-gold-hover ml-1 font-mono text-[9px] tabular-nums">
+        <span className="shrink-0 font-mono text-[9px] text-(--era-meta-fg) tabular-nums">
           ({entry.commentCount})
         </span>
       )}
+      {fileIcon && <StateIcon url={fileIcon} width={9} height={9} label="첨부 있음" />}
+      {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
     </Link>
+  );
+}
+
+function StateIcon({
+  url,
+  width,
+  height,
+  label,
+}: {
+  url: string;
+  width: number;
+  height: number;
+  label: string;
+}) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px chrome
+    <img src={url} alt={label} width={width} height={height} className="block shrink-0" />
   );
 }
 
@@ -420,10 +450,10 @@ function VisitorCounter({ total }: { total: number }) {
     <footer
       role="contentinfo"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
-      className="text-forg-cream flex h-[24px] items-center justify-between bg-[#5A6269] px-3 text-[11px]"
+      className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between px-3 text-[11px]"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
     >
-      <span className="font-mono tabular-nums">Total : {total.toLocaleString("en-US")}</span>
+      <span className="font-mono tabular-nums">Total : {total}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
         2014-12-18 · 박물관 박제 · 후속 ADR 에서 라이브 카운터 검토
       </span>
