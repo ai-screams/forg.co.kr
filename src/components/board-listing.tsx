@@ -94,7 +94,7 @@ function PostTable({ board, entries }: { board: BoardId; entries: BoardIndexPage
                   ) : null}
                   <span className="line-clamp-1">{entry.title}</span>
                   {entry.commentCount > 0 ? (
-                    <span className="text-forg-gold-hover font-mono text-[11px] tabular-nums">
+                    <span className="text-forg-muted font-mono text-[11px] tabular-nums">
                       [{entry.commentCount}]
                     </span>
                   ) : null}
