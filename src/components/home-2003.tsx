@@ -52,20 +52,23 @@ interface BoardBoxConfig {
   label: string;
   /** Chrome asset filename in `public/img/chrome/`. */
   asset: string;
+  /** Row bullet. frame-main-2003 used a.gif down the 350px column and a
+   *  different arrow per box in the 185px one. */
+  bullet: string;
 }
 
 // Left content column — m_* assets in the original frame-main-2003.
 const LEFT_BOXES: BoardBoxConfig[] = [
-  { id: "Notice", label: "NOTICE - ULTIMA ONLINE", asset: "m_notice.gif" },
-  { id: "Role", label: "ROLEPLAY & EVENTS", asset: "m_role.gif" },
-  { id: "column", label: "ONLINE NEWS", asset: "m_column.gif" },
+  { id: "Notice", label: "NOTICE - ULTIMA ONLINE", asset: "m_notice.gif", bullet: "a.gif" },
+  { id: "Role", label: "ROLEPLAY & EVENTS", asset: "m_role.gif", bullet: "a.gif" },
+  { id: "column", label: "ONLINE NEWS", asset: "m_column.gif", bullet: "a.gif" },
 ];
 
 // Right content column — r_* assets in the original.
 const RIGHT_BOXES: BoardBoxConfig[] = [
-  { id: "UoBoard", label: "FreeBoard", asset: "r_freeboard.gif" },
-  { id: "Role", label: "UO.Roleplay", asset: "r_role.gif" },
-  { id: "UOForum", label: "UO.Essay", asset: "r_essay.gif" },
+  { id: "UoBoard", label: "FreeBoard", asset: "r_freeboard.gif", bullet: "menu_arrow.gif" },
+  { id: "Role", label: "UO.Roleplay", asset: "r_role.gif", bullet: "menu_arrow_1.gif" },
+  { id: "UOForum", label: "UO.Essay", asset: "r_essay.gif", bullet: "menu_arrow_2.gif" },
 ];
 
 // Top 7-button menu (frame-top-2003.html) — 80×20 each + 20×20 FAQ icon.
@@ -81,7 +84,9 @@ const TOP_MENU_2003: TopMenuConfig[] = [
   { id: "UOForum", asset: "t_b_essay.gif", label: "울온에세이란" },
   { id: "HouseScreenshot", asset: "t_hi.gif", label: "하우스인테리어란" },
   { id: "ScreenShot", asset: "t_b_screenshot.gif", label: "스크린샷란" },
-  { id: "Items", asset: "t_b_kal.gif", label: "울온자료실" },
+  // frame-top-2003 wires t_b_kal.gif to `zboard.php?id=Recall`, and the
+  // button art reads "Hot Link" — not 울온자료실 (that is the Items board).
+  { id: "Recall", asset: "t_b_kal.gif", label: "Hot Link" },
 ];
 
 // Sidebar (frame-left-2003) — 5 sections with English chrome-bar
@@ -178,10 +183,10 @@ export async function Home2003() {
   ]);
 
   return (
-    <div className="flex w-full flex-1 justify-center bg-[#dcdcdc] py-3">
+    <div className="bg-forg-slate flex w-full flex-1 justify-center">
       <div
-        className="border-forg-gold/60 flex w-full max-w-[920px] flex-col gap-0 border bg-white text-[11px] shadow-md"
-        style={{ fontFamily: "Verdana, '돋움', Dotum, '굴림', Gulim, sans-serif" }}
+        className="flex w-full max-w-[797px] flex-col gap-0 bg-white text-[11px]"
+        style={{ fontFamily: "Verdana, '굴림', Gulim, Tahoma, sans-serif" }}
       >
         <FrameTop2003 />
         <div className="flex flex-1">
@@ -200,7 +205,7 @@ export async function Home2003() {
 function FrameTop2003() {
   const leftLogo = chromeUrl("left_logo1.gif"); // 100×42 forg logo
   return (
-    <header className="border-b border-(--era-input-border) bg-[#FFC73B]">
+    <header className="bg-forg-gold border-b border-(--era-input-border)">
       {/* Header row — logo on left, tiny login/signup on right. */}
       <div className="flex items-end justify-between px-2 pt-1 pb-0">
         <Link href="/" aria-label="forg.co.kr 메인" className="shrink-0">
@@ -236,10 +241,7 @@ function FrameTop2003() {
       {/* 7-button menu bar — gray background matches the original
          frame-top-2003 chrome (the GIF buttons themselves are
          transparent / cream so the surrounding bar reads gray). */}
-      <nav
-        aria-label="2003 상단 메뉴"
-        className="flex items-center gap-[1px] bg-[#dcdcdc] px-2 py-[1px]"
-      >
+      <nav aria-label="2003 상단 메뉴" className="bg-forg-menu flex items-center px-2 py-[1px]">
         {TOP_MENU_2003.map((item) => (
           <TopMenuButton2003 key={item.id} item={item} />
         ))}
@@ -269,7 +271,6 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
           width={80}
           height={20}
           className="block h-[20px] w-[80px]"
-          style={{ mixBlendMode: "multiply" }}
         />
         <span className="sr-only">{item.label}</span>
       </Link>
@@ -295,14 +296,7 @@ function FaqIcon2003() {
       className="inline-block shrink-0 opacity-80"
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-      <img
-        src={url}
-        alt="Site FAQ"
-        width={20}
-        height={20}
-        className="block h-[20px] w-[20px]"
-        style={{ mixBlendMode: "multiply" }}
-      />
+      <img src={url} alt="Site FAQ" width={20} height={20} className="block h-[20px] w-[20px]" />
     </span>
   );
 }
@@ -311,10 +305,15 @@ function FaqIcon2003() {
 /*  Frame: left — Information / Cooperation / Reminisce / Forg.Board ...  */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameLeft2003() {
+  // frameset cols="10, 100, 680, 7, 1*" and left_background.gif is 100×45.
+  const tileUrl = chromeUrl("left_background.gif");
   return (
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
-      className="hidden w-[140px] shrink-0 border-r border-(--era-input-border) bg-[#1f3147] px-2 py-2 text-white sm:block"
+      className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) sm:block"
+      style={
+        tileUrl ? { backgroundImage: `url(${tileUrl})`, backgroundRepeat: "repeat" } : undefined
+      }
     >
       <nav className="flex flex-col gap-2.5">
         {SIDEBAR_SECTIONS.map((section) => (
@@ -381,7 +380,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
       className="flex flex-1 flex-col gap-2 bg-white px-3 py-2"
     >
       <MainHeading />
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-[1fr_220px]">
+      <div className="grid grid-cols-1 gap-[5px] md:grid-cols-[350px_185px]">
         <div className="space-y-2">
           {leftBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} />
@@ -391,7 +390,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           {rightBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} compact />
           ))}
-          <BestScreenShotBox />
+          <LastExpansionPackBox />
         </div>
       </div>
     </section>
@@ -411,11 +410,12 @@ function MainHeading() {
 
 function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
   const headerUrl = chromeUrl(box.config.asset);
+  const bulletUrl = chromeUrl(box.config.bullet);
   return (
     <section className="border-forg-gold/40 border-b bg-white" aria-label={box.config.label}>
       <Link
         href={`/${box.config.id}`}
-        className="bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[20px] items-center px-1"
+        className="bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[22px] items-center px-1"
         style={
           headerUrl
             ? {
@@ -442,17 +442,24 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
               <Link
                 href={`/${box.config.id}/${entry.postId}`}
                 className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link)"
-                style={{ color: "#3563a6" }}
               >
-                <span className="text-forg-muted mr-1.5 font-mono text-[9px]">
-                  {monthDayFromIso(entry.createdAt)}
-                </span>
-                {entry.title}
-                {entry.commentCount > 0 && (
-                  <span className="text-forg-gold-hover ml-1 font-mono text-[9px] tabular-nums">
-                    [{entry.commentCount}]
+                {bulletUrl && (
+                  // eslint-disable-next-line @next/next/no-img-element -- static export, recovered bullet
+                  <img
+                    src={bulletUrl}
+                    alt=""
+                    width={compact ? 10 : 5}
+                    height={15}
+                    className="mr-[2px] inline-block align-[-3px]"
+                  />
+                )}
+                {/* The 185px column had no room for a date and carried none. */}
+                {!compact && (
+                  <span className="text-forg-muted mr-1.5 font-mono text-[9px]">
+                    {monthDayFromIso(entry.createdAt)}
                   </span>
                 )}
+                {entry.title}
               </Link>
             </li>
           ))
@@ -462,12 +469,22 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
   );
 }
 
-function BestScreenShotBox() {
-  const headerUrl = chromeUrl("r_essay.gif"); // closest available — actual was r_screen.gif (missing)
+function LastExpansionPackBox() {
+  // Both assets are the originals, recovered 2026-09-18: r_screen.gif is the
+  // 185×22 header and best_22.gif the 160×105 thumbnail the 2003 front page
+  // actually carried. Earlier code substituted r_essay.gif here, which made
+  // the page claim this box was UO.Essay.
+  //
+  // The recovered header art reads "Last Expansion Pack" (UO: Age of
+  // Shadows shipped 2003-02), and frame-main-2003 wires both it and the
+  // thumbnail to the ScreenShot board — hence the name here. The original
+  // served this one asset from hosting27.interpia98.net/~forg/images/.
+  const headerUrl = chromeUrl("r_screen.gif");
+  const shotUrl = chromeUrl("best_22.gif");
   return (
-    <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
+    <section className="border-forg-gold/40 border-b bg-white" aria-label="Last Expansion Pack">
       <div
-        className="bg-forg-gold/10 flex h-[20px] items-center px-1"
+        className="bg-forg-gold/10 flex h-[22px] items-center px-1"
         style={
           headerUrl
             ? {
@@ -478,12 +495,24 @@ function BestScreenShotBox() {
             : undefined
         }
       >
-        {!headerUrl && <span className="text-forg-ink text-[11px] font-bold">BestScreenShot</span>}
-        <span className="sr-only">BestScreenShot</span>
+        {!headerUrl && (
+          <span className="text-forg-ink text-[11px] font-bold">Last Expansion Pack</span>
+        )}
+        <span className="sr-only">Last Expansion Pack</span>
       </div>
-      <div className="text-forg-muted flex h-[80px] items-center justify-center bg-[#f6f4e8] text-[10px] italic">
-        스크린샷 박물관 준비 중
-      </div>
+      {shotUrl ? (
+        // The original deep-linked ScreenShot post no=7755, which is above the
+        // highest id Wayback archived for that board (6212), so the link goes
+        // to the board itself.
+        <Link href="/ScreenShot" className="flex justify-center py-1">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
+          <img src={shotUrl} alt="2003년 베스트 스크린샷" width={160} height={105} />
+        </Link>
+      ) : (
+        <div className="text-forg-muted flex h-[80px] items-center justify-center text-[10px] italic">
+          스크린샷 박물관 준비 중
+        </div>
+      )}
     </section>
   );
 }
@@ -498,15 +527,15 @@ function monthDayFromIso(iso: string): string {
 /*  Frame: bottom — copyright                                              */
 /* ────────────────────────────────────────────────────────────────────── */
 function FrameBottom2003() {
+  // frame-bottom-2003: `bgcolor="6B82A5"`, background bgm/bgm_bg.gif, 24px
+  // per the frameset's `rows="53, 80%, 24"`. It held the background-music
+  // player (`onload="cast()"`), which the museum does not reproduce.
+  const bgUrl = chromeUrl("bgm_bg.gif");
   return (
-    <footer
-      aria-label="2003 푸터"
-      className="border-t border-(--era-input-border) bg-[#dcdcdc] px-3 py-2 text-center text-[10px]"
-    >
-      <span className="text-forg-muted">
-        All Contents Copyright 1999~2015 Forg. All Rights Reserved. ·{" "}
-      </span>
-      <span className="text-forg-muted/80">디지털 박물관 박제 — forg.co.kr 2003</span>
-    </footer>
+    <div
+      aria-hidden
+      className="bg-forg-bgm h-[24px] w-full shrink-0"
+      style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
+    />
   );
 }
