@@ -22,6 +22,8 @@
  * falls back to typography / OKLCH CSS — see `chromeUrl` in `lib/chrome`.
  */
 
+import { Fragment } from "react";
+
 import Link from "@/components/link";
 
 import { Home2003 } from "@/components/home-2003";
@@ -190,16 +192,20 @@ function GameCategorySidebar() {
         // eslint-disable-next-line @next/next/no-img-element -- static export, 53 B rule
         <img src={barUrl} alt="" width={86} height={2} className="block" />
       )}
-      <nav className="flex flex-col gap-[3px] text-left text-[11px]">
-        {GAME_CATEGORIES.map((cat) => (
-          <Link
-            key={cat.id}
-            href={`/${cat.id}`}
-            title={cat.title}
-            className="hover:text-forg-gold-hover block leading-tight text-(--era-sidebar-link) transition-colors"
-          >
-            {cat.label}
-          </Link>
+      <nav className="flex flex-col text-left text-[12px]">
+        {GAME_CATEGORIES.map((cat, i) => (
+          <Fragment key={cat.id}>
+            {/* The original spaced these with blank_l_line.gif: 86×6 under the
+                rule, 86×4 between entries. */}
+            <SidebarSpacer height={i === 0 ? 6 : 4} />
+            <Link
+              href={`/${cat.id}`}
+              title={cat.title}
+              className="block leading-tight text-(--era-sidebar-link) hover:underline"
+            >
+              {cat.label}
+            </Link>
+          </Fragment>
         ))}
       </nav>
     </aside>
@@ -216,6 +222,13 @@ function GameCategorySidebar() {
 // left_logo1.gif — the logo art is drawn to span all three rows, its top
 // edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
 // as a white gap under the logo and breaks that blend.
+function SidebarSpacer({ height }: { height: number }) {
+  const url = chromeUrl("blank_l_line.gif");
+  if (!url) return <div style={{ height }} aria-hidden />;
+  // eslint-disable-next-line @next/next/no-img-element -- static export, 49 B spacer
+  return <img src={url} alt="" width={86} height={height} className="block" />;
+}
+
 function SiteHeader2014() {
   const logoUrl = chromeUrl("left_logo1.gif");
   const tBarUrl = chromeUrl("t_bar.gif");
@@ -262,7 +275,7 @@ function SiteHeader2014() {
       {tLineUrl && (
         <div
           aria-hidden
-          className="h-[11px] w-full"
+          className="h-[12px] w-full"
           style={{
             backgroundImage: `url(${tLineUrl})`,
             backgroundRepeat: "repeat-x",
@@ -340,7 +353,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
 
 function BoxGrid({ boxes }: { boxes: BoxData[] }) {
   return (
-    <div className="grow bg-(--era-content-bg) px-3 py-4">
+    <div className="grow bg-(--era-content-bg) pt-[15px] pb-4">
       <div className="mx-auto grid w-full max-w-[640px] grid-cols-1 gap-0 sm:grid-cols-[320px_320px]">
         {boxes.map((box) => (
           <BoxCard key={box.config.id} box={box} />
@@ -380,7 +393,7 @@ function BoxCard({ box }: { box: BoxData }) {
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
-      <div className="space-y-[2px] px-2 py-2">
+      <div className="space-y-[2px] pt-[5px] pr-[1px] pb-[10px] pl-[10px]">
         {box.totalPosts === null ? (
           <p className="text-forg-muted py-2 text-[11px] italic">
             준비 중 — Phase B 다운로드 + Gnuboard4 파서 후 활성화
@@ -416,11 +429,11 @@ function BoxRow({ board, entry }: { board: BoardId; entry: BoardIndexEntry }) {
   return (
     <Link
       href={`/${board}/${entry.postId}`}
-      className="text-forg-muted hover:text-forg-gold-hover flex items-center gap-[3px] text-[11px] leading-tight"
+      className="text-forg-muted flex items-center gap-[3px] text-[12px] leading-tight hover:underline"
     >
       <span className="truncate">{entry.title}</span>
       {entry.commentCount > 0 && (
-        <span className="shrink-0 font-mono text-[9px] text-(--era-meta-fg) tabular-nums">
+        <span className="shrink-0 text-[10.5px] text-(--era-meta-fg) tabular-nums">
           ({entry.commentCount})
         </span>
       )}
@@ -459,7 +472,7 @@ function VisitorCounter({ total }: { total: number }) {
     <footer
       role="contentinfo"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
-      className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between px-3 text-[11px]"
+      className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
     >
       <span className="font-mono tabular-nums">Total : {total}</span>
