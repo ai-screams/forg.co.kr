@@ -1,10 +1,26 @@
 [
   {
+    "originalPath": "/images/5px.gif",
+    "filename": "5px.gif",
+    "capturedAt": "20071017120751",
+    "sizeBytes": 44,
+    "sha256": "b50d7e0cf30b8a185707723682f2b65a2070dabad7d98b723bc7b55d16f222e1",
+    "mimetype": "image/gif"
+  },
+  {
     "originalPath": "/UObox_1.gif",
     "filename": "UObox_1.gif",
     "capturedAt": "20071014084202",
     "sizeBytes": 16587,
     "sha256": "043707cb25f47b533c39d84e5ef8ae96a340f167962b0443db97a4be736ae5a9",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/_cl.gif",
+    "filename": "_cl.gif",
+    "capturedAt": "20071011000416",
+    "sizeBytes": 48,
+    "sha256": "72cc2ce1e523e95a6be4e336f544d975af24ce3a729ffb0a03a40661a7e46e20",
     "mimetype": "image/gif"
   },
   {
@@ -40,11 +56,35 @@
     "mimetype": "image/gif"
   },
   {
+    "originalPath": "/bgm/ser.gif",
+    "filename": "bgm_ser.gif",
+    "capturedAt": "20040928011210",
+    "sizeBytes": 1323,
+    "sha256": "56211d364d3a1e7a7d8873ae2082669290ed047edd4141b97d2a83b488901391",
+    "mimetype": "image/gif"
+  },
+  {
     "originalPath": "/images/blank_l_line.gif",
     "filename": "blank_l_line.gif",
     "capturedAt": "20141228005423",
     "sizeBytes": 49,
     "sha256": "54ddff496e5126e68d634a819d9212b9a1145a61807275241f674504c2810a48",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/count.gif",
+    "filename": "count.gif",
+    "capturedAt": "20021206152217",
+    "sizeBytes": 1676,
+    "sha256": "767cb1c99cf1b7bfd4c2400fea0de6863a9ae9776c3d1b708fa7e5f162496d08",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/forg_main_logo_4.gif",
+    "filename": "forg_main_logo_4.gif",
+    "capturedAt": "20071014083609",
+    "sizeBytes": 42143,
+    "sha256": "6254ee72ea650b096ae8596cc09658da9030d8f3271300159363ef69ad547c4d",
     "mimetype": "image/gif"
   },
   {
@@ -77,6 +117,14 @@
     "capturedAt": "20141228013145",
     "sizeBytes": 167,
     "sha256": "d1508dcd81d664a3c57c67615243dd184ea86fbcc8d7afb946c73bc7557af4ba",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/left_logo.gif",
+    "filename": "left_logo.gif",
+    "capturedAt": "20040609194728",
+    "sizeBytes": 2634,
+    "sha256": "ae36088015fa0760eaf80898ffa722c47ee8d55331162dec910a2d4df93ee128",
     "mimetype": "image/gif"
   },
   {
@@ -288,6 +336,54 @@
     "mimetype": "image/gif"
   },
   {
+    "originalPath": "/images/new.gif",
+    "filename": "new.gif",
+    "capturedAt": "20071014083831",
+    "sizeBytes": 184,
+    "sha256": "c5608306ca0f507a314c56a50fd072c9eb1bdb77379922bffbc7f89816e18aca",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skill_newbie/images/alpha_background.gif",
+    "filename": "newbie_alpha_background.gif",
+    "capturedAt": "20071015093636",
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skill_newbie/images/alpha_background_1.gif",
+    "filename": "newbie_alpha_background_1.gif",
+    "capturedAt": "20071015093945",
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skill_newbie/images/forg_background.gif",
+    "filename": "newbie_forg_background.gif",
+    "capturedAt": "20071015093750",
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skill_newbie/images/main_dragon.gif",
+    "filename": "newbie_main_dragon.gif",
+    "capturedAt": "20071015093929",
+    "sizeBytes": 14456,
+    "sha256": "05436e72c717d8e941a222810386f57a2df72d072c07870eb7028745ed23d7bf",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/notice_logo.gif",
+    "filename": "notice_logo.gif",
+    "capturedAt": "20050824040338",
+    "sizeBytes": 1380,
+    "sha256": "409a313c1c8aa302731add705e24644217f69c4a95b8f84b6cf789bf878b147e",
+    "mimetype": "image/gif"
+  },
+  {
     "originalPath": "/skin/outlogin/forg/img/btn_password_forget.gif",
     "filename": "outlogin_btn_password_forget.gif",
     "capturedAt": "20141228025651",
@@ -317,6 +413,14 @@
     "capturedAt": "20141228053730",
     "sizeBytes": 45,
     "sha256": "563d369245a4bdb89e074c46b1dcf00945ee1005d4364e0022d5923e0b5d9114",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/r_bar.gif",
+    "filename": "r_bar.gif",
+    "capturedAt": "20071014082951",
+    "sizeBytes": 65,
+    "sha256": "f0b04a09d257d912ecb7c2c154673421d98136766aafe449a374cfead247ba0a",
     "mimetype": "image/gif"
   },
   {
@@ -389,6 +493,14 @@
     "capturedAt": "20141228041426",
     "sizeBytes": 1725,
     "sha256": "bf1d23cda1bb3ab1b963a00720bda392d25767b4c0b7014d139e4e0f47b88c47",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t.gif",
+    "filename": "t.gif",
+    "capturedAt": "20071010235647",
+    "sizeBytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "mimetype": "image/gif"
   },
   {
