@@ -218,7 +218,10 @@ function SiteHeader2014() {
   return (
     <div className="border-b border-(--era-input-border) bg-white">
       <div className="grid grid-cols-[100px_1fr] items-stretch">
-        <div className="row-span-3 flex items-center justify-center px-2 py-2">
+        {/* `<td height="37px" width="100px" rowspan="3">` held the 100×42 logo
+            with no padding; ours added 8px on every side, which showed as a
+            white frame and shrank the art to 84px. */}
+        <div className="row-span-3 flex items-start justify-start">
           {logoUrl ? (
             // eslint-disable-next-line @next/next/no-img-element -- static export, ~3 KB GIF, no LCP cost
             <img src={logoUrl} alt="forg.co.kr" width={100} height={42} />
