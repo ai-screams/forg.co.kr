@@ -24,6 +24,13 @@
   --color-forg-cloudy: oklch(0.628 0 0); /* #888888 */
   --color-forg-cream: oklch(0.985 0 0); /* #FAFAFA */
   --color-forg-slate: oklch(0.512 0.034 247.4); /* #61748B — 2014 page bg */
+  /* Sidebar tile base. Era-invariant on purpose: the 2014 tile
+   * (left_bg.gif, #405062 + #61748B) and the 2003 one (left_background.gif,
+   * #405062 … #5D7086 dithered) are the same slate. The old #D6D6D6 came
+   * from the HTML `bgcolor` fallback attribute, which never showed. */
+  --color-forg-sidebar: oklch(0.425 0.036 251.7); /* #405062 */
+  --color-forg-bgm: oklch(0.602 0.06 258.6); /* #6B82A5 — 24px bottom strip */
+  --color-forg-menu: oklch(0.958 0.001 286.4); /* #F1F1F2 — 2014 menu strip */
 
   /* ── Fonts ───────────────────────────────────────────────────────── */
   --font-forg: Tahoma, Gulim, "맑은 고딕", "Malgun Gothic", sans-serif;
@@ -46,11 +53,13 @@
   :root[data-era="2014"] {
     --era-page-bg: oklch(0.512 0.034 247.4); /* #61748B slate */
     --era-content-bg: oklch(0.985 0 0); /* #FAFAFA */
-    --era-sidebar-bg: oklch(0.873 0 0); /* #D6D6D6 */
+    --era-sidebar-bg: var(--color-forg-sidebar);
     --era-sidebar-fg: oklch(0.985 0 0); /* #FAFAFA */
+    --era-sidebar-link: oklch(0.985 0 0); /* #FAFAFA — `<font color="#fafafa">` */
     --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
-    --era-link: oklch(0.49 0 0); /* #6A6A6A */
+    --era-link: oklch(0.49 0 0); /* #6A6A6A — 2014 body link */
     --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A — comment counts in lists */
     --era-accent: var(--color-forg-gold);
     --era-input-border: oklch(0.671 0 0); /* #9A9A9A */
   }
@@ -58,11 +67,21 @@
   :root[data-era="2003"] {
     --era-page-bg: oklch(1 0 0); /* white */
     --era-content-bg: oklch(0.952 0 0); /* #F1F1F1 */
-    --era-sidebar-bg: oklch(0.443 0.012 247); /* #5A6269 dark navy */
+    --era-sidebar-bg: var(--color-forg-sidebar);
     --era-sidebar-fg: oklch(1 0 0); /* white */
+    /* frame-left-2003 sets link="#CC0033" and the menu entries inherit it,
+     * but crimson on the slate tile measures 1.42:1. We keep white (7.92:1);
+     * the two gold entries at the foot of the original (#FFCC33) are the
+     * only ones that overrode the attribute. */
+    --era-sidebar-link: oklch(1 0 0); /* white */
+    /* The museum's own footer, not the exhibit's. The 2003 page's 24px
+     * bottom strip is `--color-forg-bgm` and belongs to <Home2003>. */
     --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
-    --era-link: oklch(1 0 0); /* white */
+    /* frame-main-2003: `a:link { color:rgb(69,69,69) }`. Its `a:hover` was
+     * silver, which is unreadable on white; we keep the gold hover. */
+    --era-link: oklch(0.39 0 89.9); /* #454545 — 2003 body link */
     --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A */
     --era-accent: var(--color-forg-gold);
     --era-input-border: oklch(0.671 0 0);
   }
