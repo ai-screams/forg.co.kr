@@ -30,7 +30,11 @@ const noFlashScript = `
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ko" data-era={DEFAULT_ERA} className="h-full antialiased">
+    /* `suppressHydrationWarning` covers exactly the attribute the script
+       above rewrites: React would otherwise log a mismatch on every visit
+       by someone whose stored era is not the default. It applies to this
+       element's own attributes only, not to the tree below it. */
+    <html lang="ko" data-era={DEFAULT_ERA} className="h-full antialiased" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
       </head>
