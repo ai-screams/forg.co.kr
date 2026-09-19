@@ -32,7 +32,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
 
   return (
     <article
-      className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm"
+      className="text-forg-ink border border-(--era-input-border)/50 bg-white"
       data-pagefind-body
       data-pagefind-sort={`date:${post.createdAt}`}
     >
@@ -149,7 +149,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
             {post.comments.map((c, i) => (
               <li
                 key={`${c.author}-${c.createdAt}-${i}`}
-                className="rounded-md border border-(--era-input-border) bg-(--era-content-bg) px-3 py-2"
+                className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2"
               >
                 <div className="text-forg-muted mb-1 flex items-baseline gap-2 text-xs">
                   <span className="text-forg-ink font-bold">{c.author}</span>

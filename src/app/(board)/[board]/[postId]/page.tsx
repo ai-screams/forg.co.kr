@@ -69,7 +69,7 @@ export default async function PostPage({ params }: RouteProps) {
   if (!post) notFound();
 
   return (
-    <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
+    <div className="w-full flex-1 px-3 py-4">
       <PostView post={post} adjacent={adjacent} />
     </div>
   );

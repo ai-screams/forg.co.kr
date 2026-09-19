@@ -32,7 +32,7 @@ const READY_REASON: Record<BoardMeta["engine"], string> = {
 
 export function BoardPlaceholder({ meta }: BoardPlaceholderProps) {
   return (
-    <article className="text-forg-ink rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm">
+    <article className="text-forg-ink border border-(--era-input-border)/50 bg-white">
       <header className="border-b border-(--era-input-border) px-6 py-5">
         <p className="text-forg-muted font-mono text-[10px] tracking-wider uppercase">
           {meta.id} · {meta.engine} · {meta.era}
@@ -42,7 +42,7 @@ export function BoardPlaceholder({ meta }: BoardPlaceholderProps) {
       </header>
 
       <div className="px-6 py-10">
-        <div className="border-forg-gold/40 bg-forg-gold/5 mx-auto max-w-xl rounded-md border-2 border-dashed p-6 text-center">
+        <div className="border-forg-gold/40 bg-forg-gold/5 mx-auto max-w-xl border border-dashed p-6 text-center">
           <p className="text-forg-muted font-mono text-xs tracking-wider uppercase">준비 중</p>
           <h2 className="text-forg-ink mt-2 text-lg font-bold">
             이 게시판은 아직 박물관에 들어오지 않았습니다

@@ -69,7 +69,7 @@ export default async function BoardPaginatedPage({ params }: RouteProps) {
   if (!index) notFound();
 
   return (
-    <div className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
+    <div className="w-full flex-1 px-3 py-4">
       <BoardListing board={board} page={index} />
     </div>
   );

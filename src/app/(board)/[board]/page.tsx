@@ -67,14 +67,14 @@ export default async function BoardPageOne({ params }: RouteProps) {
   const index = await getBoardIndex(board, 1);
   if (!index) {
     return (
-      <div className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
+      <div className="w-full flex-1 px-3 py-4">
         <BoardPlaceholder meta={meta} />
       </div>
     );
   }
 
   return (
-    <div className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
+    <div className="w-full flex-1 px-3 py-4">
       <BoardListing board={board} page={index} />
     </div>
   );
