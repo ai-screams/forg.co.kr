@@ -412,6 +412,15 @@ def main() -> int:
     parser.add_argument("--print-every", type=int, default=5)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
+        "--retry-missing",
+        action="store_true",
+        help=(
+            "Re-probe paths the previous report for this pool marked missing. "
+            "Off by default: a miss is a CDX answer, and asking again costs a "
+            "rate-limited request for the same answer."
+        ),
+    )
+    parser.add_argument(
         "--era",
         choices=sorted(ERA_WINDOWS),
         help=(
@@ -431,6 +440,20 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     targets = CHROME_TARGETS[: args.limit] if args.limit else CHROME_TARGETS
+
+    # Paths this pool's last report already answered "missing" for. Files
+    # that were found are skipped by fetch_asset via the on-disk check; this
+    # is the equivalent for the ones that were not, so a top-up run only
+    # spends requests on targets it has never asked about.
+    known_missing: set[str] = set()
+    if not args.retry_missing and REPORT_FILE.exists():
+        try:
+            prev = json.loads(REPORT_FILE.read_text(encoding="utf-8"))
+            known_missing = {
+                r["path"] for r in prev.get("results", []) if r.get("status") == "missing"
+            }
+        except (OSError, json.JSONDecodeError, KeyError):
+            known_missing = set()
     print(
         f"[recover-chrome] targets={len(targets)} output={OUT_DIR} "
         f"window={FROM_TS[:8]}..{TO_TS[:8]} dry_run={args.dry_run}",
@@ -445,7 +468,11 @@ def main() -> int:
         if args.dry_run:
             print(f"  would probe forg.co.kr{path} -> {filename}", file=sys.stderr)
             continue
-        result = fetch_asset(path, filename)
+        if path in known_missing:
+            result = {"status": "missing", "path": path, "filename": filename,
+                      "reason": "known_missing_from_previous_run"}
+        else:
+            result = fetch_asset(path, filename)
         results.append(result)
         stats[result["status"]] = stats.get(result["status"], 0) + 1
         if result["status"] == "ok":
