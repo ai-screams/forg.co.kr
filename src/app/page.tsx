@@ -21,9 +21,13 @@ import Link from "@/components/link";
 import { EraShell } from "@/components/era-shell";
 import { Home2003Content } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, type ChromeEra } from "@/lib/chrome";
 import { getBoardIndex } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
+
+/** This surface is the 2014 exhibit, so its assets are asked for at their
+ *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
+const ERA: ChromeEra = "2014";
 
 interface BoxConfig {
   id: BoardId;
@@ -94,7 +98,7 @@ function BoxGrid({ boxes }: { boxes: BoxData[] }) {
 }
 
 function BoxCard({ box }: { box: BoxData }) {
-  const headerUrl = chromeUrl(box.config.asset);
+  const headerUrl = chromeUrl(box.config.asset, ERA);
   const meta = getBoard(box.config.id);
 
   return (
@@ -152,9 +156,9 @@ function BoxRow({ board, entry }: { board: BoardId; entry: BoardIndexEntry }) {
   // `line-clamp-1` compiles to `display:-webkit-box`, which is block-level
   // and pushed the count onto its own line. The original kept title, count
   // and state icons on one baseline.
-  const fileIcon = entry.attachmentCount > 0 ? chromeUrl("skin_icon_file.gif") : null;
+  const fileIcon = entry.attachmentCount > 0 ? chromeUrl("skin_icon_file.gif", ERA) : null;
   const hotIcon =
-    entry.commentCount >= HOT_COMMENT_THRESHOLD ? chromeUrl("skin_icon_hot.gif") : null;
+    entry.commentCount >= HOT_COMMENT_THRESHOLD ? chromeUrl("skin_icon_hot.gif", ERA) : null;
 
   return (
     <Link
