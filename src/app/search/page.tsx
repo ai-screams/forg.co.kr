@@ -19,7 +19,7 @@
 
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 import { getBoardOrThrow, isBoardId } from "@/lib/boards";
 
@@ -76,8 +76,25 @@ interface SearchResult {
   excerpt: string;
 }
 
+// A static page's URL does not change under it, so there is nothing to
+// subscribe to; useSyncExternalStore still needs the callback.
+function subscribeToNothing() {
+  return () => {};
+}
+
+function readUrlQuery(): string {
+  return new URLSearchParams(window.location.search).get("q") ?? "";
+}
+
 export default function SearchPage() {
-  const [query, setQuery] = useState("");
+  // The era shells carry the original's search box, which lands here as
+  // `?q=`. The URL is an external system, so it is read the way the era
+  // toggle reads localStorage: through useSyncExternalStore, with an empty
+  // server snapshot so the static HTML and the hydrating client agree.
+  const urlQuery = useSyncExternalStore(subscribeToNothing, readUrlQuery, () => "");
+  // What the visitor has typed, if anything; until then the URL's query stands.
+  const [typed, setTyped] = useState<string | null>(null);
+  const query = typed ?? urlQuery;
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [devMode, setDevMode] = useState(false);
@@ -156,7 +173,7 @@ export default function SearchPage() {
             <input
               type="search"
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => setTyped(e.target.value)}
               placeholder="제목·본문·작성자·댓글에서 검색…"
               autoFocus
               className="text-forg-ink focus:border-forg-gold focus:ring-forg-gold w-full rounded border border-(--era-input-border) bg-(--era-page-bg) px-3 py-2 text-sm outline-none placeholder:text-(--era-input-border) focus:ring-1"
