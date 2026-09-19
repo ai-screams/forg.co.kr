@@ -7,7 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, unquote
 
-CDX_DIR = Path("/Users/hanyul/Works/AiScream/forg/.docs/research/cdx")
+CDX_DIR = Path(__file__).resolve().parent.parent.parent / ".docs" / "research" / "cdx"
 
 # 12 UO 본판 게시판 (Phase A)
 PHASE_A = {
