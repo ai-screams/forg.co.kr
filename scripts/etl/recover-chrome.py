@@ -210,6 +210,25 @@ CHROME_TARGETS: list[tuple[str, str]] = [
     ("/images/new.gif",                          "new.gif"),
     ("/images/notice_logo.gif",                  "notice_logo.gif"),
     ("/images/forg_main_logo_4.gif",             "forg_main_logo_4.gif"),
+    # 2003 bottom frame served its strip from /bgm/, not /images/
+    ("/bgm/bgm_bg.gif",                          "bgm_bg.gif"),
+    ("/bgm/bgm_right.gif",                       "bgm_right.gif"),
+    # frame-main-2003 loaded these from a second host. Same filenames as
+    # the forg.co.kr copies, so in the flat pool the first probe to land
+    # wins; in the 2003 era pool they are the 2003 art.
+    ("http://hosting27.interpia98.net/~forg/images/m_middle_logo.gif",    "m_middle_logo.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_logo_1.gif",         "r_logo_1.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/logo_bottom.gif",      "logo_bottom.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/forg_main_logo_1.gif", "forg_main_logo_1.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_bar_b.gif",          "r_bar_b.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/m_bar_logo.gif",       "m_bar_logo.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/m_notice.gif",         "m_notice.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/m_role.gif",           "m_role.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/m_column.gif",         "m_column.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_freeboard.gif",      "r_freeboard.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_role.gif",           "r_role.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_essay.gif",          "r_essay.gif"),
+    ("http://hosting27.interpia98.net/~forg/images/r_screen.gif",         "r_screen.gif"),
     # Newbie guide art (skill_newbie), referenced by newbie-guide.html
     ("/skill_newbie/images/main_dragon.gif",        "newbie_main_dragon.gif"),
     ("/skill_newbie/images/forg_background.gif",    "newbie_forg_background.gif"),
@@ -234,7 +253,10 @@ def cdx_probe(path: str, *, from_ts: str, to_ts: str) -> dict | None:
     `status==200 + mimetype image/*` row, return the picked CDX row dict
     or None if no valid capture exists.
     """
-    target = f"forg.co.kr{path}"
+    # A path is server-relative on forg.co.kr unless it names its own host.
+    # frame-main-2003 pulled 13 images from hosting27.interpia98.net/~forg/,
+    # which a forg.co.kr-only probe can never see.
+    target = path if path.startswith("http") else f"forg.co.kr{path}"
     params = {
         "url": target,
         "output": "json",
