@@ -422,11 +422,16 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
   const mBarLogo = chromeUrl("m_bar_logo.gif", ERA);
   // The two decorative columns. Both were served from
   // hosting27.interpia98.net in 2003, which is why the forg.co.kr-only
-  // recovery never found them. r_logo_1.gif (80×520, the "Age of Shadows"
-  // box art) has no capture even there, so that column stays empty.
+  // recovery never found them.
   const middleLogo = chromeUrl("m_middle_logo.gif", ERA);
   const rBarB = chromeUrl("r_bar_b.gif", ERA);
   const logoBottom = chromeUrl("logo_bottom.gif", ERA);
+  // Neither of these had a capture on the interpia host, but the
+  // forg.co.kr/images/ copies are in .docs/research/cdx/site-images.json —
+  // an inventory that had never been joined against anything. Fetched
+  // straight from those rows (2004-09-19 and 2004-02-22).
+  const mainArt = chromeUrl("forg_main_logo_1.gif", ERA);
+  const rightArt = chromeUrl("r_logo_1.gif", ERA);
 
   return (
     <section aria-label="2003 메인 콘텐츠" className="flex flex-1 flex-col bg-white px-3 py-2">
@@ -438,6 +443,16 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
             mBar ? { backgroundImage: `url(${mBar})`, backgroundRepeat: "repeat-y" } : undefined
           }
         >
+          {mainArt && (
+            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 350×127 art
+            <img
+              src={mainArt}
+              alt="Ultima Online — Honor & Sacrifice"
+              width={350}
+              height={127}
+              className="block"
+            />
+          )}
           {leftBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} />
           ))}
@@ -459,7 +474,12 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           ))}
           <BestScreenShotBox />
         </div>
-        <div aria-hidden className="hidden md:block" />
+        <div aria-hidden className="hidden md:block">
+          {rightArt && (
+            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 80×520 art
+            <img src={rightArt} alt="" width={80} height={520} className="block" />
+          )}
+        </div>
       </div>
       {/* Closing rule row: m_bar_logo.gif 350×20 over the 350px column, the
           rest `bgcolor="#5A6269"`. */}
