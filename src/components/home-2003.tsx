@@ -48,6 +48,10 @@ import type { BoardIndexEntry } from "@/types/post";
  *  `lib/chrome`. */
 const ERA: ChromeEra = "2003";
 
+/** Visitor total shown by frame-bottom-2003 on 2003-06-03. Frozen, like
+ *  the 2014 counter's 52,916,713. */
+const VISITORS_2003 = 3399428;
+
 const BOX_RECENT_COUNT = 6;
 
 interface BoardBoxConfig {
@@ -591,15 +595,78 @@ function monthDayFromIso(iso: string): string {
 /*  Frame: bottom — copyright                                              */
 /* ────────────────────────────────────────────────────────────────────── */
 export function FrameBottom2003() {
-  // frame-bottom-2003: `bgcolor="6B82A5"`, background bgm/bgm_bg.gif, 24px
-  // per the frameset's `rows="53, 80%, 24"`. It held the background-music
-  // player (`onload="cast()"`), which the museum does not reproduce.
+  // frame-bottom-2003, 24px per the frameset's `rows="53, 80%, 24"`, on
+  // `bgcolor="6B82A5"` with bgm/bgm_bg.gif tiled. Four cells: count.gif
+  // ("Total :", 50px) · the visitor number (70px, #fafafa) · ser.gif
+  // ("SEARCH") with a 150px text input and an en.gif submit · bgm_right.gif
+  // right-aligned. The frame also started a Shoutcast stream on load
+  // (`onload="cast()"`, mulple.com), which is the "bgm" in the filenames;
+  // the museum keeps the counter and the search and drops the music.
   const bgUrl = chromeUrl("bgm_bg.gif", ERA);
+  const countUrl = chromeUrl("count.gif", ERA);
+  const serUrl = chromeUrl("bgm_ser.gif", ERA);
+  const enUrl = chromeUrl("bgm_en.gif", ERA);
+  const rightUrl = chromeUrl("bgm_right.gif", ERA);
+  const tile = bgUrl
+    ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" }
+    : undefined;
+
   return (
-    <div
-      aria-hidden
-      className="bg-forg-bgm h-[24px] w-full shrink-0"
-      style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
-    />
+    <footer
+      role="contentinfo"
+      aria-label="누적 방문 (2003-06-03 기준 박제) · 검색"
+      className="bg-forg-bgm text-forg-cream flex h-[24px] w-full shrink-0 items-center text-[11px]"
+      style={tile}
+    >
+      <div className="flex h-[24px] w-[50px] shrink-0 items-end">
+        {countUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
+          <img src={countUrl} alt="Total :" width={50} height={24} className="block" />
+        ) : (
+          <span className="pl-1 font-bold">Total :</span>
+        )}
+      </div>
+      <span className="w-[70px] shrink-0 pt-[6px] font-mono text-[11px] tabular-nums">
+        {VISITORS_2003}
+      </span>
+      <form action="/search" method="get" className="flex h-[24px] grow items-center gap-[4px]">
+        {serUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
+          <img src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
+        ) : (
+          <span className="font-bold">SEARCH</span>
+        )}
+        <input
+          type="search"
+          name="q"
+          aria-label="검색어"
+          placeholder="Forg's World"
+          className="text-forg-ink h-[17px] w-[150px] border border-(--era-input-border) bg-(--era-content-bg) px-1 text-[12px]"
+        />
+        {enUrl ? (
+          <button type="submit" className="block">
+            {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
+            <img src={enUrl} alt="ENTER" className="block" />
+          </button>
+        ) : (
+          <button
+            type="submit"
+            className="text-forg-cream/90 h-[17px] border border-(--era-input-border) bg-(--era-page-bg)/30 px-1 text-[10px] font-bold"
+          >
+            ENTER
+          </button>
+        )}
+      </form>
+      {rightUrl && (
+        // eslint-disable-next-line @next/next/no-img-element -- static export, decorative 150×24 chrome
+        <img
+          src={rightUrl}
+          alt=""
+          width={150}
+          height={24}
+          className="hidden h-[24px] w-auto shrink-0 sm:block"
+        />
+      )}
+    </footer>
   );
 }
