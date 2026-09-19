@@ -34,7 +34,7 @@ from pathlib import Path
 from urllib.parse import quote, urlsplit, urlunsplit
 
 # ── Filesystem layout ─────────────────────────────────────────────────-
-ROOT = Path("/Users/hanyul/Works/AiScream/forg/.docs/research")
+ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research"
 WAYBACK_RATE_LOCK = ROOT / ".wayback-rate-limit.lock"
 WAYBACK_RATE_STATE = ROOT / ".wayback-rate-limit.json"
 

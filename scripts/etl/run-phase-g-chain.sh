@@ -14,7 +14,7 @@
 
 set -e
 
-PROJECT_ROOT="/Users/hanyul/Works/AiScream/forg"
+PROJECT_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 RUN_DIR="$PROJECT_ROOT/.docs/research/archive/images"
 PY="$PROJECT_ROOT/.venv/bin/python3"
 

@@ -39,7 +39,7 @@ from typing import Optional
 from bs4 import BeautifulSoup, Comment
 
 # ── Paths (ADR-0007 §3) ─────────────────────────────────────────────────
-ROOT = Path("/Users/hanyul/Works/AiScream/forg/.docs/research")
+ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research"
 INPUT_DIR = ROOT / "archive"
 OUTPUT_DIR = ROOT / "archive-clean"
 ERRORS_FILE = OUTPUT_DIR / ".errors.jsonl"

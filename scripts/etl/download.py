@@ -37,7 +37,7 @@ from wayback_client import (
     wayback_url,
 )
 
-ROOT = Path("/Users/hanyul/Works/AiScream/forg/.docs/research")
+ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research"
 PLAN_FILE = ROOT / "cdx" / "e-policy-plan.json"
 ARCHIVE = ROOT / "archive"
 PROGRESS_FILE = ARCHIVE / ".progress.jsonl"
