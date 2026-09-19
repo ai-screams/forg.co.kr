@@ -176,33 +176,25 @@ async function loadBox(config: BoardBoxConfig): Promise<BoxData> {
   };
 }
 
-export async function Home2003() {
+/**
+ * The 2003 exhibit itself — what goes in the 680px column. The frame
+ * around it (header, sidebar, bottom strip) is shared with every other
+ * route through `<EraShell>`, which imports the three Frame* components
+ * exported below.
+ */
+export async function Home2003Content() {
   const [leftBoxes, rightBoxes] = await Promise.all([
     Promise.all(LEFT_BOXES.map(loadBox)),
     Promise.all(RIGHT_BOXES.map(loadBox)),
   ]);
 
-  return (
-    <div className="bg-forg-slate flex w-full flex-1">
-      <div
-        className="flex w-full max-w-[797px] shrink-0 flex-col gap-0 bg-white text-[11px]"
-        style={{ fontFamily: "Verdana, '굴림', Gulim, Tahoma, sans-serif" }}
-      >
-        <FrameTop2003 />
-        <div className="flex flex-1">
-          <FrameLeft2003 />
-          <FrameMain2003 leftBoxes={leftBoxes} rightBoxes={rightBoxes} />
-        </div>
-        <FrameBottom2003 />
-      </div>
-    </div>
-  );
+  return <FrameMain2003 leftBoxes={leftBoxes} rightBoxes={rightBoxes} />;
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
 /*  Frame: top — forg logo + small login/signup links + 7-button menu     */
 /* ────────────────────────────────────────────────────────────────────── */
-function FrameTop2003() {
+export function FrameTop2003() {
   // frame-top-2003: `<table width="680">` with `<td width="100" height="37"
   // rowspan="3">` holding left_logo.gif (100×42 — the 2003 logo, distinct
   // from 2014's left_logo1.gif), then three 580px rows: the #FFC73B login
@@ -338,7 +330,7 @@ function FaqIcon2003() {
 /* ────────────────────────────────────────────────────────────────────── */
 /*  Frame: left — Information / Cooperation / Reminisce / Forg.Board ...  */
 /* ────────────────────────────────────────────────────────────────────── */
-function FrameLeft2003() {
+export function FrameLeft2003() {
   // frameset cols="10, 100, 680, 7, 1*" and left_background.gif is 100×45.
   const tileUrl = chromeUrl("left_background.gif");
   return (
@@ -590,7 +582,7 @@ function monthDayFromIso(iso: string): string {
 /* ────────────────────────────────────────────────────────────────────── */
 /*  Frame: bottom — copyright                                              */
 /* ────────────────────────────────────────────────────────────────────── */
-function FrameBottom2003() {
+export function FrameBottom2003() {
   // frame-bottom-2003: `bgcolor="6B82A5"`, background bgm/bgm_bg.gif, 24px
   // per the frameset's `rows="53, 80%, 24"`. It held the background-music
   // player (`onload="cast()"`), which the museum does not reproduce.

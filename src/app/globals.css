@@ -97,6 +97,14 @@ body {
     color 200ms ease;
 }
 
+/* frame-main-2003 declares 굴림 12 times, Verdana 12 and Tahoma 6; the
+ * exhibit used to carry this as an inline style, but it belongs to the era
+ * rather than to one component. Unlayered on purpose: a rule inside
+ * `@layer base` loses to the unlayered `body` rule above it. */
+:root[data-era="2003"] body {
+  font-family: Verdana, "굴림", Gulim, Tahoma, sans-serif;
+}
+
 /* ─────────────────────────────────────────────────────────────────────
  * Era-scoped visibility — used on the home page (and any future routes
  * that ship side-by-side 2003 / 2014 markup). Both era variants render
