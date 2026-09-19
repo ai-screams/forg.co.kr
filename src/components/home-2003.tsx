@@ -420,6 +420,13 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
   const mBar = chromeUrl("m_bar.gif", ERA);
   const rBar = chromeUrl("r_bar.gif", ERA);
   const mBarLogo = chromeUrl("m_bar_logo.gif", ERA);
+  // The two decorative columns. Both were served from
+  // hosting27.interpia98.net in 2003, which is why the forg.co.kr-only
+  // recovery never found them. r_logo_1.gif (80×520, the "Age of Shadows"
+  // box art) has no capture even there, so that column stays empty.
+  const middleLogo = chromeUrl("m_middle_logo.gif", ERA);
+  const rBarB = chromeUrl("r_bar_b.gif", ERA);
+  const logoBottom = chromeUrl("logo_bottom.gif", ERA);
 
   return (
     <section aria-label="2003 메인 콘텐츠" className="flex flex-1 flex-col bg-white px-3 py-2">
@@ -435,7 +442,12 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
             <SectionBox2003 key={box.config.asset} box={box} />
           ))}
         </div>
-        <div aria-hidden className="hidden md:block" />
+        <div aria-hidden className="hidden md:block">
+          {middleLogo && (
+            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 30×520 chrome
+            <img src={middleLogo} alt="" width={30} height={520} className="block" />
+          )}
+        </div>
         <div
           className="space-y-2"
           style={
@@ -459,9 +471,28 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           <div className="h-[20px]" />
         )}
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
-        <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
+        <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block">
+          {rBarB && (
+            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 185×1 rule
+            <img src={rBarB} alt="" width={185} height={1} className="block" />
+          )}
+        </div>
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
       </div>
+      {/* frame-main-2003 ends with logo_bottom.gif, a 380×18 "All Contents
+          Copyright 1999-2002 Forg, All Rights Reserved." centred under the
+          table. */}
+      {logoBottom && (
+        <p className="mt-2 flex justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered 380×18 chrome */}
+          <img
+            src={logoBottom}
+            alt="All Contents Copyright 1999-2002 Forg, All Rights Reserved."
+            width={380}
+            height={18}
+          />
+        </p>
+      )}
     </section>
   );
 }

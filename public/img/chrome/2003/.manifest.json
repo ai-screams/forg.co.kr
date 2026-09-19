@@ -32,6 +32,14 @@
     "mimetype": "image/gif"
   },
   {
+    "originalPath": "/bgm/bgm_right.gif",
+    "filename": "bgm_right.gif",
+    "capturedAt": "20030728092215",
+    "sizeBytes": 882,
+    "sha256": "300c059d184bbfc8da8a0fbc2c24f9e68b397105dd92236da511d2e90691b0fd",
+    "mimetype": "image/gif"
+  },
+  {
     "originalPath": "/bgm/ser.gif",
     "filename": "bgm_ser.gif",
     "capturedAt": "20040928011210",
@@ -53,6 +61,14 @@
     "capturedAt": "20040609194728",
     "sizeBytes": 2634,
     "sha256": "ae36088015fa0760eaf80898ffa722c47ee8d55331162dec910a2d4df93ee128",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "http://hosting27.interpia98.net/~forg/images/logo_bottom.gif",
+    "filename": "logo_bottom.gif",
+    "capturedAt": "20040306090430",
+    "sizeBytes": 463,
+    "sha256": "a076b7c808c8ad747222fb7e53911cdbdfc14eb7ff5bf0d8edee3a18a6e7435d",
     "mimetype": "image/gif"
   },
   {
@@ -128,6 +144,14 @@
     "mimetype": "image/gif"
   },
   {
+    "originalPath": "http://hosting27.interpia98.net/~forg/images/m_middle_logo.gif",
+    "filename": "m_middle_logo.gif",
+    "capturedAt": "20040306090451",
+    "sizeBytes": 16602,
+    "sha256": "42451c336a71f1e21d01446af855f6e949b84ad7492e80110d9ee5dd7695cb6e",
+    "mimetype": "image/gif"
+  },
+  {
     "originalPath": "/images/m_notice.gif",
     "filename": "m_notice.gif",
     "capturedAt": "20041116001226",
@@ -189,6 +213,14 @@
     "capturedAt": "20020502193845",
     "sizeBytes": 1380,
     "sha256": "409a313c1c8aa302731add705e24644217f69c4a95b8f84b6cf789bf878b147e",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "http://hosting27.interpia98.net/~forg/images/r_bar_b.gif",
+    "filename": "r_bar_b.gif",
+    "capturedAt": "20040306090430",
+    "sizeBytes": 62,
+    "sha256": "c0f6e7c086f0561f231d3d478e84acd08051c267944f1badb27cea33c34de2af",
     "mimetype": "image/gif"
   },
   {
