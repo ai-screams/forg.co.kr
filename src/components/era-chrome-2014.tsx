@@ -17,7 +17,11 @@ import { Fragment } from "react";
 import Link from "@/components/link";
 
 import { type BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+
+/** This surface is the 2014 exhibit, so its assets are asked for at their
+ *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
+const ERA: ChromeEra = "2014";
 
 export interface MenuConfig {
   id: BoardId;
@@ -65,7 +69,7 @@ export function LeftRail() {
 }
 
 export function RightRail() {
-  const bgUrl = chromeUrl("right_bg.gif");
+  const bgUrl = chromeUrl("right_bg.gif", ERA);
   return (
     <div
       className="bg-forg-slate hidden w-[7px] shrink-0 sm:block"
@@ -88,16 +92,16 @@ export function AdSenseColumn() {
 /* ──────────────────────────────────────────────────────────────────── */
 
 export function GameCategorySidebar() {
-  const sidebarStyle = chromeUrl("left_bg.gif")
+  const sidebarStyle = chromeUrl("left_bg.gif", ERA)
     ? {
-        backgroundImage: `url(${chromeUrl("left_bg.gif")})`,
+        backgroundImage: `url(${chromeUrl("left_bg.gif", ERA)})`,
         backgroundRepeat: "repeat",
       }
     : undefined;
 
   // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
   // appears only in frame-left-2007 and never in 2014-12-18.
-  const barUrl = chromeUrl("l_bar.gif");
+  const barUrl = chromeUrl("l_bar.gif", ERA);
 
   return (
     <aside
@@ -130,7 +134,7 @@ export function GameCategorySidebar() {
 }
 
 function SidebarSpacer({ height }: { height: number }) {
-  const url = chromeUrl("blank_l_line.gif");
+  const url = chromeUrl("blank_l_line.gif", ERA);
   if (!url) return <div style={{ height }} aria-hidden />;
   // eslint-disable-next-line @next/next/no-img-element -- static export, 49 B spacer
   return <img src={url} alt="" width={86} height={height} className="block" />;
@@ -147,9 +151,9 @@ function SidebarSpacer({ height }: { height: number }) {
 // edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
 // as a white gap under the logo and breaks that blend.
 export function SiteHeader2014() {
-  const logoUrl = chromeUrl("left_logo1.gif");
-  const tBarUrl = chromeUrl("t_bar.gif");
-  const tLineUrl = chromeUrl("t_line.gif");
+  const logoUrl = chromeUrl("left_logo1.gif", ERA);
+  const tBarUrl = chromeUrl("t_bar.gif", ERA);
+  const tLineUrl = chromeUrl("t_line.gif", ERA);
 
   return (
     <div className="border-b border-(--era-input-border) bg-white">
@@ -204,7 +208,7 @@ export function SiteHeader2014() {
 
 /** A recovered chrome button the museum deliberately does not wire up. */
 function InertChrome({ asset, label, title }: { asset: string; label: string; title: string }) {
-  const url = chromeUrl(asset);
+  const url = chromeUrl(asset, ERA);
   if (!url) {
     return (
       <span
@@ -223,8 +227,8 @@ function InertChrome({ asset, label, title }: { asset: string; label: string; ti
 }
 
 function MenuButton({ item }: { item: MenuConfig }) {
-  const baseUrl = chromeUrl(item.asset);
-  const hoverUrl = chromeUrl(item.hoverAsset);
+  const baseUrl = chromeUrl(item.asset, ERA);
+  const hoverUrl = chromeUrl(item.hoverAsset, ERA);
 
   if (baseUrl) {
     // CSS-only hover swap via background-image overlay (SSG-safe).
@@ -268,8 +272,8 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /* ──────────────────────────────────────────────────────────────────── */
 
 export function VisitorCounter({ total }: { total: number }) {
-  const bgUrl = chromeUrl("bgm_bg.gif");
-  const rightUrl = chromeUrl("bgm_right.gif");
+  const bgUrl = chromeUrl("bgm_bg.gif", ERA);
+  const rightUrl = chromeUrl("bgm_right.gif", ERA);
 
   return (
     <footer

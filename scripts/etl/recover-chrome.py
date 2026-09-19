@@ -21,8 +21,13 @@ Polite policy: same fcntl.flock global slot as Phase D. Even if both run
 side-by-side, Wayback sees one in-flight request total.
 
 Re-runs are idempotent — files already on disk + non-empty are skipped.
-The single-URL CDX probe picks the latest valid `image/*` capture in the
-1999-2015 window (matches forg's active years).
+The single-URL CDX probe picks the latest valid `image/*` capture in its
+window, which defaults to 1999-2015 (forg's active years).
+
+`--era 2003` / `--era 2014` bound that window to one decade and write into
+`public/img/chrome/<era>/`. Without it the newest capture wins, which dresses
+the 2003 exhibit in later artwork wherever a filename's art changed —
+`t_b_kal.gif` read "Kal Ort Por" in 2003 and "Hot Link" by 2007.
 """
 from __future__ import annotations
 
@@ -50,8 +55,24 @@ MANIFEST_FILE = OUT_DIR / ".manifest.json"
 REPORT_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / ".chrome-recovery-report.json"
 
 CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
+
 DEFAULT_FROM = "19990101000000"
 DEFAULT_TO = "20151231235959"
+
+# Overridden by --era in main().
+FROM_TS = DEFAULT_FROM
+TO_TS = DEFAULT_TO
+
+# Era windows. The CDX probe picks the *latest* capture inside its window, so
+# an unbounded window dresses the 2003 exhibit in 2007 and 2014 artwork: the
+# same filename held different art over the years. `t_b_kal.gif` read
+# "Kal Ort Por" in 2003 and "Hot Link" by 2007; `r_screen.gif` read
+# "BestScreenShot" in 2003 and "Last Expansion Pack" later. Bounding the
+# window per era, into its own directory, keeps each exhibit in its own decade.
+ERA_WINDOWS: dict[str, tuple[str, str]] = {
+    "2003": ("19990101000000", "20041231235959"),
+    "2014": ("20110101000000", "20151231235959"),
+}
 
 
 # Each target: (originalPath, savedFilename). originalPath is the
@@ -278,7 +299,7 @@ def fetch_asset(target_path: str, filename: str) -> dict:
             "filename": filename,
         }
 
-    cdx = cdx_probe(target_path, from_ts=DEFAULT_FROM, to_ts=DEFAULT_TO)
+    cdx = cdx_probe(target_path, from_ts=FROM_TS, to_ts=TO_TS)
     if cdx is None:
         return {
             "status": "missing",
@@ -368,13 +389,29 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--print-every", type=int, default=5)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--era",
+        choices=sorted(ERA_WINDOWS),
+        help=(
+            "Recover the capture nearest that era instead of the newest one, "
+            "into public/img/chrome/<era>/. Without it the flat pool is used."
+        ),
+    )
     args = parser.parse_args()
+
+    global OUT_DIR, MANIFEST_FILE, REPORT_FILE, FROM_TS, TO_TS
+    if args.era:
+        FROM_TS, TO_TS = ERA_WINDOWS[args.era]
+        OUT_DIR = OUT_DIR / args.era
+        MANIFEST_FILE = OUT_DIR / ".manifest.json"
+        REPORT_FILE = REPORT_FILE.with_name(f".chrome-recovery-report-{args.era}.json")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     targets = CHROME_TARGETS[: args.limit] if args.limit else CHROME_TARGETS
     print(
-        f"[recover-chrome] targets={len(targets)} output={OUT_DIR} dry_run={args.dry_run}",
+        f"[recover-chrome] targets={len(targets)} output={OUT_DIR} "
+        f"window={FROM_TS[:8]}..{TO_TS[:8]} dry_run={args.dry_run}",
         file=sys.stderr,
     )
 

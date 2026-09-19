@@ -39,9 +39,14 @@
 import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, type ChromeEra } from "@/lib/chrome";
 import { getBoardIndex } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
+
+/** Every asset on this surface is asked for at its 2003 capture. Without it
+ *  the newest capture wins and the exhibit wears 2007 artwork — see
+ *  `lib/chrome`. */
+const ERA: ChromeEra = "2003";
 
 const BOX_RECENT_COUNT = 6;
 
@@ -84,9 +89,11 @@ const TOP_MENU_2003: TopMenuConfig[] = [
   { id: "UOForum", asset: "t_b_essay.gif", label: "울온에세이란" },
   { id: "HouseScreenshot", asset: "t_hi.gif", label: "하우스인테리어란" },
   { id: "ScreenShot", asset: "t_b_screenshot.gif", label: "스크린샷란" },
-  // frame-top-2003 wires t_b_kal.gif to `zboard.php?id=Recall`, and the
-  // button art reads "Hot Link" — not 울온자료실 (that is the Items board).
-  { id: "Recall", asset: "t_b_kal.gif", label: "Hot Link" },
+  // frame-top-2003 wires t_b_kal.gif to `zboard.php?id=Recall`. The 2003
+  // art reads "Kal Ort Por" — the Ultima recall spell, which is the joke
+  // the board name is making. (The 2007 capture of the same filename reads
+  // "Hot Link"; that is a later redesign, not this era.)
+  { id: "Recall", asset: "t_b_kal.gif", label: "Kal Ort Por" },
 ];
 
 // Sidebar (frame-left-2003) — 5 sections with English chrome-bar
@@ -200,9 +207,9 @@ export function FrameTop2003() {
   // from 2014's left_logo1.gif), then three 580px rows: the #FFC73B login
   // bar, a 4px t_bar.gif rule and the menu row of 80×20 buttons. 18+4+20
   // equals the logo height, so the art spans all three rows.
-  const leftLogo = chromeUrl("left_logo.gif");
-  const tBarUrl = chromeUrl("t_bar.gif");
-  const tLineUrl = chromeUrl("t_line.gif");
+  const leftLogo = chromeUrl("left_logo.gif", ERA);
+  const tBarUrl = chromeUrl("t_bar.gif", ERA);
+  const tLineUrl = chromeUrl("t_line.gif", ERA);
 
   return (
     <header>
@@ -264,7 +271,7 @@ export function FrameTop2003() {
 
 /** Recovered 2003 chrome button the museum leaves inert. */
 function InertChrome2003({ asset, label, title }: { asset: string; label: string; title: string }) {
-  const url = chromeUrl(asset);
+  const url = chromeUrl(asset, ERA);
   if (!url) {
     return (
       <span title={title} className="text-forg-ink text-[10px] font-bold select-none">
@@ -273,13 +280,15 @@ function InertChrome2003({ asset, label, title }: { asset: string; label: string
     );
   }
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 70×15 chrome
-    <img src={url} alt={label} title={title} width={70} height={15} className="block" />
+    // 70×18 here, not the 2014 header's 70×15: the 2003 art is taller and
+    // frame-top-2003 declares it that way.
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
+    <img src={url} alt={label} title={title} width={70} height={18} className="block" />
   );
 }
 
 function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
-  const assetUrl = chromeUrl(item.asset);
+  const assetUrl = chromeUrl(item.asset, ERA);
   if (assetUrl) {
     return (
       <Link
@@ -313,7 +322,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
 }
 
 function FaqIcon2003() {
-  const url = chromeUrl("t_b_right.gif");
+  const url = chromeUrl("t_b_right.gif", ERA);
   if (!url) return null;
   return (
     <span
@@ -332,7 +341,7 @@ function FaqIcon2003() {
 /* ────────────────────────────────────────────────────────────────────── */
 export function FrameLeft2003() {
   // frameset cols="10, 100, 680, 7, 1*" and left_background.gif is 100×45.
-  const tileUrl = chromeUrl("left_background.gif");
+  const tileUrl = chromeUrl("left_background.gif", ERA);
   return (
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
@@ -363,7 +372,7 @@ export function FrameLeft2003() {
 }
 
 function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[number] }) {
-  const headerUrl = chromeUrl(section.asset);
+  const headerUrl = chromeUrl(section.asset, ERA);
   return (
     <div>
       {headerUrl ? (
@@ -404,9 +413,9 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
   // 350 (boxes, background m_bar.gif) / 30 (m_middle_logo.gif, unrecovered) /
   // 185 (boxes, background r_bar.gif) / 80 (r_logo_1.gif, unrecovered).
   // The two decorative columns stay empty rather than hold a stand-in.
-  const mBar = chromeUrl("m_bar.gif");
-  const rBar = chromeUrl("r_bar.gif");
-  const mBarLogo = chromeUrl("m_bar_logo.gif");
+  const mBar = chromeUrl("m_bar.gif", ERA);
+  const rBar = chromeUrl("r_bar.gif", ERA);
+  const mBarLogo = chromeUrl("m_bar_logo.gif", ERA);
 
   return (
     <section aria-label="2003 메인 콘텐츠" className="flex flex-1 flex-col bg-white px-3 py-2">
@@ -432,7 +441,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           {rightBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} compact />
           ))}
-          <LastExpansionPackBox />
+          <BestScreenShotBox />
         </div>
         <div aria-hidden className="hidden md:block" />
       </div>
@@ -465,8 +474,8 @@ function MainHeading() {
 }
 
 function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
-  const headerUrl = chromeUrl(box.config.asset);
-  const bulletUrl = chromeUrl(box.config.bullet);
+  const headerUrl = chromeUrl(box.config.asset, ERA);
+  const bulletUrl = chromeUrl(box.config.bullet, ERA);
   return (
     <section className="border-forg-gold/40 border-b bg-white" aria-label={box.config.label}>
       <Link
@@ -525,20 +534,21 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
   );
 }
 
-function LastExpansionPackBox() {
+function BestScreenShotBox() {
   // Both assets are the originals, recovered 2026-09-18: r_screen.gif is the
   // 185×22 header and best_22.gif the 160×105 thumbnail the 2003 front page
   // actually carried. Earlier code substituted r_essay.gif here, which made
   // the page claim this box was UO.Essay.
   //
-  // The recovered header art reads "Last Expansion Pack" (UO: Age of
-  // Shadows shipped 2003-02), and frame-main-2003 wires both it and the
-  // thumbnail to the ScreenShot board — hence the name here. The original
-  // served this one asset from hosting27.interpia98.net/~forg/images/.
-  const headerUrl = chromeUrl("r_screen.gif");
-  const shotUrl = chromeUrl("best_22.gif");
+  // The 2003 art reads "BestScreenShot"; the later capture of the same
+  // filename reads "Last Expansion Pack", which is what we shipped until the
+  // era pools existed. frame-main-2003 wires both header and thumbnail to the
+  // ScreenShot board. The original served the header from
+  // hosting27.interpia98.net/~forg/images/.
+  const headerUrl = chromeUrl("r_screen.gif", ERA);
+  const shotUrl = chromeUrl("best_22.gif", ERA);
   return (
-    <section className="border-forg-gold/40 border-b bg-white" aria-label="Last Expansion Pack">
+    <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
       <div
         className="bg-forg-gold/10 flex h-[22px] items-center px-1"
         style={
@@ -551,10 +561,8 @@ function LastExpansionPackBox() {
             : undefined
         }
       >
-        {!headerUrl && (
-          <span className="text-forg-ink text-[11px] font-bold">Last Expansion Pack</span>
-        )}
-        <span className="sr-only">Last Expansion Pack</span>
+        {!headerUrl && <span className="text-forg-ink text-[11px] font-bold">BestScreenShot</span>}
+        <span className="sr-only">BestScreenShot</span>
       </div>
       {shotUrl ? (
         // The original deep-linked ScreenShot post no=7755, which is above the
@@ -586,7 +594,7 @@ export function FrameBottom2003() {
   // frame-bottom-2003: `bgcolor="6B82A5"`, background bgm/bgm_bg.gif, 24px
   // per the frameset's `rows="53, 80%, 24"`. It held the background-music
   // player (`onload="cast()"`), which the museum does not reproduce.
-  const bgUrl = chromeUrl("bgm_bg.gif");
+  const bgUrl = chromeUrl("bgm_bg.gif", ERA);
   return (
     <div
       aria-hidden
