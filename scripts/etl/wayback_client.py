@@ -98,10 +98,26 @@ def _ascii_safe_url(url: str) -> str:
     return urlunsplit((
         parts.scheme,
         parts.netloc,
-        quote(parts.path, safe=safe_path),
-        quote(parts.query, safe=safe_query),
-        quote(parts.fragment, safe=safe_frag),
+        quote(_raw_bytes(parts.path), safe=safe_path),
+        quote(_raw_bytes(parts.query), safe=safe_query),
+        quote(_raw_bytes(parts.fragment), safe=safe_frag),
     ))
+
+
+def _raw_bytes(text: str) -> bytes:
+    """The bytes a URL component stands for.
+
+    CDX JSON hands back the original URL's raw bytes decoded as Latin-1, so a
+    UTF-8 keyword arrives as `ë\x8b¤ì\x93°…` (every code point ≤ U+00FF).
+    Encoding that back as Latin-1 restores the bytes; quoting it as UTF-8,
+    which `quote(str)` does, double-encodes them and Wayback answers 404 —
+    the two plan entries that never downloaded (collection audit G6). Text
+    with any code point above U+00FF is genuine Unicode and stays UTF-8.
+    """
+    try:
+        return text.encode("latin-1")
+    except UnicodeEncodeError:
+        return text.encode("utf-8")
 
 
 def wayback_url(ts: str, original: str) -> str:

@@ -110,7 +110,12 @@ def main():
     for k, captures in by_post.items():
         ok = [c for c in captures if c["status"] == "200" and c["mime"] == "text/html"]
         if ok:
-            best = max(ok, key=lambda c: (c["length"], c["ts"]))
+            # A capture whose URL carries raw non-ASCII bytes (a Korean
+            # `keyword=` the CDX hands back as Latin-1 mojibake) does not
+            # replay under any encoding — FunBoard/2012's longest capture
+            # 404s while its CP949-percent-encoded 2002 capture serves.
+            # Prefer a URL Wayback can resolve, then length, then recency.
+            best = max(ok, key=lambda c: (c["url"].isascii(), c["length"], c["ts"]))
             chosen[k] = best
         else:
             no_200.append((k, captures))
