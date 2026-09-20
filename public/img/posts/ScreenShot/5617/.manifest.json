@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "울트라비틀.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%bf%ef%c6%ae%b6%f3%ba%f1%c6%b2.jpg",
+    "capturedAt": "20021028122028",
+    "sizeBytes": 164802,
+    "sha256": "a998772e6de179f648417acd919f6db45423dc632469cc29509a94844e208aad",
+    "digest": "QBAWS7OFV4SKXW25U53CG3DNQWA2GUO5"
+  },
+  {
+    "filename": "울트라비틀2.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%bf%ef%c6%ae%b6%f3%ba%f1%c6%b22.jpg",
+    "capturedAt": "20021028122331",
+    "sizeBytes": 153785,
+    "sha256": "b38cf9e326fb6eb022974b56484eb01921b36382c912d1f37efb2585f1758c77",
+    "digest": "UIZXCPJR4QGHPWBNBDVECCMXSF2P5HJL"
+  }
+]

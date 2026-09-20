@@ -5,5 +5,13 @@
     "capturedAt": "20021119093402",
     "sizeBytes": 289043,
     "sha256": "a140b6712979bcefc5d24045da36a2da01465248bb650c5e26f15b29b96ecf50"
+  },
+  {
+    "filename": "ee_병신스타.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/ee_%ba%b4%bd%c5%bd%ba%c5%b8.jpg",
+    "capturedAt": "20021119093032",
+    "sizeBytes": 268986,
+    "sha256": "1b09bf33c6e4f277efe9504d3c40fa88e2f43cab2673e22e01eee95a6efe7479",
+    "digest": "763BZZ5KWI55VGLKZI33J2QVOMBKF37L"
   }
 ]

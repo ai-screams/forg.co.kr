@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "오피디언1.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%bf%c0%c7%c7%b5%f0%be%f01.jpg",
+    "capturedAt": "20021009195931",
+    "sizeBytes": 195247,
+    "sha256": "a6a9d10b25ade9977cf992d9bc3e16a08f3cf77622fd6c341568a3d381f2c2e7",
+    "digest": "PVVC47K2QXCD5EMCDOVHNMUKBWWH656K"
+  },
+  {
+    "filename": "오피디언3.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%bf%c0%c7%c7%b5%f0%be%f03.jpg",
+    "capturedAt": "20021009200128",
+    "sizeBytes": 125325,
+    "sha256": "173d52e53b74d0f876ebbb89fa40fc05128b1d5a6c5dede278d4435b3936fcad",
+    "digest": "HOMVGT676A2SB7IWGRQJQIMB6QQ23LJH"
+  }
+]

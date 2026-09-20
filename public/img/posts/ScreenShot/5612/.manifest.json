@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "라마0001.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%b6%f3%b8%b60001.jpg",
+    "capturedAt": "20021028181841",
+    "sizeBytes": 187236,
+    "sha256": "84ea2c9b3ceba3631480a8038ac062f141836a8bac4c7a7c4f437e0b60a7e5cb",
+    "digest": "44L72ET5WHRZFOWF26YLWDUEPYLGQ5JI"
+  },
+  {
+    "filename": "라마0002.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%b6%f3%b8%b60002.jpg",
+    "capturedAt": "20021028182315",
+    "sizeBytes": 183989,
+    "sha256": "ecf397e8298e60bdc9ebb430b8b708b4334c820a966f8e96571854050201c115",
+    "digest": "QEV2UYL5WZVDTP6SF3F4LWSM4ZYRTU3P"
+  }
+]
