@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "하늘님집.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%c7%cf%b4%c3%b4%d4%c1%fd.jpg",
+    "capturedAt": "20021009162703",
+    "sizeBytes": 347948,
+    "sha256": "cf30f39c7cf38e241b051e8c18a8280c4e5324c6ebb050f0149e5cabd27cbf1b",
+    "digest": "3KXX4EJGXHDMRHMEF33XVQY45IKHS6SN"
+  },
+  {
+    "filename": "하늘님집1.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%c7%cf%b4%c3%b4%d4%c1%fd1.jpg",
+    "capturedAt": "20021009162912",
+    "sizeBytes": 142242,
+    "sha256": "def7d16c2d5d34474c4be18655f9722391877e55be6440586f94fc87761576b8",
+    "digest": "WVZI55CIYZE6O7W5SVQIQV7XUEK5SJLO"
+  }
+]

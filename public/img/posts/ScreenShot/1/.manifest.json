@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "alsee_1.gif",
+    "originalUrl": "http://forg.co.kr:80/images/alsee_1.gif",
+    "capturedAt": "20021009140246",
+    "sizeBytes": 32026,
+    "sha256": "4e8f88ba2d27ef4d971246f99ae52e2cf33b249da58e027ef53d130664153f9a",
+    "digest": "5RZ7TJZG6P5OZJ6G4RPOZVU27YOTGE3I"
+  },
+  {
+    "filename": "alsee_2.gif",
+    "originalUrl": "http://forg.co.kr:80/images/alsee_2.gif",
+    "capturedAt": "20021009140500",
+    "sizeBytes": 20464,
+    "sha256": "7b34d20d3eae1191413de555c63c647f924991a0448f91c17325b52565b88921",
+    "digest": "D3MAGUVHLPREF4BPPAOUEWYERUPYSGXB"
+  },
+  {
+    "filename": "alsee_3.gif",
+    "originalUrl": "http://forg.co.kr:80/images/alsee_3.gif",
+    "capturedAt": "20021009140646",
+    "sizeBytes": 3857,
+    "sha256": "f5559f7915299c9bd064645bd8c00f0a0971052d787e23cc580627512d77543d",
+    "digest": "OLKLOZGTSXZOXJ7NONHXI4P6Z2T6HZWL"
+  },
+  {
+    "filename": "nr.gif",
+    "originalUrl": "http://forg.co.kr:80/images/nr.gif",
+    "capturedAt": "20021009141127",
+    "sizeBytes": 81,
+    "sha256": "3503c968ce5019dbff62c900df4bdaca1f8dd50d887458a3e27e5a62c87f674a",
+    "digest": "VCWABUDRPDLXLSDLP3X5PLJJ2XR5IOW2"
+  },
+  {
+    "filename": "tree_1.gif",
+    "originalUrl": "http://forg.co.kr:80/images/tree_1.gif",
+    "capturedAt": "20021009141211",
+    "sizeBytes": 11506,
+    "sha256": "baf904b3d52637ba935bbdf1ffa9fedda6df5c7e123e1c7ebef504a11cc62904",
+    "digest": "5M535ATAOYS3MTK5U2BIETJO3BMJSAJ2"
+  }
+]

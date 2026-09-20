@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "인테리어중.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%c0%ce%c5%d7%b8%ae%be%ee%c1%df.jpg",
+    "capturedAt": "20021106235046",
+    "sizeBytes": 299000,
+    "sha256": "a31d1b3b4aa2c200aa0e4ec1f8d0a620182f62d5fe4e63eacc85e82270992846",
+    "digest": "YZH2EU5FULQLRMXLC5OKCMFZDDTEBXHQ"
+  },
+  {
+    "filename": "인테리어중2.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%c0%ce%c5%d7%b8%ae%be%ee%c1%df2.jpg",
+    "capturedAt": "20021106235233",
+    "sizeBytes": 297381,
+    "sha256": "2e7fa7e43a7cbb0d32d9231a93aa06ec76741d6dd12fd03733e93031bd897144",
+    "digest": "EE6Z44KNW5K37SSCB43TKFGTY5BJQF27"
+  }
+]

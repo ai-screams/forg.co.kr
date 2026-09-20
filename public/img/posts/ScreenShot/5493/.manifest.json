@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "단체2.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%b4%dc%c3%bc2.jpg",
+    "capturedAt": "20021009220256",
+    "sizeBytes": 337945,
+    "sha256": "37efbcbb29fcc870bffc7716e7d2b34c1bb332db43aac033720fb22ab354851a",
+    "digest": "AVZIRPVCKIS4H3VRVQW6J3ATFK4HRDDX"
+  },
+  {
+    "filename": "단체기념촬영입니다.jpg",
+    "originalUrl": "http://forg.co.kr:80/_zb/data/%b4%dc%c3%bc%b1%e2%b3%e4%c3%d4%bf%b5%c0%d4%b4%cf%b4%d9.jpg",
+    "capturedAt": "20021009220114",
+    "sizeBytes": 286753,
+    "sha256": "c567c7352dacebb6ba2fa06b052895c455a1eef078db63f23db884513391f7c8",
+    "digest": "ML4CV2GIH76AEX5QVCFBISHJZIYWRDO3"
+  }
+]
