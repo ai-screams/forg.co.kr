@@ -376,7 +376,7 @@ def iter_input_files(board_filter: Optional[str]) -> list[Path]:
     skip decode until P2.3 introduces the g5 parser.
     """
     files: list[Path] = []
-    for phase in ("A", "B", "C"):
+    for phase in ("A", "B", "C", "L"):
         root = INPUT_DIR / phase
         if not root.is_dir():
             continue

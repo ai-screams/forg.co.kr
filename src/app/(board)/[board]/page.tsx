@@ -17,9 +17,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
+import { BoardListingOnly } from "@/components/board-listing-only";
 import { BoardPlaceholder } from "@/components/board-placeholder";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
-import { getBoardIndex } from "@/lib/posts";
+import { getBoardIndex, getBoardListing } from "@/lib/posts";
 
 export const dynamicParams = false;
 
@@ -45,6 +46,13 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
 
   const index = await getBoardIndex(board, 1);
   if (!index) {
+    const listing = await getBoardListing(board);
+    if (listing) {
+      return {
+        title: `${meta.nameKr} — forg.co.kr`,
+        description: `${meta.nameKr} 게시판 — 목록에 남은 ${listing.entries.length.toLocaleString("ko-KR")}개 제목이 보존되어 있습니다.`,
+      };
+    }
     return {
       title: `${meta.nameKr} (준비 중) — forg.co.kr`,
       description: `${meta.nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
@@ -66,9 +74,15 @@ export default async function BoardPageOne({ params }: RouteProps) {
 
   const index = await getBoardIndex(board, 1);
   if (!index) {
+    // No post page was ever captured; the list pages may still have been.
+    const listing = await getBoardListing(board);
     return (
       <div className="w-full flex-1 px-3 py-4">
-        <BoardPlaceholder meta={meta} />
+        {listing ? (
+          <BoardListingOnly board={board} listing={listing} />
+        ) : (
+          <BoardPlaceholder meta={meta} />
+        )}
       </div>
     );
   }
