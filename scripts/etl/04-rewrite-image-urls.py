@@ -5,8 +5,11 @@ at locally-saved Wayback recoveries (or a museum placeholder).
 For every Post JSON we walk every `<img>` in `bodyHtml` and every
 `comment.bodyHtml`. Each `<img>` falls into one of four states:
 
-    1. already rewritten   src starts with /img/posts/ or /img/placeholder/
+    1. already recovered   src starts with /img/posts/
                            → leave alone (idempotent re-runs are safe)
+                           a placeholder (/img/placeholder/) is looked up
+                           again by its data-original-src, so a later
+                           Phase C/D retry can promote it to state 2
 
     2. recoverable + on disk
                            → src = /img/posts/{board}/{post_id}/{filename}
@@ -30,7 +33,9 @@ Inputs:
 
 The queue entry's `raw_src` is the same value the parser extracted from
 the Zeroboard HTML, so `(board, post_id, raw_src)` is the join key we use
-when matching an `<img>` to its recovery state.
+when matching an `<img>` to its recovery state. For a placeholder tag the
+manifest carried `data-original-src` as `raw_src` (Phase B), so the same
+key works with that attribute in place of `src`.
 """
 from __future__ import annotations
 
@@ -108,8 +113,12 @@ def short_title_for_failed(original_url: str) -> str:
 # ── HTML rewrite ────────────────────────────────────────────────────────
 
 
-def is_already_rewritten(src: str) -> bool:
-    return src.startswith("/img/posts/") or src.startswith("/img/placeholder/")
+def is_already_recovered(src: str) -> bool:
+    return src.startswith("/img/posts/")
+
+
+def is_placeholder(src: str) -> bool:
+    return src.startswith(PLACEHOLDER_REL_URL.rsplit("/", 1)[0] + "/")
 
 
 def rewrite_html(
@@ -143,9 +152,17 @@ def rewrite_html(
         raw_src = raw_src_val.strip()
         if not raw_src:
             continue
-        if is_already_rewritten(raw_src):
+        if is_already_recovered(raw_src):
             counters["skipped_already_rewritten"] += 1
             continue
+
+        retry = is_placeholder(raw_src)
+        if retry:
+            original = img.get("data-original-src")
+            if not isinstance(original, str) or not original.strip():
+                counters["skipped_already_rewritten"] += 1
+                continue
+            raw_src = original.strip()
 
         info = lookup.get((board, post_id, raw_src))
         if info is None:
@@ -162,8 +179,15 @@ def rewrite_html(
             img["src"] = new_src
             img["data-recovery"] = "ok"
             img["data-original-src"] = info["normalized_url"]
-            counters["rewritten_ok"] += 1
+            if retry:
+                del img["title"]
+                counters["retried_ok"] += 1
+            else:
+                counters["rewritten_ok"] += 1
             changed = True
+        elif retry:
+            # Still unrecoverable — the placeholder is already in place.
+            counters["skipped_already_rewritten"] += 1
         else:  # unrecoverable
             img["src"] = PLACEHOLDER_REL_URL
             img["data-recovery"] = "failed"
@@ -266,6 +290,7 @@ def main() -> int:
 
     counters: dict[str, int] = {
         "rewritten_ok": 0,
+        "retried_ok": 0,
         "rewritten_failed": 0,
         "pending_recoverable": 0,
         "skipped_already_rewritten": 0,
@@ -285,7 +310,8 @@ def main() -> int:
         if i % args.print_every == 0 or i == len(files):
             print(
                 f"[{i:>5}/{len(files)}] posts_changed={posts_changed} "
-                f"ok={counters['rewritten_ok']} failed={counters['rewritten_failed']} "
+                f"ok={counters['rewritten_ok']} retried={counters['retried_ok']} "
+                f"failed={counters['rewritten_failed']} "
                 f"pending={counters['pending_recoverable']} "
                 f"untracked={counters['skipped_untracked']} "
                 f"already={counters['skipped_already_rewritten']}",
