@@ -170,6 +170,14 @@ def _is_connection_refused(err: BaseException) -> bool:
     return "Connection refused" in msg or "Errno 61" in msg
 
 
+def _log_retry(url: str, err: str, attempt: int) -> None:
+    """Every backoff is visible. A silent 30-minute sleep looks like a hang
+    from outside (2026-09-20: a timed-out CDX probe held the polite lock for
+    half an hour with nothing in the log)."""
+    wait = RETRY_BACKOFF[min(attempt, len(RETRY_BACKOFF) - 1)]
+    print(f"  [retry] {err} on {url}, sleeping {wait}s", file=sys.stderr, flush=True)
+
+
 def fetch_with_retry(url: str) -> bytes:
     """Fetch a URL with retry, backoff, and block-detection.
 
@@ -216,6 +224,7 @@ def fetch_with_retry(url: str) -> bytes:
                 time.sleep(wait)
                 continue
             # Other 5xx / 4xx: backoff and retry
+            _log_retry(url, last_err, attempt)
             time.sleep(RETRY_BACKOFF[min(attempt, len(RETRY_BACKOFF) - 1)])
 
         except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
@@ -235,10 +244,12 @@ def fetch_with_retry(url: str) -> bytes:
                     _write_state(state)
                     time.sleep(BLOCK_SLEEP)
                     continue
+            _log_retry(url, last_err, attempt)
             time.sleep(RETRY_BACKOFF[min(attempt, len(RETRY_BACKOFF) - 1)])
 
         except Exception as e:  # noqa: BLE001 — outermost retry guard
             last_err = f"{type(e).__name__}: {e}"[:200]
+            _log_retry(url, last_err, attempt)
             time.sleep(RETRY_BACKOFF[min(attempt, len(RETRY_BACKOFF) - 1)])
 
     raise WaybackError(f"Exhausted {MAX_RETRIES} retries for {url}: {last_err}")
