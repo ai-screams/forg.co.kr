@@ -535,6 +535,19 @@ def update_manifest(entry: dict) -> None:
 # ── Driver ──────────────────────────────────────────────────────────────
 
 
+def write_report(path: Path, targets: list, stats: dict, results: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    report = {
+        "ts": datetime.now().isoformat(timespec="seconds"),
+        "targets": len(targets),
+        "stats": stats,
+        "results": results,
+    }
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(__doc__ or "chrome recovery").split("\n", 1)[0]
@@ -562,6 +575,7 @@ def main() -> int:
     args = parser.parse_args()
 
     global OUT_DIR, MANIFEST_FILE, REPORT_FILE, FROM_TS, TO_TS
+    flat_report = REPORT_FILE
     if args.era:
         FROM_TS, TO_TS = ERA_WINDOWS[args.era]
         OUT_DIR = OUT_DIR / args.era
@@ -576,15 +590,22 @@ def main() -> int:
     # that were found are skipped by fetch_asset via the on-disk check; this
     # is the equivalent for the ones that were not, so a top-up run only
     # spends requests on targets it has never asked about.
+    # An era window is a subset of the flat pool's 1999–2015 window, so a
+    # miss recorded there is a miss here too. Those five (hover variants,
+    # r_logo_1) are also the probes Wayback answers slowest — a CDX query
+    # with no hit sat through 503s and a timeout into a 30-minute backoff.
     known_missing: set[str] = set()
-    if not args.retry_missing and REPORT_FILE.exists():
-        try:
-            prev = json.loads(REPORT_FILE.read_text(encoding="utf-8"))
-            known_missing = {
-                r["path"] for r in prev.get("results", []) if r.get("status") == "missing"
-            }
-        except (OSError, json.JSONDecodeError, KeyError):
-            known_missing = set()
+    if not args.retry_missing:
+        for report in {REPORT_FILE, flat_report}:
+            if not report.exists():
+                continue
+            try:
+                prev = json.loads(report.read_text(encoding="utf-8"))
+                known_missing |= {
+                    r["path"] for r in prev.get("results", []) if r.get("status") == "missing"
+                }
+            except (OSError, json.JSONDecodeError, KeyError):
+                continue
     print(
         f"[recover-chrome] targets={len(targets)} output={OUT_DIR} "
         f"window={FROM_TS[:8]}..{TO_TS[:8]} dry_run={args.dry_run}",
@@ -609,6 +630,9 @@ def main() -> int:
         if result["status"] == "ok":
             stats["bytes"] += result.get("bytes", 0)
             update_manifest(result)
+        if not args.dry_run:
+            # After every result, so an interrupted run keeps its answers.
+            write_report(REPORT_FILE, targets, stats, results)
         if i - last_print >= args.print_every or i == len(targets):
             last_print = i
             elapsed = int(time.time() - t0)
@@ -621,17 +645,7 @@ def main() -> int:
             )
 
     if not args.dry_run:
-        REPORT_FILE.parent.mkdir(parents=True, exist_ok=True)
-        report = {
-            "ts": datetime.now().isoformat(timespec="seconds"),
-            "targets": len(targets),
-            "stats": stats,
-            "results": results,
-        }
-        REPORT_FILE.write_text(
-            json.dumps(report, indent=2, ensure_ascii=False) + "\n",
-            encoding="utf-8",
-        )
+        write_report(REPORT_FILE, targets, stats, results)
 
     print(
         f"\n[recover-chrome] DONE ok={stats['ok']} skip={stats['skipped']} "
