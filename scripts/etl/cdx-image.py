@@ -35,15 +35,17 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Iterator
-from urllib.parse import quote, unquote_to_bytes, urlencode, urlsplit
+from urllib.parse import urlencode, urlsplit
 
 # Local module — extracted in Phase A1.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from wayback_client import (  # noqa: E402
     WaybackError,
     WaybackGoneError,
+    canonical_key,
     fetch_with_retry,
     global_polite_slot,
+    path_text,
 )
 
 # ── Paths ──────────────────────────────────────────────────────────────-
@@ -109,50 +111,6 @@ def valid_image_row(row: dict) -> bool:
         and length is not None
         and length > 0
     )
-
-
-_PERCENT_SAFE = "/-._~!$&'()*+,;=:@"
-
-
-def path_text(path: str) -> str:
-    """Percent-decode a URL path segment to text, honouring the site's encoding.
-
-    forg served EUC-KR, so Wayback rows carry Korean basenames as CP949
-    percent-escapes (`%b9%df%c7%d8…`). The gold tier holds the same names
-    as decoded Unicode. `unquote()` assumes UTF-8 and turns the CP949 bytes
-    into U+FFFD, so the two sides never met (collection audit 2026-09-19,
-    G1: 61 body images Wayback *has* were filed as unrecoverable). Decode
-    to bytes first, try UTF-8, then CP949.
-    """
-    raw = unquote_to_bytes(path)
-    try:
-        return raw.decode("utf-8")
-    except UnicodeDecodeError:
-        return raw.decode("cp949", errors="replace")
-
-
-def canonical_key(url: str) -> str:
-    """Stable join key — host preserved, port normalized, path percent-encoding
-    normalized to UTF-8 upper-case hex, then case-folded.
-
-    ADR-0010 Iteration 2: do NOT strip `www.`. Wayback may capture
-    `www.host` and `host` as separate URLs. Host variants live in the
-    manifest's candidates list, not in the key.
-
-    The path is lower-cased because Wayback's own urlkey is (SURT form),
-    so a `.JPG` reference and a `.jpg` capture replay as one resource.
-    Audit G1 counted 11 references lost to case alone.
-    """
-    p = urlsplit(url)
-    scheme = (p.scheme or "http").lower()
-    host = (p.hostname or "").lower()
-    port = "" if p.port in (None, 80, 443) else f":{p.port}"
-    try:
-        path = quote(path_text(p.path), safe=_PERCENT_SAFE).lower()
-    except ValueError:
-        path = p.path.lower()
-    base = f"{scheme}://{host}{port}{path}"
-    return f"{base}?{p.query}" if p.query else base
 
 
 def pick_cdx_row(rows: list[dict], anchor_ts: str) -> dict | None:
