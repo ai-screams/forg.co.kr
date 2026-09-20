@@ -12,40 +12,5 @@
     "capturedAt": "20061113041324",
     "sizeBytes": 128999,
     "sha256": "f64413c7f1eab86d1b94135d28efc4d78859cb700e8624bf2172a7c4f188dcb7"
-  },
-  {
-    "filename": "m_0503.gif",
-    "originalUrl": "http://forg.co.kr/_zb/emoticon/m_0503.gif",
-    "capturedAt": "20061113041323",
-    "sizeBytes": 1032,
-    "sha256": "cf75171bcea0382a9c8f47dbf5e7d1280f3a197d61adce502d36ed29e342a848"
-  },
-  {
-    "filename": "m_0507.gif",
-    "originalUrl": "http://forg.co.kr/_zb/emoticon/m_0507.gif",
-    "capturedAt": "20061113041323",
-    "sizeBytes": 1093,
-    "sha256": "4bede6f70d9f3a096b6cdd0e504702ba50ae69a179c1f2a61897edb352cc7c79"
-  },
-  {
-    "filename": "m_clock.gif",
-    "originalUrl": "http://forg.co.kr/_zb/emoticon/m_clock.gif",
-    "capturedAt": "20061113041323",
-    "sizeBytes": 2727,
-    "sha256": "d58de7d75bdafa87c652b4e0cfddd99e5bd33203837fa710c0bb5636c3701e10"
-  },
-  {
-    "filename": "m_embaressed_smile.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_embaressed_smile.gif",
-    "capturedAt": "20050120221815",
-    "sizeBytes": 1070,
-    "sha256": "a88de128822edc1e72c6fd18cc911b9ef53b485efe3b1a9ac206b4cd76d1e237"
-  },
-  {
-    "filename": "u_30.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/u_30.gif",
-    "capturedAt": "20020615130709",
-    "sizeBytes": 1015,
-    "sha256": "8b1a61af1e33bd4e215ea7f208d5ad5f54f997bd6d28fa71867c067db79d4335"
   }
 ]

@@ -5,7 +5,7 @@ at locally-saved Wayback recoveries (or a museum placeholder).
 For every Post JSON we walk every `<img>` in `bodyHtml` and every
 `comment.bodyHtml`. Each `<img>` falls into one of four states:
 
-    1. already recovered   src starts with /img/posts/
+    1. already recovered   src starts with /img/posts/ or /img/emoticon/
                            → leave alone (idempotent re-runs are safe)
                            a placeholder (/img/placeholder/) is looked up
                            again by its data-original-src, so a later
@@ -30,6 +30,7 @@ Inputs:
     scripts/etl/image-download-queue.json         Phase C output
     scripts/etl/image-unrecoverable.jsonl         Phase C analysis output
     public/img/posts/{board}/{post_id}/...        Phase D outputs
+    public/img/emoticon/...                       shared emoticon store
 
 The queue entry's `raw_src` is the same value the parser extracted from
 the Zeroboard HTML, so `(board, post_id, raw_src)` is the join key we use
@@ -51,7 +52,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 QUEUE_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-download-queue.json"
 UNRECOVERABLE_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-unrecoverable.jsonl"
-IMG_ROOT = PROJECT_ROOT / "public" / "img" / "posts"
 PLACEHOLDER_REL_URL = "/img/placeholder/missing.svg"
 
 
@@ -62,7 +62,7 @@ def build_lookup() -> dict[tuple[str, str, str], dict]:
     """Return `(board, post_id, raw_src) -> recovery info`.
 
     `recovery info` is one of:
-        {"state": "recoverable", "normalized_url": str, "filename": str}
+        {"state": "recoverable", "normalized_url": str, "target_path": str}
         {"state": "unrecoverable", "normalized_url": str}
     """
     lookup: dict[tuple[str, str, str], dict] = {}
@@ -74,7 +74,7 @@ def build_lookup() -> dict[tuple[str, str, str], dict]:
             lookup[key] = {
                 "state": "recoverable",
                 "normalized_url": e["normalized_url"],
-                "filename": e["filename"],
+                "target_path": e["target_path"],
             }
 
     if UNRECOVERABLE_FILE.exists():
@@ -96,8 +96,10 @@ def build_lookup() -> dict[tuple[str, str, str], dict]:
     return lookup
 
 
-def saved_image_path(board: str, post_id: str, filename: str) -> Path:
-    return IMG_ROOT / board / post_id / filename
+def public_url(target_path: str) -> str:
+    """`public/img/posts/B/1/x.gif` → `/img/posts/B/1/x.gif`. Emoticons
+    resolve under `/img/emoticon/` the same way."""
+    return "/" + target_path.removeprefix("public/")
 
 
 def short_title_for_failed(original_url: str) -> str:
@@ -114,7 +116,7 @@ def short_title_for_failed(original_url: str) -> str:
 
 
 def is_already_recovered(src: str) -> bool:
-    return src.startswith("/img/posts/")
+    return src.startswith(("/img/posts/", "/img/emoticon/"))
 
 
 def is_placeholder(src: str) -> bool:
@@ -170,13 +172,12 @@ def rewrite_html(
             continue
 
         if info["state"] == "recoverable":
-            target = saved_image_path(board, post_id, info["filename"])
+            target = PROJECT_ROOT / info["target_path"]
             if not target.exists() or target.stat().st_size == 0:
                 # Phase D hasn't fetched this one yet — leave for later run.
                 counters["pending_recoverable"] += 1
                 continue
-            new_src = f"/img/posts/{board}/{post_id}/{info['filename']}"
-            img["src"] = new_src
+            img["src"] = public_url(info["target_path"])
             img["data-recovery"] = "ok"
             img["data-original-src"] = info["normalized_url"]
             if retry:

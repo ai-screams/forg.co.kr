@@ -28,8 +28,8 @@ Manifest fields per line (stable schema):
 
 Skipped src patterns (do not emit):
     - empty / whitespace
-    - already-rewritten paths (`/img/posts/`, `/img/placeholder/`) that lost
-      their `data-original-src` — nothing left to look up
+    - already-rewritten paths (`/img/posts/`, `/img/emoticon/`,
+      `/img/placeholder/`) that lost their `data-original-src`
     - `data:` (inline base64 — can't recover from Wayback)
     - `javascript:` / `mailto:` / `about:`
 """
@@ -56,7 +56,8 @@ SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".image-manifest-summary.json"
 # placeholder could never be retried — 3,781 failed body refs were invisible
 # to every later join.
 _ORIGINAL_SRC_ATTR = "data-original-src"
-_REWRITTEN_SRC_PREFIXES = ("/img/posts/", "/img/placeholder/")
+_RECOVERED_SRC_PREFIXES = ("/img/posts/", "/img/emoticon/")
+_REWRITTEN_SRC_PREFIXES = (*_RECOVERED_SRC_PREFIXES, "/img/placeholder/")
 
 # src prefixes we never want to emit as recovery targets.
 _SKIP_SRC_PREFIXES = (
@@ -95,7 +96,7 @@ def iter_imgs(html: str, *, source: str, comment_index: int | None) -> Iterator[
             original = img.get(_ORIGINAL_SRC_ATTR)
             if not isinstance(original, str) or not original.strip():
                 continue
-            state = "ok" if src.startswith("/img/posts/") else "failed"
+            state = "ok" if src.startswith(_RECOVERED_SRC_PREFIXES) else "failed"
             src = original.strip()
         lowered = src.lower()
         if any(lowered.startswith(p) for p in _SKIP_SRC_PREFIXES):

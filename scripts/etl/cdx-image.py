@@ -54,6 +54,8 @@ CDX_DIR = PROJECT_ROOT / ".docs" / "research" / "cdx"
 MANIFEST_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-manifest.jsonl"
 QUEUE_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-download-queue.json"
 UNRECOVERABLE_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-unrecoverable.jsonl"
+EMOTICON_STORE = PROJECT_ROOT / "public" / "img" / "emoticon"
+EMOTICON_STORE_MANIFEST = EMOTICON_STORE / ".manifest.json"
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".image-cdx-summary.json"
 RUN_LOG = CDX_DIR / ".cdx-image.run.log"
 RUN_PID = CDX_DIR / ".cdx-image.run.pid"
@@ -331,6 +333,39 @@ def safe_filename(url: str, *, fallback: str) -> str:
     return base
 
 
+# Zeroboard's comment emoticons (`/_zb/emoticon/*.gif`) are 73 site-wide
+# files that 5,800 comments reference. Saving one per post stored 2,503
+# copies (collection audit 2026-09-19, G13); they live once in the shared
+# store instead. Two of them changed art over the years, so the store keys
+# on content: a second version of a name gets `stem~digest8.ext`.
+EMOTICON_PATH_PREFIX = "/_zb/emoticon/"
+
+
+def is_emoticon_url(url: str) -> bool:
+    return EMOTICON_PATH_PREFIX in urlsplit(url).path.lower()
+
+
+def load_emoticon_store() -> dict[str, list[dict]]:
+    """Store manifest entries grouped by the original's basename (lower-cased)."""
+    by_name: dict[str, list[dict]] = defaultdict(list)
+    if EMOTICON_STORE_MANIFEST.exists():
+        for e in json.loads(EMOTICON_STORE_MANIFEST.read_text(encoding="utf-8")):
+            by_name[safe_filename(e["originalUrl"], fallback="").lower()].append(e)
+    return by_name
+
+
+def emoticon_store_filename(basename: str, digest: str, store: dict[str, list[dict]]) -> str:
+    """Filename inside the shared store for a capture with this CDX digest."""
+    known = store.get(basename.lower(), [])
+    for e in known:
+        if e.get("digest") == digest:
+            return e["filename"]
+    if not known:
+        return basename
+    stem, dot, ext = basename.rpartition(".")
+    return f"{stem}~{digest[:8].lower()}{dot}{ext}" if dot else f"{basename}~{digest[:8].lower()}"
+
+
 def join_manifest_to_queue(
     manifest_path: Path,
     cdx_index: dict[str, list[dict]],
@@ -343,6 +378,7 @@ def join_manifest_to_queue(
     queue: list[dict] = []
     unrecoverable: list[dict] = []
     already_recovered = 0
+    emoticon_store = load_emoticon_store()
 
     for raw_line in manifest_path.read_text(encoding="utf-8").splitlines():
         if not raw_line.strip():
@@ -374,9 +410,13 @@ def join_manifest_to_queue(
             filename = safe_filename(
                 picked["original"], fallback=f"{picked['digest']}.bin"
             )
-            target_path = (
-                f"public/img/posts/{entry['board']}/{entry['post_id']}/{filename}"
-            )
+            if is_emoticon_url(picked["original"]):
+                filename = emoticon_store_filename(filename, picked["digest"], emoticon_store)
+                target_path = f"public/img/emoticon/{filename}"
+            else:
+                target_path = (
+                    f"public/img/posts/{entry['board']}/{entry['post_id']}/{filename}"
+                )
             queue.append(
                 {
                     "board": entry["board"],

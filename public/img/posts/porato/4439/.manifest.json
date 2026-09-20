@@ -5,19 +5,5 @@
     "capturedAt": "20071211131840",
     "sizeBytes": 257842,
     "sha256": "1e392cbe1d306c38287f5dce8701a1df2a226a38545741f56f722ec471701135"
-  },
-  {
-    "filename": "m_clock.gif",
-    "originalUrl": "http://forg.co.kr/_zb/emoticon/m_clock.gif",
-    "capturedAt": "20061113041323",
-    "sizeBytes": 2727,
-    "sha256": "d58de7d75bdafa87c652b4e0cfddd99e5bd33203837fa710c0bb5636c3701e10"
-  },
-  {
-    "filename": "m_teeth_smile.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_teeth_smile.gif",
-    "capturedAt": "20050120234852",
-    "sizeBytes": 1057,
-    "sha256": "09a13cab8bdee83aec8331a2b93de63f8dcd168c0e14513a7867338ddc6ec529"
   }
 ]
