@@ -56,6 +56,7 @@ def _entry_from_post(post: Post) -> BoardIndexEntry:
         author=post.author,
         authorMemberNo=post.authorMemberNo,
         createdAt=post.createdAt,
+        createdAtApprox=post.createdAtApprox,
         commentCount=len(post.comments),
         attachmentCount=len(post.attachments),
         hits=post.hits,

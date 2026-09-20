@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2013-09-20T00:00:00",
+  "createdAtApprox": false,
   "hits": 2053,
   "recommend": null,
   "attachments": [],
@@ -17,25 +18,25 @@
     {
       "author": "달기",
       "authorMemberNo": null,
-      "createdAt": "2015-09-21T12:20:00",
+      "createdAt": "2014-09-21T12:20:00",
       "bodyHtml": "라이거 같은데...\n<br>짧고 굵네요 -_-"
     },
     {
       "author": "무림",
       "authorMemberNo": null,
-      "createdAt": "2015-09-21T13:43:00",
+      "createdAt": "2014-09-21T13:43:00",
       "bodyHtml": "라이거 맞아요. ㅎㅎ"
     },
     {
       "author": "soloture",
       "authorMemberNo": null,
-      "createdAt": "2015-09-23T12:50:00",
+      "createdAt": "2014-09-23T12:50:00",
       "bodyHtml": "유게에 새글이!"
     }
   ],
   "era": "2014",
   "capturedAt": "20150405192200",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10662",
   "sourceEngine": "gnuboard4"
 }

@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2015-05-18T00:00:00",
+  "createdAtApprox": false,
   "hits": 2133,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "페츠비",
       "authorMemberNo": null,
-      "createdAt": "2016-05-18T19:30:00",
+      "createdAt": "2015-05-18T19:30:00",
       "bodyHtml": "은 말도 끝나기전에 탈출~ㅎㅎㅎㅎ"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331124112",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10680",
   "sourceEngine": "gnuboard4"
 }

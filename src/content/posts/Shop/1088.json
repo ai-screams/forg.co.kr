@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2012-09-10T00:00:00",
+  "createdAtApprox": false,
   "hits": 2265,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "babobagsa",
       "authorMemberNo": null,
-      "createdAt": "2015-09-11T23:44:00",
+      "createdAt": "2014-09-11T23:44:00",
       "bodyHtml": "판매완료"
     }
   ],
   "era": "2014",
   "capturedAt": "20150406013622",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Shop&wr_id=1088",
   "sourceEngine": "gnuboard4"
 }

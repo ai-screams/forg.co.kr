@@ -10,13 +10,14 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-03-29T00:00:00",
+  "createdAtApprox": false,
   "hits": 4027,
   "recommend": null,
   "attachments": [],
   "comments": [],
   "era": "2014",
   "capturedAt": "20160331123701",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28512",
   "sourceEngine": "gnuboard4"
 }

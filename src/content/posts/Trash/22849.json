@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2015-06-27T00:00:00",
+  "createdAtApprox": false,
   "hits": 1216,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-06-28T09:01:00",
+      "createdAt": "2015-06-28T09:01:00",
       "bodyHtml": "뽀뽀하다가 메르스 옮는다.\n<br>죽고 싶지 않거든 연애하면 안된다"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123622",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=22849",
   "sourceEngine": "gnuboard4"
 }

@@ -3,7 +3,7 @@
   "page": 1,
   "totalPages": 1,
   "totalPosts": 3,
-  "generatedAt": "2026-05-13T05:41:00Z",
+  "generatedAt": "2026-09-20T07:02:05Z",
   "entries": [
     {
       "postId": "12",
@@ -12,6 +12,7 @@
       "author": "베르",
       "authorMemberNo": null,
       "createdAt": "2019-03-09T20:23:59",
+      "createdAtApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 380,
@@ -25,6 +26,7 @@
       "author": "태시로스",
       "authorMemberNo": null,
       "createdAt": "2019-03-06T19:27:43",
+      "createdAtApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 294,
@@ -38,6 +40,7 @@
       "author": "runup",
       "authorMemberNo": null,
       "createdAt": "2019-02-11T20:09:29",
+      "createdAtApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 285,

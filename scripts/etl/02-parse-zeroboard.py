@@ -61,7 +61,10 @@ PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jso
 # Boards parsed by a different engine. Listed explicitly so wrong-engine
 # captures never reach the Zeroboard selectors silently.
 #
-# UoBoard2 / Shop / Console: Gnuboard4 webbus2009_basic — `02b` parser.
+# UoBoard2 / Console: Gnuboard4 webbus2009_basic — `02b` parser.
+# Shop is NOT excluded: 8 of its 10 captures are webbus2009 (`02b`), but
+# `Shop/180` is a kritz_normal2 Member-Trade page and lost its only parser
+# here (collection audit 2026-09-19, G4). Skin detection routes it.
 # Ultima (capitalised): Gnuboard5 theme/st-basic — ROADMAP P2.3 (not the
 # forg.kr lowercase `ultima`, which is a different g5 board on the
 # forg.kr successor site).
@@ -75,7 +78,7 @@ PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jso
 # to `02b` via its INCLUDE_BOARDS instead.
 EXCLUDE_BOARDS: frozenset[str] = frozenset({
     # Gnuboard4 (P2.2 — handled by 02b parser)
-    "UoBoard2", "Shop", "Console",
+    "UoBoard2", "Console",
     # No bronze data (placeholder-only)
     "Boo", "Diablo", "DF", "LoL", "Star2",
     # Gnuboard5 — forg.co.kr Ultima board

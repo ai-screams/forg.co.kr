@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2012-12-15T00:00:00",
+  "createdAtApprox": false,
   "hits": 1201,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "달기",
       "authorMemberNo": null,
-      "createdAt": "2013-12-15T16:04:00",
+      "createdAt": "2012-12-15T16:04:00",
       "bodyHtml": "미국 배우 닮은거 같은데...."
     }
   ],
   "era": "2014",
   "capturedAt": "20130812104829",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10634",
   "sourceEngine": "gnuboard4"
 }

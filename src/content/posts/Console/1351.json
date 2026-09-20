@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2011-10-22T00:00:00",
+  "createdAtApprox": false,
   "hits": 3473,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "mydream",
       "authorMemberNo": null,
-      "createdAt": "2016-10-22T13:18:00",
+      "createdAt": "2015-10-22T13:18:00",
       "bodyHtml": "무선휠&nbsp; 조작 자체는 좋은데&nbsp; 범퍼키 없는거랑 \n<br>헤드셋 쓸수 없다는게 너무 안좋네요.\n<br>패드로 할땐 클럽 사람들이랑 이런저런 얘기하면서 달리는 맛이 있었는데\n<br>어젠 무선휠로 하니까 혼자 침묵모드... \n<br>11월에&nbsp; 신형 블루투스 헤드셋 나온다니 그걸 기다려야 하겠네요 -_-\n<br>\n<br>그래도 거치할 필요없이 패드처럼 가볍게 꺼내서 쓸수 있으니\n<br>그점이 참 맘에 드네요.\n<br>\n<br>옛날 플스2시절 그란4 할때&nbsp; 잠깐 가볍게 달리고 싶어도 \n<br>드포프에 알미늄프로파일로 자작한 거치대 꺼내서 설치하고 \n<br>그런게 번거롭거 부담스러워서 제대로 하지도 못했던 기억에 비하면..."
     },
     {
       "author": "체이즈",
       "authorMemberNo": null,
-      "createdAt": "2016-10-22T16:47:00",
+      "createdAt": "2015-10-22T16:47:00",
       "bodyHtml": "키넥트있으시면 키넥트로 대화하세요.."
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123713",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Console&wr_id=1351",
   "sourceEngine": "gnuboard4"
 }

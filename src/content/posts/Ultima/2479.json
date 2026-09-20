@@ -1,0 +1,36 @@
+{
+  "board": "Ultima",
+  "boardKr": "Ultima",
+  "postId": "2479",
+  "title": "도와주시와요 서버이동이 안되고 있습니다.",
+  "categoryLabel": null,
+  "bodyHtml": "발해서버에서 야마토로 이전중인데요..\n<br>보름전에 케릭1개는 옴겼는데 또 1개를 옴기려고 하니\n<br>character transfer is not enabled on this shard.\n<br>메세지가 뜨면서 이동이 안되네요.. \n<br>이유가 뭘까요?\n<br>퍼블 업데이트가 안되서 그런건지 아니면 샤드당 1개만 옴길수있는건지..\n<br>아시는분 있으시면 좀 답변 부탁드립니다.\n<br>\n<br>울티마온라인 Q&amp;A 에서는 못찾겠네요 검색을 잘못해서인지\n<br>ㅠㅠ\n<br>도움부탁드립니다.",
+  "bodyText": "발해서버에서 야마토로 이전중인데요.. 보름전에 케릭1개는 옴겼는데 또 1개를 옴기려고 하니 character transfer is not enabled on this shard. 메세지가 뜨면서 이동이 안되네요.. 이유가 뭘까요? 퍼블 업데이트가 안되서 그런건지 아니면 샤드당 1개만 옴길수있는건지.. 아시는분 있으시면 좀 답변 부탁드립니다. 울티마온라인 Q&A 에서는 못찾겠네요 검색을 잘못해서인지 ㅠㅠ 도움부탁드립니다.",
+  "author": "penblan",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2013-04-27T13:25:00",
+  "createdAtApprox": true,
+  "hits": 485,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Galadriel",
+      "authorMemberNo": null,
+      "createdAt": "2013-04-27T13:25:00",
+      "bodyHtml": "현재 버그때문에 서버이동 서비스가 중단되고 있습니다. 울온 메인사이트 uo.com에 공지가 나와있고요. 5월7일쯤 다시 시작예정이고 서비스가 다시 시작되면 알려주겠다고 합니다. 좀만 참고 기다려보세요.\n<br>\n<br>관련 사이트 참조 :\n<br>uo.com\n<br><a href=\"http://www.uo.com/article/Update-Character-Transfer\">http://www.uo.com/article/Update-Character-Transfer</a>\n<br><a href=\"http://www.uo.com/article/Character-Transfer-Warehouse-going-down-4232013\">http://www.uo.com/article/Character-Transfer-Warehouse-going-down-4232013</a>"
+    },
+    {
+      "author": "penblan",
+      "authorMemberNo": null,
+      "createdAt": "2013-04-28T01:13:00",
+      "bodyHtml": "감사합니다."
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20130812101946",
+  "parsedAt": "2026-09-20T16:02:04.046672",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Ultima&wr_id=2479",
+  "sourceEngine": "gnuboard4"
+}

@@ -3,7 +3,7 @@
   "page": 1,
   "totalPages": 1,
   "totalPosts": 2,
-  "generatedAt": "2026-05-13T05:41:00Z",
+  "generatedAt": "2026-09-20T07:02:05Z",
   "entries": [
     {
       "postId": "5",
@@ -12,6 +12,7 @@
       "author": "태시로스",
       "authorMemberNo": null,
       "createdAt": "2019-04-01T23:29:41",
+      "createdAtApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 223,
@@ -25,6 +26,7 @@
       "author": "runup",
       "authorMemberNo": null,
       "createdAt": "2019-01-29T22:34:35",
+      "createdAtApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 263,

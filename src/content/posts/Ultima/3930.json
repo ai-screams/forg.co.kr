@@ -1,0 +1,36 @@
+{
+  "board": "Ultima",
+  "boardKr": "Ultima",
+  "postId": "3930",
+  "title": "질문 있습니다.",
+  "categoryLabel": null,
+  "bodyHtml": "본문과 상관없는 글 죄송합니다.\n<br>\n<br>게시판에 글을 쓰고 싶은데 글쓰기 버튼이 아무리 찾아봐도 없네요 ㅜ\n<br>\n<br>도움 부탁드립니다.",
+  "bodyText": "본문과 상관없는 글 죄송합니다. 게시판에 글을 쓰고 싶은데 글쓰기 버튼이 아무리 찾아봐도 없네요 ㅜ 도움 부탁드립니다.",
+  "author": "Requiem",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2014-12-10T19:44:00",
+  "createdAtApprox": true,
+  "hits": 389,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "gpgk1234",
+      "authorMemberNo": null,
+      "createdAt": "2014-12-10T19:44:00",
+      "bodyHtml": "로그인후 게시판 우측하단 새글쓰기 라고 있어요\n<br>\n<br>리플은 등견등록 이구요\n<br>\n<br>위 글이 안보이면 컴터에 뭔가 누락 또는 오류인것 같네요."
+    },
+    {
+      "author": "봉중민ㅇㅅ…",
+      "authorMemberNo": null,
+      "createdAt": "2014-12-10T20:41:00",
+      "bodyHtml": "저도 그랬었는데, 회원가입하고 여기 관리자분이 와서 승인? 을 해야지 될 거에요..-.-"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20150405070842",
+  "parsedAt": "2026-09-20T16:02:04.046672",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Ultima&wr_id=3930",
+  "sourceEngine": "gnuboard4"
+}

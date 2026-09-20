@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2011-10-20T00:00:00",
+  "createdAtApprox": false,
   "hits": 3893,
   "recommend": null,
   "attachments": [],
@@ -17,31 +18,31 @@
     {
       "author": "forg",
       "authorMemberNo": null,
-      "createdAt": "2016-10-20T08:11:00",
+      "createdAt": "2015-10-20T08:11:00",
       "bodyHtml": "예전 킹스필드 매니악하게 했었는데 저도 이런류의 게임을 좋아하죠 ..\n<br>해보진 않았지만...\n<br>\n<br>\n<br>킹필은 캐릭들어가자마자 뒤로 한발자국 가면 낙사 됩니다..\n<br>\n<br>우측인가 던전 잘못 들어가면 고렙 던전이라 바로 쳐 맞고 되져버리죠.."
     },
     {
       "author": "mydream",
       "authorMemberNo": null,
-      "createdAt": "2016-10-20T12:17:00",
+      "createdAt": "2015-10-20T12:17:00",
       "bodyHtml": "이 게임의&nbsp; 전작인 데몬즈 소울때부터 이 게임이 악명이 엄청 높았다고 하네요.\n<br>&nbsp;예를 들어 특정 스테이지는 로딩 끝나고 시작하자마자&nbsp; 앞으로 달려나가면 몇발자국 못가고 바로 낙사 한다던가 하는...&nbsp; \n<br>기껏 돈주고 사서는 1-1도 못깨고 욕하면서&nbsp; 다시 중고로 내놓는 유저들도 수두룩했다고 하고\n<br>\n<br>하여간&nbsp; 평가만 보고 있는데 묘하게 땡기는 게임 이네요.&nbsp; 한글화까지 되있고..."
     },
     {
       "author": "babobagsa",
       "authorMemberNo": null,
-      "createdAt": "2016-10-20T22:13:00",
+      "createdAt": "2015-10-20T22:13:00",
       "bodyHtml": "장난 아니게 어렵다던....바로 그?!\n<br>아직 구매는 안했습니다만..."
     },
     {
       "author": "lovezike",
       "authorMemberNo": null,
-      "createdAt": "2016-10-21T15:22:00",
+      "createdAt": "2015-10-21T15:22:00",
       "bodyHtml": "데몬 소울을 엄청 재미있게 했고, 다크 소울도 구매했는데 기대중입니다.\n<br>\n<br>게임 자체가 게임회사가 유저를 죽도록 고생시키기 위해서 갖은 노력을 다한\n<br>흔적이 정말 많이 보이는 게임이죠.\n<br>\n<br>게임을 참 잘만들었다고 생각하는게, 캐릭터 성장 같은 요소 보다 유저(자신)의\n<br>플레이 수준이 높아짐에 따라 게임을 클리어할 수 있게 됩니다."
     }
   ],
   "era": "2014",
   "capturedAt": "20160331124258",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Console&wr_id=1342",
   "sourceEngine": "gnuboard4"
 }

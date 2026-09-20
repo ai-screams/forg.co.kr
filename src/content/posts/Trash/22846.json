@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2015-04-15T00:00:00",
+  "createdAtApprox": false,
   "hits": 1674,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-04-30T13:02:00",
+      "createdAt": "2015-04-30T13:02:00",
       "bodyHtml": "재밌다"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-05-02T19:51:00",
+      "createdAt": "2015-05-02T19:51:00",
       "bodyHtml": "적자생존이고 나발이고\n<br>강하고 있는놈이 인생을 편하게 산다는거\n<br>멸종이건 말건"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123643",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=22846",
   "sourceEngine": "gnuboard4"
 }

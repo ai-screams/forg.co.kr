@@ -1,0 +1,42 @@
+{
+  "board": "UoBoard2",
+  "boardKr": "UoBoard2",
+  "postId": "40038",
+  "title": "티나 누나 찾아용~",
+  "categoryLabel": null,
+  "bodyHtml": "혹시 티나 누님 아시는분?~~~\n<br>\n<br>은호님 아직 계시나요~",
+  "bodyText": "혹시 티나 누님 아시는분?~~~ 은호님 아직 계시나요~",
+  "author": "English",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2013-05-22T10:12:00",
+  "createdAtApprox": true,
+  "hits": 474,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "kuroro",
+      "authorMemberNo": null,
+      "createdAt": "2013-05-22T10:12:00",
+      "bodyHtml": "발면군이 아직도 있을리가..."
+    },
+    {
+      "author": "tzecheleaf",
+      "authorMemberNo": null,
+      "createdAt": "2013-05-23T01:28:00",
+      "bodyHtml": "발면형 전번이랑 네톤은 아는데...근데 연락 안하고지낸지 몇년됐음...전번 바뀌진 않았을까 걱정되기도 하고"
+    },
+    {
+      "author": "soloture",
+      "authorMemberNo": null,
+      "createdAt": "2013-06-01T21:03:00",
+      "bodyHtml": "진짜 은호는 머하고 살고있으려나"
+    }
+  ],
+  "era": "2014",
+  "capturedAt": "20130812102839",
+  "parsedAt": "2026-09-20T16:02:04.046672",
+  "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=UoBoard2&wr_id=40038",
+  "sourceEngine": "gnuboard4"
+}

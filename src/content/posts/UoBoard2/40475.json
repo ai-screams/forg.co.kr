@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-12-01T00:00:00",
+  "createdAtApprox": false,
   "hits": 707,
   "recommend": null,
   "attachments": [],
@@ -17,31 +18,31 @@
     {
       "author": "달기",
       "authorMemberNo": null,
-      "createdAt": "2015-12-01T19:39:00",
+      "createdAt": "2014-12-01T19:39:00",
       "bodyHtml": "그래서 사진은 언제 올리실겁니까?"
     },
     {
       "author": "아마텐",
       "authorMemberNo": null,
-      "createdAt": "2015-12-01T21:26:00",
+      "createdAt": "2014-12-01T21:26:00",
       "bodyHtml": "사진은&nbsp; 나중에...(소스는 많이 확보중...)"
     },
     {
       "author": "syaoran911",
       "authorMemberNo": null,
-      "createdAt": "2015-12-04T18:11:00",
+      "createdAt": "2014-12-04T18:11:00",
       "bodyHtml": "일단은... 집사신것 축하드립니다!"
     },
     {
       "author": "Evaa",
       "authorMemberNo": null,
-      "createdAt": "2015-12-16T18:01:00",
+      "createdAt": "2014-12-16T18:01:00",
       "bodyHtml": "그런데 이런 말씀을 왜 여기에 하세요? -_-;;;"
     }
   ],
   "era": "2014",
   "capturedAt": "20150405005507",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=UoBoard2&wr_id=40475",
   "sourceEngine": "gnuboard4"
 }

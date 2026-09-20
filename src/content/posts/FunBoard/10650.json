@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2013-02-11T00:00:00",
+  "createdAtApprox": false,
   "hits": 1091,
   "recommend": null,
   "attachments": [],
@@ -23,7 +24,7 @@
   ],
   "era": "2014",
   "capturedAt": "20130812102152",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=FunBoard&wr_id=10650",
   "sourceEngine": "gnuboard4"
 }
