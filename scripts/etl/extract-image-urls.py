@@ -17,7 +17,10 @@ Manifest fields per line (stable schema):
     board, post_id           — gold-tier identity
     source                   — "body" | "comment"
     comment_index            — int (0-indexed) when source == "comment", else None
-    raw_src                  — original src attribute, untouched
+    raw_src                  — original src attribute, untouched; for a tag
+                               Phase F already rewrote, its `data-original-src`
+    recovery_state           — "pending" (never rewritten) | "ok" (on disk)
+                               | "failed" (placeholder) — Phase F's verdict
     base_url                 — post.originalUrl, used as urljoin base
     normalized_url           — urljoin(base_url, raw_src)
     candidates               — list of variant URLs for CDX matching
@@ -25,7 +28,8 @@ Manifest fields per line (stable schema):
 
 Skipped src patterns (do not emit):
     - empty / whitespace
-    - already-rewritten paths starting with `/img/posts/` or `/img/placeholder/`
+    - already-rewritten paths (`/img/posts/`, `/img/placeholder/`) that lost
+      their `data-original-src` — nothing left to look up
     - `data:` (inline base64 — can't recover from Wayback)
     - `javascript:` / `mailto:` / `about:`
 """
@@ -47,10 +51,15 @@ INPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 OUTPUT_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-manifest.jsonl"
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".image-manifest-summary.json"
 
+# Phase F rewrites `src` in place and keeps the original on this attribute.
+# Before the collection audit (2026-09-19) rewritten tags were skipped, so a
+# placeholder could never be retried — 3,781 failed body refs were invisible
+# to every later join.
+_ORIGINAL_SRC_ATTR = "data-original-src"
+_REWRITTEN_SRC_PREFIXES = ("/img/posts/", "/img/placeholder/")
+
 # src prefixes we never want to emit as recovery targets.
 _SKIP_SRC_PREFIXES = (
-    "/img/posts/",          # already rewritten by Phase F (idempotent guard)
-    "/img/placeholder/",    # already rewritten failure marker
     "data:",                # inline base64 — not on Wayback
     "javascript:",
     "mailto:",
@@ -64,6 +73,7 @@ class ImgRef:
     raw_src: str
     source: str                   # "body" | "comment"
     comment_index: int | None     # which comment (0-based) for source="comment"
+    recovery_state: str           # "pending" | "ok" | "failed"
 
 
 def iter_imgs(html: str, *, source: str, comment_index: int | None) -> Iterator[ImgRef]:
@@ -80,10 +90,19 @@ def iter_imgs(html: str, *, source: str, comment_index: int | None) -> Iterator[
         src = raw.strip()
         if not src:
             continue
+        state = "pending"
+        if src.startswith(_REWRITTEN_SRC_PREFIXES):
+            original = img.get(_ORIGINAL_SRC_ATTR)
+            if not isinstance(original, str) or not original.strip():
+                continue
+            state = "ok" if src.startswith("/img/posts/") else "failed"
+            src = original.strip()
         lowered = src.lower()
         if any(lowered.startswith(p) for p in _SKIP_SRC_PREFIXES):
             continue
-        yield ImgRef(raw_src=src, source=source, comment_index=comment_index)
+        yield ImgRef(
+            raw_src=src, source=source, comment_index=comment_index, recovery_state=state
+        )
 
 
 def extract_post_refs(post: dict) -> Iterator[ImgRef]:
@@ -195,6 +214,7 @@ def main() -> int:
     comment_refs = 0
     host_counter: Counter[str] = Counter()
     source_counter: Counter[str] = Counter()
+    state_counter: Counter[str] = Counter()
     skipped_no_ts: list[tuple[str, str]] = []
 
     out_handle = None if args.dry_run else tmp.open("w", encoding="utf-8")
@@ -217,6 +237,7 @@ def main() -> int:
                 host = (urlsplit(normalized).hostname or "").lower()
                 host_counter[host] += 1
                 source_counter[ref.source] += 1
+                state_counter[ref.recovery_state] += 1
                 if ref.source == "body":
                     body_refs += 1
                 else:
@@ -236,6 +257,7 @@ def main() -> int:
                                 "normalized_url": normalized,
                                 "candidates": candidates,
                                 "post_wayback_ts": ts,
+                                "recovery_state": ref.recovery_state,
                             },
                             ensure_ascii=False,
                         )
@@ -266,6 +288,7 @@ def main() -> int:
         "comment_refs": comment_refs,
         "total_refs": body_refs + comment_refs,
         "by_source": dict(source_counter),
+        "by_recovery_state": dict(state_counter),
         "top_hosts": dict(host_counter.most_common(20)),
         "host_count": len(host_counter),
         "skipped_no_ts": [list(t) for t in skipped_no_ts],

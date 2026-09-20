@@ -35,7 +35,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Iterator
-from urllib.parse import quote, unquote, urlencode, urlsplit
+from urllib.parse import quote, unquote_to_bytes, urlencode, urlsplit
 
 # Local module — extracted in Phase A1.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -114,22 +114,43 @@ def valid_image_row(row: dict) -> bool:
 _PERCENT_SAFE = "/-._~!$&'()*+,;=:@"
 
 
+def path_text(path: str) -> str:
+    """Percent-decode a URL path segment to text, honouring the site's encoding.
+
+    forg served EUC-KR, so Wayback rows carry Korean basenames as CP949
+    percent-escapes (`%b9%df%c7%d8…`). The gold tier holds the same names
+    as decoded Unicode. `unquote()` assumes UTF-8 and turns the CP949 bytes
+    into U+FFFD, so the two sides never met (collection audit 2026-09-19,
+    G1: 61 body images Wayback *has* were filed as unrecoverable). Decode
+    to bytes first, try UTF-8, then CP949.
+    """
+    raw = unquote_to_bytes(path)
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("cp949", errors="replace")
+
+
 def canonical_key(url: str) -> str:
     """Stable join key — host preserved, port normalized, path percent-encoding
-    normalized to upper-case hex (matches Wayback CDX convention).
+    normalized to UTF-8 upper-case hex, then case-folded.
 
     ADR-0010 Iteration 2: do NOT strip `www.`. Wayback may capture
     `www.host` and `host` as separate URLs. Host variants live in the
     manifest's candidates list, not in the key.
+
+    The path is lower-cased because Wayback's own urlkey is (SURT form),
+    so a `.JPG` reference and a `.jpg` capture replay as one resource.
+    Audit G1 counted 11 references lost to case alone.
     """
     p = urlsplit(url)
     scheme = (p.scheme or "http").lower()
     host = (p.hostname or "").lower()
     port = "" if p.port in (None, 80, 443) else f":{p.port}"
     try:
-        path = quote(unquote(p.path), safe=_PERCENT_SAFE)
-    except (ValueError, UnicodeDecodeError):
-        path = p.path
+        path = quote(path_text(p.path), safe=_PERCENT_SAFE).lower()
+    except ValueError:
+        path = p.path.lower()
     base = f"{scheme}://{host}{port}{path}"
     return f"{base}?{p.query}" if p.query else base
 
@@ -343,7 +364,7 @@ def safe_filename(url: str, *, fallback: str) -> str:
     """
     path = urlsplit(url).path
     base = path.rsplit("/", 1)[-1]
-    base = unquote(base)
+    base = path_text(base)
     base = _FILENAME_BAD_CHARS.sub("_", base).strip("._- ")
     if not base:
         return fallback
@@ -355,14 +376,23 @@ def safe_filename(url: str, *, fallback: str) -> str:
 def join_manifest_to_queue(
     manifest_path: Path,
     cdx_index: dict[str, list[dict]],
-) -> tuple[list[dict], list[dict]]:
+) -> tuple[list[dict], list[dict], int]:
+    """Return `(queue, unrecoverable, already_recovered)`.
+
+    Manifest entries Phase F already rewrote to `/img/posts/…` carry
+    `recovery_state == "ok"`; they are on disk and stay out of both lists.
+    """
     queue: list[dict] = []
     unrecoverable: list[dict] = []
+    already_recovered = 0
 
     for raw_line in manifest_path.read_text(encoding="utf-8").splitlines():
         if not raw_line.strip():
             continue
         entry = json.loads(raw_line)
+        if entry.get("recovery_state") == "ok":
+            already_recovered += 1
+            continue
         anchor_ts = entry["post_wayback_ts"]
 
         picked: dict | None = None
@@ -418,7 +448,7 @@ def join_manifest_to_queue(
                 }
             )
 
-    return queue, unrecoverable
+    return queue, unrecoverable, already_recovered
 
 
 # ── Driver ──────────────────────────────────────────────────────────────
@@ -539,10 +569,11 @@ def main() -> int:
     )
 
     # ── Step 3: join manifest → queue / unrecoverable ───────────────────-
-    queue, unrecoverable = join_manifest_to_queue(MANIFEST_FILE, cdx_index)
+    queue, unrecoverable, already = join_manifest_to_queue(MANIFEST_FILE, cdx_index)
     print(
         f"[join] queue={len(queue)} unrecoverable={len(unrecoverable)} "
-        f"total_manifest={len(queue) + len(unrecoverable)}",
+        f"already_recovered={already} "
+        f"total_manifest={len(queue) + len(unrecoverable) + already}",
         file=sys.stderr,
     )
 
@@ -563,9 +594,10 @@ def main() -> int:
     for entry in unrecoverable:
         reason_counter[entry["unrecoverable_reason"]] += 1
     summary = {
-        "manifest_total": len(queue) + len(unrecoverable),
+        "manifest_total": len(queue) + len(unrecoverable) + already,
         "queue": len(queue),
         "unrecoverable": len(unrecoverable),
+        "already_recovered": already,
         "unrecoverable_reasons": dict(reason_counter),
         "cdx_canonical_keys": len(cdx_index),
         "cdx_total_rows": cdx_total,
@@ -579,8 +611,8 @@ def main() -> int:
     )
 
     print(
-        f"\n[cdx-image] DONE manifest={len(queue) + len(unrecoverable)} "
-        f"queue={len(queue)} unrecoverable={len(unrecoverable)} "
+        f"\n[cdx-image] DONE manifest={len(queue) + len(unrecoverable) + already} "
+        f"queue={len(queue)} unrecoverable={len(unrecoverable)} already={already} "
         f"reasons={dict(reason_counter)}",
         file=sys.stderr,
     )
