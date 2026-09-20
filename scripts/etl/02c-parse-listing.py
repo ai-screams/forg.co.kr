@@ -58,8 +58,9 @@ _MONTHDAY_RE = re.compile(r"^(\d{1,2})/(\d{1,2})$")
 _DASH_DATE_RE = re.compile(r"^(\d{4})-(\d{1,2})-(\d{1,2})$")
 _COMMENT_RE = re.compile(r"\[(\d+)\]")
 _TOTAL_RE = re.compile(r"total\s*<[^>]*>\s*<b>\s*([\d,]+)")
-_CART_RE = re.compile(r'name=cart value="(\d+)"')
-_ROW_ICON_RE = re.compile(r"(old|new)_head|notice", re.I)
+_CART_RE = re.compile(r'name="?cart"? value="(\d+)"')
+# Row-status icons the kritz skins put in the first cell: age, admin post, notice.
+_ROW_ICON_RE = re.compile(r"(old|new)_head|level\d+_write|notice", re.I)
 _CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
 
 
@@ -279,35 +280,41 @@ def parse_gnuboard_rows(soup: BeautifulSoup) -> list[dict]:
     return rows
 
 
-def parse_page(html: str) -> tuple[str, list[dict], int | None]:
-    """Return `(engine, rows, total_reported)`."""
+def parse_page(html: str, engine: str) -> tuple[list[dict], int | None]:
+    """Return `(rows, total_reported)` for a page of the given engine."""
     soup = BeautifulSoup(html, "lxml")
-    if "zboard.php" in html:
-        rows, engine = parse_zeroboard_rows(soup), "zeroboard"
-    else:
-        rows, engine = parse_gnuboard_rows(soup), "gnuboard4"
+    rows = parse_zeroboard_rows(soup) if engine == "zeroboard" else parse_gnuboard_rows(soup)
     total = _TOTAL_RE.search(html)
-    return engine, rows, int(total.group(1).replace(",", "")) if total else None
+    return rows, int(total.group(1).replace(",", "")) if total else None
 
 
 # ── Driver ───────────────────────────────────────────────────────────
 
 
-def load_capture_index() -> tuple[dict[tuple[str, int], str], set[str]]:
-    """`{(board, page): ts}` plus the boards whose pages came from forg.kr."""
+def load_capture_index() -> tuple[dict[tuple[str, int], str], set[str], dict[tuple[str, int], str]]:
+    """`{(board, page): ts}`, the boards whose pages came from forg.kr, and
+    each page's engine — from the list URL (`zboard.php` vs `bbs/board.php`),
+    not the page body, since a members-only page carries neither. A board
+    that moved engines (Trash: Zeroboard until 2010, Gnuboard4 after) has
+    pages of both kinds."""
     plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
     captures = {(e["board"], int(e["post_id"].split("-")[1])): e["ts"] for e in plan}
     kr = {e["board"] for e in plan if re.match(r"https?://(www\.)?forg\.kr/", e["url"])}
-    return captures, kr
+    engines = {
+        (e["board"], int(e["post_id"].split("-")[1])): ("zeroboard" if "zboard.php" in e["url"] else "gnuboard4")
+        for e in plan
+    }
+    return captures, kr, engines
 
 
 def build_listing(
-    board: str, pages: list[Path], captures: dict[tuple[str, int], str], *, kr: bool = False
+    board: str, pages: list[Path], captures: dict[tuple[str, int], str],
+    engines: dict[tuple[str, int], str], *, kr: bool = False,
 ) -> BoardListing | None:
     gold, gold_nos = load_gold_years(board)
     merged: dict[str, dict] = {}
-    engine = "zeroboard"
     total_reported: int | None = None
+    engine_of_rows: dict[str, int] = {}
     newest_ts = ""
     for page_path in pages:
         page_no = int(page_path.stem.split("-")[1])
@@ -315,7 +322,10 @@ def build_listing(
         if not captured_at:
             print(f"  WARN {board}/page-{page_no}: no capture ts in plan, skipped", file=sys.stderr)
             continue
-        engine, rows, total = parse_page(page_path.read_text(encoding="utf-8"))
+        engine = engines.get((board, page_no), "zeroboard")
+        rows, total = parse_page(page_path.read_text(encoding="utf-8"), engine)
+        if rows:
+            engine_of_rows[engine] = engine_of_rows.get(engine, 0) + len(rows)
         walk_page_years(rows, captured_at)
         if total is not None and captured_at > newest_ts:
             newest_ts, total_reported = captured_at, total
@@ -356,6 +366,8 @@ def build_listing(
             )
         except ValidationError as e:
             print(f"  WARN {board} no={r['no']}: {e.errors()[0]['msg']}", file=sys.stderr)
+    # The engine most rows came from — what the listing looks like.
+    engine = max(engine_of_rows, key=engine_of_rows.get)  # type: ignore[arg-type]
     return BoardListing(
         board=f"kr_{board}" if kr else board,
         engine=engine,  # type: ignore[arg-type]
@@ -374,12 +386,12 @@ def main() -> int:
 
     if not INPUT_DIR.is_dir():
         sys.exit(f"FATAL: {INPUT_DIR} not found — run the phase-L download and 01-decode first")
-    captures, kr_boards = load_capture_index()
+    captures, kr_boards, engines = load_capture_index()
     boards = sorted(d for d in INPUT_DIR.iterdir() if d.is_dir() and (not args.board or d.name == args.board))
     stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0}
     for board_dir in boards:
         pages = sorted(board_dir.glob("page-*.html"), key=lambda p: int(p.stem.split("-")[1]))
-        listing = build_listing(board_dir.name, pages, captures, kr=board_dir.name in kr_boards)
+        listing = build_listing(board_dir.name, pages, captures, engines, kr=board_dir.name in kr_boards)
         if listing is None:
             print(f"  {board_dir.name}: no rows in {len(pages)} page(s)", file=sys.stderr)
             continue

@@ -1,0 +1,24 @@
+{
+  "board": "WOWTrade",
+  "engine": "zeroboard",
+  "pagesCaptured": 1,
+  "totalReported": 1,
+  "generatedAt": "2026-09-20T22:30:07.739105Z",
+  "entries": [
+    {
+      "no": "1",
+      "title": "와우 장터란입니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-16",
+      "yearApprox": true,
+      "hits": 304,
+      "commentCount": 7,
+      "isNotice": true,
+      "capturedAt": "20040811161334",
+      "listPage": 1,
+      "hasPost": false
+    }
+  ]
+}

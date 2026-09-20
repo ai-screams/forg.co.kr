@@ -1,0 +1,39 @@
+{
+  "board": "kr_aseeee",
+  "engine": "gnuboard4",
+  "pagesCaptured": 1,
+  "totalReported": null,
+  "generatedAt": "2026-09-20T22:30:07.753849Z",
+  "entries": [
+    {
+      "no": "5",
+      "title": "부넼팔 육성기",
+      "categoryLabel": null,
+      "author": "태시로스",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191212055647",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "2",
+      "title": "에세이 게시판 안내.",
+      "categoryLabel": null,
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191212055647",
+      "listPage": 1,
+      "hasPost": false
+    }
+  ]
+}

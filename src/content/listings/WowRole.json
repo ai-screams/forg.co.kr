@@ -1,0 +1,24 @@
+{
+  "board": "WowRole",
+  "engine": "zeroboard",
+  "pagesCaptured": 1,
+  "totalReported": 1,
+  "generatedAt": "2026-09-20T22:30:07.751642Z",
+  "entries": [
+    {
+      "no": "1",
+      "title": "작성자의 연재물을 쉽게 찿는 방법",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-13",
+      "yearApprox": true,
+      "hits": 84,
+      "commentCount": 3,
+      "isNotice": true,
+      "capturedAt": "20040618203212",
+      "listPage": 1,
+      "hasPost": false
+    }
+  ]
+}
