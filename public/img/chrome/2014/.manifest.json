@@ -1,0 +1,306 @@
+[
+  {
+    "originalPath": "/images/bgm_bg.gif",
+    "filename": "bgm_bg.gif",
+    "capturedAt": "20141228045137",
+    "sizeBytes": 950,
+    "sha256": "c20efe1ce0806b585335a282b9ff1bfc46da1c72477d723fa27fa95fdb1125a7",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/bgm_right.gif",
+    "filename": "bgm_right.gif",
+    "capturedAt": "20141228005721",
+    "sizeBytes": 833,
+    "sha256": "cefc6d42b5d72fca7d78950edbb973026b1d44f0ae7088db268647eb0e389b61",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/blank_l_line.gif",
+    "filename": "blank_l_line.gif",
+    "capturedAt": "20141228005423",
+    "sizeBytes": 49,
+    "sha256": "54ddff496e5126e68d634a819d9212b9a1145a61807275241f674504c2810a48",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/l_bar.gif",
+    "filename": "l_bar.gif",
+    "capturedAt": "20141228015526",
+    "sizeBytes": 53,
+    "sha256": "8ccd9864901518e1dc1005cbaaf08ebcf9ec11291c0863d6fe001a8d830ea970",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/left_bg.gif",
+    "filename": "left_bg.gif",
+    "capturedAt": "20141228013145",
+    "sizeBytes": 167,
+    "sha256": "d1508dcd81d664a3c57c67615243dd184ea86fbcc8d7afb946c73bc7557af4ba",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/left_logo1.gif",
+    "filename": "left_logo1.gif",
+    "capturedAt": "20141228013743",
+    "sizeBytes": 2675,
+    "sha256": "bde123bf23adf536f923cfc491c79ca944a75ffdfafa6c28ae2e43ec0fdc1d40",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_1.gif",
+    "filename": "main_list_1.gif",
+    "capturedAt": "20141228014749",
+    "sizeBytes": 4737,
+    "sha256": "9693bc9ef537348273a7f6b3dbbf4760910b73f5a370c329f86df8a1d9e77572",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_2.gif",
+    "filename": "main_list_2.gif",
+    "capturedAt": "20130812121736",
+    "sizeBytes": 4738,
+    "sha256": "e8f887864236cb806d30b65be062b447d3cb72fea787616831495059d6572bb1",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_3.gif",
+    "filename": "main_list_3.gif",
+    "capturedAt": "20141228034139",
+    "sizeBytes": 4773,
+    "sha256": "0de0a033ab1b532446b8c547b01c9f9f7eea2c362468a44c821b6048b066c141",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_4.gif",
+    "filename": "main_list_4.gif",
+    "capturedAt": "20141228043526",
+    "sizeBytes": 4755,
+    "sha256": "aac270e0219fb87738efd587d6bc1add7f33b7cb93d39bbcefe3f7c26c3c5677",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_5.gif",
+    "filename": "main_list_5.gif",
+    "capturedAt": "20141228052650",
+    "sizeBytes": 4717,
+    "sha256": "9903d68199b5d86bc6f89a02fc02412db500f274461432085eec6cdd6704421b",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_6.gif",
+    "filename": "main_list_6.gif",
+    "capturedAt": "20141228005608",
+    "sizeBytes": 4782,
+    "sha256": "bc500d3f5f6dbcddc01ca700f8c05d0793d99defb658ed7d46614efd43f955c6",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_7.gif",
+    "filename": "main_list_7.gif",
+    "capturedAt": "20141228023413",
+    "sizeBytes": 4812,
+    "sha256": "67d5d1c732c241a4b70d02d90923690fce743cb6a2d67679c2bc9390e695718b",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/main_list_8.gif",
+    "filename": "main_list_8.gif",
+    "capturedAt": "20141228030000",
+    "sizeBytes": 4762,
+    "sha256": "c2f4b680763162e58d152e0892a05946a138bdf3f8647029ac3b189b6024d0ae",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/outlogin/forg/img/btn_password_forget.gif",
+    "filename": "outlogin_btn_password_forget.gif",
+    "capturedAt": "20141228025651",
+    "sizeBytes": 307,
+    "sha256": "7a456f6030afc59a1f81001f599bf49a9aa6da952f844f1d38180c5550ec30ea",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/outlogin/forg/img/btn_register.gif",
+    "filename": "outlogin_btn_register.gif",
+    "capturedAt": "20141228021644",
+    "sizeBytes": 245,
+    "sha256": "a4a658ca485cb3427710addb94555b3b3769dda8d30b00105d50087abaed20e4",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/outlogin/forg/img/close.gif",
+    "filename": "outlogin_close.gif",
+    "capturedAt": "20141228035354",
+    "sizeBytes": 197,
+    "sha256": "dc3fc6cd543e3dc4993fe836f9397eda896d1985047b0f7fe326e3e14652db29",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/outlogin/forg/img/icon.gif",
+    "filename": "outlogin_icon.gif",
+    "capturedAt": "20141228053730",
+    "sizeBytes": 45,
+    "sha256": "563d369245a4bdb89e074c46b1dcf00945ee1005d4364e0022d5923e0b5d9114",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/right_bg.gif",
+    "filename": "right_bg.gif",
+    "capturedAt": "20130812120815",
+    "sizeBytes": 132,
+    "sha256": "286655ca486aad3885335c8bb725640d98fd42e5ebeb6fb8f15694270828bc34",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/latest/last_forg/img/icon_file.gif",
+    "filename": "skin_icon_file.gif",
+    "capturedAt": "20141228021409",
+    "sizeBytes": 295,
+    "sha256": "9d82406cad5df0f814fc625e792242b63fb8a24db755f53d0769f8af98f3d4bb",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/latest/last_forg/img/icon_hot.gif",
+    "filename": "skin_icon_hot.gif",
+    "capturedAt": "20141228011659",
+    "sizeBytes": 838,
+    "sha256": "b39d311d6dbcd549b61809ec40ae405493a993d01da9248256ecb85c827d64de",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/latest/last_forg/img/icon_link.gif",
+    "filename": "skin_icon_link.gif",
+    "capturedAt": "20141228055342",
+    "sizeBytes": 75,
+    "sha256": "33a22f571c796ba423ba86326dde89e1b1c7b6b29471c5275a59c0cb2eda4970",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/skin/latest/last_forg/img/icon_reply.gif",
+    "filename": "skin_icon_reply.gif",
+    "capturedAt": "20141228041426",
+    "sizeBytes": 1725,
+    "sha256": "bf1d23cda1bb3ab1b963a00720bda392d25767b4c0b7014d139e4e0f47b88c47",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_boo.gif",
+    "filename": "t_b_boo.gif",
+    "capturedAt": "20141228071049",
+    "sizeBytes": 135,
+    "sha256": "260e73be8cf249f12db8d2eb3de8e7afe8e756016f32b2d79cce1393b0bf228f",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_boo_1.gif",
+    "filename": "t_b_boo_1.gif",
+    "capturedAt": "20130512203730",
+    "sizeBytes": 155,
+    "sha256": "d21cfbb436fe070915fa74a850f1799940794134e7ad0c876ac24d0ebc1206e5",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_freeboard.gif",
+    "filename": "t_b_freeboard.gif",
+    "capturedAt": "20141228015138",
+    "sizeBytes": 141,
+    "sha256": "0bfadd9012fb1ed52d202cbfb239085965a9fca4e67e052c389241d3a7f40a3b",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_fun.gif",
+    "filename": "t_b_fun.gif",
+    "capturedAt": "20141228032214",
+    "sizeBytes": 135,
+    "sha256": "1dfd55af61f2b85519f91c91a3e46c521d35b44a898d2cd7ee3bafaed72c2b75",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_movie.gif",
+    "filename": "t_b_movie.gif",
+    "capturedAt": "20141228021256",
+    "sizeBytes": 163,
+    "sha256": "ccf68d434586e1abafe7efe314fb1fed9945a5e2459e6871f0335548801b256a",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_photo.gif",
+    "filename": "t_b_photo.gif",
+    "capturedAt": "20141228011758",
+    "sizeBytes": 160,
+    "sha256": "2d1521dd92e36247889555188a1c9d7fa03e65a9b517c277168b35e3c8e79c5d",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_right.gif",
+    "filename": "t_b_right.gif",
+    "capturedAt": "20141228032652",
+    "sizeBytes": 662,
+    "sha256": "fb2f4b50600e5eb5446695842a633ca54d71f93cdc859c62cc8c928d0761af64",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_roleplay_1.gif",
+    "filename": "t_b_roleplay_1.gif",
+    "capturedAt": "20130204113338",
+    "sizeBytes": 162,
+    "sha256": "5b0290b402318099d0d1089be713ee179dd0a6dfc2b0a75c27955fd8809184f6",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_tra.gif",
+    "filename": "t_b_tra.gif",
+    "capturedAt": "20141228031608",
+    "sizeBytes": 164,
+    "sha256": "eae23d1f3fde0d32cdc95007e6b326036642caf582014ee886aa44b8a58dbe41",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_trash.gif",
+    "filename": "t_b_trash.gif",
+    "capturedAt": "20141228022820",
+    "sizeBytes": 154,
+    "sha256": "7bf45960281fc9033e343e592308fe7b8bd1d4c3f82abc78796f7ddfcbe64838",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_b_trash_1.gif",
+    "filename": "t_b_trash_1.gif",
+    "capturedAt": "20130601191744",
+    "sizeBytes": 140,
+    "sha256": "93ba6777ca509f659196c3ea9f05269f352793ee2a383e5b442e6c7277cb5aaa",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_bar.gif",
+    "filename": "t_bar.gif",
+    "capturedAt": "20141228040647",
+    "sizeBytes": 49,
+    "sha256": "68e2d2e6ab6d17ab43572850aa1946358541f6b79dc1966bd7311c2c8e982726",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_line.gif",
+    "filename": "t_line.gif",
+    "capturedAt": "20141228012952",
+    "sizeBytes": 153,
+    "sha256": "336f2640b01835e8ea0e905cef06a6abee2ef1d8523f38dd4191aa9a169d4e6f",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_login.gif",
+    "filename": "t_login.gif",
+    "capturedAt": "20141228014847",
+    "sizeBytes": 917,
+    "sha256": "99c143ba63e827e7eee191049a616970b6bef3cf0209f33fc002f46b2e59047a",
+    "mimetype": "image/gif"
+  },
+  {
+    "originalPath": "/images/t_sign.gif",
+    "filename": "t_sign.gif",
+    "capturedAt": "20141228020130",
+    "sizeBytes": 118,
+    "sha256": "bb73535ce123d8984a9534946786250476ffb1f82a756ff7dda2cb2f54a44cc4",
+    "mimetype": "image/gif"
+  }
+]
