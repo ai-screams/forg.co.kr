@@ -31,7 +31,7 @@ import urllib.error
 import urllib.request
 from collections.abc import Generator
 from pathlib import Path
-from urllib.parse import quote, urlsplit, urlunsplit
+from urllib.parse import quote, unquote_to_bytes, urlsplit, urlunsplit
 
 # ── Filesystem layout ─────────────────────────────────────────────────-
 ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research"
@@ -108,6 +108,80 @@ def wayback_url(ts: str, original: str) -> str:
     """Build a raw-content Wayback URL using the `id_` modifier so the response
     is the original archived bytes (no Wayback chrome injected)."""
     return f"https://web.archive.org/web/{ts}id_/{original}"
+
+
+# ── Join key shared by every CDX consumer ──────────────────────────────-
+_PERCENT_SAFE = "/-._~!$&'()*+,;=:@"
+
+
+def path_text(path: str) -> str:
+    """Percent-decode a URL path segment to text, honouring the site's encoding.
+
+    forg served EUC-KR, so Wayback rows carry Korean basenames as CP949
+    percent-escapes (`%b9%df%c7%d8…`). The gold tier holds the same names
+    as decoded Unicode. `unquote()` assumes UTF-8 and turns the CP949 bytes
+    into U+FFFD, so the two sides never met (collection audit 2026-09-19,
+    G1: 61 body images Wayback *has* were filed as unrecoverable). Decode
+    to bytes first, try UTF-8, then CP949.
+    """
+    raw = unquote_to_bytes(path)
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("cp949", errors="replace")
+
+
+def canonical_key(url: str) -> str:
+    """Stable join key — host preserved, port normalized, path percent-encoding
+    normalized to UTF-8 upper-case hex, then case-folded.
+
+    ADR-0010 Iteration 2: do NOT strip `www.`. Wayback may capture
+    `www.host` and `host` as separate URLs. Host variants live in the
+    manifest's candidates list, not in the key.
+
+    The path is lower-cased because Wayback's own urlkey is (SURT form),
+    so a `.JPG` reference and a `.jpg` capture replay as one resource.
+    Audit G1 counted 11 references lost to case alone.
+    """
+    p = urlsplit(url)
+    scheme = (p.scheme or "http").lower()
+    host = (p.hostname or "").lower()
+    port = "" if p.port in (None, 80, 443) else f":{p.port}"
+    try:
+        path = quote(path_text(p.path), safe=_PERCENT_SAFE).lower()
+    except ValueError:
+        path = p.path.lower()
+    base = f"{scheme}://{host}{port}{path}"
+    return f"{base}?{p.query}" if p.query else base
+
+
+# ── Local CDX inventory ────────────────────────────────────────────────-
+CDX_DIR = ROOT / "cdx"
+_local_cdx: dict[str, list[dict]] | None = None
+
+
+def local_cdx_rows(url: str) -> list[dict]:
+    """CDX rows already on disk for `url`, keyed by `canonical_key`.
+
+    Every `cdx/image-*.jsonl` prefix sweep is loaded once per process. A
+    single-URL probe that finds its answer here costs no request; the
+    collection audit found 1,517 `/images/` rows that no stage had ever
+    consulted while `recover-chrome.py` asked Wayback for the same files.
+    """
+    global _local_cdx
+    if _local_cdx is None:
+        index: dict[str, list[dict]] = {}
+        for path in sorted(CDX_DIR.glob("image-*.jsonl")):
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if not line.strip():
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                index.setdefault(canonical_key(row["original"]), []).append(row)
+        _local_cdx = index
+    return _local_cdx.get(canonical_key(url), [])
 
 
 # ── Cross-process polite slot ──────────────────────────────────────────-

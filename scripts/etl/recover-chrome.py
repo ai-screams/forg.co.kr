@@ -46,6 +46,7 @@ from wayback_client import (  # noqa: E402
     WaybackGoneError,
     fetch_with_retry,
     global_polite_slot,
+    local_cdx_rows,
     wayback_url,
 )
 
@@ -242,21 +243,174 @@ CHROME_TARGETS: list[tuple[str, str]] = [
     ("/skill_newbie/images/memo_b.gif",             "newbie_memo_b.gif"),
     ("/skill_newbie/images/menu.gif",               "newbie_menu.gif"),
     ("/skill_newbie/images/top.gif",                "newbie_top.gif"),
+    # ── Third pass (2026-09-20) ─────────────────────────────────────────
+    # The collection audit found `cdx/site-images.json` — a full CDX answer
+    # for /images/ saved on 2026-05-02 — that no stage had ever read. 99 of
+    # its 167 paths were not on this list. They are registered so the pool
+    # is the inventory, not a guess; `cdx_probe` answers them from the local
+    # index, so each costs one download and no CDX request.
+    # Board header logos (2002–2004 board pages)
+    ("/images/buy_logo.gif",                    "buy_logo.gif"),
+    ("/images/essay_logo.gif",                  "essay_logo.gif"),
+    ("/images/event_logo.gif",                  "event_logo.gif"),
+    ("/images/fun_logo.gif",                    "fun_logo.gif"),
+    ("/images/question_logo.gif",               "question_logo.gif"),
+    ("/images/role_logo.gif",                   "role_logo.gif"),
+    ("/images/screenshot_logo.gif",             "screenshot_logo.gif"),
+    ("/images/trash_logo.gif",                  "trash_logo.gif"),
+    # 2013–2014 front page: 8-box list titles, social icons, title strip
+    ("/images/FB6.png",                         "FB6.png"),
+    ("/images/icon_twitter.png",                "icon_twitter.png"),
+    ("/images/main_list_1.gif",                 "main_list_1.gif"),
+    ("/images/main_list_2.gif",                 "main_list_2.gif"),
+    ("/images/main_list_3.gif",                 "main_list_3.gif"),
+    ("/images/main_list_4.gif",                 "main_list_4.gif"),
+    ("/images/main_list_5.gif",                 "main_list_5.gif"),
+    ("/images/main_list_6.gif",                 "main_list_6.gif"),
+    ("/images/main_list_7.gif",                 "main_list_7.gif"),
+    ("/images/main_list_8.gif",                 "main_list_8.gif"),
+    ("/images/me2day_icon.PNG",                 "me2day_icon.PNG"),
+    ("/images/title_bg.jpg",                    "title_bg.jpg"),
+    # 2005–2006 WoW-era sidebar and headers
+    ("/images/all_1.jpg",                       "all_1.jpg"),
+    ("/images/count.gif",                       "count.gif"),
+    ("/images/m_column_1.gif",                  "m_column_1.gif"),
+    ("/images/m_middle_wowlogo.gif",            "m_middle_wowlogo.gif"),
+    ("/images/m_onews.gif",                     "m_onews.gif"),
+    ("/images/m_wownotice.gif",                 "m_wownotice.gif"),
+    ("/images/m_wowrole.gif",                   "m_wowrole.gif"),
+    ("/images/main_logo_forg.gif",              "main_logo_forg.gif"),
+    ("/images/r_bar_l.gif",                     "r_bar_l.gif"),
+    ("/images/r_bar_l_2.gif",                   "r_bar_l_2.gif"),
+    ("/images/r_wowessay.gif",                  "r_wowessay.gif"),
+    ("/images/r_wowfreeboard.gif",              "r_wowfreeboard.gif"),
+    ("/images/r_wowrole.gif",                   "r_wowrole.gif"),
+    ("/images/r_wowscreen.gif",                 "r_wowscreen.gif"),
+    ("/images/right_background.gif",            "right_background.gif"),
+    ("/images/right_background_1.gif",          "right_background_1.gif"),
+    ("/images/t_wowhi.gif",                     "t_wowhi.gif"),
+    ("/images/wow_1.gif",                       "wow_1.gif"),
+    ("/images/zoombox_background.gif",          "zoombox_background.gif"),
+    # 2001 menu set (a pre-2003 layout, kept for a future era)
+    ("/images/e.gif",                           "e.gif"),
+    ("/images/holy.gif",                        "holy.gif"),
+    ("/images/m_b.gif",                         "m_b.gif"),
+    ("/images/m_c.gif",                         "m_c.gif"),
+    ("/images/m_e.gif",                         "m_e.gif"),
+    ("/images/m_f.gif",                         "m_f.gif"),
+    ("/images/m_fun.gif",                       "m_fun.gif"),
+    ("/images/m_j.gif",                         "m_j.gif"),
+    ("/images/m_k.gif",                         "m_k.gif"),
+    ("/images/m_m.gif",                         "m_m.gif"),
+    ("/images/m_map.gif",                       "m_map.gif"),
+    ("/images/m_n.gif",                         "m_n.gif"),
+    ("/images/m_q.gif",                         "m_q.gif"),
+    ("/images/m_r.gif",                         "m_r.gif"),
+    ("/images/m_s.gif",                         "m_s.gif"),
+    ("/images/sasa.gif",                        "sasa.gif"),
+    ("/images/t_l.gif",                         "t_l.gif"),
+    ("/images/t_r.gif",                         "t_r.gif"),
+    ("/images/team.gif",                        "team.gif"),
+    ("/images/trophy.gif",                      "trophy.gif"),
+    # /images/mail/ — the mail/FAQ page
+    ("/images/mail/zoombox_background.gif",     "mail_zoombox_background.gif"),
+    ("/images/mail/title_bg.jpg",               "mail_title_bg.jpg"),
+    ("/images/mail/b_logo.gif",                 "mail_b_logo.gif"),
+    ("/images/mail/faq_1.gif",                  "mail_faq_1.gif"),
+    ("/images/mail/faq_2.gif",                  "mail_faq_2.gif"),
+    ("/images/mail/faq_3.gif",                  "mail_faq_3.gif"),
+    ("/images/mail/faq_4.gif",                  "mail_faq_4.gif"),
+    ("/images/mail/faq_5.gif",                  "mail_faq_5.gif"),
+    ("/images/mail/forg_dragon.gif",            "mail_forg_dragon.gif"),
+    ("/images/mail/level1_write.gif",           "mail_level1_write.gif"),
+    ("/images/mail/line.gif",                   "mail_line.gif"),
+    ("/images/mail/t_b_right.gif",              "mail_t_b_right.gif"),
+    # 2002–2007 front page and board furniture, by year of capture
+    ("/images/all.jpg",                         "all.jpg"),
+    ("/images/alsee_1.gif",                     "alsee_1.gif"),
+    ("/images/alsee_2.gif",                     "alsee_2.gif"),
+    ("/images/alsee_3.gif",                     "alsee_3.gif"),
+    ("/images/aos_box.gif",                     "aos_box.gif"),
+    ("/images/box_3.gif",                       "box_3.gif"),
+    ("/images/cool_logo_1.gif",                 "cool_logo_1.gif"),
+    ("/images/en.gif",                          "en.gif"),
+    ("/images/forg_main_logo_1.gif",            "forg_main_logo_1.gif"),
+    ("/images/i_talks_big.gif",                 "i_talks_big.gif"),
+    ("/images/loading.gif",                     "loading.gif"),
+    ("/images/logo_bottom.gif",                 "logo_bottom.gif"),
+    ("/images/m_middle_logo.gif",               "m_middle_logo.gif"),
+    ("/images/mabinogi.gif",                    "mabinogi.gif"),
+    ("/images/nb.gif",                          "nb.gif"),
+    ("/images/newbiefaq.gif",                   "newbiefaq.gif"),
+    ("/images/nr.gif",                          "nr.gif"),
+    ("/images/r_bar_b.gif",                     "r_bar_b.gif"),
+    ("/images/r_logo_1.gif",                    "r_logo_1.gif"),
+    ("/images/r_logo_2.gif",                    "r_logo_2.gif"),
+    ("/images/ser.gif",                         "ser.gif"),
+    ("/images/sun.gif",                         "sun.gif"),
+    ("/images/t_b_buy.gif",                     "t_b_buy.gif"),
+    ("/images/t_b_buy_1.gif",                   "t_b_buy_1.gif"),
+    ("/images/t_pod_1.gif",                     "t_pod_1.gif"),
+    ("/images/tree_1.gif",                      "tree_1.gif"),
+    ("/images/uo_1.gif",                        "uo_1.gif"),
+    ("/images/uof.gif",                         "uof.gif"),
 ]
 
 
 # ── CDX probe ───────────────────────────────────────────────────────────
 
 
+def _pick_latest_valid(rows: list, *, from_ts: str, to_ts: str) -> dict | None:
+    """Latest `status==200 + mimetype image/*` row inside the window, or None."""
+    valid = []
+    for r in rows:
+        if r.get("statuscode") != "200":
+            continue
+        if not r.get("mimetype", "").lower().startswith("image/"):
+            continue
+        if not (from_ts <= r["timestamp"] <= to_ts):
+            continue
+        # length parse (CDX may say "-")
+        length_raw = r.get("length")
+        try:
+            length = int(length_raw) if length_raw and length_raw != "-" else 0
+        except ValueError:
+            length = 0
+        if length <= 0:
+            continue
+        valid.append({
+            "timestamp": r["timestamp"],
+            "original":  r["original"],
+            "mimetype":  r["mimetype"],
+            "statuscode": r["statuscode"],
+            "digest":    r["digest"],
+            "length":    length_raw,
+        })
+    if not valid:
+        return None
+    return max(valid, key=lambda v: v["timestamp"])
+
+
 def cdx_probe(path: str, *, from_ts: str, to_ts: str) -> dict | None:
-    """Run a single-URL CDX query for `forg.co.kr{path}`. Pick the latest
-    `status==200 + mimetype image/*` row, return the picked CDX row dict
-    or None if no valid capture exists.
+    """Find the latest valid capture of `forg.co.kr{path}` in the window.
+
+    The prefix sweeps already on disk (`cdx/image-*.jsonl`) are consulted
+    first; a hit there costs no request. Only a path they do not answer goes
+    to Wayback as a single-URL CDX query.
     """
     # A path is server-relative on forg.co.kr unless it names its own host.
     # frame-main-2003 pulled 13 images from hosting27.interpia98.net/~forg/,
     # which a forg.co.kr-only probe can never see.
     target = path if path.startswith("http") else f"forg.co.kr{path}"
+    # Wayback's urlkey drops `www.`, so its exact-match probe answers with
+    # both hosts; read the local sweep the same way.
+    local = local_cdx_rows(f"http://{target}") + (
+        local_cdx_rows(f"http://www.{target}") if not path.startswith("http") else []
+    )
+    picked = _pick_latest_valid(local, from_ts=from_ts, to_ts=to_ts)
+    if picked is not None:
+        picked["source"] = "local-index"
+        return picked
     params = {
         "url": target,
         "output": "json",
@@ -279,34 +433,11 @@ def cdx_probe(path: str, *, from_ts: str, to_ts: str) -> dict | None:
         return None
     header, *rows = data
     cols = {name: i for i, name in enumerate(header)}
-    valid = []
-    for r in rows:
-        if not r or len(r) < len(header):
-            continue
-        if r[cols["statuscode"]] != "200":
-            continue
-        if not r[cols["mimetype"]].lower().startswith("image/"):
-            continue
-        # length parse (CDX may say "-")
-        length_raw = r[cols["length"]]
-        try:
-            length = int(length_raw) if length_raw and length_raw != "-" else 0
-        except ValueError:
-            length = 0
-        if length <= 0:
-            continue
-        valid.append({
-            "timestamp": r[cols["timestamp"]],
-            "original":  r[cols["original"]],
-            "mimetype":  r[cols["mimetype"]],
-            "statuscode": r[cols["statuscode"]],
-            "digest":    r[cols["digest"]],
-            "length":    length_raw,
-        })
-    if not valid:
-        return None
-    # Latest valid capture = biggest timestamp.
-    return max(valid, key=lambda v: v["timestamp"])
+    return _pick_latest_valid(
+        [dict(zip(header, r)) for r in rows if r and len(r) >= len(cols)],
+        from_ts=from_ts,
+        to_ts=to_ts,
+    )
 
 
 # ── Per-asset fetch ─────────────────────────────────────────────────────
