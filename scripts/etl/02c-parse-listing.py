@@ -411,6 +411,15 @@ def main() -> int:
             # forg.kr boards are registered under a `kr_` prefix (boards.ts).
             board_id = f"kr_{board_dir.name}" if board_dir.name in kr_boards else board_dir.name
             out = OUTPUT_DIR / f"{board_id}.json"
+            # Keep the previous stamp when nothing but the stamp would change,
+            # so a re-run over the same pages leaves git quiet.
+            if out.exists():
+                prev = json.loads(out.read_text(encoding="utf-8"))
+                now = json.loads(listing.model_dump_json())
+                if {k: v for k, v in prev.items() if k != "generatedAt"} == {
+                    k: v for k, v in now.items() if k != "generatedAt"
+                }:
+                    continue
             tmp = out.with_suffix(".tmp")
             tmp.write_text(listing.model_dump_json(indent=2) + "\n", encoding="utf-8")
             tmp.replace(out)
