@@ -67,11 +67,11 @@ Gold-tier posts contain embedded images that must be recovered from Wayback. The
 
 **Result (P2.4):** 2,715 files / 56 MB across 9 boards; **49.9% body image recovery** (1,077 references, 569 recovered). Chrome assets: **68/73 = 93%** via single-URL probe.
 
-**Phase G (ADR-0012, in flight, ETA 6–9h):** Single-URL fallback for no_canonical_match entries
+**Phase G (ADR-0012, reworked 2026-09-20):** Single-URL probes for URLs the sweeps missed
 
-- `cdx-image-fallback.py` — probe unrecoverable candidates individually against Wayback CDX
-- Expected: body image recovery → **30–50%** (conservative estimate based on chrome recovery rate)
-- Melts into Phase D (re-run download) + Phase F (re-run rewrite) automatically
+- `cdx-image-fallback.py` — probes each distinct `normalized_url` in `image-unrecoverable.jsonl` **once** and appends the rows to `.docs/research/cdx/image-probe.jsonl`; misses are cached in `.probe-misses.jsonl`. It writes CDX rows, not queue entries — `cdx-image.py --queue-only` joins them like any sweep (`--filter` narrows, e.g. `/_zb/emoticon/`).
+- `run-phase-g-chain.sh [probe args]` — probe → join → Phase D → Phase F → measure
+- First use (P1-1): the 20 `u_*`/`m_*` emoticons behind 878 comment refs have no 200 capture anywhere (404 in 2004, 302 in 2007, nothing on the hosting27 mirror)
 
 **Storage decision (ADR-0011):** 56 MB < 200 MB threshold → git-direct commit (same model as gold JSON tier). Re-evaluate at 150 / 200 MB / 1 GB milestones.
 

@@ -559,7 +559,8 @@ def main() -> int:
             )
 
     # ── Step 2: build multimap from disk ────────────────────────────────-
-    slugs = [s for s, _ in PREFIX_LIST]
+    # Every sweep plus the single-URL probes Phase G appends (`image-probe`).
+    slugs = [s for s, _ in PREFIX_LIST] + ["probe"]
     cdx_index, cdx_total = load_cdx_index(slugs)
     print(
         f"[index] canonical_keys={len(cdx_index)} total_rows={cdx_total}",

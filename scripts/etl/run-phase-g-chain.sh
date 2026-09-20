@@ -1,8 +1,9 @@
 #!/bin/bash
 # Phase G chain orchestrator (ADR-0012).
 #
-# Waits for cdx-image-fallback.py to finish (the script is already running),
+# Runs cdx-image-fallback.py (single-URL probes → local CDX inventory),
 # then chains:
+#   cdx-image.py --queue-only  (Phase C join over sweeps + probe rows)
 #   download-images.py  (Phase D re-run, picks up new queue entries)
 #   04-rewrite-image-urls.py  (Phase F re-run, promotes data-recovery="ok")
 #   measure-recovery.py --write-report  (Phase E re-measure)
@@ -32,21 +33,15 @@ log() {
 
 log "starting chain orchestrator pid=$$"
 
-# ── Stage 1 — wait for fallback to finish ──────────────────────────────-
-FALLBACK_PID_FILE="$RUN_DIR/.fallback.run.pid"
-if [[ -f "$FALLBACK_PID_FILE" ]]; then
-  FALLBACK_PID=$(cat "$FALLBACK_PID_FILE")
-  log "waiting for fallback pid=$FALLBACK_PID"
-  while ps -p "$FALLBACK_PID" > /dev/null 2>&1; do
-    sleep 120
-  done
-  log "fallback finished"
-else
-  log "no fallback pid file — assuming already done"
-fi
-
-# Brief grace period to let final atomic writes settle.
-sleep 5
+# ── Stage 1 — Phase G probes, then the join ────────────────────────────-
+# Extra arguments to this script go to the probe (e.g. --filter /_zb/data/).
+log "stage 1: cdx-image-fallback.py $*"
+"$PY" scripts/etl/cdx-image-fallback.py --print-every 50 "$@" \
+  >> "$RUN_DIR/.fallback.run.log" 2>&1
+log "stage 1: cdx-image.py --queue-only"
+"$PY" scripts/etl/cdx-image.py --queue-only \
+  >> "$RUN_DIR/.join.run.log" 2>&1
+log "stage 1 done"
 
 # ── Stage 2 — Phase D re-run (download newly queued entries) ───────────-
 log "stage 2: download-images.py (Phase D re-run)"
