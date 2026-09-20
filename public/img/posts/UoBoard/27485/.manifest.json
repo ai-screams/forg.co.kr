@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "22g.gif",
+    "originalUrl": "http://guide.uo.com:80/skills/22g.gif",
+    "capturedAt": "20020323231513",
+    "sizeBytes": 3332,
+    "sha256": "df768d687eec610e131513462dc7c17437b56b09e897b0c46436aed4460f8a10",
+    "digest": "MGXJOUBRIDUP7G3PUYPDX7LSJJBOTME2"
+  },
+  {
+    "filename": "29g.gif",
+    "originalUrl": "http://guide.uo.com:80/skills/29g.gif",
+    "capturedAt": "20030427141348",
+    "sizeBytes": 3126,
+    "sha256": "0d97fc9290987125d2c9e28f243a15cda97900d18f6a4ab55c56e3cc05b83209",
+    "digest": "BJDCZHRJJO6VQHE72WI3RHGMTYASI56C"
+  }
+]
