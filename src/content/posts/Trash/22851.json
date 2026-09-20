@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2015-09-14T00:00:00",
+  "createdAtApprox": false,
   "hits": 1159,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-09-15T15:15:00",
+      "createdAt": "2015-09-15T15:15:00",
       "bodyHtml": "워워\n<br>진정하시게나 오징어"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-09-19T10:27:00",
+      "createdAt": "2015-09-19T10:27:00",
       "bodyHtml": "?? 글케 좋으면 너나 사겨라고 하면서 걍 넘기면 그만이지 왤케 흥분함ㅋㅋ\n<br>근데 잘생기고 키크고 나이먹은 사람 하니까 딱 우성이 형님이 떠오른다"
     },
     {
       "author": "anonymous",
       "authorMemberNo": null,
-      "createdAt": "2016-10-03T13:38:00",
+      "createdAt": "2015-10-03T13:38:00",
       "bodyHtml": "못생긴 돼지들은\n<br>카크고 잘생긴 애들한테\n<br>내가 너정도면 이라는 칭찬 깔면서\n<br>호구조사하거 다른걸로 깔려고 함 ㅋㅋㅋㅋㅋ\n<br>아 진짜 돼지새끼들!!!"
     },
     {
@@ -41,7 +42,7 @@
   ],
   "era": "2014",
   "capturedAt": "20160331123529",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=22851",
   "sourceEngine": "gnuboard4"
 }

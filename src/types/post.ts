@@ -65,6 +65,12 @@ export interface Post {
   /** ISO 8601 — second precision from `<span title="…">` when present,
    *  otherwise day precision from the visible date. */
   createdAt: string;
+  /**
+   * True when the capture carried no post date and `createdAt` is the
+   * earliest comment's time — an upper bound, not the post's own timestamp.
+   * Absent on files written before 2026-09-20; treat absent as false.
+   */
+  createdAtApprox?: boolean;
 
   /** View count if the markup exposes it. Sample posts do not — left
    *  optional until later boards prove they expose hits. */
@@ -111,6 +117,8 @@ export interface BoardIndexEntry {
   author: string;
   authorMemberNo: string | null;
   createdAt: string;
+  /** Mirrors `Post.createdAtApprox`; always present in index chunks. */
+  createdAtApprox: boolean;
   commentCount: number;
   attachmentCount: number;
   hits: number | null;

@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-09-26T00:00:00",
+  "createdAtApprox": false,
   "hits": 2580,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "syaoran911",
       "authorMemberNo": null,
-      "createdAt": "2016-10-11T22:57:00",
+      "createdAt": "2015-10-11T22:57:00",
       "bodyHtml": "헝..해보고 싶네요 ㅠㅠ\n<br>맥에서도 돌아갈까요?"
     },
     {
       "author": "페츠비",
       "authorMemberNo": null,
-      "createdAt": "2016-10-13T18:39:00",
+      "createdAt": "2015-10-13T18:39:00",
       "bodyHtml": "맥에서 아주 잘돌아갑니다~~~"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123650",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28518",
   "sourceEngine": "gnuboard4"
 }

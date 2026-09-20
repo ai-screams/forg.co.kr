@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2013-06-21T00:00:00",
+  "createdAtApprox": false,
   "hits": 1424,
   "recommend": null,
   "attachments": [],
@@ -17,25 +18,25 @@
     {
       "author": "mukmok",
       "authorMemberNo": null,
-      "createdAt": "2015-06-25T01:20:00",
+      "createdAt": "2014-06-25T01:20:00",
       "bodyHtml": "어짜피 비현실적일수밖에 없는 좀비물이지만\n<br>나름 실제 좀비가 전세계적으로 퍼지면 이꼴 나겠구나.. 싶기는 하더라구요\n<br>(그렇다고 영화처럼 쓰나미 좀비는 아니겠지만요)\n<br>좀비를 완전 박멸하는 엔딩이 아닌건 맘에 들더군요"
     },
     {
       "author": "sran",
       "authorMemberNo": null,
-      "createdAt": "2015-06-30T22:23:00",
+      "createdAt": "2014-06-30T22:23:00",
       "bodyHtml": "좀비가 너무 빠른것도 좀 장단점이 있더군요.\n<br>\n<br>느린 좀비 대처법은 너무 많이 나와서\n<br>\n<br>오히려 와우 언데드 처럼 만들어 놨더군요."
     },
     {
       "author": "syaoran911",
       "authorMemberNo": null,
-      "createdAt": "2015-07-01T16:36:00",
+      "createdAt": "2014-07-01T16:36:00",
       "bodyHtml": "콜라광고영화.."
     }
   ],
   "era": "2014",
   "capturedAt": "20150405005203",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Reveal&wr_id=2632",
   "sourceEngine": "gnuboard4"
 }

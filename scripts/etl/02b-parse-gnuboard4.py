@@ -212,25 +212,24 @@ def parse_dash_date(text: str) -> datetime | None:
     return None
 
 
-def parse_comment_date(text: str, capture_year: int) -> datetime | None:
+def parse_comment_date(text: str, captured_at: str) -> datetime | None:
     """Parse G4 comment date 'MM-DD HH:mm', deriving year from Wayback ts.
 
     G4 skin only renders month-day for comments. We derive the year from the
     Wayback capture timestamp: if the comment's month-day is <= the capture
     month-day we use the capture year, otherwise year-1 (comment was before
-    the capture rolled into the next year).
+    the capture rolled into the next year). A comment cannot postdate the
+    capture that contains it.
     """
     m = _MONTHDAY_TIME_RE.search(text)
     if not m:
         return None
     mo, d, h, mi = int(m.group(1)), int(m.group(2)), int(m.group(3)), int(m.group(4))
-    # Try capture year first; if it produces a valid date, use it.
+    capture_year = int(captured_at[:4])
+    capture_month_day = (int(captured_at[4:6]), int(captured_at[6:8]))
+    year = capture_year if (mo, d) <= capture_month_day else capture_year - 1
     try:
-        return datetime(capture_year, mo, d, h, mi)
-    except ValueError:
-        pass
-    try:
-        return datetime(capture_year - 1, mo, d, h, mi)
+        return datetime(year, mo, d, h, mi)
     except ValueError:
         return None
 
@@ -391,7 +390,7 @@ def find_created_at(soup: BeautifulSoup, post_id: str) -> datetime | None:
     return None
 
 
-def find_comments(soup: BeautifulSoup, capture_year: int) -> list[Comment]:
+def find_comments(soup: BeautifulSoup, captured_at: str) -> list[Comment]:
     """Extract comments from <div id="commentContents">."""
     container = soup.find("div", id="commentContents")
     if not isinstance(container, Tag):
@@ -428,7 +427,7 @@ def find_comments(soup: BeautifulSoup, capture_year: int) -> list[Comment]:
             ]
             if date_spans:
                 date_text = date_spans[-1].get_text(strip=True)
-                parsed = parse_comment_date(date_text, capture_year)
+                parsed = parse_comment_date(date_text, captured_at)
                 if parsed:
                     created_at = parsed
 
@@ -529,15 +528,25 @@ def parse_one(
     body_text_soup = BeautifulSoup(body_html, "lxml")
     body_text = body_text_soup.get_text(separator=" ", strip=True)
 
-    created_at = find_created_at(soup, post_id)
-    if created_at is None:
-        raise _NonPostPage("missing_createdAt")
-
-    # Derive capture year from Wayback ts (first 4 chars: "20130812..." → 2013)
-    capture_year = int(captured_at[:4]) if captured_at and len(captured_at) >= 4 else created_at.year
-
-    comments = find_comments(soup, capture_year)
+    comments = find_comments(soup, captured_at)
     attachments = [Attachment(**a) for a in find_attachments(soup)]
+
+    # The skin prints the post date only in the listing below the post; once
+    # the listing has scrolled past it the page holds no post date at all.
+    # The earliest comment is then the tightest bound the capture offers.
+    # Without comments the date is unknown and takes the 1970 sentinel the
+    # Zeroboard parser also uses (rendered as "작성일 미상" + capture date);
+    # the post itself is kept. wr_id neighbours were measured as a further
+    # bound and span 3–11 years on these boards — not a date anyone can claim.
+    created_at = find_created_at(soup, post_id)
+    created_at_approx = False
+    if created_at is None:
+        dated = [c.createdAt for c in comments if c.createdAt.year > 1990]
+        if dated:
+            created_at = min(dated)
+            created_at_approx = True
+        else:
+            created_at = datetime(1970, 1, 1)
 
     # boardKr: match the registration in src/lib/boards.ts (P1.3 placeholder)
     board_kr = board
@@ -554,6 +563,7 @@ def parse_one(
         authorMemberNo=None,
         authorHomepage=None,
         createdAt=created_at,
+        createdAtApprox=created_at_approx,
         hits=hits,
         recommend=None,
         attachments=attachments,

@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-11-17T00:00:00",
+  "createdAtApprox": false,
   "hits": 3024,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "Js",
       "authorMemberNo": null,
-      "createdAt": "2016-11-17T17:55:00",
+      "createdAt": "2015-11-17T17:55:00",
       "bodyHtml": "오호 솔로잉 노하우좀 알려주세요 ㅎㅎ 힐링전사 스팩도 궁금하네요 ~"
     },
     {
       "author": "봉중민ㅇㅅ…",
       "authorMemberNo": null,
-      "createdAt": "2016-11-18T06:52:00",
+      "createdAt": "2015-11-18T06:52:00",
       "bodyHtml": "화면에는 비스트폼이지만 저거 한 두번 하다가 안되겠다 싶어서 스웜프 드래곤 타게 바껏습니당.. 힐링전사로 포션먹고 힐링하고 디스마운트되면 다시 타고 뭐 그런 매크로 짜서 잡는데.. 2번 중에 1번은 죽는 것 같네요.. 아나 110 힐링 110 레지 90 택틱 90 부시도 105 패링 95입니다"
     },
     {
@@ -35,7 +36,7 @@
   ],
   "era": "2014",
   "capturedAt": "20160331124046",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28525",
   "sourceEngine": "gnuboard4"
 }

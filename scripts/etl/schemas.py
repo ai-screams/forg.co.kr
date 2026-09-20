@@ -53,6 +53,12 @@ class Post(BaseModel):
     authorMemberNo: str | None = None
     authorHomepage: str | None = None
     createdAt: datetime
+    # True when the capture carried no post date and `createdAt` is the
+    # earliest comment's time instead — an upper bound, not the post's own
+    # timestamp. The webbus2009 Gnuboard4 skin printed the date only in the
+    # board listing under the post, and that listing had scrolled past the
+    # post in 27 captures (collection audit 2026-09-19, G4).
+    createdAtApprox: bool = False
 
     hits: int | None = None
     recommend: int | None = None
@@ -88,6 +94,7 @@ class BoardIndexEntry(BaseModel):
     author: str = Field(min_length=1)
     authorMemberNo: str | None = None
     createdAt: datetime
+    createdAtApprox: bool = False
     commentCount: int = Field(ge=0)
     attachmentCount: int = Field(ge=0)
     hits: int | None = None

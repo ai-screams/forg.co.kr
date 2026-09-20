@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2011-10-22T00:00:00",
+  "createdAtApprox": false,
   "hits": 3556,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "mydream",
       "authorMemberNo": null,
-      "createdAt": "2016-10-22T13:18:00",
+      "createdAt": "2015-10-22T13:18:00",
       "bodyHtml": "아캄시티 해보고 싶긴한데 \n<br>지금 포르자4랑 기어즈3만 하기에도 버거워서...\n<br>\n<br>기어즈3 메달 작업이 사람 미치게 하네요 ㅎㅎㅎ"
     },
     {
       "author": "ehera",
       "authorMemberNo": null,
-      "createdAt": "2016-10-24T18:19:00",
+      "createdAt": "2015-10-24T18:19:00",
       "bodyHtml": "아 콘솔은 벌써 풀렸어요 ?\n<br>PC는 11월이래든데요"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331124150",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Console&wr_id=1350",
   "sourceEngine": "gnuboard4"
 }

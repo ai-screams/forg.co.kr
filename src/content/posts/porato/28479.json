@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2012-11-30T00:00:00",
+  "createdAtApprox": false,
   "hits": 759,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "로드까까",
       "authorMemberNo": null,
-      "createdAt": "2013-12-06T13:41:00",
+      "createdAt": "2012-12-06T13:41:00",
       "bodyHtml": "영화 나올 때가 됐는데 하고 찾아보니 킥애스2는 내년 2월쯤 개봉하나보네요\n<br>그런데... 맨 아래 사진 좀 보세요\n<br><a href=\"http://movie.naver.com/movie/board/review/read.nhn?nid=2766941\">http://movie.naver.com/movie/board/review/read.nhn?nid=2766941</a>\n<br>헐 아가씨 누구세요?\n<br>양키들은 밥 대신 비료라도 먹고 자라나 봅니다\n<br>킥애스 개봉이 2010년 4월...약 2년 반 전에 개봉한 거니까 저 모습이 3년 전일텐데, 3년 만에 초딩이 고딩처럼 되 있네요\n<br>급속한 성장을 뛰어넘는 급속한 노화가 진행될 것 같아 슬프군요"
     },
     {
       "author": "tzecheleaf",
       "authorMemberNo": null,
-      "createdAt": "2013-12-06T23:26:00",
+      "createdAt": "2012-12-06T23:26:00",
       "bodyHtml": "제2의 엠마왓슨인듯 헉헉"
     }
   ],
   "era": "2014",
   "capturedAt": "20130812100644",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28479",
   "sourceEngine": "gnuboard4"
 }

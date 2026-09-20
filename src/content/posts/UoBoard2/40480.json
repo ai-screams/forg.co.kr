@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-12-13T00:00:00",
+  "createdAtApprox": false,
   "hits": 584,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "히스로스",
       "authorMemberNo": null,
-      "createdAt": "2015-12-15T07:31:00",
+      "createdAt": "2014-12-15T07:31:00",
       "bodyHtml": "괜찮아보이네요! 후후 소개 감사합니다"
     },
     {
       "author": "June",
       "authorMemberNo": null,
-      "createdAt": "2015-12-28T14:30:00",
+      "createdAt": "2014-12-28T14:30:00",
       "bodyHtml": "오옷! 살짝쿵!!"
     }
   ],
   "era": "2014",
   "capturedAt": "20150405005143",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=UoBoard2&wr_id=40480",
   "sourceEngine": "gnuboard4"
 }

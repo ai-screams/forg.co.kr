@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2011-10-20T00:00:00",
+  "createdAtApprox": false,
   "hits": 3319,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "mydream",
       "authorMemberNo": null,
-      "createdAt": "2016-10-21T00:08:00",
+      "createdAt": "2015-10-21T00:08:00",
       "bodyHtml": "한때는 축구게임 참 좋아했었는데&nbsp; \n<br>전 피파 계열을 좋아했지만요\n<br>\n<br>언제 부턴가 안사게 되네요. \n<br>\n<br>왜그런지는 모르겠지만&nbsp; -_-\n<br>\n<br>\n<br>너무 실사필 말고 아케이드성 강한 \n<br>세가의 버추어스트라이커 같은&nbsp; 그런 게임\n<br>나왔으면&nbsp; 가볍게 즐길수 있고 좋을거 같은데 말이죠"
     },
     {
       "author": "karujin",
       "authorMemberNo": null,
-      "createdAt": "2016-10-21T03:14:00",
+      "createdAt": "2015-10-21T03:14:00",
       "bodyHtml": "피온2 추천합니다 기본 베이스는 피파 07버전이라는데 레벨이 오를수록 아케이드 게임을 즐기는 기분이거든요 ㅎㅎㅎㅎ"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123559",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Console&wr_id=1346",
   "sourceEngine": "gnuboard4"
 }

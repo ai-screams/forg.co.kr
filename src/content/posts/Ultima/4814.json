@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2016-02-26T00:00:00",
+  "createdAtApprox": false,
   "hits": 385,
   "recommend": null,
   "attachments": [],
@@ -29,7 +30,7 @@
   ],
   "era": "2014",
   "capturedAt": "20160331124304",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Ultima&wr_id=4814",
   "sourceEngine": "gnuboard4"
 }

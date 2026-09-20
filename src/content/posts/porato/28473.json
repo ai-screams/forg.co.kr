@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2012-11-09T00:00:00",
+  "createdAtApprox": false,
   "hits": 1281,
   "recommend": null,
   "attachments": [],
@@ -17,25 +18,25 @@
     {
       "author": "心如流水",
       "authorMemberNo": null,
-      "createdAt": "2013-11-11T14:24:00",
+      "createdAt": "2012-11-11T14:24:00",
       "bodyHtml": "미쿸보다는 한쿸이 살기 좋군요..."
     },
     {
       "author": "로드까까",
       "authorMemberNo": null,
-      "createdAt": "2013-11-14T17:42:00",
+      "createdAt": "2012-11-14T17:42:00",
       "bodyHtml": "저는 얼라 유저였지만 록타오가~ 외쳐보고싶게 만드는 사진이네요\n<br>무너진 집은 없는지..."
     },
     {
       "author": "tzecheleaf",
       "authorMemberNo": null,
-      "createdAt": "2013-11-19T02:20:00",
+      "createdAt": "2012-11-19T02:20:00",
       "bodyHtml": "헐;;;\n<br>미국 무서운동네네"
     }
   ],
   "era": "2014",
   "capturedAt": "20130812104042",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28473",
   "sourceEngine": "gnuboard4"
 }

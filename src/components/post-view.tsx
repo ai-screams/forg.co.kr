@@ -80,6 +80,11 @@ export function PostView({ post, adjacent }: PostViewProps) {
             <dt className="font-bold">날짜</dt>
             <dd>
               <time dateTime={post.createdAt}>{created}</time>
+              {post.createdAtApprox && (
+                <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
+                  (이전 — 첫 댓글 시각, 작성일은 캡처에 없음)
+                </span>
+              )}
               {capturedDate && (
                 <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
                   (캡처 {capturedDate})

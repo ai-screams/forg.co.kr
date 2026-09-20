@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2011-08-07T00:00:00",
+  "createdAtApprox": false,
   "hits": 2450,
   "recommend": null,
   "attachments": [],
@@ -17,19 +18,19 @@
     {
       "author": "프로게이머",
       "authorMemberNo": null,
-      "createdAt": "2015-08-09T17:43:00",
+      "createdAt": "2014-08-09T17:43:00",
       "bodyHtml": "새로 만드는 계정에만 사용이 가능한가요?\n<br>아주~~~ 오래전 계정에 사용 가능한가요? -_-;;"
     },
     {
       "author": "chunsuk",
       "authorMemberNo": null,
-      "createdAt": "2015-08-14T23:09:00",
+      "createdAt": "2014-08-14T23:09:00",
       "bodyHtml": "계정에 와우 캐릭이 있으면 안되는걸로 알고있어요 요새는 모르겠지만"
     }
   ],
   "era": "2014",
   "capturedAt": "20150406013607",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Shop&wr_id=1065",
   "sourceEngine": "gnuboard4"
 }

@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2013-07-28T00:00:00",
+  "createdAtApprox": false,
   "hits": 1422,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "tzecheleaf",
       "authorMemberNo": null,
-      "createdAt": "2015-08-17T05:00:00",
+      "createdAt": "2014-08-17T05:00:00",
       "bodyHtml": "설마 스칼렛 위치 나오는걸까여???\n<br>걔라면 이런 뭐같은 상황도 가능하게만들듯"
     }
   ],
   "era": "2014",
   "capturedAt": "20150405005329",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Reveal&wr_id=2637",
   "sourceEngine": "gnuboard4"
 }

@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2014-10-22T00:00:00",
+  "createdAtApprox": false,
   "hits": 2795,
   "recommend": null,
   "attachments": [],
@@ -17,25 +18,25 @@
     {
       "author": "달기",
       "authorMemberNo": null,
-      "createdAt": "2016-10-23T17:55:00",
+      "createdAt": "2015-10-23T17:55:00",
       "bodyHtml": "떼 작업"
     },
     {
       "author": "goo1212",
       "authorMemberNo": null,
-      "createdAt": "2016-10-29T10:35:00",
+      "createdAt": "2015-10-29T10:35:00",
       "bodyHtml": "유유자적!"
     },
     {
       "author": "달기",
       "authorMemberNo": null,
-      "createdAt": "2016-10-31T02:36:00",
+      "createdAt": "2015-10-31T02:36:00",
       "bodyHtml": "아 그러고 보니 군대에서 떼작업 하는데 \n<br>옮겨서 얹져만 놓으면 잘 자라던데...\n<br>역시 짬밥먹은 풀이라 싸제랑 다른가봄?"
     }
   ],
   "era": "2014",
   "capturedAt": "20160331123729",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=porato&wr_id=28521",
   "sourceEngine": "gnuboard4"
 }

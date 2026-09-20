@@ -10,6 +10,7 @@
   "authorMemberNo": null,
   "authorHomepage": null,
   "createdAt": "2012-11-18T00:00:00",
+  "createdAtApprox": false,
   "hits": 565,
   "recommend": null,
   "attachments": [],
@@ -17,13 +18,13 @@
     {
       "author": "coffee마나",
       "authorMemberNo": null,
-      "createdAt": "2013-11-19T01:32:00",
+      "createdAt": "2012-11-19T01:32:00",
       "bodyHtml": "재미는 있음. 기대했던 화려한 전투신이 없어서 좀 실망한것 빼고는 꽤 재미있었음."
     }
   ],
   "era": "2014",
   "capturedAt": "20130812101432",
-  "parsedAt": "2026-05-12T13:45:39.356115",
+  "parsedAt": "2026-09-20T16:02:04.046672",
   "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Reveal&wr_id=2596",
   "sourceEngine": "gnuboard4"
 }

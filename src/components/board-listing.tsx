@@ -160,7 +160,13 @@ function PostTable({
                 <p className="text-forg-muted text-[10.5px] sm:hidden">{entry.author}</p>
               </td>
               <td className="text-forg-muted text-center align-middle text-[11px] tabular-nums">
-                {formatShortDate(entry.createdAt)}
+                {entry.createdAtApprox ? (
+                  <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
+                    ≤{formatShortDate(entry.createdAt)}
+                  </span>
+                ) : (
+                  formatShortDate(entry.createdAt)
+                )}
               </td>
             </tr>
           ))}
