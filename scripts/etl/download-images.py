@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import base64
 import hashlib
 import json
 import sys
@@ -111,11 +112,15 @@ def update_post_manifest(
     captured_at: str,
     size_bytes: int,
     sha256_hex: str,
+    digest: str,
 ) -> None:
     """Append (or update by filename) one entry in the per-post manifest.
 
     The manifest is `<post_dir>/.manifest.json`, a JSON list of
-    `{filename, originalUrl, capturedAt, sizeBytes, sha256}` objects.
+    `{filename, originalUrl, capturedAt, sizeBytes, sha256, digest}` objects
+    (`digest` is Wayback's base32 SHA-1, the key the shared emoticon store
+    uses to tell two versions of one filename apart; absent on entries
+    written before 2026-09-20). The shared store's manifest has the same shape.
     Re-runs idempotently overwrite the entry for the same filename so a
     hash drift between Wayback captures (rare) doesn't accumulate stale
     rows.
@@ -137,6 +142,7 @@ def update_post_manifest(
             "capturedAt": captured_at,
             "sizeBytes": size_bytes,
             "sha256": sha256_hex,
+            "digest": digest,
         }
     )
     entries.sort(key=lambda e: e["filename"])
@@ -175,6 +181,11 @@ def write_summary(stats: dict) -> None:
 
 
 # ── Per-image pipeline ─────────────────────────────────────────────────-
+
+
+def wayback_digest(data: bytes) -> str:
+    """The CDX `digest` column: base32 of SHA-1, no padding."""
+    return base64.b32encode(hashlib.sha1(data).digest()).decode("ascii")
 
 
 def fetch_one(entry: dict) -> dict:
@@ -219,6 +230,7 @@ def fetch_one(entry: dict) -> dict:
         captured_at=entry["wayback_ts"],
         size_bytes=len(data),
         sha256_hex=sha256_hex,
+        digest=wayback_digest(data),
     )
 
     return {

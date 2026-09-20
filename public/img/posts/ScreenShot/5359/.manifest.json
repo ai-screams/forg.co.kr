@@ -12,33 +12,5 @@
     "capturedAt": "20021028190149",
     "sizeBytes": 88801,
     "sha256": "293aa1aa8e0d91e3835958325d48826e81970d55e0b01f29d944261949b7874b"
-  },
-  {
-    "filename": "m_devil_smile.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_devil_smile.gif",
-    "capturedAt": "20021028125111",
-    "sizeBytes": 1047,
-    "sha256": "f7ffe463df75a6363886721214534ceac3acaaf43f365b85d196d2ee541f63fe"
-  },
-  {
-    "filename": "m_thumbs_down.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_thumbs_down.gif",
-    "capturedAt": "20021028143956",
-    "sizeBytes": 992,
-    "sha256": "774b2ded37ce0cde97ac8f957e81f06f2580a45b3543db5dc076361ef5511b50"
-  },
-  {
-    "filename": "m_thumbs_up.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_thumbs_up.gif",
-    "capturedAt": "20021009135930",
-    "sizeBytes": 987,
-    "sha256": "286982bbc5fd8a4a909c931701485e0716ec804e1b8ed5f41ef879d959444cfa"
-  },
-  {
-    "filename": "m_whatchutalkingabout_smile.gif",
-    "originalUrl": "http://forg.co.kr:80/_zb/emoticon/m_whatchutalkingabout_smile.gif",
-    "capturedAt": "20030814115125",
-    "sizeBytes": 1032,
-    "sha256": "86605f88d86ebca1581770100bf765e39e355235db74a2f18b03434ee714e41e"
   }
 ]
