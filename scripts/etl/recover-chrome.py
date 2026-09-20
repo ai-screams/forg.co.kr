@@ -423,8 +423,11 @@ def cdx_probe(path: str, *, from_ts: str, to_ts: str) -> dict | None:
     with global_polite_slot():
         try:
             raw = fetch_with_retry(url)
-        except (WaybackGoneError, WaybackError):
+        except WaybackGoneError:
             return None
+        # Exhausted retries is not an answer. Let it surface as an error so the
+        # report does not record a Wayback outage as "missing" and skip the
+        # path forever (2026-09-20: an evening of 503s did exactly that).
     try:
         data = json.loads(raw.decode("utf-8") or "[]")
     except json.JSONDecodeError:
@@ -452,7 +455,15 @@ def fetch_asset(target_path: str, filename: str) -> dict:
             "filename": filename,
         }
 
-    cdx = cdx_probe(target_path, from_ts=FROM_TS, to_ts=TO_TS)
+    try:
+        cdx = cdx_probe(target_path, from_ts=FROM_TS, to_ts=TO_TS)
+    except WaybackError as e:
+        return {
+            "status": "error",
+            "path": target_path,
+            "filename": filename,
+            "error": f"cdx probe: {str(e)[:200]}",
+        }
     if cdx is None:
         return {
             "status": "missing",
