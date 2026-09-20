@@ -414,6 +414,99 @@ export const BOARDS = {
     engine: "gnuboard5",
     era: "2014",
   },
+
+  // ── boards known only from captured list pages (ADR-0017 §4) ──
+  // No post page of these was ever captured; `src/content/listings/{id}.json`
+  // holds the rows. Names follow the rows' subject where the id is a
+  // game (아이온, 헬게이트, 마비노기…); `Co` is UO bard columns (2004).
+  Aion: {
+    id: "Aion",
+    nameKr: "아이온",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "아이온 클로즈베타 시절 (2007–2008), 목록만 남음",
+  },
+  Co: {
+    id: "Co",
+    nameKr: "바드 자료",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+    description: "UO 바드 스킬 해설 (2004), 목록만 남음",
+  },
+  HG: {
+    id: "HG",
+    nameKr: "헬게이트: 런던",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2007–2008, 목록만 남음",
+  },
+  Mabi: {
+    id: "Mabi",
+    nameKr: "마비노기",
+    category: "other",
+    engine: "gnuboard4",
+    era: "2014",
+    description: "2010, 목록만 남음",
+  },
+  MabiHero: {
+    id: "MabiHero",
+    nameKr: "마비노기 영웅전",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2007–2008, 목록만 남음",
+  },
+  Replay: {
+    id: "Replay",
+    nameKr: "스타크래프트 리플레이",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2005, 목록만 남음",
+  },
+  Tarirang2: {
+    id: "Tarirang2",
+    nameKr: "타리랑 거래 (신)",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2004, 목록만 남음 — 구 게시판은 Tarirang",
+  },
+  WoW: {
+    id: "WoW",
+    nameKr: "WoW 게시판",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2007–2008, 목록만 남음",
+  },
+  WOWCo: {
+    id: "WOWCo",
+    nameKr: "WoW 퀘스트 정보",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2004, 목록만 남음",
+  },
+  WOWTrade: {
+    id: "WOWTrade",
+    nameKr: "WoW 장터",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2004, 목록만 남음",
+  },
+  bod: {
+    id: "bod",
+    nameKr: "BOD 교환",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description: "UO 벌크 오더 디드(스미스·테일러) 교환 (2002), 목록만 남음",
+  },
 } as const satisfies Record<string, BoardMeta>;
 
 export type BoardId = keyof typeof BOARDS;

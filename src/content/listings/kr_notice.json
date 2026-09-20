@@ -1,0 +1,54 @@
+{
+  "board": "kr_notice",
+  "engine": "gnuboard4",
+  "pagesCaptured": 1,
+  "totalReported": null,
+  "generatedAt": "2026-09-20T22:30:08.045828Z",
+  "entries": [
+    {
+      "no": "4",
+      "title": "필요하다고 생각되시는 게시판은 언제든지 말씀해 주세요.",
+      "categoryLabel": null,
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162822",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "3",
+      "title": "포그 디스코드 채널 개설.",
+      "categoryLabel": null,
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162822",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "1",
+      "title": "포그 홈페이지는 크롬에 최적화되어 있습니다.",
+      "categoryLabel": null,
+      "author": "runup",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162822",
+      "listPage": 1,
+      "hasPost": false
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "board": "kr_gonggg",
+  "engine": "gnuboard4",
+  "pagesCaptured": 1,
+  "totalReported": null,
+  "generatedAt": "2026-09-20T22:30:07.915786Z",
+  "entries": [
+    {
+      "no": "12",
+      "title": "쓰레기 포인트 1000점 쉽게 얻는 법",
+      "categoryLabel": null,
+      "author": "-2",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162642",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "11",
+      "title": "부넼팔 설명서",
+      "categoryLabel": null,
+      "author": "-3",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162642",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "10",
+      "title": "계정 로그인 및 결재.",
+      "categoryLabel": null,
+      "author": "-4",
+      "authorMemberNo": null,
+      "createdAt": null,
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20191017162642",
+      "listPage": 1,
+      "hasPost": false
+    }
+  ]
+}
