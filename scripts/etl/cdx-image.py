@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ETL Phase C (ADR-0010 §Decision #3) — CDX prefix queries + manifest join.
 
-For each of the 12 prefix targets in `PREFIX_LIST`, query the Wayback CDX
+For each of the 15 prefix targets in `PREFIX_LIST`, query the Wayback CDX
 server with `matchType=prefix` and stash every returned row as one line of
 `.docs/research/cdx/image-{slug}.jsonl`. The query phase is idempotent —
 re-running skips prefixes whose jsonl already exists unless `--force` is
@@ -79,6 +79,11 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("uo-com",           "uo.com/"),
     ("uo-stratics",      "uo.stratics.com/"),
     ("sirl-uospace",     "sirl.uospace.net/"),
+    # A prefix on `uo.com/` matches urlkey `com,uo)/` only — not the
+    # subdomains posts actually hot-linked (collection audit G11).
+    ("guide-uo-com",     "guide.uo.com/"),
+    ("kr-uo-com",        "kr.uo.com/"),
+    ("sazabi-uospace",   "sazabi.uospace.net/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-
@@ -88,6 +93,8 @@ DEFAULT_TO = "20151231235959"   # site went dark mid-2015
 # ── CDX server config ──────────────────────────────────────────────────-
 CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
 CDX_PAGE_SIZE = 15000  # max rows per request; Wayback supports up to 150k
+EMPTY_CONFIRMATIONS = 3  # identical empty answers needed to accept "no rows"
+EMPTY_RECHECK_DELAY = 30  # seconds between those re-asks
 
 # ── Helpers ─────────────────────────────────────────────────────────────
 
@@ -172,6 +179,12 @@ def _build_cdx_url(
     return f"{CDX_ENDPOINT}?{urlencode(params)}"
 
 
+class EmptyCdxAnswer(Exception):
+    """A 200 with no rows. Wayback sends this both for "no captures" and,
+    under load, for a query it could not serve — indistinguishable from
+    one answer. `fetch_prefix` asks again before believing it."""
+
+
 def _parse_cdx_chunk(raw: bytes) -> tuple[list[dict], str | None]:
     """Parse one CDX JSON response into `(rows, resume_key_or_None)`.
 
@@ -182,10 +195,10 @@ def _parse_cdx_chunk(raw: bytes) -> tuple[list[dict], str | None]:
     """
     try:
         data = json.loads(raw.decode("utf-8") or "[]")
-    except json.JSONDecodeError:
-        return [], None
+    except json.JSONDecodeError as e:
+        raise EmptyCdxAnswer(f"non-JSON body ({len(raw)} bytes)") from e
     if not data:
-        return [], None
+        raise EmptyCdxAnswer("empty body")
     header, *rest = data
     cols = {name: i for i, name in enumerate(header)}
 
@@ -246,16 +259,32 @@ def fetch_prefix(
                 resume_key=resume_key,
             )
             chunk_idx += 1
-            with global_polite_slot():
+            # Five prefixes were cached as "0 rows, done" from a single empty
+            # body while Wayback held 1,517 rows for one of them (collection
+            # audit G4/G10). An empty answer is accepted only once it has
+            # been given EMPTY_CONFIRMATIONS times in a row.
+            rows: list[dict] = []
+            next_resume: str | None = None
+            for attempt in range(EMPTY_CONFIRMATIONS):
+                with global_polite_slot():
+                    try:
+                        raw = fetch_with_retry(url)
+                    except WaybackGoneError as e:
+                        _append_log(log, f"[{prefix}] gone: {e}")
+                        raw = b""
+                    except WaybackError as e:
+                        _append_log(log, f"[{prefix}] error: {e}")
+                        raise
                 try:
-                    raw = fetch_with_retry(url)
-                except WaybackGoneError as e:
-                    _append_log(log, f"[{prefix}] gone: {e}")
+                    rows, next_resume = _parse_cdx_chunk(raw)
                     break
-                except WaybackError as e:
-                    _append_log(log, f"[{prefix}] error: {e}")
-                    raise
-            rows, next_resume = _parse_cdx_chunk(raw)
+                except EmptyCdxAnswer as e:
+                    _append_log(
+                        log,
+                        f"[{prefix}] chunk {chunk_idx} {e} "
+                        f"(confirmation {attempt + 1}/{EMPTY_CONFIRMATIONS})",
+                    )
+                    time.sleep(EMPTY_RECHECK_DELAY)
             for row in rows:
                 out_handle.write(json.dumps(row, ensure_ascii=False) + "\n")
             total += len(rows)
@@ -489,6 +518,11 @@ def main() -> int:
         help="overwrite existing per-prefix jsonl",
     )
     parser.add_argument(
+        "--prefix",
+        default="",
+        help="comma-separated slugs to fetch (default: all in PREFIX_LIST)",
+    )
+    parser.add_argument(
         "--queue-only",
         action="store_true",
         help="skip CDX fetch — assume jsonl files already exist, only build queue",
@@ -518,6 +552,12 @@ def main() -> int:
     fetched_summary: dict[str, dict[str, int | str]] = {}
     if not args.queue_only:
         prefixes = list(iter_prefixes(args.prefix_only or None))
+        if args.prefix:
+            wanted = set(args.prefix.split(","))
+            unknown = wanted - {slug for slug, _ in PREFIX_LIST}
+            if unknown:
+                sys.exit(f"FATAL: unknown prefix slug(s): {sorted(unknown)}")
+            prefixes = [(slug, p) for slug, p in prefixes if slug in wanted]
         for i, (slug, prefix) in enumerate(prefixes, 1):
             out = slugify_prefix_name(slug)
             if out.exists() and not args.force:
