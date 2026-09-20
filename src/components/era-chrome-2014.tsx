@@ -30,7 +30,7 @@ export interface MenuConfig {
   label: string;
 }
 
-export const TOP_MENU: MenuConfig[] = [
+const TOP_MENU: MenuConfig[] = [
   {
     id: "UoBoard2",
     asset: "t_b_freeboard.gif",
