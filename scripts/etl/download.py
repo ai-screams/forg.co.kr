@@ -151,12 +151,18 @@ def fetch_one(entry: dict) -> dict:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--phase", default="A", help="A / B / C (filter)")
+    parser.add_argument("--phase", default="A", help="A / B / C / L (filter)")
+    parser.add_argument(
+        "--plan",
+        type=Path,
+        default=PLAN_FILE,
+        help="plan JSON (default: e-policy-plan.json; listings-plan.json for phase L)",
+    )
     parser.add_argument("--limit", type=int, default=0, help="0 = no limit")
     parser.add_argument("--print-every", type=int, default=50)
     args = parser.parse_args()
 
-    plan = json.loads(PLAN_FILE.read_text())
+    plan = json.loads(args.plan.read_text())
     plan = [e for e in plan if e["phase"] == args.phase]
     if args.limit:
         plan = plan[: args.limit]

@@ -38,10 +38,10 @@ interface BoxConfig {
 /** Snapshot order in `2014-12-18.html`: 4 rows × 2 cols → 8 boxes. */
 const MAIN_BOXES: BoxConfig[] = [
   { id: "UoBoard2", label: "자유게시판", asset: "main_list_1.gif" },
-  { id: "FunBoard", label: "펀게시판", asset: "main_list_2.gif" },
+  { id: "FunBoard", label: "펀보드", asset: "main_list_2.gif" },
   { id: "Reveal", label: "스포일러게시판", asset: "main_list_3.gif" },
   { id: "porato", label: "포토갤러리", asset: "main_list_4.gif" },
-  { id: "Trash", label: "트래쉬게시판", asset: "main_list_5.gif" },
+  { id: "Trash", label: "휴지통게시판", asset: "main_list_5.gif" },
   { id: "Ultima", label: "울티마온라인", asset: "main_list_6.gif" },
   { id: "Console", label: "콘솔게임", asset: "main_list_7.gif" },
   { id: "Shop", label: "상점 (거래)", asset: "main_list_8.gif" },

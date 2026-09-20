@@ -163,21 +163,21 @@ export const BOARDS = {
   },
   FunBoard: {
     id: "FunBoard",
-    nameKr: "펀게시판",
+    nameKr: "펀보드",
     category: "community",
     engine: "gnuboard4",
     era: "2014",
   },
   Trash: {
     id: "Trash",
-    nameKr: "트래쉬",
+    nameKr: "휴지통게시판",
     category: "community",
     engine: "gnuboard4",
     era: "2014",
   },
   Reveal: {
     id: "Reveal",
-    nameKr: "무비드릴 (폭로)",
+    nameKr: "스포일러게시판",
     category: "community",
     engine: "gnuboard4",
     era: "2014",
@@ -185,10 +185,13 @@ export const BOARDS = {
   },
   Boo: {
     id: "Boo",
-    nameKr: "검색·문서함",
+    // The 2014 capture's own menu alt text; the reconstruction guide's
+    // "검색/문서함" was a guess. Rows are purchase show-offs ("질렀습니다").
+    nameKr: "뽐뿌",
     category: "community",
     engine: "gnuboard4",
     era: "2014",
+    description: "지름 인증 게시판 (BooBoard)",
   },
 
   // ── trade ──

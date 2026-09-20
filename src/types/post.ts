@@ -148,3 +148,42 @@ export interface BoardIndexPage {
 
 /** Page size for paginated board indexes. Mirrored in Python. */
 export const BOARD_INDEX_PAGE_SIZE = 50;
+
+/**
+ * One row of a captured board list page (ADR-0017). A row is the only
+ * trace of a post whose view page Wayback never captured, and for 43
+ * boards the only trace of the board. Built by
+ * `scripts/etl/02c-parse-listing.py`; mirrors `BoardListingEntry` there.
+ */
+export interface BoardListingEntry {
+  /** Zeroboard `no=` / Gnuboard `wr_id=`. */
+  no: string;
+  title: string;
+  categoryLabel: string | null;
+  author: string;
+  authorMemberNo: string | null;
+  /** ISO date (day precision). Null when the row carried no date. */
+  createdAt: string | null;
+  /** The list printed MM/DD only and the year came from the capture date. */
+  yearApprox: boolean;
+  /** As printed in the list's 조회 column — real for these rows. */
+  hits: number | null;
+  commentCount: number;
+  isNotice: boolean;
+  /** Wayback ts of the list page this row came from. */
+  capturedAt: string;
+  listPage: number;
+  /** True when `src/content/posts/{board}/{no}.json` exists. */
+  hasPost: boolean;
+}
+
+export interface BoardListing {
+  board: string;
+  engine: SourceEngine;
+  pagesCaptured: number;
+  /** "total N" as printed on the newest captured page, when present. */
+  totalReported: number | null;
+  generatedAt: string;
+  /** Newest first, merged across every captured page. */
+  entries: BoardListingEntry[];
+}

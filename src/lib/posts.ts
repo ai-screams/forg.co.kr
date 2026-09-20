@@ -16,7 +16,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { isBoardId, type BoardId } from "@/lib/boards";
-import type { BoardIndexEntry, BoardIndexPage, Post } from "@/types/post";
+import type { BoardIndexEntry, BoardIndexPage, BoardListing, Post } from "@/types/post";
 
 const CONTENT_ROOT = path.join(process.cwd(), "src", "content");
 
@@ -106,6 +106,21 @@ export async function getBoardIndex(board: BoardId, page: number): Promise<Board
   const file = path.join(CONTENT_ROOT, "boards", board, `index-${page}.json`);
   try {
     return JSON.parse(await readFile(file, "utf8")) as BoardIndexPage;
+  } catch (err) {
+    if (isENOENT(err)) return null;
+    throw err;
+  }
+}
+
+/**
+ * Load the merged list-page rows for a board (`src/content/listings/{board}.json`),
+ * the museum's only record of boards whose post pages were never captured.
+ * Returns `null` when no list page of the board was captured.
+ */
+export async function getBoardListing(board: BoardId): Promise<BoardListing | null> {
+  const file = path.join(CONTENT_ROOT, "listings", `${board}.json`);
+  try {
+    return JSON.parse(await readFile(file, "utf8")) as BoardListing;
   } catch (err) {
     if (isENOENT(err)) return null;
     throw err;

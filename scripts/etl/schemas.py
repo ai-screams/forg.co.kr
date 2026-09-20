@@ -7,7 +7,7 @@ expects the Python parser's JSON output to match the TS types exactly.
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import date, datetime
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -111,3 +111,45 @@ class BoardIndexPage(BaseModel):
     totalPosts: int = Field(ge=0)
     generatedAt: datetime
     entries: list[BoardIndexEntry]
+
+
+# ── Board listing (from captured list pages, ADR-0017) ───────────────
+# Mirrors `BoardListingEntry` / `BoardListing` in src/types/post.ts.
+# A listing row is the only trace of a post whose view page was never
+# captured; for 43 boards it is the only trace of the board at all.
+
+
+class BoardListingEntry(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    no: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    categoryLabel: str | None = None
+    author: str = Field(min_length=1)
+    authorMemberNo: str | None = None
+    # The list printed only MM/DD (Zeroboard) or YYYY-MM-DD (Gnuboard). Day
+    # precision; None when the row carried no date.
+    createdAt: date | None = None
+    # True when the year is not in the row and had to be taken from the
+    # capture date (no gold post or gold neighbours to pin it).
+    yearApprox: bool = False
+    hits: int | None = None
+    commentCount: int = Field(ge=0)
+    isNotice: bool = False
+    # Wayback ts of the list page this row came from.
+    capturedAt: str
+    listPage: int = Field(ge=1)
+    # True when the museum holds the post itself (`src/content/posts`).
+    hasPost: bool = False
+
+
+class BoardListing(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    board: str = Field(min_length=1)
+    engine: SourceEngine
+    pagesCaptured: int = Field(ge=1)
+    # As printed on the newest captured page ("total N"), when present.
+    totalReported: int | None = None
+    generatedAt: datetime
+    entries: list[BoardListingEntry]
