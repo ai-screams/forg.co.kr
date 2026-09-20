@@ -199,6 +199,8 @@ CHROME_TARGETS: list[tuple[str, str]] = [
     ("/skin/outlogin/forg/img/icon.gif",                "outlogin_icon.gif"),
     # 2003 / 2007 front page furniture
     ("/best_22.gif",                             "best_22.gif"),
+    # 2004-11-30 capture: the same box, a later screenshot (snapshot-2004-11-30.md)
+    ("/best_55.gif",                             "best_55.gif"),
     ("/UObox_1.gif",                             "UObox_1.gif"),
     ("/count.gif",                               "count.gif"),
     ("/bgm/en.gif",                              "bgm_en.gif"),
