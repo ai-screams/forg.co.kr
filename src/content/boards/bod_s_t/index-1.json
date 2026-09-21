@@ -1,0 +1,42 @@
+{
+  "board": "bod_s_t",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 2,
+  "totalWithPost": 2,
+  "generatedAt": "2026-09-21T02:06:58Z",
+  "entries": [
+    {
+      "postId": "42",
+      "title": "열쉬미 바꿔보장~~~^^ 8/28기준",
+      "categoryLabel": "yangji",
+      "author": "yangji",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-25T13:46:31",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "21",
+      "title": "아리랑 테일러 벌크디드 교환란입니다.",
+      "categoryLabel": "아리랑",
+      "author": "아리랑",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-21T15:22:46",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    }
+  ]
+}

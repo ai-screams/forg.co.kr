@@ -125,6 +125,17 @@ def _merge_listing(
     return entries, added, filled
 
 
+def _same_but_stamp(previous: str, current: str) -> bool:
+    """True when the two chunk payloads differ only in `generatedAt`."""
+    try:
+        a, b = json.loads(previous), json.loads(current)
+    except json.JSONDecodeError:
+        return False
+    a.pop("generatedAt", None)
+    b.pop("generatedAt", None)
+    return a == b
+
+
 def _atomic_write(path: Path, payload: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -205,6 +216,8 @@ def _build_board(
 
         out = board_dir / f"index-{page_num}.json"
         payload = page.model_dump_json(indent=2, exclude_none=False)
+        if out.exists() and _same_but_stamp(out.read_text(encoding="utf-8"), payload):
+            continue  # nothing but generatedAt would change; keep git quiet
         _atomic_write(out, payload + "\n")
 
     pruned = 0 if dry_run else _prune_stale_pages(board_dir, total_pages)

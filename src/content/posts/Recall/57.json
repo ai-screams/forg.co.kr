@@ -1,0 +1,29 @@
+{
+  "board": "Recall",
+  "boardKr": "Recall",
+  "postId": "57",
+  "title": "풀자를 먹게 하는 오븐투명화일입니다.",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "\n\n\n\t\t 2D지원입니다.<br>\n 울온 폴더에 바로 덮어 씌우시면 간단히 오븐이 투명화가 됩니다.<br>\n 단, 주의점은 원본 파일은 꼭 백업해두시길 바랍니다.<br> ",
+  "bodyText": "2D지원입니다. 울온 폴더에 바로 덮어 씌우시면 간단히 오븐이 투명화가 됩니다. 단, 주의점은 원본 파일은 꼭 백업해두시길 바랍니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2003-06-10T15:55:46",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "artidx.mul",
+      "fileNum": 2,
+      "sizeBytes": 786432
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20030716091740",
+  "parsedAt": "2026-09-21T02:06:52.860484Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=57",
+  "sourceEngine": "zeroboard"
+}

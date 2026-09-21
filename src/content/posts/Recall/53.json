@@ -1,0 +1,23 @@
+{
+  "board": "Recall",
+  "boardKr": "Recall",
+  "postId": "53",
+  "title": "울티마 수동패치 프로그램 사이트입니다.",
+  "categoryLabel": "울온자료사이트",
+  "bodyHtml": "<p><a href=\"http://xtrapas.de\">http://xtrapas.de</a></p>\n\n\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  오토패치가 계속 실행되지 않을때 수동으로 패치를 받게 해줍니다.<br>\n<br>\n해당 사이트 좌측 UO-Patches메뉴를 누르신 후<br>\n우측에서 자신이 해당하는(르네상스,lbr,서돈등)의 패치를<br>\n선택하여 받으시며 됩니다.<br>\n<br>\nace압축파일은 알집으로 풀으신 후<br>\n<br>\n1.울온폴더에 씌운 후 실행화일을 실행시킵니다.<br>\n2.새창이 뜬 상태에서 메뉴상단 FILE-APPLY PATCH를 선택<br>\n3.FIND누르신 후 새창에서 좌측 파일을 선택 합니다.<br>\nUPDATED DIRECTORY에는 울온 폴더의 경로가 지정되었는지<br>\n확인 하신 후<br>\n4. APPLY를 누르시면 패치가됩니다.<br>\n<br>\n----------------------------------------------------------------------------------<br>\n※오토패치가 되지 않는 다면 일단 바이러스 검사부터 <br>\n해보시고 수동패치를 하시기를 권장합니다.</td></tr></tbody></table> ",
+  "bodyText": "http://xtrapas.de 오토패치가 계속 실행되지 않을때 수동으로 패치를 받게 해줍니다. 해당 사이트 좌측 UO-Patches메뉴를 누르신 후 우측에서 자신이 해당하는(르네상스,lbr,서돈등)의 패치를 선택하여 받으시며 됩니다. ace압축파일은 알집으로 풀으신 후 1.울온폴더에 씌운 후 실행화일을 실행시킵니다. 2.새창이 뜬 상태에서 메뉴상단 FILE-APPLY PATCH를 선택 3.FIND누르신 후 새창에서 좌측 파일을 선택 합니다. UPDATED DIRECTORY에는 울온 폴더의 경로가 지정되었는지 확인 하신 후 4. APPLY를 누르시면 패치가됩니다. ---------------------------------------------------------------------------------- ※오토패치가 되지 않는 다면 일단 바이러스 검사부터 해보시고 수동패치를 하시기를 권장합니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2002-04-26T14:46:13",
+  "createdAtApprox": false,
+  "hits": 3414,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20031228163421",
+  "parsedAt": "2026-09-21T02:06:52.860484Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=53",
+  "sourceEngine": "zeroboard"
+}

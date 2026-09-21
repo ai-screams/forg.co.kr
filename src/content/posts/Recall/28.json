@@ -1,0 +1,29 @@
+{
+  "board": "Recall",
+  "boardKr": "Recall",
+  "postId": "28",
+  "title": "UOSU",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "\n\n\n\t\t 울온 스크린샷 찍는 프로그램<br> ",
+  "bodyText": "울온 스크린샷 찍는 프로그램",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-04-25T19:54:19",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "uosu133.zip",
+      "fileNum": 2,
+      "sizeBytes": 364134
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20030716091740",
+  "parsedAt": "2026-09-21T02:06:52.860484Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=28",
+  "sourceEngine": "zeroboard"
+}

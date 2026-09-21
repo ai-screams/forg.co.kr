@@ -1,0 +1,29 @@
+{
+  "board": "Recall",
+  "boardKr": "Recall",
+  "postId": "33",
+  "title": "UONAV (배항해 프로그램)",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "\n\n\n\t\t 배타실 때 멀미하시는분,항해가 순조로와집니다.<br> ",
+  "bodyText": "배타실 때 멀미하시는분,항해가 순조로와집니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-04-25T20:00:23",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UONav.exe",
+      "fileNum": 2,
+      "sizeBytes": 50688
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20030716091740",
+  "parsedAt": "2026-09-21T02:06:52.860484Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=33",
+  "sourceEngine": "zeroboard"
+}

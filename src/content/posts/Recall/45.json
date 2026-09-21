@@ -1,0 +1,29 @@
+{
+  "board": "Recall",
+  "boardKr": "Recall",
+  "postId": "45",
+  "title": "UOLooP프로그램",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "\n\n\n\t\t 저장된 매크로키를 무한으로 반복 하게 해줍니다.<br>\n 물론 여러개의 키가 있다면 UOLoop프로그램을 몇개 이상 실행해서<br>\n 같이 돌릴수도 있습니다.<br>\n 울온 자체 매크로키나 UOA키나 키설정이 되어있다면 무엇이든지 됩니다.<br>\n 프로그램을 실행시켜서 좌측에 키설정을 하시고<br>\n 우측에 시간을 넣어 주시면됩니다.<br>\n<br>\n P.S : 시간은 1000을 넣어주시면 약1초의 딜레이를 갖게됩니다.<br> ",
+  "bodyText": "저장된 매크로키를 무한으로 반복 하게 해줍니다. 물론 여러개의 키가 있다면 UOLoop프로그램을 몇개 이상 실행해서 같이 돌릴수도 있습니다. 울온 자체 매크로키나 UOA키나 키설정이 되어있다면 무엇이든지 됩니다. 프로그램을 실행시켜서 좌측에 키설정을 하시고 우측에 시간을 넣어 주시면됩니다. P.S : 시간은 1000을 넣어주시면 약1초의 딜레이를 갖게됩니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-10-13T09:06:40",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "uoloop.exe",
+      "fileNum": 2,
+      "sizeBytes": 106496
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20030716091740",
+  "parsedAt": "2026-09-21T02:06:52.860484Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=45",
+  "sourceEngine": "zeroboard"
+}
