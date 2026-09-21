@@ -2,8 +2,9 @@
   "board": "Events",
   "page": 8,
   "totalPages": 10,
-  "totalPosts": 477,
-  "generatedAt": "2026-09-20T07:02:05Z",
+  "totalPosts": 481,
+  "totalWithPost": 477,
+  "generatedAt": "2026-09-21T00:09:07Z",
   "entries": [
     {
       "postId": "139",
@@ -13,11 +14,13 @@
       "authorMemberNo": "2895",
       "createdAt": "2002-04-11T01:00:45",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 134,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "140",
@@ -27,11 +30,13 @@
       "authorMemberNo": "4356",
       "createdAt": "2002-04-09T15:53:59",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 20,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 720,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "138",
@@ -41,11 +46,13 @@
       "authorMemberNo": "2718",
       "createdAt": "2002-04-08T19:42:12",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 13,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 400,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "137",
@@ -55,11 +62,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-04-07T00:19:40",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 261,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "136",
@@ -69,11 +78,13 @@
       "authorMemberNo": "0",
       "createdAt": "2002-04-06T19:34:17",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 222,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "135",
@@ -83,11 +94,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-04-05T17:34:53",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 214,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "134",
@@ -97,11 +110,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-04-05T17:11:08",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 155,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "133",
@@ -111,11 +126,13 @@
       "authorMemberNo": "4442",
       "createdAt": "2002-03-31T11:51:34",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 441,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "132",
@@ -125,11 +142,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-30T17:47:44",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 202,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "131",
@@ -139,11 +158,13 @@
       "authorMemberNo": "4442",
       "createdAt": "2002-03-29T20:20:06",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 378,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "130",
@@ -153,11 +174,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-23T18:05:12",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 218,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "129",
@@ -167,11 +190,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-23T15:23:02",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 166,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "128",
@@ -181,11 +206,13 @@
       "authorMemberNo": "0",
       "createdAt": "2002-03-22T20:13:21",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 148,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "127",
@@ -195,11 +222,13 @@
       "authorMemberNo": "4442",
       "createdAt": "2002-03-21T21:30:57",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 1,
-      "hits": null,
+      "hits": 183,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "126",
@@ -209,11 +238,13 @@
       "authorMemberNo": "2983",
       "createdAt": "2002-03-18T22:17:23",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 320,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "125",
@@ -223,11 +254,29 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-16T18:08:54",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 203,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "124",
+      "title": "스카라브레 어시장 뒷풀이 소설모음 [어시장 이야기]안내.",
+      "categoryLabel": null,
+      "author": "크리스티나",
+      "authorMemberNo": "2383",
+      "createdAt": "2002-03-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 123,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "123",
@@ -237,11 +286,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-03-14T16:16:07",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 169,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "122",
@@ -251,11 +302,13 @@
       "authorMemberNo": "2903",
       "createdAt": "2002-03-12T23:47:05",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 331,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "121",
@@ -265,11 +318,13 @@
       "authorMemberNo": "0",
       "createdAt": "2002-03-12T23:36:06",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 198,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "120",
@@ -279,11 +334,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-10T23:14:29",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 225,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "119",
@@ -293,11 +350,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-08T23:34:02",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 174,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "118",
@@ -307,11 +366,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-03-04T18:12:23",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 1,
-      "hits": null,
+      "hits": 512,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "117",
@@ -321,11 +382,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-28T11:32:41",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 321,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "116",
@@ -335,11 +398,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-27T23:25:16",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 174,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "115",
@@ -349,11 +414,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-27T23:02:35",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 127,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "114",
@@ -363,11 +430,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-22T22:45:38",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 258,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "113",
@@ -377,11 +446,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-22T14:39:43",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 311,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "112",
@@ -391,11 +462,13 @@
       "authorMemberNo": "2602",
       "createdAt": "2002-02-22T12:51:12",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 208,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "111",
@@ -405,11 +478,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-22T01:06:10",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "110",
@@ -419,11 +494,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-21T11:36:19",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "109",
@@ -433,11 +510,13 @@
       "authorMemberNo": "2602",
       "createdAt": "2002-02-15T17:39:23",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "108",
@@ -447,11 +526,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-15T17:06:47",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "107",
@@ -461,11 +542,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-15T16:43:05",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "106",
@@ -475,11 +558,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-15T16:05:47",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "105",
@@ -489,11 +574,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-15T15:42:27",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "103",
@@ -503,11 +590,13 @@
       "authorMemberNo": "3493",
       "createdAt": "2002-02-14T07:32:29",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "102",
@@ -517,11 +606,13 @@
       "authorMemberNo": "3493",
       "createdAt": "2002-02-11T13:46:41",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "101",
@@ -531,11 +622,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-02-07T15:28:58",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "100",
@@ -545,11 +638,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-06T17:29:37",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "99",
@@ -559,11 +654,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-06T16:39:10",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "98",
@@ -573,11 +670,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-02-06T16:22:22",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "97",
@@ -587,11 +686,13 @@
       "authorMemberNo": "2346",
       "createdAt": "2002-02-04T05:08:43",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "96",
@@ -601,11 +702,13 @@
       "authorMemberNo": "2727",
       "createdAt": "2002-02-03T06:05:52",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "95",
@@ -615,11 +718,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-01-31T16:04:18",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "94",
@@ -629,11 +734,13 @@
       "authorMemberNo": "2263",
       "createdAt": "2002-01-31T15:31:38",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "93",
@@ -643,11 +750,13 @@
       "authorMemberNo": "2727",
       "createdAt": "2002-01-31T05:52:43",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "92",
@@ -657,11 +766,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-01-31T00:02:20",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "91",
@@ -671,11 +782,13 @@
       "authorMemberNo": "2383",
       "createdAt": "2002-01-30T23:09:26",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 124,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "90",
@@ -685,25 +798,13 @@
       "authorMemberNo": "2278",
       "createdAt": "2002-01-26T21:23:20",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 258,
       "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "89",
-      "title": "문글로우 제15회 마시장 공지",
-      "categoryLabel": "발해",
-      "author": "Bogus",
-      "authorMemberNo": "2263",
-      "createdAt": "2002-01-25T14:26:40",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     }
   ]
 }

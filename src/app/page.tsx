@@ -67,7 +67,9 @@ async function loadBox(config: BoxConfig): Promise<BoxData> {
   return {
     config,
     totalPosts: index.totalPosts,
-    entries: index.entries.slice(0, BOX_RECENT_COUNT),
+    // The box teases posts a visitor can open; title-only rows (ADR-0017 §4)
+    // stay in the board listing.
+    entries: index.entries.filter((e) => e.hasPost).slice(0, BOX_RECENT_COUNT),
   };
 }
 

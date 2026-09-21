@@ -1,9 +1,10 @@
 {
   "board": "monster",
   "page": 1,
-  "totalPages": 1,
-  "totalPosts": 48,
-  "generatedAt": "2026-09-20T07:02:05Z",
+  "totalPages": 2,
+  "totalPosts": 64,
+  "totalWithPost": 48,
+  "generatedAt": "2026-09-21T00:09:07Z",
   "entries": [
     {
       "postId": "17",
@@ -13,11 +14,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:58:25",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "16",
@@ -27,11 +30,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:57:54",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "15",
@@ -41,11 +46,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:56:54",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "13",
@@ -55,11 +62,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:55:41",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "12",
@@ -69,11 +78,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:54:45",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "9",
@@ -83,11 +94,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:49:16",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "10",
@@ -97,11 +110,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:41:20",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "11",
@@ -111,11 +126,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:40:24",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "8",
@@ -125,11 +142,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:39:34",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "7",
@@ -139,11 +158,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:38:20",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "6",
@@ -153,11 +174,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:36:48",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "5",
@@ -167,11 +190,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:36:05",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "4",
@@ -181,11 +206,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:35:28",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "3",
@@ -195,11 +222,13 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:34:56",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 13,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "2",
@@ -209,11 +238,29 @@
       "authorMemberNo": "1",
       "createdAt": "2003-03-20T13:34:05",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "198",
+      "title": "몬스터 공동 조사란입니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-06-17T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 6,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "184",
@@ -223,11 +270,61 @@
       "authorMemberNo": "1",
       "createdAt": "2002-06-14T21:29:55",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 59,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "187",
+      "title": "Gargoyle Slave(가고일 슬레이브)",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-06-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 57,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "186",
+      "title": "Gargoyle Enforcer(가고일 엔포스)",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-06-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 34,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "185",
+      "title": "Gargoyle Destroyer(가고일 디스트로이어)",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-06-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 35,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "138",
@@ -237,11 +334,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:21:02",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "137",
@@ -251,11 +350,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:20:39",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "136",
@@ -265,11 +366,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:20:04",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "135",
@@ -279,11 +382,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:19:34",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "134",
@@ -293,11 +398,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:19:09",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "133",
@@ -307,11 +414,109 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-30T11:18:46",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "174",
+      "title": "Zealot Of Khaldun,Summoner",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 382,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "173",
+      "title": "Zealot Of Khaldun,Knight",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 269,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "171",
+      "title": "Spectral Armor",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 8,
+      "attachmentCount": 0,
+      "hits": 243,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "170",
+      "title": "Shadow Fiend",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 214,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "168",
+      "title": "Cursed",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 188,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "167",
+      "title": "Ancient Lich(에이션트리치)",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 504,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "130",
@@ -321,11 +526,13 @@
       "authorMemberNo": "1894",
       "createdAt": "2002-05-25T18:54:55",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "129",
@@ -335,11 +542,13 @@
       "authorMemberNo": "1894",
       "createdAt": "2002-05-25T18:54:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "91",
@@ -349,11 +558,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:55:17",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "90",
@@ -363,11 +574,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:53:51",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 1,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "89",
@@ -377,11 +590,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:44:11",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "87",
@@ -391,11 +606,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:37:37",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "86",
@@ -405,11 +622,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:31:55",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "197",
@@ -419,11 +638,13 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:27:07",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 1277,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "85",
@@ -433,235 +654,109 @@
       "authorMemberNo": "1",
       "createdAt": "2002-05-13T23:27:07",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
-      "postId": "140",
-      "title": "(제목 없음)",
+      "postId": "195",
+      "title": "Barracoon the Piper [일쉐나챔피언]",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-13T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 2025,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
-      "postId": "141",
-      "title": "(제목 없음)",
+      "postId": "194",
+      "title": "Semidar [일쉐나챔피언]",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-13T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 1530,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
-      "postId": "143",
-      "title": "(제목 없음)",
+      "postId": "193",
+      "title": "Rikktor [일쉐나챔피언]",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-13T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 1287,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
-      "postId": "145",
-      "title": "(제목 없음)",
+      "postId": "192",
+      "title": "Mephitis [일쉐나챔피언]",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-13T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 1245,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
-      "postId": "146",
-      "title": "(제목 없음)",
+      "postId": "191",
+      "title": "Forest Queen [일쉐나챔피언]",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-05-13T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 1133,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
-      "postId": "147",
-      "title": "(제목 없음)",
+      "postId": "190",
+      "title": "Ore Elemental(광물 엘리멘탈)",
       "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-04-19T00:00:00",
       "createdAtApprox": false,
-      "commentCount": 0,
+      "yearApprox": false,
+      "commentCount": 12,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 2091,
       "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "148",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "150",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "155",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "157",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "158",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "159",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "160",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "169",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "172",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "199",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "200",
@@ -671,11 +766,45 @@
       "authorMemberNo": null,
       "createdAt": "1970-01-01T09:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "199",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "172",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 240,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
     }
   ]
 }

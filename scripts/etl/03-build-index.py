@@ -6,6 +6,11 @@ paginated summary chunks to `src/content/boards/{board}/index-{N}.json`.
 Each chunk contains up to BOARD_INDEX_PAGE_SIZE entries, sorted by
 `createdAt` desc (newest first).
 
+Rows from the board's captured list pages (`src/content/listings/{board}.json`,
+Stage 2c, ADR-0017 §4) are merged in: a row with no post becomes an
+entry with `hasPost: false` — a title the museum can show but not open —
+and a row for a post we hold fills `hits` when the post page had none.
+
 The index entries are deliberately lightweight — no `bodyHtml` /
 `bodyText` — so the listing page bundle stays tiny even when a board
 has 1k+ posts.
@@ -34,12 +39,15 @@ from schemas import (  # noqa: E402
     BOARD_INDEX_PAGE_SIZE,
     BoardIndexEntry,
     BoardIndexPage,
+    BoardListing,
     Post,
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
+LISTINGS_DIR = PROJECT_ROOT / "src" / "content" / "listings"
 INDEX_DIR = PROJECT_ROOT / "src" / "content" / "boards"
+UNKNOWN_DATE = datetime(1970, 1, 1)  # the "작성일 미상" sentinel the UI knows
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".index-summary.json"
 
 
@@ -63,6 +71,58 @@ def _entry_from_post(post: Post) -> BoardIndexEntry:
         recommend=post.recommend,
         era=post.era,
     )
+
+
+def _load_listing(board: str) -> BoardListing | None:
+    path = LISTINGS_DIR / f"{board}.json"
+    if not path.exists():
+        return None
+    return BoardListing.model_validate(json.loads(path.read_text(encoding="utf-8")))
+
+
+def _merge_listing(
+    board: str, entries: list[BoardIndexEntry], era: str
+) -> tuple[list[BoardIndexEntry], int, int]:
+    """Add list-page rows the posts do not cover; fill missing hits.
+
+    Returns `(entries, rows_added, hits_filled)`.
+    """
+    listing = _load_listing(board)
+    if listing is None:
+        return entries, 0, 0
+    by_id = {e.postId: e for e in entries}
+    added = filled = 0
+    for row in listing.entries:
+        have = by_id.get(row.no)
+        if have is not None:
+            if have.hits is None and row.hits is not None:
+                have.hits = row.hits
+                filled += 1
+            continue
+        created = (
+            datetime(row.createdAt.year, row.createdAt.month, row.createdAt.day)
+            if row.createdAt is not None
+            else UNKNOWN_DATE
+        )
+        entries.append(
+            BoardIndexEntry(
+                postId=row.no,
+                title=row.title,
+                categoryLabel=row.categoryLabel,
+                author=row.author,
+                authorMemberNo=row.authorMemberNo,
+                createdAt=created,
+                yearApprox=row.yearApprox,
+                commentCount=row.commentCount,
+                attachmentCount=0,
+                hits=row.hits,
+                recommend=None,
+                era=era,  # type: ignore[arg-type]
+                hasPost=False,
+            )
+        )
+        added += 1
+    return entries, added, filled
 
 
 def _atomic_write(path: Path, payload: str) -> None:
@@ -107,25 +167,34 @@ def _build_board(
         except (json.JSONDecodeError, ValidationError, OSError) as exc:
             errors.append(f"{f.relative_to(PROJECT_ROOT)}: {exc}")
 
-    posts.sort(key=lambda p: p.createdAt, reverse=True)
-    total = len(posts)
-    if total == 0:
+    if not posts:
         return 0, 0, 0, errors
+
+    entries = [_entry_from_post(p) for p in posts]
+    entries, added, filled = _merge_listing(board, entries, posts[0].era)
+    if added or filled:
+        print(f"  {board}: +{added} list-only rows, {filled} hits filled", file=sys.stderr)
+    # Newest first; a title-only row with no date carries the 1970 sentinel
+    # and sinks to the end like an undated post does.
+    entries.sort(key=lambda e: (e.createdAt, int(e.postId) if e.postId.isdigit() else 0), reverse=True)
+    total = len(entries)
+    with_post = sum(e.hasPost for e in entries)
 
     total_pages = max(1, (total + BOARD_INDEX_PAGE_SIZE - 1) // BOARD_INDEX_PAGE_SIZE)
     board_dir = INDEX_DIR / board
 
     for page_num in range(1, total_pages + 1):
         start = (page_num - 1) * BOARD_INDEX_PAGE_SIZE
-        chunk = posts[start : start + BOARD_INDEX_PAGE_SIZE]
+        chunk = entries[start : start + BOARD_INDEX_PAGE_SIZE]
         try:
             page = BoardIndexPage(
                 board=board,
                 page=page_num,
                 totalPages=total_pages,
                 totalPosts=total,
+                totalWithPost=with_post,
                 generatedAt=now,
-                entries=[_entry_from_post(p) for p in chunk],
+                entries=chunk,
             )
         except ValidationError as exc:
             errors.append(f"{board} page {page_num}: {exc}")

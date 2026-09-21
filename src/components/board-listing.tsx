@@ -10,6 +10,8 @@
  *                                 `/{board}/{postId}` route disambiguated)
  */
 
+import type { ReactNode } from "react";
+
 import Link from "@/components/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
@@ -37,7 +39,11 @@ export function BoardListing({ board, page }: BoardListingProps) {
           <p className="text-forg-muted mt-[2px] text-[11px]">{meta.description}</p>
         )}
         <p className="text-forg-muted mt-[2px] text-[11px]">
-          전체 {page.totalPosts.toLocaleString("ko-KR")}개 · {page.page} / {page.totalPages} 페이지
+          전체 {page.totalPosts.toLocaleString("ko-KR")}개
+          {page.totalWithPost < page.totalPosts
+            ? ` (본문 보존 ${page.totalWithPost.toLocaleString("ko-KR")}개, 나머지는 목록에 남은 제목)`
+            : ""}{" "}
+          · {page.page} / {page.totalPages} 페이지
         </p>
       </header>
 
@@ -45,6 +51,37 @@ export function BoardListing({ board, page }: BoardListingProps) {
 
       <Pagination board={board} currentPage={page.page} totalPages={page.totalPages} />
     </article>
+  );
+}
+
+/**
+ * The title cell: a link when the museum holds the post, plain text when
+ * the row is known only from a captured list page (ADR-0017 §4).
+ */
+function RowTitle({
+  board,
+  entry,
+  children,
+}: {
+  board: BoardId;
+  entry: BoardIndexPage["entries"][number];
+  children: ReactNode;
+}) {
+  const layout = "inline-flex items-baseline gap-[4px] leading-[1.7]";
+  if (!entry.hasPost) {
+    return (
+      <span
+        className={`text-forg-muted ${layout}`}
+        title="본문은 캡처되지 않았습니다 — 목록에 남은 제목"
+      >
+        {children}
+      </span>
+    );
+  }
+  return (
+    <Link href={`/${board}/${entry.postId}`} className={`text-forg-ink ${layout} hover:underline`}>
+      {children}
+    </Link>
   );
 }
 
@@ -133,10 +170,7 @@ function PostTable({
                 {entry.author}
               </td>
               <td className="px-1 align-middle break-all">
-                <Link
-                  href={`/${board}/${entry.postId}`}
-                  className="text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7] hover:underline"
-                >
+                <RowTitle board={board} entry={entry}>
                   {entry.categoryLabel ? (
                     <span className="text-forg-muted shrink-0 text-[10px]">
                       [{entry.categoryLabel}]
@@ -156,13 +190,17 @@ function PostTable({
                       ⊕{entry.attachmentCount}
                     </span>
                   ) : null}
-                </Link>
+                </RowTitle>
                 <p className="text-forg-muted text-[10.5px] sm:hidden">{entry.author}</p>
               </td>
               <td className="text-forg-muted text-center align-middle text-[11px] tabular-nums">
                 {entry.createdAtApprox ? (
                   <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
                     ≤{formatShortDate(entry.createdAt)}
+                  </span>
+                ) : entry.yearApprox ? (
+                  <span title="목록에는 월/일만 있어 연도는 추정">
+                    ≈{formatShortDate(entry.createdAt)}
                   </span>
                 ) : (
                   formatShortDate(entry.createdAt)

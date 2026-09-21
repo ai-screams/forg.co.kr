@@ -2,8 +2,9 @@
   "board": "Trash",
   "page": 1,
   "totalPages": 5,
-  "totalPosts": 206,
-  "generatedAt": "2026-09-20T07:02:05Z",
+  "totalPosts": 239,
+  "totalWithPost": 206,
+  "generatedAt": "2026-09-21T00:09:07Z",
   "entries": [
     {
       "postId": "22966",
@@ -13,11 +14,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-11-04T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 761,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22851",
@@ -27,11 +30,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-09-14T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 1159,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22849",
@@ -41,11 +46,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-06-27T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 1216,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22846",
@@ -55,11 +62,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-04-15T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 1674,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22842",
@@ -69,11 +78,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-01-20T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 1910,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22840",
@@ -83,11 +94,13 @@
       "authorMemberNo": null,
       "createdAt": "2015-01-09T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 1681,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22838",
@@ -97,11 +110,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-12-27T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 1721,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22835",
@@ -111,11 +126,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-12-16T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 1673,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22832",
@@ -125,11 +142,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-11-29T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 480,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22830",
@@ -139,11 +158,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-11-27T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 498,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22826",
@@ -153,11 +174,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-11-13T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 547,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22824",
@@ -167,11 +190,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-11-12T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 399,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "22820",
@@ -181,11 +206,13 @@
       "authorMemberNo": null,
       "createdAt": "2014-11-04T00:00:00",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 462,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21447",
@@ -195,11 +222,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-21T02:19:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 188,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21450",
@@ -209,11 +238,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-19T19:13:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 11,
       "attachmentCount": 0,
       "hits": 286,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21442",
@@ -223,11 +254,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-18T19:46:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 15,
       "attachmentCount": 0,
       "hits": 251,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21423",
@@ -237,11 +270,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-15T19:39:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 15,
       "attachmentCount": 0,
       "hits": 362,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21421",
@@ -251,11 +286,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-15T17:20:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 299,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21419",
@@ -265,11 +302,13 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-15T12:49:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 183,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "21417",
@@ -279,11 +318,109 @@
       "authorMemberNo": null,
       "createdAt": "2013-05-15T01:04:00",
       "createdAtApprox": true,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 170,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
+    },
+    {
+      "postId": "2142",
+      "title": "휴지통 게시판에 아이디 거론하시며 타인비난을 하시면",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2003-08-12T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 8,
+      "attachmentCount": 0,
+      "hits": 424,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "1467",
+      "title": "휴지통 게시판입니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2003-04-23T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 13,
+      "attachmentCount": 0,
+      "hits": 724,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "436",
+      "title": "업글계정 팜니다",
+      "categoryLabel": null,
+      "author": "Be'elzebub",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-24T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 109,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "435",
+      "title": "삭아지없는 초딩과 싸우는법",
+      "categoryLabel": null,
+      "author": "Trimasel",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-23T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 13,
+      "attachmentCount": 0,
+      "hits": 339,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "434",
+      "title": "세상이 싫다고나...",
+      "categoryLabel": null,
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-23T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 9,
+      "attachmentCount": 0,
+      "hits": 125,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "432",
+      "title": "주민등록번호와 인증에 관해서.",
+      "categoryLabel": null,
+      "author": "Marbas",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-23T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 173,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "431",
@@ -293,11 +430,29 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-22T18:18:17",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 165,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "430",
+      "title": "음반협회에 대한 생각..",
+      "categoryLabel": null,
+      "author": "Astaroth",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-21T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 7,
+      "attachmentCount": 0,
+      "hits": 200,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "421",
@@ -307,11 +462,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-20T15:11:39",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 303,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "420",
@@ -321,11 +478,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-20T12:51:32",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 107,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "416",
@@ -335,11 +494,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-20T00:47:30",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 138,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "415",
@@ -349,11 +510,45 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-20T00:40:27",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 84,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "424",
+      "title": "파워스크롤 획득에 관한 나의 쓸모없는 생각",
+      "categoryLabel": null,
+      "author": "Heramael",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 19,
+      "attachmentCount": 0,
+      "hits": 310,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "418",
+      "title": "솔직히....",
+      "categoryLabel": null,
+      "author": "Heramael",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 10,
+      "attachmentCount": 0,
+      "hits": 157,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "414",
@@ -363,11 +558,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-19T23:16:20",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 5,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 118,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "412",
@@ -377,11 +574,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-19T20:00:21",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 149,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "408",
@@ -391,11 +590,93 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-19T00:18:18",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 85,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "410",
+      "title": "남자인 당신... 여자 캐릭터를 만드는 이유는??",
+      "categoryLabel": null,
+      "author": "Agares",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-19T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 20,
+      "attachmentCount": 0,
+      "hits": 260,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "409",
+      "title": "연애의 기본 -.-;; ( 어케 꼬시지?)",
+      "categoryLabel": "논제",
+      "author": "Aglasis",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-19T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 11,
+      "attachmentCount": 0,
+      "hits": 204,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "407",
+      "title": "울티마...",
+      "categoryLabel": null,
+      "author": "Guland",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 131,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "406",
+      "title": "이혼.",
+      "categoryLabel": null,
+      "author": "Moroch",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 13,
+      "attachmentCount": 0,
+      "hits": 218,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "405",
+      "title": "울티마 이제 과연 맛볼것인가...ㅠ_ㅠ",
+      "categoryLabel": null,
+      "author": "Aiwaz",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-17T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 232,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "403",
@@ -405,11 +686,29 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-16T23:29:14",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 118,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "402",
+      "title": "울온... 내 인생에서 최고의 목표가 되어온....",
+      "categoryLabel": "첫번째 이야기",
+      "author": "Molech",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 6,
+      "attachmentCount": 0,
+      "hits": 180,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "399",
@@ -419,11 +718,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-15T14:20:16",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "398",
@@ -433,11 +734,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-15T02:43:01",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 13,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "395",
@@ -447,11 +750,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-13T19:39:07",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "392",
@@ -461,11 +766,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-11T16:24:40",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 8,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "391",
@@ -475,11 +782,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-11T10:52:21",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     },
     {
       "postId": "390",
@@ -489,221 +798,13 @@
       "authorMemberNo": null,
       "createdAt": "2002-08-10T19:00:28",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": null,
       "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "389",
-      "title": "겜마를 욕하는 이유?",
-      "categoryLabel": null,
-      "author": "Guland",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-10T06:07:08",
-      "createdAtApprox": false,
-      "commentCount": 26,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "388",
-      "title": "한번 읽어볼 만한 글 그 네번째..",
-      "categoryLabel": "계속펌",
-      "author": "Aamon",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-09T23:58:08",
-      "createdAtApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "387",
-      "title": "요즘 유머란..",
-      "categoryLabel": null,
-      "author": "Surgat",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-09T19:05:13",
-      "createdAtApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "382",
-      "title": "온라인 저작권에 대한 12가지 오해. Lu~ La~ ^^;",
-      "categoryLabel": null,
-      "author": "Tarihimal",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-06T01:33:51",
-      "createdAtApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "381",
-      "title": "한번 읽어볼 만한 글 그 두번째..",
-      "categoryLabel": "또펌",
-      "author": "Molech",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-05T17:44:18",
-      "createdAtApprox": false,
-      "commentCount": 13,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "379",
-      "title": "한번 읽어볼만한 글..",
-      "categoryLabel": "펌",
-      "author": "Agalierept",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-04T14:54:10",
-      "createdAtApprox": false,
-      "commentCount": 12,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "378",
-      "title": "어느 여중생의 글.",
-      "categoryLabel": null,
-      "author": "Musisin",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-04T13:40:56",
-      "createdAtApprox": false,
-      "commentCount": 24,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "377",
-      "title": "음~~울온 플래이포럼이~~드뎌~~-_-;;;;;;",
-      "categoryLabel": null,
-      "author": "Moroch",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-04T12:17:21",
-      "createdAtApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "376",
-      "title": "진지하게 말씀드립니다...",
-      "categoryLabel": null,
-      "author": "Sergutthy",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-02T08:51:16",
-      "createdAtApprox": false,
-      "commentCount": 18,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "375",
-      "title": "망해가는 우론",
-      "categoryLabel": null,
-      "author": "Beelzebuth",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-02T00:30:46",
-      "createdAtApprox": false,
-      "commentCount": 39,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "374",
-      "title": "흐음....-_- 아주 개인적인 홍보를...",
-      "categoryLabel": null,
-      "author": "Huictiigara",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-01T18:36:36",
-      "createdAtApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "373",
-      "title": "포그홈 게시판 설정.",
-      "categoryLabel": null,
-      "author": "Musisin",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-01T15:20:01",
-      "createdAtApprox": false,
-      "commentCount": 9,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "371",
-      "title": "로마..미국..한국..",
-      "categoryLabel": null,
-      "author": "Huictiigara",
-      "authorMemberNo": null,
-      "createdAt": "2002-07-31T14:59:24",
-      "createdAtApprox": false,
-      "commentCount": 13,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "288",
-      "title": "나무막대기에 고등학생은 10대? 그러면 나같으면",
-      "categoryLabel": null,
-      "author": "Rofocale",
-      "authorMemberNo": null,
-      "createdAt": "2002-06-28T14:01:46",
-      "createdAtApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
-    },
-    {
-      "postId": "280",
-      "title": "우리는 역사의 순간에 숨을 쉰다.",
-      "categoryLabel": null,
-      "author": "Ayperos",
-      "authorMemberNo": null,
-      "createdAt": "2002-06-22T18:38:45",
-      "createdAtApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003"
+      "era": "2003",
+      "hasPost": true
     }
   ]
 }
