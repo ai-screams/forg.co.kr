@@ -15,6 +15,7 @@ import Link from "@/components/link";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
+import { withImgBase } from "@/lib/img-base";
 import type { AdjacentPosts } from "@/lib/posts";
 import type { BoardIndexEntry, Post } from "@/types/post";
 
@@ -115,7 +116,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
         <div
           className="post-body text-forg-ink leading-relaxed"
           // nh3-sanitised at ETL Stage 2 (ADR-0008)
-          dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
+          dangerouslySetInnerHTML={{ __html: withImgBase(post.bodyHtml) }}
         />
       </div>
 
@@ -163,7 +164,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
                 <div
                   className="text-forg-ink"
                   // nh3-sanitised at ETL Stage 2 (ADR-0008)
-                  dangerouslySetInnerHTML={{ __html: c.bodyHtml }}
+                  dangerouslySetInnerHTML={{ __html: withImgBase(c.bodyHtml) }}
                 />
               </li>
             ))}

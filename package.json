@@ -9,6 +9,8 @@
     "build": "next build",
     "postbuild": "pagefind --site out --force-language ko && node scripts/postbuild/strip-rsc-payloads.mjs && node scripts/postbuild/separate-search-bundle.mjs",
     "deploy:search": "node scripts/deploy/upload-search-to-r2.mjs",
+    "deploy:img": "node scripts/deploy/upload-images-to-r2.mjs",
+    "img:pull": "node scripts/deploy/pull-images-from-r2.mjs",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
