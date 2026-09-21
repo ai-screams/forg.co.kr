@@ -436,3 +436,10 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 !src/content/posts/Vendor/
 !src/content/boards/Vendor/
 !public/img/posts/Vendor/
+
+# Recovered post images live in R2 (ADR-0018). The ETL machine keeps the bytes
+# here; only the per-post `.manifest.json` sidecars (origin URL, capture
+# time, sha256) are tracked. `pnpm deploy:img` / `pnpm img:pull` move bytes.
+public/img/posts/**
+!public/img/posts/**/
+!public/img/posts/**/.manifest.json
