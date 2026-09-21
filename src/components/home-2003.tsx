@@ -182,7 +182,8 @@ async function loadBox(config: BoardBoxConfig): Promise<BoxData> {
   }
   return {
     config,
-    entries: index.entries.slice(0, BOX_RECENT_COUNT),
+    // Openable posts only; title-only rows (ADR-0017 §4) stay in the listing.
+    entries: index.entries.filter((e) => e.hasPost).slice(0, BOX_RECENT_COUNT),
     totalPosts: index.totalPosts,
   };
 }

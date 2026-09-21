@@ -119,11 +119,18 @@ export interface BoardIndexEntry {
   createdAt: string;
   /** Mirrors `Post.createdAtApprox`; always present in index chunks. */
   createdAtApprox: boolean;
+  /** Row came from a list page and the year of its MM/DD was inferred. */
+  yearApprox: boolean;
   commentCount: number;
   attachmentCount: number;
   hits: number | null;
   recommend: number | null;
   era: PostEra;
+  /**
+   * False for a row known only from a captured list page (ADR-0017 §4):
+   * there is no `/{board}/{postId}` page to link to.
+   */
+  hasPost: boolean;
 }
 
 /**
@@ -139,8 +146,10 @@ export interface BoardIndexPage {
   page: number;
   /** Total number of pages produced for this board. */
   totalPages: number;
-  /** Total post count across all pages. */
+  /** Every row across all pages, including list-page-only ones. */
   totalPosts: number;
+  /** Rows the museum holds the post for. */
+  totalWithPost: number;
   /** ISO 8601 timestamp the index was built. */
   generatedAt: string;
   entries: BoardIndexEntry[];

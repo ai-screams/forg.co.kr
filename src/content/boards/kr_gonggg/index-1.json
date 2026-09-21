@@ -3,7 +3,8 @@
   "page": 1,
   "totalPages": 1,
   "totalPosts": 3,
-  "generatedAt": "2026-09-20T07:02:05Z",
+  "totalWithPost": 3,
+  "generatedAt": "2026-09-21T00:09:07Z",
   "entries": [
     {
       "postId": "12",
@@ -13,11 +14,13 @@
       "authorMemberNo": null,
       "createdAt": "2019-03-09T20:23:59",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 380,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "11",
@@ -27,11 +30,13 @@
       "authorMemberNo": null,
       "createdAt": "2019-03-06T19:27:43",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 294,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     },
     {
       "postId": "10",
@@ -41,11 +46,13 @@
       "authorMemberNo": null,
       "createdAt": "2019-02-11T20:09:29",
       "createdAtApprox": false,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 285,
       "recommend": null,
-      "era": "2014"
+      "era": "2014",
+      "hasPost": true
     }
   ]
 }

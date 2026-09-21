@@ -95,11 +95,16 @@ class BoardIndexEntry(BaseModel):
     authorMemberNo: str | None = None
     createdAt: datetime
     createdAtApprox: bool = False
+    # Row came from a captured list page (ADR-0017 §4): the year of its
+    # MM/DD date was inferred, see `02c-parse-listing.py`.
+    yearApprox: bool = False
     commentCount: int = Field(ge=0)
     attachmentCount: int = Field(ge=0)
     hits: int | None = None
     recommend: int | None = None
     era: PostEra
+    # False for a row known only from a list page — no post to link to.
+    hasPost: bool = True
 
 
 class BoardIndexPage(BaseModel):
@@ -108,7 +113,10 @@ class BoardIndexPage(BaseModel):
     board: str = Field(min_length=1)
     page: int = Field(ge=1)
     totalPages: int = Field(ge=1)
+    # Every row, including the ones known only from list pages.
     totalPosts: int = Field(ge=0)
+    # Rows the museum holds the post for.
+    totalWithPost: int = Field(ge=0)
     generatedAt: datetime
     entries: list[BoardIndexEntry]
 

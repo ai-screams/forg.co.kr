@@ -156,11 +156,12 @@ export async function getAdjacentPosts(board: BoardId, postId: string): Promise<
         )
       : [];
 
-  // Flatten all entries into one array (createdAt desc, same as the listing).
+  // Flatten all entries into one array (createdAt desc, same as the listing),
+  // keeping only rows that have a page to navigate to.
   const allEntries: BoardIndexEntry[] = [
     ...firstPage.entries,
     ...remainingPages.flatMap((page) => page?.entries ?? []),
-  ];
+  ].filter((e) => e.hasPost);
 
   const idx = allEntries.findIndex((e) => e.postId === postId);
   if (idx === -1) return { prev: null, next: null };
