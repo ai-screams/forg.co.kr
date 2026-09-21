@@ -1,0 +1,42 @@
+{
+  "board": "bod_b_s",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 2,
+  "totalWithPost": 2,
+  "generatedAt": "2026-09-21T02:06:58Z",
+  "entries": [
+    {
+      "postId": "11",
+      "title": "스미스목록입니다",
+      "categoryLabel": "데스티온",
+      "author": "데스티온",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-26T00:08:20",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "2",
+      "title": "발해 스미스 벌크디드 교환란입니다.",
+      "categoryLabel": "발해",
+      "author": "발해",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-08T12:36:17",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    }
+  ]
+}

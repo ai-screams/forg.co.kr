@@ -129,10 +129,14 @@ export const BOARDS = {
   },
   Recall: {
     id: "Recall",
-    nameKr: "컬럼 자료실",
-    category: "uo",
+    // The 2003 menu button reads "Kal Ort Por" (the UO recall spell) and
+    // the board is a link directory (skin/link: 울온정보사이트, 자료사이트,
+    // 배경화면, UO홈…). The guide's "컬럼 자료실" was a guess.
+    nameKr: "Kal Ort Por (링크)",
+    category: "guide",
     engine: "zeroboard",
     era: "2003",
+    description: "UO 사이트 링크 디렉터리 — 정보·자료·배경화면·공식 홈 (2001–2003)",
   },
 
   // ── uo (UO core, 2014 era — Gnuboard4) ──
@@ -506,6 +510,42 @@ export const BOARDS = {
     engine: "zeroboard",
     era: "2003",
     description: "UO 벌크 오더 디드(스미스·테일러) 교환 (2002), 목록만 남음",
+  },
+
+  // ── diary-skin BOD boards: the list page carries the whole post (02e) ──
+  bod_b_s: {
+    id: "bod_b_s",
+    nameKr: "BOD 교환 — 발해 스미스",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description:
+      "길드 발해의 스미스 벌크 오더 디드 교환란 (2002). 목록 페이지가 곧 글인 diary 스킨",
+  },
+  bod_b_t: {
+    id: "bod_b_t",
+    nameKr: "BOD 교환 — 발해 테일러",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description: "길드 발해의 테일러 벌크 오더 디드 교환란 (2002)",
+  },
+  bod_s_s: {
+    id: "bod_s_s",
+    nameKr: "BOD 교환 — 아리랑 스미스",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description:
+      "길드 아리랑의 스미스 벌크 오더 디드 교환란 (2002). 캡처가 재생되지 않아 비어 있음",
+  },
+  bod_s_t: {
+    id: "bod_s_t",
+    nameKr: "BOD 교환 — 아리랑 테일러",
+    category: "trade",
+    engine: "zeroboard",
+    era: "2003",
+    description: "길드 아리랑의 테일러 벌크 오더 디드 교환란 (2002)",
   },
 } as const satisfies Record<string, BoardMeta>;
 
