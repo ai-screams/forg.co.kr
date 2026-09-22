@@ -356,6 +356,186 @@ CHROME_TARGETS: list[tuple[str, str]] = [
     ("/images/tree_1.gif",                      "tree_1.gif"),
     ("/images/uo_1.gif",                        "uo_1.gif"),
     ("/images/uof.gif",                         "uof.gif"),
+    # ── Fourth pass (2026-09-23) ────────────────────────────────────────
+    # Every `skin/**` image the 707 board-list captures under
+    # `.docs/research/archive/L/` actually render, which no pass had read.
+    # The board list is the one page shape the museum draws from data rather
+    # than from a snapshot, so its skin art is what the listing needs to stop
+    # being an approximation. Generated from the captures, not typed: strip
+    # `<!-- -->` first (`title_bs.gif`, `last.gif` and `member_memo_off.gif`
+    # appear only inside comments and are left out for that reason), then
+    # drop the per-board search box and member strip — Zeroboard's
+    # `images/search_*` and `images/setup_*`, Gnuboard's `btn_search.gif`:
+    # the museum's search is site-wide, not per board.
+    # Trailing numbers are reference occurrences / distinct captures.
+    # Zeroboard `kritz_normal` — the list skin 381 captures wear, absent here until now
+    ("/_zb/skin/kritz_normal/old_head.gif",         "zb_kritzn_old_head.gif"),  # 7282 / 379
+    ("/_zb/skin/kritz_normal/content_on.gif",       "zb_kritzn_content_on.gif"),  # 762 / 381
+    ("/_zb/skin/kritz_normal/name_off.gif",         "zb_kritzn_name_off.gif"),  # 762 / 381
+    ("/_zb/skin/kritz_normal/subject_on.gif",       "zb_kritzn_subject_on.gif"),  # 762 / 381
+    ("/_zb/skin/kritz_normal/title_bg.jpg",         "zb_kritzn_title_bg.jpg"),  # 384 / 384
+    ("/_zb/skin/kritz_normal/content_off.gif",      "zb_kritzn_content_off.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/name_on.gif",          "zb_kritzn_name_on.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/subject_off.gif",      "zb_kritzn_subject_off.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/title_date.gif",       "zb_kritzn_title_date.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/title_hit.gif",        "zb_kritzn_title_hit.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/title_icon.gif",       "zb_kritzn_title_icon.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/title_name.gif",       "zb_kritzn_title_name.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/title_title.gif",      "zb_kritzn_title_title.gif"),  # 381 / 381
+    ("/_zb/skin/kritz_normal/level3_write.gif",     "zb_kritzn_level3_write.gif"),  # 164 / 96
+    ("/_zb/skin/kritz_normal/level5_write.gif",     "zb_kritzn_level5_write.gif"),  # 154 / 93
+    ("/_zb/skin/kritz_normal/level4_write.gif",     "zb_kritzn_level4_write.gif"),  # 150 / 76
+    ("/_zb/skin/kritz_normal/level2_write.gif",     "zb_kritzn_level2_write.gif"),  # 86 / 58
+    ("/_zb/skin/kritz_normal/reply_head.gif",       "zb_kritzn_reply_head.gif"),  # 56 / 16
+    ("/_zb/skin/kritz_normal/level1_write.gif",     "zb_kritzn_level1_write.gif"),  # 49 / 26
+    ("/_zb/skin/kritz_normal/new_head.gif",         "zb_kritzn_new_head.gif"),  # 20 / 3
+    ("/_zb/skin/kritz_normal/list_notice.gif",      "zb_kritzn_list_notice.gif"),  # 14 / 6
+    ("/_zb/skin/kritz_normal/secret_head.gif",      "zb_kritzn_secret_head.gif"),  # 1 / 1
+    # `kritz_normal2` — the rest of what its list pages draw
+    ("/_zb/skin/kritz_normal2/title_bg.jpg",         "zb_kritz_title_bg.jpg"),  # 191 / 191
+    ("/_zb/skin/kritz_normal2/content_off.gif",      "zb_kritz_content_off.gif"),  # 186 / 186
+    ("/_zb/skin/kritz_normal2/name_on.gif",          "zb_kritz_name_on.gif"),  # 186 / 186
+    ("/_zb/skin/kritz_normal2/subject_off.gif",      "zb_kritz_subject_off.gif"),  # 186 / 186
+    ("/_zb/skin/kritz_normal2/level3_write.gif",     "zb_kritz_level3_write.gif"),  # 164 / 34
+    ("/_zb/skin/kritz_normal2/level4_write.gif",     "zb_kritz_level4_write.gif"),  # 122 / 29
+    ("/_zb/skin/kritz_normal2/level5_write.gif",     "zb_kritz_level5_write.gif"),  # 30 / 23
+    ("/_zb/skin/kritz_normal2/reply_head.gif",       "zb_kritz_reply_head.gif"),  # 14 / 4
+    ("/_zb/skin/kritz_normal2/poll.gif",             "zb_kritz_poll.gif"),  # 5 / 4
+    # `kritz_wysiwyg` (60 captures)
+    ("/_zb/skin/kritz_wysiwyg/old_head.gif",         "zb_kritzw_old_head.gif"),  # 934 / 50
+    ("/_zb/skin/kritz_wysiwyg/content_on.gif",       "zb_kritzw_content_on.gif"),  # 120 / 60
+    ("/_zb/skin/kritz_wysiwyg/name_off.gif",         "zb_kritzw_name_off.gif"),  # 120 / 60
+    ("/_zb/skin/kritz_wysiwyg/subject_on.gif",       "zb_kritzw_subject_on.gif"),  # 120 / 60
+    ("/_zb/skin/kritz_wysiwyg/level1_write.gif",     "zb_kritzw_level1_write.gif"),  # 116 / 12
+    ("/_zb/skin/kritz_wysiwyg/level2_write.gif",     "zb_kritzw_level2_write.gif"),  # 71 / 21
+    ("/_zb/skin/kritz_wysiwyg/level3_write.gif",     "zb_kritzw_level3_write.gif"),  # 61 / 20
+    ("/_zb/skin/kritz_wysiwyg/content_off.gif",      "zb_kritzw_content_off.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/name_on.gif",          "zb_kritzw_name_on.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/subject_off.gif",      "zb_kritzw_subject_off.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_bg.jpg",         "zb_kritzw_title_bg.jpg"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_date.gif",       "zb_kritzw_title_date.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_hit.gif",        "zb_kritzw_title_hit.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_icon.gif",       "zb_kritzw_title_icon.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_name.gif",       "zb_kritzw_title_name.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/title_title.gif",      "zb_kritzw_title_title.gif"),  # 60 / 60
+    ("/_zb/skin/kritz_wysiwyg/level5_write.gif",     "zb_kritzw_level5_write.gif"),  # 37 / 7
+    ("/_zb/skin/kritz_wysiwyg/level4_write.gif",     "zb_kritzw_level4_write.gif"),  # 31 / 12
+    # `kritz_trash` (22) — `dmon_icon` is its per-row marker
+    ("/_zb/skin/kritz_trash/dmon_icon.gif",       "zb_kritzt_dmon_icon.gif"),  # 494 / 22
+    ("/_zb/skin/kritz_trash/content_on.gif",      "zb_kritzt_content_on.gif"),  # 44 / 22
+    ("/_zb/skin/kritz_trash/subject_on.gif",      "zb_kritzt_subject_on.gif"),  # 44 / 22
+    ("/_zb/skin/kritz_trash/content_off.gif",     "zb_kritzt_content_off.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/name_off.gif",        "zb_kritzt_name_off.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/name_on.gif",         "zb_kritzt_name_on.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/subject_off.gif",     "zb_kritzt_subject_off.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_bg.jpg",        "zb_kritzt_title_bg.jpg"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_date.gif",      "zb_kritzt_title_date.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_hit.gif",       "zb_kritzt_title_hit.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_icon.gif",      "zb_kritzt_title_icon.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_name.gif",      "zb_kritzt_title_name.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/title_title.gif",     "zb_kritzt_title_title.gif"),  # 22 / 22
+    ("/_zb/skin/kritz_trash/list_notice.gif",     "zb_kritzt_list_notice.gif"),  # 10 / 5
+    # `kritz_trash2` (1)
+    ("/_zb/skin/kritz_trash2/dmon_icon.gif",       "zb_kritzt2_dmon_icon.gif"),  # 21 / 1
+    ("/_zb/skin/kritz_trash2/content_on.gif",      "zb_kritzt2_content_on.gif"),  # 2 / 1
+    ("/_zb/skin/kritz_trash2/subject_on.gif",      "zb_kritzt2_subject_on.gif"),  # 2 / 1
+    ("/_zb/skin/kritz_trash2/content_off.gif",     "zb_kritzt2_content_off.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/list_notice.gif",     "zb_kritzt2_list_notice.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/name_off.gif",        "zb_kritzt2_name_off.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/name_on.gif",         "zb_kritzt2_name_on.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/subject_off.gif",     "zb_kritzt2_subject_off.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_bg.jpg",        "zb_kritzt2_title_bg.jpg"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_date.gif",      "zb_kritzt2_title_date.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_hit.gif",       "zb_kritzt2_title_hit.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_icon.gif",      "zb_kritzt2_title_icon.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_name.gif",      "zb_kritzt2_title_name.gif"),  # 1 / 1
+    ("/_zb/skin/kritz_trash2/title_title.gif",     "zb_kritzt2_title_title.gif"),  # 1 / 1
+    # `link` — the Recall board's skin
+    ("/_zb/skin/link/4.gif",                       "zb_link_4.gif"),  # 184 / 8
+    ("/_zb/skin/link/6.gif",                       "zb_link_6.gif"),  # 184 / 8
+    ("/_zb/skin/link/5.gif",                       "zb_link_5.gif"),  # 92 / 8
+    ("/_zb/skin/link/images/btn_delete.gif",       "zb_link_btn_delete.gif"),  # 34 / 8
+    ("/_zb/skin/link/dot.gif",                     "zb_link_dot.gif"),  # 26 / 7
+    ("/_zb/skin/link/images/btn_modify.gif",       "zb_link_btn_modify.gif"),  # 26 / 7
+    ("/_zb/skin/link/name_head.gif",               "zb_link_name_head.gif"),  # 26 / 7
+    ("/_zb/skin/link/2.gif",                       "zb_link_2.gif"),  # 16 / 8
+    ("/_zb/skin/link/8.gif",                       "zb_link_8.gif"),  # 16 / 8
+    ("/_zb/skin/link/1.gif",                       "zb_link_1.gif"),  # 8 / 8
+    ("/_zb/skin/link/3.gif",                       "zb_link_3.gif"),  # 8 / 8
+    ("/_zb/skin/link/7.gif",                       "zb_link_7.gif"),  # 8 / 8
+    ("/_zb/skin/link/9.gif",                       "zb_link_9.gif"),  # 8 / 8
+    ("/_zb/skin/link/content_off.gif",             "zb_link_content_off.gif"),  # 8 / 8
+    ("/_zb/skin/link/content_on.gif",              "zb_link_content_on.gif"),  # 8 / 8
+    ("/_zb/skin/link/images/btn_list.gif",         "zb_link_btn_list.gif"),  # 8 / 8
+    ("/_zb/skin/link/images/btn_nextpage.gif",     "zb_link_btn_nextpage.gif"),  # 8 / 8
+    ("/_zb/skin/link/images/btn_prevpage.gif",     "zb_link_btn_prevpage.gif"),  # 8 / 8
+    ("/_zb/skin/link/images/btn_write.gif",        "zb_link_btn_write.gif"),  # 8 / 8
+    ("/_zb/skin/link/images/lh_bg.gif",            "zb_link_lh_bg.gif"),  # 8 / 8
+    ("/_zb/skin/link/name_off.gif",                "zb_link_name_off.gif"),  # 8 / 8
+    ("/_zb/skin/link/name_on.gif",                 "zb_link_name_on.gif"),  # 8 / 8
+    ("/_zb/skin/link/subject_off.gif",             "zb_link_subject_off.gif"),  # 8 / 8
+    ("/_zb/skin/link/subject_on.gif",              "zb_link_subject_on.gif"),  # 8 / 8
+    ("/_zb/skin/link/zip.gif",                     "zb_link_zip.gif"),  # 8 / 2
+    # `zetyx_diary_Esee` — the BOD diary boards
+    ("/_zb/skin/zetyx_diary_Esee/4.gif",                "zb_diary_4.gif"),  # 84 / 3
+    ("/_zb/skin/zetyx_diary_Esee/6.gif",                "zb_diary_6.gif"),  # 84 / 3
+    ("/_zb/skin/zetyx_diary_Esee/5.gif",                "zb_diary_5.gif"),  # 42 / 3
+    ("/_zb/skin/zetyx_diary_Esee/2.gif",                "zb_diary_2.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/8.gif",                "zb_diary_8.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/content_on.gif",       "zb_diary_content_on.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/dot.gif",              "zb_diary_dot.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_delete2.gif",        "zb_diary_i_delete2.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_modify2.gif",        "zb_diary_i_modify2.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/name_head.gif",        "zb_diary_name_head.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/name_off.gif",         "zb_diary_name_off.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/subject_on.gif",       "zb_diary_subject_on.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/weather0.gif",         "zb_diary_weather0.gif"),  # 6 / 3
+    ("/_zb/skin/zetyx_diary_Esee/1.gif",                "zb_diary_1.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/3.gif",                "zb_diary_3.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/7.gif",                "zb_diary_7.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/9.gif",                "zb_diary_9.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/content_off.gif",      "zb_diary_content_off.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_delete.gif",         "zb_diary_i_delete.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_list.gif",           "zb_diary_i_list.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_next.gif",           "zb_diary_i_next.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_prev.gif",           "zb_diary_i_prev.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/i_write.gif",          "zb_diary_i_write.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/images/lh_bg.gif",     "zb_diary_lh_bg.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/name_on.gif",          "zb_diary_name_on.gif"),  # 3 / 3
+    ("/_zb/skin/zetyx_diary_Esee/subject_off.gif",      "zb_diary_subject_off.gif"),  # 3 / 3
+    # `buzzard` — the events_date calendar
+    ("/_zb/skin/buzzard/content_off.gif",        "zb_buzzard_content_off.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/content_on.gif",         "zb_buzzard_content_on.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/date_top.gif",           "zb_buzzard_date_top.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/date_top_left.gif",      "zb_buzzard_date_top_left.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/date_top_right.gif",     "zb_buzzard_date_top_right.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/name_off.gif",           "zb_buzzard_name_off.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/name_on.gif",            "zb_buzzard_name_on.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_01.gif",          "zb_buzzard_salvia_01.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_02.gif",          "zb_buzzard_salvia_02.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_03.gif",          "zb_buzzard_salvia_03.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_04.gif",          "zb_buzzard_salvia_04.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_05.gif",          "zb_buzzard_salvia_05.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_06.gif",          "zb_buzzard_salvia_06.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/salvia_07.gif",          "zb_buzzard_salvia_07.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/subject_off.gif",        "zb_buzzard_subject_off.gif"),  # 1 / 1
+    ("/_zb/skin/buzzard/subject_on.gif",         "zb_buzzard_subject_on.gif"),  # 1 / 1
+    # Gnuboard5 `webbus2009_basic` — the 2014 list skin; its row icons are a different set from the front page's `skin/latest/last_forg`
+    ("/skin/board/webbus2009_basic/img/icon_hot.gif",         "gb_icon_hot.gif"),  # 157 / 10
+    ("/skin/board/webbus2009_basic/img/icon_file.gif",        "gb_icon_file.gif"),  # 82 / 11
+    ("/skin/board/webbus2009_basic/img/page_end.gif",         "gb_page_end.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/title_bg.gif",         "gb_title_bg.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/title_shadow.gif",     "gb_title_shadow.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/w_1.gif",              "gb_w_1.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/w_2.gif",              "gb_w_2.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/w_3.gif",              "gb_w_3.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/w_4.gif",              "gb_w_4.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/w_5.gif",              "gb_w_5.gif"),  # 13 / 13
+    ("/skin/board/webbus2009_basic/img/icon_link.gif",        "gb_icon_link.gif"),  # 10 / 4
+    ("/skin/board/webbus2009_basic/img/page_next.gif",        "gb_page_next.gif"),  # 9 / 9
+    ("/skin/board/webbus2009_basic/img/icon_new.gif",         "gb_icon_new.gif"),  # 2 / 2
+    ("/skin/board/webbus2009_basic/img/icon_notice.gif",      "gb_icon_notice.gif"),  # 2 / 2
+    ("/skin/board/webbus2009_basic/img/icon_reply.gif",       "gb_icon_reply.gif"),  # 1 / 1
 ]
 
 
