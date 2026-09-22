@@ -57,6 +57,11 @@ CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
 DEFAULT_FROM = "19990101000000"
 DEFAULT_TO = "20151231235959"
 COLUMNS = ("urlkey", "timestamp", "original", "mimetype", "statuscode", "digest", "length")
+OUTAGE_WAITS = 8       # re-ask the same URL this many times across an outage
+OUTAGE_SLEEP = 1800    # seconds between those re-asks
+# Session-bound dynamic handlers Wayback never captured as images (collection
+# audit 2026-09-19, "시도하지 말 것"). A probe costs a request for a known answer.
+NEVER_CAPTURED = ("editor.fileguri.com/editor/GetFile.asp", "daum.net/_c21_/pds_down", "img.srch.yahoo.co.kr")
 
 
 def cdx_probe(url: str, *, from_ts: str, to_ts: str) -> list[dict]:
@@ -92,6 +97,12 @@ def load_known(path: Path, field: str) -> set[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=(__doc__ or "").split("\n", 1)[0])
     parser.add_argument("--filter", default="", help="only URLs containing this substring")
+    parser.add_argument(
+        "--exclude",
+        action="append",
+        default=[],
+        help="skip URLs containing this substring (repeatable) — e.g. a prefix whose sweep is complete",
+    )
     parser.add_argument("--limit", type=int, default=0, help="probe at most N URLs (0 = all)")
     parser.add_argument("--from", dest="from_ts", default=DEFAULT_FROM)
     parser.add_argument("--to", dest="to_ts", default=DEFAULT_TO)
@@ -112,6 +123,10 @@ def main() -> int:
         e = json.loads(line)
         url = e["normalized_url"]
         if args.filter and args.filter not in url:
+            continue
+        if any(marker in url for marker in NEVER_CAPTURED):
+            continue
+        if any(marker in url for marker in args.exclude):
             continue
         key = canonical_key(url)
         refs[key] = refs.get(key, 0) + 1
@@ -138,13 +153,30 @@ def main() -> int:
     t0 = time.time()
     for i, key in enumerate(todo, 1):
         url = urls[key]
-        try:
-            rows = cdx_probe(url, from_ts=args.from_ts, to_ts=args.to_ts)
-        except WaybackGoneError:
-            rows = []
-        except (WaybackError, json.JSONDecodeError) as e:
-            stats["error"] += 1
-            print(f"  [error] {url}: {str(e)[:120]}", file=sys.stderr, flush=True)
+        rows = None
+        # An exhausted probe during a Wayback outage is not an answer about
+        # this URL. Wait and ask the same URL again rather than burning the
+        # retry ladder on the next one too (2026-09-21: five hours of 503s).
+        for outage_wait in range(OUTAGE_WAITS + 1):
+            try:
+                rows = cdx_probe(url, from_ts=args.from_ts, to_ts=args.to_ts)
+                break
+            except WaybackGoneError:
+                rows = []
+                break
+            except (WaybackError, json.JSONDecodeError) as e:
+                if outage_wait == OUTAGE_WAITS:
+                    stats["error"] += 1
+                    print(f"  [error] {url}: {str(e)[:120]}", file=sys.stderr, flush=True)
+                    break
+                print(
+                    f"  [outage] probe exhausted for {url[:80]} — waiting {OUTAGE_SLEEP}s "
+                    f"({outage_wait + 1}/{OUTAGE_WAITS})",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                time.sleep(OUTAGE_SLEEP)
+        if rows is None:
             continue
         if rows:
             for r in rows:

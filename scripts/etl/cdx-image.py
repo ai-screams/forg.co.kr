@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ETL Phase C (ADR-0010 §Decision #3) — CDX prefix queries + manifest join.
 
-For each of the 15 prefix targets in `PREFIX_LIST`, query the Wayback CDX
+For each of the 25 prefix targets in `PREFIX_LIST`, query the Wayback CDX
 server with `matchType=prefix` and stash every returned row as one line of
 `.docs/research/cdx/image-{slug}.jsonl`. The query phase is idempotent —
 re-running skips prefixes whose jsonl already exists unless `--force` is
@@ -84,6 +84,18 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("guide-uo-com",     "guide.uo.com/"),
     ("kr-uo-com",        "kr.uo.com/"),
     ("sazabi-uospace",   "sazabi.uospace.net/"),
+    # [5] Static guide sections (collection audit G9 / P2-1). Posts hot-link
+    # their pictures, and the sections themselves are the next content tier.
+    ("forg-news",        "forg.co.kr/news/"),
+    ("forg-quest",       "forg.co.kr/quest/"),
+    ("forg-uoquest",     "forg.co.kr/uoquest/"),
+    ("forg-dungeon",     "forg.co.kr/dungeon/"),
+    ("forg-skill",       "forg.co.kr/skill/"),
+    ("forg-skill-knowhow", "forg.co.kr/skill_knowhow/"),
+    ("forg-map",         "forg.co.kr/map/"),
+    ("forg-spotlight",   "forg.co.kr/spotlight/"),
+    ("forg-decoration",  "forg.co.kr/decoration/"),
+    ("forg-bod",         "forg.co.kr/bod/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-
