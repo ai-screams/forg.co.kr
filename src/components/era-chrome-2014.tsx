@@ -129,7 +129,48 @@ export function GameCategorySidebar() {
           </Fragment>
         ))}
       </nav>
+      <FamilySiteSelect />
     </aside>
+  );
+}
+
+/** The three sites forg's sidebar linked as family, verbatim from the
+ *  2014-12-18 capture. All three are gone; the museum keeps the names. */
+const FAMILY_SITES = ["Zeme", "Kritz", "Cindee"];
+
+/**
+ * The sidebar's `<select onchange="namosw_goto_byselect(…)">`. The original
+ * opened the chosen site in a new window; ncity.net, kritz.mulple.com and
+ * daoc.mulple.com have all been dead for years, so this one renders the same
+ * control with nothing behind it — the same treatment Login / Sign Up get.
+ */
+function FamilySiteSelect() {
+  return (
+    <p className="mt-3">
+      {/* `disabled` takes the control out of the tab order, so the reason it
+          is dead has to live in the accessibility tree, not just `title`. */}
+      {/* The names are repeated here because a disabled control is out of the
+          tab order: this keeps what the sidebar preserved — the three site
+          names — reachable even when the select itself is not. */}
+      <span id="family-site-note" className="sr-only">
+        Family Site 목록: {FAMILY_SITES.join(", ")}. 세 사이트 모두 사라져 이동할 수 없습니다.
+      </span>
+      <select
+        aria-label="Family Site"
+        aria-describedby="family-site-note"
+        title="박물관 모드 — 연결된 사이트가 모두 사라졌습니다"
+        disabled
+        defaultValue="Family Site"
+        className="border-forg-ink/30 text-forg-ink/70 w-[88px] border bg-white text-[11px]"
+      >
+        <option>Family Site</option>
+        <option disabled>---------</option>
+        {FAMILY_SITES.map((name) => (
+          <option key={name}>{name}</option>
+        ))}
+        <option disabled>---------</option>
+      </select>
+    </p>
   );
 }
 
@@ -190,6 +231,7 @@ export function SiteHeader2014() {
           {TOP_MENU.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
+          <MenuTailCap />
         </nav>
       </div>
       {tLineUrl && (
@@ -203,6 +245,20 @@ export function SiteHeader2014() {
         />
       )}
     </div>
+  );
+}
+
+/**
+ * `t_b_right.gif` — the 20×20 cap that closed the 2014 menu bar. It carried
+ * `onclick="click_menu(9)"`, and `click_menu` has no branch for 9: the button
+ * was already dead on the live site, so the museum draws it and nothing else.
+ */
+function MenuTailCap() {
+  const url = chromeUrl("t_b_right.gif", ERA);
+  if (!url) return null;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 20×20 chrome
+    <img src={url} alt="" aria-hidden width={20} height={20} className="block shrink-0" />
   );
 }
 

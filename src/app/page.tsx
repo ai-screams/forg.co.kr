@@ -22,7 +22,7 @@ import { EraShell } from "@/components/era-shell";
 import { Home2003Content } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";
 import { chromeUrl, type ChromeEra } from "@/lib/chrome";
-import { getBoardIndex } from "@/lib/posts";
+import { getPost, getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
@@ -53,24 +53,47 @@ const HOT_COMMENT_THRESHOLD = 10;
 
 const BOX_RECENT_COUNT = 8;
 
+/** An index row plus the one fact the row icons need from the post itself. */
+interface BoxEntry {
+  entry: BoardIndexEntry;
+  hasLink: boolean;
+}
+
 interface BoxData {
   config: BoxConfig;
   totalPosts: number | null;
-  entries: BoardIndexEntry[];
+  entries: BoxEntry[];
 }
 
+/**
+ * `<a href="http…">` pointing somewhere other than forg itself. Gnuboard set
+ * `icon_link` from the post's own `wr_link` fields, which the captures do not
+ * preserve; a body link is the closest fact the gold tier holds.
+ *
+ * The lookahead ends the host on a non-host character, so `forg.co.kr.evil…`
+ * counts as external while `http://forg.co.kr을` — a bare URL an author wrote
+ * with a Korean particle glued on, which the corpus does contain — does not.
+ * The sanitiser (`scripts/etl/sanitise.py`) leaves every href lowercase and
+ * double-quoted, so no other quoting shape needs covering.
+ */
+const EXTERNAL_LINK = /<a\s[^>]*href="https?:\/\/(?!(?:www\.)?forg\.co\.kr(?![a-z0-9.-]))[^"]+"/i;
+
 async function loadBox(config: BoxConfig): Promise<BoxData> {
-  const index = await getBoardIndex(config.id, 1);
-  if (!index) {
+  // The box teases posts a visitor can open; title-only rows (ADR-0017 §4)
+  // stay in the board listing.
+  const recent = await getRecentPostEntries(config.id, BOX_RECENT_COUNT);
+  if (!recent) {
     return { config, totalPosts: null, entries: [] };
   }
-  return {
-    config,
-    totalPosts: index.totalPosts,
-    // The box teases posts a visitor can open; title-only rows (ADR-0017 §4)
-    // stay in the board listing.
-    entries: index.entries.filter((e) => e.hasPost).slice(0, BOX_RECENT_COUNT),
-  };
+
+  const entries = await Promise.all(
+    recent.entries.map(async (entry) => {
+      const post = await getPost(config.id, entry.postId);
+      return { entry, hasLink: post ? EXTERNAL_LINK.test(post.bodyHtml) : false };
+    }),
+  );
+
+  return { config, totalPosts: recent.totalPosts, entries };
 }
 
 export default async function HomePage() {
@@ -137,8 +160,13 @@ function BoxCard({ box }: { box: BoxData }) {
         ) : box.entries.length === 0 ? (
           <p className="text-forg-muted py-2 text-[11px] italic">아직 게시글이 없습니다.</p>
         ) : (
-          box.entries.map((entry) => (
-            <BoxRow key={entry.postId} board={box.config.id} entry={entry} />
+          box.entries.map((row) => (
+            <BoxRow
+              key={row.entry.postId}
+              board={box.config.id}
+              entry={row.entry}
+              hasLink={row.hasLink}
+            />
           ))
         )}
         {box.totalPosts !== null && box.totalPosts > BOX_RECENT_COUNT && (
@@ -154,11 +182,20 @@ function BoxCard({ box }: { box: BoxData }) {
   );
 }
 
-function BoxRow({ board, entry }: { board: BoardId; entry: BoardIndexEntry }) {
+function BoxRow({
+  board,
+  entry,
+  hasLink,
+}: {
+  board: BoardId;
+  entry: BoardIndexEntry;
+  hasLink: boolean;
+}) {
   // `line-clamp-1` compiles to `display:-webkit-box`, which is block-level
   // and pushed the count onto its own line. The original kept title, count
   // and state icons on one baseline.
   const fileIcon = entry.attachmentCount > 0 ? chromeUrl("skin_icon_file.gif", ERA) : null;
+  const linkIcon = hasLink ? chromeUrl("skin_icon_link.gif", ERA) : null;
   const hotIcon =
     entry.commentCount >= HOT_COMMENT_THRESHOLD ? chromeUrl("skin_icon_hot.gif", ERA) : null;
 
@@ -173,7 +210,9 @@ function BoxRow({ board, entry }: { board: BoardId; entry: BoardIndexEntry }) {
           ({entry.commentCount})
         </span>
       )}
+      {/* The 2014 skin drew these in this order: file, link, hot. */}
       {fileIcon && <StateIcon url={fileIcon} width={9} height={9} label="첨부 있음" />}
+      {linkIcon && <StateIcon url={linkIcon} width={13} height={13} label="링크 있음" />}
       {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
     </Link>
   );

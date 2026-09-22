@@ -127,6 +127,36 @@ export async function getBoardListing(board: BoardId): Promise<BoardListing | nu
   }
 }
 
+/**
+ * The newest `count` rows of a board that the museum holds the post for.
+ *
+ * Page 1 alone is not enough since the list-page merge (ADR-0017 §4): a board
+ * whose captured list pages are newer than every captured post page — FunBoard
+ * is the case, its 50 newest rows are all title-only — would otherwise look
+ * empty. Walks pages in order and stops as soon as `count` rows are in hand,
+ * so the common board still reads exactly one file.
+ *
+ * A page carries up to 50 rows, so the loop overshoots by design and the
+ * `slice` is what holds the caller to `count`: without it seven of the eight
+ * home boxes render 9 to 35 rows.
+ */
+export async function getRecentPostEntries(
+  board: BoardId,
+  count: number,
+): Promise<{ entries: BoardIndexEntry[]; totalPosts: number } | null> {
+  const firstPage = await getBoardIndex(board, 1);
+  if (!firstPage) return null;
+
+  const entries = firstPage.entries.filter((e) => e.hasPost);
+  for (let page = 2; entries.length < count && page <= firstPage.totalPages; page++) {
+    const next = await getBoardIndex(board, page);
+    if (!next) break;
+    entries.push(...next.entries.filter((e) => e.hasPost));
+  }
+
+  return { entries: entries.slice(0, count), totalPosts: firstPage.totalPosts };
+}
+
 export interface AdjacentPosts {
   prev: BoardIndexEntry | null; // older, "이전글"
   next: BoardIndexEntry | null; // newer, "다음글"
