@@ -40,7 +40,7 @@ import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl, type ChromeEra } from "@/lib/chrome";
-import { getBoardIndex } from "@/lib/posts";
+import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** Every asset on this surface is asked for at its 2003 capture. Without it
@@ -176,16 +176,14 @@ interface BoxData {
 }
 
 async function loadBox(config: BoardBoxConfig): Promise<BoxData> {
-  const index = await getBoardIndex(config.id, 1);
-  if (!index) {
+  // Openable posts only; title-only rows (ADR-0017 §4) stay in the listing.
+  // `getRecentPostEntries` walks past a page of them: ScreenShot and UOForum
+  // both open on 50 list-page rows and would otherwise show an empty box.
+  const recent = await getRecentPostEntries(config.id, BOX_RECENT_COUNT);
+  if (!recent) {
     return { config, entries: [], totalPosts: null };
   }
-  return {
-    config,
-    // Openable posts only; title-only rows (ADR-0017 §4) stay in the listing.
-    entries: index.entries.filter((e) => e.hasPost).slice(0, BOX_RECENT_COUNT),
-    totalPosts: index.totalPosts,
-  };
+  return { config, entries: recent.entries, totalPosts: recent.totalPosts };
 }
 
 /**
