@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "pload_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/puzzle/pload_1.gif",
+    "capturedAt": "20030516113541",
+    "sizeBytes": 112996,
+    "sha256": "d504d6d795b575e98d6382ada9a3726f702dbed04683a362b6631863c07f252b",
+    "digest": "PII5UMXKOAISG24RSH7TVQ646PAQIZKU"
+  },
+  {
+    "filename": "pload_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/puzzle/pload_2.gif",
+    "capturedAt": "20030516120803",
+    "sizeBytes": 115702,
+    "sha256": "df9af4cb222e4cb9c081fb812abc66797714d403949efb53a40886ceda9f84fb",
+    "digest": "27FBYBCOYUNJ7MH3VIYGZ52WLWOG3ZWC"
+  },
+  {
+    "filename": "pload_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/puzzle/pload_3.gif",
+    "capturedAt": "20030516123313",
+    "sizeBytes": 115286,
+    "sha256": "d2939491d931626be90a41b6678def1f55ef913c3a84a7eab64a36192e76ea3f",
+    "digest": "N3PPZVGCMCYWR3CUV4ULGKTEPKIZAQUH"
+  },
+  {
+    "filename": "pload_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/puzzle/pload_4.gif",
+    "capturedAt": "20030516124830",
+    "sizeBytes": 15991,
+    "sha256": "02bebd1ebb60c391e5a6b539f4045e0e5ef1f95b4b2909c348afab73f314fc2d",
+    "digest": "CPOLALP7GQKMWC23TVA7IRALTQZNUUS5"
+  },
+  {
+    "filename": "pload_5.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/puzzle/pload_5.gif",
+    "capturedAt": "20030516131533",
+    "sizeBytes": 562,
+    "sha256": "7e008fdb05cc0ea58664edfe0f7dad1eb5ad634d6b32e449c8de510b056d873f",
+    "digest": "T2ARLDJF2QAYGXAOCAEZAACJ7W3MHNDK"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "filename": "20020226-1.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-1.jpg",
+    "capturedAt": "20020424164017",
+    "sizeBytes": 53142,
+    "sha256": "91e20a57b0503f155b75beb6b445d9e942131ea1aeb1355d4becc0d0a3debe8b",
+    "digest": "KBLS2RDPM2TCBYJKNDDLJ54UADZOBVHA"
+  },
+  {
+    "filename": "20020226-10.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-10.jpg",
+    "capturedAt": "20020930025838",
+    "sizeBytes": 60270,
+    "sha256": "cfa6ff52f1fdd6c4d7acbe7c00049dbbf65f88c733886e175076c73f28ba44b6",
+    "digest": "VV755CJI5DVKUSDW6FZW3BH3XLDVBW4M"
+  },
+  {
+    "filename": "20020226-2.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-2.jpg",
+    "capturedAt": "20020930045303",
+    "sizeBytes": 50711,
+    "sha256": "35cd2f71e014ececa1972cd5cb364b6926a65b2cc2cfbfc4f1d8889871c347bd",
+    "digest": "ADB7AZ3R4M2ORLRJQTMOVQYMXROMR2OU"
+  },
+  {
+    "filename": "20020226-3.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-3.jpg",
+    "capturedAt": "20020930065330",
+    "sizeBytes": 54132,
+    "sha256": "76bdabb5a49de1bd5950c3bdf360b00675c67fd5900debf3f44e60f054958251",
+    "digest": "ZDSXTL5CF4YJWGPUSNQF7AOVAXU43XZO"
+  },
+  {
+    "filename": "20020226-4.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-4.jpg",
+    "capturedAt": "20021001145008",
+    "sizeBytes": 76330,
+    "sha256": "45f79bcd109c43952d74ae21d9bee270cf6d642cf92767399e78e4006e015c68",
+    "digest": "2W63OU5FQWUUOXGELBIWVWD6YNZL3U2I"
+  },
+  {
+    "filename": "20020226-5.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-5.jpg",
+    "capturedAt": "20020930110046",
+    "sizeBytes": 81725,
+    "sha256": "57ab99800f7aeced2158cee33b2185c47dc9ea873a41ceed51190533e2762f2c",
+    "digest": "SEN4JREXZLFKXH6E64U2Z27ZRBSHGBNL"
+  },
+  {
+    "filename": "20020226-6.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-6.jpg",
+    "capturedAt": "20020930130556",
+    "sizeBytes": 63647,
+    "sha256": "8eab850ebe2329c11dc0d72eb7edcc1eb9f544cb3d505ddea2caa6cb08834b7a",
+    "digest": "I33KNEAWDPRX5ISFQJLKYHHFEBYGHVGJ"
+  },
+  {
+    "filename": "20020226-7.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-7.jpg",
+    "capturedAt": "20020424172624",
+    "sizeBytes": 71160,
+    "sha256": "c7b412042cce1d086ff05fe9c1f8302d98ed7c03bfade231914a5cb97ee317f2",
+    "digest": "HJHNUTUCWLJXZBJPBZ33IPCYXOWUXS6G"
+  },
+  {
+    "filename": "20020226-8.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-8.jpg",
+    "capturedAt": "20020930171545",
+    "sizeBytes": 69907,
+    "sha256": "9b471e19c4c35911e69168a2bd4ab97cffb3a5be9d740490d8aabae829579af5",
+    "digest": "542LOC3AODV6FJG4LGAHKD5URBLO3GPP"
+  },
+  {
+    "filename": "20020226-9.jpg",
+    "originalUrl": "http://toggi74.com:80/board/img/20020226-9.jpg",
+    "capturedAt": "20020424173929",
+    "sizeBytes": 68263,
+    "sha256": "66167b884e5070a2be206a219c1d78078baa5b1755d48e66e8f0f3155f4cfbd0",
+    "digest": "DA4A6LDTICWWES4D2VD4QH6QBH6M5D35"
+  }
+]

@@ -103,5 +103,13 @@
     "capturedAt": "20040208094305",
     "sizeBytes": 1175,
     "sha256": "0caeffa4abbed222c1170d2995025743143b4db6dd4f3e6a5d71412a137c7cfe"
+  },
+  {
+    "filename": "sign2.jpg",
+    "originalUrl": "http://myhome.hanafos.com:80/~kalai7/sign2.jpg",
+    "capturedAt": "20030729060329",
+    "sizeBytes": 86554,
+    "sha256": "f5805c3a8e60ca5ea8bd998bf422e19f0861d382164f6c4f3c14900a603a454b",
+    "digest": "2MW5RZEK5TEAOQUP5EZUOFBU2RYFBNQA"
   }
 ]
