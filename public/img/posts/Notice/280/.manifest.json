@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "2s.jpg",
+    "originalUrl": "http://www.gamespy.com:80/interviews/january02/toddmcfarlane/2s.jpg",
+    "capturedAt": "20030521045311",
+    "sizeBytes": 16184,
+    "sha256": "d106a5640a70683e9a5c28f81686055895d58a9cb33b9ef67d5e0e8d0090b69b",
+    "digest": "E57D4ZYX2GKEYZA4QVWL47KBW7NW2754"
+  },
+  {
+    "filename": "3.jpg",
+    "originalUrl": "http://www.gamespy.com:80/interviews/january02/toddmcfarlane/3.jpg",
+    "capturedAt": "20030521050612",
+    "sizeBytes": 148009,
+    "sha256": "9e4038f5dd775552ee6eaf138225403a6830f822bb789436f14bdd9d8cb6fb78",
+    "digest": "FP4UFCAA6Y6LR5OKXV4BXADRPE6UT24A"
+  },
+  {
+    "filename": "4.jpg",
+    "originalUrl": "http://www.gamespy.com:80/interviews/january02/toddmcfarlane/4.jpg",
+    "capturedAt": "20030521052634",
+    "sizeBytes": 166856,
+    "sha256": "87663e0d3c0618ca3e44259d449a380d920f29119a36e1503d5b8552d1847449",
+    "digest": "AJQNXOQACGPR3ASRRHAY75MTFARCPBXB"
+  },
+  {
+    "filename": "head.jpg",
+    "originalUrl": "http://www.gamespy.com:80/interviews/january02/toddmcfarlane/head.jpg",
+    "capturedAt": "20031207211849",
+    "sizeBytes": 6410,
+    "sha256": "276c5aab251c2eb98c327d8a02e37f80893b137ef3a486772f920f9ce12faef2",
+    "digest": "2CLIQOR33OGTWFCMEGDZVNDRVBYIQMTC"
+  }
+]

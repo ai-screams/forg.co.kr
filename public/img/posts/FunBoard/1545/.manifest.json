@@ -1,0 +1,98 @@
+[
+  {
+    "filename": "star1.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star1.jpg",
+    "capturedAt": "20020721034628",
+    "sizeBytes": 176745,
+    "sha256": "64f1888b84640e8b36a90f9ead8139a8bc3be8e4e157be172ed214b2582e1e66",
+    "digest": "NP4U7BYO3EXTGKYRO6EMJDOTZ5KVEIOD"
+  },
+  {
+    "filename": "star11.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star11.jpg",
+    "capturedAt": "20020721040535",
+    "sizeBytes": 218206,
+    "sha256": "7e77a240538127e87aa320fed4336281bb33fd714372fe33a84882ec52fced09",
+    "digest": "UIANVILJJTSTTZABUPDRYTGO24FQNXBT"
+  },
+  {
+    "filename": "star15.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star15.jpg",
+    "capturedAt": "20020721043635",
+    "sizeBytes": 263085,
+    "sha256": "f05ea87b7bb8406ee42770271985855ca17eba56347a429df6c9e373b4c9ee84",
+    "digest": "4WBH227ECQ2WSDVBZPCUA2YT5JEG2GU6"
+  },
+  {
+    "filename": "star16.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star16.jpg",
+    "capturedAt": "20020721044243",
+    "sizeBytes": 196955,
+    "sha256": "dbf77f33531c12e5d72b7b8335eda67c48a3357d8cf2cda9daf95b21817f2c84",
+    "digest": "ZGJ4UX3KXLEEVB53ZOO5U5PINKKBXPWC"
+  },
+  {
+    "filename": "star17.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star17.jpg",
+    "capturedAt": "20020721045618",
+    "sizeBytes": 165274,
+    "sha256": "bd446f194254f6cda3397e5db09cc243187e67658df4de6f67210fd218105d46",
+    "digest": "W26DKWMJGUJXY4HCCSZ7UHGP2CROYHXB"
+  },
+  {
+    "filename": "star18.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star18.jpg",
+    "capturedAt": "20020721050316",
+    "sizeBytes": 142964,
+    "sha256": "0013587ce03ef2330b6c78d80b16a8c8b9a9eb8a476f414ff7e9664069942621",
+    "digest": "4HJEZLWQQNGW42P7T2WGADZMCUTDILRN"
+  },
+  {
+    "filename": "star2.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star2.jpg",
+    "capturedAt": "20020721050953",
+    "sizeBytes": 169921,
+    "sha256": "d8c9127801b49210cd0db47ce78a0bee02f4a68613306d755d776d8282c11eea",
+    "digest": "ULG3BEW2KXIOADJFB3DAI7P7XOPLRTLE"
+  },
+  {
+    "filename": "star3.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star3.jpg",
+    "capturedAt": "20020721052025",
+    "sizeBytes": 177605,
+    "sha256": "400e328f5937a80f05c938c4b9d7ca8fda394721076f8dcbfdd76e9ae441dde3",
+    "digest": "IHIGQ2K5L22U5U7DEUNTKREXDE57JAXB"
+  },
+  {
+    "filename": "star5.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star5.jpg",
+    "capturedAt": "20020721053602",
+    "sizeBytes": 201101,
+    "sha256": "bf056d3a4db4725e8884d40dae2cc2ab67dfdf59950997c81c111c97deb8ce17",
+    "digest": "KFMF7ENMWEVQGLI7RWU7XDDXSRWPXWBN"
+  },
+  {
+    "filename": "star6.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star6.jpg",
+    "capturedAt": "20020827114942",
+    "sizeBytes": 189789,
+    "sha256": "b9a9d327e2fb5d4bbc8c39d027d9279dd32dd9dd79d53653611b23a42a965c9a",
+    "digest": "Y5DOGELD3JSCIEQE2O66L6LG63B6FCJT"
+  },
+  {
+    "filename": "star7.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star7.jpg",
+    "capturedAt": "20020721055251",
+    "sizeBytes": 198395,
+    "sha256": "f010e43728d4dccd66273271668e752ea9fcf7a1f04c0ac11ce95da27bf83716",
+    "digest": "ZAWBD7WJCLIWKBQN3R7N3E2GT7WWZJMV"
+  },
+  {
+    "filename": "star8.jpg",
+    "originalUrl": "http://photo2.daum.net:80/userphoto/03/6d797567/star8.jpg",
+    "capturedAt": "20020827123047",
+    "sizeBytes": 204072,
+    "sha256": "7a99f0e660569f2f59ebf5f4e679512eeb8f28461a65834b8eeb5c6f6f143dcf",
+    "digest": "4N6VKGH3YGE343DTXRQPDSCFIZ2LXQ3R"
+  }
+]

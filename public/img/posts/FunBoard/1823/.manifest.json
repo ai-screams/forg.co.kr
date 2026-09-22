@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "shaw10.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw10.jpg",
+    "capturedAt": "20020614035057",
+    "sizeBytes": 109652,
+    "sha256": "5b4a86446bea01ae0d28f54a52fc682469de8be23653da7b82fcdb4b1645b614",
+    "digest": "WILVUPHMUOOZ5225IGPUB4FHIQIVY7PA"
+  },
+  {
+    "filename": "shaw11.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw11.jpg",
+    "capturedAt": "20020614035710",
+    "sizeBytes": 106337,
+    "sha256": "47613e73ca8cf5b8b40ed80dd4887940a1e7e3f9793b1a998d756972b75fcd32",
+    "digest": "W4ODEHHK63337CNNDSATZ6KDNWNSC2AW"
+  },
+  {
+    "filename": "shaw12.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw12.jpg",
+    "capturedAt": "20020614040205",
+    "sizeBytes": 92232,
+    "sha256": "62ed7d378bfd502568168ab8e8f6377970bec64820c77ea4c1ac5a7a04a6e44f",
+    "digest": "UTL6POHVHKT5H5J3OHB5OOLEJ35LC7KD"
+  },
+  {
+    "filename": "shaw13.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw13.jpg",
+    "capturedAt": "20020614040746",
+    "sizeBytes": 101881,
+    "sha256": "207af18bfb50991eac951d2c972d3cc49c88f2a7c5716584cb15533c3b335826",
+    "digest": "Y53YGWSM6H7EREZYFVKC3VHESIINW7DD"
+  },
+  {
+    "filename": "shaw2.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw2.jpg",
+    "capturedAt": "20020614041040",
+    "sizeBytes": 124241,
+    "sha256": "063e3e08b3bab67bf70383b602f37d3ddf7619e8a12d552153c8d8b155446bd1",
+    "digest": "U77COTGUM3OWJF7JDNVE63LSP57LUZMJ"
+  },
+  {
+    "filename": "shaw3.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw3.jpg",
+    "capturedAt": "20020614041916",
+    "sizeBytes": 93450,
+    "sha256": "cb28a75a2276374067c90ce041882ba219fc14fd74f3ee1bb50f440fd311abd5",
+    "digest": "VZ2CFHQJLHJKKAFAVOGMTBJIEHCNF5MF"
+  },
+  {
+    "filename": "shaw4.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw4.jpg",
+    "capturedAt": "20020614042702",
+    "sizeBytes": 101713,
+    "sha256": "3f5bf37cd41abbe6df08d20d5882245bddcefa4fc2635bf381ca21547a99ec66",
+    "digest": "EEDJPK5DXY6U5BVZCHK7TWBFBTXXGNDH"
+  },
+  {
+    "filename": "shaw5.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw5.jpg",
+    "capturedAt": "20020614043548",
+    "sizeBytes": 110762,
+    "sha256": "3ff1338fc1dd0969b878d2874bcf2c422b869f2b5d407b309e378ea94882f6a8",
+    "digest": "4XUWCECVO4KBZFIIBDSCKFSTGW5OJY2E"
+  },
+  {
+    "filename": "shaw6.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw6.jpg",
+    "capturedAt": "20020614043921",
+    "sizeBytes": 124451,
+    "sha256": "f04043747d2b912875807ae2eab48dace1e863b3a4e66cc946d2eaca6fc471e7",
+    "digest": "RX35IUKOWS6S46V6AI24DEMZXXSQQHFI"
+  },
+  {
+    "filename": "shaw7.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw7.jpg",
+    "capturedAt": "20020614001652",
+    "sizeBytes": 110634,
+    "sha256": "aa2d0a9411b901f53d1fbbaba2c9b7608679d2ec6873e8a06c53b7514f789bac",
+    "digest": "YEACLESZEAIZVFP3AXNXB5J4EKOFXBF7"
+  },
+  {
+    "filename": "shaw8.jpg",
+    "originalUrl": "http://3cf.teamcscw.com:80/babo/shaw8.jpg",
+    "capturedAt": "20020614002740",
+    "sizeBytes": 105168,
+    "sha256": "18018328a8df692dc9f554a0ffca969b3e53759e581a962edc1de8b9e45192ee",
+    "digest": "AUMRTC3DCDE6ULC2X5KDUB3JRL4SUPUK"
+  }
+]

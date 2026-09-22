@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "number2.gif",
+    "originalUrl": "http://w2.hompy.com:80/porato/score/number2.gif",
+    "capturedAt": "20030519032847",
+    "sizeBytes": 592,
+    "sha256": "a05b7b0aa917a027fb4907ca94fc53fc789ba9fe52986c47e13d66cde302b2d3",
+    "digest": "S7LSNPVLPEVGVJHTVEPTQ43232LS2SN5"
+  },
+  {
+    "filename": "number3.gif",
+    "originalUrl": "http://w2.hompy.com:80/porato/score/number3.gif",
+    "capturedAt": "20030519001134",
+    "sizeBytes": 586,
+    "sha256": "b7ffaef63f66f317056525daa94dc8913f7b9745793abc14238674334dc564fc",
+    "digest": "UOHJ644VUE6W4LCBGHUXDJGX22VRE6HG"
+  },
+  {
+    "filename": "number4.gif",
+    "originalUrl": "http://w2.hompy.com:80/porato/score/number4.gif",
+    "capturedAt": "20030519002903",
+    "sizeBytes": 592,
+    "sha256": "f29d48dda2483ae83bb72af57f49dcaeb6adfe6e96ba2746ad4b849306bc0fd9",
+    "digest": "2BDRE5EKRZ63Q4DRCRI2TTATYEWWN4U4"
+  },
+  {
+    "filename": "number5.gif",
+    "originalUrl": "http://w2.hompy.com:80/porato/score/number5.gif",
+    "capturedAt": "20030519013327",
+    "sizeBytes": 592,
+    "sha256": "c38125918bc2219b08fbc33d8c34c2c7d86e717d863420444f6d2dca99d8e0e9",
+    "digest": "BLBLML4JXU3TG3CSOXH6S7Y357PANTIJ"
+  }
+]
