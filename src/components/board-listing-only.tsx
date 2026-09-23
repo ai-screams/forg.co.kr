@@ -10,8 +10,8 @@
 
 import Link from "@/components/link";
 
+import { CommentCount, KRITZ_COLUMNS, ListHeadRow } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate, formatWaybackTs } from "@/lib/dates";
 import type { BoardListing } from "@/types/post";
 
@@ -22,7 +22,8 @@ interface BoardListingOnlyProps {
 
 export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
   const meta = getBoardOrThrow(board);
-  const newIcon = meta.engine === "zeroboard" ? chromeUrl("zb_kritz_new_head.gif") : null;
+  // The status column stays empty — see `BoardListing` on `new_head.gif`.
+  const zeroboard = meta.engine === "zeroboard";
   const captures = [...new Set(listing.entries.map((e) => e.capturedAt))].sort();
   const withPost = listing.entries.filter((e) => e.hasPost).length;
 
@@ -57,23 +58,16 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
             <col className="w-[44px]" />
           </colgroup>
           <thead>
-            <tr className="text-forg-muted bg-(--era-content-bg) text-[11px]">
-              <th scope="col" className="py-[3px]">
-                <span className="sr-only">상태</span>
-              </th>
-              <th scope="col" className="hidden py-[3px] font-normal sm:table-cell">
-                이름
-              </th>
-              <th scope="col" className="py-[3px] font-normal">
-                제목
-              </th>
-              <th scope="col" className="py-[3px] font-normal">
-                날짜
-              </th>
-              <th scope="col" className="py-[3px] font-normal">
-                조회
-              </th>
-            </tr>
+            <ListHeadRow
+              zeroboard={zeroboard}
+              columns={[
+                KRITZ_COLUMNS.icon,
+                KRITZ_COLUMNS.name,
+                KRITZ_COLUMNS.title,
+                KRITZ_COLUMNS.date,
+                KRITZ_COLUMNS.hit,
+              ]}
+            />
             <tr>
               <th colSpan={5} className="h-px bg-(--era-input-border)/40 p-0">
                 <span className="sr-only">구분선</span>
@@ -90,11 +84,7 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
                     </span>
                   ) : null}
                   <span className="truncate">{entry.title}</span>
-                  {entry.commentCount > 0 ? (
-                    <span className="shrink-0 text-[10.5px] text-(--era-meta-fg) tabular-nums">
-                      [{entry.commentCount}]
-                    </span>
-                  ) : null}
+                  <CommentCount count={entry.commentCount} zeroboard={zeroboard} />
                 </>
               );
               return (
@@ -102,18 +92,7 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
                   key={entry.no}
                   className="border-b border-(--era-input-border)/25 last:border-0"
                 >
-                  <td className="text-center align-middle">
-                    {newIcon && entry.commentCount > 0 ? (
-                      // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 13×13 chrome
-                      <img
-                        src={newIcon}
-                        alt="댓글 있음"
-                        width={13}
-                        height={13}
-                        className="mx-auto block"
-                      />
-                    ) : null}
-                  </td>
+                  <td className="text-center align-middle" />
                   <td className="text-forg-muted hidden truncate px-1 text-center align-middle text-[11px] sm:table-cell">
                     {entry.author}
                   </td>

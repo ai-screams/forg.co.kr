@@ -14,6 +14,7 @@ import type { ReactNode } from "react";
 
 import Link from "@/components/link";
 
+import { CommentCount, KRITZ_COLUMNS, ListHeadRow } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate } from "@/lib/dates";
@@ -114,7 +115,12 @@ function PostTable({
   // 1px `#F7F5F7` separators, columns 20 / 100 / flex / 30 / 30. The 조회
   // column is dropped: `hits` is null for 99.2% of the archive, and a
   // fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
-  const newIcon = zeroboard ? chromeUrl("zb_kritz_new_head.gif") : null;
+  //
+  // The status column stays empty. Its one visible icon, `new_head.gif`
+  // ("따끈 따근한글"), marked a post written the day the page was served —
+  // 58 of the 71 rows that carry it across 707 captured list pages — and
+  // every other row got `old_head.gif`, a 1×13 blank. Seen from the museum
+  // no post is that fresh.
 
   return (
     <div className="border border-(--era-input-border)/50 bg-white">
@@ -126,20 +132,15 @@ function PostTable({
           <col className="w-[52px]" />
         </colgroup>
         <thead>
-          <tr className="text-forg-muted bg-(--era-content-bg) text-[11px]">
-            <th scope="col" className="py-[3px]">
-              <span className="sr-only">상태</span>
-            </th>
-            <th scope="col" className="hidden py-[3px] font-normal sm:table-cell">
-              이름
-            </th>
-            <th scope="col" className="py-[3px] font-normal">
-              제목
-            </th>
-            <th scope="col" className="py-[3px] font-normal">
-              날짜
-            </th>
-          </tr>
+          <ListHeadRow
+            zeroboard={zeroboard}
+            columns={[
+              KRITZ_COLUMNS.icon,
+              KRITZ_COLUMNS.name,
+              KRITZ_COLUMNS.title,
+              KRITZ_COLUMNS.date,
+            ]}
+          />
           <tr>
             <th colSpan={4} className="h-px bg-(--era-input-border)/40 p-0">
               <span className="sr-only">구분선</span>
@@ -153,18 +154,7 @@ function PostTable({
               className="border-b border-(--era-input-border)/25 last:border-0"
             >
               <td className="text-center align-middle">
-                {newIcon && entry.commentCount > 0 ? (
-                  // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 13×13 chrome
-                  <img
-                    src={newIcon}
-                    alt="댓글 있음"
-                    width={13}
-                    height={13}
-                    className="mx-auto block"
-                  />
-                ) : (
-                  <RowSpacer height={3} />
-                )}
+                <RowSpacer height={3} />
               </td>
               <td className="text-forg-muted hidden truncate px-1 text-center align-middle text-[11px] sm:table-cell">
                 {entry.author}
@@ -177,11 +167,7 @@ function PostTable({
                     </span>
                   ) : null}
                   <span className="truncate">{entry.title}</span>
-                  {entry.commentCount > 0 ? (
-                    <span className="shrink-0 text-[10.5px] text-(--era-meta-fg) tabular-nums">
-                      [{entry.commentCount}]
-                    </span>
-                  ) : null}
+                  <CommentCount count={entry.commentCount} zeroboard={zeroboard} />
                   {entry.attachmentCount > 0 ? (
                     <span
                       aria-label={`첨부 ${entry.attachmentCount}개`}
