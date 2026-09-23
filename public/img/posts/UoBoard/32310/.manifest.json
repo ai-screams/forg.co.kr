@@ -6,5 +6,21 @@
     "sizeBytes": 27169,
     "sha256": "8cf250a19d4b7bfc2948b159d2bedefa91e9d64e9591cb9f01238f049abeca53",
     "digest": "3PUO7QK4DLXFNHGR5NRWWZZXXAA6J2PP"
+  },
+  {
+    "filename": "haji_1.jpg",
+    "originalUrl": "http://rene.vcxz.net:80/mydata/haji_1.jpg",
+    "capturedAt": "20030623065439",
+    "sizeBytes": 88695,
+    "sha256": "b7e84cfd87e7e0254d75a10f1287e107216f588c63bd2655888b059602ae83af",
+    "digest": "M4OEGXACW263MMBJ5NNNHDEOF63VVCDE"
+  },
+  {
+    "filename": "haji_2.jpg",
+    "originalUrl": "http://rene.vcxz.net:80/mydata/haji_2.jpg",
+    "capturedAt": "20030623072857",
+    "sizeBytes": 56241,
+    "sha256": "71b3b0def6aa5823cab5563433e5cbacc0f25ac55e9f736b85f4bcd254de502c",
+    "digest": "QDWY2IEUIOL32HQBEQJPVGLD3HN2KZIE"
   }
 ]
