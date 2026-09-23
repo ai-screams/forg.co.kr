@@ -24,9 +24,11 @@
   --color-forg-cloudy: oklch(0.628 0 0); /* #888888 */
   --color-forg-cream: oklch(0.985 0 0); /* #FAFAFA */
   --color-forg-slate: oklch(0.512 0.034 247.4); /* #61748B — 2014 page bg */
-  /* Comment count in the 2014 board list (`webbus2009_basic` skin). Per
-   * engine, not per era: Gnuboard boards wear it whichever era is shown. */
+  /* The 2014 board list (`webbus2009_basic`): comment count and row
+   * number. Per engine, not per era: Gnuboard4 boards wear them whichever
+   * era is shown. */
   --color-webbus-comment: oklch(0.6545 0.1975 42); /* #EE5A00 */
+  --color-webbus-num: oklch(0.7668 0 0); /* #B3B3B3 — row number */
   /* Sidebar tile base. Era-invariant on purpose: the 2014 tile
    * (left_bg.gif, #405062 + #61748B) and the 2003 one (left_background.gif,
    * #405062 … #5D7086 dithered) are the same slate. The old #D6D6D6 came

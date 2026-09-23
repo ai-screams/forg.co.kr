@@ -13,12 +13,18 @@
 import type { ReactNode } from "react";
 
 import Link from "@/components/link";
+import {
+  CommentCount,
+  listSkinOf,
+  ListTable,
+  RowMarks,
+  type ListRow,
+  type ListSkin,
+} from "@/components/list-skin";
 
-import { CommentCount, KRITZ_COLUMNS, ListHeadRow } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate } from "@/lib/dates";
-import type { BoardIndexPage } from "@/types/post";
+import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
 interface BoardListingProps {
   board: BoardId;
@@ -27,10 +33,7 @@ interface BoardListingProps {
 
 export function BoardListing({ board, page }: BoardListingProps) {
   const meta = getBoardOrThrow(board);
-  // The one board-list capture we have is 2007 `kritz_normal2`, a Zeroboard
-  // skin. Its recovered artwork is used only for Zeroboard boards; Gnuboard
-  // ones keep text headers until a capture of their own turns up (ADR-0016).
-  const zeroboard = meta.engine === "zeroboard";
+  const skin = listSkinOf(meta.engine);
 
   return (
     <article className="text-forg-ink">
@@ -48,7 +51,7 @@ export function BoardListing({ board, page }: BoardListingProps) {
         </p>
       </header>
 
-      <PostTable board={board} entries={page.entries} zeroboard={zeroboard} />
+      <PostTable board={board} page={page} skin={skin} />
 
       <Pagination board={board} currentPage={page.page} totalPages={page.totalPages} />
     </article>
@@ -86,24 +89,16 @@ function RowTitle({
   );
 }
 
-/** `<img src=t.gif height=N>` — the spacer the original used for row height. */
-function RowSpacer({ height }: { height: number }) {
-  const url = chromeUrl("zb_t.gif");
-  if (!url) return <div style={{ height }} aria-hidden />;
-  // eslint-disable-next-line @next/next/no-img-element -- static export, 43 B spacer
-  return <img src={url} alt="" width={1} height={height} className="block" />;
-}
-
 function PostTable({
   board,
-  entries,
-  zeroboard,
+  page,
+  skin,
 }: {
   board: BoardId;
-  entries: BoardIndexPage["entries"];
-  zeroboard: boolean;
+  page: BoardIndexPage;
+  skin: ListSkin;
 }) {
-  if (entries.length === 0) {
+  if (page.entries.length === 0) {
     return (
       <p className="text-forg-muted px-2 py-10 text-center text-[11px]">
         이 페이지에는 게시글이 없습니다.
@@ -111,92 +106,44 @@ function PostTable({
     );
   }
 
-  // uoboard-2007: `border:1px solid #dfdfdf`, rows `bgcolor="#FEFDFD"`,
-  // 1px `#F7F5F7` separators, columns 20 / 100 / flex / 30 / 30. The 조회
-  // column is dropped: `hits` is null for 99.2% of the archive, and a
-  // fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
-  //
-  // The status column stays empty. Its one visible icon, `new_head.gif`
-  // ("따끈 따근한글"), marked a post written the day the page was served —
-  // 58 of the 71 rows that carry it across 707 captured list pages — and
-  // every other row got `old_head.gif`, a 1×13 blank. Seen from the museum
-  // no post is that fresh.
+  // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
+  // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
+  const rows: ListRow[] = page.entries.map((entry) => ({
+    key: entry.postId,
+    author: entry.author,
+    title: (
+      <RowTitle board={board} entry={entry}>
+        {entry.categoryLabel ? (
+          <span className="text-forg-muted shrink-0 text-[10px]">[{entry.categoryLabel}]</span>
+        ) : null}
+        <span className="truncate">{entry.title}</span>
+        <CommentCount count={entry.commentCount} skin={skin} />
+        <RowMarks
+          skin={skin}
+          board={board}
+          attachmentCount={entry.attachmentCount}
+          hits={entry.hits}
+        />
+      </RowTitle>
+    ),
+    date: entry.createdAtApprox ? (
+      <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
+        ≤{formatShortDate(entry.createdAt)}
+      </span>
+    ) : entry.yearApprox ? (
+      <span title="목록에는 월/일만 있어 연도는 추정">≈{formatShortDate(entry.createdAt)}</span>
+    ) : (
+      formatShortDate(entry.createdAt)
+    ),
+  }));
 
   return (
-    <div className="border border-(--era-input-border)/50 bg-white">
-      <table className="w-full table-fixed border-collapse text-[12px]">
-        <colgroup>
-          <col className="w-[20px]" />
-          <col className="hidden w-[100px] sm:table-column" />
-          <col />
-          <col className="w-[52px]" />
-        </colgroup>
-        <thead>
-          <ListHeadRow
-            zeroboard={zeroboard}
-            columns={[
-              KRITZ_COLUMNS.icon,
-              KRITZ_COLUMNS.name,
-              KRITZ_COLUMNS.title,
-              KRITZ_COLUMNS.date,
-            ]}
-          />
-          <tr>
-            <th colSpan={4} className="h-px bg-(--era-input-border)/40 p-0">
-              <span className="sr-only">구분선</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {entries.map((entry) => (
-            <tr
-              key={entry.postId}
-              className="border-b border-(--era-input-border)/25 last:border-0"
-            >
-              <td className="text-center align-middle">
-                <RowSpacer height={3} />
-              </td>
-              <td className="text-forg-muted hidden truncate px-1 text-center align-middle text-[11px] sm:table-cell">
-                {entry.author}
-              </td>
-              <td className="px-1 align-middle break-all">
-                <RowTitle board={board} entry={entry}>
-                  {entry.categoryLabel ? (
-                    <span className="text-forg-muted shrink-0 text-[10px]">
-                      [{entry.categoryLabel}]
-                    </span>
-                  ) : null}
-                  <span className="truncate">{entry.title}</span>
-                  <CommentCount count={entry.commentCount} zeroboard={zeroboard} />
-                  {entry.attachmentCount > 0 ? (
-                    <span
-                      aria-label={`첨부 ${entry.attachmentCount}개`}
-                      className="text-forg-muted shrink-0 text-[10.5px] tabular-nums"
-                    >
-                      ⊕{entry.attachmentCount}
-                    </span>
-                  ) : null}
-                </RowTitle>
-                <p className="text-forg-muted text-[10.5px] sm:hidden">{entry.author}</p>
-              </td>
-              <td className="text-forg-muted text-center align-middle text-[11px] tabular-nums">
-                {entry.createdAtApprox ? (
-                  <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
-                    ≤{formatShortDate(entry.createdAt)}
-                  </span>
-                ) : entry.yearApprox ? (
-                  <span title="목록에는 월/일만 있어 연도는 추정">
-                    ≈{formatShortDate(entry.createdAt)}
-                  </span>
-                ) : (
-                  formatShortDate(entry.createdAt)
-                )}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <ListTable
+      skin={skin}
+      rows={rows}
+      withHits={false}
+      firstNumber={page.totalPosts - (page.page - 1) * BOARD_INDEX_PAGE_SIZE}
+    />
   );
 }
 

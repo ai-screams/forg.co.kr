@@ -10,7 +10,13 @@
 
 import Link from "@/components/link";
 
-import { CommentCount, KRITZ_COLUMNS, ListHeadRow } from "@/components/list-skin";
+import {
+  CommentCount,
+  listSkinOf,
+  ListTable,
+  RowMarks,
+  type ListRow,
+} from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatShortDate, formatWaybackTs } from "@/lib/dates";
 import type { BoardListing } from "@/types/post";
@@ -22,8 +28,7 @@ interface BoardListingOnlyProps {
 
 export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
   const meta = getBoardOrThrow(board);
-  // The status column stays empty — see `BoardListing` on `new_head.gif`.
-  const zeroboard = meta.engine === "zeroboard";
+  const skin = listSkinOf(meta.engine);
   const captures = [...new Set(listing.entries.map((e) => e.capturedAt))].sort();
   const withPost = listing.entries.filter((e) => e.hasPost).length;
 
@@ -48,91 +53,50 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
         </p>
       </header>
 
-      <div className="border border-(--era-input-border)/50 bg-white">
-        <table className="w-full table-fixed border-collapse text-[12px]">
-          <colgroup>
-            <col className="w-[20px]" />
-            <col className="hidden w-[100px] sm:table-column" />
-            <col />
-            <col className="w-[52px]" />
-            <col className="w-[44px]" />
-          </colgroup>
-          <thead>
-            <ListHeadRow
-              zeroboard={zeroboard}
-              columns={[
-                KRITZ_COLUMNS.icon,
-                KRITZ_COLUMNS.name,
-                KRITZ_COLUMNS.title,
-                KRITZ_COLUMNS.date,
-                KRITZ_COLUMNS.hit,
-              ]}
-            />
-            <tr>
-              <th colSpan={5} className="h-px bg-(--era-input-border)/40 p-0">
-                <span className="sr-only">구분선</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {listing.entries.map((entry) => {
-              const title = (
-                <>
-                  {entry.categoryLabel ? (
-                    <span className="text-forg-muted shrink-0 text-[10px]">
-                      [{entry.categoryLabel}]
-                    </span>
-                  ) : null}
-                  <span className="truncate">{entry.title}</span>
-                  <CommentCount count={entry.commentCount} zeroboard={zeroboard} />
-                </>
-              );
-              return (
-                <tr
-                  key={entry.no}
-                  className="border-b border-(--era-input-border)/25 last:border-0"
-                >
-                  <td className="text-center align-middle" />
-                  <td className="text-forg-muted hidden truncate px-1 text-center align-middle text-[11px] sm:table-cell">
-                    {entry.author}
-                  </td>
-                  <td className="px-1 align-middle break-all">
-                    {entry.hasPost ? (
-                      <Link
-                        href={`/${board}/${entry.no}`}
-                        className="text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7] hover:underline"
-                      >
-                        {title}
-                      </Link>
-                    ) : (
-                      <span
-                        className="text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7]"
-                        title="본문은 캡처되지 않았습니다"
-                      >
-                        {title}
-                      </span>
-                    )}
-                  </td>
-                  <td className="text-forg-muted text-center align-middle text-[11px] tabular-nums">
-                    {entry.createdAt === null ? (
-                      "—"
-                    ) : entry.yearApprox ? (
-                      <span title="목록에는 월/일만 있어 연도는 캡처 시점으로 추정">
-                        ≈{formatShortDate(entry.createdAt)}
-                      </span>
-                    ) : (
-                      formatShortDate(entry.createdAt)
-                    )}
-                  </td>
-                  <td className="text-forg-muted text-center align-middle text-[11px] tabular-nums">
-                    {entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR")}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+      <ListTable
+        skin={skin}
+        rows={listing.entries.map((entry): ListRow => {
+          const title = (
+            <>
+              {entry.categoryLabel ? (
+                <span className="text-forg-muted shrink-0 text-[10px]">
+                  [{entry.categoryLabel}]
+                </span>
+              ) : null}
+              <span className="truncate">{entry.title}</span>
+              <CommentCount count={entry.commentCount} skin={skin} />
+              <RowMarks skin={skin} board={board} attachmentCount={0} hits={entry.hits} />
+            </>
+          );
+          const layout = "text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7]";
+          return {
+            key: entry.no,
+            author: entry.author,
+            title: entry.hasPost ? (
+              <Link href={`/${board}/${entry.no}`} className={`${layout} hover:underline`}>
+                {title}
+              </Link>
+            ) : (
+              <span className={layout} title="본문은 캡처되지 않았습니다">
+                {title}
+              </span>
+            ),
+            date:
+              entry.createdAt === null ? (
+                "—"
+              ) : entry.yearApprox ? (
+                <span title="목록에는 월/일만 있어 연도는 캡처 시점으로 추정">
+                  ≈{formatShortDate(entry.createdAt)}
+                </span>
+              ) : (
+                formatShortDate(entry.createdAt)
+              ),
+            hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR"),
+          };
+        })}
+        withHits
+        firstNumber={listing.entries.length}
+      />
 
       <footer className="text-forg-muted mt-2 text-[10.5px]">
         출처: Wayback Machine 목록 캡처{" "}
