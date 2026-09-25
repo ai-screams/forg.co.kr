@@ -41,6 +41,7 @@ import importlib.util
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -94,7 +95,11 @@ COMMENTS_START_RE = re.compile(r"<!--\s*간단한 답글 시작하는 부분\s*-
 COMMENTS_END_RE = re.compile(r"<!--\s*(?:간단한 답변글 쓰기|이전 / 다음글 출력|목록 부분 시작)\s*-->")
 LIST_START_RE = re.compile(r"<!--\s*목록 부분 시작\s*-->")
 _IP_LINE_RE = re.compile(r"^\s*IP\b", re.I)
-_IP_RE = re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b")
+# IPv4 candidates, bounded by digits and dots rather than word characters so
+# `작성자IP는61.77.1.2` is caught. URLs are blanked out first: a host in
+# `http://165.229.…/file.zip` or `//165.229.…/` is a link someone shared.
+_IP_CANDIDATE_RE = re.compile(r"(?<![\d.])(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})(?!\.?\d)")
+_URL_RE = re.compile(r"(?:[a-z][a-z0-9+.-]*:)?//[^\s\"'<>]+", re.I)
 _BODY_CELL_RE = re.compile(r"break-all.*padding:\s*10px", re.I)
 _ROW_DATE_RE = re.compile(r"^(\d{4})년 (\d\d)월 (\d\d)일 (\d\d)시 (\d\d)분 (\d\d)초$")
 
@@ -344,15 +349,27 @@ def parse_view(
     )
 
 
+def has_ip(text: str) -> bool:
+    """True when `text` shows an IPv4 address outside a URL.
+
+    Inspected on an NFKC copy so fullwidth digits and dots count; every part
+    must be 0–255, so a price like `1.234.567.890` does not. A version or a
+    date written like an address still counts — the post is then held for a
+    person to read rather than guessed about.
+    """
+    t = _URL_RE.sub(" ", unicodedata.normalize("NFKC", text))
+    return any(all(int(g) <= 255 for g in m.groups()) for m in _IP_CANDIDATE_RE.finditer(t))
+
+
 def ip_like_fields(post: Post) -> list[str]:
     """Where an IPv4-looking string survives in text a reader sees."""
     hits = []
-    if _IP_RE.search(post.author):
+    if has_ip(post.author):
         hits.append("author")
-    if _IP_RE.search(post.bodyText):
+    if has_ip(post.bodyText):
         hits.append("body")
     for c in post.comments:
-        if _IP_RE.search(c.author) or _IP_RE.search(BeautifulSoup(c.bodyHtml, "lxml").get_text(" ")):
+        if has_ip(c.author) or has_ip(BeautifulSoup(c.bodyHtml, "lxml").get_text(" ")):
             hits.append("comment")
             break
     return hits
@@ -378,9 +395,13 @@ def main() -> None:
                 continue
             files.append((phase, f.parent.name, f.stem, f))
 
-    # Pool every list row printed under any old-path capture, then the index.
+    # Pool every list row printed under any old-path capture — and on the
+    # old paths' own list pages (phase LZ) — then fall back to the index.
+    # Pooled from all boards even on a `--board` run: each row is keyed by its
+    # own link's board id, so another board's list can only date that board.
     row_dates: dict[tuple[str, str], datetime] = {}
-    for _, _, _, f in files:
+    pool = [f for phase in (*ORIGIN_BY_PHASE, "LZ") for f in sorted((INPUT_BASE / phase).glob("*/*.html"))]
+    for f in pool:
         row_dates.update(list_row_dates(f.read_text(encoding="utf-8")))
     index_dates = index_row_dates()
     ts_index = capture_ts_index()
