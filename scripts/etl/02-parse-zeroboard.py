@@ -674,7 +674,7 @@ def _write_summary(stats: Stats) -> None:
 
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    """Walk `INPUT_BASE/{A,B,C}/{board}/*.html` and yield `(board, post_id, path)`.
+    """Walk `INPUT_BASE/{A,B,C,V}/{board}/*.html` and yield `(board, post_id, path)`.
 
     Phase A and Phase B share the same Zeroboard parser, so we collapse
     them here. Each (board, post_id) pair is unique across phases — the
@@ -683,7 +683,9 @@ def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
     """
     files: list[tuple[str, str, Path]] = []
     found_any_phase = False
-    for phase in ("A", "B", "C"):
+    # V: `/_zb/view.php` captures — the same `/_zb/` install reached through
+    # Zeroboard's direct-view script, so the default origin still holds.
+    for phase in ("A", "B", "C", "V"):
         root = INPUT_BASE / phase
         if not root.is_dir():
             continue
@@ -742,7 +744,7 @@ def main() -> None:
 
     print(
         f"[02-parse] planned={len(inputs)} todo={len(todo)} skipped={skipped} "
-        f"input={INPUT_BASE}/{{A,B,C}} output={OUTPUT_DIR} dry_run={args.dry_run}",
+        f"input={INPUT_BASE}/{{A,B,C,V}} output={OUTPUT_DIR} dry_run={args.dry_run}",
         file=sys.stderr,
     )
     if not todo:

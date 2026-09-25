@@ -367,7 +367,7 @@ _PHASE_B_G5_SKIP: frozenset[str] = frozenset()
 
 
 def iter_input_files(board_filter: Optional[str]) -> list[Path]:
-    """Walk archive/{A,B,C}/* and yield HTML files. Stable order for resumable runs.
+    """Walk archive/{A,B,C,L,U,Z,Y,T,V}/* and yield HTML files. Stable order for resumable runs.
 
     Phase A and Phase B both ship under `INPUT_DIR/{phase}/{board}/*.html`;
     the output mirror in `OUTPUT_DIR/{phase}/{board}/*.html` is preserved by
@@ -376,7 +376,7 @@ def iter_input_files(board_filter: Optional[str]) -> list[Path]:
     skip decode until P2.3 introduces the g5 parser.
     """
     files: list[Path] = []
-    for phase in ("A", "B", "C", "L"):
+    for phase in ("A", "B", "C", "L", "U", "Z", "Y", "T", "V"):
         root = INPUT_DIR / phase
         if not root.is_dir():
             continue
