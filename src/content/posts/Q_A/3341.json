@@ -1,0 +1,54 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3341",
+  "title": "스탯 내릴수 있나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                스탯 내릴수 있나요? \n<br>\n 스탯 다시 내릴수 있나요?\n<br>\n 갈켜주세요<br> <br>\n\n</span>\n",
+  "bodyText": "스탯 내릴수 있나요? 스탯 다시 내릴수 있나요? 갈켜주세요",
+  "author": "파비안",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-11T20:17:35",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "힘/민첩/지능 총합 225 다 차면 정상적으로는 내릴 수 없습니다. 다만 머더러 되서 로스 받으면 내려가겠죠.."
+    },
+    {
+      "author": "검은사자비",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "힘이 100인데 그걸 90으로 낮추는 이야기라면........ 다른 스텟을 올리면 스텟한계때문에 힘이 내려갑니다....... 힘 100 인트 100 덱스 25인데 덱스를 1올리게되면 힘이나 인트중에서 1이 내려갑니다... (그건 랜덤입니다)"
+    },
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "사자비님 말씀대로 225를 다 채우고 세가지중 어느 한가지를 올리면 다른 두가지중 안가지가 내려가지요.. 일명 핑퐁을 사용한 스탯 마추기..."
+    },
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스텟은 일단 스킬이 변해야 변합니다. 일반적으로 무기관련스킬이 힘과 덱스를 올려주죠. 이런방법으로 스킬로 스탯을 움직이는 방법뿐이 없는것으로 압니다."
+    },
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "참고로 한장소에서 쉽게 스탯을 움직이려면 힘, 인트(암스로어, 맛보기, 아이템확인), 덱스(스누핑, 뮤지션)등이 있습니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729090637",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3341",
+  "sourceEngine": "zeroboard"
+}

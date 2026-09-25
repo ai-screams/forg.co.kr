@@ -1,0 +1,54 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2683",
+  "title": "알케미에대한질문...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                제가 알케미를 할려구하는데요.....\n<br>\n 스킬이 30쯤에...포이즌을 만들어라구하는데요...\n<br>\n 지금 한글로 패치되서그런지..저급 독 인가..그거하고 그냥 독 하고 또 몇개있떤데..지금 저급 독을 만들어야하나여?아님 그냥 독을 만들어야하나여?\n<br>\n 그럼...즐온~~<br> <br>\n\n</span>\n",
+  "bodyText": "제가 알케미를 할려구하는데요..... 스킬이 30쯤에...포이즌을 만들어라구하는데요... 지금 한글로 패치되서그런지..저급 독 인가..그거하고 그냥 독 하고 또 몇개있떤데..지금 저급 독을 만들어야하나여?아님 그냥 독을 만들어야하나여? 그럼...즐온~~",
+  "author": "김기태",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-04-30T23:15:48",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "레인..",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "글쎼요..30이시라면..40때까진 저급 폭팔 포션을 만드시는게 좋을듯하네요.참고로 75에서 지엠까지는 그레이터 힐 포션이 돈벌이로도,스킬로도 끝내줍니다^^"
+    },
+    {
+      "author": "Judge",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "40~55까지부터 저급독을사용하세요"
+    },
+    {
+      "author": "Judge",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "55~65까지는 독이나 힐포션을 ^^"
+    },
+    {
+      "author": "sarevok",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "포이즈닝을 같이 키우신다면(아직 키우는 사람이 있을라나?)독 위주로 만드시는게 좋습니다."
+    },
+    {
+      "author": "레인..",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "포이즈닝이라면 아직 워나 당파전에 많이 사용되고 있죠^^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010519103847",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2683",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,26 @@
+{
+  "board": "Diablo_Notice",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 1,
+  "totalWithPost": 1,
+  "generatedAt": "2026-09-25T11:30:56Z",
+  "entries": [
+    {
+      "postId": "1",
+      "title": "Diablo사이트를 Open하였습니다..",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "2001-09-18T17:57:05",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    }
+  ]
+}

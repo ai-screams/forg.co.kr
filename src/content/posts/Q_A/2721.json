@@ -1,0 +1,54 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2721",
+  "title": "집 소유권에 대하여",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                어렵사리 소노마서버에 집을 장만한 Maximus입니다.\n<br>\n 장만한 캐릭터는 소노마서버 첫 캐릭터이고요.\n<br>\n 그런데 이번에 블랙스미스 한 번 키워보려고 만들었는데\n<br>\n 글쎄 가지고 있는 backpack에도 은행금고에도 집 열쇠가\n<br>\n 없네요.\n<br>\n 어느분이 한캐릭이 집 열쇠를 가지고 있으면\n<br>\n 나머지 캐릭터는 자동으로 Sub Owner가 되어서 집열쇠가\n<br>\n 은행에 생긴다고 하시던데...\n<br>\n<br>\n 어떻게 하죠?\n<br>\n 그렇다고 집을 팔고 다시 짓기에는 너무나 많은 X#$%^&amp;*\n<br>\n 가 들어갈테고(차라리 Back time이 더 낫겠다)...\n<br>\n 방법이 없을까요?\n<br>\n 정말 심각합니다.\n<br>\n 도움 부탁드립니다.<br> <br>\n\n</span>\n",
+  "bodyText": "어렵사리 소노마서버에 집을 장만한 Maximus입니다. 장만한 캐릭터는 소노마서버 첫 캐릭터이고요. 그런데 이번에 블랙스미스 한 번 키워보려고 만들었는데 글쎄 가지고 있는 backpack에도 은행금고에도 집 열쇠가 없네요. 어느분이 한캐릭이 집 열쇠를 가지고 있으면 나머지 캐릭터는 자동으로 Sub Owner가 되어서 집열쇠가 은행에 생긴다고 하시던데... 어떻게 하죠? 그렇다고 집을 팔고 다시 짓기에는 너무나 많은 X#$%^&* 가 들어갈테고(차라리 Back time이 더 낫겠다)... 방법이 없을까요? 정말 심각합니다. 도움 부탁드립니다.",
+  "author": "김경태",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-05-11T16:41:30",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "친한친구분께 부탁해서 이전 시켰다가 다시 이전시켜 보십시여~ 요즘같은 울온은 열쇠 필요없을텐데 개방집이 젤 편해영^^"
+    },
+    {
+      "author": "Toyr",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "집 열쇠를 복사본 만드시죠..아시는 분중 팅커 있으신 분에게 부탁이 젤 쉽습니다"
+    },
+    {
+      "author": "Toyr",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "직접 만드시려면 팅커 50짜리 케릭 만드시기 전에 시큐어 상자에 열쇠 넣어두시고 케릭 가져와서 문 잠그고 복사하시면 됩니다(주변에 몹 있는 경우) 몹 없으면 문 열어두셔도 됍니다"
+    },
+    {
+      "author": "Toyr",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "물론 주변에 문 열줄 아는 몹이 스폰돼지 않아도 문 안 잠그고 사셔도 됍니다..퍼블릭 지정 안하면 밴 거의 잘 먹습니다..근데 댓글 달려는데 에러 떠서 코멘트밖에 못 적네요"
+    },
+    {
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "팅커0.0인 전사로 구리열쇠10개 사서 시도 하니 2개 만들어지더군요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010519101638",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2721",
+  "sourceEngine": "zeroboard"
+}

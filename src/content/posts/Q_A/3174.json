@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3174",
+  "title": "리무브트랩을 키우신분있으시면 조언좀..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                마을 상자를 헤체하면서 많이 죽었죠.\n<br>\n 겨우 30정도 인데 쩝 더는 잘 오르지도 않고\n<br>\n 가드타워같은 곳에 있는걸로 하려니 너무 \n<br>\n 잘 죽어버리고..\n<br>\n 쩝. 팁이 있으시다면 조언좀<br> <br>\n\n</span>\n",
+  "bodyText": "마을 상자를 헤체하면서 많이 죽었죠. 겨우 30정도 인데 쩝 더는 잘 오르지도 않고 가드타워같은 곳에 있는걸로 하려니 너무 잘 죽어버리고.. 쩝. 팁이 있으시다면 조언좀",
+  "author": ".....",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-25T09:03:22",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "kangGM",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "리무브트랩...요즘 키우시는 분들 적은데..."
+    },
+    {
+      "author": "kangGM",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "한가지 방법은 현재 자신의 리무브트랩보다 높은 스킬을 가진 팅커가 만든 함정을 제거하는 방법임당.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010715114903",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3174",
+  "sourceEngine": "zeroboard"
+}

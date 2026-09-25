@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3112",
+  "title": "어라 포그님 제가 물어 본 것들이 왜 다 지워 졌지요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                어라 포그님 제가 물어 본 것들이 왜 다 지워 졌지요?<br> <br>\n\n</span>\n",
+  "bodyText": "어라 포그님 제가 물어 본 것들이 왜 다 지워 졌지요?",
+  "author": "파비안",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "맨위에 공지(질문답변게시판입니다라는글) 보시길...."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "질문하실때 답변해주시는분들도 좀 생각해주시길 바랍니다..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010715113721",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3112",
+  "sourceEngine": "zeroboard"
+}

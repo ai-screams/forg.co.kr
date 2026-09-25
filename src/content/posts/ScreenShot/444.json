@@ -1,0 +1,29 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "444",
+  "title": "르네 빌라 팝니다",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/UO0020.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/UO0020.jpg\"><br>           르네 빌라 팔구요 아얄씨에서는 #uochat에서 멀린본토조아 &lt;-\n<br>\n 로 갠창 주시고 리플 달아도 됨니다^.^;<br> <br>\n</span>\n",
+  "bodyText": "르네 빌라 팔구요 아얄씨에서는 #uochat에서 멀린본토조아 <- 로 갠창 주시고 리플 달아도 됨니다^.^;",
+  "author": "멀린",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0020.jpg",
+      "fileNum": 1,
+      "sizeBytes": 199270
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010718053137",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=444",
+  "sourceEngine": "zeroboard"
+}

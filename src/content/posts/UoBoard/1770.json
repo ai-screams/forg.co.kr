@@ -1,0 +1,36 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1770",
+  "title": "무한항로에서 배피해가는 매크로",
+  "categoryLabel": "팁",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                준비물은 루프프로그램이 있어야 합니다.\n<br>\n 케알룹같은거 있음 좋겠죠.\n<br>\n<br>\n 먼저 배띄우시고 무한항로로 가세요.\n<br>\n 그리고 다음의 매크로를 돌리면 됩니다.\n<br>\n<br>\n 말하기 - Backwards\n<br>\n 딜레이 - 6000\n<br>\n 말하기 - Left\n<br>\n 딜레이 - 6000\n<br>\n 말하기 - Forward\n<br>\n 딜레이 - 6000\n<br>\n 말하기 - Right\n<br>\n 딜레이 - 6000\n<br>\n 말하기 - Slow forward\n<br>\n 딜레이 100000\n<br>\n<br>\n 요렇게 스크립을 짜면 배는 딜레이 100000마다&nbsp;&nbsp; \n<br>\n &nbsp;&nbsp;___\n<br>\n ㅣ\n<br>\n ㅣ\n<br>\n ㅣ\n<br>\n &nbsp;&nbsp;-----\n<br>\n 요런식으로 이동을 하죠.&nbsp;&nbsp;맨앞줄에 Backward를 넣은건 다 아시겠죠?\n<br>\n 바로 왼쪽으로 움직이게 되면 가끔씩 배의 앞에 뾰족한 부분이 다른배에 걸쳐서 못가는 경우가 생겨서 넣은겁니다.\n<br>\n 매크로가 10줄이라서 울온 자체 매클로는 아마 안될겁니다.\n<br>\n 8줄까지 가능하던가... 잘은 몰겠어여.&nbsp;&nbsp;\n<br>\n<br>\n 배매클 돌리시는 분덜 아침에 일나서 정지해 있는거 보믄 짜증나져.&nbsp;&nbsp;\n<br>\n 한번써보세요.&nbsp;&nbsp;그런대로 쓸만할겁니다.\n<br>\n 즈런들 하시구요.\n<br>\n<br>\n 발해 허접 바드 -Pink-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> <br>\n\n</span>\n",
+  "bodyText": "준비물은 루프프로그램이 있어야 합니다. 케알룹같은거 있음 좋겠죠. 먼저 배띄우시고 무한항로로 가세요. 그리고 다음의 매크로를 돌리면 됩니다. 말하기 - Backwards 딜레이 - 6000 말하기 - Left 딜레이 - 6000 말하기 - Forward 딜레이 - 6000 말하기 - Right 딜레이 - 6000 말하기 - Slow forward 딜레이 100000 요렇게 스크립을 짜면 배는 딜레이 100000마다 ___ ㅣ ㅣ ㅣ ----- 요런식으로 이동을 하죠.  맨앞줄에 Backward를 넣은건 다 아시겠죠? 바로 왼쪽으로 움직이게 되면 가끔씩 배의 앞에 뾰족한 부분이 다른배에 걸쳐서 못가는 경우가 생겨서 넣은겁니다. 매크로가 10줄이라서 울온 자체 매클로는 아마 안될겁니다. 8줄까지 가능하던가... 잘은 몰겠어여. 배매클 돌리시는 분덜 아침에 일나서 정지해 있는거 보믄 짜증나져. 한번써보세요.  그런대로 쓸만할겁니다. 즈런들 하시구요. 발해 허접 바드 -Pink-",
+  "author": "HolyPink",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-07T18:54:31",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Noname",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그러실 필요없습니다.. 첨에 배띄울때 Forward 명령어로 빨리 한바퀴 돌아서 무한항로 찾고 거기서 메크로 돌려놓으면 되죠.. 한바퀴도는데 걸리는시간 5-6분.."
+    },
+    {
+      "author": "HolyPink",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "제가 알기로는 발해에는 5분에서 6분또는 한바퀴 배에 부딪치지 않고 갈수있는 항로는 없는줄로 압니다만 다른샤드는 잘안해봐서 모르겠군요"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010721040001",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1770",
+  "sourceEngine": "zeroboard"
+}

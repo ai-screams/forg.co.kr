@@ -1,0 +1,66 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "83",
+  "title": "Kr-Loop 오일천무인 메클법",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                방금 제가 발명한 방법입니당~~^-^\n<br>\n kr-loop 으로는 오일천 무한메클이 불가능한 걸로 알려졌는데...\n<br>\n 제가 가능한 방법을 개발했어여~~~\n<br>\n<br>\n 준비물: 천, 바느질 연장, 빈 가방 1개\n<br>\n<br>\n 1.포인터 -&nbsp;&nbsp;메인 가방안에 천 위치를 &lt;위치 1&gt; 지정\n<br>\n<br>\n 2.포인터 -&nbsp;&nbsp;빈 가방 안(활성화 시키고...)에 중앙쯤에 &lt;위치 2&gt; 지정\n<br>\n<br>\n 3.아래 창에 메인 스크립트를 사용자 메클 1으로 갑니다.\n<br>\n<br>\n 4.사용자 메클 1을 편집합니다.\n<br>\n &nbsp;&nbsp; \n<br>\n &nbsp;&nbsp; 키누르기 - last object(울온 자체 내에 있는 키 설정 전 F5 로 돼있음..)\n<br>\n &nbsp;&nbsp; 딜레이 - 1\n<br>\n &nbsp;&nbsp; 클릭 - 기타(포인터)\n<br>\n &nbsp;&nbsp; 클릭 - 기름천(포인터)\n<br>\n &nbsp;&nbsp; 클릭 - 확인(포인터)\n<br>\n &nbsp;&nbsp; 딜레이 - 1\n<br>\n &nbsp;&nbsp; 클릭 - 위치 2(포인터)\n<br>\n<br>\n 5.사용자 메클 1에서 메인 스크립트로 변경\n<br>\n<br>\n 6.메인 스크립트를 편집합니다.\n<br>\n<br>\n &nbsp;&nbsp; 끌기시작 - 위치 1(포인터)\n<br>\n &nbsp;&nbsp; 끌기갯수 - 1\n<br>\n &nbsp;&nbsp; 끌기끝 - 위치 2(포인터)\n<br>\n &nbsp;&nbsp; 딜레이 - 1\n<br>\n &nbsp;&nbsp; 사용자메클 1\n<br>\n &nbsp;&nbsp; 딜레이 - 1\n<br>\n<br>\n 7.play 버튼을 누른다!!!!\n<br>\n<br>\n !!절대 주의!! Warning!! @_@ 위잉~ 위잉~: \n<br>\n 이상하게 마우스 포인터를 위치 2에다가 놎고 있어야하는군여 ㅡㅡ;;\n<br>\n 분명 설정 상이라면 아무데나 움직여도 돼야 할텐데...\n<br>\n 그리고 바느질 연장 1번 꽉채우는 데 사용하고나서&nbsp;&nbsp;버리고 새것쓰세여(도중에 날라갑니다..)\n<br>\n<br>\n<br>\n P.S:&nbsp;&nbsp;kr-loop 한번도 안써보신 분들은 무슨 예긴지 절대 봐도 몰를껍니다 -_-;;\n<br>\n 어느정도 써보신 분들은 다 쓰실 걸로 믿고~~\n<br>\n 가방 텅 비우고 꽉채울때(120개정도..)까지 정확히 20분 소요돼는거 같구여\n<br>\n 20분 동안 아무거나 하면서..... 딴짓하시고..\n<br>\n 남고난 오일천 처리는.. 역시 가위들고 손으로..(그냥 천을 붕대로 날리지 않기를... ㅡㅡ;;)\n<br>\n 빨리 자원처리를 쉽게할수 있는 케알룹 새로운 버전이 나오기를 바랍니다~~!!(클츠 팀 힘내세영~~!! ^^;;)\n<br>\n 제가 사용했던 케알룹 파일은 띄어놓겠습니당!\n<br>\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;\n<br>\n<br>\n<br>\n &nbsp;&nbsp;<br> <br>\n\n</span>\n",
+  "bodyText": "방금 제가 발명한 방법입니당~~^-^ kr-loop 으로는 오일천 무한메클이 불가능한 걸로 알려졌는데... 제가 가능한 방법을 개발했어여~~~ 준비물: 천, 바느질 연장, 빈 가방 1개 1.포인터 -  메인 가방안에 천 위치를 <위치 1> 지정 2.포인터 -  빈 가방 안(활성화 시키고...)에 중앙쯤에 <위치 2> 지정 3.아래 창에 메인 스크립트를 사용자 메클 1으로 갑니다. 4.사용자 메클 1을 편집합니다. 키누르기 - last object(울온 자체 내에 있는 키 설정 전 F5 로 돼있음..) 딜레이 - 1 클릭 - 기타(포인터) 클릭 - 기름천(포인터) 클릭 - 확인(포인터) 딜레이 - 1 클릭 - 위치 2(포인터) 5.사용자 메클 1에서 메인 스크립트로 변경 6.메인 스크립트를 편집합니다. 끌기시작 - 위치 1(포인터) 끌기갯수 - 1 끌기끝 - 위치 2(포인터) 딜레이 - 1 사용자메클 1 딜레이 - 1 7.play 버튼을 누른다!!!! !!절대 주의!! Warning!! @_@ 위잉~ 위잉~: 이상하게 마우스 포인터를 위치 2에다가 놎고 있어야하는군여 ㅡㅡ;; 분명 설정 상이라면 아무데나 움직여도 돼야 할텐데... 그리고 바느질 연장 1번 꽉채우는 데 사용하고나서  버리고 새것쓰세여(도중에 날라갑니다..) P.S:  kr-loop 한번도 안써보신 분들은 무슨 예긴지 절대 봐도 몰를껍니다 -_-;; 어느정도 써보신 분들은 다 쓰실 걸로 믿고~~ 가방 텅 비우고 꽉채울때(120개정도..)까지 정확히 20분 소요돼는거 같구여 20분 동안 아무거나 하면서..... 딴짓하시고.. 남고난 오일천 처리는.. 역시 가위들고 손으로..(그냥 천을 붕대로 날리지 않기를... ㅡㅡ;;) 빨리 자원처리를 쉽게할수 있는 케알룹 새로운 버전이 나오기를 바랍니다~~!!(클츠 팀 힘내세영~~!! ^^;;) 제가 사용했던 케알룹 파일은 띄어놓겠습니당!",
+  "author": "DarkWave",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-06-12T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "oilmacro.KLP",
+      "fileNum": 1,
+      "sizeBytes": 499
+    }
+  ],
+  "comments": [
+    {
+      "author": "8lllllD~",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아직 오일천이 안나오는 스킬은 우짜노..ㅜ.ㅜ..Uoa도 없구..ㅜ.ㅜ"
+    },
+    {
+      "author": "8lllllD~",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "매일 손으로 로브 만들고 있을려니..너무 귀찮네용..ㅜ.ㅜ...스킬두 잘 안오르구..ㅜ.ㅜ..스탐 해도 1.5 오를까 말까...ㅜ.ㅜ"
+    },
+    {
+      "author": "DarkWave",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "커헉... 로브 만들지마세여!! 천 도둑인뎅...20개 씩인가?? ㅡㅡ;"
+    },
+    {
+      "author": "DarkWave",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그정도 스킬이면 그냥  가죽제품 만드는게 낳아여(자료는 uoss 에 가보세영~~ 여기도 있을지도..^^;)"
+    },
+    {
+      "author": "8lllllD~",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스킬 70도 안돼는데 가죽 제품 만들어 지나요...ㅜ.ㅜ'"
+    },
+    {
+      "author": "8lllllD~",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "찾아 보니 만들어 지는게 잇군요...그럼..가죽을 모으러 다녀야 겠군..ㅜ.ㅜ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010728011416",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOForum&no=83",
+  "sourceEngine": "zeroboard"
+}

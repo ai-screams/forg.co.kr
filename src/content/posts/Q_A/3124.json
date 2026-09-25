@@ -1,0 +1,48 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3124",
+  "title": "집문을 클릭하니까...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                어떤 집 문을 클릭하니까 사용할 수 없다고 나오네요.\n<br>\n 이 집은 잠겼습니다 라고 나오는 건 봤어도 이런\n<br>\n 메시지는 첨 보네요.\n<br>\n 무너져 내리는 집도 아니고 slightly worn인데...\n<br>\n 왜 그럴까요?\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "어떤 집 문을 클릭하니까 사용할 수 없다고 나오네요. 이 집은 잠겼습니다 라고 나오는 건 봤어도 이런 메시지는 첨 보네요. 무너져 내리는 집도 아니고 slightly worn인데... 왜 그럴까요?",
+  "author": "김경태",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-21T13:05:32",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "sarevok",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그건 말입니다. 김경태 님께서 주인이 아니신 퍼블릭 집을 들어 가시면 나오는겁 니다."
+    },
+    {
+      "author": "sarevok",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "잠긴 집은 키를 가진 사람만 들어 갈수가 있는데 퍼블릭은 다 들어 갈수가 있잖아요. 그 대신 못 쓴다고 메세지 나오는거 같습니다."
+    },
+    {
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "퍼블릭집이면 그냥 문이 열리는거 아닌가요? 더블클릭인데..."
+    },
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그 집주인이 집을 두체이상 가지고 있어서 그래여..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010630151840",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3124",
+  "sourceEngine": "zeroboard"
+}

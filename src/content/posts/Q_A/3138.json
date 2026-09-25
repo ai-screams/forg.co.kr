@@ -1,0 +1,23 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3138",
+  "title": "포션들 색깔별로 좀 가르쳐 주세요",
+  "categoryLabel": "re",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                빨간색 : 요건 refresh 기능 즉 스태미나를 회복해주는 포션입니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일반 빨간색보다 Total refresh가 더 좋은것임\n<br>\n<br>\n 흰&nbsp;&nbsp; 색 : 요건 힘(Strength)을 증가시켜줍니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;단, 효력이 발생되고 있는동안은 또 마실 수 없습니다.\n<br>\n<br>\n 노란색 : 요건 체력(Health)을 회복시켜줍니다. 단 풀 체력일때는\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그 이상으로 증가되지 않습니다.\n<br>\n<br>\n 파란색 : 요건 덱스를 증가시켜 줍니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;단, 효력이 발생되고 있는동안은 또 마실 수 없습니다.\n<br>\n<br>\n 검은색 : Night Sight 효과 즉, 어둠을 밝혀주는 포션\n<br>\n<br>\n 녹&nbsp;&nbsp; 색 : Poison 즉, 독입니다. 절대로 컨디션 아닙니다. ^^\n<br>\n<br>\n 오랜지색 : 해독 포션, 중독시 마시면 해독이됨. 단 한 번에 해독되지\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 않을 경우 여러번 중복해서 마실 수 있음.\n<br>\n<br>\n 보라색 : Explosion 즉, 폭발 포션입니다. 이건 더블클릭하고\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;커서가 뜨면 냅다 던지면 됩니다.\n<br>\n<br>\n 일반포션 보다 Greater가 붙은 것이 효력이 더 큽니다.\n<br>\n 힘,체력,덱스 증가 포션의 경우 일반포션이 +15이면 Greater는 +20\n<br>\n<br>\n 녹색포션의 경우 Greater보다 Deadly가 붙은 것이 더 중독성이 강함.\n<br>\n 이건 보통 GM 알케미가 만들 수 있음.\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "빨간색 : 요건 refresh 기능 즉 스태미나를 회복해주는 포션입니다. 일반 빨간색보다 Total refresh가 더 좋은것임 흰   색 : 요건 힘(Strength)을 증가시켜줍니다. 단, 효력이 발생되고 있는동안은 또 마실 수 없습니다. 노란색 : 요건 체력(Health)을 회복시켜줍니다. 단 풀 체력일때는 그 이상으로 증가되지 않습니다. 파란색 : 요건 덱스를 증가시켜 줍니다. 단, 효력이 발생되고 있는동안은 또 마실 수 없습니다. 검은색 : Night Sight 효과 즉, 어둠을 밝혀주는 포션 녹   색 : Poison 즉, 독입니다. 절대로 컨디션 아닙니다. ^^ 오랜지색 : 해독 포션, 중독시 마시면 해독이됨. 단 한 번에 해독되지 않을 경우 여러번 중복해서 마실 수 있음. 보라색 : Explosion 즉, 폭발 포션입니다. 이건 더블클릭하고 커서가 뜨면 냅다 던지면 됩니다. 일반포션 보다 Greater가 붙은 것이 효력이 더 큽니다. 힘,체력,덱스 증가 포션의 경우 일반포션이 +15이면 Greater는 +20 녹색포션의 경우 Greater보다 Deadly가 붙은 것이 더 중독성이 강함. 이건 보통 GM 알케미가 만들 수 있음.",
+  "author": "김경태",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-21T23:33:19",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010715114400",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3138",
+  "sourceEngine": "zeroboard"
+}

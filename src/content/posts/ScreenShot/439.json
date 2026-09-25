@@ -1,0 +1,54 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "439",
+  "title": "위에거 사진없음...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/sipa.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/sipa.jpg\"><br>           다시올림... \n<br>\n<br>\n 나는 무죄야 씨바것들아......ㅠ_ㅠ\n<br>\n<br>\n 내계정내놔<br> <br>\n</span>\n",
+  "bodyText": "다시올림... 나는 무죄야 씨바것들아......ㅠ_ㅠ 내계정내놔",
+  "author": "noname",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "sipa.jpg",
+      "fileNum": 1,
+      "sizeBytes": 130150
+    }
+  ],
+  "comments": [
+    {
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "왜이렇게 되셨나요? 궁금하네"
+    },
+    {
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "=_=;;;"
+    },
+    {
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "후치님 =_=;; 왜 블럭이 =_="
+    },
+    {
+      "author": "noname",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "오직넷 가서봐요..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010718051434",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=439",
+  "sourceEngine": "zeroboard"
+}

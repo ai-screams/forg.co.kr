@@ -1,0 +1,48 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "76",
+  "title": "수퍼 월척...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/월척.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/월척.jpg\"><br>           거지 시서펜 한마리가 낚이길래 그냥 빅피시하나 들고 집으로 게이트를 열었습니다. 그런데... --; 설마 몹도 게이트를 타는 건지 아니면 배의 버그인지... 딴 곳에 갔다 오니까 사라지더군요. 재미있게 가지고 놀았습니다. ^^ <br> <br>\n</span>\n",
+  "bodyText": "거지 시서펜 한마리가 낚이길래 그냥 빅피시하나 들고 집으로 게이트를 열었습니다. 그런데... --; 설마 몹도 게이트를 타는 건지 아니면 배의 버그인지... 딴 곳에 갔다 오니까 사라지더군요. 재미있게 가지고 놀았습니다. ^^",
+  "author": "김기열",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "월척.jpg",
+      "fileNum": 1,
+      "sizeBytes": 141619
+    }
+  ],
+  "comments": [
+    {
+      "author": "강따구",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "물고기가 용가테염... ㅡㅡ;;"
+    },
+    {
+      "author": "신기하당.",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "어케 한거에여? 육지에 시서펜이라니..."
+    },
+    {
+      "author": "Judge",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "글 못보셧수?ㅡ_ㅡ;; 게투타고 왔대잖습니까 ㅡㅡ;;;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010423015803",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=76",
+  "sourceEngine": "zeroboard"
+}

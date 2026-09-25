@@ -1,0 +1,23 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3205",
+  "title": "전부다는 아니더라구 아시는거라두좀 적어주세여 ㅠㅠ",
+  "categoryLabel": "re",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<br>\n &gt;\n<br>\n &gt;&gt;irc 명령어좀 가르쳐 주세여 -.-;;\n<br>\n &gt;\n<br>\n<br>\n /j 또는 /join 체널명 또는 #체널명\n<br>\n #은 쓰시나 안쓰시나 차이없음다\n<br>\n 체널 들가느 명령어구요\n<br>\n 방에 비번이 있으면 체널명 뒤에 한칸띠고\n<br>\n 쓰면 됨니다.\n<br>\n /kick 닉 체널에서 추방하는 겁니다\n<br>\n 이건 옵이 있어야 되구요 @ 이 닉앞에 붙어있으면\n<br>\n 옵이 있는겁니다 (왼족 사용자 리스트)\n<br>\n /ban *!*@아이피\n<br>\n 모든 닉으로 드러오는 어떤 아이피를\n<br>\n 체널에서 추방하는 겁니다\n<br>\n /op 닉\n<br>\n 자기가 옵을 가지고 있을대 다른사람 옵주는 겁니다\n<br>\n<br>\n 뭐 이정도면 필요한만큼은 댄다는\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "> >>irc 명령어좀 가르쳐 주세여 -.-;; > /j 또는 /join 체널명 또는 #체널명 #은 쓰시나 안쓰시나 차이없음다 체널 들가느 명령어구요 방에 비번이 있으면 체널명 뒤에 한칸띠고 쓰면 됨니다. /kick 닉 체널에서 추방하는 겁니다 이건 옵이 있어야 되구요 @ 이 닉앞에 붙어있으면 옵이 있는겁니다 (왼족 사용자 리스트) /ban *!*@아이피 모든 닉으로 드러오는 어떤 아이피를 체널에서 추방하는 겁니다 /op 닉 자기가 옵을 가지고 있을대 다른사람 옵주는 겁니다 뭐 이정도면 필요한만큼은 댄다는",
+  "author": "세랖",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-26T16:28:22",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010731042448",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3205",
+  "sourceEngine": "zeroboard"
+}

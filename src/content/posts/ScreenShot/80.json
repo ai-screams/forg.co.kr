@@ -1,0 +1,48 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "80",
+  "title": "동은옆의 2층집벤더",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/986738806/UoCap19.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/986738806/UoCap19.jpg\"><br>           멋지네염<br> <br>\n</span>\n",
+  "bodyText": "멋지네염",
+  "author": "-___-V",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UoCap19.jpg",
+      "fileNum": 1,
+      "sizeBytes": 273612
+    }
+  ],
+  "comments": [
+    {
+      "author": "J^^U",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헉...가드지역인것 같은데 어떻게 집을 지엇을까 ㅡ0ㅡ;"
+    },
+    {
+      "author": "saisaris",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "패치전에 지은건가 보져 ^^;"
+    },
+    {
+      "author": "해그리드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "허걱...가드권 몇 초다냐..-0-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010423185126",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=80",
+  "sourceEngine": "zeroboard"
+}

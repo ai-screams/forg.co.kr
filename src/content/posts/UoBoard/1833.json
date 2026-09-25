@@ -1,0 +1,60 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1833",
+  "title": "멤버 가입후 글쓴이 표시에 대한 건의...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                방금 멤버 가입을 했는데요.\n<br>\n<br>\n 글쓴이가 자동으로 입력이 되서 편하네요.^^\n<br>\n<br>\n 근데 글쓴이에 제가 원하는 닉을 사용하고 싶습니다.\n<br>\n<br>\n 대부분 여기 글을 올릴때 실명을 사용하기 보다는 닉을 사용하던데요.\n<br>\n<br>\n 사용자정보에 별명/닉 같은 것을 입력받게 해서\n<br>\n<br>\n 게시물에 그것이 표시되게 해주시면 어떨까요?\n<br>\n .\n<br>\n .\n<br>\n .\n<br>\n .\n<br>\n 혹시 사용자정보에 있는 이름을 닉으로 써야 되는건가요? ㅡ.ㅡ?<br> <br>\n\n</span>\n",
+  "bodyText": "방금 멤버 가입을 했는데요. 글쓴이가 자동으로 입력이 되서 편하네요.^^ 근데 글쓴이에 제가 원하는 닉을 사용하고 싶습니다. 대부분 여기 글을 올릴때 실명을 사용하기 보다는 닉을 사용하던데요. 사용자정보에 별명/닉 같은 것을 입력받게 해서 게시물에 그것이 표시되게 해주시면 어떨까요? . . . . 혹시 사용자정보에 있는 이름을 닉으로 써야 되는건가요? ㅡ.ㅡ?",
+  "author": "이윤수",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "예 ...Name 예 원하시는 아디를 넣어주시길...귀안으면 이름과아디를 같게 넣어주심됩니다...지울테니 불편하시더도 다시 가입을...어차피 울온을 목적으로 한사이트고"
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "멤버가 는다해도 저에게 득되는일은 없습니다...울온 하시는 캐릭아디를 적어 주시는게 더날듯 한데영 ~ 멤버끼리는 쪽지도 주고 받을수 있어서 친하게 되면 사냥도 즐기시길..."
+    },
+    {
+      "author": "DarkWave",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "흠... 저두 가입첨할때 거기에 실명을 넣어 버렸다는... Name 대신에 Name/Nick 이라고 써넣는 것이..."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "예 고쳤습니다-_-;;;; 둘다 ID로 기재 하게 하였습니다..."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "참고로 비번 잊어버리시면 저도 모릅니다-_-;; 오직 삭제만이 가능하니 주의하시길...ㅡ.ㅡ"
+    },
+    {
+      "author": "강지훈",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "전 옛날에 가입해서....걍 이름임다.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010721034414",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1833",
+  "sourceEngine": "zeroboard"
+}

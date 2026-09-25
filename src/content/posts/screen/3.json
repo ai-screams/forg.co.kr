@@ -1,0 +1,34 @@
+{
+  "board": "screen",
+  "boardKr": "screen",
+  "postId": "3",
+  "title": "케인구하기",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/Screenshot006.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/Screenshot006.jpg\"><br> <img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/Screenshot007.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/Screenshot007.jpg\"><br>      홍홍<br> <br>\n</span>\n",
+  "bodyText": "홍홍",
+  "author": "앵벌팔라",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-09-22T20:30:03",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "Screenshot006.jpg",
+      "fileNum": 1,
+      "sizeBytes": 505241
+    },
+    {
+      "name": "Screenshot007.jpg",
+      "fileNum": 2,
+      "sizeBytes": 509030
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20011017001059",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=screen&no=3",
+  "sourceEngine": "zeroboard"
+}

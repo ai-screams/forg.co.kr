@@ -2,9 +2,9 @@
   "board": "Notice",
   "page": 13,
   "totalPages": 19,
-  "totalPosts": 916,
-  "totalWithPost": 862,
-  "generatedAt": "2026-09-21T00:09:07Z",
+  "totalPosts": 922,
+  "totalWithPost": 892,
+  "generatedAt": "2026-09-25T11:30:56Z",
   "entries": [
     {
       "postId": "359",
@@ -471,6 +471,22 @@
       "hasPost": true
     },
     {
+      "postId": "330",
+      "title": "클라이언트 패치 3.0.7a 적용",
+      "categoryLabel": null,
+      "author": "녕이",
+      "authorMemberNo": null,
+      "createdAt": "2002-02-07T07:42:08",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
       "postId": "329",
       "title": "디자이너 Vex의 바드에 대한 의견",
       "categoryLabel": null,
@@ -551,6 +567,22 @@
       "hasPost": true
     },
     {
+      "postId": "324",
+      "title": "MY.POD 란 사용하시는 분들 필독 해주시길 바랍니다",
+      "categoryLabel": null,
+      "author": "Kritz",
+      "authorMemberNo": null,
+      "createdAt": "2002-02-01T12:41:50",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
       "postId": "323",
       "title": "로그인 문제와 일부문서 접근불허가 해결되었습니다..",
       "categoryLabel": null,
@@ -599,6 +631,22 @@
       "hasPost": true
     },
     {
+      "postId": "320",
+      "title": "현재 UO.BOARDS에서 테이머에 대한 피드백이..",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "2002-01-29T10:03:10",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 963,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
       "postId": "319",
       "title": "시나리오 적용 지연",
       "categoryLabel": null,
@@ -613,22 +661,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "320",
-      "title": "현재 UO.BOARDS에서 테이머에 대한 피드백이..",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2002-01-29T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 963,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     },
     {
       "postId": "318",
@@ -663,6 +695,22 @@
       "hasPost": true
     },
     {
+      "postId": "316",
+      "title": "스탯로스에 대한 논쟁에 관하여",
+      "categoryLabel": null,
+      "author": "녕이",
+      "authorMemberNo": null,
+      "createdAt": "2002-01-24T15:02:57",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 1008,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
       "postId": "315",
       "title": "가구다이 사용법 변경예정",
       "categoryLabel": null,
@@ -679,28 +727,12 @@
       "hasPost": true
     },
     {
-      "postId": "316",
-      "title": "스탯로스에 대한 논쟁에 관하여",
-      "categoryLabel": null,
-      "author": "녕이",
-      "authorMemberNo": "2278",
-      "createdAt": "2002-01-24T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 1008,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
       "postId": "314",
       "title": "새 3D얼굴은 기존 캐릭터도 선택 가능",
       "categoryLabel": null,
       "author": "녕이",
-      "authorMemberNo": "2278",
-      "createdAt": "2002-01-24T00:00:00",
+      "authorMemberNo": null,
+      "createdAt": "2002-01-24T09:48:43",
       "createdAtApprox": false,
       "yearApprox": false,
       "commentCount": 0,
@@ -708,7 +740,7 @@
       "hits": 761,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": true
     },
     {
       "postId": "313",
@@ -722,6 +754,22 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 1160,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "312",
+      "title": "시나리오 2회분 퍼시픽 샤드 적용",
+      "categoryLabel": null,
+      "author": "녕이",
+      "authorMemberNo": null,
+      "createdAt": "2002-01-23T12:01:18",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 376,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -743,22 +791,6 @@
       "hasPost": true
     },
     {
-      "postId": "312",
-      "title": "시나리오 2회분 퍼시픽 샤드 적용",
-      "categoryLabel": null,
-      "author": "녕이",
-      "authorMemberNo": "2278",
-      "createdAt": "2002-01-23T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 376,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
       "postId": "310",
       "title": "멤버관리건에 대한 공지사항입니다.",
       "categoryLabel": null,
@@ -770,38 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 1,
       "hits": 511,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "309",
-      "title": "포그홈에서 시작된 이벤트와 희생의 미덕....",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2002-01-21T20:04:27",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 887,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "307",
-      "title": "Skeletal Mount와 활에 대한 코멘트",
-      "categoryLabel": null,
-      "author": "녕이",
-      "authorMemberNo": "2278",
-      "createdAt": "2002-01-19T21:16:46",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 1,
-      "hits": 843,
       "recommend": null,
       "era": "2003",
       "hasPost": true

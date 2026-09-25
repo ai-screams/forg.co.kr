@@ -1,0 +1,29 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "74",
+  "title": "나 수배 되었소..........",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                으음 드디어 오라질에서 마수를 뻗치는가.......... ㅡ..ㅡ;<br> <br>\n\n</span>\n",
+  "bodyText": "으음 드디어 오라질에서 마수를 뻗치는가.......... ㅡ..ㅡ;",
+  "author": "검은사자비",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-20T16:32:53",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "best.wav",
+      "fileNum": 1,
+      "sizeBytes": 528281
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010715111200",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=FunBoard&no=74",
+  "sourceEngine": "zeroboard"
+}

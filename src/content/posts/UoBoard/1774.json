@@ -1,0 +1,36 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1774",
+  "title": "김경태님   12시 30분전까지 이 메시지를 보면",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                베스퍼 1시까지\n<br>\n ㅡㅡ;<br> <br>\n\n</span>\n",
+  "bodyText": "베스퍼 1시까지 ㅡㅡ;",
+  "author": "랜드",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "랙이 억수로 심하군"
+    },
+    {
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "음 못만날수도 있습니당 ^-.-^;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010624233933",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1774",
+  "sourceEngine": "zeroboard"
+}

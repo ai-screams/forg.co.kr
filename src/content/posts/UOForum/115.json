@@ -1,0 +1,30 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "115",
+  "title": "kalli의 uoa키 찾기",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                안녕하세요~\n<br>\n 오늘 질문란에 봤더니 uoa키를 분실하여 다시 찾는분이 있더군요.\n<br>\n 그래서 그 방법을 설명해보려구요. ^^;\n<br>\n 컴퓨터란게 말을 잘듣지 않으니까 자주 포맷하게되죠.\n<br>\n 근데 실수로 키를 백업안한경우 좀 답답하죠.\n<br>\n<br>\n -----------------uoa 정식키 찾는 방법-----------------------------------\n<br>\n (1) 울온과 uoa를 설치한다.\n<br>\n (2) 계정 로그인을 한다.\n<br>\n (3) 로그인후 Common창의 오른쪽맨하단&nbsp;&nbsp;-?- 를 클릭한다.\n<br>\n (4) Registration~키를 누른다.\n<br>\n (5) 여기서보면 맨위칸에 Seed에 키가 나온다.(이걸 복사 또는 적어둔다)\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp; ----&gt;여기까진 정식키를 새로신청할때랑 똑같죠.\n<br>\n (6) 아래 페이지에 접속한다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp; <a href=\"http://www.tugsoft.com/UOAssist/locate_key.asp\">http://www.tugsoft.com/UOAssist/locate_key.asp</a>\n<br>\n (7) 중간에 Enter your 'seed'~ 아래창에 (5)에서 복사한걸 입력한다.\n<br>\n (8) 옆에 Locate키를 누른다.\n<br>\n (9) 그러면 정식키가 나온다.(사용법은 아시죠?)\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;복사해서 (5)의 아래쪽에 Key옆에 칸에 입력한다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;다시 로그인하면 됩니다.\n<br>\n -----------------------------------------------------------------------------\n<br>\n<br>\n 좋은 하루 되세요. ^^*\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "안녕하세요~ 오늘 질문란에 봤더니 uoa키를 분실하여 다시 찾는분이 있더군요. 그래서 그 방법을 설명해보려구요. ^^; 컴퓨터란게 말을 잘듣지 않으니까 자주 포맷하게되죠. 근데 실수로 키를 백업안한경우 좀 답답하죠. -----------------uoa 정식키 찾는 방법----------------------------------- (1) 울온과 uoa를 설치한다. (2) 계정 로그인을 한다. (3) 로그인후 Common창의 오른쪽맨하단  -?- 를 클릭한다. (4) Registration~키를 누른다. (5) 여기서보면 맨위칸에 Seed에 키가 나온다.(이걸 복사 또는 적어둔다) ---->여기까진 정식키를 새로신청할때랑 똑같죠. (6) 아래 페이지에 접속한다. http://www.tugsoft.com/UOAssist/locate_key.asp (7) 중간에 Enter your 'seed'~ 아래창에 (5)에서 복사한걸 입력한다. (8) 옆에 Locate키를 누른다. (9) 그러면 정식키가 나온다.(사용법은 아시죠?) ->복사해서 (5)의 아래쪽에 Key옆에 칸에 입력한다. ->다시 로그인하면 됩니다. ----------------------------------------------------------------------------- 좋은 하루 되세요. ^^*",
+  "author": "kalli",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-15T20:13:39",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "천상",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스고이에~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010818131840",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOForum&no=115",
+  "sourceEngine": "zeroboard"
+}

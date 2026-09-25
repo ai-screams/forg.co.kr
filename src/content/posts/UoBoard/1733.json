@@ -1,0 +1,60 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1733",
+  "title": "케헥...",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                플레이 포럼 보고 왔드니만..\n<br>\n<br>\n 돈 세탁 해도 어쩔수 없다네요.\n<br>\n<br>\n IP 추적 까지 해서라도 계정 블럭을 먹이겠답니다. <br> <br>\n\n</span>\n",
+  "bodyText": "플레이 포럼 보고 왔드니만.. 돈 세탁 해도 어쩔수 없다네요. IP 추적 까지 해서라도 계정 블럭을 먹이겠답니다.",
+  "author": "sarevok",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "sarevok",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그런데 말만 하고 왜 블럭 안 먹이지..."
+    },
+    {
+      "author": "beardoll",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아이피추적은 말도 않됨.. 겜방은 어쩌라구요.. 있을 수 없는일"
+    },
+    {
+      "author": "모기",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아이피 추적이라는게 그런걸 말하는건 아닐껍니다."
+    },
+    {
+      "author": "모기",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "일단 버그를 이용한것으로 판명되면 그 아이피를 그 시간대에 이용한 계정을 찾아내기 위한 추적을 말하는것같네요."
+    },
+    {
+      "author": "모기",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그리고 프로그래머나 프로그램 작성에 대한 약간의 이해만 있으셔도 버그를 이용한 계정을 찾아내는것은"
+    },
+    {
+      "author": "모기",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그리 어려운 일은 아닙니다. 프로그래머의 수고가 따르긴 하겠지만... 여하튼 분명 걸릴꺼 같네요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010727015915",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1733",
+  "sourceEngine": "zeroboard"
+}

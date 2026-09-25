@@ -1,0 +1,72 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3219",
+  "title": "드레드 로드를 달고싶은데.. 어떻게 해야하나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                안녕하세요.\n<br>\n 제가 주워듣기론. 글로리 로드 부터 달고..\n<br>\n npc들을 죽이라고 하던데요.\n<br>\n 막상 죽일려고 하니. 어떤 npc들은 머카 준다고 하고...\n<br>\n 확실히 알고 싶습니다...\n<br>\n 많은 분들의 도움 기대하겠습니다^^<br> <br>\n\n</span>\n",
+  "bodyText": "안녕하세요. 제가 주워듣기론. 글로리 로드 부터 달고.. npc들을 죽이라고 하던데요. 막상 죽일려고 하니. 어떤 npc들은 머카 준다고 하고... 확실히 알고 싶습니다... 많은 분들의 도움 기대하겠습니다^^",
+  "author": "악동",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-27T18:34:46",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "끝에서 끝을 달리시려고 하시네요 ^^"
+    },
+    {
+      "author": "SIRL",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "npc 이름 buy 헤서 반응 없는 npc는 머카를 안 줍니다 (하지만 카르마 -5에서 아무리 외쳐도 반응이 없으니 이때는 주의하세요)."
+    },
+    {
+      "author": "SIRL",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "지금은 모르겠는데 일단 테스트 해 보세요. 제가 카르마 최고하락(-5)를 만들때에는 스카라 브레 부두를 이용했습니다. 섬은 가드 존이고 육지는 가드존이 아닙니다. 여기서 하버 마스"
+    },
+    {
+      "author": "SIRL",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "터를 죽였습니다. 일단 -2까지는 주위에 있는 레인져나 셀러도 카르마 하락을 하지만 그 이후로는 안 내려가니 그때부터는 하버 마스터만 죽입니다. 그러다 리스폰 시간이 좀 길어지면"
+    },
+    {
+      "author": "SIRL",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "부두 북쪽에 있는 레인져 길드 마스터를 죽이고 하버 마스터 죽이고 하면 최고 -4까지 떨어집니다. 그런 다음 귀족 2-3명 죽이면 -5가 됩니다. 귀족을 처음부터 잡으면 빠르겠지만"
+    },
+    {
+      "author": "SIRL",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "귀족이 고용하는 NPC가 짜증나고 사실 위력도 쎄서 -전 전사로 달았습니다- 하버 마스터로 최고로 떨어트리고 몇명 잡는게 좋은 거 같습니다. -5까지는 엄청난 시간이 걸렸습니다."
+    },
+    {
+      "author": "콜렉트",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "허거 그런 방법이- -;;"
+    },
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "드레드로드......그냥 피케몇번해주면 잘내려가여.-_-"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010731042519",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3219",
+  "sourceEngine": "zeroboard"
+}

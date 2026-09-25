@@ -1,0 +1,42 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3286",
+  "title": "스킬타임 적용되는거에 대해",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                a 캐릭터로 접속했다가 30분만 플레이하고\n<br>\n 사정상 b 캐릭터를 썼다면..\n<br>\n 나중에 a로 접속했을때 나머지 스킬타임 30분이\n<br>\n 적용되나요?\n<br>\n<br>\n -..-;\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "a 캐릭터로 접속했다가 30분만 플레이하고 사정상 b 캐릭터를 썼다면.. 나중에 a로 접속했을때 나머지 스킬타임 30분이 적용되나요? -..-;",
+  "author": "뚜비",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-04T18:27:03",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "세랖",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그렇다고 들어씀니다."
+    },
+    {
+      "author": "콜렉트",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "케릭별루 스킬탐 1시간 있다구 들었는뎅- -;;"
+    },
+    {
+      "author": "Toyr",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "케릭별 하루 1시간이며 1시간안에 튕기거나 클라 에러로 짤렸어도 다시 접속하면 나머지 시간을 사용 가능합니다..(짤린 동안에도 시간은 흘러서 아깝지만 다 날리는거보단 나으니)..a란 케릭이 30분하다 튕기다해도 그날 스킬타임 시작한 시간부터 1시간이니 빨리 재접하시고 알차게 사용하심이..그리고 딴 케릭에 몰아주기는 절대로 안 일어납니다.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729085551",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3286",
+  "sourceEngine": "zeroboard"
+}

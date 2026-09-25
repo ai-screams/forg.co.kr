@@ -1,0 +1,60 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3344",
+  "title": "스킬을 잠그면 스탯도 안 오르나요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                스킬을 잠그면 스탯도 안 오르나요? \n<br>\n 전 바드테임마사인데요 \n<br>\n 힘100인트100덱스25로 키울려고 합니다\n<br>\n 그런데 힘을 키울려면 제가 키운스킬 이외의 스킬을(제 캐릭에 필요없는스킬=소드,마이닝,등...) \n<br>\n 써야 올릴 수 가있더군요\n<br>\n 어떻게 해야 하나요?<br> <br>\n\n</span>\n",
+  "bodyText": "스킬을 잠그면 스탯도 안 오르나요? 전 바드테임마사인데요 힘100인트100덱스25로 키울려고 합니다 그런데 힘을 키울려면 제가 키운스킬 이외의 스킬을(제 캐릭에 필요없는스킬=소드,마이닝,등...) 써야 올릴 수 가있더군요 어떻게 해야 하나요?",
+  "author": "파비안",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-12T16:33:20",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "안올라여..."
+    },
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "예전엔 올랐는데....패치된지 꽤 오래되었죠..."
+    },
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "힘은 암스로어와 메이스, 레슬링,마이닝이 잘올려줘여."
+    },
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "바드테임마사는 힘든스킬이 많죠. 7지엠 캐릭이 아니라면 방법이 있습니다."
+    },
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "핑퐁이라고 들어보셨죠? 일단 렬스킬총합을 700으로 만든후에 암스로어를 10까지 올렸다가 화살표를 아래로하고 이번엔 맛보기를 10까지 올리고 이런식으로 반복하세요"
+    },
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "스탯은 본래 스킬이 0-10, 90-100일때 가장 많이 움직입니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729091745",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3344",
+  "sourceEngine": "zeroboard"
+}

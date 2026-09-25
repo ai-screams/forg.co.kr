@@ -1,0 +1,48 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1782",
+  "title": "정령의 체력이라는게 어느 것에 타격치를 주는거죠?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                데몬 잡아서 [정령의 체력] 이라는 워폭을 얻었는데..어디다 쓰는 물건인가요?<br> <br>\n\n</span>\n",
+  "bodyText": "데몬 잡아서 [정령의 체력] 이라는 워폭을 얻었는데..어디다 쓰는 물건인가요?",
+  "author": "비비수",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "Elemental's Health으로서 모든 엘리에게 데미지를 줍니다.."
+    },
+    {
+      "author": "jhcul",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "모든 정령(엘리멘탈)에게 +5 추가데미지를 주는 옵션입니다."
+    },
+    {
+      "author": "jhcul",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이런 아이템들은 정령들의 접근 공격도 막아주는 방어구의 역활도 한다고, 플레이 포럼에 나와 있습니다."
+    },
+    {
+      "author": "DarkWave",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "다들 질문은 질문란에~~~~~~ ^^;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010707092207",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1782",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,54 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3269",
+  "title": "제발 그만 썻으면....",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                3번쨰 까는겁니다.......\n<br>\n 바이러스는 읍고예 \n<br>\n 패치 폴더에 암것도 없는데에? \n<br>\n Could not read vercfg file \n<br>\n Your client may not be the most recent version. \n<br>\n You may be able to play the game with your current client. \n<br>\n Check http:\\www.uo.com for help on resolving patching issues. \n<br>\n Click OK to play the game or Cancel to abort. \n<br>\n 이러케 나와여 실행 해보면 2.07 버전입니도..... \n<br>\n 영어도 몰라서 패치어떠케 받는것도 모르고........ \n<br>\n 자세히 답변좀............ㅠ.ㅠ.ㅠ..ㅠ.ㅠ. \n<br>\n<br>\n<br>\n 3번쨰...... 서드돈은 무리인가...<br> <br>\n\n</span>\n",
+  "bodyText": "3번쨰 까는겁니다....... 바이러스는 읍고예 패치 폴더에 암것도 없는데에? Could not read vercfg file Your client may not be the most recent version. You may be able to play the game with your current client. Check http:\\www.uo.com for help on resolving patching issues. Click OK to play the game or Cancel to abort. 이러케 나와여 실행 해보면 2.07 버전입니도..... 영어도 몰라서 패치어떠케 받는것도 모르고........ 자세히 답변좀............ㅠ.ㅠ.ㅠ..ㅠ.ㅠ. 3번쨰...... 서드돈은 무리인가...",
+  "author": "타임걸",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-02T02:51:15",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "참고되실까 해서 적어봅니다."
+    },
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "멀티유오를 이전에 까신적이 있다면 멀티유오를 언인스톨하셔야 합니다."
+    },
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "멀티유오가 클라이언트를 조작하기 때문에 패치시 에러가 나죠"
+    },
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그래도 안되신다면 최악의 경우인 재설치를 고려해보시는게..."
+    },
+    {
+      "author": "타임걸",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "감사합니다..새로뽑은 컴이라 멀티유오가 안깔려 있죠.. 포맷을......."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010724062056",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3269",
+  "sourceEngine": "zeroboard"
+}

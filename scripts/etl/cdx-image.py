@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ETL Phase C (ADR-0010 §Decision #3) — CDX prefix queries + manifest join.
 
-For each of the 25 prefix targets in `PREFIX_LIST`, query the Wayback CDX
+For each of the 28 prefix targets in `PREFIX_LIST`, query the Wayback CDX
 server with `matchType=prefix` and stash every returned row as one line of
 `.docs/research/cdx/image-{slug}.jsonl`. The query phase is idempotent —
 re-running skips prefixes whose jsonl already exists unless `--force` is
@@ -96,6 +96,12 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("forg-spotlight",   "forg.co.kr/spotlight/"),
     ("forg-decoration",  "forg.co.kr/decoration/"),
     ("forg-bod",         "forg.co.kr/bod/"),
+    # [6] Zeroboard 4.0's upload folders (2001–2002). The posts `02f` reads
+    # from `/zboard/`, `/zb/` and forg.uospace.net keep their attachments
+    # beside those installs, not under `/_zb/data/`.
+    ("forg-zboard-data", "forg.co.kr/zboard/data/"),
+    ("forg-zb40-data",   "forg.co.kr/zb/data/"),
+    ("uospace-zb-data",  "forg.uospace.net/zb/data/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-

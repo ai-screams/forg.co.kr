@@ -1,10 +1,10 @@
 {
   "board": "FunBoard",
   "page": 20,
-  "totalPages": 27,
-  "totalPosts": 1343,
-  "totalWithPost": 472,
-  "generatedAt": "2026-09-21T00:09:07Z",
+  "totalPages": 28,
+  "totalPosts": 1351,
+  "totalWithPost": 507,
+  "generatedAt": "2026-09-25T11:30:56Z",
   "entries": [
     {
       "postId": "228",
@@ -72,19 +72,19 @@
     },
     {
       "postId": "221",
-      "title": "아하하하. 대박이다? -1",
+      "title": "우리 서로 사랑하게 해주세요!",
       "categoryLabel": null,
-      "author": "하이시커",
-      "authorMemberNo": "912",
+      "author": "無香大士",
+      "authorMemberNo": null,
       "createdAt": "2002-07-24T00:00:00",
       "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 4,
-      "attachmentCount": 0,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 1,
       "hits": 784,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": true
     },
     {
       "postId": "220",

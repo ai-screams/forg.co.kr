@@ -1,0 +1,36 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "323",
+  "title": "크리스마스 선물 교환 원합니다",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                제가 원하는데는 아리랑이고\n<br>\n<br>\n 여기저기 외국서버에 캐릭이 있습니다\n<br>\n<br>\n 왠만한데는 다 있으니 리플달아주세요<br> <br>\n\n</span>\n",
+  "bodyText": "제가 원하는데는 아리랑이고 여기저기 외국서버에 캐릭이 있습니다 왠만한데는 다 있으니 리플달아주세요",
+  "author": "아리랑인",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-01-26T23:04:20",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "프로게이머",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저기 전 발해거든요. 발해에 있으시면 저랑 바꿔요. \n<br>\n 오늘 저녁에 balhae챗방에 '프로게이머'라는 아디로 있겠습니다. 아량 5개 다 있어요."
+    },
+    {
+      "author": "Hoochi",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "캣츠킬 도 있나요?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020308055957",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=323",
+  "sourceEngine": "zeroboard"
+}

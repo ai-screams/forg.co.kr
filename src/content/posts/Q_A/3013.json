@@ -1,0 +1,48 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3013",
+  "title": "친구집이 사용할수 없다는 메시지가...어떡하져?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                모처럼 친구집에 들렀는데 집안이 정리되어있고\n<br>\n<br>\n '이집은 사용할수없게 될 것입니다'\n<br>\n<br>\n 라는 메시지가 뜨는데...\n<br>\n<br>\n 우케된거져?<br> <br>\n\n</span>\n",
+  "bodyText": "모처럼 친구집에 들렀는데 집안이 정리되어있고 '이집은 사용할수없게 될 것입니다' 라는 메시지가 뜨는데... 우케된거져?",
+  "author": "뉴비헌터",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "J^^U",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그 친구분이 다른곳에 집을 지은 모양인데요 --a"
+    },
+    {
+      "author": "뉴비헌터",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그럼 이집은 무너지는건가여?"
+    },
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "네..."
+    },
+    {
+      "author": "카알",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "움 집종류가 안에 문이있는경우에는(빌라나 ㄴ자집) 그 안에있는문으로 리플되는버그가 아직까지 되는걸루알고잇음"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010716153553",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3013",
+  "sourceEngine": "zeroboard"
+}

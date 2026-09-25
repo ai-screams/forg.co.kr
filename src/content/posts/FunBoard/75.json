@@ -1,0 +1,48 @@
+{
+  "board": "FunBoard",
+  "boardKr": "FunBoard",
+  "postId": "75",
+  "title": "나 수배 되었소..........",
+  "categoryLabel": "re",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<br>\n 이게 낫게따 MP3라서.......... ㅡㅡ;\n<br>\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "이게 낫게따 MP3라서.......... ㅡㅡ;",
+  "author": "검은사자비",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-20T16:35:16",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "best.mp3",
+      "fileNum": 1,
+      "sizeBytes": 383795
+    }
+  ],
+  "comments": [
+    {
+      "author": "블루스카이",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이거 어케만들엇어여? ㅡㅡ;"
+    },
+    {
+      "author": "J^^U",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "죽인다 ㅡ,.ㅡ;;;"
+    },
+    {
+      "author": "검은사자비",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "심심해서 죽기직저넹 만들엇어여.....ㅡㅡ;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010716150525",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=FunBoard&no=75",
+  "sourceEngine": "zeroboard"
+}
