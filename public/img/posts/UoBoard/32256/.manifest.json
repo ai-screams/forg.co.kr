@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "6-14.jpg",
+    "originalUrl": "http://www.marineblues.net:80/mb/note/image2/6-14.jpg",
+    "capturedAt": "20040407005306",
+    "sizeBytes": 73428,
+    "sha256": "24ba8b9d47591c56c6928a28bc8b29d7a49d02a3af4c217147ae80c12e10b009",
+    "digest": "3QGIQJJGHTFYUN6QEN2BWHI7BMZUUYMV"
+  },
+  {
+    "filename": "6-16.jpg",
+    "originalUrl": "http://marineblues.net:80/mb/note/image2/6-16.jpg",
+    "capturedAt": "20030620193755",
+    "sizeBytes": 78962,
+    "sha256": "b05b78e5ce6db73d65b34c9198b7d3cb260840ac3b39165cc6c04a2fa05bac3a",
+    "digest": "4O3BNQW7GKUOCXMDLXMMY6BVCCTYX535"
+  }
+]

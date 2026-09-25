@@ -118,10 +118,21 @@ export async function listKeys(bucket, prefix) {
     if (!res.ok)
       throw new Error(`ListObjectsV2 → ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const xml = await res.text();
-    for (const m of xml.matchAll(
-      /<Contents><Key>([^<]+)<\/Key><LastModified>[^<]*<\/LastModified><ETag>&quot;([^&]+)&quot;<\/ETag><Size>(\d+)<\/Size>/g,
-    )) {
-      out.set(decodeXml(m[1]), { etag: m[2], size: Number(m[3]) });
+    // One entry per <Contents> block, read by tag rather than by position:
+    // R2 orders them Key, Size, LastModified, ETag, StorageClass, which is
+    // not the order the S3 documentation lists and not what a fixed-sequence
+    // pattern matched — it found nothing and every object looked absent.
+    for (const [, block] of xml.matchAll(/<Contents>([\s\S]*?)<\/Contents>/g)) {
+      const key = block.match(/<Key>([^<]+)<\/Key>/);
+      const etag = block.match(/<ETag>(?:&quot;|")?([^&"<]+)/);
+      const size = block.match(/<Size>(\d+)<\/Size>/);
+      // A listing we cannot read is an error, not an empty answer: guessing
+      // "" and 0 would make the upload resend unchanged files and the pull
+      // keep a zero-byte local copy of a non-empty object.
+      if (!key || !etag || !size) {
+        throw new Error(`ListObjectsV2: unreadable <Contents>: ${block.slice(0, 200)}`);
+      }
+      out.set(decodeXml(key[1]), { etag: etag[1], size: Number(size[1]) });
     }
     const next = xml.match(/<NextContinuationToken>([^<]+)<\/NextContinuationToken>/);
     if (!next) break;
@@ -130,11 +141,21 @@ export async function listKeys(bucket, prefix) {
   return out;
 }
 
+const XML_ENTITIES = { quot: '"', amp: "&", lt: "<", gt: ">", apos: "'" };
+
+/**
+ * One pass over the entities, so a decoded `&` never starts a second
+ * reference: `a&amp;apos;b` is the key `a&apos;b`, not `a'b`. R2 writes an
+ * apostrophe as `&apos;` (`serpent&apos;s-fang_s.jpg`); numeric references
+ * are decoded too so no other spelling of a character survives into a key.
+ */
 function decodeXml(s) {
-  return s
-    .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&#39;/g, "'");
+  return s.replace(
+    /&(?:#x([0-9a-f]+)|#(\d+)|(quot|amp|lt|gt|apos));/gi,
+    (whole, hex, dec, name) => {
+      if (hex) return String.fromCodePoint(parseInt(hex, 16));
+      if (dec) return String.fromCodePoint(Number(dec));
+      return XML_ENTITIES[name.toLowerCase()] ?? whole;
+    },
+  );
 }

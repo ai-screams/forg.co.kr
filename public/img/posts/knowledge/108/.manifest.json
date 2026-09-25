@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "ro1.jpg",
+    "originalUrl": "http://changgo.com:80/past/interview/20000331/z_image/ro1.jpg",
+    "capturedAt": "20021030123013",
+    "sizeBytes": 8639,
+    "sha256": "7b0c2b63895ba121f68348f09bb9a3c99c72b6532100aed9ea053d684d106d20",
+    "digest": "YDCXS3TRH4KSJE37C27JMG6ZGYTQ5PKV"
+  },
+  {
+    "filename": "ro2.jpg",
+    "originalUrl": "http://changgo.com:80/past/interview/20000331/z_image/ro2.jpg",
+    "capturedAt": "20021030123525",
+    "sizeBytes": 9304,
+    "sha256": "a2d40b7f90864460b2c87fc70dad2ddebbe9d2f7152ddaac4c04395f30a83219",
+    "digest": "CEJVFISAGAUO5AVOMN4HYKPDNICWO57Z"
+  },
+  {
+    "filename": "ro3.jpg",
+    "originalUrl": "http://changgo.com:80/past/interview/20000331/z_image/ro3.jpg",
+    "capturedAt": "20020621075458",
+    "sizeBytes": 9325,
+    "sha256": "e31ea46065b179535d335795ebcdfb911bc57ec523f4756860b0b6f5d31904e3",
+    "digest": "6HWYX3RZ5NYLTECNZVBDMDPDXAXWAAZK"
+  }
+]

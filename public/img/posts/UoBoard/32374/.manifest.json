@@ -6,5 +6,13 @@
     "sizeBytes": 7122,
     "sha256": "e94bbacc929eb3f0a94091328d1b54a014fdc5a80907b7d2ee0016a30ddae5a0",
     "digest": "VDVCHELVKK5EZ3YUZQ7YRRXL7VJ46PBA"
+  },
+  {
+    "filename": "tur.JPG",
+    "originalUrl": "http://dc16.hanafos.com:80/zero/data/16/tur.JPG",
+    "capturedAt": "20030611171123",
+    "sizeBytes": 70672,
+    "sha256": "365042e3d74ec48293c4f035902987a6d040764bdb6ee4a8797672497cf20718",
+    "digest": "7XEG2AN54PJVGF3XCY6ZQBKAK7QP32UL"
   }
 ]
