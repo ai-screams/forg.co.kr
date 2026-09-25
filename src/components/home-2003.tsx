@@ -101,8 +101,11 @@ const TOP_MENU_2003: TopMenuConfig[] = [
 ];
 
 // Sidebar (frame-left-2003) — 5 sections with English chrome-bar
-// headers and Korean dash-prefixed link rows. Static-page links route
-// to `/` because the museum doesn't reproduce skill/dungeon HTML.
+// headers and Korean dash-prefixed link rows. Hrefs follow the original
+// frame; the guide pages it opened are `/site/…` documents (ETL Stage 2g).
+// Entries whose pages were not collected (the guild and vendor popups under
+// `/_zb/`, bulk deeds, the cartoon on another host, members, poll) still
+// point home.
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
@@ -114,16 +117,16 @@ const SIDEBAR_SECTIONS: {
     asset: "m_info.gif",
     fallback: "Information",
     links: [
-      { label: "-초보자지침서", href: "/" },
-      { label: "-초보자게시판", href: "/Q_A" },
-      { label: "-쿠폰,시디구입처", href: "/" },
-      { label: "-울온전투기술", href: "/" },
-      { label: "-울온협력기술", href: "/" },
-      { label: "-울온직업기술", href: "/" },
-      { label: "-각종유용한정보", href: "/column" },
-      { label: "-UO.퀘스트정보", href: "/Events" },
-      { label: "-몬스터&던전란", href: "/monster" },
-      { label: "-울온지도란", href: "/Recall" },
+      { label: "-초보자지침서", href: "/site/skill/uo_newbie/" },
+      { label: "-초보자게시판", href: "/Newbie" },
+      { label: "-쿠폰,시디구입처", href: "/site/skill/uoco/" },
+      { label: "-울온전투기술", href: "/site/skill/uo_combat/" },
+      { label: "-울온협력기술", href: "/site/skill/uo_veteran/" },
+      { label: "-울온직업기술", href: "/site/skill/uo_jobs/" },
+      { label: "-각종유용한정보", href: "/site/skill_knowhow/uo_knowhow/" },
+      { label: "-UO.퀘스트정보", href: "/site/uoquest/Ant_Quest/" },
+      { label: "-몬스터&던전란", href: "/site/dungeon/monster/" },
+      { label: "-울온지도란", href: "/site/map/britian/" },
     ],
   },
   {
@@ -142,8 +145,8 @@ const SIDEBAR_SECTIONS: {
     fallback: "Reminisce",
     links: [
       { label: "-UO.만화", href: "/" },
-      { label: "-UO.여행기", href: "/" },
-      { label: "-인테리어정보", href: "/" },
+      { label: "-UO.여행기", href: "/site/spotlight/spot_130/" },
+      { label: "-인테리어정보", href: "/site/decoration/deco/" },
       { label: "-아이템스샷란", href: "/Items" },
     ],
   },
@@ -163,7 +166,7 @@ const SIDEBAR_SECTIONS: {
     asset: "m_friend.gif",
     fallback: "Friend Site",
     links: [
-      { label: "SiteMap", href: "/" },
+      { label: "SiteMap", href: "/site/skill/sitemap/" },
       { label: "EA Korea", href: "https://www.ea.com" },
     ],
   },
@@ -395,12 +398,23 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
       <ul className="space-y-[1px] pl-1">
         {section.links.map((link) => (
           <li key={link.label}>
-            <Link
-              href={link.href}
-              className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
-            >
-              {link.label}
-            </Link>
+            {/* `/site/…` pages are route-handler documents, not App Router
+                pages — client-side navigation has no payload to fetch. */}
+            {link.href.startsWith("/site/") ? (
+              <a
+                href={link.href}
+                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                href={link.href}
+                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
+              >
+                {link.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

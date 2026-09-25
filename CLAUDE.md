@@ -92,6 +92,24 @@ errors** rather than runtime 404s — appropriate for a frozen archive.
 `<SiteHeader>` and `<SiteFooter>` live in the root layout (`src/app/layout.tsx`),
 so every page inherits the chrome and routes only render the article container.
 
+#### Static pages outside the boards (`/site/`)
+
+forg's hand-written guide pages (`/skill/`, `/dungeon/`, `/map/`, `/spotlight/`,
+`/Diablo/`, the root frames, …) are whole documents, not posts. They are served
+back as documents:
+
+- ETL: `cdx-site.py` (plan, phase `S`) → `download.py --phase S` → `01-decode.py`
+  → `02g-parse-site.py` → `src/content/pages/{stem}.json` (`stem` = original path
+  without `.htm`/`.html`). Images: `site-image-queue.py` →
+  `download-images.py --queue scripts/etl/site-image-queue.json` →
+  `public/img/posts/site/{original path}` (R2 like post images), then re-run `02g`.
+- `src/app/site/[...path]/route.ts` is a **route handler**, not a page: static
+  export renders it to `out/site/{stem}/index.html` (the last param is the
+  literal `index.html`). No layout applies, so link to these with `<a>`, not
+  `<Link>`. `src/app/site/page.tsx` is the index inside the era frame.
+- Captures after 2016-08-31 are ignored — the domain was re-registered by a third
+  party in 2023 and Wayback holds its parking page.
+
 #### 2014 main page layout (P2.4 completed)
 
 The home (`src/app/page.tsx`) is now the **final 2014 forg.co.kr visual identity** — a 5-column layout:

@@ -21,3 +21,18 @@ export function withImgBase(html: string): string {
   if (!IMG_BASE || !html.includes("/img/posts/")) return html;
   return html.replace(POSTS_SRC, `$1${IMG_BASE}/posts/`);
 }
+
+const ANY_ATTR_SRC = /(\s(?:src|background|href)=")\/img\/posts\//g;
+const CSS_URL_SRC = /url\('\/img\/posts\//g;
+
+/**
+ * The same rewrite for whole static-site documents (`/site/…`), whose
+ * images also sit in `background` attributes, full-size `href`s and the
+ * body's `background-image`.
+ */
+export function withImgBaseEverywhere(html: string): string {
+  if (!IMG_BASE || !html.includes("/img/posts/")) return html;
+  return html
+    .replace(ANY_ATTR_SRC, `$1${IMG_BASE}/posts/`)
+    .replace(CSS_URL_SRC, `url('${IMG_BASE}/posts/`);
+}
