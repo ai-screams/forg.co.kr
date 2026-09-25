@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project identity
 
-This repository is a **digital museum for forg.co.kr** (1999–2015), the largest Korean Ultima Online community fan site. It is a non-commercial preservation project — read-only archive of Wayback-captured posts, plus a modern Next.js shell that switches between two visual eras (2014 default, 2003 toggle).
+This repository is a **digital museum for forg.co.kr** (1998–2016: "Since 1998" on its own footer; last post 2016-03-09, last normal capture 2016-08-20), the largest Korean Ultima Online community fan site. It is a non-commercial preservation project — read-only archive of Wayback-captured posts, plus a modern Next.js shell that switches between two visual eras (2014 default, 2003 toggle).
 
 The README describes the goal in detail. The two non-obvious facts that affect every change:
 

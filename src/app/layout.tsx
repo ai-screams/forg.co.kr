@@ -8,7 +8,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "forg.co.kr — 디지털 박물관",
-  description: "한국 울티마 온라인 최대 팬사이트 forg.co.kr (1999~2015) 재현 아카이브",
+  description: "한국 울티마 온라인 최대 팬사이트 forg.co.kr (1998–2016) 재현 아카이브",
 };
 
 /**
