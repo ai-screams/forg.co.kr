@@ -1,0 +1,23 @@
+{
+  "stem": "dungeon/monster",
+  "originalPath": "/dungeon/monster.html",
+  "originalUrl": "http://forg.co.kr:80/dungeon/monster.html",
+  "kind": "redirect",
+  "title": "Monster&Dungeon. Infomation",
+  "capturedAt": "2008-10-09T20:37:08",
+  "versions": [
+    {
+      "capturedAt": "2003-02-09T19:54:32",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2008-10-09T20:37:08",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

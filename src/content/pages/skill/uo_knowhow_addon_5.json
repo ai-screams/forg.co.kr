@@ -1,0 +1,23 @@
+{
+  "stem": "skill/uo_knowhow_addon_5",
+  "originalPath": "/skill/uo_knowhow_addon_5.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_knowhow_addon_5.html",
+  "kind": "redirect",
+  "title": "UO.Tips란-아이템만들기-세비지의도구",
+  "capturedAt": "2004-01-18T22:07:40",
+  "versions": [
+    {
+      "capturedAt": "2002-12-07T03:02:38",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2004-01-18T22:07:40",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

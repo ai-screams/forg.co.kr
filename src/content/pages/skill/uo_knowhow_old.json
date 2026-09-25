@@ -1,0 +1,27 @@
+{
+  "stem": "skill/uo_knowhow_old",
+  "originalPath": "/skill/uo_knowhow_old.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_knowhow_old.html",
+  "kind": "redirect",
+  "title": "올드비보상",
+  "capturedAt": "2004-01-18T22:12:17",
+  "versions": [
+    {
+      "capturedAt": "2002-02-06T13:38:05",
+      "kind": "redirect"
+    },
+    {
+      "capturedAt": "2003-02-13T12:53:45",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2004-01-18T22:12:17",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "t_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/vendor/t_3.gif",
+    "capturedAt": "20010910011707",
+    "sizeBytes": 13879,
+    "sha256": "61016bfe2f5143dd3b7bb5c339cf83fd824542c1ac0bfb1c2adfdc3f5972bc04",
+    "digest": "TOHT63Z2VVLF72EZC5NSQMXRQOGDCVNY"
+  },
+  {
+    "filename": "t_5.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/vendor/t_5.gif",
+    "capturedAt": "20010910021702",
+    "sizeBytes": 13978,
+    "sha256": "f1c14497b2cbe8fd11fedc3698b5f2008c9cb712a143c82c3f832ad134a5eb57",
+    "digest": "K7I6LQRYIDHOBIHONWPMYI3TZPCQ5SQF"
+  },
+  {
+    "filename": "v_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/vendor/v_2.gif",
+    "capturedAt": "20010910162845",
+    "sizeBytes": 12897,
+    "sha256": "5882e1be1378d4599a9b29cbf113c0a43c3f3ffea96bc89c27cc32e73741efb8",
+    "digest": "AEL6IRGKZ7YRVQ4PW35R6VELZK27XRVU"
+  }
+]

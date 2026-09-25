@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_rare_1",
+  "originalPath": "/skill_knowhow/uo_knowhow_rare_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_rare_1.html",
+  "kind": "redirect",
+  "title": "서버업레어",
+  "capturedAt": "2007-11-30T21:54:11",
+  "versions": [
+    {
+      "capturedAt": "2007-11-30T21:54:11",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

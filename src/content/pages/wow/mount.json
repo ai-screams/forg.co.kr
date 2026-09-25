@@ -1,0 +1,25 @@
+{
+  "stem": "wow/mount",
+  "originalPath": "/wow/mount.html",
+  "originalUrl": "http://forg.co.kr:80/wow/mount.html",
+  "kind": "page",
+  "title": "운송수단(Mount)",
+  "capturedAt": "2004-10-22T03:58:48",
+  "versions": [
+    {
+      "capturedAt": "2004-10-22T03:58:48",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "#CCCCCC",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p><font face=\"Verdana\"><span style=\"font-size:9pt;\">업데이트중입니다.....</span></font></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

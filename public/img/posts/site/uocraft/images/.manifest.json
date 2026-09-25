@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "alpha_background.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/alpha_background.gif",
+    "capturedAt": "20071016110557",
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5"
+  },
+  {
+    "filename": "alpha_background_1.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/alpha_background_1.gif",
+    "capturedAt": "20071016110546",
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH"
+  },
+  {
+    "filename": "b_logo.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/b_logo.gif",
+    "capturedAt": "20071016110820",
+    "sizeBytes": 496,
+    "sha256": "b12ab84d3cc2beb3c1d18806adb42b42388bb1e4da6ee0de82662e07fcb99877",
+    "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
+  },
+  {
+    "filename": "forg_background.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/forg_background.gif",
+    "capturedAt": "20071016110721",
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "digest": "2XEH7C2UFTQEUJWI7IFWLURAS5TIQGME"
+  },
+  {
+    "filename": "memo_b.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/memo_b.gif",
+    "capturedAt": "20071016110838",
+    "sizeBytes": 255,
+    "sha256": "c2da548631243b0be69c7ed611dc38ae0c4453cde424b949f2382954b718344d",
+    "digest": "AJYBFCLQ5AYRQH6LCW3TO43KM75TR6L2"
+  },
+  {
+    "filename": "memo_m.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/memo_m.gif",
+    "capturedAt": "20071016110707",
+    "sizeBytes": 97,
+    "sha256": "e1f25d7eb6883b5b6b149a17f06c13a5f624a3b71ce77142465df5b5525d9587",
+    "digest": "B6MNOQCJSLDRKYTLSTSOIB5P2YMFT75I"
+  },
+  {
+    "filename": "memo_t.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/memo_t.gif",
+    "capturedAt": "20071016110613",
+    "sizeBytes": 15751,
+    "sha256": "fd56a6d6a4481cd30de974a535de1456844de5439a574a1aee19128750ffba42",
+    "digest": "OHPVJWZFKHDEVLUCWJ7FJWYVQA7F7DAK"
+  },
+  {
+    "filename": "menu.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/menu.gif",
+    "capturedAt": "20071016110751",
+    "sizeBytes": 896,
+    "sha256": "c84051401d10e7a2bad7535c07501d06d698a7dffbdcb5aa57610f93f0f7db0c",
+    "digest": "B5H4P5T75KOMF5BVJUMJRMAIYJRY2ROQ"
+  },
+  {
+    "filename": "point.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/point.gif",
+    "capturedAt": "20071016110653",
+    "sizeBytes": 1027,
+    "sha256": "50a0aafdbc396c1a30d3815dc4d6d68ad4fcf10d7057d444170f2da9428fe43e",
+    "digest": "RGJ47KPZ5UCEYHCQVQYLOBTHPWHF6SKH"
+  },
+  {
+    "filename": "top.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/top.gif",
+    "capturedAt": "20071016110639",
+    "sizeBytes": 776,
+    "sha256": "2f7f5f5b9b95342cce93e6ba47b69c7edd6df3cb772f7ef35ea806f496cf6b2c",
+    "digest": "FPFXHQNNUBG6C7THE6ALOVEECETXM65C"
+  },
+  {
+    "filename": "u.gif",
+    "originalUrl": "http://www.forg.co.kr/uocraft/images/u.gif",
+    "capturedAt": "20071016110805",
+    "sizeBytes": 1473,
+    "sha256": "8cd61b4ae23f66426fa129aae21a862e2a1545184ae630a2592cf2f3def4a98d",
+    "digest": "EHUELDPPJEBH5ZVSKINB4Z3SPJOYYXCR"
+  }
+]

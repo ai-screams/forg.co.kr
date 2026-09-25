@@ -1,0 +1,25 @@
+{
+  "stem": "dungeon/Chicken",
+  "originalPath": "/dungeon/Chicken.html",
+  "originalUrl": "http://www.forg.co.kr/dungeon/Chicken.html",
+  "kind": "page",
+  "title": "Chicken",
+  "capturedAt": "2007-11-23T00:26:11",
+  "versions": [
+    {
+      "capturedAt": "2007-11-23T00:26:11",
+      "kind": "page"
+    }
+  ],
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: NONE}",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"></p>\n<table align=\"center\" bordercolordark=\"white\" bordercolorlight=\"black\" cellpadding=\"0\" cellspacing=\"0\" height=\"221\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\" width=\"350\">\n<tbody><tr>\n<td height=\"221\" valign=\"top\" width=\"175\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;&nbsp;&nbsp;<img border=\"0\" data-original-src=\"http://www.forg.co.kr/dungeon/animal_flash/Chicken.gif\" data-recovery=\"missing\" height=\"22\" src=\"/img/placeholder/missing.svg\" width=\"21\"></p>\n<p align=\"center\" style=\"line-height:180%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:55;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\"><b>&nbsp;&nbsp;&nbsp;</b></span><span style=\"font-size:10pt;\"><b>Chicken</b></span></font></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n</td>\n<td height=\"221\" valign=\"top\" width=\"175\">\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\"><font color=\"black\" face=\"Verdana\"><span style=\"font-size:9pt;\"><b>닭</b></span></font></p>\n<p align=\"left\" style=\"line-height:50%; margin-top:0; margin-bottom:0; margin-left:14;\"><b><font color=\"black\" face=\"Verdana\">&nbsp;</font></b></p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">테임가능스킬 \n            : 0</span></font></p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">해부시 \n            : </span></font></p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">깃털25개</span></font></p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">날새고기1개</span></font></p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:14;\">&nbsp;</p>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:110;\">&nbsp;&nbsp;<a title=\":::Closed:::\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr/dungeon/image/candle.gif\" data-recovery=\"missing\" height=\"29\" src=\"/img/placeholder/missing.svg\" width=\"20\"></a></p>\n</td>\n</tr>\n</tbody></table>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

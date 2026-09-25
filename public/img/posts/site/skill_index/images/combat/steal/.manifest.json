@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/steal/1.gif",
+    "capturedAt": "20071121215139",
+    "sizeBytes": 7266,
+    "sha256": "6186cd3a8a43ed9031dceadf44bc9b023f75459367b4a6791bd9d2a5bfcf51e4",
+    "digest": "JNCFLUXH6JD6AUKES4RLAM5R6OUSHS6G"
+  },
+  {
+    "filename": "2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/steal/2.gif",
+    "capturedAt": "20071120203245",
+    "sizeBytes": 10473,
+    "sha256": "066871adcf1871acb9fef9c47d4506c7f6f96245a850e0a8cf957eb546d8a819",
+    "digest": "SY2Y77XFPIAESYKMKUC3XC2NZ4KL7OCS"
+  }
+]

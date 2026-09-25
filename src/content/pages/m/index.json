@@ -1,0 +1,19 @@
+{
+  "stem": "m/index",
+  "originalPath": "/m/index.html",
+  "originalUrl": "http://forg.co.kr:80/m/index.html",
+  "kind": "page",
+  "title": "초기화면",
+  "capturedAt": "2010-10-19T21:18:28",
+  "versions": [
+    {
+      "capturedAt": "2010-10-19T21:18:28",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "\n<div class=\"other\" id=\"forgWrap\">\n<div class=\"type_tab\" id=\"forgHead\">\n<div class=\"head_top\">\n<h1>\n<a href=\"/site/index/\" id=\"forgLogo\"><img alt=\"처음화면\" src=\"/img/posts/site/images/left_logo1.gif\"></a>\n</h1>\n</div>\n</div>\n<div id=\"forgContent\">\n<div id=\"topListWrap\">\n\n<ul class=\"top_list\">\n<li>\n<a class=\"top_list_tit\" href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/S101/38952\" id=\"html_id\" target=\"_blank\">갈가리 찢긴 결혼사진을 보고 나서 <em>(16)</em></a>\n<span class=\"list_info\">\n<span class=\"writer\">마당</span>\n<em>|</em>\n<span class=\"date\">2010.08.13</span>\n<em>|</em>\n<span class=\"up\">117</span><span class=\"down\">8</span>\n</span>\n</li>\n</ul>\n</div> \n</div> \n</div> \n<div class=\"pagination\" id=\"pagingNav\"><a class=\"prev_page\" href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/4\" target=\"_blank\"><em>&lt;</em></a> <a href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/3\" target=\"_blank\">3</a> <a href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/4\" target=\"_blank\">4</a> <span class=\"current\">5</span> <a href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/6\" target=\"_blank\">6</a> <a href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/7\" target=\"_blank\">7</a> <a class=\"next_page\" href=\"https://web.archive.org/web/20101018200933/http://forg.co.kr:80/story/list/6\" target=\"_blank\"><em>&gt;</em></a></div>\n<div id=\"forgFoot\">\n<ul>\n<li><a class=\"pc\" href=\"/site/m/index/\"><span>초기화면</span></a></li>\n<li><a class=\"top\"><span>맨위로</span></a></li>\n</ul>\n</div>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/house_2",
+  "originalPath": "/skill_knowhow/house_2.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/house_2.html",
+  "kind": "redirect",
+  "title": "집디자인메뉴",
+  "capturedAt": "2007-11-30T21:48:42",
+  "versions": [
+    {
+      "capturedAt": "2007-11-30T21:48:42",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

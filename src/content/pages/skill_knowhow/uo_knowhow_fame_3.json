@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_fame_3",
+  "originalPath": "/skill_knowhow/uo_knowhow_fame_3.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_fame_3.html",
+  "kind": "redirect",
+  "title": "스킬타이틀",
+  "capturedAt": "2007-11-30T22:00:37",
+  "versions": [
+    {
+      "capturedAt": "2007-11-30T22:00:37",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

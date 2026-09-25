@@ -1,0 +1,19 @@
+{
+  "stem": "holy/index",
+  "originalPath": "/holy/",
+  "originalUrl": "http://forg.co.kr:80/holy/",
+  "kind": "frameset",
+  "title": "Holy Orbs Guild",
+  "capturedAt": "2003-10-26T08:21:51",
+  "versions": [
+    {
+      "capturedAt": "2003-10-26T08:21:51",
+      "kind": "frameset"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "<frameset border=\"0\" cols=\"1*, 50, 780, 50, 1*\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_left_1.html\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_left_2.html\"><frameset rows=\"80, 1*, 40\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_top.html\"><frameset cols=\"100, 600\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_left.html\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"main\" noresize=\"\" scrolling=\"yes\" src=\"/site/holy/forg_main/\"></frameset><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_bottom.html\"></frameset><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_right_1.html\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20031026082151/http://forg.co.kr:80/holy/forg_right.html\"></frameset>",
+  "redirectTo": null,
+  "baseTarget": null
+}

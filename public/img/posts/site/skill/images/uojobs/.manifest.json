@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "job_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/job_1.gif",
+    "capturedAt": "20021206200015",
+    "sizeBytes": 7582,
+    "sha256": "39325814c55125581d56e60bd3de5331bf43dd4d4e7e25f4e64b2cc0ec3d6e96",
+    "digest": "MVJEO2LQNDO6G5EEXOT6NIPTI3SYQB2F"
+  },
+  {
+    "filename": "job_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/job_2.gif",
+    "capturedAt": "20021206200634",
+    "sizeBytes": 7468,
+    "sha256": "7d81f937df1b5b6b22e4df0a853d60a37e73d0dee909eb90f26702e5ef8ce724",
+    "digest": "YYYWBJR7FC6P2JD5IYDN744SSMNPXMYV"
+  },
+  {
+    "filename": "job_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/job_3.gif",
+    "capturedAt": "20021206201715",
+    "sizeBytes": 10177,
+    "sha256": "79250b2239ed209527c95bbfa8527db1b08c638834254fd1065d681685bef4eb",
+    "digest": "FZNSBVNAWT6W2N5LO4J46DYDWSU4G73T"
+  },
+  {
+    "filename": "job_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/job_4.gif",
+    "capturedAt": "20021207102612",
+    "sizeBytes": 10767,
+    "sha256": "0b6f9edded77bb01d675707f3f9edd648b3b113cdf0ca892777e3a6a888fc818",
+    "digest": "3OPBGS6MLHGZKHDSY4C7YJQQDRXLNUSY"
+  }
+]

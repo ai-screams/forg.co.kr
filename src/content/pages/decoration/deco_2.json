@@ -1,0 +1,23 @@
+{
+  "stem": "decoration/deco_2",
+  "originalPath": "/decoration/deco_2.html",
+  "originalUrl": "http://forg.co.kr:80/decoration/deco_2.html",
+  "kind": "redirect",
+  "title": "deco_2",
+  "capturedAt": "2007-11-18T17:10:20",
+  "versions": [
+    {
+      "capturedAt": "2002-12-06T19:58:17",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2007-11-18T17:10:20",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

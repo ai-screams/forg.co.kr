@@ -1,0 +1,23 @@
+{
+  "stem": "skill/uo_knowhow_puzzle_1",
+  "originalPath": "/skill/uo_knowhow_puzzle_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_knowhow_puzzle_1.html",
+  "kind": "redirect",
+  "title": "각종유용한정보-퍼즐편",
+  "capturedAt": "2002-08-29T23:20:43",
+  "versions": [
+    {
+      "capturedAt": "2002-02-12T06:29:12",
+      "kind": "redirect"
+    },
+    {
+      "capturedAt": "2002-08-29T23:20:43",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

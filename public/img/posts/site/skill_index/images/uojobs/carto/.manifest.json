@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/2.gif",
+    "capturedAt": "20071123004534",
+    "sizeBytes": 8560,
+    "sha256": "543073b0eb8784f9d616265e2089460a4054f2b8e4c19d1855c1bf803d28d1d6",
+    "digest": "PMJI5AXI4E5QDXSMYUOLVKS4XVU6TAXK"
+  },
+  {
+    "filename": "3.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/3.gif",
+    "capturedAt": "20071123004433",
+    "sizeBytes": 9976,
+    "sha256": "c0c0be3e40cfd2e57f1d6c2451e5d57780555ae9cfd2ac449073d51f41d93c26",
+    "digest": "UN5O2WB6LZ7BSRID3KP5DQGDAA66Y2M4"
+  },
+  {
+    "filename": "4.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/4.gif",
+    "capturedAt": "20071123004636",
+    "sizeBytes": 10521,
+    "sha256": "d813d4d05e776d626bf1a8231d33fd573bd36319e37f4c7af87ea22adcb0d44a",
+    "digest": "BW3IPO27EFJ7P2MGIOYTCKQVZR22RIWX"
+  },
+  {
+    "filename": "5.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/5.gif",
+    "capturedAt": "20071123004521",
+    "sizeBytes": 10431,
+    "sha256": "998f6f8c966eede89ef3759a07e946128ed627b1674f74be2ef25a51e7d42c81",
+    "digest": "6E643NRAV6FJLQXFBY6O6HF63VVP35NQ"
+  },
+  {
+    "filename": "6.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/6.gif",
+    "capturedAt": "20071123004720",
+    "sizeBytes": 10738,
+    "sha256": "727a1bb56c973c31980588a28052bd092a10294292259a7fc8b22532b5d4ddfc",
+    "digest": "DMRLUSGZSVG2TINVF3YEV2SPIK3GUW7Q"
+  },
+  {
+    "filename": "carto_s.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/carto_s.gif",
+    "capturedAt": "20071123004810",
+    "sizeBytes": 8888,
+    "sha256": "640e51298eaeeceba7c53d6a3f7428227ec6430ff2973bf2ee65ba757daa46f1",
+    "digest": "4CHMBFDP36JLLGYBL2YLH3DH4XLT3WV5"
+  },
+  {
+    "filename": "l_map.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/carto/l_map.gif",
+    "capturedAt": "20071123004736",
+    "sizeBytes": 60904,
+    "sha256": "3889b7d40a665c3356a2839a28e09ae823f13449d8bd06e5abb0da944dbb5fab",
+    "digest": "UK2DJN6VSMSXQ4S64PWAEQSVWWURK3NR"
+  }
+]

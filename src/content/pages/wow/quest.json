@@ -1,0 +1,25 @@
+{
+  "stem": "wow/quest",
+  "originalPath": "/wow/quest.html",
+  "originalUrl": "http://forg.co.kr:80/wow/quest.html",
+  "kind": "page",
+  "title": "Quest",
+  "capturedAt": "2004-10-22T13:16:37",
+  "versions": [
+    {
+      "capturedAt": "2004-10-22T13:16:37",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "#CCCCCC",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p><font face=\"Verdana\"><span style=\"font-size:9pt;\">업데이트중입니다.....</span></font></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "filename": "armorignore.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/armorignore.gif",
+    "capturedAt": "20071118172153",
+    "sizeBytes": 2002,
+    "sha256": "a761cf69dde2edf84cc4cfb61dc94f34d308c0d30e35c1b284d8aeda08a9b288",
+    "digest": "IPULFQKXJDFZYMACXF673BWWKZJ7MBMQ"
+  },
+  {
+    "filename": "bleedattack.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/bleedattack.gif",
+    "capturedAt": "20071118172615",
+    "sizeBytes": 2019,
+    "sha256": "f08352c6fcc5371bc6a3e40cb111dd5385c5cf68330f5e77a407b50b9c5a978a",
+    "digest": "EMJH23AZNHM3DETWKIJ6JUR5IVWKTP3W"
+  },
+  {
+    "filename": "concussionblow.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/concussionblow.gif",
+    "capturedAt": "20071118172347",
+    "sizeBytes": 2420,
+    "sha256": "85ea978b354c11efbe16cd48fba951f9453ba8a96d7bfabd0291928091b4ac5e",
+    "digest": "A3UDGCIQWVHIKLECWEFBUYQSS6FA65VG"
+  },
+  {
+    "filename": "crushingblow.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/crushingblow.gif",
+    "capturedAt": "20071118173328",
+    "sizeBytes": 2202,
+    "sha256": "49e2d7cb9381883209b4115a0f8717b753c6ad327a9a5e25fc48a3284dcd19c9",
+    "digest": "ZCTCHVQDF5UAJNCX5IJ4HMKSMYMNAF2G"
+  },
+  {
+    "filename": "disarm.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/disarm.gif",
+    "capturedAt": "20071118173139",
+    "sizeBytes": 2124,
+    "sha256": "90428925569a4f8915fa960dfd9a129d107c1211738f394a0432ce0691f18960",
+    "digest": "V5XCVTXEZB7O3MH3FQIOPNCI2W2VGS6G"
+  },
+  {
+    "filename": "dismount.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/dismount.gif",
+    "capturedAt": "20071118173407",
+    "sizeBytes": 1995,
+    "sha256": "f44d337867a5dcf3e8749e35fd115879a4e89df9a11143b64cf42d7681fd6ee6",
+    "digest": "F7VO3XDWHFDXJN6AOAR2MHM7RKSDE2ED"
+  },
+  {
+    "filename": "doublestrike.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/doublestrike.gif",
+    "capturedAt": "20071118172638",
+    "sizeBytes": 1993,
+    "sha256": "136f06f56076037439bfbd0b8ced5fb2e4d354d78008431e93553ce45f891d8c",
+    "digest": "RDDYFUECXF4XVRGHWUQRUOTL2I5DGODG"
+  },
+  {
+    "filename": "infectiousstrike.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/infectiousstrike.gif",
+    "capturedAt": "20071118172443",
+    "sizeBytes": 2162,
+    "sha256": "baeb6bd54e50c89185c8b51c16c232acda8d6398ba8cab05456975d500a13cf2",
+    "digest": "DFCD5QDGLVOEA7A7336LQUQKPYCZTJRJ"
+  },
+  {
+    "filename": "mortalstrike.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/mortalstrike.gif",
+    "capturedAt": "20071118173527",
+    "sizeBytes": 1953,
+    "sha256": "b1ccbc1009316370a78e86ba38fd369ad59a059d1e2cdddf4346aadb9e66681c",
+    "digest": "PJOXVEAMPMJR7B4HVF5IBLMP6TIGV7AA"
+  },
+  {
+    "filename": "moves_shadowstrike.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/moves_shadowstrike.gif",
+    "capturedAt": "20071118173054",
+    "sizeBytes": 2066,
+    "sha256": "4c2f33e732f95d2c79903a453f318755bd00872a3ae8d719d993d70224cb94e3",
+    "digest": "55ZRGDUD66YIV7IB57CWSHXLSGG4O2ZQ"
+  },
+  {
+    "filename": "movingshot.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/movingshot.gif",
+    "capturedAt": "20071118172818",
+    "sizeBytes": 2146,
+    "sha256": "055d5faeff6d2541f46299ec1bd341b0d8c6351dd4232cb72e053ee6431a0433",
+    "digest": "VXYE75ORMPO2HSXPX5TQN5TTOURHHK2T"
+  },
+  {
+    "filename": "paralyzingblow.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/paralyzingblow.gif",
+    "capturedAt": "20071118172531",
+    "sizeBytes": 2140,
+    "sha256": "72db1c1a62cbbedbef3cbc13aeb838c7c693e6520293c8cc692be45430fcaed9",
+    "digest": "Q3Y6TJLITML7CUZHJVMWORBTZDK4BSCO"
+  },
+  {
+    "filename": "sp.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/sp.gif",
+    "capturedAt": "20071118173253",
+    "sizeBytes": 1547,
+    "sha256": "abbc71019255863199a441fd3656f25780ef2763b9805f8d9b51ee86a9e2326b",
+    "digest": "MWPRYPLN53AGG7KHOAACFFJI7QMBH5M4"
+  },
+  {
+    "filename": "whirlwindattack.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/whirlwindattack.gif",
+    "capturedAt": "20071118173236",
+    "sizeBytes": 2378,
+    "sha256": "696d76b75d3f82ec723b12b8012a11c5f68d22df7b3aa4aca11a8a7b433dac47",
+    "digest": "PG2QFFTQGOJDL2Y77JRQ5AC7FZFFPE7G"
+  }
+]

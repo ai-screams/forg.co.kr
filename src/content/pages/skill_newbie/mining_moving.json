@@ -1,0 +1,25 @@
+{
+  "stem": "skill_newbie/mining_moving",
+  "originalPath": "/skill_newbie/mining_moving.htm",
+  "originalUrl": "http://www.forg.co.kr/skill_newbie/mining_moving.htm",
+  "kind": "page",
+  "title": "광물-초보자메뉴얼",
+  "capturedAt": "2007-11-21T21:48:23",
+  "versions": [
+    {
+      "capturedAt": "2007-11-21T21:48:23",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<table bordercolordark=\"white\" bordercolorlight=\"black\" cellpadding=\"0\" cellspacing=\"0\" width=\"161\">\n<tbody><tr>\n<td height=\"18\" width=\"147\">\n<p align=\"left\"><font color=\"red\" face=\"Verdana\"><span style=\"font-size:8pt;\"><b>&nbsp;UO;s \n            Forg</b></span></font></p>\n</td>\n<td height=\"20\" width=\"28\">\n<p align=\"right\"><span style=\"font-size:8pt;\"><b><font color=\"red\" face=\"Verdana\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_newbie/speak.gif\" data-recovery=\"missing\" height=\"18\" src=\"/img/placeholder/missing.svg\" width=\"30\"></font></b></span></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" height=\"135\">\n<p align=\"center\"><a></a><a href=\"#\"></a>\n</p>\n</td>\n</tr>\n</tbody></table>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

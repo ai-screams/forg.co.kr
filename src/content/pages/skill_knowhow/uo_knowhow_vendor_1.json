@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_vendor_1",
+  "originalPath": "/skill_knowhow/uo_knowhow_vendor_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_vendor_1.html",
+  "kind": "redirect",
+  "title": "코인메니아프로그램",
+  "capturedAt": "2005-03-01T23:18:15",
+  "versions": [
+    {
+      "capturedAt": "2005-03-01T23:18:15",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_vendor_2",
+  "originalPath": "/skill_knowhow/uo_knowhow_vendor_2.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_vendor_2.html",
+  "kind": "redirect",
+  "title": "바키퍼",
+  "capturedAt": "2005-03-01T23:22:01",
+  "versions": [
+    {
+      "capturedAt": "2005-03-01T23:22:01",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

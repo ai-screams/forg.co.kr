@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/house",
+  "originalPath": "/skill_knowhow/house.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/house.html",
+  "kind": "redirect",
+  "title": "집의종류와 집설치도구",
+  "capturedAt": "2007-11-29T21:25:15",
+  "versions": [
+    {
+      "capturedAt": "2007-11-29T21:25:15",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

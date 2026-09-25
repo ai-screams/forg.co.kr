@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "blackthorn2.jpg",
+    "originalUrl": "http://forg.co.kr:80/map/misc/blackthorn2.jpg",
+    "capturedAt": "20031123211313",
+    "sizeBytes": 29924,
+    "sha256": "3c9514f977eb423e34cb2d0f02c9a581ae6466cbd8734d93df9cfc5917a53531",
+    "digest": "4Y5AL7SESWCHY2P4UOKLMEYMZHAL6IQP"
+  },
+  {
+    "filename": "screst.gif",
+    "originalUrl": "http://forg.co.kr:80/map/misc/screst.gif",
+    "capturedAt": "20020221104948",
+    "sizeBytes": 3684,
+    "sha256": "0eec60d6819cf3f87a657ac06084525cbbf6552e86ff50230523b863ac90a2e8",
+    "digest": "NOZW7I673MT7KPZOQV6BJVCD77AS6VBZ"
+  }
+]

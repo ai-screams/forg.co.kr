@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "beg_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/beg/beg_1.gif",
+    "capturedAt": "20071119191357",
+    "sizeBytes": 19809,
+    "sha256": "39505804677069aa62b5a7bef812ebb01ba5cd6ec57bba6188c69f1c755aefa1",
+    "digest": "J5M6KHBJBZA3CV2W7CBCALNVJWO6G5EP"
+  },
+  {
+    "filename": "beg_3.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/beg/beg_3.gif",
+    "capturedAt": "20071119191209",
+    "sizeBytes": 19893,
+    "sha256": "534e4469ea03fbb4477248ac49f0d6a7fd66f3b9802a5bfc2b16fa41545c5800",
+    "digest": "2LCOSAD7N7ES5SN6HZMHIC7SLDV7FKFE"
+  },
+  {
+    "filename": "beg_4.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/beg/beg_4.gif",
+    "capturedAt": "20071119191329",
+    "sizeBytes": 18809,
+    "sha256": "73697fed888a1647000a2272c742d5cdd16bc9fdc96d9598f972a7ece640011a",
+    "digest": "WCPAVBJCKY7CPW6TWIJB4QZRHYM27NHB"
+  }
+]

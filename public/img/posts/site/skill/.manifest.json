@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "rare_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/rare_1.gif",
+    "capturedAt": "20010812233959",
+    "sizeBytes": 681,
+    "sha256": "0e4ebe6b635211f6d8d3d489e2cfdbbe470d3802c96d3b4914fcca89ac76193a",
+    "digest": "PDIRO34EU5PQB4Y345OTVMJFLWXKR5BK"
+  },
+  {
+    "filename": "tmpin.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/tmpin.gif",
+    "capturedAt": "20021207214507",
+    "sizeBytes": 953,
+    "sha256": "da9684b69742eb03211eeefe91b5ba71d3a8204dc2a519e4add1882f0abd5501",
+    "digest": "3DNCNGRJW42YQKJ5AUXGQKYZ7QJRD6ZO"
+  }
+]

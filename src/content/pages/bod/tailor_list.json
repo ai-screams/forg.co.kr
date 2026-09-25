@@ -1,0 +1,23 @@
+{
+  "stem": "bod/tailor_list",
+  "originalPath": "/bod/tailor_list.html",
+  "originalUrl": "http://forg.co.kr:80/bod/tailor_list.html",
+  "kind": "redirect",
+  "title": "BOD보상",
+  "capturedAt": "2004-12-11T21:51:07",
+  "versions": [
+    {
+      "capturedAt": "2003-02-13T11:18:28",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2004-12-11T21:51:07",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

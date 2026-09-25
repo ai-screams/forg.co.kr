@@ -1,0 +1,66 @@
+[
+  {
+    "filename": "alc_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/alc_1.gif",
+    "capturedAt": "20010825220942",
+    "sizeBytes": 651,
+    "sha256": "206097ff5f5a0cf3c5d6240cc700d86480fca0ab8cc2b4cdd21ff79fdd3a235b",
+    "digest": "PB5WZ536BSFP55AUQPXXDW6HJLOCBS64"
+  },
+  {
+    "filename": "alc_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/alc_4.gif",
+    "capturedAt": "20010826001005",
+    "sizeBytes": 706,
+    "sha256": "2438f7e594f96c398fb8d1aba649ee0717b5c6820c6e742a943218e4610d1294",
+    "digest": "JTKL66T2PIVBE2CM5WVNBEKQNTVM4UBS"
+  },
+  {
+    "filename": "black_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/black_p.gif",
+    "capturedAt": "20010826004207",
+    "sizeBytes": 958,
+    "sha256": "fabba4160d06690b64a8c1da0f8a555ea9dcd2a0fb228c292d955d37c9e16877",
+    "digest": "GMT6PO336GFUELUSU2ICFKOCBJB7XK6C"
+  },
+  {
+    "filename": "blue_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/blue_p.gif",
+    "capturedAt": "20010826011824",
+    "sizeBytes": 965,
+    "sha256": "2c187c11b889ad961459b2a171e7ce0c6f996bc43474b1abec03b8932196f849",
+    "digest": "NCIJILJZB3KTIHSY65XYCSWJKYX2NO4K"
+  },
+  {
+    "filename": "green_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/green_p.gif",
+    "capturedAt": "20010826014839",
+    "sizeBytes": 966,
+    "sha256": "ba31281a1e5da77ce34a1db7cb4972fed4b36d30bb9f6a22462270ea20cc84a5",
+    "digest": "AKXDW2A3A5NKPSRQRSCQPDZW34SCTLHQ"
+  },
+  {
+    "filename": "orange_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/orange_p.gif",
+    "capturedAt": "20010826022655",
+    "sizeBytes": 965,
+    "sha256": "4dff4be6118d04cc2f61f910e45767ce3d82e851c24b2c2420a377aac7e2b841",
+    "digest": "SFLCQ4UBGM6RCZBEACQXCY5LAHY6ZP5S"
+  },
+  {
+    "filename": "purple_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/purple_p.gif",
+    "capturedAt": "20010826030846",
+    "sizeBytes": 957,
+    "sha256": "917a7b941b39c29512a4c5a74dd0141f0651ced706e677f2cf03edd8c6f1ed8b",
+    "digest": "CRMYCQ6ZXBF7RM46CMDJHKYAZH6Z4B35"
+  },
+  {
+    "filename": "white_p.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Alchemy/white_p.gif",
+    "capturedAt": "20010826040758",
+    "sizeBytes": 962,
+    "sha256": "62a9f1dffd0265e7964747a7757b4f386c6645371037ef924c17d877c053a0eb",
+    "digest": "WNEAYVCWG6CWGQCNPRBEHPT7INQV7CYC"
+  }
+]
