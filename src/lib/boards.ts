@@ -99,6 +99,16 @@ export const BOARDS = {
     engine: "zeroboard",
     era: "2003",
   },
+  screen: {
+    id: "screen",
+    // Served only from forg.uospace.net/zb/ in 2001 (phase U). No capture
+    // carries the board's display name, so this one only describes it.
+    nameKr: "스크린샷 (2001)",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 forg.uospace.net 시절의 스크린샷 게시판 (이름은 캡처에 남지 않음)",
+  },
   HouseScreenshot: {
     id: "HouseScreenshot",
     nameKr: "하우스 스크린샷",
@@ -267,7 +277,37 @@ export const BOARDS = {
     era: "2003",
   },
 
-  // ── other (non-UO games, 2014) ──
+  // ── other (non-UO games) ──
+  DiabloBoard: {
+    id: "DiabloBoard",
+    // 2001 Diablo II board on the Zeroboard 4.0 install at /zboard/ (phase Z).
+    // No capture carries its display name; the id is all there is.
+    nameKr: "디아블로 자유게시판",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 디아블로 II 자유게시판 (이름은 캡처에 남지 않음)",
+  },
+  Diablo_Notice: {
+    id: "Diablo_Notice",
+    // 2001 Diablo II board on the Zeroboard 4.0 install at /zboard/ (phase Z).
+    // No capture carries its display name; the id is all there is.
+    nameKr: "디아블로 공지",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 디아블로 II 공지 (이름은 캡처에 남지 않음)",
+  },
+  Diablo_QA: {
+    id: "Diablo_QA",
+    // 2001 Diablo II board on the Zeroboard 4.0 install at /zboard/ (phase Z).
+    // No capture carries its display name; the id is all there is.
+    nameKr: "디아블로 질문답변",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 디아블로 II 질문답변 (이름은 캡처에 남지 않음)",
+  },
   Diablo: {
     id: "Diablo",
     nameKr: "디아블로3",

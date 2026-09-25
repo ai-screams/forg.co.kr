@@ -1,0 +1,42 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3345",
+  "title": "코포가 뭐에요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                코포가 뭐에요?<br> <br>\n\n</span>\n",
+  "bodyText": "코포가 뭐에요?",
+  "author": "파비안",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-12T18:43:07",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "6써클 공격마법인 energy bolt라는 마법입니다. 일명 갈매기라고도 합니다.."
+    },
+    {
+      "author": "루비안",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "에너지볼트 캐스팅할때 나오는게 코포에염 -.-;;"
+    },
+    {
+      "author": "나그네",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "에너지 볼트 마법이 왜 코포냐면 주문이 corp por기땜시 코포라 부르죵.ㅡ,.ㅡ"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729091712",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3345",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,42 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3779",
+  "title": "dyhalt 님  질문!!",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                글라이드는 머구\n<br>\n<br>\n 멀티로 vga 쓰는게 머죠--;;\n<br>\n<br>\n 컴터 잘몰라서요..\n<br>\n<br>\n 알려주세용~~\n<br>\n<br>\n 글구 리바tnt가격아시면 좀 알려주세요<br> <br>\n\n</span>\n",
+  "bodyText": "글라이드는 머구 멀티로 vga 쓰는게 머죠--;; 컴터 잘몰라서요.. 알려주세용~~ 글구 리바tnt가격아시면 좀 알려주세요",
+  "author": "배상욱",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Dyhalt",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "부두2를 pci슬롯에 꼽고 agp슬롯에 타 vga를 꼽습니다. 윈98부터는 멀티 vga지원합니다. 그래서 부두2로는 글라이드만 처리하게 할 수 있습니다."
+    },
+    {
+      "author": "Dyhalt",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "리바 tnt같은거는 3,4만원이면 살겁니다. 이미 한물간 그래픽 카드인지라..."
+    },
+    {
+      "author": "Dyhalt",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "....아, 하나더.. 메인보드에서 세컨드리 vga지원하는지 보세요."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010910014910",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3779",
+  "sourceEngine": "zeroboard"
+}

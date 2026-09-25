@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3280",
+  "title": "Forg님 오토 조인 기능이 안되는 데요@_@;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                어찌 된일 인지 오토 조인이 ..\n<br>\n<br>\n 안되는 군요..ㅜ.ㅜ\n<br>\n<br>\n 매번 로긴 하기 귀차는뎅..\n<br>\n<br>\n 그럼 답변 부탁~~~<br> <br>\n\n</span>\n",
+  "bodyText": "어찌 된일 인지 오토 조인이 .. 안되는 군요..ㅜ.ㅜ 매번 로긴 하기 귀차는뎅.. 그럼 답변 부탁~~~",
+  "author": "콜렉트",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-03T18:34:55",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "현재 아웃로긴이 버그상태입니다....며칠만 양지해주시길...."
+    },
+    {
+      "author": "콜렉트",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아..^^;예~~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010731043317",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3280",
+  "sourceEngine": "zeroboard"
+}

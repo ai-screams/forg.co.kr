@@ -1,0 +1,29 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "423",
+  "title": "타워 팝니다.",
+  "categoryLabel": "발해",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.co.kr/zb/data/타워.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/zb/data/타워.jpg\"><br>           자리는 더이상 좋을수가 없고요...\n<br>\n 타워 안에있는 그대로에서 블랙다이만 빼겠습니다.\n<br>\n 상자 안에도 잡동사니들 좀... 됩니다.\n<br>\n 현으로 팔려고하는데..\n<br>\n 얼마에 팔지 결정을 못하겠네요.\n<br>\n 일단 가격 알려주세요. \n<br>\n 불러주시는 가격 고려해서 팔겠습니다.\n<br>\n<br>\n 그럼...\n<br>\n<br> <br>\n</span>\n",
+  "bodyText": "자리는 더이상 좋을수가 없고요... 타워 안에있는 그대로에서 블랙다이만 빼겠습니다. 상자 안에도 잡동사니들 좀... 됩니다. 현으로 팔려고하는데.. 얼마에 팔지 결정을 못하겠네요. 일단 가격 알려주세요. 불러주시는 가격 고려해서 팔겠습니다. 그럼...",
+  "author": "Swatch",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-02-10T11:36:51",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "타워.jpg",
+      "fileNum": 1,
+      "sizeBytes": 143872
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020308065923",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=423",
+  "sourceEngine": "zeroboard"
+}

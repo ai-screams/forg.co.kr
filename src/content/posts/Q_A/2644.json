@@ -1,0 +1,48 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2644",
+  "title": "배에 관한 질문임돠.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                여기 글 오랜만에 써보는군요.케켘\n<br>\n 다름이 아니라 배에 관한 질문인데용\n<br>\n 제가 드뎌 배를 샀는데 안에서는 배문을 더블클릭하니 닫아지던데\n<br>\n 밖에서는 안닫아 지는군요.밖에서 닫는법좀 갈켜주세요.\n<br>\n 그럼 이만.<br> <br>\n\n</span>\n",
+  "bodyText": "여기 글 오랜만에 써보는군요.케켘 다름이 아니라 배에 관한 질문인데용 제가 드뎌 배를 샀는데 안에서는 배문을 더블클릭하니 닫아지던데 밖에서는 안닫아 지는군요.밖에서 닫는법좀 갈켜주세요. 그럼 이만.",
+  "author": "나그네",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-04-21T00:18:03",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "야호",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "밖에서는 닫을수가 없구여...걍놔두면 알아서 닫혀요...그대신 밖에서는 배를 접을수가 있어요...그리고 배문을 잠그면"
+    },
+    {
+      "author": "야호",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "안에서만 열수있구여 밖에서는 열수 없어요..."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "배키 더블클릭 밖에서 배문을 클릭하시면 열린상태가 됩니다..."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "하지만 아무나 탈수 있으므로 안하시는게 좋겠져"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010505152820",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2644",
+  "sourceEngine": "zeroboard"
+}

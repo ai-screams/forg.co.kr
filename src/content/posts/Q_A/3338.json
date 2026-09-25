@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3338",
+  "title": "흐미;; 이벨 매클이 영 안 되네요-_-",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                마법사를 하나 새로 키우고 있거든요;;\n<br>\n 그래서 이벨부터 올리려고 스킬 700 만들고 핑퐁하고 메절 30에서 잠그고 무한항로에서 어스퀘이크 스크롤로 하고 있습니다.\n<br>\n 근데, 8타일이 제대로 안 먹히네요;; 제 매클이 잘못된건지 봐주세요-_ㅠ\n<br>\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 말하기 : One Forward\n<br>\n 딜레이 : 1500(1.5초)\n<br>\n 라스트 오브젝트(어스 퀘이크 스크롤 사용)\n<br>\n 딜레이 : 2000(2초)\n<br>\n<br>\n 이렇게 해놓고 계속 돌리는데, 스킬이 함 오르면 8칸 가면 또 올라야 할텐데, 안 오르고 그냥 끊겨 버리네요-_ㅠ\n<br>\n 뭔가 잘못된게 있나요?<br> <br>\n\n</span>\n",
+  "bodyText": "마법사를 하나 새로 키우고 있거든요;; 그래서 이벨부터 올리려고 스킬 700 만들고 핑퐁하고 메절 30에서 잠그고 무한항로에서 어스퀘이크 스크롤로 하고 있습니다. 근데, 8타일이 제대로 안 먹히네요;; 제 매클이 잘못된건지 봐주세요-_ㅠ 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 말하기 : One Forward 딜레이 : 1500(1.5초) 라스트 오브젝트(어스 퀘이크 스크롤 사용) 딜레이 : 2000(2초) 이렇게 해놓고 계속 돌리는데, 스킬이 함 오르면 8칸 가면 또 올라야 할텐데, 안 오르고 그냥 끊겨 버리네요-_ㅠ 뭔가 잘못된게 있나요?",
+  "author": "삼바쿠",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-11T18:09:44",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "kalli",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "삼바쿠님의 8타일은 맞긴한데요. 8타일마다 스킬이 오르는건 아무곳에나 다 되는것이 아니에요. 특정포인트만 가능하죠. 보통은 한번오르면 연타로 2-3번이 한계인거 같습니다.\n 물론 한번오르고 끝나는 경우도 많구요. 일단 오른곳에서 다시 오르는 경우가 많으므로 몇곳 포인트를 정해서 돌면 스킬올리기 수월할겁니다."
+    },
+    {
+      "author": "lius",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "uoa사용하시나봐여 그럼 말하기에 딜레이 없어두 되여 마지막에만 딜레이 2000정도 주심 무난할듯하네요. 그리고 스킬이 오르는거는 꼭 8타일 움직였다고 오르는거 아니구요 확률이 높다는거죠. 절대 8타일 움직인다해서 스킬 꼭주는건 아니랍니다. 그럼 -_-;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729085933",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3338",
+  "sourceEngine": "zeroboard"
+}

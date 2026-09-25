@@ -1,0 +1,36 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1987",
+  "title": "와우.. 홈 조금 바꼈네요",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                날로 발전해가는 포그사이트 올떄마다 새롭네요 ^_^<br> <br>\n\n</span>\n",
+  "bodyText": "날로 발전해가는 포그사이트 올떄마다 새롭네요 ^_^",
+  "author": "엘리노",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-30T20:12:04",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "콜렉트",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "넘 머시써 졌죵~~~"
+    },
+    {
+      "author": "무명인&Rorita",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "흠.. 전 이번어하기전이 더 좋았는데..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010724061706",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1987",
+  "sourceEngine": "zeroboard"
+}

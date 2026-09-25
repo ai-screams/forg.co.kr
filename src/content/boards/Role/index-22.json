@@ -1,10 +1,10 @@
 {
   "board": "Role",
   "page": 22,
-  "totalPages": 26,
-  "totalPosts": 1283,
-  "totalWithPost": 1197,
-  "generatedAt": "2026-09-21T00:09:07Z",
+  "totalPages": 27,
+  "totalPosts": 1313,
+  "totalWithPost": 1243,
+  "generatedAt": "2026-09-25T11:30:56Z",
   "entries": [
     {
       "postId": "512",
@@ -571,8 +571,8 @@
       "title": "롱소드에 대해서..",
       "categoryLabel": null,
       "author": "saisaris",
-      "authorMemberNo": "133",
-      "createdAt": "2001-06-25T00:00:00",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-25T00:23:41",
       "createdAtApprox": false,
       "yearApprox": false,
       "commentCount": 3,
@@ -580,7 +580,7 @@
       "hits": 271,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": true
     },
     {
       "postId": "281",

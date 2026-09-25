@@ -1,0 +1,29 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "195",
+  "title": "킾 팝니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.co.kr/zb/data/AA0018.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/zb/data/AA0018.jpg\"><br>\n<br>\n &nbsp;&nbsp;백두 펠루카 베스퍼 킾을 현에 팝니다. 집위치는 킾터중에서 젤 좋다고 생각합니다. 마을가깝고 바다, 숲이 바로 옆에 있습니다.\n<br>\n<br>\n &nbsp;&nbsp;IRC Nick : JakaL . #Baekdu , #Forgchat 방에서 찾아주십시오.\n<br>\n<br>\n &nbsp;&nbsp;E-Mail : boysbe-jin@hanmail.net<br> <br>\n</span>\n",
+  "bodyText": "백두 펠루카 베스퍼 킾을 현에 팝니다. 집위치는 킾터중에서 젤 좋다고 생각합니다. 마을가깝고 바다, 숲이 바로 옆에 있습니다. IRC Nick : JakaL . #Baekdu , #Forgchat 방에서 찾아주십시오. E-Mail : boysbe-jin@hanmail.net",
+  "author": "JakaL",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "AA0018.jpg",
+      "fileNum": 1,
+      "sizeBytes": 176332
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020302165823",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=195",
+  "sourceEngine": "zeroboard"
+}

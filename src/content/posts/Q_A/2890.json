@@ -1,0 +1,30 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2890",
+  "title": "서드던에 관한 질문입니다.",
+  "categoryLabel": "re",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                제가 들은 바로는 서드돈은 두가지가 있다고 합니다.\n<br>\n<br>\n 기존의 계정을 소유 한 분들을 위한 서드돈과 \n<br>\n<br>\n 계정을 소유 하지 않은 분들을 위한 것입니다. \n<br>\n<br>\n 계정을 소유 하지 않은 분들을 위한 서드돈 에는 코드가 들어 있어서 \n<br>\n<br>\n 그걸로 계정을 만들수가 있다고 하더군요.<br> <br>\n\n</span>\n",
+  "bodyText": "제가 들은 바로는 서드돈은 두가지가 있다고 합니다. 기존의 계정을 소유 한 분들을 위한 서드돈과 계정을 소유 하지 않은 분들을 위한 것입니다. 계정을 소유 하지 않은 분들을 위한 서드돈 에는 코드가 들어 있어서 그걸로 계정을 만들수가 있다고 하더군요.",
+  "author": "sarevok",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "아침하늘",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "답변 고맙습니다^_^"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010625005647",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2890",
+  "sourceEngine": "zeroboard"
+}

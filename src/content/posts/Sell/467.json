@@ -1,0 +1,48 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "467",
+  "title": "펠루카 집 팝니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                펠루카에 위치한 2층 엘자 집 팝니다.\n<br>\n 시큐어 숫자10개짜리 집이구요.\n<br>\n 집은 트린식 위쪽에 자리 잡구 있습니다.\n<br>\n 주위에 몬스터 안나오구,\n<br>\n 힐러두 주위에 있습니다.\n<br>\n 리플 달아 주시거나 메일보내주세요\n<br>\n<a href=\"mailto:aruda@hanmail.net\">aruda@hanmail.net</a> 입니다.<br> <br>\n\n</span>\n",
+  "bodyText": "펠루카에 위치한 2층 엘자 집 팝니다. 시큐어 숫자10개짜리 집이구요. 집은 트린식 위쪽에 자리 잡구 있습니다. 주위에 몬스터 안나오구, 힐러두 주위에 있습니다. 리플 달아 주시거나 메일보내주세요 aruda@hanmail.net 입니다.",
+  "author": "aruda",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-02-17T02:28:01",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "xxx",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "얼마에요 ㅡㅡ;"
+    },
+    {
+      "author": "opp",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "35만 거래합시다."
+    },
+    {
+      "author": "xxx",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "ㅋ ㅔ 나한테 파셔요 더 쳐줄게요"
+    },
+    {
+      "author": "opp",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "40만"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020225131758",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=467",
+  "sourceEngine": "zeroboard"
+}

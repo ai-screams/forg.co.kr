@@ -1,0 +1,23 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "6",
+  "title": "프로보케이션 메크로....(Written By Saram)",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\"><br>\n                현재 81을 약간 넘긴 상태입니다.심심할때마다 돌리다보니 40대에서 어느덧 80을 넘겼네요.40~50대까지는 펠루카 문글로우 묘지에서 수없이 죽어가면서 어렵게 어렵게 올렸는데 트래멀 미로를 알아서 메클을 돌리니 너무나도 쉬워지는군요.첫날 70을 훌쩍 넘겼었습니다..\n<br>\n<br>\n 먼저 메크로는 자체메클과 uoloop으로만 해결이 가능합니다.\n<br>\n 자체메클에,\n<br>\n Use Skill - Provocation\n<br>\n TargetNext\n<br>\n LastTarget\n<br>\n Delay 3000\n<br>\n TargetNext\n<br>\n LastTarget\n<br>\n<br>\n 이렇게 만들어주고 uoloop으로 딜레이 3000을 준뒤 마구 돌리면 알아서 잘 돌더군요.-_-;\n<br>\n 트래멀이라는 지역특성상 그레이로 플래깅될 걱정도 없고 편리합니다....만....\n<br>\n<br>\n 여전히 매크로는 찔리는군요.게다가 요새는 게임마스터나 카운셀러가 자주 출몰하니 주의하시기 바랍니다.그리고 되도록이면 손으로 키우는것이 울온을 진짜 즐기는 지혜겠죠.\n<br>\n (전 뭐냐구요? -_-;; 그...그게....)<br> <br>\n\n</span>\n",
+  "bodyText": "현재 81을 약간 넘긴 상태입니다.심심할때마다 돌리다보니 40대에서 어느덧 80을 넘겼네요.40~50대까지는 펠루카 문글로우 묘지에서 수없이 죽어가면서 어렵게 어렵게 올렸는데 트래멀 미로를 알아서 메클을 돌리니 너무나도 쉬워지는군요.첫날 70을 훌쩍 넘겼었습니다.. 먼저 메크로는 자체메클과 uoloop으로만 해결이 가능합니다. 자체메클에, Use Skill - Provocation TargetNext LastTarget Delay 3000 TargetNext LastTarget 이렇게 만들어주고 uoloop으로 딜레이 3000을 준뒤 마구 돌리면 알아서 잘 돌더군요.-_-; 트래멀이라는 지역특성상 그레이로 플래깅될 걱정도 없고 편리합니다....만.... 여전히 매크로는 찔리는군요.게다가 요새는 게임마스터나 카운셀러가 자주 출몰하니 주의하시기 바랍니다.그리고 되도록이면 손으로 키우는것이 울온을 진짜 즐기는 지혜겠죠. (전 뭐냐구요? -_-;; 그...그게....)",
+  "author": "anonymous",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-03-17T19:23:08",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010418063103",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOForum&no=6",
+  "sourceEngine": "zeroboard"
+}

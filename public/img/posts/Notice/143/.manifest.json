@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "event2.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/event2.gif",
+    "capturedAt": "20011224135953",
+    "sizeBytes": 62708,
+    "sha256": "ea36243831659fc272207f7a4bca441b908cc9c53de71dbfdabd824aaa28a791",
+    "digest": "A34X7DIS7V6U262VTCPDVJQ5LRDSU5OC"
+  },
+  {
+    "filename": "event3.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/event3.gif",
+    "capturedAt": "20011224135643",
+    "sizeBytes": 37157,
+    "sha256": "aec30396b254c1438c5c9bc82c054e30bede98cc92d6dc4fb637275797b20278",
+    "digest": "K5FBIEXRVXBGHA5F7UNMJVPY5YIUSA2L"
+  },
+  {
+    "filename": "quest_10.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/quest_10.gif",
+    "capturedAt": "20011224142506",
+    "sizeBytes": 144512,
+    "sha256": "6d68ae7156a051077cb21986c36b94112dfdbea621f803630b1b5a158c76c6bc",
+    "digest": "JHNX47LOCE44YHVMYNJIUFLSVHNXV44P"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2611",
+  "title": "저.. 바드인데요... irc에 바드모임이 있나요?",
+  "categoryLabel": "질문",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                 irc에 바드모임있으면 좀 알켜주세요... \n<br>\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;즈런~! ^^)/<br> <br>\n\n</span>\n",
+  "bodyText": "irc에 바드모임있으면 좀 알켜주세요... 즈런~! ^^)/",
+  "author": "-Wed-",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-04-14T21:41:38",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "lius",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "바드모임은 없는거 같던데 궁금한게 있음 질문하세요 답변 드리죠."
+    },
+    {
+      "author": "-Wed-",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이런..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010418062302",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2611",
+  "sourceEngine": "zeroboard"
+}

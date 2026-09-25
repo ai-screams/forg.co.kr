@@ -1,0 +1,42 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "7",
+  "title": "그레이트 포이즌, 데들리 포션",
+  "categoryLabel": "판매",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                그레이트 포이즌 7000,\n<br>\n 데들리 25000입니다.<br> <br>\n\n</span>\n",
+  "bodyText": "그레이트 포이즌 7000, 데들리 25000입니다.",
+  "author": "Avatar",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Avatar",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "각각 20통 3통있습니다. 포이즈닝 스킬 올리실때 쓰시면 될거 같습니다. 전 포기한 스킬이라... -_- 일괄구매시 더 싸게 드립니다."
+    },
+    {
+      "author": "HYUN",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아량 이시면 제게 파세요.....전 저녁 나절에 주로 #sp에 있습니다....아니면 아바타님이 어디 계신지 알려 주시면 제가 찾아가겠습니다...그럼 즐온하십시요..."
+    },
+    {
+      "author": "Avatar",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "#forgchat에 있슴돠 ㅎㅎ.. 제가 찾아가지요.. 혹시 에오에이 현님인가 ㅡ.ㅡ 나도 AoA인데.."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020302164140",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=7",
+  "sourceEngine": "zeroboard"
+}

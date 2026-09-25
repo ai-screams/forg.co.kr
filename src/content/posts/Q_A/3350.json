@@ -1,0 +1,42 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3350",
+  "title": "저기 이런질문 한다고 놀리지 마세영... 3가지 질문... -_-;;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                좀 황당한 질문 인뎅...\n<br>\n 1.한국 샤드 겜마는 국어를 쓰나영? 영어를 쓰나요?\n<br>\n<br>\n 2.그리구 여전사를 영어로 머라구 해여 전사는 fighter인뎅..\n<br>\n<br>\n 3.마지막으로 룬북 메졀 0이라두 이동하는데 지장 업나여?\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "좀 황당한 질문 인뎅... 1.한국 샤드 겜마는 국어를 쓰나영? 영어를 쓰나요? 2.그리구 여전사를 영어로 머라구 해여 전사는 fighter인뎅.. 3.마지막으로 룬북 메졀 0이라두 이동하는데 지장 업나여?",
+  "author": "최고야",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-13T19:34:11",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "HolyPink",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1. 국어를 씁니다. 2. 여전사는 NPC 일경우에 name The Fighter, 플레이어일 경우 Warrior(남자와 같음) 3. 메절 0이면 지장이 있습니다. 약 10정도는 되야 그래도 조금은 쉬워집니다."
+    },
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "1. 영어 + 국어\n 2. Fighter, warrior\n 3. 가끔 있습니다. 위급할때 생기면 누워야 합니다..."
+    },
+    {
+      "author": "마오",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "메절30이면 잘나갑니다 슝슝"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010729090546",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3350",
+  "sourceEngine": "zeroboard"
+}

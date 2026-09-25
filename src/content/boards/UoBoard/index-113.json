@@ -1,13 +1,13 @@
 {
   "board": "UoBoard",
   "page": 113,
-  "totalPages": 117,
-  "totalPosts": 5822,
-  "totalWithPost": 4393,
-  "generatedAt": "2026-09-21T00:09:07Z",
+  "totalPages": 122,
+  "totalPosts": 6091,
+  "totalWithPost": 4670,
+  "generatedAt": "2026-09-25T11:30:56Z",
   "entries": [
     {
-      "postId": "27686",
+      "postId": "31693",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -23,7 +23,263 @@
       "hasPost": true
     },
     {
-      "postId": "27685",
+      "postId": "31689",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 86,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31688",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 101,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31687",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 197,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31686",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 113,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31685",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 107,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31684",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 168,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31682",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 188,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31681",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 235,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31680",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 122,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31679",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 102,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31678",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 166,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31675",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 200,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31673",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 53,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31672",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 165,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31671",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 86,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "31667",
+      "title": "(제목 없음)",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T09:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 334,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "29489",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -39,7 +295,7 @@
       "hasPost": true
     },
     {
-      "postId": "27684",
+      "postId": "29488",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -55,7 +311,7 @@
       "hasPost": true
     },
     {
-      "postId": "27683",
+      "postId": "29487",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -71,7 +327,7 @@
       "hasPost": true
     },
     {
-      "postId": "27682",
+      "postId": "29486",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -87,7 +343,7 @@
       "hasPost": true
     },
     {
-      "postId": "27681",
+      "postId": "29485",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -103,7 +359,7 @@
       "hasPost": true
     },
     {
-      "postId": "27680",
+      "postId": "29483",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -119,7 +375,7 @@
       "hasPost": true
     },
     {
-      "postId": "27679",
+      "postId": "29482",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -135,7 +391,7 @@
       "hasPost": true
     },
     {
-      "postId": "27678",
+      "postId": "29481",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -151,7 +407,7 @@
       "hasPost": true
     },
     {
-      "postId": "27677",
+      "postId": "29480",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -167,7 +423,7 @@
       "hasPost": true
     },
     {
-      "postId": "27675",
+      "postId": "29479",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -183,7 +439,7 @@
       "hasPost": true
     },
     {
-      "postId": "27673",
+      "postId": "29478",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -199,7 +455,7 @@
       "hasPost": true
     },
     {
-      "postId": "27672",
+      "postId": "29477",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -215,7 +471,7 @@
       "hasPost": true
     },
     {
-      "postId": "27671",
+      "postId": "29476",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -231,7 +487,7 @@
       "hasPost": true
     },
     {
-      "postId": "27670",
+      "postId": "29475",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -247,7 +503,7 @@
       "hasPost": true
     },
     {
-      "postId": "27669",
+      "postId": "29472",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -263,7 +519,7 @@
       "hasPost": true
     },
     {
-      "postId": "27666",
+      "postId": "29470",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -279,7 +535,7 @@
       "hasPost": true
     },
     {
-      "postId": "27664",
+      "postId": "29468",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -295,7 +551,7 @@
       "hasPost": true
     },
     {
-      "postId": "27663",
+      "postId": "29467",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -311,7 +567,7 @@
       "hasPost": true
     },
     {
-      "postId": "27662",
+      "postId": "29466",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -327,7 +583,7 @@
       "hasPost": true
     },
     {
-      "postId": "27661",
+      "postId": "29465",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -343,7 +599,7 @@
       "hasPost": true
     },
     {
-      "postId": "27660",
+      "postId": "29464",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -359,7 +615,7 @@
       "hasPost": true
     },
     {
-      "postId": "27659",
+      "postId": "29462",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -375,7 +631,7 @@
       "hasPost": true
     },
     {
-      "postId": "27658",
+      "postId": "29461",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -391,7 +647,7 @@
       "hasPost": true
     },
     {
-      "postId": "27657",
+      "postId": "29460",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -407,7 +663,7 @@
       "hasPost": true
     },
     {
-      "postId": "27655",
+      "postId": "29459",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -423,7 +679,7 @@
       "hasPost": true
     },
     {
-      "postId": "27653",
+      "postId": "29457",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -439,7 +695,7 @@
       "hasPost": true
     },
     {
-      "postId": "27652",
+      "postId": "29455",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -455,7 +711,7 @@
       "hasPost": true
     },
     {
-      "postId": "27650",
+      "postId": "29454",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -471,7 +727,7 @@
       "hasPost": true
     },
     {
-      "postId": "27649",
+      "postId": "29453",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -487,7 +743,7 @@
       "hasPost": true
     },
     {
-      "postId": "27645",
+      "postId": "29452",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -503,7 +759,7 @@
       "hasPost": true
     },
     {
-      "postId": "27643",
+      "postId": "29451",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -519,7 +775,7 @@
       "hasPost": true
     },
     {
-      "postId": "27641",
+      "postId": "29450",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",
@@ -535,263 +791,7 @@
       "hasPost": true
     },
     {
-      "postId": "27640",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27633",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27630",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27625",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27624",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27620",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27619",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27618",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27614",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27611",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27607",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27604",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27601",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27600",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27598",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27596",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T09:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "27594",
+      "postId": "29448",
       "title": "(제목 없음)",
       "categoryLabel": null,
       "author": "anonymous",

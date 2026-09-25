@@ -1,0 +1,30 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3147",
+  "title": "로어버그 아직도 되요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                로어버그 아직도 되요?<br> <br>\n\n</span>\n",
+  "bodyText": "로어버그 아직도 되요?",
+  "author": "ㅎㅎ",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-22T17:59:02",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "myth-tamer",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아직 되는걸로 알고 있는데여..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010715121418",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3147",
+  "sourceEngine": "zeroboard"
+}

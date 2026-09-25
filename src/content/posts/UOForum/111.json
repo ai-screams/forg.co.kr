@@ -1,0 +1,42 @@
+{
+  "board": "UOForum",
+  "boardKr": "UOForum",
+  "postId": "111",
+  "title": "kalli의 헬프(도움요청) 알고쓰기",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                울티마를 하다보면 정말 다급할때가 많죠.\n<br>\n 이때 헬프를 하는데 계속 \"요청이 무산되었습니다\"라고 나오면\n<br>\n 정말 화가나요.\n<br>\n 예전에는 그냥 헬프만 누르면 자동으로 대기자 명단에 올랐지만\n<br>\n 이제 이용자가 많아지면서 헬프도 사용법이 따로 생겼어요.\n<br>\n<br>\n 헬프(1) 이키를 누르면 <a href=\"http://uo.custhelp.com/cgi-bin/uo.cfg/php/enduser/home.php\">http://uo.custhelp.com/cgi-bin/uo.cfg/php/enduser/home.php</a> 로 이동해요.\n<br>\n 알아서 읽으라는 뜻이죠. ^^; 일종의 매뉴얼입니다.\n<br>\n<br>\n 헬프(2) 이키를 누르면 블튼, 미녹등 몇개의 마을로 이동합니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;유령으로 떠돌거나 도저히 길을 못찾을때 사용하면 되죠.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;참 이건 하루2번뿐이 안되는거 아시죠?\n<br>\n<br>\n 헬프(3) 이키는 다른 플레이어가 괴롭힘을 할때 쓰는 키죠.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)번키보다 우선적으로 취급됩니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 단 중요하지 않은일에 이 키를 사용하면 \"늑대가왔다고 소리친\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 목동\"처럼 혼납니다. 소문에 의하면 3번이상 거짓 사용하면 블럭이 된다는군요.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이키사용법 =&gt; 키를 누른후 괴롭힘을 한 플레이어의 아뒤를\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 화면에서 친후 엔터를 치면 본인과, 괴롭힘플레이어의\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대화내용이 전후 10분간 저장됩니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대화내용이 확인되면 겜마가 늦게와도 그계정은 블럭되죠.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 문제는 10분이 넘었을경우인데 그럼 안타깝게도 \n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 사기등의 경우 보상받기 힘듭니다. 빠른행동이 필요하죠.\n<br>\n<br>\n 헬프(4) 이키는 일반적인 겜마호출키입니다.\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이키를 사용할때도 (3)처럼 화면에서 한글로 어떤이유로 호출하는지\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;써야만 우선순위가 정해집니다. 참고로 제경우엔 3일동안 \n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;포이즈닝(그레이트3통사용)이 전혀 안올라서 \"스킬이 3일동안 전혀\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;안오릅니다\"라고 치니까 10분만에 오더군요. 그리고 스킬리셋을\n<br>\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;해줬습니다. 그 다음날 서버리부팅후에 접속하니까 스킬이 오르더군요.\n<br>\n<br>\n 헬프(3), (4)는 모두 우선순위는 플레이어의 메시지로 정하구요.\n<br>\n 우선순위에 상관없이 일단은 대기인수가 나옵니다. ^^;;\n<br>\n<br>\n 위와같은 방법으로 헬프를 사용하시면 훨씬 편하고 빠른 대처를 할수있습니다.\n<br>\n 특히 헬프(3)의 경우 대화내용저장은 아주 중요한 증거가 되기땜에 사기를\n<br>\n 당했을경우 캡쳐화면은 증거가 안되지만 상대아뒤에 대한 대화저장은 \n<br>\n 절대적으로 인정받기땜에 잘 사용하시면 좋은 결과가 있으리라 봅니다.\n<br>\n<br>\n 그럼 모두 좋은하루 되세요 ^^*\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "울티마를 하다보면 정말 다급할때가 많죠. 이때 헬프를 하는데 계속 \"요청이 무산되었습니다\"라고 나오면 정말 화가나요. 예전에는 그냥 헬프만 누르면 자동으로 대기자 명단에 올랐지만 이제 이용자가 많아지면서 헬프도 사용법이 따로 생겼어요. 헬프(1) 이키를 누르면 http://uo.custhelp.com/cgi-bin/uo.cfg/php/enduser/home.php 로 이동해요. 알아서 읽으라는 뜻이죠. ^^; 일종의 매뉴얼입니다. 헬프(2) 이키를 누르면 블튼, 미녹등 몇개의 마을로 이동합니다. 유령으로 떠돌거나 도저히 길을 못찾을때 사용하면 되죠. 참 이건 하루2번뿐이 안되는거 아시죠? 헬프(3) 이키는 다른 플레이어가 괴롭힘을 할때 쓰는 키죠. (4)번키보다 우선적으로 취급됩니다. 단 중요하지 않은일에 이 키를 사용하면 \"늑대가왔다고 소리친 목동\"처럼 혼납니다. 소문에 의하면 3번이상 거짓 사용하면 블럭이 된다는군요. 이키사용법 => 키를 누른후 괴롭힘을 한 플레이어의 아뒤를 화면에서 친후 엔터를 치면 본인과, 괴롭힘플레이어의 대화내용이 전후 10분간 저장됩니다. 대화내용이 확인되면 겜마가 늦게와도 그계정은 블럭되죠. 문제는 10분이 넘었을경우인데 그럼 안타깝게도 사기등의 경우 보상받기 힘듭니다. 빠른행동이 필요하죠. 헬프(4) 이키는 일반적인 겜마호출키입니다. 이키를 사용할때도 (3)처럼 화면에서 한글로 어떤이유로 호출하는지 써야만 우선순위가 정해집니다. 참고로 제경우엔 3일동안 포이즈닝(그레이트3통사용)이 전혀 안올라서 \"스킬이 3일동안 전혀 안오릅니다\"라고 치니까 10분만에 오더군요. 그리고 스킬리셋을 해줬습니다. 그 다음날 서버리부팅후에 접속하니까 스킬이 오르더군요. 헬프(3), (4)는 모두 우선순위는 플레이어의 메시지로 정하구요. 우선순위에 상관없이 일단은 대기인수가 나옵니다. ^^;; 위와같은 방법으로 헬프를 사용하시면 훨씬 편하고 빠른 대처를 할수있습니다. 특히 헬프(3)의 경우 대화내용저장은 아주 중요한 증거가 되기땜에 사기를 당했을경우 캡쳐화면은 증거가 안되지만 상대아뒤에 대한 대화저장은 절대적으로 인정받기땜에 잘 사용하시면 좋은 결과가 있으리라 봅니다. 그럼 모두 좋은하루 되세요 ^^*",
+  "author": "kalli",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-12T15:32:55",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "SiLeS",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "글을너무깔끔하게잘쓰셔서반했습니다많은분들이이글보고많은도움이될듯하네요"
+    },
+    {
+      "author": "루비안",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "저는 어제까지만해두 헬프쓰는법을 몰랐다는...-.-;;헬프눌르고 가만히 있는데 괘니 도움요청무산됬다고만 나오구 대기인수같은거두 안나와서 얼마나 황당했던지 -.-;;"
+    },
+    {
+      "author": "친구",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헬프를 누르면 어느때는 영어로 나오고 어느떄는 한글로 나와요 왜 그런거져?"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010818130546",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOForum&no=111",
+  "sourceEngine": "zeroboard"
+}

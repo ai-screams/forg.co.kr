@@ -1,0 +1,30 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2615",
+  "title": "저기 여기서 글쓴거 조회수 볼려면 어떻게 해야 하나여?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                제가 아시다시피(모르실려나?)롤플레이에 글을 올리고 있는데여 조회수를 보고 싶어서여.<br> <br>\n\n</span>\n",
+  "bodyText": "제가 아시다시피(모르실려나?)롤플레이에 글을 올리고 있는데여 조회수를 보고 싶어서여.",
+  "author": "우체부",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-04-15T21:45:58",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "강지훈",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "글이름 옆에, 날짜 옆에 숫자가 조회수입니다~"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010418040034",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2615",
+  "sourceEngine": "zeroboard"
+}

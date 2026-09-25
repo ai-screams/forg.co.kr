@@ -1,0 +1,23 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "289",
+  "title": "테스트 센터2에서 새 시나리오를.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\"><br>\n                관심있는 사람을 위해서 저희는 다음번 시나리오의 첫주 내용을 테스트 센터2 샤드\n<br>\n 에 적용했습니다. 이 퍼블리쉬에는 미덕 시스템의 희생 부분도 포함되어 있습니다.\n<br>\n 언제나와 마찬가지로 버그를 찾으셨다면<a href=\"mailto:tcbugs@uo.com\">tcbugs@uo.com</a>로 연락하여 주십시오.\n<br>\n 버그 리포트를 저희 품질보증팀에게 보내실때면 다음 정보를 꼭 포함하여 \n<br>\n 주십시오. :\n<br>\n<br>\n 1. UO account name (패스워드는 쓰지 마십시오)\n<br>\n 2. The time, date, shard, and facet of the occurrence: 발견 날짜 시간 샤드 대륙\n<br>\n 3. What steps you took that led up to the bug: 버그에 이르게된 과정\n<br>\n 4. Whether or not you tried to repeat the bug, and if you succeeded: \n<br>\n &nbsp;&nbsp;버그를 반복시도&nbsp;&nbsp;해 보았는지. 또한 그 시도가 성공했는지. \n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "관심있는 사람을 위해서 저희는 다음번 시나리오의 첫주 내용을 테스트 센터2 샤드 에 적용했습니다. 이 퍼블리쉬에는 미덕 시스템의 희생 부분도 포함되어 있습니다. 언제나와 마찬가지로 버그를 찾으셨다면 tcbugs@uo.com 로 연락하여 주십시오. 버그 리포트를 저희 품질보증팀에게 보내실때면 다음 정보를 꼭 포함하여 주십시오. : 1. UO account name (패스워드는 쓰지 마십시오) 2. The time, date, shard, and facet of the occurrence: 발견 날짜 시간 샤드 대륙 3. What steps you took that led up to the bug: 버그에 이르게된 과정 4. Whether or not you tried to repeat the bug, and if you succeeded: 버그를 반복시도  해 보았는지. 또한 그 시도가 성공했는지.",
+  "author": "녕이",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-01-11T10:00:43",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020215174344",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Notice&no=289",
+  "sourceEngine": "zeroboard"
+}

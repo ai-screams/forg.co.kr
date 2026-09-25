@@ -1,0 +1,36 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3303",
+  "title": "유니콘이여",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                남자가 폴리모프해서 탈수잇나영 @@;;\n<br>\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "남자가 폴리모프해서 탈수잇나영 @@;;",
+  "author": "카알",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-07-06T19:08:28",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": ".....",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "안돼요"
+    },
+    {
+      "author": "zz",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아뇨."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010731044445",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3303",
+  "sourceEngine": "zeroboard"
+}

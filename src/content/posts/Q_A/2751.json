@@ -1,0 +1,48 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2751",
+  "title": "초보가 고수에게?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                말 사긴 했는데 \n<br>\n 말 어떻게 타죠?\n<br>\n 그리고 명령이나 다른 것도 알고 있으시면 부탁 드려요.<br> <br>\n\n</span>\n",
+  "bodyText": "말 사긴 했는데 말 어떻게 타죠? 그리고 명령이나 다른 것도 알고 있으시면 부탁 드려요.",
+  "author": "박상수",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-05-16T02:09:59",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "김기태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "말을 더블클릭하면 타져요 ㅡ.ㅡ;"
+    },
+    {
+      "author": "김기태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "all follow me 말에게 자기를 따라오라는명령어"
+    },
+    {
+      "author": "김기태",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "all stay 말에게 휴식명령어.. 이건 말에서 내려서.."
+    },
+    {
+      "author": "Azrael",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "좀 가까이서 더블클릭... 2타일 이내이던가??"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010531220044",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2751",
+  "sourceEngine": "zeroboard"
+}

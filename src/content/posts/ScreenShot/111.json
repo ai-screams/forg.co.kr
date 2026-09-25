@@ -1,0 +1,29 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "111",
+  "title": "템하다 찍은 스샷",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/987596032/1.JPG\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/987596032/1.JPG\"><br>           앞으로 나란히 하고 있는 헬하운드 3마리가 마리당 템을 0.1씩 줬어염\n<br>\n 하도 기뻐서 스샷 올림다 ^^*<br> <br>\n</span>\n",
+  "bodyText": "앞으로 나란히 하고 있는 헬하운드 3마리가 마리당 템을 0.1씩 줬어염 하도 기뻐서 스샷 올림다 ^^*",
+  "author": "saisaris",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-04-18T21:13:52",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "1.JPG",
+      "fileNum": 1,
+      "sizeBytes": 86425
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010426122901",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=111",
+  "sourceEngine": "zeroboard"
+}

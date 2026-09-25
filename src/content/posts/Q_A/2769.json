@@ -1,0 +1,30 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2769",
+  "title": "더블 마법 쓰는법 갈켜주시면 감사하겠습니다",
+  "categoryLabel": "re",
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                더블마법이라면 어떤걸 말씀하시는지 질문의 방향을 잘 모르겠지만 서도 일단 마법 콤보라면 이렇습니다.\n<br>\n 익스플로젼이라고 6써클에 있을겁니다.\n<br>\n 이마법은 타겟에 적중되고 나서 약 3초정도의 딜레이가 있고 그 후에 펑하고 터지면서 데미지가 생기죠.&nbsp;&nbsp;이걸 이용한 콤보인데 첨에 익스플로젼을 캐스팅하고 타겟에 적중시킨다음 바로 다른 마법을 캐스팅 하는거죠.\n<br>\n 공격시에는 익스플로젼, 다음으로 칼바나 코포 이걸 쓰면 거의 같은때에 두개의 마법을 동시에 맞는 효과가 납니다.&nbsp;&nbsp;워나 듀얼시에 2~3명의 마사에게 이렇게 콤보 일점사를 맞는다면 레지가 젬이라도 살아남기가 좀 힘들죠.\n<br>\n 편하기 쓰실려면 매크로를 이용하는것도 괜찬습니다.\n<br>\n 다음에 나오는 내용은 매크로의 한 예입니다.&nbsp;&nbsp;\n<br>\n<br>\n [울온 자체 매클]\n<br>\n castspell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;explosion\n<br>\n wairfortarget&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n<br>\n lasttarget\n<br>\n delay ?&nbsp;&nbsp;[각자 핑에 맞게 계산해야 겠죠]\n<br>\n castspell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;energy bolt[또는 flamestrike]\n<br>\n waitfortarget\n<br>\n lasttarget\n<br>\n<br>\n 위의 방법으로 하시면 첨에 단검등을 더블클릭후 공격하고자 하는 타겟을 잡아놓으셔야 합니다.&nbsp;&nbsp; 약간 귀찬죠?&nbsp;&nbsp;비추천입니다.\n<br>\n 그냥 마법을 따로 매크로 하시고 라스트 타겟을 매크로 키에 잡아두시고 사용하는게 편합니다.\n<br>\n 익스플로젼 캐스팅하고 타겟찍자마자 다음 마법매크로키를 마구 연타 글구 라스트 타겟 키를 걍 꾸욱 누르고 계세요. 그럼 딜레이 거의 없이 바로 나가죠.&nbsp;&nbsp;\n<br>\n 워시에는 흔히들 말씀하시는 익스 +코포 를 잘 안날릴겁니다.\n<br>\n 요즘은 패턴이 바꼈더군요.\n<br>\n<br>\n 익스플로젼\n<br>\n 인녹스\n<br>\n 클럼지\n<br>\n 마인드 블라스터\n<br>\n<br>\n 전 발해에서 워를 안하고 체시에선 조금씩 하는편이데여[맨날 뒤지지만] 핑빨딸려도 그런대로는 잘먹힙니다.&nbsp;&nbsp;\n<br>\n 위의 콤보다음은 그야말로 실력이겠죠.&nbsp;&nbsp;전 저거 사용하고 난 다음은 거의 죽어요.&nbsp;&nbsp;싸움을 잘 못하거덩여.&nbsp;&nbsp;\n<br>\n 도움이 되셨길\n<br>\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "더블마법이라면 어떤걸 말씀하시는지 질문의 방향을 잘 모르겠지만 서도 일단 마법 콤보라면 이렇습니다. 익스플로젼이라고 6써클에 있을겁니다. 이마법은 타겟에 적중되고 나서 약 3초정도의 딜레이가 있고 그 후에 펑하고 터지면서 데미지가 생기죠.  이걸 이용한 콤보인데 첨에 익스플로젼을 캐스팅하고 타겟에 적중시킨다음 바로 다른 마법을 캐스팅 하는거죠. 공격시에는 익스플로젼, 다음으로 칼바나 코포 이걸 쓰면 거의 같은때에 두개의 마법을 동시에 맞는 효과가 납니다.  워나 듀얼시에 2~3명의 마사에게 이렇게 콤보 일점사를 맞는다면 레지가 젬이라도 살아남기가 좀 힘들죠. 편하기 쓰실려면 매크로를 이용하는것도 괜찬습니다. 다음에 나오는 내용은 매크로의 한 예입니다. [울온 자체 매클] castspell              explosion wairfortarget lasttarget delay ?  [각자 핑에 맞게 계산해야 겠죠] castspell              energy bolt[또는 flamestrike] waitfortarget lasttarget 위의 방법으로 하시면 첨에 단검등을 더블클릭후 공격하고자 하는 타겟을 잡아놓으셔야 합니다.   약간 귀찬죠?  비추천입니다. 그냥 마법을 따로 매크로 하시고 라스트 타겟을 매크로 키에 잡아두시고 사용하는게 편합니다. 익스플로젼 캐스팅하고 타겟찍자마자 다음 마법매크로키를 마구 연타 글구 라스트 타겟 키를 걍 꾸욱 누르고 계세요. 그럼 딜레이 거의 없이 바로 나가죠. 워시에는 흔히들 말씀하시는 익스 +코포 를 잘 안날릴겁니다. 요즘은 패턴이 바꼈더군요. 익스플로젼 인녹스 클럼지 마인드 블라스터 전 발해에서 워를 안하고 체시에선 조금씩 하는편이데여[맨날 뒤지지만] 핑빨딸려도 그런대로는 잘먹힙니다. 위의 콤보다음은 그야말로 실력이겠죠.  전 저거 사용하고 난 다음은 거의 죽어요.  싸움을 잘 못하거덩여. 도움이 되셨길",
+  "author": "HolyPink",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-05-20T11:23:16",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "각자의 핑에 맞에? 그거좀 갈켜주세여 --;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010531220351",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2769",
+  "sourceEngine": "zeroboard"
+}

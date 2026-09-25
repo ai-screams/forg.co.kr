@@ -1,0 +1,42 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "2956",
+  "title": "마나없애는걸 주섰는데..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                마나없애는차지 붙은거 좋나여??\n<br>\n 어제 주섰는데..\n<br>\n 차지가 36이었거든여..\n<br>\n 근데 갑자기 차지가 2루 바끼더니\n<br>\n 다시 0으루 바꼈어여 ㅡ.ㅡ;;\n<br>\n 왜그런지점 ...<br> <br>\n\n</span>\n",
+  "bodyText": "마나없애는차지 붙은거 좋나여?? 어제 주섰는데.. 차지가 36이었거든여.. 근데 갑자기 차지가 2루 바끼더니 다시 0으루 바꼈어여 ㅡ.ㅡ;; 왜그런지점 ...",
+  "author": "뉴비",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Rainbow",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "마나 드레인 옵션이졍.. 마법에도 있구염... 근디 이 차지는 숫자랑 쓰는거는 일치안하는걸로 알구있듬다.."
+    },
+    {
+      "author": "Rainbow",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "숫자가 사용횟수가 아니구.. 마나드레인의 정도에 따라 감소해버리는 걸로 암니다..."
+    },
+    {
+      "author": "HolyPink",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "드레인 아이템의 차지는 썻을때 감소시켰는 마나량으로 차지가 줄어듭니다."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010715114731",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=2956",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,29 @@
+{
+  "board": "Notice",
+  "boardKr": "Notice",
+  "postId": "256",
+  "title": "크리스마스 석상종류에 대해서..",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\"><br>\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/bell_all.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/bell_all.gif\"><br>           석상설명에 종그림이 무엇인가 물어보시는분들도 계시겟지만...\n<br>\n 이번 색상은 이전 이벤트로 나누어준 15가지의 색깔을 가진 종색입니다. -\"-\n<br>\n<br>\n 석상은 기본적인&nbsp;&nbsp;2종류와 방향이 각각 2방향으로 되어있으므로 2석상의 종류에다가\n<br>\n 15개의 색을 곱하고 방향이 바뀐 2종류를 곱해야 합을 가집니다.\n<br>\n 그러므로 합은 60개로 추정이 됩니다.\n<br>\n<br>\n 여기다가 멤버분들의 제보로 천사상과 다른 종류의 석상의 존재도 있다고 합니다..\n<br>\n 가지고 계신분 스샷란에다 올려주시면 고맙겠습니다..\n<br>\n 그러므로 총 갯수는 60개에서 +알파 해주시길--;;\n<br>\n<br>\n p.s : 기본풀셋이 60개+알파를 모아야 되고 기존 석상과 비교해서 색만 바꾼것이므로\n<br>\n 값어치는 떨어질것이라고 예상됩니다..\n<br>\n<br>\n<br>\n<br>\n<br> <br>\n</span>\n",
+  "bodyText": "석상설명에 종그림이 무엇인가 물어보시는분들도 계시겟지만... 이번 색상은 이전 이벤트로 나누어준 15가지의 색깔을 가진 종색입니다. -\"- 석상은 기본적인  2종류와 방향이 각각 2방향으로 되어있으므로 2석상의 종류에다가 15개의 색을 곱하고 방향이 바뀐 2종류를 곱해야 합을 가집니다. 그러므로 합은 60개로 추정이 됩니다. 여기다가 멤버분들의 제보로 천사상과 다른 종류의 석상의 존재도 있다고 합니다.. 가지고 계신분 스샷란에다 올려주시면 고맙겠습니다.. 그러므로 총 갯수는 60개에서 +알파 해주시길--;; p.s : 기본풀셋이 60개+알파를 모아야 되고 기존 석상과 비교해서 색만 바꾼것이므로 값어치는 떨어질것이라고 예상됩니다..",
+  "author": "Forg",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-12-21T13:13:29",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "bell_all.gif",
+      "fileNum": 1,
+      "sizeBytes": 4403
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020120223635",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=Notice&no=256",
+  "sourceEngine": "zeroboard"
+}

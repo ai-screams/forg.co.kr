@@ -1,0 +1,36 @@
+{
+  "board": "Sell",
+  "boardKr": "Sell",
+  "postId": "292",
+  "title": "깍여진 나무 개당 10에 대량 구입 원해요 ^^;",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                #생산길드조합에서\n<br>\n 추를 찾아 주세요 ^^:<br> <br>\n\n</span>\n",
+  "bodyText": "#생산길드조합에서 추를 찾아 주세요 ^^:",
+  "author": "추",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2002-01-24T01:25:43",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Tama",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이젠 버그 나무도 없는데... =.="
+    },
+    {
+      "author": "신디",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "개당 10원이면 너무 싸지 않을까요..예전에두 12원은 했었는데 지금은 나무하기 더 어려워졌답니다..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20020221035549",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zb/zboard.php?id=Sell&no=292",
+  "sourceEngine": "zeroboard"
+}

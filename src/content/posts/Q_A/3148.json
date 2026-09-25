@@ -1,0 +1,48 @@
+{
+  "board": "Q_A",
+  "boardKr": "Q_A",
+  "postId": "3148",
+  "title": "포그님 비밀장소에서 미로가 뭐요?",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                포그님 비밀장소에서 미로가 뭐요?\n<br>\n 그게 미로에 있나요?\n<br>\n<br> <br>\n\n</span>\n",
+  "bodyText": "포그님 비밀장소에서 미로가 뭐요? 그게 미로에 있나요?",
+  "author": "파비안",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-22T18:09:59",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "미로로된곳입니다...가보면 이해가 되니 그림에 보듯이 방향따라 가보시길..정 힘드시면 UO,TIP란에 UOAM을 익히시는것도 좋으실듯..."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "은행에서 게이트 열어달라고 해도 되지만 직접 가시는게 진정한 재미가 있을듯 합니다.."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "울타리는 랄포(텔레포트)마법으로 넘어가셔도 됩니다.."
+    },
+    {
+      "author": "파비안",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "감샤합니다"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010715121218",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Q_A&no=3148",
+  "sourceEngine": "zeroboard"
+}

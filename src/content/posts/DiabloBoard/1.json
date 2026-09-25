@@ -1,0 +1,23 @@
+{
+  "board": "DiabloBoard",
+  "boardKr": "DiabloBoard",
+  "postId": "1",
+  "title": "자유게시판입니다.",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                메인공지란 우측상단 sign in이라는 아이콘을 누르시거나 \n<br>\n 각 게시판 Join을 누르시면 가입하실 수 있고 \n<br>\n 또한 친한 멤버끼리는 홈피 로긴 상태에선 서로 쪽지를 주고받을수 있습니다.. \n<br>\n 로긴상태에서 각게시판 위를 보시면 Memo박스가 있는데 아이콘을 누르신후 \n<br>\n 접속한 친한 멤버끼리 쪽지를 주고 받을수 있습니다... \n<br>\n 그리고 자동로긴 기능이 잇어서 글쓰실때 아디같은건 \n<br>\n 전혀 쓰실 필요가 없다는 장점이-_-;;; \n<br>\n 좋은 하루 보내시길....^^ <br> <br>\n\n</span>\n",
+  "bodyText": "메인공지란 우측상단 sign in이라는 아이콘을 누르시거나 각 게시판 Join을 누르시면 가입하실 수 있고 또한 친한 멤버끼리는 홈피 로긴 상태에선 서로 쪽지를 주고받을수 있습니다.. 로긴상태에서 각게시판 위를 보시면 Memo박스가 있는데 아이콘을 누르신후 접속한 친한 멤버끼리 쪽지를 주고 받을수 있습니다... 그리고 자동로긴 기능이 잇어서 글쓰실때 아디같은건 전혀 쓰실 필요가 없다는 장점이-_-;;; 좋은 하루 보내시길....^^",
+  "author": "Forg",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-09-18T17:53:02",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20011108010708",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=DiabloBoard&no=1",
+  "sourceEngine": "zeroboard"
+}

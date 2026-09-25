@@ -1,0 +1,48 @@
+{
+  "board": "ScreenShot",
+  "boardKr": "ScreenShot",
+  "postId": "74",
+  "title": "세상에나 이렇게 꾸며놓구 사시는분도 있군요 3",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n<img border=\"0\" data-original-src=\"http://forg.uospace.net/zb/data/985708850/UO0003.jpg\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.uospace.net/zb/data/985708850/UO0003.jpg\"><br>           쩝... 이게 이층 <br> <br>\n</span>\n",
+  "bodyText": "쩝... 이게 이층",
+  "author": "lius",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UO0003.jpg",
+      "fileNum": 1,
+      "sizeBytes": 208076
+    }
+  ],
+  "comments": [
+    {
+      "author": "Judge",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이쁜데...쫌 괴기(?)하네요ㅡㅡ;;"
+    },
+    {
+      "author": "크헉헉",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "이사람 아무래도 피셔같애 ㅡㅡ;"
+    },
+    {
+      "author": ".....",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "헉 완전 2층은 과학실이네 ㅡㅡ;;"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010423014214",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=ScreenShot&no=74",
+  "sourceEngine": "zeroboard"
+}

@@ -1,0 +1,48 @@
+{
+  "board": "UoBoard",
+  "boardKr": "UoBoard",
+  "postId": "1930",
+  "title": "질문좀요//",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                저기 게시판이나 뭐 이런대 글쓸떄요 풀레쉬 무비같은거 볼수잇게 할려면 어케 해야해요?\n<br>\n 글제목클릭하고 들어가면 플레쉬무비같은거 바로 떠서 보게하는거요.. 저기 \n<br>\n 펀보드 란에가면 마시마로나 졸라맨같은거 올려져잇듯이요..\n<br>\n 제발좀 알려주세요..\n<br>\n 즐온들 돼세요<br> <br>\n\n</span>\n",
+  "bodyText": "저기 게시판이나 뭐 이런대 글쓸떄요 풀레쉬 무비같은거 볼수잇게 할려면 어케 해야해요? 글제목클릭하고 들어가면 플레쉬무비같은거 바로 떠서 보게하는거요.. 저기 펀보드 란에가면 마시마로나 졸라맨같은거 올려져잇듯이요.. 제발좀 알려주세요.. 즐온들 돼세요",
+  "author": "질문",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-06-24T14:40:46",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "<a href=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\">http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash</a> 이곳에 가셔서"
+    },
+    {
+      "author": "Saram",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "Install Now 버튼을 누르시면 자동으로 설치됩니다."
+    },
+    {
+      "author": "질문",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "아뇨 그걸 볼수잇는걸 말하는게 아니구요 그걸 어케 올리냐고요."
+    },
+    {
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "펀보드 17번란 보시길..."
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010719153325",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UoBoard&no=1930",
+  "sourceEngine": "zeroboard"
+}

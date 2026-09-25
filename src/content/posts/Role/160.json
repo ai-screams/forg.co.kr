@@ -1,0 +1,42 @@
+{
+  "board": "Role",
+  "boardKr": "Role",
+  "postId": "160",
+  "title": "반응 안좋음 ㅡㅡ",
+  "categoryLabel": null,
+  "bodyHtml": "\n<span style=\"line-height:160%\">\n                머시 좋아 아에 안좋아 ㅡㅡ<br> <br>\n\n</span>\n",
+  "bodyText": "머시 좋아 아에 안좋아 ㅡㅡ",
+  "author": "우헤헤헤",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "2001-02-16T18:44:52",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [
+    {
+      "author": "우체부",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "경고 했져..안좋아도 올려여...글구.."
+    },
+    {
+      "author": "우체부",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "제가 개인적으로 게시판에 글에 대구 뭐라구 하시는거 별로 않 좋아해여..."
+    },
+    {
+      "author": "우체부",
+      "authorMemberNo": null,
+      "createdAt": "1970-01-01T00:00:00",
+      "bodyHtml": "그니까...보기 싫음 보시지 마세요...이렇게 서로 감정 상하지 말구"
+    }
+  ],
+  "era": "2003",
+  "capturedAt": "20010420063909",
+  "parsedAt": "2026-09-25T20:42:56.095026",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=Role&no=160",
+  "sourceEngine": "zeroboard"
+}

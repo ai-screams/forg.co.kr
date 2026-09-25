@@ -36,6 +36,7 @@ archive-utf8/
 .parse-summary-*.json
 .parse-failures.jsonl
 .parse-failures-*.jsonl
+.quarantine-*.tsv
 .parse-progress.jsonl
 .index-summary.json
 .image-manifest-summary.json
