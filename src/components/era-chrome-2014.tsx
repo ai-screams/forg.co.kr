@@ -227,7 +227,10 @@ export function SiteHeader2014() {
           }
         />
 
-        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center px-2">
+        {/* No side padding: seven 80px buttons and the 20px cap fill the 580px
+            cell exactly, as the original's left-floated images did. Padding
+            pushed the cap 8px past the column edge. */}
+        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center">
           {TOP_MENU.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
