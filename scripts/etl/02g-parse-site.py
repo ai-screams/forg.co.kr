@@ -70,9 +70,9 @@ IMG_EXT = re.compile(r"\.(gif|jpe?g|png|bmp)$", re.I)
 PAGE_EXT = re.compile(r"\.(?:html?|php)$", re.I)
 BOARD_SCRIPT = re.compile(r"/(?:_zb|zboard|zb|~forg/zboard)/(?:zboard|view)\.php$")
 # Link words that name a button, not the page behind it.
-BUTTON_WORDS = {"click", "here", "more", "go", "back", "next", "prev", "클릭", "여기", "더보기"}
+BUTTON_WORDS = {"click", "here", "more", "go", "back", "next", "prev", "list", "클릭", "여기", "더보기", "목록"}
 # Pager links ("[2]", "[Prev]", "[all]") name a position in a list.
-PAGER = re.compile(r"\[?\s*(?:\d+|prev|next|all|이전|다음)\s*\]?", re.I)
+PAGER = re.compile(r"[\[{(]?\s*\+?\s*(?:\d+|prev|next|all|이전|다음)\s*\+?\s*[\]})]?", re.I)
 GENERIC_TITLES = {"", "forg", "forg's world", "untitled", "무제 문서", "새 페이지 1"}
 POPUP_RE = re.compile(r"""(?:na_open_window|window\.open|open_window)\s*\(\s*(?:'[^']*'\s*,\s*)?['"]([^'"]+)['"]""")
 REFRESH_URL = re.compile(r"url\s*=\s*['\"]?([^'\";>]+)", re.I)
@@ -460,10 +460,25 @@ def title_of(soup: BeautifulSoup, link_titles: dict[str, str], stem: str,
     heading = soup.find("b", class_="li2") if "Guild Detail Info" in soup.get_text() else None
     if heading and heading.get_text(strip=True):
         return heading.get_text(strip=True)
+    # A query view takes the title of the same script's view with the fewest
+    # parameters that shares its `id` (the board or the guild), plus its page.
     base, sep, _ = stem.partition("--")
-    if sep and base in link_titles:
-        page = re.search(r"--page-(\d+)", stem)
-        return f"{link_titles[base]} ({page.group(1)}쪽)" if page else link_titles[base]
+    if sep:
+        board = re.search(r"--id-[^-]+(?:-[^-]+)*?(?=--|$)", stem)
+        def same_view(s: str, prefix: str) -> bool:
+            return (s == prefix or s.startswith(prefix + "--")) and (
+                not board or board.group(0) in s or s == prefix)
+        candidates = [s for s in link_titles if same_view(s, base)]
+        if not candidates:
+            # The same board under the site's other script folder
+            # (`/zboard/` in 2001, `/zb/` in 2002).
+            name = base.rsplit("/", 1)[-1]
+            candidates = [s for s in link_titles if same_view(s.rsplit("/", 1)[-1], name)
+                          and s.rsplit("/", 1)[-1].startswith(name)]
+        if candidates:
+            best = min(candidates, key=lambda s: (s.count("--"), s))
+            page = re.search(r"--page-(\d+)", stem)
+            return f"{link_titles[best]} ({page.group(1)}쪽)" if page else link_titles[best]
     return stem.rsplit("/", 1)[-1]
 
 

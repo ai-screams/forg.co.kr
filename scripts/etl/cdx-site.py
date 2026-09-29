@@ -11,8 +11,10 @@ page that changed over the years keeps each version.
 Dropped before planning:
   - board paths (`_zb`, `zboard`, `zb`, `bbs`, `~forg`) — the post phases own them —
     except the plain pages under `_zb/` the 2003 left menu opened: the guild
-    directory, the vendor list and the poll (`kritz_vote/`). The member list
-    (`forg_member.php`) is left out: its one capture is an error page
+    directory, the vendor list and the poll (`kritz_vote/`) — and the 2001
+    poll board `UO_Vote`, whose vote skin prints a poll and its comments as a
+    page of its own. The member list (`forg_member.php`) is left out: its one
+    capture is an error page
   - other users' home directories on a shared host (`forg.uospace.net/~sirl/`)
   - image/binary extensions: Wayback labels a missing image's error page
     text/html, so those rows are the host's error page, not a page
@@ -47,10 +49,12 @@ HOSTS = ("forg.co.kr", "forg.dotple.com", "forg.uospace.net")
 MIRRORS: dict[tuple[str, str], str] = {
     ("hosting27.interpia98.net", "/~forg/"): "/",
 }
-BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/|kritz_vote/)|zboard/|zb/|bbs/|~[^/]+/).*"
+BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/|kritz_vote/)|zboard/|zb/|bbs/|~[^/]+/)(?!.*[?&]id=UO_Vote(&|$)).*"
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")
+# Form screens (log in, sign up, write) the poll board's links reach: no content.
+FORM_RE = re.compile(r"/(login|member_join|write|member_modify)\.php$")
 
 
 def cdx_rows(prefix: str, *, board_filter: bool = True) -> list[list[str]]:
@@ -107,7 +111,8 @@ def main() -> None:
     for row in sorted(rows):  # oldest capture of each digest wins
         ts, original, _st, _mt, _length, digest = row
         key = page_key(original)
-        if digest in ERROR_PAGE_DIGESTS or BINARY_RE.search(urllib.parse.urlsplit(key).path):
+        path = urllib.parse.urlsplit(key).path
+        if digest in ERROR_PAGE_DIGESTS or BINARY_RE.search(path) or FORM_RE.search(path):
             continue
         versions.setdefault(key, {}).setdefault(digest, row)
 
