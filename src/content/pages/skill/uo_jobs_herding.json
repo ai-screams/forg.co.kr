@@ -7,6 +7,10 @@
   "capturedAt": "2002-02-13T15:22:43",
   "versions": [
     {
+      "capturedAt": "2002-01-27T12:15:09",
+      "kind": "redirect"
+    },
+    {
       "capturedAt": "2002-02-13T15:22:43",
       "kind": "redirect"
     }

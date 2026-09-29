@@ -9,6 +9,10 @@
     {
       "capturedAt": "2001-10-06T21:09:22",
       "kind": "page"
+    },
+    {
+      "capturedAt": "2002-01-11T10:27:45",
+      "kind": "redirect"
     }
   ],
   "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
