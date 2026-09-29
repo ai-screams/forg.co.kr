@@ -1,0 +1,19 @@
+{
+  "stem": "zboard/apply_vote--cn-off--id-UO_Vote--no-51--page-1--page_num-4--sc-on--select_arrange-headnum--ss-on--sub_no-54",
+  "originalPath": "/zboard/apply_vote.php?id=UO_Vote&no=51&sub_no=54&page=1&page_num=4&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "originalUrl": "http://forg.co.kr:80/zboard/apply_vote.php?id=UO_Vote&no=51&sub_no=54&page=1&page_num=4&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "kind": "redirect",
+  "title": "레어와 집만 지러 며칠해보겠다",
+  "capturedAt": "2001-11-08T14:15:07",
+  "versions": [
+    {
+      "capturedAt": "2001-11-08T14:15:07",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20011108141507/http://forg.co.kr:80/zboard/view.php?id=UO_Vote&page=1&page_num=4&select_arrange=headnum&desc=&cn=&ss=on&sc=on&keyword=&category=&no=51",
+  "baseTarget": null
+}

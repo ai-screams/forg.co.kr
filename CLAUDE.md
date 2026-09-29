@@ -109,6 +109,10 @@ back as documents:
   `<Link>`. `src/app/site/page.tsx` is the index inside the era frame.
 - Captures after 2016-08-31 are ignored — the domain was re-registered by a third
   party in 2023 and Wayback holds its parking page.
+- Sources: `forg.co.kr`, `forg.dotple.com` and `forg.uospace.net` share one path
+  space; `cdx-site.MIRRORS` maps forg's home directory on its earlier host
+  (`hosting27.interpia98.net/~forg/`) onto the same paths. A query that selects a
+  view (`?page=2`, `?id=62`) is part of the page's stem (`index--page-2`).
 
 #### 2014 main page layout (P2.4 completed)
 

@@ -1,0 +1,19 @@
+{
+  "stem": "zb/apply_vote--cn-off--id-UO_Vote--no-83--page-1--page_num-2--sc-on--select_arrange-headnum--ss-on--sub_no-88",
+  "originalPath": "/zb/apply_vote.php?id=UO_Vote&no=83&sub_no=88&page=1&page_num=2&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "originalUrl": "http://forg.uospace.net:80/zb/apply_vote.php?id=UO_Vote&no=83&sub_no=88&page=1&page_num=2&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "kind": "redirect",
+  "title": "맨손'ㅡ'",
+  "capturedAt": "2002-01-12T13:22:30",
+  "versions": [
+    {
+      "capturedAt": "2002-01-12T13:22:30",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20020112132230/http://forg.uospace.net:80/zb/view.php?id=UO_Vote&page=1&page_num=2&select_arrange=headnum&desc=&cn=&ss=on&sc=on&keyword=&category=&no=83",
+  "baseTarget": null
+}

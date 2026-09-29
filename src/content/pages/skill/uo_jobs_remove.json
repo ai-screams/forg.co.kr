@@ -1,0 +1,19 @@
+{
+  "stem": "skill/uo_jobs_remove",
+  "originalPath": "/skill/uo_jobs_remove.html",
+  "originalUrl": "http://forg.uospace.net:80/skill/uo_jobs_remove.html",
+  "kind": "redirect",
+  "title": "uo_jobs_remove",
+  "capturedAt": "2002-01-27T13:02:11",
+  "versions": [
+    {
+      "capturedAt": "2002-01-27T13:02:11",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20020127130211/http://forg.uospace.net/intro.html",
+  "baseTarget": null
+}

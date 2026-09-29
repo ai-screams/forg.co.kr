@@ -10,8 +10,12 @@ page that changed over the years keeps each version.
 
 Dropped before planning:
   - board paths (`_zb`, `zboard`, `zb`, `bbs`, `~forg`) — the post phases own them —
-    except the two plain pages under `_zb/`: the guild directory (`_zb/guild/`)
-    and the vendor list (`_zb/vendor/`), popups from the 2003 left menu
+    except the plain pages under `_zb/` the 2003 left menu opened: the guild
+    directory, the vendor list and the poll (`kritz_vote/`) — and the 2001
+    poll board `UO_Vote`, whose vote skin prints a poll and its comments as a
+    page of its own. The member list (`forg_member.php`) is left out: its one
+    capture is an error page
+  - other users' home directories on a shared host (`forg.uospace.net/~sirl/`)
   - image/binary extensions: Wayback labels a missing image's error page
     text/html, so those rows are the host's error page, not a page
   - the host's error page itself, recognised by its digest (4,137 captures)
@@ -38,23 +42,37 @@ ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research" / "c
 RAW = ROOT / "site-html.json"
 PLAN = ROOT / "site-plan.json"
 
-HOSTS = ("forg.co.kr", "forg.dotple.com")
-BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/)|zboard/|zb/|bbs/|~forg/).*"
+HOSTS = ("forg.co.kr", "forg.dotple.com", "forg.uospace.net")
+# forg's home directory on its earlier host (2002–2003): the same site under
+# `/~forg/`, so its pages join forg.co.kr's at the same paths. The 2003 menu's
+# "UO.만화" opened `/~forg/lomo/` there.
+MIRRORS: dict[tuple[str, str], str] = {
+    ("hosting27.interpia98.net", "/~forg/"): "/",
+}
+BOARD_PATHS = (
+    r".*/(~[^/]+/|bbs/|_zb/(?!guild/|vendor/|kritz_vote/)"
+    r"|(zboard|zb)/(?!(zboard|view|apply_vote)\.php\?([^#]*&)?id=UO_Vote(&|#|$))).*"
+)
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")
+# Form screens (log in, sign up, write) the poll board's links reach: no content.
+FORM_RE = re.compile(r"/(login|member_join|write|member_modify)\.php$")
 
 
-def cdx_rows(host: str) -> list[list[str]]:
+def cdx_rows(prefix: str, *, board_filter: bool = True) -> list[list[str]]:
+    """`board_filter` drops the board scripts; a mirrored folder has none, and
+    its own path (`/~forg/…`) would match the old board path pattern."""
     params = [
-        ("url", f"{host}/"),
+        ("url", prefix),
         ("matchType", "prefix"),
         ("fl", "timestamp,original,statuscode,mimetype,length,digest"),
         ("filter", "statuscode:200"),
         ("filter", "mimetype:text/html"),
-        ("filter", f"!original:{BOARD_PATHS}"),
         ("output", "json"),
     ]
+    if board_filter:
+        params.insert(-1, ("filter", f"!original:{BOARD_PATHS}"))
     url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
     with global_polite_slot():
         body = fetch_with_retry(url)
@@ -62,11 +80,22 @@ def cdx_rows(host: str) -> list[list[str]]:
     return rows[1:]
 
 
+def mirror_path(host: str, path: str) -> str | None:
+    """The museum path of a mirrored folder's URL, or None if not mirrored."""
+    for (m_host, prefix), local in MIRRORS.items():
+        if host == m_host and path.startswith(prefix):
+            return local + path[len(prefix):]
+    return None
+
+
 def page_key(original: str) -> str:
-    """Path plus query, without host, port or session id."""
+    """Path plus query, without host, port or session id; mirrored folders
+    take their museum path."""
     s = urllib.parse.urlsplit(original)
     query = SESSION_RE.sub("", s.query).strip("&")
-    return s.path + (f"?{query}" if query else "")
+    host = (s.hostname or "").lower().removeprefix("www.")
+    path = mirror_path(host, s.path) or s.path
+    return path + (f"?{query}" if query else "")
 
 
 def safe(s: str) -> str:
@@ -75,9 +104,10 @@ def safe(s: str) -> str:
 
 def main() -> None:
     rows: list[list[str]] = []
-    for host in HOSTS:
-        got = cdx_rows(host)
-        print(f"[cdx-site] {host}: {len(got)} rows", file=sys.stderr)
+    prefixes = [(f"{host}/", True) for host in HOSTS] + [(h + p, False) for h, p in MIRRORS]
+    for prefix, board_filter in prefixes:
+        got = cdx_rows(prefix, board_filter=board_filter)
+        print(f"[cdx-site] {prefix}: {len(got)} rows", file=sys.stderr)
         rows += got
     RAW.write_text(json.dumps(rows, ensure_ascii=False))
 
@@ -85,7 +115,8 @@ def main() -> None:
     for row in sorted(rows):  # oldest capture of each digest wins
         ts, original, _st, _mt, _length, digest = row
         key = page_key(original)
-        if digest in ERROR_PAGE_DIGESTS or BINARY_RE.search(urllib.parse.urlsplit(key).path):
+        path = urllib.parse.urlsplit(key).path
+        if digest in ERROR_PAGE_DIGESTS or BINARY_RE.search(path) or FORM_RE.search(path):
             continue
         versions.setdefault(key, {}).setdefault(digest, row)
 

@@ -1,11 +1,15 @@
 {
   "stem": "skill/uo_knowhow_addon_3",
   "originalPath": "/skill/uo_knowhow_addon_3.html",
-  "originalUrl": "http://forg.co.kr:80/skill/uo_knowhow_addon_3.html",
-  "kind": "redirect",
+  "originalUrl": "http://forg.uospace.net:80/skill/uo_knowhow_addon_3.html",
+  "kind": "page",
   "title": "메인좌측메뉴-각종유용한정보-아이템만들기-고렘만들기",
-  "capturedAt": "2004-01-18T22:07:43",
+  "capturedAt": "2002-01-31T23:59:30",
   "versions": [
+    {
+      "capturedAt": "2002-01-31T23:59:30",
+      "kind": "page"
+    },
     {
       "capturedAt": "2003-02-13T21:48:20",
       "kind": "empty"
@@ -17,7 +21,7 @@
   ],
   "css": "",
   "bodyStyle": {},
-  "html": "",
-  "redirectTo": "/site/faq_1/",
+  "html": "<br>\n<b>Warning</b>:  Failed opening '/home/forg/public_html/zb/lib.php' for inclusion (include_path='') in <b>member_auth.php3</b> on line <b>2</b><br>\n<br>\n<b>Fatal error</b>:  Call to undefined function:  dbconn() in <b>member_auth.php3</b> on line <b>5</b><br>\n",
+  "redirectTo": null,
   "baseTarget": null
 }

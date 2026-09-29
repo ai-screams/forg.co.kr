@@ -1,0 +1,19 @@
+{
+  "stem": "zb/apply_vote--cn-off--id-UO_Vote--no-113--page-1--page_num-2--sc-on--select_arrange-headnum--ss-on--sub_no-121",
+  "originalPath": "/zb/apply_vote.php?id=UO_Vote&no=113&sub_no=121&page=1&page_num=2&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "originalUrl": "http://forg.dotple.com:80/zb/apply_vote.php?id=UO_Vote&no=113&sub_no=121&page=1&page_num=2&select_arrange=headnum&desc=&cn=off&ss=on&sc=on&keyword=&category=",
+  "kind": "redirect",
+  "title": "울온접으면 온라인 게임 안한다 -_-a",
+  "capturedAt": "2002-02-08T04:18:35",
+  "versions": [
+    {
+      "capturedAt": "2002-02-08T04:18:35",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20020208041835/http://forg.dotple.com:80/zb/view.php?id=UO_Vote&page=1&page_num=2&select_arrange=headnum&desc=&cn=&ss=on&sc=on&keyword=&category=&no=113",
+  "baseTarget": null
+}

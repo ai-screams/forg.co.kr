@@ -1,0 +1,19 @@
+{
+  "stem": "skill/uo_knowhow_order",
+  "originalPath": "/skill/uo_knowhow_order.html",
+  "originalUrl": "http://forg.uospace.net:80/skill/uo_knowhow_order.html",
+  "kind": "redirect",
+  "title": "uo_knowhow_order",
+  "capturedAt": "2002-01-11T11:02:10",
+  "versions": [
+    {
+      "capturedAt": "2002-01-11T11:02:10",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20020111110210/http://forg.uospace.net/intro.html",
+  "baseTarget": null
+}
