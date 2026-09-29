@@ -48,12 +48,19 @@ POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 LISTINGS_DIR = PROJECT_ROOT / "src" / "content" / "listings"
 INDEX_DIR = PROJECT_ROOT / "src" / "content" / "boards"
 UNKNOWN_DATE = datetime(1970, 1, 1)  # the "작성일 미상" sentinel the UI knows
-# A board that took over from an older one lists the older one's rows after
-# its own. The 2008–2016 Gnuboard free board (UoBoard2, 23 captured posts)
-# followed the Zeroboard free board (UoBoard, 2000–2007): same name, same
-# first menu button, and the older board's last post predates the newer
-# one's first. The rows keep their own board, so they link to its posts.
-CONTINUES: dict[str, str] = {"UoBoard2": "UoBoard"}
+# A board that took over from older ones lists their rows after its own. The
+# rows keep their own board, so they link to its posts.
+#   UoBoard2 (Gnuboard free board, 2008–2016, 23 captured posts) followed
+#     UoBoard (Zeroboard free board, 2000–2007): same name and first menu
+#     button, the older board's last post before the newer one's first.
+#   Shop (Gnuboard trade board, from 2006-11) followed the Zeroboard trade
+#     boards: Sell (2001-03–2002-10, "장터란"), then the per-shard Tarirang
+#     (–2003-10) and Tbalhae (–2006-10). Vendor, the ads for players' own
+#     in-game shops, is another kind of board and stays apart.
+CONTINUES: dict[str, tuple[str, ...]] = {
+    "UoBoard2": ("UoBoard",),
+    "Shop": ("Tbalhae", "Tarirang", "Sell"),
+}
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".index-summary.json"
 
 
@@ -220,7 +227,8 @@ def _build_board(
         print(f"  {board}: +{added} list-only rows, {filled} hits filled", file=sys.stderr)
     if carried:
         entries += carried
-        print(f"  {board}: +{len(carried)} rows carried from {CONTINUES[board]}", file=sys.stderr)
+        print(f"  {board}: +{len(carried)} rows carried from {', '.join(CONTINUES[board])}",
+              file=sys.stderr)
     # Newest first; a title-only row with no date carries the 1970 sentinel
     # and sinks to the end like an undated post does.
     entries.sort(key=lambda e: (e.createdAt, int(e.postId) if e.postId.isdigit() else 0), reverse=True)
@@ -292,9 +300,9 @@ def main() -> int:
         post_files = sorted(board_dir.glob("*.json"))
         carried = None
         if board_dir.name in CONTINUES:
-            older = CONTINUES[board_dir.name]
             carried = [
                 e.model_copy(update={"board": older})
+                for older in CONTINUES[board_dir.name]
                 for e in _board_entries(older, sorted((POSTS_DIR / older).glob("*.json")), all_errors)
             ]
         posts, pages, pruned, errors = _build_board(

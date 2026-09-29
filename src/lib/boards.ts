@@ -40,10 +40,10 @@ export interface BoardMeta {
   /** One-line description rendered above the post list. */
   description?: string;
   /**
-   * The older board this one took over from. Its rows follow this board's
-   * own in the listing (`03-build-index.py` CONTINUES) and link to its posts.
+   * The older boards this one took over from. Their rows follow this board's
+   * own in the listing (`03-build-index.py` CONTINUES) and link to their posts.
    */
-  continues?: string;
+  continues?: readonly string[];
 }
 
 /**
@@ -162,7 +162,7 @@ export const BOARDS = {
     engine: "gnuboard4",
     era: "2014",
     description: "Gnuboard4 시절 자유게시판 — 2014 메인 메뉴 첫 버튼",
-    continues: "UoBoard",
+    continues: ["UoBoard"],
   },
   Ultima: {
     id: "Ultima",
@@ -221,6 +221,7 @@ export const BOARDS = {
     category: "trade",
     engine: "gnuboard4",
     era: "2014",
+    continues: ["Tbalhae", "Tarirang", "Sell"],
   },
   Vendor: {
     id: "Vendor",

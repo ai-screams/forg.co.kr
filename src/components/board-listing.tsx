@@ -49,13 +49,18 @@ export function BoardListing({ board, page }: BoardListingProps) {
             : ""}{" "}
           · {page.page} / {page.totalPages} 페이지
         </p>
-        {meta.continues && isBoardId(meta.continues) && (
+        {meta.continues && meta.continues.length > 0 && (
           <p className="text-forg-muted mt-[2px] text-[11px]">
-            2007년까지의 글은 이전 자유게시판(
-            <Link href={`/${meta.continues}`} className="underline">
-              {getBoardOrThrow(meta.continues).nameKr}
-            </Link>
-            )에서 이어 붙였습니다. 누르면 그 게시판의 글로 갑니다.
+            이전 게시판(
+            {meta.continues.filter(isBoardId).map((id, i) => (
+              <span key={id}>
+                {i > 0 && " · "}
+                <Link href={`/${id}`} className="underline">
+                  {getBoardOrThrow(id).nameKr}
+                </Link>
+              </span>
+            ))}
+            )의 글을 이어 붙였습니다. 누르면 그 게시판의 글로 갑니다.
           </p>
         )}
       </header>
