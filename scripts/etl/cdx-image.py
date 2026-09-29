@@ -112,7 +112,7 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("forg-wow",         "forg.co.kr/wow/"),
     ("forg-zb-guild",    "forg.co.kr/_zb/guild/"),
     # [8] forg folders on other hosts (`cdx-site.MIRRORS`).
-    ("hosting27-lomo",   "hosting27.interpia98.net/~forg/lomo/"),
+    ("hosting27-forg",   "hosting27.interpia98.net/~forg/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-

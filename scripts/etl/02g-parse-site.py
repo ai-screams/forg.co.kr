@@ -42,6 +42,7 @@ import re
 import shutil
 import sys
 import urllib.parse
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -60,7 +61,7 @@ BOARDS_TS = PROJECT_ROOT / "src" / "lib" / "boards.ts"
 IMAGE_REFS = PROJECT_ROOT / "scripts" / "etl" / "site-image-refs.jsonl"
 REPORT = PROJECT_ROOT / "scripts" / "etl" / ".parse-report-site.json"
 
-FORG_HOSTS = {"forg.co.kr", "forg.dotple.com"}
+FORG_HOSTS = {"forg.co.kr", "forg.dotple.com", "forg.uospace.net"}
 # The site's last normal capture is 2016-08-20; from September the domain only
 # redirects, and in 2023 someone else registered it (a parking page).
 LAST_TS = "20160831235959"
@@ -68,6 +69,10 @@ MISSING_IMG = "/img/placeholder/missing.svg"
 IMG_EXT = re.compile(r"\.(gif|jpe?g|png|bmp)$", re.I)
 PAGE_EXT = re.compile(r"\.(?:html?|php)$", re.I)
 BOARD_SCRIPT = re.compile(r"/(?:_zb|zboard|zb|~forg/zboard)/(?:zboard|view)\.php$")
+# Link words that name a button, not the page behind it.
+BUTTON_WORDS = {"click", "here", "more", "go", "back", "next", "prev", "클릭", "여기", "더보기"}
+# Pager links ("[2]", "[Prev]", "[all]") name a position in a list.
+PAGER = re.compile(r"\[?\s*(?:\d+|prev|next|all|이전|다음)\s*\]?", re.I)
 GENERIC_TITLES = {"", "forg", "forg's world", "untitled", "무제 문서", "새 페이지 1"}
 POPUP_RE = re.compile(r"""(?:na_open_window|window\.open|open_window)\s*\(\s*(?:'[^']*'\s*,\s*)?['"]([^'"]+)['"]""")
 REFRESH_URL = re.compile(r"url\s*=\s*['\"]?([^'\";>]+)", re.I)
@@ -136,6 +141,18 @@ def safe_stem(stem: str) -> bool:
                for seg in stem.split("/"))
 
 
+def forg_hosted_pages() -> set[str]:
+    """Page keys captured at least once on forg's own domains. The plan keeps
+    one capture per content version — the earliest, often the other host's —
+    so this is asked of the raw CDX rows."""
+    pages: set[str] = set()
+    for _ts, original, *_ in json.loads(RAW.read_text()):
+        host = (urllib.parse.urlsplit(original).hostname or "").lower().removeprefix("www.")
+        if host in FORG_HOSTS:
+            pages.add(CDX_SITE.page_key(original))
+    return pages
+
+
 def last_seen() -> dict[tuple[str, str], str]:
     """Latest capture timestamp of each (page, digest).
 
@@ -181,13 +198,15 @@ def load_versions() -> dict[str, list[dict]]:
     return by_stem
 
 
-def original_path(v: dict) -> str:
-    """The address readers knew: the path on forg.co.kr, or host and path for
-    a folder mirrored from another host (whose `page` is the museum path)."""
+def original_path(v: dict, forg_pages: set[str]) -> str:
+    """The address readers knew: the path on forg's own domains, or host and
+    path for a page only the other host had (whose `page` is the museum
+    path). A page on both shows the forg path even when the shown capture —
+    the same content — came from the other host."""
+    if v["page"] in forg_pages:
+        return v["page"]
     u = urllib.parse.urlsplit(v["url"])
     host = (u.hostname or "").lower().removeprefix("www.")
-    if host in FORG_HOSTS:
-        return v["page"]
     query = f"?{u.query}" if u.query else ""
     return f"{host}{u.path}{query}"
 
@@ -436,10 +455,15 @@ def title_of(soup: BeautifulSoup, link_titles: dict[str, str], stem: str,
         return t
     if stem in link_titles:
         return link_titles[stem]
-    # A guild detail page names its guild in the heading cell.
-    heading = soup.find("b", class_="li2")
+    # A guild detail page names its guild in the heading cell (the list
+    # pages use the same class for every row).
+    heading = soup.find("b", class_="li2") if "Guild Detail Info" in soup.get_text() else None
     if heading and heading.get_text(strip=True):
         return heading.get_text(strip=True)
+    base, sep, _ = stem.partition("--")
+    if sep and base in link_titles:
+        page = re.search(r"--page-(\d+)", stem)
+        return f"{link_titles[base]} ({page.group(1)}쪽)" if page else link_titles[base]
     return stem.rsplit("/", 1)[-1]
 
 
@@ -449,10 +473,15 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
     First choice is the link's `title` (`title="젬"` on an image button),
     then the link's own words (at most 40 characters — longer is a sentence,
     not a name). Read from every version, not only the ones shown: the 2002
-    left frame names pages its 2007 successor no longer links."""
-    by_title: dict[str, str] = {}
-    by_text: dict[str, str] = {}
+    left frame names pages its 2007 successor no longer links. A page linked
+    under several names takes the one used most often, links on forg's own
+    domains outweighing the older host's."""
+    by_title: dict[str, Counter[str]] = {}
+    by_text: dict[str, Counter[str]] = {}
     for v, soup in all_versions:
+        # forg's own domains name a page first; the older host only fills gaps.
+        host = (urllib.parse.urlsplit(v["url"]).hostname or "").lower().removeprefix("www.")
+        weight = 100 if host in FORG_HOSTS else 1
         for a in soup.find_all("a", href=True):
             href = a["href"].strip()
             popup = POPUP_RE.search(href) if href.lower().startswith("javascript:") else None
@@ -465,20 +494,22 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
             stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
             label = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", a.get("title", "")).strip()
             if label:
-                by_title.setdefault(stem, label)
+                by_title.setdefault(stem, Counter())[label] += weight
             text = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
             text = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", text).strip()
-            if 1 < len(text) <= 40:
-                by_text.setdefault(stem, text)
-    # A label on three or more pages names a section or a button ("Click",
-    # ":::Monster_Diary:::" on every monster), not the page.
-    for labels in (by_title, by_text):
-        counts: dict[str, int] = {}
-        for label in labels.values():
-            counts[label] = counts.get(label, 0) + 1
-        for stem in [s for s, label in labels.items() if counts[label] >= 3]:
-            del labels[stem]
-    return {**by_text, **by_title}
+            if 1 < len(text) <= 40 and text.lower() not in BUTTON_WORDS and not PAGER.fullmatch(text):
+                by_text.setdefault(stem, Counter())[text] += weight
+    chosen: list[dict[str, str]] = []
+    for votes in (by_text, by_title):
+        labels = {stem: c.most_common(1)[0][0] for stem, c in votes.items()}
+        # A label on three or more pages of one folder names a section or a
+        # button ("Click", ":::Monster_Diary:::" on every monster), not the
+        # page. Counted per folder: "아머" names one page in Diablo/ and
+        # another in Diablo2/.
+        counts = Counter((stem.rpartition("/")[0], label) for stem, label in labels.items())
+        chosen.append({stem: label for stem, label in labels.items()
+                       if counts[(stem.rpartition("/")[0], label)] < 3})
+    return {**chosen[0], **chosen[1]}
 
 
 def main() -> None:
@@ -488,6 +519,7 @@ def main() -> None:
 
     boards = set(re.findall(r'^\s*id: "([^"]+)"', BOARDS_TS.read_text(), re.M))
     by_stem = load_versions()
+    forg_pages = forg_hosted_pages()
 
     chosen: dict[str, tuple[dict, BeautifulSoup]] = {}
     history: dict[str, list[dict]] = {}
@@ -526,7 +558,7 @@ def main() -> None:
             base = urllib.parse.urljoin(base, base_el["href"])
         doc = {
             "stem": stem,
-            "originalPath": original_path(v),
+            "originalPath": original_path(v, forg_pages),
             "originalUrl": base,
             "kind": kind,
             "title": title_of(soup, link_titles, stem, shared),

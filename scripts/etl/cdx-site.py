@@ -10,8 +10,10 @@ page that changed over the years keeps each version.
 
 Dropped before planning:
   - board paths (`_zb`, `zboard`, `zb`, `bbs`, `~forg`) — the post phases own them —
-    except the two plain pages under `_zb/`: the guild directory (`_zb/guild/`)
-    and the vendor list (`_zb/vendor/`), popups from the 2003 left menu
+    except the plain pages under `_zb/` the 2003 left menu opened: the guild
+    directory, the vendor list and the poll (`kritz_vote/`). The member list
+    (`forg_member.php`) is left out: its one capture is an error page
+  - other users' home directories on a shared host (`forg.uospace.net/~sirl/`)
   - image/binary extensions: Wayback labels a missing image's error page
     text/html, so those rows are the host's error page, not a page
   - the host's error page itself, recognised by its digest (4,137 captures)
@@ -38,13 +40,14 @@ ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research" / "c
 RAW = ROOT / "site-html.json"
 PLAN = ROOT / "site-plan.json"
 
-HOSTS = ("forg.co.kr", "forg.dotple.com")
-# Folders of forg on other hosts, served under a museum path of their own.
-# The 2003 menu's "UO.만화" opened the cartoon at the first.
+HOSTS = ("forg.co.kr", "forg.dotple.com", "forg.uospace.net")
+# forg's home directory on its earlier host (2002–2003): the same site under
+# `/~forg/`, so its pages join forg.co.kr's at the same paths. The 2003 menu's
+# "UO.만화" opened `/~forg/lomo/` there.
 MIRRORS: dict[tuple[str, str], str] = {
-    ("hosting27.interpia98.net", "/~forg/lomo/"): "/lomo/",
+    ("hosting27.interpia98.net", "/~forg/"): "/",
 }
-BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/)|zboard/|zb/|bbs/|~forg/).*"
+BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/|kritz_vote/)|zboard/|zb/|bbs/|~[^/]+/).*"
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")
