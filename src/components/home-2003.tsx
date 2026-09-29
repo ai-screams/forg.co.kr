@@ -105,9 +105,10 @@ const TOP_MENU_2003: TopMenuConfig[] = [
 // frame; the guide pages it opened are `/site/…` documents (ETL Stage 2g).
 // The guild directory was a popup (`/_zb/guild/index.html`), now a `/site/`
 // page. The vendor popup (`/_zb/vendor/list.php`) has only a redirect
-// capture, so that entry keeps the Vendor board. Entries whose pages were
-// not collected (bulk deeds, the cartoon on another host, members, poll)
-// still point home.
+// capture, so that entry keeps the Vendor board. The cartoon lived on
+// another host (`hosting27.interpia98.net/~forg/lomo/`), now `/site/lomo/`.
+// Entries whose pages were not collected (bulk deeds, members, poll) still
+// point home.
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
@@ -146,7 +147,7 @@ const SIDEBAR_SECTIONS: {
     asset: "m_remember.gif",
     fallback: "Reminisce",
     links: [
-      { label: "-UO.만화", href: "/" },
+      { label: "-UO.만화", href: "/site/lomo/index/" },
       { label: "-UO.여행기", href: "/site/spotlight/spot_130/" },
       { label: "-인테리어정보", href: "/site/decoration/deco/" },
       { label: "-아이템스샷란", href: "/Items" },
