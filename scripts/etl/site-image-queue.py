@@ -19,6 +19,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+import urllib.parse
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -38,13 +39,23 @@ def _cdx_image():
     return mod
 
 
+def host_variants(url: str) -> set[str]:
+    """`canonical_key` keeps `www.` apart, and a page on forg.co.kr often
+    names an image that Wayback captured only under www.forg.co.kr (the
+    guild directory's shard icons) — or the other way round."""
+    u = urllib.parse.urlsplit(url)
+    host = (u.hostname or "").removeprefix("www.")
+    return {u._replace(netloc=h).geturl() for h in (host, f"www.{host}")}
+
+
 def main() -> None:
     cdx = _cdx_image()
     index, total = cdx.load_cdx_index([slug for slug, _ in cdx.PREFIX_LIST])
     refs = [json.loads(line) for line in REFS.read_text().splitlines() if line.strip()]
     queue, misses = [], []
     for ref in refs:
-        row = cdx.pick_cdx_row(index.get(canonical_key(ref["url"]), []), ref["ts"])
+        rows = [r for cand in host_variants(ref["url"]) for r in index.get(canonical_key(cand), [])]
+        row = cdx.pick_cdx_row(rows, ref["ts"])
         if row is None:
             misses.append(ref)
             continue

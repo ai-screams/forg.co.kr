@@ -110,6 +110,7 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("forg-image",       "forg.co.kr/Image/"),
     ("forg-holy",        "forg.co.kr/holy/"),
     ("forg-wow",         "forg.co.kr/wow/"),
+    ("forg-zb-guild",    "forg.co.kr/_zb/guild/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-
