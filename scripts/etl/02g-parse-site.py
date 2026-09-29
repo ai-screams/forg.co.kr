@@ -66,7 +66,7 @@ FORG_HOSTS = {"forg.co.kr", "forg.dotple.com"}
 LAST_TS = "20160831235959"
 MISSING_IMG = "/img/placeholder/missing.svg"
 IMG_EXT = re.compile(r"\.(gif|jpe?g|png|bmp)$", re.I)
-PAGE_EXT = re.compile(r"\.html?$", re.I)
+PAGE_EXT = re.compile(r"\.(?:html?|php)$", re.I)
 BOARD_SCRIPT = re.compile(r"/(?:_zb|zboard|zb|~forg/zboard)/(?:zboard|view)\.php$")
 GENERIC_TITLES = {"", "forg", "forg's world", "untitled", "무제 문서", "새 페이지 1"}
 POPUP_RE = re.compile(r"""(?:na_open_window|window\.open|open_window)\s*\(\s*(?:'[^']*'\s*,\s*)?['"]([^'"]+)['"]""")
@@ -143,7 +143,7 @@ def last_seen() -> dict[tuple[str, str], str]:
     went A → B → A is still showing A last, so versions are ordered by when
     each digest was last seen, not first."""
     seen: dict[tuple[str, str], str] = {}
-    cdx_site = _cdx_site()
+    cdx_site = CDX_SITE
     for ts, original, _st, _mt, _length, digest in json.loads(RAW.read_text()):
         if ts > LAST_TS:
             continue
@@ -158,6 +158,9 @@ def _cdx_site():
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
+
+
+CDX_SITE = _cdx_site()
 
 
 def load_versions() -> dict[str, list[dict]]:
@@ -176,6 +179,17 @@ def load_versions() -> dict[str, list[dict]]:
     for vs in by_stem.values():
         vs.sort(key=lambda v: v["shown_ts"])
     return by_stem
+
+
+def original_path(v: dict) -> str:
+    """The address readers knew: the path on forg.co.kr, or host and path for
+    a folder mirrored from another host (whose `page` is the museum path)."""
+    u = urllib.parse.urlsplit(v["url"])
+    host = (u.hostname or "").lower().removeprefix("www.")
+    if host in FORG_HOSTS:
+        return v["page"]
+    query = f"?{u.query}" if u.query else ""
+    return f"{host}{u.path}{query}"
 
 
 def iso(ts: str) -> str:
@@ -214,8 +228,13 @@ class Resolver:
 
     @staticmethod
     def forg_path(absolute: str) -> tuple[bool, urllib.parse.SplitResult]:
+        """(is ours, URL with the museum path) — a mirrored folder on another
+        host (`cdx-site.MIRRORS`) counts as ours under its museum path."""
         u = urllib.parse.urlsplit(absolute)
         host = (u.hostname or "").lower().removeprefix("www.")
+        mirrored = CDX_SITE.mirror_path(host, u.path)
+        if mirrored is not None:
+            return True, u._replace(path=mirrored)
         return host in FORG_HOSTS, u
 
     def image(self, raw: str, base: str, ts: str, page: str) -> tuple[str, str | None]:
@@ -223,6 +242,10 @@ class Resolver:
         absolute = urllib.parse.urljoin(base, raw.strip())
         is_forg, u = self.forg_path(absolute)
         if not is_forg or not IMG_EXT.search(u.path):
+            # A relative src left as-is would point into the museum's own
+            # site once the page is served from /site/.
+            if urllib.parse.urlsplit(raw.strip()).scheme not in ("http", "https"):
+                return MISSING_IMG, absolute
             return raw, None
         rel = urllib.parse.unquote(u.path).lstrip("/")
         if not safe_stem(rel):
@@ -246,7 +269,14 @@ class Resolver:
         absolute = urllib.parse.urljoin(base, raw)
         is_forg, u = self.forg_path(absolute)
         if not is_forg:
-            return raw, False
+            # A relative link from a mirrored page points into the other
+            # host's archive, not at the museum: send it to its capture.
+            scheme = urllib.parse.urlsplit(raw).scheme
+            if scheme in ("http", "https"):
+                return raw, False
+            if scheme:  # data:, vbscript:, … — nothing to link to
+                return None, False
+            return f"https://web.archive.org/web/{ts}/{absolute}", False
         frag = f"#{u.fragment}" if u.fragment else ""
         g4 = u.path == "/bbs/board.php"
         if BOARD_SCRIPT.search(u.path) or g4:
@@ -298,6 +328,38 @@ def body_style(body, resolver: Resolver, base: str, ts: str, page: str) -> dict:
         if v and re.fullmatch(r"#?[0-9A-Za-z]+", v.strip()):
             out[f"--{attr}"] = v.strip()
     return out
+
+
+def unroll_slideshow(soup: BeautifulSoup) -> bool:
+    """The cartoon viewer (`lomo`) put every panel in one table row, hid all
+    but a "Loading..." cell and let a script show one panel per click. With
+    scripts gone nothing would show, so the panels are unhidden and stacked
+    one per row, with a line saying how the original worked."""
+    panels = soup.find_all("table", id=re.compile(r"^lomoimg\d+$"))
+    if not panels:
+        return False
+    for t in panels:
+        if t["id"] == "lomoimg0":  # the "Loading..." placeholder
+            cell = t.find_parent("td")
+            (cell or t).decompose()
+            continue
+        t["style"] = re.sub(r"display\s*:\s*none;?", "", t.get("style", ""))
+    cells = [t.find_parent("td") for t in soup.find_all("table", id=re.compile(r"^lomoimg\d+$"))]
+    row = cells[0].find_parent("tr") if cells and cells[0] else None
+    if row is not None:
+        for cell in cells[1:]:
+            if cell is None:
+                continue
+            tr = soup.new_tag("tr", attrs={"valign": "top"})
+            row.insert_after(tr)
+            row = tr
+            tr.append(cell.extract())
+    note = soup.new_tag("p", attrs={"style": "color:#8c8c8c;font-size:11px"})
+    note.string = "원래는 그림을 누르면 다음 칸으로 넘어가는 슬라이드였습니다. 박물관에서는 모든 칸을 차례로 보여 줍니다."
+    panels_table = cells[0].find_parent("table") if cells and cells[0] else None
+    if panels_table is not None:
+        panels_table.insert_before(note)
+    return True
 
 
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
@@ -397,8 +459,8 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
             if href.lower().startswith("javascript:") and not popup:
                 continue
             absolute = urllib.parse.urljoin(v["url"], popup.group(1) if popup else href)
-            u = urllib.parse.urlsplit(absolute)
-            if (u.hostname or "").lower().removeprefix("www.") not in FORG_HOSTS:
+            is_forg, u = Resolver.forg_path(absolute)
+            if not is_forg:
                 continue
             stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
             label = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", a.get("title", "")).strip()
@@ -464,7 +526,7 @@ def main() -> None:
             base = urllib.parse.urljoin(base, base_el["href"])
         doc = {
             "stem": stem,
-            "originalPath": v["page"],
+            "originalPath": original_path(v),
             "originalUrl": base,
             "kind": kind,
             "title": title_of(soup, link_titles, stem, shared),
@@ -487,6 +549,7 @@ def main() -> None:
             # Before `rewrite`, which turns the body's own background into a
             # museum path that would then be resolved a second time.
             doc["bodyStyle"] = body_style(soup.body, resolver, base, ts, stem)
+            unroll_slideshow(soup)
             rewrite(soup, resolver, base, ts, stem)
             doc["css"] = head_css(soup)
             inner = soup.body.decode_contents() if soup.body else str(soup)

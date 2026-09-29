@@ -39,22 +39,30 @@ RAW = ROOT / "site-html.json"
 PLAN = ROOT / "site-plan.json"
 
 HOSTS = ("forg.co.kr", "forg.dotple.com")
+# Folders of forg on other hosts, served under a museum path of their own.
+# The 2003 menu's "UO.만화" opened the cartoon at the first.
+MIRRORS: dict[tuple[str, str], str] = {
+    ("hosting27.interpia98.net", "/~forg/lomo/"): "/lomo/",
+}
 BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/)|zboard/|zb/|bbs/|~forg/).*"
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")
 
 
-def cdx_rows(host: str) -> list[list[str]]:
+def cdx_rows(prefix: str, *, board_filter: bool = True) -> list[list[str]]:
+    """`board_filter` drops the board scripts; a mirrored folder has none, and
+    its own path (`/~forg/…`) would match the old board path pattern."""
     params = [
-        ("url", f"{host}/"),
+        ("url", prefix),
         ("matchType", "prefix"),
         ("fl", "timestamp,original,statuscode,mimetype,length,digest"),
         ("filter", "statuscode:200"),
         ("filter", "mimetype:text/html"),
-        ("filter", f"!original:{BOARD_PATHS}"),
         ("output", "json"),
     ]
+    if board_filter:
+        params.insert(-1, ("filter", f"!original:{BOARD_PATHS}"))
     url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
     with global_polite_slot():
         body = fetch_with_retry(url)
@@ -62,11 +70,21 @@ def cdx_rows(host: str) -> list[list[str]]:
     return rows[1:]
 
 
+def mirror_path(host: str, path: str) -> str | None:
+    """The museum path of a mirrored folder's URL, or None if not mirrored."""
+    for (m_host, prefix), local in MIRRORS.items():
+        if host == m_host and path.startswith(prefix):
+            return local + path[len(prefix):]
+    return None
+
+
 def page_key(original: str) -> str:
-    """Path plus query, without host, port or session id."""
+    """Path plus query, without host, port or session id; mirrored folders
+    take their museum path."""
     s = urllib.parse.urlsplit(original)
     query = SESSION_RE.sub("", s.query).strip("&")
-    return s.path + (f"?{query}" if query else "")
+    path = mirror_path((s.hostname or "").lower(), s.path) or s.path
+    return path + (f"?{query}" if query else "")
 
 
 def safe(s: str) -> str:
@@ -75,9 +93,10 @@ def safe(s: str) -> str:
 
 def main() -> None:
     rows: list[list[str]] = []
-    for host in HOSTS:
-        got = cdx_rows(host)
-        print(f"[cdx-site] {host}: {len(got)} rows", file=sys.stderr)
+    prefixes = [(f"{host}/", True) for host in HOSTS] + [(h + p, False) for h, p in MIRRORS]
+    for prefix, board_filter in prefixes:
+        got = cdx_rows(prefix, board_filter=board_filter)
+        print(f"[cdx-site] {prefix}: {len(got)} rows", file=sys.stderr)
         rows += got
     RAW.write_text(json.dumps(rows, ensure_ascii=False))
 
