@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "b_logo.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/b_logo.gif",
+    "capturedAt": "20030911200522",
+    "sizeBytes": 496,
+    "sha256": "b12ab84d3cc2beb3c1d18806adb42b42388bb1e4da6ee0de82662e07fcb99877",
+    "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
+  },
+  {
+    "filename": "c.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/c.gif",
+    "capturedAt": "20030911202755",
+    "sizeBytes": 1836,
+    "sha256": "2eda1b23c6cdb0e5d54541f4bf186ad53eefa959835af8f55fa3f8fda2043182",
+    "digest": "LYUWP4WPTXYLQUNAZDSEHW7IREYY6X7X"
+  },
+  {
+    "filename": "i.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/i.gif",
+    "capturedAt": "20030904202849",
+    "sizeBytes": 1859,
+    "sha256": "a0ed7982cdc7a0c8656246ded4a6d49c70812a68b6fe0ec1e153efdef14a2e79",
+    "digest": "2U6XASD4NJTOI3Y6MJRFAQVVUIHPTFFP"
+  },
+  {
+    "filename": "icon_1.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/icon_1.gif",
+    "capturedAt": "20030904204631",
+    "sizeBytes": 138,
+    "sha256": "165fe28bcda8ea027b50972bac22dfce2b41949d679ed3b0e3dd5be54fa5f02d",
+    "digest": "A7SWIJA3PBVVDA2RBNLIWVFXWGEMJ4WE"
+  },
+  {
+    "filename": "icon_3.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/icon_3.gif",
+    "capturedAt": "20030904220044",
+    "sizeBytes": 143,
+    "sha256": "18fb96402ae08ded7108b3227422a29603d9a31d6bf47081842e50eec1950313",
+    "digest": "ESXA5ZD3N3PLSIERTSM7WSNJ72MEQJXG"
+  },
+  {
+    "filename": "icon_4.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/icon_4.gif",
+    "capturedAt": "20030904221019",
+    "sizeBytes": 200,
+    "sha256": "337c41bfdfad4a637d013b103c715ab64d3afdec442e0041854bc2532ccbd7fb",
+    "digest": "IN73HZIZ4JPW7GP32PKCND5NRHMGZQEE"
+  },
+  {
+    "filename": "icon_5.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/icon_5.gif",
+    "capturedAt": "20030904222919",
+    "sizeBytes": 195,
+    "sha256": "e01eb329db9d4bc7b10c664a563cfa96a6aa230560c3985f827417d055c5cd21",
+    "digest": "R2B5QEEVAOTK3MTHHSHW6BAUARSAWNJV"
+  },
+  {
+    "filename": "icon_6.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/icon_6.gif",
+    "capturedAt": "20030904225055",
+    "sizeBytes": 138,
+    "sha256": "841e2dbc69be02d8a48f2f017cc3577cb90b176c9de889495206e2f8438a52e0",
+    "digest": "7HOVFBYARYXJEOC54SYK6LOGOERR7S7N"
+  },
+  {
+    "filename": "k.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/k.gif",
+    "capturedAt": "20030904231341",
+    "sizeBytes": 1845,
+    "sha256": "30a1382e9fa6607ad4fc5b3a3635ae69fe43c5106bc1a81b4bdcd07f36b88d2e",
+    "digest": "G7H3JCTL32EJWPN5F6CJVEPD4KDIV6WC"
+  },
+  {
+    "filename": "l_line.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/l_line.gif",
+    "capturedAt": "20030904233959",
+    "sizeBytes": 1086,
+    "sha256": "226e21d82a95b1712edf0e1765d53582e51625e73f755cbfe0525dc31a79c111",
+    "digest": "7ZQLKBB6UKHWPVCGIVBEU7P4HT4NPBR6"
+  },
+  {
+    "filename": "line.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/line.gif",
+    "capturedAt": "20030905010052",
+    "sizeBytes": 315,
+    "sha256": "913fb67eea03972461d455aea1f2ebc72f72552e0c8cb6bb9fc21f6d5797edbc",
+    "digest": "XFZISAP4C7B37EIEOGCGAJNLJXUQFM3V"
+  },
+  {
+    "filename": "mark_2.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/mark_2.gif",
+    "capturedAt": "20030905011418",
+    "sizeBytes": 138,
+    "sha256": "defc1ea9828c9343ef31b4b9eae9424ea05c19ab4bba3b3b732f984afc0ea992",
+    "digest": "KDQ24LW3JVYXWIYYPDVEL2OQRV4MMA6W"
+  },
+  {
+    "filename": "mark_3.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/mark_3.gif",
+    "capturedAt": "20030905014705",
+    "sizeBytes": 143,
+    "sha256": "18fb96402ae08ded7108b3227422a29603d9a31d6bf47081842e50eec1950313",
+    "digest": "ESXA5ZD3N3PLSIERTSM7WSNJ72MEQJXG"
+  },
+  {
+    "filename": "mark_5.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/mark_5.gif",
+    "capturedAt": "20030905020231",
+    "sizeBytes": 138,
+    "sha256": "7f62fa961c03ef28b8c1d7139a6f2a97c3ef0a1b933c80cffe545d00830c0d02",
+    "digest": "DJ543SR7TVQBVUSOY3WEOOQ3FSCJLMGA"
+  },
+  {
+    "filename": "mark_6.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/mark_6.gif",
+    "capturedAt": "20030905023209",
+    "sizeBytes": 130,
+    "sha256": "5041d198594ccdd4367d63949b5136579e157e37da63dd6275e93db6c828fddd",
+    "digest": "7WGK6XTCW5UJHDLQGHQOF3YHNTBOC45C"
+  },
+  {
+    "filename": "s.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/s.gif",
+    "capturedAt": "20030905042349",
+    "sizeBytes": 1850,
+    "sha256": "83ed53ca698fed9e49dab08a87a50ab01645c870bf102f6373174d15a4876eb8",
+    "digest": "MTOMR7CVOOROLJMSL5UNQ7E6DIQJTDH7"
+  },
+  {
+    "filename": "top_up.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/top_up.gif",
+    "capturedAt": "20030905050336",
+    "sizeBytes": 210,
+    "sha256": "39c736cdec25a7c1b51956f280389b9768582fbf9e666ffa5e237c5f86746880",
+    "digest": "QDVSFLBGQD2FVXZWEE2HVC7LHFYR43YF"
+  },
+  {
+    "filename": "w.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/w.gif",
+    "capturedAt": "20030905053636",
+    "sizeBytes": 1863,
+    "sha256": "0fb10cfeae5b2a4071c7d93dce14e740046f486a88c02a865847ff01cefb6bd6",
+    "digest": "BKULJAN3RUGJSSZD5M6SHHN3Z43JJFUL"
+  }
+]

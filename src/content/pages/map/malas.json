@@ -1,0 +1,25 @@
+{
+  "stem": "map/malas",
+  "originalPath": "/map/malas.html",
+  "originalUrl": "http://www.forg.co.kr/map/malas.html",
+  "kind": "page",
+  "title": "malas",
+  "capturedAt": "2007-11-28T20:24:36",
+  "versions": [
+    {
+      "capturedAt": "2007-11-28T20:24:36",
+      "kind": "page"
+    }
+  ],
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">\n</p><div align=\"center\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\" width=\"630\">\n<tbody><tr>\n<td height=\"10\" width=\"630\"><p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"2\">&nbsp;</font><font color=\"#333333\"><a name=\"top\"></a></font></p></td>\n</tr>\n<tr>\n<td height=\"25\" width=\"630\"><p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">\nCatalog*********\n브리튼\n마젠시아\n미녹\n문글로우\n스카라브레이스\n트린식\n부케니아덴\n코브\n젤롬\n뉴젤롬\n오클로\n셔펜드홀드\n베스퍼\n유\n델루시아\n파푸아\n----------------\n월드맵\n일쉐나전체지도\n잃어버린대륙\n말라스\n보물지도\n<img border=\"0\" height=\"17\" src=\"/img/posts/site/map/images/left_menu/map_up.gif\" width=\"200\"></p>\n</td>\n</tr>\n<tr>\n<td height=\"550\" width=\"630\"> <p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<table align=\"center\" border=\"1\" bordercolordark=\"#666666\" bordercolorlight=\"black\" cellspacing=\"0\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\" width=\"600\">\n<tbody><tr>\n<td height=\"30\">\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;&nbsp;<font face=\"Verdana\"><span style=\"font-size:9pt;\"><b><img align=\"absbottom\" border=\"0\" height=\"30\" src=\"/img/posts/site/map/images/left_menu/alpha/u.gif\" width=\"30\">O.MAPS</b></span></font></p>\n</td>\n</tr>\n<tr>\n<td height=\"22\">\n<p align=\"left\" style=\"line-height:50%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\"><img border=\"2\" height=\"600\" src=\"/img/posts/site/map/malas.gif\" usemap=\"#ImageMap1\" width=\"550\"></span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0; margin-left:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font><font color=\"#333333\" face=\"돋움\" size=\"2\"><b>Written By Forg</b></font></p>\n<p align=\"right\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n</td>\n</tr>\n</tbody></table>\n</td>\n</tr>\n<tr>\n<td height=\"20\" width=\"630\"><p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;<img border=\"0\" height=\"15\" src=\"/img/posts/site/map/images/left_menu/b_logo.gif\" width=\"100\"></p></td>\n</tr>\n</tbody></table></div>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<map name=\"ImageMap1\">\n<area coords=\"391, 550, 522, 580\" href=\"https://web.archive.org/web/20071128202436/http://www.forg.co.kr/I_Anciect%20Lair%20II.html\" shape=\"rect\" target=\"_blank\">\n</map>",
+  "redirectTo": null,
+  "baseTarget": null
+}

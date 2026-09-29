@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "menu_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/tinkering/menu_1.gif",
+    "capturedAt": "20071123005340",
+    "sizeBytes": 5255,
+    "sha256": "470cbece52f7de3851144ab1fd5fc090209804a785121554c44c3537f4b674ba",
+    "digest": "MD6G6SIZ5UH5WQUZEELLNNN3IECKBLIC"
+  },
+  {
+    "filename": "menu_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/tinkering/menu_2.gif",
+    "capturedAt": "20071123005304",
+    "sizeBytes": 4684,
+    "sha256": "284436497283b0abaab790c871f55dd7b7ef6f64aa1b2212ecf0ab301d47fbb8",
+    "digest": "3EP3SXD3DQVEMIWS6GU6NJFGGUCN3STZ"
+  },
+  {
+    "filename": "tinkertool.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/tinkering/tinkertool.gif",
+    "capturedAt": "20071123005356",
+    "sizeBytes": 1237,
+    "sha256": "19714297a0033c23ff791927e1d7bbd7a8b8244095c6b5e185d2a283fd071231",
+    "digest": "JRU6LH7N2YREJH7Q2L27LH77376SXZDV"
+  },
+  {
+    "filename": "tinkertool_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/tinkering/tinkertool_1.gif",
+    "capturedAt": "20071123005241",
+    "sizeBytes": 811,
+    "sha256": "f456864e691624f9486c5a3e1b7e84df8f1e444ca07dce7f499bd9f60c855dc9",
+    "digest": "FAWWHSNHLEPGALENDSXIMJUKVGMIWPE3"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "stem": "map/britain.cofvirtue",
+  "originalPath": "/map/britain.cofvirtue.html",
+  "originalUrl": "http://forg.co.kr:80/map/britain.cofvirtue.html",
+  "kind": "page",
+  "title": "Britain - Chamber of Virtue",
+  "capturedAt": "2007-11-29T20:52:16",
+  "versions": [
+    {
+      "capturedAt": "2001-03-03T02:25:55",
+      "kind": "page"
+    },
+    {
+      "capturedAt": "2001-11-09T02:54:19",
+      "kind": "page"
+    },
+    {
+      "capturedAt": "2007-11-29T20:52:16",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p></p><div id=\"picture\" style=\"position:absolute; left:80px; top:75px; width:404px; height:605px; z-index:1;\">\n<p><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/misc/cofvirtue.jpg\" data-recovery=\"missing\" height=\"605\" src=\"/img/placeholder/missing.svg\" width=\"524\"></p>\n</div> <div id=\"textbox\" style=\"position:absolute; left:83px; top:28px; width:314px; height:47px; z-index:2;\">\n<h2><font face=\"??\" size=\"3\">Britain - Chamber of Virtue</font></h2>\n</div>",
+  "redirectTo": null,
+  "baseTarget": null
+}

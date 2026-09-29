@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "icon_file.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/latest/last_forg/img/icon_file.gif",
+    "capturedAt": "20130204113953",
+    "sizeBytes": 295,
+    "sha256": "9d82406cad5df0f814fc625e792242b63fb8a24db755f53d0769f8af98f3d4bb",
+    "digest": "7Y5FZEF35KOIUSNRWXDIFUGWXCCWBIFT"
+  },
+  {
+    "filename": "icon_hot.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/latest/last_forg/img/icon_hot.gif",
+    "capturedAt": "20130204113953",
+    "sizeBytes": 838,
+    "sha256": "b39d311d6dbcd549b61809ec40ae405493a993d01da9248256ecb85c827d64de",
+    "digest": "PQRSECALHOEL3GUZRDKZBGTXCEGJVLQ4"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "stem": "faq_1",
+  "originalPath": "/faq_1.html",
+  "originalUrl": "http://forg.co.kr:80/faq_1.html",
+  "kind": "page",
+  "title": "Login_Error",
+  "capturedAt": "2007-10-26T12:59:17",
+  "versions": [
+    {
+      "capturedAt": "2002-12-04T08:38:33",
+      "kind": "page"
+    },
+    {
+      "capturedAt": "2007-10-26T12:59:17",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font>\n</p><p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">로그인을 \n하셔야 모든 페이지를 보실 수 있습니다.</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">로그인을 \n하신분이라면 다음을 보시길.</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">\"로그인 인식문제로 \n인해 로그인이 안되어 있는것처럼 나오는 현상입니다.<br><br>도구-옵션에서 파일삭제-쿠키삭제 하시고<br>홈에 들어와서 리플레쉬한다음 로그인 \n해보시길 바랍니다.\n\"</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">멤버인증의 \n수동 설치는 좌측메뉴 Login?(SP2)를 클릭하시길 바랍니다.</span></font></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

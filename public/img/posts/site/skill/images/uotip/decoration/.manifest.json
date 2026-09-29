@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "a_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/decoration/a_2.gif",
+    "capturedAt": "20010831132544",
+    "sizeBytes": 8012,
+    "sha256": "6ff5b714c3154bc028e9bda1f519d48b09ce4ad9ac4490e520ab061b082d1cb5",
+    "digest": "BTY5MJQMPBVR6QBZNKARPZNKF5E44MXM"
+  },
+  {
+    "filename": "flower_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/decoration/flower_2.gif",
+    "capturedAt": "20010831141621",
+    "sizeBytes": 10687,
+    "sha256": "195ee04d34eab3fa8b0f28c1494d69d879127de9dd250031f6fe36b44cef6978",
+    "digest": "NFSQWEHVRJG5D2SIGECBIYCICOHSXRF2"
+  },
+  {
+    "filename": "flower_5.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/decoration/flower_5.gif",
+    "capturedAt": "20010831152848",
+    "sizeBytes": 10635,
+    "sha256": "ea54573eec319cc12e76eef7ee32a67dd559133cc60d344fa328f8a063c776c0",
+    "digest": "UA37BZXIUHEOHWUBLFWQW25EFCFXMFA3"
+  },
+  {
+    "filename": "flower_6.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/decoration/flower_6.gif",
+    "capturedAt": "20010831155452",
+    "sizeBytes": 10656,
+    "sha256": "8659825a1c265d3018bbfa37a0bd7f26432ddbf961f88d2fd196dcc387d8dc25",
+    "digest": "Y4YBGHEZQPHO2NN7756I4H2VPXNANQ5H"
+  },
+  {
+    "filename": "flower_7.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/decoration/flower_7.gif",
+    "capturedAt": "20010831161543",
+    "sizeBytes": 6918,
+    "sha256": "e9f21818b8b93fcb33f42dca88787ddadee06a13828c7ac17d9b34b015c1c482",
+    "digest": "C44RCM7DNDWJAA2GTMPENPX3NT7HZE37"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "btn_password_forget.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/outlogin/forg/img/btn_password_forget.gif",
+    "capturedAt": "20130204113951",
+    "sizeBytes": 307,
+    "sha256": "7a456f6030afc59a1f81001f599bf49a9aa6da952f844f1d38180c5550ec30ea",
+    "digest": "VSIJ3RN6DLSL4HCLYCUVGVUIDAQ54HV7"
+  },
+  {
+    "filename": "btn_register.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/outlogin/forg/img/btn_register.gif",
+    "capturedAt": "20130204113952",
+    "sizeBytes": 245,
+    "sha256": "a4a658ca485cb3427710addb94555b3b3769dda8d30b00105d50087abaed20e4",
+    "digest": "U4VVYHTESCQVCCKKPIPMANNYPSOQL7U4"
+  },
+  {
+    "filename": "close.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/outlogin/forg/img/close.gif",
+    "capturedAt": "20130204113951",
+    "sizeBytes": 197,
+    "sha256": "dc3fc6cd543e3dc4993fe836f9397eda896d1985047b0f7fe326e3e14652db29",
+    "digest": "2XXA5COPK7ZCY3N74J4F7FYU66MZ2ZRA"
+  },
+  {
+    "filename": "icon.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/outlogin/forg/img/icon.gif",
+    "capturedAt": "20130204113951",
+    "sizeBytes": 45,
+    "sha256": "563d369245a4bdb89e074c46b1dcf00945ee1005d4364e0022d5923e0b5d9114",
+    "digest": "TA7IHMXDNA5BRH7L7D34TPBYIGSTJ44X"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/house_1",
+  "originalPath": "/skill_knowhow/house_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/house_1.html",
+  "kind": "redirect",
+  "title": "집간판옵션",
+  "capturedAt": "2007-11-30T22:03:37",
+  "versions": [
+    {
+      "capturedAt": "2007-11-30T22:03:37",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

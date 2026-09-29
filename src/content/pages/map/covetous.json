@@ -1,0 +1,25 @@
+{
+  "stem": "map/covetous",
+  "originalPath": "/map/covetous.htm",
+  "originalUrl": "http://forg.co.kr:80/map/covetous.htm",
+  "kind": "page",
+  "title": "OUTSIDE",
+  "capturedAt": "2001-03-03T02:02:23",
+  "versions": [
+    {
+      "capturedAt": "2001-03-03T02:02:23",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "silver",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>OUTSIDE</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt0.gif\" data-recovery=\"missing\" height=\"335\" src=\"/img/placeholder/missing.svg\" width=\"340\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"></p><hr width=\"50%\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>Level 1 - Entrance</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt1.gif\" data-recovery=\"missing\" height=\"183\" src=\"/img/placeholder/missing.svg\" width=\"221\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p><hr width=\"50%\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>Level 2</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt2.gif\" data-recovery=\"missing\" height=\"240\" src=\"/img/placeholder/missing.svg\" width=\"273\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"></p><hr width=\"50%\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>Level 2</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt3.gif\" data-recovery=\"missing\" height=\"154\" src=\"/img/placeholder/missing.svg\" width=\"157\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"></p><hr width=\"50%\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>Level 4</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt4.gif\" data-recovery=\"missing\" height=\"70\" src=\"/img/placeholder/missing.svg\" width=\"73\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"></p><hr width=\"50%\">\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"4\"><b>Level 5</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/map/dungeons/cvt5.gif\" data-recovery=\"missing\" height=\"93\" src=\"/img/placeholder/missing.svg\" width=\"95\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"돋움\" size=\"2\"><b>[출처] </b></font><a href=\"http://uo.stratics.com\" target=\"_blank\"><font color=\"blue\" face=\"돋움\" size=\"2\"><b>UOSS</b></font></a></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

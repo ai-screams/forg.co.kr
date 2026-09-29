@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "b_logo.gif",
+    "originalUrl": "http://forg.co.kr:80/map/images/left_menu/b_logo.gif",
+    "capturedAt": "20020708143619",
+    "sizeBytes": 496,
+    "sha256": "b12ab84d3cc2beb3c1d18806adb42b42388bb1e4da6ee0de82662e07fcb99877",
+    "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
+  },
+  {
+    "filename": "map_up.gif",
+    "originalUrl": "http://forg.co.kr:80/map/images/left_menu/map_up.gif",
+    "capturedAt": "20020708151518",
+    "sizeBytes": 696,
+    "sha256": "b0fcdea7854e714eeaa381ae48c54002394d5cb274c369a89dd0fbc1a8c1be32",
+    "digest": "JGOOFN3UIZSTTHLW4JE6QLSIVID7FUJE"
+  },
+  {
+    "filename": "top_up.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/top_up.gif",
+    "capturedAt": "20071129205803",
+    "sizeBytes": 210,
+    "sha256": "39c736cdec25a7c1b51956f280389b9768582fbf9e666ffa5e237c5f86746880",
+    "digest": "QDVSFLBGQD2FVXZWEE2HVC7LHFYR43YF"
+  }
+]

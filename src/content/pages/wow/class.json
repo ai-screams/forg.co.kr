@@ -1,0 +1,25 @@
+{
+  "stem": "wow/class",
+  "originalPath": "/wow/class.html",
+  "originalUrl": "http://forg.co.kr:80/wow/class.html",
+  "kind": "page",
+  "title": "직업(Class)",
+  "capturedAt": "2004-10-22T02:41:13",
+  "versions": [
+    {
+      "capturedAt": "2004-10-22T02:41:13",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "#CCCCCC",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p><font face=\"Verdana\"><span style=\"font-size:9pt;\">업데이트중입니다.....</span></font></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

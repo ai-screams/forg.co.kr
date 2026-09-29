@@ -1,0 +1,19 @@
+{
+  "stem": "uoquest/UO_Quest",
+  "originalPath": "/uoquest/UO_Quest.html",
+  "originalUrl": "http://forg.co.kr:80/uoquest/UO_Quest.html",
+  "kind": "redirect",
+  "title": "UO.Quest",
+  "capturedAt": "2007-10-16T10:49:29",
+  "versions": [
+    {
+      "capturedAt": "2007-10-16T10:49:29",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

@@ -1,0 +1,25 @@
+{
+  "stem": "forg_l",
+  "originalPath": "/forg_l.htm",
+  "originalUrl": "http://www.forg.co.kr:80/forg_l.htm",
+  "kind": "page",
+  "title": "A",
+  "capturedAt": "2001-02-02T15:24:00",
+  "versions": [
+    {
+      "capturedAt": "2001-02-02T15:24:00",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><a href=\"/site/index/\" target=\"_top\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr:80/Image/l_logo.gif\" data-recovery=\"missing\" height=\"405\" src=\"/img/placeholder/missing.svg\" width=\"30\"></a></p>\n",
+  "redirectTo": null,
+  "baseTarget": "detail"
+}

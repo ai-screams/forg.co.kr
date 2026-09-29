@@ -1,0 +1,19 @@
+{
+  "stem": "skill/uo_jobs_forensic",
+  "originalPath": "/skill/uo_jobs_forensic.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_jobs_forensic.html",
+  "kind": "redirect",
+  "title": "uo_jobs_forensic",
+  "capturedAt": "2002-02-13T15:22:45",
+  "versions": [
+    {
+      "capturedAt": "2002-02-13T15:22:45",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "https://web.archive.org/web/20020213152245/http://forg.dotple.com/intro.html",
+  "baseTarget": null
+}

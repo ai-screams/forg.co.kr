@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_addon",
+  "originalPath": "/skill_knowhow/uo_knowhow_addon.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_addon.html",
+  "kind": "redirect",
+  "title": "박제에대해서",
+  "capturedAt": "2007-11-29T21:32:38",
+  "versions": [
+    {
+      "capturedAt": "2007-11-29T21:32:38",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

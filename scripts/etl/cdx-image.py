@@ -102,6 +102,14 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("forg-zboard-data", "forg.co.kr/zboard/data/"),
     ("forg-zb40-data",   "forg.co.kr/zb/data/"),
     ("uospace-zb-data",  "forg.uospace.net/zb/data/"),
+    # [7] The other static sections' own image folders (`02g` pages).
+    ("forg-diablo",      "forg.co.kr/Diablo/"),
+    ("forg-skill-index", "forg.co.kr/skill_index/"),
+    ("forg-skill-newbie", "forg.co.kr/skill_newbie/"),
+    ("forg-uocraft",     "forg.co.kr/uocraft/"),
+    ("forg-image",       "forg.co.kr/Image/"),
+    ("forg-holy",        "forg.co.kr/holy/"),
+    ("forg-wow",         "forg.co.kr/wow/"),
 ]
 
 # ── Time range — limit to forg's active years to keep responses small ─-

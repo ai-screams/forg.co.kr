@@ -1,0 +1,23 @@
+{
+  "stem": "skill/uo_knowhow_addon_7",
+  "originalPath": "/skill/uo_knowhow_addon_7.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_knowhow_addon_7.html",
+  "kind": "redirect",
+  "title": "팁란-아이템만들기-미덕의활",
+  "capturedAt": "2004-01-18T22:11:11",
+  "versions": [
+    {
+      "capturedAt": "2003-02-13T12:30:33",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2004-01-18T22:11:11",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

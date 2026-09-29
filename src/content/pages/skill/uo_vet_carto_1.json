@@ -1,0 +1,23 @@
+{
+  "stem": "skill/uo_vet_carto_1",
+  "originalPath": "/skill/uo_vet_carto_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_vet_carto_1.html",
+  "kind": "redirect",
+  "title": "uo_vet_carto_1",
+  "capturedAt": "2004-01-19T09:29:26",
+  "versions": [
+    {
+      "capturedAt": "2003-02-15T01:42:54",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2004-01-19T09:29:26",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

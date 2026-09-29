@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "b.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/bard/b.gif",
+    "capturedAt": "20071121215023",
+    "sizeBytes": 10653,
+    "sha256": "87fbf944d6359a37cfb350c56596561b4b0f3185ab630627992c2974278e14a0",
+    "digest": "7SVDECNOHKHTXGWXTISKYCG7E7T353Z7"
+  },
+  {
+    "filename": "b_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/bard/b_1.gif",
+    "capturedAt": "20071119195547",
+    "sizeBytes": 9075,
+    "sha256": "be269226e0ac5096c9f313438b6b5607592280c67dba1b489e6e62a2b9cc2469",
+    "digest": "42J7MQLR3T55KVFTLKRU7TPQKMBUJSCI"
+  },
+  {
+    "filename": "b_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/bard/b_2.gif",
+    "capturedAt": "20071120202812",
+    "sizeBytes": 10138,
+    "sha256": "47c07b7acdc0e53caabfce622efd738ef78ba7f56792d9447b9a7156577bff8f",
+    "digest": "22TCSDBZ426QWWQN4PYKQR3Z4W2B7NQD"
+  },
+  {
+    "filename": "b_3.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/bard/b_3.gif",
+    "capturedAt": "20071120202853",
+    "sizeBytes": 9536,
+    "sha256": "23e060b29a6ac3a38f90991cac9373a93934179f0f037aff5bdacb28c3a7f953",
+    "digest": "CYMYW5C2RZK2GFMZRMBTZYAE2KSQ46NH"
+  }
+]

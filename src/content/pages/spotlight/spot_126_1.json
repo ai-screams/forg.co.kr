@@ -1,0 +1,25 @@
+{
+  "stem": "spotlight/spot_126_1",
+  "originalPath": "/spotlight/spot_126_1.html",
+  "originalUrl": "http://www.forg.co.kr/spotlight/spot_126_1.html",
+  "kind": "page",
+  "title": "spot_126_1",
+  "capturedAt": "2007-11-28T19:49:47",
+  "versions": [
+    {
+      "capturedAt": "2007-11-28T19:49:47",
+      "kind": "page"
+    }
+  ],
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
+  "bodyStyle": {
+    "color": "black",
+    "background-image": "url('/img/posts/site/spotlight/images/zoombox_background.gif')",
+    "--link": "blue",
+    "--vlink": "black",
+    "--alink": "black"
+  },
+  "html": "\n<table cellpadding=\"0\" cellspacing=\"0\" height=\"504\" width=\"664\">\n<tbody><tr>\n<td>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">\n</p><p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><a title=\":::Closed:::\"><img align=\"absmiddle\" border=\"2\" data-original-src=\"http://www.forg.co.kr/spotlight/images/forg/perils01.jpg\" data-recovery=\"missing\" height=\"480\" src=\"/img/placeholder/missing.svg\" width=\"640\"></a></p>\n</td>\n</tr>\n</tbody></table>\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

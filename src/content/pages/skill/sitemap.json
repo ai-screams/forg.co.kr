@@ -1,0 +1,19 @@
+{
+  "stem": "skill/sitemap",
+  "originalPath": "/skill/sitemap.html",
+  "originalUrl": "http://forg.co.kr:80/skill/sitemap.html",
+  "kind": "redirect",
+  "title": "포그홈전체지도",
+  "capturedAt": "2003-12-31T19:16:26",
+  "versions": [
+    {
+      "capturedAt": "2003-12-31T19:16:26",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

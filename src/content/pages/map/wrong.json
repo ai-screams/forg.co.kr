@@ -1,0 +1,19 @@
+{
+  "stem": "map/wrong",
+  "originalPath": "/map/wrong.htm",
+  "originalUrl": "http://forg.co.kr:80/map/wrong.htm",
+  "kind": "frameset",
+  "title": "Grand Atlas of Britannia - Wrong",
+  "capturedAt": "2001-01-26T21:41:00",
+  "versions": [
+    {
+      "capturedAt": "2001-01-26T21:41:00",
+      "kind": "frameset"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "<frameset border=\"0\" cols=\"1*\" frameborder=\"NO\" framespacing=\"0\" rows=\"100%\"><frame frameborder=\"NO\" marginheight=\"0\" marginwidth=\"0\" name=\"bottom\" noresize=\"\" scrolling=\"auto\" src=\"https://web.archive.org/web/20010126214100/http://forg.co.kr:80/map/wrong-b.htm\"></frameset>",
+  "redirectTo": null,
+  "baseTarget": null
+}

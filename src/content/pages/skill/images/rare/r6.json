@@ -1,0 +1,25 @@
+{
+  "stem": "skill/images/rare/r6",
+  "originalPath": "/skill/images/rare/r6.htm",
+  "originalUrl": "http://forg.co.kr:80/skill/images/rare/r6.htm",
+  "kind": "page",
+  "title": "r6",
+  "capturedAt": "2001-09-20T14:58:42",
+  "versions": [
+    {
+      "capturedAt": "2001-09-20T14:58:42",
+      "kind": "page"
+    }
+  ],
+  "css": ".leading200 { line-height: 200% }\n.leading180 { line-height: 180% }\n.leading150 { line-height: 150% }\n.leading100 { line-height: 100% }",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "<table border=\"\" bordercolor=\"#666666\" bordercolordark=\"#666666\" cellpadding=\"0\" cellspacing=\"0\" width=\"44\"> <tbody><tr> <td width=\"964\"><p><font face=\"돋움\" size=\"2\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/skill/images/rare/image/r8.gif\" data-recovery=\"missing\" height=\"312\" src=\"/img/placeholder/missing.svg\" width=\"340\"></font></p></td> </tr> <tr> <td width=\"964\"><p align=\"center\"><font color=\"#666666\" face=\"돋움\" size=\"2\"><b>밀</b></font></p></td> </tr></tbody></table>",
+  "redirectTo": null,
+  "baseTarget": null
+}

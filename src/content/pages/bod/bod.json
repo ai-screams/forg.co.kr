@@ -1,0 +1,23 @@
+{
+  "stem": "bod/bod",
+  "originalPath": "/bod/bod.html",
+  "originalUrl": "http://forg.co.kr:80/bod/bod.html",
+  "kind": "redirect",
+  "title": "BOD. Infomation",
+  "capturedAt": "2007-10-16T10:51:41",
+  "versions": [
+    {
+      "capturedAt": "2003-02-09T20:00:31",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2007-10-16T10:51:41",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

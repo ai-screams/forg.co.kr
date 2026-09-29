@@ -57,12 +57,12 @@ ERRORS_FILE = RUN_DIR / ".errors.jsonl"
 # ── Helpers ────────────────────────────────────────────────────────────-
 
 
-def load_queue() -> list[dict]:
-    if not QUEUE_FILE.exists():
-        sys.exit(f"FATAL: queue not found: {QUEUE_FILE}")
-    raw = json.loads(QUEUE_FILE.read_text(encoding="utf-8"))
+def load_queue(queue_file: Path = QUEUE_FILE) -> list[dict]:
+    if not queue_file.exists():
+        sys.exit(f"FATAL: queue not found: {queue_file}")
+    raw = json.loads(queue_file.read_text(encoding="utf-8"))
     if not isinstance(raw, list):
-        sys.exit(f"FATAL: queue is not a list: {QUEUE_FILE}")
+        sys.exit(f"FATAL: queue is not a list: {queue_file}")
     return raw
 
 
@@ -257,6 +257,12 @@ def main() -> int:
         help="process at most N unique images (0 = all)",
     )
     parser.add_argument(
+        "--queue",
+        type=Path,
+        default=QUEUE_FILE,
+        help="queue JSON (default: image-download-queue.json; site-image-queue.json for 02g pages)",
+    )
+    parser.add_argument(
         "--print-every",
         type=int,
         default=20,
@@ -277,7 +283,7 @@ def main() -> int:
     RUN_DIR.mkdir(parents=True, exist_ok=True)
     RUN_PID.write_text(str(__import__("os").getpid()))
 
-    queue = load_queue()
+    queue = load_queue(args.queue)
     unique = dedup_by_target(queue)
 
     done_progress = set() if args.force else load_progress()

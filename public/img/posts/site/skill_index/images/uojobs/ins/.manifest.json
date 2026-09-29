@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "book.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/book.gif",
+    "capturedAt": "20071119190336",
+    "sizeBytes": 607,
+    "sha256": "a4eba3c8ce1c2241159f76868691c265e731ac97781a2a06f536a5c0c6b83c94",
+    "digest": "5OIBTEZL5Y6ASELZEDMLYHLY5UGS2BIP"
+  },
+  {
+    "filename": "fullbook.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/fullbook.gif",
+    "capturedAt": "20071119190552",
+    "sizeBytes": 1124,
+    "sha256": "a1c9ad6e64ad6cc99d68a332104c0985e0c09c600909a0bd89fb74b03d4a3933",
+    "digest": "EUYMJZ3ORPXJ5W6QSK3KASNWBL2XKUF3"
+  },
+  {
+    "filename": "ins_skill.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/ins_skill.gif",
+    "capturedAt": "20071119190515",
+    "sizeBytes": 5914,
+    "sha256": "d1a444cbb4c35628224dae22fe8dd4f2c5c20fcc97d3d5af269a9975a9478627",
+    "digest": "JX2WWZBV2XUFD6HFDOGER6FVJKCTUCXE"
+  },
+  {
+    "filename": "pen.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/pen.gif",
+    "capturedAt": "20071119190813",
+    "sizeBytes": 323,
+    "sha256": "e12025a9b73c1f1594b4a625889ff35e1543d04f834ce4e22cb549bd1dd909a7",
+    "digest": "IFKV5UZHLBGXBYXZVRP4YPXVVFHFEIJI"
+  },
+  {
+    "filename": "runebook.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/runebook.gif",
+    "capturedAt": "20071119190647",
+    "sizeBytes": 1111,
+    "sha256": "0f5e4ac3853c7d943e61643accda8034555911866111bf7368aad8539b600cc9",
+    "digest": "ONR5TKESIX4GET2KFK5APGMGIYZGBWXI"
+  },
+  {
+    "filename": "scroll.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/uojobs/ins/scroll.gif",
+    "capturedAt": "20071119190914",
+    "sizeBytes": 1067,
+    "sha256": "73527c0d496343b793e180d99dd6bcd3157a2bb93ac11fb1a9bf68ff827d9a8d",
+    "digest": "FPIWABYPSD4CTFRBM3IVMCHV5FOEHMY3"
+  }
+]

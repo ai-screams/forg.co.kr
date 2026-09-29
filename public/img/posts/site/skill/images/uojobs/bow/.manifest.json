@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "bow_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/bow_2.gif",
+    "capturedAt": "20021206233701",
+    "sizeBytes": 5234,
+    "sha256": "4e47fed033d1631e4b7b5fb1dff8d90a3eef16f8ce9e397733a850116d017fa4",
+    "digest": "W3FU4HO5Y6PWGGGZWNTY3BHA4TY7CST4"
+  },
+  {
+    "filename": "bow_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/bow_4.gif",
+    "capturedAt": "20031122214454",
+    "sizeBytes": 4503,
+    "sha256": "e71c73b5aa1677138c777821b78de41ea012b55f9f3eff4f44d0f9076dae2a43",
+    "digest": "JDMFZ2XNNOAGJYTQX2AYJ344XW4HVO5F"
+  },
+  {
+    "filename": "bow_5.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/bow_5.gif",
+    "capturedAt": "20021207013201",
+    "sizeBytes": 4689,
+    "sha256": "8a99a7f2670aedf976f2810cb37f5cfcaf94e1c71f90fcf4dd1ce2b888374064",
+    "digest": "JBFUDFHX5OTZURTFOOK67MEORCODZBBW"
+  },
+  {
+    "filename": "cross.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/cross.gif",
+    "capturedAt": "20040119043941",
+    "sizeBytes": 1089,
+    "sha256": "2463cc5cc324bd3dd36c7d839be0083bd24ee25a0f20e623c85530f7820b3743",
+    "digest": "KQ3DWJWL64JV66FEJKKP73GILIAH3NBE"
+  },
+  {
+    "filename": "heavy.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/heavy.gif",
+    "capturedAt": "20021207000943",
+    "sizeBytes": 1111,
+    "sha256": "b80c83e3dd71803ab16077bd5484afef7e826d6237685ed657f03020a063f26c",
+    "digest": "3ZSRWOJXJZEDE2XTFSOZ7EUA7WTMRCEG"
+  },
+  {
+    "filename": "log.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/log.gif",
+    "capturedAt": "20021207013116",
+    "sizeBytes": 1013,
+    "sha256": "2923d94d38a26e6a32ddb75e8ea9ed7116dd6b182dcbd0b5cb5d6caf4e6009fc",
+    "digest": "ULPOL4VHJM34C3D42ZAD7XL6ZSFUQ5JY"
+  },
+  {
+    "filename": "tool_bow.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/tool_bow.gif",
+    "capturedAt": "20040119101404",
+    "sizeBytes": 1392,
+    "sha256": "1dd918ce468f25a8c60203c78a1de3041e831d164f8b5aba6fd90909824e6c37",
+    "digest": "4TEHH5PSVWS3XHDOMDN6UJKHWTJHLMTD"
+  }
+]

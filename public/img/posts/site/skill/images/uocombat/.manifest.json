@@ -1,0 +1,74 @@
+[
+  {
+    "filename": "a_shield.jpg",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/a_shield.jpg",
+    "capturedAt": "20010620225202",
+    "sizeBytes": 24552,
+    "sha256": "f4dd863a703b3759d16a8fff5a67ce25cf6247feec065b60a003ef6532581eeb",
+    "digest": "LZTUWUPWCYPBKAWHDMI5UJ7JGYYKZ23E"
+  },
+  {
+    "filename": "bard.gif",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/bard.gif",
+    "capturedAt": "20010621002303",
+    "sizeBytes": 4458,
+    "sha256": "bd2a120ec1b03f77e0556c1948fa4be32e11fbc780ad060d28bf6632170208c1",
+    "digest": "UTYOYUX3OXEAYT5FS3JNWAEECUBY4DV6"
+  },
+  {
+    "filename": "bard_1.gif",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/bard_1.gif",
+    "capturedAt": "20010620224739",
+    "sizeBytes": 5428,
+    "sha256": "ce2f87649911582089d61f8080fc859a4dbac81664b3b3e932d25ad8eb6f8c32",
+    "digest": "2X3NNRCJDR3JAT3ASXNV3EEX63QFFIID"
+  },
+  {
+    "filename": "enticement.gif",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/enticement.gif",
+    "capturedAt": "20010620224532",
+    "sizeBytes": 13021,
+    "sha256": "6cf3e62f6dd5d76a78c4c29a79fa4167ad057f633e6fa0e33f8ce6c0573d09c4",
+    "digest": "RYGFGHM3FGLNZSK7MSKLKHPWMAAWHTHM"
+  },
+  {
+    "filename": "he_c.gif",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/he_c.gif",
+    "capturedAt": "20010621003116",
+    "sizeBytes": 4128,
+    "sha256": "e883ba82bdacdb9afb7ddcb76986a66b1ad0ad5da7b25c362061b1d8604cbfe3",
+    "digest": "ZI4U6WHWRRQZKDV7YITMPD5GB222TXYO"
+  },
+  {
+    "filename": "hiding.gif",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/hiding.gif",
+    "capturedAt": "20010620224314",
+    "sizeBytes": 28140,
+    "sha256": "23dfa4dce08a305f4b9ce224f06623752ec3bed282cf636bc5a2d58a3e4f44c4",
+    "digest": "4HZGQDAPV3HMXKV43LSJGQIZBR3XETG6"
+  },
+  {
+    "filename": "w_bow.jpg",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/w_bow.jpg",
+    "capturedAt": "20010621002254",
+    "sizeBytes": 5693,
+    "sha256": "db4757dd55c99ae451e93f23dbf5bddb1ed99c89b79e02301941620959334d60",
+    "digest": "6KTTNDGIYBCZZOFSZU5S2JL2B552E5UZ"
+  },
+  {
+    "filename": "w_hammer.jpg",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/w_hammer.jpg",
+    "capturedAt": "20010620224704",
+    "sizeBytes": 6697,
+    "sha256": "98edb0a3ed9297b4edcb6552f40d24ad95c39d84ca1d276b995f9eb06dfd292b",
+    "digest": "NJVQ2IFZQAWHFZBJSNGZNBC54TVB3AGN"
+  },
+  {
+    "filename": "w_stab.jpg",
+    "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/w_stab.jpg",
+    "capturedAt": "20010621002249",
+    "sizeBytes": 7783,
+    "sha256": "c03347b5200d27438bf523089f36c0d181f06d80f83bd6789ab9ebb721db0e74",
+    "digest": "DN5OG7QKRJOJ4ZJPMO63WJC3SQV56XZQ"
+  }
+]

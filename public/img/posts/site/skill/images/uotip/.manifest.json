@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "mirc2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/mirc2.gif",
+    "capturedAt": "20010809104410",
+    "sizeBytes": 9419,
+    "sha256": "89e8d19b34a7296931339d19376806da81b4d1be60c83db9cb7c3ca5e0b135e0",
+    "digest": "LUD7U56IWCPGLPXKGZLCCENWXSCJNTW4"
+  },
+  {
+    "filename": "mirc3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/mirc3.gif",
+    "capturedAt": "20010809105514",
+    "sizeBytes": 8217,
+    "sha256": "87de019b6e6bda66e76cbfc52774b9030f62198cd75505942429dad0ac5f4dcb",
+    "digest": "MVPEPC3IXX5SIKRTRMK77ZX7LNBK4R4H"
+  },
+  {
+    "filename": "mirc4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/mirc4.gif",
+    "capturedAt": "20010809105430",
+    "sizeBytes": 16147,
+    "sha256": "e9cb6063f7ca9d97d876307b6fb00ae02ceba771d606d58f0a0f9941b4c6d5de",
+    "digest": "35GBGZGOFGRBYZOT4G2RJYFGVBIXWMMG"
+  },
+  {
+    "filename": "runebook.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/runebook.gif",
+    "capturedAt": "20010812232801",
+    "sizeBytes": 39578,
+    "sha256": "d379c16c23214fbad6a4f36f722728383ca9b4db5b7bcf158485c3a1bfbe5061",
+    "digest": "RA7EBROIYJ2EHJM4BFXMV35WQLNLGMIK"
+  }
+]

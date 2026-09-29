@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_fame_1",
+  "originalPath": "/skill_knowhow/uo_knowhow_fame_1.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_fame_1.html",
+  "kind": "redirect",
+  "title": "명성획득",
+  "capturedAt": "2005-03-01T23:30:53",
+  "versions": [
+    {
+      "capturedAt": "2005-03-01T23:30:53",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

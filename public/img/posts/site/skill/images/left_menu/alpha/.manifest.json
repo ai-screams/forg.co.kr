@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/2.gif",
+    "capturedAt": "20031122210709",
+    "sizeBytes": 755,
+    "sha256": "7e35e2e59f60747a2787fef096cc4b7ad67d4defc1a0ed99056bdf34c6a7fb2f",
+    "digest": "Q6ZWD4DHM7HRXI42KAU56A6XYO66NNF7"
+  },
+  {
+    "filename": "a.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/a.gif",
+    "capturedAt": "20040119133411",
+    "sizeBytes": 1837,
+    "sha256": "a85015d6e1483d28a22364da53b63ef59268879b0888c2bc9e495d2d97bafce0",
+    "digest": "DXK2ROF6VOEXF4LC5J6LRMULG63W6YD3"
+  },
+  {
+    "filename": "b.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/b.gif",
+    "capturedAt": "20040119140249",
+    "sizeBytes": 1833,
+    "sha256": "679d8833c64b0ce993c066c2e6fdf4362cef2e96733581ca1f244822baf97e7f",
+    "digest": "QYJZ6HPCV3QCTQ5DRXLDJIVSXQEEIDQL"
+  },
+  {
+    "filename": "c.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/c.gif",
+    "capturedAt": "20040119142320",
+    "sizeBytes": 1836,
+    "sha256": "2eda1b23c6cdb0e5d54541f4bf186ad53eefa959835af8f55fa3f8fda2043182",
+    "digest": "LYUWP4WPTXYLQUNAZDSEHW7IREYY6X7X"
+  },
+  {
+    "filename": "car_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/car_1.gif",
+    "capturedAt": "20040120001212",
+    "sizeBytes": 1756,
+    "sha256": "b44b94212b83b768bf42f2699a3b602effbf259b4913bfda9f743da1048190c6",
+    "digest": "E4CVUKACIYCMFQCXZLQAMLKPBMFP2WNY"
+  },
+  {
+    "filename": "h.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/h.gif",
+    "capturedAt": "20021207021812",
+    "sizeBytes": 1813,
+    "sha256": "59cf5024d2d73f45b1f7715f208381821cd59ea867db79bacfad2e33383f9dc1",
+    "digest": "6D4BK4NGYZPJD6FH2WGCVJTAHR5ST4HB"
+  },
+  {
+    "filename": "t.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/t.gif",
+    "capturedAt": "20040120030302",
+    "sizeBytes": 1829,
+    "sha256": "6304c946191bf5260d4186aedf08f2b72c8ffd88ddb4249409b1bb6258ff21ea",
+    "digest": "BVXMJQIWU5PEF2FQHFUIKQRDMIMI3UPK"
+  }
+]

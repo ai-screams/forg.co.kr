@@ -1,0 +1,25 @@
+{
+  "stem": "wow/mob",
+  "originalPath": "/wow/mob.html",
+  "originalUrl": "http://forg.co.kr:80/wow/mob.html",
+  "kind": "page",
+  "title": "WOW.Mob",
+  "capturedAt": "2004-08-11T16:05:12",
+  "versions": [
+    {
+      "capturedAt": "2004-08-11T16:05:12",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "#CCCCCC",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p><font face=\"Verdana\"><span style=\"font-size:9pt;\">업데이트중입니다.....</span></font></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

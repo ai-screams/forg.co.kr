@@ -1,0 +1,25 @@
+{
+  "stem": "b",
+  "originalPath": "/b.htm",
+  "originalUrl": "http://www.forg.co.kr:80/b.htm",
+  "kind": "page",
+  "title": "b",
+  "capturedAt": "2002-01-18T13:15:03",
+  "versions": [
+    {
+      "capturedAt": "2002-01-18T13:15:03",
+      "kind": "page"
+    }
+  ],
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
+  "bodyStyle": {
+    "background-color": "#333333",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font color=\"white\" face=\"돋움\" size=\"2\"><b>&nbsp;::: Closed:::</b></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font color=\"#CCCCCC\" face=\"돋움\" size=\"2\">새로운 \n서버로 이주 할 때까지 편히 쉬시길-\"-</font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><font color=\"#CCCCCC\" face=\"돋움\" size=\"2\">Out \nOf Sight</font></b></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><font color=\"#CCCCCC\" face=\"돋움\" size=\"2\">Out \nOf Mind</font></b></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><font color=\"#666666\" face=\"돋움\" size=\"2\">&gt;&gt;&gt;</font></b><a href=\"http://hosting27.interpia98.net/~forg/zboard/zboard.php?id=Guest\" target=\"_blank\"><b><font color=\"#FFFFCC\" face=\"돋움\" size=\"2\">Entering... \nGuest Board</font></b></a><b><font color=\"#666666\" face=\"돋움\" size=\"2\">&lt;&lt;&lt;</font></b></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

@@ -1,0 +1,23 @@
+{
+  "stem": "uoquest/Ant_Quest",
+  "originalPath": "/uoquest/Ant_Quest.html",
+  "originalUrl": "http://forg.co.kr:80/uoquest/Ant_Quest.html",
+  "kind": "redirect",
+  "title": "UO.Quest",
+  "capturedAt": "2005-02-07T23:23:06",
+  "versions": [
+    {
+      "capturedAt": "2003-02-09T20:38:16",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2005-02-07T23:23:06",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

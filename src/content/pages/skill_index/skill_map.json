@@ -1,0 +1,25 @@
+{
+  "stem": "skill_index/skill_map",
+  "originalPath": "/skill_index/skill_map.html",
+  "originalUrl": "http://www.forg.co.kr/skill_index/skill_map.html",
+  "kind": "page",
+  "title": "skill_map",
+  "capturedAt": "2007-11-19T18:43:19",
+  "versions": [
+    {
+      "capturedAt": "2007-11-19T18:43:19",
+      "kind": "page"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "html": "\n<p><a title=\":::Closed:::\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_index/smap.gif\" data-recovery=\"missing\" height=\"400\" src=\"/img/placeholder/missing.svg\" width=\"550\"></a></p>\n",
+  "redirectTo": null,
+  "baseTarget": null
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "tool.gif",
+    "originalUrl": "http://forg.co.kr:80/decoration/images/deco/basic/tool.gif",
+    "capturedAt": "20031123180404",
+    "sizeBytes": 14468,
+    "sha256": "ff05509b8e7036456e86ca9515234b074a44b6055176878f03867621e023b331",
+    "digest": "4ANEUEHUTXTEUSRWEXX2H3EZHE54H5VF"
+  },
+  {
+    "filename": "tool_1.gif",
+    "originalUrl": "http://forg.co.kr:80/decoration/images/deco/basic/tool_1.gif",
+    "capturedAt": "20021206234217",
+    "sizeBytes": 15492,
+    "sha256": "57e3aa1a9bf24b68ea6342eac1e93727daac1b7c87717a4a198b77b06ae48cf0",
+    "digest": "UJD7SMQUHEEF5UGGNUPJOXBW7PZCLMEC"
+  }
+]

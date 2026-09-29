@@ -1,0 +1,23 @@
+{
+  "stem": "skill/uo_veteran",
+  "originalPath": "/skill/uo_veteran.html",
+  "originalUrl": "http://forg.co.kr:80/skill/uo_veteran.html",
+  "kind": "redirect",
+  "title": "UO.Veteran",
+  "capturedAt": "2003-12-31T19:18:51",
+  "versions": [
+    {
+      "capturedAt": "2003-02-09T20:29:09",
+      "kind": "empty"
+    },
+    {
+      "capturedAt": "2003-12-31T19:18:51",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

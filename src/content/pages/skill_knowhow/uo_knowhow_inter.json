@@ -1,0 +1,19 @@
+{
+  "stem": "skill_knowhow/uo_knowhow_inter",
+  "originalPath": "/skill_knowhow/uo_knowhow_inter.html",
+  "originalUrl": "http://forg.co.kr:80/skill_knowhow/uo_knowhow_inter.html",
+  "kind": "redirect",
+  "title": "각종 인터페이스",
+  "capturedAt": "2005-03-01T23:53:34",
+  "versions": [
+    {
+      "capturedAt": "2005-03-01T23:53:34",
+      "kind": "redirect"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "",
+  "redirectTo": "/site/faq_1/",
+  "baseTarget": null
+}

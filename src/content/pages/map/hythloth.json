@@ -1,0 +1,19 @@
+{
+  "stem": "map/hythloth",
+  "originalPath": "/map/hythloth.htm",
+  "originalUrl": "http://forg.co.kr:80/map/hythloth.htm",
+  "kind": "frameset",
+  "title": "Grand Atlas of Britannia - Hythloth",
+  "capturedAt": "2001-01-26T14:32:00",
+  "versions": [
+    {
+      "capturedAt": "2001-01-26T14:32:00",
+      "kind": "frameset"
+    }
+  ],
+  "css": "",
+  "bodyStyle": {},
+  "html": "<frameset border=\"0\" cols=\"1*\" frameborder=\"NO\" framespacing=\"0\" rows=\"100%\"><frame frameborder=\"NO\" marginheight=\"0\" marginwidth=\"0\" name=\"bottom\" noresize=\"\" scrolling=\"auto\" src=\"https://web.archive.org/web/20010126143200/http://forg.co.kr:80/map/hythloth-b.htm\"></frameset>",
+  "redirectTo": null,
+  "baseTarget": null
+}
