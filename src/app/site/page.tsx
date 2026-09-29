@@ -31,6 +31,7 @@ const SECTION_NAMES: Record<string, string> = {
   uoquest: "UO 퀘스트 (uoquest)",
   bod: "벌크 디드 (bod)",
   Diablo: "디아블로 II (Diablo)",
+  _zb: "길드 정보 (_zb/guild)",
   wow: "월드 오브 워크래프트 (wow)",
 };
 

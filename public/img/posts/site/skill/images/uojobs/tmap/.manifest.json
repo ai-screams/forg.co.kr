@@ -1,0 +1,74 @@
+[
+  {
+    "filename": "swneloc1.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swneloc1.jpg",
+    "capturedAt": "20030807160909",
+    "sizeBytes": 20811,
+    "sha256": "c70a7168252a8bacf0cdb579afe6a85847e0bc2f1f4fd4ed3373cdbf51797bc4",
+    "digest": "6LFI7O64E2SHKCCRJAHGNB5J4AV5OOAC"
+  },
+  {
+    "filename": "swnemain.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swnemain.jpg",
+    "capturedAt": "20030807163816",
+    "sizeBytes": 60320,
+    "sha256": "7ebbf565c92f8b474b0d57db87e5443669e0905d53dc297b19ff4a56b21682e2",
+    "digest": "JMDXRNJCMWVR4LDLHHY23N5NFRNNYLMS"
+  },
+  {
+    "filename": "swnwloc2.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swnwloc2.jpg",
+    "capturedAt": "20030807165320",
+    "sizeBytes": 9739,
+    "sha256": "dfa370f9f713bf26ab8fc4839bbda95215bb335ef9b21bc6fe05f00cd684ced2",
+    "digest": "4E7ZGRAYO43EWL5NCOKA4KA5GPENYP46"
+  },
+  {
+    "filename": "swnwmain.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swnwmain.jpg",
+    "capturedAt": "20030807171114",
+    "sizeBytes": 61341,
+    "sha256": "b0f07abd0105c2fb2588e36965e0777b236606b3ff1419874aacdef133d9fb4d",
+    "digest": "UX7FTHE5D4VZLRKEOGTMZCC6XE476JGQ"
+  },
+  {
+    "filename": "swseloc2.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swseloc2.jpg",
+    "capturedAt": "20030807173627",
+    "sizeBytes": 80598,
+    "sha256": "d14184b1e90f43343862eca9b4deaab3c2ab1f5441ff8cb8dcc61047ed0b688b",
+    "digest": "4OXGPV7XBHYGSWI7LWMKL6E6OLKAB5MJ"
+  },
+  {
+    "filename": "swseloc3.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swseloc3.jpg",
+    "capturedAt": "20030807233013",
+    "sizeBytes": 10687,
+    "sha256": "d36d1f213e64ae04ecb6c85573ddb2b18b2b0b710be1946ea5b9b57ad5911fd0",
+    "digest": "P22PTFG6WVMZBMSVCLGRNIBB7MRL3S2N"
+  },
+  {
+    "filename": "swseloc4.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swseloc4.jpg",
+    "capturedAt": "20030807234439",
+    "sizeBytes": 8273,
+    "sha256": "5fcbcd081eaff93e3ea75f062153cad707f9b44c2edca7e7090d065ffb50170d",
+    "digest": "RFF33WARR5X2O72FI4ZNCYYQH7RHTCAT"
+  },
+  {
+    "filename": "swseloc5.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swseloc5.jpg",
+    "capturedAt": "20030808075909",
+    "sizeBytes": 46123,
+    "sha256": "6539b4cd3cad8c7f4c1c8d0f2c28c044368fab968d82be821acae1b0b496c6ad",
+    "digest": "FY5NAUOCRMJG734DPF5TQQF7TNW66DY3"
+  },
+  {
+    "filename": "swswloc1.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tmap/swswloc1.jpg",
+    "capturedAt": "20030808155922",
+    "sizeBytes": 73520,
+    "sha256": "c65119d7620da40663036f7879eddfb1f8d6e5a3b1f656536f18a2b7be8623e5",
+    "digest": "FJDYJFGNCO6TV5AA7UVQOMWVCSHWTW7R"
+  }
+]

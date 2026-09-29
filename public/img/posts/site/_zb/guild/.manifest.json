@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "arirang.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/arirang.gif",
+    "capturedAt": "20071127165829",
+    "sizeBytes": 2718,
+    "sha256": "acd399072f316c589132d9e56b9a3bdffe003ba2d2d02f9008bdaab2244b0643",
+    "digest": "4TOWJIJYHGKRSQSVMBEYSSCI4PSM5KLB"
+  },
+  {
+    "filename": "balhae.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/balhae.gif",
+    "capturedAt": "20071127165934",
+    "sizeBytes": 2340,
+    "sha256": "232fafcb8a834fcf5b520ba601fc36a6682b78a4a88dcabcb9f23d2823475885",
+    "digest": "CVULIU26K3CQURNX5X3E6OVQCHMT65XK"
+  },
+  {
+    "filename": "foreign.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/foreign.gif",
+    "capturedAt": "20071127170334",
+    "sizeBytes": 2474,
+    "sha256": "770ff86ee9d6abaac3c9f9864e2e335779f63513b279a976a2799b0cef081633",
+    "digest": "BRGELOVRKQKAEZMMLVEBJQQNSTF2CBAG"
+  },
+  {
+    "filename": "gn_base.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/gn_base.gif",
+    "capturedAt": "20071127165522",
+    "sizeBytes": 2809,
+    "sha256": "9c1eec61b8c4b4fcb03189ac704d0ef61469c6fd1e889757accdf5c2a435aa2f",
+    "digest": "7CLEZYRVOI3FETWUXQLWUAZPUY5RVLW5"
+  },
+  {
+    "filename": "guild_stone.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/guild_stone.gif",
+    "capturedAt": "20071127170731",
+    "sizeBytes": 615,
+    "sha256": "9a6436d88d7af4b0dd482c0fb7540e91c7948f43775443480e80c42676f122a6",
+    "digest": "6Z2W5SVD7M4RMU67FKTEODM6F2OYAN7K"
+  },
+  {
+    "filename": "sn_base.gif",
+    "originalUrl": "http://www.forg.co.kr/_zb/guild/sn_base.gif",
+    "capturedAt": "20071127165704",
+    "sizeBytes": 3505,
+    "sha256": "b5e81c85e42139038fa89061d7ff1065514b4b8e9eae95cf9613914b7ea3cbb2",
+    "digest": "YHBG66ZGMKFIE4GKDIMDT6CLP4JRSFKR"
+  }
+]

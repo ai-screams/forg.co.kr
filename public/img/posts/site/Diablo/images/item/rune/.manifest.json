@@ -1,5 +1,205 @@
 [
   {
+    "filename": "runeAmn.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeAmn.gif",
+    "capturedAt": "20020328085832",
+    "sizeBytes": 785,
+    "sha256": "87a5bb11d04c760e575a9838f58c2565eb2861f0cb95252887efe0286b6f0469",
+    "digest": "3IQ77ENS2Q7POSMNMRYF4DZ2BJXWIGGD"
+  },
+  {
+    "filename": "runeBer.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeBer.gif",
+    "capturedAt": "20020328090210",
+    "sizeBytes": 758,
+    "sha256": "82b6d13d42f23249ce3688faf7dad9f0687b22f4c41370535a1877ce2b248bc3",
+    "digest": "CYNGH635BCO652MVVB4E7AW4LO4SGETQ"
+  },
+  {
+    "filename": "runeDol.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeDol.gif",
+    "capturedAt": "20020328090931",
+    "sizeBytes": 786,
+    "sha256": "3e3e9251d19300e50a3f8108c30f294a47fddee928a520de5e5f07ca36716c6d",
+    "digest": "QYP2D3NC5SNUUVXYM2OQVNMTYWNATX5L"
+  },
+  {
+    "filename": "runeEld.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeEld.gif",
+    "capturedAt": "20020328091704",
+    "sizeBytes": 804,
+    "sha256": "ba3646b82eb9148ecf9d9674600619b334581bfbd4502ae773ff0b04ed904d01",
+    "digest": "7KMAFZTJDW52B2FMF6MOUKG2WNYLKUVI"
+  },
+  {
+    "filename": "runeGul.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeGul.gif",
+    "capturedAt": "20020327165446",
+    "sizeBytes": 744,
+    "sha256": "3c98d94eed2b388176b734e9147d2d2a2f565e2dbe03dae62f833e67497388b1",
+    "digest": "OJYZPQ5QOH6ZSBY3IYPEPPAZUDIWNOUE"
+  },
+  {
+    "filename": "runeHel.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeHel.gif",
+    "capturedAt": "20020327170227",
+    "sizeBytes": 783,
+    "sha256": "f87f92e1dffcfe93dabeca8f8a3d8006440e7f39031c296c8c6ffb49a835f803",
+    "digest": "RDLH3UVONDEO4GEP3O5Q7KEEEDKJVMKD"
+  },
+  {
+    "filename": "runeIo.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeIo.gif",
+    "capturedAt": "20020327170827",
+    "sizeBytes": 775,
+    "sha256": "213b644561ca54a92860165b92fb7b7d546585b21d4e1fdab1a3edaff85ee45e",
+    "digest": "ESEZZD6MDLTZIN6Y7JSLSENI4IMP6AZL"
+  },
+  {
+    "filename": "runeIst.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeIst.gif",
+    "capturedAt": "20020327171131",
+    "sizeBytes": 755,
+    "sha256": "53d1cdee06386d03ce1a7f28cbf193c13b9383f42d95633d5c4a785c06850ff9",
+    "digest": "UY43MEHJDRZGWTTNOKQNMJSLWIWOYQOP"
+  },
+  {
+    "filename": "runeIth.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeIth.gif",
+    "capturedAt": "20020327172016",
+    "sizeBytes": 768,
+    "sha256": "bc52d28038edca933b086f690cb69ffa583282f5af2d7bfc2a00c186912efdfd",
+    "digest": "QZPJ7A7ALLRCL3UKM6PWUBQLFHYETFXM"
+  },
+  {
+    "filename": "runeJo.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeJo.gif",
+    "capturedAt": "20020327172352",
+    "sizeBytes": 761,
+    "sha256": "0a4c35fed5e6e6a66029e9a7c1242ff137a38735f3762d3d32a2b3d608ea40bb",
+    "digest": "TJHIKIP7KAPQD4TJBMOOKBSORITMKAKL"
+  },
+  {
+    "filename": "runeLem.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeLem.gif",
+    "capturedAt": "20020327173247",
+    "sizeBytes": 759,
+    "sha256": "90adece0d03024b4d50450a698f5b8a5efb8db474a1845d031e94f14ceb00187",
+    "digest": "Y7JSZNZYJL3W5RVUPF5TE3AZKXD53FJZ"
+  },
+  {
+    "filename": "runeLo.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeLo.gif",
+    "capturedAt": "20020327175004",
+    "sizeBytes": 759,
+    "sha256": "8a7d6282a5d354db29f433c0b9bdaef23d1bc2528a4bc54bca668a631310d058",
+    "digest": "PVZ4MUTZLMPPDL36YUB2USPWPLQVVII3"
+  },
+  {
+    "filename": "runeLum.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeLum.gif",
+    "capturedAt": "20020327175248",
+    "sizeBytes": 770,
+    "sha256": "4f3e23ff504a9bae06fada1f3860e5e1a7c779365c1b6601f8dc20f9fd46b6fa",
+    "digest": "NN66YV2WHX3N5MVAMENM4EMSP7QN6QL6"
+  },
+  {
+    "filename": "runeNef.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeNef.gif",
+    "capturedAt": "20020327180743",
+    "sizeBytes": 763,
+    "sha256": "9f14301ef84eb54d05cf199bd4bc52795fdb2d7d9a7cfd748c795e64794c8da6",
+    "digest": "XLBHBG2X7MI75FMHO72WBBMJMZG6HZZI"
+  },
+  {
+    "filename": "runeOhm.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeOhm.gif",
+    "capturedAt": "20020327181345",
+    "sizeBytes": 758,
+    "sha256": "7c6a1ac0ec8940cab8782dfdea368e69d3af0d63d233e134cb40337318e7b2b2",
+    "digest": "AGHMFARM276QTJADQKQDG7DGNJLSBR7I"
+  },
+  {
+    "filename": "runeOrt.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeOrt.gif",
+    "capturedAt": "20020327181945",
+    "sizeBytes": 763,
+    "sha256": "e8ab74555cb586515d533aacb9cc31f0e4948e8a94cb66ed65a44b932a048e9a",
+    "digest": "MIO7XQ6LOMISG4HRYRE23GMW4JMVE7IV"
+  },
+  {
+    "filename": "runePul.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runePul.gif",
+    "capturedAt": "20020327182537",
+    "sizeBytes": 761,
+    "sha256": "d1e695c3cf20453878416ca383f37d549c913d4d40a73a97af5dfe6409575f34",
+    "digest": "PG2K222M5YDV2CWM7WJ7IVL6LGXXAPQB"
+  },
+  {
+    "filename": "runeRal.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeRal.gif",
+    "capturedAt": "20020327182950",
+    "sizeBytes": 778,
+    "sha256": "79151e92a51a2db72ed655cab29af4207c18b1c9159bfe0807836d067c96cd85",
+    "digest": "T3P4DVL4L766N7R5A763NTYW24NV4VZ5"
+  },
+  {
+    "filename": "runeShae.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeShae.gif",
+    "capturedAt": "20020327184102",
+    "sizeBytes": 776,
+    "sha256": "f7255155c8ac251dc24b98e4e51d5edd39dd06754b47d58602746246c4505034",
+    "digest": "ACHP5JFLI3LIIJ4HZLUDTXZ6FB4MXKNK"
+  },
+  {
+    "filename": "runeSur.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeSur.gif",
+    "capturedAt": "20020327190119",
+    "sizeBytes": 760,
+    "sha256": "627e0e9e16376a4c6e8dcbadff785679049c92ce21cf028a7bfb69250455e88f",
+    "digest": "SS45X7QY5V3SBYITYYFBV6HYPJJFLFIN"
+  },
+  {
+    "filename": "runeTal.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeTal.gif",
+    "capturedAt": "20020327190535",
+    "sizeBytes": 765,
+    "sha256": "d034ce9f073a067dc2dac1f3d20555e64fa8433228ae62e5d03240de4472045f",
+    "digest": "TDLNPAGVS67MVZJYJ57TOQ5OKTTAK5GC"
+  },
+  {
+    "filename": "runeThul.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeThul.gif",
+    "capturedAt": "20020327191443",
+    "sizeBytes": 774,
+    "sha256": "75c50d387d08835446d9897ec5b964f91c03cacfba829f0f8b52fb6eacf57d38",
+    "digest": "5DCZC3XPLNDYPFBZZSDZTLTJ3ZH3AFGQ"
+  },
+  {
+    "filename": "runeTir.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeTir.gif",
+    "capturedAt": "20020327192346",
+    "sizeBytes": 765,
+    "sha256": "2734c497a8a9d14eeed1f61ce9d4d1a4b99395de6808f98efb92c53da010b4b9",
+    "digest": "2FMIJ4LISTOVF4FUUA4LQQFBGPFJLAPZ"
+  },
+  {
+    "filename": "runeUm.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeUm.gif",
+    "capturedAt": "20020327192629",
+    "sizeBytes": 760,
+    "sha256": "028312f6ad874761dcf56cba2a0c765fa56a13311008b155c729cfc198ac7ae5",
+    "digest": "NNRGBX7YE6FZ4I4I42KO2PF5XCTMJCN5"
+  },
+  {
+    "filename": "runeVex.gif",
+    "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/runeVex.gif",
+    "capturedAt": "20020327193248",
+    "sizeBytes": 538,
+    "sha256": "33de447ecc939f36eac377848fa8579f52450df3d34505e634f5e6d146404c13",
+    "digest": "ON7FJEWYF6XOJNHQY4HMXJL6ZT2AGGTW"
+  },
+  {
     "filename": "rune_main_1.gif",
     "originalUrl": "http://forg.co.kr:80/Diablo/images/item/rune/rune_main_1.gif",
     "capturedAt": "20020325153512",

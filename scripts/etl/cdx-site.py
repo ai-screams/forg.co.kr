@@ -9,7 +9,9 @@ scripts and writes a download plan with one entry per (page, digest), so a
 page that changed over the years keeps each version.
 
 Dropped before planning:
-  - board paths (`_zb`, `zboard`, `zb`, `bbs`, `~forg`) — the post phases own them
+  - board paths (`_zb`, `zboard`, `zb`, `bbs`, `~forg`) — the post phases own them —
+    except the two plain pages under `_zb/`: the guild directory (`_zb/guild/`)
+    and the vendor list (`_zb/vendor/`), popups from the 2003 left menu
   - image/binary extensions: Wayback labels a missing image's error page
     text/html, so those rows are the host's error page, not a page
   - the host's error page itself, recognised by its digest (4,137 captures)
@@ -37,7 +39,7 @@ RAW = ROOT / "site-html.json"
 PLAN = ROOT / "site-plan.json"
 
 HOSTS = ("forg.co.kr", "forg.dotple.com")
-BOARD_PATHS = r".*/(_zb|zboard|zb|bbs|~forg)/.*"
+BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/)|zboard/|zb/|bbs/|~forg/).*"
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")

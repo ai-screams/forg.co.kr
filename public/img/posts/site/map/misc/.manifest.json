@@ -8,11 +8,35 @@
     "digest": "4Y5AL7SESWCHY2P4UOKLMEYMZHAL6IQP"
   },
   {
+    "filename": "blackthorn3.gif",
+    "originalUrl": "http://www.forg.co.kr/map/misc/blackthorn3.gif",
+    "capturedAt": "20071128202246",
+    "sizeBytes": 70739,
+    "sha256": "de5a461bdef2585fd97526137213423441a197c6e6b873575b216204413a3075",
+    "digest": "YFW5EUJVW4J2QAWTWEYUXXSRFEIUHEPU"
+  },
+  {
+    "filename": "cofvirtue.jpg",
+    "originalUrl": "http://www.forg.co.kr/map/misc/cofvirtue.jpg",
+    "capturedAt": "20071129205239",
+    "sizeBytes": 54227,
+    "sha256": "4f64c7bbc7bd407a26e59a19936c46b98bcf5d52f0676714e3fc3bf1f4e014b8",
+    "digest": "77CJMUCRNL3V6W6PM4V6JVOUJ6TB6VVG"
+  },
+  {
     "filename": "screst.gif",
     "originalUrl": "http://forg.co.kr:80/map/misc/screst.gif",
     "capturedAt": "20020221104948",
     "sizeBytes": 3684,
     "sha256": "0eec60d6819cf3f87a657ac06084525cbbf6552e86ff50230523b863ac90a2e8",
     "digest": "NOZW7I673MT7KPZOQV6BJVCD77AS6VBZ"
+  },
+  {
+    "filename": "zoo.jpg",
+    "originalUrl": "http://forg.co.kr:80/map/misc/zoo.jpg",
+    "capturedAt": "20021121182537",
+    "sizeBytes": 87476,
+    "sha256": "9df4cc15cea8e750694fbc47d4ad1d418c45f9125a8c4c0d43fac3be8c1d3849",
+    "digest": "7JLUJZ3IHSZ5NPIAUG26J3QVK7M5VYQ2"
   }
 ]

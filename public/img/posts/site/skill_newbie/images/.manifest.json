@@ -16,6 +16,14 @@
     "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH"
   },
   {
+    "filename": "alpha_background_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/alpha_background_2.gif",
+    "capturedAt": "20071117154445",
+    "sizeBytes": 1110,
+    "sha256": "b3752e3d3b0e440f113beab558d2a212562ddf5c9ee5b93c94eda3abf080a71c",
+    "digest": "TSTXZWO2VIUYQIQYH6LY43FIENLNN7IE"
+  },
+  {
     "filename": "b_logo.gif",
     "originalUrl": "http://www.forg.co.kr/skill_newbie/images/b_logo.gif",
     "capturedAt": "20071015093806",
@@ -94,6 +102,30 @@
     "sizeBytes": 896,
     "sha256": "c84051401d10e7a2bad7535c07501d06d698a7dffbdcb5aa57610f93f0f7db0c",
     "digest": "B5H4P5T75KOMF5BVJUMJRMAIYJRY2ROQ"
+  },
+  {
+    "filename": "spot_back_bottom.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/spot_back_bottom.gif",
+    "capturedAt": "20071117153109",
+    "sizeBytes": 7427,
+    "sha256": "80ad0d5967306e88448a85c54c1b00232c96d8c8a6bb6761f1ee883d213f3d30",
+    "digest": "AEVG37XHNYX6LQBAEIOWWPQ4RNBSQA7W"
+  },
+  {
+    "filename": "spot_back_mid.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/spot_back_mid.gif",
+    "capturedAt": "20071117152557",
+    "sizeBytes": 6977,
+    "sha256": "3a062052b12f281547d19852af12a4b78afa5baab9cd80c67720ab0aa323413b",
+    "digest": "ACH3M5426I3LQZWYGIVQGCKJMZVW5QRZ"
+  },
+  {
+    "filename": "spot_back_top.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/spot_back_top.gif",
+    "capturedAt": "20071117153216",
+    "sizeBytes": 7327,
+    "sha256": "0b6a1ffb32e053b6c21e3092a5a70ae5072c13f72390816c61d4df431fb2a5b6",
+    "digest": "NO7F46W4BQ3FTD37AVUDKOHHSHTHD46V"
   },
   {
     "filename": "top.gif",

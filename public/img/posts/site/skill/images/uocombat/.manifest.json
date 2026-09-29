@@ -24,6 +24,22 @@
     "digest": "2X3NNRCJDR3JAT3ASXNV3EEX63QFFIID"
   },
   {
+    "filename": "bard_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/bard_2.gif",
+    "capturedAt": "20030810033314",
+    "sizeBytes": 37670,
+    "sha256": "0a32b22939acd9845a9066f8eedb29f5cab18693779d9fe2946e4948c308ef87",
+    "digest": "DJSMZDCASADZLUCSEELOC2LG6J5S4AOF"
+  },
+  {
+    "filename": "bard_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/bard_4.gif",
+    "capturedAt": "20010825185228",
+    "sizeBytes": 38070,
+    "sha256": "d3301186117f72bc4492b8694973ac84774944ed0f3581dc5b0a182a69c71f8e",
+    "digest": "NMQBSQZUCDOOASPOR64ET6W54CJUYMXA"
+  },
+  {
     "filename": "enticement.gif",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/enticement.gif",
     "capturedAt": "20010620224532",
@@ -48,6 +64,46 @@
     "digest": "4HZGQDAPV3HMXKV43LSJGQIZBR3XETG6"
   },
   {
+    "filename": "snoooing_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/snoooing_1.gif",
+    "capturedAt": "20010809053617",
+    "sizeBytes": 26087,
+    "sha256": "20f817303ab870535f20a536776d9432ede558794d2a90edda2385fcbe30ddb5",
+    "digest": "OYD37NLGPLIMIQTLYQHFO64J3IITHQHS"
+  },
+  {
+    "filename": "snoooing_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/snoooing_2.gif",
+    "capturedAt": "20010809053617",
+    "sizeBytes": 18142,
+    "sha256": "3932489358ad2ff80d17a579638fb24bb9e8a5f2b916dd4532b083b800f1151f",
+    "digest": "4UKFQYIF2ONEJLIRSWJR4ZYLWNYBNUN6"
+  },
+  {
+    "filename": "snoooing_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/snoooing_3.gif",
+    "capturedAt": "20010809054738",
+    "sizeBytes": 21961,
+    "sha256": "d040921978a6bca1f6c6bb5ca7bc99e5552d6c6ed28dd07182a578dcdf7287a2",
+    "digest": "JUITE5PDO44M7NBDZ7CKMAX7GLYEITIC"
+  },
+  {
+    "filename": "steal_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/steal_2.gif",
+    "capturedAt": "20010808101818",
+    "sizeBytes": 20320,
+    "sha256": "f596037d07f186f9235f0ef7b9fa8de2103c0f53110bde1ff80fbedfcf6641ed",
+    "digest": "3LKQ7MIPMEGRCR46L65AKVVLL7FNVILY"
+  },
+  {
+    "filename": "steal_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/steal_3.gif",
+    "capturedAt": "20010808102742",
+    "sizeBytes": 15693,
+    "sha256": "893c03cd2573c2b00d6327be969da67e81fc40f4a1c92dc4b631059ac73bb283",
+    "digest": "2IGIWB4XOSS4F6TPYGJPPNHENPZL2P2W"
+  },
+  {
     "filename": "w_bow.jpg",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/uocombat/w_bow.jpg",
     "capturedAt": "20010621002254",
@@ -70,5 +126,21 @@
     "sizeBytes": 7783,
     "sha256": "c03347b5200d27438bf523089f36c0d181f06d80f83bd6789ab9ebb721db0e74",
     "digest": "DN5OG7QKRJOJ4ZJPMO63WJC3SQV56XZQ"
+  },
+  {
+    "filename": "w_sword.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/w_sword.jpg",
+    "capturedAt": "20010808103637",
+    "sizeBytes": 5488,
+    "sha256": "a4aed3bd7a93c2c04bcb1eb59dc95e7b34bfb7a117788ac6108283c1c544b9c2",
+    "digest": "EMD3L66R6QJUM4SQKNXJEQRRVNOHLGWW"
+  },
+  {
+    "filename": "whip.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uocombat/whip.gif",
+    "capturedAt": "20010809054552",
+    "sizeBytes": 983,
+    "sha256": "a5325e55967840fa90e7c021160c0ba6b392aa7d77c9c6b865e428e62d3cf3a0",
+    "digest": "SCGCVJ6NK6BWGUM6A7TJPD4UMPH7LGGG"
   }
 ]

@@ -16,6 +16,14 @@
     "digest": "UBCX3FK5LU67GZGP53NGHOI352BFZPBC"
   },
   {
+    "filename": "xbaker.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xbaker.gif",
+    "capturedAt": "20071016105452",
+    "sizeBytes": 1270,
+    "sha256": "da4a0938aa915264d5b03f1238e0ec37aba1430cd66b624e101ef9e0a6d68253",
+    "digest": "UOZKAPOI6YKXBI572Z3OLNOX4TPVAPIQ"
+  },
+  {
     "filename": "xbank.gif",
     "originalUrl": "http://forg.co.kr:80/map/signs/xbank.gif",
     "capturedAt": "20020708180559",
@@ -62,6 +70,22 @@
     "sizeBytes": 1206,
     "sha256": "bd1ba05d7dd3288cdd4239a5b34c3dde3cd8150ea40acaf8363f854fa51295a8",
     "digest": "YHS4B2HHXZGBP3HUX7KDLDSBX255BSQN"
+  },
+  {
+    "filename": "xcandle.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xcandle.gif",
+    "capturedAt": "20071016105244",
+    "sizeBytes": 1206,
+    "sha256": "12b3ce041ca24a2e78b16438f94e70dd5a72cc84b43c4040a9cf5ec56b05b1aa",
+    "digest": "ILBR5HDXXQGCQWLAXTIX34BII4FUKHK5"
+  },
+  {
+    "filename": "xcouns.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xcouns.gif",
+    "capturedAt": "20071016105601",
+    "sizeBytes": 1418,
+    "sha256": "fae6506c7f0ba6e68dbd52a9d6a741cdf4600adf958897679ed0bc82a223bdeb",
+    "digest": "3Z5MHPC3OD5UKFTBRP6EGR2FRBW6RR7W"
   },
   {
     "filename": "xdouble.gif",
@@ -336,6 +360,14 @@
     "digest": "X327472UE5JLGINJN4OPVKOEJMFJ3CIY"
   },
   {
+    "filename": "xsingle.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xsingle.gif",
+    "capturedAt": "20071016105646",
+    "sizeBytes": 1225,
+    "sha256": "3778b0f0e9af4f47a81e62c2b3c26e1a6df19444d9d2bab247d10ac9bc5c110b",
+    "digest": "353PJNOJXDFB447VFSHJ5ZIDKJ3BZ4TS"
+  },
+  {
     "filename": "xsmith.gif",
     "originalUrl": "http://forg.co.kr:80/map/signs/xsmith.gif",
     "capturedAt": "20020301181121",
@@ -352,6 +384,22 @@
     "digest": "FNE4EZFWZY5PMITE4LCOTTOUKIVUCIZ7"
   },
   {
+    "filename": "xtailor.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xtailor.gif",
+    "capturedAt": "20071016105725",
+    "sizeBytes": 1211,
+    "sha256": "c94988416dc2b086a5f3293f48ce40fec0178cfa8314889a64eace13dfa6ec74",
+    "digest": "X5RHFSL5CQ6ISP3KIOHZJ7WTUCSGIBG4"
+  },
+  {
+    "filename": "xtheat.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xtheat.gif",
+    "capturedAt": "20071016105338",
+    "sizeBytes": 1252,
+    "sha256": "0124e522f34684b07620ca8886e20fcdba50eae173277915c9e3498c72b3523d",
+    "digest": "AXIVTLCK5XPF2IOVWY5FFPC5UGEOXERR"
+  },
+  {
     "filename": "xthrone.jpg",
     "originalUrl": "http://forg.co.kr:80/map/signs/xthrone.jpg",
     "capturedAt": "20030808162852",
@@ -366,5 +414,21 @@
     "sizeBytes": 1172,
     "sha256": "90c025dd04761666558b12d97f704c2dc1590fcba27cb5092371f1ed3c88bbad",
     "digest": "PZSIRPDPTQZM6XRLG544Y7JIGX5POVCL"
+  },
+  {
+    "filename": "xtorch.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xtorch.gif",
+    "capturedAt": "20071016105209",
+    "sizeBytes": 1177,
+    "sha256": "61dac99e3b11a35bc036549cfa32a4386ea6f2060269cd4031a512cd1c3588d4",
+    "digest": "5XYNHWGB2NCMW5I375PHGEDSE2DCODYF"
+  },
+  {
+    "filename": "xwine.gif",
+    "originalUrl": "http://www.forg.co.kr/map/signs/xwine.gif",
+    "capturedAt": "20071016105232",
+    "sizeBytes": 1232,
+    "sha256": "bba19b7c133344c2cb4ef5db15e946c1d711aad73df107b2945ad155e44408b7",
+    "digest": "4TDFA4FIGN7UAKNST5F3IKLSQZQ6YF2G"
   }
 ]

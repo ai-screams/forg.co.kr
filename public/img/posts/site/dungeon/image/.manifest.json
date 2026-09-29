@@ -1,5 +1,13 @@
 [
   {
+    "filename": "alpha_background.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/alpha_background.gif",
+    "capturedAt": "20071201215241",
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5"
+  },
+  {
     "filename": "b_logo.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/b_logo.gif",
     "capturedAt": "20030911200522",
@@ -16,6 +24,22 @@
     "digest": "LYUWP4WPTXYLQUNAZDSEHW7IREYY6X7X"
   },
   {
+    "filename": "forg_background.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/forg_background.gif",
+    "capturedAt": "20071201215127",
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "digest": "2XEH7C2UFTQEUJWI7IFWLURAS5TIQGME"
+  },
+  {
+    "filename": "h.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/h.gif",
+    "capturedAt": "20030904200811",
+    "sizeBytes": 1813,
+    "sha256": "59cf5024d2d73f45b1f7715f208381821cd59ea867db79bacfad2e33383f9dc1",
+    "digest": "6D4BK4NGYZPJD6FH2WGCVJTAHR5ST4HB"
+  },
+  {
     "filename": "i.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/i.gif",
     "capturedAt": "20030904202849",
@@ -30,6 +54,14 @@
     "sizeBytes": 138,
     "sha256": "165fe28bcda8ea027b50972bac22dfce2b41949d679ed3b0e3dd5be54fa5f02d",
     "digest": "A7SWIJA3PBVVDA2RBNLIWVFXWGEMJ4WE"
+  },
+  {
+    "filename": "icon_2.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/icon_2.gif",
+    "capturedAt": "20071201215112",
+    "sizeBytes": 198,
+    "sha256": "9ae28c60cd3e1c0c0b2729f2cb00d8d2b0c0064da5c758cdf8160daad0178c98",
+    "digest": "OUQ6VBFC3JE2ZFR7QC22CTKZ27EMJQF7"
   },
   {
     "filename": "icon_3.gif",
@@ -120,12 +152,44 @@
     "digest": "7WGK6XTCW5UJHDLQGHQOF3YHNTBOC45C"
   },
   {
+    "filename": "memo_b.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/memo_b.gif",
+    "capturedAt": "20071201215303",
+    "sizeBytes": 255,
+    "sha256": "c2da548631243b0be69c7ed611dc38ae0c4453cde424b949f2382954b718344d",
+    "digest": "AJYBFCLQ5AYRQH6LCW3TO43KM75TR6L2"
+  },
+  {
+    "filename": "memo_m.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/memo_m.gif",
+    "capturedAt": "20071201215413",
+    "sizeBytes": 97,
+    "sha256": "e1f25d7eb6883b5b6b149a17f06c13a5f624a3b71ce77142465df5b5525d9587",
+    "digest": "B6MNOQCJSLDRKYTLSTSOIB5P2YMFT75I"
+  },
+  {
+    "filename": "memo_t.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/memo_t.gif",
+    "capturedAt": "20071201215457",
+    "sizeBytes": 15751,
+    "sha256": "fd56a6d6a4481cd30de974a535de1456844de5439a574a1aee19128750ffba42",
+    "digest": "OHPVJWZFKHDEVLUCWJ7FJWYVQA7F7DAK"
+  },
+  {
     "filename": "s.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/s.gif",
     "capturedAt": "20030905042349",
     "sizeBytes": 1850,
     "sha256": "83ed53ca698fed9e49dab08a87a50ab01645c870bf102f6373174d15a4876eb8",
     "digest": "MTOMR7CVOOROLJMSL5UNQ7E6DIQJTDH7"
+  },
+  {
+    "filename": "tips_logo.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/tips_logo.gif",
+    "capturedAt": "20071201215224",
+    "sizeBytes": 848,
+    "sha256": "534392cfb9a1b53e2934e7d4ef419ba41bbfd9619d5f4830dd86ed74674925f8",
+    "digest": "XXVVTOO2AIUND2L3DXJSDCQABIGRRWJ3"
   },
   {
     "filename": "top_up.gif",

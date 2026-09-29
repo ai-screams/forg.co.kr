@@ -103,9 +103,11 @@ const TOP_MENU_2003: TopMenuConfig[] = [
 // Sidebar (frame-left-2003) — 5 sections with English chrome-bar
 // headers and Korean dash-prefixed link rows. Hrefs follow the original
 // frame; the guide pages it opened are `/site/…` documents (ETL Stage 2g).
-// Entries whose pages were not collected (the guild and vendor popups under
-// `/_zb/`, bulk deeds, the cartoon on another host, members, poll) still
-// point home.
+// The guild directory was a popup (`/_zb/guild/index.html`), now a `/site/`
+// page. The vendor popup (`/_zb/vendor/list.php`) has only a redirect
+// capture, so that entry keeps the Vendor board. Entries whose pages were
+// not collected (bulk deeds, the cartoon on another host, members, poll)
+// still point home.
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
@@ -136,7 +138,7 @@ const SIDEBAR_SECTIONS: {
       { label: "-벤더광고란", href: "/Vendor" },
       { label: "-아리랑장터란", href: "/Tarirang" },
       { label: "-발해장터란", href: "/Tbalhae" },
-      { label: "-길드정보란", href: "/" },
+      { label: "-길드정보란", href: "/site/_zb/guild/index/" },
       { label: "-벌크디드정보란", href: "/" },
     ],
   },

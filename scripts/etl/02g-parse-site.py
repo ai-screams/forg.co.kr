@@ -113,11 +113,22 @@ FRAME_NAME = re.compile(r"[A-Za-z0-9_]+")
 
 
 def stem_of(page: str) -> str:
-    """`/Diablo/uarmor.htm` → `Diablo/uarmor`; `/` → `index`; `/holy/` → `holy/index`."""
-    path = urllib.parse.unquote(page.split("?")[0]).lstrip("/")
+    """`/Diablo/uarmor.htm` → `Diablo/uarmor`; `/` → `index`; `/holy/` → `holy/index`.
+
+    A query that selects content becomes part of the stem: the guild
+    directory pages with `?page=2` and filters with `?mode=search&shard=1`
+    (`_zb/guild/index--mode-search--shard-1`). Empty parameters and the
+    session id are dropped and the rest sorted, so every spelling of one
+    view — as captured and as linked — gets one stem."""
+    path_part, _, query = page.partition("?")
+    path = urllib.parse.unquote(path_part).lstrip("/")
     if not path or path.endswith("/"):
         path += "index"
-    return PAGE_EXT.sub("", path)
+    stem = PAGE_EXT.sub("", path)
+    params = sorted((k, v) for k, v in urllib.parse.parse_qsl(query) if v and k != "PHPSESSID")
+    if params:
+        stem += "".join(f"--{k}-{v}" for k, v in params)
+    return stem
 
 
 def safe_stem(stem: str) -> bool:
@@ -154,7 +165,9 @@ def load_versions() -> dict[str, list[dict]]:
     seen = last_seen()
     for e in json.loads(PLAN.read_text()):
         stem = stem_of(e["page"])
-        if not safe_stem(stem) or e["ts"] > LAST_TS:
+        # The guild directory's edit screens are input forms; with the form
+        # removed only the field labels remain.
+        if not safe_stem(stem) or e["ts"] > LAST_TS or "--mode-edit" in stem:
             continue
         f = CLEAN / e["board"] / f"{e['post_id']}.html"
         if f.exists():
@@ -182,6 +195,10 @@ def classify(soup: BeautifulSoup) -> str:
             and len(body.find_all("a")) <= 1):
         return "redirect"
     if len(text) < 2 and not body.find(["img", "table"]):
+        return "empty"
+    # The guild directory kept serving a deleted guild's detail page with
+    # every field blank ("Date : ID :"); an earlier capture holds the entry.
+    if "Guild Detail Info" in text and re.search(r"Date\s*:\s*ID\s*:\s*(?:\[\s*\])?\s*길드마스터", text):
         return "empty"
     return "page"
 
@@ -244,7 +261,7 @@ class Resolver:
             src, _ = self.image(absolute, base, ts, page)
             if src != MISSING_IMG:
                 return src, False
-        stem = stem_of(u.path)
+        stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
         if (PAGE_EXT.search(u.path) or u.path.endswith("/") or not u.path) and stem in self.stems:
             return f"/site/{stem}/{frag}", False
         return f"https://web.archive.org/web/{ts}/{absolute}", False
@@ -355,7 +372,13 @@ def title_of(soup: BeautifulSoup, link_titles: dict[str, str], stem: str,
     if (t.lower() not in GENERIC_TITLES and t not in shared
             and not re.fullmatch(r"forg[':.\s\w]*", t, re.I)):
         return t
-    return link_titles.get(stem) or stem.rsplit("/", 1)[-1]
+    if stem in link_titles:
+        return link_titles[stem]
+    # A guild detail page names its guild in the heading cell.
+    heading = soup.find("b", class_="li2")
+    if heading and heading.get_text(strip=True):
+        return heading.get_text(strip=True)
+    return stem.rsplit("/", 1)[-1]
 
 
 def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[str, str]:
@@ -369,11 +392,15 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
     by_text: dict[str, str] = {}
     for v, soup in all_versions:
         for a in soup.find_all("a", href=True):
-            absolute = urllib.parse.urljoin(v["url"], a["href"])
+            href = a["href"].strip()
+            popup = POPUP_RE.search(href) if href.lower().startswith("javascript:") else None
+            if href.lower().startswith("javascript:") and not popup:
+                continue
+            absolute = urllib.parse.urljoin(v["url"], popup.group(1) if popup else href)
             u = urllib.parse.urlsplit(absolute)
             if (u.hostname or "").lower().removeprefix("www.") not in FORG_HOSTS:
                 continue
-            stem = stem_of(u.path)
+            stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
             label = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", a.get("title", "")).strip()
             if label:
                 by_title.setdefault(stem, label)

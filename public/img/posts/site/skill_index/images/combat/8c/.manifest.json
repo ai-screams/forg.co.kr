@@ -1,11 +1,291 @@
 [
   {
+    "filename": "Agility.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/agility.gif",
+    "capturedAt": "20071123003505",
+    "sizeBytes": 2341,
+    "sha256": "33343f6e14f44e3c16d5eaf7c678e0d9af842fc783747b765fe12ff361248f18",
+    "digest": "GW4E4HID4V7LGIQQ3XXUXNT47H6DWRVU"
+  },
+  {
+    "filename": "Archcure.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/archcure.gif",
+    "capturedAt": "20071119192249",
+    "sizeBytes": 2310,
+    "sha256": "a13d86636565e95276b52f48c9ffc61f0a119cf35d0e6fe11848f99beb693e03",
+    "digest": "QTA7KIZCRLOXSFJ3B2LPPN2VGY2NBWWN"
+  },
+  {
+    "filename": "Archprotection.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/archprotection.gif",
+    "capturedAt": "20071119195111",
+    "sizeBytes": 2127,
+    "sha256": "a37a2e0bff8811f15f19cd7d1df249c461382cfd29d1e91738c428c93f353f14",
+    "digest": "K7CDSQR7MIHNPCLUCCRS2NR7DJRFLQGE"
+  },
+  {
+    "filename": "Bless.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/bless.gif",
+    "capturedAt": "20071127165249",
+    "sizeBytes": 2146,
+    "sha256": "425fcf9854d0c0e01b0d3b4682838bf371b1e75a03ae25012b76cf137de641a3",
+    "digest": "TW6H2QCCFJ7QZAUS57CK5YSQ3QICPI24"
+  },
+  {
+    "filename": "Circle-1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-1.gif",
+    "capturedAt": "20071119190848",
+    "sizeBytes": 1836,
+    "sha256": "b541e4461184a9e141a2ae1413d6e4b724f881dba911379028364b5379b05d11",
+    "digest": "RCDMOV7C5RKIAFN637L3NIFPE5ET7KSZ"
+  },
+  {
+    "filename": "Circle-2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-2.gif",
+    "capturedAt": "20071119190432",
+    "sizeBytes": 1833,
+    "sha256": "db7b97c634f76fa9bc028ec5b152825f6c3e0015a696c1ddc7f3da9f34a8417e",
+    "digest": "AGVHIBHVRMYVZRPQILFYHRFJ7E4WZ3MZ"
+  },
+  {
+    "filename": "Circle-3.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-3.gif",
+    "capturedAt": "20071119190955",
+    "sizeBytes": 1859,
+    "sha256": "43be9beeb8b69505a0e3e1e2a391172b7a041d3e522bb204e705d759a0aa0546",
+    "digest": "I6GIYAQDUCCAPCHXRJFB3HLMIDIPVMXX"
+  },
+  {
+    "filename": "Circle-4.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-4.gif",
+    "capturedAt": "20071119191051",
+    "sizeBytes": 1852,
+    "sha256": "446b0fe4823c60cf26a1ebecf417fe963eb56f6d8f83cedcd65804ce0d5790d9",
+    "digest": "B4I2WQWQD2TDRGTL7V2E5KAD4PZZAZKB"
+  },
+  {
+    "filename": "Circle-5.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-5.gif",
+    "capturedAt": "20071119190608",
+    "sizeBytes": 1836,
+    "sha256": "1f7155061e3bf3574b37e816060da9563ec5e6595862201ab8aba243a0978262",
+    "digest": "CVTVMG4DRQUI6BK7QHQDOPJWSKSBDXGY"
+  },
+  {
+    "filename": "Circle-6.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-6.gif",
+    "capturedAt": "20071119190415",
+    "sizeBytes": 1847,
+    "sha256": "53462605635258957bae0f72d44b7edc6db25bb5764c15176ef2a97e6acad731",
+    "digest": "KTYDV6VK42IBOVRPOG6WZBZAIYGNSRGA"
+  },
+  {
+    "filename": "Circle-7.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-7.gif",
+    "capturedAt": "20071119191106",
+    "sizeBytes": 1854,
+    "sha256": "501d42164a6259ef090edc8fefd15a9bf53ca99a7b89a427725017c4c097248f",
+    "digest": "L2VW5B3DB6EWHJN2QC5X5GOXRUBNITM2"
+  },
+  {
+    "filename": "Circle-8.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Circle-8.gif",
+    "capturedAt": "20071119190712",
+    "sizeBytes": 1841,
+    "sha256": "17000b7ad601ae88cf33008ed2b29c0e2ec44932b6c60838981e65ab0cb873de",
+    "digest": "SOYGOJSSCMOQI5HRYASG6CATQBADO4L5"
+  },
+  {
+    "filename": "Clumsy.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Clumsy.gif",
+    "capturedAt": "20071118173927",
+    "sizeBytes": 2142,
+    "sha256": "898560d7414e98adbb47d294cc7f6f5d6249b859e594e4f8b18047c7f44ec0e5",
+    "digest": "7WLYESVGIKXQDB4HQFSELCRSNTNWFKMV"
+  },
+  {
+    "filename": "Cunning.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/cunning.gif",
+    "capturedAt": "20071123003437",
+    "sizeBytes": 2514,
+    "sha256": "fccd10dd6b0f0ea36f5c0f30d9ecab3d90c933f72baf2a35bfacfbc150840093",
+    "digest": "2UIXSHMAKVEYTJYT7PAGI4HXJW3Y4TP6"
+  },
+  {
+    "filename": "Cure.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/cure.gif",
+    "capturedAt": "20071123003356",
+    "sizeBytes": 2190,
+    "sha256": "0da406fae155da77198002db367f1adc5478df6754f954f58303357e0e8ea373",
+    "digest": "7XTN5B4GKBF6LTGV4GHXVFXQH4N3LEUD"
+  },
+  {
+    "filename": "Curse.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/curse.gif",
+    "capturedAt": "20071119195206",
+    "sizeBytes": 2127,
+    "sha256": "543e71b9cf9aeb9cd639b4805f1b8a87ab23f2cfb9938e1b33c31bbe613db980",
+    "digest": "AY4SCOUCY5MEBRVZVGDB7VUET3N2KUGX"
+  },
+  {
+    "filename": "Dispel.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/dispel.gif",
+    "capturedAt": "20071119184033",
+    "sizeBytes": 2209,
+    "sha256": "1f1854ef2d88f4e45b75dc3f0efa06693995c1b5b70a8d6ca6ab84a3f956ac06",
+    "digest": "3AEBZTPMT5IRAG42ZRWSRUNCT36YRDBJ"
+  },
+  {
+    "filename": "Earthquake.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/earthquake.gif",
+    "capturedAt": "20071123005434",
+    "sizeBytes": 2388,
+    "sha256": "0c9b370527f36e8906f5ea9d97ab697a5dcaa06c5b5a0f53258531d18224e669",
+    "digest": "CE5A3UC4FJQTMG5PBTVQSJZJ7L4HOBIV"
+  },
+  {
+    "filename": "Explosion.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/explosion.gif",
+    "capturedAt": "20071119184144",
+    "sizeBytes": 2539,
+    "sha256": "ad61ac8d0f0950f85379b1d30e06eb0d231647d1417e2f55b4f37bc79c688055",
+    "digest": "2WVKAKHRBJ7CGCGEQUEVM4QO2HLD5JUJ"
+  },
+  {
+    "filename": "Feeblemind.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/feeblemind.gif",
+    "capturedAt": "20071118173635",
+    "sizeBytes": 2099,
+    "sha256": "3bb62dbf673320600f08ae831e832aaf08a50ccc7c1b77d4df86929d1c992bd8",
+    "digest": "23JZJDLOQ3P3D3MRFV3G2SUEKOQPUKWN"
+  },
+  {
+    "filename": "Flamestrike.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/flamestrike.gif",
+    "capturedAt": "20071121222635",
+    "sizeBytes": 2267,
+    "sha256": "1624e9b4cc9e42f11b3950a5b3ece71397354ebde52e5b772171da0f4797d531",
+    "digest": "5JTG6WJJYAE7NI3SDTBKPNIGHOOEXPVK"
+  },
+  {
+    "filename": "Harm.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/harm.gif",
+    "capturedAt": "20071123003541",
+    "sizeBytes": 2132,
+    "sha256": "b47b0804d83d83922230357a5cd02ee58d81423782908241e2448aefcfc0db5d",
+    "digest": "AIL2JLDVRES6EVIGXDYPPOMKGDXLHVRR"
+  },
+  {
+    "filename": "Heal.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/heal.gif",
+    "capturedAt": "20071118174048",
+    "sizeBytes": 2291,
+    "sha256": "f3f6c8cc7a5253ed0674c268cc71607dee8ce9053a10306ac3e125e80f2d0699",
+    "digest": "NUPMB3YIVW3AWOSR3QKINB435NRSJ7UX"
+  },
+  {
+    "filename": "Invisibility.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/invisibility.gif",
+    "capturedAt": "20071119184203",
+    "sizeBytes": 1816,
+    "sha256": "d7af5f2106fc207b9edd4ab8389df1820259060b78a16f8c91cd4f1e610b5161",
+    "digest": "XN6TTL7GRYSBPCXLYPEZLE6FFRV56J6D"
+  },
+  {
+    "filename": "Lightning.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/lightning.gif",
+    "capturedAt": "20071119192050",
+    "sizeBytes": 2288,
+    "sha256": "538a596a965632469b98d29f22ccf609a27813e0d2996af90868c82eb131e815",
+    "digest": "7N2HNMV4AWATIXASFMD5DANSWST6JI5E"
+  },
+  {
+    "filename": "Mark.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/mark.gif",
+    "capturedAt": "20071119183941",
+    "sizeBytes": 2059,
+    "sha256": "44d007ef65568f2d57ffff8dfbacfedc4507efdb24ba072098ba537537287199",
+    "digest": "LI2A42RL6MDPJINHNWLLVDWAKKDUOFIM"
+  },
+  {
+    "filename": "Paralyze.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/paralyze.gif",
+    "capturedAt": "20071119184126",
+    "sizeBytes": 2211,
+    "sha256": "c561ccc386d14b8767504150751a4f8e7d47edb2eaa634bf7e2a744d7c9b0cd1",
+    "digest": "CLHESLBATPVLVEIRHOFM4Z5KFNQ4KDN3"
+  },
+  {
+    "filename": "Poison.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/poison.gif",
+    "capturedAt": "20071127165200",
+    "sizeBytes": 2130,
+    "sha256": "b54dede847af8d1e9825cb397c8017c5361294550fc47846eb1a527800356f0c",
+    "digest": "7WMRWTXIQXAJ6ERIVCD3DSZGEY3S2VRV"
+  },
+  {
+    "filename": "Polymorph.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/polymorph.gif",
+    "capturedAt": "20071121222404",
+    "sizeBytes": 1867,
+    "sha256": "6e5b17075cf2bdc07bc7ce10ccebd1800850f89c833e8fad0d0697baf6c9837d",
+    "digest": "IDAIMBBRMINUYVCWMITL23OAXQOM3B7Q"
+  },
+  {
+    "filename": "Protection.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/protection.gif",
+    "capturedAt": "20071123003524",
+    "sizeBytes": 1993,
+    "sha256": "ca09a4efa402ea57f9eaf38ebb9f986e5ab43e272830eea3186097bf8b568b61",
+    "digest": "7R4LNKV2RL375H3X4IYLDENI5KGMCTDK"
+  },
+  {
+    "filename": "Recall.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/recall.gif",
+    "capturedAt": "20071119194734",
+    "sizeBytes": 2190,
+    "sha256": "d232f9495cfdaf5aabf0d2dde05fc2493a6f45fe220d7882d31f8b3c9f7e77c6",
+    "digest": "45Y4VGPJXH7K3NHUXLUWIIMBB7XD5S75"
+  },
+  {
+    "filename": "Resurrection.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/resurrection.gif",
+    "capturedAt": "20071123005517",
+    "sizeBytes": 2026,
+    "sha256": "93f7248888a09832fec260d254d1b0ab96b02627c811c482ec88571cd0f63e90",
+    "digest": "OMPUS3LXAA3IOYP2JCODR42QWVJ5WV4U"
+  },
+  {
+    "filename": "Reveal.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/reveal.gif",
+    "capturedAt": "20071119183922",
+    "sizeBytes": 2194,
+    "sha256": "02572e62854fa75dc67a18b411a84ecb506aaebf3f1d1a2ede682c976d06acf8",
+    "digest": "MY7OQVSCKWCV6MR7HY4Z5222CRJRHGFJ"
+  },
+  {
     "filename": "Spellbook.gif",
     "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/Spellbook.gif",
     "capturedAt": "20071118174009",
     "sizeBytes": 1115,
     "sha256": "2cfe1d0ee1998dc260c846a754dd88a64214ff2dbdfe34c5d7999911e61c00ab",
     "digest": "N77MTL6GE3XT2MBHCSKVSPJ2BL3WTIQF"
+  },
+  {
+    "filename": "Telekinesis.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/telekinesis.gif",
+    "capturedAt": "20071127164952",
+    "sizeBytes": 2113,
+    "sha256": "3b09be22a22fbce0b372725f0533e66ab9cc538ba44f163173da5b3317c93863",
+    "digest": "EUBIHP6EASYQGF3RPXTCWY6J2UROO5QK"
+  },
+  {
+    "filename": "Teleport.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/teleport.gif",
+    "capturedAt": "20071127164906",
+    "sizeBytes": 2260,
+    "sha256": "471f33330dd4ebcce6da84861a9fbc4980317d3884101a4adf41c4bc73f531a7",
+    "digest": "LAEXI6BLI6OITCC3LK2KH4PGWY7XAUOO"
   },
   {
     "filename": "agility.gif",
@@ -206,6 +486,14 @@
     "sizeBytes": 2291,
     "sha256": "f3f6c8cc7a5253ed0674c268cc71607dee8ce9053a10306ac3e125e80f2d0699",
     "digest": "NUPMB3YIVW3AWOSR3QKINB435NRSJ7UX"
+  },
+  {
+    "filename": "incognito.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_index/images/combat/8c/incognito.gif",
+    "capturedAt": "20071119184924",
+    "sizeBytes": 2338,
+    "sha256": "883359007c3e0d31d9e57d4c3bfeb78bd21bfd1533008fcf02380401c0149eb9",
+    "digest": "FQNIQ5OC5HKTKR4ZEUOIHHHMUFBE5EAR"
   },
   {
     "filename": "invisibility.gif",

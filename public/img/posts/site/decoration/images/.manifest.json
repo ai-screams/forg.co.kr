@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "b_logo.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/b_logo.gif",
+    "capturedAt": "20071015094429",
+    "sizeBytes": 496,
+    "sha256": "b12ab84d3cc2beb3c1d18806adb42b42388bb1e4da6ee0de82662e07fcb99877",
+    "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
+  },
+  {
+    "filename": "bg.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/bg.gif",
+    "capturedAt": "20071015094236",
+    "sizeBytes": 49,
+    "sha256": "e24d43f4783e5e3fc5280d6c9aaafff521920119792f9e163c40109c5bf450f3",
+    "digest": "Y3UZBSKP2MDFF5WJDRVLE2WSJKJILJD3"
+  },
+  {
+    "filename": "title_bg.jpg",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/title_bg.jpg",
+    "capturedAt": "20071015094413",
+    "sizeBytes": 368,
+    "sha256": "2d6a37455854c8e2fc2201bba9e881a4ade4d17e239cf9ca0478d071ca78d9a6",
+    "digest": "TPK4TC4QBB3DO644GFDBEGIEAVDOUQOL"
+  },
+  {
+    "filename": "zoombox_background.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/zoombox_background.gif",
+    "capturedAt": "20071015094156",
+    "sizeBytes": 86,
+    "sha256": "c42d8f88e87954cb04da9866179c43931359482d49343bb3ce5140d2465ea713",
+    "digest": "XPP2B4EY7CVHQE2XGR4W476D25KAP77I"
+  }
+]

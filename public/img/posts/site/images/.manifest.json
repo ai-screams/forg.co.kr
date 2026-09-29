@@ -550,5 +550,13 @@
     "sizeBytes": 26753,
     "sha256": "185df7d2abe86f7ecaa047c49d046ce840439b14de6c92fa9259ab19eadc671e",
     "digest": "TZTQIBPYPYXMQKHYQ4XZ56KAJYNRFQCK"
+  },
+  {
+    "filename": "zoombox_background.gif",
+    "originalUrl": "http://www.forg.co.kr/images/zoombox_background.gif",
+    "capturedAt": "20071010235113",
+    "sizeBytes": 86,
+    "sha256": "c42d8f88e87954cb04da9866179c43931359482d49343bb3ce5140d2465ea713",
+    "digest": "XPP2B4EY7CVHQE2XGR4W476D25KAP77I"
   }
 ]
