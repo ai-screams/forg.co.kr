@@ -48,6 +48,12 @@ POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 LISTINGS_DIR = PROJECT_ROOT / "src" / "content" / "listings"
 INDEX_DIR = PROJECT_ROOT / "src" / "content" / "boards"
 UNKNOWN_DATE = datetime(1970, 1, 1)  # the "작성일 미상" sentinel the UI knows
+# A board that took over from an older one lists the older one's rows after
+# its own. The 2008–2016 Gnuboard free board (UoBoard2, 23 captured posts)
+# followed the Zeroboard free board (UoBoard, 2000–2007): same name, same
+# first menu button, and the older board's last post predates the newer
+# one's first. The rows keep their own board, so they link to its posts.
+CONTINUES: dict[str, str] = {"UoBoard2": "UoBoard"}
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".index-summary.json"
 
 
@@ -159,15 +165,42 @@ def _prune_stale_pages(board_dir: Path, valid_pages: int) -> int:
     return removed
 
 
+def _board_entries(board: str, post_files: list[Path], errors: list[str]) -> list[BoardIndexEntry]:
+    """A board's own rows: its posts plus its list-only rows."""
+    posts: list[Post] = []
+    for f in post_files:
+        try:
+            posts.append(_load_post(f))
+        except (json.JSONDecodeError, ValidationError, OSError) as exc:
+            errors.append(f"{f.relative_to(PROJECT_ROOT)}: {exc}")
+    if not posts:
+        return []
+    entries = [_entry_from_post(p) for p in posts]
+    entries, _added, _filled = _merge_listing(board, entries, posts[0].era)
+    return entries
+
+
+def _dump_page(page: BoardIndexPage) -> str:
+    """The chunk JSON, with `board` written only on rows that carry one, so
+    boards without a predecessor keep their files byte for byte."""
+    data = page.model_dump(mode="json")
+    for e in data["entries"]:
+        if e.get("board") is None:
+            e.pop("board", None)
+    return json.dumps(data, ensure_ascii=False, indent=2)
+
+
 def _build_board(
     board: str,
     post_files: list[Path],
     *,
     dry_run: bool,
     now: datetime,
+    carried: list[BoardIndexEntry] | None = None,
 ) -> tuple[int, int, int, list[str]]:
     """Build all paginated index files for a single board.
 
+    `carried` are the rows of the board it continues (CONTINUES).
     Returns (post_count, page_count, pruned_count, errors).
     """
     errors: list[str] = []
@@ -185,6 +218,9 @@ def _build_board(
     entries, added, filled = _merge_listing(board, entries, posts[0].era)
     if added or filled:
         print(f"  {board}: +{added} list-only rows, {filled} hits filled", file=sys.stderr)
+    if carried:
+        entries += carried
+        print(f"  {board}: +{len(carried)} rows carried from {CONTINUES[board]}", file=sys.stderr)
     # Newest first; a title-only row with no date carries the 1970 sentinel
     # and sinks to the end like an undated post does.
     entries.sort(key=lambda e: (e.createdAt, int(e.postId) if e.postId.isdigit() else 0), reverse=True)
@@ -215,7 +251,7 @@ def _build_board(
             continue
 
         out = board_dir / f"index-{page_num}.json"
-        payload = page.model_dump_json(indent=2, exclude_none=False)
+        payload = _dump_page(page)
         if out.exists() and _same_but_stamp(out.read_text(encoding="utf-8"), payload):
             continue  # nothing but generatedAt would change; keep git quiet
         _atomic_write(out, payload + "\n")
@@ -254,11 +290,19 @@ def main() -> int:
 
     for i, board_dir in enumerate(boards, 1):
         post_files = sorted(board_dir.glob("*.json"))
+        carried = None
+        if board_dir.name in CONTINUES:
+            older = CONTINUES[board_dir.name]
+            carried = [
+                e.model_copy(update={"board": older})
+                for e in _board_entries(older, sorted((POSTS_DIR / older).glob("*.json")), all_errors)
+            ]
         posts, pages, pruned, errors = _build_board(
             board_dir.name,
             post_files,
             dry_run=args.dry_run,
             now=now,
+            carried=carried,
         )
         total_posts += posts
         total_pages += pages

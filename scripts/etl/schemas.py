@@ -105,6 +105,10 @@ class BoardIndexEntry(BaseModel):
     era: PostEra
     # False for a row known only from a list page — no post to link to.
     hasPost: bool = True
+    # Set on a row carried in from the board this one continues (03's
+    # CONTINUES): the board whose `/{board}/{postId}` the row links to.
+    # Omitted from the JSON when None.
+    board: str | None = None
 
 
 class BoardIndexPage(BaseModel):

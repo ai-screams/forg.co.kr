@@ -22,7 +22,7 @@ import {
   type ListSkin,
 } from "@/components/list-skin";
 
-import { getBoardOrThrow, type BoardId } from "@/lib/boards";
+import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
 import { formatShortDate } from "@/lib/dates";
 import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
@@ -49,6 +49,15 @@ export function BoardListing({ board, page }: BoardListingProps) {
             : ""}{" "}
           · {page.page} / {page.totalPages} 페이지
         </p>
+        {meta.continues && isBoardId(meta.continues) && (
+          <p className="text-forg-muted mt-[2px] text-[11px]">
+            2007년까지의 글은 이전 자유게시판(
+            <Link href={`/${meta.continues}`} className="underline">
+              {getBoardOrThrow(meta.continues).nameKr}
+            </Link>
+            )에서 이어 붙였습니다. 누르면 그 게시판의 글로 갑니다.
+          </p>
+        )}
       </header>
 
       <PostTable board={board} page={page} skin={skin} />
@@ -83,7 +92,10 @@ function RowTitle({
     );
   }
   return (
-    <Link href={`/${board}/${entry.postId}`} className={`text-forg-ink ${layout} hover:underline`}>
+    <Link
+      href={`/${entry.board ?? board}/${entry.postId}`}
+      className={`text-forg-ink ${layout} hover:underline`}
+    >
       {children}
     </Link>
   );
@@ -109,7 +121,7 @@ function PostTable({
   // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
   // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
   const rows: ListRow[] = page.entries.map((entry) => ({
-    key: entry.postId,
+    key: `${entry.board ?? board}/${entry.postId}`,
     author: entry.author,
     title: (
       <RowTitle board={board} entry={entry}>

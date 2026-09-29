@@ -131,6 +131,11 @@ export interface BoardIndexEntry {
    * there is no `/{board}/{postId}` page to link to.
    */
   hasPost: boolean;
+  /**
+   * Present on a row carried in from the board this one continues
+   * (`BoardMeta.continues`): the board the row's post lives in.
+   */
+  board?: string;
 }
 
 /**
