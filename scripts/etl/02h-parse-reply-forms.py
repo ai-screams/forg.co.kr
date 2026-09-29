@@ -55,6 +55,9 @@ sys.modules["zb40"] = zb40
 _spec.loader.exec_module(zb40)
 
 RE_PREFIX = re.compile(r"^\s*\[re\]\s*", re.I)
+HITS = re.compile(r"[0-9]+")  # ASCII only: "²".isdigit() is True, int("²") fails
+# A cell with a letter in it that is not a date like 2001/04/19.
+AUTHOR_CELL = re.compile(r"^(?!\d{2,4}[/.-]\d{1,2}[/.-]\d{1,2}$)(?=.*[^\d\s/.:-]).+$")
 HTML_TAG = re.compile(r"<\s*/?\s*[a-zA-Z][^>]*>")
 SOURCE_NOTE = (
     '<p style="color:#888;font-size:11px">이 글은 답글 쓰기 화면에 인용된 제목과 본문으로 '
@@ -78,13 +81,14 @@ def list_rows(html_text: str) -> dict[tuple[str, str], dict]:
         if not isinstance(cell, Tag):
             continue
         cells = [c for c in cell.find_next_siblings("td")]
-        if not cells:
-            continue
-        author = cells[0].get_text(" ", strip=True)
-        hits = cells[-1].get_text(strip=True)
+        # Author: the first cell after the subject holding a name, i.e. not a
+        # number (hits, comment count) and not a date. None found → unknown.
+        author = next((c.get_text(" ", strip=True) for c in cells
+                       if AUTHOR_CELL.search(c.get_text(" ", strip=True))), "")
+        hits = cells[-1].get_text(strip=True) if cells else ""
         key = (q["id"][0], q["no"][0])
         if author and key not in out:
-            out[key] = {"author": author, "hits": int(hits) if hits.isdigit() else None,
+            out[key] = {"author": author, "hits": int(hits) if HITS.fullmatch(hits) else None,
                         "title": a.get_text(" ", strip=True)}
     return out
 

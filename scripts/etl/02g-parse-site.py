@@ -508,7 +508,7 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
                 continue
             stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
             label = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", a.get("title", "")).strip()
-            if label:
+            if label and label.lower() not in BUTTON_WORDS and not PAGER.fullmatch(label):
                 by_title.setdefault(stem, Counter())[label] += weight
             text = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
             text = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", text).strip()
@@ -516,14 +516,21 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
                 by_text.setdefault(stem, Counter())[text] += weight
     chosen: list[dict[str, str]] = []
     for votes in (by_text, by_title):
-        labels = {stem: c.most_common(1)[0][0] for stem, c in votes.items()}
-        # A label on three or more pages of one folder names a section or a
-        # button ("Click", ":::Monster_Diary:::" on every monster), not the
-        # page. Counted per folder: "아머" names one page in Diablo/ and
+        # A label that is the leading name of three or more pages in one
+        # folder names a section or a button ("Click", ":::Monster_Diary:::"
+        # on every monster), not the page. It is struck from every page of
+        # that folder before each page picks, so a page's own second name can
+        # still win. Counted per folder: "아머" names one page in Diablo/ and
         # another in Diablo2/.
-        counts = Counter((stem.rpartition("/")[0], label) for stem, label in labels.items())
-        chosen.append({stem: label for stem, label in labels.items()
-                       if counts[(stem.rpartition("/")[0], label)] < 3})
+        leading = Counter((stem.rpartition("/")[0], c.most_common(1)[0][0])
+                          for stem, c in votes.items())
+        picked: dict[str, str] = {}
+        for stem, c in votes.items():
+            folder = stem.rpartition("/")[0]
+            left = [(label, n) for label, n in c.most_common() if leading[(folder, label)] < 3]
+            if left:
+                picked[stem] = left[0][0]
+        chosen.append(picked)
     return {**chosen[0], **chosen[1]}
 
 

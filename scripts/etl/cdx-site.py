@@ -49,7 +49,10 @@ HOSTS = ("forg.co.kr", "forg.dotple.com", "forg.uospace.net")
 MIRRORS: dict[tuple[str, str], str] = {
     ("hosting27.interpia98.net", "/~forg/"): "/",
 }
-BOARD_PATHS = r".*/(_zb/(?!guild/|vendor/|kritz_vote/)|zboard/|zb/|bbs/|~[^/]+/)(?!.*[?&]id=UO_Vote(&|$)).*"
+BOARD_PATHS = (
+    r".*/(~[^/]+/|bbs/|_zb/(?!guild/|vendor/|kritz_vote/)"
+    r"|(zboard|zb)/(?!(zboard|view|apply_vote)\.php\?([^#]*&)?id=UO_Vote(&|#|$))).*"
+)
 ERROR_PAGE_DIGESTS = {"YJ5BLWSK5YU6LWI7FRNUGUOJEJBD4K6Q"}
 BINARY_RE = re.compile(r"\.(gif|jpe?g|png|bmp|zip|exe|swf|mid|wav|css|js|txt)$", re.I)
 SESSION_RE = re.compile(r"(^|&)PHPSESSID=[0-9a-f]+")
@@ -90,7 +93,8 @@ def page_key(original: str) -> str:
     take their museum path."""
     s = urllib.parse.urlsplit(original)
     query = SESSION_RE.sub("", s.query).strip("&")
-    path = mirror_path((s.hostname or "").lower(), s.path) or s.path
+    host = (s.hostname or "").lower().removeprefix("www.")
+    path = mirror_path(host, s.path) or s.path
     return path + (f"?{query}" if query else "")
 
 
