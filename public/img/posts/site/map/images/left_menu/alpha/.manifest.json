@@ -1,5 +1,21 @@
 [
   {
+    "filename": "alpha_background.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/alpha/alpha_background.gif",
+    "capturedAt": "20071016110401",
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5"
+  },
+  {
+    "filename": "alpha_background_1.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/alpha/alpha_background_1.gif",
+    "capturedAt": "20071016110332",
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH"
+  },
+  {
     "filename": "u.gif",
     "originalUrl": "http://forg.co.kr:80/map/images/left_menu/alpha/u.gif",
     "capturedAt": "20020708071639",

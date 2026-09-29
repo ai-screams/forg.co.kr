@@ -96,6 +96,14 @@
     "digest": "KTYDV6VK42IBOVRPOG6WZBZAIYGNSRGA"
   },
   {
+    "filename": "Circle-7.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Circle-7.gif",
+    "capturedAt": "20040119114006",
+    "sizeBytes": 1854,
+    "sha256": "501d42164a6259ef090edc8fefd15a9bf53ca99a7b89a427725017c4c097248f",
+    "digest": "L2VW5B3DB6EWHJN2QC5X5GOXRUBNITM2"
+  },
+  {
     "filename": "Circle-8.gif",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/8c/Circle-8.gif",
     "capturedAt": "20010620225126",
@@ -216,6 +224,14 @@
     "digest": "PHLTQGGXAAVOSMZRJTVJEGWJ6DL7VTUV"
   },
   {
+    "filename": "Greater-Heal.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Greater-Heal.gif",
+    "capturedAt": "20010820214953",
+    "sizeBytes": 1686,
+    "sha256": "002c3acdb393241b4303e82bdf7e60795c9b32c9c120bc0459ce096c5e11ef75",
+    "digest": "XHQMVWP4YWYNF7ZSIAIP3YHFJRBAJZST"
+  },
+  {
     "filename": "Harm.gif",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/8c/Harm.gif",
     "capturedAt": "20010620224327",
@@ -288,6 +304,14 @@
     "digest": "HRXA2YFAS7Q4XWK2EMYCCFZ5CCXV4YYF"
   },
   {
+    "filename": "Magic-Untrap.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Magic-Untrap.gif",
+    "capturedAt": "20010829191035",
+    "sizeBytes": 1713,
+    "sha256": "a65159ea59e26ca6510c3ff9c4e5e837ab8a4f61c4229edf23c9a05a80ab8d77",
+    "digest": "FIWKM2RFR6M2GOWTG4BP2N6CPTIFM3T6"
+  },
+  {
     "filename": "Mana-Drain.gif",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/8c/Mana-Drain.gif",
     "capturedAt": "20010620225155",
@@ -326,6 +350,14 @@
     "sizeBytes": 1683,
     "sha256": "6bd104ed685ed555d2202f6f1f8adfafb6b2568756a6c0ca038c36bac41257f1",
     "digest": "HRLN36EKQUZCUWZVUGWCNXVBSD5EA3OU"
+  },
+  {
+    "filename": "Meteor-Swarm.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Meteor-Swarm.gif",
+    "capturedAt": "20010821174742",
+    "sizeBytes": 1687,
+    "sha256": "f1b37f35bd185795f4f8a13b1e55f0bb8bcadca6b7fc1f90c6609cc5e51471f1",
+    "digest": "AK4EGJRYAGRQIM6BVXX7O23QWG7WQQSP"
   },
   {
     "filename": "Mind-Blast.gif",
@@ -462,6 +494,14 @@
     "sizeBytes": 1694,
     "sha256": "f6091293d3ab536823cb1625bcaea13915aea061323808d0d3bf5533fb9a655e",
     "digest": "JDB6QNA2L3YVNGZDH57FU2GGDSBZVTVB"
+  },
+  {
+    "filename": "Wall-of-Stone.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Wall-of-Stone.gif",
+    "capturedAt": "20010821192246",
+    "sizeBytes": 1736,
+    "sha256": "535716f6c861d7a08a38924770d343acc5b340c05e6f668a9c70596668c62b99",
+    "digest": "VWHFOKLV2KOORTX65C7R4NLKFG7YVFKI"
   },
   {
     "filename": "Weaken.gif",

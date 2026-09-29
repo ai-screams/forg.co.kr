@@ -1,5 +1,69 @@
 [
   {
+    "filename": "bolt_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/bolt_1.gif",
+    "capturedAt": "20071117153126",
+    "sizeBytes": 796,
+    "sha256": "55b2b7d3a8e74ac149918c87f7f43345990c553b09b03a4bc1c27e4af5f063b6",
+    "digest": "DWTVSFETKOLQDQB7MRFHEYBT5RVVLKBT"
+  },
+  {
+    "filename": "bolt_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/bolt_2.gif",
+    "capturedAt": "20071117152505",
+    "sizeBytes": 748,
+    "sha256": "d3fb0d3979b9355022bffbc1ea436f2d87a7bde9f396c9af1d24c2148d27bdb7",
+    "digest": "2J7U4SXOC43UT6LH67GGEEMXCEHTE54H"
+  },
+  {
+    "filename": "bolt_3.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/bolt_3.gif",
+    "capturedAt": "20071117152840",
+    "sizeBytes": 803,
+    "sha256": "6aef25ca14c62c9d3e87a4f587df7c9d66e4cea65a97f9dbc6ea559b5df2f115",
+    "digest": "EE55S6FZKDMHTGRVK4PB3CJ73CJAIG37"
+  },
+  {
+    "filename": "bone_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/bone_1.gif",
+    "capturedAt": "20071117153723",
+    "sizeBytes": 628,
+    "sha256": "f13017d29dc0b745f59fb8dbbb8c3bd7859856a5fb99c364745013f9380c2e0b",
+    "digest": "3W4CEYJZKDMERMIYHUZU3ZPYAUFGOGXG"
+  },
+  {
+    "filename": "bone_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/bone_2.gif",
+    "capturedAt": "20071117153616",
+    "sizeBytes": 232,
+    "sha256": "385f6909d84b2fd3ba26f529ebfe043aa76f73f9979d1a63223ae224518e9f05",
+    "digest": "C4RCS2XZ6GE5SLIUVAUZ5VXKOQBH4USP"
+  },
+  {
+    "filename": "cotton.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/cotton.gif",
+    "capturedAt": "20071117152908",
+    "sizeBytes": 429,
+    "sha256": "d55b2b0520aa30534b3c57aec00aa1cd63ef66539f0ba73c69145a2cbf18312f",
+    "digest": "KIZ63VFZKQ4W2HO5YT4CPTOPYTJM4TDT"
+  },
+  {
+    "filename": "map_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/map_1.gif",
+    "capturedAt": "20071117160254",
+    "sizeBytes": 38415,
+    "sha256": "8e8419ee7327dabef40339b998664ee8cc414c68c73a1d110d1f43a9ee0270c8",
+    "digest": "PRMJUUSP4ZJ7L3AFHQTYMSEN7XZQNMPD"
+  },
+  {
+    "filename": "map_2.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/map_2.gif",
+    "capturedAt": "20071117160341",
+    "sizeBytes": 14810,
+    "sha256": "f4fe7bbf13ad8ddade7912d4ccdcfdb3840efb5adadae1be6ddace8124717e23",
+    "digest": "M25OH76LR3JBB7SDMH6KHWOWOX4VRDVW"
+  },
+  {
     "filename": "map_3.gif",
     "originalUrl": "http://forg.co.kr:80/skill_newbie/images/warrior/map_3.gif",
     "capturedAt": "20040119042531",
@@ -46,6 +110,14 @@
     "sizeBytes": 5505,
     "sha256": "5920fb2ab87fe55a2009197fc24861187c408a634b86fa4a3d1b8d37b57af8dc",
     "digest": "A5VRD43MGJI6KTQ5CK5BTE3D24ANRFAS"
+  },
+  {
+    "filename": "menu_12.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/menu_12.gif",
+    "capturedAt": "20071117155706",
+    "sizeBytes": 7325,
+    "sha256": "95beb19ff766fd50c7a5d5dd7b42b4ee9b23ac1c7d69298af2f6138b5a8afc6c",
+    "digest": "UQB6QGB2UW74XMRP42AUOFP6DJWWTHQR"
   },
   {
     "filename": "menu_13.gif",
@@ -96,6 +168,14 @@
     "digest": "XIDPAL3HW7PE27ROEQ7NSW6WEJLA27X4"
   },
   {
+    "filename": "menu_19.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/menu_19.gif",
+    "capturedAt": "20071117155226",
+    "sizeBytes": 7038,
+    "sha256": "0c44059b631d007106f40bc4715df5e4b14b936e3866f0b5f9c6830b70687922",
+    "digest": "HQDZLYJ4GVFW66C6B5KFYVRBH3MTCJXF"
+  },
+  {
     "filename": "menu_2.gif",
     "originalUrl": "http://forg.co.kr:80/skill_newbie/images/warrior/menu_2.gif",
     "capturedAt": "20040120005349",
@@ -110,6 +190,14 @@
     "sizeBytes": 7699,
     "sha256": "44e822fa40b59c8db001042716ee42eb6af1b0d478c0b0a174df407176cb9072",
     "digest": "DNAIALPXAW4FC5N5647CA53HHGY3HGA3"
+  },
+  {
+    "filename": "menu_4.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/menu_4.gif",
+    "capturedAt": "20071117160235",
+    "sizeBytes": 7842,
+    "sha256": "35519f90e700f19ed1dbac948d8e6f837dc97d7f2becd52fc1edde8808bfcf1b",
+    "digest": "I2TINM46DDEGU5H7TAE6545Y3YG55BV6"
   },
   {
     "filename": "menu_5.gif",
@@ -128,6 +216,14 @@
     "digest": "YPY46EDEZEYGEANZCIW5D7SLLE2ZHXCZ"
   },
   {
+    "filename": "menu_8.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/menu_8.gif",
+    "capturedAt": "20071117153332",
+    "sizeBytes": 7924,
+    "sha256": "8c3e3fffc5dbe7057600bd6e58654cc6378500355d0244482968d5cbedaf2942",
+    "digest": "6VP7BKSDWAZKPGIYFAPFPBTGNPB6KVRA"
+  },
+  {
     "filename": "menu_9.gif",
     "originalUrl": "http://forg.co.kr:80/skill_newbie/images/warrior/menu_9.gif",
     "capturedAt": "20040120052806",
@@ -142,5 +238,21 @@
     "sizeBytes": 1027,
     "sha256": "50a0aafdbc396c1a30d3815dc4d6d68ad4fcf10d7057d444170f2da9428fe43e",
     "digest": "RGJ47KPZ5UCEYHCQVQYLOBTHPWHF6SKH"
+  },
+  {
+    "filename": "wheel.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/wheel.gif",
+    "capturedAt": "20071117152957",
+    "sizeBytes": 1352,
+    "sha256": "9c52dc94956824cb5709d5c5e28a206940b1f9f74ef3f880059a6bbfd0642bfa",
+    "digest": "23LWZBQHMXJYGZKGCE442D6GKK3W4HJU"
+  },
+  {
+    "filename": "wheel_1.gif",
+    "originalUrl": "http://www.forg.co.kr/skill_newbie/images/warrior/wheel_1.gif",
+    "capturedAt": "20071117153422",
+    "sizeBytes": 3855,
+    "sha256": "1d2690062d334c922a6e440a16fbff4307860ed5ff39116ab2384789540f0252",
+    "digest": "7IVGUFDJS2YHTCOANUIP2AVCK4ROR74T"
   }
 ]

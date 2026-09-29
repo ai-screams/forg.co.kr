@@ -120,6 +120,14 @@
     "digest": "WU65OM6V5VDSS3BOOZLPKJWQKYBX4UVZ"
   },
   {
+    "filename": "dungeon_b.gif",
+    "originalUrl": "http://forg.co.kr:80/map/dungeon_b.gif",
+    "capturedAt": "20010909184336",
+    "sizeBytes": 79,
+    "sha256": "9884fae1988fe24bdd8b945660067d33762fd2bcb2e99e8939907312dec593b7",
+    "digest": "SO2PAOTBJCUXSH6KM6VPJY72JYO7C64Q"
+  },
+  {
     "filename": "il.gif",
     "originalUrl": "http://forg.co.kr:80/map/il.gif",
     "capturedAt": "20020228114309",

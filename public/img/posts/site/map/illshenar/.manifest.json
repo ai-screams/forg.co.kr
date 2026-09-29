@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "mark_1.gif",
+    "originalUrl": "http://www.forg.co.kr/map/illshenar/mark_1.gif",
+    "capturedAt": "20071129211128",
+    "sizeBytes": 138,
+    "sha256": "165fe28bcda8ea027b50972bac22dfce2b41949d679ed3b0e3dd5be54fa5f02d",
+    "digest": "A7SWIJA3PBVVDA2RBNLIWVFXWGEMJ4WE"
+  },
+  {
+    "filename": "mark_2.gif",
+    "originalUrl": "http://www.forg.co.kr/map/illshenar/mark_2.gif",
+    "capturedAt": "20071129210833",
+    "sizeBytes": 138,
+    "sha256": "defc1ea9828c9343ef31b4b9eae9424ea05c19ab4bba3b3b732f984afc0ea992",
+    "digest": "KDQ24LW3JVYXWIYYPDVEL2OQRV4MMA6W"
+  },
+  {
+    "filename": "mark_3.gif",
+    "originalUrl": "http://www.forg.co.kr/map/illshenar/mark_3.gif",
+    "capturedAt": "20071129211003",
+    "sizeBytes": 143,
+    "sha256": "18fb96402ae08ded7108b3227422a29603d9a31d6bf47081842e50eec1950313",
+    "digest": "ESXA5ZD3N3PLSIERTSM7WSNJ72MEQJXG"
+  },
+  {
+    "filename": "mark_5.gif",
+    "originalUrl": "http://www.forg.co.kr/map/illshenar/mark_5.gif",
+    "capturedAt": "20071129211222",
+    "sizeBytes": 138,
+    "sha256": "7f62fa961c03ef28b8c1d7139a6f2a97c3ef0a1b933c80cffe545d00830c0d02",
+    "digest": "DJ543SR7TVQBVUSOY3WEOOQ3FSCJLMGA"
+  },
+  {
+    "filename": "mark_6.gif",
+    "originalUrl": "http://www.forg.co.kr/map/illshenar/mark_6.gif",
+    "capturedAt": "20071129211141",
+    "sizeBytes": 130,
+    "sha256": "5041d198594ccdd4367d63949b5136579e157e37da63dd6275e93db6c828fddd",
+    "digest": "7WGK6XTCW5UJHDLQGHQOF3YHNTBOC45C"
+  }
+]

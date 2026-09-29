@@ -8,12 +8,44 @@
     "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
   },
   {
+    "filename": "forg_background.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/forg_background.gif",
+    "capturedAt": "20071016105538",
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "digest": "2XEH7C2UFTQEUJWI7IFWLURAS5TIQGME"
+  },
+  {
     "filename": "map_up.gif",
     "originalUrl": "http://forg.co.kr:80/map/images/left_menu/map_up.gif",
     "capturedAt": "20020708151518",
     "sizeBytes": 696,
     "sha256": "b0fcdea7854e714eeaa381ae48c54002394d5cb274c369a89dd0fbc1a8c1be32",
     "digest": "JGOOFN3UIZSTTHLW4JE6QLSIVID7FUJE"
+  },
+  {
+    "filename": "memo_b.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/memo_b.gif",
+    "capturedAt": "20071016110222",
+    "sizeBytes": 255,
+    "sha256": "c2da548631243b0be69c7ed611dc38ae0c4453cde424b949f2382954b718344d",
+    "digest": "AJYBFCLQ5AYRQH6LCW3TO43KM75TR6L2"
+  },
+  {
+    "filename": "memo_m.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/memo_m.gif",
+    "capturedAt": "20071016110211",
+    "sizeBytes": 97,
+    "sha256": "e1f25d7eb6883b5b6b149a17f06c13a5f624a3b71ce77142465df5b5525d9587",
+    "digest": "B6MNOQCJSLDRKYTLSTSOIB5P2YMFT75I"
+  },
+  {
+    "filename": "memo_t.gif",
+    "originalUrl": "http://www.forg.co.kr/map/images/left_menu/memo_t.gif",
+    "capturedAt": "20071016105222",
+    "sizeBytes": 15751,
+    "sha256": "fd56a6d6a4481cd30de974a535de1456844de5439a574a1aee19128750ffba42",
+    "digest": "OHPVJWZFKHDEVLUCWJ7FJWYVQA7F7DAK"
   },
   {
     "filename": "top_up.gif",

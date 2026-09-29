@@ -14,5 +14,37 @@
     "sizeBytes": 45314,
     "sha256": "29f9f3b8901748b39bf9d3215b2b188e5bf98a07a9e7745e75bc8ea9d5c0535a",
     "digest": "XM7T6QZVNMXCKYPKNBRDIHQNVR4LV7N3"
+  },
+  {
+    "filename": "lore.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/animal/lore.gif",
+    "capturedAt": "20010826052222",
+    "sizeBytes": 13386,
+    "sha256": "600a86493cf81d24b9c9977b615fb66eaa8e2fa9cbb985f7e7ad48977cda9eda",
+    "digest": "KBF76KI5DXPVADWGX3C4OSE65O7PEBKR"
+  },
+  {
+    "filename": "tame_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/animal/tame_3.gif",
+    "capturedAt": "20010826065311",
+    "sizeBytes": 46617,
+    "sha256": "e4f9109b573ad8927856901e8171532dcb69b84ec260934fe0d0666bbf5c9fc6",
+    "digest": "I5SS4FJDDKARXVCPIN5ODMWXUCINI73P"
+  },
+  {
+    "filename": "tame_7.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/animal/tame_7.gif",
+    "capturedAt": "20010826074446",
+    "sizeBytes": 59076,
+    "sha256": "093238c438d38a22a4abc5a7216dda64572553cb1fe9851474deb73cf577e155",
+    "digest": "IBWOWUDD2CXY5JLI7BJ4K4F5YGXFACC3"
+  },
+  {
+    "filename": "tame_8.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/animal/tame_8.gif",
+    "capturedAt": "20010826081538",
+    "sizeBytes": 42468,
+    "sha256": "e3ecf5165a14e79e717c4d2198cdee41749f5cf2c3d76779d69b5b7bbd620426",
+    "digest": "52RQBPNTXTQMSI7JUSECEGHJAHVCNMN2"
   }
 ]

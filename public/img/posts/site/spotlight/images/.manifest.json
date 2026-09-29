@@ -224,6 +224,14 @@
     "digest": "7WCVYW42E2EJBFSZNDVANOGOUQH7CBNC"
   },
   {
+    "filename": "bg.gif",
+    "originalUrl": "http://www.forg.co.kr/spotlight/images/bg.gif",
+    "capturedAt": "20071016104644",
+    "sizeBytes": 49,
+    "sha256": "e24d43f4783e5e3fc5280d6c9aaafff521920119792f9e163c40109c5bf450f3",
+    "digest": "Y3UZBSKP2MDFF5WJDRVLE2WSJKJILJD3"
+  },
+  {
     "filename": "bob1_s.jpg",
     "originalUrl": "http://www.forg.co.kr/spotlight/images/bob1_s.jpg",
     "capturedAt": "20071128201553",

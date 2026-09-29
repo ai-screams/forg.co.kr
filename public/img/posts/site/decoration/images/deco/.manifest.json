@@ -1,10 +1,58 @@
 [
   {
+    "filename": "deco_doll_1.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/deco_doll_1.gif",
+    "capturedAt": "20071015094248",
+    "sizeBytes": 11609,
+    "sha256": "da6f2f0b5a1e048cf3744d5befaf1c7c5af9137b8c3e880d035354ba95bf5037",
+    "digest": "NLRYXVUK62O7RKYLK5NXCSD2S6ZTQOSC"
+  },
+  {
+    "filename": "deco_fire_1.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/deco_fire_1.gif",
+    "capturedAt": "20071015094402",
+    "sizeBytes": 11605,
+    "sha256": "c7bb17305ef3350937a4e8ec07024df2f235f00439cb78d953aca440d840dadd",
+    "digest": "36LAKRB7LDZFSH4NYHOVMMJEZPYZ3FLS"
+  },
+  {
+    "filename": "deco_gpiano_1.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/deco_gpiano_1.gif",
+    "capturedAt": "20071015094448",
+    "sizeBytes": 9296,
+    "sha256": "ffe16edc999ff3974d156edcc44f3883cd2219f0afbfa7669b1ee5f7c21af45d",
+    "digest": "BGCIE4OBNIJQU7UZGEN4RQTBATUSDTZO"
+  },
+  {
+    "filename": "deco_logo.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/deco_logo.gif",
+    "capturedAt": "20071015094058",
+    "sizeBytes": 12720,
+    "sha256": "65930780611a1018ff1e28aba304a998bc1f053d4845c7f82aa180133a01ad94",
+    "digest": "II6E7YIQEIV7A3TMWX2Y6IQ2ZFFIP4HX"
+  },
+  {
+    "filename": "deco_stone_1.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/deco_stone_1.gif",
+    "capturedAt": "20071015094324",
+    "sizeBytes": 12457,
+    "sha256": "7a7a26c3c3d29c553b9407a1a9a656781d58bca47aa3284938ecacc0f2af6bf9",
+    "digest": "2E2QVXVBIBC7GLYTTXJIF5STOJTF3T56"
+  },
+  {
     "filename": "knitting.gif",
     "originalUrl": "http://forg.co.kr:80/decoration/images/deco/knitting.gif",
     "capturedAt": "20021207012514",
     "sizeBytes": 981,
     "sha256": "5c6d5a93b514ee2fb5868c7e2b5caef96921c6ba26f34eef4aeb0d2999d38a4c",
     "digest": "HMAEAY2BQJXBBRPXXFBTPKKNL3LYOIZZ"
+  },
+  {
+    "filename": "line.gif",
+    "originalUrl": "http://www.forg.co.kr/decoration/images/deco/line.gif",
+    "capturedAt": "20071015094215",
+    "sizeBytes": 81,
+    "sha256": "d6c16e66d94c05de5a3c08092d8e44eb420bfa03259524e3fcaf677c52b15a9b",
+    "digest": "Q5UABKBT3RIWDBLYURHVMRV45PJZSEWO"
   }
 ]
