@@ -33,6 +33,9 @@ const SECTION_NAMES: Record<string, string> = {
   Diablo: "디아블로 II (Diablo)",
   _zb: "길드 정보 (_zb/guild)",
   lomo: "UO 만화 (lomo)",
+  Diablo2: "디아블로 II 옛 섹션 (Diablo2)",
+  drawing: "그림 (drawing)",
+  sounds: "소리 (sounds)",
   wow: "월드 오브 워크래프트 (wow)",
 };
 

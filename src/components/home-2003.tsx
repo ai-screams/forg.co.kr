@@ -107,8 +107,8 @@ const TOP_MENU_2003: TopMenuConfig[] = [
 // page. The vendor popup (`/_zb/vendor/list.php`) has only a redirect
 // capture, so that entry keeps the Vendor board. The cartoon lived on
 // another host (`hosting27.interpia98.net/~forg/lomo/`), now `/site/lomo/`.
-// Entries whose pages were not collected (bulk deeds, members, poll) still
-// point home.
+// The bulk-deed page survives only as its redirect to the FAQ, which
+// `/site/bod/bod/` repeats; the poll is `/_zb/kritz_vote/`.
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
@@ -140,7 +140,7 @@ const SIDEBAR_SECTIONS: {
       { label: "-아리랑장터란", href: "/Tarirang" },
       { label: "-발해장터란", href: "/Tbalhae" },
       { label: "-길드정보란", href: "/site/_zb/guild/index/" },
-      { label: "-벌크디드정보란", href: "/" },
+      { label: "-벌크디드정보란", href: "/site/bod/bod/" },
     ],
   },
   {
@@ -162,7 +162,7 @@ const SIDEBAR_SECTIONS: {
       { label: "-휴지통게시판", href: "/Trash" },
       { label: "-유머게시판", href: "/FunBoard" },
       { label: "-Forg.멤버란", href: "/" },
-      { label: "-울온설문조사란", href: "/" },
+      { label: "-울온설문조사란", href: "/site/_zb/kritz_vote/index/" },
     ],
   },
   {
