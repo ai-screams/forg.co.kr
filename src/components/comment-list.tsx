@@ -33,7 +33,7 @@ function mdhm(iso: string): string {
 function Body({ comment, className }: { comment: Comment; className: string }) {
   return (
     <div
-      className={className}
+      className={`${className} max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]`}
       // nh3-sanitised at ETL Stage 2 (ADR-0008)
       dangerouslySetInnerHTML={{ __html: withImgBase(comment.bodyHtml) }}
     />
