@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "dksfkrtk",
+      "authorMemberNo": "3429",
+      "createdAt": "2007-10-11T06:32:20",
       "bodyHtml": "운영체제를 설치할때는 기본적으로 한개의 파티션만 영향을 받습니다. \n<br>원래 파티션을 포멧하지 않고도 운영체제를 덮어 쓸 수 있지만 왠지 개운치 않아서 보통 파티션을\n<br>포멧하고 설치하지요. 그러니 C파티션만 포멧하고 설치할 수 있습니다.\n<br>윈도우즈 설치할때 대상파티션을 C로 잡아주시면 됩니다.\n<br>문제는 CD가 작동을 안한다는것인데 윈도우 쓰시면 시작 -&gt; 제어판 -&gt; 새하드웨어 추가 -&gt; 다음 하시면\n<br>연결은 되어 있지만 설치되어 있지 않은 장치를 검색합니다. 시간이 좀 걸리니 기다려보시고\n<br>CD가 잡히면 다음,다음 눌러서 설치만 해주시면 작동되리라 생각됩니다.\n<br>그런데 안잡힌다면 문제가 되겠군요. \n<br>그런경우에는 혹 1G이상의 USB메모리가 있고 메인보드가 USB부팅을 지원한다면 USB메모리에 운영체제 \n<br>파일을 넣어서 설치할 수도 있습니다. 자세한 방법은 USB부팅 이나 USB로 윈도우 설치 등으로 \n<br>검색해 보시면 사례가 많이 나와있습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "맑은하늘",
+      "authorMemberNo": "985",
+      "createdAt": "2007-10-11T14:39:53",
       "bodyHtml": "새하드웨어 검색을 하니 JMicron JMB36X 컨트롤러가 검색됐는데\n<br>설치를 해도 jraid.sys 파일이 없다고 설치가 안되네요ㅠ\n<br>그리고 장치관리자에 SCSI 및 RAID컨트롤러 탭에\n<br>IDE컨트롤러에 노란색 느낌표가 떠있어요..\n<br>이것때문에 CD드라이브가 안뜨는건지..ㅠ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "dksfkrtk",
+      "authorMemberNo": "3429",
+      "createdAt": "2007-10-12T14:12:28",
       "bodyHtml": "JMB36X는 scsi/raid 컨트롤러 입니다. \n<br>cd가 scsi방식이 아니라면 상관이 없는 부분입니다.\n<br>IDE컨트롤러에 노란색 느낌표가 있으면 그부분이 문제가 있는것이겠지요.\n<br>노란색 뜬거 더블클릭하셔서 무엇때문에 작동을 안하는지 읽어 보시고 \n<br>드라이버업데이트나 롤백을 한번 해보십시오. \n<br>그래도 안되면 전문가에게 보이거나 운영체제를 다시 설치하는것이 좋습니다."
     }
   ],

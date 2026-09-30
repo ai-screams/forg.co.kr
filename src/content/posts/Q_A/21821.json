@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "지피지기",
+      "authorMemberNo": "19785",
+      "createdAt": "2003-10-28T01:49:26",
       "bodyHtml": " 자채매크로에 키를 잡아야 된다는 말입니다<br>\n<br>\n 캐릭창 여시고 옵션에서 반달모양 아이콘이죠<br>\n<br>\n 그것을 누르시면 자채메크로를 설정하는창이 나옵니다<br>\n<br>\n 그기서 add누르시고 동작아래에 화살표가 있을것 입니다<br>\n<br>\n 우클릭한상태에서 마우스 때지마시고 누르시고 있으시면서 아래로 쭉내려보세요<br>\n<br>\n 내려보시다 보면은 castskill 이 아니고 Useskill   있습니다<br>\n<br>\n 잠시 적으시다가 실수를 하섯어 케스팅스킬로 적으섯나 보군요<br>\n<br>\n useskill[동작] 에   정하섯음 오른쪽 공란에 사용하고자 하는 스킬을 우클릭 하시고<br>\n<br>\n 피스메이킹[Peacemaking]을 찾으시면 되죠 <br>\n<br>\n 그런다음 동작 2번째란에[WaitFor Targ]정하시고<br>\n<br>\n 3번재 동작란에 적으실려고 하시면 아마 창이 안보일것 입니다<br>\n<br>\n 2번째 동작란 오른족에 보시면 아래로 화살표가 있죠^^<br>\n<br>\n 그것을 내려주세요<br>\n<br>\n 그럼 3번째 동작란이 보입니다<br>\n<br>\n 그기에 타켓팅셀프[TaretSelf]를 채크 하시고 <br>\n<br>\n 키란에서 F1~F12키중 하나를 고르시면 됩니다<br>\n<br>\n 동작<br>\n useskill     Peacemaking     <br>\n WaitFor Targ<br>\n TaretSelf<br>\n<br>\n 이렇게 되시면 된것입니다<br>\n<br>\n무한항로는 말로는 설명하기가 힘이 들군요 <br>\n<br>\n아마 포그홈에서 찾아보시면 위치를 설명한 자료가 있을것입니다<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "attosoft",
+      "authorMemberNo": "17981",
+      "createdAt": "2003-10-28T06:36:08",
       "bodyHtml": " 에세이에 무한항로 있음..."
     }
   ],

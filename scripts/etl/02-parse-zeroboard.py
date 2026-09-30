@@ -256,9 +256,11 @@ def extract_meta(font: Tag) -> dict[str, str | None]:
 
     author = None
     member_no = None
-    cmt_anchor = font.find("a", class_="cmt") or font.find(
-        "a", href=re.compile(r"view_info\.php")
-    )
+    # A member's meta line carries an empty `<a class="cmt"></a>` before the
+    # `<a class="cmt" href="view_info.php…">name</a>`, so the first anchor
+    # is taken only if it has text (46,972 comments were "anonymous").
+    anchors = font.find_all("a", class_="cmt") + font.find_all("a", href=re.compile(r"view_info\.php"))
+    cmt_anchor = next((a for a in anchors if isinstance(a, Tag) and a.get_text(strip=True)), None)
     if isinstance(cmt_anchor, Tag):
         author = cmt_anchor.get_text(strip=True)
         href = cmt_anchor.get("href", "")
@@ -576,8 +578,11 @@ def parse_one(
             Comment(
                 author=cmeta["author"] or "anonymous",
                 authorMemberNo=cmeta["member_no"],
-                createdAt=cast(datetime, parse_korean_datetime(cmeta["created_at"] or ""))
-                or datetime(1970, 1, 1),
+                # `extract_meta` returns ISO text; the Korean-date parser read it
+                # back as nothing and every comment fell to the 1970 sentinel.
+                createdAt=datetime.fromisoformat(cmeta["created_at"])
+                if cmeta["created_at"]
+                else datetime(1970, 1, 1),
                 bodyHtml=chtml,
             )
         )

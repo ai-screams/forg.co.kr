@@ -15,87 +15,87 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "shinhwi",
+      "authorMemberNo": "15102",
+      "createdAt": "2003-05-24T19:29:16",
       "bodyHtml": " 불량이 아니라면 하드웨어의 문제는 아닌 것으로 보여 집니다.<br>\n 1. 윈도 서비스팩을 설치 후 VIA 패치를 하셨는지 검토하세요.<br>\n 2. 트래킹일 가능성이 있습니다. 스파이웨어, 트로얀 등이 있는지 확인해보세요.<br>\n 3. 바이러스일 가능성이 있습니다. 백신으로 바이러스 검사를 해보세요.<br>\n 4. 포맷을 하면 증상이 없어지는 경우도 있습니다. 최후의 방법으로 포맷을 시도해보세요.<br>\n 5. 그래도 안된다면 A/S를...<br>\n<br>\n 아무리 AMD CPU가 내구성이 약하다지만 39도로 다운되지는 않습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-24T19:32:00",
       "bodyHtml": " 일단 1번은 다 되어있는 상황입니다...<br>\n 2번같은경우는 트로이목마가 들어와있더군요........제거했습니다......3번은 검색결과 바이러스는 나오지않았습니다 4번은 오늘만 3번포맷했습니다......<br>\n 남은건 5번인데 말이죠......<br>\n 이녀석이 저번주에 새로산녀석이라-_-;;;<br>\n 거기다가 이거 사면서 먼저온게 불량이어서 바꾸었는데...<br>\n 아 한가지 추가 질문 하겠습니다 파워가 300인데요 돈이 모잘라서 싼거사느라 정격파워가 아니거든요?<br>\n 이 쪽에도 문제가 있을수있을까요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "shinhwi",
+      "authorMemberNo": "15102",
+      "createdAt": "2003-05-24T19:35:35",
       "bodyHtml": " 정격 파워가 안정적이기는 하지만 일반 파워도 크게 무리가 되지는 않습니다.<br>\n 그리고 300W 정도라면 파워도 충분할테고요.<br>\n (일반적으로 200W도 채 쓰지 않습니다.)<br>\n<br>\n 다운클럭하면 다운 현상은 없어지나요?<br>\n 없어진다면 99% 제품 문제로 추정되며 A/S를 받아야 할 듯 합니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-24T19:39:46",
       "bodyHtml": " 현재 다운클럭을햇고 <br>\n 다운현상은 없어졌습니다...<br>\n 제품문제라면.....A/S받으러 가야겠군요.........;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "holyzard",
+      "authorMemberNo": "20054",
+      "createdAt": "2003-05-24T19:41:15",
       "bodyHtml": " CPU쿨러에 혹시 문제가 있으신건 아니실지;;<br>\n 표시되는 CPU온도와 실제 온도가 맞지 않는 경우도 많더군요;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-24T19:42:49",
       "bodyHtml": " CPU쿨러를 의심할수가 없는것이...<br>\n 지금 달려있는 것이 잘만6000ALCU인데요....<br>\n 유소음모드로 했을경우 2600까지 커버가 됩니다....<br>\n 제 CPU는 1900이고요<br>\n 무소음에서도 2000까지가 커버되는데......흐음......<br>\n<br>\n 답변주신분들 감사합니다^^"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "안개",
+      "authorMemberNo": "18550",
+      "createdAt": "2003-05-24T19:48:23",
       "bodyHtml": " 스파이 웨어로 매번 다운이 되는 경우는 드믑니다...<br>\n<br>\n 위의 상황에서는 일단 CPU 자체 적인 문제 이외에 곳에서 문제를 찾기란 힘듭니다.<br>\n (다운클럭으로다운 현상이 없어졌다는 것으로 봐선 CPU에 문제가 있는게 확실하죠)<br>\n<br>\n 일단 계속 되는 다운현상이 CPU에 원인이있다면.. 70%이상은<br>\n 잘못된 오버클럭에 의한거라고 볼수 있습니다.<br>\n 문제는 오버클럭을 하지 않았는데 다운이 되고<br>\n 다운클럭에서 문제가 사라졌다면...<br>\n 첨부터 오버클럭된 제품을 사기당해서 사셨다던가(리마킹이라고 하죠..)<br>\n 불량품을 산겁니다.<br>\n<br>\n AMD제품이 한때 리마킹 사기로 유명했죠..<br>\n 그러나 그후 시장관리로 리마킹제품은 없을텐데...<br>\n<br>\n 그냥 운나쁘게 불량품을 사신것 같습니다.<br>\n<br>\n 그래도 A/S받으러 가시기 전에..<br>\n 메인보드와 CPU사이 접지 부분에 이물질이 있는지도 한번 체크해보세요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-24T20:13:36",
       "bodyHtml": " 방금 접지부분 확인했습니다.......여전하더군요.....<br>\n 휴우......내일 AMD A/S센터 문 안열겠죠?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "JiSoo",
+      "authorMemberNo": "14611",
+      "createdAt": "2003-05-24T21:17:40",
       "bodyHtml": " AMD 공식 수입업체를 3군대 알고있어요<br>\n<br>\n 하나는 터미널 지하 1층에있는 피시디렉트<br>\n<br>\n 두번째는 선인 22동 5층에있는 무디테크<br>\n<br>\n 세번째는 선인 21동 4층에있는 윈트닉스<br>\n<br>\n 제 거래처거든요 ㅇ_ㅇ;;<br>\n<br>\n xp1900 이면. 안나온지 상당히 된걸로 알고있는데 맞는지 모르겠군요...<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-24T21:22:30",
       "bodyHtml": " 상당히 정도가 아닙니다-_-;;;<br>\n 박스 정품을 구할수가 없어서 세라믹을 삿으니까요...(A/S는 잘 되는 녀석입니다.....이미 한번 교환 받았으니..)"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ssemi",
+      "authorMemberNo": "15037",
+      "createdAt": "2003-05-24T23:36:33",
       "bodyHtml": " 이분야에서는 유명한 PC사랑 Q&amp;A게시판이랑 포그 지식인이랑... 비교하면 난 포그지식인의 손을 들겟다 -_-"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "pian",
+      "authorMemberNo": "14691",
+      "createdAt": "2003-05-25T01:06:56",
       "bodyHtml": " ....이런경우도 있을지도요.<br>\n<br>\n 컴퓨터를 논 바닥이 고르지 않다면 다운되는 경우가 잇다더군요.<br>\n<br>\n 메인보드가 휘어져서 그런대나;; 저도 그래서 바닦에 널판지 같은거 깔아놓고 올려놨어요;<br>\n<br>\n 원인 모르는 다운이 하도 잘되서리..<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "banditbul",
+      "authorMemberNo": "20686",
+      "createdAt": "2003-05-25T04:31:56",
       "bodyHtml": " 1. MSI 홈페이지 가서 패치 온도 패치 다운받으세요. www.msi.com.tw<br>\n 2. 쿨러랑 시피유랑 접지가 잘되어있나 보세요.<br>\n 3. <a href=\"http://www.zalman.co.kr/product/cnps6000alcu.htm\">http://www.zalman.co.kr/product/cnps6000alcu.htm</a> &lt;--여기 가서 사용 시피유를 비교해 보시고 님이 맞는 시피유를 사용하고 있는가 확인하세요. <br>\n<br>\n 개인적으로 6000alcu보단 6000cu를 더 선호합니다. 6000cu는 1800+@2400+ 에서도 안정적이었습니다. 그리고 오버클러킹 할땐 ram좋은거 사시길 바랍니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-05-25T11:11:36",
       "bodyHtml": " 일단 온도패치는 바이오스 말하시는거라면 이미 했고요<br>\n 접지는 잘되어있습니다<br>\n CPU종류역시 6000ALCU가 무소음에서 2000 유소음에서 2600까지되는데 제껀 1900이니 충분합니다<br>\n<br>\n 그리고 오버클럭은 안할테고...게다가 이놈의 보드가 PC2100까지가 한계라^^;;<br>\n 답변 감사드립니다"
     }
   ],

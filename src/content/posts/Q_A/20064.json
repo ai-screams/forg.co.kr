@@ -15,45 +15,45 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "cdcpu",
+      "authorMemberNo": "17099",
+      "createdAt": "2003-08-02T18:26:32",
       "bodyHtml": " -_-; 그걸 외울리가  까먹었구요 아마도   패스트 게임이란대 가면 알수있을겁니다  야후-검색 패스트게임       거기 사이트에서 한번 뒤져보세요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-08-02T18:39:29",
       "bodyHtml": " config에<br>\n device=경로\\mscdrom.sys /d:mscd000<br>\n<br>\n autoexec.bat에<br>\n mscdex.exe /d:mscd000<br>\n<br>\n 이랫던 걸로 기억이.;;<br>\n<br>\n저 mscdrom.sys파일은....시디롬 제조회사마다 다르겠죠....쩝.<br>\n<br>\n(그러고보면 98se 디스켓으로는 알아서 시디롬 잡아서 들어가는 모드도 있었죠?! 그냥 98se 부팅 디스켓을 만드시는게 빠를것으로..)"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "DoDookNum",
+      "authorMemberNo": "15596",
+      "createdAt": "2003-08-02T18:43:24",
       "bodyHtml": " 흠..저 경로에는 mscdrom.sys.파일이 있는 경로를적어주면 되나요?..<br>\n 그리고 mscdrom.sys가.. 회사마다 파일이름이 다를수 있다는 말이겠죠?<br>\n 그럼 mscdrom.sys파일이 있어야 한다는 이야긴데.. 어디서 구하는지 좀 알렺세요..ㅠㅠ<br>\n 삼성 dvd롬인데.;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-08-02T18:53:00",
       "bodyHtml": " <a href=\"http://www.jolip.com/src/cumu/pds/pds_view.htm?id=88&amp;pg=1&amp;method=&amp;keyword=\">http://www.jolip.com/src/cumu/pds/pds_view.htm?id=88&amp;pg=1&amp;method=&amp;keyword=</a><br>\n<br>\n 그냥 저 위의 것으로 받아서  부팅 디스켓을 만드신후 with cd-rom어쩌구 모드로 부팅 하시는게 간편할듯 합니다.^^;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "DoDookNum",
+      "authorMemberNo": "15596",
+      "createdAt": "2003-08-02T19:07:29",
       "bodyHtml": " 흠... 이걸루 만들면 원래 붜팅할때 오래걸리나요? 한참동안 가만 있네요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-08-02T19:15:47",
       "bodyHtml": " 방금 실험해봤는데...부팅시간은 평균적이란 느낌입니다. 혹 안되신다면 디스켓 오류를 생각해보세요."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "DoDookNum",
+      "authorMemberNo": "15596",
+      "createdAt": "2003-08-02T19:17:11",
       "bodyHtml": " 아... 디스켓 오류였습니다..ㅠㅠ 실험까지하시게 해서 넘넘 죄송합니다..ㅠㅠ 너무너무 감사합니다.."
     }
   ],

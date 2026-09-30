@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "heaye",
+      "authorMemberNo": "14671",
+      "createdAt": "2003-09-02T00:19:26",
       "bodyHtml": " 아얄씨프로그램이 파일송수신시 사용하는 인터넷데이터송수신포트를...<br>\n 공유기에서 열어주시면 됩니다.<br>\n 공유기제품마다 방법은 다르고.. 공유기제조회사홈피의 qna등에 보면 대게 잘 나와있습니다.<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "splendor",
+      "authorMemberNo": "21549",
+      "createdAt": "2003-09-02T01:00:20",
       "bodyHtml": "<br>\n 공유기에 상관없이 파일이 아예 안 보내진다면..<br>\n 알씨차제의 옵션을 바꿔보세요..<br>\n<br>\n -영문기준-<br>\n alt+o 누르셔서 옵션창이 뜨면<br>\n DCC하위메뉴인 Folders 로 가주세요.<br>\n DCCGet folders 를 default로 바꿔주시고<br>\n DCC ignore는 Disabled로 바꿔주세요..<br>\n Turn ignore back on in 옵션은 꺼주시고 <br>\n OK를 누르시면 됩니다..<br>\n<br>\n 그리고 그냥 DCC옵션에서는 <br>\n<br>\n Show get dialog 에 체크를 해주세요..<br>\n 그럼 상대편이 파일을 보낼때 <br>\n 받을껀지에 대한 확인창이뜹니다..<br>\n"
     }
   ],

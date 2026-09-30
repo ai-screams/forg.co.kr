@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-02T08:34:04",
       "bodyHtml": "어떤것이든지 원클릭(또는 설정에따라 쉬프트+원클릭)해보면 답이나옵니다.\n<br>(이런방법은 테임동물이나,마법으로소환한소환수, NPC등에 다 통용되므로 참고하세요)\n<br>\n<br>예를들면 집에있는 문이나 락다운이나 시큐어한상자도 일일히 개별설정가능합니다.\n<br>\n<br>문의경우 원클릭해보면 잠금설정이라고나오는데 보시면 소유주외불가,공동소유주,친구,모두\n<br>이중에서 고르시면 됩니다.\n<br>\n<br>소유주외불가 : 본인만 접근가능\n<br>공동소유주: 본인,공동소유주만 접근가능\n<br>친구 : 본인,공동소유주,친구 접근가능\n<br>모두 : 모두접근가능\n<br>\n<br>아 그리고 문도 문짝별로 설정해야합니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-02T08:43:30",
       "bodyHtml": "만일 공용집이고 시큐어상자를 만들어놨다고 하더라고 접근등급설정을 실수로 \"모두\"로 해놓으신다면\n<br>누구다 상자 다 열수있죠. \n<br>근데 공용집의경우 상자 기본설정은 \"친구등급\"까지이고\n<br>문 기본설정은\"모두등급\"입니다. 그래서 특별히 설정을 따로안해주면 \n<br>문은 아무나열수있고 상자는 아무나 접근못하는거죠."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kfatima",
+      "authorMemberNo": "9536",
+      "createdAt": "2007-10-02T12:16:07",
       "bodyHtml": "아 답변 감사드립니다."
     }
   ],

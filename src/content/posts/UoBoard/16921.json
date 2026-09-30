@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "horoscop",
+      "authorMemberNo": "2456",
+      "createdAt": "2002-10-31T23:57:32",
       "bodyHtml": " 그거는 지울 파일 목록이 이미 지워지거나 해서 없기 때문에 나오는 에러일 것입니다.<br>\n 그런 경우.....RegCleaner 로 레지스트에서 아예 지우는 방법이 있습니다.<br>\n (원래는 RegEdit명령으로 들어가서 지우지만....수동으로 지우기엔 복잡해서...)<br>\n 그런데 잘못하면 지우지 말아야 할 것까지 지우는 경우가 있으므로 매우 주의해야 합니다.<br>\n (그래서 백업이 있습니다만.......-_- 그리도 주의)<br>\n 이 프로그램은 보통 통신망 자료실에서 쉽게 구하실 수 있습니다.<br>\n ps: 그냥 둬도 됩니다. 근데 느려질 가능성도 -_-"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "AlphaChannel",
+      "authorMemberNo": "2704",
+      "createdAt": "2002-11-01T00:06:28",
       "bodyHtml": " 왠만하면 그냥 둬도 상관없는데요 예전에 지웠던 프로그램을 다시 깔려고하는데 이게 셋업을 시키면 \"이미 깔려<br>\n 있는데 멀 바라냐. 지울까?\" &lt;- 여기서 Yes 누르면 에러납니다 -_-;; 흐미... 정말 불편하군.<br>\n 그냥 싹 날려버리게 하는 기능이 왜 없는 것이야~"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "8224",
+      "createdAt": "2002-11-01T00:29:59",
       "bodyHtml": " 레지를 청소하시게나ㅡㅡ"
     }
   ],

@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "[레드]",
+      "authorMemberNo": "15031",
+      "createdAt": "2003-08-03T12:10:38",
       "bodyHtml": " Magic Reflect 마법이 걸려 있기 때문입니다.<br>\n<br>\n 이 마법을 한 번 실행하면.... Physical Resistance가 (25 - (Inscription / 20)) 만큼 떨어지고, Fire/Cold/Energy/Poison Resistance가 10 포인트씩 올라갑니다. Inscription이 0이면 -25<br>\n<br>\n Magic Reflect 마법을 한 번 더 외우면 0 으로 돌아옵니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "타이거스핀",
+      "authorMemberNo": "14684",
+      "createdAt": "2003-08-03T12:10:50",
       "bodyHtml": " 매직리플렉션 한번 쌔려주세요"
     }
   ],

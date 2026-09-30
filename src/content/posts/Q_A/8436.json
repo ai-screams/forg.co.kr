@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2002-06-01T01:19:51",
       "bodyHtml": " 바이러스 아니면<br>\n 방화벽때문일 가능성이 큽니다. 모든프로그램을 조사해보시길.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "주니",
+      "authorMemberNo": "7665",
+      "createdAt": "2002-06-01T13:08:41",
       "bodyHtml": " 멀티유오를 깔으셨어도 패치실행이 안됩니다..<br>\n 멀티유오를 설치하셨을경우에는 백업본을 다시 카피하신후 패치를 받으셔야됩니다"
     }
   ],

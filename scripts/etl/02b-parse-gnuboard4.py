@@ -378,9 +378,14 @@ def find_comments(soup: BeautifulSoup, captured_at: str) -> list[Comment]:
         if not isinstance(comment_table, Tag):
             continue
 
-        # Author: <span class="member"> in the left-side header cell
+        # Author: <span class="member"> in the left-side header cell. The
+        # webbus2009_Trash skin prints the name as <font><b>name</b></font> in
+        # that cell instead, so the cell's own text is the fallback.
         author_span = comment_table.find("span", class_="member")
-        author = author_span.get_text(strip=True) if isinstance(author_span, Tag) else "anonymous"
+        author = author_span.get_text(strip=True) if isinstance(author_span, Tag) else ""
+        if not author:
+            left_td = comment_table.find("td", attrs={"align": "left", "bgcolor": "#cbd1d4"})
+            author = left_td.get_text(" ", strip=True) if isinstance(left_td, Tag) else ""
         if not author:
             author = "anonymous"
 

@@ -15,27 +15,27 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "siren99",
+      "authorMemberNo": "15078",
+      "createdAt": "2003-10-02T18:52:06",
       "bodyHtml": " 하드웨어적인 문제점으로 인해 부팅이 되지 않을 때 나는 '삐' 하는 비프음에 대한 내용입니다.<br>\n<br>\n [Award BIOS]<br>\n 짧게 1번 : 이상 없음<br>\n 짧게 2번 : 바이오스에서 하드디스크 세팅 이상<br>\n 짧게 3번 : 키보드가 눌러져 있거나 제대로 연결되어 있지 않을 때<br>\n 길게 1번, 짧게 1번 : 메인보드에 연결되어 있는 케이블이나 카드에 문제가 있음<br>\n 길게 1번, 짧게 2번 : AGP 슬롯(주로 비디오 카드)에 연결된 카드가 잘못되었음<br>\n 연속음 : CPU, 메모리 등이 제대로 연결되어 있지 않을 때<br>\n<br>\n [Ami BIOS]<br>\n 1회 : 이상 없음<br>\n 2회 : 메모리가 잘못 꽂혀 있거나 서로 호환되지 않는 메모리일 때<br>\n 3회 : 메모리가 불량이거나 연결이 잘못된 경우<br>\n 4회 : 배터리 방전<br>\n 5회 : CPU가 제대로 꽂혀 있지 않음<br>\n 6회 : 키보드가 눌러져 있거나 제대로 연결되어 있지 않음<br>\n 7회 : CPU가 불량이거나 클럭 세팅이 잘못되었음<br>\n 8회 : AGP 슬롯에 연결된 카드(주로 비디오 카드)가 잘못 되었음<br>\n 9회 : 바이오스에서 하드디스크가 잘못 세팅된 경우<br>\n 10회 : 바이오스나 메인보드 불량<br>\n 11회 : CPU 캐시 메모리에 문제가 있는 경우<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "nambak",
+      "authorMemberNo": "14550",
+      "createdAt": "2003-10-02T19:06:05",
       "bodyHtml": " 대략 키보드 계속 눌러서 나는 소리에 올인 -_-;;; (죄송)<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "칙촉",
+      "authorMemberNo": "22781",
+      "createdAt": "2003-10-02T20:29:13",
       "bodyHtml": " 먼지좀털고 카드들 뺏다가 다시 꽉끼워주면 될듯하군요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "goo1212",
+      "authorMemberNo": "14549",
+      "createdAt": "2003-10-02T21:06:51",
       "bodyHtml": " 그렇군요 __-;"
     }
   ],

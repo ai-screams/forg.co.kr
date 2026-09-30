@@ -15,9 +15,9 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "igorot",
+      "authorMemberNo": "17623",
+      "createdAt": "2003-03-01T16:34:46",
       "bodyHtml": " 예전 리얼과 쇼스킬과 거의 같게 적용됩니다.<br>\n 예를들어 리얼로 700 max 인 경우 +스킬 아이템을 착용하였을때<br>\n 리얼은 700 그대로 쇼스킬은 700+@ 로 나타납니다.<br>\n<br>\n 다시 말해서 총 쇼스킬은 계정나이가 없는 경우 700+ (총 +스킬) 이 됩니다.<br>\n"
     }
   ],

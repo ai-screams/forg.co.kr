@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "makumaku",
+      "authorMemberNo": "15470",
+      "createdAt": "2003-04-18T00:57:30",
       "bodyHtml": " i810 칩셋은 다시 크게 i810과 i810E라는 칩셋으로 나뉜다. i810은 펜티엄II 및 셀러론용으로, i810E는 펜티엄III까지 지원되도록 만들어졌다. 펜티엄III 중에서 코퍼마인(Coppermine)을 사용하기 위해서는 i810E 칩셋을 사용해야 한다. i810E 칩셋은 66MHz와 100MHz, 133MHz를 지원하기 때문에 인텔의 셀러론, 펜티엄II, 펜티엄III까지 사용할 수 있으며, AC97, Soft DVD, TV Out, BIOS, RNG(Random Number Generator)를 지원한다. GMCH(Graphics Memory Controller Hub)를 이용하여 하드웨어적 영상 압축 기술을 소프트웨어적으로 구현할 수 있으며, DVD의 화질을 소프트웨어적으로 향상시키거나 디지털 비디오 포트를 통해 TV에 화면을 보여줄 수도 있다. DVMT(Dynamic Video Memory Technology)라는 기술을 이용해 직접 AGP를 통하여 효율적으로 메모리를 관리하기 때문에 보다 나은 성능 향상을 기대할 수 있다. <br>\n<br>\n어느사이트에서 발췌한거고요, 인텔계열 메인보드에서 지원하는<br>\n기능의 하나군요, 직역하면 강력한 비디오 메모리 기술 쯤으로.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ExoduS",
+      "authorMemberNo": "14837",
+      "createdAt": "2003-04-18T23:44:44",
       "bodyHtml": " 오오... 감사합니다^^"
     }
   ],
