@@ -138,7 +138,9 @@ export default function SearchPage() {
           const boardId = item.filters["board"]?.[0] ?? "";
 
           let boardKr = boardId;
-          if (isBoardId(boardId)) {
+          if (boardId === "site") {
+            boardKr = "안내 페이지";
+          } else if (isBoardId(boardId)) {
             try {
               boardKr = getBoardOrThrow(boardId).nameKr;
             } catch {
@@ -168,7 +170,9 @@ export default function SearchPage() {
         {/* Search header */}
         <div className="border-b border-(--era-input-border) px-6 py-5">
           <h1 className="text-forg-ink text-xl font-bold">검색</h1>
-          <p className="text-forg-muted mt-1 text-xs">forg.co.kr 아카이브 전체 (13,290 게시글)</p>
+          <p className="text-forg-muted mt-1 text-xs">
+            forg.co.kr 아카이브 전체 — 게시글과 안내 페이지(스킬·던전·지도 등)
+          </p>
           <div className="mt-4">
             <input
               type="search"
