@@ -105,9 +105,16 @@ function render(page: SitePage): string {
     return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
   }
   const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}</style><script>${IN_FRAME_SCRIPT}</script>`;
+  // Search: the page body only (the bar stays out), titled and filed under
+  // board "site" so results can say it is a guide page. Framesets and
+  // redirects carry no body and stay out of the index. `display:contents`
+  // keeps the wrapper out of the page's own layout.
+  const searchable = `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
   return `<!doctype html><html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
 ${museumBar(page)}
+${searchable}
 ${page.html}
+</div>
 </body></html>`;
 }
 
