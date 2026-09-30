@@ -11,7 +11,9 @@
  * for a static-export read-only museum.
  */
 
+import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
+import { listSkinOf } from "@/components/list-skin";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
@@ -146,29 +148,13 @@ export function PostView({ post, adjacent }: PostViewProps) {
       {post.comments.length > 0 && (
         <section
           aria-labelledby={`comments-${post.postId}`}
-          className="border-t border-(--era-input-border) bg-(--era-page-bg) px-6 py-5"
+          className="border-t border-(--era-input-border) px-6 py-5"
         >
-          <h2 id={`comments-${post.postId}`} className="text-forg-ink mb-3 text-sm font-bold">
+          {/* The originals printed no heading over the comments. */}
+          <h2 id={`comments-${post.postId}`} className="sr-only">
             댓글 {post.comments.length}
           </h2>
-          <ol className="space-y-3 text-sm">
-            {post.comments.map((c, i) => (
-              <li
-                key={`${c.author}-${c.createdAt}-${i}`}
-                className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2"
-              >
-                <div className="text-forg-muted mb-1 flex items-baseline gap-2 text-xs">
-                  <span className="text-forg-ink font-bold">{c.author}</span>
-                  <time dateTime={c.createdAt}>{formatKoreanDateTime(c.createdAt)}</time>
-                </div>
-                <div
-                  className="text-forg-ink"
-                  // nh3-sanitised at ETL Stage 2 (ADR-0008)
-                  dangerouslySetInnerHTML={{ __html: withImgBase(c.bodyHtml) }}
-                />
-              </li>
-            ))}
-          </ol>
+          <CommentList comments={post.comments} skin={listSkinOf(post.sourceEngine)} />
         </section>
       )}
 
