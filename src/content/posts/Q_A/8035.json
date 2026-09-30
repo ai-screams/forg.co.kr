@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "dumbo0214",
+      "authorMemberNo": "7526",
+      "createdAt": "2002-05-10T17:31:50",
       "bodyHtml": " 저겨 uoa실행하실때 세팅에 가셔서...\n<br>\n 한국말로 바꾸고 하세요... 그럼 한결 쉬워지실 겁니다..."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "lakesys",
+      "authorMemberNo": "2454",
+      "createdAt": "2002-05-10T17:52:02",
       "bodyHtml": " 유오에이 메크로 탭에 보시면 아래쪽에 1~16번까지 숫자가 있고 각 번호마다 매크로를 하나씩 녹화하실수 있죠...키설정에서 select macro1~8 은.. 저 매크로탭의 각 번호와 1:1 대응대어 선택하는 키입니다....즉 select macro1 을 F1 키로 설정하고 F1 을 누르면 첫번째 매크로를 선택하는게 되는거죠...단 select macro는 선택만할뿐 수행을 하지는 않습니다...수행하는키는 select macro 다음에 있죠.."
     }
   ],

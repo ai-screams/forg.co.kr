@@ -15,45 +15,45 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "pian",
+      "authorMemberNo": "14691",
+      "createdAt": "2003-06-03T01:29:31",
       "bodyHtml": " 오역일수도 있습니다^^;;;;;;;왠만하면 본문을 참고하는것도 좋을꺼 같아요;;<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "skyeye",
+      "authorMemberNo": "19599",
+      "createdAt": "2003-06-03T02:10:15",
       "bodyHtml": " 저주 힘저화 민첩저하 지능저하등등 저주 계역 마법을 방어함으로 인해서 그만큼 높은 체력 공격 속도 마나량을 유지한다는거 아닐까요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "berserk444",
+      "authorMemberNo": "20933",
+      "createdAt": "2003-06-03T03:39:28",
       "bodyHtml": " 음-_ 단순히 저주효과 저하뿐이라면-_- 왠지 안해두 됄꺼가튼대"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "in10ss",
+      "authorMemberNo": "19483",
+      "createdAt": "2003-06-03T07:26:09",
       "bodyHtml": " 저주효과를 막아 주는것 뿐 아니라 원소레지 40%까지 올려 준다는 글을 본 것 같네요. 레지 젬일때.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "pokoso",
+      "authorMemberNo": "20152",
+      "createdAt": "2003-06-03T10:36:32",
       "bodyHtml": " 레지가 잼일때 갑옷을 장착하지 않으면 올레지 40이 되고요<br>\n 갑옷을 장착할경우 적용이 안된다고 하는데 확인은 못해봤습니다.<br>\n 레지는 워 할때는 필수 입니다. 사냥을 위한것이라면 필수라고는 할 수 없죠<br>\n 왜냐하면 패럴의 시간을 단축시켜 주고, ( 상대방이벨 - 나의레지 ) / 10 초<br>\n 상대방 이벨 120이고 내 레지 0 이면 12초 동안 마비 입니다.<br>\n 물론 한대라도 맞으면 풀리지만 12초 마비는 엄청난거죠<br>\n 저주의 경우 레지가 없으면 올 스텟 -20 까지도 당할 수 있다고 하던데 잘 모르겠고요<br>\n 게다가<br>\n 각종 네크로 마법의 경우 (원소마법이 적용되지 않는) 레지가 상당한 영향을 끼칩니다.<br>\n 에세이란의 네크로 마법 정리된것을 보시면 알 수 있죠<br>\n<br>\n<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kimsuv7",
+      "authorMemberNo": "15476",
+      "createdAt": "2003-06-03T11:55:42",
       "bodyHtml": " 토론시에는 레지스팅 스펠이 속성별 방어력에 영향을 미치게 할 생각이 없다. 라고 이야기를 했는데요...<br>\n<br>\n 그 이후 의견 수렴 결과 레지가 속성 방어력에 영향을 미치게 수정된거 같습니다.<br>\n<br>\n 현재는 레지 GM일때 물리 방어력을 포함한 속성 방어력을 40 까지 올려줍니다.(물리 방어력은 말이 안되지만)<br>\n<br>\n 즉, 레지 GM이면 갑옷 벗고도 사냥할만해요. ^^<br>\n<br>\n 울온은 자주 바뀌기 때문에 신경을 쓰거나 신경을 끄거나 둘중에 하나를 택하는게 좋더군요. ^^"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Ragnarok",
+      "authorMemberNo": "19590",
+      "createdAt": "2003-06-03T12:42:04",
       "bodyHtml": " 갑옷 입어도 레지 젬이면 다섯 레지 모두 최소치가 40이 됩니다.<br>\n 단, 갑옷 자체 레지가 40 이하면 입으나 마나구요.<br>\n<br>\n 테크니컬하게 보자면.<br>\n 갑옷, 아이템으로 산정된 원소/물리저항치를 적용한 이후에 적용되는 최소치라 합니다.<br>\n 갑옷이랑은 중첩되지 않습니다.<br>\n<br>\n 예: 갑옷의 레지가 60 30 20 30 70 이다<br>\n 레지젬이 이 갑옷을 입으면 60 40 40 40 70<br>\n 이렇게 됩니다.<br>\n<br>\n 예: 갑옷 레지가 12 33 38 39 39<br>\n 레지젬이 이걸 입으면 40 40 40 40 40 <br>\n 입니다.<br>\n<br>\n향후 아주 고급 갑옷이(피스당 40 이상) 아니면 갑옷에 5,6 붙은 이런건 아무짝에도 쓸모가 없어지네요.ㅡㅡ;;"
     }
   ],

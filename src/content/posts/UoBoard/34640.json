@@ -15,63 +15,63 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "dumbo0214",
+      "authorMemberNo": "14612",
+      "createdAt": "2003-07-17T14:32:22",
       "bodyHtml": " 저기요... 선은 제대로 다 연결 하셨나요???"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "輝影",
+      "authorMemberNo": "15237",
+      "createdAt": "2003-07-17T14:33:53",
       "bodyHtml": " 1. LED핀를 안 꽂으신건?<br>\n 2. 메인보드랑 Ram 이랑 클럭을 맞추셨는지..? (메인보드는 2700 전용 이라던가.. -_-)<br>\n 3. 메인보드가 AMD 용은 아닌지.<br>\n 4. 파워 서플라이 코드는 다 제대로 끼셨는지.<br>\n 5. CD-rom 코드 3개를 제대로 다 끼셨는지.<br>\n 6. CPU 전원 코드를 꽂으셨는지..<br>\n<br>\n (일단 코드란 코드는 일단 다 확인해 보시기 바랍니다. 부품 자체를 안맞는 걸로 사시지 않았다면요.)<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Overhit",
+      "authorMemberNo": "21045",
+      "createdAt": "2003-07-17T14:33:54",
       "bodyHtml": " 네 선은 제대로 잘 했다고 생각되네요 선은 몇번 조립해본 사람이 한거라서 -_-;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "輝影",
+      "authorMemberNo": "15237",
+      "createdAt": "2003-07-17T14:39:20",
       "bodyHtml": " 메인보드가 혹시 1.8을 지원 안하는건 아닐까요. -_-<br>\n CPU팬만 돌아간다는건, 케이스 쿨링팬, 파워서플라이 쿨러, 모니터 같은것도 하나도 작동을 안한다는 소리 같은데..<br>\n 그렇다면, 메인보다 어디가 바보가 됐거나,<br>\n 코드를 어디 잘못 꽂았거나.. (특히 LED 핀 쪽.. 그쪽은 잘 빠져요. 끼워놓고 케이스 씌우다가 빠져버리는 경우도 있음.)<br>\n<br>\n 그런것일 확률이 높은데..<br>\n (아니라면 부품을 잘못 사오신 겁니다. -_-;;)<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Overhit",
+      "authorMemberNo": "21045",
+      "createdAt": "2003-07-17T14:39:32",
       "bodyHtml": " LED핀을 꼭 꽂아야 하나요? power on핀만 꼽아논 상태거든요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "쭈쭈바",
+      "authorMemberNo": "19578",
+      "createdAt": "2003-07-17T14:50:52",
       "bodyHtml": " LED 핀은 안꽂아도 됩니다.<br>\n 제가 보기에는 시피유나 메모리의 문제인듯 하네요<br>\n 스피커핀 꽂으셔서 어떤 소리가 나는지 들어보시길...."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Armada",
+      "authorMemberNo": "14626",
+      "createdAt": "2003-07-17T14:54:17",
       "bodyHtml": " 파워서플라이 용량이 극히 모자란건 아닐까요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "horoscop",
+      "authorMemberNo": "14561",
+      "createdAt": "2003-07-17T15:07:50",
       "bodyHtml": " 에러 beep음을 한번 들어보시구요, 모니터에 신호가 들어오는지도 한번 보세요.<br>\n 그래픽카드가 잘 안꽂히거나 나간경우는 제1순위로 멈춰버립니다.<br>\n 그래서 그 후 기타등등 기기 테스트로 안넘어갑니다.<br>\n 다 빼고 하나씩 끼면서 확인하는 방법도 있습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Overhit",
+      "authorMemberNo": "21045",
+      "createdAt": "2003-07-17T15:16:58",
       "bodyHtml": " 미치겠네요 공교롭게도 이 메인보드에 스피커핀이 없습니다<br>\n agp슬롯도 없고 그래픽카드 일체 보드라서..<br>\n 메뉴얼에 보니 <br>\n DDR 266/200 SDRAM DIMMs with gold-plated contacts.<br>\n 2.5V memory only.<br>\n 라고 돼있는데 이거랑 혹시 관계가 있을까요"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "dungfly",
+      "authorMemberNo": "15906",
+      "createdAt": "2003-07-17T15:24:41",
       "bodyHtml": " CPU 접촉불량등으로 인식 못할경우 비프음도 안나고 팬만 돌고있는경우가 많습니다..<br>\n CPU 한반 뽑았다가 다시끼워보세요<br>\n 램도 덤으로~"
     }
   ],

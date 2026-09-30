@@ -15,69 +15,69 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-07-11T02:53:34",
       "bodyHtml": " midi-&gt;wav or mp3 말하시는건가요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "goo1212",
+      "authorMemberNo": "14549",
+      "createdAt": "2003-07-11T02:54:46",
       "bodyHtml": " 네"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Tempest",
+      "authorMemberNo": "15593",
+      "createdAt": "2003-07-11T02:56:53",
       "bodyHtml": " 프로그램 구하셔서 하면되요.(무책임한 답변이지만..;;) 프로그램은 하나넷이나...자료실 같은데서 찾으실수있어요.<br>\n.........생각해보니 아닐수도 있어요....그럼 저는 도망을...=_=;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-07-11T02:57:54",
       "bodyHtml": " <a href=\"http://mobile.shammel.net/laern_midi.htm\">http://mobile.shammel.net/laern_midi.htm</a><br>\n ㅎㅎㅎㅎ 사우디쪽 사이드가-_-;;;;<br>\n<br>\n<a href=\"http://kin.naver.com/browse/db_detail.php?dir_id=30612&amp;docid=77792\">http://kin.naver.com/browse/db_detail.php?dir_id=30612&amp;docid=77792</a><br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "goo1212",
+      "authorMemberNo": "14549",
+      "createdAt": "2003-07-11T03:01:49",
       "bodyHtml": " 뭔말인지 한개도 몰겠어요 ㅠㅠ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-07-11T03:03:14",
       "bodyHtml": " 골드웨이브란 프로그램을 받으신다음에 midi를 불러오기로 불러와서....다른이름으로 저장할때 wav로 해주란예기네요."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "goo1212",
+      "authorMemberNo": "14549",
+      "createdAt": "2003-07-11T03:04:50",
       "bodyHtml": " 넵 -_-;<br>\n<br>\n 생전 첨보는 글씨들 ㅠㅠ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "pian",
+      "authorMemberNo": "14691",
+      "createdAt": "2003-07-11T06:17:16",
       "bodyHtml": " 참치다 ㅡㅡ;<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tuna128",
+      "authorMemberNo": "18012",
+      "createdAt": "2003-07-11T08:40:15",
       "bodyHtml": " 조재다. ㅡㅡ;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "quainty",
+      "authorMemberNo": "20610",
+      "createdAt": "2003-07-11T11:29:29",
       "bodyHtml": " midi를 wav로 바꾼다라.. 원칙적으로 파일간의 직접 변환은 되지 않을 겁니다.<br>\n midi 파일이 5선지에 그려진 악보라고 한다면... wav(혹은 mp3등의)파일은 그 악보를 보고 <br>\n 특정 악기들을 이용해 연주한 것을 녹음한 tape에 비유할 수 있죠..<br>\n 아마도 골드웨이브란 프로그램에서...<br>\n midi file을 열고 save as해서 wav로 해주면..<br>\n 그 midi 파일에 있는 악보대로.. 컴퓨터에 내장된 미디악기(보통의 사운드 카드가 기본적인 미디 재생능력은 가지고 있습니다. midi기능이 없는 사운드카드라도 direct-x의 다이렉트뮤직에서 가상미디드라이버를 지원해주고)를 이용해 연주시키면서 동시에 그걸 녹음해서 wav로 만드는 것일 듯 한데..<br>\n 그런 방식이라면 녹음하는 컴퓨터에 따라 만들어진 wav파일의 음색이 차이가 날 수도 있겠네요;;<br>\n<br>\n<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "How",
+      "authorMemberNo": "14656",
+      "createdAt": "2003-07-11T12:54:19",
       "bodyHtml": " 저는 거원제트오디오 쓰는데<br>\n 쓸만하더군요~~"
     }
   ],

@@ -15,33 +15,33 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "pian",
+      "authorMemberNo": "14691",
+      "createdAt": "2003-04-19T00:50:28",
       "bodyHtml": " .....<br>\n .. 누군가 답변을 기다리며..<br>\n<br>\n 아마 질답란에서 답변율의 비율이 가장 낮은게 매크로 관련질문일껍니다.<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "in10ss",
+      "authorMemberNo": "19483",
+      "createdAt": "2003-04-19T01:25:47",
       "bodyHtml": " 딜레이는 5초 (렉을 감안하신다면 6초)정도구요. 예전이랑 달라졌는지 무한항로 위치라고 다 오르는게 아니더라구요. 저 역시 지금 피스 올리는 중인데 이상하게도 무한항로중 어느 특정구간에 지나칠때면 유독 잘 오르는 구간이 있더라구요. 전 지금 피스92에서 허닥이고 있어욤 ㅜ.ㅠ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "makumaku",
+      "authorMemberNo": "15470",
+      "createdAt": "2003-04-19T02:43:32",
       "bodyHtml": " 피스 110 , 100 두개 키워봤지만, 오르긴 오릅니다. 제가 한 방식은 역시 무한항로에서 북쪽 방향으로이동<br>\n slow forward 를 하면서 마찬가지 방법으로 했구요, uoloop만으로도 할수 있습니다.<br>\n 1. slow forward 딜레이 15000<br>\n 2. 라스트오브젝트   딜레이 6000<br>\n 3. 셀프타겟  딜레이 500<br>\n 가끔 무기부서졌나 안부서 졌나만 봐주면 되구요,95넘어가면 보고 있으면 지겹습니다.<br>\n 그냥 무인매클 하는 수밖에.<br>\n 북쪽으로 이둥주엥 0.1이 오르면, 약 0.2에서 0.8정도까지 오릅니다. 더 오를수도 잇고요<br>\n 범위 피스로. 원하시는 스킬까지 돌리시는게 젤 빠릅니다.<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "red2f",
+      "authorMemberNo": "18267",
+      "createdAt": "2003-04-19T11:55:33",
       "bodyHtml": " 바드 스킬은 어차피 시간과의 싸움인디 지금처럼 반수동매클 돌렷다간 홧병으로 쓰러질겁니다.<br>\n 왠만하시면 이지유오 홈페이지 가셔서 피스스크립트 받아서 돌리십시요.<br>\n 바드스킬들은 매크로로 시작해서 매크로로 끝나는 스킬입니다.<br>\n 테이머 스크립트들은 약간 불안전하게 보이지만 바드스킬들은 거의 완벽하게 무인으로 돌아가더군요.<br>\n 그럼 즐온하시길~~~<br>\n 매크로 화이팅"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "peaceya",
+      "authorMemberNo": "18975",
+      "createdAt": "2003-04-19T13:42:00",
       "bodyHtml": " krroof로도 피스쯤이야 무한메클 충분히 가능합니다.<br>\n<br>\n 악기 무셔진는것은 악기 여러개 겹처놓고 메크로로 한번씩 띵겨주면 됩니다.<br>\n<br>\n 무한항로로 스킬 올리는것은.. 특정구역내지 특정타임에만 오르고.. 일정하게 오르질 안더군요."
     }
   ],

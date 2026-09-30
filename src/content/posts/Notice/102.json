@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "desknight",
+      "authorMemberNo": "8421",
+      "createdAt": "2007-06-09T01:12:15",
       "bodyHtml": "버그와 관련된 패치는 없는거 같군요.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "danakim",
+      "authorMemberNo": "8506",
+      "createdAt": "2007-06-09T20:38:53",
       "bodyHtml": "이제 Infecting Strike와 Serpent Arrow는 이 특수한 작전 행동으로 상대에게 성공적으로 독에 감염시킬때 약간의 카르마가 감소하게 될 것입니다.\n<br>\n<br>Serpent Arrow 쓴다고 포이즈닝 지엠단지 몇일 되었다고 이따위 패치를... ㅠ.ㅠ"
     }
   ],

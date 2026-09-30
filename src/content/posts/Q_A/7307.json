@@ -15,39 +15,39 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-06T20:59:44",
       "bodyHtml": "안타깝지만 그건 표시되지 않습니다. 다만 Consecrate Weapon이나 Divine Fury는\n<br>지속시간이 끝났을때 사라지는 소리가나니 볼륨을 크게하시면 들을수 있습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-06T21:03:43",
       "bodyHtml": "무기저주같은경우 시전자의 스피릿스피킹스킬치×10÷34＋1(소숫점삭제,스피릿스킬은 리얼스킬치)\n<br>이므로 자신의 스피릿스킬에 따라 지속시간을 계산하여 사냥시 적용하면 되겠습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "노다지",
+      "authorMemberNo": "9178",
+      "createdAt": "2007-10-06T22:23:02",
       "bodyHtml": "포그에는 스피릿/7.5 +1 이라고 되어있는데,\n<br>어떤것이 맞나요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-06T22:30:34",
       "bodyHtml": "<a href=\"http://www.uo.com/fof/fiveonfriday80.html\">http://www.uo.com/fof/fiveonfriday80.html\n</a><br>\n<br>2007.10.5일자 FOF공지입니다. 여기보시면 이런내용이있습니다.\n<br>\n<br>\"What is the actual duration of Cursed Weapon?\"\n<br>The duration is your Spirit Speak skill (real skill, not counting jewelry) divided by 34, plus one. (actually, that's skill x 100 - so legendary is 1200 rather than 120. Makes the math cleaner :P) That works out to 30 seconds at GM, or about 36 seconds at Legendary."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-10-06T22:34:03",
       "bodyHtml": "간혹보면 포그홈에 패치이전정보가 있을수있습니다.\n<br>그런경우는 에세이나 질답란 검색해보시면 찾을수 있습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "노다지",
+      "authorMemberNo": "9178",
+      "createdAt": "2007-10-06T22:58:04",
       "bodyHtml": "상세한 답변 감사합니다!"
     }
   ],

@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "히카리쨩",
+      "authorMemberNo": "2903",
+      "createdAt": "2002-05-22T22:16:30",
       "bodyHtml": " a. 발사한 위치가 서버경계일 경우<br>\n     이경우는 아무런 효과도 없습니다.<br>\n b. 발사를 했으나 오버젝트에 클릭했을 시 (나무나 몬스터 등)<br>\n     이 경우 penblan 님의 현상처럼 시약과 MP는 소모되나 블레이드가 나오질 않습니다.<br>\n     타켓을 잘 지정해주시면 문제는 사라집니다.<br>\n     강한 몬스터를 잡고 계신다면 아무때나(그 몬스터에게 가까운 곳에) 소환하면<br>\n     블레이드가 알아서 갑니다 ^^"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "bullhorn",
+      "authorMemberNo": "5463",
+      "createdAt": "2002-05-22T22:17:51",
       "bodyHtml": " 혹시 상대 되는 것(몬스터)에게 직접 타겟을 하나요? 만일 그렇다면 그 주변에 타켓을 해보세요.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "penblan",
+      "authorMemberNo": "7875",
+      "createdAt": "2002-05-22T22:33:01",
       "bodyHtml": " 감사합니다 몬스터를 클릭했거든요 ^^; 전 그러는줄 알구 "
     }
   ],

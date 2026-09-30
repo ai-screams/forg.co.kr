@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "안개",
+      "authorMemberNo": "18550",
+      "createdAt": "2003-04-21T21:44:59",
       "bodyHtml": " 우선 uoa가 있어야 하고요<br>\n uoa의 macro 부분에서 일단 매크로를 저장합니다.<br>\n 다음에,<br>\n uoaloop를 실행하면 아래 트래이에 아이콘이 생깁니다.<br>\n uoa가 꺼져 있다면 그 아이콘은 회색이고요<br>\n uoa가 켜져있다면 우선은 빨간색입니다.<br>\n 빨간색이면 loop가 실행되고 있지 않다는 것입니다.<br>\n 그 아이콘을 더블클릭하면 녹색으로 바뀌고 그러면<br>\n loop가 실행됩니다.<br>\n 계속해서 매크로를 실행시켜주는 것이죠<br>\n 그리고 다시 그 아이콘을 더블클릭하면 빨간색이 되면서 loop가 종료됩니다.<br>\n<br>\n 그리고 이때 uoa에 macro항목에서 선택된 macro 만 loop가 됩니다.<br>\n 만약 macro 1,2,3 번에 각각의 어떤 행동이 이미 record되었고<br>\n 2번을 loopping 하고 싶다면, uoa에서 2번을 선택한후에<br>\n uoaloop를 작동시키면 됩니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "arminius",
+      "authorMemberNo": "18234",
+      "createdAt": "2003-04-22T03:45:17",
       "bodyHtml": " UOA루프는 UOA가 영문인 상태에서만 동작이 됩니다...<br>\n 제생각에는 한글로 사용하셔서 안돼는거 같네요... <br>\n 크리츠님 홈에 가시면 한글버전으로 사용가능한 루프가있습니다 그것을 사용하시길...<br>\n<br>\n 그리고 고스트 마우스의 경우는 레코드 하신다음에 동작하시고 비활성화된 고스트 마우스를<br>\n 작업표시줄에서 원클릭해서 활성화 시킨후에 스톱이 아닌 플레이를 누르시면 무한 반복 됩니다...<br>\n 작업 -&gt; 작업표시줄 클릭 -&gt; 활성화된 play버튼 클릭 -&gt; 작업 -&gt; 작업표시줄 클릭... 의 무한 루프지요 -_-<br>\n 물론 컴퓨터는 사용 못하겠지요? -_-;"
     }
   ],

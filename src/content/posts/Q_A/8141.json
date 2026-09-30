@@ -15,15 +15,15 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Lubi",
+      "authorMemberNo": "7006",
+      "createdAt": "2002-05-16T01:50:50",
       "bodyHtml": " 아마 님의 디스켓의 포멧이 fat16인거 같아요 아주 오래된 디스켓\n<br>\n fat는 하드나 드시켓의 포멧 방식인데요 옛날엔 fat16\n<br>\n 지금은 fat32나 ntfs를  사용해요 \n<br>\n 그리고 즉 님의 하드로 부팅해서\n<br>\n format a:/s/u라는 명령어를 치고\n<br>\n 다시 부팅했어 하면\n<br>\n 되요\n<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "히카리쨩",
+      "authorMemberNo": "2903",
+      "createdAt": "2002-05-16T21:00:25",
       "bodyHtml": " 디스크 포맷이 FAT 16 시스템인거 같습니다.\n<br>\n 윈도우 98 부터는 FAT 32 시스템을 기본적으로 지원하며 NT,2k,XP 등은 NTFS 라는 NT 전용 파티션 시스템(NT Fatition System, 맞을겝니다 -0-;)을 지원합니다.\n<br>\n 윈도우 98로 다시 설치하시기 위해선 format C: /s /u 명령어를 이용해 FAT 32 시스템으로 만들어 주시면 되겠습니다. 'ㅅ'"
     }
   ],

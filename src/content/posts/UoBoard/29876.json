@@ -15,39 +15,39 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "데르카즈",
+      "authorMemberNo": "20432",
+      "createdAt": "2003-04-27T19:40:30",
       "bodyHtml": " 그래픽 카드상의 문제인 듯 싶습니다.<br>\n xp일 경우 dos게임을 돌리는 전용 프로그램을 받아서 하시는게 안전할 듯 싶습니다.<br>\n xp가 아니라도 dos가 실행 안되는 경우가 있으니 전문가나 관련 사이트를 찾아보시기 바랍니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Tien",
+      "authorMemberNo": "15099",
+      "createdAt": "2003-04-27T19:41:42",
       "bodyHtml": " 에, 일단 XP는 아니고...<br>\n 관련 사이트를 찾아보셔야 겠군요(?!)<br>\n<br>\n ..아, 혹시 그 '관련 사이트' 아시는거 있으십니까?(....)<br>\n<br>\n- 절약(?!)<br>\n<br>\n아, 어쨌든 감사합니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Angel",
+      "authorMemberNo": "14585",
+      "createdAt": "2003-04-27T19:50:01",
       "bodyHtml": " 도스게임 실행할때 글씨가 깨지거나 화면이 깨질땐.. 등록정보에 가셔서 배치파일에다가 chcp 437 이라고 쓰면.. 해결될겁니다.. 간혹가다 안되는게임 있는데ㅡ; 그건.. 저도 모릅니다.. -_-;; "
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "swzct",
+      "authorMemberNo": "16682",
+      "createdAt": "2003-04-27T21:02:28",
       "bodyHtml": " 에.. 당연히 xp에뮬레이션에선 안되고요<br>\n<br>\n 현재 도스기능을 에뮬레이션 하는 프로그램들도 vesa방식은 아직 흉내내지 못하고 있습니다.<br>\n<br>\n 그.. vesa방식이란게 좀 골때려서..-_-<br>\n<br>\n 걍 하지 않는게 속편하실거라 생각되옵니다. -_-;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ichiroh",
+      "authorMemberNo": "19808",
+      "createdAt": "2003-04-27T22:14:01",
       "bodyHtml": " 옛날에 VESA 지원이 안될땐 이녀석을 사용하곤 했었습니다만...<br>\n SDD라고, VESA 2.0 유니버설 드라이버였던걸로 기억합니다.<br>\n<br>\n [ SciTech Display Doctor 6.53 ]<br>\n<a href=\"http://www.scitechsoft.com/products/enterprise/free_titles.html\">http://www.scitechsoft.com/products/enterprise/free_titles.html</a><br>\n (이젠 공개버전으로 등록키까지 그냥 돌리는군요)<br>\n<br>\n 지금도 먹혀들어갈지는 모르겠네요.  :)<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Tien",
+      "authorMemberNo": "15099",
+      "createdAt": "2003-04-27T23:11:31",
       "bodyHtml": " 음, 대강 실행을 시킬수 있었습니다.(...)<br>\n 다들 감사합니다."
     }
   ],

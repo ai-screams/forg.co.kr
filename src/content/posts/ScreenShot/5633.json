@@ -21,45 +21,45 @@
   ],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "moolz",
+      "authorMemberNo": "6370",
+      "createdAt": "2002-10-11T00:42:28",
       "bodyHtml": " 안전모드 들어가시면...치료된다는...소문이 ㅡ0ㅡ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "zinskain",
+      "authorMemberNo": "10424",
+      "createdAt": "2002-10-11T00:47:09",
       "bodyHtml": " 오웃...감사합니다......님의 리플 읽고 바루 안전모드 들가니까 정상적으로 나오네여...정말감사드립니다..."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "hlboys",
+      "authorMemberNo": "7270",
+      "createdAt": "2002-10-11T01:38:40",
       "bodyHtml": " 안전모드 해도 치료 안되는 경우가 가끔 있어요. 저는 윈도를 다시 깔아버렸다는.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "nbkiller99",
+      "authorMemberNo": "7640",
+      "createdAt": "2002-10-11T04:47:30",
       "bodyHtml": " 안전모드 해도 안되시면 windows 폴더 안에 무슨 파일을 지우고 리붓하면 된다고 그랬는데..<br>\n 윽.. 까먹었다... 케알벤치에서 읽었었는데.. 그런데 뒤져보시면 있을듯<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "buggy",
+      "authorMemberNo": "10208",
+      "createdAt": "2002-10-11T07:05:25",
       "bodyHtml": " 익스플로러의 그런경우는 보통 안전모드에 한번 들어 갔다 나오면 대부분 해결 됩니다. <br>\n<br>\n 만약 이 방법으로 해결되지 않는다면 <br>\n<br>\n 컴 부팅시  F8을 누르시고 도스화면에서 몇개의 선택이 뜨는데 Command Prompt only를 골라줍니다. <br>\n<br>\n 그 도스 화면에서 아래와 같이 입력해보세요. <br>\n<br>\n C:\\&gt;cd windows <br>\n C:\\WINDOWS&gt;attrib -s -h -r ttfcache <br>\n C:\\WINDOWS&gt;del ttfcache <br>\n<br>\n 다음과 같이 입력하신후 재부팅하시던지 <br>\n<br>\n<br>\n아니면 윈도우 시작 버튼을 누르시고   찾기에 가셔서 파일또는 폴더를 선택하시고.. 거기에다가 ttfcache 라고 입력하시고.. <br>\n<br>\n 보면 파일이 나올겁니다. 그파일을 지우시고 재부팅 해주셔두 되구요 ^^ "
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "evacelin",
+      "authorMemberNo": "7766",
+      "createdAt": "2002-10-11T09:17:29",
       "bodyHtml": " 위의 현상은 글꼴캐쉬파일이 어딘가에 손상을 입어 생기는 현상임...<br>\n<br>\n 참고로 ttfchche는 글꼴 캐쉬 파일인데...<br>\n<br>\n 부팅시마다 재생성되므로 지워도 상관없음...<br>\n<br>\n 지우고 새로 부팅시키면 거의 됩니다...<br>\n<br>\n 위엣분처럼 안전모드로 해도 되구염...^^*<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "goo1212",
+      "authorMemberNo": "4710",
+      "createdAt": "2002-10-12T20:47:43",
       "bodyHtml": " 어어어!!! 제 컴퓨터도 저럽니다!!!"
     }
   ],

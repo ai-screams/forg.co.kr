@@ -15,33 +15,33 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "아르나드",
+      "authorMemberNo": "869",
+      "createdAt": "2007-10-09T13:51:29",
       "bodyHtml": "그거 예전에 제가 다른분께 알려줘서 그분이 올린 에쎄이였습니다 ㅎㅎ\n<br>\n<br>옛 울온 음악을 들으려면\n<br>\n<br>일단 옛음원이 필요합니다.\n<br>\n<br>디지털 폴더말고 옛날 음악이 있는데\n<br>\n<br>그것은 사무라이 이전의\n<br>\n<br>AOS클라를 설치할때 있고, 사무라이부터는 아예 지워졌더군요.\n<br>\n<br>\n<br>위의 음원이 폴더에 들어있다면, 디지털 폴더 이름만 바꿔주시면\n<br>\n<br>디지털 폴더가 없는걸로 인식하여 옛 음악이 나온답니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "nets1999",
+      "authorMemberNo": "580",
+      "createdAt": "2007-10-09T15:02:13",
       "bodyHtml": "디지털 폴더에 Stones 만 남기구 다 지운담에\n<br>\n<br>343244 이런식으로 폴더 이름 고쳤는데도 안나오네요 ㅠㅠ\n<br>\n<br>어떻게 해야 하나요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "아르나드",
+      "authorMemberNo": "869",
+      "createdAt": "2007-10-09T21:09:23",
       "bodyHtml": "그거 들을려면\n<br>\n<br>옛 음원\n<br>\n<br>즉 mid 파일이 있어야합니다\n<br>\n<br>스톤즈만 남긴다고 옛 음악이 나오진 않죠.\n<br>\n<br>\n<br>옛음원은\n<br>\n<br>사무라이 패치이후 아예 클라이언트 팩에 포함되지 않았기 때문에\n<br>\n<br>구버전으로 설치해야 있습니다.\n<br>\n<br>\n<br>즉\n<br>\n<br>최신버전을 받으셨다면\n<br>\n<br>암만 폴더를 바꾼다고해도\n<br>\n<br>mid 파일이 없기 때문에\n<br>\n<br>음악이 나오지 않습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "nets1999",
+      "authorMemberNo": "580",
+      "createdAt": "2007-10-09T22:15:42",
       "bodyHtml": "그러면.. 아직 보유중인 르네상스 시디를 사용하면 되겠군용 :&gt;\n<br>\n<br>르네시디안에 music 폴더 를 통으로 복사해서 c:울온 깔린폴더에 \n<br>\n<br>고대로 복사하믄 된다는 말이죠?\n<br>\n<br>digital 폴더는 지워버리던가 이름을 바꾸고요?"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "아르나드",
+      "authorMemberNo": "869",
+      "createdAt": "2007-10-09T23:28:19",
       "bodyHtml": "네 뮤직폴더에 있는 음악 mid 파일을 복사하시면됩니다.\n<br>\n<br>digital은 그냥 digital1 같이 수정이 쉬운걸로 바꿔만 주시면되고요"
     }
   ],

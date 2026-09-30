@@ -15,33 +15,33 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "tresia1",
+      "authorMemberNo": "17001",
+      "createdAt": "2003-10-11T01:44:59",
       "bodyHtml": " 비틀클릭..그럼 메뉴떠요..."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "hongms12",
+      "authorMemberNo": "22897",
+      "createdAt": "2003-10-11T02:04:42",
       "bodyHtml": " 비틀 클릭하는 건 알거든요. 메크로 설정할 명령어를 알려고 합니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "attosoft",
+      "authorMemberNo": "17981",
+      "createdAt": "2003-10-11T03:06:08",
       "bodyHtml": " uoa쓰시면 녹화하시는 것도 한가지 방법일듯 합니다.<br>\n 그런데 자체 매클로는 불가능할 것 같다는 생각을 살포시 해봅니다.<br>\n"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "mint",
+      "authorMemberNo": "15257",
+      "createdAt": "2003-10-11T03:28:55",
       "bodyHtml": " 명령어 따로 없습니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "Bogus",
+      "authorMemberNo": "23060",
+      "createdAt": "2003-10-11T10:59:41",
       "bodyHtml": " 매크로를 사용하시려면 kr루프를 사용하세요.<br>\n<br>\n 비틀에 타고 계시다가 내려서 바로 백팩을 열 수 있습니다.<br>\n 캐릭터는 항상 중앙에 오므로 자신의 몸에 마우스를 맞추시고<br>\n 더블 클릭하시고 다시 클릭하시고 맨 아래 가방 열기를 클릭하시면 됩니다.<br>\n<br>\n 이 순서로 kr 루프를 짜시면 바로 됩니다.<br>\n 물론 비틀에서 내려 있을 경우에는 비틀을 타서 자신에게 클릭되고 다른 명령이 되겠죠.<br>\n<br>\n -_-\"<br>\n<br>\n uoa하고 kr loop하고 같이 연결하시면 더 편하게 할 수 있겠지요.  -0-\""
     }
   ],

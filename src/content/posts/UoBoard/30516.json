@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "jinyjiyo",
+      "authorMemberNo": "15003",
+      "createdAt": "2003-05-17T20:40:32",
       "bodyHtml": " 부팅시에 디스크 넣으면 오류...라...<br>\n 오류를 알아야...;;<br>\n<br>\n 한글도 조금 신경쓰셔서 써주시고...음...;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "resurrection",
+      "authorMemberNo": "15369",
+      "createdAt": "2003-05-17T20:41:36",
       "bodyHtml": " 시모스 셋업에서 부팅순서(booting sequence)를 다시 원래대로 바꿔줘보시길..a - c - d 이건가...ㅡ.ㅡ"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "sirin",
+      "authorMemberNo": "14552",
+      "createdAt": "2003-05-17T20:43:43",
       "bodyHtml": " <br>\n 방법이 있습니다, 있구요.. 장난쳐서 괜히 곤혹스럽게 만든거같아 심히 죄송-_-<br>\n<br>\n 일단 Primary Slave 혹은 Disk라고 표기된 부분에 Xp가 인스톨된 하드디스크를 골라줍니다..<br>\n<br>\n 그리고 다른 하드디스크는 Secondary나 이외의 슬롯에다가 골라주시면 되구요..<br>\n<br>\n 부팅을 하신후에 <br>\n<br>\n 제어판 - 관리도구 - 컴퓨터 관리 - 저장소 - 디스크관리 - 드라이브 문자 및 경로 변경 선택하셔서 바꾸시면됩니다..<br>\n<br>\n 그냥 공디스켓을 넣으면 오류가 뜨는 이유는 시스템부팅에 피료한 파일들이 디스켓에 없어서 오류가 나는것이고..<br>\n<br>\n 지금 일어나는 오류도 역시 부팅드라이브로 잡아놓은 하드에 시스템파일이 없어서 일어나는 일일 뿐입니다<br>\n<br>\n<br>\n 원래대로 해놓으시고 윈도우에서 바꿔주세요 <br>\n<br>\n 살람해요~"
     }
   ],

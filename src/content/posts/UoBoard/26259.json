@@ -15,51 +15,51 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ZEME",
+      "authorMemberNo": "1881",
+      "createdAt": "2007-10-10T23:56:11",
       "bodyHtml": "dos공격 막는법은 한가지뿐\n<br>공격하는쪽보다 더 큰 네트워크 트래픽을 수용할수 있도록 시스템을 꾸미면 됨\n<br>......\n<br>몇억에서 몇십억 정도 규모기 때문에 다들 잘 안하는 편인데\n<br>일본쪽도 그렇고 한국쪽도 그렇고\n<br>아이템베이라던지 그런곳들이 공격 받아서 이슈화가 됬지 \n<br>평소에도 하루에 한껀씩은 꼭 있던일임.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ZEME",
+      "authorMemberNo": "1881",
+      "createdAt": "2007-10-10T23:57:33",
       "bodyHtml": "현재 중국에서 한국으로 혹은 일본으로 공격 들어오는 대역폭이 평균 4기가 정도\n<br>중국애들 전문적으로 회사 차리고 저짓거리함 -_-..\n<br>중국 당국에서 제재 없음\n<br>\n<br>제일 웃기는게 중국 애들 타국 idc에 입주한 서버들을 공격한후 지네들한테로 오면 공격 안한다고\n<br>헛소리 해대는거.. 조낸 뭐랄까..."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ZEME",
+      "authorMemberNo": "1881",
+      "createdAt": "2007-10-11T00:03:01",
       "bodyHtml": "해킹으로 안보고 공격으로 칩니다.\n<br>\n<br>스파이가 아니라 테러범이라고 생각하시면 쉬움\n<br>서버 내부와는 전혀 상관없고 외부 네트워크망이 죽는일이 대부분\n<br>\n<br>물론 저같은 경우에도 일본쪽 서버들이 꽤 당함 -_-..\n<br>상위 isp단에 이야기 해서 중국쪽 막아버리는게 가장 속편한 방법.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "danakim",
+      "authorMemberNo": "8506",
+      "createdAt": "2007-10-11T12:02:41",
       "bodyHtml": "isp에서 막는게 정답이네요 ^^;;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "다크",
+      "authorMemberNo": "7116",
+      "createdAt": "2007-10-11T13:38:24",
       "bodyHtml": "그냥 미국 대통령 과 일본 총리를 꼬셔서 대한민국 대통령 포함 \n<br>\n<br>3명이서 중국 주석 한테 전화 한통화면 됩니다."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "milks",
+      "authorMemberNo": "446",
+      "createdAt": "2007-10-11T14:59:06",
       "bodyHtml": "제대로 된 DDoS 공격자는 대부분 1차적으로 해킹당한 경우가 좀 되서... 반드시 중국발이라고 하기도 좀 뭣합니다. 관리 안되는 한국내 PC가 더 많을지도 모르겠군요...-0-"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "ZEME",
+      "authorMemberNo": "1881",
+      "createdAt": "2007-10-11T16:07:17",
       "bodyHtml": "1차적 해킹 당한것보단 현재 문제가 되는 공격들은\n<br>중궈애들이 상해나 위해쪽에 회사 차려놓고 회선 4기가정도 임대해놓고 다른나라에 태클거는거라\n<br>중국만 막아도 왠간하면 다 막아짐..\n<br>저같은경우 회선사업을 하는지라 -_-;\n<br>일본쪽에 8월달쯤 해서 한국 일본간 해저망 뚫어놨었는데 공격 들어온것도 있고\n<br>한국쪽 KTIDC쪽에도 공격 당했었고..\n<br>그냥 중국쪽 막으니 조용해지더라고요 -_-;"
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "lovezike",
+      "authorMemberNo": "258",
+      "createdAt": "2007-10-11T22:30:37",
       "bodyHtml": "악의 축. 중국... 게임쪽에서도 중국애들 때문에 골치가 이만 저만 아니죠 -ㅅ-;"
     }
   ],

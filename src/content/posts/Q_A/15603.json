@@ -15,21 +15,21 @@
   "attachments": [],
   "comments": [
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "madbabo",
+      "authorMemberNo": "14715",
+      "createdAt": "2003-02-10T00:25:00",
       "bodyHtml": " 그건요... 각 캐릭터마다 서로 다른 스킬 창을 가지게 됩니다.<br>\n 이동이 되어도 상관이 없겠죠?<br>\n 저같은 경우에는 다섯개의 캐릭터가 모두 서로 다른 스킬 창을 가지고 있던데요..."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "hlboys",
+      "authorMemberNo": "14966",
+      "createdAt": "2003-02-10T00:58:33",
       "bodyHtml": " 확실히.<br>\n 같은 서버에 한케릭을 만들었고 그 케릭의 스킬을 옮긴후<br>\n 다른 케릭을 만들게 되면 그 케릭도 이전 케릭의 스킬창때문에<br>\n 스킬이 옮겨가 있습니다.<br>\n 아마도... desk폴더의 내용을 백업하시고 지우시면 원래 대로의 자리를 알수 있지 않을까...하는 추측을.."
     },
     {
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
+      "author": "clonlejo",
+      "authorMemberNo": "15285",
+      "createdAt": "2003-02-10T03:35:30",
       "bodyHtml": " 먼처음 까셨을때 스킬창(아무것도 하지않은거) 백업해 놓으시고<br>\n<br>\n 캐릭만들때마다 복사하는 방법밖에는<br>\n<br>\n 저도 같은 현상때문에 이런방법 쓴답니다"
     }
   ],
