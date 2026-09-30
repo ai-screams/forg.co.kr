@@ -53,11 +53,27 @@ html.in-frame #forg-museum-bar{display:none!important}`;
 const IN_FRAME_SCRIPT =
   "if(window.top!==window.self)document.documentElement.className+=' in-frame';";
 
+// The archived documents are fixed-width table layouts (630px and up, some
+// over 2000px) made for a desktop window, and forg had no mobile site to be
+// faithful to. On a phone they are reflowed: tables, cells and images give up
+// their fixed widths and fit the screen (`nowrap` cells wrap), absolutely
+// placed blocks (the town maps cut into layers) stack, and long words
+// break. From 800px up the page is exactly the original.
+const VIEWPORT = "width=device-width, initial-scale=1";
+const NARROW_CSS = `@media (max-width:799px){
+body{margin:8px!important;min-width:0!important}
+table{width:100%!important;max-width:100%!important;height:auto!important}
+td,th{width:auto!important;height:auto!important;white-space:normal!important}
+img{max-width:100%!important;height:auto!important}
+[style*="position:absolute"],[style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
+body *{overflow-wrap:break-word;word-break:break-word}
+}`;
+
 function head(page: SitePage, extra = ""): string {
   const title = `${page.title} — forg.co.kr 박물관`;
   // The ETL keeps only `[A-Za-z0-9_]+` frame names; escaped regardless.
   const base = page.baseTarget ? `<base target="${escapeHtml(page.baseTarget)}">` : "";
-  return `<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  return `<head><meta charset="utf-8"><meta name="viewport" content="${VIEWPORT}">
 <title>${escapeHtml(title)}</title>${base}${extra}</head>`;
 }
 
@@ -104,7 +120,7 @@ function render(page: SitePage): string {
   if (page.kind === "frameset") {
     return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
   }
-  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}</style><script>${IN_FRAME_SCRIPT}</script>`;
+  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
   // redirects carry no body and stay out of the index. `display:contents`

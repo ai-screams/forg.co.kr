@@ -116,7 +116,12 @@ export function PostView({ post, adjacent }: PostViewProps) {
 
       <div className="px-6 py-6">
         <div
-          className="post-body text-forg-ink leading-relaxed"
+          // break-word: divider lines of "____" and long URLs have no break
+          // point and pushed a phone-width page sideways (the Zeroboard body
+          // cell had `word-break:break-all` for the same reason). A table
+          // too wide for the column scrolls inside the body, not the page.
+          // Below 800px only: on a desktop both changed the original layout.
+          className="post-body text-forg-ink leading-relaxed max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]"
           // nh3-sanitised at ETL Stage 2 (ADR-0008)
           dangerouslySetInnerHTML={{ __html: withImgBase(post.bodyHtml) }}
         />
