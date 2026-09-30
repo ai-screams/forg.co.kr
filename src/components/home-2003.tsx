@@ -222,7 +222,8 @@ export function FrameTop2003() {
 
   return (
     <header>
-      <div className="grid grid-cols-[100px_1fr] items-stretch">
+      {/* `minmax(0,1fr)` + a scrolling menu row: see era-chrome-2014's header. */}
+      <div className="grid grid-cols-[100px_minmax(0,1fr)] items-stretch">
         <Link
           href="/"
           aria-label="forg.co.kr 메인"
@@ -256,7 +257,10 @@ export function FrameTop2003() {
           }
         />
 
-        <nav aria-label="2003 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center">
+        <nav
+          aria-label="2003 상단 메뉴"
+          className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+        >
           {TOP_MENU_2003.map((item) => (
             <TopMenuButton2003 key={item.id} item={item} />
           ))}
@@ -354,7 +358,7 @@ export function FrameLeft2003() {
   return (
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
-      className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) sm:block"
+      className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) min-[800px]:block"
       style={
         tileUrl ? { backgroundImage: `url(${tileUrl})`, backgroundRepeat: "repeat" } : undefined
       }

@@ -166,28 +166,60 @@ export function ListTable({
   const columns = columnsFor(skin, withHits);
 
   return (
-    <div className="border border-(--era-input-border)/50 bg-white">
-      <table className="w-full table-fixed border-collapse text-[12px]">
-        <colgroup>
-          {columns.map((c) => (
-            <col key={c.key} className={c.col} />
-          ))}
-        </colgroup>
-        <thead>
-          <HeadRow skin={skin} columns={columns} />
-          <HeadRule skin={skin} span={columns.length} />
-        </thead>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr key={row.key} className="border-b border-(--era-input-border)/25 last:border-0">
-              {columns.map((c) => (
-                <Cell key={c.key} column={c.key} row={row} number={firstNumber - i} />
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <>
+      <NarrowList rows={rows} />
+      <div className="hidden border border-(--era-input-border)/50 bg-white sm:block">
+        <table className="w-full table-fixed border-collapse text-[12px]">
+          <colgroup>
+            {columns.map((c) => (
+              <col key={c.key} className={c.col} />
+            ))}
+          </colgroup>
+          <thead>
+            <HeadRow skin={skin} columns={columns} />
+            <HeadRule skin={skin} span={columns.length} />
+          </thead>
+          <tbody>
+            {rows.map((row, i) => (
+              <tr key={row.key} className="border-b border-(--era-input-border)/25 last:border-0">
+                {columns.map((c) => (
+                  <Cell key={c.key} column={c.key} row={row} number={firstNumber - i} />
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+}
+
+/**
+ * Below `sm` (640px) the fixed-column table has no room: the title ran over
+ * the date and the number column squeezed both. A phone gets one row per
+ * post in two lines — the title, then name · date — and the skins' header
+ * art is left to wider screens, where the table is exactly as before.
+ */
+function NarrowList({ rows }: { rows: readonly ListRow[] }) {
+  return (
+    <ul className="border border-(--era-input-border)/50 bg-white sm:hidden">
+      {rows.map((row) => (
+        <li
+          key={row.key}
+          className="border-b border-(--era-input-border)/25 px-2 py-[6px] text-[13px] last:border-0"
+        >
+          {/* The title link is inline-flex; capping it lets its truncate work. */}
+          <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.title}</div>
+          <div className="text-forg-muted mt-[2px] flex gap-2 text-[11px] tabular-nums">
+            <span className="truncate">{row.author}</span>
+            <span className="shrink-0">{row.date}</span>
+            {row.hits !== undefined && row.hits !== null && (
+              <span className="shrink-0">조회 {row.hits}</span>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 }
 

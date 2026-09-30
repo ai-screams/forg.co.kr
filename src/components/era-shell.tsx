@@ -14,6 +14,10 @@
  * in globals.css (`.era-2014-only` / `.era-2003-only`) picks which chrome
  * is visible.
  *
+ * The fixed columns appear from 800px, where 10 + 100 + 680 + 7 = 797 fits.
+ * Below that the rails and sidebar are dropped and the 680 column takes the
+ * whole width; at `sm` (640px) the full frame ran a 768px tablet off-screen.
+ *
  * Content is rendered **once**. Board and post routes pass `children`;
  * the home passes `content2014` / `content2003` because its exhibit
  * genuinely differs per era. Duplicating a post body per era would double
@@ -55,7 +59,7 @@ export function EraShell({ children, content2014, content2003 }: EraShellProps) 
           <FrameLeft2003 />
         </div>
 
-        <main className="flex w-full flex-col bg-(--era-content-bg) sm:w-[680px] sm:shrink-0">
+        <main className="flex w-full flex-col bg-(--era-content-bg) min-[800px]:w-[680px] min-[800px]:shrink-0">
           <div className="era-2014-only">
             <SiteHeader2014 />
           </div>

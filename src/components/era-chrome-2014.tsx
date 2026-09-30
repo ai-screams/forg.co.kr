@@ -65,14 +65,14 @@ export const TOTAL_VISITORS = 52_916_713;
 /* ──────────────────────────────────────────────────────────────────── */
 
 export function LeftRail() {
-  return <div className="bg-forg-slate hidden w-[10px] shrink-0 sm:block" />;
+  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
 }
 
 export function RightRail() {
   const bgUrl = chromeUrl("right_bg.gif", ERA);
   return (
     <div
-      className="bg-forg-slate hidden w-[7px] shrink-0 sm:block"
+      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat" } : undefined}
     />
   );
@@ -106,7 +106,7 @@ export function GameCategorySidebar() {
   return (
     <aside
       aria-label="게임 카테고리"
-      className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) sm:flex"
+      className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) min-[800px]:flex"
       style={sidebarStyle}
     >
       {barUrl && (
@@ -198,7 +198,12 @@ export function SiteHeader2014() {
 
   return (
     <div className="border-b border-(--era-input-border) bg-white">
-      <div className="grid grid-cols-[100px_1fr] items-stretch">
+      {/* `minmax(0,1fr)`: a plain `1fr` cannot shrink below the 580px menu row,
+          which pushed a phone-width page to 680px. On a phone the menu row
+          scrolls sideways instead; from 680px up it fits exactly as before.
+          `contain:paint` on the row: without it mobile Chrome still sized
+          the page to the 2003 row's 580px of buttons, scroller or not. */}
+      <div className="grid grid-cols-[100px_minmax(0,1fr)] items-stretch">
         {/* `<td height="37px" width="100px" rowspan="3">` held the 100×42 logo
             with no padding. */}
         <Link href="/" className="row-span-3 flex items-start justify-start">
@@ -230,7 +235,10 @@ export function SiteHeader2014() {
         {/* No side padding: seven 80px buttons and the 20px cap fill the 580px
             cell exactly, as the original's left-floated images did. Padding
             pushed the cap 8px past the column edge. */}
-        <nav aria-label="2014 상단 메뉴" className="bg-forg-menu flex h-[20px] items-center">
+        <nav
+          aria-label="2014 상단 메뉴"
+          className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+        >
           {TOP_MENU.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
