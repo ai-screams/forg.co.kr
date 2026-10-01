@@ -15,7 +15,8 @@
 # Tool state directories
 .omc/
 .serena/
-.claude/
+.claude/*
+!.claude/rules/
 .cursor/
 .zed/
 .aider*
