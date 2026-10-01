@@ -30,5 +30,13 @@
     "sizeBytes": 39578,
     "sha256": "d379c16c23214fbad6a4f36f722728383ca9b4db5b7bcf158485c3a1bfbe5061",
     "digest": "RA7EBROIYJ2EHJM4BFXMV35WQLNLGMIK"
+  },
+  {
+    "filename": "young.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/young.gif",
+    "capturedAt": "20020324061535",
+    "sizeBytes": 10213,
+    "sha256": "04fc707a2484fc04fd087f3206cca7dd1d37a826e5dcce5de7a2e2abcd46061d",
+    "digest": "YUWIJTGLUMFNUFF4X5AZDQZZBRV6OJZ2"
   }
 ]

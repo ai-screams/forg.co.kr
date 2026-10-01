@@ -40,6 +40,14 @@
     "digest": "NSDURHKICK2NONXDGD43A2WYTOAOAHRZ"
   },
   {
+    "filename": "baconslab.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/baconslab.gif",
+    "capturedAt": "20010821193900",
+    "sizeBytes": 1069,
+    "sha256": "f378e7ee257597a846ed7933e422833bfd19fe84c47eb6289e467e65b0ca2932",
+    "digest": "B6XEAZZKJET2IPNVEVR2YRWRKRQLCEI2"
+  },
+  {
     "filename": "bananas.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/rare/bananas.gif",
     "capturedAt": "20010821193936",
@@ -94,6 +102,14 @@
     "sizeBytes": 986,
     "sha256": "716edc682a3730afddf9a16ad13a7f77690d94ba7a875df60afa457c4f991009",
     "digest": "F2LU5IM7CHZWAUAKCY4EW2L2Q2R6GTUG"
+  },
+  {
+    "filename": "bone.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/bone.gif",
+    "capturedAt": "20010821195244",
+    "sizeBytes": 905,
+    "sha256": "da9ef899becb86d2108bc34eface190857e80c8e859eed0bc639a61a9c1e4837",
+    "digest": "CINEOTANHKRY5DLOVY5GVDGGZWBVBUOM"
   },
   {
     "filename": "book.gif",
@@ -400,6 +416,62 @@
     "digest": "E5FRZSGQIA34YRLVWY6XCIKMJFU6GUYC"
   },
   {
+    "filename": "frypan.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/frypan.gif",
+    "capturedAt": "20011108140344",
+    "sizeBytes": 1048,
+    "sha256": "2791540054813af31ba9b2807c2d354488d9f5754c9c0e1b14bb10f3fae00a8a",
+    "digest": "LDFAWLBS433CLXU3A2I52SR327HRZHLX"
+  },
+  {
+    "filename": "fulljars.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/fulljars.gif",
+    "capturedAt": "20011108145442",
+    "sizeBytes": 998,
+    "sha256": "a66ccf63e0251484a81931535407be6d3f450d578ae20ac6d3ae61090e6e4754",
+    "digest": "UEEAUG3S5OYF63S5H4Z7UCE6T4SCRPGG"
+  },
+  {
+    "filename": "fullvials.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/fullvials.gif",
+    "capturedAt": "20011108153652",
+    "sizeBytes": 1076,
+    "sha256": "86c54a1056b71edda1559fb35cc496660250b0de3422bddd2cd59040fa04f897",
+    "digest": "3XS46VGNFDJP4Y3Z3EGOANZPWDZK4VZL"
+  },
+  {
+    "filename": "fur.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/fur.gif",
+    "capturedAt": "20011108163412",
+    "sizeBytes": 1788,
+    "sha256": "d66b7ec0d5c23a7fa491329321131bafd6066cf640ea5c238019c53f71be16e6",
+    "digest": "TOJMWMSVBGTTDO5MGVVDMXFK4RZVQS5M"
+  },
+  {
+    "filename": "furn.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/furn.gif",
+    "capturedAt": "20011108172242",
+    "sizeBytes": 1406,
+    "sha256": "af7b928232e6bd4dc7260a343c959512b0bc1bd8dc5ecac70980cba86e544175",
+    "digest": "CYS32UGSJ3VHZN6AYOUGTSQNSGNXQ3JF"
+  },
+  {
+    "filename": "garlic.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/garlic.gif",
+    "capturedAt": "20011108190726",
+    "sizeBytes": 256,
+    "sha256": "bf17b3e32b09f8178dd4db1fa94de82064759b70758a71d21f1d43e67dde1f8d",
+    "digest": "3AKBLS3OQW4AC6ZB2ZO7CJMDDBVKLQE3"
+  },
+  {
+    "filename": "gbeaker.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/gbeaker.gif",
+    "capturedAt": "20011108195422",
+    "sizeBytes": 366,
+    "sha256": "08aef399b9ae13b48e74ae9c81673664d6fa26e68437a2d965bf07dd768f3720",
+    "digest": "M7X2HUU7ZZYEIFNL4Q72ZDCQ65YR2Y6K"
+  },
+  {
     "filename": "goldwire.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/rare/goldwire.gif",
     "capturedAt": "20010811005321",
@@ -408,12 +480,52 @@
     "digest": "F436TODWR5OOJORM45QQYU3BTT3ELOKM"
   },
   {
+    "filename": "gorilla.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/gorilla.gif",
+    "capturedAt": "20011108211515",
+    "sizeBytes": 1509,
+    "sha256": "8ded931adf071ebf8324568c69099e9984555f71b5dbe3c055722e80bae91985",
+    "digest": "M3MSENXOTD5KDARZM3ZOGHMTXEPP45US"
+  },
+  {
+    "filename": "greenflask.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/greenflask.gif",
+    "capturedAt": "20011108221057",
+    "sizeBytes": 264,
+    "sha256": "fdd560a70a97b7173c822d9b9f3d32245f5e30f81df66c111cdfa81d82405a17",
+    "digest": "AOWJCPTFXJWXH7RXRBNBJCJNAEDNIOZL"
+  },
+  {
+    "filename": "hay.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/hay.gif",
+    "capturedAt": "20011108234356",
+    "sizeBytes": 1523,
+    "sha256": "09557d74f6a293e1725dabdc261ad943c60ce15c5662726288605f9da4824c60",
+    "digest": "ED3PSZWX6FVSLOZV6TDT33JSZ7FMAA5O"
+  },
+  {
+    "filename": "horsedung.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/horsedung.gif",
+    "capturedAt": "20011109010940",
+    "sizeBytes": 1237,
+    "sha256": "522deeaa79dd8709032bf67aaa00e46ddb0e2d7b533563555fdc6f5a9de30f68",
+    "digest": "YWO7W6TQVXR2W5EF54YWKEI3I7HN5ZM2"
+  },
+  {
     "filename": "horseshoes.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/rare/horseshoes.gif",
     "capturedAt": "20010811010726",
     "sizeBytes": 1043,
     "sha256": "b2b14b5337ed4057d2ae48c99126ba155657ee4a69859e956ae0a24bf5656e37",
     "digest": "AVRSJJGJPP4RWEJL56UTS7UIFJPMTALN"
+  },
+  {
+    "filename": "ice.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/ice.gif",
+    "capturedAt": "20011109023358",
+    "sizeBytes": 7888,
+    "sha256": "495a51a24ee590a63d4f3577d094b2d184508f159880b755b4baa87e8342fd9c",
+    "digest": "RSISF5Z22TGV73CTQ7RR2MMOJGMLHCMI"
   },
   {
     "filename": "ingots.gif",
@@ -430,6 +542,14 @@
     "sizeBytes": 1015,
     "sha256": "bac51c66d57ce4c8f7480fffef79cf88288c99e167d1c7305b7787f48a467275",
     "digest": "7BULENNXNAS3VKQWU2HHKVIITAAQVEVT"
+  },
+  {
+    "filename": "knitting.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/knitting.gif",
+    "capturedAt": "20011109062841",
+    "sizeBytes": 981,
+    "sha256": "5c6d5a93b514ee2fb5868c7e2b5caef96921c6ba26f34eef4aeb0d2999d38a4c",
+    "digest": "HMAEAY2BQJXBBRPXXFBTPKKNL3LYOIZZ"
   },
   {
     "filename": "l_logo_rare_1.gif",
@@ -494,6 +614,38 @@
     "sizeBytes": 959,
     "sha256": "d8ae10abfbe0a8b03587472b11eab987be3292792ed2a97dab2c763befbe99d0",
     "digest": "DZABDMMNTGAAWYBBAIHBXW4OMT6OTJBD"
+  },
+  {
+    "filename": "lgbeaker.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/lgbeaker.gif",
+    "capturedAt": "20011109073650",
+    "sizeBytes": 222,
+    "sha256": "6db2807637771352bc8c5ee0808d35608ad4124979895bae559953d1d959c16f",
+    "digest": "54IIQZVXZ4HR6DEDJS42QTWG3ZRWWK2U"
+  },
+  {
+    "filename": "lich.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/lich.gif",
+    "capturedAt": "20011109082720",
+    "sizeBytes": 1336,
+    "sha256": "1e5582953660e28a7916191010fbaf27c8d85416f4a88b0e6fe960623d2f706c",
+    "digest": "UCIDIOHFZNGBSNIAP5TWOCMXXZY7ZS2F"
+  },
+  {
+    "filename": "liza.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/liza.gif",
+    "capturedAt": "20011109092929",
+    "sizeBytes": 1559,
+    "sha256": "dccd9b95cdb9295f7964f92f5b6e298a917d64c1191758cdd493803be174e562",
+    "digest": "KBUZS5ELBRTR6HCGFV674XPTJQ5OTW2C"
+  },
+  {
+    "filename": "lrgvase.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/lrgvase.gif",
+    "capturedAt": "20011109102500",
+    "sizeBytes": 1678,
+    "sha256": "39cd5789292a7ff87b221dc90ec9ce6fd9d2f2ac1b602bb58b036b025d573300",
+    "digest": "LRCIM6NL5W6SCYLTWG6BNGI6KE7I3E2N"
   },
   {
     "filename": "marble.gif",
@@ -648,6 +800,38 @@
     "digest": "EP6ENLZ3NGSIZR26OEMZ3OSG3JWLRVHE"
   },
   {
+    "filename": "ratm.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/ratm.gif",
+    "capturedAt": "20011110153030",
+    "sizeBytes": 1433,
+    "sha256": "7e1775d3079f39b337b4eb6401adcc9828e8aac3293d97c8c28243942dfd6283",
+    "digest": "MUGPNDVZEQQVIJVCJF6EGURWMB3KMXFO"
+  },
+  {
+    "filename": "rbeaker.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/rbeaker.gif",
+    "capturedAt": "20011110170445",
+    "sizeBytes": 221,
+    "sha256": "6445fee1324fdcd3287a4b455e222a2e2382fbb9d0a1b3e86232d19e43e80868",
+    "digest": "F54CETCE5GYFFIHZFEXC2SHTZCXE7L4O"
+  },
+  {
+    "filename": "redbottle.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/redbottle.gif",
+    "capturedAt": "20011110181032",
+    "sizeBytes": 204,
+    "sha256": "3cf46a78aa4a17c0e25d9f991d2792066c3d29aa686d6d829b97d840827fec85",
+    "digest": "6MWI3PI754VZCVCHRQCB6DLVL6Y64SSQ"
+  },
+  {
+    "filename": "rocks.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/rocks.gif",
+    "capturedAt": "20011110203027",
+    "sizeBytes": 1604,
+    "sha256": "c16194011d3a4f204a19ecb3d483f63a31d2cfd15a9528f717c78f8b52d3c52b",
+    "digest": "OFP7I2GVFFT7VCLWIXKUNBSLAZDR56V7"
+  },
+  {
     "filename": "rollingpin.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/rare/rollingpin.gif",
     "capturedAt": "20010811025518",
@@ -656,12 +840,52 @@
     "digest": "WPQBYRSHC7DEX2LDJMW527WJOLT6NUAF"
   },
   {
+    "filename": "rope.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/rope.gif",
+    "capturedAt": "20011110210834",
+    "sizeBytes": 880,
+    "sha256": "81c10252bff099f5754a3c67bf10e2f1003cd50284b372a343b15657ad292ab4",
+    "digest": "4TKQYPTGW6Q6Y74726RAR2YQX4ND7SUC"
+  },
+  {
     "filename": "silverwire.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/rare/silverwire.gif",
     "capturedAt": "20010811030036",
     "sizeBytes": 1146,
     "sha256": "60b5d784bb88cd38d7b94cca6a46004a426a50f69bd22ffb3dbf9a67ce6a75bb",
     "digest": "ZRLTGKG2HDL3ASTQTOX2SP3KXJQ6MLBF"
+  },
+  {
+    "filename": "skindeer.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/skindeer.gif",
+    "capturedAt": "20011111004011",
+    "sizeBytes": 2139,
+    "sha256": "d9ddd78b1f2a0c1b8aaa6d38e58d87d9e5f3c2b6e1296c74fd48e37793165bc5",
+    "digest": "BDD74WOCM43B7IZGXXM4F5RDBUOOSXV6"
+  },
+  {
+    "filename": "skullmug.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/skullmug.gif",
+    "capturedAt": "20011111032316",
+    "sizeBytes": 917,
+    "sha256": "0221826c715d6dbdd5f084ee683e9e8d4c3a3fa3a74a46f0a5f39e4c03b9ca66",
+    "digest": "OZC6O3LDV6EYGDSJ3VYK6MODTVLOWD7E"
+  },
+  {
+    "filename": "smallplan.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/smallplan.gif",
+    "capturedAt": "20011111043731",
+    "sizeBytes": 1696,
+    "sha256": "768feddd0246a1785ff34eb10caf1a0247cc241c4ca4da0fb27fb9754d1c1369",
+    "digest": "3BMCQA7U4RW6WZXVYKML4TUY2HXHIA5M"
+  },
+  {
+    "filename": "smalltree.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/rare/smalltree.gif",
+    "capturedAt": "20011111060025",
+    "sizeBytes": 2296,
+    "sha256": "ea953a24110819f9bebd2f91958224721ce22797b4b6ac98755032de66929075",
+    "digest": "GLKQX6IJX6KH5ZP7HGRJRP6N6Z3SL52K"
   },
   {
     "filename": "toolkit2.gif",

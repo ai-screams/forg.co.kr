@@ -448,6 +448,14 @@
     "digest": "DFTEYZB65KRW6YIQVSGSROXIV4ACAG4M"
   },
   {
+    "filename": "Summon-Air.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Summon-Air.gif",
+    "capturedAt": "20010821184746",
+    "sizeBytes": 1696,
+    "sha256": "0f4ca7ce23fb97d26d137d25112621c94ffbc749a0ebccaaa29ee900f5295d52",
+    "digest": "CPMBR6LO2QPO2KJXIZWLU6MJP4BKQ75R"
+  },
+  {
     "filename": "Summon-Creature.gif",
     "originalUrl": "http://www.forg.co.kr:80/skill/images/8c/Summon-Creature.gif",
     "capturedAt": "20010620225255",
@@ -486,6 +494,14 @@
     "sizeBytes": 1692,
     "sha256": "b14cac8c65743bcec9b5bff52a366d9aeb2a594b7693dc76b4cb472275fc0a00",
     "digest": "LKBMY3M3MUUOXG5R3E5RIRNKU5KRVH3F"
+  },
+  {
+    "filename": "Telekinesis.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/8c/Telekinesis.gif",
+    "capturedAt": "20010821191317",
+    "sizeBytes": 1686,
+    "sha256": "9f29ee833dce5c55028004349e814f03eebd7e35c5e86ead371f81bb55f558ff",
+    "digest": "KTRO36ZFD5KNCEQYUUXKFPWI6KF3PTXX"
   },
   {
     "filename": "Teleport.gif",

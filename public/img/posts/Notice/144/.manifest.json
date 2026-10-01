@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "mining_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/mining_1.gif",
+    "capturedAt": "20011224141844",
+    "sizeBytes": 20781,
+    "sha256": "2eca6adbf1710d608c792209314eb23632379a8137fd1efe116a16fe24d74718",
+    "digest": "UOXQXV3XQRLDRVCWANYWTBW2ESA63V77"
+  },
+  {
+    "filename": "mining_2.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/mining_2.gif",
+    "capturedAt": "20011224142604",
+    "sizeBytes": 21086,
+    "sha256": "c455dfed5d2d061da96e669803380fc76a5b4b22d06cdb2d82666cc5dc59ac4e",
+    "digest": "5LUZAPWWWD6ZMKDTIDOL5FPLIPF7A7W3"
+  },
+  {
+    "filename": "sand.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/sand.gif",
+    "capturedAt": "20011224100053",
+    "sizeBytes": 6314,
+    "sha256": "f86504f93e3f7720323129e51330757e4cc87064e62e0c32b9eaeb8a79e1ced5",
+    "digest": "XWIYFPBMDSICTUWRCSIRM7RS35DR3GBS"
+  },
+  {
+    "filename": "sand_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/sand_1.gif",
+    "capturedAt": "20011224100522",
+    "sizeBytes": 135996,
+    "sha256": "d9cdb9ca3d7ed5be97027c87d96a345273aba23c9a3f491d243bfe2dd8bc0438",
+    "digest": "S2WW5O2WHO426LB2QLWEOHAO65GATUQ5"
+  },
+  {
+    "filename": "skill.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/skill.gif",
+    "capturedAt": "20011224101313",
+    "sizeBytes": 36973,
+    "sha256": "05bbbf82c529234bba4ad459da153ae6cec25c0606041a752474a3b1562fe015",
+    "digest": "QR4O6PLNS4PG2I5QFFFEYDEOG7UYLBAJ"
+  },
+  {
+    "filename": "skill_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/skill_1.gif",
+    "capturedAt": "20011224100956",
+    "sizeBytes": 36874,
+    "sha256": "d303e96b172791eae6fde3de67b5b872ae8f1388a77d99ce5b05d5434e570589",
+    "digest": "GDNR4QKDJNZLP6HDOCS6OV4WSRKIFMHF"
+  },
+  {
+    "filename": "stone_1.gif",
+    "originalUrl": "http://forg.uospace.net:80/news/stone_1.gif",
+    "capturedAt": "20011224102418",
+    "sizeBytes": 134017,
+    "sha256": "e4c25fc16c4b31211530236048285c50aed5a56ab0a0369b5e03f27e66a65237",
+    "digest": "GB43MJFRSJJVZZJ5S5C7NK727LOAAOC7"
+  }
+]

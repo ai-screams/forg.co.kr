@@ -64,6 +64,14 @@
     "digest": "YARZGLMILGZZLW34SCIVA7JWDQVX4LF2"
   },
   {
+    "filename": "c_9.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/carpentry/c_9.gif",
+    "capturedAt": "20030607051713",
+    "sizeBytes": 1015,
+    "sha256": "fa6c710ab6e0689c9810fbaf1f3b4c0a924cd4c1d449d7bcad611ce7c530044d",
+    "digest": "OMROXOQ4KFNY635WPXMBOYZP62U7EGEV"
+  },
+  {
     "filename": "furniture_11.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/carpentry/furniture_11.gif",
     "capturedAt": "20030807161109",
@@ -78,6 +86,14 @@
     "sizeBytes": 2001,
     "sha256": "95cc279bbaa0977875321c255ac2718603bb83e5b4ec4634d4e8e4da474c48ea",
     "digest": "4QE6PPSFI2VNQU6AJA622PD226FXJTYG"
+  },
+  {
+    "filename": "furniture_14.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/carpentry/furniture_14.gif",
+    "capturedAt": "20030607095231",
+    "sizeBytes": 1207,
+    "sha256": "a31e55443bba5c552d4776ce03a95c8000bdb6ecb99341558ca705bbbfed7083",
+    "digest": "7EDMVIAET4NBRV6M76J2A74TANXKR7EA"
   },
   {
     "filename": "furniture_2.gif",

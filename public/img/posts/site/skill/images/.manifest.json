@@ -88,6 +88,14 @@
     "digest": "JTUVZP7VJ64U3VNLZAI53CLYPYR7NBGY"
   },
   {
+    "filename": "aos_lbox.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/aos_lbox.gif",
+    "capturedAt": "20030724014851",
+    "sizeBytes": 31102,
+    "sha256": "2023e6c27163fe0741154b0011c9d1f2cff9024c1f9c5b7d91c3faceb96dcfc0",
+    "digest": "ZSKVQHMT4OSITCTF4FUQBJ365ZAIZNYZ"
+  },
+  {
     "filename": "character01.jpg",
     "originalUrl": "http://forg.co.kr:80/skill/images/character01.jpg",
     "capturedAt": "20010814130526",
@@ -134,6 +142,14 @@
     "sizeBytes": 11575,
     "sha256": "2fa2cfa432a14a63501f325ba0131b5a6e272c070495021f6c8fd1ff3ee473fc",
     "digest": "6EE2TSDQNF2XLXRA63WXTAPN7F6KOKA7"
+  },
+  {
+    "filename": "l_line.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/l_line.gif",
+    "capturedAt": "20030724022225",
+    "sizeBytes": 1086,
+    "sha256": "226e21d82a95b1712edf0e1765d53582e51625e73f755cbfe0525dc31a79c111",
+    "digest": "7ZQLKBB6UKHWPVCGIVBEU7P4HT4NPBR6"
   },
   {
     "filename": "line.gif",

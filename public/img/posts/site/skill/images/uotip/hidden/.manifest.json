@@ -168,6 +168,22 @@
     "digest": "DPP5QS2GZIRMHNLEIV5ZUDI3HVXOOOUR"
   },
   {
+    "filename": "hidden17.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/hidden/hidden17.gif",
+    "capturedAt": "20010908001017",
+    "sizeBytes": 42810,
+    "sha256": "d829623368857acc9f11e7c9fad105ff3ecdaabfe01938834c5a707e00773737",
+    "digest": "3EXRKF2GZ2BLP3EWQEYNS5667CLTZHAM"
+  },
+  {
+    "filename": "hidden2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uotip/hidden/hidden2.gif",
+    "capturedAt": "20010908003254",
+    "sizeBytes": 51931,
+    "sha256": "32830cf2d4481dda55a5aeea92a87d47abf207712b9087ee93269de7e9940413",
+    "digest": "5KTYFBGTWMHEYHNJFJH5N4QXFK2HKM4A"
+  },
+  {
     "filename": "hidden4.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uotip/hidden/hidden4.gif",
     "capturedAt": "20010909112026",

@@ -24,6 +24,14 @@
     "digest": "YERMN3XBN3RPLZNSWI3ABER2ZLJ3O2KP"
   },
   {
+    "filename": "br_wrong.gif",
+    "originalUrl": "http://forg.co.kr:80/map/br_wrong.gif",
+    "capturedAt": "20010907231708",
+    "sizeBytes": 1314,
+    "sha256": "5a581172ca183d039a50dd20c221ee13f7dfdba987fceeaacdabe4180186795b",
+    "digest": "QKCLWNXSRMBMR3MEHFHHB4RVF2GF5DG3"
+  },
+  {
     "filename": "bri_fullmap.gif",
     "originalUrl": "http://www.forg.co.kr/map/bri_fullmap.gif",
     "capturedAt": "20071128203306",
@@ -184,6 +192,22 @@
     "digest": "4NNKPXEXBDZC7Q5LOY6CP2ZRVDJH6SI4"
   },
   {
+    "filename": "il_spi.gif",
+    "originalUrl": "http://forg.co.kr:80/map/il_spi.gif",
+    "capturedAt": "20010910021105",
+    "sizeBytes": 1405,
+    "sha256": "31dffc95f9e4362f0aaace38d8579d624c45e442c5071d2fb685aca117ff3ea7",
+    "digest": "BXBRM5VI2H7V7EATSX6SWJFF7ZHANZUD"
+  },
+  {
+    "filename": "il_wisp.gif",
+    "originalUrl": "http://forg.co.kr:80/map/il_wisp.gif",
+    "capturedAt": "20010910024128",
+    "sizeBytes": 1261,
+    "sha256": "64ca1478d21c7203c17409d9b747c8d86f930c2172db4428a2494e36ce22d1c8",
+    "digest": "5UKRBHSNGNWNALPFMNRF7UTNZYAHICWK"
+  },
+  {
     "filename": "lost_ice.gif",
     "originalUrl": "http://forg.co.kr:80/map/lost_ice.gif",
     "capturedAt": "20010910163014",
@@ -280,6 +304,14 @@
     "digest": "FPFXHQNNUBG6C7THE6ALOVEECETXM65C"
   },
   {
+    "filename": "tresure.gif",
+    "originalUrl": "http://forg.co.kr:80/map/tresure.gif",
+    "capturedAt": "20020305094545",
+    "sizeBytes": 1555,
+    "sha256": "0dec014da06bc53501411432845ec7bbe2721095e8e270ebc67ccca9a8c948bd",
+    "digest": "E3QBEAHE63QC2BKYFGIG4EL5SFVVRJKV"
+  },
+  {
     "filename": "trinsic.gif",
     "originalUrl": "http://forg.co.kr:80/map/trinsic.gif",
     "capturedAt": "20010620183259",
@@ -302,6 +334,14 @@
     "sizeBytes": 1382,
     "sha256": "520b3a6cb50b977cb7f307af65f2970673c950262dd2eca37e213d84faba0f01",
     "digest": "OKEOHRHAIZB754CIL4NYGBC5IGRYEOSF"
+  },
+  {
+    "filename": "world.gif",
+    "originalUrl": "http://forg.co.kr:80/map/world.gif",
+    "capturedAt": "20020305123040",
+    "sizeBytes": 1525,
+    "sha256": "f1ce904e938800691dd4b41d186077c9cdd7fedc9e4de1db769d76100dfed066",
+    "digest": "UC5TZWBKBHJFS6XQJAPXQKDBLXM3TT7O"
   },
   {
     "filename": "yew.gif",
