@@ -53,6 +53,17 @@ html.in-frame #forg-museum-bar{display:none!important}`;
 const IN_FRAME_SCRIPT =
   "if(window.top!==window.self)document.documentElement.className+=' in-frame';";
 
+// Namo WebEditor's jump menus (`namosw_goto_byselect`), kept by the ETL as
+// `<select data-goto>`: choosing an option opens its URL where the original
+// did — this frame (`self`), the frame around it (`parent`) or the named
+// window `win1` (`blank`). Header and separator options carry no `value` and do
+// nothing, where the original would have tried to open their text.
+const GOTO_SCRIPT = `document.querySelectorAll("select[data-goto]").forEach(function(s){
+s.addEventListener("change",function(){var o=s.options[s.selectedIndex];
+if(!o.hasAttribute("value"))return;
+var t=s.getAttribute("data-goto");
+if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:window).location.href=o.value;});});`;
+
 // The archived documents are fixed-width table layouts (630px and up, some
 // over 2000px) made for a desktop window, and forg had no mobile site to be
 // faithful to. On a phone they are reflowed: tables, cells and images give up
@@ -130,7 +141,7 @@ function render(page: SitePage): string {
 ${museumBar(page)}
 ${searchable}
 ${page.html}
-</div>
+</div>${page.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}
 </body></html>`;
 }
 
