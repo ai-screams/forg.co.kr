@@ -38,6 +38,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       className="text-forg-ink border border-(--era-input-border)/50 bg-white"
       data-pagefind-body
       data-pagefind-sort={`date:${post.createdAt}`}
+      data-pagefind-meta={`boardKr:${board.nameKr}`}
     >
       {/* Pagefind filter/meta attributes — screen-reader-only, not visible */}
       <span className="sr-only" data-pagefind-filter="board">
@@ -203,7 +204,7 @@ function PostNavigation({
         <div className="flex min-w-0 flex-col gap-0.5">
           {prev ? (
             <Link
-              href={`/${board}/${prev.postId}`}
+              href={`/${prev.board ?? board}/${prev.postId}`}
               className="group flex items-start gap-2 text-sm"
             >
               <span className="text-forg-muted mt-0.5 shrink-0 text-xs">← 이전글</span>
@@ -220,7 +221,7 @@ function PostNavigation({
         <div className="flex min-w-0 flex-col items-end gap-0.5">
           {next ? (
             <Link
-              href={`/${board}/${next.postId}`}
+              href={`/${next.board ?? board}/${next.postId}`}
               className="group flex items-start gap-2 text-sm"
             >
               <span className="line-clamp-1 min-w-0 text-right text-(--era-link) group-hover:text-(--era-link-hover)">
