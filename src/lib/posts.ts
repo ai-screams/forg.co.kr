@@ -15,6 +15,8 @@ import type { Dirent } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
+import { cache } from "react";
+
 import { isBoardId, type BoardId } from "@/lib/boards";
 import type { BoardIndexEntry, BoardIndexPage, BoardListing, Post } from "@/types/post";
 
@@ -56,8 +58,11 @@ function isENOENT(err: unknown): boolean {
  * Load a single Post by board id + post id.
  * Returns `null` for missing files (caller maps to `notFound()`); other
  * errors propagate so the build fails loudly on corrupt content.
+ *
+ * Wrapped in `cache` so a page's `generateMetadata` and the page itself share
+ * one read (the pattern the Next.js metadata guide gives).
  */
-export async function getPost(board: BoardId, postId: string): Promise<Post | null> {
+export const getPost = cache(async (board: BoardId, postId: string): Promise<Post | null> => {
   const file = path.join(CONTENT_ROOT, "posts", board, `${postId}.json`);
   try {
     const raw: unknown = JSON.parse(await readFile(file, "utf8"));
@@ -67,7 +72,7 @@ export async function getPost(board: BoardId, postId: string): Promise<Post | nu
     if (isENOENT(err)) return null;
     throw err;
   }
-}
+});
 
 /**
  * Enumerate every (board, postId) pair we have content for. Used by
@@ -99,25 +104,28 @@ export async function getAllPostParams(): Promise<{ board: string; postId: strin
 /**
  * Load one paginated chunk of a board's index, 1-indexed to match the ETL.
  * Returns `null` for missing pages; the caller decides whether to 404 or
- * fall back to page 1.
+ * fall back to page 1. Cached per render like `getPost`.
  */
-export async function getBoardIndex(board: BoardId, page: number): Promise<BoardIndexPage | null> {
-  if (!Number.isInteger(page) || page < 1) return null;
-  const file = path.join(CONTENT_ROOT, "boards", board, `index-${page}.json`);
-  try {
-    return JSON.parse(await readFile(file, "utf8")) as BoardIndexPage;
-  } catch (err) {
-    if (isENOENT(err)) return null;
-    throw err;
-  }
-}
+export const getBoardIndex = cache(
+  async (board: BoardId, page: number): Promise<BoardIndexPage | null> => {
+    if (!Number.isInteger(page) || page < 1) return null;
+    const file = path.join(CONTENT_ROOT, "boards", board, `index-${page}.json`);
+    try {
+      return JSON.parse(await readFile(file, "utf8")) as BoardIndexPage;
+    } catch (err) {
+      if (isENOENT(err)) return null;
+      throw err;
+    }
+  },
+);
 
 /**
  * Load the merged list-page rows for a board (`src/content/listings/{board}.json`),
  * the museum's only record of boards whose post pages were never captured.
- * Returns `null` when no list page of the board was captured.
+ * Returns `null` when no list page of the board was captured. Cached per
+ * render like `getPost`.
  */
-export async function getBoardListing(board: BoardId): Promise<BoardListing | null> {
+export const getBoardListing = cache(async (board: BoardId): Promise<BoardListing | null> => {
   const file = path.join(CONTENT_ROOT, "listings", `${board}.json`);
   try {
     return JSON.parse(await readFile(file, "utf8")) as BoardListing;
@@ -125,7 +133,7 @@ export async function getBoardListing(board: BoardId): Promise<BoardListing | nu
     if (isENOENT(err)) return null;
     throw err;
   }
-}
+});
 
 /**
  * The newest `count` rows of a board that the museum holds the post for.
@@ -162,42 +170,61 @@ export interface AdjacentPosts {
   next: BoardIndexEntry | null; // newer, "다음글"
 }
 
+interface BoardSequence {
+  /** Every row with a post page, in listing order (`createdAt` desc). */
+  entries: BoardIndexEntry[];
+  /** `postId` → position in `entries`. */
+  position: Map<string, number>;
+}
+
+async function loadBoardSequence(board: BoardId): Promise<BoardSequence> {
+  const firstPage = await getBoardIndex(board, 1);
+  const rest = firstPage
+    ? await Promise.all(
+        Array.from({ length: firstPage.totalPages - 1 }, (_, i) => getBoardIndex(board, i + 2)),
+      )
+    : [];
+  const entries = [firstPage, ...rest]
+    .flatMap((page) => page?.entries ?? [])
+    .filter((e) => e.hasPost);
+  const position = new Map(entries.map((e, i) => [e.postId, i]));
+  return { entries, position };
+}
+
 /**
- * Return the chronologically adjacent posts (within the same board) for the
- * given postId. Ordering matches the board listing: `createdAt` desc
- * (newest first). `next` = one step newer (lower array index), `prev` = one
- * step older (higher array index).
+ * One sequence per board for the life of the process. Every post page of a
+ * board needs the same sequence, and building it per page read all of
+ * UoBoard's 122 index pages for each of its 4,670 posts. The index does not
+ * change during a build; under `pnpm dev`, restart the server after rebuilding
+ * it.
+ */
+const boardSequences = new Map<BoardId, Promise<BoardSequence>>();
+
+function boardSequence(board: BoardId): Promise<BoardSequence> {
+  let sequence = boardSequences.get(board);
+  if (!sequence) {
+    sequence = loadBoardSequence(board);
+    boardSequences.set(board, sequence);
+  }
+  return sequence;
+}
+
+/**
+ * Return the chronologically adjacent posts (within the same board listing)
+ * for the given postId. Ordering matches the board listing: `createdAt` desc
+ * (newest first). `next` = one step newer, `prev` = one step older. A
+ * neighbour carried in from an older board keeps its `board` field, so the
+ * caller links it there.
  *
- * Walks every paginated index file for the board. If the post is not found in
- * any page, returns `{ prev: null, next: null }` — does NOT throw.
+ * If the post is not in the listing, returns `{ prev: null, next: null }` —
+ * does NOT throw.
  */
 export async function getAdjacentPosts(board: BoardId, postId: string): Promise<AdjacentPosts> {
-  // Load page 1 first to learn totalPages, then fetch the rest in parallel.
-  const firstPage = await getBoardIndex(board, 1);
-  if (!firstPage) return { prev: null, next: null };
-
-  const { totalPages } = firstPage;
-
-  // Fetch remaining pages (2..totalPages) in parallel.
-  const remainingPages =
-    totalPages > 1
-      ? await Promise.all(
-          Array.from({ length: totalPages - 1 }, (_, i) => getBoardIndex(board, i + 2)),
-        )
-      : [];
-
-  // Flatten all entries into one array (createdAt desc, same as the listing),
-  // keeping only rows that have a page to navigate to.
-  const allEntries: BoardIndexEntry[] = [
-    ...firstPage.entries,
-    ...remainingPages.flatMap((page) => page?.entries ?? []),
-  ].filter((e) => e.hasPost);
-
-  const idx = allEntries.findIndex((e) => e.postId === postId);
-  if (idx === -1) return { prev: null, next: null };
-
+  const { entries, position } = await boardSequence(board);
+  const idx = position.get(postId);
+  if (idx === undefined) return { prev: null, next: null };
   return {
-    next: idx > 0 ? (allEntries[idx - 1] ?? null) : null,
-    prev: idx < allEntries.length - 1 ? (allEntries[idx + 1] ?? null) : null,
+    next: entries[idx - 1] ?? null,
+    prev: entries[idx + 1] ?? null,
   };
 }
