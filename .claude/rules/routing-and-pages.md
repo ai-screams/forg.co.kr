@@ -28,4 +28,6 @@ forg's hand-written guide pages (`/skill/`, `/map/`, `/dungeon/`, the root frame
 
 ## Search
 
-Pagefind indexes `data-pagefind-body` only (the `/site/` route wraps each page in one, filter `board:site`). `next.config.ts` defaults `NEXT_PUBLIC_PAGEFIND_BASE` to `https://search.forg.co.kr/` when `CF_PAGES` is set. PR previews can't search (CORS). `pnpm deploy:search` has **no dry-run**.
+Pagefind indexes `data-pagefind-body` only (the `/site/` route wraps each page in one, filter `board:site`). `next.config.ts` defaults `NEXT_PUBLIC_PAGEFIND_BASE` to `https://search.forg.co.kr/` when `CF_PAGES` is set. PR previews can't search (CORS). `pnpm deploy:search` has **no dry-run** and needs the variables in `.env.r2.local` (`set -a; source .env.r2.local; set +a`).
+
+Result labels come from the `boardKr` meta on post pages. When a change adds or renames meta the search page reads, upload the new index first, then merge the code: the live code ignores meta it does not know, but new code against the old index shows board ids.

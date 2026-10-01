@@ -43,6 +43,7 @@ All three board-shaped routes set `dynamicParams = false` and enumerate every pa
 - The `(board)` segment is a route group — it is stripped from the URL. Files under `(board)/` do not get a `/board/...` prefix.
 - `site/[...path]/route.ts` is a route handler: static export renders its `GET` to `out/site/{stem}/index.html`. It carries no layout, so link to it with a plain `<a>`, never the `<Link>` wrapper (which assumes an App Router page to prefetch/navigate).
 - `search/page.tsx` loads `pagefind.js` through an indirect `Function("u","return import(u)")(url)` call specifically so TypeScript never tries to resolve `/pagefind/pagefind.js` as a module path at typecheck time — that file only exists after the `postbuild` step. In `pnpm dev` the load fails and the page shows a dev-mode notice instead of an error.
+- `search/page.tsx` keeps the Pagefind runtime in state and the search effect depends on it: a `?q=` search arrives before the runtime has loaded and must run again once it is ready. With the runtime in a ref, `?q=` searches on the live site came back empty in every try (PR #25). Result labels come from the `boardKr` meta on post pages, not from `src/lib/boards.ts`, which stays out of the client bundle.
 - `layout.tsx`'s inline script and `suppressHydrationWarning` only cover the `data-era` attribute on `<html>` — don't extend `suppressHydrationWarning` to other attributes or elements on the strength of this precedent.
 
 ### Testing Requirements
@@ -74,7 +75,7 @@ pnpm build       # next build — this is what actually catches a bad generateSt
 ### External
 
 - `next` (App Router, `generateStaticParams`, `notFound`, route handlers, `output: "export"`).
-- `react` 19 (`useEffect`, `useState`, `useRef`, `useSyncExternalStore` in `search/page.tsx`).
+- `react` 19 (`useEffect`, `useState`, `useSyncExternalStore` in `search/page.tsx`).
 - `pagefind` — runtime loaded client-side in `search/page.tsx`, built by the `postbuild` script, not a direct npm dependency import.
 
 <!-- MANUAL: Any manually added notes below this line are preserved on regeneration -->

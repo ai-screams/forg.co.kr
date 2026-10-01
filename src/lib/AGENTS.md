@@ -33,6 +33,12 @@ helpers which run on both server and client.
   top-level string fields the renderer depends on. It is not a schema
   validator — the ETL's Pydantic models in `scripts/etl/schemas.py` own
   that job. Do not add deep validation here; fix the ETL instead.
+- `getPost`, `getBoardIndex` and `getBoardListing` are wrapped in React's
+  `cache`, so `generateMetadata` and the page share one read.
+  `getAdjacentPosts` builds each board's ordered rows once per process
+  (`boardSequences`); without it a build opened index files 982,870 times
+  instead of 2,542. Under `pnpm dev`, restart the server after rebuilding
+  the index.
 - Adding a board means adding an entry to `BOARDS` in `boards.ts` first;
   `isBoardId`/`getBoard` and every loader in `posts.ts` key off it.
 - `chrome.ts` reads the filesystem once at module load (build time), so

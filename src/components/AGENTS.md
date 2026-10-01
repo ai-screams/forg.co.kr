@@ -39,6 +39,8 @@ None.
 - `link.tsx`'s `prefetch={false}` default exists because the RSC prefetch payload `.txt` files are stripped at `postbuild` (Cloudflare Pages' 20,000-file cap). Use this `Link` wrapper for in-app navigation; `/site/` pages must use a plain `<a>` instead since they're route-handler documents, not App Router pages.
 - `list-skin.tsx` and `comment-list.tsx` pick their rendering skin from `listSkinOf(engine)` (`kritz` / `webbus` / `plain`) — derive the skin from the board's `engine` field in `src/lib/boards.ts`, never hardcode a skin per board or per component.
 - `comment-list.tsx` and `post-view.tsx` render `bodyHtml` via `dangerouslySetInnerHTML`. That HTML is pre-sanitised by nh3 at ETL Stage 2 (ADR-0008) — don't re-sanitise on the client, and don't reuse this pattern for any HTML that hasn't gone through that ETL stage.
+- `post-view.tsx` puts `data-pagefind-meta="boardKr:…"` on the article; the search page reads its result labels from it. Changing it means rebuilding and uploading the search index (`pnpm deploy:search`) before the code ships.
+- Prev/next links in `post-view.tsx` go to `entry.board ?? board`: a continuing board (UoBoard2, Shop) lists rows carried in from older boards, and those posts live under their own board.
 - Mobile layout (below 800px) is the museum's own interpretation, not a faithful reproduction — keep the forg palette but build phone-only markup behind `max-[799px]:` (desktop stays pixel-identical above 800px). See `.claude/rules/era-and-ui.md`, including its Prettier template-string class-name gotcha.
 
 ### Testing Requirements
