@@ -60,19 +60,19 @@
     "*.{ts,tsx,js,jsx,mjs,cjs}": [
       "eslint --fix",
       "prettier --write",
-      "secretlint"
+      "secretlint --no-glob"
     ],
     "*.{json,css,html,yml,yaml}": [
       "prettier --write",
-      "secretlint"
+      "secretlint --no-glob"
     ],
     "*.{md,mdx}": [
       "prettier --write",
       "markdownlint-cli2 --fix",
-      "secretlint"
+      "secretlint --no-glob"
     ],
     "*.{env,env.local,env.example}": [
-      "secretlint"
+      "secretlint --no-glob"
     ]
   }
 }
