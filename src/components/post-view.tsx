@@ -38,6 +38,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       className="text-forg-ink border border-(--era-input-border)/50 bg-white"
       data-pagefind-body
       data-pagefind-sort={`date:${post.createdAt}`}
+      data-pagefind-meta={`boardKr:${board.nameKr}`}
     >
       {/* Pagefind filter/meta attributes — screen-reader-only, not visible */}
       <span className="sr-only" data-pagefind-filter="board">

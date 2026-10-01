@@ -19,9 +19,7 @@
 
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
-
-import { getBoardOrThrow, isBoardId } from "@/lib/boards";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 /** Minimal Pagefind result data surface we need. */
 interface PfResultData {
@@ -52,28 +50,45 @@ function useDebouncedValue(value: string, delayMs: number): string {
 const PAGEFIND_BASE_RAW = process.env["NEXT_PUBLIC_PAGEFIND_BASE"] ?? "/pagefind/";
 const PAGEFIND_BASE = PAGEFIND_BASE_RAW.endsWith("/") ? PAGEFIND_BASE_RAW : `${PAGEFIND_BASE_RAW}/`;
 
-async function loadPagefind(): Promise<{
+interface PagefindApi {
   search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
-} | null> {
+}
+
+async function loadPagefind(): Promise<PagefindApi | null> {
   try {
     // Indirect expression import — prevents TS module resolution
     const url = `${PAGEFIND_BASE}pagefind.js`;
     const pf = await (Function("u", "return import(u)")(url) as Promise<unknown>);
-    return pf as {
-      search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
-    };
+    return pf as PagefindApi;
   } catch {
     return null;
   }
 }
+
+type PagefindState =
+  | { status: "loading" }
+  | { status: "ready"; api: PagefindApi }
+  | { status: "unavailable" };
 
 interface SearchResult {
   url: string;
   title: string;
   author: string;
   boardKr: string;
-  boardId: string;
   excerpt: string;
+}
+
+function toResult(item: PfResultData): SearchResult {
+  const boardId = item.filters["board"]?.[0] ?? "";
+  return {
+    url: item.url,
+    title: item.meta["title"] ?? "(제목 없음)",
+    author: item.meta["author"] ?? "",
+    // Post pages carry their board's Korean name as `boardKr` meta, so the
+    // board catalog stays out of this client bundle.
+    boardKr: boardId === "site" ? "안내 페이지" : (item.meta["boardKr"] ?? boardId),
+    excerpt: item.excerpt,
+  };
 }
 
 // A static page's URL does not change under it, so there is nothing to
@@ -95,74 +110,36 @@ export default function SearchPage() {
   // What the visitor has typed, if anything; until then the URL's query stands.
   const [typed, setTyped] = useState<string | null>(null);
   const query = typed ?? urlQuery;
-  const [results, setResults] = useState<SearchResult[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [devMode, setDevMode] = useState(false);
-  const pagefindRef = useRef<Awaited<ReturnType<typeof loadPagefind>>>(null);
+  const [pagefind, setPagefind] = useState<PagefindState>({ status: "loading" });
+  // The last finished search. Results stay on screen while a newer one runs.
+  const [found, setFound] = useState<{ query: string; results: SearchResult[] } | null>(null);
   const debouncedQuery = useDebouncedValue(query, 200);
 
-  // Load Pagefind JS API on mount (only runs client-side)
   useEffect(() => {
-    loadPagefind()
-      .then((pf) => {
-        if (!pf) {
-          setDevMode(true);
-        } else {
-          pagefindRef.current = pf;
-        }
-      })
-      .catch(() => {
-        setDevMode(true);
-      });
+    void loadPagefind().then((api) => {
+      setPagefind(api ? { status: "ready", api } : { status: "unavailable" });
+    });
   }, []);
 
-  // Run search whenever debounced query changes
+  // Depends on `pagefind` so a `?q=` search, which arrives before the
+  // runtime has loaded, runs once it is ready. Pagefind answers searches in
+  // the order they were asked, so the last to finish is the newest query.
   useEffect(() => {
     const q = debouncedQuery.trim();
-    const pf = pagefindRef.current;
-
-    const run = async () => {
-      if (!q || !pf) {
-        setResults([]);
-        return;
-      }
-
-      setLoading(true);
-      try {
-        const { results: raw } = await pf.search(q);
-        const settled = await Promise.all(raw.slice(0, 30).map((r) => r.data()));
-
-        const mapped: SearchResult[] = settled.flatMap((item) => {
-          const title = item.meta["title"] ?? "(제목 없음)";
-          const author = item.meta["author"] ?? "";
-          const boardId = item.filters["board"]?.[0] ?? "";
-
-          let boardKr = boardId;
-          if (boardId === "site") {
-            boardKr = "안내 페이지";
-          } else if (isBoardId(boardId)) {
-            try {
-              boardKr = getBoardOrThrow(boardId).nameKr;
-            } catch {
-              boardKr = boardId;
-            }
-          }
-
-          return [{ url: item.url, title, author, boardKr, boardId, excerpt: item.excerpt }];
-        });
-
-        setResults(mapped);
-      } catch {
-        setResults([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    void run();
-  }, [debouncedQuery]);
+    if (!q || pagefind.status !== "ready") return;
+    pagefind.api
+      .search(q)
+      .then(({ results: raw }) => Promise.all(raw.slice(0, 30).map((r) => r.data())))
+      .then(
+        (items) => setFound({ query: q, results: items.map(toResult) }),
+        () => setFound({ query: q, results: [] }),
+      );
+  }, [debouncedQuery, pagefind]);
 
   const trimmedQuery = query.trim();
+  const devMode = pagefind.status === "unavailable";
+  const searching = trimmedQuery !== "" && !devMode && found?.query !== trimmedQuery;
+  const results = trimmedQuery && found ? found.results : [];
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
@@ -194,15 +171,15 @@ export default function SearchPage() {
             </p>
           )}
 
-          {!devMode && loading && <p className="text-forg-muted text-sm">검색 중…</p>}
+          {searching && <p className="text-forg-muted text-sm">검색 중…</p>}
 
-          {!devMode && !loading && trimmedQuery && results.length === 0 && (
+          {!searching && trimmedQuery && !devMode && results.length === 0 && (
             <p className="text-forg-muted text-sm">
               &ldquo;{trimmedQuery}&rdquo;에 대한 결과가 없습니다.
             </p>
           )}
 
-          {!devMode && !loading && !trimmedQuery && (
+          {!devMode && !trimmedQuery && (
             <p className="text-forg-muted text-sm">검색어를 입력하면 결과가 나타납니다.</p>
           )}
 
