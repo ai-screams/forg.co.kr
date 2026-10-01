@@ -14,6 +14,7 @@ import {
   CommentCount,
   listSkinOf,
   ListTable,
+  NoBodyMark,
   RowMarks,
   type ListRow,
 } from "@/components/list-skin";
@@ -49,7 +50,7 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
         <p className="text-forg-muted mt-[2px] text-[11px]">
           {withPost === 0
             ? "글 본문은 Wayback에 캡처되지 않았습니다. 목록 페이지에 남은 제목·이름·날짜·조회수만 보존합니다."
-            : "본문이 없는 글은 제목만 남았습니다 — 링크가 없는 줄이 그것입니다."}
+            : '"본문 없음" 표시가 붙은 글은 목록에 제목만 남았습니다.'}
         </p>
       </header>
 
@@ -79,6 +80,8 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
             ) : (
               <span className={layout} title="본문은 캡처되지 않았습니다">
                 {title}
+                {/* Every row lacks a body when none was captured; the header says so. */}
+                {withPost > 0 && <NoBodyMark />}
               </span>
             ),
             date:

@@ -148,6 +148,19 @@ export interface ListRow {
 }
 
 /**
+ * After the title of a row known only from a captured list page: there is no
+ * post behind it, and greyed text alone read as a broken link (the old `title`
+ * tooltip never shows on a phone). The museum's own mark.
+ */
+export function NoBodyMark() {
+  return (
+    <span className="text-forg-muted shrink-0 rounded-[2px] border border-current/40 px-[3px] text-[10px] leading-[14px] whitespace-nowrap">
+      본문 없음
+    </span>
+  );
+}
+
+/**
  * The whole table. `firstNumber` is what `webbus` prints in the 번호 column
  * for the first row, counting down: Gnuboard's list number is
  * `total_count - (page - 1) * page_rows - i`, a position rather than an id.
