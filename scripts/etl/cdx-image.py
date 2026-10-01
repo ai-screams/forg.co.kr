@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import importlib.util
 import json
 import re
 import sys
@@ -113,7 +114,48 @@ PREFIX_LIST: list[tuple[str, str]] = [
     ("forg-zb-guild",    "forg.co.kr/_zb/guild/"),
     # [8] forg folders on other hosts (`cdx-site.MIRRORS`).
     ("hosting27-forg",   "hosting27.interpia98.net/~forg/"),
+    # [9] Whole hosts, image answers only (`IMAGE_ONLY`): the folders above
+    # left out 475 images the static pages use (`Diablo2/`, `lomo/`, files
+    # at the root), and forg.dotple.com was never swept.
+    ("forg-all-images",  "forg.co.kr/"),
+    ("dotple-all-images", "forg.dotple.com/"),
 ]
+# A whole host would otherwise return every page and post it ever served.
+IMAGE_ONLY = {"forg-all-images", "dotple-all-images"}
+
+
+def _load_cdx_site():
+    spec = importlib.util.spec_from_file_location("cdx_site", Path(__file__).with_name("cdx-site.py"))
+    assert spec and spec.loader
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+CDX_SITE = _load_cdx_site()
+
+
+def forg_host_variants(url: str) -> list[str]:
+    """`url` first, then the same path on every host forg lived on
+    (`cdx-site` HOSTS, each with and without `www.`, and MIRRORS). A page
+    names an image on its own host and Wayback often caught it only under
+    another: www.forg.co.kr for the guild directory's shard icons,
+    forg.co.kr for most of the hosting27 mirror's. Other hosts' URLs come
+    back alone."""
+    u = urlsplit(url)
+    host = (u.hostname or "").lower().removeprefix("www.")
+    mirrored = CDX_SITE.mirror_path(host, u.path)
+    if host not in CDX_SITE.HOSTS and mirrored is None:
+        return [url]
+    path = mirrored or u.path
+    variants = [url]
+    for base in CDX_SITE.HOSTS:
+        for h in (base, f"www.{base}"):
+            variants.append(u._replace(netloc=h, path=path).geturl())
+    for (m_host, prefix), local in CDX_SITE.MIRRORS.items():
+        if path.startswith(local):
+            variants.append(u._replace(netloc=m_host, path=prefix + path[len(local):]).geturl())
+    return list(dict.fromkeys(variants))
 
 # ── Time range — limit to forg's active years to keep responses small ─-
 DEFAULT_FROM = "19990101000000"  # forg founded 1999
@@ -192,6 +234,7 @@ def _build_cdx_url(
     limit: int,
     resume_key: str | None = None,
     show_resume_key: bool = True,
+    image_only: bool = False,
 ) -> str:
     params: dict[str, str] = {
         "url": prefix,
@@ -205,6 +248,8 @@ def _build_cdx_url(
         params["showResumeKey"] = "true"
     if resume_key:
         params["resumeKey"] = resume_key
+    if image_only:
+        params["filter"] = "mimetype:image/.*"
     return f"{CDX_ENDPOINT}?{urlencode(params)}"
 
 
@@ -264,6 +309,7 @@ def fetch_prefix(
     limit_per_request: int,
     max_total_rows: int | None,
     log: Path,
+    image_only: bool = False,
 ) -> int:
     """Fetch one prefix end-to-end with pagination, return total row count.
 
@@ -286,6 +332,7 @@ def fetch_prefix(
                 to_ts=to_ts,
                 limit=limit_per_request,
                 resume_key=resume_key,
+                image_only=image_only,
             )
             chunk_idx += 1
             # Five prefixes were cached as "0 rows, done" from a single empty
@@ -450,7 +497,8 @@ def join_manifest_to_queue(
         picked: dict | None = None
         matched: str | None = None
         any_in_index = False
-        for cand in entry["candidates"]:
+        candidates = [v for c in entry["candidates"] for v in forg_host_variants(c)]
+        for cand in dict.fromkeys(candidates):
             rows = cdx_index.get(canonical_key(cand))
             if not rows:
                 continue
@@ -611,6 +659,7 @@ def main() -> int:
                     limit_per_request=args.limit_per_request,
                     max_total_rows=args.limit_per_prefix or None,
                     log=RUN_LOG,
+                    image_only=slug in IMAGE_ONLY,
                 )
             except WaybackError as e:
                 fetched_summary[slug] = {"rows": 0, "status": f"error: {e}"}

@@ -104,6 +104,12 @@ def main() -> int:
         help="skip URLs containing this substring (repeatable) — e.g. a prefix whose sweep is complete",
     )
     parser.add_argument("--limit", type=int, default=0, help="probe at most N URLs (0 = all)")
+    parser.add_argument(
+        "--unrecoverable",
+        type=Path,
+        default=UNRECOVERABLE_FILE,
+        help="list to probe: the posts' (default) or scripts/etl/site-image-unrecoverable.jsonl",
+    )
     parser.add_argument("--from", dest="from_ts", default=DEFAULT_FROM)
     parser.add_argument("--to", dest="to_ts", default=DEFAULT_TO)
     parser.add_argument("--retry-misses", action="store_true")
@@ -111,17 +117,18 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    if not UNRECOVERABLE_FILE.exists():
-        sys.exit(f"FATAL: {UNRECOVERABLE_FILE} not found — run cdx-image.py first")
+    if not args.unrecoverable.exists():
+        sys.exit(f"FATAL: {args.unrecoverable} not found — run cdx-image.py first")
 
     # Distinct URLs, most-referenced first so a --limit run buys the most.
     refs: dict[str, int] = {}
     urls: dict[str, str] = {}
-    for line in UNRECOVERABLE_FILE.read_text(encoding="utf-8").splitlines():
+    for line in args.unrecoverable.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         e = json.loads(line)
-        url = e["normalized_url"]
+        # posts list `normalized_url`; the static pages' list (site-image-queue) `url`
+        url = e.get("normalized_url") or e["url"]
         if args.filter and args.filter not in url:
             continue
         if any(marker in url for marker in NEVER_CAPTURED):
