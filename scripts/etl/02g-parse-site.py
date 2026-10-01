@@ -381,6 +381,24 @@ def unroll_slideshow(soup: BeautifulSoup) -> bool:
     return True
 
 
+# Seven town maps (Britain, Jhelom, Magincia, Minoc, Moonglow, Trinsic, Vesper)
+# print every coordinate as `(0?5'S 5?0'E)`: the byte is a literal 0x3F in
+# every capture from 2001 to 2007, so the file itself lost the degree sign
+# when it was saved. The other towns carry a real `°` (KS X 1001 0xA1C6).
+# Only a `?` between a digit and `[minutes]'N|S|E|W` is replaced; no page
+# outside map/ has that shape.
+DEGREE_LOST = re.compile(r"(?<=\d)\?(?=\d*'\s?[NSEW])")
+
+
+def restore_degree_signs(soup: BeautifulSoup) -> int:
+    n = 0
+    for node in soup.find_all(string=DEGREE_LOST):
+        fixed, k = DEGREE_LOST.subn("°", str(node))
+        node.replace_with(fixed)
+        n += k
+    return n
+
+
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
     for el in soup.find_all(True):
         for attr in [a for a in el.attrs if a.lower().startswith("on")]:
@@ -604,6 +622,7 @@ def main() -> None:
             # museum path that would then be resolved a second time.
             doc["bodyStyle"] = body_style(soup.body, resolver, base, ts, stem)
             unroll_slideshow(soup)
+            stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
             rewrite(soup, resolver, base, ts, stem)
             doc["css"] = head_css(soup)
             inner = soup.body.decode_contents() if soup.body else str(soup)
