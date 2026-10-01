@@ -12,7 +12,7 @@
  * header rows out of alignment with the 42px logo.
  */
 
-import { Fragment } from "react";
+import { Fragment, type ReactNode } from "react";
 
 import Link from "@/components/link";
 
@@ -235,16 +235,26 @@ export function SiteHeader2014() {
         {/* No side padding: seven 80px buttons and the 20px cap fill the 580px
             cell exactly, as the original's left-floated images did. Padding
             pushed the cap 8px past the column edge. */}
-        <nav
-          aria-label="2014 상단 메뉴"
-          className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
-        >
-          {TOP_MENU.map((item) => (
-            <MenuButton key={item.id} item={item} />
-          ))}
-          <MenuTailCap />
-        </nav>
+        <div className="relative min-w-0">
+          <nav
+            aria-label="2014 상단 메뉴"
+            className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+          >
+            {TOP_MENU.map((item) => (
+              <MenuButton key={item.id} item={item} />
+            ))}
+            <MenuTailCap />
+          </nav>
+          <ScrollFade />
+        </div>
       </div>
+      <MobileMenu label="게임 카테고리">
+        {GAME_CATEGORIES.map((cat) => (
+          <Link key={cat.id} href={`/${cat.id}`} title={cat.title} className="block py-[6px]">
+            {cat.label}
+          </Link>
+        ))}
+      </MobileMenu>
       {tLineUrl && (
         <div
           aria-hidden
@@ -256,6 +266,40 @@ export function SiteHeader2014() {
         />
       )}
     </div>
+  );
+}
+
+/**
+ * On a screen narrower than the 580px menu row, a fade on its right edge says
+ * the row scrolls. Not part of the original, which never met a phone.
+ */
+export function ScrollFade() {
+  return (
+    <span
+      aria-hidden
+      className="from-forg-menu pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l to-transparent min-[680px]:hidden"
+    />
+  );
+}
+
+/**
+ * Below 800px the sidebar is gone; its links fold into a "메뉴" bar under the
+ * header, in the sidebar's own colours. A `<details>`, so it works without
+ * JavaScript. The museum's own addition — forg had no mobile layout.
+ */
+export function MobileMenu({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) min-[800px]:hidden">
+      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[13px] font-bold [&::-webkit-details-marker]:hidden">
+        <span>메뉴 · {label}</span>
+        <span aria-hidden className="transition-transform group-open:rotate-180">
+          ▾
+        </span>
+      </summary>
+      <div className="grid grid-cols-2 gap-x-4 px-3 pb-3 text-[13px] text-(--era-sidebar-link)">
+        {children}
+      </div>
+    </details>
   );
 }
 
