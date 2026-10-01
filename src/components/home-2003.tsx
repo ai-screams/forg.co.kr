@@ -36,6 +36,7 @@
  * to typography so the layout never breaks.
  */
 
+import { MobileMenu, ScrollFade } from "@/components/era-chrome-2014";
 import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
@@ -257,17 +258,42 @@ export function FrameTop2003() {
           }
         />
 
-        <nav
-          aria-label="2003 상단 메뉴"
-          className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
-        >
-          {TOP_MENU_2003.map((item) => (
-            <TopMenuButton2003 key={item.id} item={item} />
-          ))}
-          <span className="grow" />
-          <FaqIcon2003 />
-        </nav>
+        <div className="relative min-w-0">
+          <nav
+            aria-label="2003 상단 메뉴"
+            className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+          >
+            {TOP_MENU_2003.map((item) => (
+              <TopMenuButton2003 key={item.id} item={item} />
+            ))}
+            <span className="grow" />
+            <FaqIcon2003 />
+          </nav>
+          <ScrollFade />
+        </div>
       </div>
+      <MobileMenu label="사이드바">
+        {SIDEBAR_SECTIONS.map((section) => (
+          <div key={section.fallback} className="col-span-2 mt-1">
+            <p className="text-forg-gold-hover mb-[2px] text-[11px] font-bold tracking-wide">
+              {section.fallback}
+            </p>
+            <div className="grid grid-cols-2 gap-x-4">
+              {section.links.map((link) =>
+                link.href.startsWith("/site/") || link.href.startsWith("http") ? (
+                  <a key={link.label} href={link.href} className="block py-[5px]">
+                    {link.label.replace(/^-/, "")}
+                  </a>
+                ) : (
+                  <Link key={link.label} href={link.href} className="block py-[5px]">
+                    {link.label.replace(/^-/, "")}
+                  </Link>
+                ),
+              )}
+            </div>
+          </div>
+        ))}
+      </MobileMenu>
       {/* `<td width="680" height="12" background=t_line.gif bgcolor="#F1F1F2">` */}
       <div
         aria-hidden
@@ -470,7 +496,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
               alt="Ultima Online — Honor & Sacrifice"
               width={350}
               height={127}
-              className="block"
+              className="block max-md:h-auto max-md:w-full"
             />
           )}
           {leftBoxes.map((box) => (
@@ -548,14 +574,22 @@ function MainHeading() {
   );
 }
 
+/** The solid colour each header art ends in (every row of its last columns),
+ *  used to carry the bar across a phone-wide box: 350px m_*.gif, 185px r_*.gif. */
+const HEADER_TAIL: Record<string, string> = { m: "max-md:bg-[#c0c9cb]", r: "max-md:bg-[#e6e6e6]" };
+
 function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
   const headerUrl = chromeUrl(box.config.asset, ERA);
   const bulletUrl = chromeUrl(box.config.bullet, ERA);
+  const tail = HEADER_TAIL[box.config.asset.charAt(0)] ?? "";
   return (
-    <section className="border-forg-gold/40 border-b bg-white" aria-label={box.config.label}>
+    <section
+      className="border-forg-gold/40 border-b bg-white max-md:mb-2"
+      aria-label={box.config.label}
+    >
       <Link
         href={`/${box.config.id}`}
-        className="bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[22px] items-center px-1"
+        className={`bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[22px] items-center px-1 ${tail}`}
         style={
           headerUrl
             ? {
@@ -571,7 +605,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
-      <ul className="px-1 py-1.5">
+      <ul className="px-1 py-1.5 max-md:px-2">
         {box.totalPosts === null ? (
           <li className="text-forg-muted py-1 text-[10.5px] italic">준비 중</li>
         ) : box.entries.length === 0 ? (
@@ -581,7 +615,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
             <li key={entry.postId}>
               <Link
                 href={`/${box.config.id}/${entry.postId}`}
-                className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link)"
+                className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
               >
                 {bulletUrl && (
                   // eslint-disable-next-line @next/next/no-img-element -- static export, recovered bullet
@@ -595,7 +629,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
                 )}
                 {/* The 185px column had no room for a date and carried none. */}
                 {!compact && (
-                  <span className="text-forg-muted mr-1.5 font-mono text-[9px]">
+                  <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
                     {monthDayFromIso(entry.createdAt)}
                   </span>
                 )}
@@ -625,7 +659,7 @@ function BestScreenShotBox() {
   return (
     <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
       <div
-        className="bg-forg-gold/10 flex h-[22px] items-center px-1"
+        className="bg-forg-gold/10 flex h-[22px] items-center px-1 max-md:bg-[#e6e6e6]"
         style={
           headerUrl
             ? {

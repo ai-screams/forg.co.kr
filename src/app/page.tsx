@@ -122,15 +122,59 @@ function BoxGrid({ boxes }: { boxes: BoxData[] }) {
   );
 }
 
+/**
+ * The 320×25 box header art is a grey tab whose rows are flat from x=240 to the
+ * `›` that starts at x=313. Wider than 320px (one column on a phone) the tab is
+ * drawn in three parts — the art up to x=300, those rows as a CSS gradient,
+ * the art's last 7px — so it spans the box instead of stopping short. Column
+ * 250 of every main_list_*.gif, top to bottom:
+ */
+const TAB_ROWS = [
+  "#e5e5e4", "#ffffff", "#ffffff", "#ffffff", "#fdfdfd", "#fdfdfd", "#fdfbfc", "#fdfbfd",
+  "#fcfcfb", "#fafafa", "#fafafa", "#f3f3f3", "#f3f3f3", "#f3f3f3", "#f4f4f4", "#f4f4f5",
+  "#f3f3f3", "#f4f4f4", "#f3f3f3", "#f5f5f5", "#f7f7f7", "#fefefe", "#c1c1c1", "#e8e8e8",
+  "#f7f7f7",
+] as const; // prettier-ignore
+const TAB_FILL = `linear-gradient(to bottom, ${TAB_ROWS.map((c, i) => `${c} ${String(i)}px ${String(i + 1)}px`).join(", ")})`;
+
 function BoxCard({ box }: { box: BoxData }) {
   const headerUrl = chromeUrl(box.config.asset, ERA);
   const meta = getBoard(box.config.id);
 
   return (
-    <section className="border-forg-gold/30 flex flex-col border-b" aria-label={box.config.label}>
+    <section
+      className="border-forg-gold/30 flex flex-col border-b max-sm:mb-3 max-sm:border max-sm:border-[#e3e3e3]"
+      aria-label={box.config.label}
+    >
+      {headerUrl && (
+        <Link
+          href={`/${box.config.id}`}
+          aria-hidden
+          tabIndex={-1}
+          className="relative block h-[25px] w-full sm:hidden"
+          style={{ backgroundImage: TAB_FILL }}
+        >
+          <span
+            className="absolute inset-y-0 left-0 w-[300px] max-w-[calc(100%-7px)]"
+            style={{ backgroundImage: `url(${headerUrl})`, backgroundRepeat: "no-repeat" }}
+          />
+          <span
+            className="absolute inset-y-0 right-0 w-[7px]"
+            style={{
+              backgroundImage: `url(${headerUrl})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right top",
+            }}
+          />
+        </Link>
+      )}
       <Link
         href={`/${box.config.id}`}
-        className="bg-forg-gold/10 hover:bg-forg-gold/20 group block h-[25px] w-full overflow-hidden"
+        className={[
+          "bg-forg-gold/10 hover:bg-forg-gold/20 group block h-[25px] w-full overflow-hidden",
+          // Phones get the full-width tab above instead.
+          headerUrl ? "max-sm:hidden" : "",
+        ].join(" ")}
         style={
           headerUrl
             ? {
@@ -152,7 +196,7 @@ function BoxCard({ box }: { box: BoxData }) {
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
-      <div className="space-y-[2px] pt-[5px] pr-[1px] pb-[10px] pl-[10px]">
+      <div className="space-y-[2px] pt-[5px] pr-[1px] pb-[10px] pl-[10px] max-sm:space-y-0 max-sm:px-3 max-sm:pt-1">
         {box.totalPosts === null ? (
           <p className="text-forg-muted py-2 text-[11px] italic">
             준비 중 — Phase B 다운로드 + Gnuboard4 파서 후 활성화
@@ -172,7 +216,7 @@ function BoxCard({ box }: { box: BoxData }) {
         {box.totalPosts !== null && box.totalPosts > BOX_RECENT_COUNT && (
           <Link
             href={`/${box.config.id}`}
-            className="text-forg-muted hover:text-forg-gold-hover mt-1 inline-block text-[10px]"
+            className="text-forg-muted hover:text-forg-gold-hover mt-1 inline-block text-[10px] max-sm:mt-2 max-sm:block max-sm:text-right max-sm:text-[12px]"
           >
             전체 {box.totalPosts.toLocaleString("ko-KR")}건 →
           </Link>
@@ -202,7 +246,7 @@ function BoxRow({
   return (
     <Link
       href={`/${board}/${entry.postId}`}
-      className="text-forg-muted flex items-center gap-[3px] text-[12px] leading-tight hover:underline"
+      className="text-forg-muted max-sm:text-forg-ink flex items-center gap-[3px] text-[12px] leading-tight hover:underline max-sm:border-b max-sm:border-dotted max-sm:border-[#e3e3e3] max-sm:py-[7px] max-sm:text-[14px]"
     >
       <span className="truncate">{entry.title}</span>
       {entry.commentCount > 0 && (
@@ -214,6 +258,12 @@ function BoxRow({
       {fileIcon && <StateIcon url={fileIcon} width={9} height={9} label="첨부 있음" />}
       {linkIcon && <StateIcon url={linkIcon} width={13} height={13} label="링크 있음" />}
       {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
+      {/* Phone only: the date the 320px box had no room for. */}
+      {entry.createdAt >= "1990" && (
+        <span className="ml-auto shrink-0 pl-2 text-[11px] text-(--era-meta-fg) tabular-nums sm:hidden">
+          {entry.createdAt.slice(2, 4)}.{entry.createdAt.slice(5, 7)}.{entry.createdAt.slice(8, 10)}
+        </span>
+      )}
     </Link>
   );
 }
