@@ -45,11 +45,19 @@ Three tiers of data, all under `.docs/research/`:
 
 - **bronze** `archive/A/{board}/{post_id}.html` — raw Wayback captures, EUC-KR-encoded, treated as immutable. The downloader (`scripts/etl/download.py`) reads `cdx/e-policy-plan.json` and writes here. Phase A finished at 11,034/11,035; the missing one (`ScreenShot/10481`) is a fixed URL-encoding bug (`_ascii_safe_url` patch) that recovers on the next downloader run.
 - **silver** `archive-clean/A/{board}/{post_id}.html` — UTF-8 + Wayback chrome stripped, produced by `scripts/etl/01-decode.py` using BeautifulSoup4 + lxml (html5lib fallback). Atomic writes (`.tmp` then `rename`); idempotent so re-running only processes new files.
-- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON. Produced by `scripts/etl/02-parse-zeroboard.py` (Pydantic-validated). **13,290 posts across 37 boards** ship in git: UoBoard 4393 / Q_A 2735 / Role 1197 / Notice 862 / ScreenShot 656 / Events 477 / Items 229 / column 167 / UOForum 18 / Newbie 345 / newbieqna 39 / WOWNotice 7 / WowForum 2 / WOWEvents 1 / WOWScreen 1 / WowRole 1 (Phase B/C, P3.3). UoBoard2 (Gnuboard4 23건) excluded via `EXCLUDE_BOARDS` and deferred to P2.2's separate parser. `Post.capturedAt` is the real Wayback timestamp (sourced from `e-policy-plan.json` → `.progress.jsonl`, fail-loud if missing); `Post.parsedAt` is the ISO 8601 parse-time stamp.
-- **gold (index)** `src/content/boards/{board}/index-{N}.json` — paginated board index, 50 entries per page, `createdAt` desc. Produced by `scripts/etl/03-build-index.py`. **289 chunks** ship today; auto-rebuilds when posts grow.
+- **gold** `src/content/posts/{board}/{post_id}.json` — parsed, schema-conformant JSON. Produced by `scripts/etl/02-parse-zeroboard.py` (Pydantic-validated). **14,837 posts across 45 boards** ship in git (2026-10-01). Other engines have their own parsers: `02b` Gnuboard4 (incl. UoBoard2), `02d` Gnuboard5 (forg.kr), `02e` link/diary skins, `02f` Zeroboard 4.0, `02h` posts kept only in reply forms. `Post.capturedAt` is the real Wayback timestamp (sourced from `e-policy-plan.json` → `.progress.jsonl`, fail-loud if missing); `Post.parsedAt` is the ISO 8601 parse-time stamp.
+- **gold (index)** `src/content/boards/{board}/index-{N}.json` — paginated board index, 50 entries per page, `createdAt` desc. Produced by `scripts/etl/03-build-index.py`. **605 chunks** ship today (2026-10-01); auto-rebuilds when posts grow.
 - **recovered images** `public/img/posts/{board}/{post_id}/{filename}` — Wayback-fetched binaries plus per-post `.manifest.json` sidecars (`{filename, originalUrl, capturedAt, sizeBytes, sha256, digest}`). Produced by ADR-0010 Phase D (`scripts/etl/download-images.py`). Bytes are git-ignored and served from R2 (ADR-0018); sidecars are tracked. Comment emoticons live once in `public/img/emoticon/` (ADR-0017). Gold-tier `<img src>` is rewritten to `/img/posts/...` (recoverable) or `/img/placeholder/missing.svg` (unrecoverable) by Phase F (`scripts/etl/04-rewrite-image-urls.py`); both states preserve the original Wayback URL on `data-original-src`. ADR-0011 (git-direct) is superseded by ADR-0018.
 
 Wayback was downloaded with the `id_` modifier so the captures arrive without Wayback's chrome to begin with — `01-decode.py`'s chrome counters are normally 0. They become non-zero only if someone re-downloads with `if_`/`fw_`. Don't remove the cleanup logic on that basis.
+
+#### ETL re-run traps
+
+- Don't re-run `02-parse-zeroboard.py` over existing gold — it undoes Phase F rewrites and the emoticon store; patch fields with a targeted script (`05-repair-zeroboard-meta.py` is the model).
+- Don't re-run `extract-image-urls.py` for a few new posts — the manifest drifts; append the entries instead.
+- `pnpm deploy:search` has **no dry-run** — it uploads to R2 for real. `deploy:img --dry-run` does exist.
+- Board continuation (older posts shown under a successor board) is `CONTINUES` in `03-build-index.py` + `BoardMeta.continues` in `src/lib/boards.ts`; rebuild the index after changing either.
+- A bad character can be in the capture itself (map coordinates' `?` is a literal 0x3F in every 2001–2007 capture) — check raw bronze bytes before blaming decoding.
 
 #### Image recovery layer (ADR-0010 P3.0~3.2 + ADR-0012 Phase G)
 
@@ -109,10 +117,18 @@ back as documents:
   `<Link>`. `src/app/site/page.tsx` is the index inside the era frame.
 - Captures after 2016-08-31 are ignored — the domain was re-registered by a third
   party in 2023 and Wayback holds its parking page.
+- Search: Pagefind indexes `data-pagefind-body` only (the route wraps `/site/` pages in one); `next.config.ts` defaults `NEXT_PUBLIC_PAGEFIND_BASE` to `https://search.forg.co.kr/` when `CF_PAGES` is set. PR previews can't search (CORS).
 - Sources: `forg.co.kr`, `forg.dotple.com` and `forg.uospace.net` share one path
   space; `cdx-site.MIRRORS` maps forg's home directory on its earlier host
   (`hosting27.interpia98.net/~forg/`) onto the same paths. A query that selects a
   view (`?page=2`, `?id=62`) is part of the page's stem (`index--page-2`).
+
+#### Mobile layout
+
+- Desktop (≥800px, where 10+100+680+7 fits) must stay pixel-identical to the original; the shell switches at `min-[800px]`. Narrow-only fixes go behind `max-[799px]:`.
+- Below 800px the layout is our own interpretation (keep the palette): `NarrowList` rows, `MobileMenu` `<details>`, `/site/` pages reflow via `NARROW_CSS` in `src/app/site/[...path]/route.ts`.
+- Verify with `pnpm build && python3 -m http.server 8789 -d out` + puppeteer-core (`/usr/bin/chromium-browser`); diff desktop screenshots against production.
+- Prettier trims a leading space inside template-string class names (`overflow-hidden${x}` collapses) — build class lists with an array `.join(" ")`.
 
 #### 2014 main page layout (P2.4 completed)
 
@@ -163,6 +179,8 @@ The downloader runs for ~24h and is sensitive to interruption. It tracks state u
 - `.progress.jsonl` / `.errors.jsonl` — append-only logs (resume key)
 
 The script is resumable: re-running with the same args skips files that already landed on disk. Wayback IP-blocks aggressive clients — settings are 1 worker / 4s base delay / random jitter / exponential backoff / `BLOCK_THRESHOLD` consecutive refusals trigger a 1-hour sleep. Don't raise concurrency without explicit reason.
+
+Waiting on a job: `pgrep -f "download.py"` matches the waiting shell itself — use `[d]ownload.py` or the PID from `.run.pid` with `kill -0`.
 
 ## Tech stack notes (versions matter)
 
