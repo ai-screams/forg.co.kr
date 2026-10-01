@@ -34,9 +34,11 @@ Inputs:
 
 The queue entry's `raw_src` is the same value the parser extracted from
 the Zeroboard HTML, so `(board, post_id, raw_src)` is the join key we use
-when matching an `<img>` to its recovery state. For a placeholder tag the
-manifest carried `data-original-src` as `raw_src` (Phase B), so the same
-key works with that attribute in place of `src`.
+when matching an `<img>` to its recovery state. A placeholder carries the
+entry's `normalized_url` in `data-original-src` (state 4 writes it), which
+differs from `raw_src` whenever the post used a relative src
+(`essay/k1.jpg`), so recoverable entries are also keyed by
+`(board, post_id, normalized_url)`.
 """
 from __future__ import annotations
 
@@ -70,12 +72,13 @@ def build_lookup() -> dict[tuple[str, str, str], dict]:
     if QUEUE_FILE.exists():
         queue = json.loads(QUEUE_FILE.read_text(encoding="utf-8"))
         for e in queue:
-            key = (e["board"], e["post_id"], e["raw_src"])
-            lookup[key] = {
+            info = {
                 "state": "recoverable",
                 "normalized_url": e["normalized_url"],
                 "target_path": e["target_path"],
             }
+            lookup[(e["board"], e["post_id"], e["raw_src"])] = info
+            lookup.setdefault((e["board"], e["post_id"], e["normalized_url"]), info)
 
     if UNRECOVERABLE_FILE.exists():
         for line in UNRECOVERABLE_FILE.read_text(encoding="utf-8").splitlines():

@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "k1.jpg",
+    "originalUrl": "http://forg.co.kr:80/zboard/essay/k1.jpg",
+    "capturedAt": "20010910174018",
+    "sizeBytes": 163508,
+    "sha256": "8d85b5a240ed908ed464ef60f5b6fa51fe52e5f0350581ced41db7ac6491e435",
+    "digest": "YQOPC7PNYYGFAAJZ4T4AOBORIAI3KNKM"
+  },
+  {
+    "filename": "k2.jpg",
+    "originalUrl": "http://forg.co.kr:80/zboard/essay/k2.jpg",
+    "capturedAt": "20010910181718",
+    "sizeBytes": 93475,
+    "sha256": "9a6a65bad5d789c29f9f66f6f8f544cc3a1e44786aa1615f096be15f2dc9cc4e",
+    "digest": "OGBZM7QFC6Z7IKAPPJH2MHNXMM4ZCGWA"
+  }
+]

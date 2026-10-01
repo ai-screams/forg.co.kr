@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "s_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Smith/s_1.gif",
+    "capturedAt": "20030607100336",
+    "sizeBytes": 10298,
+    "sha256": "066b1449bb1ac48ad8075c13303284caddb87b389adf520b61979535de3e97f2",
+    "digest": "HBTNZNUQXGCNQQ2W3ITAGCPPY3FV3JEI"
+  },
+  {
+    "filename": "s_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Smith/s_2.gif",
+    "capturedAt": "20030607104017",
+    "sizeBytes": 11590,
+    "sha256": "20600364f7efc5f9f2ce6694c63b37136ff85611c5cc3290d1c811d705998354",
+    "digest": "RF4F4VNYULEPIEBRKUTGUKPOVP5QUCLK"
+  },
+  {
+    "filename": "w_hammer.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Smith/w_hammer.gif",
+    "capturedAt": "20030607121314",
+    "sizeBytes": 6541,
+    "sha256": "481990962441ff4f37c110d11eaf58b283538f13a9cd1002b7839b038f455ea1",
+    "digest": "HNRCCUHMPDJUOMAZ7XS5WWYVPYCLLDNB"
+  },
+  {
+    "filename": "w_stab.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Smith/w_stab.gif",
+    "capturedAt": "20030607123131",
+    "sizeBytes": 9817,
+    "sha256": "64a0cece4e56ea789a28fd0bd02fa9ea08e06cd54241812cfb2f8db6d496e01d",
+    "digest": "UNNXBC2VATVKZYJHJLA4LGQXRK4NLKQJ"
+  },
+  {
+    "filename": "w_sword.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/Smith/w_sword.gif",
+    "capturedAt": "20021206235700",
+    "sizeBytes": 6866,
+    "sha256": "0dd23cd605eda62b66b76f6a7208ef0776db6f2c625d14f9caad6c5f4feb0e03",
+    "digest": "JSGXZ336PH3GCFNQVTCSLZPDXON43XD3"
+  }
+]

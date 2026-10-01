@@ -40,6 +40,14 @@
     "digest": "UC3HSU42V4BMOZRKRHW434S5WKZOGXT5"
   },
   {
+    "filename": "c_fe.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/c_fe.gif",
+    "capturedAt": "20020305171203",
+    "sizeBytes": 323,
+    "sha256": "92cad031e4533a80fe9542dce4eafce4fb00fd61635a0d5545d6ea324db0e5f4",
+    "digest": "4LIKAQ54KWBSL7B2YPHGPCU3R7NEN6FL"
+  },
+  {
     "filename": "c_h.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/c_h.gif",
     "capturedAt": "20010813042543",
@@ -654,5 +662,13 @@
     "sizeBytes": 210,
     "sha256": "39c736cdec25a7c1b51956f280389b9768582fbf9e666ffa5e237c5f86746880",
     "digest": "QDVSFLBGQD2FVXZWEE2HVC7LHFYR43YF"
+  },
+  {
+    "filename": "vet_logo.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/vet_logo.gif",
+    "capturedAt": "20030520154305",
+    "sizeBytes": 823,
+    "sha256": "c4b6b7c00c35997109e89ceba120a32d0aa67581807239503e69092d89fbd65d",
+    "digest": "OCQQ3DYGJZHJEIUXGQKSK6CKIC4UDOGH"
   }
 ]

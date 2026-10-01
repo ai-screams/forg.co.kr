@@ -19,7 +19,6 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
-import urllib.parse
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -31,30 +30,23 @@ QUEUE = HERE / "site-image-queue.json"
 MISSES = HERE / "site-image-unrecoverable.jsonl"
 
 
-def _cdx_image():
-    spec = importlib.util.spec_from_file_location("cdx_image", HERE / "cdx-image.py")
+def _load(name: str, file: str):
+    spec = importlib.util.spec_from_file_location(name, HERE / file)
     assert spec and spec.loader
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
 
 
-def host_variants(url: str) -> set[str]:
-    """`canonical_key` keeps `www.` apart, and a page on forg.co.kr often
-    names an image that Wayback captured only under www.forg.co.kr (the
-    guild directory's shard icons) — or the other way round."""
-    u = urllib.parse.urlsplit(url)
-    host = (u.hostname or "").removeprefix("www.")
-    return {u._replace(netloc=h).geturl() for h in (host, f"www.{host}")}
-
-
 def main() -> None:
-    cdx = _cdx_image()
+    cdx = _load("cdx_image", "cdx-image.py")
     index, total = cdx.load_cdx_index([slug for slug, _ in cdx.PREFIX_LIST])
     refs = [json.loads(line) for line in REFS.read_text().splitlines() if line.strip()]
     queue, misses = [], []
     for ref in refs:
-        rows = [r for cand in host_variants(ref["url"]) for r in index.get(canonical_key(cand), [])]
+        rows = [
+            r for cand in cdx.forg_host_variants(ref["url"]) for r in index.get(canonical_key(cand), [])
+        ]
         row = cdx.pick_cdx_row(rows, ref["ts"])
         if row is None:
             misses.append(ref)

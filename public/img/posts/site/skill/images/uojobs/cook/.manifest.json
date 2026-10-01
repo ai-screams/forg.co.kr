@@ -286,5 +286,13 @@
     "sizeBytes": 579,
     "sha256": "5dc0468c652cd48c7932403e0dcc5696687128e2a84533c2af252143219da0d5",
     "digest": "BSDPNNQX23EYVPM5VOA427EUGBZES34N"
+  },
+  {
+    "filename": "waterp.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/cook/waterp.gif",
+    "capturedAt": "20030621023157",
+    "sizeBytes": 1022,
+    "sha256": "ef0bbd2c2952d7736051bdcf2dbde84bc62ec4fada0d456c633377ae36f9e480",
+    "digest": "KAT57GF3K3P22JFB6NFTTFVTF6NYUZ4W"
   }
 ]

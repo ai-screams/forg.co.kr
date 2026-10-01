@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "UObox_1.gif",
+    "originalUrl": "http://www.forg.co.kr/UObox_1.gif",
+    "capturedAt": "20071014084202",
+    "sizeBytes": 16587,
+    "sha256": "043707cb25f47b533c39d84e5ef8ae96a340f167962b0443db97a4be736ae5a9",
+    "digest": "WPAXS3VFJI4E63PHCQTQM6KTCVTISVSW"
+  },
+  {
+    "filename": "freeboard.gif",
+    "originalUrl": "http://forg.co.kr:80/freeboard.gif",
+    "capturedAt": "20010809170133",
+    "sizeBytes": 2263,
+    "sha256": "e8388f2ff181b36edd5c7b20c34bc2a63722939ababb344cfea5aed1dfd54cbb",
+    "digest": "J2PNF6LRFAYWQLWNUWZHCTLPN3AJASE6"
+  },
+  {
+    "filename": "main_notice.gif",
+    "originalUrl": "http://forg.co.kr:80/main_notice.gif",
+    "capturedAt": "20011024175504",
+    "sizeBytes": 3349,
+    "sha256": "d2e9acce31f0e93623d51521465af3981244a17dd45b96cdcd56d68bf6456b95",
+    "digest": "PUTUHPHQ3PQ3TDOUGXCPOGIMAKJTIOOQ"
+  },
+  {
+    "filename": "main_notice_1.gif",
+    "originalUrl": "http://forg.co.kr:80/main_notice_1.gif",
+    "capturedAt": "20011024175832",
+    "sizeBytes": 4494,
+    "sha256": "08c876bd475fa2c07a8f52066dc38446ccedae8e1d4dbfee43d532bd33080679",
+    "digest": "QWFIU55NMCW6TM4T4WKQ34TNEVTGQFVQ"
+  },
+  {
+    "filename": "question.gif",
+    "originalUrl": "http://forg.co.kr:80/question.gif",
+    "capturedAt": "20011024180300",
+    "sizeBytes": 2305,
+    "sha256": "1f582d26c7a31006bafad57089e69c3a5bceea0bc11cf463d9f0c418a6e1d4a4",
+    "digest": "42XX7XST5W54K2WYPBMBV2XIDA6TDWXH"
+  },
+  {
+    "filename": "sun.gif",
+    "originalUrl": "http://forg.dotple.com:80/sun.gif",
+    "capturedAt": "20020228134624",
+    "sizeBytes": 1369,
+    "sha256": "cb2586bd652df473eebab6ad8eb363d65da06cecd689306f60474da16717bd3e",
+    "digest": "LULDES4V4LRJLH4CM76AV7NQBWM77VLX"
+  }
+]

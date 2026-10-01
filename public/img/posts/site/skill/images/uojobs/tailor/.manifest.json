@@ -1,5 +1,13 @@
 [
   {
+    "filename": "bandage.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bandage.gif",
+    "capturedAt": "20031123222004",
+    "sizeBytes": 363,
+    "sha256": "dcf76d74e1b7da5ead819476de0d1b30dec5ea1e4b88bbbebd9b2c2c2cc16238",
+    "digest": "OVQPCFCEC5JTW4HR2CIUCLMZFU6X5FJL"
+  },
+  {
     "filename": "bandana.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bandana.gif",
     "capturedAt": "20040119102904",
@@ -64,12 +72,36 @@
     "digest": "DWTVSFETKOLQDQB7MRFHEYBT5RVVLKBT"
   },
   {
+    "filename": "bolt_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bolt_2.gif",
+    "capturedAt": "20031123230901",
+    "sizeBytes": 748,
+    "sha256": "d3fb0d3979b9355022bffbc1ea436f2d87a7bde9f396c9af1d24c2148d27bdb7",
+    "digest": "2J7U4SXOC43UT6LH67GGEEMXCEHTE54H"
+  },
+  {
     "filename": "bolt_3.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bolt_3.gif",
     "capturedAt": "20040119142709",
     "sizeBytes": 803,
     "sha256": "6aef25ca14c62c9d3e87a4f587df7c9d66e4cea65a97f9dbc6ea559b5df2f115",
     "digest": "EE55S6FZKDMHTGRVK4PB3CJ73CJAIG37"
+  },
+  {
+    "filename": "bone_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bone_1.gif",
+    "capturedAt": "20031123235407",
+    "sizeBytes": 628,
+    "sha256": "f13017d29dc0b745f59fb8dbbb8c3bd7859856a5fb99c364745013f9380c2e0b",
+    "digest": "3W4CEYJZKDMERMIYHUZU3ZPYAUFGOGXG"
+  },
+  {
+    "filename": "bone_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/bone_2.gif",
+    "capturedAt": "20031124001453",
+    "sizeBytes": 232,
+    "sha256": "385f6909d84b2fd3ba26f529ebfe043aa76f73f9979d1a63223ae224518e9f05",
+    "digest": "C4RCS2XZ6GE5SLIUVAUZ5VXKOQBH4USP"
   },
   {
     "filename": "bong.gif",
@@ -118,6 +150,14 @@
     "sizeBytes": 429,
     "sha256": "d55b2b0520aa30534b3c57aec00aa1cd63ef66539f0ba73c69145a2cbf18312f",
     "digest": "KIZ63VFZKQ4W2HO5YT4CPTOPYTJM4TDT"
+  },
+  {
+    "filename": "cotton_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/cotton_1.gif",
+    "capturedAt": "20031124012729",
+    "sizeBytes": 776,
+    "sha256": "eec23ee594b16b01c618cc2ce209ebe324958dde4bd38a8c31a7e349cbd9f4f5",
+    "digest": "YOGWTRD2L52MTVD3J7ENTDCL6M3STOD3"
   },
   {
     "filename": "cotton_3.gif",

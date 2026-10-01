@@ -1,5 +1,13 @@
 [
   {
+    "filename": "cloak.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tinkering/cloak.gif",
+    "capturedAt": "20030607050610",
+    "sizeBytes": 662,
+    "sha256": "b1a7e45d711defa613e522d4bbe887d09b5a91103d9f0cc06d8d9b63d300760b",
+    "digest": "SASHY5GHSFGYAALM3NOIUTUXNGMYW6WQ"
+  },
+  {
     "filename": "cloak_1.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tinkering/cloak_1.gif",
     "capturedAt": "20030720060402",
@@ -182,6 +190,14 @@
     "sizeBytes": 315,
     "sha256": "24533e9524ca3963b48769103abeb47e04d6ba9cc942ba4c1287af601eba969c",
     "digest": "NW63J7CNFGKBYRVGYZTEREVTPSQFWAYD"
+  },
+  {
+    "filename": "tinkertool.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tinkering/tinkertool.gif",
+    "capturedAt": "20030607051238",
+    "sizeBytes": 1237,
+    "sha256": "19714297a0033c23ff791927e1d7bbd7a8b8244095c6b5e185d2a283fd071231",
+    "digest": "JRU6LH7N2YREJH7Q2L27LH77376SXZDV"
   },
   {
     "filename": "tinkertool_1.gif",
