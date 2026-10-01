@@ -83,6 +83,7 @@ TAGS = {
     "table", "caption", "col", "colgroup", "tbody", "thead", "tfoot", "tr", "td", "th",
     "ul", "ol", "li", "dl", "dt", "dd", "blockquote", "pre", "code",
     "h1", "h2", "h3", "h4", "h5", "h6",
+    "select", "option",  # only the jump menus `goto_selects` keeps
 }  # fmt: skip
 LAYOUT = {"align", "valign", "width", "height", "bgcolor", "background", "nowrap"}
 ATTRS: dict[str, set[str]] = {
@@ -99,6 +100,7 @@ ATTRS: dict[str, set[str]] = {
     "hr": {"size", "width", "noshade", "color"},
     "p": {"align"}, "div": {"align"},
     "ol": {"type", "start"}, "ul": {"type"}, "li": {"type", "value"},
+    "select": {"size", "data-goto"}, "option": {"value", "selected"},
 }  # fmt: skip
 BODY_STYLE = {"bgcolor": "background-color", "text": "color"}
 FRAMESET_ATTRS = {"rows", "cols", "border", "frameborder", "framespacing", "bordercolor"}
@@ -399,6 +401,39 @@ def restore_degree_signs(soup: BeautifulSoup) -> int:
     return n
 
 
+GOTO_RE = re.compile(r"namosw_goto_byselect\(\s*this\s*,\s*'(\w+)'\s*\)")
+
+
+def goto_selects(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> int:
+    """Namo WebEditor's jump menu: a `<select>` whose `onchange` called
+    `namosw_goto_byselect(this, target)` to open the chosen option's URL in
+    `self`, `parent` or a new window (`blank`). The menu is kept with its
+    target in `data-goto` and each URL resolved like a link; the `/site/`
+    route adds the script that follows it. Any other `<select>`
+    belonged to a form, which is gone, so it is unwrapped to its text as
+    before."""
+    kept = 0
+    for sel in soup.find_all("select"):
+        m = GOTO_RE.search(sel.get("onchange", ""))
+        if not m:
+            for opt in sel.find_all("option"):
+                opt.unwrap()
+            sel.unwrap()
+            continue
+        sel["data-goto"] = m.group(1)
+        for opt in sel.find_all("option"):
+            # nh3 does not treat `value` as a URL, so only a resolved, safe
+            # one is put back; header and separator options have none.
+            raw = opt.attrs.pop("value", None)
+            if raw is None:
+                continue
+            href = safe_url(resolver.link(raw, base, ts, page)[0])
+            if href is not None:
+                opt["value"] = href
+        kept += 1
+    return kept
+
+
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
     for el in soup.find_all(True):
         for attr in [a for a in el.attrs if a.lower().startswith("on")]:
@@ -622,6 +657,9 @@ def main() -> None:
             # museum path that would then be resolved a second time.
             doc["bodyStyle"] = body_style(soup.body, resolver, base, ts, stem)
             unroll_slideshow(soup)
+            stats["goto_selects"] = stats.get("goto_selects", 0) + goto_selects(
+                soup, resolver, base, ts, stem
+            )
             stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
             rewrite(soup, resolver, base, ts, stem)
             doc["css"] = head_css(soup)
