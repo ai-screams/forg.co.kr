@@ -88,7 +88,7 @@ const NARROW_CSS = `@media (max-width:799px){
 body{margin:8px!important;min-width:0!important}
 table{width:100%!important;max-width:100%!important;height:auto!important}
 td,th{width:auto!important;height:auto!important;white-space:normal!important}
-img{max-width:100%!important;height:auto!important}
+img{max-width:calc(100vw - 16px)!important;height:auto!important}
 [style*="position:absolute"],[style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
 }`;
