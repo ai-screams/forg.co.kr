@@ -65,7 +65,9 @@ FORG_HOSTS = {"forg.co.kr", "forg.dotple.com", "forg.uospace.net"}
 # The site's last normal capture is 2016-08-20; from September the domain only
 # redirects, and in 2023 someone else registered it (a parking page).
 LAST_TS = "20160831235959"
-MISSING_IMG = "/img/placeholder/missing.svg"
+# The posts' placeholder minus its dashed frame: the /site/ route draws the
+# frame round the whole slot, and a second one inside it doubled up.
+MISSING_IMG = "/img/placeholder/missing-slot.svg"
 IMG_EXT = re.compile(r"\.(gif|jpe?g|png|bmp)$", re.I)
 PAGE_EXT = re.compile(r"\.(?:html?|php)$", re.I)
 BOARD_SCRIPT = re.compile(r"/(?:_zb|zboard|zb|~forg/zboard)/(?:zboard|view)\.php$")
