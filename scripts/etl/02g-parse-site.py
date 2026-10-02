@@ -437,6 +437,24 @@ def restore_degree_signs(soup: BeautifulSoup) -> int:
     return n
 
 
+# "Catalog" padded with asterisks: the pop-up list's box (`font#combos`) and
+# the jump menus' first line. The route draws the box as a flat combo box with
+# an arrow, and a select draws its own, so the label is "Catalog"; the original
+# stays as the tooltip.
+CATALOG_LABEL = re.compile(r"Catalog\*+")
+
+
+def tidy_catalog_labels(soup: BeautifulSoup) -> int:
+    n = 0
+    for el in soup.find_all(["font", "option"]):
+        text = el.get_text()
+        if CATALOG_LABEL.fullmatch(text):
+            el.string = "Catalog"
+            el["title"] = f"원래 표기: {text}"
+            n += 1
+    return n
+
+
 GOTO_RE = re.compile(r"namosw_goto_byselect\(\s*this\s*,\s*'(\w+)'\s*\)")
 
 
@@ -809,6 +827,7 @@ def main() -> None:
                 soup, resolver, base, ts, stem
             )
             stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
+            stats["catalog_labels"] = stats.get("catalog_labels", 0) + tidy_catalog_labels(soup)
             rewrite(soup, resolver, base, ts, stem)
             doc["css"] = head_css(soup)
             inner = soup.body.decode_contents() if soup.body else str(soup)
