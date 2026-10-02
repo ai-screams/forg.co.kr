@@ -100,6 +100,7 @@ ATTRS: dict[str, set[str]] = {
     "hr": {"size", "width", "noshade", "color"},
     "p": {"align"}, "div": {"align"},
     "ol": {"type", "start"}, "ul": {"type"}, "li": {"type", "value"},
+    "span": {"data-recovery", "data-original-src"},
     "select": {"size", "data-goto"}, "option": {"value", "selected"},
 }  # fmt: skip
 BODY_STYLE = {"bgcolor": "background-color", "text": "color"}
@@ -534,6 +535,26 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
             if original:
                 img["data-recovery"] = "missing"
                 img["data-original-src"] = original
+                # The placeholder is 64×48; on a phone `height:auto` would give
+                # it that shape instead of the slot the page set (a 110×20 menu
+                # button turned into a 49×37 block).
+                w, h = img.get("width", ""), img.get("height", "")
+                sized = w.isdigit() and h.isdigit() and int(w) and int(h)
+                if sized:
+                    img["style"] = f"{img.get('style', '').rstrip('; ')};aspect-ratio:{w}/{h}".lstrip(";")
+                label = (img.get("alt") or "").strip()
+                if label:
+                    # A menu button or caption that names itself (22 pages'
+                    # 스텔스 button): its words in a box of the slot's size
+                    # read and click better than the picture placeholder.
+                    box = soup.new_tag("span", attrs={
+                        "class": "forg-missing", "data-recovery": "missing",
+                        "data-original-src": original,
+                    })
+                    if sized:
+                        box["style"] = f"width:{w}px;height:{h}px"
+                    box.string = label
+                    img.replace_with(box)
     for el in soup.find_all(attrs={"background": True}):
         src, _ = resolver.image(el["background"], base, ts, page)
         if src == MISSING_IMG:
