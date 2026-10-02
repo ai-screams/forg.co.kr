@@ -16,6 +16,14 @@ two recovered copies exist and all have one SHA-256; anything else stops the
 run. The target folder's `.manifest.json` gets an entry with no `capturedAt`
 and the copies it was taken from in `borrowedFrom`.
 
+A folder forg copied whole into a later section fills its own gaps from the
+copy (MIRRORED). The Ultima history's pictures (`skill/images/uohistory/`,
+2002) reappear under `skill_newbie/images/uohistory/` (captured 2004–2007):
+every file both kept is byte-identical, so a picture only the copy kept is
+taken for the gap. That needs at least MIN_SHARED files kept in both, all
+identical; anything else stops the run. Only pictures a page uses and Wayback
+did not keep are copied (`site-image-unrecoverable.jsonl`).
+
 USAGE (after download-images.py, before 02g-parse-site.py)
     python3 scripts/etl/site-image-borrow.py [--dry-run]
 """
@@ -42,6 +50,9 @@ BORROW = [
     "skill/images/left_menu/alpha/alpha_background_2.gif",
 ]
 
+MIRRORED = [("skill/images/uohistory", "skill_newbie/images/uohistory")]
+MIN_SHARED = 5
+
 
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -61,6 +72,23 @@ def borrow(root: Path, target: str) -> tuple[bytes, list[str]] | None:
     if len(copies) < 2 or len(digests) != 1:
         raise ValueError(f"{target}: {len(copies)} copies with {len(digests)} different contents")
     return copies[0].read_bytes(), [p.relative_to(root).as_posix() for p in copies]
+
+
+def mirror_gaps(root: Path, folder: str, copy: str, wanted: set[str]) -> list[tuple[str, bytes]]:
+    """The files of `wanted` (paths under `folder`) missing there and kept in
+    `copy`, with their bytes. Raises unless the two folders share at least
+    MIN_SHARED files, all byte-identical."""
+    shared = [p.name for p in (root / folder).iterdir()
+              if p.is_file() and not p.name.startswith(".") and (root / copy / p.name).is_file()]
+    differ = [n for n in shared if sha256((root / folder / n).read_bytes()) != sha256((root / copy / n).read_bytes())]
+    if len(shared) < MIN_SHARED or differ:
+        raise ValueError(f"{folder} vs {copy}: {len(shared)} shared files, {len(differ)} differ")
+    gaps = []
+    for path in sorted(wanted):
+        name = path.rsplit("/", 1)[-1]
+        if path.rsplit("/", 1)[0] == folder and not (root / path).is_file() and (root / copy / name).is_file():
+            gaps.append((path, (root / copy / name).read_bytes()))
+    return gaps
 
 
 def record(root: Path, target: str, data: bytes, sources: list[str], original_url: str) -> None:
@@ -103,7 +131,14 @@ def main() -> None:
             (SITE_IMG / target).parent.mkdir(parents=True, exist_ok=True)
             (SITE_IMG / target).write_bytes(data)
             record(SITE_IMG, target, data, sources, urls[target])
-    print(f"[borrow] filled={filled} of {len(BORROW)}", file=sys.stderr)
+    for folder, copy in MIRRORED:
+        for target, data in mirror_gaps(SITE_IMG, folder, copy, set(urls)):
+            print(f"[borrow] {target} ← {copy}/", file=sys.stderr)
+            filled += 1
+            if not args.dry_run:
+                (SITE_IMG / target).write_bytes(data)
+                record(SITE_IMG, target, data, [f"{copy}/{target.rsplit('/', 1)[-1]}"], urls[target])
+    print(f"[borrow] filled={filled}", file=sys.stderr)
 
 
 if __name__ == "__main__":

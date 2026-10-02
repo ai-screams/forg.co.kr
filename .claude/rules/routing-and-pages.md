@@ -22,7 +22,7 @@ All 67 boards in `src/lib/boards.ts` are built. `(board)/[board]/page.tsx` picks
 
 forg's hand-written guide pages (`/skill/`, `/map/`, `/dungeon/`, the root frames, …) are served back as whole documents.
 
-- ETL: `cdx-site.py` (phase `S`) → `download.py --phase S` → `01-decode.py` → `02g-parse-site.py` → `src/content/pages/{stem}.json` (`stem` = path without `.htm`/`.html`; a view-selecting query joins the stem, `index--page-2`). Images: `site-image-queue.py` → `download-images.py --queue scripts/etl/site-image-queue.json` → `site-image-borrow.py` (seven shared frame images Wayback kept only in other sections) → re-run `02g`.
+- ETL: `cdx-site.py` (phase `S`) → `download.py --phase S` → `01-decode.py` → `02g-parse-site.py` → `src/content/pages/{stem}.json` (`stem` = path without `.htm`/`.html`; a view-selecting query joins the stem, `index--page-2`). Images: `site-image-queue.py` → `download-images.py --queue scripts/etl/site-image-queue.json` → `site-image-borrow.py` (shared frame images and the Ultima history's pictures, kept only in byte-identical copies elsewhere) → re-run `02g`.
 - Sources: `forg.co.kr`, `forg.dotple.com`, `forg.uospace.net` share one path space; `cdx-site.MIRRORS` maps `hosting27.interpia98.net/~forg/` onto it.
 - `src/app/site/[...path]/route.ts` is a **route handler**: static export writes `out/site/{stem}/index.html`. No layout applies, so link to it with `<a>`, not `<Link>`.
 - Each page keeps the rendering mode of its capture (`mode`, 02g RENDERING MODE): 536 of 739 had no doctype and are served without one (a 537th is member-only), in quirks mode like the original. CSS the route injects must work in every mode; check what the page's own rules already give in quirks mode before overriding them.

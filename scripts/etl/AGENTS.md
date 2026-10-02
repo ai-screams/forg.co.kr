@@ -46,7 +46,7 @@ first and don't duplicate it here.
 | `migrate-emoticon-store.py`      | One-off — moves duplicated comment emoticons into the shared `public/img/emoticon/` store                                |
 | `recover-chrome.py`              | Single-URL probes for site chrome assets (`public/img/chrome/`), supports `--era 2003`/`--era 2014`                      |
 | `site-image-queue.py`            | Joins `02g`'s `site-image-refs.jsonl` against CDX sweeps into `site-image-queue.json`                                    |
-| `site-image-borrow.py`           | Fills seven shared frame images under `skill/images/left_menu/` from byte-identical copies in other sections             |
+| `site-image-borrow.py`           | Fills missing site images from byte-identical copies: seven shared frame images, and folders copied whole (`uohistory`)  |
 | `run-phase-g-chain.sh`           | Orchestrates the Phase G chain: fallback probe to join to download to rewrite to re-measure                              |
 | `requirements.txt`               | Pinned deps: `beautifulsoup4>=4.13.0`, `lxml>=5.3.0`, `html5lib>=1.1`, `nh3>=0.2.0`, `pydantic>=2.10.0`, `pytest>=8.4.0` |
 | `image-manifest.jsonl`           | Phase B output — one line per `<img>` reference across all gold posts                                                    |
