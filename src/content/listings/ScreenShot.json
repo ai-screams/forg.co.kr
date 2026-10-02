@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 35,
   "totalReported": 1055,
-  "generatedAt": "2026-09-20T23:02:41.334903Z",
+  "generatedAt": "2026-10-01T11:29:00.772921Z",
   "entries": [
     {
       "no": "11504",
@@ -9252,13 +9252,13 @@
       "author": "dhgus65",
       "authorMemberNo": "1349",
       "createdAt": "2002-07-06",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 715,
       "commentCount": 3,
       "isNotice": false,
       "capturedAt": "20071031000427",
       "listPage": 51,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "65",
@@ -9267,13 +9267,13 @@
       "author": "dhgus65",
       "authorMemberNo": "1349",
       "createdAt": "2002-07-06",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 937,
       "commentCount": 6,
       "isNotice": false,
       "capturedAt": "20071031000427",
       "listPage": 51,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "63",
@@ -9282,13 +9282,13 @@
       "author": "jlucky1",
       "authorMemberNo": "1522",
       "createdAt": "2002-07-04",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 1229,
       "commentCount": 12,
       "isNotice": false,
       "capturedAt": "20071031000427",
       "listPage": 51,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "62",
@@ -9297,13 +9297,13 @@
       "author": "전설의빨간테이프",
       "authorMemberNo": "1510",
       "createdAt": "2002-07-04",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 813,
       "commentCount": 8,
       "isNotice": false,
       "capturedAt": "20071031000427",
       "listPage": 51,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "59",

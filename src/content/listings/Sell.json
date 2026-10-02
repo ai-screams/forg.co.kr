@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 17,
   "totalReported": 1906,
-  "generatedAt": "2026-09-20T23:02:41.483805Z",
+  "generatedAt": "2026-10-01T11:29:00.936340Z",
   "entries": [
     {
       "no": "5161",
@@ -3371,14 +3371,14 @@
       "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
-      "createdAt": "2002-12-08",
+      "createdAt": "2001-03-16",
       "yearApprox": false,
       "hits": 6079,
       "commentCount": 6,
       "isNotice": true,
       "capturedAt": "20021028045831",
       "listPage": 1,
-      "hasPost": false
+      "hasPost": true
     }
   ]
 }

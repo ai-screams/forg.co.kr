@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 19,
   "totalReported": 454,
-  "generatedAt": "2026-09-20T23:02:38.213228Z",
+  "generatedAt": "2026-10-01T11:28:57.404438Z",
   "entries": [
     {
       "no": "502",
@@ -3963,7 +3963,7 @@
       "isNotice": false,
       "capturedAt": "20030502162415",
       "listPage": 18,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "87",
@@ -4218,7 +4218,7 @@
       "isNotice": false,
       "capturedAt": "20030822105021",
       "listPage": 22,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "32",
@@ -4293,7 +4293,7 @@
       "isNotice": false,
       "capturedAt": "20030822105021",
       "listPage": 22,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "27",
