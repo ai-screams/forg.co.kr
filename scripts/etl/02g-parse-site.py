@@ -478,14 +478,32 @@ MEMBER_ONLY_SOURCES = {
     "skill_knowhow/champions_2": "dungeon/champions",  # 펠루카 던전 챔피언
     "skill_knowhow/champions_3": "dungeon/champions",  # 펠루카 T2A 챔피언
     "skill/uo_vet_carto_1": "skill_index/uo_vet_carto_1",  # 보물지도 등급표 (moved to /skill_index/)
+    # Not the same document: the 2003 frame's 울온협력기술 tab opened this
+    # section landing, the one walled page of the section. Its 18 skill pages
+    # are open and share a menu; the tab now opens its first entry.
+    "skill/uo_veteran": "skill/uo_vet_mu",  # Musicianship+
 }
+# A page whose member check failed at capture time shows PHP's include
+# warning instead of the page (skill/uo_knowhow_addon_3, 2002).
+MEMBER_AUTH_ERROR = re.compile(r"Failed opening[^<]*?(?:<[^>]+>[^<]*?)*?member_auth\.php", re.S)
+# The notice lists the open pages beside a member-only page when there are
+# this many or fewer; past that it links the section in the page list.
+NEARBY_MAX = 10
+
+
+def folder_of(stem: str) -> str:
+    return stem.rsplit("/", 1)[0] if "/" in stem else ""
 
 
 def open_member_only(docs: dict[str, dict]) -> int:
     """Point a login-walled page at the open capture of the same document,
-    or mark it `memberOnly` when there is none."""
+    or mark it `memberOnly` when there is none, with the open pages beside it
+    (`openNearby`) so its notice is not a dead end."""
     opened = 0
     for stem, doc in docs.items():
+        if doc["kind"] == "page" and MEMBER_AUTH_ERROR.search(doc["html"]):
+            doc["memberOnly"] = True
+            continue
         if doc["redirectTo"] != LOGIN_NOTICE:
             continue
         source = MEMBER_ONLY_SOURCES.get(stem)
@@ -494,6 +512,14 @@ def open_member_only(docs: dict[str, dict]) -> int:
             opened += 1
         else:
             doc["memberOnly"] = True
+    for stem, doc in docs.items():
+        if not doc.get("memberOnly"):
+            continue
+        near = sorted(
+            s for s, d in docs.items()
+            if d["kind"] == "page" and not d.get("memberOnly") and folder_of(s) == folder_of(stem)
+        )
+        doc["openNearby"] = [{"stem": s, "title": docs[s]["title"]} for s in near] if len(near) <= NEARBY_MAX else []
     return opened
 
 

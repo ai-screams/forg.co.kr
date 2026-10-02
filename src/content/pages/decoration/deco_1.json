@@ -24,5 +24,15 @@
   "html": "",
   "redirectTo": "/site/faq_1/",
   "baseTarget": null,
-  "memberOnly": true
+  "memberOnly": true,
+  "openNearby": [
+    {
+      "stem": "decoration/deco",
+      "title": "Decoration World"
+    },
+    {
+      "stem": "decoration/deco_basic",
+      "title": "Decoration World"
+    }
+  ]
 }

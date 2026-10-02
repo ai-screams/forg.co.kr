@@ -16,5 +16,23 @@
   "html": "",
   "redirectTo": "/site/faq_1/",
   "baseTarget": null,
-  "memberOnly": true
+  "memberOnly": true,
+  "openNearby": [
+    {
+      "stem": "skill_knowhow/uo_knowhow",
+      "title": "UO.Tips"
+    },
+    {
+      "stem": "skill_knowhow/uo_knowhow_addon_7_1",
+      "title": "초록가시리소스의기능"
+    },
+    {
+      "stem": "skill_knowhow/uo_knowhow_tmap",
+      "title": "보물지도(대륙)"
+    },
+    {
+      "stem": "skill_knowhow/uo_knowhow_tmapi",
+      "title": "보물지도(섬)"
+    }
+  ]
 }

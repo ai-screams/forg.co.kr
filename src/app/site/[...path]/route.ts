@@ -14,7 +14,13 @@
  */
 
 import { withImgBaseEverywhere } from "@/lib/img-base";
-import { getAllSiteStems, getSitePage, type SitePage } from "@/lib/site-pages";
+import {
+  getAllSiteStems,
+  getSitePage,
+  sectionAnchor,
+  sectionOf,
+  type SitePage,
+} from "@/lib/site-pages";
 
 export const dynamicParams = false;
 
@@ -123,17 +129,36 @@ function linkColours(style: Record<string, string>): string {
 // A page forg showed members only. Wayback visited as a guest and kept the
 // refresh to the login notice; there is nothing else to show, so the page
 // says so rather than sending the visitor to a login no one can do.
+function nearby(page: SitePage): string {
+  const open = page.openNearby ?? [];
+  if (open.length === 0) return "";
+  const items = open
+    .map(
+      (p) =>
+        `<li><a href="/site/${escapeHtml(p.stem)}/">${escapeHtml(p.title)}</a> <span class="forg-path">/${escapeHtml(p.stem)}</span></li>`,
+    )
+    .join("");
+  return `<p>같은 구역에서 볼 수 있는 페이지:</p><ul>${items}</ul>`;
+}
+
 function memberOnly(page: SitePage): string {
   const style = `<style>${BAR_CSS}
 .forg-member-only{max-width:560px;margin:48px auto;padding:0 16px;font:14px/1.7 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#333}
 .forg-member-only h1{font-size:18px;margin:0 0 12px}
-.forg-member-only a{color:#8a6100}</style><script>${IN_FRAME_SCRIPT}</script>`;
+.forg-member-only a{color:#8a6100}
+.forg-member-only ul{margin:0 0 12px;padding-left:20px}
+.forg-member-only .forg-path{color:#888;font-size:12px}</style><script>${IN_FRAME_SCRIPT}</script>`;
   return `<!doctype html><html lang="ko">${head(page, style)}<body>
 ${museumBar(page)}
 <div class="forg-member-only">
 <h1>${escapeHtml(page.title)}</h1>
-<p>forg에서 회원만 볼 수 있던 페이지입니다. 이 안내 자료는 로그인한 회원에게만 보였고, 손님에게는 로그인 안내가 떴습니다. Wayback도 손님으로 저장해서 이 주소에 남은 것은 그 안내뿐이고, 같은 내용이 로그인 없이 저장된 더 이른 캡처도 찾지 못했습니다.</p>
-<p><a href="/site/faq_1/">당시 손님에게 뜨던 로그인 안내</a> · <a href="/site/">사이트 페이지 목록</a></p>
+<p>forg에서 회원만 볼 수 있던 페이지입니다. ${
+    page.kind === "page"
+      ? "Wayback이 저장할 때 회원 확인 스크립트가 오류를 내서, 이 주소에는 PHP 경고만 남았습니다."
+      : "이 안내 자료는 로그인한 회원에게만 보였고, 손님에게는 로그인 안내가 떴습니다. Wayback도 손님으로 저장해서 이 주소에 남은 것은 그 안내뿐입니다."
+  } 같은 내용이 로그인 없이 저장된 더 이른 캡처도 찾지 못했습니다.</p>
+${nearby(page)}
+<p><a href="/site/faq_1/">당시 손님에게 뜨던 로그인 안내</a> · <a href="/site/#${sectionAnchor(sectionOf(page))}">사이트 페이지 목록</a></p>
 </div>
 </body></html>`;
 }

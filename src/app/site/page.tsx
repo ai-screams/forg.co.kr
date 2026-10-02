@@ -9,7 +9,7 @@
 import type { Metadata } from "next";
 
 import { EraShell } from "@/components/era-shell";
-import { getAllSitePages, type SitePage } from "@/lib/site-pages";
+import { getAllSitePages, sectionAnchor, sectionOf, type SitePage } from "@/lib/site-pages";
 
 export const metadata: Metadata = {
   title: "사이트 페이지 — forg.co.kr",
@@ -41,11 +41,6 @@ const SECTION_NAMES: Record<string, string> = {
   wow: "월드 오브 워크래프트 (wow)",
 };
 
-function sectionOf(page: SitePage): string {
-  const i = page.stem.indexOf("/");
-  return i < 0 ? "" : page.stem.slice(0, i);
-}
-
 export default async function SiteIndexPage() {
   const pages = (await getAllSitePages()).filter((p) => p.kind !== "redirect");
   const sections = new Map<string, SitePage[]>();
@@ -68,7 +63,7 @@ export default async function SiteIndexPage() {
           </p>
         </header>
         {order.map((s) => (
-          <section key={s || "root"} className="mb-4">
+          <section key={s || "root"} id={sectionAnchor(s)} className="mb-4">
             <h2 className="border-b border-(--era-input-border) pb-[2px] text-[12px] font-bold">
               {SECTION_NAMES[s] ?? s}
             </h2>
