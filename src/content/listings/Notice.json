@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 41,
   "totalReported": 874,
-  "generatedAt": "2026-09-20T23:02:39.454876Z",
+  "generatedAt": "2026-10-01T11:28:58.731679Z",
   "entries": [
     {
       "no": "972",
@@ -5028,7 +5028,7 @@
       "isNotice": false,
       "capturedAt": "20030530201641",
       "listPage": 27,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "319",
@@ -5088,7 +5088,7 @@
       "isNotice": false,
       "capturedAt": "20030530201641",
       "listPage": 27,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "315",
@@ -5118,7 +5118,7 @@
       "isNotice": false,
       "capturedAt": "20030530201641",
       "listPage": 27,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "313",
@@ -5148,7 +5148,7 @@
       "isNotice": false,
       "capturedAt": "20030530201641",
       "listPage": 27,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "311",
@@ -5208,7 +5208,7 @@
       "isNotice": false,
       "capturedAt": "20030530201641",
       "listPage": 27,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "307",
@@ -5328,7 +5328,7 @@
       "isNotice": false,
       "capturedAt": "20030515124832",
       "listPage": 28,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "288",
@@ -5403,7 +5403,7 @@
       "isNotice": false,
       "capturedAt": "20030515124832",
       "listPage": 28,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "283",
@@ -5592,7 +5592,7 @@
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-01-02",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 484,
       "commentCount": 0,
       "isNotice": false,
@@ -5607,13 +5607,13 @@
       "author": "Forg",
       "authorMemberNo": "1",
       "createdAt": "2002-01-02",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 748,
       "commentCount": 0,
       "isNotice": false,
       "capturedAt": "20030525092932",
       "listPage": 29,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "269",
@@ -5733,7 +5733,7 @@
       "isNotice": false,
       "capturedAt": "20030525092932",
       "listPage": 29,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "261",
@@ -5763,7 +5763,7 @@
       "isNotice": false,
       "capturedAt": "20030525092932",
       "listPage": 29,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "259",
@@ -5823,7 +5823,7 @@
       "isNotice": false,
       "capturedAt": "20030525092932",
       "listPage": 29,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "255",
@@ -5928,7 +5928,7 @@
       "isNotice": false,
       "capturedAt": "20030515124722",
       "listPage": 30,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "244",
@@ -5943,7 +5943,7 @@
       "isNotice": false,
       "capturedAt": "20030515124722",
       "listPage": 30,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "243",
@@ -6063,7 +6063,7 @@
       "isNotice": false,
       "capturedAt": "20030529023609",
       "listPage": 31,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "235",
@@ -6138,7 +6138,7 @@
       "isNotice": false,
       "capturedAt": "20030529023609",
       "listPage": 31,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "230",
@@ -6333,7 +6333,7 @@
       "isNotice": false,
       "capturedAt": "20030529023609",
       "listPage": 31,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "209",
@@ -6753,7 +6753,7 @@
       "isNotice": false,
       "capturedAt": "20030515112541",
       "listPage": 33,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "180",
@@ -6768,7 +6768,7 @@
       "isNotice": false,
       "capturedAt": "20030515112541",
       "listPage": 33,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "179",
@@ -6843,7 +6843,7 @@
       "isNotice": false,
       "capturedAt": "20030515112541",
       "listPage": 33,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "173",
@@ -6918,7 +6918,7 @@
       "isNotice": false,
       "capturedAt": "20030515112541",
       "listPage": 33,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "167",
@@ -7038,7 +7038,7 @@
       "isNotice": false,
       "capturedAt": "20030529023541",
       "listPage": 35,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "147",
@@ -7098,7 +7098,7 @@
       "isNotice": false,
       "capturedAt": "20030529023541",
       "listPage": 35,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "142",
@@ -7143,7 +7143,7 @@
       "isNotice": false,
       "capturedAt": "20020420102326",
       "listPage": 14,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "137",
@@ -7353,7 +7353,7 @@
       "isNotice": false,
       "capturedAt": "20020420102326",
       "listPage": 14,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "123",

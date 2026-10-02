@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 48,
   "totalReported": 1674,
-  "generatedAt": "2026-09-20T23:02:41.008473Z",
+  "generatedAt": "2026-10-01T11:29:00.427093Z",
   "entries": [
     {
       "no": "2028",
@@ -5703,7 +5703,7 @@
       "isNotice": false,
       "capturedAt": "20030529022239",
       "listPage": 52,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "281",
@@ -5958,7 +5958,7 @@
       "isNotice": false,
       "capturedAt": "20030529022239",
       "listPage": 52,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "261",
@@ -6048,7 +6048,7 @@
       "isNotice": false,
       "capturedAt": "20030527070937",
       "listPage": 53,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "254",
@@ -6363,7 +6363,7 @@
       "isNotice": false,
       "capturedAt": "20030913122409",
       "listPage": 64,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "222",
@@ -6498,7 +6498,7 @@
       "isNotice": false,
       "capturedAt": "20030913122719",
       "listPage": 65,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "212",
@@ -6558,7 +6558,7 @@
       "isNotice": false,
       "capturedAt": "20030913122719",
       "listPage": 65,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "207",
@@ -6918,7 +6918,7 @@
       "isNotice": false,
       "capturedAt": "20040104094343",
       "listPage": 71,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "173",
@@ -7263,7 +7263,7 @@
       "isNotice": false,
       "capturedAt": "20040104095457",
       "listPage": 72,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "140",
@@ -7278,7 +7278,7 @@
       "isNotice": false,
       "capturedAt": "20040104095457",
       "listPage": 72,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "139",
@@ -7338,7 +7338,7 @@
       "isNotice": false,
       "capturedAt": "20040104095509",
       "listPage": 73,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "135",
@@ -7398,7 +7398,7 @@
       "isNotice": false,
       "capturedAt": "20040104095509",
       "listPage": 73,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "126",
@@ -7428,7 +7428,7 @@
       "isNotice": false,
       "capturedAt": "20040104095509",
       "listPage": 73,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "124",
@@ -7608,7 +7608,7 @@
       "isNotice": false,
       "capturedAt": "20040104095509",
       "listPage": 73,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "110",
@@ -7752,13 +7752,13 @@
       "author": "강현식",
       "authorMemberNo": "0",
       "createdAt": "2000-12-28",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 100,
       "commentCount": 0,
       "isNotice": false,
       "capturedAt": "20040104095755",
       "listPage": 74,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "98",
@@ -7767,13 +7767,13 @@
       "author": "난알아요",
       "authorMemberNo": "0",
       "createdAt": "2000-12-28",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 194,
       "commentCount": 0,
       "isNotice": false,
       "capturedAt": "20040104095755",
       "listPage": 74,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "97",
@@ -7833,7 +7833,7 @@
       "isNotice": false,
       "capturedAt": "20040104095755",
       "listPage": 74,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "93",

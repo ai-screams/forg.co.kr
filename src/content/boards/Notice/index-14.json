@@ -4,7 +4,7 @@
   "totalPages": 19,
   "totalPosts": 922,
   "totalWithPost": 892,
-  "generatedAt": "2026-09-25T11:30:56Z",
+  "generatedAt": "2026-10-01T11:40:38Z",
   "entries": [
     {
       "postId": "309",
@@ -638,7 +638,7 @@
       "authorMemberNo": "1",
       "createdAt": "2002-01-02T00:00:00",
       "createdAtApprox": false,
-      "yearApprox": true,
+      "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 484,

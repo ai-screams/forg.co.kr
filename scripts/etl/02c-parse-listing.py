@@ -2,7 +2,9 @@
 """ETL Stage 2c — captured board list pages → one BoardListing JSON per board.
 
 Reads UTF-8 HTML from `.docs/research/archive-clean/L/{board}/page-{N}.html`
-(Stage 1 output of the phase-L download, `cdx/listings-plan.json`) and
+(Stage 1 output of the phase-L download, `cdx/listings-plan.json`, one
+capture per page) and `L2/{board}/page-{N}~{ts}.html` (every other distinct
+capture of a list page, `cdx/listings-more-plan.json`), and
 writes `src/content/listings/{board}.json` (ADR-0017).
 
 A list row is the only trace of a post whose view page Wayback never
@@ -47,9 +49,11 @@ from schemas import BoardListing, BoardListingEntry  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 INPUT_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "L"
+MORE_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "L2"
 POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "listings"
 PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "listings-plan.json"
+MORE_PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "listings-more-plan.json"
 
 _ZB_NO_RE = re.compile(r"zboard\.php\?[^\"'>]*\bno=(\d+)")
 _G4_ID_RE = re.compile(r"board\.php\?[^\"'>]*\bwr_id=(\d+)")
@@ -291,25 +295,32 @@ def parse_page(html: str, engine: str) -> tuple[list[dict], int | None]:
 # ── Driver ───────────────────────────────────────────────────────────
 
 
-def load_capture_index() -> tuple[dict[tuple[str, int], str], set[str], dict[tuple[str, int], str]]:
-    """`{(board, page): ts}`, the boards whose pages came from forg.kr, and
-    each page's engine — from the list URL (`zboard.php` vs `bbs/board.php`),
-    not the page body, since a members-only page carries neither. A board
-    that moved engines (Trash: Zeroboard until 2010, Gnuboard4 after) has
-    pages of both kinds."""
+def page_no_of(page: Path) -> int:
+    """`page-3` and `page-3~20101019050413` are both page 3."""
+    return int(page.stem.split("~")[0].split("-")[1])
+
+
+def load_capture_index() -> tuple[dict[tuple[str, str], str], set[str], dict[tuple[str, str], str]]:
+    """`{(board, file stem): ts}`, the boards whose pages came from forg.kr,
+    and each capture's engine — from the list URL (`zboard.php` vs
+    `bbs/board.php`), not the page body, since a members-only page carries
+    neither. A board that moved engines (Trash: Zeroboard until 2010,
+    Gnuboard4 after) has pages of both kinds."""
     plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
-    captures = {(e["board"], int(e["post_id"].split("-")[1])): e["ts"] for e in plan}
+    if MORE_PLAN_FILE.exists():
+        plan += json.loads(MORE_PLAN_FILE.read_text(encoding="utf-8"))
+    captures = {(e["board"], e["post_id"]): e["ts"] for e in plan}
     kr = {e["board"] for e in plan if re.match(r"https?://(www\.)?forg\.kr/", e["url"])}
     engines = {
-        (e["board"], int(e["post_id"].split("-")[1])): ("zeroboard" if "zboard.php" in e["url"] else "gnuboard4")
+        (e["board"], e["post_id"]): ("zeroboard" if "zboard.php" in e["url"] else "gnuboard4")
         for e in plan
     }
     return captures, kr, engines
 
 
 def build_listing(
-    board: str, pages: list[Path], captures: dict[tuple[str, int], str],
-    engines: dict[tuple[str, int], str], *, kr: bool = False,
+    board: str, pages: list[Path], captures: dict[tuple[str, str], str],
+    engines: dict[tuple[str, str], str], *, kr: bool = False,
 ) -> BoardListing | None:
     gold, gold_nos = load_gold_years(board)
     merged: dict[str, dict] = {}
@@ -317,12 +328,12 @@ def build_listing(
     engine_of_rows: dict[str, int] = {}
     newest_ts = ""
     for page_path in pages:
-        page_no = int(page_path.stem.split("-")[1])
-        captured_at = captures.get((board, page_no))
+        page_no = page_no_of(page_path)
+        captured_at = captures.get((board, page_path.stem))
         if not captured_at:
-            print(f"  WARN {board}/page-{page_no}: no capture ts in plan, skipped", file=sys.stderr)
+            print(f"  WARN {board}/{page_path.stem}: no capture ts in plan, skipped", file=sys.stderr)
             continue
-        engine = engines.get((board, page_no), "zeroboard")
+        engine = engines.get((board, page_path.stem), "zeroboard")
         rows, total = parse_page(page_path.read_text(encoding="utf-8"), engine)
         if rows:
             engine_of_rows[engine] = engine_of_rows.get(engine, 0) + len(rows)
@@ -387,13 +398,17 @@ def main() -> int:
     if not INPUT_DIR.is_dir():
         sys.exit(f"FATAL: {INPUT_DIR} not found — run the phase-L download and 01-decode first")
     captures, kr_boards, engines = load_capture_index()
-    boards = sorted(d for d in INPUT_DIR.iterdir() if d.is_dir() and (not args.board or d.name == args.board))
+    dirs = [d for root in (INPUT_DIR, MORE_DIR) if root.is_dir() for d in root.iterdir() if d.is_dir()]
+    boards = sorted({d.name for d in dirs if not args.board or d.name == args.board})
     stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0}
-    for board_dir in boards:
-        pages = sorted(board_dir.glob("page-*.html"), key=lambda p: int(p.stem.split("-")[1]))
-        listing = build_listing(board_dir.name, pages, captures, engines, kr=board_dir.name in kr_boards)
+    for board in boards:
+        pages = sorted(
+            (p for d in dirs if d.name == board for p in d.glob("page-*.html")),
+            key=lambda p: (page_no_of(p), p.stem),
+        )
+        listing = build_listing(board, pages, captures, engines, kr=board in kr_boards)
         if listing is None:
-            print(f"  {board_dir.name}: no rows in {len(pages)} page(s)", file=sys.stderr)
+            print(f"  {board}: no rows in {len(pages)} page(s)", file=sys.stderr)
             continue
         stats["boards"] += 1
         stats["entries"] += len(listing.entries)
@@ -401,7 +416,7 @@ def main() -> int:
         stats["year_approx"] += sum(e.yearApprox for e in listing.entries)
         stats["no_date"] += sum(e.createdAt is None for e in listing.entries)
         print(
-            f"  {board_dir.name:<16} pages={len(pages):>3} rows={len(listing.entries):>5} "
+            f"  {board:<16} pages={len(pages):>3} rows={len(listing.entries):>5} "
             f"with_post={sum(e.hasPost for e in listing.entries):>5} "
             f"total_reported={listing.totalReported}",
             file=sys.stderr,
@@ -409,7 +424,7 @@ def main() -> int:
         if not args.dry_run:
             OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
             # forg.kr boards are registered under a `kr_` prefix (boards.ts).
-            board_id = f"kr_{board_dir.name}" if board_dir.name in kr_boards else board_dir.name
+            board_id = f"kr_{board}" if board in kr_boards else board
             out = OUTPUT_DIR / f"{board_id}.json"
             # Keep the previous stamp when nothing but the stamp would change,
             # so a re-run over the same pages leaves git quiet.

@@ -3,7 +3,7 @@
   "engine": "zeroboard",
   "pagesCaptured": 62,
   "totalReported": 2850,
-  "generatedAt": "2026-09-20T23:02:38.707301Z",
+  "generatedAt": "2026-10-01T11:28:57.925037Z",
   "entries": [
     {
       "no": "13972",
@@ -11652,7 +11652,7 @@
       "author": "jgdc",
       "authorMemberNo": "988",
       "createdAt": "2002-07-27",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 720,
       "commentCount": 18,
       "isNotice": false,
@@ -11667,7 +11667,7 @@
       "author": "Dark Knight",
       "authorMemberNo": "1067",
       "createdAt": "2002-07-27",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 675,
       "commentCount": 19,
       "isNotice": false,
@@ -11682,7 +11682,7 @@
       "author": "flsrn",
       "authorMemberNo": "833",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 713,
       "commentCount": 8,
       "isNotice": false,
@@ -11697,7 +11697,7 @@
       "author": "kms2060",
       "authorMemberNo": "257",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 910,
       "commentCount": 7,
       "isNotice": false,
@@ -11712,7 +11712,7 @@
       "author": "쟈나저씨",
       "authorMemberNo": "643",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 728,
       "commentCount": 18,
       "isNotice": false,
@@ -11727,13 +11727,13 @@
       "author": "Serika",
       "authorMemberNo": "54",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 605,
       "commentCount": 1,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "238",
@@ -11742,13 +11742,13 @@
       "author": "REEN",
       "authorMemberNo": "329",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 669,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "237",
@@ -11757,13 +11757,13 @@
       "author": "赤赤",
       "authorMemberNo": "380",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 724,
       "commentCount": 9,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "236",
@@ -11772,13 +11772,13 @@
       "author": "crimsn",
       "authorMemberNo": "335",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 671,
       "commentCount": 3,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "235",
@@ -11787,7 +11787,7 @@
       "author": "crimsn",
       "authorMemberNo": "335",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 632,
       "commentCount": 6,
       "isNotice": false,
@@ -11802,7 +11802,7 @@
       "author": "darkher",
       "authorMemberNo": "61",
       "createdAt": "2002-07-26",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 874,
       "commentCount": 12,
       "isNotice": false,
@@ -11817,7 +11817,7 @@
       "author": "장포갈매기",
       "authorMemberNo": "123",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 825,
       "commentCount": 11,
       "isNotice": false,
@@ -11832,13 +11832,13 @@
       "author": "장포갈매기",
       "authorMemberNo": "123",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 571,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "230",
@@ -11847,7 +11847,7 @@
       "author": "장포갈매기",
       "authorMemberNo": "123",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 693,
       "commentCount": 9,
       "isNotice": false,
@@ -11862,7 +11862,7 @@
       "author": "월2부이자",
       "authorMemberNo": "308",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 629,
       "commentCount": 8,
       "isNotice": false,
@@ -11877,7 +11877,7 @@
       "author": "Addict",
       "authorMemberNo": "445",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 671,
       "commentCount": 9,
       "isNotice": false,
@@ -11892,7 +11892,7 @@
       "author": "kms2060",
       "authorMemberNo": "257",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 689,
       "commentCount": 7,
       "isNotice": false,
@@ -11907,7 +11907,7 @@
       "author": "노스텔지어",
       "authorMemberNo": "714",
       "createdAt": "2002-07-25",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 816,
       "commentCount": 22,
       "isNotice": false,
@@ -11922,7 +11922,7 @@
       "author": "하이시커",
       "authorMemberNo": "912",
       "createdAt": "2002-07-24",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 810,
       "commentCount": 10,
       "isNotice": false,
@@ -11937,13 +11937,13 @@
       "author": "하이시커",
       "authorMemberNo": "912",
       "createdAt": "2002-07-24",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 784,
       "commentCount": 4,
       "isNotice": false,
       "capturedAt": "20071108040143",
       "listPage": 121,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "220",
@@ -13451,14 +13451,14 @@
       "categoryLabel": null,
       "author": "goo1212",
       "authorMemberNo": "224",
-      "createdAt": "2002-06-30",
-      "yearApprox": true,
+      "createdAt": "2001-07-10",
+      "yearApprox": false,
       "hits": 719,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "88",
@@ -13466,14 +13466,14 @@
       "categoryLabel": null,
       "author": "노스텔지어",
       "authorMemberNo": "714",
-      "createdAt": "2002-06-30",
-      "yearApprox": true,
+      "createdAt": "2001-07-07",
+      "yearApprox": false,
       "hits": 767,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "87",
@@ -13481,14 +13481,14 @@
       "categoryLabel": null,
       "author": "Dark Knight",
       "authorMemberNo": "1067",
-      "createdAt": "2002-06-30",
-      "yearApprox": true,
+      "createdAt": "2001-07-06",
+      "yearApprox": false,
       "hits": 708,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "86",
@@ -13496,8 +13496,8 @@
       "categoryLabel": null,
       "author": "노스텔지어",
       "authorMemberNo": "714",
-      "createdAt": "2002-06-27",
-      "yearApprox": true,
+      "createdAt": "2001-06-27",
+      "yearApprox": false,
       "hits": 724,
       "commentCount": 6,
       "isNotice": false,
@@ -13511,14 +13511,14 @@
       "categoryLabel": null,
       "author": "Athena",
       "authorMemberNo": "401",
-      "createdAt": "2002-06-27",
-      "yearApprox": true,
+      "createdAt": "2001-06-30",
+      "yearApprox": false,
       "hits": 676,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "84",
@@ -13526,14 +13526,14 @@
       "categoryLabel": null,
       "author": "darkher",
       "authorMemberNo": "61",
-      "createdAt": "2002-06-27",
-      "yearApprox": true,
+      "createdAt": "2001-06-30",
+      "yearApprox": false,
       "hits": 911,
       "commentCount": 9,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "83",
@@ -13541,14 +13541,14 @@
       "categoryLabel": null,
       "author": "에리크카메자와",
       "authorMemberNo": "318",
-      "createdAt": "2002-06-26",
-      "yearApprox": true,
+      "createdAt": "2001-06-22",
+      "yearApprox": false,
       "hits": 910,
       "commentCount": 16,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "82",
@@ -13556,14 +13556,14 @@
       "categoryLabel": null,
       "author": "곰",
       "authorMemberNo": "1281",
-      "createdAt": "2002-06-26",
-      "yearApprox": true,
+      "createdAt": "2001-06-21",
+      "yearApprox": false,
       "hits": 678,
       "commentCount": 7,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "81",
@@ -13571,14 +13571,14 @@
       "categoryLabel": null,
       "author": "naga",
       "authorMemberNo": "70",
-      "createdAt": "2002-06-26",
-      "yearApprox": true,
+      "createdAt": "2001-06-21",
+      "yearApprox": false,
       "hits": 879,
       "commentCount": 10,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "79",
@@ -13586,14 +13586,14 @@
       "categoryLabel": null,
       "author": "노스텔지어",
       "authorMemberNo": "714",
-      "createdAt": "2002-06-25",
-      "yearApprox": true,
+      "createdAt": "2001-06-21",
+      "yearApprox": false,
       "hits": 805,
       "commentCount": 4,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "75",
@@ -13601,14 +13601,14 @@
       "categoryLabel": null,
       "author": "fantasma",
       "authorMemberNo": "733",
-      "createdAt": "2002-06-25",
-      "yearApprox": true,
+      "createdAt": "2001-06-20",
+      "yearApprox": false,
       "hits": 1056,
       "commentCount": 39,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "74",
@@ -13616,14 +13616,14 @@
       "categoryLabel": null,
       "author": "meru104",
       "authorMemberNo": "80",
-      "createdAt": "2002-06-25",
-      "yearApprox": true,
+      "createdAt": "2001-06-20",
+      "yearApprox": false,
       "hits": 779,
       "commentCount": 6,
       "isNotice": false,
       "capturedAt": "20071108035325",
       "listPage": 126,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "73",
@@ -13631,8 +13631,8 @@
       "categoryLabel": null,
       "author": "darkher",
       "authorMemberNo": "61",
-      "createdAt": "2002-06-24",
-      "yearApprox": true,
+      "createdAt": "2001-06-24",
+      "yearApprox": false,
       "hits": 1113,
       "commentCount": 21,
       "isNotice": false,
@@ -13646,14 +13646,14 @@
       "categoryLabel": null,
       "author": "genjul",
       "authorMemberNo": "688",
-      "createdAt": "2002-06-24",
-      "yearApprox": true,
+      "createdAt": "2001-06-18",
+      "yearApprox": false,
       "hits": 812,
       "commentCount": 8,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "71",
@@ -13661,14 +13661,14 @@
       "categoryLabel": null,
       "author": "blacksazabi",
       "authorMemberNo": "16",
-      "createdAt": "2002-06-24",
-      "yearApprox": true,
+      "createdAt": "2001-06-17",
+      "yearApprox": false,
       "hits": 1052,
       "commentCount": 18,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "70",
@@ -13677,13 +13677,13 @@
       "author": "노스텔지어",
       "authorMemberNo": "714",
       "createdAt": "2002-06-23",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 1006,
       "commentCount": 17,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "69",
@@ -13692,13 +13692,13 @@
       "author": "carve",
       "authorMemberNo": "554",
       "createdAt": "2002-06-23",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 896,
       "commentCount": 15,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "68",
@@ -13707,13 +13707,13 @@
       "author": "장포갈매기",
       "authorMemberNo": "123",
       "createdAt": "2002-06-22",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 957,
       "commentCount": 6,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "67",
@@ -13722,7 +13722,7 @@
       "author": "초인이야",
       "authorMemberNo": "532",
       "createdAt": "2002-06-22",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 1182,
       "commentCount": 27,
       "isNotice": false,
@@ -13737,7 +13737,7 @@
       "author": "sasimi",
       "authorMemberNo": "1012",
       "createdAt": "2002-06-22",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 953,
       "commentCount": 14,
       "isNotice": false,
@@ -13752,13 +13752,13 @@
       "author": "Serika",
       "authorMemberNo": "54",
       "createdAt": "2002-06-22",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 940,
       "commentCount": 8,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "62",
@@ -13767,13 +13767,13 @@
       "author": "쟈나저씨",
       "authorMemberNo": "643",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 884,
       "commentCount": 5,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "61",
@@ -13782,13 +13782,13 @@
       "author": "쟈나저씨",
       "authorMemberNo": "643",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 1058,
       "commentCount": 11,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "60",
@@ -13797,7 +13797,7 @@
       "author": "kms2060",
       "authorMemberNo": "257",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 898,
       "commentCount": 9,
       "isNotice": false,
@@ -13812,13 +13812,13 @@
       "author": "lovezike",
       "authorMemberNo": "258",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 774,
       "commentCount": 8,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "58",
@@ -13827,7 +13827,7 @@
       "author": "Tien",
       "authorMemberNo": "183",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 811,
       "commentCount": 5,
       "isNotice": false,
@@ -13842,13 +13842,13 @@
       "author": "노스텔지어",
       "authorMemberNo": "714",
       "createdAt": "2002-06-21",
-      "yearApprox": true,
+      "yearApprox": false,
       "hits": 863,
       "commentCount": 3,
       "isNotice": false,
       "capturedAt": "20071108035957",
       "listPage": 127,
-      "hasPost": false
+      "hasPost": true
     },
     {
       "no": "56",
