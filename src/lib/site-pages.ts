@@ -28,6 +28,11 @@ export interface SitePage {
   /** nh3-sanitised body, or the rebuilt `<frameset>` for kind `frameset`. */
   html: string;
   redirectTo: string | null;
+  /**
+   * A guest was refreshed to the login notice (`/faq_1.html`) and no open
+   * capture of the document was found; the route explains that instead.
+   */
+  memberOnly?: true;
   /** `<base target>` — the frame every link opens in (`detail`, `forg_b`). */
   baseTarget: string | null;
 }

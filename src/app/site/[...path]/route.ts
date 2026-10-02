@@ -120,7 +120,26 @@ function linkColours(style: Record<string, string>): string {
   return rules.join("");
 }
 
+// A page forg showed members only. Wayback visited as a guest and kept the
+// refresh to the login notice; there is nothing else to show, so the page
+// says so rather than sending the visitor to a login no one can do.
+function memberOnly(page: SitePage): string {
+  const style = `<style>${BAR_CSS}
+.forg-member-only{max-width:560px;margin:48px auto;padding:0 16px;font:14px/1.7 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#333}
+.forg-member-only h1{font-size:18px;margin:0 0 12px}
+.forg-member-only a{color:#8a6100}</style><script>${IN_FRAME_SCRIPT}</script>`;
+  return `<!doctype html><html lang="ko">${head(page, style)}<body>
+${museumBar(page)}
+<div class="forg-member-only">
+<h1>${escapeHtml(page.title)}</h1>
+<p>forg에서 회원만 볼 수 있던 페이지입니다. 이 안내 자료는 로그인한 회원에게만 보였고, 손님에게는 로그인 안내가 떴습니다. Wayback도 손님으로 저장해서 이 주소에 남은 것은 그 안내뿐이고, 같은 내용이 로그인 없이 저장된 더 이른 캡처도 찾지 못했습니다.</p>
+<p><a href="/site/faq_1/">당시 손님에게 뜨던 로그인 안내</a> · <a href="/site/">사이트 페이지 목록</a></p>
+</div>
+</body></html>`;
+}
+
 function render(page: SitePage): string {
+  if (page.memberOnly) return memberOnly(page);
   if (page.kind === "redirect") {
     const to = page.redirectTo ?? "/site/";
     return `<!doctype html><html lang="ko">${head(
