@@ -24,6 +24,7 @@
   "html": "<br>\n<b>Warning</b>:  Failed opening '/home/forg/public_html/zb/lib.php' for inclusion (include_path='') in <b>member_auth.php3</b> on line <b>2</b><br>\n<br>\n<b>Fatal error</b>:  Call to undefined function:  dbconn() in <b>member_auth.php3</b> on line <b>5</b><br>\n",
   "redirectTo": null,
   "baseTarget": null,
+  "mode": "quirks",
   "memberOnly": true,
   "openNearby": []
 }

@@ -29,5 +29,6 @@
   },
   "html": "\n<p></p><div id=\"picture\" style=\"position:absolute; left:80px; top:75px; width:404px; height:605px; z-index:1;\">\n<p><img border=\"0\" height=\"605\" src=\"/img/posts/site/map/misc/cofvirtue.jpg\" width=\"524\"></p>\n</div> <div id=\"textbox\" style=\"position:absolute; left:83px; top:28px; width:314px; height:47px; z-index:2;\">\n<h2><font face=\"??\" size=\"3\">Britain - Chamber of Virtue</font></h2>\n</div>",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

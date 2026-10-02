@@ -21,5 +21,6 @@
   },
   "html": "\n<p><img border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_index/images/uojobs/cook/cook_map.gif\" data-recovery=\"missing\" height=\"200\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:200/200\" width=\"200\"></p>\n",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "quirks"
 }

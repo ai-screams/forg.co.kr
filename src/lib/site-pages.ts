@@ -51,6 +51,11 @@ export interface SitePage {
   openNearby?: { stem: string; title: string }[];
   /** `<base target>` — the frame every link opens in (`detail`, `forg_b`). */
   baseTarget: string | null;
+  /**
+   * Kind `page`: the mode a browser draws the capture in, which the route's
+   * doctype selects again. Framesets and redirects carry `no-quirks`.
+   */
+  mode: "quirks" | "limited-quirks" | "no-quirks";
 }
 
 function assertIsSitePage(value: unknown): asserts value is SitePage {
@@ -58,6 +63,9 @@ function assertIsSitePage(value: unknown): asserts value is SitePage {
   const v = value as Record<string, unknown>;
   for (const key of ["stem", "originalPath", "kind", "title", "capturedAt", "css", "html"]) {
     if (typeof v[key] !== "string") throw new Error(`page JSON missing string field: ${key}`);
+  }
+  if (v["mode"] !== "quirks" && v["mode"] !== "limited-quirks" && v["mode"] !== "no-quirks") {
+    throw new Error("page JSON has no rendering mode: re-run 02g-parse-site.py");
   }
 }
 

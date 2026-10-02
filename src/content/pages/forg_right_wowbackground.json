@@ -26,5 +26,6 @@
   },
   "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><a>&nbsp;</a><a href=\"/site/uo/\" target=\"_parent\"><img border=\"0\" height=\"220\" src=\"/img/posts/site/images/uo_1.gif\" width=\"120\"></a></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://user.chol.com/smarty/bbs/bbs.php?id=mr5cheol&amp;db=Signature\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">Signature</font></a></b></span></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://4leaf.com\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">4Leaf</font></a></b></span></b></p>\n",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "quirks"
 }

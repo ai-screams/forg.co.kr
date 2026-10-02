@@ -21,5 +21,6 @@
   },
   "html": "\n<p><font face=\"Verdana\"><span style=\"font-size:9pt;\">업데이트중입니다.....</span></font></p>\n",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "quirks"
 }

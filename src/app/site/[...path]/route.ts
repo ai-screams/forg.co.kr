@@ -93,6 +93,15 @@ img{max-width:calc(100vw - 16px)!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
 }`;
 
+// A doctype that puts the browser in the mode it drew the capture in (02g,
+// RENDERING MODE): none for quirks mode, as most of the originals had none.
+const DOCTYPE: Record<SitePage["mode"], string> = {
+  quirks: "",
+  "limited-quirks":
+    '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
+  "no-quirks": "<!doctype html>",
+};
+
 function head(page: SitePage, extra = ""): string {
   const title = `${page.title} — forg.co.kr 박물관`;
   // The ETL keeps only `[A-Za-z0-9_]+` frame names; escaped regardless.
@@ -188,7 +197,7 @@ function render(page: SitePage): string {
   // redirects carry no body and stay out of the index. `display:contents`
   // keeps the wrapper out of the page's own layout.
   const searchable = `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
-  return `<!doctype html><html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
+  return `${DOCTYPE[page.mode]}<html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
 ${museumBar(page)}
 ${searchable}
 ${page.html}

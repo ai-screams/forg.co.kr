@@ -103,5 +103,6 @@
   "bodyStyle": {},
   "html": "\n<table background=\"/img/posts/site/images/bgm_bg.gif\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"24\" width=\"100%\">\n<tbody><tr>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" valign=\"bottom\" width=\"50\"><img src=\"/img/posts/site/images/count.gif\"></td>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" width=\"70\"><font class=\"f9\" color=\"#fafafa\"><img src=\"/img/posts/site/images/5px.gif\"><br>7576973</font></td>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" bgcolor=\"6B82A5\" height=\"24\" valign=\"absmiddle\">\n      &nbsp;\n    </td>\n<td align=\"right\" valign=\"absmiddle\"><img border=\"0\" src=\"/img/posts/site/images/bgm_right.gif\"></td>\n</tr>\n</tbody></table>\n",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "quirks"
 }
