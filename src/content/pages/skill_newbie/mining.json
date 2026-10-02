@@ -19,7 +19,7 @@
     "--vlink": "purple",
     "--alink": "red"
   },
-  "html": "\n<table bordercolordark=\"white\" bordercolorlight=\"black\" cellpadding=\"0\" cellspacing=\"0\" width=\"175\">\n<tbody><tr>\n<td height=\"18\" width=\"147\">\n<p align=\"left\"><font color=\"red\" face=\"Verdana\"><span style=\"font-size:8pt;\"><b>&nbsp;UO's \n            Forg</b></span></font></p>\n</td>\n<td height=\"20\" width=\"28\">\n<p align=\"right\"><span style=\"font-size:8pt;\"><b><font color=\"red\" face=\"Verdana\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_newbie/speak.gif\" data-recovery=\"missing\" height=\"18\" src=\"/img/placeholder/missing.svg\" style=\"aspect-ratio:30/18\" width=\"30\"></font></b></span></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" height=\"125\">\n<p align=\"center\"><a></a><a href=\"#\"></a>\n</p>\n</td>\n</tr>\n</tbody></table>\n",
+  "html": "\n<table bordercolordark=\"white\" bordercolorlight=\"black\" cellpadding=\"0\" cellspacing=\"0\" width=\"175\">\n<tbody><tr>\n<td height=\"18\" width=\"147\">\n<p align=\"left\"><font color=\"red\" face=\"Verdana\"><span style=\"font-size:8pt;\"><b>&nbsp;UO's \n            Forg</b></span></font></p>\n</td>\n<td height=\"20\" width=\"28\">\n<p align=\"right\"><span style=\"font-size:8pt;\"><b><font color=\"red\" face=\"Verdana\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_newbie/speak.gif\" data-recovery=\"missing\" height=\"18\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:30/18\" width=\"30\"></font></b></span></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\" height=\"125\">\n<p align=\"center\"><a></a><a href=\"#\"></a>\n</p>\n</td>\n</tr>\n</tbody></table>\n",
   "redirectTo": null,
   "baseTarget": null
 }

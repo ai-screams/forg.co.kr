@@ -20,7 +20,7 @@ Static files copied as-is into `out/`.
 | -- | -- |
 | `img/chrome/` | Recovered site chrome (buttons, headers, skins), tracked in git; `2003/` and `2014/` hold era-specific sets |
 | `img/emoticon/` | The shared comment emoticon store (ADR-0017), tracked in git |
-| `img/placeholder/` | `missing.svg`, shown for images Wayback never captured |
+| `img/placeholder/` | `missing.svg` for images Wayback never captured in posts; `missing-slot.svg`, the same without its dashed frame, on the static pages, where the `/site/` route frames the whole slot |
 | `img/posts/` | Recovered post and site-page images. Bytes are git-ignored and served from R2; only the per-post `.manifest.json` sidecars are tracked |
 
 ## For AI Agents
