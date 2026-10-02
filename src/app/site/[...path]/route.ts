@@ -89,10 +89,15 @@ if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:windo
 // border-box sizing (IE's) makes the box and the list both 120px wide. The
 // list's `height:10` would draw a 10px box with the links spilling out (IE
 // grew a box to its content). Chromium reads the box's `cursor:hand` in
-// quirks mode, Firefox does not. Without script the class is never set and
-// the list stays visible.
+// quirks mode, Firefox does not. The box is drawn as a flat combo box: its
+// label ("Catalog", 02g drops the asterisks that padded it) on the left, an
+// arrow cell on the right that turns the links' orange while the list is
+// open. Without script the class is never set and the list stays visible.
 const COMBO_HEAD_SCRIPT = "document.documentElement.className+=' forg-combo';";
-const COMBO_CSS = `#combos{display:inline-block;box-sizing:border-box;cursor:pointer}
+const COMBO_CSS = `#combos{display:inline-block;box-sizing:border-box;cursor:pointer;position:relative;text-align:left;padding-left:6px}
+#combos::before{content:"";position:absolute;top:0;bottom:0;right:14px;border-left:1px solid #666}
+#combos::after{content:"";position:absolute;right:3px;top:50%;margin-top:-2px;border:4px solid transparent;border-top-color:#666;border-bottom:0}
+#combos[aria-expanded=true]::after{border-top-color:#ef5900}
 #myDIV{box-sizing:border-box;height:auto}
 html.forg-combo #myDIV{visibility:hidden}
 html.forg-combo #myDIV.forg-open{visibility:visible}`;
