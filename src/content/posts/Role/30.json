@@ -13,7 +13,14 @@
   "hits": null,
   "recommend": null,
   "attachments": [],
-  "comments": [],
+  "comments": [
+    {
+      "author": "신고",
+      "authorMemberNo": "12445",
+      "createdAt": "2002-10-26T15:07:41",
+      "bodyHtml": "재밌네요^^"
+    }
+  ],
   "era": "2003",
   "capturedAt": "20020831005201",
   "parsedAt": "2026-05-11T10:38:24.833859",

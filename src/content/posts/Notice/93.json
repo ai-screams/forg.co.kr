@@ -13,7 +13,26 @@
   "hits": null,
   "recommend": null,
   "attachments": [],
-  "comments": [],
+  "comments": [
+    {
+      "author": "kokos",
+      "authorMemberNo": "4076",
+      "createdAt": "2007-05-09T09:43:32",
+      "bodyHtml": "이거 뉴비퀘스트로 얻는 축복아이템들이 전체적으로 하향조정 되었네요 <img border=\"0\" data-original-src=\"http://www.forg.co.kr/_zb/emoticon/m_girl_handsacrossamerica.gif\" data-recovery=\"ok\" src=\"/img/emoticon/m_girl_handsacrossamerica.gif\"/>"
+    },
+    {
+      "author": "dprwpfhtm",
+      "authorMemberNo": "424",
+      "createdAt": "2007-05-09T18:50:01",
+      "bodyHtml": "시즈 페럴러스 샤드만 적용 : 시즈 페럴러스와 뮤겐에서 고급 아머를 제작을 위하여 암즈 로어 12.5 포인트당 1% 저항이 보너스를 받게 됩니다. 최고 보너스 저항은 8%입니다 (그랜드마스터 암즈로어일때).\n<br/>\n<br/>\n<br/>허허허...게다가 불바지 사무라이모자 집시 모자 다 패치될 것 같으니...\n<br/>\n<br/>6개 부위니까 8*6  = 48....\n<br/>\n<br/>이쯤 되면 베테랑 샤드 생산캐릭들은 전부 암스로어 올리겠네요..."
+    },
+    {
+      "author": "Music",
+      "authorMemberNo": "1129",
+      "createdAt": "2007-05-10T21:37:00",
+      "bodyHtml": "NPE 퀘스트 소울스톤으로 클리어하고 얻었는데-ㅁ-"
+    }
+  ],
   "era": "2003",
   "capturedAt": "20030519155431",
   "parsedAt": "2026-05-11T10:38:24.833859",
