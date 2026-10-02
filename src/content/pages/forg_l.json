@@ -19,7 +19,7 @@
     "--vlink": "purple",
     "--alink": "red"
   },
-  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><a href=\"/site/index/\" target=\"_top\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr:80/Image/l_logo.gif\" data-recovery=\"missing\" height=\"405\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:30/405\" width=\"30\"></a></p>\n",
+  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><a href=\"/site/index/\" target=\"_top\"><span class=\"forg-missing\" data-original-src=\"http://www.forg.co.kr:80/Image/l_logo.gif\" data-recovery=\"missing\" style=\"width:30px;height:405px;line-height:405px\">forg.co.kr</span></a></p>\n",
   "redirectTo": null,
   "baseTarget": "detail",
   "mode": "no-quirks"

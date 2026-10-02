@@ -577,6 +577,37 @@ def open_member_only(docs: dict[str, dict]) -> int:
     return opened
 
 
+def missing_box(soup: BeautifulSoup, img, label: str) -> None:
+    """Replace a missing picture with `label` in a box of its slot's size."""
+    box = soup.new_tag("span", attrs={
+        "class": "forg-missing", "data-recovery": "missing",
+        "data-original-src": img["data-original-src"],
+    })
+    w, h = img.get("width", ""), img.get("height", "")
+    if w.isdigit() and h.isdigit() and int(w) and int(h):
+        box["style"] = f"width:{w}px;height:{h}px;line-height:{h}px"
+    box.string = label
+    img.replace_with(box)
+
+
+def label_missing_buttons(soup: BeautifulSoup, titles: dict[str, str]) -> int:
+    """A link that is only a picture Wayback did not keep (a menu button with
+    no alt text) shows the name of the page it opens, so the menu still reads:
+    the 2002 newbie guide's "울티마의역사" button. Not when that page has no
+    name but its file name. After `rewrite`, on museum links."""
+    n = 0
+    for a in soup.find_all("a", href=True):
+        target = re.fullmatch(r"/site/(.+)/", a["href"])
+        img = a.find("img", attrs={"data-recovery": "missing"})
+        if target is None or img is None:
+            continue
+        name = titles[target.group(1)]
+        if name != target.group(1).rsplit("/", 1)[-1]:
+            missing_box(soup, img, name)
+            n += 1
+    return n
+
+
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
     for el in soup.find_all(True):
         for attr in [a for a in el.attrs if a.lower().startswith("on")]:
@@ -600,14 +631,7 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
                     # A menu button or caption that names itself (22 pages'
                     # 스텔스 button): its words in a box of the slot's size
                     # read and click better than the picture placeholder.
-                    box = soup.new_tag("span", attrs={
-                        "class": "forg-missing", "data-recovery": "missing",
-                        "data-original-src": original,
-                    })
-                    if sized:
-                        box["style"] = f"width:{w}px;height:{h}px"
-                    box.string = label
-                    img.replace_with(box)
+                    missing_box(soup, img, label)
     for el in soup.find_all(attrs={"background": True}):
         src, _ = resolver.image(el["background"], base, ts, page)
         if src == MISSING_IMG:
@@ -698,6 +722,41 @@ def title_of(soup: BeautifulSoup, link_titles: dict[str, str], stem: str,
     return stem.rsplit("/", 1)[-1]
 
 
+PAGER_NUMBER = re.compile(r"[\[(]?\s*(\d{1,2})\s*[\])]?")
+
+
+def collect_pagers(all_versions: list[tuple[dict, BeautifulSoup]]) -> list[dict[int, str]]:
+    """Each version's numbered pager ("[1][2][3]") as {number: stem}."""
+    pagers = []
+    for v, soup in all_versions:
+        pager = {}
+        for a in soup.find_all("a", href=True):
+            m = PAGER_NUMBER.fullmatch(a.get_text(strip=True))
+            is_forg, u = Resolver.forg_path(urllib.parse.urljoin(v["url"], a["href"].strip()))
+            if m and is_forg:
+                pager[int(m.group(1))] = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
+        if pager:
+            pagers.append(pager)
+    return pagers
+
+
+def name_continued_pages(docs: dict[str, dict], pagers: list[dict[int, str]]) -> int:
+    """A page the site's pager numbers "[2]" takes its first page's name with
+    that number ("울티마의역사 (2)" for `newbie_history_1`), when nothing named
+    it and it would show its file name."""
+    n = 0
+    for pager in pagers:
+        first = docs.get(pager.get(1, ""))
+        if first is None:
+            continue
+        for k, stem in pager.items():
+            doc = docs.get(stem)
+            if doc and doc["title"] == stem.rsplit("/", 1)[-1]:
+                doc["title"] = f"{first['title']} ({k})"
+                n += 1
+    return n
+
+
 def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[str, str]:
     """A page's name as the site's own links gave it.
 
@@ -709,6 +768,7 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
     domains outweighing the older host's."""
     by_title: dict[str, Counter[str]] = {}
     by_text: dict[str, Counter[str]] = {}
+    by_option: dict[str, Counter[str]] = {}
     for v, soup in all_versions:
         # forg's own domains name a page first; the older host only fills gaps.
         host = (urllib.parse.urlsplit(v["url"]).hostname or "").lower().removeprefix("www.")
@@ -730,8 +790,17 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
             text = re.sub(r"^[:.\s\-·▶►]+|[:.\s\-·]+$", "", text).strip()
             if 1 < len(text) <= 40 and text.lower() not in BUTTON_WORDS and not PAGER.fullmatch(text):
                 by_text.setdefault(stem, Counter())[text] += weight
+        # The jump menus (`goto_selects`) name the pages they open too, for a
+        # page no link names: a menu's words are its own (the town maps' menu
+        # spells them in Korean where the links use the English names).
+        for o in soup.find_all("option", value=True):
+            is_forg, u = Resolver.forg_path(urllib.parse.urljoin(v["url"], o["value"].strip()))
+            text = re.sub(r"\s+", " ", o.get_text(" ", strip=True))
+            if is_forg:
+                stem = stem_of(f"{u.path}?{u.query}" if u.query else u.path)
+                by_option.setdefault(stem, Counter())[text] += weight
     chosen: list[dict[str, str]] = []
-    for votes in (by_text, by_title):
+    for votes in (by_option, by_text, by_title):
         # A label that is the leading name of three or more pages in one
         # folder names a section or a button ("Click", ":::Monster_Diary:::"
         # on every monster), not the page. It is struck from every page of
@@ -747,7 +816,7 @@ def collect_link_titles(all_versions: list[tuple[dict, BeautifulSoup]]) -> dict[
             if left:
                 picked[stem] = left[0][0]
         chosen.append(picked)
-    return {**chosen[0], **chosen[1]}
+    return {**chosen[0], **chosen[1], **chosen[2]}
 
 
 def main() -> None:
@@ -780,12 +849,15 @@ def main() -> None:
 
     resolver = Resolver(set(chosen), boards)
     link_titles = collect_link_titles(every)
+    # Before `rewrite` turns the shown versions' links into museum paths.
+    pagers = collect_pagers(every)
     title_counts: dict[str, int] = {}
     for _v, soup in chosen.values():
         t = own_title(soup)
         title_counts[t] = title_counts.get(t, 0) + 1
     shared = {t for t, n in title_counts.items() if n >= 3}
     stats: dict[str, int] = {}
+    titles = {stem: title_of(soup, link_titles, stem, shared) for stem, (_v, soup) in chosen.items()}
     docs = {}
     for stem, (v, soup) in sorted(chosen.items()):
         base, ts, kind = v["url"], v["ts"], v["kind"]
@@ -799,7 +871,7 @@ def main() -> None:
             "originalPath": original_path(v, forg_pages),
             "originalUrl": base,
             "kind": kind,
-            "title": title_of(soup, link_titles, stem, shared),
+            "title": titles[stem],
             "capturedAt": iso(v["shown_ts"]),
             "versions": history[stem],
             "css": "",
@@ -829,6 +901,7 @@ def main() -> None:
             stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
             stats["catalog_labels"] = stats.get("catalog_labels", 0) + tidy_catalog_labels(soup)
             rewrite(soup, resolver, base, ts, stem)
+            stats["buttons_named"] = stats.get("buttons_named", 0) + label_missing_buttons(soup, titles)
             doc["css"] = head_css(soup)
             inner = soup.body.decode_contents() if soup.body else str(soup)
             cleaned = nh3.clean(inner, tags=TAGS, attributes=ATTRS,
@@ -837,6 +910,7 @@ def main() -> None:
         docs[stem] = doc
         stats[kind] = stats.get(kind, 0) + 1
 
+    stats["continued_named"] = name_continued_pages(docs, pagers)
     stats["member_only_opened"] = open_member_only(docs)
     stats["pages"] = len(docs)
     stats["image_refs"] = len(resolver.image_refs)
