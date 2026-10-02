@@ -19,6 +19,7 @@
   "bodyStyle": {
     "background-color": "white",
     "color": "black",
+    "background-image": "url('/img/posts/site/skill/images/left_menu/forg_background.gif')",
     "--link": "blue",
     "--vlink": "purple",
     "--alink": "red"
