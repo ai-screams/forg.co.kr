@@ -13,7 +13,26 @@
   "hits": null,
   "recommend": null,
   "attachments": [],
-  "comments": [],
+  "comments": [
+    {
+      "author": "dprwpfhtm",
+      "authorMemberNo": "424",
+      "createdAt": "2007-04-19T22:41:06",
+      "bodyHtml": "흠...포그님...잘 모르고 하는 말이지만\n<br/>\n<br/>당분간은 장터란 접근 못하게 해두시는게 낫지 않을까요?\n<br/>\n<br/>혹시라도 트집 잡히면 안되니까...\n<br/>\n<br/>하여간 운영하느라 수고 많으십니다 ;ㅁ;//"
+    },
+    {
+      "author": "hasuho1",
+      "authorMemberNo": "1262",
+      "createdAt": "2007-04-20T12:27:56",
+      "bodyHtml": "쩝 당분간 장터를 이용 몬한다는 말이네여..~~~~ \n<br/>포그님.. 수고 부탁 드려여..."
+    },
+    {
+      "author": "ssamei2002",
+      "authorMemberNo": "8366",
+      "createdAt": "2007-04-21T19:29:18",
+      "bodyHtml": "ㅡ.ㅡ 괜히 엉뚱한사람의 소리때문에 여러사람 피해보네요.. 개인적인 현금거래는 전혀상관없느데여..."
+    }
+  ],
   "era": "2003",
   "capturedAt": "20020828232408",
   "parsedAt": "2026-05-11T10:38:24.833859",

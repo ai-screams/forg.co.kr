@@ -4,7 +4,7 @@
   "totalPages": 27,
   "totalPosts": 1313,
   "totalWithPost": 1243,
-  "generatedAt": "2026-09-25T11:30:56Z",
+  "generatedAt": "2026-10-02T06:01:08Z",
   "entries": [
     {
       "postId": "1655",
@@ -447,7 +447,7 @@
       "createdAt": "2003-06-17T03:47:12",
       "createdAtApprox": false,
       "yearApprox": false,
-      "commentCount": 3,
+      "commentCount": 4,
       "attachmentCount": 0,
       "hits": 272,
       "recommend": null,
@@ -719,7 +719,7 @@
       "createdAt": "2003-06-04T01:24:52",
       "createdAtApprox": false,
       "yearApprox": false,
-      "commentCount": 1,
+      "commentCount": 2,
       "attachmentCount": 0,
       "hits": 150,
       "recommend": null,

@@ -13,7 +13,56 @@
   "hits": null,
   "recommend": null,
   "attachments": [],
-  "comments": [],
+  "comments": [
+    {
+      "author": "iamamber",
+      "authorMemberNo": "829",
+      "createdAt": "2007-05-17T08:04:29",
+      "bodyHtml": "... 내가 하면 =_=... 뽑힐까나...\n<br/>공부해야지 ㅠ_ㅠ"
+    },
+    {
+      "author": "elf",
+      "authorMemberNo": "1826",
+      "createdAt": "2007-05-17T09:13:45",
+      "bodyHtml": "일단 신청했습니다~ 만..... ^0^"
+    },
+    {
+      "author": "hiper",
+      "authorMemberNo": "603",
+      "createdAt": "2007-05-17T09:46:10",
+      "bodyHtml": "저도 일단 신청.."
+    },
+    {
+      "author": "주키로스",
+      "authorMemberNo": "5321",
+      "createdAt": "2007-05-17T10:19:06",
+      "bodyHtml": "영어로 적어야되나 ㅡㅡ;;"
+    },
+    {
+      "author": "Summer",
+      "authorMemberNo": "8094",
+      "createdAt": "2007-05-17T12:11:01",
+      "bodyHtml": "신청했는데 뽑히면 좋겠네요"
+    },
+    {
+      "author": "asadal",
+      "authorMemberNo": "788",
+      "createdAt": "2007-05-17T13:21:37",
+      "bodyHtml": "저도 신청 완료. ㅎㅎ"
+    },
+    {
+      "author": "피박",
+      "authorMemberNo": "14",
+      "createdAt": "2007-05-17T19:30:28",
+      "bodyHtml": "신청!ㅠㅠ"
+    },
+    {
+      "author": "dprwpfhtm",
+      "authorMemberNo": "424",
+      "createdAt": "2007-05-17T20:35:59",
+      "bodyHtml": "앪버님은 버그로 되게 해보삼...-_-"
+    }
+  ],
   "era": "2003",
   "capturedAt": "20020828233047",
   "parsedAt": "2026-05-11T10:38:24.833859",
