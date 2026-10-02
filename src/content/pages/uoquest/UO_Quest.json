@@ -16,5 +16,11 @@
   "html": "",
   "redirectTo": "/site/faq_1/",
   "baseTarget": null,
-  "memberOnly": true
+  "memberOnly": true,
+  "openNearby": [
+    {
+      "stem": "uoquest/hagtm",
+      "title": "Zeefzorpul 찾기 도우미"
+    }
+  ]
 }

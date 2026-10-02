@@ -13,6 +13,17 @@ const PAGES_ROOT = path.join(process.cwd(), "src", "content", "pages");
 
 export type SitePageKind = "page" | "frameset" | "redirect";
 
+/** A page's section in the page list: its first path segment ("" at the root). */
+export function sectionOf(page: Pick<SitePage, "stem">): string {
+  const i = page.stem.indexOf("/");
+  return i < 0 ? "" : page.stem.slice(0, i);
+}
+
+/** The page list's anchor for a section (`/site/#section-skill`). */
+export function sectionAnchor(section: string): string {
+  return `section-${section || "root"}`;
+}
+
 export interface SitePage {
   stem: string;
   originalPath: string;
@@ -33,6 +44,11 @@ export interface SitePage {
    * capture of the document was found; the route explains that instead.
    */
   memberOnly?: true;
+  /**
+   * With `memberOnly`: the open pages in the same folder, when there are ten
+   * or fewer (empty past that — the notice links the section instead).
+   */
+  openNearby?: { stem: string; title: string }[];
   /** `<base target>` — the frame every link opens in (`detail`, `forg_b`). */
   baseTarget: string | null;
 }
