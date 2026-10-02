@@ -176,6 +176,21 @@
     "digest": "3JJBZAHYXCNZYASLXG7C2VDFQEXBD7OW"
   },
   {
+    "filename": "forg_background.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/forg_background.gif",
+    "capturedAt": null,
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "digest": "2XEH7C2UFTQEUJWI7IFWLURAS5TIQGME",
+    "borrowedFrom": [
+      "dungeon/image/forg_background.gif",
+      "map/images/left_menu/forg_background.gif",
+      "skill_knowhow/images/forg_background.gif",
+      "skill_newbie/images/forg_background.gif",
+      "uocraft/images/forg_background.gif"
+    ]
+  },
+  {
     "filename": "forg_logo_b.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/forg_logo_b.gif",
     "capturedAt": "20010813061758",
@@ -574,6 +589,51 @@
     "sizeBytes": 134765,
     "sha256": "c5f2552504b8647c5f29b9b121f79d1f7a0c3a18588c8e2879de57a2840ea626",
     "digest": "7HMO572BNELK3QUSEI23KV5QI4WYQBUG"
+  },
+  {
+    "filename": "memo_b.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/memo_b.gif",
+    "capturedAt": null,
+    "sizeBytes": 255,
+    "sha256": "c2da548631243b0be69c7ed611dc38ae0c4453cde424b949f2382954b718344d",
+    "digest": "AJYBFCLQ5AYRQH6LCW3TO43KM75TR6L2",
+    "borrowedFrom": [
+      "dungeon/image/memo_b.gif",
+      "map/images/left_menu/memo_b.gif",
+      "skill_knowhow/images/memo_b.gif",
+      "skill_newbie/images/memo_b.gif",
+      "uocraft/images/memo_b.gif"
+    ]
+  },
+  {
+    "filename": "memo_m.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/memo_m.gif",
+    "capturedAt": null,
+    "sizeBytes": 97,
+    "sha256": "e1f25d7eb6883b5b6b149a17f06c13a5f624a3b71ce77142465df5b5525d9587",
+    "digest": "B6MNOQCJSLDRKYTLSTSOIB5P2YMFT75I",
+    "borrowedFrom": [
+      "dungeon/image/memo_m.gif",
+      "map/images/left_menu/memo_m.gif",
+      "skill_knowhow/images/memo_m.gif",
+      "skill_newbie/images/memo_m.gif",
+      "uocraft/images/memo_m.gif"
+    ]
+  },
+  {
+    "filename": "memo_t.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/memo_t.gif",
+    "capturedAt": null,
+    "sizeBytes": 15751,
+    "sha256": "fd56a6d6a4481cd30de974a535de1456844de5439a574a1aee19128750ffba42",
+    "digest": "OHPVJWZFKHDEVLUCWJ7FJWYVQA7F7DAK",
+    "borrowedFrom": [
+      "dungeon/image/memo_t.gif",
+      "map/images/left_menu/memo_t.gif",
+      "skill_knowhow/images/memo_t.gif",
+      "skill_newbie/images/memo_t.gif",
+      "uocraft/images/memo_t.gif"
+    ]
   },
   {
     "filename": "n_f.gif",

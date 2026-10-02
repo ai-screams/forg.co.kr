@@ -16,6 +16,47 @@
     "digest": "DXK2ROF6VOEXF4LC5J6LRMULG63W6YD3"
   },
   {
+    "filename": "alpha_background.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/alpha_background.gif",
+    "capturedAt": null,
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5",
+    "borrowedFrom": [
+      "dungeon/image/alpha_background.gif",
+      "map/images/left_menu/alpha/alpha_background.gif",
+      "skill_knowhow/images/alpha_background.gif",
+      "skill_newbie/images/alpha_background.gif",
+      "uocraft/images/alpha_background.gif"
+    ]
+  },
+  {
+    "filename": "alpha_background_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/alpha_background_1.gif",
+    "capturedAt": null,
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH",
+    "borrowedFrom": [
+      "map/images/left_menu/alpha/alpha_background_1.gif",
+      "skill_knowhow/images/alpha_background_1.gif",
+      "skill_newbie/images/alpha_background_1.gif",
+      "uocraft/images/alpha_background_1.gif"
+    ]
+  },
+  {
+    "filename": "alpha_background_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/alpha_background_2.gif",
+    "capturedAt": null,
+    "sizeBytes": 1110,
+    "sha256": "b3752e3d3b0e440f113beab558d2a212562ddf5c9ee5b93c94eda3abf080a71c",
+    "digest": "TSTXZWO2VIUYQIQYH6LY43FIENLNN7IE",
+    "borrowedFrom": [
+      "skill_index/images/alpha_background_2.gif",
+      "skill_newbie/images/alpha_background_2.gif"
+    ]
+  },
+  {
     "filename": "b.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/alpha/b.gif",
     "capturedAt": "20040119140249",
