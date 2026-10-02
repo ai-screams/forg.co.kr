@@ -434,6 +434,62 @@ def goto_selects(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, pa
     return kept
 
 
+# From about 2007 most of the guide pages under /skill_knowhow/ answered a
+# guest with a refresh to /faq_1.html ("로그인을 하셔야 모든 페이지를 보실 수
+# 있습니다"), and that is all Wayback holds for 107 of them. 33 were captured
+# earlier, open, under the 2001–2003 paths; each pair below was matched on
+# the page's menu label and checked against the older page's text (numbers
+# shifted between the two menus: 2007's 박제에대해서 is 2001's addon_1).
+# A login-walled page with no pair here keeps pointing at the notice.
+LOGIN_NOTICE = "/site/faq_1/"
+MEMBER_ONLY_SOURCES = {
+    "skill_knowhow/uo_knowhow_command": "skill/uo_knowhow_command",      # 울온명령어
+    "skill_knowhow/uo_knowhow_command_1": "skill/uo_knowhow_command_1",  # NPC에게스킬배우기
+    "skill_knowhow/uo_knowhow_addon": "skill/uo_knowhow_addon_1",        # 박제
+    "skill_knowhow/uo_knowhow_addon_1": "skill/uo_knowhow_addon_2",      # 케그통
+    "skill_knowhow/uo_knowhow_addon_2": "skill/uo_knowhow_addon",        # 하우스애드온
+    "skill_knowhow/uo_knowhow_fame": "skill/uo_knowhow_fame",            # 명성과 카르마
+    "skill_knowhow/uo_knowhow_fame_1": "skill/uo_knowhow_fame_1",        # 명성획득
+    "skill_knowhow/uo_knowhow_fame_2": "skill/uo_knowhow_fame_2",        # 카르마잠금
+    "skill_knowhow/uo_knowhow_mirc": "skill/uo_knowhow_mirc",            # Mirc사용법
+    "skill_knowhow/uo_knowhow_moon": "skill/uo_knowhow_moon",            # 트라멜 (8 town gates)
+    "skill_knowhow/uo_knowhow_moon_1": "skill/uo_knowhow_moon_1",        # 펠루카 (+ Buccaneer's Den)
+    "skill_knowhow/uo_knowhow_moon_2": "skill/uo_knowhow_moon_2",        # 일쉐나 (virtue gates)
+    "skill_knowhow/uo_knowhow_mw": "skill/uo_knowhow_mw",                # 매직 옵션정보
+    "skill_knowhow/uo_knowhow_mw_1": "skill/uo_knowhow_mw_1",            # 슬레이어무기
+    "skill_knowhow/uo_knowhow_rare": "skill/uo_knowhow_rare",            # 세미레어
+    "skill_knowhow/uo_knowhow_rare_1": "skill/uo_knowhow_rare_1",        # 서버업레어
+    "skill_knowhow/uo_knowhow_rare_2": "skill/uo_knowhow_rare_4",        # 이벤트레어
+    "skill_knowhow/uo_knowhow_rare_3": "skill/uo_knowhow_rare_5",        # 몬스터가주는레어
+    "skill_knowhow/uo_knowhow_rare_4": "skill/uo_knowhow_rare_4",        # 이벤트레어
+    "skill_knowhow/uo_knowhow_rare_5": "skill/uo_knowhow_rare_5",        # 몬스터가주는레어
+    "skill_knowhow/uo_knowhow_runebook": "skill/uo_knowhow_runebook",    # 룬북에관하여
+    "skill_knowhow/uo_knowhow_secret": "skill/uo_knowhow_secret",        # 대륙의비밀장소I
+    "skill_knowhow/uo_knowhow_secret_1": "skill/uo_knowhow_secret_1",    # 던전의비밀장소
+    "skill_knowhow/uo_knowhow_secret_2": "skill/uo_knowhow_secret_2",    # 대륙의비밀장소II
+    "skill_knowhow/uo_knowhow_uoam": "skill/uo_knowhow_uoam",            # UOAM사용법
+    "skill_knowhow/uo_knowhow_uosu": "skill/uo_knowhow_uosu",            # UOSU사용법
+    "skill_knowhow/uo_knowhow_vendor": "skill/uo_knowhow_vendor",        # 개인벤더
+    "skill_knowhow/uo_knowhow_vendor_1": "skill/uo_knowhow_vendor_1",    # 코인메니아
+    "skill_knowhow/champions": "dungeon/champions",    # 챔피언소환: Ilshenar, T2A and dungeon spawns
+    "skill_knowhow/champions_1": "dungeon/champions",  # 일쉐나 챔피언
+    "skill_knowhow/champions_2": "dungeon/champions",  # 펠루카 던전 챔피언
+    "skill_knowhow/champions_3": "dungeon/champions",  # 펠루카 T2A 챔피언
+    "skill/uo_vet_carto_1": "skill_index/uo_vet_carto_1",  # 보물지도 등급표 (moved to /skill_index/)
+}
+
+
+def open_member_only(docs: dict[str, dict]) -> int:
+    """Point a login-walled page at the open capture of the same document."""
+    opened = 0
+    for wall, source in MEMBER_ONLY_SOURCES.items():
+        doc = docs.get(wall)
+        if doc and doc["redirectTo"] == LOGIN_NOTICE and docs.get(source, {}).get("kind") == "page":
+            doc["redirectTo"] = f"/site/{source}/"
+            opened += 1
+    return opened
+
+
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
     for el in soup.find_all(True):
         for attr in [a for a in el.attrs if a.lower().startswith("on")]:
@@ -670,6 +726,7 @@ def main() -> None:
         docs[stem] = doc
         stats[kind] = stats.get(kind, 0) + 1
 
+    stats["member_only_opened"] = open_member_only(docs)
     stats["pages"] = len(docs)
     stats["image_refs"] = len(resolver.image_refs)
     stats["images_recovered"] = sum(1 for r in resolver.image_refs if (IMG_ROOT / r).is_file())
