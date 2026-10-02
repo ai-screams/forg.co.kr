@@ -141,7 +141,7 @@ export interface ListRow {
   key: string;
   /** The title cell's content — a link, or plain text for a title-only row. */
   title: ReactNode;
-  author: string;
+  author: ReactNode;
   date: ReactNode;
   /** Only read when the table has a 조회 column. */
   hits?: ReactNode;

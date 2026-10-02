@@ -44,6 +44,11 @@ export interface BoardMeta {
    * own in the listing (`03-build-index.py` CONTINUES) and link to their posts.
    */
   continues?: readonly string[];
+  /**
+   * The board showed every non-member under a random Ultima Online daemon
+   * name, drawn again on each view (`src/lib/daemon-names.ts`).
+   */
+  daemonGuestNames?: true;
 }
 
 /**
@@ -194,6 +199,7 @@ export const BOARDS = {
     category: "community",
     engine: "gnuboard4",
     era: "2014",
+    daemonGuestNames: true,
   },
   Reveal: {
     id: "Reveal",
@@ -260,6 +266,7 @@ export const BOARDS = {
     engine: "zeroboard",
     era: "2003",
     description: "초보자 안내 게시판 (UO 입문 + 자유 토픽)",
+    daemonGuestNames: true,
   },
   newbieqna: {
     id: "newbieqna",
