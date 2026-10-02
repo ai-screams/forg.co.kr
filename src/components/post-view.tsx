@@ -11,6 +11,7 @@
  * for a static-export read-only museum.
  */
 
+import { AuthorName } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
 import { listSkinOf } from "@/components/list-skin";
@@ -73,10 +74,20 @@ export function PostView({ post, adjacent }: PostViewProps) {
                   className="text-(--era-link) hover:text-(--era-link-hover)"
                   data-pagefind-meta="author"
                 >
-                  {post.author}
+                  <AuthorName
+                    board={post.board}
+                    name={post.author}
+                    memberNo={post.authorMemberNo}
+                  />
                 </a>
               ) : (
-                <span data-pagefind-meta="author">{post.author}</span>
+                <span data-pagefind-meta="author">
+                  <AuthorName
+                    board={post.board}
+                    name={post.author}
+                    memberNo={post.authorMemberNo}
+                  />
+                </span>
               )}
             </dd>
           </div>
@@ -160,7 +171,11 @@ export function PostView({ post, adjacent }: PostViewProps) {
           <h2 id={`comments-${post.postId}`} className="sr-only">
             댓글 {post.comments.length}
           </h2>
-          <CommentList comments={post.comments} skin={listSkinOf(post.sourceEngine)} />
+          <CommentList
+            board={post.board}
+            comments={post.comments}
+            skin={listSkinOf(post.sourceEngine)}
+          />
         </section>
       )}
 

@@ -14,6 +14,7 @@
  * zone cannot move them; the full time is in the `title`.
  */
 
+import { AuthorName } from "@/components/author-name";
 import type { ListSkin } from "@/components/list-skin";
 import { chromeUrl } from "@/lib/chrome";
 import { formatKoreanDateTime, isUnknownDate } from "@/lib/dates";
@@ -21,6 +22,16 @@ import { withImgBase } from "@/lib/img-base";
 import type { Post } from "@/types/post";
 
 type Comment = Post["comments"][number];
+
+interface ItemProps {
+  comment: Comment;
+  /** The post's board, for `AuthorName`. */
+  board: string;
+}
+
+function Author({ comment, board }: ItemProps) {
+  return <AuthorName board={board} name={comment.author} memberNo={comment.authorMemberNo} />;
+}
 
 function ymd(iso: string): string {
   return `${iso.slice(0, 4)}/${iso.slice(5, 7)}/${iso.slice(8, 10)}`;
@@ -42,7 +53,7 @@ function Body({ comment, className }: { comment: Comment; className: string }) {
 
 const KRITZ_STRIP = chromeUrl("zb_kritz_title_bg.jpg");
 
-function KritzComment({ comment }: { comment: Comment }) {
+function KritzComment({ comment, board }: ItemProps) {
   const unknown = isUnknownDate(comment.createdAt);
   return (
     <li>
@@ -51,7 +62,9 @@ function KritzComment({ comment }: { comment: Comment }) {
         style={KRITZ_STRIP ? { backgroundImage: `url(${KRITZ_STRIP})` } : undefined}
       >
         comment by&nbsp;
-        <b className={comment.authorMemberNo ? "font-bold" : "font-normal"}>{comment.author}</b>
+        <b className={comment.authorMemberNo ? "font-bold" : "font-normal"}>
+          <Author comment={comment} board={board} />
+        </b>
         &nbsp;at&nbsp;
         <span title={formatKoreanDateTime(comment.createdAt)}>
           {unknown ? "작성일 미상" : ymd(comment.createdAt)}
@@ -62,12 +75,14 @@ function KritzComment({ comment }: { comment: Comment }) {
   );
 }
 
-function WebbusComment({ comment }: { comment: Comment }) {
+function WebbusComment({ comment, board }: ItemProps) {
   const unknown = isUnknownDate(comment.createdAt);
   return (
     <li className="border-b border-[#e3e3e3] pb-[2px]">
       <div className="flex items-end justify-between bg-[#cbd1d4] p-[2px] text-[11px] text-black">
-        <b>{comment.author}</b>
+        <b>
+          <Author comment={comment} board={board} />
+        </b>
         <span title={formatKoreanDateTime(comment.createdAt)}>
           {unknown ? "작성일 미상" : mdhm(comment.createdAt)}
         </span>
@@ -77,11 +92,13 @@ function WebbusComment({ comment }: { comment: Comment }) {
   );
 }
 
-function PlainComment({ comment }: { comment: Comment }) {
+function PlainComment({ comment, board }: ItemProps) {
   return (
     <li className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2">
       <div className="text-forg-muted mb-1 flex items-baseline gap-2 text-xs">
-        <span className="text-forg-ink font-bold">{comment.author}</span>
+        <span className="text-forg-ink font-bold">
+          <Author comment={comment} board={board} />
+        </span>
         <time dateTime={comment.createdAt}>{formatKoreanDateTime(comment.createdAt)}</time>
       </div>
       <Body comment={comment} className="text-forg-ink" />
@@ -89,12 +106,20 @@ function PlainComment({ comment }: { comment: Comment }) {
   );
 }
 
-export function CommentList({ comments, skin }: { comments: Comment[]; skin: ListSkin }) {
+export function CommentList({
+  board,
+  comments,
+  skin,
+}: {
+  board: string;
+  comments: Comment[];
+  skin: ListSkin;
+}) {
   const Item = skin === "kritz" ? KritzComment : skin === "webbus" ? WebbusComment : PlainComment;
   return (
     <ol className={skin === "plain" ? "space-y-3 text-sm" : "space-y-[6px]"}>
       {comments.map((c, i) => (
-        <Item key={`${c.author}-${c.createdAt}-${String(i)}`} comment={c} />
+        <Item key={`${c.author}-${c.createdAt}-${String(i)}`} comment={c} board={board} />
       ))}
     </ol>
   );

@@ -8,6 +8,7 @@
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
  */
 
+import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
 import {
@@ -72,7 +73,9 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
           const layout = "text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7]";
           return {
             key: entry.no,
-            author: entry.author,
+            author: (
+              <AuthorName board={board} name={entry.author} memberNo={entry.authorMemberNo} />
+            ),
             title: entry.hasPost ? (
               <Link href={`/${board}/${entry.no}`} className={`${layout} hover:underline`}>
                 {title}

@@ -12,6 +12,7 @@
 
 import type { ReactNode } from "react";
 
+import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 import {
   CommentCount,
@@ -129,7 +130,13 @@ function PostTable({
   // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
   const rows: ListRow[] = page.entries.map((entry) => ({
     key: `${entry.board ?? board}/${entry.postId}`,
-    author: entry.author,
+    author: (
+      <AuthorName
+        board={entry.board ?? board}
+        name={entry.author}
+        memberNo={entry.authorMemberNo}
+      />
+    ),
     title: (
       <RowTitle board={board} entry={entry}>
         {entry.categoryLabel ? (
