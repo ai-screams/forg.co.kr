@@ -70,6 +70,46 @@ if(!o.hasAttribute("value"))return;
 var t=s.getAttribute("data-goto");
 if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:window).location.href=o.value;});});`;
 
+// The "Catalog*******" pop-up list on the Diablo item and UO skill guides
+// (`font#combos` + `div#myDIV`, "FlatStyle PopUp ComboList" in their script).
+// The page hid the list with `visibility=hidden`, which is not CSS and is
+// dropped, and its margins (`margin-left:-125px`) put it left of the Catalog
+// box, so it showed open, over the text. Here it opens under the Catalog box
+// on hover, tap or focus and closes on leaving it, as the script's
+// mouseover/mouseout handlers did. Moving from the box down into the list
+// leaves one and enters the other in the same pointer move, so it stays open.
+// Focus moving from the box into the list keeps it open (a link in a hidden
+// list could not take the focus), and the list itself takes the focus when
+// clicked between its links. A mouse leaving does not close a list opened
+// from the keyboard. A press anywhere else closes it (a pen hover or an
+// iPhone tap may move no focus); so do Tab past it and Escape, which puts
+// the focus back on the box. A resize moves an open list under the box again.
+// Every page with the list is in quirks mode, where the page's own rules give
+// the colours. As an inline block the box takes `.combo{width:120px}`, and
+// border-box sizing (IE's) makes the box and the list both 120px wide. The
+// list's `height:10` would draw a 10px box with the links spilling out (IE
+// grew a box to its content). Chromium reads the box's `cursor:hand` in
+// quirks mode, Firefox does not. Without script the class is never set and
+// the list stays visible.
+const COMBO_HEAD_SCRIPT = "document.documentElement.className+=' forg-combo';";
+const COMBO_CSS = `#combos{display:inline-block;box-sizing:border-box;cursor:pointer}
+#myDIV{box-sizing:border-box;height:auto}
+html.forg-combo #myDIV{visibility:hidden}
+html.forg-combo #myDIV.forg-open{visibility:visible}`;
+const COMBO_SCRIPT = `(function(){var c=document.getElementById("combos"),m=document.getElementById("myDIV");
+c.tabIndex=0;m.tabIndex=-1;c.setAttribute("role","button");c.setAttribute("aria-controls","myDIV");c.setAttribute("aria-expanded","false");
+function show(){var r=c.getBoundingClientRect();m.style.left="0px";m.style.top="0px";var o=m.getBoundingClientRect();
+m.style.left=(r.left-o.left)+"px";m.style.top=(r.bottom-o.top)+"px";m.classList.add("forg-open");c.setAttribute("aria-expanded","true");}
+function hide(){m.classList.remove("forg-open");c.setAttribute("aria-expanded","false");}
+[c,m].forEach(function(e){
+e.addEventListener("pointerenter",show);
+e.addEventListener("pointerleave",function(v){if(v.pointerType==="mouse"&&!document.querySelector("#combos:focus-visible,#myDIV :focus-visible"))hide();});
+e.addEventListener("focusin",show);
+e.addEventListener("focusout",function(v){if(!m.contains(v.relatedTarget))hide();});});
+document.addEventListener("pointerdown",function(v){if(!c.contains(v.target)&&!m.contains(v.target))hide();});
+document.addEventListener("keydown",function(v){if(v.key!=="Escape")return;if(m.contains(document.activeElement))c.focus();hide();});
+window.addEventListener("resize",function(){if(m.classList.contains("forg-open"))show();});})();`;
+
 // An image Wayback never kept fills the slot the page gave it, in the
 // placeholder's own colours, so a column of menu buttons keeps its rhythm
 // (the 64×48 picture alone left a small icon in a blank 110×20 slot). One
@@ -92,6 +132,15 @@ img{max-width:calc(100vw - 16px)!important;height:auto!important}
 [style*="position:absolute"],[style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
 }`;
+
+// A doctype that puts the browser in the mode it drew the capture in (02g,
+// RENDERING MODE): none for quirks mode, as most of the originals had none.
+const DOCTYPE: Record<SitePage["mode"], string> = {
+  quirks: "",
+  "limited-quirks":
+    '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
+  "no-quirks": "<!doctype html>",
+};
 
 function head(page: SitePage, extra = ""): string {
   const title = `${page.title} — forg.co.kr 박물관`;
@@ -182,17 +231,18 @@ function render(page: SitePage): string {
   if (page.kind === "frameset") {
     return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
   }
-  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}</script>`;
+  const combo = page.html.includes('id="myDIV"');
+  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${combo ? `${COMBO_CSS}\n` : ""}${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}${combo ? COMBO_HEAD_SCRIPT : ""}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
   // redirects carry no body and stay out of the index. `display:contents`
   // keeps the wrapper out of the page's own layout.
   const searchable = `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
-  return `<!doctype html><html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
+  return `${DOCTYPE[page.mode]}<html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
 ${museumBar(page)}
 ${searchable}
 ${page.html}
-</div>${page.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}
+</div>${page.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}${combo ? `\n<script>${COMBO_SCRIPT}</script>` : ""}
 </body></html>`;
 }
 

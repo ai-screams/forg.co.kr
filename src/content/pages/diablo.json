@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "<frameset border=\"0\" cols=\"1*, 790, 1*\" rows=\"1*\"><frame marginheight=\"14\" marginwidth=\"10\" scrolling=\"no\" src=\"https://web.archive.org/web/20011016083700/http://www.forg.co.kr:80/left.htm\"><frameset cols=\"1*\" rows=\"56, 1*\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"forg_diablo_t\" scrolling=\"no\" src=\"https://web.archive.org/web/20011016083700/http://www.forg.co.kr:80/forg_diablo_t.htm\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"forg_diablo_b\" noresize=\"\" scrolling=\"yes\" src=\"/site/forg_diablo_b/\"></frameset><frame marginheight=\"14\" marginwidth=\"10\" scrolling=\"no\" src=\"https://web.archive.org/web/20011016083700/http://www.forg.co.kr:80/right.htm\"></frameset>",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

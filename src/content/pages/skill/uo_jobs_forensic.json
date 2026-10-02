@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "",
   "redirectTo": "https://web.archive.org/web/20020213152245/http://forg.dotple.com/intro.html",
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

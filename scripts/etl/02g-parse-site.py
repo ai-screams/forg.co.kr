@@ -29,6 +29,15 @@ LINKS (resolved against the capture's own URL)
 
 Scripts, event handlers and forms are dropped (nh3 allowlist below).
 
+RENDERING MODE
+    A `page`'s `mode` is the mode a browser draws its capture in, and the
+    route gives it a doctype that selects the same one. No doctype is
+    `quirks` (537 pages): `margin-left:30` and `color:EF5900` apply, and
+    sliced menu images in table cells sit flush. XHTML 1.0 Transitional (the
+    2016 home) is `limited-quirks`: images alone in a cell sit flush too.
+    HTML 4.0 Strict, XHTML 1.0 Strict and XHTML Mobile 1.2 are `no-quirks`.
+    Any other doctype stops the run (`DOCTYPE_MODES`).
+
 USAGE
     python3 scripts/etl/02g-parse-site.py [--dry-run]
 """
@@ -47,7 +56,7 @@ from datetime import datetime
 from pathlib import Path
 
 import nh3
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Doctype
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 RESEARCH = PROJECT_ROOT / ".docs" / "research"
@@ -332,6 +341,30 @@ def head_css(soup: BeautifulSoup) -> str:
         rules = [r for r in re.findall(r"[^{}]+\{[^{}]*\}", text) if not UNSAFE_CSS.search(r)]
         css.extend(r.strip() for r in rules)
     return "\n".join(css)
+
+
+# The doctypes on the shown captures, by public identifier, and the mode each
+# puts a browser in (the HTML standard's quirks and limited-quirks tables).
+DOCTYPE_MODES = {
+    "-//w3c//dtd html 4.0//en": "no-quirks",
+    "-//w3c//dtd xhtml 1.0 transitional//en": "limited-quirks",
+    "-//w3c//dtd xhtml 1.0 strict//en": "no-quirks",
+    "-//wapforum//dtd xhtml mobile 1.2//en": "no-quirks",
+}
+
+
+def render_mode(soup: BeautifulSoup) -> str:
+    doctype = next((str(n) for n in soup.contents if isinstance(n, Doctype)), None)
+    if doctype is None:
+        return "quirks"
+    public = re.search(r'PUBLIC\s+"([^"]*)"', doctype, re.I)
+    mode = DOCTYPE_MODES.get(public.group(1).lower() if public else "")
+    if mode is None:
+        # Many doctypes of the period mean quirks mode (HTML 3.2, 4.0
+        # Transitional, 4.01 Transitional without a system id): look the new
+        # one up in the tables and add it above.
+        raise ValueError(f"doctype with no known mode: {doctype}")
+    return mode
 
 
 def body_style(body, resolver: Resolver, base: str, ts: str, page: str) -> dict:
@@ -756,6 +789,7 @@ def main() -> None:
             "html": "",
             "redirectTo": None,
             "baseTarget": base_target(soup),
+            "mode": "no-quirks",
         }
         if kind == "frameset":
             doc["html"] = frameset_html(soup, resolver, base, ts, stem)
@@ -768,6 +802,8 @@ def main() -> None:
             # Before `rewrite`, which turns the body's own background into a
             # museum path that would then be resolved a second time.
             doc["bodyStyle"] = body_style(soup.body, resolver, base, ts, stem)
+            doc["mode"] = render_mode(soup)
+            stats[doc["mode"]] = stats.get(doc["mode"], 0) + 1
             unroll_slideshow(soup)
             stats["goto_selects"] = stats.get("goto_selects", 0) + goto_selects(
                 soup, resolver, base, ts, stem

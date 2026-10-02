@@ -21,5 +21,6 @@
   },
   "html": "<p align=\"center\"><font face=\"돋움\" size=\"2\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/rare/image/line2.gif\" data-recovery=\"missing\" height=\"29\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:388/29\" width=\"388\"></font> </p><table border=\"\" width=\"45%\"> <tbody><tr> <td width=\"964\"><p align=\"center\"><font face=\"돋움\" size=\"2\"><img border=\"0\" data-original-src=\"http://forg.co.kr:80/rare/image/sr5.gif\" data-recovery=\"missing\" height=\"312\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:340/312\" width=\"340\"></font></p></td> </tr> <tr> <td width=\"964\"><p align=\"center\"><font face=\"돋움\" size=\"2\">와이어,말굽,합친잉갓,포지드메탈</font></p></td> </tr></tbody></table>",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "",
   "redirectTo": "/site/dungeon/champions/",
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

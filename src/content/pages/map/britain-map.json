@@ -21,5 +21,6 @@
   },
   "html": "\n<div id=\"tooltip\" style=\"width:223px; height:706px; position:absolute; left:14px; top:100px; z-index:4;\"><img alt=\"\" border=\"0\" height=\"706\" src=\"/img/posts/site/map/towns/britain_a.jpg\" width=\"296\"></div>\n<div id=\"layer1\" style=\"width:321px; height:771px; position:absolute; left:310px; top:34px; z-index:3;\"><img alt=\"\" border=\"0\" height=\"771\" src=\"/img/posts/site/map/towns/britain_b.jpg\" width=\"326\"></div>\n<div id=\"layer2\" style=\"width:246px; height:655px; position:absolute; left:635px; top:24px; z-index:2;\"><img border=\"0\" height=\"655\" src=\"/img/posts/site/map/towns/britain_c.jpg\" width=\"342\"></div>\n",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "quirks"
 }

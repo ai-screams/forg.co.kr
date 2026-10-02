@@ -20,6 +20,7 @@
   "html": "",
   "redirectTo": "/site/faq_1/",
   "baseTarget": null,
+  "mode": "no-quirks",
   "memberOnly": true,
   "openNearby": [
     {

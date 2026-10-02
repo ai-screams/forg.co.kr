@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "<frameset border=\"0\" cols=\"10, 100, 680, 7, 1*\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20040402154646/http://forg.co.kr:80/forg_left_background.html\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"left\" scrolling=\"no\" src=\"/site/forg_wowleft/\"><frameset rows=\"53, 80%, 24\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"header\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_wowtop/\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"detail\" scrolling=\"yes\" src=\"/site/forg_wowmain/\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"footer\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_bottom/\"></frameset><frame marginheight=\"0\" marginwidth=\"0\" name=\"right\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20040402154646/http://forg.co.kr:80/forg_right.html\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_right_wowbackground/\"></frameset>",
   "redirectTo": null,
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }

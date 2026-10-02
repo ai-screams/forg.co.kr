@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "",
   "redirectTo": "https://web.archive.org/web/20011108131645/http://forg.co.kr:80/zboard/view.php?id=UO_Vote&page=1&page_num=4&select_arrange=headnum&desc=&cn=&ss=on&sc=on&keyword=&category=&no=58",
-  "baseTarget": null
+  "baseTarget": null,
+  "mode": "no-quirks"
 }
