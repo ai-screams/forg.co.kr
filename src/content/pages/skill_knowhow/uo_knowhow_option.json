@@ -15,5 +15,6 @@
   "bodyStyle": {},
   "html": "",
   "redirectTo": "/site/faq_1/",
-  "baseTarget": null
+  "baseTarget": null,
+  "memberOnly": true
 }

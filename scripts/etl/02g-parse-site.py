@@ -434,13 +434,15 @@ def goto_selects(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, pa
     return kept
 
 
-# From about 2007 most of the guide pages under /skill_knowhow/ answered a
-# guest with a refresh to /faq_1.html ("로그인을 하셔야 모든 페이지를 보실 수
-# 있습니다"), and that is all Wayback holds for 107 of them. 33 were captured
-# earlier, open, under the 2001–2003 paths; each pair below was matched on
+# Many guide pages, most under /skill_knowhow/, answered a guest with a
+# refresh to /faq_1.html ("로그인을 하셔야 모든 페이지를 보실 수
+# 있습니다"), and that is all Wayback holds for 107 of them (captured
+# 2002–2007, 88 of them in October and November 2007). 33 were captured
+# open under the 2001–2003 paths; each pair below was matched on
 # the page's menu label and checked against the older page's text (numbers
 # shifted between the two menus: 2007's 박제에대해서 is 2001's addon_1).
-# A login-walled page with no pair here keeps pointing at the notice.
+# A login-walled page with no pair here is marked `memberOnly`; the /site/
+# route explains the wall instead of refreshing to the login notice.
 LOGIN_NOTICE = "/site/faq_1/"
 MEMBER_ONLY_SOURCES = {
     "skill_knowhow/uo_knowhow_command": "skill/uo_knowhow_command",      # 울온명령어
@@ -480,13 +482,18 @@ MEMBER_ONLY_SOURCES = {
 
 
 def open_member_only(docs: dict[str, dict]) -> int:
-    """Point a login-walled page at the open capture of the same document."""
+    """Point a login-walled page at the open capture of the same document,
+    or mark it `memberOnly` when there is none."""
     opened = 0
-    for wall, source in MEMBER_ONLY_SOURCES.items():
-        doc = docs.get(wall)
-        if doc and doc["redirectTo"] == LOGIN_NOTICE and docs.get(source, {}).get("kind") == "page":
+    for stem, doc in docs.items():
+        if doc["redirectTo"] != LOGIN_NOTICE:
+            continue
+        source = MEMBER_ONLY_SOURCES.get(stem)
+        if source and docs.get(source, {}).get("kind") == "page":
             doc["redirectTo"] = f"/site/{source}/"
             opened += 1
+        else:
+            doc["memberOnly"] = True
     return opened
 
 
