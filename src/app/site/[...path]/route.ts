@@ -70,6 +70,13 @@ if(!o.hasAttribute("value"))return;
 var t=s.getAttribute("data-goto");
 if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:window).location.href=o.value;});});`;
 
+// An image Wayback never kept fills the slot the page gave it, in the
+// placeholder's own colours, so a column of menu buttons keeps its rhythm
+// (the 64×48 picture alone left a small icon in a blank 110×20 slot). One
+// that had alt text is a box with those words instead (02g).
+const PLACEHOLDER_CSS = `img[data-recovery="missing"]{background:#f5f1e8;outline:1px dashed #a89e85;outline-offset:-1px;object-fit:contain}
+.forg-missing{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;padding:0 2px;overflow:hidden;white-space:nowrap;vertical-align:middle;background:#f5f1e8;outline:1px dashed #a89e85;outline-offset:-1px;color:#6b614b;font:bold 11px/1.2 Verdana,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}`;
+
 // The archived documents are fixed-width table layouts (630px and up, some
 // over 2000px) made for a desktop window, and forg had no mobile site to be
 // faithful to. On a phone they are reflowed: tables, cells and images give up
@@ -175,7 +182,7 @@ function render(page: SitePage): string {
   if (page.kind === "frameset") {
     return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
   }
-  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}</script>`;
+  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
   // redirects carry no body and stay out of the index. `display:contents`

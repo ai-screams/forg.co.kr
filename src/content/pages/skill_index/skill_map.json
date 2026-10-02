@@ -19,7 +19,7 @@
     "--vlink": "purple",
     "--alink": "red"
   },
-  "html": "\n<p><a title=\":::Closed:::\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_index/smap.gif\" data-recovery=\"missing\" height=\"400\" src=\"/img/placeholder/missing.svg\" width=\"550\"></a></p>\n",
+  "html": "\n<p><a title=\":::Closed:::\"><img border=\"0\" data-original-src=\"http://www.forg.co.kr/skill_index/smap.gif\" data-recovery=\"missing\" height=\"400\" src=\"/img/placeholder/missing.svg\" style=\"aspect-ratio:550/400\" width=\"550\"></a></p>\n",
   "redirectTo": null,
   "baseTarget": null
 }
