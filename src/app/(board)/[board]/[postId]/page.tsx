@@ -14,7 +14,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { BoardMain } from "@/components/board-main";
 import { PostView } from "@/components/post-view";
 import { getBoard, isBoardId } from "@/lib/boards";
 import { getAdjacentPosts, getAllPostParams, getPost } from "@/lib/posts";
@@ -68,9 +67,5 @@ export default async function PostPage({ params }: RouteProps) {
   ]);
   if (!post) notFound();
 
-  return (
-    <BoardMain>
-      <PostView post={post} adjacent={adjacent} />
-    </BoardMain>
-  );
+  return <PostView post={post} adjacent={adjacent} />;
 }

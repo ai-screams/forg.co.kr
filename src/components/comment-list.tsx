@@ -14,7 +14,9 @@
  * zone cannot move them; the full time is in the `title`.
  */
 
-import { AuthorName, commentSeed } from "@/components/author-name";
+import type { ReactNode } from "react";
+
+import { CommentAuthor, commentSeed } from "@/components/author-name";
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import {
@@ -28,26 +30,24 @@ import type { Comment } from "@/types/post";
 
 interface ItemProps {
   comment: Comment;
-  /** The post's board, for `AuthorName`. */
+  /** The post's board, for its author's name. */
   board: string;
-  /** `AuthorName`'s seed: the comment's place, shared with the 2001 skin's copy. */
-  seed: string;
+  /** The comment's place in `post.comments`, shared with the 2001 skin's copy. */
+  index: number;
 }
 
-function Author({ comment, board, seed }: ItemProps) {
+/** A comment strip's date in the skin's own short form, the full time as a tooltip. */
+function StripDate({ iso, format }: { iso: string; format: (iso: string) => string }) {
   return (
-    <AuthorName board={board} name={comment.author} memberNo={comment.authorMemberNo} seed={seed} />
+    <span title={formatKoreanDateTime(iso)}>
+      {isUnknownDate(iso) ? "작성일 미상" : format(iso)}
+    </span>
   );
-}
-
-function Body({ comment, className }: { comment: Comment; className: string }) {
-  return <SanitizedHtml html={comment.bodyHtml} className={className} />;
 }
 
 const KRITZ_STRIP = chromeUrl("zb_kritz_title_bg.jpg");
 
-function KritzComment({ comment, board, seed }: ItemProps) {
-  const unknown = isUnknownDate(comment.createdAt);
+function KritzComment({ comment, board, index }: ItemProps) {
   return (
     <li>
       <div
@@ -56,48 +56,55 @@ function KritzComment({ comment, board, seed }: ItemProps) {
       >
         comment by&nbsp;
         <b className={comment.authorMemberNo ? "font-bold" : "font-normal"}>
-          <Author comment={comment} board={board} seed={seed} />
+          <CommentAuthor board={board} comment={comment} index={index} />
         </b>
         &nbsp;at&nbsp;
-        <span title={formatKoreanDateTime(comment.createdAt)}>
-          {unknown ? "작성일 미상" : formatSlashDate(comment.createdAt)}
-        </span>
+        <StripDate iso={comment.createdAt} format={formatSlashDate} />
       </div>
-      <Body comment={comment} className="p-[5px] text-[12px] leading-[1.4] text-[#363636]" />
+      <SanitizedHtml
+        html={comment.bodyHtml}
+        className="p-[5px] text-[12px] leading-[1.4] text-[#363636]"
+      />
     </li>
   );
 }
 
-function WebbusComment({ comment, board, seed }: ItemProps) {
-  const unknown = isUnknownDate(comment.createdAt);
+function WebbusComment({ comment, board, index }: ItemProps) {
   return (
     <li className="border-b border-[#e3e3e3] pb-[2px]">
       <div className="flex items-end justify-between bg-[#cbd1d4] p-[2px] text-[11px] text-black">
         <b>
-          <Author comment={comment} board={board} seed={seed} />
+          <CommentAuthor board={board} comment={comment} index={index} />
         </b>
-        <span title={formatKoreanDateTime(comment.createdAt)}>
-          {unknown ? "작성일 미상" : formatMonthDayTime(comment.createdAt)}
-        </span>
+        <StripDate iso={comment.createdAt} format={formatMonthDayTime} />
       </div>
-      <Body comment={comment} className="px-[2px] pt-[5px] pb-[2px] text-[12px] text-black" />
+      <SanitizedHtml
+        html={comment.bodyHtml}
+        className="px-[2px] pt-[5px] pb-[2px] text-[12px] text-black"
+      />
     </li>
   );
 }
 
-function PlainComment({ comment, board, seed }: ItemProps) {
+function PlainComment({ comment, board, index }: ItemProps) {
   return (
     <li className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2">
       <div className="text-forg-muted mb-1 flex items-baseline gap-2 text-xs">
         <span className="text-forg-ink font-bold">
-          <Author comment={comment} board={board} seed={seed} />
+          <CommentAuthor board={board} comment={comment} index={index} />
         </span>
         <time dateTime={comment.createdAt}>{formatKoreanDateTime(comment.createdAt)}</time>
       </div>
-      <Body comment={comment} className="text-forg-ink" />
+      <SanitizedHtml html={comment.bodyHtml} className="text-forg-ink" />
     </li>
   );
 }
+
+const ITEM: Record<ListSkin, (props: ItemProps) => ReactNode> = {
+  kritz: KritzComment,
+  webbus: WebbusComment,
+  plain: PlainComment,
+};
 
 export function CommentList({
   board,
@@ -108,11 +115,11 @@ export function CommentList({
   comments: Comment[];
   skin: ListSkin;
 }) {
-  const Item = skin === "kritz" ? KritzComment : skin === "webbus" ? WebbusComment : PlainComment;
+  const Item = ITEM[skin];
   return (
     <ol className={skin === "plain" ? "space-y-3 text-sm" : "space-y-[6px]"}>
       {comments.map((c, i) => (
-        <Item key={commentSeed(i)} comment={c} board={board} seed={commentSeed(i)} />
+        <Item key={commentSeed(i)} comment={c} board={board} index={i} />
       ))}
     </ol>
   );

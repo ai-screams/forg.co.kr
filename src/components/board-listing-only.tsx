@@ -8,6 +8,7 @@
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
  */
 
+import { BoardHeader, BoardNote } from "@/components/board-header";
 import { listingRows } from "@/components/board-rows";
 import { ListTable } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
@@ -29,25 +30,21 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
 
   return (
     <article className="text-forg-ink">
-      <header className="pb-2">
-        <h1 className="text-forg-ink text-[14px] font-bold">{meta.nameKr}</h1>
-        {meta.description && (
-          <p className="text-forg-muted mt-[2px] text-[11px]">{meta.description}</p>
-        )}
-        <p className="text-forg-muted mt-[2px] text-[11px]">
+      <BoardHeader meta={meta}>
+        <BoardNote>
           목록 {listing.pagesCaptured}쪽(캡처 {listing.capturesRead}번)에서{" "}
           {listing.entries.length.toLocaleString("ko-KR")}개 제목
           {listing.totalReported !== null
             ? ` (원본 표기 전체 ${listing.totalReported.toLocaleString("ko-KR")}개)`
             : ""}
           {withPost > 0 ? ` · 본문 보존 ${withPost.toLocaleString("ko-KR")}개` : ""}
-        </p>
-        <p className="text-forg-muted mt-[2px] text-[11px]">
+        </BoardNote>
+        <BoardNote>
           {withPost === 0
             ? "글 본문은 Wayback에 캡처되지 않았습니다. 목록 페이지에 남은 제목·이름·날짜·조회수만 보존합니다."
             : '"본문 없음" 표시가 붙은 글은 목록에 제목만 남았습니다.'}
-        </p>
-      </header>
+        </BoardNote>
+      </BoardHeader>
 
       <ListTable
         skin={skin}

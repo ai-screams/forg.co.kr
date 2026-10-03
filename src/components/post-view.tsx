@@ -13,7 +13,7 @@
  * for a static-export read-only museum.
  */
 
-import { AuthorName, POST_SEED } from "@/components/author-name";
+import { PostAuthor } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
 import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
@@ -79,14 +79,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
 function PostHead({ post, board }: { post: Post; board: Board }) {
   // 작성일이 1970년인 Zeroboard NULL placeholder는 캡처 시점을 보조 표시.
   const capturedDate = isUnknownDate(post.createdAt) ? formatWaybackTs(post.capturedAt) : null;
-  const author = (
-    <AuthorName
-      board={post.board}
-      name={post.author}
-      memberNo={post.authorMemberNo}
-      seed={POST_SEED}
-    />
-  );
+  const author = <PostAuthor post={post} />;
 
   return (
     <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">

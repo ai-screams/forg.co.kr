@@ -19,7 +19,7 @@
  * in the N+gine rows.
  */
 
-import { AuthorName, commentSeed, POST_SEED } from "@/components/author-name";
+import { CommentAuthor, commentSeed, PostAuthor } from "@/components/author-name";
 import { SkinImg2001 } from "@/components/skin-img-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
@@ -27,14 +27,7 @@ import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
 import type { Post } from "@/types/post";
 
 export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
-  const author = (
-    <AuthorName
-      board={post.board}
-      name={post.author}
-      memberNo={post.authorMemberNo}
-      seed={POST_SEED}
-    />
-  );
+  const author = <PostAuthor post={post} />;
   if (skin === "n_board") {
     return (
       <header data-pagefind-ignore className="text-[12px]">
@@ -96,12 +89,7 @@ export function Comments2001({ post }: { post: Post }) {
       {post.comments.map((c, i) => (
         <div key={commentSeed(i)} className="mt-px flex gap-1 bg-[#f9f9f9] p-[2px]">
           <b className="w-[80px] shrink-0 break-all">
-            <AuthorName
-              board={post.board}
-              name={c.author}
-              memberNo={c.authorMemberNo}
-              seed={commentSeed(i)}
-            />
+            <CommentAuthor board={post.board} comment={c} index={i} />
           </b>
           <span className="shrink-0 text-[#bbbbbb]">:::</span>
           <SanitizedHtml html={c.bodyHtml} className="min-w-0" />

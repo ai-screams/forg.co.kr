@@ -17,8 +17,8 @@ import { Fragment } from "react";
 import Link from "@/components/link";
 
 import {
-  InertChrome,
   InertJumpMenu,
+  LoginBar,
   MenuRow,
   MobileMenu,
   TBarRow,
@@ -194,22 +194,7 @@ export function SiteHeader2014() {
           )}
         </Link>
 
-        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2 text-[10px]">
-          <InertChrome
-            era={ERA}
-            asset="t_login.gif"
-            label="Login"
-            title="박물관 모드 — 로그인 비활성"
-            height={15}
-          />
-          <InertChrome
-            era={ERA}
-            asset="t_sign.gif"
-            label="Sign Up"
-            title="박물관 모드 — 회원가입 비활성"
-            height={15}
-          />
-        </div>
+        <LoginBar era={ERA} height={15} />
 
         <TBarRow era={ERA} />
 

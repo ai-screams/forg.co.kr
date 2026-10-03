@@ -43,8 +43,8 @@
 import type { ReactNode } from "react";
 
 import {
-  InertChrome,
   InertJumpMenu,
+  LoginBar,
   MenuRow,
   MobileMenu,
   TBarRow,
@@ -220,22 +220,7 @@ export function FrameTop2003() {
           )}
         </Link>
 
-        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
-          <InertChrome
-            era={ERA}
-            asset="t_login.gif"
-            label="Login"
-            title="박물관 모드 — 로그인 비활성"
-            height={18}
-          />
-          <InertChrome
-            era={ERA}
-            asset="t_sign.gif"
-            label="Sign Up"
-            title="박물관 모드 — 회원가입 비활성"
-            height={18}
-          />
-        </div>
+        <LoginBar era={ERA} height={18} />
 
         <TBarRow era={ERA} />
 

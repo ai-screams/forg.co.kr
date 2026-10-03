@@ -11,7 +11,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
-import { BoardMain } from "@/components/board-main";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardIndex } from "@/lib/posts";
 
@@ -69,11 +68,7 @@ export default async function BoardPaginatedPage({ params }: RouteProps) {
   const index = await getBoardIndex(board, n);
   if (!index) notFound();
 
-  return (
-    <BoardMain>
-      <BoardListing board={board} page={index} />
-    </BoardMain>
-  );
+  return <BoardListing board={board} page={index} />;
 }
 
 /** Page 2 and up; page 1 is `/[board]`. */

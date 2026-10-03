@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import { DaemonName } from "@/components/daemon-name";
 import { getBoard } from "@/lib/boards";
+import type { Comment, Post } from "@/types/post";
 
 /** Who wrote a row: what `AuthorName` needs besides the seed. */
 export interface AuthorRef {
@@ -11,7 +12,7 @@ export interface AuthorRef {
 }
 
 /** The seed of a post's own author. */
-export const POST_SEED = "post";
+const POST_SEED = "post";
 
 /** The seed of the `index`-th comment, in `post.comments` order. */
 export function commentSeed(index: number): string {
@@ -24,8 +25,8 @@ export function commentSeed(index: number): string {
  * the captured name. `board` is the board the post lives in, which differs
  * from the listing's for rows a board carries in (`BoardMeta.continues`).
  * `seed` names the post or comment on the page; its copies share one draw,
- * so every copy passes the same one: `POST_SEED`, `commentSeed(i)`, or the
- * list row's key.
+ * so every copy passes the same one: `PostAuthor` and `CommentAuthor` pick
+ * it for a post and its comments; a list row passes its key.
  */
 export function AuthorName({
   board,
@@ -42,5 +43,37 @@ export function AuthorName({
     <DaemonName name={name} seed={seed} />
   ) : (
     name
+  );
+}
+
+/** A post's own author, the same draw in every view of the post. */
+export function PostAuthor({ post }: { post: Pick<Post, "board" | "author" | "authorMemberNo"> }) {
+  return (
+    <AuthorName
+      board={post.board}
+      name={post.author}
+      memberNo={post.authorMemberNo}
+      seed={POST_SEED}
+    />
+  );
+}
+
+/** The `index`-th comment's author (`post.comments` order), the same draw in every view. */
+export function CommentAuthor({
+  board,
+  comment,
+  index,
+}: {
+  board: string;
+  comment: Pick<Comment, "author" | "authorMemberNo">;
+  index: number;
+}) {
+  return (
+    <AuthorName
+      board={board}
+      name={comment.author}
+      memberNo={comment.authorMemberNo}
+      seed={commentSeed(index)}
+    />
   );
 }

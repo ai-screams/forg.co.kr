@@ -13,11 +13,36 @@ import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
 /**
+ * The #FFC73B login bar of the 2014 and 2003 headers: Login and Sign Up,
+ * recovered and deliberately not wired up.
+ */
+export function LoginBar({ era, height }: { era: Era; height: number }) {
+  return (
+    <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
+      <InertChrome
+        era={era}
+        asset="t_login.gif"
+        label="Login"
+        title="박물관 모드 — 로그인 비활성"
+        height={height}
+      />
+      <InertChrome
+        era={era}
+        asset="t_sign.gif"
+        label="Sign Up"
+        title="박물관 모드 — 회원가입 비활성"
+        height={height}
+      />
+    </div>
+  );
+}
+
+/**
  * A recovered login/sign-up button the museum deliberately does not wire up.
  * 70 wide; the height is the era's own (`<img height=15>` in 2014, 18 in
  * frame-top-2003, whose art is taller).
  */
-export function InertChrome({
+function InertChrome({
   era,
   asset,
   label,

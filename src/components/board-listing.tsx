@@ -10,6 +10,7 @@
  *                                 `/{board}/{postId}` route disambiguated)
  */
 
+import { BoardHeader, BoardNote } from "@/components/board-header";
 import { indexRows } from "@/components/board-rows";
 import Link from "@/components/link";
 import { ListTable } from "@/components/list-skin";
@@ -30,20 +31,16 @@ export function BoardListing({ board, page }: BoardListingProps) {
 
   return (
     <article className="text-forg-ink">
-      <header className="pb-2">
-        <h1 className="text-forg-ink text-[14px] font-bold">{meta.nameKr}</h1>
-        {meta.description && (
-          <p className="text-forg-muted mt-[2px] text-[11px]">{meta.description}</p>
-        )}
-        <p className="text-forg-muted mt-[2px] text-[11px]">
+      <BoardHeader meta={meta}>
+        <BoardNote>
           전체 {page.totalPosts.toLocaleString("ko-KR")}개
           {page.totalWithPost < page.totalPosts
             ? ` (본문 보존 ${page.totalWithPost.toLocaleString("ko-KR")}개 · "본문 없음"은 목록에 제목만 남은 글)`
             : ""}{" "}
           · {page.page} / {page.totalPages} 페이지
-        </p>
+        </BoardNote>
         {meta.continues && meta.continues.length > 0 && (
-          <p className="text-forg-muted mt-[2px] text-[11px]">
+          <BoardNote>
             이전 게시판(
             {meta.continues.filter(isBoardId).map((id, i) => (
               <span key={id}>
@@ -54,9 +51,9 @@ export function BoardListing({ board, page }: BoardListingProps) {
               </span>
             ))}
             )의 글을 이어 붙였습니다. 누르면 그 게시판의 글로 갑니다.
-          </p>
+          </BoardNote>
         )}
-      </header>
+      </BoardHeader>
 
       <PostTable board={board} page={page} skin={skin} />
 
