@@ -23,22 +23,13 @@
 
 import type { ReactNode } from "react";
 
+import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
+import type { ListRow } from "@/components/list-skin";
 import { formatKoreanFull, formatSlashDate } from "@/lib/dates";
 import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
-
-/** What a 2001 row needs beyond `ListRow`'s rendered cells. */
-export interface Row2001 {
-  key: string;
-  title: string;
-  href: string | null;
-  comments: number;
-  author: ReactNode;
-  createdAt: string | null;
-  hits: number | null;
-}
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 
@@ -61,7 +52,7 @@ function dateCell(iso: string | null): ReactNode {
   return <span title={formatKoreanFull(iso)}>{formatSlashDate(iso)}</span>;
 }
 
-function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
+function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
       <SkinImg2001 skin={skin} file="old_head.gif" />
@@ -73,8 +64,8 @@ function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
       ) : (
         <span title="본문은 캡처되지 않았습니다">{row.title}</span>
       )}
-      {skin !== "n_board" && row.comments > 0 && (
-        <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.comments}]</span>
+      {skin !== "n_board" && row.commentCount > 0 && (
+        <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.commentCount}]</span>
       )}
     </td>
   );
@@ -89,7 +80,7 @@ export function ListTable2001({
   totalPages,
 }: {
   skin: Skin2001;
-  rows: readonly Row2001[];
+  rows: readonly ListRow[];
   firstNumber: number;
   totalPosts: number;
   page: number;
@@ -148,7 +139,9 @@ export function ListTable2001({
                   <tr className="h-[20px] bg-[#fefdfd] text-center">
                     <td className={THM8}>{firstNumber - i}</td>
                     <TitleCell skin={skin} row={row} />
-                    <td className="truncate break-all">{row.author}</td>
+                    <td className="truncate break-all">
+                      <AuthorName {...row.author} seed={row.key} />
+                    </td>
                     <td className={THM8}>{dateCell(row.createdAt)}</td>
                     <td className={THM8}>{row.hits ?? ""}</td>
                   </tr>

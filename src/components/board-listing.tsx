@@ -10,25 +10,13 @@
  *                                 `/{board}/{postId}` route disambiguated)
  */
 
-import type { ReactNode } from "react";
-
-import { AuthorName } from "@/components/author-name";
+import { indexRows } from "@/components/board-rows";
 import Link from "@/components/link";
-import {
-  CommentCount,
-  listSkinOf,
-  ListTable,
-  NoBodyMark,
-  RowMarks,
-  type ListRow,
-  type ListSkin,
-} from "@/components/list-skin";
-import type { Row2001 } from "@/components/list-skin-2001";
+import { listSkinOf, ListTable, type ListSkin } from "@/components/list-skin";
 
 import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
-import { formatShortDate } from "@/lib/dates";
 import { skin2001Of } from "@/lib/skins-2001";
-import { BOARD_INDEX_PAGE_SIZE, type BoardIndexEntry, type BoardIndexPage } from "@/types/post";
+import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
 interface BoardListingProps {
   board: BoardId;
@@ -76,41 +64,6 @@ export function BoardListing({ board, page }: BoardListingProps) {
   );
 }
 
-/**
- * The title cell: a link when the museum holds the post, plain text when
- * the row is known only from a captured list page (ADR-0017 §4).
- */
-function RowTitle({
-  board,
-  entry,
-  children,
-}: {
-  board: BoardId;
-  entry: BoardIndexEntry;
-  children: ReactNode;
-}) {
-  const layout = "inline-flex items-baseline gap-[4px] leading-[1.7]";
-  if (!entry.hasPost) {
-    return (
-      <span
-        className={`text-forg-muted ${layout}`}
-        title="본문은 캡처되지 않았습니다 — 목록에 남은 제목"
-      >
-        {children}
-        <NoBodyMark />
-      </span>
-    );
-  }
-  return (
-    <Link
-      href={`/${entry.board ?? board}/${entry.postId}`}
-      className={`text-forg-ink ${layout} hover:underline`}
-    >
-      {children}
-    </Link>
-  );
-}
-
 function PostTable({
   board,
   page,
@@ -130,68 +83,14 @@ function PostTable({
 
   // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
   // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
-  const rows: ListRow[] = page.entries.map((entry) => ({
-    key: `${entry.board ?? board}/${entry.postId}`,
-    author: (
-      <AuthorName
-        board={entry.board ?? board}
-        name={entry.author}
-        memberNo={entry.authorMemberNo}
-        seed={`${entry.board ?? board}/${entry.postId}`}
-      />
-    ),
-    title: (
-      <RowTitle board={board} entry={entry}>
-        {entry.categoryLabel ? (
-          <span className="text-forg-muted shrink-0 text-[10px]">[{entry.categoryLabel}]</span>
-        ) : null}
-        <span className="truncate">{entry.title}</span>
-        <CommentCount count={entry.commentCount} skin={skin} />
-        <RowMarks
-          skin={skin}
-          board={board}
-          attachmentCount={entry.attachmentCount}
-          hits={entry.hits}
-        />
-      </RowTitle>
-    ),
-    date: entry.createdAtApprox ? (
-      <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
-        ≤{formatShortDate(entry.createdAt)}
-      </span>
-    ) : entry.yearApprox ? (
-      <span title="목록에는 월/일만 있어 연도는 추정">≈{formatShortDate(entry.createdAt)}</span>
-    ) : (
-      formatShortDate(entry.createdAt)
-    ),
-  }));
-
-  const rows2001: Row2001[] = page.entries.map((entry) => ({
-    key: `${entry.board ?? board}/${entry.postId}`,
-    title: entry.title,
-    href: entry.hasPost ? `/${entry.board ?? board}/${entry.postId}` : null,
-    comments: entry.commentCount,
-    author: (
-      <AuthorName
-        board={entry.board ?? board}
-        name={entry.author}
-        memberNo={entry.authorMemberNo}
-        seed={`${entry.board ?? board}/${entry.postId}`}
-      />
-    ),
-    createdAt: entry.createdAt,
-    hits: entry.hits,
-  }));
-
   return (
     <ListTable
       skin={skin}
-      rows={rows}
+      rows={indexRows(board, page, skin)}
       withHits={false}
       firstNumber={page.totalPosts - (page.page - 1) * BOARD_INDEX_PAGE_SIZE}
       era2001={{
         skin: skin2001Of(board),
-        rows: rows2001,
         totalPosts: page.totalPosts,
         page: page.page,
         totalPages: page.totalPages,

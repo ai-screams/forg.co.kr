@@ -18,8 +18,9 @@
 
 import type { ReactNode } from "react";
 
+import { AuthorName, type AuthorRef } from "@/components/author-name";
 import { LazyImg } from "@/components/lazy-img";
-import { ListTable2001, type Row2001 } from "@/components/list-skin-2001";
+import { ListTable2001 } from "@/components/list-skin-2001";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Skin2001 } from "@/lib/skins-2001";
 import type { SourceEngine } from "@/types/post";
@@ -140,14 +141,32 @@ function columnsFor(skin: ListSkin, withHits: boolean): Column[] {
   return withHits ? cols : cols.filter((c) => c.key !== "hits");
 }
 
+/**
+ * One list row, for every view of it: the phone list, the 2014/2003 table and
+ * the 2001 skin (`list-skin-2001`). Built by `board-rows.tsx`.
+ */
 export interface ListRow {
+  /** Unique in the list; also the daemon-name seed of its author. */
   key: string;
-  /** The title cell's content — a link, or plain text for a title-only row. */
-  title: ReactNode;
-  author: ReactNode;
-  date: ReactNode;
-  /** Only read when the table has a 조회 column. */
-  hits?: ReactNode;
+  title: string;
+  /** The post, or null for a row known only from a captured list page. */
+  href: string | null;
+  commentCount: number;
+  /** Rendered by each view, so a plain name is a string in each, not a reference. */
+  author: AuthorRef;
+  createdAt: string | null;
+  hits: number | null;
+  /**
+   * The 2014/2003 cells, built once: the phone list and the table share each
+   * element, which the RSC payload then carries once.
+   */
+  cells: {
+    /** A link, or plain text for a title-only row. */
+    title: ReactNode;
+    date: ReactNode;
+    /** Only read when the table has a 조회 column. */
+    hits?: ReactNode;
+  };
 }
 
 /**
@@ -179,10 +198,9 @@ export function ListTable({
   rows: readonly ListRow[];
   withHits: boolean;
   firstNumber: number;
-  /** The same rows for the 2001 era's skin (`list-skin-2001`), which draws them itself. */
+  /** The 2001 skin's strip and counts (`list-skin-2001`), which draws the same rows itself. */
   era2001: {
     skin: Skin2001;
-    rows: readonly Row2001[];
     totalPosts: number;
     page: number;
     totalPages: number;
@@ -194,7 +212,7 @@ export function ListTable({
     <>
       <NarrowList rows={rows} />
       <div className="era-2001-only hidden sm:block">
-        <ListTable2001 firstNumber={firstNumber} {...era2001} />
+        <ListTable2001 rows={rows} firstNumber={firstNumber} {...era2001} />
       </div>
       <div className="era-not-2001 hidden border border-(--era-input-border)/50 bg-white sm:block">
         <table className="w-full table-fixed border-collapse text-[12px]">
@@ -237,12 +255,14 @@ function NarrowList({ rows }: { rows: readonly ListRow[] }) {
           className="border-b border-(--era-input-border)/25 px-2 py-[6px] text-[13px] last:border-0"
         >
           {/* The title link is inline-flex; capping it lets its truncate work. */}
-          <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.title}</div>
+          <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.cells.title}</div>
           <div className="text-forg-muted mt-[2px] flex gap-2 text-[11px] tabular-nums">
-            <span className="truncate">{row.author}</span>
-            <span className="shrink-0">{row.date}</span>
-            {row.hits !== undefined && row.hits !== null && (
-              <span className="shrink-0">조회 {row.hits}</span>
+            <span className="truncate">
+              <AuthorName {...row.author} seed={row.key} />
+            </span>
+            <span className="shrink-0">{row.cells.date}</span>
+            {row.cells.hits !== undefined && row.cells.hits !== null && (
+              <span className="shrink-0">조회 {row.cells.hits}</span>
             )}
           </div>
         </li>
@@ -275,15 +295,15 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
     case "name":
       return (
         <td className="text-forg-muted truncate px-1 text-center align-middle text-[11px]">
-          {row.author}
+          <AuthorName {...row.author} seed={row.key} />
         </td>
       );
     case "title":
-      return <td className="px-1 align-middle break-all">{row.title}</td>;
+      return <td className="px-1 align-middle break-all">{row.cells.title}</td>;
     case "date":
-      return <td className={meta}>{row.date}</td>;
+      return <td className={meta}>{row.cells.date}</td>;
     case "hits":
-      return <td className={meta}>{row.hits}</td>;
+      return <td className={meta}>{row.cells.hits}</td>;
   }
 }
 

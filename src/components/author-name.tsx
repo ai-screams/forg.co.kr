@@ -3,6 +3,13 @@ import type { ReactNode } from "react";
 import { DaemonName } from "@/components/daemon-name";
 import { getBoard } from "@/lib/boards";
 
+/** Who wrote a row: what `AuthorName` needs besides the seed. */
+export interface AuthorRef {
+  board: string;
+  name: string;
+  memberNo: string | null;
+}
+
 /** The seed of a post's own author. */
 export const POST_SEED = "post";
 

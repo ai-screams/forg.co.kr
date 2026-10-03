@@ -8,20 +8,10 @@
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
  */
 
-import { AuthorName } from "@/components/author-name";
-import Link from "@/components/link";
-import type { Row2001 } from "@/components/list-skin-2001";
-
-import {
-  CommentCount,
-  listSkinOf,
-  ListTable,
-  NoBodyMark,
-  RowMarks,
-  type ListRow,
-} from "@/components/list-skin";
+import { listingRows } from "@/components/board-rows";
+import { listSkinOf, ListTable } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
-import { formatShortDate, formatWaybackTs } from "@/lib/dates";
+import { formatWaybackTs } from "@/lib/dates";
 import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardListing } from "@/types/post";
 
@@ -60,76 +50,11 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
 
       <ListTable
         skin={skin}
-        rows={listing.entries.map((entry): ListRow => {
-          const title = (
-            <>
-              {entry.categoryLabel ? (
-                <span className="text-forg-muted shrink-0 text-[10px]">
-                  [{entry.categoryLabel}]
-                </span>
-              ) : null}
-              <span className="truncate">{entry.title}</span>
-              <CommentCount count={entry.commentCount} skin={skin} />
-              <RowMarks skin={skin} board={board} attachmentCount={0} hits={entry.hits} />
-            </>
-          );
-          const layout = "text-forg-ink inline-flex items-baseline gap-[4px] leading-[1.7]";
-          return {
-            key: entry.no,
-            author: (
-              <AuthorName
-                board={board}
-                name={entry.author}
-                memberNo={entry.authorMemberNo}
-                seed={entry.no}
-              />
-            ),
-            title: entry.hasPost ? (
-              <Link href={`/${board}/${entry.no}`} className={`${layout} hover:underline`}>
-                {title}
-              </Link>
-            ) : (
-              <span className={layout} title="본문은 캡처되지 않았습니다">
-                {title}
-                {/* Every row lacks a body when none was captured; the header says so. */}
-                {withPost > 0 && <NoBodyMark />}
-              </span>
-            ),
-            date:
-              entry.createdAt === null ? (
-                "—"
-              ) : entry.yearApprox ? (
-                <span title="목록에는 월/일만 있어 연도는 캡처 시점으로 추정">
-                  ≈{formatShortDate(entry.createdAt)}
-                </span>
-              ) : (
-                formatShortDate(entry.createdAt)
-              ),
-            hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR"),
-          };
-        })}
+        rows={listingRows(board, listing, skin)}
         withHits
         firstNumber={listing.entries.length}
         era2001={{
           skin: skin2001Of(board),
-          rows: listing.entries.map(
-            (entry): Row2001 => ({
-              key: entry.no,
-              title: entry.title,
-              href: entry.hasPost ? `/${board}/${entry.no}` : null,
-              comments: entry.commentCount,
-              author: (
-                <AuthorName
-                  board={board}
-                  name={entry.author}
-                  memberNo={entry.authorMemberNo}
-                  seed={entry.no}
-                />
-              ),
-              createdAt: entry.createdAt,
-              hits: entry.hits,
-            }),
-          ),
           totalPosts: listing.totalReported ?? listing.entries.length,
           page: 1,
           totalPages: listing.pagesCaptured,
