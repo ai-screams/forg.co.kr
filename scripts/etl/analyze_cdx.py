@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Analyze CDX harvest: dedup by post identity, apply E-policy (latest 200 with max length)."""
+"""Analyze CDX harvest: dedup by post identity, apply E-policy (latest 200 with max length).
+
+Prints the per-board breakdown. `--out PATH` also writes the plan there.
+`.docs/research/cdx/e-policy-plan.json` is the plan every parser stamps
+`capturedAt` from and may carry manual edits, so writing over an existing
+file takes `--force`.
+"""
+import argparse
 import json
 import re
 import sys
@@ -79,6 +86,13 @@ def load_cdx(path: Path):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
+    ap.add_argument("--out", type=Path, help="write the plan here (e.g. .docs/research/cdx/e-policy-plan.json)")
+    ap.add_argument("--force", action="store_true", help="overwrite --out if it exists")
+    args = ap.parse_args()
+    if args.out and args.out.exists() and not args.force:
+        sys.exit(f"{args.out} exists — it may hold manual edits; pass --force to overwrite it")
+
     files = ["zb-posts.json", "g4-posts.json", "g5-posts.json"]
     all_rows = []
     for f in files:
@@ -149,8 +163,10 @@ def main():
     print(f"Other/unknown:                {other_posts:>6} posts")
     print(f"Total chosen:                 {len(chosen):>6} posts, {sum(c['length'] for c in chosen.values())/1024/1024:>7.1f} MB HTML")
 
-    # Save E-policy plan
-    out_path = CDX_DIR / "e-policy-plan.json"
+    if not args.out:
+        print("\nNo --out: plan not written.", file=sys.stderr)
+        return
+
     plan = []
     for (era, bid, pid), best in chosen.items():
         plan.append({
@@ -164,8 +180,10 @@ def main():
             "digest": best["digest"],
         })
     plan.sort(key=lambda x: (x["phase"], x["board"], x["post_id"]))
-    out_path.write_text(json.dumps(plan, ensure_ascii=False, indent=1))
-    print(f"\nPlan written: {out_path} ({len(plan)} entries)", file=sys.stderr)
+    # `x` without --force: also refuse a file that appeared while this ran.
+    with args.out.open("w" if args.force else "x", encoding="utf-8") as f:
+        f.write(json.dumps(plan, ensure_ascii=False, indent=1))
+    print(f"\nPlan written: {args.out} ({len(plan)} entries)", file=sys.stderr)
 
 
 if __name__ == "__main__":
