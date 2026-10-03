@@ -147,11 +147,17 @@ body {
   display: none !important;
 }
 
-/* 2001 has no side columns: the content column is 790px and centred
- * (`frameset cols="1*, 790, 1*"`). The 2014 and 2003 frames keep 680px. */
+/* Every era's frame is centred on a wide screen. 2001 was
+ * (`frameset cols="1*, 790, 1*"`, white sides) and its column is 790px. The
+ * 2014 and 2003 frames (10/100/680/7) sat at the left with a slate `1*`
+ * column filling the rest; by choice (2026-10-03) they are centred too, with
+ * that slate on both sides. */
 @media (min-width: 800px) {
-  :root[data-era="2001"] .forg-shell {
+  .forg-shell {
     justify-content: center;
+  }
+  :root:not([data-era="2001"]) .forg-shell {
+    background-color: var(--color-forg-slate);
   }
   :root[data-era="2001"] .forg-shell-main {
     width: 790px;

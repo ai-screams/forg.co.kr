@@ -1,11 +1,11 @@
 /**
  * The frame every exhibit sits in — five columns, both eras.
  *
- *   ┌─10─┬─100─┬──────────680──────────┬─7─┬────*────┐
- *   │rail│side │ header (53px)         │   │ slate   │
- *   │    │bar  │ content               │   │ (ad col)│
- *   │    │     │ counter / bgm (24px)  │   │         │
- *   └────┴─────┴───────────────────────┴───┴─────────┘
+ *   ┌─slate─┬─10─┬─100─┬──────────680──────────┬─7─┬─slate─┐
+ *   │       │rail│side │ header (53px)         │   │       │
+ *   │       │    │bar  │ content               │   │       │
+ *   │       │    │     │ counter / bgm (24px)  │   │       │
+ *   └───────┴────┴─────┴───────────────────────┴───┴───────┘
  *
  * The geometry is era-invariant: `frameset cols="10, 100, 680, 7, 1*"` is
  * character-identical across the 2003, 2007 and 2010 captures, and
@@ -15,6 +15,10 @@
  * is visible. 2001 (ADR-0019) had no side columns: `.era-not-2001` hides
  * them, and globals.css centres a 790px content column under the 2001 top
  * frame.
+ *
+ * The originals put the frame at the left and filled the rest (`1*`) with
+ * slate, where a 2014 AdSense unit sat. The museum centres the frame in every
+ * era, with the slate on both sides (`.forg-shell` in globals.css).
  *
  * The fixed columns appear from 800px, where 10 + 100 + 680 + 7 = 797 fits.
  * Below that the rails and sidebar are dropped and the 680 column takes the
@@ -29,7 +33,6 @@
 import type { ReactNode } from "react";
 
 import {
-  AdSenseColumn,
   GameCategorySidebar,
   LeftRail,
   RightRail,
@@ -97,7 +100,6 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
 
         <div className="era-not-2001 contents">
           <RightRail />
-          <AdSenseColumn />
         </div>
       </div>
     </div>

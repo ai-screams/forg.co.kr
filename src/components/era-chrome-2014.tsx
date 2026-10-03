@@ -78,15 +78,6 @@ export function RightRail() {
   );
 }
 
-export function AdSenseColumn() {
-  // `<td width="*" bgcolor="61748b">` held a 120×600 AdSense unit. A
-  // non-commercial museum shows neither an ad nor a sign advertising its
-  // absence, and to a 2014 visitor with a blocker this column *was* plain
-  // slate. Keeping the column matters: it is what makes the 680px content
-  // read as a narrow band rather than a centred page.
-  return <aside aria-hidden className="bg-forg-slate hidden flex-1 lg:block" />;
-}
-
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Game category sidebar (100px)                                         */
 /* ──────────────────────────────────────────────────────────────────── */
