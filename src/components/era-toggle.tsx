@@ -16,7 +16,7 @@ import { DEFAULT_ERA, ERA_LABELS, ERA_STORAGE_KEY, ERAS, isEra, type Era } from 
  * (`forg:era-change`)를 dispatch한다. 다른 탭의 변경은 `storage` 이벤트로
  * 받아 이 탭의 `<html data-era>`에 옮긴다.
  *
- * 눌린 버튼의 색은 React 상태가 아니라 `globals.css`의 `data-era` 규칙이
+ * 눌린 버튼의 색은 React 상태가 아니라 `src/styles/eras.css`의 `data-era` 규칙이
  * 칠한다. 스크립트가 돌기 전(SSR 상태는 늘 2014)에도 저장된 시기가 켜져
  * 보이게 하기 위해서다.
  */

@@ -3,7 +3,7 @@
  *
  * Markup is era-invariant — the visual delta between 2014 and 2003 is
  * driven entirely by `<html data-era>` and the CSS variables defined in
- * `globals.css`. The 2001 era (ADR-0019) draws the head and comments as the
+ * `src/styles/eras.css`. The 2001 era (ADR-0019) draws the head and comments as the
  * 2001 skins did (`post-view-2001`) beside these, which it hides; the body
  * is rendered once for every era.
  *

@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Shared React components for the museum's chrome, era shell, board listings, and post/comment rendering. All components here are era-invariant in their markup — the 2014/2003 visual difference comes from CSS (`--era-*` variables in `src/app/globals.css`), not from component branching, with `era-chrome-2014.tsx` and `home-2003.tsx` as the two exceptions that _hold_ each era's own chrome pieces.
+Shared React components for the museum's chrome, era shell, board listings, and post/comment rendering. All components here are era-invariant in their markup — the 2014/2003 visual difference comes from CSS (`--era-*` variables in `src/styles/eras.css`), not from component branching, with `era-chrome-2014.tsx` and `home-2003.tsx` as the two exceptions that _hold_ each era's own chrome pieces.
 
 ## Key Files
 

@@ -11,14 +11,14 @@
  * character-identical across the 2003, 2007 and 2010 captures, and
  * 2014-12-18 reproduces the same numbers as a `<table>`. Only the chrome
  * inside those columns differs, so one shell serves every era and the CSS
- * in globals.css (`.era-2014-only` / `.era-2003-only` / `.era-2001-only`)
+ * in `src/styles/eras.css` (`.era-2014-only` / `.era-2003-only` / `.era-2001-only`)
  * picks which chrome is visible. 2001 (ADR-0019) had no side columns: `.era-not-2001` hides
- * them, and globals.css centres a 790px content column under the 2001 top
+ * them, and `eras.css` centres a 790px content column under the 2001 top
  * frame.
  *
  * The originals put the frame at the left and filled the rest (`1*`) with
  * slate, where a 2014 AdSense unit sat. The museum centres the frame in every
- * era, with the slate on both sides (`.forg-shell` in globals.css).
+ * era, with the slate on both sides (`.forg-shell` in `eras.css`).
  *
  * The fixed columns appear from 800px, where 10 + 100 + 680 + 7 = 797 fits.
  * Below that the rails and sidebar are dropped and the 680 column takes the

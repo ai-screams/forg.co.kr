@@ -1,0 +1,131 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * What changes with `<html data-era="2014" | "2003" | "2001">`: the
+ * `--era-*` variables (semantic tokens), each era's body font, which era's
+ * markup shows, the toggle's lit button, the 2001 post layout and the
+ * centred frame. Default (no attribute) === 2014.
+ * ───────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root,
+  :root[data-era="2014"] {
+    --era-page-bg: oklch(0.512 0.034 247.4); /* #61748B slate */
+    --era-content-bg: oklch(0.985 0 0); /* #FAFAFA */
+    --era-sidebar-bg: var(--color-forg-sidebar);
+    --era-sidebar-fg: oklch(0.985 0 0); /* #FAFAFA */
+    --era-sidebar-link: oklch(0.985 0 0); /* #FAFAFA — `<font color="#fafafa">` */
+    --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
+    --era-link: oklch(0.49 0 0); /* #6A6A6A — 2014 body link */
+    --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A — comment counts in lists */
+    --era-accent: var(--color-forg-gold);
+    --era-input-border: oklch(0.671 0 0); /* #9A9A9A */
+  }
+
+  :root[data-era="2003"] {
+    --era-page-bg: oklch(1 0 0); /* white */
+    --era-content-bg: oklch(0.952 0 0); /* #F1F1F1 */
+    --era-sidebar-bg: var(--color-forg-sidebar);
+    --era-sidebar-fg: oklch(1 0 0); /* white */
+    /* frame-left-2003 sets link="#CC0033" and the menu entries inherit it,
+     * but crimson on the slate tile measures 1.42:1. We keep white (7.92:1);
+     * the two gold entries at the foot of the original (#FFCC33) are the
+     * only ones that overrode the attribute. */
+    --era-sidebar-link: oklch(1 0 0); /* white */
+    /* The museum's own footer, not the exhibit's. The 2003 page's 24px
+     * bottom strip is `--color-forg-bgm` and belongs to <Home2003>. */
+    --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
+    /* frame-main-2003: `a:link { color:rgb(69,69,69) }`. Its `a:hover` was
+     * silver, which is unreadable on white; we keep the gold hover. */
+    --era-link: oklch(0.39 0 89.9); /* #454545 — 2003 body link */
+    --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A */
+    --era-accent: var(--color-forg-gold);
+    --era-input-border: oklch(0.671 0 0);
+  }
+
+  /* August 2001: a 790px column between `left.htm` and `right.htm`, whose
+   * background (`forg_1.gif`) was never captured, so white; the front page
+   * `forg_b.htm` sat on #F8F8F8 and set the same rgb(69,69,69) links as 2003
+   * (and the same silver hover, kept gold for the same reason). */
+  :root[data-era="2001"] {
+    --era-page-bg: oklch(1 0 0); /* white */
+    --era-content-bg: oklch(0.979 0 89.9); /* #F8F8F8 */
+    --era-sidebar-bg: var(--color-forg-sidebar);
+    --era-sidebar-fg: oklch(1 0 0); /* white */
+    --era-sidebar-link: oklch(1 0 0); /* white */
+    --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
+    --era-link: oklch(0.39 0 89.9); /* #454545 */
+    --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A */
+    --era-accent: var(--color-forg-gold);
+    --era-input-border: oklch(0.845 0 89.9); /* #CCCCCC — forg_b's table border */
+  }
+}
+
+@layer museum {
+  /* frame-main-2003 declares 굴림 12 times, Verdana 12 and Tahoma 6; the
+   * exhibit used to carry this as an inline style, but it belongs to the era
+   * rather than to one component. The default `body` font is in
+   * `base.css`, same layer; this selector is more specific, so it wins. */
+  :root[data-era="2003"] body {
+    font-family: Verdana, "굴림", Gulim, Tahoma, sans-serif;
+  }
+
+  /* forg_b.htm (2001): `.boolpae`, `.detail` and `td,a,p,b` are 9pt 굴림. */
+  :root[data-era="2001"] body {
+    font-family: "굴림", Gulim, Tahoma, sans-serif;
+  }
+
+  /* ─────────────────────────────────────────────────────────────────────
+   * Era-scoped visibility — used on the home page (and any future routes
+   * that ship side-by-side 2003 / 2014 markup). Both era variants render
+   * into the static SSG output; the runtime `<html data-era>` attribute
+   * picks which DOM subtree is visible. Pure CSS = instant toggle, no
+   * React re-render, no FOUC.
+   * ───────────────────────────────────────────────────────────────────── */
+  :root:not([data-era="2014"]) .era-2014-only,
+  :root:not([data-era="2003"]) .era-2003-only,
+  :root:not([data-era="2001"]) .era-2001-only,
+  :root[data-era="2001"] .era-not-2001 {
+    display: none !important;
+  }
+
+  /* The era toggle's pressed button, lit from `data-era` like the subtrees
+   * above: the saved era shows before `<EraToggle>`'s script runs. */
+  :root[data-era="2014"] [data-era-option="2014"],
+  :root[data-era="2003"] [data-era-option="2003"],
+  :root[data-era="2001"] [data-era-option="2001"] {
+    background-color: var(--color-forg-gold);
+    color: var(--color-forg-ink);
+  }
+
+  /* A 2001 post: the skins' 95% table on white, no box, and the body cell
+   * `style='word-break:break-all;padding:10px;'` with `line-height:160%`. */
+  :root[data-era="2001"] .forg-post {
+    width: 95%;
+    margin-inline: auto;
+    border-color: transparent;
+  }
+  :root[data-era="2001"] .forg-post-body-cell {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+
+  /* Every era's frame is centred on a wide screen. 2001 was
+   * (`frameset cols="1*, 790, 1*"`, white sides) and its column is 790px. The
+   * 2014 and 2003 frames (10/100/680/7) sat at the left with a slate `1*`
+   * column filling the rest; by choice (2026-10-03) they are centred too, with
+   * that slate on both sides. */
+  @media (min-width: 800px) {
+    .forg-shell {
+      justify-content: center;
+    }
+    :root:not([data-era="2001"]) .forg-shell {
+      background-color: var(--color-forg-slate);
+    }
+    :root[data-era="2001"] .forg-shell-main {
+      width: 790px;
+    }
+  }
+}

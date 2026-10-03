@@ -1,7 +1,7 @@
 /**
  * A post's head and comments as the 2001 Zeroboard 4.0 skins drew them
  * (ADR-0019), shown in the 2001 era in place of `<PostView>`'s own. The body
- * between them is the same element in every era; `globals.css` gives it the
+ * between them is the same element in every era; `src/styles/eras.css` gives it the
  * skin's padding and line height.
  *
  * N+gine (`Z/Q_A/3106`, 2001-07-15):

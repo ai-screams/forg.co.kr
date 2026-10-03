@@ -3,7 +3,7 @@
  * (`<EraShell>`, shared with every route): the 2014 eight-box grid
  * (`home-2014.tsx`), the 2003 main frame (`home-2003.tsx`) and the 2001
  * front page (`home-2001.tsx`). All three render server-side and
- * `<html data-era>` shows one (CSS in globals.css), so the era toggle is
+ * `<html data-era>` shows one (CSS in `src/styles/eras.css`), so the era toggle is
  * instant and the static export ships every layout.
  */
 

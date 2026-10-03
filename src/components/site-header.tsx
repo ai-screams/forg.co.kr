@@ -3,7 +3,7 @@
  *
  * Server-rendered, era-invariant markup. The only client island is the
  * embedded `<EraToggle>`. All visual differences between the eras
- * come from the `:root[data-era]` CSS variables in `globals.css`.
+ * come from the `:root[data-era]` CSS variables in `src/styles/eras.css`.
  */
 
 import Link from "@/components/link";

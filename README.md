@@ -160,7 +160,7 @@ forg/
 │   │   ├── (board)/[board]/
 │   │   │   ├── page.tsx       # 게시판 목록
 │   │   │   └── [postId]/page.tsx  # 게시글 본문
-│   │   └── globals.css        # Tailwind v4 + 시기 토큰
+│   │   └── globals.css        # Tailwind v4 진입점 (토큰·시기 규칙은 src/styles/)
 │   ├── components/
 │   │   ├── era-toggle.tsx     # 2014/2003/2001 시기 전환
 │   │   ├── header.tsx
