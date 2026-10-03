@@ -6,7 +6,11 @@
   "originalUrl": "http://forg.co.kr:80/_zb/kritz_vote/",
   "baseTarget": null,
   "bodyStyle": {
-    "background-color": "white"
+    "background-color": "white",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px"
   },
   "mode": "quirks",
   "css": "",

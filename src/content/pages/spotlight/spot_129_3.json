@@ -14,6 +14,10 @@
   "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
   "bodyStyle": {
     "color": "black",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
     "background-image": "url('/img/posts/site/spotlight/images/zoombox_background.gif')",
     "--link": "blue",
     "--vlink": "black",

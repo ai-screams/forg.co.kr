@@ -15,6 +15,10 @@
   "bodyStyle": {
     "background-color": "#F6F2EC",
     "color": "black",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
     "--link": "#9F3215",
     "--vlink": "#9F3215",
     "--alink": "#9F3215"

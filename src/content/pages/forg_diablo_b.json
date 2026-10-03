@@ -20,6 +20,10 @@
   "bodyStyle": {
     "background-color": "#F8F8F8",
     "color": "black",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
     "--link": "blue",
     "--vlink": "purple",
     "--alink": "red"

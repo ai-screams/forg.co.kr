@@ -15,6 +15,10 @@
   "bodyStyle": {
     "background-color": "white",
     "color": "#333333",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px",
     "background-image": "url('/img/posts/site/images/left_background.gif')",
     "--link": "#CC0033",
     "--vlink": "purple",

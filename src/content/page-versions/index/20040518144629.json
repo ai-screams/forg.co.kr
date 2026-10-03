@@ -6,7 +6,11 @@
   "originalUrl": "http://forg.uospace.net:80/",
   "baseTarget": null,
   "bodyStyle": {
-    "background-color": "FFFFFF"
+    "background-color": "FFFFFF",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px"
   },
   "mode": "quirks",
   "css": ".ver{\n\tfont : Verdana, Arial, 굴림;\n\tfont : 11px;\n\tpadding-top : -10px;\n\n}",

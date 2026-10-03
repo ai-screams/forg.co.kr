@@ -124,6 +124,15 @@ ATTRS: dict[str, set[str]] = {
     "select": {"size", "data-goto"}, "option": {"value", "selected"},
 }  # fmt: skip
 BODY_STYLE = {"bgcolor": "background-color", "text": "color"}
+# `<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">`
+# (297 captures): the page's own margins, which IE and Netscape read and a
+# body built from a style attribute would otherwise lose to the default 8px.
+BODY_MARGINS = {
+    "topmargin": ("margin-top",),
+    "leftmargin": ("margin-left",),
+    "marginheight": ("margin-top", "margin-bottom"),
+    "marginwidth": ("margin-left", "margin-right"),
+}
 FRAMESET_ATTRS = {"rows", "cols", "border", "frameborder", "framespacing", "bordercolor"}
 FRAME_ATTRS = {"name", "scrolling", "noresize", "frameborder", "marginwidth",
                "marginheight", "border"}
@@ -384,6 +393,11 @@ def body_style(body, resolver: Resolver, base: str, ts: str, page: str) -> dict:
         v = body.get(attr)
         if v and re.fullmatch(r"#?[0-9A-Za-z]+", v.strip()):
             out[prop] = v.strip()
+    for attr, props in BODY_MARGINS.items():
+        v = (body.get(attr) or "").strip()
+        if v.isdigit():
+            for prop in props:
+                out[prop] = f"{v}px"
     bg = body.get("background")
     if bg:
         src, _ = resolver.image(bg, base, ts, page)
