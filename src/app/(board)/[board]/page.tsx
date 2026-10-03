@@ -42,7 +42,6 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   if (!isBoardId(board)) return {};
 
   const meta = getBoard(board);
-  if (!meta) return {};
 
   const index = await getBoardIndex(board, 1);
   if (!index) {
@@ -70,7 +69,6 @@ export default async function BoardPageOne({ params }: RouteProps) {
   if (!isBoardId(board)) notFound();
 
   const meta = getBoard(board);
-  if (!meta) notFound();
 
   const index = await getBoardIndex(board, 1);
   if (!index) {

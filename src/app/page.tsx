@@ -21,14 +21,17 @@ import Link from "@/components/link";
 import { EraShell } from "@/components/era-shell";
 import { Home2001Content } from "@/components/home-2001";
 import { Home2003Content } from "@/components/home-2003";
+import { LazyImg } from "@/components/lazy-img";
 import { getBoard, type BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { formatShortDate, isUnknownDate } from "@/lib/dates";
+import type { Era } from "@/lib/era";
 import { getPost, getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
  *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
-const ERA: ChromeEra = "2014";
+const ERA: Era = "2014";
 
 interface BoxConfig {
   id: BoardId;
@@ -163,15 +166,11 @@ function BoxCard({ box }: { box: BoxData }) {
         >
           <span
             className="absolute inset-y-0 left-0 w-[300px] max-w-[calc(100%-7px)]"
-            style={{ backgroundImage: `url(${headerUrl})`, backgroundRepeat: "no-repeat" }}
+            style={tileStyle(headerUrl, "no-repeat")}
           />
           <span
             className="absolute inset-y-0 right-0 w-[7px]"
-            style={{
-              backgroundImage: `url(${headerUrl})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right top",
-            }}
+            style={tileStyle(headerUrl, "no-repeat", "right top")}
           />
         </Link>
       )}
@@ -182,23 +181,14 @@ function BoxCard({ box }: { box: BoxData }) {
           // Phones get the full-width tab above instead.
           headerUrl ? "max-sm:hidden" : "",
         ].join(" ")}
-        style={
-          headerUrl
-            ? {
-                backgroundImage: `url(${headerUrl})`,
-                backgroundRepeat: "no-repeat",
-              }
-            : undefined
-        }
+        style={tileStyle(headerUrl, "no-repeat")}
       >
         {!headerUrl && (
           <div className="flex h-full items-center justify-between px-2">
             <span className="text-forg-ink text-xs font-bold tracking-tight">
               {box.config.label}
             </span>
-            <span className="text-forg-muted font-mono text-[9px] uppercase">
-              {meta?.engine ?? "—"}
-            </span>
+            <span className="text-forg-muted font-mono text-[9px] uppercase">{meta.engine}</span>
           </div>
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
@@ -266,9 +256,9 @@ function BoxRow({
       {linkIcon && <StateIcon url={linkIcon} width={13} height={13} label="링크 있음" />}
       {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
       {/* Phone only: the date the 320px box had no room for. */}
-      {entry.createdAt >= "1990" && (
+      {!isUnknownDate(entry.createdAt) && (
         <span className="ml-auto shrink-0 pl-2 text-[11px] text-(--era-meta-fg) tabular-nums sm:hidden">
-          {entry.createdAt.slice(2, 4)}.{entry.createdAt.slice(5, 7)}.{entry.createdAt.slice(8, 10)}
+          {formatShortDate(entry.createdAt)}
         </span>
       )}
     </Link>
@@ -286,15 +276,5 @@ function StateIcon({
   height: number;
   label: string;
 }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px chrome
-    <img
-      loading="lazy"
-      src={url}
-      alt={label}
-      width={width}
-      height={height}
-      className="block shrink-0"
-    />
-  );
+  return <LazyImg src={url} alt={label} width={width} height={height} className="block shrink-0" />;
 }

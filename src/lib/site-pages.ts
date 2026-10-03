@@ -12,7 +12,7 @@ import path from "node:path";
 const PAGES_ROOT = path.join(process.cwd(), "src", "content", "pages");
 const VERSIONS_ROOT = path.join(process.cwd(), "src", "content", "page-versions");
 
-export type SitePageKind = "page" | "frameset" | "redirect";
+type SitePageKind = "page" | "frameset" | "redirect";
 
 /** A page's section in the page list: its first path segment ("" at the root). */
 export function sectionOf(page: Pick<SitePage, "stem">): string {

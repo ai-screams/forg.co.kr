@@ -36,18 +36,21 @@
  * to typography so the layout never breaks.
  */
 
-import { MobileMenu, ScrollFade } from "@/components/era-chrome-2014";
+import { InertChrome, MenuRow, MobileMenu, TBarRow } from "@/components/chrome-primitives";
 import Link from "@/components/link";
 
+import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { formatMonthDay } from "@/lib/dates";
+import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** Every asset on this surface is asked for at its 2003 capture. Without it
  *  the newest capture wins and the exhibit wears 2007 artwork — see
  *  `lib/chrome`. */
-const ERA: ChromeEra = "2003";
+const ERA: Era = "2003";
 
 /** Visitor total shown by frame-bottom-2003 on 2003-06-03. Frozen, like
  *  the 2014 counter's 52,916,713. */
@@ -171,7 +174,11 @@ const SIDEBAR_SECTIONS: {
     fallback: "Friend Site",
     links: [
       { label: "SiteMap", href: "/site/skill/sitemap/" },
-      { label: "EA Korea", href: "https://www.ea.com" },
+      // frame-left-2003 links it to the official Korean UO site, kept by Wayback.
+      {
+        label: "EA Korea",
+        href: "https://web.archive.org/web/20030603171043/http://www.kr.uo.com/",
+      },
     ],
   },
 ];
@@ -218,7 +225,6 @@ export function FrameTop2003() {
   // bar, a 4px t_bar.gif rule and the menu row of 80×20 buttons. 18+4+20
   // equals the logo height, so the art spans all three rows.
   const leftLogo = chromeUrl("left_logo.gif", ERA);
-  const tBarUrl = chromeUrl("t_bar.gif", ERA);
   const tLineUrl = chromeUrl("t_line.gif", ERA);
 
   return (
@@ -231,15 +237,7 @@ export function FrameTop2003() {
           className="row-span-3 flex items-start justify-start"
         >
           {leftLogo ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-            <img
-              loading="lazy"
-              src={leftLogo}
-              alt="Forg's World"
-              width={100}
-              height={42}
-              className="block"
-            />
+            <LazyImg src={leftLogo} alt="Forg's World" width={100} height={42} className="block" />
           ) : (
             <span className="text-forg-ink block px-1 font-mono text-base leading-tight font-bold">
               forg<span className="text-forg-ink/70">&apos;s World</span>
@@ -248,36 +246,31 @@ export function FrameTop2003() {
         </Link>
 
         <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
-          <InertChrome2003 asset="t_login.gif" label="Login" title="박물관 모드 — 로그인 비활성" />
-          <InertChrome2003
+          <InertChrome
+            era={ERA}
+            asset="t_login.gif"
+            label="Login"
+            title="박물관 모드 — 로그인 비활성"
+            height={18}
+          />
+          <InertChrome
+            era={ERA}
             asset="t_sign.gif"
             label="Sign Up"
             title="박물관 모드 — 회원가입 비활성"
+            height={18}
           />
         </div>
 
-        <div
-          className="bg-forg-gold h-[4px] w-full"
-          style={
-            tBarUrl
-              ? { backgroundImage: `url(${tBarUrl})`, backgroundRepeat: "repeat-x" }
-              : undefined
-          }
-        />
+        <TBarRow era={ERA} />
 
-        <div className="relative min-w-0">
-          <nav
-            aria-label="2003 상단 메뉴"
-            className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
-          >
-            {TOP_MENU_2003.map((item) => (
-              <TopMenuButton2003 key={item.id} item={item} />
-            ))}
-            <span className="grow" />
-            <FaqIcon2003 />
-          </nav>
-          <ScrollFade />
-        </div>
+        <MenuRow label="2003 상단 메뉴">
+          {TOP_MENU_2003.map((item) => (
+            <TopMenuButton2003 key={item.id} item={item} />
+          ))}
+          <span className="grow" />
+          <FaqIcon2003 />
+        </MenuRow>
       </div>
       <MobileMenu label="사이드바">
         {SIDEBAR_SECTIONS.map((section) => (
@@ -286,17 +279,11 @@ export function FrameTop2003() {
               {section.fallback}
             </p>
             <div className="grid grid-cols-2 gap-x-4">
-              {section.links.map((link) =>
-                link.href.startsWith("/site/") || link.href.startsWith("http") ? (
-                  <a key={link.label} href={link.href} className="block py-[5px]">
-                    {link.label.replace(/^-/, "")}
-                  </a>
-                ) : (
-                  <Link key={link.label} href={link.href} className="block py-[5px]">
-                    {link.label.replace(/^-/, "")}
-                  </Link>
-                ),
-              )}
+              {section.links.map((link) => (
+                <Link key={link.label} href={link.href} className="block py-[5px]">
+                  {link.label.replace(/^-/, "")}
+                </Link>
+              ))}
             </div>
           </div>
         ))}
@@ -305,39 +292,9 @@ export function FrameTop2003() {
       <div
         aria-hidden
         className="bg-forg-menu h-[12px] w-full"
-        style={
-          tLineUrl
-            ? { backgroundImage: `url(${tLineUrl})`, backgroundRepeat: "repeat-x" }
-            : undefined
-        }
+        style={tileStyle(tLineUrl, "repeat-x")}
       />
     </header>
-  );
-}
-
-/** Recovered 2003 chrome button the museum leaves inert. */
-function InertChrome2003({ asset, label, title }: { asset: string; label: string; title: string }) {
-  const url = chromeUrl(asset, ERA);
-  if (!url) {
-    return (
-      <span title={title} className="text-forg-ink text-[10px] font-bold select-none">
-        {label}
-      </span>
-    );
-  }
-  return (
-    // 70×18 here, not the 2014 header's 70×15: the 2003 art is taller and
-    // frame-top-2003 declares it that way.
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-    <img
-      loading="lazy"
-      src={url}
-      alt={label}
-      title={title}
-      width={70}
-      height={18}
-      className="block"
-    />
   );
 }
 
@@ -353,9 +310,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
         {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
            into the chrome bar's gray (white × gray = gray), so the buttons
            blend instead of floating as white tiles. */}
-        {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-        <img
-          loading="lazy"
+        <LazyImg
           src={assetUrl}
           alt={item.label}
           width={80}
@@ -385,9 +340,7 @@ function FaqIcon2003() {
       title="Site FAQ"
       className="inline-block shrink-0 opacity-80"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-      <img
-        loading="lazy"
+      <LazyImg
         src={url}
         alt="Site FAQ"
         width={20}
@@ -408,26 +361,12 @@ export function FrameLeft2003() {
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
       className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) min-[800px]:block"
-      style={
-        tileUrl ? { backgroundImage: `url(${tileUrl})`, backgroundRepeat: "repeat" } : undefined
-      }
+      style={tileStyle(tileUrl, "repeat")}
     >
       <nav className="flex flex-col gap-2.5">
         {SIDEBAR_SECTIONS.map((section) => (
           <SidebarSection2003 key={section.fallback} section={section} />
         ))}
-        {/* Footer-of-sidebar links from frame-left-2003 (Login?(SP2), EA Korea) */}
-        <div className="mt-1 space-y-0.5 border-t border-white/15 pt-2 text-[10px]">
-          <p className="text-forg-gold-hover font-bold opacity-80">Login?(SP2)</p>
-          <Link
-            href="https://www.ea.com"
-            rel="noopener noreferrer external"
-            target="_blank"
-            className="hover:text-forg-gold-hover block text-white"
-          >
-            EA Korea
-          </Link>
-        </div>
       </nav>
     </aside>
   );
@@ -438,9 +377,7 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
   return (
     <div>
       {headerUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element -- static export
-        <img
-          loading="lazy"
+        <LazyImg
           src={headerUrl}
           alt={section.fallback}
           width={100}
@@ -455,23 +392,12 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
       <ul className="space-y-[1px] pl-1">
         {section.links.map((link) => (
           <li key={link.label}>
-            {/* `/site/…` pages are route-handler documents, not App Router
-                pages — client-side navigation has no payload to fetch. */}
-            {link.href.startsWith("/site/") ? (
-              <a
-                href={link.href}
-                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                href={link.href}
-                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
-              >
-                {link.label}
-              </Link>
-            )}
+            <Link
+              href={link.href}
+              className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
+            >
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>
@@ -507,16 +433,9 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
     <section aria-label="2003 메인 콘텐츠" className="flex flex-1 flex-col bg-white px-3 py-2">
       <MainHeading />
       <div className="mx-auto grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
-        <div
-          className="space-y-2"
-          style={
-            mBar ? { backgroundImage: `url(${mBar})`, backgroundRepeat: "repeat-y" } : undefined
-          }
-        >
+        <div className="space-y-2" style={tileStyle(mBar, "repeat-y")}>
           {mainArt && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 350×127 art
-            <img
-              loading="lazy"
+            <LazyImg
               src={mainArt}
               alt="Ultima Online — Honor & Sacrifice"
               width={350}
@@ -530,43 +449,30 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         </div>
         <div aria-hidden className="hidden md:block">
           {middleLogo && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 30×520 chrome
-            <img loading="lazy" src={middleLogo} alt="" width={30} height={520} className="block" />
+            <LazyImg src={middleLogo} alt="" width={30} height={520} className="block" />
           )}
         </div>
-        <div
-          className="space-y-2"
-          style={
-            rBar ? { backgroundImage: `url(${rBar})`, backgroundRepeat: "repeat-y" } : undefined
-          }
-        >
+        <div className="space-y-2" style={tileStyle(rBar, "repeat-y")}>
           {rightBoxes.map((box) => (
             <SectionBox2003 key={box.config.asset} box={box} compact />
           ))}
           <BestScreenShotBox />
         </div>
         <div aria-hidden className="hidden md:block">
-          {rightArt && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 80×520 art
-            <img loading="lazy" src={rightArt} alt="" width={80} height={520} className="block" />
-          )}
+          {rightArt && <LazyImg src={rightArt} alt="" width={80} height={520} className="block" />}
         </div>
       </div>
       {/* Closing rule row: m_bar_logo.gif 350×20 over the 350px column, the
           rest `bgcolor="#5A6269"`. */}
       <div className="mx-auto mt-2 grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
         {mBarLogo ? (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-          <img loading="lazy" src={mBarLogo} alt="" width={350} height={20} className="block" />
+          <LazyImg src={mBarLogo} alt="" width={350} height={20} className="block" />
         ) : (
           <div className="h-[20px]" />
         )}
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block">
-          {rBarB && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 185×1 rule
-            <img loading="lazy" src={rBarB} alt="" width={185} height={1} className="block" />
-          )}
+          {rBarB && <LazyImg src={rBarB} alt="" width={185} height={1} className="block" />}
         </div>
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
       </div>
@@ -575,9 +481,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           table. */}
       {logoBottom && (
         <p className="mt-2 flex justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered 380×18 chrome */}
-          <img
-            loading="lazy"
+          <LazyImg
             src={logoBottom}
             alt="All Contents Copyright 1999-2002 Forg, All Rights Reserved."
             width={380}
@@ -616,15 +520,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
       <Link
         href={`/${box.config.id}`}
         className={`bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[22px] items-center px-1 ${tail}`}
-        style={
-          headerUrl
-            ? {
-                backgroundImage: `url(${headerUrl})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "left center",
-              }
-            : undefined
-        }
+        style={tileStyle(headerUrl, "no-repeat", "left center")}
       >
         {!headerUrl && (
           <span className="text-forg-ink text-[11px] font-bold">{box.config.label}</span>
@@ -644,9 +540,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
                 className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
               >
                 {bulletUrl && (
-                  // eslint-disable-next-line @next/next/no-img-element -- static export, recovered bullet
-                  <img
-                    loading="lazy"
+                  <LazyImg
                     src={bulletUrl}
                     alt=""
                     width={compact ? 10 : 5}
@@ -657,7 +551,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
                 {/* The 185px column had no room for a date and carried none. */}
                 {!compact && (
                   <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
-                    {monthDayFromIso(entry.createdAt)}
+                    {formatMonthDay(entry.createdAt)}
                   </span>
                 )}
                 {entry.title}
@@ -687,15 +581,7 @@ function BestScreenShotBox() {
     <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
       <div
         className="bg-forg-gold/10 flex h-[22px] items-center px-1 max-md:bg-[#e6e6e6]"
-        style={
-          headerUrl
-            ? {
-                backgroundImage: `url(${headerUrl})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "left center",
-              }
-            : undefined
-        }
+        style={tileStyle(headerUrl, "no-repeat", "left center")}
       >
         {!headerUrl && <span className="text-forg-ink text-[11px] font-bold">BestScreenShot</span>}
         <span className="sr-only">BestScreenShot</span>
@@ -705,8 +591,7 @@ function BestScreenShotBox() {
         // highest id Wayback archived for that board (6212), so the link goes
         // to the board itself.
         <Link href="/ScreenShot" className="flex justify-center py-1">
-          {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
-          <img loading="lazy" src={shotUrl} alt="2003년 베스트 스크린샷" width={160} height={105} />
+          <LazyImg src={shotUrl} alt="2003년 베스트 스크린샷" width={160} height={105} />
         </Link>
       ) : (
         <div className="text-forg-muted flex h-[80px] items-center justify-center text-[10px] italic">
@@ -715,12 +600,6 @@ function BestScreenShotBox() {
       )}
     </section>
   );
-}
-
-function monthDayFromIso(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime()) || d.getFullYear() < 1990) return "—";
-  return `${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}`;
 }
 
 /* ────────────────────────────────────────────────────────────────────── */
@@ -739,9 +618,7 @@ export function FrameBottom2003() {
   const serUrl = chromeUrl("bgm_ser.gif", ERA);
   const enUrl = chromeUrl("bgm_en.gif", ERA);
   const rightUrl = chromeUrl("bgm_right.gif", ERA);
-  const tile = bgUrl
-    ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" }
-    : undefined;
+  const tile = tileStyle(bgUrl, "repeat-x");
 
   return (
     <footer
@@ -752,15 +629,7 @@ export function FrameBottom2003() {
     >
       <div className="flex h-[24px] w-[50px] shrink-0 items-end">
         {countUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
-          <img
-            loading="lazy"
-            src={countUrl}
-            alt="Total :"
-            width={50}
-            height={24}
-            className="block"
-          />
+          <LazyImg src={countUrl} alt="Total :" width={50} height={24} className="block" />
         ) : (
           <span className="pl-1 font-bold">Total :</span>
         )}
@@ -770,8 +639,7 @@ export function FrameBottom2003() {
       </span>
       <form action="/search" method="get" className="flex h-[24px] grow items-center gap-[4px]">
         {serUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
-          <img loading="lazy" src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
+          <LazyImg src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
         ) : (
           <span className="font-bold">SEARCH</span>
         )}
@@ -784,8 +652,7 @@ export function FrameBottom2003() {
         />
         {enUrl ? (
           <button type="submit" className="block">
-            {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
-            <img loading="lazy" src={enUrl} alt="ENTER" className="block" />
+            <LazyImg src={enUrl} alt="ENTER" className="block" />
           </button>
         ) : (
           <button
@@ -797,9 +664,7 @@ export function FrameBottom2003() {
         )}
       </form>
       {rightUrl && (
-        // eslint-disable-next-line @next/next/no-img-element -- static export, decorative 150×24 chrome
-        <img
-          loading="lazy"
+        <LazyImg
           src={rightUrl}
           alt=""
           width={150}

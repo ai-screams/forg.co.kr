@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
-import { getBoard, isBoardId, listBoards, type BoardId } from "@/lib/boards";
+import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardIndex } from "@/lib/posts";
 
 export const dynamicParams = false;
@@ -29,7 +29,7 @@ export async function generateStaticParams(): Promise<RouteParams[]> {
   const boards = listBoards();
   const lists = await Promise.all(
     boards.map(async (b) => {
-      const first = await getBoardIndex(b.id as BoardId, 1);
+      const first = await getBoardIndex(b.id, 1);
       if (!first || first.totalPages <= 1) return [];
       // Pages 2..totalPages — page 1 is the canonical /[board] route
       return Array.from({ length: first.totalPages - 1 }, (_, i) => ({
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
 
   const meta = getBoard(board);
   const index = await getBoardIndex(board, n);
-  if (!meta || !index) return {};
+  if (!index) return {};
 
   return {
     title: `${meta.nameKr} (${n}/${index.totalPages}) — forg.co.kr`,

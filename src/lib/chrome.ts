@@ -18,8 +18,7 @@
  * `recover-chrome.py --era <era>` writes era-bounded captures into
  * `public/img/chrome/<era>/`, and `chromeUrl(file, era)` prefers those. When
  * an era has no capture of its own we fall back to the flat pool rather than
- * dropping the asset: a period-adjacent image beats an empty box, and the
- * fallback is visible in `chromeEraOf()` for anyone auditing it.
+ * dropping the asset: a period-adjacent image beats an empty box.
  *
  * Resolution happens at module load (Server Component build phase), so the
  * lookup is O(1) at render time and a build picks up newly-recovered assets.
@@ -27,13 +26,11 @@
 
 import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
+import type { CSSProperties } from "react";
+
+import { ERAS, type Era } from "@/lib/era";
 
 const CHROME_ROOT = join(process.cwd(), "public", "img", "chrome");
-
-/** Era directories under `public/img/chrome/`. Order is irrelevant; lookup
- *  is always by the era the caller asks for. */
-const ERA_DIRS = ["2001", "2003", "2014"] as const;
-export type ChromeEra = (typeof ERA_DIRS)[number];
 
 function readPool(dir: string): ReadonlySet<string> {
   try {
@@ -42,7 +39,8 @@ function readPool(dir: string): ReadonlySet<string> {
         .filter((name) => !name.startsWith("."))
         .filter((name) => {
           try {
-            return statSync(join(dir, name)).isFile() && statSync(join(dir, name)).size > 0;
+            const stat = statSync(join(dir, name));
+            return stat.isFile() && stat.size > 0;
           } catch {
             return false;
           }
@@ -56,14 +54,10 @@ function readPool(dir: string): ReadonlySet<string> {
 /** Newest-capture pool. Also the fallback for any era. */
 const RECOVERED = readPool(CHROME_ROOT);
 
-const ERA_POOLS: Readonly<Record<ChromeEra, ReadonlySet<string>>> = Object.fromEntries(
-  ERA_DIRS.map((era) => [era, readPool(join(CHROME_ROOT, era))]),
-) as Record<ChromeEra, ReadonlySet<string>>;
-
-/** True when the asset exists in the flat (newest-capture) pool. */
-export function chromeExists(filename: string): boolean {
-  return RECOVERED.has(filename);
-}
+/** One pool per era directory under `public/img/chrome/`. */
+const ERA_POOLS: Readonly<Record<Era, ReadonlySet<string>>> = Object.fromEntries(
+  ERAS.map((era) => [era, readPool(join(CHROME_ROOT, era))]),
+) as Record<Era, ReadonlySet<string>>;
 
 /**
  * URL for a recovered chrome asset, or null when nothing was recovered.
@@ -71,24 +65,31 @@ export function chromeExists(filename: string): boolean {
  * Pass the era the surface belongs to so the exhibit wears its own decade's
  * artwork; omit it for anything era-neutral.
  */
-export function chromeUrl(filename: string, era?: ChromeEra): string | null {
+export function chromeUrl(filename: string, era?: Era): string | null {
   if (era && ERA_POOLS[era].has(filename)) {
     return `/img/chrome/${era}/${filename}`;
   }
   return RECOVERED.has(filename) ? `/img/chrome/${filename}` : null;
 }
 
-/**
- * Which pool `chromeUrl(filename, era)` would resolve from: the era itself,
- * `"fallback"` when the era has no capture and the flat pool answers, or
- * `null` when nothing was recovered. For audits, not for rendering.
- */
-export function chromeEraOf(filename: string, era?: ChromeEra): ChromeEra | "fallback" | null {
-  if (era && ERA_POOLS[era].has(filename)) return era;
-  return RECOVERED.has(filename) ? "fallback" : null;
-}
+type Repeat = "repeat" | "repeat-x" | "repeat-y" | "no-repeat";
 
-/** All recovered chrome filenames — useful for diagnostic / debug routes. */
-export function listRecoveredChrome(): string[] {
-  return [...RECOVERED].sort();
+/**
+ * `style` for recovered art used as a CSS background (the originals'
+ * `background=` cells and tiled strips), or none when the picture was never
+ * recovered and the element keeps its colour. An absent repeat or position
+ * is left out, not set to `undefined`: the RSC payload writes `$undefined`
+ * for every such key (1.4 KB more on a post page).
+ */
+export function tileStyle(
+  url: string | null,
+  repeat?: Repeat,
+  position?: string,
+): CSSProperties | undefined {
+  if (!url) return undefined;
+  return {
+    backgroundImage: `url(${url})`,
+    ...(repeat && { backgroundRepeat: repeat }),
+    ...(position && { backgroundPosition: position }),
+  };
 }

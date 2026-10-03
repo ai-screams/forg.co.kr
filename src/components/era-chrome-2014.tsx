@@ -12,18 +12,21 @@
  * header rows out of alignment with the 42px logo.
  */
 
-import { Fragment, type ReactNode } from "react";
+import { Fragment } from "react";
 
 import Link from "@/components/link";
 
+import { InertChrome, MenuRow, MobileMenu, TBarRow } from "@/components/chrome-primitives";
+import { LazyImg } from "@/components/lazy-img";
 import { type BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
  *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
-const ERA: ChromeEra = "2014";
+const ERA: Era = "2014";
 
-export interface MenuConfig {
+interface MenuConfig {
   id: BoardId;
   asset: string;
   hoverAsset: string;
@@ -58,7 +61,7 @@ const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
 
 /** Static carry-over from the 2014-12-18 snapshot footer. HITL #3:
  *  keep faithful museum number, plug in live tracking later. */
-export const TOTAL_VISITORS = 52_916_713;
+const TOTAL_VISITORS = 52_916_713;
 
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Site rails                                                            */
@@ -73,7 +76,7 @@ export function RightRail() {
   return (
     <div
       className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
-      style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat" } : undefined}
+      style={tileStyle(bgUrl, "repeat")}
     />
   );
 }
@@ -83,12 +86,7 @@ export function RightRail() {
 /* ──────────────────────────────────────────────────────────────────── */
 
 export function GameCategorySidebar() {
-  const sidebarStyle = chromeUrl("left_bg.gif", ERA)
-    ? {
-        backgroundImage: `url(${chromeUrl("left_bg.gif", ERA)})`,
-        backgroundRepeat: "repeat",
-      }
-    : undefined;
+  const sidebarStyle = tileStyle(chromeUrl("left_bg.gif", ERA), "repeat");
 
   // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
   // appears only in frame-left-2007 and never in 2014-12-18.
@@ -100,10 +98,7 @@ export function GameCategorySidebar() {
       className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) min-[800px]:flex"
       style={sidebarStyle}
     >
-      {barUrl && (
-        // eslint-disable-next-line @next/next/no-img-element -- static export, 53 B rule
-        <img loading="lazy" src={barUrl} alt="" width={86} height={2} className="block" />
-      )}
+      {barUrl && <LazyImg src={barUrl} alt="" width={86} height={2} className="block" />}
       <nav className="flex flex-col text-left text-[12px]">
         {GAME_CATEGORIES.map((cat, i) => (
           <Fragment key={cat.id}>
@@ -168,8 +163,7 @@ function FamilySiteSelect() {
 function SidebarSpacer({ height }: { height: number }) {
   const url = chromeUrl("blank_l_line.gif", ERA);
   if (!url) return <div style={{ height }} aria-hidden />;
-  // eslint-disable-next-line @next/next/no-img-element -- static export, 49 B spacer
-  return <img loading="lazy" src={url} alt="" width={86} height={height} className="block" />;
+  return <LazyImg src={url} alt="" width={86} height={height} className="block" />;
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -184,7 +178,6 @@ function SidebarSpacer({ height }: { height: number }) {
 // as a white gap under the logo and breaks that blend.
 export function SiteHeader2014() {
   const logoUrl = chromeUrl("left_logo1.gif", ERA);
-  const tBarUrl = chromeUrl("t_bar.gif", ERA);
   const tLineUrl = chromeUrl("t_line.gif", ERA);
 
   return (
@@ -199,8 +192,7 @@ export function SiteHeader2014() {
             with no padding. */}
         <Link href="/" className="row-span-3 flex items-start justify-start">
           {logoUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, ~3 KB GIF, no LCP cost
-            <img loading="lazy" src={logoUrl} alt="forg.co.kr" width={100} height={42} />
+            <LazyImg src={logoUrl} alt="forg.co.kr" width={100} height={42} />
           ) : (
             <span className="font-forg flex flex-col leading-tight">
               <span className="text-forg-ink text-base font-bold tracking-tight">forg.co.kr</span>
@@ -210,34 +202,33 @@ export function SiteHeader2014() {
         </Link>
 
         <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2 text-[10px]">
-          <InertChrome asset="t_login.gif" label="Login" title="박물관 모드 — 로그인 비활성" />
-          <InertChrome asset="t_sign.gif" label="Sign Up" title="박물관 모드 — 회원가입 비활성" />
+          <InertChrome
+            era={ERA}
+            asset="t_login.gif"
+            label="Login"
+            title="박물관 모드 — 로그인 비활성"
+            height={15}
+          />
+          <InertChrome
+            era={ERA}
+            asset="t_sign.gif"
+            label="Sign Up"
+            title="박물관 모드 — 회원가입 비활성"
+            height={15}
+          />
         </div>
 
-        <div
-          className="bg-forg-gold h-[4px] w-full"
-          style={
-            tBarUrl
-              ? { backgroundImage: `url(${tBarUrl})`, backgroundRepeat: "repeat-x" }
-              : undefined
-          }
-        />
+        <TBarRow era={ERA} />
 
         {/* No side padding: seven 80px buttons and the 20px cap fill the 580px
             cell exactly, as the original's left-floated images did. Padding
             pushed the cap 8px past the column edge. */}
-        <div className="relative min-w-0">
-          <nav
-            aria-label="2014 상단 메뉴"
-            className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
-          >
-            {TOP_MENU.map((item) => (
-              <MenuButton key={item.id} item={item} />
-            ))}
-            <MenuTailCap />
-          </nav>
-          <ScrollFade />
-        </div>
+        <MenuRow label="2014 상단 메뉴">
+          {TOP_MENU.map((item) => (
+            <MenuButton key={item.id} item={item} />
+          ))}
+          <MenuTailCap />
+        </MenuRow>
       </div>
       <MobileMenu label="게임 카테고리">
         {GAME_CATEGORIES.map((cat) => (
@@ -247,50 +238,9 @@ export function SiteHeader2014() {
         ))}
       </MobileMenu>
       {tLineUrl && (
-        <div
-          aria-hidden
-          className="h-[12px] w-full"
-          style={{
-            backgroundImage: `url(${tLineUrl})`,
-            backgroundRepeat: "repeat-x",
-          }}
-        />
+        <div aria-hidden className="h-[12px] w-full" style={tileStyle(tLineUrl, "repeat-x")} />
       )}
     </div>
-  );
-}
-
-/**
- * On a screen narrower than the 580px menu row, a fade on its right edge says
- * the row scrolls. Not part of the original, which never met a phone.
- */
-export function ScrollFade() {
-  return (
-    <span
-      aria-hidden
-      className="from-forg-menu pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l to-transparent min-[680px]:hidden"
-    />
-  );
-}
-
-/**
- * Below 800px the sidebar is gone; its links fold into a "메뉴" bar under the
- * header, in the sidebar's own colours. A `<details>`, so it works without
- * JavaScript. The museum's own addition — forg had no mobile layout.
- */
-export function MobileMenu({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) min-[800px]:hidden">
-      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[13px] font-bold [&::-webkit-details-marker]:hidden">
-        <span>메뉴 · {label}</span>
-        <span aria-hidden className="transition-transform group-open:rotate-180">
-          ▾
-        </span>
-      </summary>
-      <div className="grid grid-cols-2 gap-x-4 px-3 pb-3 text-[13px] text-(--era-sidebar-link)">
-        {children}
-      </div>
-    </details>
   );
 }
 
@@ -302,46 +252,7 @@ export function MobileMenu({ label, children }: { label: string; children: React
 function MenuTailCap() {
   const url = chromeUrl("t_b_right.gif", ERA);
   if (!url) return null;
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 20×20 chrome
-    <img
-      loading="lazy"
-      src={url}
-      alt=""
-      aria-hidden
-      width={20}
-      height={20}
-      className="block shrink-0"
-    />
-  );
-}
-
-/** A recovered chrome button the museum deliberately does not wire up. */
-function InertChrome({ asset, label, title }: { asset: string; label: string; title: string }) {
-  const url = chromeUrl(asset, ERA);
-  if (!url) {
-    return (
-      <span
-        aria-disabled
-        title={title}
-        className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] text-[10px] font-bold uppercase select-none"
-      >
-        {label}
-      </span>
-    );
-  }
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 70×15 chrome
-    <img
-      loading="lazy"
-      src={url}
-      alt={label}
-      title={title}
-      width={70}
-      height={15}
-      className="block"
-    />
-  );
+  return <LazyImg src={url} alt="" aria-hidden width={20} height={20} className="block shrink-0" />;
 }
 
 function MenuButton({ item }: { item: MenuConfig }) {
@@ -354,20 +265,14 @@ function MenuButton({ item }: { item: MenuConfig }) {
       <Link
         href={`/${item.id}`}
         aria-label={item.label}
-        className="forg-2014-menu group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
-        style={{
-          backgroundImage: `url(${baseUrl})`,
-          backgroundRepeat: "no-repeat",
-        }}
+        className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
+        style={tileStyle(baseUrl, "no-repeat")}
       >
         {hoverUrl && (
           <span
             aria-hidden
             className="absolute inset-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
-            style={{
-              backgroundImage: `url(${hoverUrl})`,
-              backgroundRepeat: "no-repeat",
-            }}
+            style={tileStyle(hoverUrl, "no-repeat")}
           />
         )}
         <span className="sr-only">{item.label}</span>
@@ -389,7 +294,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /*  Footer counter (24px)                                                 */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function VisitorCounter({ total }: { total: number }) {
+export function VisitorCounter() {
   const bgUrl = chromeUrl("bgm_bg.gif", ERA);
   const rightUrl = chromeUrl("bgm_right.gif", ERA);
 
@@ -398,16 +303,14 @@ export function VisitorCounter({ total }: { total: number }) {
       role="group"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
       className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
-      style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
+      style={tileStyle(bgUrl, "repeat-x")}
     >
-      <span className="font-mono tabular-nums">Total : {total}</span>
+      <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
         2014-12-18 · 박물관 박제 · 후속 ADR 에서 라이브 카운터 검토
       </span>
       {rightUrl && (
-        // eslint-disable-next-line @next/next/no-img-element -- static export, decorative footer chrome
-        <img
-          loading="lazy"
+        <LazyImg
           src={rightUrl}
           alt=""
           width={150}

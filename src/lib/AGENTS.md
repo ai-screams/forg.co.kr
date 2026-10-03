@@ -1,5 +1,5 @@
 <!-- Parent: ../../AGENTS.md -->
-<!-- Generated: 2026-10-01 | Updated: 2026-10-01 -->
+<!-- Generated: 2026-10-01 | Updated: 2026-10-03 -->
 
 # src/lib
 
@@ -13,16 +13,16 @@ helpers which run on both server and client.
 
 ## Key Files
 
-| File            | Description                                                                                                                                                                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `boards.ts`     | `BOARDS` catalog — Korean display name, `BoardCategory`, `SourceEngine`, era hint, and `continues` (older boards merged into a successor) for every board id. Single source of truth for Korean names; the Python parsers do not duplicate it. |
-| `posts.ts`      | Loaders for `src/content/posts/**`, `src/content/boards/**`, and `src/content/listings/**`: `getPost`, `getAllPostParams`, `getBoardIndex`, `getBoardListing`, `getRecentPostEntries`, `getAdjacentPosts`.                                     |
-| `site-pages.ts` | Loader for `src/content/pages/**` (forg's hand-written guide pages): `getSitePage`, `getAllSitePages`; older captures from `src/content/page-versions/**`: `getSitePageVersion`.                                                               |
-| `skins-2001.ts` | The 2001 era's board skins: board → skin (`skin2001Of`), palettes, and recovered skin images under `public/img/chrome/2001/zb/` (`skinAsset2001`).                                                                                             |
-| `chrome.ts`     | Resolves recovered site-chrome assets under `public/img/chrome/` (era-bounded first, flat pool fallback): `chromeUrl`, `chromeExists`, `chromeEraOf`, `listRecoveredChrome`.                                                                   |
-| `img-base.ts`   | Rewrites `/img/posts/…` references in post/page HTML to `NEXT_PUBLIC_IMG_BASE` (R2 CDN) at render time: `withImgBase`, `withImgBaseEverywhere`.                                                                                                |
-| `era.ts`        | The `Era` type (`"2014"                                                                                                                                                                                                                        | "2003"`), `DEFAULT_ERA`, `ERA_STORAGE_KEY`, `isEra`guard,`ERA_LABELS`. |
-| `dates.ts`      | Date formatting for the UI: `isUnknownDate` (flags the 1970-epoch Zeroboard NULL-timestamp placeholder), `formatKoreanDateTime`, `formatShortDate`, `formatWaybackTs`.                                                                         |
+| File            | Description                                                                                                                                                                                                                                                                                                                                     |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `boards.ts`     | The board catalog — Korean display name, category, `SourceEngine`, era hint, and `continues` (older boards merged into a successor) for every board id — read through `isBoardId`, `getBoard` (non-optional for a `BoardId`), `getBoardOrThrow`, `listBoards`. Single source of truth for Korean names; the Python parsers do not duplicate it. |
+| `posts.ts`      | Loaders for `src/content/posts/**`, `src/content/boards/**`, and `src/content/listings/**`: `getPost`, `getAllPostParams`, `getBoardIndex`, `getBoardListing`, `getRecentPostEntries`, `getAdjacentPosts`.                                                                                                                                      |
+| `site-pages.ts` | Loader for `src/content/pages/**` (forg's hand-written guide pages): `getSitePage`, `getAllSitePages`; older captures from `src/content/page-versions/**`: `getSitePageVersion`.                                                                                                                                                                |
+| `skins-2001.ts` | The 2001 era's board skins: board → skin (`skin2001Of`), palettes, and recovered skin images under `public/img/chrome/2001/zb/` (`skinAsset2001`).                                                                                                                                                                                              |
+| `chrome.ts`     | Resolves recovered site-chrome assets under `public/img/chrome/` (era-bounded first, flat pool fallback): `chromeUrl`.                                                                                                                                                                                                                          |
+| `img-base.ts`   | Rewrites `/img/posts/…` references in post/page HTML to `NEXT_PUBLIC_IMG_BASE` (R2 CDN) at render time: `withImgBase`, `withImgBaseEverywhere`.                                                                                                                                                                                                 |
+| `era.ts`        | The `Era` type (`"2014" \| "2003" \| "2001"`), `ERAS`, `DEFAULT_ERA`, `ERA_STORAGE_KEY`, `isEra` guard, `ERA_LABELS`.                                                                                                                                                                                                                           |
+| `dates.ts`      | Date formatting for the UI: `isUnknownDate` (flags the 1970-epoch Zeroboard NULL-timestamp placeholder), `formatKoreanDateTime`, `formatShortDate`, `formatWaybackTs`.                                                                                                                                                                          |
 
 ## For AI Agents
 

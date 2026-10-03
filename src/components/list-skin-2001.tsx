@@ -25,6 +25,8 @@ import type { ReactNode } from "react";
 
 import Link from "@/components/link";
 
+import { LazyImg } from "@/components/lazy-img";
+import { formatKoreanFull, formatSlashDate } from "@/lib/dates";
 import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
 
 /** What a 2001 row needs beyond `ListRow`'s rendered cells. */
@@ -40,30 +42,29 @@ export interface Row2001 {
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 
-function Img({ skin, file, alt = "" }: { skin: Skin2001; file: string; alt?: string }) {
+/** A recovered 2001 skin image at its own size, or nothing when Wayback never kept it. */
+export function SkinImg2001({
+  skin,
+  file,
+  alt = "",
+}: {
+  skin: Skin2001;
+  file: string;
+  alt?: string;
+}) {
   const url = skinAsset2001(skin, file);
-  return url ? (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
-    <img loading="lazy" src={url} alt={alt} className="inline-block align-middle" />
-  ) : null;
+  return url ? <LazyImg src={url} alt={alt} className="inline-block align-middle" /> : null;
 }
 
 function dateCell(iso: string | null): ReactNode {
   if (!iso) return null;
-  const [d = "", t = ""] = iso.split("T");
-  const [y, m, day] = d.split("-");
-  const [hh = "00", mm = "00", ss = "00"] = t.replace(/[+Z].*$/, "").split(":");
-  return (
-    <span title={`${y ?? ""}년 ${m ?? ""}월 ${day ?? ""}일 ${hh}시 ${mm}분 ${ss.slice(0, 2)}초`}>
-      {y}/{m}/{day}
-    </span>
-  );
+  return <span title={formatKoreanFull(iso)}>{formatSlashDate(iso)}</span>;
 }
 
 function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
-      <Img skin={skin} file="old_head.gif" />
+      <SkinImg2001 skin={skin} file="old_head.gif" />
       &nbsp;
       {row.href ? (
         <Link href={row.href} className="text-(--era-link) hover:text-(--era-link-hover)">
@@ -128,16 +129,16 @@ export function ListTable2001({
             <thead>
               <tr className="h-[23px]" style={{ background: label }}>
                 <td className="w-[33px] whitespace-nowrap">
-                  <Img skin={skin} file="last_left.gif" />
-                  <Img skin={skin} file="title_no.gif" alt="No" />
+                  <SkinImg2001 skin={skin} file="last_left.gif" />
+                  <SkinImg2001 skin={skin} file="title_no.gif" alt="No" />
                 </td>
                 <td className="text-left">
-                  <Img skin={skin} file="title_title.gif" alt="Subject" />
+                  <SkinImg2001 skin={skin} file="title_title.gif" alt="Subject" />
                 </td>
                 <td className="w-[100px]" />
                 <td className="w-[80px]" />
                 <td className="w-[23px] text-right">
-                  <Img skin={skin} file="last_right.gif" />
+                  <SkinImg2001 skin={skin} file="last_right.gif" />
                 </td>
               </tr>
             </thead>

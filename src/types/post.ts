@@ -12,7 +12,7 @@ export type PostEra = "2003" | "2014";
 /** Engine that produced the original markup. Drives parser selection. */
 export type SourceEngine = "zeroboard" | "gnuboard4" | "gnuboard5";
 
-export interface Attachment {
+interface Attachment {
   /** Filename as displayed by the original site, e.g. "screenshot.jpg". */
   name: string;
   /** Zeroboard `filenum` query parameter — stable identifier within a post. */
@@ -38,7 +38,10 @@ export interface Comment {
 export interface Post {
   /** Original Zeroboard / Gnuboard board id, e.g. "UoBoard", "Q_A". */
   board: string;
-  /** Korean display name of the board, sourced from `src/lib/boards.ts`. */
+  /**
+   * @deprecated Legacy: the parser writes the board id here, not a Korean
+   * name. Display names come from `getBoard(board).nameKr` (`lib/boards.ts`).
+   */
   boardKr: string;
   /** Post id within the board (`no=` / `wr_id=`). */
   postId: string;
@@ -169,7 +172,7 @@ export const BOARD_INDEX_PAGE_SIZE = 50;
  * boards the only trace of the board. Built by
  * `scripts/etl/02c-parse-listing.py`; mirrors `BoardListingEntry` there.
  */
-export interface BoardListingEntry {
+interface BoardListingEntry {
   /** Zeroboard `no=` / Gnuboard `wr_id=`. */
   no: string;
   title: string;
