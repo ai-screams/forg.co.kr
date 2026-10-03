@@ -10,11 +10,11 @@ declarations for modules TypeScript cannot otherwise resolve.
 
 ## Key Files
 
-| File            | Description                                                                                                                                                                                                                                                                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `post.ts`       | `Post`, `Attachment`, `Comment`, `BoardIndexEntry`, `BoardIndexPage`, `BoardListingEntry`, `BoardListing`, `PostEra`, `SourceEngine`, and the `BOARD_INDEX_PAGE_SIZE` constant (50). Mirrors the Pydantic models in `scripts/etl/schemas.py` field-for-field — the parser validates against Pydantic, the React side reads with these interfaces. |
-| `pagefind.d.ts` | Ambient module declaration for `/pagefind/pagefind.js`, a postbuild artifact (`pagefind --site out --force-language ko`) that does not exist at typecheck time. Types `search`, `init`, `filters`.                                                                                                                                                |
-| `reset.d.ts`    | Imports `@total-typescript/ts-reset` to tighten stdlib types project-wide: `JSON.parse()` returns `unknown`, `Array.prototype.filter(Boolean)` narrows out `null`/`undefined`, `fetch().json()` returns `unknown`.                                                                                                                                |
+| File          | Description                                                                                                                                                                                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `post.ts`     | `Post`, `Attachment`, `Comment`, `BoardIndexEntry`, `BoardIndexPage`, `BoardListingEntry`, `BoardListing`, `PostEra`, `SourceEngine`, and the `BOARD_INDEX_PAGE_SIZE` constant (50). Mirrors the Pydantic models in `scripts/etl/schemas.py` field-for-field — the parser validates against Pydantic, the React side reads with these interfaces. |
+| `pagefind.ts` | `PagefindApi`, `PagefindResultData`: the part of the Pagefind browser API the search page uses. `pagefind.js` is loaded at run time from `NEXT_PUBLIC_PAGEFIND_BASE`, so its types are declared here.                                                                                                                                             |
+| `reset.d.ts`  | Imports `@total-typescript/ts-reset` to tighten stdlib types project-wide: `JSON.parse()` returns `unknown`, `Array.prototype.filter(Boolean)` narrows out `null`/`undefined`, `fetch().json()` returns `unknown`.                                                                                                                                |
 
 ## For AI Agents
 
@@ -26,7 +26,7 @@ declarations for modules TypeScript cannot otherwise resolve.
   writes the JSON these types describe, so a mismatch is only caught at
   `pnpm build` time via `src/lib/posts.ts`'s shallow runtime check, not
   by `tsc`.
-- `pagefind.d.ts` only needs updating if the Pagefind JS API surface
+- `pagefind.ts` only needs updating if the Pagefind JS API surface
   used by search components changes (e.g. a new search option).
 - `reset.d.ts` is imported once for its side effect; it has no exports
   to extend. Don't add unrelated ambient declarations to it — give a new
