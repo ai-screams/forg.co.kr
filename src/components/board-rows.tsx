@@ -10,13 +10,8 @@
 import type { ReactNode } from "react";
 
 import Link from "@/components/link";
-import {
-  CommentCount,
-  NoBodyMark,
-  RowMarks,
-  type ListRow,
-  type ListSkin,
-} from "@/components/list-skin";
+import { NO_BODY_TOOLTIP, YEAR_GUESS_TOOLTIP, type ListRow } from "@/components/list-row";
+import { CommentCount, NoBodyMark, RowMarks, type ListSkin } from "@/components/list-skin";
 import type { BoardId } from "@/lib/boards";
 import { formatShortDate } from "@/lib/dates";
 import type { BoardIndexPage, BoardListing } from "@/types/post";
@@ -33,12 +28,10 @@ const TITLE_LAYOUT = "inline-flex items-baseline gap-[4px] leading-[1.7]";
 function RowTitle({
   href,
   marked,
-  tooltip,
   children,
 }: {
   href: string | null;
   marked: boolean;
-  tooltip: string;
   children: ReactNode;
 }) {
   if (href) {
@@ -51,7 +44,7 @@ function RowTitle({
   return (
     <span
       className={`${marked ? "text-forg-muted" : "text-forg-ink"} ${TITLE_LAYOUT}`}
-      title={tooltip}
+      title={NO_BODY_TOOLTIP}
     >
       {children}
       {marked && <NoBodyMark />}
@@ -88,8 +81,8 @@ function TitleBody({
 }
 
 /** A date whose year was inferred: `≈` plus why, as a tooltip. */
-function yearGuess(iso: string, tooltip: string): ReactNode {
-  return <span title={tooltip}>≈{formatShortDate(iso)}</span>;
+function yearGuess(iso: string): ReactNode {
+  return <span title={YEAR_GUESS_TOOLTIP}>≈{formatShortDate(iso)}</span>;
 }
 
 export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin): ListRow[] {
@@ -107,11 +100,7 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
       hits: entry.hits,
       cells: {
         title: (
-          <RowTitle
-            href={href}
-            marked={marked}
-            tooltip="본문은 캡처되지 않았습니다 — 목록에 남은 제목"
-          >
+          <RowTitle href={href} marked={marked}>
             <TitleBody
               skin={skin}
               board={board}
@@ -128,7 +117,7 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
             ≤{formatShortDate(entry.createdAt)}
           </span>
         ) : entry.yearApprox ? (
-          yearGuess(entry.createdAt, "목록에는 월/일만 있어 연도는 추정")
+          yearGuess(entry.createdAt)
         ) : (
           formatShortDate(entry.createdAt)
         ),
@@ -151,7 +140,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
       hits: entry.hits,
       cells: {
         title: (
-          <RowTitle href={href} marked={marked} tooltip="본문은 캡처되지 않았습니다">
+          <RowTitle href={href} marked={marked}>
             <TitleBody
               skin={skin}
               board={board}
@@ -167,7 +156,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
           entry.createdAt === null
             ? "—"
             : entry.yearApprox
-              ? yearGuess(entry.createdAt, "목록에는 월/일만 있어 연도는 캡처 시점으로 추정")
+              ? yearGuess(entry.createdAt)
               : formatShortDate(entry.createdAt),
         hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR"),
       },

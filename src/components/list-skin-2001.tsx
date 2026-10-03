@@ -27,8 +27,8 @@ import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
-import type { ListRow } from "@/components/list-skin";
-import { formatKoreanFull, formatSlashDate } from "@/lib/dates";
+import { NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
+import { formatKoreanDay, formatKoreanFull, formatSlashDate, isUnknownDate } from "@/lib/dates";
 import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
@@ -47,9 +47,21 @@ export function SkinImg2001({
   return url ? <LazyImg src={url} alt={alt} className="inline-block align-middle" /> : null;
 }
 
-function dateCell(iso: string | null): ReactNode {
+/**
+ * `YYYY/MM/DD` with the full time as a tooltip, as the skins printed it. A
+ * row the museum knows only from a list page has a date and no time (the
+ * index stores it at 00:00:00), so its tooltip is the date alone. Zeroboard's
+ * NULL-date placeholder (1970) reads "—", as in the 2014/2003 lists.
+ */
+function dateCell(row: ListRow): ReactNode {
+  const iso = row.createdAt;
   if (!iso) return null;
-  return <span title={formatKoreanFull(iso)}>{formatSlashDate(iso)}</span>;
+  if (isUnknownDate(iso)) return "—";
+  return (
+    <span title={row.href ? formatKoreanFull(iso) : formatKoreanDay(iso)}>
+      {formatSlashDate(iso)}
+    </span>
+  );
 }
 
 function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
@@ -62,7 +74,7 @@ function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
           {row.title}
         </Link>
       ) : (
-        <span title="본문은 캡처되지 않았습니다">{row.title}</span>
+        <span title={NO_BODY_TOOLTIP}>{row.title}</span>
       )}
       {skin !== "n_board" && row.commentCount > 0 && (
         <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.commentCount}]</span>
@@ -107,7 +119,7 @@ export function ListTable2001({
               {rows.map((row) => (
                 <RowWithRule key={row.key} span={3}>
                   <tr className="bg-[#fefefe] text-center">
-                    <td className={`${THM8} w-[100px]`}>{dateCell(row.createdAt)}</td>
+                    <td className={`${THM8} w-[100px]`}>{dateCell(row)}</td>
                     <TitleCell skin={skin} row={row} />
                     <td className={`${THM8} w-[20px]`}>{row.hits ?? ""}</td>
                   </tr>
@@ -142,7 +154,7 @@ export function ListTable2001({
                     <td className="truncate break-all">
                       <AuthorName {...row.author} seed={row.key} />
                     </td>
-                    <td className={THM8}>{dateCell(row.createdAt)}</td>
+                    <td className={THM8}>{dateCell(row)}</td>
                     <td className={THM8}>{row.hits ?? ""}</td>
                   </tr>
                 </RowWithRule>

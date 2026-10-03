@@ -16,10 +16,9 @@
  *   museum holds, so text headers.
  */
 
-import type { ReactNode } from "react";
-
-import { AuthorName, type AuthorRef } from "@/components/author-name";
+import { AuthorName } from "@/components/author-name";
 import { LazyImg } from "@/components/lazy-img";
+import type { ListRow } from "@/components/list-row";
 import { ListTable2001 } from "@/components/list-skin-2001";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Skin2001 } from "@/lib/skins-2001";
@@ -139,34 +138,6 @@ function columnsFor(skin: ListSkin, withHits: boolean): Column[] {
       ? [WEBBUS.num, WEBBUS.title, WEBBUS.name, WEBBUS.date, WEBBUS.hits]
       : [KRITZ.status, KRITZ.name, KRITZ.title, KRITZ.date, KRITZ.hits];
   return withHits ? cols : cols.filter((c) => c.key !== "hits");
-}
-
-/**
- * One list row, for every view of it: the phone list, the 2014/2003 table and
- * the 2001 skin (`list-skin-2001`). Built by `board-rows.tsx`.
- */
-export interface ListRow {
-  /** Unique in the list; also the daemon-name seed of its author. */
-  key: string;
-  title: string;
-  /** The post, or null for a row known only from a captured list page. */
-  href: string | null;
-  commentCount: number;
-  /** Rendered by each view, so a plain name is a string in each, not a reference. */
-  author: AuthorRef;
-  createdAt: string | null;
-  hits: number | null;
-  /**
-   * The 2014/2003 cells, built once: the phone list and the table share each
-   * element, which the RSC payload then carries once.
-   */
-  cells: {
-    /** A link, or plain text for a title-only row. */
-    title: ReactNode;
-    date: ReactNode;
-    /** Only read when the table has a 조회 column. */
-    hits?: ReactNode;
-  };
 }
 
 /**

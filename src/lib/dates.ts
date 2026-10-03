@@ -100,17 +100,21 @@ export function formatMonthDayTime(iso: string): string {
   return `${p.mo}-${p.d} ${hh}:${mm}`;
 }
 
+/** `YYYY년 MM월 DD일`. */
+export function formatKoreanDay(iso: string): string {
+  const p = digitsOf(iso);
+  return p ? `${p.y}년 ${p.mo}월 ${p.d}일` : "";
+}
+
 /**
  * `YYYY년 MM월 DD일 hh시 mm분 ss초`, the 2001 skins' date tooltip; a row that
  * carries only a date (list pages printed no time) gets the date alone.
  */
 export function formatKoreanFull(iso: string): string {
   const p = digitsOf(iso);
-  if (!p) return "";
-  const day = `${p.y}년 ${p.mo}월 ${p.d}일`;
-  if (!p.time) return day;
+  if (!p?.time) return formatKoreanDay(iso);
   const [hh, mm, ss] = p.time;
-  return `${day} ${hh}시 ${mm}분 ${ss}초`;
+  return `${formatKoreanDay(iso)} ${hh}시 ${mm}분 ${ss}초`;
 }
 
 /**
