@@ -73,14 +73,6 @@ function PostTable({
   page: BoardIndexPage;
   skin: ListSkin;
 }) {
-  if (page.entries.length === 0) {
-    return (
-      <p className="text-forg-muted px-2 py-10 text-center text-[11px]">
-        이 페이지에는 게시글이 없습니다.
-      </p>
-    );
-  }
-
   // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
   // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
   return (

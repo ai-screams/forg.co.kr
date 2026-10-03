@@ -118,7 +118,7 @@ interface BoxData {
 
 async function loadBox(box: Box2001): Promise<BoxData> {
   const recent = await getRecentPostEntries(box.id, box.count);
-  return { box, entries: recent?.entries ?? [] };
+  return { box, entries: recent.entries };
 }
 
 /* ────────────────────────────────────────────────────────────────────── */

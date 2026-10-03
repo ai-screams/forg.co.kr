@@ -65,7 +65,7 @@ interface BoxEntry {
 
 interface BoxData {
   config: BoxConfig;
-  totalPosts: number | null;
+  totalPosts: number;
   entries: BoxEntry[];
 }
 
@@ -86,9 +86,6 @@ async function loadBox(config: BoxConfig): Promise<BoxData> {
   // The box teases posts a visitor can open; title-only rows (ADR-0017 §4)
   // stay in the board listing.
   const recent = await getRecentPostEntries(config.id, BOX_RECENT_COUNT);
-  if (!recent) {
-    return { config, totalPosts: null, entries: [] };
-  }
 
   const entries = await Promise.all(
     recent.entries.map(async (entry) => {
@@ -194,23 +191,15 @@ function BoxCard({ box }: { box: BoxData }) {
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
       <div className="space-y-[2px] pt-[5px] pr-[1px] pb-[10px] pl-[10px] max-sm:space-y-0 max-sm:px-3 max-sm:pt-1">
-        {box.totalPosts === null ? (
-          <p className="text-forg-muted py-2 text-[11px] italic">
-            준비 중 — Phase B 다운로드 + Gnuboard4 파서 후 활성화
-          </p>
-        ) : box.entries.length === 0 ? (
-          <p className="text-forg-muted py-2 text-[11px] italic">아직 게시글이 없습니다.</p>
-        ) : (
-          box.entries.map((row) => (
-            <BoxRow
-              key={row.entry.postId}
-              board={box.config.id}
-              entry={row.entry}
-              hasLink={row.hasLink}
-            />
-          ))
-        )}
-        {box.totalPosts !== null && box.totalPosts > BOX_RECENT_COUNT && (
+        {box.entries.map((row) => (
+          <BoxRow
+            key={row.entry.postId}
+            board={box.config.id}
+            entry={row.entry}
+            hasLink={row.hasLink}
+          />
+        ))}
+        {box.totalPosts > BOX_RECENT_COUNT && (
           <Link
             href={`/${box.config.id}`}
             className="text-forg-muted hover:text-forg-gold-hover mt-1 inline-block text-[10px] max-sm:mt-2 max-sm:block max-sm:text-right max-sm:text-[12px]"

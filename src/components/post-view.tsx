@@ -28,7 +28,7 @@ import type { BoardIndexEntry, Post } from "@/types/post";
 
 interface PostViewProps {
   post: Post;
-  adjacent?: AdjacentPosts;
+  adjacent: AdjacentPosts;
 }
 
 export function PostView({ post, adjacent }: PostViewProps) {
@@ -61,7 +61,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       <PostAttachments post={post} />
       <PostComments post={post} />
 
-      {adjacent && (adjacent.prev ?? adjacent.next) ? (
+      {(adjacent.prev ?? adjacent.next) ? (
         <div data-pagefind-ignore>
           <PostNavigation
             board={board.id}
@@ -224,8 +224,6 @@ function PostNavigation({
   prev: BoardIndexEntry | null;
   next: BoardIndexEntry | null;
 }) {
-  if (!prev && !next) return null;
-
   return (
     <nav aria-label="게시글 네비게이션" className="border-t border-(--era-input-border) px-6 py-4">
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">

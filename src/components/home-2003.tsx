@@ -51,7 +51,7 @@ const RIGHT_BOXES: BoardBoxConfig[] = [
 interface BoxData {
   config: BoardBoxConfig;
   entries: BoardIndexEntry[];
-  totalPosts: number | null;
+  totalPosts: number;
 }
 
 async function loadBox(config: BoardBoxConfig): Promise<BoxData> {
@@ -59,9 +59,6 @@ async function loadBox(config: BoardBoxConfig): Promise<BoxData> {
   // `getRecentPostEntries` walks past a page of them: ScreenShot and UOForum
   // both open on 50 list-page rows and would otherwise show an empty box.
   const recent = await getRecentPostEntries(config.id, BOX_RECENT_COUNT);
-  if (!recent) {
-    return { config, entries: [], totalPosts: null };
-  }
   return { config, entries: recent.entries, totalPosts: recent.totalPosts };
 }
 
@@ -202,37 +199,31 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
         {headerUrl && <span className="sr-only">{box.config.label}</span>}
       </Link>
       <ul className="px-1 py-1.5 max-md:px-2">
-        {box.totalPosts === null ? (
-          <li className="text-forg-muted py-1 text-[10.5px] italic">준비 중</li>
-        ) : box.entries.length === 0 ? (
-          <li className="text-forg-muted py-1 text-[10.5px] italic">아직 게시글이 없습니다.</li>
-        ) : (
-          box.entries.slice(0, compact ? 5 : BOX_RECENT_COUNT).map((entry) => (
-            <li key={entry.postId}>
-              <Link
-                href={`/${box.config.id}/${entry.postId}`}
-                className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
-              >
-                {bulletUrl && (
-                  <LazyImg
-                    src={bulletUrl}
-                    alt=""
-                    width={compact ? 10 : 5}
-                    height={15}
-                    className="mr-[2px] inline-block align-[-3px]"
-                  />
-                )}
-                {/* The 185px column had no room for a date and carried none. */}
-                {!compact && (
-                  <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
-                    {formatMonthDay(entry.createdAt)}
-                  </span>
-                )}
-                {entry.title}
-              </Link>
-            </li>
-          ))
-        )}
+        {box.entries.slice(0, compact ? 5 : BOX_RECENT_COUNT).map((entry) => (
+          <li key={entry.postId}>
+            <Link
+              href={`/${box.config.id}/${entry.postId}`}
+              className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
+            >
+              {bulletUrl && (
+                <LazyImg
+                  src={bulletUrl}
+                  alt=""
+                  width={compact ? 10 : 5}
+                  height={15}
+                  className="mr-[2px] inline-block align-[-3px]"
+                />
+              )}
+              {/* The 185px column had no room for a date and carried none. */}
+              {!compact && (
+                <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
+                  {formatMonthDay(entry.createdAt)}
+                </span>
+              )}
+              {entry.title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </section>
   );
