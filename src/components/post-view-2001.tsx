@@ -23,7 +23,7 @@ import { CommentAuthor, commentSeed, PostAuthor } from "@/components/author-name
 import { SkinImg2001 } from "@/components/skin-img-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
-import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
+import type { Skin2001 } from "@/lib/skins-2001";
 import type { Post } from "@/types/post";
 
 export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
@@ -39,12 +39,11 @@ export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
       </header>
     );
   }
-  const { label, accent } = PALETTE_2001[skin];
   const labelCell =
-    "w-[100px] pr-2 text-right align-middle font-[Tahoma,sans-serif] text-[11px] font-bold";
+    "w-[100px] bg-(--zb40-label) pr-2 text-right align-middle font-[Tahoma,sans-serif] text-[11px] font-bold text-(--zb40-accent)";
   return (
-    <header data-pagefind-ignore className="text-[12px]">
-      <div className="flex h-[23px] items-center justify-between" style={{ background: label }}>
+    <header data-pagefind-ignore data-skin-2001={skin} className="text-[12px]">
+      <div className="flex h-[23px] items-center justify-between bg-(--zb40-label)">
         <span>
           <SkinImg2001 skin={skin} file="last_left.gif" />
           &nbsp;&nbsp;
@@ -55,18 +54,14 @@ export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
       <table className="w-full border-collapse">
         <tbody>
           <tr className="h-[23px]">
-            <td className={labelCell} style={{ background: label, color: accent }}>
-              Name
-            </td>
+            <td className={labelCell}>Name</td>
             <td className="pl-2 font-bold">{author}</td>
           </tr>
           <tr>
             <td colSpan={2} className="border-zb40-dots h-px border-b border-dotted p-0" />
           </tr>
           <tr className="h-[23px]">
-            <td className={labelCell} style={{ background: label, color: accent }}>
-              Subject
-            </td>
+            <td className={labelCell}>Subject</td>
             <td className="pl-2 font-bold break-all">{post.title}</td>
           </tr>
           <tr>

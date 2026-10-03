@@ -43,3 +43,32 @@
   /* The museum's phone lists (not from a capture) */
   --color-phone-rule: #e3e3e3;
 }
+
+/* The 2001 Zeroboard 4.0 skins: each one's label-cell background and its
+ * accent (numbers, rules, the n_board strip). `data-skin-2001` on the list
+ * or post head picks the skin; its children use `bg-(--zb40-label)` and
+ * `text-(--zb40-accent)`. */
+@layer base {
+  [data-skin-2001="skyblue"] {
+    --zb40-label: #e5eef9;
+    --zb40-accent: #0063ce;
+  }
+  [data-skin-2001="board"],
+  [data-skin-2001="yellow"],
+  [data-skin-2001="y"] {
+    --zb40-label: #f2f2f2;
+    --zb40-accent: #404040;
+  }
+  [data-skin-2001="pink"] {
+    --zb40-label: #fae8f0;
+    --zb40-accent: #f20273;
+  }
+  [data-skin-2001="htred"] {
+    --zb40-label: #ffefef;
+    --zb40-accent: #f75200;
+  }
+  [data-skin-2001="n_board"] {
+    --zb40-label: #f2f2f2;
+    --zb40-accent: #9f9f9f;
+  }
+}

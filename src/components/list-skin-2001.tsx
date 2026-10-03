@@ -29,7 +29,7 @@ import Link from "@/components/link";
 import { DATE_APPROX, NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
 import { SkinImg2001 } from "@/components/skin-img-2001";
 import { formatKoreanDay, formatKoreanFull, formatSlashDate, isUnknownDate } from "@/lib/dates";
-import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
+import type { Skin2001 } from "@/lib/skins-2001";
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 
@@ -104,32 +104,32 @@ export function ListTable2001({
   page: number;
   totalPages: number;
 }) {
-  const { label, accent } = PALETTE_2001[skin];
   return (
-    <div className="mx-auto w-[95%] bg-white text-[12px]">
+    <div data-skin-2001={skin} className="mx-auto w-[95%] bg-white text-[12px]">
       <p className={`py-[2px] font-[Tahoma,sans-serif] text-[9px] text-black`}>
-        total <b style={{ color: accent }}>{totalPosts}</b> articles{" "}
-        <b style={{ color: accent }}>{totalPages}</b> page <b style={{ color: accent }}>{page}</b>
+        total <b className="text-(--zb40-accent)">{totalPosts}</b> articles{" "}
+        <b className="text-(--zb40-accent)">{totalPages}</b> page{" "}
+        <b className="text-(--zb40-accent)">{page}</b>
       </p>
       <table className="w-full border-collapse">
         {skin === "n_board" ? (
-          <NewsRows rows={rows} accent={accent} />
+          <NewsRows rows={rows} />
         ) : (
-          <NgineRows skin={skin} rows={rows} label={label} firstNumber={firstNumber} />
+          <NgineRows skin={skin} rows={rows} firstNumber={firstNumber} />
         )}
       </table>
-      <div className="h-px" style={{ background: accent }} />
+      <div className="h-px bg-(--zb40-accent)" />
     </div>
   );
 }
 
 /** n_board: a "News" strip, then date · title · hits. */
-function NewsRows({ rows, accent }: { rows: readonly ListRow[]; accent: string }) {
+function NewsRows({ rows }: { rows: readonly ListRow[] }) {
   return (
     <>
       <thead>
         <tr>
-          <td colSpan={3} className="h-[18px] text-white" style={{ background: accent }}>
+          <td colSpan={3} className="h-[18px] bg-(--zb40-accent) text-white">
             <b className="pl-6 font-[Tahoma,sans-serif] text-[9px]">News</b>
           </td>
         </tr>
@@ -153,18 +153,16 @@ function NewsRows({ rows, accent }: { rows: readonly ListRow[]; accent: string }
 function NgineRows({
   skin,
   rows,
-  label,
   firstNumber,
 }: {
   skin: Exclude<Skin2001, "n_board">;
   rows: readonly ListRow[];
-  label: string;
   firstNumber: number;
 }) {
   return (
     <>
       <thead>
-        <tr className="h-[23px]" style={{ background: label }}>
+        <tr className="h-[23px] bg-(--zb40-label)">
           <td className="w-[33px] whitespace-nowrap">
             <SkinImg2001 skin={skin} file="last_left.gif" />
             <SkinImg2001 skin={skin} file="title_no.gif" alt="No" />
