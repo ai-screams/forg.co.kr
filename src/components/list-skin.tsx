@@ -18,7 +18,9 @@
 
 import type { ReactNode } from "react";
 
+import { ListTable2001, type Row2001 } from "@/components/list-skin-2001";
 import { chromeUrl } from "@/lib/chrome";
+import type { Skin2001 } from "@/lib/skins-2001";
 import type { SourceEngine } from "@/types/post";
 
 export type ListSkin = "kritz" | "webbus" | "plain";
@@ -170,18 +172,30 @@ export function ListTable({
   rows,
   withHits,
   firstNumber,
+  era2001,
 }: {
   skin: ListSkin;
   rows: readonly ListRow[];
   withHits: boolean;
   firstNumber: number;
+  /** The same rows for the 2001 era's skin (`list-skin-2001`), which draws them itself. */
+  era2001: {
+    skin: Skin2001;
+    rows: readonly Row2001[];
+    totalPosts: number;
+    page: number;
+    totalPages: number;
+  };
 }) {
   const columns = columnsFor(skin, withHits);
 
   return (
     <>
       <NarrowList rows={rows} />
-      <div className="hidden border border-(--era-input-border)/50 bg-white sm:block">
+      <div className="era-2001-only hidden sm:block">
+        <ListTable2001 firstNumber={firstNumber} {...era2001} />
+      </div>
+      <div className="era-not-2001 hidden border border-(--era-input-border)/50 bg-white sm:block">
         <table className="w-full table-fixed border-collapse text-[12px]">
           <colgroup>
             {columns.map((c) => (

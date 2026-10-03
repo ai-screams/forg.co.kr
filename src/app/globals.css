@@ -147,6 +147,19 @@ body {
   display: none !important;
 }
 
+/* A 2001 post: the skins' 95% table on white, no box, and the body cell
+ * `style='word-break:break-all;padding:10px;'` with `line-height:160%`. */
+:root[data-era="2001"] .forg-post {
+  width: 95%;
+  margin-inline: auto;
+  border-color: transparent;
+}
+:root[data-era="2001"] .forg-post-body-cell {
+  padding: 10px;
+  line-height: 1.6;
+  font-size: 12px;
+}
+
 /* Every era's frame is centred on a wide screen. 2001 was
  * (`frameset cols="1*, 790, 1*"`, white sides) and its column is 790px. The
  * 2014 and 2003 frames (10/100/680/7) sat at the left with a slate `1*`
