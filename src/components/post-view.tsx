@@ -13,15 +13,15 @@
  * for a static-export read-only museum.
  */
 
-import { AuthorName } from "@/components/author-name";
+import { AuthorName, POST_SEED } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
 import { listSkinOf } from "@/components/list-skin";
 import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
 
+import { SanitizedHtml } from "@/components/sanitized-html";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
-import { withImgBase } from "@/lib/img-base";
 import type { AdjacentPosts } from "@/lib/posts";
 import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardIndexEntry, Post } from "@/types/post";
@@ -85,7 +85,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
                     board={post.board}
                     name={post.author}
                     memberNo={post.authorMemberNo}
-                    seed="post"
+                    seed={POST_SEED}
                   />
                 </a>
               ) : (
@@ -94,7 +94,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
                     board={post.board}
                     name={post.author}
                     memberNo={post.authorMemberNo}
-                    seed="post"
+                    seed={POST_SEED}
                   />
                 </span>
               )}
@@ -136,16 +136,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       </header>
 
       <div className="forg-post-body-cell px-6 py-6">
-        <div
-          // break-word: divider lines of "____" and long URLs have no break
-          // point and pushed a phone-width page sideways (the Zeroboard body
-          // cell had `word-break:break-all` for the same reason). A table
-          // too wide for the column scrolls inside the body, not the page.
-          // Below 800px only: on a desktop both changed the original layout.
-          className="post-body text-forg-ink leading-relaxed max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]"
-          // nh3-sanitised at ETL Stage 2 (ADR-0008)
-          dangerouslySetInnerHTML={{ __html: withImgBase(post.bodyHtml) }}
-        />
+        <SanitizedHtml html={post.bodyHtml} className="post-body text-forg-ink leading-relaxed" />
       </div>
 
       {post.attachments.length > 0 && (

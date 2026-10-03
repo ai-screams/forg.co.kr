@@ -25,6 +25,7 @@
 
 import Link from "@/components/link";
 
+import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
@@ -149,9 +150,7 @@ export function FrameTop2001() {
       <div className="flex bg-[#f8f8f8] max-[799px]:flex-col">
         <Link href="/" aria-label="forg.co.kr 메인" className="block">
           {logo && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 380×35 banner
-            <img
-              loading="lazy"
+            <LazyImg
               src={logo}
               alt="Ultima Online of Forg"
               width={380}
@@ -161,9 +160,7 @@ export function FrameTop2001() {
           )}
         </Link>
         {logoRight && (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 410×35 banner
-          <img
-            loading="lazy"
+          <LazyImg
             src={logoRight}
             alt="All Contents Copyright(C) 1999. FORG.COM. All right reserved."
             width={410}
@@ -174,22 +171,12 @@ export function FrameTop2001() {
       </div>
       <nav aria-label="2001 상단 메뉴" className="flex flex-wrap bg-[#f8f8f8]">
         {left && (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 10×20 cap
-          <img
-            loading="lazy"
-            src={left}
-            alt=""
-            width={10}
-            height={20}
-            className="block max-[799px]:hidden"
-          />
+          <LazyImg src={left} alt="" width={10} height={20} className="block max-[799px]:hidden" />
         )}
         {TOP_MENU_2001.map((item) => {
           const url = chromeUrl(item.asset, ERA);
           const inner = url ? (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 55×20 button
-            <img
-              loading="lazy"
+            <LazyImg
               src={url}
               alt={item.label}
               title={item.label}
@@ -209,15 +196,7 @@ export function FrameTop2001() {
           );
         })}
         {right && (
-          // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 10×20 cap
-          <img
-            loading="lazy"
-            src={right}
-            alt=""
-            width={10}
-            height={20}
-            className="block max-[799px]:hidden"
-          />
+          <LazyImg src={right} alt="" width={10} height={20} className="block max-[799px]:hidden" />
         )}
       </nav>
     </header>
@@ -243,9 +222,7 @@ export async function Home2001Content() {
         <div className="border-[#cccccc] p-[2px] max-[799px]:hidden min-[800px]:border-r">
           {art && (
             <>
-              {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered 145×609 art with its image map */}
-              <img
-                loading="lazy"
+              <LazyImg
                 src={art}
                 alt=""
                 width={145}
@@ -271,9 +248,7 @@ export async function Home2001Content() {
         </div>
         <div className="border-[#cccccc] bg-[#fcfbe9] min-[800px]:border-r">
           {mainArt && (
-            // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 390×200 art
-            <img
-              loading="lazy"
+            <LazyImg
               src={mainArt}
               alt="Honor & Sacrifice"
               width={390}
@@ -303,14 +278,7 @@ export async function Home2001Content() {
             />
             {shot && (
               <Link href="/ScreenShot" className="flex justify-center py-1">
-                {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered 160×160 shot */}
-                <img
-                  loading="lazy"
-                  src={shot}
-                  alt="2001년 베스트 스크린샷"
-                  width={160}
-                  height={160}
-                />
+                <LazyImg src={shot} alt="2001년 베스트 스크린샷" width={160} height={160} />
               </Link>
             )}
           </section>
@@ -326,9 +294,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
   return (
     <Link href={`/${box.id}`} className="block">
       {url ? (
-        // eslint-disable-next-line @next/next/no-img-element -- static export, recovered header art
-        <img
-          loading="lazy"
+        <LazyImg
           src={url}
           alt={box.label}
           width={box.width}
@@ -361,9 +327,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
               className="text-(--era-link) hover:text-(--era-link-hover) max-[799px]:block max-[799px]:py-[5px] max-[799px]:text-[14px]"
             >
               {bullet && (
-                // eslint-disable-next-line @next/next/no-img-element -- static export, recovered bullet
-                <img
-                  loading="lazy"
+                <LazyImg
                   src={bullet}
                   alt=""
                   width={5}

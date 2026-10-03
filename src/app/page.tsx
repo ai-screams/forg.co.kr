@@ -21,8 +21,9 @@ import Link from "@/components/link";
 import { EraShell } from "@/components/era-shell";
 import { Home2001Content } from "@/components/home-2001";
 import { Home2003Content } from "@/components/home-2003";
+import { LazyImg } from "@/components/lazy-img";
 import { getBoard, type BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 import { getPost, getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
@@ -164,15 +165,11 @@ function BoxCard({ box }: { box: BoxData }) {
         >
           <span
             className="absolute inset-y-0 left-0 w-[300px] max-w-[calc(100%-7px)]"
-            style={{ backgroundImage: `url(${headerUrl})`, backgroundRepeat: "no-repeat" }}
+            style={tileStyle(headerUrl, "no-repeat")}
           />
           <span
             className="absolute inset-y-0 right-0 w-[7px]"
-            style={{
-              backgroundImage: `url(${headerUrl})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right top",
-            }}
+            style={tileStyle(headerUrl, "no-repeat", "right top")}
           />
         </Link>
       )}
@@ -183,14 +180,7 @@ function BoxCard({ box }: { box: BoxData }) {
           // Phones get the full-width tab above instead.
           headerUrl ? "max-sm:hidden" : "",
         ].join(" ")}
-        style={
-          headerUrl
-            ? {
-                backgroundImage: `url(${headerUrl})`,
-                backgroundRepeat: "no-repeat",
-              }
-            : undefined
-        }
+        style={tileStyle(headerUrl, "no-repeat")}
       >
         {!headerUrl && (
           <div className="flex h-full items-center justify-between px-2">
@@ -285,15 +275,5 @@ function StateIcon({
   height: number;
   label: string;
 }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px chrome
-    <img
-      loading="lazy"
-      src={url}
-      alt={label}
-      width={width}
-      height={height}
-      className="block shrink-0"
-    />
-  );
+  return <LazyImg src={url} alt={label} width={width} height={height} className="block shrink-0" />;
 }

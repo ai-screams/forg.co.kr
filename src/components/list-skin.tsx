@@ -18,8 +18,9 @@
 
 import type { ReactNode } from "react";
 
+import { LazyImg } from "@/components/lazy-img";
 import { ListTable2001, type Row2001 } from "@/components/list-skin-2001";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Skin2001 } from "@/lib/skins-2001";
 import type { SourceEngine } from "@/types/post";
 
@@ -290,8 +291,7 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
 function RowSpacer({ height }: { height: number }) {
   const url = chromeUrl("zb_t.gif");
   if (!url) return <div style={{ height }} aria-hidden />;
-  // eslint-disable-next-line @next/next/no-img-element -- static export, 43 B spacer
-  return <img loading="lazy" src={url} alt="" width={1} height={height} className="block" />;
+  return <LazyImg src={url} alt="" width={1} height={height} className="block" />;
 }
 
 /**
@@ -310,16 +310,14 @@ function HeadRow({ skin, columns }: { skin: ListSkin; columns: readonly Column[]
   return (
     <tr
       className={`text-forg-muted text-[11px] ${bg ? strip : "bg-(--era-content-bg)"}`}
-      style={bg ? { backgroundImage: `url(${bg})`, backgroundRepeat: "repeat-x" } : undefined}
+      style={tileStyle(bg, "repeat-x")}
     >
       {columns.map((c) => {
         const url = skin === "plain" ? null : chromeUrl(c.head.asset);
         return (
           <th key={c.key} scope="col" className={`py-[3px] font-normal ${c.th ?? ""}`}>
             {url ? (
-              // eslint-disable-next-line @next/next/no-img-element -- static export, recovered header label
-              <img
-                loading="lazy"
+              <LazyImg
                 src={url}
                 alt={c.head.label}
                 width={c.head.width}
@@ -346,9 +344,7 @@ function HeadRule({ skin, span }: { skin: ListSkin; span: number }) {
       <td
         colSpan={span}
         className={shadow ? "h-[3px] p-0" : "h-px bg-(--era-input-border)/40 p-0"}
-        style={
-          shadow ? { backgroundImage: `url(${shadow})`, backgroundRepeat: "repeat-x" } : undefined
-        }
+        style={tileStyle(shadow, "repeat-x")}
       />
     </tr>
   );
@@ -423,14 +419,6 @@ function MarkIcon({
   label: string;
 }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px skin icon
-    <img
-      loading="lazy"
-      src={url}
-      alt={label}
-      width={width}
-      height={height}
-      className="shrink-0 self-center"
-    />
+    <LazyImg src={url} alt={label} width={width} height={height} className="shrink-0 self-center" />
   );
 }

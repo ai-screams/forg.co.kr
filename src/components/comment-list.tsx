@@ -14,11 +14,11 @@
  * zone cannot move them; the full time is in the `title`.
  */
 
-import { AuthorName } from "@/components/author-name";
+import { AuthorName, commentSeed } from "@/components/author-name";
 import type { ListSkin } from "@/components/list-skin";
-import { chromeUrl } from "@/lib/chrome";
+import { SanitizedHtml } from "@/components/sanitized-html";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
 import { formatKoreanDateTime, isUnknownDate } from "@/lib/dates";
-import { withImgBase } from "@/lib/img-base";
 import type { Comment } from "@/types/post";
 
 interface ItemProps {
@@ -44,13 +44,7 @@ function mdhm(iso: string): string {
 }
 
 function Body({ comment, className }: { comment: Comment; className: string }) {
-  return (
-    <div
-      className={`${className} max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]`}
-      // nh3-sanitised at ETL Stage 2 (ADR-0008)
-      dangerouslySetInnerHTML={{ __html: withImgBase(comment.bodyHtml) }}
-    />
-  );
+  return <SanitizedHtml html={comment.bodyHtml} className={className} />;
 }
 
 const KRITZ_STRIP = chromeUrl("zb_kritz_title_bg.jpg");
@@ -61,7 +55,7 @@ function KritzComment({ comment, board, seed }: ItemProps) {
     <li>
       <div
         className="flex h-[20px] items-center border border-[#dfdfdf] bg-white bg-repeat-x px-[2px] font-[Verdana,sans-serif] text-[10px] text-black"
-        style={KRITZ_STRIP ? { backgroundImage: `url(${KRITZ_STRIP})` } : undefined}
+        style={tileStyle(KRITZ_STRIP)}
       >
         comment by&nbsp;
         <b className={comment.authorMemberNo ? "font-bold" : "font-normal"}>
@@ -125,7 +119,7 @@ export function CommentList({
           key={`${c.author}-${c.createdAt}-${String(i)}`}
           comment={c}
           board={board}
-          seed={`c${String(i)}`}
+          seed={commentSeed(i)}
         />
       ))}
     </ol>

@@ -19,23 +19,21 @@
  * in the N+gine rows.
  */
 
-import { AuthorName } from "@/components/author-name";
+import { AuthorName, commentSeed, POST_SEED } from "@/components/author-name";
+import { SkinImg2001 } from "@/components/list-skin-2001";
 
-import { withImgBase } from "@/lib/img-base";
-import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
+import { SanitizedHtml } from "@/components/sanitized-html";
+import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
 import type { Post } from "@/types/post";
-
-function Img({ skin, file, alt = "" }: { skin: Skin2001; file: string; alt?: string }) {
-  const url = skinAsset2001(skin, file);
-  return url ? (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
-    <img loading="lazy" src={url} alt={alt} className="inline-block align-middle" />
-  ) : null;
-}
 
 export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
   const author = (
-    <AuthorName board={post.board} name={post.author} memberNo={post.authorMemberNo} seed="post" />
+    <AuthorName
+      board={post.board}
+      name={post.author}
+      memberNo={post.authorMemberNo}
+      seed={POST_SEED}
+    />
   );
   if (skin === "n_board") {
     return (
@@ -55,11 +53,11 @@ export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
     <header data-pagefind-ignore className="text-[12px]">
       <div className="flex h-[23px] items-center justify-between" style={{ background: label }}>
         <span>
-          <Img skin={skin} file="last_left.gif" />
+          <SkinImg2001 skin={skin} file="last_left.gif" />
           &nbsp;&nbsp;
-          <Img skin={skin} file="view_article.gif" alt="View Article" />
+          <SkinImg2001 skin={skin} file="view_article.gif" alt="View Article" />
         </span>
-        <Img skin={skin} file="last_right.gif" />
+        <SkinImg2001 skin={skin} file="last_right.gif" />
       </div>
       <table className="w-full border-collapse">
         <tbody>
@@ -105,15 +103,11 @@ export function Comments2001({ post }: { post: Post }) {
               board={post.board}
               name={c.author}
               memberNo={c.authorMemberNo}
-              seed={`c${String(i)}`}
+              seed={commentSeed(i)}
             />
           </b>
           <span className="shrink-0 text-[#bbbbbb]">:::</span>
-          <div
-            className="min-w-0 max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]"
-            // nh3-sanitised at ETL Stage 2 (ADR-0008)
-            dangerouslySetInnerHTML={{ __html: withImgBase(c.bodyHtml) }}
-          />
+          <SanitizedHtml html={c.bodyHtml} className="min-w-0" />
         </div>
       ))}
     </section>

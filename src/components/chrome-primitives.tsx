@@ -1,0 +1,110 @@
+/**
+ * Pieces the 2014 and 2003 frames share: their headers were the same
+ * 680px table (logo cell, #FFC73B login bar, 4px `t_bar.gif` rule, 580px
+ * menu row), drawn with each era's own art. Desktop markup stays as each
+ * capture declares it; `ScrollFade` and `MobileMenu` are the museum's own
+ * additions for narrow screens.
+ */
+
+import type { ReactNode } from "react";
+
+import { LazyImg } from "@/components/lazy-img";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
+
+/**
+ * A recovered login/sign-up button the museum deliberately does not wire up.
+ * 70 wide; the height is the era's own (`<img height=15>` in 2014, 18 in
+ * frame-top-2003, whose art is taller).
+ */
+export function InertChrome({
+  era,
+  asset,
+  label,
+  title,
+  height,
+}: {
+  era: Era;
+  asset: string;
+  label: string;
+  title: string;
+  height: number;
+}) {
+  const url = chromeUrl(asset, era);
+  if (!url) {
+    return (
+      <span
+        aria-disabled
+        title={title}
+        className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] text-[10px] font-bold uppercase select-none"
+      >
+        {label}
+      </span>
+    );
+  }
+  return (
+    <LazyImg src={url} alt={label} title={title} width={70} height={height} className="block" />
+  );
+}
+
+/** The 4px `t_bar.gif` rule under the login bar (`<td height="4px">`). */
+export function TBarRow({ era }: { era: Era }) {
+  return (
+    <div
+      className="bg-forg-gold h-[4px] w-full"
+      style={tileStyle(chromeUrl("t_bar.gif", era), "repeat-x")}
+    />
+  );
+}
+
+/**
+ * The 580px menu row. `contain:paint`: without it mobile Chrome still sized
+ * the page to the row's 580px of buttons, scroller or not.
+ */
+export function MenuRow({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="relative min-w-0">
+      <nav
+        aria-label={label}
+        className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+      >
+        {children}
+      </nav>
+      <ScrollFade />
+    </div>
+  );
+}
+
+/**
+ * On a screen narrower than the 580px menu row, a fade on its right edge says
+ * the row scrolls. Not part of the original, which never met a phone.
+ */
+function ScrollFade() {
+  return (
+    <span
+      aria-hidden
+      className="from-forg-menu pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l to-transparent min-[680px]:hidden"
+    />
+  );
+}
+
+/**
+ * Below 800px the sidebar is gone; its links fold into a "메뉴" bar under the
+ * header, in the sidebar's own colours. A `<details>`, so it works without
+ * JavaScript. The museum's own addition — forg had no mobile layout.
+ */
+export function MobileMenu({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) min-[800px]:hidden">
+      <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[13px] font-bold [&::-webkit-details-marker]:hidden">
+        <span>메뉴 · {label}</span>
+        <span aria-hidden className="transition-transform group-open:rotate-180">
+          ▾
+        </span>
+      </summary>
+      <div className="grid grid-cols-2 gap-x-4 px-3 pb-3 text-[13px] text-(--era-sidebar-link)">
+        {children}
+      </div>
+    </details>
+  );
+}

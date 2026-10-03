@@ -26,6 +26,7 @@
 
 import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
+import type { CSSProperties } from "react";
 
 import { ERAS, type Era } from "@/lib/era";
 
@@ -69,4 +70,26 @@ export function chromeUrl(filename: string, era?: Era): string | null {
     return `/img/chrome/${era}/${filename}`;
   }
   return RECOVERED.has(filename) ? `/img/chrome/${filename}` : null;
+}
+
+type Repeat = "repeat" | "repeat-x" | "repeat-y" | "no-repeat";
+
+/**
+ * `style` for recovered art used as a CSS background (the originals'
+ * `background=` cells and tiled strips), or none when the picture was never
+ * recovered and the element keeps its colour. An absent repeat or position
+ * is left out, not set to `undefined`: the RSC payload writes `$undefined`
+ * for every such key (1.4 KB more on a post page).
+ */
+export function tileStyle(
+  url: string | null,
+  repeat?: Repeat,
+  position?: string,
+): CSSProperties | undefined {
+  if (!url) return undefined;
+  return {
+    backgroundImage: `url(${url})`,
+    ...(repeat && { backgroundRepeat: repeat }),
+    ...(position && { backgroundPosition: position }),
+  };
 }
