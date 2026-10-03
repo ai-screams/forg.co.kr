@@ -25,6 +25,7 @@ Shared React components for the museum's chrome, era shell, board listings, and 
 | `era-chrome-2014.tsx`    | 2014-era chrome: left/right rails, game-category sidebar, `SiteHeader2014` (logo + login bar + 7-button menu), mobile menu, `VisitorCounter` footer strip.                                                                                                  |
 | `era-shell.tsx`          | The five-column frame (`10 / 100 / 680 / 7 / *`) every route renders inside. Renders content once and swaps only the era chrome via `.era-2014-only` / `.era-2003-only` CSS classes.                                                                        |
 | `era-toggle.tsx`         | Client component: the 2014 · 2003 · 2001 toggle button group. Reads/writes `<html data-era>` and `localStorage`.                                                                                                                                            |
+| `home-2014.tsx`          | 2014-era home content (`Home2014Content`, the eight-box grid of latest posts from the 2014-12-18 capture). Box labels are the boards' `nameKr`.                                                                                                             |
 | `home-2001.tsx`          | 2001-era home content (`Home2001Content`, forg_b, the August 2001 front page). Artwork from `public/img/chrome/2001/`.                                                                                                                                      |
 | `home-2003.tsx`          | 2003-era home content (`Home2003Content`, frame-main-2003: the artwork between the m*\* and r*\* board boxes).                                                                                                                                              |
 | `lazy-img.tsx`           | `LazyImg`, the one `<img>` components draw: always `loading="lazy"`, so a hidden era's art never loads.                                                                                                                                                     |
@@ -72,7 +73,7 @@ Visual regressions (era toggle, mobile reflow) are checked manually per `.claude
 ### Common Patterns
 
 - `chromeUrl(asset, era)` (from `@/lib/chrome`) looks up a recovered Wayback chrome image; every call site has a typography or CSS fallback for when the asset wasn't recovered — follow that pattern rather than assuming an asset exists.
-- Per-board data loading uses a local `loadBox`/`BoxConfig`/`BoxData` shape (see `home-2003.tsx`; the home page's equivalent lives in `src/app/page.tsx`) — an async loader per box, run with `Promise.all`.
+- Per-board data loading uses a local `loadBox`/`BoxConfig`/`BoxData` shape (see `home-2014.tsx`, `home-2003.tsx`, `home-2001.tsx`) — an async loader per box, run with `Promise.all`.
 - A list row with no captured post body gets `<NoBodyMark />` ("본문 없음") instead of a plain link — don't silently drop the row or fake a link.
 
 ## Dependencies

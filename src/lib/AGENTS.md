@@ -72,7 +72,7 @@ file surfaces as a build error, not a runtime 404.
   rather than silently rendering an empty page.
 - Prefer adding a new exported function over widening an existing one's
   return type — callers (`(board)/[board]/page.tsx`,
-  `(board)/[board]/[postId]/page.tsx`, `src/app/page.tsx`) narrow on the
+  `(board)/[board]/[postId]/page.tsx`, `src/components/home-2014.tsx`) narrow on the
   specific shape they need.
 
 ## Dependencies
