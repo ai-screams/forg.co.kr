@@ -7,6 +7,10 @@
   "baseTarget": "_self",
   "bodyStyle": {
     "color": "black",
+    "margin-top": "3px",
+    "margin-left": "0px",
+    "margin-bottom": "3px",
+    "margin-right": "0px",
     "background-image": "url('/img/posts/site/decoration/images/bg.gif')",
     "--link": "blue",
     "--vlink": "purple",

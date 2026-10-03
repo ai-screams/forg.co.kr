@@ -142,14 +142,16 @@ const PLACEHOLDER_CSS = `img[data-recovery="missing"]{background:#f5f1e8;outline
 // faithful to. On a phone they are reflowed: tables, cells and images give up
 // their fixed widths and fit the screen (`nowrap` cells wrap), absolutely
 // placed blocks (the town maps cut into layers) stack, and long words
-// break. From 800px up the page is exactly the original.
+// break. From 800px up the page is exactly the original. A document in a
+// frame keeps its layout at any width: the frame sets it (the 2003
+// frameset's columns are 100 and 680px wide), not the phone.
 const VIEWPORT = "width=device-width, initial-scale=1";
 const NARROW_CSS = `@media (max-width:799px){
-body{margin:8px!important;min-width:0!important}
-table{width:100%!important;max-width:100%!important;height:auto!important}
-td,th{width:auto!important;height:auto!important;white-space:normal!important}
-img{max-width:calc(100vw - 16px)!important;height:auto!important}
-[style*="position:absolute"],[style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
+html:not(.in-frame) body{margin:8px!important;min-width:0!important}
+html:not(.in-frame) table{width:100%!important;max-width:100%!important;height:auto!important}
+html:not(.in-frame) td,html:not(.in-frame) th{width:auto!important;height:auto!important;white-space:normal!important}
+html:not(.in-frame) img{max-width:calc(100vw - 16px)!important;height:auto!important}
+html:not(.in-frame) [style*="position:absolute"],html:not(.in-frame) [style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
 }`;
 

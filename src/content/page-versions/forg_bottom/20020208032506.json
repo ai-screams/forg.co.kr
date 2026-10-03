@@ -6,7 +6,11 @@
   "originalUrl": "http://forg.dotple.com:80/forg_bottom.html",
   "baseTarget": null,
   "bodyStyle": {
-    "background-color": "#454E53"
+    "background-color": "#454E53",
+    "margin-top": "0px",
+    "margin-left": "0px",
+    "margin-bottom": "0px",
+    "margin-right": "0px"
   },
   "mode": "quirks",
   "css": "BODY,TD,input,form,TEXTAREA {color:black;font-size:9pt;font-family:Verdana,Arial ; line-height:100%}\n.f9 {font-family:Verdana,Arial;font-size:8pt ; height: 24px;}\n.pe {  color: #FFFF00; width: 1px ; height: 24px; background-color: #454E53; font-family:Verdana,Arial; font-size: 9pt; border-style: none; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width:1px}",
