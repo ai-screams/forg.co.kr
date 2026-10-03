@@ -55,8 +55,8 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
       };
     case "placeholder":
       return {
-        title: `${nameKr} (준비 중) — forg.co.kr`,
-        description: `${nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
+        title: `${nameKr} — forg.co.kr`,
+        description: `${nameKr} 게시판 — Wayback Machine에 읽을 수 있는 글이나 목록이 남지 않았습니다.`,
       };
   }
 }

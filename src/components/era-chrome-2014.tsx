@@ -264,7 +264,7 @@ export function FrameBottom2014() {
     >
       <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
-        2014-12-18 · 박물관 박제 · 후속 ADR 에서 라이브 카운터 검토
+        2014-12-18 기준 · 박물관 박제
       </span>
       {rightUrl && (
         <LazyImg
