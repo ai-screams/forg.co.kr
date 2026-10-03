@@ -20,7 +20,7 @@ import { listSkinOf } from "@/components/list-skin";
 import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
-import { getBoardOrThrow, type BoardId } from "@/lib/boards";
+import { getBoardOrThrow, type Board, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
 import type { AdjacentPosts } from "@/lib/posts";
 import { skin2001Of } from "@/lib/skins-2001";
@@ -33,10 +33,6 @@ interface PostViewProps {
 
 export function PostView({ post, adjacent }: PostViewProps) {
   const board = getBoardOrThrow(post.board);
-  const created = formatKoreanDateTime(post.createdAt);
-  // 작성일이 1970년인 Zeroboard NULL placeholder는 캡처 시점을 보조 표시.
-  const createdUnknown = isUnknownDate(post.createdAt);
-  const capturedDate = createdUnknown ? formatWaybackTs(post.capturedAt) : null;
 
   return (
     <article
@@ -56,112 +52,138 @@ export function PostView({ post, adjacent }: PostViewProps) {
       <div className="era-2001-only">
         <ViewHead2001 skin={skin2001Of(board.id)} post={post} />
       </div>
-      <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
-        <p className="text-forg-muted text-xs" data-pagefind-ignore>
-          <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
-            {board.nameKr}
-          </Link>
-        </p>
-        <h1
-          className="text-forg-ink mt-2 text-2xl font-bold"
-          data-pagefind-meta="title"
-          data-pagefind-weight="2"
-        >
-          {post.title}
-        </h1>
-        <dl className="text-forg-muted mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-          <div className="flex gap-1">
-            <dt className="font-bold">작성</dt>
-            <dd>
-              {post.authorHomepage ? (
-                <a
-                  href={post.authorHomepage}
-                  rel="nofollow noreferrer external"
-                  target="_blank"
-                  className="text-(--era-link) hover:text-(--era-link-hover)"
-                  data-pagefind-meta="author"
-                >
-                  <AuthorName
-                    board={post.board}
-                    name={post.author}
-                    memberNo={post.authorMemberNo}
-                    seed={POST_SEED}
-                  />
-                </a>
-              ) : (
-                <span data-pagefind-meta="author">
-                  <AuthorName
-                    board={post.board}
-                    name={post.author}
-                    memberNo={post.authorMemberNo}
-                    seed={POST_SEED}
-                  />
-                </span>
-              )}
-            </dd>
-          </div>
-          <div className="flex gap-1">
-            <dt className="font-bold">날짜</dt>
-            <dd>
-              <time dateTime={post.createdAt}>{created}</time>
-              {post.createdAtApprox && (
-                <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
-                  (이전 — 첫 댓글 시각, 작성일은 캡처에 없음)
-                </span>
-              )}
-              {capturedDate && (
-                <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
-                  (캡처 {capturedDate})
-                </span>
-              )}
-            </dd>
-          </div>
-          {post.hits !== null && (
-            <div className="flex gap-1">
-              <dt className="font-bold">조회</dt>
-              <dd>{post.hits.toLocaleString("ko-KR")}</dd>
-            </div>
-          )}
-          {post.recommend !== null && post.recommend > 0 && (
-            <div className="flex gap-1">
-              <dt className="font-bold">추천</dt>
-              <dd>{post.recommend.toLocaleString("ko-KR")}</dd>
-            </div>
-          )}
-          <div className="flex gap-1">
-            <dt className="font-bold">시기</dt>
-            <dd>{post.era}</dd>
-          </div>
-        </dl>
-      </header>
+      <PostHead post={post} board={board} />
 
       <div className="forg-post-body-cell px-6 py-6">
         <SanitizedHtml html={post.bodyHtml} className="post-body text-forg-ink leading-relaxed" />
       </div>
 
-      {post.attachments.length > 0 && (
-        <section
-          aria-labelledby={`attachments-${post.postId}`}
-          className="border-t border-(--era-input-border) px-6 py-4"
-        >
-          <h2 id={`attachments-${post.postId}`} className="text-forg-ink mb-2 text-sm font-bold">
-            첨부파일
-          </h2>
-          <ul className="text-forg-muted space-y-1 text-sm">
-            {post.attachments.map((att) => (
-              <li key={att.fileNum}>
-                <span className="font-mono">{att.name}</span>
-                {att.sizeBytes !== null && (
-                  <span className="text-forg-muted ml-2 text-xs">
-                    ({formatBytes(att.sizeBytes)})
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <PostAttachments post={post} />
+      <PostComments post={post} />
 
+      {adjacent && (adjacent.prev ?? adjacent.next) ? (
+        <div data-pagefind-ignore>
+          <PostNavigation
+            board={board.id}
+            boardKr={board.nameKr}
+            prev={adjacent.prev}
+            next={adjacent.next}
+          />
+        </div>
+      ) : null}
+    </article>
+  );
+}
+
+/** The 2014/2003 head: board link, title, author, date and counts. */
+function PostHead({ post, board }: { post: Post; board: Board }) {
+  // 작성일이 1970년인 Zeroboard NULL placeholder는 캡처 시점을 보조 표시.
+  const capturedDate = isUnknownDate(post.createdAt) ? formatWaybackTs(post.capturedAt) : null;
+  const author = (
+    <AuthorName
+      board={post.board}
+      name={post.author}
+      memberNo={post.authorMemberNo}
+      seed={POST_SEED}
+    />
+  );
+
+  return (
+    <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
+      <p className="text-forg-muted text-xs" data-pagefind-ignore>
+        <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
+          {board.nameKr}
+        </Link>
+      </p>
+      <h1
+        className="text-forg-ink mt-2 text-2xl font-bold"
+        data-pagefind-meta="title"
+        data-pagefind-weight="2"
+      >
+        {post.title}
+      </h1>
+      <dl className="text-forg-muted mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+        <div className="flex gap-1">
+          <dt className="font-bold">작성</dt>
+          <dd>
+            {post.authorHomepage ? (
+              <a
+                href={post.authorHomepage}
+                rel="nofollow noreferrer external"
+                target="_blank"
+                className="text-(--era-link) hover:text-(--era-link-hover)"
+                data-pagefind-meta="author"
+              >
+                {author}
+              </a>
+            ) : (
+              <span data-pagefind-meta="author">{author}</span>
+            )}
+          </dd>
+        </div>
+        <div className="flex gap-1">
+          <dt className="font-bold">날짜</dt>
+          <dd>
+            <time dateTime={post.createdAt}>{formatKoreanDateTime(post.createdAt)}</time>
+            {post.createdAtApprox && (
+              <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
+                (이전 — 첫 댓글 시각, 작성일은 캡처에 없음)
+              </span>
+            )}
+            {capturedDate && (
+              <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">(캡처 {capturedDate})</span>
+            )}
+          </dd>
+        </div>
+        {post.hits !== null && (
+          <div className="flex gap-1">
+            <dt className="font-bold">조회</dt>
+            <dd>{post.hits.toLocaleString("ko-KR")}</dd>
+          </div>
+        )}
+        {post.recommend !== null && post.recommend > 0 && (
+          <div className="flex gap-1">
+            <dt className="font-bold">추천</dt>
+            <dd>{post.recommend.toLocaleString("ko-KR")}</dd>
+          </div>
+        )}
+        <div className="flex gap-1">
+          <dt className="font-bold">시기</dt>
+          <dd>{post.era}</dd>
+        </div>
+      </dl>
+    </header>
+  );
+}
+
+function PostAttachments({ post }: { post: Post }) {
+  if (post.attachments.length === 0) return null;
+  return (
+    <section
+      aria-labelledby={`attachments-${post.postId}`}
+      className="border-t border-(--era-input-border) px-6 py-4"
+    >
+      <h2 id={`attachments-${post.postId}`} className="text-forg-ink mb-2 text-sm font-bold">
+        첨부파일
+      </h2>
+      <ul className="text-forg-muted space-y-1 text-sm">
+        {post.attachments.map((att) => (
+          <li key={att.fileNum}>
+            <span className="font-mono">{att.name}</span>
+            {att.sizeBytes !== null && (
+              <span className="text-forg-muted ml-2 text-xs">({formatBytes(att.sizeBytes)})</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/** The comments in both skins: the 2001 rows, and the board's own for 2014/2003. */
+function PostComments({ post }: { post: Post }) {
+  return (
+    <>
       <div className="era-2001-only">
         <Comments2001 post={post} />
       </div>
@@ -181,18 +203,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
           />
         </section>
       )}
-
-      {adjacent && (adjacent.prev ?? adjacent.next) ? (
-        <div data-pagefind-ignore>
-          <PostNavigation
-            board={board.id}
-            boardKr={board.nameKr}
-            prev={adjacent.prev}
-            next={adjacent.next}
-          />
-        </div>
-      ) : null}
-    </article>
+    </>
   );
 }
 
