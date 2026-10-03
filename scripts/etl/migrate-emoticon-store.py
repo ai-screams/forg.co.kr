@@ -28,6 +28,8 @@ from collections import defaultdict
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from etl_io import write_atomic
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 IMG_ROOT = PROJECT_ROOT / "public" / "img" / "posts"
@@ -49,9 +51,7 @@ def read_manifest(path: Path) -> list[dict]:
 
 
 def write_json(path: Path, payload: object) -> None:
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    tmp.replace(path)
+    write_atomic(path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 
 
 def store_filename(basename: str, digest: str, by_name: dict[str, list[dict]]) -> tuple[str, bool]:

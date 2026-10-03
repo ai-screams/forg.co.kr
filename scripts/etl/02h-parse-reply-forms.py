@@ -38,6 +38,7 @@ from bs4 import BeautifulSoup, Tag
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from post_parse import split_category_prefix  # noqa: E402
 from sanitise import sanitise_html  # noqa: E402
 from schemas import Post  # noqa: E402
 
@@ -155,7 +156,7 @@ def main() -> None:
         if not raw_title and not body_text:
             stats["empty"] = stats.get("empty", 0) + 1
             continue
-        category, title = zb40.zb41.split_category_prefix(raw_title)
+        category, title = split_category_prefix(raw_title)
         e = plan[key]
         try:
             post = Post(

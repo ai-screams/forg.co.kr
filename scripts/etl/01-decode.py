@@ -38,6 +38,8 @@ from typing import Optional
 
 from bs4 import BeautifulSoup, Comment
 
+import etl_io
+
 # ── Paths (ADR-0007 §3) ─────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent.parent / ".docs" / "research"
 INPUT_DIR = ROOT / "archive"
@@ -114,11 +116,9 @@ _lock = threading.Lock()
 
 
 def append_jsonl(path: Path, obj: dict) -> None:
-    line = json.dumps(obj, ensure_ascii=False)
+    # One writer at a time: the decode workers share the logs.
     with _lock:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        with path.open("a") as f:
-            f.write(line + "\n")
+        etl_io.append_jsonl(path, obj)
 
 
 def write_summary(stats: Stats) -> None:

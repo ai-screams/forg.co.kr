@@ -50,6 +50,8 @@ from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup, Tag
 
+from etl_io import write_atomic
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 QUEUE_FILE = PROJECT_ROOT / "scripts" / "etl" / "image-download-queue.json"
@@ -250,12 +252,7 @@ def rewrite_post(
     post["bodyHtml"] = new_body
     if dry_run:
         return True
-    tmp = post_path.with_suffix(post_path.suffix + ".tmp")
-    tmp.write_text(
-        json.dumps(post, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    tmp.replace(post_path)
+    write_atomic(post_path, json.dumps(post, ensure_ascii=False, indent=2) + "\n")
     return True
 
 

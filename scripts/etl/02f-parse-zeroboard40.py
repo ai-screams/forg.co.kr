@@ -37,7 +37,6 @@ sentinel too.
 from __future__ import annotations
 
 import argparse
-import importlib.util
 import json
 import re
 import sys
@@ -50,6 +49,8 @@ from urllib.parse import parse_qs, urlparse
 from bs4 import BeautifulSoup, Tag
 from pydantic import ValidationError
 
+from etl_io import write_atomic
+from post_parse import find_attachments, split_category_prefix
 from schemas import Attachment, Comment, Post
 from sanitise import sanitise_html
 
@@ -69,16 +70,9 @@ ORIGIN_BY_PHASE = {
 }
 UNKNOWN_DATE = datetime(1970, 1, 1)
 
-# Reuse the 4.1 parser's attachment reader and category split: the
+# The attachment reader and category split come from `post_parse`: the
 # `download.php?…&filenum=N` link and the `[말머리]` title prefix are the same
-# in 4.0.
-_spec = importlib.util.spec_from_file_location(
-    "zb41", Path(__file__).with_name("02-parse-zeroboard.py")
-)
-assert _spec and _spec.loader
-zb41 = importlib.util.module_from_spec(_spec)
-sys.modules["zb41"] = zb41
-_spec.loader.exec_module(zb41)
+# in 4.0 as in 4.1.
 
 _NON_POST_MARKERS: tuple[tuple[str, str], ...] = (
     ("사용권한이 없습니다", "permission_denied"),
@@ -320,11 +314,11 @@ def parse_view(
     raw_title, author = header_fields(body_td)
     body = sanitise_html(body_html(body_td))
     body_text = BeautifulSoup(body, "lxml").get_text(" ", strip=True)
-    attachments = [Attachment(**a) for a in zb41.find_attachments(soup)]
+    attachments = [Attachment(**a) for a in find_attachments(soup)]
     if not raw_title and not body_text and "<img" not in body and not attachments:
         # Zeroboard renders an empty template for a post it no longer has.
         raise NonPost("empty_view")
-    category, title = zb41.split_category_prefix(raw_title)
+    category, title = split_category_prefix(raw_title)
     return Post(
         board=board,
         boardKr=board,
@@ -457,10 +451,7 @@ def main() -> None:
         stats["ok"] += 1
         dated[how] += 1
         if not args.dry_run:
-            out.parent.mkdir(parents=True, exist_ok=True)
-            tmp = out.with_suffix(".json.tmp")
-            tmp.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")
-            tmp.replace(out)
+            write_atomic(out, post.model_dump_json(indent=2) + "\n")
 
     print(f"[02f-zb40] files={len(files)} list-row dates pooled={len(row_dates)} dry_run={args.dry_run}")
     print(f"[02f-zb40] {dict(stats)}")

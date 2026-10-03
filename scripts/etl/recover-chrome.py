@@ -41,6 +41,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import write_atomic  # noqa: E402
 from wayback_client import (  # noqa: E402
     WaybackError,
     WaybackGoneError,
@@ -675,11 +676,8 @@ def fetch_asset(target_path: str, filename: str) -> dict:
             "error": str(e)[:200],
         }
 
-    out.parent.mkdir(parents=True, exist_ok=True)
     sha256_hex = hashlib.sha256(data).hexdigest()
-    tmp = out.with_suffix(out.suffix + ".tmp")
-    tmp.write_bytes(data)
-    tmp.replace(out)
+    write_atomic(out, data)
     return {
         "status": "ok",
         "path": target_path,
@@ -736,9 +734,7 @@ def write_report(path: Path, targets: list, stats: dict, results: list[dict]) ->
         "stats": stats,
         "results": results,
     }
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    tmp.replace(path)
+    write_atomic(path, json.dumps(report, indent=2, ensure_ascii=False) + "\n")
 
 
 def main() -> int:

@@ -45,6 +45,7 @@ from bs4 import BeautifulSoup, Tag
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import write_atomic  # noqa: E402
 from schemas import BoardListing, BoardListingEntry  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -455,9 +456,7 @@ def main() -> int:
                     k: v for k, v in now.items() if k != "generatedAt"
                 }:
                     continue
-            tmp = out.with_suffix(".tmp")
-            tmp.write_text(listing.model_dump_json(indent=2) + "\n", encoding="utf-8")
-            tmp.replace(out)
+            write_atomic(out, listing.model_dump_json(indent=2) + "\n")
     print(f"\n[02c-parse-listing] DONE {stats}", file=sys.stderr)
     return 0
 

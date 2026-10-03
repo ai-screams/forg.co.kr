@@ -32,8 +32,6 @@ import json
 import re
 import sys
 import time
-from collections import Counter
-from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import cast
@@ -43,16 +41,27 @@ from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from schemas import Attachment, Comment, Post  # noqa: E402
+from post_parse import (  # noqa: E402
+    ETL_DIR,
+    INPUT_BASE,
+    OUTPUT_DIR,
+    PLAN_FILE,
+    PROGRESS_FILE,
+    NonPostPage,
+    Stats,
+    append_failure,
+    plain_text,
+    write_post,
+    write_summary,
+)
+
+# `06` loads this file through importlib and reads `parse_one` and
+# `_NonPostPage` from it.
+_NonPostPage = NonPostPage
 
 # ── Paths ───────────────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
-OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
-FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures-g5.jsonl"
-SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary-g5.json"
-
-PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
-PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
+FAILURES_FILE = ETL_DIR / ".parse-failures-g5.jsonl"
+SUMMARY_FILE = ETL_DIR / ".parse-summary-g5.json"
 
 # Case-insensitive directory names this parser walks. The plan resolves
 # original case (forg.co.kr `Ultima` vs forg.kr `ultima`).
@@ -144,12 +153,6 @@ def detect_non_post_page(soup: BeautifulSoup, html: str) -> str | None:
     if soup.find(id="st-view") is None:
         return "g5_skin_unsupported"
     return None
-
-
-class _NonPostPage(Exception):
-    def __init__(self, reason: str) -> None:
-        super().__init__(reason)
-        self.reason = reason
 
 
 # ── nh3 sanitiser (ADR-0008 §5) — one config in `sanitise.py` ──────────
@@ -270,7 +273,7 @@ def parse_one(
 
     body_html_raw = find_body(sv)
     body_html = sanitise_html(body_html_raw)
-    body_text = BeautifulSoup(body_html, "lxml").get_text(separator=" ", strip=True)
+    body_text = plain_text(body_html)
 
     comments = find_comments(soup)
     # Attachments: G5's st-basic theme renders these inline; cleanly
@@ -305,59 +308,6 @@ def parse_one(
         parsedAt=parsed_at,
         originalUrl=original_url,
         sourceEngine="gnuboard5",
-    )
-
-
-# ── Stats / reporting ──────────────────────────────────────────────────-
-@dataclass
-class Stats:
-    total: int = 0
-    success: int = 0
-    skipped: int = 0
-    failed_parse: int = 0
-    failed_validate: int = 0
-    skipped_no_content: int = 0
-    skipped_reasons: Counter = field(default_factory=Counter)
-    body_chars: int = 0
-    posts_with_comments: int = 0
-    per_board: Counter = field(default_factory=Counter)
-    per_board_failed: Counter = field(default_factory=Counter)
-    per_board_skipped: Counter = field(default_factory=Counter)
-    start_ts: float = field(default_factory=time.time)
-
-
-def _append_failure(rec: dict[str, object]) -> None:
-    FAILURES_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with FAILURES_FILE.open("a") as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-
-
-def _write_summary(stats: Stats) -> None:
-    SUMMARY_FILE.write_text(
-        json.dumps(
-            {
-                "total": stats.total,
-                "success": stats.success,
-                "skipped": stats.skipped,
-                "skipped_no_content": stats.skipped_no_content,
-                "skipped_reasons": dict(stats.skipped_reasons),
-                "failed_parse": stats.failed_parse,
-                "failed_validate": stats.failed_validate,
-                "avg_body_chars": (
-                    stats.body_chars // stats.success if stats.success else 0
-                ),
-                "posts_with_comments": stats.posts_with_comments,
-                "per_board": dict(stats.per_board),
-                "per_board_failed": dict(stats.per_board_failed),
-                "per_board_skipped": dict(stats.per_board_skipped),
-                "elapsed_s": int(time.time() - stats.start_ts),
-                "ts": int(time.time()),
-            },
-            indent=2,
-            ensure_ascii=False,
-        )
-        + "\n",
-        encoding="utf-8",
     )
 
 
@@ -449,7 +399,8 @@ def main() -> None:
         captured_at = capture_lookup.get((plan_board.lower(), post_id))
         if not captured_at:
             stats.failed_parse += 1
-            _append_failure(
+            append_failure(
+                FAILURES_FILE,
                 {
                     "input": str(path),
                     "plan_board": plan_board,
@@ -463,7 +414,8 @@ def main() -> None:
             html = path.read_text(encoding="utf-8")
         except UnicodeDecodeError as e:
             stats.failed_parse += 1
-            _append_failure(
+            append_failure(
+                FAILURES_FILE,
                 {"input": str(path), "error": f"decode: {e}", "stage": "read"}
             )
             continue
@@ -473,7 +425,8 @@ def main() -> None:
             stats.skipped_no_content += 1
             stats.skipped_reasons[e.reason] += 1
             stats.per_board_skipped[plan_board] += 1
-            _append_failure(
+            append_failure(
+                FAILURES_FILE,
                 {
                     "input": str(path),
                     "plan_board": plan_board,
@@ -486,7 +439,8 @@ def main() -> None:
         except ValidationError as e:
             stats.failed_validate += 1
             stats.per_board_failed[plan_board] += 1
-            _append_failure(
+            append_failure(
+                FAILURES_FILE,
                 {
                     "input": str(path),
                     "plan_board": plan_board,
@@ -499,7 +453,8 @@ def main() -> None:
         except Exception as e:  # noqa: BLE001
             stats.failed_parse += 1
             stats.per_board_failed[plan_board] += 1
-            _append_failure(
+            append_failure(
+                FAILURES_FILE,
                 {
                     "input": str(path),
                     "plan_board": plan_board,
@@ -512,13 +467,7 @@ def main() -> None:
 
         if not args.dry_run:
             output_board = map_output_board(plan_board)
-            output_path = OUTPUT_DIR / output_board / f"{post_id}.json"
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            tmp = output_path.with_suffix(output_path.suffix + ".tmp")
-            tmp.write_text(
-                post.model_dump_json(indent=2) + "\n", encoding="utf-8"
-            )
-            tmp.replace(output_path)
+            write_post(OUTPUT_DIR / output_board / f"{post_id}.json", post)
 
         stats.success += 1
         stats.body_chars += len(post.bodyText)
@@ -538,7 +487,7 @@ def main() -> None:
             )
             last_print = i
 
-    _write_summary(stats)
+    write_summary(SUMMARY_FILE, stats)
     reasons = dict(stats.skipped_reasons)
     print(
         f"\n[02d-parse-g5] DONE total={stats.total} ok={stats.success} "
