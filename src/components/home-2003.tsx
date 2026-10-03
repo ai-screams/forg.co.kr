@@ -42,6 +42,7 @@ import Link from "@/components/link";
 import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { formatMonthDay } from "@/lib/dates";
 import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
@@ -558,7 +559,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
                 {/* The 185px column had no room for a date and carried none. */}
                 {!compact && (
                   <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
-                    {monthDayFromIso(entry.createdAt)}
+                    {formatMonthDay(entry.createdAt)}
                   </span>
                 )}
                 {entry.title}
@@ -607,12 +608,6 @@ function BestScreenShotBox() {
       )}
     </section>
   );
-}
-
-function monthDayFromIso(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime()) || d.getFullYear() < 1990) return "—";
-  return `${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}`;
 }
 
 /* ────────────────────────────────────────────────────────────────────── */

@@ -24,6 +24,7 @@ import { Home2003Content } from "@/components/home-2003";
 import { LazyImg } from "@/components/lazy-img";
 import { getBoard, type BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { formatShortDate, isUnknownDate } from "@/lib/dates";
 import type { Era } from "@/lib/era";
 import { getPost, getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
@@ -255,9 +256,9 @@ function BoxRow({
       {linkIcon && <StateIcon url={linkIcon} width={13} height={13} label="링크 있음" />}
       {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
       {/* Phone only: the date the 320px box had no room for. */}
-      {entry.createdAt >= "1990" && (
+      {!isUnknownDate(entry.createdAt) && (
         <span className="ml-auto shrink-0 pl-2 text-[11px] text-(--era-meta-fg) tabular-nums sm:hidden">
-          {entry.createdAt.slice(2, 4)}.{entry.createdAt.slice(5, 7)}.{entry.createdAt.slice(8, 10)}
+          {formatShortDate(entry.createdAt)}
         </span>
       )}
     </Link>

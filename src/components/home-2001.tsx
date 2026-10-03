@@ -28,6 +28,7 @@ import Link from "@/components/link";
 import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
+import { formatMonthDay } from "@/lib/dates";
 import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
@@ -335,7 +336,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
                   className="mr-[2px] inline-block align-[-3px]"
                 />
               )}
-              {data.box.dated && <span className="mr-1">{monthDay(entry.createdAt)}</span>}
+              {data.box.dated && <span className="mr-1">{formatMonthDay(entry.createdAt)}</span>}
               {entry.title}
             </Link>
           </li>
@@ -343,10 +344,4 @@ function BoxSection2001({ data }: { data: BoxData }) {
       </ul>
     </section>
   );
-}
-
-function monthDay(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime()) || d.getFullYear() < 1990) return "—";
-  return `${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}`;
 }

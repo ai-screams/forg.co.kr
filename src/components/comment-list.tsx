@@ -18,7 +18,12 @@ import { AuthorName, commentSeed } from "@/components/author-name";
 import type { ListSkin } from "@/components/list-skin";
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
-import { formatKoreanDateTime, isUnknownDate } from "@/lib/dates";
+import {
+  formatKoreanDateTime,
+  formatMonthDayTime,
+  formatSlashDate,
+  isUnknownDate,
+} from "@/lib/dates";
 import type { Comment } from "@/types/post";
 
 interface ItemProps {
@@ -33,14 +38,6 @@ function Author({ comment, board, seed }: ItemProps) {
   return (
     <AuthorName board={board} name={comment.author} memberNo={comment.authorMemberNo} seed={seed} />
   );
-}
-
-function ymd(iso: string): string {
-  return `${iso.slice(0, 4)}/${iso.slice(5, 7)}/${iso.slice(8, 10)}`;
-}
-
-function mdhm(iso: string): string {
-  return `${iso.slice(5, 7)}-${iso.slice(8, 10)} ${iso.slice(11, 16)}`;
 }
 
 function Body({ comment, className }: { comment: Comment; className: string }) {
@@ -63,7 +60,7 @@ function KritzComment({ comment, board, seed }: ItemProps) {
         </b>
         &nbsp;at&nbsp;
         <span title={formatKoreanDateTime(comment.createdAt)}>
-          {unknown ? "작성일 미상" : ymd(comment.createdAt)}
+          {unknown ? "작성일 미상" : formatSlashDate(comment.createdAt)}
         </span>
       </div>
       <Body comment={comment} className="p-[5px] text-[12px] leading-[1.4] text-[#363636]" />
@@ -80,7 +77,7 @@ function WebbusComment({ comment, board, seed }: ItemProps) {
           <Author comment={comment} board={board} seed={seed} />
         </b>
         <span title={formatKoreanDateTime(comment.createdAt)}>
-          {unknown ? "작성일 미상" : mdhm(comment.createdAt)}
+          {unknown ? "작성일 미상" : formatMonthDayTime(comment.createdAt)}
         </span>
       </div>
       <Body comment={comment} className="px-[2px] pt-[5px] pb-[2px] text-[12px] text-black" />

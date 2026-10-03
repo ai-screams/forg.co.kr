@@ -26,6 +26,7 @@ import type { ReactNode } from "react";
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
+import { formatKoreanFull, formatSlashDate } from "@/lib/dates";
 import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
 
 /** What a 2001 row needs beyond `ListRow`'s rendered cells. */
@@ -57,14 +58,7 @@ export function SkinImg2001({
 
 function dateCell(iso: string | null): ReactNode {
   if (!iso) return null;
-  const [d = "", t = ""] = iso.split("T");
-  const [y, m, day] = d.split("-");
-  const [hh = "00", mm = "00", ss = "00"] = t.replace(/[+Z].*$/, "").split(":");
-  return (
-    <span title={`${y ?? ""}년 ${m ?? ""}월 ${day ?? ""}일 ${hh}시 ${mm}분 ${ss.slice(0, 2)}초`}>
-      {y}/{m}/{day}
-    </span>
-  );
+  return <span title={formatKoreanFull(iso)}>{formatSlashDate(iso)}</span>;
 }
 
 function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
