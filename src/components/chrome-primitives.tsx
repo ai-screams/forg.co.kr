@@ -70,20 +70,15 @@ function InertChrome({
   title: string;
   height: number;
 }) {
-  const url = chromeUrl(asset, era);
-  if (!url) {
-    return (
-      <span
-        aria-disabled
-        title={title}
-        className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] text-[10px] font-bold uppercase select-none"
-      >
-        {label}
-      </span>
-    );
-  }
   return (
-    <LazyImg src={url} alt={label} title={title} width={70} height={height} className="block" />
+    <LazyImg
+      src={chromeUrl(asset, era)}
+      alt={label}
+      title={title}
+      width={70}
+      height={height}
+      className="block"
+    />
   );
 }
 

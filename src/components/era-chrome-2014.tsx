@@ -23,7 +23,7 @@ import {
 } from "@/components/chrome-primitives";
 import { LazyImg } from "@/components/lazy-img";
 import { type BoardId } from "@/lib/boards";
-import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
@@ -73,17 +73,15 @@ const TOTAL_VISITORS = 52_916_713;
 export function FrameLeft2014() {
   const sidebarStyle = tileStyle(chromeUrl("left_bg.gif", ERA), "repeat");
 
-  // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
-  // appears only in frame-left-2007 and never in 2014-12-18.
-  const barUrl = chromeUrl("l_bar.gif", ERA);
-
   return (
     <aside
       aria-label="게임 카테고리"
       className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) min-[800px]:flex"
       style={sidebarStyle}
     >
-      {barUrl && <LazyImg src={barUrl} alt="" width={86} height={2} className="block" />}
+      {/* The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
+          appears only in frame-left-2007 and never in 2014-12-18. */}
+      <LazyImg src={chromeUrl("l_bar.gif", ERA)} alt="" width={86} height={2} className="block" />
       <nav className="flex flex-col text-left text-[12px]">
         {GAME_CATEGORIES.map((cat, i) => (
           <Fragment key={cat.id}>
@@ -133,9 +131,15 @@ function FamilySiteSelect() {
 }
 
 function SidebarSpacer({ height }: { height: number }) {
-  const url = chromeUrl("blank_l_line.gif", ERA);
-  if (!url) return <div style={{ height }} aria-hidden />;
-  return <LazyImg src={url} alt="" width={86} height={height} className="block" />;
+  return (
+    <LazyImg
+      src={chromeUrl("blank_l_line.gif", ERA)}
+      alt=""
+      width={86}
+      height={height}
+      className="block"
+    />
+  );
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -149,9 +153,6 @@ function SidebarSpacer({ height }: { height: number }) {
 // edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
 // as a white gap under the logo and breaks that blend.
 export function FrameTop2014() {
-  const logoUrl = chromeUrl("left_logo1.gif", ERA);
-  const tLineUrl = chromeUrl("t_line.gif", ERA);
-
   return (
     <div className="border-b border-(--era-input-border) bg-white">
       {/* `minmax(0,1fr)`: a plain `1fr` cannot shrink below the 580px menu row,
@@ -163,14 +164,12 @@ export function FrameTop2014() {
         {/* `<td height="37px" width="100px" rowspan="3">` held the 100×42 logo
             with no padding. */}
         <Link href="/" className="row-span-3 flex items-start justify-start">
-          {logoUrl ? (
-            <LazyImg src={logoUrl} alt="forg.co.kr" width={100} height={42} />
-          ) : (
-            <span className="font-forg flex flex-col leading-tight">
-              <span className="text-forg-ink text-base font-bold tracking-tight">forg.co.kr</span>
-              <span className="text-forg-muted text-[10px]">Forg&apos;s World</span>
-            </span>
-          )}
+          <LazyImg
+            src={chromeUrl("left_logo1.gif", ERA)}
+            alt="forg.co.kr"
+            width={100}
+            height={42}
+          />
         </Link>
 
         <LoginBar era={ERA} height={15} />
@@ -194,9 +193,11 @@ export function FrameTop2014() {
           </Link>
         ))}
       </MobileMenu>
-      {tLineUrl && (
-        <div aria-hidden className="h-[12px] w-full" style={tileStyle(tLineUrl, "repeat-x")} />
-      )}
+      <div
+        aria-hidden
+        className="h-[12px] w-full"
+        style={tileStyle(chromeUrl("t_line.gif", ERA), "repeat-x")}
+      />
     </div>
   );
 }
@@ -207,42 +208,37 @@ export function FrameTop2014() {
  * was already dead on the live site, so the museum draws it and nothing else.
  */
 function MenuTailCap() {
-  const url = chromeUrl("t_b_right.gif", ERA);
-  if (!url) return null;
-  return <LazyImg src={url} alt="" aria-hidden width={20} height={20} className="block shrink-0" />;
+  return (
+    <LazyImg
+      src={chromeUrl("t_b_right.gif", ERA)}
+      alt=""
+      aria-hidden
+      width={20}
+      height={20}
+      className="block shrink-0"
+    />
+  );
 }
 
 function MenuButton({ item }: { item: MenuConfig }) {
-  const baseUrl = chromeUrl(item.asset, ERA);
-  const hoverUrl = chromeUrl(item.hoverAsset, ERA);
-
-  if (baseUrl) {
-    // CSS-only hover swap via background-image overlay (SSG-safe).
-    return (
-      <Link
-        href={`/${item.id}`}
-        aria-label={item.label}
-        className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
-        style={tileStyle(baseUrl, "no-repeat")}
-      >
-        {hoverUrl && (
-          <span
-            aria-hidden
-            className="absolute inset-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
-            style={tileStyle(hoverUrl, "no-repeat")}
-          />
-        )}
-        <span className="sr-only">{item.label}</span>
-      </Link>
-    );
-  }
-
+  // Wayback kept three of the seven hover images (freeboard, boo, trash).
+  const hoverUrl = optionalChrome(item.hoverAsset, ERA);
+  // CSS-only hover swap via background-image overlay (SSG-safe).
   return (
     <Link
       href={`/${item.id}`}
-      className="border-forg-gold/40 hover:bg-forg-gold/20 hover:border-forg-gold flex h-[20px] w-[80px] shrink-0 items-center justify-center border-b-2 bg-white text-[10px] font-bold transition-colors"
+      aria-label={item.label}
+      className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
+      style={tileStyle(chromeUrl(item.asset, ERA), "no-repeat")}
     >
-      {item.label}
+      {hoverUrl && (
+        <span
+          aria-hidden
+          className="absolute inset-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+          style={tileStyle(hoverUrl, "no-repeat")}
+        />
+      )}
+      <span className="sr-only">{item.label}</span>
     </Link>
   );
 }
@@ -252,29 +248,24 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /* ──────────────────────────────────────────────────────────────────── */
 
 export function FrameBottom2014() {
-  const bgUrl = chromeUrl("bgm_bg.gif", ERA);
-  const rightUrl = chromeUrl("bgm_right.gif", ERA);
-
   return (
     <footer
       role="group"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
       className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
-      style={tileStyle(bgUrl, "repeat-x")}
+      style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
         2014-12-18 기준 · 박물관 박제
       </span>
-      {rightUrl && (
-        <LazyImg
-          src={rightUrl}
-          alt=""
-          width={150}
-          height={24}
-          className="hidden h-[24px] w-auto sm:block"
-        />
-      )}
+      <LazyImg
+        src={chromeUrl("bgm_right.gif", ERA)}
+        alt=""
+        width={150}
+        height={24}
+        className="hidden h-[24px] w-auto sm:block"
+      />
     </footer>
   );
 }

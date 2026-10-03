@@ -72,7 +72,7 @@ Visual regressions (era toggle, mobile reflow) are checked manually per `.claude
 
 ### Common Patterns
 
-- `chromeUrl(asset, era)` (from `@/lib/chrome`) looks up a recovered Wayback chrome image; every call site has a typography or CSS fallback for when the asset wasn't recovered — follow that pattern rather than assuming an asset exists.
+- `chromeUrl(asset, era)` (from `@/lib/chrome`) returns a recovered chrome image's URL and stops the build when the file is not in `public/img/chrome/`, so draw the image without a stand-in. Use `optionalChrome` only for art Wayback never kept (the 2014 menu's hover images, the 2003 `bgm_en.gif`) and draw without it. The 2001 skin images (`skinAsset2001`, `SkinImg2001`) are a separate lookup where many files are missing by nature.
 - Per-board data loading uses a local `loadBox`/`BoxConfig`/`BoxData` shape (see `home-2014.tsx`, `home-2003.tsx`, `home-2001.tsx`) — an async loader per box, run with `Promise.all`.
 - A list row with no captured post body gets `<NoBodyMark />` ("본문 없음") instead of a plain link — don't silently drop the row or fake a link.
 

@@ -246,16 +246,14 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
 
 /** `<img src=t.gif height=N>` — the spacer the original used for row height. */
 function RowSpacer({ height }: { height: number }) {
-  const url = chromeUrl("zb_t.gif");
-  if (!url) return <div style={{ height }} aria-hidden />;
-  return <LazyImg src={url} alt="" width={1} height={height} className="block" />;
+  return <LazyImg src={chromeUrl("zb_t.gif")} alt="" width={1} height={height} className="block" />;
 }
 
 /**
  * The header row, in the skin's own strip: `kritz` is
  * `background:white url(skin/kritz_normal2/title_bg.jpg); height:20px`,
- * `webbus` a 28px row on `title_bg.gif`. Each column shows
- * its image label; anything not recovered falls back to the word.
+ * `webbus` a 28px row on `title_bg.gif`. Each column shows its image label;
+ * `plain` has no art and shows the words.
  */
 function HeadRow({ skin, columns }: { skin: ListSkin; columns: readonly Column[] }) {
   const bgAsset =

@@ -4,8 +4,7 @@
  * The frame around it is `era-chrome-2014.tsx`.
  *
  * Chrome assets (box headers, state icons) come from Wayback via
- * `scripts/etl/recover-chrome.py`; a missing one falls back to typography /
- * OKLCH CSS (`chromeUrl` in `lib/chrome`).
+ * `scripts/etl/recover-chrome.py` (`chromeUrl` in `lib/chrome`).
  */
 
 import Link from "@/components/link";
@@ -131,40 +130,29 @@ function BoxCard({ box }: { box: BoxData }) {
       className="border-forg-gold/30 flex flex-col border-b max-sm:mb-3 max-sm:border max-sm:border-[#e3e3e3]"
       aria-label={meta.nameKr}
     >
-      {headerUrl && (
-        <Link
-          href={`/${box.config.id}`}
-          aria-hidden
-          tabIndex={-1}
-          className="relative block h-[25px] w-full sm:hidden"
-          style={{ backgroundImage: TAB_FILL }}
-        >
-          <span
-            className="absolute inset-y-0 left-0 w-[300px] max-w-[calc(100%-7px)]"
-            style={tileStyle(headerUrl, "no-repeat")}
-          />
-          <span
-            className="absolute inset-y-0 right-0 w-[7px]"
-            style={tileStyle(headerUrl, "no-repeat", "right top")}
-          />
-        </Link>
-      )}
       <Link
         href={`/${box.config.id}`}
-        className={[
-          "bg-forg-gold/10 hover:bg-forg-gold/20 group block h-[25px] w-full overflow-hidden",
-          // Phones get the full-width tab above instead.
-          headerUrl ? "max-sm:hidden" : "",
-        ].join(" ")}
+        aria-hidden
+        tabIndex={-1}
+        className="relative block h-[25px] w-full sm:hidden"
+        style={{ backgroundImage: TAB_FILL }}
+      >
+        <span
+          className="absolute inset-y-0 left-0 w-[300px] max-w-[calc(100%-7px)]"
+          style={tileStyle(headerUrl, "no-repeat")}
+        />
+        <span
+          className="absolute inset-y-0 right-0 w-[7px]"
+          style={tileStyle(headerUrl, "no-repeat", "right top")}
+        />
+      </Link>
+      {/* Phones get the full-width tab above instead. */}
+      <Link
+        href={`/${box.config.id}`}
+        className="bg-forg-gold/10 hover:bg-forg-gold/20 group block h-[25px] w-full overflow-hidden max-sm:hidden"
         style={tileStyle(headerUrl, "no-repeat")}
       >
-        {!headerUrl && (
-          <div className="flex h-full items-center justify-between px-2">
-            <span className="text-forg-ink text-xs font-bold tracking-tight">{meta.nameKr}</span>
-            <span className="text-forg-muted font-mono text-[9px] uppercase">{meta.engine}</span>
-          </div>
-        )}
-        {headerUrl && <span className="sr-only">{meta.nameKr}</span>}
+        <span className="sr-only">{meta.nameKr}</span>
       </Link>
       <div className="space-y-[2px] pt-[5px] pr-[1px] pb-[10px] pl-[10px] max-sm:space-y-0 max-sm:px-3 max-sm:pt-1">
         {box.entries.map((row) => (
@@ -200,11 +188,6 @@ function BoxRow({
   // `line-clamp-1` compiles to `display:-webkit-box`, which is block-level
   // and pushed the count onto its own line. The original kept title, count
   // and state icons on one baseline.
-  const fileIcon = entry.attachmentCount > 0 ? chromeUrl("skin_icon_file.gif", ERA) : null;
-  const linkIcon = hasLink ? chromeUrl("skin_icon_link.gif", ERA) : null;
-  const hotIcon =
-    entry.commentCount >= HOT_COMMENT_THRESHOLD ? chromeUrl("skin_icon_hot.gif", ERA) : null;
-
   return (
     <Link
       href={`/${board}/${entry.postId}`}
@@ -217,9 +200,30 @@ function BoxRow({
         </span>
       )}
       {/* The 2014 skin drew these in this order: file, link, hot. */}
-      {fileIcon && <StateIcon url={fileIcon} width={9} height={9} label="첨부 있음" />}
-      {linkIcon && <StateIcon url={linkIcon} width={13} height={13} label="링크 있음" />}
-      {hotIcon && <StateIcon url={hotIcon} width={11} height={9} label="댓글 많음" />}
+      {entry.attachmentCount > 0 && (
+        <StateIcon
+          url={chromeUrl("skin_icon_file.gif", ERA)}
+          width={9}
+          height={9}
+          label="첨부 있음"
+        />
+      )}
+      {hasLink && (
+        <StateIcon
+          url={chromeUrl("skin_icon_link.gif", ERA)}
+          width={13}
+          height={13}
+          label="링크 있음"
+        />
+      )}
+      {entry.commentCount >= HOT_COMMENT_THRESHOLD && (
+        <StateIcon
+          url={chromeUrl("skin_icon_hot.gif", ERA)}
+          width={11}
+          height={9}
+          label="댓글 많음"
+        />
+      )}
       {/* Phone only: the date the 320px box had no room for. */}
       {!isUnknownDate(entry.createdAt) && (
         <span className="ml-auto shrink-0 pl-2 text-[11px] text-(--era-meta-fg) tabular-nums sm:hidden">

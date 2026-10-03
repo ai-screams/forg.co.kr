@@ -129,51 +129,41 @@ export async function Home2001Content() {
     Promise.all(MIDDLE_BOXES.map(loadBox)),
     Promise.all(RIGHT_BOXES.map(loadBox)),
   ]);
-  const art = chromeUrl("left_logo_uo_1.gif", ERA);
-  const mainArt = chromeUrl("forg_main_logo_1.gif", ERA);
-  const shot = chromeUrl("best_screen.gif", ERA);
-
   return (
     <section aria-label="2001 메인 콘텐츠" className="bg-[#f8f8f8] py-2 text-[12px] leading-[1.35]">
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
       <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-[#cccccc] min-[800px]:grid-cols-[150px_390px_200px]">
         <div className="border-[#cccccc] p-[2px] max-[799px]:hidden min-[800px]:border-r">
-          {art && (
-            <>
-              <LazyImg
-                src={art}
-                alt=""
-                width={145}
-                height={609}
-                useMap="#forg2001left"
-                className="block"
+          <LazyImg
+            src={chromeUrl("left_logo_uo_1.gif", ERA)}
+            alt=""
+            width={145}
+            height={609}
+            useMap="#forg2001left"
+            className="block"
+          />
+          <map name="forg2001left">
+            {LEFT_MAP.map((area) => (
+              <area
+                key={area.coords}
+                shape="rect"
+                coords={area.coords}
+                href={area.href}
+                alt={area.label}
+                title={area.label}
+                {...(area.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
               />
-              <map name="forg2001left">
-                {LEFT_MAP.map((area) => (
-                  <area
-                    key={area.coords}
-                    shape="rect"
-                    coords={area.coords}
-                    href={area.href}
-                    alt={area.label}
-                    title={area.label}
-                    {...(area.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
-                  />
-                ))}
-              </map>
-            </>
-          )}
+            ))}
+          </map>
         </div>
         <div className="border-[#cccccc] bg-[#fcfbe9] min-[800px]:border-r">
-          {mainArt && (
-            <LazyImg
-              src={mainArt}
-              alt="Honor & Sacrifice"
-              width={390}
-              height={200}
-              className="mx-auto block max-w-full"
-            />
-          )}
+          <LazyImg
+            src={chromeUrl("forg_main_logo_1.gif", ERA)}
+            alt="Honor & Sacrifice"
+            width={390}
+            height={200}
+            className="mx-auto block max-w-full"
+          />
           {middle.map((data) => (
             <BoxSection2001 key={data.box.id} data={data} />
           ))}
@@ -194,11 +184,14 @@ export async function Home2001Content() {
                 dated: false,
               }}
             />
-            {shot && (
-              <Link href="/ScreenShot" className="flex justify-center py-1">
-                <LazyImg src={shot} alt="2001년 베스트 스크린샷" width={160} height={160} />
-              </Link>
-            )}
+            <Link href="/ScreenShot" className="flex justify-center py-1">
+              <LazyImg
+                src={chromeUrl("best_screen.gif", ERA)}
+                alt="2001년 베스트 스크린샷"
+                width={160}
+                height={160}
+              />
+            </Link>
           </section>
         </div>
         <div aria-hidden className="h-[20px] border-t border-[#cccccc] min-[800px]:col-span-3" />
@@ -244,15 +237,13 @@ function BoxSection2001({ data }: { data: BoxData }) {
               href={`/${data.box.id}/${entry.postId}`}
               className="text-(--era-link) hover:text-(--era-link-hover) max-[799px]:block max-[799px]:py-[5px] max-[799px]:text-[14px]"
             >
-              {bullet && (
-                <LazyImg
-                  src={bullet}
-                  alt=""
-                  width={5}
-                  height={15}
-                  className="mr-[2px] inline-block align-[-3px]"
-                />
-              )}
+              <LazyImg
+                src={bullet}
+                alt=""
+                width={5}
+                height={15}
+                className="mr-[2px] inline-block align-[-3px]"
+              />
               {data.box.dated && <span className="mr-1">{formatMonthDay(entry.createdAt)}</span>}
               {entry.title}
             </Link>

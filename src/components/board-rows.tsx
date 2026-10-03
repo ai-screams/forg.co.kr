@@ -211,12 +211,19 @@ function RowMarks({
   hits: number | null;
 }) {
   if (skin === "webbus") {
-    const file = attachmentCount > 0 ? chromeUrl("gb_icon_file.gif") : null;
-    const hot = isHot(board, hits) ? chromeUrl("gb_icon_hot.gif") : null;
     return (
       <>
-        {file && <MarkIcon url={file} width={9} height={9} label={`첨부 ${attachmentCount}개`} />}
-        {hot && <MarkIcon url={hot} width={11} height={9} label="조회 많음" />}
+        {attachmentCount > 0 && (
+          <MarkIcon
+            url={chromeUrl("gb_icon_file.gif")}
+            width={9}
+            height={9}
+            label={`첨부 ${attachmentCount}개`}
+          />
+        )}
+        {isHot(board, hits) && (
+          <MarkIcon url={chromeUrl("gb_icon_hot.gif")} width={11} height={9} label="조회 많음" />
+        )}
       </>
     );
   }

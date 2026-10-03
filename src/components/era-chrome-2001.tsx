@@ -34,63 +34,53 @@ const TOP_MENU_2001: { asset: string; label: string; href: string }[] = [
 /*  Frame: top — banner and the 14-button menu (forg_t.htm)               */
 /* ────────────────────────────────────────────────────────────────────── */
 export function FrameTop2001() {
-  const logo = chromeUrl("t_logo.gif", ERA);
-  const logoRight = chromeUrl("t_logo_r.gif", ERA);
-  const left = chromeUrl("t_l.gif", ERA);
-  const right = chromeUrl("t_r.gif", ERA);
   return (
     <header className="bg-white">
       <div className="flex bg-[#f8f8f8] max-[799px]:flex-col">
         <Link href="/" aria-label="forg.co.kr 메인" className="block">
-          {logo && (
-            <LazyImg
-              src={logo}
-              alt="Ultima Online of Forg"
-              width={380}
-              height={35}
-              className="block max-w-full"
-            />
-          )}
-        </Link>
-        {logoRight && (
           <LazyImg
-            src={logoRight}
-            alt="All Contents Copyright(C) 1999. FORG.COM. All right reserved."
-            width={410}
+            src={chromeUrl("t_logo.gif", ERA)}
+            alt="Ultima Online of Forg"
+            width={380}
             height={35}
-            className="block max-w-full max-[799px]:hidden"
+            className="block max-w-full"
           />
-        )}
+        </Link>
+        <LazyImg
+          src={chromeUrl("t_logo_r.gif", ERA)}
+          alt="All Contents Copyright(C) 1999. FORG.COM. All right reserved."
+          width={410}
+          height={35}
+          className="block max-w-full max-[799px]:hidden"
+        />
       </div>
       <nav aria-label="2001 상단 메뉴" className="flex flex-wrap bg-[#f8f8f8]">
-        {left && (
-          <LazyImg src={left} alt="" width={10} height={20} className="block max-[799px]:hidden" />
-        )}
-        {TOP_MENU_2001.map((item) => {
-          const url = chromeUrl(item.asset, ERA);
-          const inner = url ? (
+        <LazyImg
+          src={chromeUrl("t_l.gif", ERA)}
+          alt=""
+          width={10}
+          height={20}
+          className="block max-[799px]:hidden"
+        />
+        {TOP_MENU_2001.map((item) => (
+          <Link key={item.asset} href={item.href}>
             <LazyImg
-              src={url}
+              src={chromeUrl(item.asset, ERA)}
               alt={item.label}
               title={item.label}
               width={55}
               height={20}
               className="block"
             />
-          ) : (
-            <span className="block h-[20px] w-[55px] text-center text-[10px] leading-[20px]">
-              {item.label}
-            </span>
-          );
-          return (
-            <Link key={item.asset} href={item.href}>
-              {inner}
-            </Link>
-          );
-        })}
-        {right && (
-          <LazyImg src={right} alt="" width={10} height={20} className="block max-[799px]:hidden" />
-        )}
+          </Link>
+        ))}
+        <LazyImg
+          src={chromeUrl("t_r.gif", ERA)}
+          alt=""
+          width={10}
+          height={20}
+          className="block max-[799px]:hidden"
+        />
       </nav>
     </header>
   );
