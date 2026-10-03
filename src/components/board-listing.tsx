@@ -23,9 +23,11 @@ import {
   type ListRow,
   type ListSkin,
 } from "@/components/list-skin";
+import type { Row2001 } from "@/components/list-skin-2001";
 
 import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
 import { formatShortDate } from "@/lib/dates";
+import { skin2001Of } from "@/lib/skins-2001";
 import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
 interface BoardListingProps {
@@ -163,12 +165,35 @@ function PostTable({
     ),
   }));
 
+  const rows2001: Row2001[] = page.entries.map((entry) => ({
+    key: `${entry.board ?? board}/${entry.postId}`,
+    title: entry.title,
+    href: entry.hasPost ? `/${entry.board ?? board}/${entry.postId}` : null,
+    comments: entry.commentCount,
+    author: (
+      <AuthorName
+        board={entry.board ?? board}
+        name={entry.author}
+        memberNo={entry.authorMemberNo}
+      />
+    ),
+    createdAt: entry.createdAt,
+    hits: entry.hits,
+  }));
+
   return (
     <ListTable
       skin={skin}
       rows={rows}
       withHits={false}
       firstNumber={page.totalPosts - (page.page - 1) * BOARD_INDEX_PAGE_SIZE}
+      era2001={{
+        skin: skin2001Of(board),
+        rows: rows2001,
+        totalPosts: page.totalPosts,
+        page: page.page,
+        totalPages: page.totalPages,
+      }}
     />
   );
 }

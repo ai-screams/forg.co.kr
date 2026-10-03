@@ -3,7 +3,9 @@
  *
  * Markup is era-invariant — the visual delta between 2014 and 2003 is
  * driven entirely by `<html data-era>` and the CSS variables defined in
- * `globals.css`. This component never branches on the era.
+ * `globals.css`. The 2001 era (ADR-0019) draws the head and comments as the
+ * 2001 skins did (`post-view-2001`) beside these, which it hides; the body
+ * is rendered once for every era.
  *
  * `bodyHtml` and comment `bodyHtml` are pre-sanitised by nh3 (ETL Stage 2,
  * ADR-0008). We render them with `dangerouslySetInnerHTML`; React 19 ships
@@ -15,11 +17,13 @@ import { AuthorName } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
 import { listSkinOf } from "@/components/list-skin";
+import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
 
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
 import { withImgBase } from "@/lib/img-base";
 import type { AdjacentPosts } from "@/lib/posts";
+import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardIndexEntry, Post } from "@/types/post";
 
 interface PostViewProps {
@@ -36,7 +40,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
 
   return (
     <article
-      className="text-forg-ink border border-(--era-input-border)/50 bg-white"
+      className="forg-post text-forg-ink border border-(--era-input-border)/50 bg-white"
       data-pagefind-body
       data-pagefind-sort={`date:${post.createdAt}`}
       data-pagefind-meta={`boardKr:${board.nameKr}`}
@@ -49,7 +53,10 @@ export function PostView({ post, adjacent }: PostViewProps) {
         {post.era}
       </span>
 
-      <header className="border-b border-(--era-input-border) px-6 py-5">
+      <div className="era-2001-only">
+        <ViewHead2001 skin={skin2001Of(board.id as BoardId)} post={post} />
+      </div>
+      <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
         <p className="text-forg-muted text-xs" data-pagefind-ignore>
           <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
             {board.nameKr}
@@ -126,7 +133,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
         </dl>
       </header>
 
-      <div className="px-6 py-6">
+      <div className="forg-post-body-cell px-6 py-6">
         <div
           // break-word: divider lines of "____" and long URLs have no break
           // point and pushed a phone-width page sideways (the Zeroboard body
@@ -162,10 +169,13 @@ export function PostView({ post, adjacent }: PostViewProps) {
         </section>
       )}
 
+      <div className="era-2001-only">
+        <Comments2001 post={post} />
+      </div>
       {post.comments.length > 0 && (
         <section
           aria-labelledby={`comments-${post.postId}`}
-          className="border-t border-(--era-input-border) px-6 py-5"
+          className="era-not-2001 border-t border-(--era-input-border) px-6 py-5"
         >
           {/* The originals printed no heading over the comments. */}
           <h2 id={`comments-${post.postId}`} className="sr-only">

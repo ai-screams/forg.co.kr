@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "search_left.gif",
+    "originalUrl": "http://forg.co.kr/zboard/skin/skyblue/images/search_left.gif",
+    "capturedAt": "20010612161414",
+    "sizeBytes": 50,
+    "sha256": "8919082b5511d8c4517e5f8b81711b923e0339e8c26d1cc28497a42197b4b142",
+    "digest": "MCRRFV2HJI4CULJJKXJTWMZ7NA4JATSY"
+  },
+  {
+    "filename": "search_right2.gif",
+    "originalUrl": "http://forg.co.kr/zboard/skin/skyblue/images/search_right2.gif",
+    "capturedAt": "20010612163552",
+    "sizeBytes": 111,
+    "sha256": "e9e12287f81593e7357fdfb54f132c5112e28cf0a3db151ae16b44851fa6b6f9",
+    "digest": "Y7WY5WTVJHGSDG5VEHYUVYPTHJXD4HVR"
+  },
+  {
+    "filename": "setup_signin.gif",
+    "originalUrl": "http://forg.co.kr:80/zboard/skin/skyblue/images/setup_signin.gif",
+    "capturedAt": "20010612173528",
+    "sizeBytes": 175,
+    "sha256": "36535ca1287e9209e8097fa2f6b5bd65517c7b28999c262743a7152c7dd313ae",
+    "digest": "26BHVTXIME7HIQXJI2XYL4ZYTAR53YY7"
+  }
+]

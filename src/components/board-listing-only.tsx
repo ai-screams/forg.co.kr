@@ -10,6 +10,7 @@
 
 import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
+import type { Row2001 } from "@/components/list-skin-2001";
 
 import {
   CommentCount,
@@ -21,6 +22,7 @@ import {
 } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatShortDate, formatWaybackTs } from "@/lib/dates";
+import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardListing } from "@/types/post";
 
 interface BoardListingOnlyProps {
@@ -102,6 +104,25 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
         })}
         withHits
         firstNumber={listing.entries.length}
+        era2001={{
+          skin: skin2001Of(board),
+          rows: listing.entries.map(
+            (entry): Row2001 => ({
+              key: entry.no,
+              title: entry.title,
+              href: entry.hasPost ? `/${board}/${entry.no}` : null,
+              comments: entry.commentCount,
+              author: (
+                <AuthorName board={board} name={entry.author} memberNo={entry.authorMemberNo} />
+              ),
+              createdAt: entry.createdAt,
+              hits: entry.hits,
+            }),
+          ),
+          totalPosts: listing.totalReported ?? listing.entries.length,
+          page: 1,
+          totalPages: listing.pagesCaptured,
+        }}
       />
 
       <footer className="text-forg-muted mt-2 text-[10.5px]">

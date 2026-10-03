@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "search_left.gif",
+    "originalUrl": "http://forg.co.kr/zboard/skin/yellow/images/search_left.gif",
+    "capturedAt": "20010613180031",
+    "sizeBytes": 50,
+    "sha256": "8919082b5511d8c4517e5f8b81711b923e0339e8c26d1cc28497a42197b4b142",
+    "digest": "MCRRFV2HJI4CULJJKXJTWMZ7NA4JATSY"
+  },
+  {
+    "filename": "search_right2.gif",
+    "originalUrl": "http://forg.co.kr/zboard/skin/yellow/images/search_right2.gif",
+    "capturedAt": "20010613173651",
+    "sizeBytes": 111,
+    "sha256": "e9e12287f81593e7357fdfb54f132c5112e28cf0a3db151ae16b44851fa6b6f9",
+    "digest": "Y7WY5WTVJHGSDG5VEHYUVYPTHJXD4HVR"
+  },
+  {
+    "filename": "setup_signin.gif",
+    "originalUrl": "http://forg.co.kr/zboard/skin/yellow/images/setup_signin.gif",
+    "capturedAt": "20010613180818",
+    "sizeBytes": 175,
+    "sha256": "44057e7d9da7bb953cfa4b1b6a959ad4b3cbea58ca702b58d082b0d7656c3733",
+    "digest": "NQ7VJLACTBRL2NBL6N5ARR3QBZHTCGPG"
+  }
+]

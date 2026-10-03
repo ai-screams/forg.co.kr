@@ -1,0 +1,106 @@
+[
+  {
+    "filename": "content_on.gif",
+    "originalUrl": "http://forg.uospace.net:80/zboard/skin/y/content_on.gif",
+    "capturedAt": "20010702215245",
+    "sizeBytes": 116,
+    "sha256": "04281d5458731720f998b133b62a1466c74e9d55fd81121edce68f5cfb4bed76",
+    "digest": "W4FZIEQVIWB7Z4AA5REDV7GHFYAAEJ22"
+  },
+  {
+    "filename": "i_list.gif",
+    "originalUrl": "http://forg.uospace.net:80/zboard/skin/y/i_list.gif",
+    "capturedAt": "20010702220722",
+    "sizeBytes": 194,
+    "sha256": "26d43fcfc5c6e1dd6324e4fe846c7204dfbe9b9b8ab8b7f006a2152af02010c1",
+    "digest": "D2W4SEPLRWE5OTMJSLZUD25P73KYOJIR"
+  },
+  {
+    "filename": "i_next.gif",
+    "originalUrl": "http://forg.uospace.net:80/zboard/skin/y/i_next.gif",
+    "capturedAt": "20010702221814",
+    "sizeBytes": 193,
+    "sha256": "b151b9778075532b89a108126b6ce23783a830fecf494cebfcf2c7037de38b17",
+    "digest": "N3RLHZISFWB4P2EU47UQLBKYACOA5DAB"
+  },
+  {
+    "filename": "last.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/last.gif",
+    "capturedAt": "20010813045617",
+    "sizeBytes": 37,
+    "sha256": "0066c5a91d01f663330260f068235a9c072c3b677e5288cb7e4548016633cec6",
+    "digest": "2JPRK7WV6TG7HX7PDVW4LRN5BKN22XGF"
+  },
+  {
+    "filename": "last_left.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/last_left.gif",
+    "capturedAt": "20010813050214",
+    "sizeBytes": 94,
+    "sha256": "556f48a6064379211cf1381b8775af2c06d247d25c007a22e7c295ac740fa2bf",
+    "digest": "JN5V5A4CGVCFAG54Z3KVUMM2B2FS47BU"
+  },
+  {
+    "filename": "last_right.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/last_right.gif",
+    "capturedAt": "20010813050901",
+    "sizeBytes": 94,
+    "sha256": "adff16814a156a89229ee470f825c8656cfdc3b72b780110b5289b138e8db08f",
+    "digest": "YPBXTPFC3H5LLLG33WVLIGSZBNHO6Y6J"
+  },
+  {
+    "filename": "list_notice.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/list_notice.gif",
+    "capturedAt": "20010813051009",
+    "sizeBytes": 131,
+    "sha256": "cc236dc1a0a0280a5f0e8bc7808b05e5cc33791fd716c13b0310bfb2a75d33f3",
+    "digest": "Q3PNP2AEOAOQRARBGGKUTD6AMFLXRLI6"
+  },
+  {
+    "filename": "name_off.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/name_off.gif",
+    "capturedAt": "20010813052024",
+    "sizeBytes": 91,
+    "sha256": "c6a7de55152a1c025a87fd4dc66a00c5a764e634f42b221ea745db0731417df0",
+    "digest": "6H3RC3W5WL6RGQ77252WH6SR5ZRBES6L"
+  },
+  {
+    "filename": "notice_head.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/notice_head.gif",
+    "capturedAt": "20010813052708",
+    "sizeBytes": 63,
+    "sha256": "6db2ddb74519c43f74a0c30bcb6c1456dd22cecd69bdd9e90f7cef13b2b3e580",
+    "digest": "HB5AAIQEQSM2W6G255Z3TWYS2FGQJYBG"
+  },
+  {
+    "filename": "old_head.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/old_head.gif",
+    "capturedAt": "20010813053307",
+    "sizeBytes": 63,
+    "sha256": "e9ce175ca0467f063aedbfb5e5a3afa6de828e5035e75cf7ee403b1f7f72233e",
+    "digest": "TVCHT4OV3AN2S7XJW6JZUEPSQOB3U4XA"
+  },
+  {
+    "filename": "subject_on.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/subject_on.gif",
+    "capturedAt": "20010813053840",
+    "sizeBytes": 105,
+    "sha256": "3dd6a3ca2f7f967522f4a78e840945324a18e203cee88bfc92146aec9f6f6188",
+    "digest": "PKDIEZFTKQNJQTFM3TCO5TG7NKYTUCNN"
+  },
+  {
+    "filename": "title_no.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/title_no.gif",
+    "capturedAt": "20010813054137",
+    "sizeBytes": 114,
+    "sha256": "f5f8b3100fd98e02b1f6132328793402f5705b8f5f0422e8e1f450706f64c1e3",
+    "digest": "ZSY26BZQZ7PH2YW6A54FLPNI6Z7YQGV4"
+  },
+  {
+    "filename": "title_title.gif",
+    "originalUrl": "http://forg.uospace.net/zboard/skin/y/title_title.gif",
+    "capturedAt": "20010813055338",
+    "sizeBytes": 200,
+    "sha256": "902e3fac09d42e63784b0b8ce22df3381d5ccd5699dbe8faf9be886bd66b9e68",
+    "digest": "5CSZ4AANSBPXQMMIUV6B6V6Q7BLOFO3R"
+  }
+]
