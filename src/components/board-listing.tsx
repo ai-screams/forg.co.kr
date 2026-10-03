@@ -111,7 +111,7 @@ function Pagination({
       className="flex items-center justify-between gap-3 border-t border-(--era-input-border) px-6 py-4 text-xs"
     >
       <PageLink href={prevHref} disabled={!hasPrev} label="← 이전" />
-      <span className="text-forg-muted font-mono tabular-nums">
+      <span className="font-mono text-forg-muted tabular-nums">
         {currentPage} / {totalPages}
       </span>
       <PageLink href={nextHref} disabled={!hasNext} label="다음 →" />

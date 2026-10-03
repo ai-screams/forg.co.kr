@@ -76,7 +76,7 @@ export function FrameLeft2014() {
   return (
     <aside
       aria-label="게임 카테고리"
-      className="frame:flex hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg)"
+      className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) frame:flex"
       style={sidebarStyle}
     >
       {/* The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
@@ -124,7 +124,7 @@ function FamilySiteSelect() {
             Family Site 목록: {FAMILY_SITES.join(", ")}. 세 사이트 모두 사라져 이동할 수 없습니다.
           </>
         }
-        className="border-forg-ink/30 text-forg-ink/70 w-[88px] border bg-white text-[11px]"
+        className="w-[88px] border border-forg-ink/30 bg-white text-[11px] text-forg-ink/70"
       />
     </p>
   );
@@ -252,11 +252,11 @@ export function FrameBottom2014() {
     <footer
       role="group"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
-      className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
+      className="flex h-[24px] items-center justify-between bg-forg-bgm pl-[15px] text-[11px] text-forg-cream"
       style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
-      <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
+      <span className="hidden text-[9px] text-forg-cream/60 sm:inline">
         2014-12-18 기준 · 박물관 박제
       </span>
       <LazyImg

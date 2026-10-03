@@ -232,7 +232,7 @@ export function FrameTop2003() {
       <MobileMenu label="사이드바">
         {SIDEBAR_SECTIONS.map((section) => (
           <div key={section.label} className="col-span-2 mt-1">
-            <p className="text-forg-gold-hover mb-[2px] text-[11px] font-bold tracking-wide">
+            <p className="mb-[2px] text-[11px] font-bold tracking-wide text-forg-gold-hover">
               {section.label}
             </p>
             <div className="grid grid-cols-2 gap-x-4">
@@ -248,7 +248,7 @@ export function FrameTop2003() {
       {/* `<td width="680" height="12" background=t_line.gif bgcolor="#F1F1F2">` */}
       <div
         aria-hidden
-        className="bg-forg-menu h-[12px] w-full"
+        className="h-[12px] w-full bg-forg-menu"
         style={tileStyle(tLineUrl, "repeat-x")}
       />
     </header>
@@ -259,7 +259,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
   return (
     <Link
       href={`/${item.id}`}
-      className="hover:bg-forg-gold/15 inline-block shrink-0"
+      className="inline-block shrink-0 hover:bg-forg-gold/15"
       title={item.label}
     >
       {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
@@ -304,7 +304,7 @@ export function FrameLeft2003() {
   return (
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
-      className="frame:block hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg)"
+      className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) frame:block"
       style={tileStyle(tileUrl, "repeat")}
     >
       <nav className="flex flex-col gap-2.5">
@@ -333,7 +333,7 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
             label={section.label}
             options={section.jumpMenu.options}
             note={section.jumpMenu.note}
-            className="border-forg-ink/30 text-forg-ink/70 border bg-white text-[11px]"
+            className="border border-forg-ink/30 bg-white text-[11px] text-forg-ink/70"
           />
         </p>
       )}
@@ -342,7 +342,7 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
           <li key={link.label}>
             <Link
               href={link.href}
-              className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
+              className="block text-[10.5px] leading-tight text-white/85 hover:text-forg-gold-hover"
             >
               {link.label}
             </Link>
@@ -370,7 +370,7 @@ export function FrameBottom2003() {
     <footer
       role="group"
       aria-label="누적 방문 (2003-06-03 기준 박제) · 검색"
-      className="bg-forg-bgm text-forg-cream flex h-[24px] w-full shrink-0 items-center text-[11px]"
+      className="flex h-[24px] w-full shrink-0 items-center bg-forg-bgm text-[11px] text-forg-cream"
       style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <div className="flex h-[24px] w-[50px] shrink-0 items-end">
@@ -398,7 +398,7 @@ export function FrameBottom2003() {
           name="q"
           aria-label="검색어"
           placeholder="Forg's World"
-          className="text-forg-ink h-[17px] w-[150px] border border-(--era-input-border) bg-(--era-content-bg) px-1 text-[12px]"
+          className="h-[17px] w-[150px] border border-(--era-input-border) bg-(--era-content-bg) px-1 text-[12px] text-forg-ink"
         />
         {enUrl ? (
           <button type="submit" className="block">
@@ -407,7 +407,7 @@ export function FrameBottom2003() {
         ) : (
           <button
             type="submit"
-            className="text-forg-cream/90 h-[17px] border border-(--era-input-border) bg-(--era-page-bg)/30 px-1 text-[10px] font-bold"
+            className="h-[17px] border border-(--era-input-border) bg-(--era-page-bg)/30 px-1 text-[10px] font-bold text-forg-cream/90"
           >
             ENTER
           </button>

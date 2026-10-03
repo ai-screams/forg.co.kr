@@ -180,7 +180,7 @@ function NgineRows({
       <tbody>
         {rows.map((row, i) => (
           <RowWithRule key={row.key} span={5}>
-            <tr className="bg-zb40-row h-[20px] text-center">
+            <tr className="h-[20px] bg-zb40-row text-center">
               <td className={THM8}>{firstNumber - i}</td>
               <TitleCell skin={skin} row={row} withCount />
               <td className="truncate break-all">
@@ -201,7 +201,7 @@ function RowWithRule({ span, children }: { span: number; children: ReactNode }) 
     <>
       {children}
       <tr>
-        <td colSpan={span} className="bg-zb40-rule h-px p-0" />
+        <td colSpan={span} className="h-px bg-zb40-rule p-0" />
       </tr>
     </>
   );

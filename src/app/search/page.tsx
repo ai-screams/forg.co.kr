@@ -50,8 +50,8 @@ export default function SearchPage() {
       <div className="rounded-md border border-(--era-input-border) bg-(--era-content-bg) shadow-sm">
         {/* Search header */}
         <div className="border-b border-(--era-input-border) px-6 py-5">
-          <h1 className="text-forg-ink text-xl font-bold">검색</h1>
-          <p className="text-forg-muted mt-1 text-xs">
+          <h1 className="text-xl font-bold text-forg-ink">검색</h1>
+          <p className="mt-1 text-xs text-forg-muted">
             forg.co.kr 아카이브 전체 — 게시글과 안내 페이지(스킬·던전·지도 등)
           </p>
           <div className="mt-4">
@@ -61,7 +61,7 @@ export default function SearchPage() {
               onChange={(e) => setTyped(e.target.value)}
               placeholder="제목·본문·작성자·댓글에서 검색…"
               autoFocus
-              className="text-forg-ink focus:border-forg-gold focus:ring-forg-gold w-full rounded border border-(--era-input-border) bg-(--era-page-bg) px-3 py-2 text-sm outline-none placeholder:text-(--era-input-border) focus:ring-1"
+              className="w-full rounded border border-(--era-input-border) bg-(--era-page-bg) px-3 py-2 text-sm text-forg-ink outline-none placeholder:text-(--era-input-border) focus:border-forg-gold focus:ring-1 focus:ring-forg-gold"
             />
           </div>
         </div>
@@ -69,21 +69,21 @@ export default function SearchPage() {
         {/* Results area */}
         <div className="px-6 py-5">
           {(notice === "unavailable" || notice === "failed") && (
-            <p className="text-forg-muted rounded border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3 text-sm">
+            <p className="rounded border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3 text-sm text-forg-muted">
               {NOTICE_TEXT[notice]} 잠시 뒤에 다시 시도해 주세요.
             </p>
           )}
 
-          {notice === "searching" && <p className="text-forg-muted text-sm">검색 중…</p>}
+          {notice === "searching" && <p className="text-sm text-forg-muted">검색 중…</p>}
 
           {notice === "empty" && (
-            <p className="text-forg-muted text-sm">
+            <p className="text-sm text-forg-muted">
               &ldquo;{trimmedQuery}&rdquo;에 대한 결과가 없습니다.
             </p>
           )}
 
           {notice === "idle" && (
-            <p className="text-forg-muted text-sm">검색어를 입력하면 결과가 나타납니다.</p>
+            <p className="text-sm text-forg-muted">검색어를 입력하면 결과가 나타납니다.</p>
           )}
 
           {results.length > 0 && (
@@ -108,15 +108,15 @@ function ResultItem({ result: r }: { result: SearchResult }) {
       >
         {r.title}
       </a>
-      <div className="text-forg-muted mt-1 flex flex-wrap items-center gap-x-3 text-xs">
-        <span className="bg-forg-gold/20 text-forg-ink rounded px-1.5 py-0.5 text-[0.65rem] font-bold">
+      <div className="mt-1 flex flex-wrap items-center gap-x-3 text-xs text-forg-muted">
+        <span className="rounded bg-forg-gold/20 px-1.5 py-0.5 text-[0.65rem] font-bold text-forg-ink">
           {r.boardKr}
         </span>
         {r.author && <span>{r.author}</span>}
       </div>
       {r.excerpt && (
         <p
-          className="text-forg-muted mt-2 text-xs leading-relaxed"
+          className="mt-2 text-xs leading-relaxed text-forg-muted"
           /* Pagefind wraps matched terms in <mark>; safe to set innerHTML */
           dangerouslySetInnerHTML={{ __html: r.excerpt }}
         />

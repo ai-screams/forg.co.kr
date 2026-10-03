@@ -36,7 +36,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
 
   return (
     <article
-      className="forg-post text-forg-ink border border-(--era-input-border)/50 bg-white"
+      className="forg-post border border-(--era-input-border)/50 bg-white text-forg-ink"
       data-pagefind-body
       data-pagefind-sort={`date:${post.createdAt}`}
       data-pagefind-meta={`boardKr:${board.nameKr}`}
@@ -55,7 +55,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       <PostHead post={post} board={board} />
 
       <div className="forg-post-body-cell px-6 py-6">
-        <SanitizedHtml html={post.bodyHtml} className="post-body text-forg-ink leading-relaxed" />
+        <SanitizedHtml html={post.bodyHtml} className="post-body leading-relaxed text-forg-ink" />
       </div>
 
       <PostAttachments post={post} />
@@ -83,19 +83,19 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
 
   return (
     <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
-      <p className="text-forg-muted text-xs" data-pagefind-ignore>
+      <p className="text-xs text-forg-muted" data-pagefind-ignore>
         <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
           {board.nameKr}
         </Link>
       </p>
       <h1
-        className="text-forg-ink mt-2 text-2xl font-bold"
+        className="mt-2 text-2xl font-bold text-forg-ink"
         data-pagefind-meta="title"
         data-pagefind-weight="2"
       >
         {post.title}
       </h1>
-      <dl className="text-forg-muted mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+      <dl className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-forg-muted">
         <div className="flex gap-1">
           <dt className="font-bold">작성</dt>
           <dd>
@@ -119,12 +119,12 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
           <dd>
             <time dateTime={post.createdAt}>{formatKoreanDateTime(post.createdAt)}</time>
             {post.createdAtApprox && (
-              <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">
+              <span className="ml-1.5 text-[0.7rem] text-forg-muted/70">
                 (이전 — 첫 댓글 시각, 작성일은 캡처에 없음)
               </span>
             )}
             {capturedDate && (
-              <span className="text-forg-muted/70 ml-1.5 text-[0.7rem]">(캡처 {capturedDate})</span>
+              <span className="ml-1.5 text-[0.7rem] text-forg-muted/70">(캡처 {capturedDate})</span>
             )}
           </dd>
         </div>
@@ -156,15 +156,15 @@ function PostAttachments({ post }: { post: Post }) {
       aria-labelledby={`attachments-${post.postId}`}
       className="border-t border-(--era-input-border) px-6 py-4"
     >
-      <h2 id={`attachments-${post.postId}`} className="text-forg-ink mb-2 text-sm font-bold">
+      <h2 id={`attachments-${post.postId}`} className="mb-2 text-sm font-bold text-forg-ink">
         첨부파일
       </h2>
-      <ul className="text-forg-muted space-y-1 text-sm">
+      <ul className="space-y-1 text-sm text-forg-muted">
         {post.attachments.map((att) => (
           <li key={att.fileNum}>
             <span className="font-mono">{att.name}</span>
             {att.sizeBytes !== null && (
-              <span className="text-forg-muted ml-2 text-xs">({formatBytes(att.sizeBytes)})</span>
+              <span className="ml-2 text-xs text-forg-muted">({formatBytes(att.sizeBytes)})</span>
             )}
           </li>
         ))}
@@ -223,13 +223,13 @@ function PostNavigation({
               href={`/${prev.board ?? board}/${prev.postId}`}
               className="group flex items-start gap-2 text-sm"
             >
-              <span className="text-forg-muted mt-0.5 shrink-0 text-xs">← 이전글</span>
+              <span className="mt-0.5 shrink-0 text-xs text-forg-muted">← 이전글</span>
               <span className="line-clamp-1 min-w-0 text-(--era-link) group-hover:text-(--era-link-hover)">
                 {prev.title}
               </span>
             </Link>
           ) : (
-            <span className="text-forg-muted text-sm">처음 글입니다</span>
+            <span className="text-sm text-forg-muted">처음 글입니다</span>
           )}
         </div>
 
@@ -243,10 +243,10 @@ function PostNavigation({
               <span className="line-clamp-1 min-w-0 text-right text-(--era-link) group-hover:text-(--era-link-hover)">
                 {next.title}
               </span>
-              <span className="text-forg-muted mt-0.5 shrink-0 text-xs">다음글 →</span>
+              <span className="mt-0.5 shrink-0 text-xs text-forg-muted">다음글 →</span>
             </Link>
           ) : (
-            <span className="text-forg-muted text-sm">마지막 글입니다</span>
+            <span className="text-sm text-forg-muted">마지막 글입니다</span>
           )}
         </div>
       </div>

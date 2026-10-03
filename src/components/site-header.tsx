@@ -17,15 +17,15 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label="forg.co.kr 디지털 박물관 — 처음으로"
-          className="font-forg flex flex-col leading-tight"
+          className="flex flex-col font-forg leading-tight"
         >
-          <span className="text-forg-ink text-lg font-bold tracking-tight">forg.co.kr</span>
-          <span className="text-forg-muted text-xs">디지털 박물관</span>
+          <span className="text-lg font-bold tracking-tight text-forg-ink">forg.co.kr</span>
+          <span className="text-xs text-forg-muted">디지털 박물관</span>
         </Link>
         <div className="flex items-center gap-3 sm:gap-4">
           <Link
             href="/search"
-            className="text-forg-muted text-sm hover:text-(--era-link-hover)"
+            className="text-sm text-forg-muted hover:text-(--era-link-hover)"
             aria-label="검색"
           >
             검색

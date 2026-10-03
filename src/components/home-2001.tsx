@@ -135,8 +135,8 @@ export async function Home2001Content() {
       className="bg-forg2001-page py-2 text-[12px] leading-[1.35]"
     >
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
-      <div className="frame:grid-cols-[150px_390px_200px] border-forg2001-table mx-auto grid w-full max-w-[740px] grid-cols-1 border">
-        <div className="max-frame:hidden frame:border-r border-forg2001-table p-[2px]">
+      <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-forg2001-table frame:grid-cols-[150px_390px_200px]">
+        <div className="border-forg2001-table p-[2px] max-frame:hidden frame:border-r">
           <LazyImg
             src={chromeUrl("left_logo_uo_1.gif", ERA)}
             alt=""
@@ -159,7 +159,7 @@ export async function Home2001Content() {
             ))}
           </map>
         </div>
-        <div className="frame:border-r border-forg2001-table bg-forg2001-middle">
+        <div className="border-forg2001-table bg-forg2001-middle frame:border-r">
           <LazyImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Honor & Sacrifice"
@@ -197,7 +197,7 @@ export async function Home2001Content() {
             </Link>
           </section>
         </div>
-        <div aria-hidden className="frame:col-span-3 border-forg2001-table h-[20px] border-t" />
+        <div aria-hidden className="h-[20px] border-t border-forg2001-table frame:col-span-3" />
       </div>
     </section>
   );
@@ -218,7 +218,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
       ) : (
         // `uoessay.gif` and `screen.gif` were never captured.
         <span
-          className="bg-forg2001-box-head text-forg2001-box-head-text mx-auto flex items-center px-2 font-bold"
+          className="mx-auto flex items-center bg-forg2001-box-head px-2 font-bold text-forg2001-box-head-text"
           style={{ maxWidth: box.width, height: box.height }}
         >
           {box.label}
@@ -238,7 +238,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
           <li key={entry.postId} className="truncate">
             <Link
               href={`/${data.box.id}/${entry.postId}`}
-              className="max-frame:block max-frame:py-[5px] max-frame:text-[14px] text-(--era-link) hover:text-(--era-link-hover)"
+              className="text-(--era-link) hover:text-(--era-link-hover) max-frame:block max-frame:py-[5px] max-frame:text-[14px]"
             >
               <LazyImg
                 src={bullet}

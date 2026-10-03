@@ -193,7 +193,7 @@ function NarrowList({ rows }: { rows: readonly ListRow[] }) {
         >
           {/* The title link is inline-flex; capping it lets its truncate work. */}
           <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.cells.title}</div>
-          <div className="text-forg-muted mt-[2px] flex gap-2 text-[11px] tabular-nums">
+          <div className="mt-[2px] flex gap-2 text-[11px] text-forg-muted tabular-nums">
             <span className="truncate">
               <AuthorName {...row.author} seed={row.key} />
             </span>
@@ -225,13 +225,13 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
     case "num":
       // `<span style='font:normal 9px tahoma; color:#B3B3B3;'>594</span>`
       return (
-        <td className="text-webbus-num text-center align-middle font-[Tahoma,sans-serif] text-[9px] tabular-nums">
+        <td className="text-center align-middle font-[Tahoma,sans-serif] text-[9px] text-webbus-num tabular-nums">
           {number}
         </td>
       );
     case "name":
       return (
-        <td className="text-forg-muted truncate px-1 text-center align-middle text-[11px]">
+        <td className="truncate px-1 text-center align-middle text-[11px] text-forg-muted">
           <AuthorName {...row.author} seed={row.key} />
         </td>
       );
@@ -264,7 +264,7 @@ function HeadRow({ skin, columns }: { skin: ListSkin; columns: readonly Column[]
 
   return (
     <tr
-      className={`text-forg-muted text-[11px] ${bg ? strip : "bg-(--era-content-bg)"}`}
+      className={`text-[11px] text-forg-muted ${bg ? strip : "bg-(--era-content-bg)"}`}
       style={tileStyle(bg, "repeat-x")}
     >
       {columns.map((c) => {
