@@ -1,10 +1,10 @@
 {
   "board": "Q_A",
   "page": 1,
-  "totalPages": 87,
-  "totalPosts": 4347,
+  "totalPages": 140,
+  "totalPosts": 6961,
   "totalWithPost": 3389,
-  "generatedAt": "2026-09-29T09:26:45Z",
+  "generatedAt": "2026-10-03T07:24:25Z",
   "entries": [
     {
       "postId": "7404",
@@ -33,7 +33,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 10,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -49,7 +49,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 23,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -65,7 +65,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 31,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -81,7 +81,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 25,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -97,7 +97,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 36,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -113,7 +113,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 12,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -129,7 +129,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 29,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -145,7 +145,7 @@
       "yearApprox": false,
       "commentCount": 8,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 52,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -161,7 +161,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 33,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -177,7 +177,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 28,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -193,10 +193,26 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 30,
       "recommend": null,
       "era": "2003",
       "hasPost": true
+    },
+    {
+      "postId": "7398",
+      "title": "패키지 질문이 잇습니다.",
+      "categoryLabel": null,
+      "author": "idongsun",
+      "authorMemberNo": "9589",
+      "createdAt": "2007-10-15T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 14,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "7391",
@@ -209,7 +225,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 83,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -225,7 +241,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 49,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -241,7 +257,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 66,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -257,7 +273,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 54,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -273,7 +289,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 31,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -289,7 +305,7 @@
       "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 78,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -305,7 +321,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 47,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -321,7 +337,7 @@
       "yearApprox": false,
       "commentCount": 5,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 69,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -337,7 +353,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 83,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -353,7 +369,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 43,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -369,7 +385,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 62,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -385,7 +401,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 78,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -401,7 +417,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 51,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -417,7 +433,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 109,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -433,7 +449,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 57,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -449,7 +465,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 28,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -465,7 +481,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 49,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -481,7 +497,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 140,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -497,7 +513,7 @@
       "yearApprox": false,
       "commentCount": 12,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 108,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -513,7 +529,7 @@
       "yearApprox": false,
       "commentCount": 5,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 100,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -529,7 +545,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 96,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -545,7 +561,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 83,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -561,7 +577,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 60,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -577,7 +593,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 57,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -593,7 +609,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 57,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -609,7 +625,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 158,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -625,7 +641,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 63,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -641,7 +657,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 61,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -657,7 +673,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 40,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -673,7 +689,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 48,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -689,7 +705,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 97,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -705,7 +721,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 55,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -721,7 +737,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 48,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -737,7 +753,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 80,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -753,7 +769,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 41,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -769,7 +785,7 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 51,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -785,23 +801,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "7349",
-      "title": "아쳐에 관하여^^",
-      "categoryLabel": null,
-      "author": "zackson",
-      "authorMemberNo": "7885",
-      "createdAt": "2007-10-11T15:32:19",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": null,
+      "hits": 65,
       "recommend": null,
       "era": "2003",
       "hasPost": true

@@ -2,8 +2,9 @@
   "board": "WowRole",
   "engine": "zeroboard",
   "pagesCaptured": 1,
+  "capturesRead": 3,
   "totalReported": 1,
-  "generatedAt": "2026-09-20T23:02:43.487334Z",
+  "generatedAt": "2026-10-03T07:42:57.890221Z",
   "entries": [
     {
       "no": "1",
@@ -13,10 +14,10 @@
       "authorMemberNo": "1",
       "createdAt": "2004-02-13",
       "yearApprox": true,
-      "hits": 84,
-      "commentCount": 3,
+      "hits": 99,
+      "commentCount": 4,
       "isNotice": true,
-      "capturedAt": "20040618203212",
+      "capturedAt": "20041023204855",
       "listPage": 1,
       "hasPost": false
     }

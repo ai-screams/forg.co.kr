@@ -1,9 +1,10 @@
 {
   "board": "Ultima",
   "engine": "gnuboard4",
-  "pagesCaptured": 4,
+  "pagesCaptured": 1,
+  "capturesRead": 4,
   "totalReported": null,
-  "generatedAt": "2026-10-01T11:40:30.153226Z",
+  "generatedAt": "2026-10-03T07:42:39.843707Z",
   "entries": [
     {
       "no": "4875",

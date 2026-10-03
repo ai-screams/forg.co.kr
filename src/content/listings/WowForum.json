@@ -2,8 +2,9 @@
   "board": "WowForum",
   "engine": "zeroboard",
   "pagesCaptured": 1,
+  "capturesRead": 3,
   "totalReported": 2,
-  "generatedAt": "2026-09-20T23:02:43.475874Z",
+  "generatedAt": "2026-10-03T07:42:57.884644Z",
   "entries": [
     {
       "no": "3",
@@ -13,10 +14,10 @@
       "authorMemberNo": "15554",
       "createdAt": "2004-04-13",
       "yearApprox": true,
-      "hits": 278,
+      "hits": 548,
       "commentCount": 2,
       "isNotice": false,
-      "capturedAt": "20040618202653",
+      "capturedAt": "20041023203946",
       "listPage": 1,
       "hasPost": false
     },
@@ -28,10 +29,10 @@
       "authorMemberNo": "1",
       "createdAt": "2004-02-13",
       "yearApprox": true,
-      "hits": 152,
+      "hits": 171,
       "commentCount": 5,
       "isNotice": true,
-      "capturedAt": "20040618202653",
+      "capturedAt": "20041023203946",
       "listPage": 1,
       "hasPost": false
     }

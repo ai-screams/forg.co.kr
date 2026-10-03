@@ -2,8 +2,9 @@
   "board": "kr_aseeee",
   "engine": "gnuboard4",
   "pagesCaptured": 1,
+  "capturesRead": 11,
   "totalReported": null,
-  "generatedAt": "2026-09-20T23:02:43.489877Z",
+  "generatedAt": "2026-10-03T07:42:57.913664Z",
   "entries": [
     {
       "no": "5",
@@ -16,7 +17,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191212055647",
+      "capturedAt": "20191212063704",
       "listPage": 1,
       "hasPost": false
     },
@@ -31,7 +32,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191212055647",
+      "capturedAt": "20191212071013",
       "listPage": 1,
       "hasPost": false
     }

@@ -2,8 +2,9 @@
   "board": "WOWTrade",
   "engine": "zeroboard",
   "pagesCaptured": 1,
+  "capturesRead": 3,
   "totalReported": 1,
-  "generatedAt": "2026-09-20T23:02:43.464124Z",
+  "generatedAt": "2026-10-03T07:42:57.868299Z",
   "entries": [
     {
       "no": "1",
@@ -13,10 +14,10 @@
       "authorMemberNo": "1",
       "createdAt": "2004-02-16",
       "yearApprox": true,
-      "hits": 304,
-      "commentCount": 7,
+      "hits": 361,
+      "commentCount": 8,
       "isNotice": true,
-      "capturedAt": "20040811161334",
+      "capturedAt": "20041023202540",
       "listPage": 1,
       "hasPost": false
     }

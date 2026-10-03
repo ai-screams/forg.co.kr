@@ -2,8 +2,9 @@
   "board": "kr_notice",
   "engine": "gnuboard4",
   "pagesCaptured": 1,
+  "capturesRead": 9,
   "totalReported": null,
-  "generatedAt": "2026-09-20T23:02:43.787171Z",
+  "generatedAt": "2026-10-03T07:43:01.682366Z",
   "entries": [
     {
       "no": "4",
@@ -16,7 +17,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191017162822",
+      "capturedAt": "20191212063923",
       "listPage": 1,
       "hasPost": false
     },
@@ -31,7 +32,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191017162822",
+      "capturedAt": "20191212063923",
       "listPage": 1,
       "hasPost": false
     },
@@ -46,7 +47,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191017162822",
+      "capturedAt": "20191212063923",
       "listPage": 1,
       "hasPost": false
     }
