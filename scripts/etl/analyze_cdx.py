@@ -8,11 +8,10 @@ file takes `--force`.
 """
 import argparse
 import json
-import re
 import sys
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs, unquote
+from urllib.parse import urlparse, parse_qs
 
 CDX_DIR = Path(__file__).resolve().parent.parent.parent / ".docs" / "research" / "cdx"
 
@@ -143,7 +142,7 @@ def main():
         by_board[bid]["count"] += 1
         by_board[bid]["bytes"] += best["length"]
 
-    print(f"\n=== Per-board (E-policy chosen captures) ===")
+    print("\n=== Per-board (E-policy chosen captures) ===")
     print(f"{'board':<20} {'count':>7} {'MB':>8}  phase")
     for bid in sorted(by_board, key=lambda b: -by_board[b]["count"]):
         info = by_board[bid]
@@ -157,7 +156,7 @@ def main():
     pb_bytes = sum(by_board[b]["bytes"] for b in PHASE_B if b in by_board)
     other_posts = sum(by_board[b]["count"] for b in by_board if b not in PHASE_A and b not in PHASE_B)
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"Phase A (UO core 12 boards):  {pa_posts:>6} posts, {pa_bytes/1024/1024:>7.1f} MB HTML")
     print(f"Phase B (community boards):   {pb_posts:>6} posts, {pb_bytes/1024/1024:>7.1f} MB HTML")
     print(f"Other/unknown:                {other_posts:>6} posts")

@@ -28,7 +28,6 @@ import time
 import unicodedata
 from datetime import datetime
 from pathlib import Path
-from typing import cast
 from urllib.parse import parse_qs, urlparse
 
 from bs4 import BeautifulSoup, Tag

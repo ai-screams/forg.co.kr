@@ -192,15 +192,6 @@ def parse_comment_date(text: str, captured_at: str) -> datetime | None:
 
 # ── G4 webbus2009_basic selectors ───────────────────────────────────────
 
-def find_post_region_start(soup: BeautifulSoup) -> Tag | None:
-    """Find the outer table that wraps the post view (after 게시글 보기 시작)."""
-    for comment in soup.find_all(string=lambda t: isinstance(t, str) and "게시글 보기 시작" in t):
-        nxt = comment.find_next("table")
-        if isinstance(nxt, Tag):
-            return nxt
-    return None
-
-
 def find_title(soup: BeautifulSoup) -> str | None:
     """Title: <div style="...font-weight:bold; word-break:break-all;">."""
     for div in soup.find_all("div"):
