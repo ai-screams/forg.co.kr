@@ -97,16 +97,14 @@ async function loadBox(config: BoxConfig): Promise<BoxData> {
   return { config, totalPosts: recent.totalPosts, entries };
 }
 
-export default async function HomePage() {
-  const boxes = await Promise.all(MAIN_BOXES.map(loadBox));
-
+export default function HomePage() {
   // Both era variants render server-side; the runtime `<html data-era>`
   // attribute hides one via CSS in globals.css (`.era-2014-only` /
   // `.era-2003-only`). This keeps the era toggle instantaneous (CSS-only,
   // no React re-render) and lets the static export ship both layouts.
   return (
     <EraShell
-      content2014={<BoxGrid boxes={boxes} />}
+      content2014={<BoxGrid />}
       content2003={<Home2003Content />}
       content2001={<Home2001Content />}
     />
@@ -117,7 +115,9 @@ export default async function HomePage() {
 /*  8-box main grid                                                       */
 /* ──────────────────────────────────────────────────────────────────── */
 
-function BoxGrid({ boxes }: { boxes: BoxData[] }) {
+/** Loads its own boxes, so the 2003 and 2001 contents render alongside. */
+async function BoxGrid() {
+  const boxes = await Promise.all(MAIN_BOXES.map(loadBox));
   return (
     <div className="grow bg-(--era-content-bg) pt-[15px] pb-4">
       <div className="mx-auto grid w-full max-w-[640px] grid-cols-1 gap-0 sm:grid-cols-[320px_320px]">
@@ -288,6 +288,13 @@ function StateIcon({
 }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px chrome
-    <img src={url} alt={label} width={width} height={height} className="block shrink-0" />
+    <img
+      loading="lazy"
+      src={url}
+      alt={label}
+      width={width}
+      height={height}
+      className="block shrink-0"
+    />
   );
 }

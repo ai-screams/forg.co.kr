@@ -10,9 +10,9 @@
  * Files removed match `__next._*.txt` (e.g. `__next._tree.txt`,
  * `__next._head.txt`, `__next._full.txt`, `__next._index.txt`).
  *
- * Side-effect: client-side `<Link>` prefetch becomes a no-op (browser would
- * 404 trying to fetch these). All `<Link>` usages in this codebase already
- * import from `@/components/link` which defaults `prefetch={false}`.
+ * Side-effect: client-side navigation has nothing to fetch, which is why
+ * `@/components/link` renders a plain `<a>` (full page loads) rather than
+ * next/link.
  */
 
 import { readdirSync, unlinkSync } from "node:fs";

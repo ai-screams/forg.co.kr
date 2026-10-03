@@ -76,7 +76,12 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
           return {
             key: entry.no,
             author: (
-              <AuthorName board={board} name={entry.author} memberNo={entry.authorMemberNo} />
+              <AuthorName
+                board={board}
+                name={entry.author}
+                memberNo={entry.authorMemberNo}
+                seed={entry.no}
+              />
             ),
             title: entry.hasPost ? (
               <Link href={`/${board}/${entry.no}`} className={`${layout} hover:underline`}>
@@ -113,7 +118,12 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
               href: entry.hasPost ? `/${board}/${entry.no}` : null,
               comments: entry.commentCount,
               author: (
-                <AuthorName board={board} name={entry.author} memberNo={entry.authorMemberNo} />
+                <AuthorName
+                  board={board}
+                  name={entry.author}
+                  memberNo={entry.authorMemberNo}
+                  seed={entry.no}
+                />
               ),
               createdAt: entry.createdAt,
               hits: entry.hits,

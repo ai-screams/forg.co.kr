@@ -42,8 +42,10 @@ const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 
 function Img({ skin, file, alt = "" }: { skin: Skin2001; file: string; alt?: string }) {
   const url = skinAsset2001(skin, file);
-  // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
-  return url ? <img src={url} alt={alt} className="inline-block align-middle" /> : null;
+  return url ? (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
+    <img loading="lazy" src={url} alt={alt} className="inline-block align-middle" />
+  ) : null;
 }
 
 function dateCell(iso: string | null): ReactNode {

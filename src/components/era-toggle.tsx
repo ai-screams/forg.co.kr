@@ -13,17 +13,18 @@ import { DEFAULT_ERA, ERA_LABELS, ERA_STORAGE_KEY, ERAS, isEra, type Era } from 
  * 외부 상태 구독 패턴이 더 적합하다.
  *
  * 같은 탭 안에서 여러 EraToggle 인스턴스가 동기화되도록 커스텀 이벤트
- * (`forg:era-change`)를 dispatch한다. 다른 탭의 변경은 브라우저 표준
- * `storage` 이벤트로 자동 반영된다.
+ * (`forg:era-change`)를 dispatch한다. 다른 탭의 변경은 `storage` 이벤트로
+ * 받아 이 탭의 `<html data-era>`에 옮긴다.
+ *
+ * 눌린 버튼의 색은 React 상태가 아니라 `globals.css`의 `data-era` 규칙이
+ * 칠한다. 스크립트가 돌기 전(SSR 상태는 늘 2014)에도 저장된 시기가 켜져
+ * 보이게 하기 위해서다.
  */
 const ERA_CHANGE_EVENT = "forg:era-change";
 
 function getEraSnapshot(): Era {
-  const fromDom = document.documentElement.dataset["era"];
-  if (isEra(fromDom)) return fromDom;
-  const fromStorage = localStorage.getItem(ERA_STORAGE_KEY);
-  if (isEra(fromStorage)) return fromStorage;
-  return DEFAULT_ERA;
+  const era = document.documentElement.dataset["era"];
+  return isEra(era) ? era : DEFAULT_ERA;
 }
 
 function getServerEraSnapshot(): Era {
@@ -31,11 +32,16 @@ function getServerEraSnapshot(): Era {
 }
 
 function subscribeEra(callback: () => void): () => void {
+  const onStorage = (e: StorageEvent) => {
+    if (e.key !== ERA_STORAGE_KEY || !isEra(e.newValue)) return;
+    document.documentElement.dataset["era"] = e.newValue;
+    callback();
+  };
   window.addEventListener(ERA_CHANGE_EVENT, callback);
-  window.addEventListener("storage", callback);
+  window.addEventListener("storage", onStorage);
   return () => {
     window.removeEventListener(ERA_CHANGE_EVENT, callback);
-    window.removeEventListener("storage", callback);
+    window.removeEventListener("storage", onStorage);
   };
 }
 
@@ -57,6 +63,7 @@ export function EraToggle() {
             key={candidate}
             type="button"
             aria-pressed={active}
+            data-era-option={candidate}
             onClick={() => {
               document.documentElement.dataset["era"] = candidate;
               try {
@@ -66,12 +73,7 @@ export function EraToggle() {
               }
               window.dispatchEvent(new Event(ERA_CHANGE_EVENT));
             }}
-            className={[
-              "min-w-11 rounded-full px-2 py-0.5 font-mono text-xs transition-colors sm:min-w-12",
-              active
-                ? "bg-forg-gold text-forg-ink"
-                : "text-forg-muted hover:bg-forg-cream hover:text-forg-ink",
-            ].join(" ")}
+            className="text-forg-muted hover:bg-forg-cream hover:text-forg-ink min-w-11 rounded-full px-2 py-0.5 font-mono text-xs transition-colors sm:min-w-12"
           >
             {ERA_LABELS[candidate]}
           </button>

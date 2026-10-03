@@ -85,6 +85,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
                     board={post.board}
                     name={post.author}
                     memberNo={post.authorMemberNo}
+                    seed="post"
                   />
                 </a>
               ) : (
@@ -93,6 +94,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
                     board={post.board}
                     name={post.author}
                     memberNo={post.authorMemberNo}
+                    seed="post"
                   />
                 </span>
               )}

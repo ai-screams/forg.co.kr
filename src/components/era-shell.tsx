@@ -69,7 +69,8 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           <FrameLeft2003 />
         </div>
 
-        <main className="forg-shell-main flex w-full flex-col bg-(--era-content-bg) min-[800px]:w-[680px] min-[800px]:shrink-0">
+        {/* Inside the layout's <main>, which also holds the search page and the 404. */}
+        <div className="forg-shell-main flex w-full flex-col bg-(--era-content-bg) min-[800px]:w-[680px] min-[800px]:shrink-0">
           <div className="era-2014-only">
             <SiteHeader2014 />
           </div>
@@ -96,7 +97,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           <div className="era-2003-only">
             <FrameBottom2003 />
           </div>
-        </main>
+        </div>
 
         <div className="era-not-2001 contents">
           <RightRail />

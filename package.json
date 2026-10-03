@@ -46,7 +46,7 @@
     "knip": "^6.10.0",
     "lint-staged": "^16.4.0",
     "markdownlint-cli2": "^0.22.1",
-    "pagefind": "^1.5.2",
+    "pagefind": "1.4.0",
     "prettier": "^3.8.3",
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-tailwindcss": "^0.8.0",

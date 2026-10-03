@@ -312,13 +312,16 @@ export async function GET(
   const { path } = await params;
   const rest = path.slice(0, -1);
   const ts = rest.at(-1) ?? "";
-  const stem = (CAPTURE_TS.test(ts) ? rest.slice(0, -1) : rest).join("/");
-  const page = await getSitePage(stem);
-  const version = CAPTURE_TS.test(ts) ? await getSitePageVersion(stem, ts) : null;
+  const older = CAPTURE_TS.test(ts);
+  const stem = (older ? rest.slice(0, -1) : rest).join("/");
+  const [page, version] = await Promise.all([
+    getSitePage(stem),
+    older ? getSitePageVersion(stem, ts) : null,
+  ]);
   if (!page) return new Response("Not found", { status: 404 });
   // Every `ts` a page lists has its file (02g writes both), so a gap is a
   // broken run, not a missing page.
-  if (CAPTURE_TS.test(ts) && !version) throw new Error(`no older capture ${stem}/${ts}`);
+  if (older && !version) throw new Error(`no older capture ${stem}/${ts}`);
   return new Response(withImgBaseEverywhere(render(page, version)), {
     headers: { "content-type": "text/html; charset=utf-8" },
   });

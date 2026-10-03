@@ -8,15 +8,22 @@ import { getBoard } from "@/lib/boards";
  * `daemonGuestNames` board gets a random daemon name per view, everyone else
  * the captured name. `board` is the board the post lives in, which differs
  * from the listing's for rows a board carries in (`BoardMeta.continues`).
+ * `seed` names the post or comment on the page; its copies share one draw.
  */
 export function AuthorName({
   board,
   name,
   memberNo,
+  seed,
 }: {
   board: string;
   name: string;
   memberNo: string | null;
+  seed: string;
 }): ReactNode {
-  return getBoard(board)?.daemonGuestNames && !memberNo ? <DaemonName name={name} /> : name;
+  return getBoard(board)?.daemonGuestNames && !memberNo ? (
+    <DaemonName name={name} seed={seed} />
+  ) : (
+    name
+  );
 }

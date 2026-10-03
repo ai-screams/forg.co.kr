@@ -232,7 +232,14 @@ export function FrameTop2003() {
         >
           {leftLogo ? (
             // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-            <img src={leftLogo} alt="Forg's World" width={100} height={42} className="block" />
+            <img
+              loading="lazy"
+              src={leftLogo}
+              alt="Forg's World"
+              width={100}
+              height={42}
+              className="block"
+            />
           ) : (
             <span className="text-forg-ink block px-1 font-mono text-base leading-tight font-bold">
               forg<span className="text-forg-ink/70">&apos;s World</span>
@@ -322,7 +329,15 @@ function InertChrome2003({ asset, label, title }: { asset: string; label: string
     // 70×18 here, not the 2014 header's 70×15: the 2003 art is taller and
     // frame-top-2003 declares it that way.
     // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-    <img src={url} alt={label} title={title} width={70} height={18} className="block" />
+    <img
+      loading="lazy"
+      src={url}
+      alt={label}
+      title={title}
+      width={70}
+      height={18}
+      className="block"
+    />
   );
 }
 
@@ -340,6 +355,7 @@ function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
            blend instead of floating as white tiles. */}
         {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
         <img
+          loading="lazy"
           src={assetUrl}
           alt={item.label}
           width={80}
@@ -370,7 +386,14 @@ function FaqIcon2003() {
       className="inline-block shrink-0 opacity-80"
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-      <img src={url} alt="Site FAQ" width={20} height={20} className="block h-[20px] w-[20px]" />
+      <img
+        loading="lazy"
+        src={url}
+        alt="Site FAQ"
+        width={20}
+        height={20}
+        className="block h-[20px] w-[20px]"
+      />
     </span>
   );
 }
@@ -417,6 +440,7 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
       {headerUrl ? (
         // eslint-disable-next-line @next/next/no-img-element -- static export
         <img
+          loading="lazy"
           src={headerUrl}
           alt={section.fallback}
           width={100}
@@ -492,6 +516,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           {mainArt && (
             // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 350×127 art
             <img
+              loading="lazy"
               src={mainArt}
               alt="Ultima Online — Honor & Sacrifice"
               width={350}
@@ -506,7 +531,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         <div aria-hidden className="hidden md:block">
           {middleLogo && (
             // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 30×520 chrome
-            <img src={middleLogo} alt="" width={30} height={520} className="block" />
+            <img loading="lazy" src={middleLogo} alt="" width={30} height={520} className="block" />
           )}
         </div>
         <div
@@ -523,7 +548,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         <div aria-hidden className="hidden md:block">
           {rightArt && (
             // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 80×520 art
-            <img src={rightArt} alt="" width={80} height={520} className="block" />
+            <img loading="lazy" src={rightArt} alt="" width={80} height={520} className="block" />
           )}
         </div>
       </div>
@@ -532,7 +557,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
       <div className="mx-auto mt-2 grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
         {mBarLogo ? (
           // eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome
-          <img src={mBarLogo} alt="" width={350} height={20} className="block" />
+          <img loading="lazy" src={mBarLogo} alt="" width={350} height={20} className="block" />
         ) : (
           <div className="h-[20px]" />
         )}
@@ -540,7 +565,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block">
           {rBarB && (
             // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 185×1 rule
-            <img src={rBarB} alt="" width={185} height={1} className="block" />
+            <img loading="lazy" src={rBarB} alt="" width={185} height={1} className="block" />
           )}
         </div>
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
@@ -552,6 +577,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         <p className="mt-2 flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered 380×18 chrome */}
           <img
+            loading="lazy"
             src={logoBottom}
             alt="All Contents Copyright 1999-2002 Forg, All Rights Reserved."
             width={380}
@@ -620,6 +646,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
                 {bulletUrl && (
                   // eslint-disable-next-line @next/next/no-img-element -- static export, recovered bullet
                   <img
+                    loading="lazy"
                     src={bulletUrl}
                     alt=""
                     width={compact ? 10 : 5}
@@ -679,7 +706,7 @@ function BestScreenShotBox() {
         // to the board itself.
         <Link href="/ScreenShot" className="flex justify-center py-1">
           {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
-          <img src={shotUrl} alt="2003년 베스트 스크린샷" width={160} height={105} />
+          <img loading="lazy" src={shotUrl} alt="2003년 베스트 스크린샷" width={160} height={105} />
         </Link>
       ) : (
         <div className="text-forg-muted flex h-[80px] items-center justify-center text-[10px] italic">
@@ -718,7 +745,7 @@ export function FrameBottom2003() {
 
   return (
     <footer
-      role="contentinfo"
+      role="group"
       aria-label="누적 방문 (2003-06-03 기준 박제) · 검색"
       className="bg-forg-bgm text-forg-cream flex h-[24px] w-full shrink-0 items-center text-[11px]"
       style={tile}
@@ -726,7 +753,14 @@ export function FrameBottom2003() {
       <div className="flex h-[24px] w-[50px] shrink-0 items-end">
         {countUrl ? (
           // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
-          <img src={countUrl} alt="Total :" width={50} height={24} className="block" />
+          <img
+            loading="lazy"
+            src={countUrl}
+            alt="Total :"
+            width={50}
+            height={24}
+            className="block"
+          />
         ) : (
           <span className="pl-1 font-bold">Total :</span>
         )}
@@ -737,7 +771,7 @@ export function FrameBottom2003() {
       <form action="/search" method="get" className="flex h-[24px] grow items-center gap-[4px]">
         {serUrl ? (
           // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 50×24 chrome
-          <img src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
+          <img loading="lazy" src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
         ) : (
           <span className="font-bold">SEARCH</span>
         )}
@@ -751,7 +785,7 @@ export function FrameBottom2003() {
         {enUrl ? (
           <button type="submit" className="block">
             {/* eslint-disable-next-line @next/next/no-img-element -- static export, recovered chrome */}
-            <img src={enUrl} alt="ENTER" className="block" />
+            <img loading="lazy" src={enUrl} alt="ENTER" className="block" />
           </button>
         ) : (
           <button
@@ -765,6 +799,7 @@ export function FrameBottom2003() {
       {rightUrl && (
         // eslint-disable-next-line @next/next/no-img-element -- static export, decorative 150×24 chrome
         <img
+          loading="lazy"
           src={rightUrl}
           alt=""
           width={150}

@@ -137,6 +137,7 @@ function PostTable({
         board={entry.board ?? board}
         name={entry.author}
         memberNo={entry.authorMemberNo}
+        seed={`${entry.board ?? board}/${entry.postId}`}
       />
     ),
     title: (
@@ -175,6 +176,7 @@ function PostTable({
         board={entry.board ?? board}
         name={entry.author}
         memberNo={entry.authorMemberNo}
+        seed={`${entry.board ?? board}/${entry.postId}`}
       />
     ),
     createdAt: entry.createdAt,

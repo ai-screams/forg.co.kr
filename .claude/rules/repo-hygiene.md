@@ -15,4 +15,4 @@ Chrome assets are in git at `public/img/chrome/` (306 files; recovered by single
 
 ## Deploy
 
-Cloudflare Pages (`forg-archive.pages.dev`, ADR-0015) builds on push. Images first, then push: `pnpm deploy:img` (supports `--dry-run`, uploads what changed by MD5 vs ETag), `pnpm deploy:search` (**no dry-run**).
+Cloudflare Pages (`forg-archive.pages.dev`, ADR-0015) builds on push. Images first, then push: `pnpm deploy:img` (supports `--dry-run`, uploads what changed by MD5 vs ETag), `pnpm deploy:search` (uploads every file; `--dry-run` only counts them per Cache-Control).

@@ -2,16 +2,17 @@
  * /search — global full-text search powered by Pagefind.
  *
  * Pagefind is a postbuild artifact. Locally (`pnpm dev`) the index does not
- * exist, so the load fails gracefully and a dev-mode notice is shown.
+ * exist, so the load fails the way a network failure does and the page says
+ * the index could not be loaded.
  *
  * In production the Pagefind bundle is hosted on Cloudflare R2 (separated
  * from the Cloudflare Pages site to satisfy the 20,000-file deploy cap —
  * see ADR-0015). The base URL is provided at build time via
  * `NEXT_PUBLIC_PAGEFIND_BASE` (default `/pagefind/` for local preview).
  *
- * We load `${PAGEFIND_BASE}pagefind.js` at runtime via an indirect `import()`
- * expression so TypeScript does not attempt to resolve the URL as a module
- * path at typecheck time.
+ * We load `${PAGEFIND_BASE}pagefind.js` at runtime with an `import()` the
+ * bundler leaves alone, and preload it from the static HTML so the download
+ * starts before hydration.
  *
  * Tailwind v4 era-aware tokens (`bg-(--era-content-bg)` etc.) are used
  * throughout — no era-specific branching in JS, pure CSS variable resolution.
@@ -20,6 +21,7 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore } from "react";
+import { preloadModule } from "react-dom";
 
 /** Minimal Pagefind result data surface we need. */
 interface PfResultData {
@@ -39,27 +41,21 @@ function useDebouncedValue(value: string, delayMs: number): string {
 }
 
 /**
- * Load the Pagefind runtime. Uses an indirect dynamic import so TypeScript
- * never attempts to resolve `/pagefind/pagefind.js` as a module path during
- * typecheck — it only exists after the postbuild step.
- */
-/**
  * Resolves to e.g. `/pagefind/` (local) or `https://search.forg.co.kr/`
  * (production R2 bundle). Always ends with `/` so we can concatenate.
  */
 const PAGEFIND_BASE_RAW = process.env["NEXT_PUBLIC_PAGEFIND_BASE"] ?? "/pagefind/";
 const PAGEFIND_BASE = PAGEFIND_BASE_RAW.endsWith("/") ? PAGEFIND_BASE_RAW : `${PAGEFIND_BASE_RAW}/`;
+const PAGEFIND_JS = `${PAGEFIND_BASE}pagefind.js`;
 
 interface PagefindApi {
   search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
 }
 
+/** Load the Pagefind runtime; it only exists after the postbuild step. */
 async function loadPagefind(): Promise<PagefindApi | null> {
   try {
-    // Indirect expression import — prevents TS module resolution
-    const url = `${PAGEFIND_BASE}pagefind.js`;
-    const pf = await (Function("u", "return import(u)")(url) as Promise<unknown>);
-    return pf as PagefindApi;
+    return (await import(/* webpackIgnore: true */ PAGEFIND_JS)) as PagefindApi;
   } catch {
     return null;
   }
@@ -112,7 +108,12 @@ export default function SearchPage() {
   const query = typed ?? urlQuery;
   const [pagefind, setPagefind] = useState<PagefindState>({ status: "loading" });
   // The last finished search. Results stay on screen while a newer one runs.
-  const [found, setFound] = useState<{ query: string; results: SearchResult[] } | null>(null);
+  const [found, setFound] = useState<{
+    query: string;
+    results: SearchResult[];
+    failed?: true;
+  } | null>(null);
+  preloadModule(PAGEFIND_JS);
   const debouncedQuery = useDebouncedValue(query, 200);
 
   useEffect(() => {
@@ -132,14 +133,15 @@ export default function SearchPage() {
       .then(({ results: raw }) => Promise.all(raw.slice(0, 30).map((r) => r.data())))
       .then(
         (items) => setFound({ query: q, results: items.map(toResult) }),
-        () => setFound({ query: q, results: [] }),
+        () => setFound({ query: q, results: [], failed: true }),
       );
   }, [debouncedQuery, pagefind]);
 
   const trimmedQuery = query.trim();
-  const devMode = pagefind.status === "unavailable";
-  const searching = trimmedQuery !== "" && !devMode && found?.query !== trimmedQuery;
+  const unavailable = pagefind.status === "unavailable";
+  const searching = trimmedQuery !== "" && !unavailable && found?.query !== trimmedQuery;
   const results = trimmedQuery && found ? found.results : [];
+  const failed = !searching && trimmedQuery !== "" && found?.failed === true;
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
@@ -164,22 +166,22 @@ export default function SearchPage() {
 
         {/* Results area */}
         <div className="px-6 py-5">
-          {devMode && (
+          {(unavailable || failed) && (
             <p className="text-forg-muted rounded border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3 text-sm">
-              검색 인덱스 준비 중 — <code className="font-mono text-xs">pnpm build</code> 실행 후
-              사용할 수 있습니다.
+              {unavailable ? "검색 색인을 불러오지 못했습니다." : "검색 중 오류가 났습니다."} 잠시
+              뒤에 다시 시도해 주세요.
             </p>
           )}
 
           {searching && <p className="text-forg-muted text-sm">검색 중…</p>}
 
-          {!searching && trimmedQuery && !devMode && results.length === 0 && (
+          {!searching && trimmedQuery && !unavailable && !failed && results.length === 0 && (
             <p className="text-forg-muted text-sm">
               &ldquo;{trimmedQuery}&rdquo;에 대한 결과가 없습니다.
             </p>
           )}
 
-          {!devMode && !trimmedQuery && (
+          {!unavailable && !trimmedQuery && (
             <p className="text-forg-muted text-sm">검색어를 입력하면 결과가 나타납니다.</p>
           )}
 
