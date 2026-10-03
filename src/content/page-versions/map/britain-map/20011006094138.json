@@ -1,0 +1,14 @@
+{
+  "stem": "map/britain-map",
+  "ts": "20011006094138",
+  "capturedAt": "2001-10-06T09:41:38",
+  "originalPath": "/map/britain-map.htm",
+  "originalUrl": "http://forg.co.kr:80/map/britain-map.htm",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "#FFFFFF"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<div id=\"tooltip\" style=\"position:absolute; left:14px; top:100px; width:223px; height:479px; z-index:4\"><img alt=\"\" border=\"0\" height=\"706\" src=\"/img/posts/site/map/towns/britain_a.jpg\" width=\"296\"></div>\n<div id=\"tooltip\" style=\"position:absolute; left:310px; top:34px; width:321px; height:566px; z-index:3\"><img alt=\"\" border=\"0\" height=\"771\" src=\"/img/posts/site/map/towns/britain_b.jpg\" width=\"326\"></div>\n<div id=\"tooltip\" style=\"position:absolute; left:635px; top:24px; width:246px; height:544px; z-index:2\"><img border=\"0\" height=\"655\" src=\"/img/posts/site/map/towns/britain_c.jpg\" width=\"342\"></div>\n"
+}

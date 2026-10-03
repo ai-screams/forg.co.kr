@@ -40,6 +40,30 @@
     "digest": "KQ3DWJWL64JV66FEJKKP73GILIAH3NBE"
   },
   {
+    "filename": "dag.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/dag.gif",
+    "capturedAt": "20010809100802",
+    "sizeBytes": 3879,
+    "sha256": "26cb1b3d81ac530d077c9e9555efe27db133291582312ae358515ce5f78c4118",
+    "digest": "73TFO3GWX7GAKI3IYGGKYQTLBFO43TDV"
+  },
+  {
+    "filename": "feather.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/feather.gif",
+    "capturedAt": "20010809102214",
+    "sizeBytes": 3873,
+    "sha256": "61272fc591360b8a248d07b69900cdfbd81d7157cd2c0a0a8b9fa07627ddf729",
+    "digest": "FZZDW7FDSKVWEPTQ3V6XLBX3D26W2UGH"
+  },
+  {
+    "filename": "feather_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/feather_1.gif",
+    "capturedAt": "20010809102513",
+    "sizeBytes": 5482,
+    "sha256": "a6ccae623174cedd57ad601c09ea9ca9a95de0857847fa020cd92710e4148246",
+    "digest": "MKFXHHK25NEBNOM6RCC5TSXFRZZJRLJN"
+  },
+  {
     "filename": "heavy.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/heavy.gif",
     "capturedAt": "20021207000943",
@@ -56,11 +80,27 @@
     "digest": "ULPOL4VHJM34C3D42ZAD7XL6ZSFUQ5JY"
   },
   {
+    "filename": "shaft.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/shaft.gif",
+    "capturedAt": "20010809102738",
+    "sizeBytes": 3809,
+    "sha256": "0ef4a9953a54544e5515b71853eb792998015ee008e9dba3563d93754c3e7fb5",
+    "digest": "WGMUXC7TMAFPEIOIG5MCCY2NLIUMOLTI"
+  },
+  {
     "filename": "tool_bow.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/tool_bow.gif",
     "capturedAt": "20040119101404",
     "sizeBytes": 1392,
     "sha256": "1dd918ce468f25a8c60203c78a1de3041e831d164f8b5aba6fd90909824e6c37",
     "digest": "4TEHH5PSVWS3XHDOMDN6UJKHWTJHLMTD"
+  },
+  {
+    "filename": "wood.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/bow/wood.gif",
+    "capturedAt": "20010809103820",
+    "sizeBytes": 3695,
+    "sha256": "6eac4da128d0dd7c9ae4b494f435fbccef266c6ac58fb7443c7b08a95d19afe2",
+    "digest": "3OQHSDP7VLVDTMAYW5ZIAXAQ2ISWH2XQ"
   }
 ]

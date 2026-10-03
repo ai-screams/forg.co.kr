@@ -29,6 +29,14 @@ LINKS (resolved against the capture's own URL)
 
 Scripts, event handlers and forms are dropped (nh3 allowlist below).
 
+OLDER CAPTURES
+    Every other `page` version of a page shown as a `page` (a frameset has
+    no museum bar to pick from) is rendered the same way to
+    `src/content/page-versions/{stem}/{ts}.json` (`ts` = the capture time the
+    museum shows), and the page's `versions` entry carries that `ts`; the route
+    serves it at `/site/{stem}/{ts}/` and the museum bar lets a visitor pick
+    it. Their images join the download queue with the shown pages'.
+
 RENDERING MODE
     A `page`'s `mode` is the mode a browser draws its capture in, and the
     route gives it a doctype that selects the same one. No doctype is
@@ -65,6 +73,7 @@ RAW = RESEARCH / "cdx" / "site-html.json"
 CLEAN = RESEARCH / "archive-clean" / "S"
 POSTS = PROJECT_ROOT / "src" / "content" / "posts"
 OUT = PROJECT_ROOT / "src" / "content" / "pages"
+VERSIONS_OUT = PROJECT_ROOT / "src" / "content" / "page-versions"
 IMG_ROOT = PROJECT_ROOT / "public" / "img" / "posts" / "site"
 BOARDS_TS = PROJECT_ROOT / "src" / "lib" / "boards.ts"
 IMAGE_REFS = PROJECT_ROOT / "scripts" / "etl" / "site-image-refs.jsonl"
@@ -577,6 +586,26 @@ def open_member_only(docs: dict[str, dict]) -> int:
     return opened
 
 
+def render_page(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, stem: str,
+                titles: dict[str, str], stats: dict[str, int]) -> dict:
+    """A `page` capture's own CSS, body style, mode and sanitised body."""
+    # Before `rewrite`, which turns the body's own background into a museum
+    # path that would then be resolved a second time.
+    out = {"bodyStyle": body_style(soup.body, resolver, base, ts, stem), "mode": render_mode(soup)}
+    unroll_slideshow(soup)
+    stats["goto_selects"] = stats.get("goto_selects", 0) + goto_selects(soup, resolver, base, ts, stem)
+    stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
+    stats["catalog_labels"] = stats.get("catalog_labels", 0) + tidy_catalog_labels(soup)
+    rewrite(soup, resolver, base, ts, stem)
+    stats["buttons_named"] = stats.get("buttons_named", 0) + label_missing_buttons(soup, titles)
+    out["css"] = head_css(soup)
+    inner = soup.body.decode_contents() if soup.body else str(soup)
+    cleaned = nh3.clean(inner, tags=TAGS, attributes=ATTRS,
+                        url_schemes={"http", "https", "mailto"}, link_rel=None)
+    out["html"] = UNSAFE_STYLE_ATTR.sub("", cleaned)
+    return out
+
+
 def missing_box(soup: BeautifulSoup, img, label: str) -> None:
     """Replace a missing picture with `label` in a box of its slot's size."""
     box = soup.new_tag("span", attrs={
@@ -830,6 +859,7 @@ def main() -> None:
 
     chosen: dict[str, tuple[dict, BeautifulSoup]] = {}
     history: dict[str, list[dict]] = {}
+    older: dict[str, list[tuple[dict, BeautifulSoup]]] = {}
     every: list[tuple[dict, BeautifulSoup]] = []
     for stem, versions in by_stem.items():
         kinds = []
@@ -845,7 +875,15 @@ def main() -> None:
         v, soup, kind = shown[-1]
         v = {**v, "kind": kind}
         chosen[stem] = (v, soup)
-        history[stem] = [{"capturedAt": iso(k[0]["shown_ts"]), "kind": k[2]} for k in kinds]
+        # A frameset has no museum bar to pick a capture from (`holy/index`).
+        older[stem] = [(k[0], k[1]) for k in kinds
+                       if kind == "page" and k[2] == "page" and k[0] is not shown[-1][0]]
+        viewable = {id(o[0]) for o in older[stem]}
+        history[stem] = [
+            {"capturedAt": iso(k[0]["shown_ts"]), "kind": k[2],
+             **({"ts": k[0]["shown_ts"]} if id(k[0]) in viewable else {})}
+            for k in kinds
+        ]
 
     resolver = Resolver(set(chosen), boards)
     link_titles = collect_link_titles(every)
@@ -859,6 +897,7 @@ def main() -> None:
     stats: dict[str, int] = {}
     titles = {stem: title_of(soup, link_titles, stem, shared) for stem, (_v, soup) in chosen.items()}
     docs = {}
+    versions: dict[str, dict] = {}
     for stem, (v, soup) in sorted(chosen.items()):
         base, ts, kind = v["url"], v["ts"], v["kind"]
         # A `<base href>` would move every relative link; none of the
@@ -889,26 +928,22 @@ def main() -> None:
             href = resolver.link(m.group(1), base, ts, stem)[0] if m else None
             doc["redirectTo"] = safe_url(href)
         else:
-            # Before `rewrite`, which turns the body's own background into a
-            # museum path that would then be resolved a second time.
-            doc["bodyStyle"] = body_style(soup.body, resolver, base, ts, stem)
-            doc["mode"] = render_mode(soup)
+            doc.update(render_page(soup, resolver, base, ts, stem, titles, stats))
             stats[doc["mode"]] = stats.get(doc["mode"], 0) + 1
-            unroll_slideshow(soup)
-            stats["goto_selects"] = stats.get("goto_selects", 0) + goto_selects(
-                soup, resolver, base, ts, stem
-            )
-            stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
-            stats["catalog_labels"] = stats.get("catalog_labels", 0) + tidy_catalog_labels(soup)
-            rewrite(soup, resolver, base, ts, stem)
-            stats["buttons_named"] = stats.get("buttons_named", 0) + label_missing_buttons(soup, titles)
-            doc["css"] = head_css(soup)
-            inner = soup.body.decode_contents() if soup.body else str(soup)
-            cleaned = nh3.clean(inner, tags=TAGS, attributes=ATTRS,
-                                url_schemes={"http", "https", "mailto"}, link_rel=None)
-            doc["html"] = UNSAFE_STYLE_ATTR.sub("", cleaned)
         docs[stem] = doc
         stats[kind] = stats.get(kind, 0) + 1
+        for ov, osoup in older[stem]:
+            obase = ov["url"]
+            versions[f"{stem}/{ov['shown_ts']}"] = {
+                "stem": stem,
+                "ts": ov["shown_ts"],
+                "capturedAt": iso(ov["shown_ts"]),
+                "originalPath": original_path(ov, forg_pages),
+                "originalUrl": obase,
+                "baseTarget": base_target(osoup),
+                **render_page(osoup, resolver, obase, ov["ts"], stem, titles, {}),
+            }
+    stats["older_captures"] = len(versions)
 
     stats["continued_named"] = name_continued_pages(docs, pagers)
     stats["member_only_opened"] = open_member_only(docs)
@@ -923,6 +958,12 @@ def main() -> None:
         shutil.rmtree(OUT)
     for stem, doc in docs.items():
         f = OUT / f"{stem}.json"
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n")
+    if VERSIONS_OUT.exists():
+        shutil.rmtree(VERSIONS_OUT)
+    for key, doc in versions.items():
+        f = VERSIONS_OUT / f"{key}.json"
         f.parent.mkdir(parents=True, exist_ok=True)
         f.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n")
     with IMAGE_REFS.open("w") as fh:

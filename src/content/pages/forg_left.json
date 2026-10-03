@@ -8,67 +8,83 @@
   "versions": [
     {
       "capturedAt": "2002-04-05T19:35:38",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020405193538"
     },
     {
       "capturedAt": "2002-04-07T14:38:34",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020407143834"
     },
     {
       "capturedAt": "2002-06-10T06:31:40",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020610063140"
     },
     {
       "capturedAt": "2002-08-02T19:59:37",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020802195937"
     },
     {
       "capturedAt": "2002-12-08T06:49:14",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20021208064914"
     },
     {
       "capturedAt": "2003-02-07T15:38:02",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030207153802"
     },
     {
       "capturedAt": "2003-06-01T17:56:40",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030601175640"
     },
     {
       "capturedAt": "2003-06-23T14:09:52",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030623140952"
     },
     {
       "capturedAt": "2003-08-12T19:09:14",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030812190914"
     },
     {
       "capturedAt": "2003-12-04T20:23:56",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031204202356"
     },
     {
       "capturedAt": "2003-12-04T23:58:46",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031204235846"
     },
     {
       "capturedAt": "2004-06-17T12:45:34",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20040617124534"
     },
     {
       "capturedAt": "2004-10-19T02:55:05",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20041019025505"
     },
     {
       "capturedAt": "2005-02-05T19:25:56",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050205192556"
     },
     {
       "capturedAt": "2005-04-09T21:04:47",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050409210447"
     },
     {
       "capturedAt": "2005-09-08T18:31:39",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050908183139"
     },
     {
       "capturedAt": "2007-10-10T23:48:13",

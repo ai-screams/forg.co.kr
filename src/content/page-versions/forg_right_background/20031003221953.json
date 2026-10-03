@@ -1,0 +1,19 @@
+{
+  "stem": "forg_right_background",
+  "ts": "20031003221953",
+  "capturedAt": "2003-10-03T22:19:53",
+  "originalPath": "/forg_right_background.html",
+  "originalUrl": "http://forg.co.kr:80/forg_right_background.html",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "background-image": "url('/img/posts/site/images/right_background_1.gif')",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
+  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><a>&nbsp;</a><a href=\"https://web.archive.org/web/20031003221953/http://forg.co.kr/holy\" target=\"_blank\"><img border=\"0\" height=\"220\" src=\"/img/posts/site/images/holy.gif\" width=\"120\"></a></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"https://web.archive.org/web/20031003221953/http://forg.co.kr/holy\" target=\"_blank\"><font color=\"#B0D959\" face=\"Verdana\">DAOC</font></a></b></span></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://www.forgsign.wo.to\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">Signature</font></a></b></span></b></p>\n"
+}

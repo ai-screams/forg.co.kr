@@ -1,0 +1,12 @@
+{
+  "stem": "forg_top",
+  "ts": "20020407161012",
+  "capturedAt": "2002-04-07T16:10:12",
+  "originalPath": "/forg_top.html",
+  "originalUrl": "http://forg.uospace.net:80/forg_top.html",
+  "baseTarget": null,
+  "bodyStyle": {},
+  "mode": "quirks",
+  "css": "",
+  "html": "<br>\n<b>Fatal error</b>:  Failed opening required '/home1/dotple/forg/public_html/zb/lib.php' (include_path='') in <b>/home/forg/public_html/forg_top.html</b> on line <b>4</b><br>\n"
+}

@@ -15,11 +15,13 @@
 
 import { withImgBaseEverywhere } from "@/lib/img-base";
 import {
-  getAllSiteStems,
+  getAllSitePages,
   getSitePage,
+  getSitePageVersion,
   sectionAnchor,
   sectionOf,
   type SitePage,
+  type SitePageVersion,
 } from "@/lib/site-pages";
 
 export const dynamicParams = false;
@@ -28,9 +30,18 @@ interface RouteParams {
   path: string[];
 }
 
+// An older capture is `/site/{stem}/{ts}/`: no stem has a 14-digit segment.
+const CAPTURE_TS = /^\d{14}$/;
+
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  const stems = await getAllSiteStems();
-  return stems.map((stem) => ({ path: [...stem.split("/"), "index.html"] }));
+  const pages = await getAllSitePages();
+  return pages.flatMap((page) => {
+    const stem = page.stem.split("/");
+    const older = page.versions.flatMap((v) =>
+      v.ts === undefined ? [] : [{ path: [...stem, v.ts, "index.html"] }],
+    );
+    return [{ path: [...stem, "index.html"] }, ...older];
+  });
 }
 
 function escapeHtml(s: string): string {
@@ -54,6 +65,7 @@ background:#2b2b2b!important;color:#eee!important;padding:4px 10px!important;dis
 flex-wrap:wrap!important;gap:4px 12px!important;align-items:center!important;visibility:visible!important}
 #forg-museum-bar a{color:#ffc73b!important;text-decoration:underline!important}
 #forg-museum-bar b{color:#ffc73b!important}
+#forg-museum-bar select{font:inherit!important;color:#222!important;background:#eee!important;border:1px solid #888!important;margin:0 0 0 4px!important;padding:0 2px!important;width:auto!important;height:auto!important}
 html.in-frame #forg-museum-bar{display:none!important}`;
 
 const IN_FRAME_SCRIPT =
@@ -158,14 +170,40 @@ function head(page: SitePage, extra = ""): string {
 <title>${escapeHtml(title)}</title>${base}${extra}</head>`;
 }
 
-function museumBar(page: SitePage): string {
-  const others = page.versions.length - 1;
-  const wayback = `https://web.archive.org/web/${page.capturedAt.replace(/\D/g, "")}/${page.originalUrl}`;
+// A page with older captures the museum can show gets a picker in place of
+// the count, the latest first: the museum shows the latest by default, and
+// the older ones keep the page as it looked before (a redesign, a section
+// still to be written). Captures that were only a redirect or a blank page
+// are not offered.
+function captures(page: SitePage, version: SitePageVersion | null): string {
+  const older = page.versions.flatMap((v) =>
+    v.ts === undefined ? [] : [{ ts: v.ts, capturedAt: v.capturedAt }],
+  );
+  if (older.length === 0) {
+    const others = page.versions.length - 1;
+    return `<span>${formatDate(page.capturedAt)} 캡처${others > 0 ? ` · 다른 캡처 ${String(others)}개` : ""}</span>`;
+  }
+  const base = `/site/${page.stem}/`;
+  const options = [
+    `<option value="${escapeHtml(base)}"${version ? "" : " selected"}>${formatDate(page.capturedAt)} (최신)</option>`,
+    ...older
+      .reverse()
+      .map(
+        (v) =>
+          `<option value="${escapeHtml(`${base}${v.ts}/`)}"${version?.ts === v.ts ? " selected" : ""}>${formatDate(v.capturedAt)}</option>`,
+      ),
+  ];
+  return `<label>캡처<select onchange="location.href=this.value">${options.join("")}</select></label>`;
+}
+
+function museumBar(page: SitePage, version: SitePageVersion | null = null): string {
+  const shown = version ?? page;
+  const wayback = `https://web.archive.org/web/${shown.capturedAt.replace(/\D/g, "")}/${shown.originalUrl}`;
   return `<div id="forg-museum-bar" role="note">
 <a href="/">forg.co.kr 박물관</a>
 <span><b>${escapeHtml(page.title)}</b></span>
-<span>원래 주소 <code>${escapeHtml(page.originalPath)}</code></span>
-<span>${formatDate(page.capturedAt)} 캡처${others > 0 ? ` · 다른 캡처 ${String(others)}개` : ""}</span>
+<span>원래 주소 <code>${escapeHtml(shown.originalPath)}</code></span>
+${captures(page, version)}
 <a href="/site/">사이트 페이지 목록</a>
 <a href="${escapeHtml(wayback)}" target="_blank" rel="noopener">Wayback 원본</a>
 </div>`;
@@ -227,30 +265,41 @@ ${nearby(page)}
 </body></html>`;
 }
 
-function render(page: SitePage): string {
-  if (page.memberOnly) return memberOnly(page);
-  if (page.kind === "redirect") {
-    const to = page.redirectTo ?? "/site/";
-    return `<!doctype html><html lang="ko">${head(
-      page,
-      `<meta http-equiv="refresh" content="0; url=${escapeHtml(to)}">`,
-    )}<body><p>이 주소는 원래 <a href="${escapeHtml(to)}">다른 페이지</a>로 넘어가는 곳이었습니다.</p></body></html>`;
+function render(page: SitePage, version: SitePageVersion | null = null): string {
+  if (!version) {
+    if (page.memberOnly) return memberOnly(page);
+    if (page.kind === "redirect") {
+      const to = page.redirectTo ?? "/site/";
+      return `<!doctype html><html lang="ko">${head(
+        page,
+        `<meta http-equiv="refresh" content="0; url=${escapeHtml(to)}">`,
+      )}<body><p>이 주소는 원래 <a href="${escapeHtml(to)}">다른 페이지</a>로 넘어가는 곳이었습니다.</p></body></html>`;
+    }
+    if (page.kind === "frameset") {
+      return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
+    }
   }
-  if (page.kind === "frameset") {
-    return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
-  }
-  const combo = page.html.includes('id="myDIV"');
-  const style = `<style>${BAR_CSS}\n${linkColours(page.bodyStyle)}\n${page.css}\n${combo ? `${COMBO_CSS}\n` : ""}${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}${combo ? COMBO_HEAD_SCRIPT : ""}</script>`;
+  // An older capture is always a `page` (02g) and borrows the latest's name.
+  const shown: SitePage = version ? { ...page, ...version } : page;
+  const combo = shown.html.includes('id="myDIV"');
+  // An older capture points search engines at the latest and stays out of
+  // the museum's own search, which indexes each page once.
+  const older = version
+    ? `<link rel="canonical" href="/site/${escapeHtml(page.stem)}/"><meta name="robots" content="noindex">`
+    : "";
+  const style = `${older}<style>${BAR_CSS}\n${linkColours(shown.bodyStyle)}\n${shown.css}\n${combo ? `${COMBO_CSS}\n` : ""}${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}${combo ? COMBO_HEAD_SCRIPT : ""}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
   // redirects carry no body and stay out of the index. `display:contents`
   // keeps the wrapper out of the page's own layout.
-  const searchable = `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
-  return `${DOCTYPE[page.mode]}<html lang="ko">${head(page, style)}<body${bodyAttrs(page.bodyStyle)}>
-${museumBar(page)}
-${searchable}
-${page.html}
-</div>${page.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}${combo ? `\n<script>${COMBO_SCRIPT}</script>` : ""}
+  const wrapper = version
+    ? `<div style="display:contents">`
+    : `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
+  return `${DOCTYPE[shown.mode]}<html lang="ko">${head(shown, style)}<body${bodyAttrs(shown.bodyStyle)}>
+${museumBar(page, version)}
+${wrapper}
+${shown.html}
+</div>${shown.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}${combo ? `\n<script>${COMBO_SCRIPT}</script>` : ""}
 </body></html>`;
 }
 
@@ -259,9 +308,16 @@ export async function GET(
   { params }: { params: Promise<RouteParams> },
 ): Promise<Response> {
   const { path } = await params;
-  const page = await getSitePage(path.slice(0, -1).join("/"));
+  const rest = path.slice(0, -1);
+  const ts = rest.at(-1) ?? "";
+  const stem = (CAPTURE_TS.test(ts) ? rest.slice(0, -1) : rest).join("/");
+  const page = await getSitePage(stem);
+  const version = CAPTURE_TS.test(ts) ? await getSitePageVersion(stem, ts) : null;
   if (!page) return new Response("Not found", { status: 404 });
-  return new Response(withImgBaseEverywhere(render(page)), {
+  // Every `ts` a page lists has its file (02g writes both), so a gap is a
+  // broken run, not a missing page.
+  if (CAPTURE_TS.test(ts) && !version) throw new Error(`no older capture ${stem}/${ts}`);
+  return new Response(withImgBaseEverywhere(render(page, version)), {
     headers: { "content-type": "text/html; charset=utf-8" },
   });
 }

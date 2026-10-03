@@ -382,5 +382,13 @@
     "sizeBytes": 8307,
     "sha256": "8ce9eb5dc0a3da4cc51fdb4fcdc887a9a4dbc686b74cb2cbdaed7a518c12e673",
     "digest": "QZC4SBZGE4QI2B5VFTBZI6KSOFHTJXSA"
+  },
+  {
+    "filename": "vid_anim.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/vid_anim.gif",
+    "capturedAt": "20021207103302",
+    "sizeBytes": 23338,
+    "sha256": "f81dfa8280feb172ee67668f0f821c838e82eecfb79108ef0ac682a3332c3418",
+    "digest": "CWQK76BNQBJ7SFIT523AV4SN4NNCKCBL"
   }
 ]

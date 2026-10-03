@@ -1,0 +1,18 @@
+{
+  "stem": "index",
+  "ts": "20010301213553",
+  "capturedAt": "2001-03-01T21:35:53",
+  "originalPath": "/",
+  "originalUrl": "http://forg.co.kr:80/",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "no-quirks",
+  "css": "",
+  "html": "\n<p>약 10일정도 잠시 쉬겠습니다-_-;;;;</p>\n<p>&nbsp;</p>\n"
+}

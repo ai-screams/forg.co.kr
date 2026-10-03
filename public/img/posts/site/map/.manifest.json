@@ -160,6 +160,14 @@
     "digest": "RN24PEIWT3BTHJAINBLIJHX2Y5W2KIWD"
   },
   {
+    "filename": "il_fullmap.gif",
+    "originalUrl": "http://forg.co.kr:80/map/il_fullmap.gif",
+    "capturedAt": "20020228122521",
+    "sizeBytes": 182939,
+    "sha256": "2967a314543a8ae504506b1145d2d0b0a99a0637b31a58d798a034ed55e25fbf",
+    "digest": "VJANO6LUMLRMNRZXOJLZZGXHPBRPNWFS"
+  },
+  {
     "filename": "il_li.gif",
     "originalUrl": "http://forg.co.kr:80/map/il_li.gif",
     "capturedAt": "20010909210915",
@@ -254,6 +262,14 @@
     "sizeBytes": 186587,
     "sha256": "9ae537aa54b8a1b8379f5a20c0eb5ab7e71acec61b84a4620297e10414d32e44",
     "digest": "FH6HJ26YADQWIBL3LE4JBHGA2ITHRORT"
+  },
+  {
+    "filename": "map.gif",
+    "originalUrl": "http://forg.co.kr:80/map/map.gif",
+    "capturedAt": "20020228142055",
+    "sizeBytes": 134765,
+    "sha256": "c5f2552504b8647c5f29b9b121f79d1f7a0c3a18588c8e2879de57a2840ea626",
+    "digest": "7HMO572BNELK3QUSEI23KV5QI4WYQBUG"
   },
   {
     "filename": "moon.gif",

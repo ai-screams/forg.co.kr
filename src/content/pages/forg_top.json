@@ -8,19 +8,23 @@
   "versions": [
     {
       "capturedAt": "2002-04-06T01:03:47",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020406010347"
     },
     {
       "capturedAt": "2002-04-07T16:10:12",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020407161012"
     },
     {
       "capturedAt": "2002-06-10T06:53:40",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020610065340"
     },
     {
       "capturedAt": "2002-10-17T10:47:19",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20021017104719"
     },
     {
       "capturedAt": "2002-12-04T20:47:55",
@@ -32,31 +36,38 @@
     },
     {
       "capturedAt": "2003-04-28T01:10:31",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030428011031"
     },
     {
       "capturedAt": "2003-07-14T20:11:33",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030714201133"
     },
     {
       "capturedAt": "2003-12-03T22:31:00",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031203223100"
     },
     {
       "capturedAt": "2003-12-05T00:43:03",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031205004303"
     },
     {
       "capturedAt": "2004-10-14T19:28:08",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20041014192808"
     },
     {
       "capturedAt": "2004-12-06T22:03:54",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20041206220354"
     },
     {
       "capturedAt": "2005-02-05T22:16:33",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050205221633"
     },
     {
       "capturedAt": "2007-10-10T23:50:14",

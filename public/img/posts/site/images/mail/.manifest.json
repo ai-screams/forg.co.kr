@@ -8,6 +8,54 @@
     "digest": "M6ZZLJ346DGVHZZ32LTUTTB3LVMUECGM"
   },
   {
+    "filename": "faq_1.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/faq_1.gif",
+    "capturedAt": "20030114084723",
+    "sizeBytes": 5843,
+    "sha256": "0dbd9df1a516b02433c79374488698c6d9cd07a5cc5ddc1db6fc90b2969abaca",
+    "digest": "6SQMDNDTRO27YXK3DZ67U5TGTC4DELIX"
+  },
+  {
+    "filename": "faq_2.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/faq_2.gif",
+    "capturedAt": "20020708004537",
+    "sizeBytes": 3466,
+    "sha256": "644733b3e9408b210caa926fb84ad8c4f2014a2d488fc2c16d102ce6d81fccf6",
+    "digest": "4LJ56XJLKEBQ4OEBBA2ZBKQLLAHJYNRF"
+  },
+  {
+    "filename": "faq_3.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/faq_3.gif",
+    "capturedAt": "20020708013541",
+    "sizeBytes": 3370,
+    "sha256": "2ed3970655bd290c1d5695449a7db3a7209a267adc8b661dda327a3158776ecc",
+    "digest": "VJA2GTGSTUDB5WCALWWXS62WXIVGPBSQ"
+  },
+  {
+    "filename": "faq_4.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/faq_4.gif",
+    "capturedAt": "20020708021834",
+    "sizeBytes": 7422,
+    "sha256": "816ae71d8d2429ecd49be6a9e90e052d52da57a36692d934f94ea5b1909943a7",
+    "digest": "5Y2D3GQQ2NZTJMQPG3QZZBVCFLGEWJMS"
+  },
+  {
+    "filename": "faq_5.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/faq_5.gif",
+    "capturedAt": "20020708025912",
+    "sizeBytes": 6363,
+    "sha256": "4cb97d2b37358a7417bd3a790faa5eabecd66397df6d4507f2df9501cb1acbdc",
+    "digest": "7FQ2YXVZXOCUM7I2VRJXQWVMIVSYA4EP"
+  },
+  {
+    "filename": "forg_dragon.gif",
+    "originalUrl": "http://forg.co.kr:80/images/mail/forg_dragon.gif",
+    "capturedAt": "20020708034209",
+    "sizeBytes": 9289,
+    "sha256": "0c08fff6e9b278c696d4e00d018ce9056bd522e25685fd68ccb9ff441f5baac3",
+    "digest": "5H2RYPZJVWIRBUUNYH5AATSYUZU6FIWX"
+  },
+  {
     "filename": "level1_write.gif",
     "originalUrl": "http://www.forg.co.kr/images/mail/level1_write.gif",
     "capturedAt": "20071021020800",

@@ -215,6 +215,22 @@
     "digest": "ZGD6KM6KM7OGBZKRIZYCMPSOAQQVG2RB"
   },
   {
+    "filename": "guild_logo_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/guild_logo_1.gif",
+    "capturedAt": "20010613165149",
+    "sizeBytes": 106706,
+    "sha256": "09f9164c8ce4f82ed2c95c3fda6724d9553f69404d4a043a3b05f914b17983da",
+    "digest": "UHSFHF7YF7R6RCM5N5VJDBET5ORHEUJH"
+  },
+  {
+    "filename": "guild_logo_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/guild_logo_2.gif",
+    "capturedAt": "20010613151935",
+    "sizeBytes": 99410,
+    "sha256": "045161b07354d693710f40d948b97f46f467490bc57359aa3ac373e2ea7ce528",
+    "digest": "IMNQLIE5BWZ5KATT2PNB37YUL52SLLUN"
+  },
+  {
     "filename": "guild_logo_3.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/guild_logo_3.gif",
     "capturedAt": "20010613165750",
@@ -325,6 +341,22 @@
     "sizeBytes": 303,
     "sha256": "bf0641d770f3047b0cbf1bf49088cfbf1b646fdd4ef82ca553d5ccfc60fbb6bc",
     "digest": "FKQ3NFJXCZ2BIEVRMEOCDY4XRSBJLCGQ"
+  },
+  {
+    "filename": "j_fo.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/j_fo.gif",
+    "capturedAt": "20020226015245",
+    "sizeBytes": 364,
+    "sha256": "50281a794b91b20aac782bc235a16d6b21972bcd8bd51deade9cbe5275d1d79a",
+    "digest": "V5ZMINYBXTMXZ67KHIHC23R6RMXMBJO5"
+  },
+  {
+    "filename": "j_her.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/left_menu/j_her.gif",
+    "capturedAt": "20020226030252",
+    "sizeBytes": 321,
+    "sha256": "99a0cefc3d232e3727c2f3dc3d0e8057cb58e4463c3e5e3a49ca844eb4d2a31b",
+    "digest": "4K3VV76SHRPD7TUGHI4EMTCM3BSB5XUH"
   },
   {
     "filename": "j_i.gif",

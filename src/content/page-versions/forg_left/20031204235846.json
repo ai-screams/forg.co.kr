@@ -1,0 +1,18 @@
+{
+  "stem": "forg_left",
+  "ts": "20031204235846",
+  "capturedAt": "2003-12-04T23:58:46",
+  "originalPath": "/forg_left.html",
+  "originalUrl": "http://forg.uospace.net:80/forg_left.html",
+  "baseTarget": "main",
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<p style=\"line-height:50%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:50%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:50%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:50%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.uospace.net:80/l_logo.gif\" data-recovery=\"missing\" height=\"30\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:100/30\" width=\"100\"></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.uospace.net:80/menubar.gif\" data-recovery=\"missing\" height=\"250\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:100/250\" usemap=\"#ImageMap1\" width=\"100\"></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><img border=\"0\" data-original-src=\"http://forg.uospace.net:80/l_logo_1.gif\" data-recovery=\"missing\" height=\"30\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:100/30\" width=\"100\"></p>\n<map name=\"ImageMap1\">\n<area alt=\"미드가드맵\" coords=\"22, 141, 85, 156\" href=\"https://web.archive.org/web/20031204235846/http://forg.uospace.net:80/midmap.html\" shape=\"rect\" target=\"_blank\">\n<area alt=\"길드자유게시판\" coords=\"23, 24, 83, 42\" href=\"https://web.archive.org/web/20031204235846/http://forg.co.kr/_zb/zboard.php?id=daoc_free\" shape=\"rect\" target=\"_blank\">\n<area alt=\"스펠크레프트계산기\" coords=\"21, 109, 86, 125\" href=\"https://web.archive.org/web/20031204235846/http://forg.uospace.net:80/cal.html\" shape=\"rect\" target=\"_blank\">\n</map>"
+}

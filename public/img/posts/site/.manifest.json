@@ -8,12 +8,84 @@
     "digest": "WPAXS3VFJI4E63PHCQTQM6KTCVTISVSW"
   },
   {
+    "filename": "best_19.gif",
+    "originalUrl": "http://forg.co.kr/best_19.gif",
+    "capturedAt": "20040209200356",
+    "sizeBytes": 15190,
+    "sha256": "da5f5a3daa815bedb8adc89b9d67e73dd87a8db3574a3e1e08d8fd20a00f6c7a",
+    "digest": "UPWRF6HHO66YU4PECW4Q2EI7YIQ5THWK"
+  },
+  {
+    "filename": "best_22.gif",
+    "originalUrl": "http://forg.co.kr/best_22.gif",
+    "capturedAt": "20040209200157",
+    "sizeBytes": 16334,
+    "sha256": "c008096a9bd8a9ea93a9bea79e1f9326301a38a92077b15069026a2a8ea7ecbf",
+    "digest": "F3ZNBGKIP5PKINBJR6UJLTTGOC3UPTK7"
+  },
+  {
+    "filename": "best_55.gif",
+    "originalUrl": "http://forg.co.kr/best_55.gif",
+    "capturedAt": "20050617212504",
+    "sizeBytes": 17253,
+    "sha256": "07884c7beea30e40514829a22a9bbded468e1cdcb721a19fd08d90eb694102e0",
+    "digest": "QQDTHV6QEYP5RFZ2PNVVDRPK5Q7T72P3"
+  },
+  {
+    "filename": "best_9.gif",
+    "originalUrl": "http://forg.co.kr:80/best_9.gif",
+    "capturedAt": "20021018174824",
+    "sizeBytes": 16720,
+    "sha256": "81283b125a2e683b382aa3a42f38dfb7798bdbde5957ada3d5af45a9f8228504",
+    "digest": "XXMELT6JH6NSCXQ4QC46SZ2WXBHLMPEL"
+  },
+  {
+    "filename": "best_screen.gif",
+    "originalUrl": "http://forg.co.kr:80/best_screen.gif",
+    "capturedAt": "20010809165655",
+    "sizeBytes": 20043,
+    "sha256": "8379372d7b0c1a15c4227d27028794b33730b9f2a6978952870855aad6dc7e92",
+    "digest": "FWW6NOU4TXVGGV4EBHPCM2ULX4J6TRFS"
+  },
+  {
+    "filename": "count.gif",
+    "originalUrl": "http://forg.co.kr:80/count.gif",
+    "capturedAt": "20021206152217",
+    "sizeBytes": 1676,
+    "sha256": "767cb1c99cf1b7bfd4c2400fea0de6863a9ae9776c3d1b708fa7e5f162496d08",
+    "digest": "3L7UTV7XCPRDQFV3I5L26JSJQITBLOTL"
+  },
+  {
+    "filename": "fishmap.gif",
+    "originalUrl": "http://forg.co.kr:80/fishmap.gif",
+    "capturedAt": "20010901003012",
+    "sizeBytes": 529333,
+    "sha256": "29085c0082cf3259a23ed9ab4214a5ac82b3d7168acf919cfbf9e676456d2d1d",
+    "digest": "3FAFXKPQJWWA7NMJWTGIBJXRW722XCOY"
+  },
+  {
+    "filename": "forg_main_logo_1.gif",
+    "originalUrl": "http://forg.co.kr:80/forg_main_logo_1.gif",
+    "capturedAt": "20010809165909",
+    "sizeBytes": 69464,
+    "sha256": "b6ef7f2f7ad88fff9b133471719912c933674642ec0d9ab52c58a39791cc39e5",
+    "digest": "DGTZDC4ZAZPPK6UI77DMUBNTEGQ3HU5J"
+  },
+  {
     "filename": "freeboard.gif",
     "originalUrl": "http://forg.co.kr:80/freeboard.gif",
     "capturedAt": "20010809170133",
     "sizeBytes": 2263,
     "sha256": "e8388f2ff181b36edd5c7b20c34bc2a63722939ababb344cfea5aed1dfd54cbb",
     "digest": "J2PNF6LRFAYWQLWNUWZHCTLPN3AJASE6"
+  },
+  {
+    "filename": "left_logo_uo_1.gif",
+    "originalUrl": "http://forg.co.kr:80/left_logo_uo_1.gif",
+    "capturedAt": "20010809170819",
+    "sizeBytes": 75991,
+    "sha256": "46e38182837477bfdfa68f6b9fd422067622a54dbdf1a9c51db6888208eaca69",
+    "digest": "NHRR7IZJ6EIVYTX2ASYI76ABHAL55QHW"
   },
   {
     "filename": "main_notice.gif",
@@ -46,5 +118,21 @@
     "sizeBytes": 1369,
     "sha256": "cb2586bd652df473eebab6ad8eb363d65da06cecd689306f60474da16717bd3e",
     "digest": "LULDES4V4LRJLH4CM76AV7NQBWM77VLX"
+  },
+  {
+    "filename": "t_logo.gif",
+    "originalUrl": "http://forg.uospace.net:80/t_logo.gif",
+    "capturedAt": "20010609110229",
+    "sizeBytes": 30243,
+    "sha256": "ce1393faa2c5f3a9d5effbbc71476ec24a947703c309cc0936774c127c57728b",
+    "digest": "LNKIT5RVXKCN3I3KYN7Z4LGQXT7225FL"
+  },
+  {
+    "filename": "t_logo_r.gif",
+    "originalUrl": "http://forg.uospace.net:80/t_logo_r.gif",
+    "capturedAt": "20010813040529",
+    "sizeBytes": 11139,
+    "sha256": "d7217f5c43ac47fe208ba331fe6626a1996747363d2d1870bd5d58984871aaac",
+    "digest": "B5A2JBNJN27FIB2BEV2RQTHVAVUNFL3H"
   }
 ]
