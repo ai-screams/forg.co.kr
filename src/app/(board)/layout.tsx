@@ -8,7 +8,8 @@
  * site recognisable.
  *
  * `<EraShell>` renders `children` once and swaps only the chrome per era,
- * which keeps 13,290 post pages from carrying their body twice.
+ * which keeps 14,837 post pages from carrying their body twice. Every board,
+ * list page and post sits in the same padded content cell.
  */
 
 import type { ReactNode } from "react";
@@ -16,5 +17,9 @@ import type { ReactNode } from "react";
 import { EraShell } from "@/components/era-shell";
 
 export default function BoardLayout({ children }: { children: ReactNode }) {
-  return <EraShell>{children}</EraShell>;
+  return (
+    <EraShell>
+      <div className="w-full flex-1 px-3 py-4">{children}</div>
+    </EraShell>
+  );
 }

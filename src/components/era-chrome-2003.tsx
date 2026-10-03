@@ -33,18 +33,16 @@
  * and bottom frames, worn by every route through `<EraShell>`; the main
  * frame's home content is `Home2003Content` in `home-2003.tsx`.
  *
- * Chrome assets come from `public/img/chrome/` (Wayback-recovered in P2.4).
- * Most section headers (`m_*.gif`, `r_*.gif`) and menu buttons
- * (`t_b_*.gif`, `t_hi.gif`) are present. Missing decorative assets
- * (`m_middle_logo.gif`, `r_logo_1.gif`, `forg_main_logo_1.gif`) fall back
- * to typography so the layout never breaks.
+ * Chrome assets come from `public/img/chrome/` (recovered from Wayback). The
+ * one piece of this frame Wayback never kept, the BGM bar's `bgm_en.gif`
+ * ENTER button, is drawn as a text button.
  */
 
 import type { ReactNode } from "react";
 
 import {
-  InertChrome,
   InertJumpMenu,
+  LoginBar,
   MenuRow,
   MobileMenu,
   TBarRow,
@@ -53,7 +51,7 @@ import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
 /** Every asset on this surface is asked for at its 2003 capture. Without it
@@ -110,15 +108,15 @@ const FRIEND_SITE_MENU = [
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
-  /** Plain-text fallback when the asset can't load. */
-  fallback: string;
+  /** The header's name: its alt text, and the phone menu's heading. */
+  label: string;
   /** A jump menu under the header, before the links (`InertJumpMenu`). */
   jumpMenu?: { id: string; options: (string | null)[]; note: ReactNode };
   links: { label: string; href: string }[];
 }[] = [
   {
     asset: "m_info.gif",
-    fallback: "Information",
+    label: "Information",
     links: [
       { label: "-초보자지침서", href: "/site/skill/uo_newbie/" },
       { label: "-초보자게시판", href: "/Newbie" },
@@ -134,7 +132,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_co.gif",
-    fallback: "Cooperation",
+    label: "Cooperation",
     links: [
       { label: "-벤더광고란", href: "/Vendor" },
       { label: "-아리랑장터란", href: "/Tarirang" },
@@ -145,7 +143,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_remember.gif",
-    fallback: "Reminisce",
+    label: "Reminisce",
     links: [
       { label: "-UO.만화", href: "/site/lomo/index/" },
       { label: "-UO.여행기", href: "/site/spotlight/spot_130/" },
@@ -155,7 +153,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_forg.gif",
-    fallback: "Forg.Board",
+    label: "Forg.Board",
     links: [
       { label: "-공동작업란", href: "/monster" },
       { label: "-포토갤러리", href: "/porato" },
@@ -167,7 +165,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_friend.gif",
-    fallback: "Friend Site",
+    label: "Friend Site",
     // Every uospace.net friend site the select led to is gone.
     jumpMenu: {
       id: "friend-site-note",
@@ -199,7 +197,6 @@ export function FrameTop2003() {
   // from 2014's left_logo1.gif), then three 580px rows: the #FFC73B login
   // bar, a 4px t_bar.gif rule and the menu row of 80×20 buttons. 18+4+20
   // equals the logo height, so the art spans all three rows.
-  const leftLogo = chromeUrl("left_logo.gif", ERA);
   const tLineUrl = chromeUrl("t_line.gif", ERA);
 
   return (
@@ -211,31 +208,16 @@ export function FrameTop2003() {
           aria-label="forg.co.kr 메인"
           className="row-span-3 flex items-start justify-start"
         >
-          {leftLogo ? (
-            <LazyImg src={leftLogo} alt="Forg's World" width={100} height={42} className="block" />
-          ) : (
-            <span className="text-forg-ink block px-1 font-mono text-base leading-tight font-bold">
-              forg<span className="text-forg-ink/70">&apos;s World</span>
-            </span>
-          )}
+          <LazyImg
+            src={chromeUrl("left_logo.gif", ERA)}
+            alt="Forg's World"
+            width={100}
+            height={42}
+            className="block"
+          />
         </Link>
 
-        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
-          <InertChrome
-            era={ERA}
-            asset="t_login.gif"
-            label="Login"
-            title="박물관 모드 — 로그인 비활성"
-            height={18}
-          />
-          <InertChrome
-            era={ERA}
-            asset="t_sign.gif"
-            label="Sign Up"
-            title="박물관 모드 — 회원가입 비활성"
-            height={18}
-          />
-        </div>
+        <LoginBar era={ERA} height={18} />
 
         <TBarRow era={ERA} />
 
@@ -249,9 +231,9 @@ export function FrameTop2003() {
       </div>
       <MobileMenu label="사이드바">
         {SIDEBAR_SECTIONS.map((section) => (
-          <div key={section.fallback} className="col-span-2 mt-1">
+          <div key={section.label} className="col-span-2 mt-1">
             <p className="text-forg-gold-hover mb-[2px] text-[11px] font-bold tracking-wide">
-              {section.fallback}
+              {section.label}
             </p>
             <div className="grid grid-cols-2 gap-x-4">
               {section.links.map((link) => (
@@ -274,41 +256,28 @@ export function FrameTop2003() {
 }
 
 function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
-  const assetUrl = chromeUrl(item.asset, ERA);
-  if (assetUrl) {
-    return (
-      <Link
-        href={`/${item.id}`}
-        className="hover:bg-forg-gold/15 inline-block shrink-0"
-        title={item.label}
-      >
-        {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
-           into the chrome bar's gray (white × gray = gray), so the buttons
-           blend instead of floating as white tiles. */}
-        <LazyImg
-          src={assetUrl}
-          alt={item.label}
-          width={80}
-          height={20}
-          className="block h-[20px] w-[80px]"
-        />
-        <span className="sr-only">{item.label}</span>
-      </Link>
-    );
-  }
   return (
     <Link
       href={`/${item.id}`}
-      className="border-forg-gold/40 hover:bg-forg-gold/20 inline-block h-[20px] w-[80px] shrink-0 border-b-2 bg-white px-1 text-[10px] leading-[16px] font-bold"
+      className="hover:bg-forg-gold/15 inline-block shrink-0"
+      title={item.label}
     >
-      {item.label}
+      {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
+         into the chrome bar's gray (white × gray = gray), so the buttons
+         blend instead of floating as white tiles. */}
+      <LazyImg
+        src={chromeUrl(item.asset, ERA)}
+        alt={item.label}
+        width={80}
+        height={20}
+        className="block h-[20px] w-[80px]"
+      />
+      <span className="sr-only">{item.label}</span>
     </Link>
   );
 }
 
 function FaqIcon2003() {
-  const url = chromeUrl("t_b_right.gif", ERA);
-  if (!url) return null;
   return (
     <span
       aria-label="Site FAQ (박물관 모드, 비활성)"
@@ -316,7 +285,7 @@ function FaqIcon2003() {
       className="inline-block shrink-0 opacity-80"
     >
       <LazyImg
-        src={url}
+        src={chromeUrl("t_b_right.gif", ERA)}
         alt="Site FAQ"
         width={20}
         height={20}
@@ -340,7 +309,7 @@ export function FrameLeft2003() {
     >
       <nav className="flex flex-col gap-2.5">
         {SIDEBAR_SECTIONS.map((section) => (
-          <SidebarSection2003 key={section.fallback} section={section} />
+          <SidebarSection2003 key={section.label} section={section} />
         ))}
       </nav>
     </aside>
@@ -348,27 +317,20 @@ export function FrameLeft2003() {
 }
 
 function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[number] }) {
-  const headerUrl = chromeUrl(section.asset, ERA);
   return (
     <div>
-      {headerUrl ? (
-        <LazyImg
-          src={headerUrl}
-          alt={section.fallback}
-          width={100}
-          height={25}
-          className="mb-1 block h-[25px] w-[100px]"
-        />
-      ) : (
-        <h3 className="text-forg-gold-hover mb-1 text-[11px] font-bold tracking-wide uppercase">
-          {section.fallback}
-        </h3>
-      )}
+      <LazyImg
+        src={chromeUrl(section.asset, ERA)}
+        alt={section.label}
+        width={100}
+        height={25}
+        className="mb-1 block h-[25px] w-[100px]"
+      />
       {section.jumpMenu && (
         <p className="mb-1 pl-1">
           <InertJumpMenu
             id={section.jumpMenu.id}
-            label={section.fallback}
+            label={section.label}
             options={section.jumpMenu.options}
             note={section.jumpMenu.note}
             className="border-forg-ink/30 text-forg-ink/70 border bg-white text-[11px]"
@@ -402,36 +364,35 @@ export function FrameBottom2003() {
   // right-aligned. The frame also started a Shoutcast stream on load
   // (`onload="cast()"`, mulple.com), which is the "bgm" in the filenames;
   // the museum keeps the counter and the search and drops the music.
-  const bgUrl = chromeUrl("bgm_bg.gif", ERA);
-  const countUrl = chromeUrl("count.gif", ERA);
-  const serUrl = chromeUrl("bgm_ser.gif", ERA);
-  const enUrl = chromeUrl("bgm_en.gif", ERA);
-  const rightUrl = chromeUrl("bgm_right.gif", ERA);
-  const tile = tileStyle(bgUrl, "repeat-x");
+  const enUrl = optionalChrome("bgm_en.gif", ERA); // never captured
 
   return (
     <footer
       role="group"
       aria-label="누적 방문 (2003-06-03 기준 박제) · 검색"
       className="bg-forg-bgm text-forg-cream flex h-[24px] w-full shrink-0 items-center text-[11px]"
-      style={tile}
+      style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <div className="flex h-[24px] w-[50px] shrink-0 items-end">
-        {countUrl ? (
-          <LazyImg src={countUrl} alt="Total :" width={50} height={24} className="block" />
-        ) : (
-          <span className="pl-1 font-bold">Total :</span>
-        )}
+        <LazyImg
+          src={chromeUrl("count.gif", ERA)}
+          alt="Total :"
+          width={50}
+          height={24}
+          className="block"
+        />
       </div>
       <span className="w-[70px] shrink-0 pt-[6px] font-mono text-[11px] tabular-nums">
         {VISITORS_2003}
       </span>
       <form action="/search" method="get" className="flex h-[24px] grow items-center gap-[4px]">
-        {serUrl ? (
-          <LazyImg src={serUrl} alt="SEARCH" width={50} height={24} className="block" />
-        ) : (
-          <span className="font-bold">SEARCH</span>
-        )}
+        <LazyImg
+          src={chromeUrl("bgm_ser.gif", ERA)}
+          alt="SEARCH"
+          width={50}
+          height={24}
+          className="block"
+        />
         <input
           type="search"
           name="q"
@@ -452,15 +413,13 @@ export function FrameBottom2003() {
           </button>
         )}
       </form>
-      {rightUrl && (
-        <LazyImg
-          src={rightUrl}
-          alt=""
-          width={150}
-          height={24}
-          className="hidden h-[24px] w-auto shrink-0 sm:block"
-        />
-      )}
+      <LazyImg
+        src={chromeUrl("bgm_right.gif", ERA)}
+        alt=""
+        width={150}
+        height={24}
+        className="hidden h-[24px] w-auto shrink-0 sm:block"
+      />
     </footer>
   );
 }

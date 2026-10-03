@@ -165,9 +165,11 @@ export async function getBoardView(board: BoardId): Promise<BoardView> {
 export async function getRecentPostEntries(
   board: BoardId,
   count: number,
-): Promise<{ entries: BoardIndexEntry[]; totalPosts: number } | null> {
+): Promise<{ entries: BoardIndexEntry[]; totalPosts: number }> {
   const firstPage = await getBoardIndex(board, 1);
-  if (!firstPage) return null;
+  // A home box names a board with an index; one without is a configuration
+  // error to fix at build time, not an empty box.
+  if (!firstPage) throw new Error(`home box: board ${board} has no index`);
 
   const entries = firstPage.entries.filter((e) => e.hasPost);
   for (let page = 2; entries.length < count && page <= firstPage.totalPages; page++) {

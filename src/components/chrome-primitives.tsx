@@ -12,12 +12,52 @@ import { LazyImg } from "@/components/lazy-img";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
+/** The 10px slate rail left of the sidebar. */
+export function LeftRail() {
+  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
+}
+
+/** The 7px rail right of the content column, tiled with the 2014 `right_bg.gif` in both eras. */
+export function RightRail() {
+  return (
+    <div
+      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
+      style={tileStyle(chromeUrl("right_bg.gif", "2014"), "repeat")}
+    />
+  );
+}
+
+/**
+ * The #FFC73B login bar of the 2014 and 2003 headers: Login and Sign Up,
+ * recovered and deliberately not wired up.
+ */
+export function LoginBar({ era, height }: { era: Era; height: number }) {
+  return (
+    <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
+      <InertChrome
+        era={era}
+        asset="t_login.gif"
+        label="Login"
+        title="박물관 모드 — 로그인 비활성"
+        height={height}
+      />
+      <InertChrome
+        era={era}
+        asset="t_sign.gif"
+        label="Sign Up"
+        title="박물관 모드 — 회원가입 비활성"
+        height={height}
+      />
+    </div>
+  );
+}
+
 /**
  * A recovered login/sign-up button the museum deliberately does not wire up.
  * 70 wide; the height is the era's own (`<img height=15>` in 2014, 18 in
  * frame-top-2003, whose art is taller).
  */
-export function InertChrome({
+function InertChrome({
   era,
   asset,
   label,
@@ -30,20 +70,15 @@ export function InertChrome({
   title: string;
   height: number;
 }) {
-  const url = chromeUrl(asset, era);
-  if (!url) {
-    return (
-      <span
-        aria-disabled
-        title={title}
-        className="text-forg-ink/80 rounded-sm bg-white/60 px-2 py-[1px] text-[10px] font-bold uppercase select-none"
-      >
-        {label}
-      </span>
-    );
-  }
   return (
-    <LazyImg src={url} alt={label} title={title} width={70} height={height} className="block" />
+    <LazyImg
+      src={chromeUrl(asset, era)}
+      alt={label}
+      title={title}
+      width={70}
+      height={height}
+      className="block"
+    />
   );
 }
 

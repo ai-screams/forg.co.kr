@@ -10,8 +10,18 @@ import type { AuthorRef } from "@/components/author-name";
 /** Tooltip of a title-only row's title, in every era. */
 export const NO_BODY_TOOLTIP = "본문은 캡처되지 않았습니다 — 목록에 남은 제목";
 
-/** Tooltip of a date whose year was inferred (`≈`). */
-export const YEAR_GUESS_TOOLTIP = "목록에는 월/일만 있어 연도는 추정";
+/**
+ * How a row's date was arrived at when no capture printed it whole, and how
+ * every era marks it: `year` — the list printed MM/DD and the year was
+ * inferred; `firstComment` — the post's own date was missing and its first
+ * comment's time stands in.
+ */
+export type DateApprox = "year" | "firstComment";
+
+export const DATE_APPROX: Readonly<Record<DateApprox, { mark: string; tooltip: string }>> = {
+  year: { mark: "≈", tooltip: "목록에는 월/일만 있어 연도는 추정" },
+  firstComment: { mark: "≤", tooltip: "작성일이 캡처에 없어 첫 댓글 시각으로 대신함" },
+};
 
 /**
  * One list row, for every view of it: the phone list, the 2014/2003 table and
@@ -27,6 +37,8 @@ export interface ListRow {
   /** Rendered by each view, so a plain name is a string in each, not a reference. */
   author: AuthorRef;
   createdAt: string | null;
+  /** Set when `createdAt` is not the post's own full date (`DATE_APPROX`). */
+  dateApprox: DateApprox | null;
   hits: number | null;
   /**
    * The 2014/2003 cells, built once: the phone list and the table share each

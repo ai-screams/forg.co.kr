@@ -1,10 +1,8 @@
 /**
- * 2014-era chrome: the frame the exhibit sits in.
- *
- * Extracted from `src/app/page.tsx` so the board and post routes can wear
- * the same frame as the home page (`<EraShell>` in `era-shell.tsx`).
- * Nothing here fetches data — these are the rails, the sidebar, the header
- * and the counter strip, all reproduced from the 2014-12-18 capture.
+ * 2014-era chrome, from the 2014-12-18 capture: `FrameTop2014` (logo, login
+ * bar, seven-button menu), `FrameLeft2014` (the game-category sidebar) and
+ * `FrameBottom2014` (the visitor counter strip). `<EraShell>` puts them
+ * around every page; nothing here fetches data.
  *
  * Every dimension below is a value the original markup declares, not a
  * measurement of the artwork. The distinction matters: `t_bar.gif` is
@@ -17,15 +15,15 @@ import { Fragment } from "react";
 import Link from "@/components/link";
 
 import {
-  InertChrome,
   InertJumpMenu,
+  LoginBar,
   MenuRow,
   MobileMenu,
   TBarRow,
 } from "@/components/chrome-primitives";
 import { LazyImg } from "@/components/lazy-img";
 import { type BoardId } from "@/lib/boards";
-import { chromeUrl, tileStyle } from "@/lib/chrome";
+import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
@@ -65,38 +63,15 @@ const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
   { id: "Console", label: "-콘솔게임", title: ":::XBOX,PS3,Wii,PSP:::" },
 ];
 
-/** Static carry-over from the 2014-12-18 snapshot footer. HITL #3:
- *  keep faithful museum number, plug in live tracking later. */
+/** The 2014-12-18 footer's total, kept as the exhibit shows it. */
 const TOTAL_VISITORS = 52_916_713;
-
-/* ──────────────────────────────────────────────────────────────────── */
-/*  Site rails                                                            */
-/* ──────────────────────────────────────────────────────────────────── */
-
-export function LeftRail() {
-  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
-}
-
-export function RightRail() {
-  const bgUrl = chromeUrl("right_bg.gif", ERA);
-  return (
-    <div
-      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
-      style={tileStyle(bgUrl, "repeat")}
-    />
-  );
-}
 
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Game category sidebar (100px)                                         */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function GameCategorySidebar() {
+export function FrameLeft2014() {
   const sidebarStyle = tileStyle(chromeUrl("left_bg.gif", ERA), "repeat");
-
-  // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
-  // appears only in frame-left-2007 and never in 2014-12-18.
-  const barUrl = chromeUrl("l_bar.gif", ERA);
 
   return (
     <aside
@@ -104,7 +79,9 @@ export function GameCategorySidebar() {
       className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) min-[800px]:flex"
       style={sidebarStyle}
     >
-      {barUrl && <LazyImg src={barUrl} alt="" width={86} height={2} className="block" />}
+      {/* The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
+          appears only in frame-left-2007 and never in 2014-12-18. */}
+      <LazyImg src={chromeUrl("l_bar.gif", ERA)} alt="" width={86} height={2} className="block" />
       <nav className="flex flex-col text-left text-[12px]">
         {GAME_CATEGORIES.map((cat, i) => (
           <Fragment key={cat.id}>
@@ -154,9 +131,15 @@ function FamilySiteSelect() {
 }
 
 function SidebarSpacer({ height }: { height: number }) {
-  const url = chromeUrl("blank_l_line.gif", ERA);
-  if (!url) return <div style={{ height }} aria-hidden />;
-  return <LazyImg src={url} alt="" width={86} height={height} className="block" />;
+  return (
+    <LazyImg
+      src={chromeUrl("blank_l_line.gif", ERA)}
+      alt=""
+      width={86}
+      height={height}
+      className="block"
+    />
+  );
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -169,10 +152,7 @@ function SidebarSpacer({ height }: { height: number }) {
 // left_logo1.gif — the logo art is drawn to span all three rows, its top
 // edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
 // as a white gap under the logo and breaks that blend.
-export function SiteHeader2014() {
-  const logoUrl = chromeUrl("left_logo1.gif", ERA);
-  const tLineUrl = chromeUrl("t_line.gif", ERA);
-
+export function FrameTop2014() {
   return (
     <div className="border-b border-(--era-input-border) bg-white">
       {/* `minmax(0,1fr)`: a plain `1fr` cannot shrink below the 580px menu row,
@@ -184,32 +164,15 @@ export function SiteHeader2014() {
         {/* `<td height="37px" width="100px" rowspan="3">` held the 100×42 logo
             with no padding. */}
         <Link href="/" className="row-span-3 flex items-start justify-start">
-          {logoUrl ? (
-            <LazyImg src={logoUrl} alt="forg.co.kr" width={100} height={42} />
-          ) : (
-            <span className="font-forg flex flex-col leading-tight">
-              <span className="text-forg-ink text-base font-bold tracking-tight">forg.co.kr</span>
-              <span className="text-forg-muted text-[10px]">Forg&apos;s World</span>
-            </span>
-          )}
+          <LazyImg
+            src={chromeUrl("left_logo1.gif", ERA)}
+            alt="forg.co.kr"
+            width={100}
+            height={42}
+          />
         </Link>
 
-        <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2 text-[10px]">
-          <InertChrome
-            era={ERA}
-            asset="t_login.gif"
-            label="Login"
-            title="박물관 모드 — 로그인 비활성"
-            height={15}
-          />
-          <InertChrome
-            era={ERA}
-            asset="t_sign.gif"
-            label="Sign Up"
-            title="박물관 모드 — 회원가입 비활성"
-            height={15}
-          />
-        </div>
+        <LoginBar era={ERA} height={15} />
 
         <TBarRow era={ERA} />
 
@@ -230,9 +193,11 @@ export function SiteHeader2014() {
           </Link>
         ))}
       </MobileMenu>
-      {tLineUrl && (
-        <div aria-hidden className="h-[12px] w-full" style={tileStyle(tLineUrl, "repeat-x")} />
-      )}
+      <div
+        aria-hidden
+        className="h-[12px] w-full"
+        style={tileStyle(chromeUrl("t_line.gif", ERA), "repeat-x")}
+      />
     </div>
   );
 }
@@ -243,42 +208,37 @@ export function SiteHeader2014() {
  * was already dead on the live site, so the museum draws it and nothing else.
  */
 function MenuTailCap() {
-  const url = chromeUrl("t_b_right.gif", ERA);
-  if (!url) return null;
-  return <LazyImg src={url} alt="" aria-hidden width={20} height={20} className="block shrink-0" />;
+  return (
+    <LazyImg
+      src={chromeUrl("t_b_right.gif", ERA)}
+      alt=""
+      aria-hidden
+      width={20}
+      height={20}
+      className="block shrink-0"
+    />
+  );
 }
 
 function MenuButton({ item }: { item: MenuConfig }) {
-  const baseUrl = chromeUrl(item.asset, ERA);
-  const hoverUrl = chromeUrl(item.hoverAsset, ERA);
-
-  if (baseUrl) {
-    // CSS-only hover swap via background-image overlay (SSG-safe).
-    return (
-      <Link
-        href={`/${item.id}`}
-        aria-label={item.label}
-        className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
-        style={tileStyle(baseUrl, "no-repeat")}
-      >
-        {hoverUrl && (
-          <span
-            aria-hidden
-            className="absolute inset-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
-            style={tileStyle(hoverUrl, "no-repeat")}
-          />
-        )}
-        <span className="sr-only">{item.label}</span>
-      </Link>
-    );
-  }
-
+  // Wayback kept three of the seven hover images (freeboard, boo, trash).
+  const hoverUrl = optionalChrome(item.hoverAsset, ERA);
+  // CSS-only hover swap via background-image overlay (SSG-safe).
   return (
     <Link
       href={`/${item.id}`}
-      className="border-forg-gold/40 hover:bg-forg-gold/20 hover:border-forg-gold flex h-[20px] w-[80px] shrink-0 items-center justify-center border-b-2 bg-white text-[10px] font-bold transition-colors"
+      aria-label={item.label}
+      className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
+      style={tileStyle(chromeUrl(item.asset, ERA), "no-repeat")}
     >
-      {item.label}
+      {hoverUrl && (
+        <span
+          aria-hidden
+          className="absolute inset-0 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+          style={tileStyle(hoverUrl, "no-repeat")}
+        />
+      )}
+      <span className="sr-only">{item.label}</span>
     </Link>
   );
 }
@@ -287,30 +247,25 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /*  Footer counter (24px)                                                 */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function VisitorCounter() {
-  const bgUrl = chromeUrl("bgm_bg.gif", ERA);
-  const rightUrl = chromeUrl("bgm_right.gif", ERA);
-
+export function FrameBottom2014() {
   return (
     <footer
       role="group"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
       className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
-      style={tileStyle(bgUrl, "repeat-x")}
+      style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
-        2014-12-18 · 박물관 박제 · 후속 ADR 에서 라이브 카운터 검토
+        2014-12-18 기준 · 박물관 박제
       </span>
-      {rightUrl && (
-        <LazyImg
-          src={rightUrl}
-          alt=""
-          width={150}
-          height={24}
-          className="hidden h-[24px] w-auto sm:block"
-        />
-      )}
+      <LazyImg
+        src={chromeUrl("bgm_right.gif", ERA)}
+        alt=""
+        width={150}
+        height={24}
+        className="hidden h-[24px] w-auto sm:block"
+      />
     </footer>
   );
 }

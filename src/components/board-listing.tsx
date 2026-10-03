@@ -10,11 +10,13 @@
  *                                 `/{board}/{postId}` route disambiguated)
  */
 
+import { BoardHeader, BoardNote } from "@/components/board-header";
 import { indexRows } from "@/components/board-rows";
 import Link from "@/components/link";
-import { listSkinOf, ListTable, type ListSkin } from "@/components/list-skin";
+import { ListTable } from "@/components/list-skin";
 
 import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
+import { boardSkin, type ListSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
 import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
@@ -25,24 +27,20 @@ interface BoardListingProps {
 
 export function BoardListing({ board, page }: BoardListingProps) {
   const meta = getBoardOrThrow(board);
-  const skin = listSkinOf(meta.engine);
+  const skin = boardSkin(meta);
 
   return (
     <article className="text-forg-ink">
-      <header className="pb-2">
-        <h1 className="text-forg-ink text-[14px] font-bold">{meta.nameKr}</h1>
-        {meta.description && (
-          <p className="text-forg-muted mt-[2px] text-[11px]">{meta.description}</p>
-        )}
-        <p className="text-forg-muted mt-[2px] text-[11px]">
+      <BoardHeader meta={meta}>
+        <BoardNote>
           전체 {page.totalPosts.toLocaleString("ko-KR")}개
           {page.totalWithPost < page.totalPosts
             ? ` (본문 보존 ${page.totalWithPost.toLocaleString("ko-KR")}개 · "본문 없음"은 목록에 제목만 남은 글)`
             : ""}{" "}
           · {page.page} / {page.totalPages} 페이지
-        </p>
+        </BoardNote>
         {meta.continues && meta.continues.length > 0 && (
-          <p className="text-forg-muted mt-[2px] text-[11px]">
+          <BoardNote>
             이전 게시판(
             {meta.continues.filter(isBoardId).map((id, i) => (
               <span key={id}>
@@ -53,9 +51,9 @@ export function BoardListing({ board, page }: BoardListingProps) {
               </span>
             ))}
             )의 글을 이어 붙였습니다. 누르면 그 게시판의 글로 갑니다.
-          </p>
+          </BoardNote>
         )}
-      </header>
+      </BoardHeader>
 
       <PostTable board={board} page={page} skin={skin} />
 
@@ -73,14 +71,6 @@ function PostTable({
   page: BoardIndexPage;
   skin: ListSkin;
 }) {
-  if (page.entries.length === 0) {
-    return (
-      <p className="text-forg-muted px-2 py-10 text-center text-[11px]">
-        이 페이지에는 게시글이 없습니다.
-      </p>
-    );
-  }
-
   // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
   // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
   return (

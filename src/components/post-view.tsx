@@ -13,22 +13,22 @@
  * for a static-export read-only museum.
  */
 
-import { AuthorName, POST_SEED } from "@/components/author-name";
+import { PostAuthor } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
-import { listSkinOf } from "@/components/list-skin";
-import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
+import { CommentList2001, PostHead2001 } from "@/components/post-view-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { getBoardOrThrow, type Board, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
 import type { AdjacentPosts } from "@/lib/posts";
+import { captureSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardIndexEntry, Post } from "@/types/post";
 
 interface PostViewProps {
   post: Post;
-  adjacent?: AdjacentPosts;
+  adjacent: AdjacentPosts;
 }
 
 export function PostView({ post, adjacent }: PostViewProps) {
@@ -50,7 +50,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       </span>
 
       <div className="era-2001-only">
-        <ViewHead2001 skin={skin2001Of(board.id)} post={post} />
+        <PostHead2001 skin={skin2001Of(board.id)} post={post} />
       </div>
       <PostHead post={post} board={board} />
 
@@ -61,7 +61,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       <PostAttachments post={post} />
       <PostComments post={post} />
 
-      {adjacent && (adjacent.prev ?? adjacent.next) ? (
+      {(adjacent.prev ?? adjacent.next) ? (
         <div data-pagefind-ignore>
           <PostNavigation
             board={board.id}
@@ -79,14 +79,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
 function PostHead({ post, board }: { post: Post; board: Board }) {
   // 작성일이 1970년인 Zeroboard NULL placeholder는 캡처 시점을 보조 표시.
   const capturedDate = isUnknownDate(post.createdAt) ? formatWaybackTs(post.capturedAt) : null;
-  const author = (
-    <AuthorName
-      board={post.board}
-      name={post.author}
-      memberNo={post.authorMemberNo}
-      seed={POST_SEED}
-    />
-  );
+  const author = <PostAuthor post={post} />;
 
   return (
     <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
@@ -185,7 +178,7 @@ function PostComments({ post }: { post: Post }) {
   return (
     <>
       <div className="era-2001-only">
-        <Comments2001 post={post} />
+        <CommentList2001 post={post} />
       </div>
       {post.comments.length > 0 && (
         <section
@@ -196,11 +189,7 @@ function PostComments({ post }: { post: Post }) {
           <h2 id={`comments-${post.postId}`} className="sr-only">
             댓글 {post.comments.length}
           </h2>
-          <CommentList
-            board={post.board}
-            comments={post.comments}
-            skin={listSkinOf(post.sourceEngine)}
-          />
+          <CommentList board={post.board} comments={post.comments} skin={captureSkin(post)} />
         </section>
       )}
     </>
@@ -224,8 +213,6 @@ function PostNavigation({
   prev: BoardIndexEntry | null;
   next: BoardIndexEntry | null;
 }) {
-  if (!prev && !next) return null;
-
   return (
     <nav aria-label="게시글 네비게이션" className="border-t border-(--era-input-border) px-6 py-4">
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">

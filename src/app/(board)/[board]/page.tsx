@@ -2,11 +2,10 @@
  * Board landing — page 1 of `/[board]`.
  *
  * Static export with `dynamicParams = false`. `generateStaticParams`
- * enumerates every board id from `src/lib/boards.ts` so ALL documented
- * boards have a stable URL — boards whose posts haven't been parsed yet
- * (Gnuboard4 / Phase B / forg.kr) render a `<BoardPlaceholder>` rather
- * than 404. The museum's promise: every documented board lives at a
- * URL, even if it's still empty.
+ * enumerates every board id from `src/lib/boards.ts`, so every documented
+ * board has a stable URL (ADR-0013): `getBoardView` picks its index, else
+ * its captured list pages, else `<BoardPlaceholder>` for a board Wayback
+ * kept nothing readable of.
  *
  * Page 1 is canonical at `/{board}/`; pages 2+ live under
  * `/{board}/page/{N}/` to avoid colliding with the post route at
@@ -18,7 +17,6 @@ import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
 import { BoardListingOnly } from "@/components/board-listing-only";
-import { BoardMain } from "@/components/board-main";
 import { BoardPlaceholder } from "@/components/board-placeholder";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardView } from "@/lib/posts";
@@ -57,8 +55,8 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
       };
     case "placeholder":
       return {
-        title: `${nameKr} (준비 중) — forg.co.kr`,
-        description: `${nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
+        title: `${nameKr} — forg.co.kr`,
+        description: `${nameKr} 게시판 — Wayback Machine에 읽을 수 있는 글이나 목록이 남지 않았습니다.`,
       };
   }
 }
@@ -68,15 +66,11 @@ export default async function BoardPageOne({ params }: RouteProps) {
   if (!isBoardId(board)) notFound();
 
   const view = await getBoardView(board);
-  return (
-    <BoardMain>
-      {view.kind === "index" ? (
-        <BoardListing board={board} page={view.page} />
-      ) : view.kind === "listing" ? (
-        <BoardListingOnly board={board} listing={view.listing} />
-      ) : (
-        <BoardPlaceholder meta={getBoard(board)} />
-      )}
-    </BoardMain>
+  return view.kind === "index" ? (
+    <BoardListing board={board} page={view.page} />
+  ) : view.kind === "listing" ? (
+    <BoardListingOnly board={board} listing={view.listing} />
+  ) : (
+    <BoardPlaceholder meta={getBoard(board)} />
   );
 }

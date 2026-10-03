@@ -14,6 +14,18 @@ paths:
 - Era-specific `<img>`s carry `loading="lazy"`: a hidden era's images then never load, and React does not emit `<link rel=preload>` for them.
 - Colours are **OKLCH** with the original sRGB hex in an adjacent comment.
 
+## Adding an era
+
+The 2001 era (ADR-0019) touched these; a new one touches the same:
+
+1. `src/lib/era.ts` — `ERAS` (the layout's pre-hydration script and `<EraToggle>` read it) and `ERA_LABELS`.
+2. `src/app/globals.css` — the `:root[data-era="…"]` tokens, `.era-…-only` visibility, and the toggle's `[data-era-option]` pressed colour.
+3. The frame — `era-chrome-….tsx` with `FrameTop…` (plus `FrameLeft…` / `FrameBottom…` if the era had those frames), slotted into `era-shell.tsx`.
+4. The home — `home-….tsx` (`Home…Content`), handed to `<EraShell>` by `src/app/page.tsx` as a new `content…` prop.
+5. Lists and posts, if the era drew them differently — a view beside the others, built from the same `ListRow` / `Post` and shown with `.era-…-only` (as `list-skin-2001.tsx`, `PostHead2001`, `CommentList2001`).
+6. Assets — `public/img/chrome/{era}/`, looked up with `chromeUrl(asset, era)`.
+7. An ADR.
+
 ## Mobile layout
 
 - Desktop (≥800px, where 10+100+680+7 fits) keeps each frame pixel-identical to the original; the shell switches at `min-[800px]`. Narrow-only fixes go behind `max-[799px]:`. The one chosen departure: every era's frame is centred, with slate on both sides in 2014/2003 where the originals sat left with a slate `1*` column (2026-10-03).
