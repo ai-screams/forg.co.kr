@@ -11,7 +11,7 @@ import type { ReactNode } from "react";
 
 import { LazyImg } from "@/components/lazy-img";
 import Link from "@/components/link";
-import { NO_BODY_TOOLTIP, YEAR_GUESS_TOOLTIP, type ListRow } from "@/components/list-row";
+import { DATE_APPROX, NO_BODY_TOOLTIP, type DateApprox, type ListRow } from "@/components/list-row";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate } from "@/lib/dates";
@@ -75,9 +75,16 @@ function TitleCell({
   );
 }
 
-/** A date whose year was inferred: `≈` plus why, as a tooltip. */
-function yearGuess(iso: string): ReactNode {
-  return <span title={YEAR_GUESS_TOOLTIP}>≈{formatShortDate(iso)}</span>;
+/** The 2014/2003 date, with its mark and tooltip when it is approximate. */
+function shortDate(iso: string, approx: DateApprox | null): ReactNode {
+  if (!approx) return formatShortDate(iso);
+  const { mark, tooltip } = DATE_APPROX[approx];
+  return (
+    <span title={tooltip}>
+      {mark}
+      {formatShortDate(iso)}
+    </span>
+  );
 }
 
 export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin): ListRow[] {
@@ -85,6 +92,11 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
   return page.entries.map((entry) => {
     const postBoard = entry.board ?? board;
     const href = entry.hasPost ? `/${postBoard}/${entry.postId}` : null;
+    const dateApprox: DateApprox | null = entry.createdAtApprox
+      ? "firstComment"
+      : entry.yearApprox
+        ? "year"
+        : null;
     return {
       key: `${postBoard}/${entry.postId}`,
       title: entry.title,
@@ -92,6 +104,7 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
       commentCount: entry.commentCount,
       author: { board: postBoard, name: entry.author, memberNo: entry.authorMemberNo },
       createdAt: entry.createdAt,
+      dateApprox,
       hits: entry.hits,
       cells: {
         title: (
@@ -107,15 +120,7 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
             hits={entry.hits}
           />
         ),
-        date: entry.createdAtApprox ? (
-          <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
-            ≤{formatShortDate(entry.createdAt)}
-          </span>
-        ) : entry.yearApprox ? (
-          yearGuess(entry.createdAt)
-        ) : (
-          formatShortDate(entry.createdAt)
-        ),
+        date: shortDate(entry.createdAt, dateApprox),
       },
     };
   });
@@ -125,6 +130,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
   const marked = listing.entries.some((e) => e.hasPost);
   return listing.entries.map((entry) => {
     const href = entry.hasPost ? `/${board}/${entry.no}` : null;
+    const dateApprox: DateApprox | null = entry.yearApprox ? "year" : null;
     return {
       key: entry.no,
       title: entry.title,
@@ -132,6 +138,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
       commentCount: entry.commentCount,
       author: { board, name: entry.author, memberNo: entry.authorMemberNo },
       createdAt: entry.createdAt,
+      dateApprox,
       hits: entry.hits,
       cells: {
         title: (
@@ -147,12 +154,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
             hits={entry.hits}
           />
         ),
-        date:
-          entry.createdAt === null
-            ? "—"
-            : entry.yearApprox
-              ? yearGuess(entry.createdAt)
-              : formatShortDate(entry.createdAt),
+        date: entry.createdAt === null ? "—" : shortDate(entry.createdAt, dateApprox),
         hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR"),
       },
     };

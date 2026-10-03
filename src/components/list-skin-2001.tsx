@@ -26,7 +26,7 @@ import type { ReactNode } from "react";
 import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
-import { NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
+import { DATE_APPROX, NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
 import { SkinImg2001 } from "@/components/skin-img-2001";
 import { formatKoreanDay, formatKoreanFull, formatSlashDate, isUnknownDate } from "@/lib/dates";
 import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
@@ -36,13 +36,24 @@ const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 /**
  * `YYYY/MM/DD` with the full time as a tooltip, as the skins printed it. A
  * row the museum knows only from a list page has a date and no time (the
- * index stores it at 00:00:00), so its tooltip is the date alone. Zeroboard's
- * NULL-date placeholder (1970) reads "—", as in the 2014/2003 lists.
+ * index stores it at 00:00:00), so its tooltip is the date alone. An
+ * approximate date carries the same mark and tooltip as in the 2014/2003
+ * lists (`DATE_APPROX`), and Zeroboard's NULL-date placeholder (1970) reads
+ * "—" as there.
  */
 function dateCell(row: ListRow): ReactNode {
   const iso = row.createdAt;
   if (!iso) return null;
   if (isUnknownDate(iso)) return "—";
+  if (row.dateApprox) {
+    const { mark, tooltip } = DATE_APPROX[row.dateApprox];
+    return (
+      <span title={tooltip}>
+        {mark}
+        {formatSlashDate(iso)}
+      </span>
+    );
+  }
   return (
     <span title={row.href ? formatKoreanFull(iso) : formatKoreanDay(iso)}>
       {formatSlashDate(iso)}
