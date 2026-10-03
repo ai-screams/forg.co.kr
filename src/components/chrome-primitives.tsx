@@ -12,6 +12,21 @@ import { LazyImg } from "@/components/lazy-img";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
+/** The 10px slate rail left of the sidebar. */
+export function LeftRail() {
+  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
+}
+
+/** The 7px rail right of the content column, tiled with the 2014 `right_bg.gif` in both eras. */
+export function RightRail() {
+  return (
+    <div
+      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
+      style={tileStyle(chromeUrl("right_bg.gif", "2014"), "repeat")}
+    />
+  );
+}
+
 /**
  * The #FFC73B login bar of the 2014 and 2003 headers: Login and Sign Up,
  * recovered and deliberately not wired up.

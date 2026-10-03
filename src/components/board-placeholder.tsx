@@ -1,9 +1,6 @@
 /**
- * Placeholder rendered for documented boards whose posts haven't been
- * parsed yet. The 2014 main page links to every board listed in
- * `src/lib/boards.ts`; if a visitor lands on one before its parser runs
- * (Gnuboard4 → P2.2, Phase B downloads → P3.3), they see this card
- * instead of a 404.
+ * The page of a documented board Wayback kept nothing readable of: no post
+ * and no list page (ADR-0013 keeps its URL anyway).
  *
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
  */

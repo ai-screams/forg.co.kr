@@ -1,10 +1,8 @@
 /**
- * 2014-era chrome: the frame the exhibit sits in.
- *
- * Extracted from `src/app/page.tsx` so the board and post routes can wear
- * the same frame as the home page (`<EraShell>` in `era-shell.tsx`).
- * Nothing here fetches data — these are the rails, the sidebar, the header
- * and the counter strip, all reproduced from the 2014-12-18 capture.
+ * 2014-era chrome, from the 2014-12-18 capture: `FrameTop2014` (logo, login
+ * bar, seven-button menu), `FrameLeft2014` (the game-category sidebar) and
+ * `FrameBottom2014` (the visitor counter strip). `<EraShell>` puts them
+ * around every page; nothing here fetches data.
  *
  * Every dimension below is a value the original markup declares, not a
  * measurement of the artwork. The distinction matters: `t_bar.gif` is
@@ -65,33 +63,14 @@ const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
   { id: "Console", label: "-콘솔게임", title: ":::XBOX,PS3,Wii,PSP:::" },
 ];
 
-/** Static carry-over from the 2014-12-18 snapshot footer. HITL #3:
- *  keep faithful museum number, plug in live tracking later. */
+/** The 2014-12-18 footer's total, kept as the exhibit shows it. */
 const TOTAL_VISITORS = 52_916_713;
-
-/* ──────────────────────────────────────────────────────────────────── */
-/*  Site rails                                                            */
-/* ──────────────────────────────────────────────────────────────────── */
-
-export function LeftRail() {
-  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
-}
-
-export function RightRail() {
-  const bgUrl = chromeUrl("right_bg.gif", ERA);
-  return (
-    <div
-      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
-      style={tileStyle(bgUrl, "repeat")}
-    />
-  );
-}
 
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Game category sidebar (100px)                                         */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function GameCategorySidebar() {
+export function FrameLeft2014() {
   const sidebarStyle = tileStyle(chromeUrl("left_bg.gif", ERA), "repeat");
 
   // The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
@@ -169,7 +148,7 @@ function SidebarSpacer({ height }: { height: number }) {
 // left_logo1.gif — the logo art is drawn to span all three rows, its top
 // edge #FFC73B and its bottom edge #F1F1F2. Any extra row height shows up
 // as a white gap under the logo and breaks that blend.
-export function SiteHeader2014() {
+export function FrameTop2014() {
   const logoUrl = chromeUrl("left_logo1.gif", ERA);
   const tLineUrl = chromeUrl("t_line.gif", ERA);
 
@@ -272,7 +251,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /*  Footer counter (24px)                                                 */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function VisitorCounter() {
+export function FrameBottom2014() {
   const bgUrl = chromeUrl("bgm_bg.gif", ERA);
   const rightUrl = chromeUrl("bgm_right.gif", ERA);
 

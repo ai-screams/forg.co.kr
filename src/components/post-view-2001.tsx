@@ -26,7 +26,7 @@ import { SanitizedHtml } from "@/components/sanitized-html";
 import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
 import type { Post } from "@/types/post";
 
-export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
+export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
   const author = <PostAuthor post={post} />;
   if (skin === "n_board") {
     return (
@@ -78,7 +78,7 @@ export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
   );
 }
 
-export function Comments2001({ post }: { post: Post }) {
+export function CommentList2001({ post }: { post: Post }) {
   if (post.comments.length === 0) return null;
   return (
     <section

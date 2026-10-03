@@ -33,7 +33,7 @@
  * and bottom frames, worn by every route through `<EraShell>`; the main
  * frame's home content is `Home2003Content` in `home-2003.tsx`.
  *
- * Chrome assets come from `public/img/chrome/` (Wayback-recovered in P2.4).
+ * Chrome assets come from `public/img/chrome/` (recovered from Wayback).
  * Most section headers (`m_*.gif`, `r_*.gif`) and menu buttons
  * (`t_b_*.gif`, `t_hi.gif`) are present. Missing decorative assets
  * (`m_middle_logo.gif`, `r_logo_1.gif`, `forg_main_logo_1.gif`) fall back
@@ -110,15 +110,15 @@ const FRIEND_SITE_MENU = [
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
-  /** Plain-text fallback when the asset can't load. */
-  fallback: string;
+  /** The header's name: its alt text, and the text drawn when the asset is missing. */
+  label: string;
   /** A jump menu under the header, before the links (`InertJumpMenu`). */
   jumpMenu?: { id: string; options: (string | null)[]; note: ReactNode };
   links: { label: string; href: string }[];
 }[] = [
   {
     asset: "m_info.gif",
-    fallback: "Information",
+    label: "Information",
     links: [
       { label: "-초보자지침서", href: "/site/skill/uo_newbie/" },
       { label: "-초보자게시판", href: "/Newbie" },
@@ -134,7 +134,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_co.gif",
-    fallback: "Cooperation",
+    label: "Cooperation",
     links: [
       { label: "-벤더광고란", href: "/Vendor" },
       { label: "-아리랑장터란", href: "/Tarirang" },
@@ -145,7 +145,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_remember.gif",
-    fallback: "Reminisce",
+    label: "Reminisce",
     links: [
       { label: "-UO.만화", href: "/site/lomo/index/" },
       { label: "-UO.여행기", href: "/site/spotlight/spot_130/" },
@@ -155,7 +155,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_forg.gif",
-    fallback: "Forg.Board",
+    label: "Forg.Board",
     links: [
       { label: "-공동작업란", href: "/monster" },
       { label: "-포토갤러리", href: "/porato" },
@@ -167,7 +167,7 @@ const SIDEBAR_SECTIONS: {
   },
   {
     asset: "m_friend.gif",
-    fallback: "Friend Site",
+    label: "Friend Site",
     // Every uospace.net friend site the select led to is gone.
     jumpMenu: {
       id: "friend-site-note",
@@ -234,9 +234,9 @@ export function FrameTop2003() {
       </div>
       <MobileMenu label="사이드바">
         {SIDEBAR_SECTIONS.map((section) => (
-          <div key={section.fallback} className="col-span-2 mt-1">
+          <div key={section.label} className="col-span-2 mt-1">
             <p className="text-forg-gold-hover mb-[2px] text-[11px] font-bold tracking-wide">
-              {section.fallback}
+              {section.label}
             </p>
             <div className="grid grid-cols-2 gap-x-4">
               {section.links.map((link) => (
@@ -325,7 +325,7 @@ export function FrameLeft2003() {
     >
       <nav className="flex flex-col gap-2.5">
         {SIDEBAR_SECTIONS.map((section) => (
-          <SidebarSection2003 key={section.fallback} section={section} />
+          <SidebarSection2003 key={section.label} section={section} />
         ))}
       </nav>
     </aside>
@@ -339,21 +339,21 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
       {headerUrl ? (
         <LazyImg
           src={headerUrl}
-          alt={section.fallback}
+          alt={section.label}
           width={100}
           height={25}
           className="mb-1 block h-[25px] w-[100px]"
         />
       ) : (
         <h3 className="text-forg-gold-hover mb-1 text-[11px] font-bold tracking-wide uppercase">
-          {section.fallback}
+          {section.label}
         </h3>
       )}
       {section.jumpMenu && (
         <p className="mb-1 pl-1">
           <InertJumpMenu
             id={section.jumpMenu.id}
-            label={section.fallback}
+            label={section.label}
             options={section.jumpMenu.options}
             note={section.jumpMenu.note}
             className="border-forg-ink/30 text-forg-ink/70 border bg-white text-[11px]"

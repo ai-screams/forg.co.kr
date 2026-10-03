@@ -12,11 +12,10 @@
  * (메뉴/게시판 전수 목록) cross-referenced with
  * `.docs/research/cdx/e-policy-plan.json` capture counts.
  *
- * forg.co.kr 의 WoW 부속 보드 (WOWNotice / WowForum / WOWEvents /
- * WOWScreen / WowRole) 와 newbieqna 는 P3.3 Phase C 에서 다운로드 +
- * 등록 (대다수는 회원전용 권한 페이지였으나 박물관 promise 보존을 위해
- * URL 유지 — `<BoardPlaceholder>` 자동 렌더링, ADR-0013).
- * forg.kr 후속 사이트 보드는 `kr_` prefix 로 별도 등록 (P2.3).
+ * Every board listed here is built (ADR-0013), including the ones whose
+ * posts were members-only and survive only as list rows; a board Wayback
+ * kept nothing readable of shows `<BoardPlaceholder>`. Boards of the
+ * forg.kr successor site (2019) carry a `kr_` prefix.
  */
 
 import type { PostEra, SourceEngine } from "@/types/post";

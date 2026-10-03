@@ -1,5 +1,5 @@
 /**
- * The frame every exhibit sits in — five columns, both eras.
+ * The frame every exhibit sits in — five columns in 2014 and 2003, one centred column in 2001.
  *
  *   ┌─slate─┬─10─┬─100─┬──────────680──────────┬─7─┬─slate─┐
  *   │       │rail│side │ header (53px)         │   │       │
@@ -10,9 +10,9 @@
  * The geometry is era-invariant: `frameset cols="10, 100, 680, 7, 1*"` is
  * character-identical across the 2003, 2007 and 2010 captures, and
  * 2014-12-18 reproduces the same numbers as a `<table>`. Only the chrome
- * inside those columns differs, so one shell serves both eras and the CSS
- * in globals.css (`.era-2014-only` / `.era-2003-only`) picks which chrome
- * is visible. 2001 (ADR-0019) had no side columns: `.era-not-2001` hides
+ * inside those columns differs, so one shell serves every era and the CSS
+ * in globals.css (`.era-2014-only` / `.era-2003-only` / `.era-2001-only`)
+ * picks which chrome is visible. 2001 (ADR-0019) had no side columns: `.era-not-2001` hides
  * them, and globals.css centres a 790px content column under the 2001 top
  * frame.
  *
@@ -27,20 +27,15 @@
  * Content is rendered **once**. Board and post routes pass `children`;
  * the home passes `content2014` / `content2003` / `content2001` because its exhibit
  * genuinely differs per era. Duplicating a post body per era would double
- * the HTML of 13,290 pages for nothing.
+ * the HTML of 14,837 post pages for nothing.
  */
 
 import type { ReactNode } from "react";
 
+import { LeftRail, RightRail } from "@/components/chrome-primitives";
 import { FrameTop2001 } from "@/components/era-chrome-2001";
 import { FrameBottom2003, FrameLeft2003, FrameTop2003 } from "@/components/era-chrome-2003";
-import {
-  GameCategorySidebar,
-  LeftRail,
-  RightRail,
-  SiteHeader2014,
-  VisitorCounter,
-} from "@/components/era-chrome-2014";
+import { FrameBottom2014, FrameLeft2014, FrameTop2014 } from "@/components/era-chrome-2014";
 
 interface EraShellProps {
   /** Rendered in every era. Ignored when the per-era contents are set. */
@@ -62,7 +57,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
         </div>
 
         <div className="era-2014-only contents">
-          <GameCategorySidebar />
+          <FrameLeft2014 />
         </div>
         <div className="era-2003-only contents">
           <FrameLeft2003 />
@@ -71,7 +66,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
         {/* Inside the layout's <main>, which also holds the search page and the 404. */}
         <div className="forg-shell-main flex w-full flex-col bg-(--era-content-bg) min-[800px]:w-[680px] min-[800px]:shrink-0">
           <div className="era-2014-only">
-            <SiteHeader2014 />
+            <FrameTop2014 />
           </div>
           <div className="era-2003-only">
             <FrameTop2003 />
@@ -91,7 +86,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           )}
 
           <div className="era-2014-only">
-            <VisitorCounter />
+            <FrameBottom2014 />
           </div>
           <div className="era-2003-only">
             <FrameBottom2003 />

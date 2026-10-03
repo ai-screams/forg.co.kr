@@ -2,11 +2,10 @@
  * Board landing — page 1 of `/[board]`.
  *
  * Static export with `dynamicParams = false`. `generateStaticParams`
- * enumerates every board id from `src/lib/boards.ts` so ALL documented
- * boards have a stable URL — boards whose posts haven't been parsed yet
- * (Gnuboard4 / Phase B / forg.kr) render a `<BoardPlaceholder>` rather
- * than 404. The museum's promise: every documented board lives at a
- * URL, even if it's still empty.
+ * enumerates every board id from `src/lib/boards.ts`, so every documented
+ * board has a stable URL (ADR-0013): `getBoardView` picks its index, else
+ * its captured list pages, else `<BoardPlaceholder>` for a board Wayback
+ * kept nothing readable of.
  *
  * Page 1 is canonical at `/{board}/`; pages 2+ live under
  * `/{board}/page/{N}/` to avoid colliding with the post route at

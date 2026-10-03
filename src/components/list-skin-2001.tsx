@@ -50,7 +50,16 @@ function dateCell(row: ListRow): ReactNode {
   );
 }
 
-function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
+function TitleCell({
+  skin,
+  row,
+  withCount,
+}: {
+  skin: Skin2001;
+  row: ListRow;
+  /** N+gine printed the comment count after a title; n_board did not. */
+  withCount: boolean;
+}) {
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
       <SkinImg2001 skin={skin} file="old_head.gif" />
@@ -62,7 +71,7 @@ function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
       ) : (
         <span title={NO_BODY_TOOLTIP}>{row.title}</span>
       )}
-      {skin !== "n_board" && row.commentCount > 0 && (
+      {withCount && row.commentCount > 0 && (
         <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.commentCount}]</span>
       )}
     </td>
@@ -93,64 +102,88 @@ export function ListTable2001({
       </p>
       <table className="w-full border-collapse">
         {skin === "n_board" ? (
-          <>
-            <thead>
-              <tr>
-                <td colSpan={3} className="h-[18px] text-white" style={{ background: accent }}>
-                  <b className="pl-6 font-[Tahoma,sans-serif] text-[9px]">News</b>
-                </td>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row) => (
-                <RowWithRule key={row.key} span={3}>
-                  <tr className="bg-[#fefefe] text-center">
-                    <td className={`${THM8} w-[100px]`}>{dateCell(row)}</td>
-                    <TitleCell skin={skin} row={row} />
-                    <td className={`${THM8} w-[20px]`}>{row.hits ?? ""}</td>
-                  </tr>
-                </RowWithRule>
-              ))}
-            </tbody>
-          </>
+          <NewsRows rows={rows} accent={accent} />
         ) : (
-          <>
-            <thead>
-              <tr className="h-[23px]" style={{ background: label }}>
-                <td className="w-[33px] whitespace-nowrap">
-                  <SkinImg2001 skin={skin} file="last_left.gif" />
-                  <SkinImg2001 skin={skin} file="title_no.gif" alt="No" />
-                </td>
-                <td className="text-left">
-                  <SkinImg2001 skin={skin} file="title_title.gif" alt="Subject" />
-                </td>
-                <td className="w-[100px]" />
-                <td className="w-[80px]" />
-                <td className="w-[23px] text-right">
-                  <SkinImg2001 skin={skin} file="last_right.gif" />
-                </td>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <RowWithRule key={row.key} span={5}>
-                  <tr className="h-[20px] bg-[#fefdfd] text-center">
-                    <td className={THM8}>{firstNumber - i}</td>
-                    <TitleCell skin={skin} row={row} />
-                    <td className="truncate break-all">
-                      <AuthorName {...row.author} seed={row.key} />
-                    </td>
-                    <td className={THM8}>{dateCell(row)}</td>
-                    <td className={THM8}>{row.hits ?? ""}</td>
-                  </tr>
-                </RowWithRule>
-              ))}
-            </tbody>
-          </>
+          <NgineRows skin={skin} rows={rows} label={label} firstNumber={firstNumber} />
         )}
       </table>
       <div className="h-px" style={{ background: accent }} />
     </div>
+  );
+}
+
+/** n_board: a "News" strip, then date · title · hits. */
+function NewsRows({ rows, accent }: { rows: readonly ListRow[]; accent: string }) {
+  return (
+    <>
+      <thead>
+        <tr>
+          <td colSpan={3} className="h-[18px] text-white" style={{ background: accent }}>
+            <b className="pl-6 font-[Tahoma,sans-serif] text-[9px]">News</b>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <RowWithRule key={row.key} span={3}>
+            <tr className="bg-[#fefefe] text-center">
+              <td className={`${THM8} w-[100px]`}>{dateCell(row)}</td>
+              <TitleCell skin="n_board" row={row} withCount={false} />
+              <td className={`${THM8} w-[20px]`}>{row.hits ?? ""}</td>
+            </tr>
+          </RowWithRule>
+        ))}
+      </tbody>
+    </>
+  );
+}
+
+/** N+gine: the title_bg header, then number · title · name · date · hits. */
+function NgineRows({
+  skin,
+  rows,
+  label,
+  firstNumber,
+}: {
+  skin: Exclude<Skin2001, "n_board">;
+  rows: readonly ListRow[];
+  label: string;
+  firstNumber: number;
+}) {
+  return (
+    <>
+      <thead>
+        <tr className="h-[23px]" style={{ background: label }}>
+          <td className="w-[33px] whitespace-nowrap">
+            <SkinImg2001 skin={skin} file="last_left.gif" />
+            <SkinImg2001 skin={skin} file="title_no.gif" alt="No" />
+          </td>
+          <td className="text-left">
+            <SkinImg2001 skin={skin} file="title_title.gif" alt="Subject" />
+          </td>
+          <td className="w-[100px]" />
+          <td className="w-[80px]" />
+          <td className="w-[23px] text-right">
+            <SkinImg2001 skin={skin} file="last_right.gif" />
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, i) => (
+          <RowWithRule key={row.key} span={5}>
+            <tr className="h-[20px] bg-[#fefdfd] text-center">
+              <td className={THM8}>{firstNumber - i}</td>
+              <TitleCell skin={skin} row={row} withCount />
+              <td className="truncate break-all">
+                <AuthorName {...row.author} seed={row.key} />
+              </td>
+              <td className={THM8}>{dateCell(row)}</td>
+              <td className={THM8}>{row.hits ?? ""}</td>
+            </tr>
+          </RowWithRule>
+        ))}
+      </tbody>
+    </>
   );
 }
 
