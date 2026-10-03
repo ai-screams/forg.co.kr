@@ -2,8 +2,9 @@
   "board": "kr_dataaa",
   "engine": "gnuboard4",
   "pagesCaptured": 1,
+  "capturesRead": 12,
   "totalReported": null,
-  "generatedAt": "2026-09-20T23:02:43.630445Z",
+  "generatedAt": "2026-10-03T07:43:00.907584Z",
   "entries": [
     {
       "no": "1",
@@ -16,7 +17,7 @@
       "hits": null,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20191017162337",
+      "capturedAt": "20191212071221",
       "listPage": 1,
       "hasPost": false
     }

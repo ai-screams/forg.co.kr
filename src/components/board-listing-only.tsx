@@ -44,7 +44,8 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
           <p className="text-forg-muted mt-[2px] text-[11px]">{meta.description}</p>
         )}
         <p className="text-forg-muted mt-[2px] text-[11px]">
-          목록 {listing.pagesCaptured}쪽에서 {listing.entries.length.toLocaleString("ko-KR")}개 제목
+          목록 {listing.pagesCaptured}쪽(캡처 {listing.capturesRead}번)에서{" "}
+          {listing.entries.length.toLocaleString("ko-KR")}개 제목
           {listing.totalReported !== null
             ? ` (원본 표기 전체 ${listing.totalReported.toLocaleString("ko-KR")}개)`
             : ""}

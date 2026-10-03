@@ -2,8 +2,9 @@
   "board": "WOWCo",
   "engine": "zeroboard",
   "pagesCaptured": 1,
+  "capturesRead": 3,
   "totalReported": 1,
-  "generatedAt": "2026-09-20T23:02:43.446091Z",
+  "generatedAt": "2026-10-03T07:42:57.817474Z",
   "entries": [
     {
       "no": "1",
@@ -13,10 +14,10 @@
       "authorMemberNo": "1",
       "createdAt": "2004-02-15",
       "yearApprox": true,
-      "hits": 103,
+      "hits": 127,
       "commentCount": 0,
       "isNotice": true,
-      "capturedAt": "20040811163721",
+      "capturedAt": "20041023190439",
       "listPage": 1,
       "hasPost": false
     }

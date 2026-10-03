@@ -38,7 +38,7 @@ import json
 import re
 import sys
 from bisect import bisect_left
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from bs4 import BeautifulSoup, Tag
@@ -88,14 +88,22 @@ def load_gold_years(board: str) -> tuple[dict[int, date], list[int]]:
     return years, sorted(years)
 
 
+# Wayback stamps are UTC; the boards printed Korean dates.
+KST = timedelta(hours=9)
+
+
 def pin_year(
-    no: int, month: int, day: int, page_year: int,
+    no: int, month: int, day: int, page_year: int, captured: date,
     gold: dict[int, date], gold_nos: list[int],
 ) -> tuple[date | None, bool]:
     """Resolve a MM/DD row date to a full date. Returns `(date, yearApprox)`.
 
     `page_year` is what the page's own descending order implies for this
-    row (see `walk_page_years`); gold evidence overrides it.
+    row (see `walk_page_years`); gold evidence overrides it, except that a
+    row cannot postdate the page it was listed on (`captured`, the capture's
+    UTC stamp as a Korean date, the boards' own clock).
+    Neighbours can: FunBoard's numbering restarted, and the 2012–2015 posts
+    numbered in the 10,000s would date the 2003–2005 rows 11013–18439.
     """
     if no in gold:
         return gold[no], False
@@ -113,9 +121,15 @@ def pin_year(
         if hi is not None and year > hi:
             year = hi
     try:
-        return date(year, month, day), approx
+        pinned = date(year, month, day)
     except ValueError:
         return None, approx
+    if pinned > captured:
+        try:
+            return date(page_year, month, day), True
+        except ValueError:
+            return None, True
+    return pinned, approx
 
 
 def walk_page_years(rows: list[dict], captured_at: str) -> None:
@@ -327,12 +341,16 @@ def build_listing(
     total_reported: int | None = None
     engine_of_rows: dict[str, int] = {}
     newest_ts = ""
+    page_nos: set[int] = set()
+    captures_read = 0
     for page_path in pages:
         page_no = page_no_of(page_path)
         captured_at = captures.get((board, page_path.stem))
         if not captured_at:
             print(f"  WARN {board}/{page_path.stem}: no capture ts in plan, skipped", file=sys.stderr)
             continue
+        page_nos.add(page_no)
+        captures_read += 1
         engine = engines.get((board, page_path.stem), "zeroboard")
         rows, total = parse_page(page_path.read_text(encoding="utf-8"), engine)
         if rows:
@@ -354,7 +372,8 @@ def build_listing(
         created, approx = r["full_date"], False
         if created is None and r["month_day"]:
             created, approx = pin_year(
-                int(r["no"]), r["month_day"][0], r["month_day"][1], r["page_year"], gold, gold_nos
+                int(r["no"]), r["month_day"][0], r["month_day"][1], r["page_year"],
+                (datetime.strptime(r["capturedAt"], "%Y%m%d%H%M%S") + KST).date(), gold, gold_nos,
             )
         category, title = split_category(r["title"])
         try:
@@ -382,7 +401,8 @@ def build_listing(
     return BoardListing(
         board=f"kr_{board}" if kr else board,
         engine=engine,  # type: ignore[arg-type]
-        pagesCaptured=len(pages),
+        pagesCaptured=len(page_nos),
+        capturesRead=captures_read,
         totalReported=total_reported,
         generatedAt=datetime.now(timezone.utc),
         entries=entries,

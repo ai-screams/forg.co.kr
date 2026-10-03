@@ -160,7 +160,10 @@ class BoardListing(BaseModel):
 
     board: str = Field(min_length=1)
     engine: SourceEngine
+    # Distinct list pages read, and the captures of them (L2 adds more
+    # captures of the same pages).
     pagesCaptured: int = Field(ge=1)
+    capturesRead: int = Field(ge=1)
     # As printed on the newest captured page ("total N"), when present.
     totalReported: int | None = None
     generatedAt: datetime

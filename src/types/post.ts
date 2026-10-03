@@ -194,7 +194,9 @@ export interface BoardListingEntry {
 export interface BoardListing {
   board: string;
   engine: SourceEngine;
+  /** Distinct list pages read, and the captures of them read. */
   pagesCaptured: number;
+  capturesRead: number;
   /** "total N" as printed on the newest captured page, when present. */
   totalReported: number | null;
   generatedAt: string;

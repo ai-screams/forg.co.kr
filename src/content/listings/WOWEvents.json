@@ -2,8 +2,9 @@
   "board": "WOWEvents",
   "engine": "zeroboard",
   "pagesCaptured": 1,
+  "capturesRead": 3,
   "totalReported": 1,
-  "generatedAt": "2026-09-20T23:02:43.448083Z",
+  "generatedAt": "2026-10-03T07:42:57.823357Z",
   "entries": [
     {
       "no": "1",
@@ -13,10 +14,10 @@
       "authorMemberNo": "1",
       "createdAt": "2004-02-14",
       "yearApprox": true,
-      "hits": 105,
+      "hits": 116,
       "commentCount": 1,
       "isNotice": false,
-      "capturedAt": "20040811164025",
+      "capturedAt": "20041023191821",
       "listPage": 1,
       "hasPost": false
     }
