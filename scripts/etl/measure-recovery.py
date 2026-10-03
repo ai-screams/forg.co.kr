@@ -138,14 +138,14 @@ def main() -> int:
     print(f"unrecoverable           : {total_unrec:>6}  "
           f"({total_unrec / total_manifest * 100:.1f}%)")
     print()
-    print(f"recovery by source:")
+    print("recovery by source:")
     for src in ("body", "comment"):
         m = src_per_source.get(src, 0)
         q = queue_per_source.get(src, 0)
         rate = (q / m * 100) if m else 0.0
         print(f"  {src:<10} manifest={m:>5}  queue={q:>5}  rate={rate:5.1f}%")
     print()
-    print(f"on-disk inventory       :")
+    print("on-disk inventory       :")
     print(f"  files                 : {on_disk_files:>6}")
     print(f"  per-post sidecars     : {sidecar_count:>6}")
     print(f"  sidecar entries       : {sidecar_entries:>6}")
@@ -173,7 +173,7 @@ def main() -> int:
     print("=" * 64)
     decision = storage_decision(on_disk_bytes)
     print(f"  total            : {fmt_bytes(on_disk_bytes)}")
-    print(f"  thresholds       : git-direct < 200 MB <= git-lfs < 1 GB <= object-storage")
+    print("  thresholds       : git-direct < 200 MB <= git-lfs < 1 GB <= object-storage")
     print(f"  decision         : {decision}")
     print()
     print("re-evaluation triggers:")

@@ -6,7 +6,8 @@
  * through — `fetchWithRetry` covers those. A first full search-index run lost
  * 9 of 13,346 files that way.
  *
- * Required environment variables (see `.env.r2.local`, git-ignored):
+ * Environment variables (see `.env.r2.local`, git-ignored), read on the first
+ * request, so a dry run that never talks to R2 needs none of them:
  *   R2_ACCOUNT_ID         — Cloudflare account id (Dashboard → R2 sidebar)
  *   R2_ACCESS_KEY_ID      — R2 API token Access Key
  *   R2_SECRET_ACCESS_KEY  — R2 API token Secret Access Key
@@ -16,7 +17,7 @@ import { AwsClient } from "aws4fetch";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
 
-export function required(name) {
+function required(name) {
   const v = process.env[name];
   if (!v) {
     console.error(`[r2] missing env var: ${name}`);
@@ -25,15 +26,21 @@ export function required(name) {
   return v;
 }
 
-const ACCOUNT_ID = required("R2_ACCOUNT_ID");
-export const ENDPOINT = `https://${ACCOUNT_ID}.r2.cloudflarestorage.com`;
+let client;
 
-export const aws = new AwsClient({
-  accessKeyId: required("R2_ACCESS_KEY_ID"),
-  secretAccessKey: required("R2_SECRET_ACCESS_KEY"),
-  service: "s3",
-  region: "auto",
-});
+/** The signing client and endpoint, made on the first request. */
+function r2() {
+  client ??= {
+    endpoint: `https://${required("R2_ACCOUNT_ID")}.r2.cloudflarestorage.com`,
+    aws: new AwsClient({
+      accessKeyId: required("R2_ACCESS_KEY_ID"),
+      secretAccessKey: required("R2_SECRET_ACCESS_KEY"),
+      service: "s3",
+      region: "auto",
+    }),
+  };
+  return client;
+}
 
 const MIME = {
   ".js": "application/javascript",
@@ -71,7 +78,10 @@ export function* walk(dir) {
 
 const NETWORK_ATTEMPTS = 4;
 
-export async function fetchWithRetry(url, init) {
+/** A signed request to `{bucket}/{path}` (a key, or `?query` on the bucket). */
+async function fetchWithRetry(bucket, path, init) {
+  const { endpoint, aws } = r2();
+  const url = `${endpoint}/${bucket}${path.startsWith("?") ? "" : "/"}${path}`;
   for (let attempt = 1; ; attempt++) {
     try {
       return await aws.fetch(url, init);
@@ -83,6 +93,22 @@ export async function fetchWithRetry(url, init) {
       await new Promise((r) => setTimeout(r, 500 * 2 ** (attempt - 1)));
     }
   }
+}
+
+/** PUT one object; a refusal throws with the status and the start of R2's answer. */
+export async function putObject(bucket, key, body, headers) {
+  const res = await fetchWithRetry(bucket, key, { method: "PUT", body, headers });
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    throw new Error(`PUT ${key} → ${res.status}: ${text.slice(0, 200)}`);
+  }
+}
+
+/** GET one object's bytes. */
+export async function getObject(bucket, key) {
+  const res = await fetchWithRetry(bucket, key, { method: "GET" });
+  if (!res.ok) throw new Error(`GET ${key} → ${res.status}`);
+  return Buffer.from(await res.arrayBuffer());
 }
 
 /** Run `fn` over `items` with at most `concurrency` in flight; collects errors. */
@@ -114,7 +140,7 @@ export async function listKeys(bucket, prefix) {
   for (;;) {
     const params = new URLSearchParams({ "list-type": "2", prefix, "max-keys": "1000" });
     if (token) params.set("continuation-token", token);
-    const res = await fetchWithRetry(`${ENDPOINT}/${bucket}?${params}`, { method: "GET" });
+    const res = await fetchWithRetry(bucket, `?${params}`, { method: "GET" });
     if (!res.ok)
       throw new Error(`ListObjectsV2 → ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const xml = await res.text();

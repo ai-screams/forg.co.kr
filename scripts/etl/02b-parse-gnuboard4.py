@@ -9,8 +9,9 @@ Handles forg.co.kr's custom webbus2009_basic Gnuboard4 skin. The canonical
 Gnuboard4 selectors (#bo_v_atc, .view_h1, .view_info) are NOT present; this
 parser uses the skin-specific selectors documented below.
 
-`sanitise_html` comes from the shared `sanitise.py`. The other helpers
-(load_wayback_ts_index, etc.) are still copied from 02-parse-zeroboard.py.
+`sanitise_html` comes from `sanitise.py`; what every post parser shares
+(Wayback timestamps, category split, attachments, run bookkeeping) from
+`post_parse.py`.
 
 SELECTOR INVENTORY (webbus2009_basic skin):
     Title  : <div style="...font-weight:bold; word-break:break-all;">
@@ -46,12 +47,9 @@ OPTIONS:
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sys
 import time
-from collections import Counter
-from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 
@@ -61,17 +59,31 @@ from pydantic import ValidationError
 # Make schemas.py importable when this script is run directly.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from schemas import Attachment, Comment, Post  # noqa: E402
+from post_parse import (  # noqa: E402
+    ETL_DIR,
+    INPUT_BASE,
+    OUTPUT_DIR,
+    NonPostPage,
+    Stats,
+    append_failure,
+    derive_output_path,
+    find_attachments,
+    load_wayback_ts_index,
+    needs_processing,
+    plain_text,
+    split_category_prefix,
+    walk_captures,
+    write_post,
+    write_summary,
+)
+
+# `05` and `06` load this file through importlib and read `parse_one`,
+# `_NonPostPage` and `find_comments` from it.
+_NonPostPage = NonPostPage
 
 # ── Paths ───────────────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
-OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
-FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures-g4.jsonl"
-SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary-g4.json"
-
-# Wayback timestamp sources (ADR-0010 §Decision #7).
-PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
-PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
+FAILURES_FILE = ETL_DIR / ".parse-failures-g4.jsonl"
+SUMMARY_FILE = ETL_DIR / ".parse-summary-g4.json"
 
 # Boards using the Gnuboard4 webbus2009_basic skin (the only G4 skin this
 # parser supports — it relies on the "게시글 보기 시작" landmark comment
@@ -138,38 +150,13 @@ def detect_non_post_page(html: str) -> str | None:
     return None
 
 
-class _NonPostPage(Exception):
-    """Raised when a capture is not a parseable G4 post."""
-
-    def __init__(self, reason: str) -> None:
-        super().__init__(reason)
-        self.reason = reason
-
-
 # ── nh3 sanitiser (ADR-0008 §5) — one config in `sanitise.py` ──────────
 from sanitise import sanitise_html  # noqa: E402
 
 
-# ── Korean date parser (shared pattern from Zeroboard parser) ───────────
-_KOREAN_DATETIME_RE = re.compile(
-    r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일\s*(\d{1,2})시\s*(\d{1,2})분\s*(\d{1,2})초"
-)
-_DATE_ONLY_RE = re.compile(r"(\d{4})/(\d{1,2})/(\d{1,2})")
+# ── Dates ───────────────────────────────────────────────────────────────
 _DATE_DASH_RE = re.compile(r"(\d{4})-(\d{1,2})-(\d{1,2})")
 _MONTHDAY_TIME_RE = re.compile(r"(\d{1,2})-(\d{1,2})\s+(\d{1,2}):(\d{2})")
-
-
-def parse_korean_datetime(text: str) -> datetime | None:
-    """Prefer the second-precision title text, fall back to the visible date."""
-    m = _KOREAN_DATETIME_RE.search(text)
-    if m:
-        y, mo, d, h, mi, s = (int(x) for x in m.groups())
-        return datetime(y, mo, d, h, mi, s)
-    m2 = _DATE_ONLY_RE.search(text)
-    if m2:
-        y, mo, d = (int(x) for x in m2.groups())
-        return datetime(y, mo, d)
-    return None
 
 
 def parse_dash_date(text: str) -> datetime | None:
@@ -203,62 +190,7 @@ def parse_comment_date(text: str, captured_at: str) -> datetime | None:
         return None
 
 
-# ── Category prefix (same logic as Zeroboard parser) ────────────────────
-_CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
-
-
-def split_category_prefix(raw_title: str) -> tuple[str | None, str]:
-    m = _CATEGORY_PREFIX_RE.match(raw_title)
-    if not m:
-        return None, raw_title.strip()
-    label = m.group(1).strip()
-    rest = m.group(2).strip()
-    if not label or not rest:
-        return None, raw_title.strip()
-    return label, rest
-
-
-# ── Wayback timestamp index (ADR-0010 §Decision #7) ────────────────────
-def load_wayback_ts_index() -> dict[tuple[str, str], str]:
-    """Build a `(board, post_id) -> wayback ts` lookup."""
-    index: dict[tuple[str, str], str] = {}
-
-    if PLAN_FILE.exists():
-        plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
-        for entry in plan:
-            board = entry.get("board")
-            post_id = entry.get("post_id")
-            ts = entry.get("ts")
-            if board and post_id and ts:
-                index[(board, str(post_id))] = ts
-
-    if PROGRESS_FILE.exists():
-        for raw_line in PROGRESS_FILE.read_text(encoding="utf-8").splitlines():
-            try:
-                rec = json.loads(raw_line)
-            except json.JSONDecodeError:
-                continue
-            board = rec.get("board")
-            post_id = rec.get("post_id")
-            ts = rec.get("ts")
-            if not (board and post_id and ts):
-                continue
-            key = (board, str(post_id))
-            index.setdefault(key, ts)
-
-    return index
-
-
 # ── G4 webbus2009_basic selectors ───────────────────────────────────────
-
-def find_post_region_start(soup: BeautifulSoup) -> Tag | None:
-    """Find the outer table that wraps the post view (after 게시글 보기 시작)."""
-    for comment in soup.find_all(string=lambda t: isinstance(t, str) and "게시글 보기 시작" in t):
-        nxt = comment.find_next("table")
-        if isinstance(nxt, Tag):
-            return nxt
-    return None
-
 
 def find_title(soup: BeautifulSoup) -> str | None:
     """Title: <div style="...font-weight:bold; word-break:break-all;">."""
@@ -428,53 +360,6 @@ def find_comments(soup: BeautifulSoup, captured_at: str) -> list[Comment]:
     return comments
 
 
-_ATTACH_HREF_RE = re.compile(r"download\.php", re.I)
-_FILE_SIZE_RE = re.compile(r"\(\s*([\d.,]+)\s*(KB|MB|GB|B)\s*\)\s*$", re.I)
-
-
-def find_attachments(soup: BeautifulSoup) -> list[dict[str, object]]:
-    """Extract file attachments from download.php links (same as Zeroboard parser)."""
-    from urllib.parse import parse_qs, urlparse
-
-    out: list[dict[str, object]] = []
-    seen: set[int] = set()
-    for a in soup.find_all("a", href=_ATTACH_HREF_RE):
-        if not isinstance(a, Tag):
-            continue
-        href = a.get("href", "")
-        if not isinstance(href, str):
-            continue
-        qs = parse_qs(urlparse(href).query)
-        filenum_raw = qs.get("filenum") or []
-        if not filenum_raw:
-            continue
-        try:
-            filenum = int(filenum_raw[0])
-        except ValueError:
-            continue
-        if filenum in seen:
-            continue
-        seen.add(filenum)
-
-        full_text = a.get_text(strip=True)
-        m = _FILE_SIZE_RE.search(full_text)
-        size_bytes: int | None = None
-        if m:
-            try:
-                value = float(m.group(1).replace(",", ""))
-                unit = m.group(2).upper()
-                multiplier = {"B": 1, "KB": 1024, "MB": 1024**2, "GB": 1024**3}[unit]
-                size_bytes = int(value * multiplier)
-            except ValueError:
-                size_bytes = None
-            name = full_text[: m.start()].strip()
-        else:
-            name = full_text
-
-        out.append({"name": name or f"file_{filenum}", "fileNum": filenum, "sizeBytes": size_bytes})
-    return out
-
-
 # ── Per-file pipeline ───────────────────────────────────────────────────
 
 def parse_one(
@@ -499,8 +384,7 @@ def parse_one(
 
     body_html_raw = find_body(soup)
     body_html = sanitise_html(body_html_raw)
-    body_text_soup = BeautifulSoup(body_html, "lxml")
-    body_text = body_text_soup.get_text(separator=" ", strip=True)
+    body_text = plain_text(body_html)
 
     comments = find_comments(soup, captured_at)
     attachments = [Attachment(**a) for a in find_attachments(soup)]
@@ -550,105 +434,16 @@ def parse_one(
     )
 
 
-# ── Stats / reporting ───────────────────────────────────────────────────
-
-@dataclass
-class Stats:
-    total: int = 0
-    success: int = 0
-    skipped: int = 0
-    failed_parse: int = 0
-    failed_validate: int = 0
-    skipped_no_content: int = 0
-    skipped_reasons: Counter = field(default_factory=Counter)
-    body_chars: int = 0
-    posts_with_comments: int = 0
-    posts_with_attachments: int = 0
-    per_board: Counter = field(default_factory=Counter)
-    per_board_failed: Counter = field(default_factory=Counter)
-    per_board_skipped: Counter = field(default_factory=Counter)
-    start_ts: float = field(default_factory=time.time)
-
-
-def _append_failure(rec: dict[str, object]) -> None:
-    FAILURES_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with FAILURES_FILE.open("a") as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-
-
-def _write_summary(stats: Stats) -> None:
-    SUMMARY_FILE.write_text(
-        json.dumps(
-            {
-                "total": stats.total,
-                "success": stats.success,
-                "skipped": stats.skipped,
-                "skipped_no_content": stats.skipped_no_content,
-                "skipped_reasons": dict(stats.skipped_reasons),
-                "failed_parse": stats.failed_parse,
-                "failed_validate": stats.failed_validate,
-                "avg_body_chars": (
-                    stats.body_chars // stats.success if stats.success else 0
-                ),
-                "posts_with_comments": stats.posts_with_comments,
-                "posts_with_attachments": stats.posts_with_attachments,
-                "per_board": dict(stats.per_board),
-                "per_board_failed": dict(stats.per_board_failed),
-                "per_board_skipped": dict(stats.per_board_skipped),
-                "elapsed_s": int(time.time() - stats.start_ts),
-                "ts": int(time.time()),
-            },
-            indent=2,
-            ensure_ascii=False,
-        )
-    )
-
-
 # ── Driver ──────────────────────────────────────────────────────────────
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    """Walk `INPUT_BASE/{A,B}/{board}/*.html` for Gnuboard4 boards only.
+    """`(board, post_id, path)` for every `INPUT_BASE/{A,B}/{board}/*.html` of a Gnuboard4 board.
 
     INCLUDE_BOARDS gates the engine selection: anything outside the
     allowlist (Zeroboard or Gnuboard5 boards) is silently skipped so a
     cross-engine misroute can't produce garbage gold-tier JSON.
     """
-    files: list[tuple[str, str, Path]] = []
-    found_any_phase = False
-    for phase in ("A", "B"):
-        root = INPUT_BASE / phase
-        if not root.is_dir():
-            continue
-        found_any_phase = True
-        for board_dir in sorted(root.iterdir()):
-            if not board_dir.is_dir():
-                continue
-            if board_dir.name not in INCLUDE_BOARDS:
-                continue
-            if board_filter and board_dir.name != board_filter:
-                continue
-            for f in sorted(board_dir.glob("*.html")):
-                post_id = f.stem
-                files.append((board_dir.name, post_id, f))
-    if not found_any_phase:
-        sys.exit(f"FATAL: no phase subdirs under {INPUT_BASE}")
-    return files
-
-
-def derive_output_path(board: str, post_id: str) -> Path:
-    return OUTPUT_DIR / board / f"{post_id}.json"
-
-
-def needs_processing(input_path: Path, output_path: Path, force: bool) -> bool:
-    if force:
-        return True
-    if not output_path.exists():
-        return True
-    if output_path.stat().st_size == 0:
-        return True
-    if input_path.stat().st_mtime > output_path.stat().st_mtime:
-        return True
-    return False
+    return walk_captures(("A", "B"), lambda board: board in INCLUDE_BOARDS, board_filter)
 
 
 def main() -> None:
@@ -722,20 +517,24 @@ def main() -> None:
             stats.skipped_no_content += 1
             stats.skipped_reasons[e.reason] += 1
             stats.per_board_skipped[board] += 1
-            _append_failure(
-                {"input": str(in_path), "error": e.reason, "stage": "skipped_no_content"}
+            append_failure(
+                FAILURES_FILE,
+                {"input": str(in_path), "error": e.reason, "stage": "skipped_no_content"},
             )
             continue
         except ValidationError as e:
             stats.failed_validate += 1
             stats.per_board_failed[board] += 1
-            _append_failure({"input": str(in_path), "error": str(e)[:500], "stage": "validate"})
+            append_failure(
+                FAILURES_FILE, {"input": str(in_path), "error": str(e)[:500], "stage": "validate"}
+            )
             continue
         except Exception as e:
             stats.failed_parse += 1
             stats.per_board_failed[board] += 1
-            _append_failure(
-                {"input": str(in_path), "error": f"{type(e).__name__}: {e}"[:500], "stage": "parse"}
+            append_failure(
+                FAILURES_FILE,
+                {"input": str(in_path), "error": f"{type(e).__name__}: {e}"[:500], "stage": "parse"},
             )
             continue
 
@@ -748,15 +547,11 @@ def main() -> None:
             stats.posts_with_attachments += 1
 
         if not args.dry_run:
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            tmp = out_path.with_suffix(out_path.suffix + ".tmp")
-            # Trailing newline keeps the file prettier-compatible.
-            tmp.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")
-            tmp.replace(out_path)
+            write_post(out_path, post)
 
         if i - last_print >= args.print_every or i == len(todo):
             last_print = i
-            _write_summary(stats)
+            write_summary(SUMMARY_FILE, stats)
             elapsed = time.time() - stats.start_ts
             rate = stats.success / elapsed if elapsed else 0
             print(
@@ -768,7 +563,7 @@ def main() -> None:
                 flush=True,
             )
 
-    _write_summary(stats)
+    write_summary(SUMMARY_FILE, stats)
     print(
         f"\n[02b-parse-g4] DONE total={stats.total} ok={stats.success} "
         f"parse_err={stats.failed_parse} valid_err={stats.failed_validate} "

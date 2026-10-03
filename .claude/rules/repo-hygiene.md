@@ -9,7 +9,7 @@
 ## Not in the repo
 
 - Wayback captures (bronze/silver) — in `.docs/research/`, reproducible from CDX.
-- Post image bytes — R2 (`pnpm img:pull` hydrates a clone).
+- Post image bytes — R2 (`pnpm img:pull` hydrates a clone with the files it lacks; it never overwrites one).
 
 Chrome assets are in git at `public/img/chrome/` (recovered by single-URL probes because prefix CDX returned nothing). A name `chromeUrl` asks for that is not there stops the build; `optionalChrome` marks the few Wayback never kept.
 

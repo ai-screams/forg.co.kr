@@ -29,6 +29,7 @@ import sys
 import time
 from pathlib import Path
 
+from etl_io import append_jsonl, write_atomic
 from wayback_client import (
     WaybackError,
     WaybackGoneError,
@@ -54,12 +55,6 @@ def safe_board(name: str) -> str:
 
 def post_path(entry: dict) -> Path:
     return ARCHIVE / entry["phase"] / safe_board(entry["board"]) / f"{entry['post_id']}.html"
-
-
-def append_jsonl(path: Path, obj: dict) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a") as f:
-        f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 
 def write_summary() -> None:
@@ -134,9 +129,7 @@ def fetch_one(entry: dict) -> dict:
             "url": url,
         }
 
-    tmp = out.with_suffix(out.suffix + ".tmp")
-    tmp.write_bytes(data)
-    tmp.replace(out)
+    write_atomic(out, data)
     _stats["done"] += 1
     _stats["bytes"] += len(data)
     return {

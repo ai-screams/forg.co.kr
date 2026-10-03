@@ -22,16 +22,12 @@ OPTIONS:
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sys
 import time
 import unicodedata
-from collections import Counter
-from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import cast
 from urllib.parse import parse_qs, urlparse
 
 from bs4 import BeautifulSoup, Tag
@@ -40,22 +36,35 @@ from pydantic import ValidationError
 # Make schemas.py importable when this script is run directly.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from schemas import Attachment, Comment, Post  # noqa: E402
+from post_parse import (  # noqa: E402
+    ETL_DIR,
+    INPUT_BASE,
+    OUTPUT_DIR,
+    NonPostPage,
+    Stats,
+    append_failure,
+    derive_output_path,
+    find_attachments,
+    load_wayback_ts_index,
+    needs_processing,
+    parse_korean_datetime,
+    plain_text,
+    split_category_prefix,
+    walk_captures,
+    write_post,
+    write_summary,
+)
+
+# `05` and `06` load this file through importlib and read `parse_one`,
+# `_NonPostPage` and the meta helpers from it.
+_NonPostPage = NonPostPage
 
 # ── Paths ───────────────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-# INPUT_BASE walks both archive-clean/A (Phase A) and archive-clean/B
-# (Phase B, downloaded after the initial 11k pass) so a single --force
-# run regenerates every Zeroboard board's gold tier in one pass.
-INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
-OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
-FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures.jsonl"
-SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-summary.json"
-
-# Wayback timestamp sources (ADR-0010 §Decision #7).
-# 1차: the canonical CDX plan we downloaded from. 2차: the downloader's
-# per-file progress log — fills any gap left by manual plan edits.
-PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "e-policy-plan.json"
-PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
+# INPUT_BASE walks archive-clean/{A,B,C,V} (Phase B was downloaded after the
+# initial 11k pass) so a single --force run regenerates every Zeroboard
+# board's gold tier in one pass.
+FAILURES_FILE = ETL_DIR / ".parse-failures.jsonl"
+SUMMARY_FILE = ETL_DIR / ".parse-summary.json"
 
 # Boards parsed by a different engine. Listed explicitly so wrong-engine
 # captures never reach the Zeroboard selectors silently.
@@ -141,34 +150,6 @@ def detect_non_post_page(html: str) -> str | None:
     return None
 
 
-class _NonPostPage(Exception):
-    """Raised when a capture is structurally a Zeroboard page but not a post."""
-
-    def __init__(self, reason: str) -> None:
-        super().__init__(reason)
-        self.reason = reason
-
-
-# ── Korean date parser ──────────────────────────────────────────────────
-_KOREAN_DATETIME_RE = re.compile(
-    r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일\s*(\d{1,2})시\s*(\d{1,2})분\s*(\d{1,2})초"
-)
-_DATE_ONLY_RE = re.compile(r"(\d{4})/(\d{1,2})/(\d{1,2})")
-
-
-def parse_korean_datetime(text: str) -> datetime | None:
-    """Prefer the second-precision title text, fall back to the visible date."""
-    m = _KOREAN_DATETIME_RE.search(text)
-    if m:
-        y, mo, d, h, mi, s = (int(x) for x in m.groups())
-        return datetime(y, mo, d, h, mi, s)
-    m2 = _DATE_ONLY_RE.search(text)
-    if m2:
-        y, mo, d = (int(x) for x in m2.groups())
-        return datetime(y, mo, d)
-    return None
-
-
 # ── nh3 sanitiser (ADR-0008 §5) — one config in `sanitise.py` ──────────
 from sanitise import sanitise_html  # noqa: E402
 
@@ -192,32 +173,6 @@ def find_title(soup: BeautifulSoup) -> str | None:
                         return bold.get_text(strip=True)
                     return td.get_text(strip=True)
     return None
-
-
-_CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
-
-
-def split_category_prefix(raw_title: str) -> tuple[str | None, str]:
-    """Extract a leading `[xxx]` category marker from a Zeroboard title.
-
-    Zeroboard posters routinely prepend a Korean tag like `[질문]`, `[자료]`,
-    `[공지]`, `[울온외]` to surface the post's intent in board listings.
-    Capture it as a separate field so listings can render it as a badge
-    while the canonical `title` stays clean. Inner content is bounded
-    to 12 chars so we don't accidentally swallow something that just
-    happens to start with `[` (long English bracketed phrases, etc.).
-
-    Returns `(category_label_or_None, stripped_title)`.
-    """
-    m = _CATEGORY_PREFIX_RE.match(raw_title)
-    if not m:
-        return None, raw_title.strip()
-    label = m.group(1).strip()
-    rest = m.group(2).strip()
-    if not label or not rest:
-        # `[xxx]` with no body, or empty bracket — keep title as-is.
-        return None, raw_title.strip()
-    return label, rest
 
 
 def find_meta_font(soup: BeautifulSoup) -> Tag | None:
@@ -346,104 +301,6 @@ def find_comment_body_td(comment_font: Tag) -> Tag | None:
     return None
 
 
-_ATTACH_HREF_RE = re.compile(r"download\.php", re.I)
-_FILE_SIZE_RE = re.compile(
-    r"\(\s*([\d.,]+)\s*(KB|MB|GB|B)\s*\)\s*$",
-    re.I,
-)
-
-
-def find_attachments(soup: BeautifulSoup) -> list[dict[str, object]]:
-    out: list[dict[str, object]] = []
-    seen: set[int] = set()
-    for a in soup.find_all("a", href=_ATTACH_HREF_RE):
-        if not isinstance(a, Tag):
-            continue
-        href = a.get("href", "")
-        if not isinstance(href, str):
-            continue
-        qs = parse_qs(urlparse(href).query)
-        filenum_raw = qs.get("filenum") or []
-        if not filenum_raw:
-            continue
-        try:
-            filenum = int(filenum_raw[0])
-        except ValueError:
-            continue
-        if filenum in seen:
-            continue
-        seen.add(filenum)
-
-        full_text = a.get_text(strip=True)
-        m = _FILE_SIZE_RE.search(full_text)
-        size_bytes: int | None = None
-        if m:
-            try:
-                value = float(m.group(1).replace(",", ""))
-                unit = m.group(2).upper()
-                multiplier = {"B": 1, "KB": 1024, "MB": 1024**2, "GB": 1024**3}[unit]
-                size_bytes = int(value * multiplier)
-            except ValueError:
-                size_bytes = None
-            name = full_text[: m.start()].strip()
-        else:
-            name = full_text
-
-        out.append({"name": name or f"file_{filenum}", "fileNum": filenum, "sizeBytes": size_bytes})
-    return out
-
-
-# ── Wayback timestamp index (ADR-0010 §Decision #7) ────────────────────-
-# `Post.capturedAt` MUST be a real Wayback ts so it can anchor downstream
-# stages (image recovery, etc.). The previous `derive_captured_at(file_mtime)`
-# conflated parse time with capture time — Notice/1 reported 20260502190627
-# (today) instead of 20030902080926 (the 2003 capture). Phase A2 of ADR-0010
-# corrects this by sourcing the ts from the canonical CDX plan.
-
-
-def load_wayback_ts_index() -> dict[tuple[str, str], str]:
-    """Build a `(board, post_id) -> wayback ts` lookup.
-
-    Source priority:
-      1차: e-policy-plan.json — the CDX plan we downloaded against.
-      2차: .progress.jsonl — the downloader's record of what it actually
-           fetched (downloader uses the same ts as the plan, so this is
-           a sanity safety net for partial replays / manual plan edits).
-
-    Both sources should agree. The dual lookup catches edge cases without
-    hiding them — if a post is in neither, the parser fails loud (caller
-    raises ValueError) rather than silently faking a timestamp.
-    """
-    index: dict[tuple[str, str], str] = {}
-
-    if PLAN_FILE.exists():
-        plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
-        for entry in plan:
-            board = entry.get("board")
-            post_id = entry.get("post_id")
-            ts = entry.get("ts")
-            if board and post_id and ts:
-                index[(board, str(post_id))] = ts
-
-    if PROGRESS_FILE.exists():
-        for raw_line in PROGRESS_FILE.read_text(encoding="utf-8").splitlines():
-            try:
-                rec = json.loads(raw_line)
-            except json.JSONDecodeError:
-                continue
-            board = rec.get("board")
-            post_id = rec.get("post_id")
-            ts = rec.get("ts")
-            if not (board and post_id and ts):
-                continue
-            key = (board, str(post_id))
-            # Only fill gaps left by the plan; do not overwrite the canonical
-            # plan ts with the downloader's record.
-            index.setdefault(key, ts)
-
-    return index
-
-
 # ── Per-file pipeline ──────────────────────────────────────────────────-
 
 
@@ -499,8 +356,7 @@ def parse_buzzard_post(
         target = inner if isinstance(inner, Tag) else body_td
         body_html_raw = target.decode_contents()
     body_html = sanitise_html(body_html_raw)
-    body_text_soup = BeautifulSoup(body_html, "lxml")
-    body_text = body_text_soup.get_text(separator=" ", strip=True)
+    body_text = plain_text(body_html)
 
     era = "2014" if created_at >= ERA_BREAKPOINT else "2003"
 
@@ -566,8 +422,7 @@ def parse_one(
         target = inner if isinstance(inner, Tag) else body_td
         body_html_raw = target.decode_contents()
     body_html = sanitise_html(body_html_raw)
-    body_text_soup = BeautifulSoup(body_html, "lxml")
-    body_text = body_text_soup.get_text(separator=" ", strip=True)
+    body_text = plain_text(body_html)
 
     comments: list[Comment] = []
     for cfont in find_comment_fonts(soup):
@@ -620,110 +475,20 @@ def parse_one(
     )
 
 
-# ── Stats / reporting ──────────────────────────────────────────────────-
-
-
-@dataclass
-class Stats:
-    total: int = 0
-    success: int = 0
-    skipped: int = 0
-    failed_parse: int = 0
-    failed_validate: int = 0
-    skipped_no_content: int = 0
-    skipped_reasons: Counter = field(default_factory=Counter)
-    body_chars: int = 0
-    posts_with_comments: int = 0
-    posts_with_attachments: int = 0
-    per_board: Counter = field(default_factory=Counter)
-    per_board_failed: Counter = field(default_factory=Counter)
-    per_board_skipped: Counter = field(default_factory=Counter)
-    start_ts: float = field(default_factory=time.time)
-
-
-def _append_failure(rec: dict[str, object]) -> None:
-    FAILURES_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with FAILURES_FILE.open("a") as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-
-
-def _write_summary(stats: Stats) -> None:
-    SUMMARY_FILE.write_text(
-        json.dumps(
-            {
-                "total": stats.total,
-                "success": stats.success,
-                "skipped": stats.skipped,
-                "skipped_no_content": stats.skipped_no_content,
-                "skipped_reasons": dict(stats.skipped_reasons),
-                "failed_parse": stats.failed_parse,
-                "failed_validate": stats.failed_validate,
-                "avg_body_chars": (
-                    stats.body_chars // stats.success if stats.success else 0
-                ),
-                "posts_with_comments": stats.posts_with_comments,
-                "posts_with_attachments": stats.posts_with_attachments,
-                "per_board": dict(stats.per_board),
-                "per_board_failed": dict(stats.per_board_failed),
-                "per_board_skipped": dict(stats.per_board_skipped),
-                "elapsed_s": int(time.time() - stats.start_ts),
-                "ts": int(time.time()),
-            },
-            indent=2,
-            ensure_ascii=False,
-        )
-    )
-
-
 # ── Driver ─────────────────────────────────────────────────────────────-
 
 
 def iter_input_files(board_filter: str | None) -> list[tuple[str, str, Path]]:
-    """Walk `INPUT_BASE/{A,B,C,V}/{board}/*.html` and yield `(board, post_id, path)`.
+    """`(board, post_id, path)` for every `INPUT_BASE/{A,B,C,V}/{board}/*.html`.
 
-    Phase A and Phase B share the same Zeroboard parser, so we collapse
-    them here. Each (board, post_id) pair is unique across phases — the
-    downloader writes to distinct archive subdirs. EXCLUDE_BOARDS guards
-    the wrong-engine skip; `--board` further narrows for ad-hoc reruns.
+    The phases share this parser, so they are walked together. EXCLUDE_BOARDS
+    guards the wrong-engine skip; `--board` further narrows for ad-hoc reruns.
     """
-    files: list[tuple[str, str, Path]] = []
-    found_any_phase = False
     # V: `/_zb/view.php` captures — the same `/_zb/` install reached through
     # Zeroboard's direct-view script, so the default origin still holds.
-    for phase in ("A", "B", "C", "V"):
-        root = INPUT_BASE / phase
-        if not root.is_dir():
-            continue
-        found_any_phase = True
-        for board_dir in sorted(root.iterdir()):
-            if not board_dir.is_dir():
-                continue
-            if board_dir.name in EXCLUDE_BOARDS:
-                continue
-            if board_filter and board_dir.name != board_filter:
-                continue
-            for f in sorted(board_dir.glob("*.html")):
-                post_id = f.stem
-                files.append((board_dir.name, post_id, f))
-    if not found_any_phase:
-        sys.exit(f"FATAL: no phase subdirs under {INPUT_BASE}")
-    return files
-
-
-def derive_output_path(board: str, post_id: str) -> Path:
-    return OUTPUT_DIR / board / f"{post_id}.json"
-
-
-def needs_processing(input_path: Path, output_path: Path, force: bool) -> bool:
-    if force:
-        return True
-    if not output_path.exists():
-        return True
-    if output_path.stat().st_size == 0:
-        return True
-    if input_path.stat().st_mtime > output_path.stat().st_mtime:
-        return True
-    return False
+    return walk_captures(
+        ("A", "B", "C", "V"), lambda board: board not in EXCLUDE_BOARDS, board_filter
+    )
 
 
 def main() -> None:
@@ -789,20 +554,24 @@ def main() -> None:
             stats.skipped_no_content += 1
             stats.skipped_reasons[e.reason] += 1
             stats.per_board_skipped[board] += 1
-            _append_failure(
-                {"input": str(in_path), "error": e.reason, "stage": "skipped_no_content"}
+            append_failure(
+                FAILURES_FILE,
+                {"input": str(in_path), "error": e.reason, "stage": "skipped_no_content"},
             )
             continue
         except ValidationError as e:
             stats.failed_validate += 1
             stats.per_board_failed[board] += 1
-            _append_failure({"input": str(in_path), "error": str(e)[:500], "stage": "validate"})
+            append_failure(
+                FAILURES_FILE, {"input": str(in_path), "error": str(e)[:500], "stage": "validate"}
+            )
             continue
         except Exception as e:
             stats.failed_parse += 1
             stats.per_board_failed[board] += 1
-            _append_failure(
-                {"input": str(in_path), "error": f"{type(e).__name__}: {e}"[:500], "stage": "parse"}
+            append_failure(
+                FAILURES_FILE,
+                {"input": str(in_path), "error": f"{type(e).__name__}: {e}"[:500], "stage": "parse"},
             )
             continue
 
@@ -815,16 +584,11 @@ def main() -> None:
             stats.posts_with_attachments += 1
 
         if not args.dry_run:
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            tmp = out_path.with_suffix(out_path.suffix + ".tmp")
-            # Trailing newline keeps the file prettier-compatible — without it
-            # `pnpm format:check` reports every gold-tier JSON as a style miss.
-            tmp.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")
-            tmp.replace(out_path)
+            write_post(out_path, post)
 
         if i - last_print >= args.print_every or i == len(todo):
             last_print = i
-            _write_summary(stats)
+            write_summary(SUMMARY_FILE, stats)
             elapsed = time.time() - stats.start_ts
             rate = stats.success / elapsed if elapsed else 0
             print(
@@ -836,7 +600,7 @@ def main() -> None:
                 flush=True,
             )
 
-    _write_summary(stats)
+    write_summary(SUMMARY_FILE, stats)
     print(
         f"\n[02-parse] DONE total={stats.total} ok={stats.success} "
         f"parse_err={stats.failed_parse} valid_err={stats.failed_validate} "

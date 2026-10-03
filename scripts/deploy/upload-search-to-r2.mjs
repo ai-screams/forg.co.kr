@@ -32,7 +32,7 @@
 import { readFileSync } from "node:fs";
 import { relative } from "node:path";
 
-import { ENDPOINT, fetchWithRetry, mime, runPool, walk } from "./r2-client.mjs";
+import { mime, putObject, runPool, walk } from "./r2-client.mjs";
 
 const SRC = "dist-search";
 const BUCKET = process.env.R2_BUCKET ?? "forg-search";
@@ -52,15 +52,10 @@ function keyOf(file) {
 
 async function uploadOne(file) {
   const key = keyOf(file);
-  const res = await fetchWithRetry(`${ENDPOINT}/${BUCKET}/${key}`, {
-    method: "PUT",
-    body: readFileSync(file),
-    headers: { "Content-Type": mime(file), "Cache-Control": cacheControl(key) },
+  await putObject(BUCKET, key, readFileSync(file), {
+    "Content-Type": mime(file),
+    "Cache-Control": cacheControl(key),
   });
-  if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`PUT ${key} → ${res.status}: ${text.slice(0, 200)}`);
-  }
 }
 
 async function main() {

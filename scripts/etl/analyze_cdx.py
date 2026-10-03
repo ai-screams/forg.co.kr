@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""Analyze CDX harvest: dedup by post identity, apply E-policy (latest 200 with max length)."""
+"""Analyze CDX harvest: dedup by post identity, apply E-policy (latest 200 with max length).
+
+Prints the per-board breakdown. `--out PATH` also writes the plan there.
+`.docs/research/cdx/e-policy-plan.json` is the plan every parser stamps
+`capturedAt` from and may carry manual edits, so writing over an existing
+file takes `--force`.
+"""
+import argparse
 import json
-import re
 import sys
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs, unquote
+from urllib.parse import urlparse, parse_qs
 
 CDX_DIR = Path(__file__).resolve().parent.parent.parent / ".docs" / "research" / "cdx"
 
@@ -79,6 +85,13 @@ def load_cdx(path: Path):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
+    ap.add_argument("--out", type=Path, help="write the plan here (e.g. .docs/research/cdx/e-policy-plan.json)")
+    ap.add_argument("--force", action="store_true", help="overwrite --out if it exists")
+    args = ap.parse_args()
+    if args.out and args.out.exists() and not args.force:
+        sys.exit(f"{args.out} exists — it may hold manual edits; pass --force to overwrite it")
+
     files = ["zb-posts.json", "g4-posts.json", "g5-posts.json"]
     all_rows = []
     for f in files:
@@ -129,7 +142,7 @@ def main():
         by_board[bid]["count"] += 1
         by_board[bid]["bytes"] += best["length"]
 
-    print(f"\n=== Per-board (E-policy chosen captures) ===")
+    print("\n=== Per-board (E-policy chosen captures) ===")
     print(f"{'board':<20} {'count':>7} {'MB':>8}  phase")
     for bid in sorted(by_board, key=lambda b: -by_board[b]["count"]):
         info = by_board[bid]
@@ -143,14 +156,16 @@ def main():
     pb_bytes = sum(by_board[b]["bytes"] for b in PHASE_B if b in by_board)
     other_posts = sum(by_board[b]["count"] for b in by_board if b not in PHASE_A and b not in PHASE_B)
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"Phase A (UO core 12 boards):  {pa_posts:>6} posts, {pa_bytes/1024/1024:>7.1f} MB HTML")
     print(f"Phase B (community boards):   {pb_posts:>6} posts, {pb_bytes/1024/1024:>7.1f} MB HTML")
     print(f"Other/unknown:                {other_posts:>6} posts")
     print(f"Total chosen:                 {len(chosen):>6} posts, {sum(c['length'] for c in chosen.values())/1024/1024:>7.1f} MB HTML")
 
-    # Save E-policy plan
-    out_path = CDX_DIR / "e-policy-plan.json"
+    if not args.out:
+        print("\nNo --out: plan not written.", file=sys.stderr)
+        return
+
     plan = []
     for (era, bid, pid), best in chosen.items():
         plan.append({
@@ -164,8 +179,10 @@ def main():
             "digest": best["digest"],
         })
     plan.sort(key=lambda x: (x["phase"], x["board"], x["post_id"]))
-    out_path.write_text(json.dumps(plan, ensure_ascii=False, indent=1))
-    print(f"\nPlan written: {out_path} ({len(plan)} entries)", file=sys.stderr)
+    # `x` without --force: also refuse a file that appeared while this ran.
+    with args.out.open("w" if args.force else "x", encoding="utf-8") as f:
+        f.write(json.dumps(plan, ensure_ascii=False, indent=1))
+    print(f"\nPlan written: {args.out} ({len(plan)} entries)", file=sys.stderr)
 
 
 if __name__ == "__main__":

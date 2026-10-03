@@ -36,6 +36,7 @@ from bs4 import BeautifulSoup, Comment, Tag
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import write_atomic  # noqa: E402
 from sanitise import sanitise_html  # noqa: E402
 from schemas import Attachment, Post  # noqa: E402
 
@@ -309,13 +310,12 @@ def main() -> int:
                 print(f"  {board}/{no} {post.createdAt.date()} [{post.categoryLabel}] {post.author}: {post.title[:40]}", file=sys.stderr)
                 stats["written"] += 1
                 continue
-            out.parent.mkdir(parents=True, exist_ok=True)
-            tmp = out.with_suffix(".tmp")
-            tmp.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")
-            tmp.replace(out)
+            write_atomic(out, post.model_dump_json(indent=2) + "\n")
             stats["written"] += 1
     print(f"\n[02e-parse-link-diary] DONE {stats}", file=sys.stderr)
-    return 0
+    # Like the other parsers: a run that could not parse or validate
+    # something exits 1, so a chained command stops on it.
+    return 1 if stats["errors"] else 0
 
 
 if __name__ == "__main__":

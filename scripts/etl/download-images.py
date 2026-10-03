@@ -34,6 +34,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import append_jsonl, write_atomic  # noqa: E402
 from wayback_client import (  # noqa: E402
     WaybackError,
     WaybackGoneError,
@@ -96,12 +97,6 @@ def load_progress() -> set[str]:
         if tp:
             done.add(tp)
     return done
-
-
-def append_jsonl(path: Path, obj: dict) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 
 def update_post_manifest(
@@ -217,11 +212,8 @@ def fetch_one(entry: dict) -> dict:
             "error": str(e)[:200],
         }
 
-    target.parent.mkdir(parents=True, exist_ok=True)
     sha256_hex = hashlib.sha256(data).hexdigest()
-    tmp = target.with_suffix(target.suffix + ".tmp")
-    tmp.write_bytes(data)
-    tmp.replace(target)
+    write_atomic(target, data)
 
     update_post_manifest(
         target.parent,

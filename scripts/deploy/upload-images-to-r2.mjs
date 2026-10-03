@@ -22,7 +22,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { relative } from "node:path";
 
-import { ENDPOINT, fetchWithRetry, listKeys, mime, runPool, walk } from "./r2-client.mjs";
+import { listKeys, mime, putObject, runPool, walk } from "./r2-client.mjs";
 
 const SRC = "public/img/posts";
 const PREFIX = "posts/";
@@ -38,7 +38,8 @@ function keyOf(file) {
 }
 
 async function main() {
-  const files = [...walk(SRC)].filter((f) => !f.endsWith(".manifest.json"));
+  // `.part`: an unfinished `img:pull` download, not an image.
+  const files = [...walk(SRC)].filter((f) => !f.endsWith(".manifest.json") && !f.endsWith(".part"));
   console.log(`[r2:img] ${files.length} local files under ${SRC}; listing ${BUCKET}/${PREFIX}…`);
   const remote = await listKeys(BUCKET, PREFIX);
   console.log(`[r2:img] ${remote.size} objects already in the bucket`);
@@ -65,18 +66,11 @@ async function main() {
   const errors = await runPool(
     todo,
     CONCURRENCY,
-    async ({ file, body }) => {
-      const key = keyOf(file);
-      const res = await fetchWithRetry(`${ENDPOINT}/${BUCKET}/${key}`, {
-        method: "PUT",
-        body,
-        headers: { "Content-Type": mime(file), "Cache-Control": CACHE_CONTROL },
-      });
-      if (!res.ok) {
-        const text = await res.text().catch(() => "");
-        throw new Error(`PUT ${key} → ${res.status}: ${text.slice(0, 200)}`);
-      }
-    },
+    ({ file, body }) =>
+      putObject(BUCKET, keyOf(file), body, {
+        "Content-Type": mime(file),
+        "Cache-Control": CACHE_CONTROL,
+      }),
     (done, total) => {
       if (done % 200 === 0 || done === total) console.log(`[r2:img] ${done}/${total}`);
     },

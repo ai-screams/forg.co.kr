@@ -39,6 +39,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import append_jsonl  # noqa: E402
 from wayback_client import (  # noqa: E402
     WaybackError,
     WaybackGoneError,
@@ -76,12 +77,6 @@ def cdx_probe(url: str, *, from_ts: str, to_ts: str) -> list[dict]:
     header, *rows = data
     cols = {name: i for i, name in enumerate(header)}
     return [{c: r[cols[c]] for c in COLUMNS} for r in rows if r and len(r) >= len(header)]
-
-
-def append_jsonl(path: Path, obj: dict) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 
 def load_known(path: Path, field: str) -> set[str]:

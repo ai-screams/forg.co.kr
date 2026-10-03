@@ -35,6 +35,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from etl_io import write_atomic  # noqa: E402
 from schemas import (  # noqa: E402
     BOARD_INDEX_PAGE_SIZE,
     BoardIndexEntry,
@@ -149,12 +150,6 @@ def _same_but_stamp(previous: str, current: str) -> bool:
     return a == b
 
 
-def _atomic_write(path: Path, payload: str) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(payload, encoding="utf-8")
-    tmp.replace(path)
-
 
 def _prune_stale_pages(board_dir: Path, valid_pages: int) -> int:
     """Delete `index-N.json` files whose N exceeds the new page count."""
@@ -262,7 +257,7 @@ def _build_board(
         payload = _dump_page(page)
         if out.exists() and _same_but_stamp(out.read_text(encoding="utf-8"), payload):
             continue  # nothing but generatedAt would change; keep git quiet
-        _atomic_write(out, payload + "\n")
+        write_atomic(out, payload + "\n")
 
     pruned = 0 if dry_run else _prune_stale_pages(board_dir, total_pages)
     return total, total_pages, pruned, errors
