@@ -313,7 +313,9 @@ def main() -> int:
             write_atomic(out, post.model_dump_json(indent=2) + "\n")
             stats["written"] += 1
     print(f"\n[02e-parse-link-diary] DONE {stats}", file=sys.stderr)
-    return 0
+    # Like the other parsers: a run that could not parse or validate
+    # something exits 1, so a chained command stops on it.
+    return 1 if stats["errors"] else 0
 
 
 if __name__ == "__main__":

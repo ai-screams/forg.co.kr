@@ -495,6 +495,7 @@ def main() -> None:
         f"skipped_no_content={stats.skipped_no_content} ({reasons})",
         file=sys.stderr,
     )
+    sys.exit(1 if (stats.failed_parse + stats.failed_validate) > 0 else 0)
 
 
 if __name__ == "__main__":
