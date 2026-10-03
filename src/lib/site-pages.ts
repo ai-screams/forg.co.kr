@@ -133,3 +133,14 @@ export async function getAllSitePages(): Promise<SitePage[]> {
   const pages = await Promise.all(stems.map((s) => getSitePage(s)));
   return pages.filter((p) => p !== null);
 }
+
+/**
+ * The older captures of a page the museum can show (`/site/{stem}/{ts}/`):
+ * versions with a `ts`, in the order the page lists them. Captures that were
+ * only a redirect or a blank page have none.
+ */
+export function olderCaptures(page: SitePage): { ts: string; capturedAt: string }[] {
+  return page.versions.flatMap((v) =>
+    v.ts === undefined ? [] : [{ ts: v.ts, capturedAt: v.capturedAt }],
+  );
+}

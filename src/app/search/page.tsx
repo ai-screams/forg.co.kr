@@ -10,9 +10,9 @@
  * see ADR-0015). The base URL is provided at build time via
  * `NEXT_PUBLIC_PAGEFIND_BASE` (default `/pagefind/` for local preview).
  *
- * We load `${PAGEFIND_BASE}pagefind.js` at runtime with an `import()` the
- * bundler leaves alone, and preload it from the static HTML so the download
- * starts before hydration.
+ * The runtime, the query and the last search live in `use-pagefind.ts`;
+ * this file draws the box, the one notice `searchView` allows and the
+ * results.
  *
  * Tailwind v4 era-aware tokens (`bg-(--era-content-bg)` etc.) are used
  * throughout — no era-specific branching in JS, pure CSS variable resolution.
@@ -20,128 +20,30 @@
 
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
-import { preloadModule } from "react-dom";
+import { useState } from "react";
 
-/** Minimal Pagefind result data surface we need. */
-interface PfResultData {
-  url: string;
-  excerpt: string;
-  meta: Record<string, string | undefined>;
-  filters: Record<string, string[] | undefined>;
-}
+import {
+  searchView,
+  usePagefind,
+  usePagefindSearch,
+  useUrlQuery,
+  type SearchResult,
+} from "./use-pagefind";
 
-function useDebouncedValue(value: string, delayMs: number): string {
-  const [debounced, setDebounced] = useState(value);
-  useEffect(() => {
-    const t = setTimeout(() => setDebounced(value), delayMs);
-    return () => clearTimeout(t);
-  }, [value, delayMs]);
-  return debounced;
-}
-
-/**
- * Resolves to e.g. `/pagefind/` (local) or `https://search.forg.co.kr/`
- * (production R2 bundle). Always ends with `/` so we can concatenate.
- */
-const PAGEFIND_BASE_RAW = process.env["NEXT_PUBLIC_PAGEFIND_BASE"] ?? "/pagefind/";
-const PAGEFIND_BASE = PAGEFIND_BASE_RAW.endsWith("/") ? PAGEFIND_BASE_RAW : `${PAGEFIND_BASE_RAW}/`;
-const PAGEFIND_JS = `${PAGEFIND_BASE}pagefind.js`;
-
-interface PagefindApi {
-  search: (q: string) => Promise<{ results: Array<{ data: () => Promise<PfResultData> }> }>;
-}
-
-/** Load the Pagefind runtime; it only exists after the postbuild step. */
-async function loadPagefind(): Promise<PagefindApi | null> {
-  try {
-    return (await import(/* webpackIgnore: true */ PAGEFIND_JS)) as PagefindApi;
-  } catch {
-    return null;
-  }
-}
-
-type PagefindState =
-  | { status: "loading" }
-  | { status: "ready"; api: PagefindApi }
-  | { status: "unavailable" };
-
-interface SearchResult {
-  url: string;
-  title: string;
-  author: string;
-  boardKr: string;
-  excerpt: string;
-}
-
-function toResult(item: PfResultData): SearchResult {
-  const boardId = item.filters["board"]?.[0] ?? "";
-  return {
-    url: item.url,
-    title: item.meta["title"] ?? "(제목 없음)",
-    author: item.meta["author"] ?? "",
-    // Post pages carry their board's Korean name as `boardKr` meta, so the
-    // board catalog stays out of this client bundle.
-    boardKr: boardId === "site" ? "안내 페이지" : (item.meta["boardKr"] ?? boardId),
-    excerpt: item.excerpt,
-  };
-}
-
-// A static page's URL does not change under it, so there is nothing to
-// subscribe to; useSyncExternalStore still needs the callback.
-function subscribeToNothing() {
-  return () => {};
-}
-
-function readUrlQuery(): string {
-  return new URLSearchParams(window.location.search).get("q") ?? "";
-}
+const NOTICE_TEXT = {
+  unavailable: "검색 색인을 불러오지 못했습니다.",
+  failed: "검색 중 오류가 났습니다.",
+} as const;
 
 export default function SearchPage() {
-  // The era shells carry the original's search box, which lands here as
-  // `?q=`. The URL is an external system, so it is read the way the era
-  // toggle reads localStorage: through useSyncExternalStore, with an empty
-  // server snapshot so the static HTML and the hydrating client agree.
-  const urlQuery = useSyncExternalStore(subscribeToNothing, readUrlQuery, () => "");
+  const urlQuery = useUrlQuery();
   // What the visitor has typed, if anything; until then the URL's query stands.
   const [typed, setTyped] = useState<string | null>(null);
   const query = typed ?? urlQuery;
-  const [pagefind, setPagefind] = useState<PagefindState>({ status: "loading" });
-  // The last finished search. Results stay on screen while a newer one runs.
-  const [found, setFound] = useState<{
-    query: string;
-    results: SearchResult[];
-    failed?: true;
-  } | null>(null);
-  preloadModule(PAGEFIND_JS);
-  const debouncedQuery = useDebouncedValue(query, 200);
-
-  useEffect(() => {
-    void loadPagefind().then((api) => {
-      setPagefind(api ? { status: "ready", api } : { status: "unavailable" });
-    });
-  }, []);
-
-  // Depends on `pagefind` so a `?q=` search, which arrives before the
-  // runtime has loaded, runs once it is ready. Pagefind answers searches in
-  // the order they were asked, so the last to finish is the newest query.
-  useEffect(() => {
-    const q = debouncedQuery.trim();
-    if (!q || pagefind.status !== "ready") return;
-    pagefind.api
-      .search(q)
-      .then(({ results: raw }) => Promise.all(raw.slice(0, 30).map((r) => r.data())))
-      .then(
-        (items) => setFound({ query: q, results: items.map(toResult) }),
-        () => setFound({ query: q, results: [], failed: true }),
-      );
-  }, [debouncedQuery, pagefind]);
-
+  const pagefind = usePagefind();
+  const found = usePagefindSearch(pagefind, query);
   const trimmedQuery = query.trim();
-  const unavailable = pagefind.status === "unavailable";
-  const searching = trimmedQuery !== "" && !unavailable && found?.query !== trimmedQuery;
-  const results = trimmedQuery && found ? found.results : [];
-  const failed = !searching && trimmedQuery !== "" && found?.failed === true;
+  const { notice, results } = searchView(pagefind, trimmedQuery, found);
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
@@ -166,57 +68,59 @@ export default function SearchPage() {
 
         {/* Results area */}
         <div className="px-6 py-5">
-          {(unavailable || failed) && (
+          {(notice === "unavailable" || notice === "failed") && (
             <p className="text-forg-muted rounded border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3 text-sm">
-              {unavailable ? "검색 색인을 불러오지 못했습니다." : "검색 중 오류가 났습니다."} 잠시
-              뒤에 다시 시도해 주세요.
+              {NOTICE_TEXT[notice]} 잠시 뒤에 다시 시도해 주세요.
             </p>
           )}
 
-          {searching && <p className="text-forg-muted text-sm">검색 중…</p>}
+          {notice === "searching" && <p className="text-forg-muted text-sm">검색 중…</p>}
 
-          {!searching && trimmedQuery && !unavailable && !failed && results.length === 0 && (
+          {notice === "empty" && (
             <p className="text-forg-muted text-sm">
               &ldquo;{trimmedQuery}&rdquo;에 대한 결과가 없습니다.
             </p>
           )}
 
-          {!unavailable && !trimmedQuery && (
+          {notice === "idle" && (
             <p className="text-forg-muted text-sm">검색어를 입력하면 결과가 나타납니다.</p>
           )}
 
           {results.length > 0 && (
             <ol className="space-y-4">
               {results.map((r) => (
-                <li
-                  key={r.url}
-                  className="rounded-md border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3"
-                >
-                  <a
-                    href={r.url}
-                    className="block text-sm leading-snug font-bold text-(--era-link) hover:text-(--era-link-hover)"
-                  >
-                    {r.title}
-                  </a>
-                  <div className="text-forg-muted mt-1 flex flex-wrap items-center gap-x-3 text-xs">
-                    <span className="bg-forg-gold/20 text-forg-ink rounded px-1.5 py-0.5 text-[0.65rem] font-bold">
-                      {r.boardKr}
-                    </span>
-                    {r.author && <span>{r.author}</span>}
-                  </div>
-                  {r.excerpt && (
-                    <p
-                      className="text-forg-muted mt-2 text-xs leading-relaxed"
-                      /* Pagefind wraps matched terms in <mark>; safe to set innerHTML */
-                      dangerouslySetInnerHTML={{ __html: r.excerpt }}
-                    />
-                  )}
-                </li>
+                <ResultItem key={r.url} result={r} />
               ))}
             </ol>
           )}
         </div>
       </div>
     </div>
+  );
+}
+
+function ResultItem({ result: r }: { result: SearchResult }) {
+  return (
+    <li className="rounded-md border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3">
+      <a
+        href={r.url}
+        className="block text-sm leading-snug font-bold text-(--era-link) hover:text-(--era-link-hover)"
+      >
+        {r.title}
+      </a>
+      <div className="text-forg-muted mt-1 flex flex-wrap items-center gap-x-3 text-xs">
+        <span className="bg-forg-gold/20 text-forg-ink rounded px-1.5 py-0.5 text-[0.65rem] font-bold">
+          {r.boardKr}
+        </span>
+        {r.author && <span>{r.author}</span>}
+      </div>
+      {r.excerpt && (
+        <p
+          className="text-forg-muted mt-2 text-xs leading-relaxed"
+          /* Pagefind wraps matched terms in <mark>; safe to set innerHTML */
+          dangerouslySetInnerHTML={{ __html: r.excerpt }}
+        />
+      )}
+    </li>
   );
 }

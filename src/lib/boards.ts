@@ -607,7 +607,7 @@ const BOARDS = {
 export type BoardId = keyof typeof BOARDS;
 
 /** A board's metadata with its id known to be a registry key. */
-type Board = BoardMeta & { id: BoardId };
+export type Board = BoardMeta & { id: BoardId };
 
 export function isBoardId(id: string): id is BoardId {
   return Object.hasOwn(BOARDS, id);

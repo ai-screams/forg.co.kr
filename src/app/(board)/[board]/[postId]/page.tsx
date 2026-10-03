@@ -14,6 +14,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { BoardMain } from "@/components/board-main";
 import { PostView } from "@/components/post-view";
 import { getBoard, isBoardId } from "@/lib/boards";
 import { getAdjacentPosts, getAllPostParams, getPost } from "@/lib/posts";
@@ -68,8 +69,8 @@ export default async function PostPage({ params }: RouteProps) {
   if (!post) notFound();
 
   return (
-    <div className="w-full flex-1 px-3 py-4">
+    <BoardMain>
       <PostView post={post} adjacent={adjacent} />
-    </div>
+    </BoardMain>
   );
 }
