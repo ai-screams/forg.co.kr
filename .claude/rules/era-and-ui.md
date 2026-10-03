@@ -13,7 +13,7 @@ paths:
 - Visibility: `.era-2014-only` / `.era-2003-only` / `.era-2001-only`, plus `.era-not-2001` for the 2014/2003 side columns. 2001 centres a 790px column (`.forg-shell` / `.forg-shell-main` in `src/styles/eras.css`); 2014 and 2003 keep the 10/100/680/7/\* frame.
 - `<EraToggle>` uses `useSyncExternalStore`, not `useEffect + setState` (the React Compiler lint flags the latter). Mirror it for any DOM-as-state subscription. Its pressed colour comes from the `[data-era-option]` rules in `src/styles/eras.css`, so the saved era is lit before hydration; another tab's change arrives as a `storage` event that sets `data-era`.
 - Era-specific `<img>`s carry `loading="lazy"`: a hidden era's images then never load, and React does not emit `<link rel=preload>` for them.
-- Colours are **OKLCH** with the original sRGB hex in an adjacent comment — except the original skins' colours in `src/styles/skins.css`, which stay hex: they are read off the captures like the pixel sizes, and OKLCH would round through `lab()`. Name a skin colour there (`bg-zb40-rule`) instead of writing `bg-[#e0e0e0]` in a component.
+- Colours are **OKLCH** with the original sRGB hex in an adjacent comment — except the original skins' colours in `src/styles/skins.css`, which stay hex: they are read off the captures like the pixel sizes, and OKLCH would round through `lab()`. Name a skin colour there (`bg-zb40-rule`) instead of writing `bg-[#e0e0e0]` in a component; `pnpm lint` rejects a hex class in any string under `src/` (`eslint.config.mjs`).
 
 ## Adding an era
 
