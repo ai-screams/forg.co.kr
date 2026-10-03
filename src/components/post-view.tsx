@@ -54,7 +54,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       </span>
 
       <div className="era-2001-only">
-        <ViewHead2001 skin={skin2001Of(board.id as BoardId)} post={post} />
+        <ViewHead2001 skin={skin2001Of(board.id)} post={post} />
       </div>
       <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
         <p className="text-forg-muted text-xs" data-pagefind-ignore>
@@ -194,7 +194,7 @@ export function PostView({ post, adjacent }: PostViewProps) {
       {adjacent && (adjacent.prev ?? adjacent.next) ? (
         <div data-pagefind-ignore>
           <PostNavigation
-            board={board.id as BoardId}
+            board={board.id}
             boardKr={board.nameKr}
             prev={adjacent.prev}
             next={adjacent.next}

@@ -40,14 +40,15 @@ import { MobileMenu, ScrollFade } from "@/components/era-chrome-2014";
 import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** Every asset on this surface is asked for at its 2003 capture. Without it
  *  the newest capture wins and the exhibit wears 2007 artwork — see
  *  `lib/chrome`. */
-const ERA: ChromeEra = "2003";
+const ERA: Era = "2003";
 
 /** Visitor total shown by frame-bottom-2003 on 2003-06-03. Frozen, like
  *  the 2014 counter's 52,916,713. */
@@ -286,17 +287,11 @@ export function FrameTop2003() {
               {section.fallback}
             </p>
             <div className="grid grid-cols-2 gap-x-4">
-              {section.links.map((link) =>
-                link.href.startsWith("/site/") || link.href.startsWith("http") ? (
-                  <a key={link.label} href={link.href} className="block py-[5px]">
-                    {link.label.replace(/^-/, "")}
-                  </a>
-                ) : (
-                  <Link key={link.label} href={link.href} className="block py-[5px]">
-                    {link.label.replace(/^-/, "")}
-                  </Link>
-                ),
-              )}
+              {section.links.map((link) => (
+                <Link key={link.label} href={link.href} className="block py-[5px]">
+                  {link.label.replace(/^-/, "")}
+                </Link>
+              ))}
             </div>
           </div>
         ))}
@@ -455,23 +450,12 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
       <ul className="space-y-[1px] pl-1">
         {section.links.map((link) => (
           <li key={link.label}>
-            {/* `/site/…` pages are route-handler documents, not App Router
-                pages — client-side navigation has no payload to fetch. */}
-            {link.href.startsWith("/site/") ? (
-              <a
-                href={link.href}
-                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                href={link.href}
-                className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
-              >
-                {link.label}
-              </Link>
-            )}
+            <Link
+              href={link.href}
+              className="hover:text-forg-gold-hover block text-[10.5px] leading-tight text-white/85"
+            >
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>

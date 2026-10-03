@@ -5,7 +5,8 @@
  * provenance, and default era hints. The Python ETL parsers do not
  * duplicate this catalog — the React side reads `BOARDS[id].nameKr` at
  * render time. The `boardKr` field on `Post` JSON is legacy (set to the
- * English id by the parser) and will be removed in a follow-up commit.
+ * English id by the parser); nothing reads it, and the gold JSON keeps it
+ * because regenerating posts is an ETL re-run trap (`.claude/rules/etl.md`).
  *
  * Inventory comes from `.docs/research/FORG-RECONSTRUCTION-GUIDE.md` §4
  * (메뉴/게시판 전수 목록) cross-referenced with
@@ -21,7 +22,7 @@
 import type { PostEra, SourceEngine } from "@/types/post";
 
 /** Top-level grouping used for sidebar sections and listings. */
-export type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
+type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
 
 export interface BoardMeta {
   /** Stable id matching `Post.board` and post directory names. */
@@ -56,7 +57,7 @@ export interface BoardMeta {
  * literal types (so `BOARDS.Notice.category` narrows to `"uo"`) while
  * still validating shape conformance.
  */
-export const BOARDS = {
+const BOARDS = {
   // ── uo (UO core, 2003 era — Zeroboard) ──
   Notice: {
     id: "Notice",
@@ -605,24 +606,20 @@ export const BOARDS = {
 
 export type BoardId = keyof typeof BOARDS;
 
-/** Display order for board categories in sidebars and indexes. */
-export const BOARD_CATEGORY_ORDER: readonly BoardCategory[] = [
-  "uo",
-  "community",
-  "trade",
-  "guide",
-  "other",
-] as const;
+/** A board's metadata with its id known to be a registry key. */
+type Board = BoardMeta & { id: BoardId };
 
 export function isBoardId(id: string): id is BoardId {
   return Object.hasOwn(BOARDS, id);
 }
 
-export function getBoard(id: string): BoardMeta | undefined {
+export function getBoard(id: BoardId): Board;
+export function getBoard(id: string): Board | undefined;
+export function getBoard(id: string): Board | undefined {
   return isBoardId(id) ? BOARDS[id] : undefined;
 }
 
-export function getBoardOrThrow(id: string): BoardMeta {
+export function getBoardOrThrow(id: string): Board {
   const board = getBoard(id);
   if (!board) {
     throw new Error(`Unknown board id: ${id}`);
@@ -630,10 +627,6 @@ export function getBoardOrThrow(id: string): BoardMeta {
   return board;
 }
 
-export function listBoards(): readonly BoardMeta[] {
+export function listBoards(): readonly Board[] {
   return Object.values(BOARDS);
-}
-
-export function listBoardsByCategory(category: BoardCategory): readonly BoardMeta[] {
-  return listBoards().filter((board) => board.category === category);
 }

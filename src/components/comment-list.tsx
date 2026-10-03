@@ -19,9 +19,7 @@ import type { ListSkin } from "@/components/list-skin";
 import { chromeUrl } from "@/lib/chrome";
 import { formatKoreanDateTime, isUnknownDate } from "@/lib/dates";
 import { withImgBase } from "@/lib/img-base";
-import type { Post } from "@/types/post";
-
-type Comment = Post["comments"][number];
+import type { Comment } from "@/types/post";
 
 interface ItemProps {
   comment: Comment;

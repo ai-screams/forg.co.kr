@@ -17,13 +17,14 @@ import { Fragment, type ReactNode } from "react";
 import Link from "@/components/link";
 
 import { type BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
  *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
-const ERA: ChromeEra = "2014";
+const ERA: Era = "2014";
 
-export interface MenuConfig {
+interface MenuConfig {
   id: BoardId;
   asset: string;
   hoverAsset: string;
@@ -58,7 +59,7 @@ const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
 
 /** Static carry-over from the 2014-12-18 snapshot footer. HITL #3:
  *  keep faithful museum number, plug in live tracking later. */
-export const TOTAL_VISITORS = 52_916_713;
+const TOTAL_VISITORS = 52_916_713;
 
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Site rails                                                            */
@@ -354,7 +355,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
       <Link
         href={`/${item.id}`}
         aria-label={item.label}
-        className="forg-2014-menu group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
+        className="group relative h-[20px] w-[80px] shrink-0 overflow-hidden"
         style={{
           backgroundImage: `url(${baseUrl})`,
           backgroundRepeat: "no-repeat",
@@ -389,7 +390,7 @@ function MenuButton({ item }: { item: MenuConfig }) {
 /*  Footer counter (24px)                                                 */
 /* ──────────────────────────────────────────────────────────────────── */
 
-export function VisitorCounter({ total }: { total: number }) {
+export function VisitorCounter() {
   const bgUrl = chromeUrl("bgm_bg.gif", ERA);
   const rightUrl = chromeUrl("bgm_right.gif", ERA);
 
@@ -400,7 +401,7 @@ export function VisitorCounter({ total }: { total: number }) {
       className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
     >
-      <span className="font-mono tabular-nums">Total : {total}</span>
+      <span className="font-mono tabular-nums">Total : {TOTAL_VISITORS}</span>
       <span className="text-forg-cream/60 hidden text-[9px] sm:inline">
         2014-12-18 · 박물관 박제 · 후속 ADR 에서 라이브 카운터 검토
       </span>

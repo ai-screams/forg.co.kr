@@ -22,13 +22,14 @@ import { EraShell } from "@/components/era-shell";
 import { Home2001Content } from "@/components/home-2001";
 import { Home2003Content } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
 import { getPost, getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
  *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
-const ERA: ChromeEra = "2014";
+const ERA: Era = "2014";
 
 interface BoxConfig {
   id: BoardId;
@@ -196,9 +197,7 @@ function BoxCard({ box }: { box: BoxData }) {
             <span className="text-forg-ink text-xs font-bold tracking-tight">
               {box.config.label}
             </span>
-            <span className="text-forg-muted font-mono text-[9px] uppercase">
-              {meta?.engine ?? "—"}
-            </span>
+            <span className="text-forg-muted font-mono text-[9px] uppercase">{meta.engine}</span>
           </div>
         )}
         {headerUrl && <span className="sr-only">{box.config.label}</span>}

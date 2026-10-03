@@ -37,7 +37,6 @@ import {
   LeftRail,
   RightRail,
   SiteHeader2014,
-  TOTAL_VISITORS,
   VisitorCounter,
 } from "@/components/era-chrome-2014";
 import { FrameTop2001 } from "@/components/home-2001";
@@ -57,7 +56,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
 
   return (
     <div className="flex flex-1 bg-(--era-page-bg)">
-      <div className="forg-2014-shell forg-shell flex w-full gap-0">
+      <div className="forg-shell flex w-full gap-0">
         <div className="era-not-2001 contents">
           <LeftRail />
         </div>
@@ -92,7 +91,7 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           )}
 
           <div className="era-2014-only">
-            <VisitorCounter total={TOTAL_VISITORS} />
+            <VisitorCounter />
           </div>
           <div className="era-2003-only">
             <FrameBottom2003 />

@@ -28,7 +28,7 @@ import type { Row2001 } from "@/components/list-skin-2001";
 import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
 import { formatShortDate } from "@/lib/dates";
 import { skin2001Of } from "@/lib/skins-2001";
-import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
+import { BOARD_INDEX_PAGE_SIZE, type BoardIndexEntry, type BoardIndexPage } from "@/types/post";
 
 interface BoardListingProps {
   board: BoardId;
@@ -86,7 +86,7 @@ function RowTitle({
   children,
 }: {
   board: BoardId;
-  entry: BoardIndexPage["entries"][number];
+  entry: BoardIndexEntry;
   children: ReactNode;
 }) {
   const layout = "inline-flex items-baseline gap-[4px] leading-[1.7]";

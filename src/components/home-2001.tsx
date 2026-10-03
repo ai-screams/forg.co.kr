@@ -26,11 +26,12 @@
 import Link from "@/components/link";
 
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl, type ChromeEra } from "@/lib/chrome";
+import { chromeUrl } from "@/lib/chrome";
+import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
-const ERA: ChromeEra = "2001";
+const ERA: Era = "2001";
 
 // forg_t's menu row, left to right, with the alt text each button had.
 const TOP_MENU_2001: { asset: string; label: string; href: string }[] = [
@@ -201,11 +202,7 @@ export function FrameTop2001() {
               {item.label}
             </span>
           );
-          return item.href.startsWith("/site/") ? (
-            <a key={item.asset} href={item.href}>
-              {inner}
-            </a>
-          ) : (
+          return (
             <Link key={item.asset} href={item.href}>
               {inner}
             </Link>

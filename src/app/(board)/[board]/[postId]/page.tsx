@@ -40,8 +40,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const post = await getPost(board, postId);
   if (!post) return {};
 
-  const boardMeta = getBoard(board);
-  const titleSuffix = boardMeta ? ` · ${boardMeta.nameKr}` : "";
+  const titleSuffix = ` · ${getBoard(board).nameKr}`;
   const description = post.bodyText.slice(0, 160).trim();
 
   return {
