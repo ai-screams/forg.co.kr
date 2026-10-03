@@ -9,7 +9,7 @@
 import type { Metadata } from "next";
 
 import { EraShell } from "@/components/era-shell";
-import { getAllSitePages, sectionAnchor, sectionOf, type SitePage } from "@/lib/site-pages";
+import { getAllSitePages, sectionAnchor, sectionOf } from "@/lib/site-pages";
 
 export const metadata: Metadata = {
   title: "사이트 페이지 — forg.co.kr",
@@ -43,11 +43,7 @@ const SECTION_NAMES: Record<string, string> = {
 
 export default async function SiteIndexPage() {
   const pages = (await getAllSitePages()).filter((p) => p.kind !== "redirect");
-  const sections = new Map<string, SitePage[]>();
-  for (const p of pages) {
-    const s = sectionOf(p);
-    sections.set(s, [...(sections.get(s) ?? []), p]);
-  }
+  const sections = Map.groupBy(pages, sectionOf);
   const order = [...sections.keys()].sort((a, b) =>
     a === "" ? -1 : b === "" ? 1 : a.localeCompare(b),
   );

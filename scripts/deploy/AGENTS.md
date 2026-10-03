@@ -26,7 +26,7 @@ Pages file-count constraint are documented in `.claude/rules/repo-hygiene.md`
 
 - Required env vars (`R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`) come from `.env.r2.local` (gitignored) and are enforced by `r2-client.mjs`'s `required()` — a missing var exits the process with a message, it does not throw.
 - Bucket names and concurrency are overridable: `R2_IMG_BUCKET` (default `forg-img`), `R2_BUCKET` (default `forg-search`), `R2_CONCURRENCY` (default `20`).
-- `upload-images-to-r2.mjs` supports `--dry-run` (report only, no PUTs). `upload-search-to-r2.mjs` and `pull-images-from-r2.mjs` do not take a `--dry-run` flag — read before running.
+- `upload-images-to-r2.mjs` supports `--dry-run` (report only, no PUTs). `upload-search-to-r2.mjs --dry-run` only counts the files per Cache-Control (hashed `.pf_*` a year, the rest five minutes); without it every file is PUT. `pull-images-from-r2.mjs` takes no `--dry-run` — read before running.
 - Deploy order matters: images before the site push, per `.claude/rules/repo-hygiene.md`.
 
 ### Testing Requirements

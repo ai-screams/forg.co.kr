@@ -147,6 +147,15 @@ body {
   display: none !important;
 }
 
+/* The era toggle's pressed button, lit from `data-era` like the subtrees
+ * above: the saved era shows before `<EraToggle>`'s script runs. */
+:root[data-era="2014"] [data-era-option="2014"],
+:root[data-era="2003"] [data-era-option="2003"],
+:root[data-era="2001"] [data-era-option="2001"] {
+  background-color: var(--color-forg-gold);
+  color: var(--color-forg-ink);
+}
+
 /* A 2001 post: the skins' 95% table on white, no box, and the body cell
  * `style='word-break:break-all;padding:10px;'` with `line-height:160%`. */
 :root[data-era="2001"] .forg-post {

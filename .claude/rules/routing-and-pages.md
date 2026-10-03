@@ -24,12 +24,12 @@ forg's hand-written guide pages (`/skill/`, `/map/`, `/dungeon/`, the root frame
 
 - ETL: `cdx-site.py` (phase `S`) → `download.py --phase S` → `01-decode.py` → `02g-parse-site.py` → `src/content/pages/{stem}.json` (`stem` = path without `.htm`/`.html`; a view-selecting query joins the stem, `index--page-2`). Images: `site-image-queue.py` → `download-images.py --queue scripts/etl/site-image-queue.json` → `site-image-borrow.py` (shared frame images and the Ultima history's pictures, kept only in byte-identical copies elsewhere) → re-run `02g`.
 - Sources: `forg.co.kr`, `forg.dotple.com`, `forg.uospace.net` share one path space; `cdx-site.MIRRORS` maps `hosting27.interpia98.net/~forg/` onto it.
-- `src/app/site/[...path]/route.ts` is a **route handler**: static export writes `out/site/{stem}/index.html`. No layout applies, so link to it with `<a>`, not `<Link>`.
+- `src/app/site/[...path]/route.ts` is a **route handler**: static export writes `out/site/{stem}/index.html`. No layout applies; `@/components/link` is a plain `<a>`, so it links there like any page.
 - A page shows its latest capture; its other `page` captures are `/site/{stem}/{ts}/` (`src/content/page-versions/`), picked from the museum bar, kept out of search and pointed at the latest by `rel=canonical`.
 - Each page keeps the rendering mode of its capture (`mode`, 02g RENDERING MODE): 536 of 739 had no doctype and are served without one (a 537th is member-only), in quirks mode like the original. CSS the route injects must work in every mode; check what the page's own rules already give in quirks mode before overriding them.
 
 ## Search
 
-Pagefind indexes `data-pagefind-body` only (the `/site/` route wraps each page in one, filter `board:site`). `next.config.ts` defaults `NEXT_PUBLIC_PAGEFIND_BASE` to `https://search.forg.co.kr/` when `CF_PAGES` is set. PR previews can't search (CORS). `pnpm deploy:search` has **no dry-run** and needs the variables in `.env.r2.local` (`set -a; source .env.r2.local; set +a`).
+Pagefind indexes `data-pagefind-body` only (the `/site/` route wraps each page in one, filter `board:site`). `next.config.ts` defaults `NEXT_PUBLIC_PAGEFIND_BASE` to `https://search.forg.co.kr/{pagefind version}/` when `CF_PAGES` is set, and `pnpm deploy:search` uploads to the folder of the version that built the bundle, so upload a new version's bundle before merging the bump (Cloudflare edge-caches `pagefind.js` but not the wasm or the entry file; one folder per version keeps them matched). PR previews can't search (CORS). `pnpm deploy:search` uploads every file (`--dry-run` only counts them per Cache-Control) and needs the variables in `.env.r2.local` (`set -a; source .env.r2.local; set +a`).
 
 Result labels come from the `boardKr` meta on post pages. When a change adds or renames meta the search page reads, upload the new index first, then merge the code: the live code ignores meta it does not know, but new code against the old index shows board ids.

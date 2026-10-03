@@ -27,13 +27,15 @@ import type { Post } from "@/types/post";
 
 function Img({ skin, file, alt = "" }: { skin: Skin2001; file: string; alt?: string }) {
   const url = skinAsset2001(skin, file);
-  // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
-  return url ? <img src={url} alt={alt} className="inline-block align-middle" /> : null;
+  return url ? (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, recovered skin image at its own size
+    <img loading="lazy" src={url} alt={alt} className="inline-block align-middle" />
+  ) : null;
 }
 
 export function ViewHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
   const author = (
-    <AuthorName board={post.board} name={post.author} memberNo={post.authorMemberNo} />
+    <AuthorName board={post.board} name={post.author} memberNo={post.authorMemberNo} seed="post" />
   );
   if (skin === "n_board") {
     return (
@@ -99,7 +101,12 @@ export function Comments2001({ post }: { post: Post }) {
           className="mt-px flex gap-1 bg-[#f9f9f9] p-[2px]"
         >
           <b className="w-[80px] shrink-0 break-all">
-            <AuthorName board={post.board} name={c.author} memberNo={c.authorMemberNo} />
+            <AuthorName
+              board={post.board}
+              name={c.author}
+              memberNo={c.authorMemberNo}
+              seed={`c${String(i)}`}
+            />
           </b>
           <span className="shrink-0 text-[#bbbbbb]">:::</span>
           <div

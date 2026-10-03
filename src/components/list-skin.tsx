@@ -273,17 +273,12 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
       );
     case "name":
       return (
-        <td className="text-forg-muted hidden truncate px-1 text-center align-middle text-[11px] sm:table-cell">
+        <td className="text-forg-muted truncate px-1 text-center align-middle text-[11px]">
           {row.author}
         </td>
       );
     case "title":
-      return (
-        <td className="px-1 align-middle break-all">
-          {row.title}
-          <p className="text-forg-muted text-[10.5px] sm:hidden">{row.author}</p>
-        </td>
-      );
+      return <td className="px-1 align-middle break-all">{row.title}</td>;
     case "date":
       return <td className={meta}>{row.date}</td>;
     case "hits":
@@ -296,7 +291,7 @@ function RowSpacer({ height }: { height: number }) {
   const url = chromeUrl("zb_t.gif");
   if (!url) return <div style={{ height }} aria-hidden />;
   // eslint-disable-next-line @next/next/no-img-element -- static export, 43 B spacer
-  return <img src={url} alt="" width={1} height={height} className="block" />;
+  return <img loading="lazy" src={url} alt="" width={1} height={height} className="block" />;
 }
 
 /**
@@ -324,6 +319,7 @@ function HeadRow({ skin, columns }: { skin: ListSkin; columns: readonly Column[]
             {url ? (
               // eslint-disable-next-line @next/next/no-img-element -- static export, recovered header label
               <img
+                loading="lazy"
                 src={url}
                 alt={c.head.label}
                 width={c.head.width}
@@ -428,6 +424,13 @@ function MarkIcon({
 }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 9–11 px skin icon
-    <img src={url} alt={label} width={width} height={height} className="shrink-0 self-center" />
+    <img
+      loading="lazy"
+      src={url}
+      alt={label}
+      width={width}
+      height={height}
+      className="shrink-0 self-center"
+    />
   );
 }

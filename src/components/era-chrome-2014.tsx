@@ -102,7 +102,7 @@ export function GameCategorySidebar() {
     >
       {barUrl && (
         // eslint-disable-next-line @next/next/no-img-element -- static export, 53 B rule
-        <img src={barUrl} alt="" width={86} height={2} className="block" />
+        <img loading="lazy" src={barUrl} alt="" width={86} height={2} className="block" />
       )}
       <nav className="flex flex-col text-left text-[12px]">
         {GAME_CATEGORIES.map((cat, i) => (
@@ -169,7 +169,7 @@ function SidebarSpacer({ height }: { height: number }) {
   const url = chromeUrl("blank_l_line.gif", ERA);
   if (!url) return <div style={{ height }} aria-hidden />;
   // eslint-disable-next-line @next/next/no-img-element -- static export, 49 B spacer
-  return <img src={url} alt="" width={86} height={height} className="block" />;
+  return <img loading="lazy" src={url} alt="" width={86} height={height} className="block" />;
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -200,7 +200,7 @@ export function SiteHeader2014() {
         <Link href="/" className="row-span-3 flex items-start justify-start">
           {logoUrl ? (
             // eslint-disable-next-line @next/next/no-img-element -- static export, ~3 KB GIF, no LCP cost
-            <img src={logoUrl} alt="forg.co.kr" width={100} height={42} />
+            <img loading="lazy" src={logoUrl} alt="forg.co.kr" width={100} height={42} />
           ) : (
             <span className="font-forg flex flex-col leading-tight">
               <span className="text-forg-ink text-base font-bold tracking-tight">forg.co.kr</span>
@@ -304,7 +304,15 @@ function MenuTailCap() {
   if (!url) return null;
   return (
     // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 20×20 chrome
-    <img src={url} alt="" aria-hidden width={20} height={20} className="block shrink-0" />
+    <img
+      loading="lazy"
+      src={url}
+      alt=""
+      aria-hidden
+      width={20}
+      height={20}
+      className="block shrink-0"
+    />
   );
 }
 
@@ -324,7 +332,15 @@ function InertChrome({ asset, label, title }: { asset: string; label: string; ti
   }
   return (
     // eslint-disable-next-line @next/next/no-img-element -- static export, recovered 70×15 chrome
-    <img src={url} alt={label} title={title} width={70} height={15} className="block" />
+    <img
+      loading="lazy"
+      src={url}
+      alt={label}
+      title={title}
+      width={70}
+      height={15}
+      className="block"
+    />
   );
 }
 
@@ -379,7 +395,7 @@ export function VisitorCounter({ total }: { total: number }) {
 
   return (
     <footer
-      role="contentinfo"
+      role="group"
       aria-label="누적 방문 (2014-12-18 기준 박제)"
       className="text-forg-cream bg-forg-bgm flex h-[24px] items-center justify-between pl-[15px] text-[11px]"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})`, backgroundRepeat: "repeat-x" } : undefined}
@@ -391,6 +407,7 @@ export function VisitorCounter({ total }: { total: number }) {
       {rightUrl && (
         // eslint-disable-next-line @next/next/no-img-element -- static export, decorative footer chrome
         <img
+          loading="lazy"
           src={rightUrl}
           alt=""
           width={150}

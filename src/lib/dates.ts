@@ -15,47 +15,51 @@
 
 const UNKNOWN_DATE_YEAR_THRESHOLD = 1990;
 
+/**
+ * Every stored date is Korean wall-clock time: `YYYY-MM-DDThh:mm:ss` (posts,
+ * comments, index rows), a bare `YYYY-MM-DD` (list-page rows), and on
+ * forg.kr's boards the same with `+09:00`. They are read as digits, not
+ * through `Date`, which took the build machine's time zone: on the UTC build
+ * the `+09:00` comments printed nine hours early, and west of UTC a bare date
+ * printed a day early.
+ */
+const ISO_PARTS = /(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2}))?/;
+
+/** Year, month, day, hour, minute — or null for a placeholder or malformed date. */
+function partsOf(iso: string): [string, string, string, string, string] | null {
+  const m = ISO_PARTS.exec(iso);
+  if (!m || Number(m[1]) < UNKNOWN_DATE_YEAR_THRESHOLD) return null;
+  const [, y = "", mo = "", d = "", hh = "00", mm = "00"] = m;
+  return [y, mo, d, hh, mm];
+}
+
 /** Wayback / Zeroboard NULL-timestamp placeholder check. */
 export function isUnknownDate(iso: string): boolean {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return true;
-  return d.getFullYear() < UNKNOWN_DATE_YEAR_THRESHOLD;
+  return partsOf(iso) === null;
 }
 
-const KOREAN_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-  hour: "2-digit",
-  minute: "2-digit",
-  hour12: false,
-});
-
-const SHORT_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
-  year: "2-digit",
-  month: "2-digit",
-  day: "2-digit",
-});
-
 /**
- * Full Korean datetime for the post-view header and comment timestamps.
- * Returns "작성일 미상" for 1970-epoch placeholders; the caller can show
- * `capturedAt` as context if a fallback date is useful.
+ * Full Korean datetime for the post-view header and comment timestamps,
+ * `2001. 05. 10. 13:05` as `Intl` printed it for ko-KR. Returns "작성일 미상"
+ * for 1970-epoch placeholders; the caller can show `capturedAt` as context if
+ * a fallback date is useful.
  */
 export function formatKoreanDateTime(iso: string): string {
-  if (isUnknownDate(iso)) return "작성일 미상";
-  const d = new Date(iso);
-  return KOREAN_DATE_FORMATTER.format(d);
+  const p = partsOf(iso);
+  if (!p) return "작성일 미상";
+  const [y, mo, d, hh, mm] = p;
+  return `${y}. ${mo}. ${d}. ${hh}:${mm}`;
 }
 
 /**
- * Compact YY.MM.DD form for board listings. Returns an em-dash for unknown
+ * Compact YY.MM.DD. form for board listings. Returns an em-dash for unknown
  * dates so the listing column stays narrow.
  */
 export function formatShortDate(iso: string): string {
-  if (isUnknownDate(iso)) return "—";
-  const d = new Date(iso);
-  return SHORT_DATE_FORMATTER.format(d).replace(/\s/g, "");
+  const p = partsOf(iso);
+  if (!p) return "—";
+  const [y, mo, d] = p;
+  return `${y.slice(2)}.${mo}.${d}.`;
 }
 
 /**
