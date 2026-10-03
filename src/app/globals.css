@@ -2,6 +2,7 @@
  * The site's stylesheet: Tailwind, then the museum's own files.
  *
  *   src/styles/tokens.css — era-invariant tokens (`@theme`)
+ *   src/styles/skins.css  — the original skins' colours (`@theme`, hex)
  *   src/styles/eras.css   — everything `<html data-era>` switches
  *   src/styles/base.css   — page-wide rules that are not per era
  *
@@ -16,5 +17,6 @@
 
 @import "tailwindcss";
 @import "../styles/tokens.css";
+@import "../styles/skins.css";
 @import "../styles/eras.css";
 @import "../styles/base.css";

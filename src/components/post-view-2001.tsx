@@ -31,7 +31,7 @@ export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
   if (skin === "n_board") {
     return (
       <header data-pagefind-ignore className="text-[12px]">
-        <div className="h-[3px] bg-[#9f9f9f]" />
+        <div className="bg-zb40-news-bar h-[3px]" />
         <p className="flex min-h-[30px] items-center justify-center px-2 text-center font-bold">
           {post.title}
         </p>
@@ -61,7 +61,7 @@ export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
             <td className="pl-2 font-bold">{author}</td>
           </tr>
           <tr>
-            <td colSpan={2} className="h-px border-b border-dotted border-[#bbbbbb] p-0" />
+            <td colSpan={2} className="border-zb40-dots h-px border-b border-dotted p-0" />
           </tr>
           <tr className="h-[23px]">
             <td className={labelCell} style={{ background: label, color: accent }}>
@@ -70,7 +70,7 @@ export function PostHead2001({ skin, post }: { skin: Skin2001; post: Post }) {
             <td className="pl-2 font-bold break-all">{post.title}</td>
           </tr>
           <tr>
-            <td colSpan={2} className="h-px border-b border-dotted border-[#bbbbbb] p-0" />
+            <td colSpan={2} className="border-zb40-dots h-px border-b border-dotted p-0" />
           </tr>
         </tbody>
       </table>
@@ -87,11 +87,11 @@ export function CommentList2001({ post }: { post: Post }) {
       className="text-[12px]"
     >
       {post.comments.map((c, i) => (
-        <div key={commentSeed(i)} className="mt-px flex gap-1 bg-[#f9f9f9] p-[2px]">
+        <div key={commentSeed(i)} className="bg-zb40-comment mt-px flex gap-1 p-[2px]">
           <b className="w-[80px] shrink-0 break-all">
             <CommentAuthor board={post.board} comment={c} index={i} />
           </b>
-          <span className="shrink-0 text-[#bbbbbb]">:::</span>
+          <span className="text-zb40-dots shrink-0">:::</span>
           <SanitizedHtml html={c.bodyHtml} className="min-w-0" />
         </div>
       ))}

@@ -51,7 +51,7 @@ function KritzComment({ comment, board, index }: ItemProps) {
   return (
     <li>
       <div
-        className="flex h-[20px] items-center border border-[#dfdfdf] bg-white bg-repeat-x px-[2px] font-[Verdana,sans-serif] text-[10px] text-black"
+        className="border-kritz-comment-border flex h-[20px] items-center border bg-white bg-repeat-x px-[2px] font-[Verdana,sans-serif] text-[10px] text-black"
         style={tileStyle(KRITZ_STRIP)}
       >
         comment by&nbsp;
@@ -63,7 +63,7 @@ function KritzComment({ comment, board, index }: ItemProps) {
       </div>
       <SanitizedHtml
         html={comment.bodyHtml}
-        className="p-[5px] text-[12px] leading-[1.4] text-[#363636]"
+        className="text-kritz-comment-text p-[5px] text-[12px] leading-[1.4]"
       />
     </li>
   );
@@ -71,8 +71,8 @@ function KritzComment({ comment, board, index }: ItemProps) {
 
 function WebbusComment({ comment, board, index }: ItemProps) {
   return (
-    <li className="border-b border-[#e3e3e3] pb-[2px]">
-      <div className="flex items-end justify-between bg-[#cbd1d4] p-[2px] text-[11px] text-black">
+    <li className="border-webbus-comment-rule border-b pb-[2px]">
+      <div className="bg-webbus-comment-bar flex items-end justify-between p-[2px] text-[11px] text-black">
         <b>
           <CommentAuthor board={board} comment={comment} index={index} />
         </b>

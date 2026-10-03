@@ -130,10 +130,13 @@ export async function Home2001Content() {
     Promise.all(RIGHT_BOXES.map(loadBox)),
   ]);
   return (
-    <section aria-label="2001 메인 콘텐츠" className="bg-[#f8f8f8] py-2 text-[12px] leading-[1.35]">
+    <section
+      aria-label="2001 메인 콘텐츠"
+      className="bg-forg2001-page py-2 text-[12px] leading-[1.35]"
+    >
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
-      <div className="frame:grid-cols-[150px_390px_200px] mx-auto grid w-full max-w-[740px] grid-cols-1 border border-[#cccccc]">
-        <div className="max-frame:hidden frame:border-r border-[#cccccc] p-[2px]">
+      <div className="frame:grid-cols-[150px_390px_200px] border-forg2001-table mx-auto grid w-full max-w-[740px] grid-cols-1 border">
+        <div className="max-frame:hidden frame:border-r border-forg2001-table p-[2px]">
           <LazyImg
             src={chromeUrl("left_logo_uo_1.gif", ERA)}
             alt=""
@@ -156,7 +159,7 @@ export async function Home2001Content() {
             ))}
           </map>
         </div>
-        <div className="frame:border-r border-[#cccccc] bg-[#fcfbe9]">
+        <div className="frame:border-r border-forg2001-table bg-forg2001-middle">
           <LazyImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Honor & Sacrifice"
@@ -168,7 +171,7 @@ export async function Home2001Content() {
             <BoxSection2001 key={data.box.id} data={data} />
           ))}
         </div>
-        <div className="bg-[#f8f8f8]">
+        <div className="bg-forg2001-page">
           {right.map((data) => (
             <BoxSection2001 key={data.box.id} data={data} />
           ))}
@@ -194,7 +197,7 @@ export async function Home2001Content() {
             </Link>
           </section>
         </div>
-        <div aria-hidden className="frame:col-span-3 h-[20px] border-t border-[#cccccc]" />
+        <div aria-hidden className="frame:col-span-3 border-forg2001-table h-[20px] border-t" />
       </div>
     </section>
   );
@@ -215,7 +218,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
       ) : (
         // `uoessay.gif` and `screen.gif` were never captured.
         <span
-          className="mx-auto flex items-center bg-[#e6e6e6] px-2 font-bold text-[#404040]"
+          className="bg-forg2001-box-head text-forg2001-box-head-text mx-auto flex items-center px-2 font-bold"
           style={{ maxWidth: box.width, height: box.height }}
         >
           {box.label}

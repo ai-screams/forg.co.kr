@@ -127,7 +127,7 @@ function BoxCard({ box }: { box: BoxData }) {
 
   return (
     <section
-      className="border-forg-gold/30 flex flex-col border-b max-sm:mb-3 max-sm:border max-sm:border-[#e3e3e3]"
+      className="border-forg-gold/30 max-sm:border-phone-rule flex flex-col border-b max-sm:mb-3 max-sm:border"
       aria-label={meta.nameKr}
     >
       <Link
@@ -191,7 +191,7 @@ function BoxRow({
   return (
     <Link
       href={`/${board}/${entry.postId}`}
-      className="text-forg-muted max-sm:text-forg-ink flex items-center gap-[3px] text-[12px] leading-tight hover:underline max-sm:border-b max-sm:border-dotted max-sm:border-[#e3e3e3] max-sm:py-[7px] max-sm:text-[14px]"
+      className="text-forg-muted max-sm:text-forg-ink max-sm:border-phone-rule flex items-center gap-[3px] text-[12px] leading-tight hover:underline max-sm:border-b max-sm:border-dotted max-sm:py-[7px] max-sm:text-[14px]"
     >
       <span className="truncate">{entry.title}</span>
       {entry.commentCount > 0 && (

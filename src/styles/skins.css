@@ -1,0 +1,45 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * The original skins' colours: Zeroboard's `kritz` and Gnuboard4's
+ * `webbus2009_basic` lists and comments, forg's 2001 and 2003 front pages,
+ * the 2001 Zeroboard 4.0 skins — plus the museum's own phone lists.
+ *
+ * Read off the captured markup, so kept in hex, like the pixel sizes beside
+ * them: an OKLCH value would be rounded on its way through `lab()`. Per
+ * skin, not per era — a Gnuboard4 board wears its colours in every era.
+ * The museum's own tokens are OKLCH, in `tokens.css`.
+ * ───────────────────────────────────────────────────────────────────── */
+
+@theme {
+  /* Gnuboard4 `webbus2009_basic` (2014 lists, comments) */
+  --color-webbus-comment: oklch(0.6545 0.1975 42); /* #EE5A00 — comment count */
+  --color-webbus-num: oklch(0.7668 0 0); /* #B3B3B3 — row number */
+  --color-webbus-comment-bar: #cbd1d4; /* comment's name and date bar */
+  --color-webbus-comment-rule: #e3e3e3; /* line under a comment */
+
+  /* Zeroboard `kritz_*` comments */
+  --color-kritz-comment-border: #dfdfdf;
+  --color-kritz-comment-text: #363636;
+
+  /* forg's 2001 front page (`forg_t.htm`, `forg_b.htm`) */
+  --color-forg2001-page: #f8f8f8;
+  --color-forg2001-table: #cccccc; /* `bordercolor=#CCCCCC` */
+  --color-forg2001-middle: #fcfbe9; /* the 390px middle column */
+  --color-forg2001-box-head: #e6e6e6; /* stand-in for header art never captured */
+  --color-forg2001-box-head-text: #404040;
+
+  /* forg's 2003 front page: the colour each box-header image ends in,
+   * carried across a phone-wide box (m_*.gif 350px, r_*.gif 185px) */
+  --color-forg2003-m-tail: #c0c9cb;
+  --color-forg2003-r-tail: #e6e6e6;
+
+  /* Zeroboard 4.0 skins (2001 lists and posts) */
+  --color-zb40-row: #fefdfd; /* N+gine list row */
+  --color-zb40-news-row: #fefefe; /* n_board list row */
+  --color-zb40-rule: #e0e0e0; /* line under each list row */
+  --color-zb40-news-bar: #9f9f9f; /* n_board view head, 3px */
+  --color-zb40-dots: #bbbbbb; /* dotted rules and ":::" in the view */
+  --color-zb40-comment: #f9f9f9; /* comment row */
+
+  /* The museum's phone lists (not from a capture) */
+  --color-phone-rule: #e3e3e3;
+}

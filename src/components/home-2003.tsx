@@ -180,7 +180,10 @@ function MainHeading() {
 
 /** The solid colour each header art ends in (every row of its last columns),
  *  used to carry the bar across a phone-wide box: 350px m_*.gif, 185px r_*.gif. */
-const HEADER_TAIL: Record<string, string> = { m: "max-md:bg-[#c0c9cb]", r: "max-md:bg-[#e6e6e6]" };
+const HEADER_TAIL: Record<string, string> = {
+  m: "max-md:bg-forg2003-m-tail",
+  r: "max-md:bg-forg2003-r-tail",
+};
 
 function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
   const tail = HEADER_TAIL[box.config.asset.charAt(0)] ?? "";
@@ -201,7 +204,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
           <li key={entry.postId}>
             <Link
               href={`/${box.config.id}/${entry.postId}`}
-              className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
+              className="hover:text-forg-gold-hover max-md:border-phone-rule block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:py-[6px] max-md:text-[14px]"
             >
               <LazyImg
                 src={chromeUrl(box.config.bullet, ERA)}
@@ -239,7 +242,7 @@ function BestScreenShotBox() {
   return (
     <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
       <div
-        className="bg-forg-gold/10 flex h-[22px] items-center px-1 max-md:bg-[#e6e6e6]"
+        className="bg-forg-gold/10 max-md:bg-forg2003-r-tail flex h-[22px] items-center px-1"
         style={tileStyle(chromeUrl("r_screen.gif", ERA), "no-repeat", "left center")}
       >
         <span className="sr-only">BestScreenShot</span>

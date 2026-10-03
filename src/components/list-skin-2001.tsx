@@ -137,7 +137,7 @@ function NewsRows({ rows, accent }: { rows: readonly ListRow[]; accent: string }
       <tbody>
         {rows.map((row) => (
           <RowWithRule key={row.key} span={3}>
-            <tr className="bg-[#fefefe] text-center">
+            <tr className="bg-zb40-news-row text-center">
               <td className={`${THM8} w-[100px]`}>{dateCell(row)}</td>
               <TitleCell skin="n_board" row={row} withCount={false} />
               <td className={`${THM8} w-[20px]`}>{row.hits ?? ""}</td>
@@ -182,7 +182,7 @@ function NgineRows({
       <tbody>
         {rows.map((row, i) => (
           <RowWithRule key={row.key} span={5}>
-            <tr className="h-[20px] bg-[#fefdfd] text-center">
+            <tr className="bg-zb40-row h-[20px] text-center">
               <td className={THM8}>{firstNumber - i}</td>
               <TitleCell skin={skin} row={row} withCount />
               <td className="truncate break-all">
@@ -203,7 +203,7 @@ function RowWithRule({ span, children }: { span: number; children: ReactNode }) 
     <>
       {children}
       <tr>
-        <td colSpan={span} className="h-px bg-[#e0e0e0] p-0" />
+        <td colSpan={span} className="bg-zb40-rule h-px p-0" />
       </tr>
     </>
   );
