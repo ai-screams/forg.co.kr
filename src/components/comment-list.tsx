@@ -112,12 +112,7 @@ export function CommentList({
   return (
     <ol className={skin === "plain" ? "space-y-3 text-sm" : "space-y-[6px]"}>
       {comments.map((c, i) => (
-        <Item
-          key={`${c.author}-${c.createdAt}-${String(i)}`}
-          comment={c}
-          board={board}
-          seed={commentSeed(i)}
-        />
+        <Item key={commentSeed(i)} comment={c} board={board} seed={commentSeed(i)} />
       ))}
     </ol>
   );

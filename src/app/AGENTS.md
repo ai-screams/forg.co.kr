@@ -23,15 +23,14 @@ Next.js App Router tree for the static-export museum: the root shell, the home p
 
 ## Subdirectories
 
-| Route                            | File                                         | Renders                                                                                                                                                           |
-| -------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/{board}/`                      | `(board)/[board]/page.tsx`                   | Board listing page 1 (canonical). Picks `BoardListing` (has a post-backed index), `BoardListingOnly` (captured list pages only), or `BoardPlaceholder` (neither). |
-| `/{board}/page/{N}/`             | `(board)/[board]/page/[pageNumber]/page.tsx` | Board listing pages 2+. The literal `page` segment keeps this route from colliding with `/{board}/{postId}`. Page 1 is never generated here.                      |
-| `/{board}/{postId}/`             | `(board)/[board]/[postId]/page.tsx`          | A single post via `<PostView>`, with adjacent-post navigation.                                                                                                    |
-| `/{board}/{postId}/` (unmatched) | `(board)/[board]/[postId]/not-found.tsx`     | The 404 card shown when `notFound()` fires inside the post route.                                                                                                 |
-| `/search`                        | `search/page.tsx`                            | Full-text search UI.                                                                                                                                              |
-| `/site/`                         | `site/page.tsx`                              | Index of static guide pages.                                                                                                                                      |
-| `/site/{stem}/`                  | `site/[...path]/route.ts`                    | One recovered static document.                                                                                                                                    |
+| Route                | File                                         | Renders                                                                                                                                                           |
+| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/{board}/`          | `(board)/[board]/page.tsx`                   | Board listing page 1 (canonical). Picks `BoardListing` (has a post-backed index), `BoardListingOnly` (captured list pages only), or `BoardPlaceholder` (neither). |
+| `/{board}/page/{N}/` | `(board)/[board]/page/[pageNumber]/page.tsx` | Board listing pages 2+. The literal `page` segment keeps this route from colliding with `/{board}/{postId}`. Page 1 is never generated here.                      |
+| `/{board}/{postId}/` | `(board)/[board]/[postId]/page.tsx`          | A single post via `<PostView>`, with adjacent-post navigation.                                                                                                    |
+| `/search`            | `search/page.tsx`                            | Full-text search UI.                                                                                                                                              |
+| `/site/`             | `site/page.tsx`                              | Index of static guide pages.                                                                                                                                      |
+| `/site/{stem}/`      | `site/[...path]/route.ts`                    | One recovered static document.                                                                                                                                    |
 
 All three board-shaped routes set `dynamicParams = false` and enumerate every param via `generateStaticParams`, so an unregistered board, page number, or post id is a **build error**, not a runtime 404. See `.claude/rules/routing-and-pages.md` for the full routing/board/search contract and `.claude/rules/era-and-ui.md` for the era-toggle and mobile-layout rules — both are authoritative; this file only points at files.
 
@@ -62,7 +61,7 @@ pnpm build       # next build — this is what actually catches a bad generateSt
 ### Common Patterns
 
 - `generateMetadata` reads the same data loaders as the page body (`getBoard`, `getBoardView`, `getBoardIndex`, `getPost`) and returns `{}` for an invalid board id rather than throwing.
-- `notFound()` is called for an invalid `board` param or a missing post/index, never a manual redirect.
+- `notFound()` is called for an invalid `board` param or a missing post/index, never a manual redirect. With `dynamicParams = false` it cannot fire for a generated page, so the routes keep no `not-found.tsx` of their own: one under `[postId]` was serialized into every post page's RSC payload (about 1 KB each) and never shown.
 - Pagination hrefs: page 1 is always `/{board}`, page N≥2 is `/{board}/page/{N}` (`pageHref` in `board-listing.tsx` builds the prev/next links; `(board)/[board]/page/[pageNumber]/page.tsx`'s `generateStaticParams` enumerates `pageNumber` from 2).
 
 ## Dependencies

@@ -94,10 +94,7 @@ export function Comments2001({ post }: { post: Post }) {
       className="text-[12px]"
     >
       {post.comments.map((c, i) => (
-        <div
-          key={`${c.author}-${c.createdAt}-${String(i)}`}
-          className="mt-px flex gap-1 bg-[#f9f9f9] p-[2px]"
-        >
+        <div key={commentSeed(i)} className="mt-px flex gap-1 bg-[#f9f9f9] p-[2px]">
           <b className="w-[80px] shrink-0 break-all">
             <AuthorName
               board={post.board}
