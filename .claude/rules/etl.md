@@ -11,11 +11,11 @@ paths:
 
 Raw tiers live under `.docs/research/` (gitignored); gold ships in git.
 
-- **bronze** `archive/{phase}/{board}/{post_id}.html` — raw Wayback captures (EUC-KR/CP949), immutable. `scripts/etl/download.py --phase X` reads the phase's CDX plan (phase A left `ScreenShot/10481` behind on a since-fixed URL-encoding bug; the next run picks it up). Phases: A, B, C, L (list pages), U, Z, Y, T, V, LZ, S (site pages), R (reply forms).
+- **bronze** `archive/{phase}/{board}/{post_id}.html` — raw Wayback captures (EUC-KR/CP949), immutable. `scripts/etl/download.py --phase X` reads the phase's CDX plan (phase A left `ScreenShot/10481` behind on a since-fixed URL-encoding bug; the next run picks it up). Phases: A, B, C, L (list pages, one capture each), L2 (every other capture of a list page), U, Z, Y, T, V, W (later captures of kept posts), LZ, S (site pages), R (reply forms).
 - **silver** `archive-clean/{phase}/…` — UTF-8, Wayback chrome stripped, by `01-decode.py` (atomic writes, idempotent). Captures were fetched with `id_`, so its chrome counters are normally 0; keep the cleanup for `if_`/`fw_` re-downloads.
 - **gold** `src/content/posts/{board}/{post_id}.json` — Pydantic-validated (`schemas.py`). 14,837 posts across 45 boards (2026-10-01). Parsers by engine: `02` Zeroboard 4.1 (incl. the `buzzard` event-calendar skin of `events_date`), `02b` Gnuboard4, `02d` Gnuboard5 (forg.kr), `02e` link/diary skins, `02f` Zeroboard 4.0, `02h` posts kept only in reply forms. `Post.capturedAt` is the real Wayback timestamp (fail-loud if missing); `parsedAt` is parse time.
-- **listings** `src/content/listings/` — rows from captured list pages (`02c`), the only trace of many posts.
-- **index** `src/content/boards/{board}/index-{N}.json` — 50 rows/page, `createdAt` desc, by `03-build-index.py` (605 chunks on 2026-10-01). `CONTINUES` there + `BoardMeta.continues` in `src/lib/boards.ts` carry an older board's rows under its successor.
+- **listings** `src/content/listings/` — rows from captured list pages (`02c`, L and L2 merged by post number, newest capture wins), the only trace of many posts. A row's guessed year never postdates its capture's Korean date: FunBoard renumbered, so gold neighbours can point years ahead.
+- **index** `src/content/boards/{board}/index-{N}.json` — 50 rows/page, `createdAt` desc, by `03-build-index.py` (1,062 chunks on 2026-10-03). `CONTINUES` there + `BoardMeta.continues` in `src/lib/boards.ts` carry an older board's rows under its successor.
 - **site pages** `src/content/pages/{stem}.json` — see `routing-and-pages.md`.
 
 Korean decode: **CP949 first, EUC-KR fallback with `errors="replace"`** — captures labelled `euc-kr` often contain CP949.
