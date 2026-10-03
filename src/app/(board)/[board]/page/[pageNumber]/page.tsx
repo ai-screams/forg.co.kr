@@ -11,6 +11,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
+import { BoardMain } from "@/components/board-main";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardIndex } from "@/lib/posts";
 
@@ -45,8 +46,8 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const { board, pageNumber } = await params;
   if (!isBoardId(board)) return {};
 
-  const n = Number.parseInt(pageNumber, 10);
-  if (!Number.isInteger(n) || n < 2) return {};
+  const n = pageOf(pageNumber);
+  if (n === null) return {};
 
   const meta = getBoard(board);
   const index = await getBoardIndex(board, n);
@@ -62,15 +63,21 @@ export default async function BoardPaginatedPage({ params }: RouteProps) {
   const { board, pageNumber } = await params;
   if (!isBoardId(board)) notFound();
 
-  const n = Number.parseInt(pageNumber, 10);
-  if (!Number.isInteger(n) || n < 2) notFound();
+  const n = pageOf(pageNumber);
+  if (n === null) notFound();
 
   const index = await getBoardIndex(board, n);
   if (!index) notFound();
 
   return (
-    <div className="w-full flex-1 px-3 py-4">
+    <BoardMain>
       <BoardListing board={board} page={index} />
-    </div>
+    </BoardMain>
   );
+}
+
+/** Page 2 and up; page 1 is `/[board]`. */
+function pageOf(segment: string): number | null {
+  const n = Number.parseInt(segment, 10);
+  return Number.isInteger(n) && n >= 2 ? n : null;
 }

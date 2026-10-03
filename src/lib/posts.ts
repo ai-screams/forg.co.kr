@@ -125,7 +125,7 @@ export const getBoardIndex = cache(
  * Returns `null` when no list page of the board was captured. Cached per
  * render like `getPost`.
  */
-export const getBoardListing = cache(async (board: BoardId): Promise<BoardListing | null> => {
+const getBoardListing = cache(async (board: BoardId): Promise<BoardListing | null> => {
   const file = path.join(CONTENT_ROOT, "listings", `${board}.json`);
   try {
     return JSON.parse(await readFile(file, "utf8")) as BoardListing;
@@ -134,6 +134,20 @@ export const getBoardListing = cache(async (board: BoardId): Promise<BoardListin
     throw err;
   }
 });
+
+/** What `/[board]` shows: its index, else its captured list pages, else a placeholder. */
+type BoardView =
+  | { kind: "index"; page: BoardIndexPage }
+  | { kind: "listing"; listing: BoardListing }
+  | { kind: "placeholder" };
+
+export async function getBoardView(board: BoardId): Promise<BoardView> {
+  const page = await getBoardIndex(board, 1);
+  if (page) return { kind: "index", page };
+  // No post page was ever captured; the list pages may still have been.
+  const listing = await getBoardListing(board);
+  return listing ? { kind: "listing", listing } : { kind: "placeholder" };
+}
 
 /**
  * The newest `count` rows of a board that the museum holds the post for.

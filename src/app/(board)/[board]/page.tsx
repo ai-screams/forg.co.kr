@@ -18,9 +18,10 @@ import { notFound } from "next/navigation";
 
 import { BoardListing } from "@/components/board-listing";
 import { BoardListingOnly } from "@/components/board-listing-only";
+import { BoardMain } from "@/components/board-main";
 import { BoardPlaceholder } from "@/components/board-placeholder";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
-import { getBoardIndex, getBoardListing } from "@/lib/posts";
+import { getBoardView } from "@/lib/posts";
 
 export const dynamicParams = false;
 
@@ -41,53 +42,41 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const { board } = await params;
   if (!isBoardId(board)) return {};
 
-  const meta = getBoard(board);
-
-  const index = await getBoardIndex(board, 1);
-  if (!index) {
-    const listing = await getBoardListing(board);
-    if (listing) {
+  const { nameKr } = getBoard(board);
+  const view = await getBoardView(board);
+  switch (view.kind) {
+    case "index":
       return {
-        title: `${meta.nameKr} — forg.co.kr`,
-        description: `${meta.nameKr} 게시판 — 목록에 남은 ${listing.entries.length.toLocaleString("ko-KR")}개 제목이 보존되어 있습니다.`,
+        title: `${nameKr} — forg.co.kr`,
+        description: `${nameKr} 게시판 — ${view.page.totalPosts.toLocaleString("ko-KR")}개 게시글이 보존되어 있습니다.`,
       };
-    }
-    return {
-      title: `${meta.nameKr} (준비 중) — forg.co.kr`,
-      description: `${meta.nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
-    };
+    case "listing":
+      return {
+        title: `${nameKr} — forg.co.kr`,
+        description: `${nameKr} 게시판 — 목록에 남은 ${view.listing.entries.length.toLocaleString("ko-KR")}개 제목이 보존되어 있습니다.`,
+      };
+    case "placeholder":
+      return {
+        title: `${nameKr} (준비 중) — forg.co.kr`,
+        description: `${nameKr} 게시판은 아직 박물관에 도착하지 않았습니다.`,
+      };
   }
-
-  return {
-    title: `${meta.nameKr} — forg.co.kr`,
-    description: `${meta.nameKr} 게시판 — ${index.totalPosts.toLocaleString("ko-KR")}개 게시글이 보존되어 있습니다.`,
-  };
 }
 
 export default async function BoardPageOne({ params }: RouteProps) {
   const { board } = await params;
   if (!isBoardId(board)) notFound();
 
-  const meta = getBoard(board);
-
-  const index = await getBoardIndex(board, 1);
-  if (!index) {
-    // No post page was ever captured; the list pages may still have been.
-    const listing = await getBoardListing(board);
-    return (
-      <div className="w-full flex-1 px-3 py-4">
-        {listing ? (
-          <BoardListingOnly board={board} listing={listing} />
-        ) : (
-          <BoardPlaceholder meta={meta} />
-        )}
-      </div>
-    );
-  }
-
+  const view = await getBoardView(board);
   return (
-    <div className="w-full flex-1 px-3 py-4">
-      <BoardListing board={board} page={index} />
-    </div>
+    <BoardMain>
+      {view.kind === "index" ? (
+        <BoardListing board={board} page={view.page} />
+      ) : view.kind === "listing" ? (
+        <BoardListingOnly board={board} listing={view.listing} />
+      ) : (
+        <BoardPlaceholder meta={getBoard(board)} />
+      )}
+    </BoardMain>
   );
 }

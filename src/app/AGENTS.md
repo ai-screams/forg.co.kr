@@ -60,7 +60,7 @@ pnpm build       # next build — this is what actually catches a bad generateSt
 
 ### Common Patterns
 
-- `generateMetadata` reads the same data loaders as the page body (`getBoard`, `getBoardIndex`, `getPost`) and returns `{}` for an invalid board id rather than throwing.
+- `generateMetadata` reads the same data loaders as the page body (`getBoard`, `getBoardView`, `getBoardIndex`, `getPost`) and returns `{}` for an invalid board id rather than throwing.
 - `notFound()` is called for an invalid `board` param or a missing post/index, never a manual redirect.
 - Pagination hrefs: page 1 is always `/{board}`, page N≥2 is `/{board}/page/{N}` (`pageHref` in `board-listing.tsx` builds the prev/next links; `(board)/[board]/page/[pageNumber]/page.tsx`'s `generateStaticParams` enumerates `pageNumber` from 2).
 
