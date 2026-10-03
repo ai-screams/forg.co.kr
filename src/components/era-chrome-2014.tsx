@@ -16,7 +16,13 @@ import { Fragment } from "react";
 
 import Link from "@/components/link";
 
-import { InertChrome, MenuRow, MobileMenu, TBarRow } from "@/components/chrome-primitives";
+import {
+  InertChrome,
+  InertJumpMenu,
+  MenuRow,
+  MobileMenu,
+  TBarRow,
+} from "@/components/chrome-primitives";
 import { LazyImg } from "@/components/lazy-img";
 import { type BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
@@ -125,37 +131,24 @@ export function GameCategorySidebar() {
 const FAMILY_SITES = ["Zeme", "Kritz", "Cindee"];
 
 /**
- * The sidebar's `<select onchange="namosw_goto_byselect(…)">`. The original
- * opened the chosen site in a new window; ncity.net, kritz.mulple.com and
- * daoc.mulple.com have all been dead for years, so this one renders the same
- * control with nothing behind it — the same treatment Login / Sign Up get.
+ * The sidebar's Family Site menu. The original opened the chosen site in a
+ * new window; ncity.net, kritz.mulple.com and daoc.mulple.com have all been
+ * dead for years.
  */
 function FamilySiteSelect() {
   return (
     <p className="mt-3">
-      {/* `disabled` takes the control out of the tab order, so the reason it
-          is dead has to live in the accessibility tree, not just `title`. */}
-      {/* The names are repeated here because a disabled control is out of the
-          tab order: this keeps what the sidebar preserved — the three site
-          names — reachable even when the select itself is not. */}
-      <span id="family-site-note" className="sr-only">
-        Family Site 목록: {FAMILY_SITES.join(", ")}. 세 사이트 모두 사라져 이동할 수 없습니다.
-      </span>
-      <select
-        aria-label="Family Site"
-        aria-describedby="family-site-note"
-        title="박물관 모드 — 연결된 사이트가 모두 사라졌습니다"
-        disabled
-        defaultValue="Family Site"
+      <InertJumpMenu
+        id="family-site-note"
+        label="Family Site"
+        options={["Family Site", null, ...FAMILY_SITES, null]}
+        note={
+          <>
+            Family Site 목록: {FAMILY_SITES.join(", ")}. 세 사이트 모두 사라져 이동할 수 없습니다.
+          </>
+        }
         className="border-forg-ink/30 text-forg-ink/70 w-[88px] border bg-white text-[11px]"
-      >
-        <option>Family Site</option>
-        <option disabled>---------</option>
-        {FAMILY_SITES.map((name) => (
-          <option key={name}>{name}</option>
-        ))}
-        <option disabled>---------</option>
-      </select>
+      />
     </p>
   );
 }

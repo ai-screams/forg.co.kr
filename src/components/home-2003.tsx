@@ -36,7 +36,15 @@
  * to typography so the layout never breaks.
  */
 
-import { InertChrome, MenuRow, MobileMenu, TBarRow } from "@/components/chrome-primitives";
+import type { ReactNode } from "react";
+
+import {
+  InertChrome,
+  InertJumpMenu,
+  MenuRow,
+  MobileMenu,
+  TBarRow,
+} from "@/components/chrome-primitives";
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
@@ -113,11 +121,26 @@ const TOP_MENU_2003: TopMenuConfig[] = [
 // another host (`hosting27.interpia98.net/~forg/lomo/`), now `/site/lomo/`.
 // The bulk-deed page survives only as its redirect to the FAQ, which
 // `/site/bod/bod/` repeats; the poll is `/_zb/kritz_vote/`.
+/** frame-left-2003's Friend Site select, in its order; null is a `---------` divider. */
+const FRIEND_SITE_MENU = [
+  "Uospace",
+  null,
+  "Kritz",
+  null,
+  "Badaro",
+  "Yui",
+  "Harp",
+  "Sazabi",
+  "SIRL",
+];
+
 const SIDEBAR_SECTIONS: {
   /** Section header asset (English-titled GIF in chrome dir). */
   asset: string;
   /** Plain-text fallback when the asset can't load. */
   fallback: string;
+  /** A jump menu under the header, before the links (`InertJumpMenu`). */
+  jumpMenu?: { id: string; options: (string | null)[]; note: ReactNode };
   links: { label: string; href: string }[];
 }[] = [
   {
@@ -172,6 +195,17 @@ const SIDEBAR_SECTIONS: {
   {
     asset: "m_friend.gif",
     fallback: "Friend Site",
+    // Every uospace.net friend site the select led to is gone.
+    jumpMenu: {
+      id: "friend-site-note",
+      options: FRIEND_SITE_MENU,
+      note: (
+        <>
+          Friend Site 목록: {FRIEND_SITE_MENU.filter((name) => name !== null).join(", ")}. 일곱
+          사이트 모두 사라져 이동할 수 없습니다.
+        </>
+      ),
+    },
     links: [
       { label: "SiteMap", href: "/site/skill/sitemap/" },
       // frame-left-2003 links it to the official Korean UO site, kept by Wayback.
@@ -388,6 +422,17 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
         <h3 className="text-forg-gold-hover mb-1 text-[11px] font-bold tracking-wide uppercase">
           {section.fallback}
         </h3>
+      )}
+      {section.jumpMenu && (
+        <p className="mb-1 pl-1">
+          <InertJumpMenu
+            id={section.jumpMenu.id}
+            label={section.fallback}
+            options={section.jumpMenu.options}
+            note={section.jumpMenu.note}
+            className="border-forg-ink/30 text-forg-ink/70 border bg-white text-[11px]"
+          />
+        </p>
       )}
       <ul className="space-y-[1px] pl-1">
         {section.links.map((link) => (

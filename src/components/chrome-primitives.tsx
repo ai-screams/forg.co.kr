@@ -108,3 +108,51 @@ export function MobileMenu({ label, children }: { label: string; children: React
     </details>
   );
 }
+
+/**
+ * A sidebar jump menu (`<select onchange="namosw_goto_byselect(…)">`) to
+ * friend sites that have all been gone for years: the same control, with
+ * nothing behind it, the way Login and Sign Up are inert. `options` are in
+ * the capture's order; `null` is a `---------` divider. `disabled` takes the
+ * control out of the tab order, so `note` repeats the names and why they are
+ * dead for screen readers.
+ */
+export function InertJumpMenu({
+  id,
+  label,
+  options,
+  note,
+  className,
+}: {
+  id: string;
+  label: string;
+  options: readonly (string | null)[];
+  note: ReactNode;
+  className: string;
+}) {
+  return (
+    <>
+      <span id={id} className="sr-only">
+        {note}
+      </span>
+      <select
+        aria-label={label}
+        aria-describedby={id}
+        title="박물관 모드 — 연결된 사이트가 모두 사라졌습니다"
+        disabled
+        defaultValue={options[0] ?? undefined}
+        className={className}
+      >
+        {options.map((option, i) =>
+          option === null ? (
+            <option key={i} disabled>
+              ---------
+            </option>
+          ) : (
+            <option key={i}>{option}</option>
+          ),
+        )}
+      </select>
+    </>
+  );
+}

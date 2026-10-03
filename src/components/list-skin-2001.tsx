@@ -23,22 +23,13 @@
 
 import type { ReactNode } from "react";
 
+import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
-import { formatKoreanFull, formatSlashDate } from "@/lib/dates";
+import { NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
+import { formatKoreanDay, formatKoreanFull, formatSlashDate, isUnknownDate } from "@/lib/dates";
 import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
-
-/** What a 2001 row needs beyond `ListRow`'s rendered cells. */
-export interface Row2001 {
-  key: string;
-  title: string;
-  href: string | null;
-  comments: number;
-  author: ReactNode;
-  createdAt: string | null;
-  hits: number | null;
-}
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
 
@@ -56,12 +47,24 @@ export function SkinImg2001({
   return url ? <LazyImg src={url} alt={alt} className="inline-block align-middle" /> : null;
 }
 
-function dateCell(iso: string | null): ReactNode {
+/**
+ * `YYYY/MM/DD` with the full time as a tooltip, as the skins printed it. A
+ * row the museum knows only from a list page has a date and no time (the
+ * index stores it at 00:00:00), so its tooltip is the date alone. Zeroboard's
+ * NULL-date placeholder (1970) reads "—", as in the 2014/2003 lists.
+ */
+function dateCell(row: ListRow): ReactNode {
+  const iso = row.createdAt;
   if (!iso) return null;
-  return <span title={formatKoreanFull(iso)}>{formatSlashDate(iso)}</span>;
+  if (isUnknownDate(iso)) return "—";
+  return (
+    <span title={row.href ? formatKoreanFull(iso) : formatKoreanDay(iso)}>
+      {formatSlashDate(iso)}
+    </span>
+  );
 }
 
-function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
+function TitleCell({ skin, row }: { skin: Skin2001; row: ListRow }) {
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
       <SkinImg2001 skin={skin} file="old_head.gif" />
@@ -71,10 +74,10 @@ function TitleCell({ skin, row }: { skin: Skin2001; row: Row2001 }) {
           {row.title}
         </Link>
       ) : (
-        <span title="본문은 캡처되지 않았습니다">{row.title}</span>
+        <span title={NO_BODY_TOOLTIP}>{row.title}</span>
       )}
-      {skin !== "n_board" && row.comments > 0 && (
-        <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.comments}]</span>
+      {skin !== "n_board" && row.commentCount > 0 && (
+        <span className="font-[Tahoma,sans-serif] text-[9px]"> [{row.commentCount}]</span>
       )}
     </td>
   );
@@ -89,7 +92,7 @@ export function ListTable2001({
   totalPages,
 }: {
   skin: Skin2001;
-  rows: readonly Row2001[];
+  rows: readonly ListRow[];
   firstNumber: number;
   totalPosts: number;
   page: number;
@@ -116,7 +119,7 @@ export function ListTable2001({
               {rows.map((row) => (
                 <RowWithRule key={row.key} span={3}>
                   <tr className="bg-[#fefefe] text-center">
-                    <td className={`${THM8} w-[100px]`}>{dateCell(row.createdAt)}</td>
+                    <td className={`${THM8} w-[100px]`}>{dateCell(row)}</td>
                     <TitleCell skin={skin} row={row} />
                     <td className={`${THM8} w-[20px]`}>{row.hits ?? ""}</td>
                   </tr>
@@ -148,8 +151,10 @@ export function ListTable2001({
                   <tr className="h-[20px] bg-[#fefdfd] text-center">
                     <td className={THM8}>{firstNumber - i}</td>
                     <TitleCell skin={skin} row={row} />
-                    <td className="truncate break-all">{row.author}</td>
-                    <td className={THM8}>{dateCell(row.createdAt)}</td>
+                    <td className="truncate break-all">
+                      <AuthorName {...row.author} seed={row.key} />
+                    </td>
+                    <td className={THM8}>{dateCell(row)}</td>
                     <td className={THM8}>{row.hits ?? ""}</td>
                   </tr>
                 </RowWithRule>
