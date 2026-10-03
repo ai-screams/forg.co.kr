@@ -5,7 +5,7 @@ import { useSyncExternalStore } from "react";
 import { DEFAULT_ERA, ERA_LABELS, ERA_STORAGE_KEY, ERAS, isEra, type Era } from "@/lib/era";
 
 /**
- * 2014 ↔ 2003 시기를 즉시 전환하는 토글.
+ * 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
  *
  * 외부 상태(`<html data-era>` 속성과 `localStorage`)와의 동기화는
  * React 19 표준인 `useSyncExternalStore`로 처리한다. `useEffect` +
@@ -48,7 +48,8 @@ export function EraToggle() {
       aria-label="디자인 시기 전환"
       className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs"
     >
-      <span className="text-forg-ghost px-1 font-mono uppercase">era</span>
+      {/* Three eras and the search link share a 375px phone's header row. */}
+      <span className="text-forg-ghost px-1 font-mono uppercase max-[399px]:hidden">era</span>
       {ERAS.map((candidate) => {
         const active = era === candidate;
         return (
@@ -66,7 +67,7 @@ export function EraToggle() {
               window.dispatchEvent(new Event(ERA_CHANGE_EVENT));
             }}
             className={[
-              "min-w-12 rounded-full px-2 py-0.5 font-mono text-xs transition-colors",
+              "min-w-11 rounded-full px-2 py-0.5 font-mono text-xs transition-colors sm:min-w-12",
               active
                 ? "bg-forg-gold text-forg-ink"
                 : "text-forg-muted hover:bg-forg-cream hover:text-forg-ink",

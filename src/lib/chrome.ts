@@ -32,7 +32,7 @@ const CHROME_ROOT = join(process.cwd(), "public", "img", "chrome");
 
 /** Era directories under `public/img/chrome/`. Order is irrelevant; lookup
  *  is always by the era the caller asks for. */
-const ERA_DIRS = ["2003", "2014"] as const;
+const ERA_DIRS = ["2001", "2003", "2014"] as const;
 export type ChromeEra = (typeof ERA_DIRS)[number];
 
 function readPool(dir: string): ReadonlySet<string> {

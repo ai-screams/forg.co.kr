@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { DEFAULT_ERA, ERA_STORAGE_KEY } from "@/lib/era";
+import { DEFAULT_ERA, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
 
 import "./globals.css";
 
@@ -19,7 +19,7 @@ const noFlashScript = `
 (function() {
   try {
     var saved = localStorage.getItem(${JSON.stringify(ERA_STORAGE_KEY)});
-    if (saved === '2003' || saved === '2014') {
+    if (${JSON.stringify(ERAS)}.indexOf(saved) >= 0) {
       document.documentElement.dataset.era = saved;
     }
   } catch (_) {

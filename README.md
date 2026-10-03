@@ -18,7 +18,7 @@ Kritz와는 `Forg&Kritz`로 함께 표기된 자매 사이트 관계였습니다
 이 프로젝트는 폐쇄된 forg.co.kr를 [Internet Archive Wayback Machine](https://web.archive.org)에
 보존된 캡처로부터 복원하여:
 
-- 시각 디자인을 그대로 살리고 (2014 슬레이트 + 골드, 2003 프레임셋 토글)
+- 시각 디자인을 그대로 살리고 (2014 슬레이트 + 골드, 2003 프레임셋·2001 첫 화면 토글)
 - 약 **13,290개의 게시글**을 정적으로 빌드하여 영구 보존하고
 - 검색·댓글 등 모던 기능을 더해 후세에 전달합니다.
 
@@ -83,7 +83,7 @@ ETL          Python 3 + BeautifulSoup4
 
 ## 핵심 기능 (예정)
 
-- **시기 토글** — 2014 디자인(기본) ↔ 2003 디자인 즉시 전환 (CSS 변수 + `data-era` 속성)
+- **시기 토글** — 2014 디자인(기본) · 2003 · 2001 디자인 즉시 전환 (CSS 변수 + `data-era` 속성)
 - **읽기 전용 아카이브** — 13,290개 게시글이 정적 페이지로 영구 보존
 - **정적 검색** — Pagefind 인덱스, 백엔드 없이 한글 본문 검색
 - **댓글** — Giscus를 통한 GitHub Discussions 연동, 옛 글에 새 추억담 가능
@@ -162,7 +162,7 @@ forg/
 │   │   │   └── [postId]/page.tsx  # 게시글 본문
 │   │   └── globals.css        # Tailwind v4 + 시기 토큰
 │   ├── components/
-│   │   ├── era-toggle.tsx     # 2003/2014 시기 전환
+│   │   ├── era-toggle.tsx     # 2014/2003/2001 시기 전환
 │   │   ├── header.tsx
 │   │   ├── sidebar.tsx
 │   │   ├── post-card.tsx
