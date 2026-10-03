@@ -101,7 +101,7 @@ export function MenuRow({ label, children }: { label: string; children: ReactNod
     <div className="relative min-w-0">
       <nav
         aria-label={label}
-        className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+        className="bg-forg-menu flex h-[20px] scrollbar-none items-center overflow-x-auto overflow-y-hidden [contain:paint]"
       >
         {children}
       </nav>
