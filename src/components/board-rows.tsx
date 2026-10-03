@@ -9,51 +9,28 @@
 
 import type { ReactNode } from "react";
 
+import { LazyImg } from "@/components/lazy-img";
 import Link from "@/components/link";
 import { NO_BODY_TOOLTIP, YEAR_GUESS_TOOLTIP, type ListRow } from "@/components/list-row";
-import { CommentCount, NoBodyMark, RowMarks, type ListSkin } from "@/components/list-skin";
 import type { BoardId } from "@/lib/boards";
+import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate } from "@/lib/dates";
+import { isHot, type ListSkin } from "@/lib/skins";
 import type { BoardIndexPage, BoardListing } from "@/types/post";
 
 const TITLE_LAYOUT = "inline-flex items-baseline gap-[4px] leading-[1.7]";
 
 /**
- * The 2014/2003 title cell: a link when the museum holds the post, text when
- * the row is known only from a captured list page (ADR-0017 §4). `marked`
- * greys a title-only row and adds 본문 없음 — on boards that keep posts, where
- * such a row is the exception. On a board that keeps none every row is
- * title-only, and its header says so.
+ * The 2014/2003 title cell — category, title, comment count and the skin's
+ * marks — as a link when the museum holds the post, text when the row is
+ * known only from a captured list page (ADR-0017 §4). `marked` greys a
+ * title-only row and adds 본문 없음 — on boards that keep posts, where such a
+ * row is the exception. On a board that keeps none every row is title-only,
+ * and its header says so.
  */
-function RowTitle({
+function TitleCell({
   href,
   marked,
-  children,
-}: {
-  href: string | null;
-  marked: boolean;
-  children: ReactNode;
-}) {
-  if (href) {
-    return (
-      <Link href={href} className={`text-forg-ink ${TITLE_LAYOUT} hover:underline`}>
-        {children}
-      </Link>
-    );
-  }
-  return (
-    <span
-      className={`${marked ? "text-forg-muted" : "text-forg-ink"} ${TITLE_LAYOUT}`}
-      title={NO_BODY_TOOLTIP}
-    >
-      {children}
-      {marked && <NoBodyMark />}
-    </span>
-  );
-}
-
-/** Category, title, comment count and the skin's marks. */
-function TitleBody({
   skin,
   board,
   category,
@@ -62,6 +39,8 @@ function TitleBody({
   attachmentCount,
   hits,
 }: {
+  href: string | null;
+  marked: boolean;
   skin: ListSkin;
   board: BoardId;
   category: string | null;
@@ -70,13 +49,29 @@ function TitleBody({
   attachmentCount: number;
   hits: number | null;
 }) {
-  return (
+  const body = (
     <>
       {category ? <span className="text-forg-muted shrink-0 text-[10px]">[{category}]</span> : null}
       <span className="truncate">{title}</span>
       <CommentCount count={commentCount} skin={skin} />
       <RowMarks skin={skin} board={board} attachmentCount={attachmentCount} hits={hits} />
     </>
+  );
+  if (href) {
+    return (
+      <Link href={href} className={`text-forg-ink ${TITLE_LAYOUT} hover:underline`}>
+        {body}
+      </Link>
+    );
+  }
+  return (
+    <span
+      className={`${marked ? "text-forg-muted" : "text-forg-ink"} ${TITLE_LAYOUT}`}
+      title={NO_BODY_TOOLTIP}
+    >
+      {body}
+      {marked && <NoBodyMark />}
+    </span>
   );
 }
 
@@ -100,17 +95,17 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
       hits: entry.hits,
       cells: {
         title: (
-          <RowTitle href={href} marked={marked}>
-            <TitleBody
-              skin={skin}
-              board={board}
-              category={entry.categoryLabel}
-              title={entry.title}
-              commentCount={entry.commentCount}
-              attachmentCount={entry.attachmentCount}
-              hits={entry.hits}
-            />
-          </RowTitle>
+          <TitleCell
+            href={href}
+            marked={marked}
+            skin={skin}
+            board={board}
+            category={entry.categoryLabel}
+            title={entry.title}
+            commentCount={entry.commentCount}
+            attachmentCount={entry.attachmentCount}
+            hits={entry.hits}
+          />
         ),
         date: entry.createdAtApprox ? (
           <span title="작성일이 캡처에 없어 첫 댓글 시각으로 대신함">
@@ -140,17 +135,17 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
       hits: entry.hits,
       cells: {
         title: (
-          <RowTitle href={href} marked={marked}>
-            <TitleBody
-              skin={skin}
-              board={board}
-              category={entry.categoryLabel}
-              title={entry.title}
-              commentCount={entry.commentCount}
-              attachmentCount={0}
-              hits={entry.hits}
-            />
-          </RowTitle>
+          <TitleCell
+            href={href}
+            marked={marked}
+            skin={skin}
+            board={board}
+            category={entry.categoryLabel}
+            title={entry.title}
+            commentCount={entry.commentCount}
+            attachmentCount={0}
+            hits={entry.hits}
+          />
         ),
         date:
           entry.createdAt === null
@@ -162,4 +157,90 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
       },
     };
   });
+}
+
+/**
+ * After the title of a row known only from a captured list page: there is no
+ * post behind it, and greyed text alone read as a broken link (the old `title`
+ * tooltip never shows on a phone). The museum's own mark.
+ */
+function NoBodyMark() {
+  return (
+    <span className="text-forg-muted shrink-0 rounded-[2px] border border-current/40 px-[3px] text-[10px] leading-[14px] whitespace-nowrap">
+      본문 없음
+    </span>
+  );
+}
+
+/**
+ * The comment count after a title, in each skin's own form: `kritz`
+ * `<font style=font-family:Tahoma;font-size:7pt;>[4]</font>`, `webbus`
+ * `<span style='font-family:Tahoma;font-size:10px;color:#EE5A00;'><b>(19)</b></span>`.
+ */
+function CommentCount({ count, skin }: { count: number; skin: ListSkin }) {
+  if (count <= 0) return null;
+  if (skin === "webbus") {
+    return (
+      <span className="text-webbus-comment shrink-0 font-[Tahoma,sans-serif] text-[10px] font-bold tabular-nums">
+        ({count})
+      </span>
+    );
+  }
+  return (
+    <span className="shrink-0 font-[Tahoma,sans-serif] text-[7pt] tabular-nums">[{count}]</span>
+  );
+}
+
+/**
+ * What follows the count. `webbus` drew `icon_file.gif` for an attachment and
+ * `icon_hot.gif` for a hot post, in that order; the Zeroboard list skins drew
+ * neither, and the museum keeps its `⊕N` hint there. A row whose hit count
+ * did not survive gets no `icon_hot` rather than a guessed one.
+ */
+function RowMarks({
+  skin,
+  board,
+  attachmentCount,
+  hits,
+}: {
+  skin: ListSkin;
+  board: BoardId;
+  attachmentCount: number;
+  hits: number | null;
+}) {
+  if (skin === "webbus") {
+    const file = attachmentCount > 0 ? chromeUrl("gb_icon_file.gif") : null;
+    const hot = isHot(board, hits) ? chromeUrl("gb_icon_hot.gif") : null;
+    return (
+      <>
+        {file && <MarkIcon url={file} width={9} height={9} label={`첨부 ${attachmentCount}개`} />}
+        {hot && <MarkIcon url={hot} width={11} height={9} label="조회 많음" />}
+      </>
+    );
+  }
+  if (attachmentCount <= 0) return null;
+  return (
+    <span
+      aria-label={`첨부 ${attachmentCount}개`}
+      className="text-forg-muted shrink-0 text-[10.5px] tabular-nums"
+    >
+      ⊕{attachmentCount}
+    </span>
+  );
+}
+
+function MarkIcon({
+  url,
+  width,
+  height,
+  label,
+}: {
+  url: string;
+  width: number;
+  height: number;
+  label: string;
+}) {
+  return (
+    <LazyImg src={url} alt={label} width={width} height={height} className="shrink-0 self-center" />
+  );
 }

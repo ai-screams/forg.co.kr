@@ -12,9 +12,10 @@
 
 import { indexRows } from "@/components/board-rows";
 import Link from "@/components/link";
-import { listSkinOf, ListTable, type ListSkin } from "@/components/list-skin";
+import { ListTable } from "@/components/list-skin";
 
 import { getBoardOrThrow, isBoardId, type BoardId } from "@/lib/boards";
+import { boardSkin, type ListSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
 import { BOARD_INDEX_PAGE_SIZE, type BoardIndexPage } from "@/types/post";
 
@@ -25,7 +26,7 @@ interface BoardListingProps {
 
 export function BoardListing({ board, page }: BoardListingProps) {
   const meta = getBoardOrThrow(board);
-  const skin = listSkinOf(meta.engine);
+  const skin = boardSkin(meta);
 
   return (
     <article className="text-forg-ink">

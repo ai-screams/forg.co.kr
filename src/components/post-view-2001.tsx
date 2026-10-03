@@ -20,7 +20,7 @@
  */
 
 import { AuthorName, commentSeed, POST_SEED } from "@/components/author-name";
-import { SkinImg2001 } from "@/components/list-skin-2001";
+import { SkinImg2001 } from "@/components/skin-img-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";

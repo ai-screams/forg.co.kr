@@ -16,13 +16,13 @@
 import { AuthorName, POST_SEED } from "@/components/author-name";
 import { CommentList } from "@/components/comment-list";
 import Link from "@/components/link";
-import { listSkinOf } from "@/components/list-skin";
 import { Comments2001, ViewHead2001 } from "@/components/post-view-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { getBoardOrThrow, type Board, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
 import type { AdjacentPosts } from "@/lib/posts";
+import { captureSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardIndexEntry, Post } from "@/types/post";
 
@@ -196,11 +196,7 @@ function PostComments({ post }: { post: Post }) {
           <h2 id={`comments-${post.postId}`} className="sr-only">
             댓글 {post.comments.length}
           </h2>
-          <CommentList
-            board={post.board}
-            comments={post.comments}
-            skin={listSkinOf(post.sourceEngine)}
-          />
+          <CommentList board={post.board} comments={post.comments} skin={captureSkin(post)} />
         </section>
       )}
     </>

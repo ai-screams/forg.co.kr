@@ -26,26 +26,12 @@ import type { ReactNode } from "react";
 import { AuthorName } from "@/components/author-name";
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
 import { NO_BODY_TOOLTIP, type ListRow } from "@/components/list-row";
+import { SkinImg2001 } from "@/components/skin-img-2001";
 import { formatKoreanDay, formatKoreanFull, formatSlashDate, isUnknownDate } from "@/lib/dates";
-import { PALETTE_2001, skinAsset2001, type Skin2001 } from "@/lib/skins-2001";
+import { PALETTE_2001, type Skin2001 } from "@/lib/skins-2001";
 
 const THM8 = "font-[Tahoma,sans-serif] text-[11px]";
-
-/** A recovered 2001 skin image at its own size, or nothing when Wayback never kept it. */
-export function SkinImg2001({
-  skin,
-  file,
-  alt = "",
-}: {
-  skin: Skin2001;
-  file: string;
-  alt?: string;
-}) {
-  const url = skinAsset2001(skin, file);
-  return url ? <LazyImg src={url} alt={alt} className="inline-block align-middle" /> : null;
-}
 
 /**
  * `YYYY/MM/DD` with the full time as a tooltip, as the skins printed it. A

@@ -9,9 +9,10 @@
  */
 
 import { listingRows } from "@/components/board-rows";
-import { listSkinOf, ListTable } from "@/components/list-skin";
+import { ListTable } from "@/components/list-skin";
 import { getBoardOrThrow, type BoardId } from "@/lib/boards";
 import { formatWaybackTs } from "@/lib/dates";
+import { boardSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
 import type { BoardListing } from "@/types/post";
 
@@ -22,7 +23,7 @@ interface BoardListingOnlyProps {
 
 export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
   const meta = getBoardOrThrow(board);
-  const skin = listSkinOf(meta.engine);
+  const skin = boardSkin(meta);
   const captures = [...new Set(listing.entries.map((e) => e.capturedAt))].sort();
   const withPost = listing.entries.filter((e) => e.hasPost).length;
 

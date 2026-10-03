@@ -15,7 +15,6 @@
  */
 
 import { AuthorName, commentSeed } from "@/components/author-name";
-import type { ListSkin } from "@/components/list-skin";
 import { SanitizedHtml } from "@/components/sanitized-html";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import {
@@ -24,6 +23,7 @@ import {
   formatSlashDate,
   isUnknownDate,
 } from "@/lib/dates";
+import type { ListSkin } from "@/lib/skins";
 import type { Comment } from "@/types/post";
 
 interface ItemProps {

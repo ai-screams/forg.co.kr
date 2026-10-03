@@ -50,6 +50,11 @@ export interface BoardMeta {
    * name, drawn again on each view (`src/lib/daemon-names.ts`).
    */
   daemonGuestNames?: true;
+  /**
+   * Gnuboard4 `bo_hot`: the hit count from which the `webbus` list marks a
+   * row hot (`lib/skins.ts` `isHot`; 500 when unset).
+   */
+  hotHits?: number;
 }
 
 /**
@@ -169,6 +174,8 @@ const BOARDS = {
     era: "2014",
     description: "Gnuboard4 시절 자유게시판 — 2014 메인 메뉴 첫 버튼",
     continues: ["UoBoard"],
+    // Hot from 125 hits in its captured lists; 100 is Gnuboard4's default.
+    hotHits: 100,
   },
   Ultima: {
     id: "Ultima",
