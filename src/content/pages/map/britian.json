@@ -8,23 +8,28 @@
   "versions": [
     {
       "capturedAt": "2001-10-20T05:54:02",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20011020055402"
     },
     {
       "capturedAt": "2002-02-06T18:47:56",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020206184756"
     },
     {
       "capturedAt": "2002-02-12T13:45:39",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020212134539"
     },
     {
       "capturedAt": "2002-04-19T23:38:42",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020419233842"
     },
     {
       "capturedAt": "2005-02-06T05:21:49",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050206052149"
     },
     {
       "capturedAt": "2007-10-16T10:51:54",

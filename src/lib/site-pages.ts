@@ -10,6 +10,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 const PAGES_ROOT = path.join(process.cwd(), "src", "content", "pages");
+const VERSIONS_ROOT = path.join(process.cwd(), "src", "content", "page-versions");
 
 export type SitePageKind = "page" | "frameset" | "redirect";
 
@@ -31,7 +32,8 @@ export interface SitePage {
   kind: SitePageKind;
   title: string;
   capturedAt: string;
-  versions: { capturedAt: string; kind: string }[];
+  /** Every capture, oldest first; an older `page` one that can be shown has its `ts`. */
+  versions: { capturedAt: string; kind: string; ts?: string }[];
   /** Rules from the page's own `<style>` blocks, minus anything that loads or runs. */
   css: string;
   /** The page's `<body>` attributes as CSS properties (`--link` etc. for link colours). */
@@ -58,6 +60,21 @@ export interface SitePage {
   mode: "quirks" | "limited-quirks" | "no-quirks";
 }
 
+/** An older capture of a page, served at `/site/{stem}/{ts}/` (02g OLDER CAPTURES). */
+export interface SitePageVersion {
+  stem: string;
+  /** The capture time the museum shows, `YYYYMMDDhhmmss`. */
+  ts: string;
+  capturedAt: string;
+  originalPath: string;
+  originalUrl: string;
+  baseTarget: string | null;
+  mode: SitePage["mode"];
+  css: string;
+  bodyStyle: Record<string, string>;
+  html: string;
+}
+
 function assertIsSitePage(value: unknown): asserts value is SitePage {
   if (!value || typeof value !== "object") throw new Error("page JSON is not an object");
   const v = value as Record<string, unknown>;
@@ -69,7 +86,7 @@ function assertIsSitePage(value: unknown): asserts value is SitePage {
   }
 }
 
-export async function getAllSiteStems(): Promise<string[]> {
+async function getAllSiteStems(): Promise<string[]> {
   const entries = await readdir(PAGES_ROOT, { recursive: true, encoding: "utf8" });
   return entries
     .filter((f) => f.endsWith(".json"))
@@ -83,6 +100,28 @@ export async function getSitePage(stem: string): Promise<SitePage | null> {
     const raw: unknown = JSON.parse(await readFile(path.join(PAGES_ROOT, `${stem}.json`), "utf8"));
     assertIsSitePage(raw);
     return raw;
+  } catch (err) {
+    if ((err as { code?: unknown }).code === "ENOENT") return null;
+    throw err;
+  }
+}
+
+export async function getSitePageVersion(
+  stem: string,
+  ts: string,
+): Promise<SitePageVersion | null> {
+  if (!/^[A-Za-z0-9._/-]+$/.test(stem) || stem.split("/").includes("..") || !/^\d{14}$/.test(ts)) {
+    return null;
+  }
+  try {
+    const raw: unknown = JSON.parse(
+      await readFile(path.join(VERSIONS_ROOT, stem, `${ts}.json`), "utf8"),
+    );
+    const v = raw as Partial<SitePageVersion> | null;
+    if (!v || typeof v.html !== "string" || typeof v.css !== "string" || v.ts !== ts) {
+      throw new Error(`page version JSON malformed: ${stem}/${ts}`);
+    }
+    return raw as SitePageVersion;
   } catch (err) {
     if ((err as { code?: unknown }).code === "ENOENT") return null;
     throw err;

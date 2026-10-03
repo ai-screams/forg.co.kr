@@ -1,0 +1,18 @@
+{
+  "stem": "forg_bottom",
+  "ts": "20031204235226",
+  "capturedAt": "2003-12-04T23:52:26",
+  "originalPath": "/forg_bottom.html",
+  "originalUrl": "http://forg.uospace.net:80/forg_bottom.html",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<p><img border=\"0\" data-original-src=\"http://forg.uospace.net:80/bottom_logo.gif\" data-recovery=\"missing\" height=\"40\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:700/40\" width=\"700\"></p>\n"
+}

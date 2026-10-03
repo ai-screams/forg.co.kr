@@ -1,0 +1,19 @@
+{
+  "stem": "forg_right_background",
+  "ts": "20030812222946",
+  "capturedAt": "2003-08-12T22:29:46",
+  "originalPath": "/forg_right_background.html",
+  "originalUrl": "http://forg.co.kr:80/forg_right_background.html",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "background-image": "url('/img/posts/site/images/right_background_1.gif')",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "A.b:link,a:link,a:visited{font-family:\"굴림\"; color:#0000ff;text-decoration:none}\na:hover{font-family:\"굴림\";color: #ff0000;text-decoration: underline}",
+  "html": "\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">&nbsp;</p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><a>&nbsp;</a><a href=\"/site/skill/uoco/\" target=\"detail\"><img border=\"0\" height=\"141\" src=\"/img/posts/site/images/aos_box.gif\" width=\"100\"></a></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"/site/skill/uoco/\" target=\"detail\"><font color=\"#B0D959\" face=\"Verdana\">Age \nOf Shadows</font></a></b></span></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://www.forgsign.wo.to\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">Signature</font></a></b></span></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://daoc.mulple.com\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">DAOC</font></a></b></span></b></p>\n<p style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><b><span style=\"font-size:9pt;\"><b><font color=\"#B0D959\" face=\"Verdana\">&nbsp;</font><a href=\"http://blizzard.co.kr/wow/\" target=\"blank\"><font color=\"#B0D959\" face=\"Verdana\">WOW</font></a></b></span></b></p>\n"
+}

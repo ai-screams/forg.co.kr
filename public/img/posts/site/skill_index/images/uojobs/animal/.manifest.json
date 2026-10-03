@@ -94,5 +94,29 @@
     "sizeBytes": 9603,
     "sha256": "f31d8f08e5b74581a5c57620a209db7a0ff16b71bbb4c4378cecf396347b636c",
     "digest": "TTNQVRYARHHY52SCEVXBLNZO4L4UN47T"
+  },
+  {
+    "filename": "unicorn.gif",
+    "originalUrl": "http://forg.co.kr:80/skill_index/images/uojobs/animal/unicorn.gif",
+    "capturedAt": "20050122201316",
+    "sizeBytes": 46717,
+    "sha256": "c62e3fd701e6a1e9cc5a0d8c6a3f3c75b299cdc44a9820d691e83a558fdba3ff",
+    "digest": "MOQ5G3KTYUEJTYYVQOPZC3M52E7HETSF"
+  },
+  {
+    "filename": "unicorn_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill_index/images/uojobs/animal/unicorn_1.gif",
+    "capturedAt": "20050122215239",
+    "sizeBytes": 49276,
+    "sha256": "faa292fb177666c488a4e10dacff65ecc23e9ba42145940209a150fec06fe318",
+    "digest": "52GZM4ZZ2ADFIN6RCPQFYZFZBMEWTAAZ"
+  },
+  {
+    "filename": "wdragon.gif",
+    "originalUrl": "http://forg.co.kr:80/skill_index/images/uojobs/animal/wdragon.gif",
+    "capturedAt": "20050122225351",
+    "sizeBytes": 23925,
+    "sha256": "126dd6afe00601f557e43f24462d02343f1a2c704a600833d3fc24666ca8ffb5",
+    "digest": "WEYEKENPHATPYLFFH54ZKV2TBJMHJPK7"
   }
 ]

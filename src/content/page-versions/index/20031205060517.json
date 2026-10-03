@@ -1,0 +1,18 @@
+{
+  "stem": "index",
+  "ts": "20031205060517",
+  "capturedAt": "2003-12-05T06:05:17",
+  "originalPath": "/",
+  "originalUrl": "http://hosting27.interpia98.net:80/~forg/",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "#FAFAFA",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<p align=\"center\">&nbsp;</p>\n<p align=\"center\">&nbsp;</p>\n<p align=\"center\">&nbsp;</p>\n<p align=\"center\">&nbsp;</p>\n<p align=\"center\"><a href=\"http://deg5.com/main.html\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/image/enter.gif\" data-recovery=\"missing\" height=\"50\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:100/50\" width=\"100\"></a></p>\n"
+}

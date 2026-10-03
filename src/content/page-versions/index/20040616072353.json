@@ -1,0 +1,18 @@
+{
+  "stem": "index",
+  "ts": "20040616072353",
+  "capturedAt": "2004-06-16T07:23:53",
+  "originalPath": "/",
+  "originalUrl": "http://forg.co.kr:80/",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "#FAFAFA",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<p align=\"center\"></p>\n\n<p align=\"left\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><select data-goto=\"parent\" size=\"1\">\n<option selected=\"\" value=\"http://www.mulple.com\">Mulple</option>\n<option>---------</option>\n<option value=\"/site/uo/\">UO</option>\n<option value=\"/site/wow/\">WOW</option>\n<option value=\"http://daoc.mulple.ecom\">DAOC</option>\n<option>---------</option>\n<option value=\"http://kritz.uospace.net\">Kritz</option>\n<option value=\"http://sirl.uospace.net\">SIRL</option>\n</select></p>\n\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\">&nbsp;</span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font face=\"Verdana\"><span style=\"font-size:9pt;\"><b>Forg's \nWorld</b></span></font></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><a href=\"/site/uo/\" title=\":::울티마온라인:::\"><img border=\"0\" height=\"220\" src=\"/img/posts/site/images/uo_1.gif\" width=\"120\"></a>\n<a href=\"/site/wow/\" title=\":::월드오브워크래프트:::\"><img border=\"0\" height=\"220\" src=\"/img/posts/site/images/wow_1.gif\" width=\"120\"></a>\n<img border=\"0\" height=\"220\" src=\"/img/posts/site/images/mabinogi.gif\" width=\"120\"></p>\n<p align=\"center\" style=\"line-height:100%; margin-top:0; margin-bottom:0;\"><font color=\"#333333\" face=\"Verdana\"><span style=\"font-size:9pt;\">Since \n1998.</span></font></p>\n"
+}

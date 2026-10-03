@@ -8,7 +8,8 @@
   "versions": [
     {
       "capturedAt": "2002-02-03T08:31:24",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020203083124"
     },
     {
       "capturedAt": "2002-08-22T08:05:30",

@@ -1,0 +1,14 @@
+{
+  "stem": "forg_bottom",
+  "ts": "20020208032506",
+  "capturedAt": "2002-02-08T03:25:06",
+  "originalPath": "/forg_bottom.html",
+  "originalUrl": "http://forg.dotple.com:80/forg_bottom.html",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "#454E53"
+  },
+  "mode": "quirks",
+  "css": "BODY,TD,input,form,TEXTAREA {color:black;font-size:9pt;font-family:Verdana,Arial ; line-height:100%}\n.f9 {font-family:Verdana,Arial;font-size:8pt ; height: 24px;}\n.pe {  color: #FFFF00; width: 1px ; height: 24px; background-color: #454E53; font-family:Verdana,Arial; font-size: 9pt; border-style: none; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width:1px}",
+  "html": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"24\" width=\"100%\">\n<tbody><tr>\n<td bgcolor=\"#454E53\" valign=\"absmiddle\" width=\"120\"><img src=\"/img/posts/site/count.gif\"><font class=\"f9\" color=\"#fafafa\"> 1043167</font></td>\n<td bgcolor=\"#454E53\" valign=\"absmiddle\">\n\n<span style=\"font-size:9pt;\"><font color=\"454E53\"><img align=\"absmiddle\" data-original-src=\"http://forg.dotple.com:80/bgm/bgm.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></font></span>\n\n<a href=\"#\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://forg.dotple.com:80/bgm/prev.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></a>\n<a href=\"#\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://forg.dotple.com:80/bgm/stop.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></a>\n<a href=\"#\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://forg.dotple.com:80/bgm/play.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></a>\n<a href=\"#\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://forg.dotple.com:80/bgm/next.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></a>\n<a href=\"#\"><img align=\"absmiddle\" border=\"0\" data-original-src=\"http://forg.dotple.com:80/bgm/list.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></a>\n\n</td>\n<td align=\"right\" valign=\"absmiddle\"><img border=\"0\" data-original-src=\"http://forg.dotple.com:80/forg_bottom_logo_7_2.gif\" data-recovery=\"missing\" src=\"/img/placeholder/missing-slot.svg\"></td>\n</tr>\n</tbody></table>\n"
+}

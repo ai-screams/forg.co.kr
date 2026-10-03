@@ -1,0 +1,18 @@
+{
+  "stem": "index",
+  "ts": "20030221071522",
+  "capturedAt": "2003-02-21T07:15:22",
+  "originalPath": "/",
+  "originalUrl": "http://hosting27.interpia98.net:80/~forg/",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "white",
+    "color": "black",
+    "--link": "blue",
+    "--vlink": "purple",
+    "--alink": "red"
+  },
+  "mode": "quirks",
+  "css": "",
+  "html": "\n<table align=\"center\" cellpadding=\"0\" cellspacing=\"0\" width=\"550\">\n<tbody><tr>\n<td>\n<p><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/deg_top.gif\" data-recovery=\"missing\" height=\"30\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:550/30\" width=\"550\"></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><a href=\"http://deg5.com\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/menu_1.gif\" data-recovery=\"missing\" height=\"20\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:60/20\" width=\"60\"></a><a href=\"#\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/menu_5.gif\" data-recovery=\"missing\" height=\"20\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:60/20\" width=\"60\"></a><a href=\"https://web.archive.org/web/20020525203045/http://hosting27.interpia98.net:80/zb/zboard.php?id=free\" target=\"_blank\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/menu_2.gif\" data-recovery=\"missing\" height=\"20\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:60/20\" width=\"60\"></a><a href=\"#\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/menu_4.gif\" data-recovery=\"missing\" height=\"20\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:60/20\" width=\"60\"></a><a href=\"#\"><img border=\"0\" data-original-src=\"http://hosting27.interpia98.net:80/~forg/menu_6.gif\" data-recovery=\"missing\" height=\"20\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:60/20\" width=\"60\"></a></p>\n</td>\n</tr>\n</tbody></table>\n"
+}

@@ -232,6 +232,22 @@
     "digest": "XXXBYPAOCMRC6P253DSJAGJHZ3N6V3FW"
   },
   {
+    "filename": "le.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/le.gif",
+    "capturedAt": "20010831031506",
+    "sizeBytes": 5211,
+    "sha256": "ced1655decc2b51d078dacb7f4b78b0600467ce373531b4768f9303c7b04531b",
+    "digest": "3SWVWEVTL4EEZ6JPT54ROTEII2FZGSRU"
+  },
+  {
+    "filename": "le_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/le_1.gif",
+    "capturedAt": "20010831040619",
+    "sizeBytes": 5080,
+    "sha256": "58f0543c70adee08dbed70a4f416f271a0e3e6c107cf93a810a2701c73c74638",
+    "digest": "DWDAXMRDWQG7CWVWL2YMPWXSEYJLINPU"
+  },
+  {
     "filename": "leather.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/leather.gif",
     "capturedAt": "20021207012732",
@@ -304,6 +320,14 @@
     "digest": "CXTTSXRAHGEKRIIHQO7SD7HQUHRAX7M3"
   },
   {
+    "filename": "sil.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/sil.gif",
+    "capturedAt": "20010831053436",
+    "sizeBytes": 4946,
+    "sha256": "6986bdaabd5e265a46f282a9d34d7251217cd3d3eb371ab10a6c8b847b8cce00",
+    "digest": "PF4NGU334TH2CLE75BGP6B67I7ZIFLK6"
+  },
+  {
     "filename": "skirt.gif",
     "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/skirt.gif",
     "capturedAt": "20021207053845",
@@ -374,6 +398,86 @@
     "sizeBytes": 5461,
     "sha256": "b5aa5ee9d4c12e5b5e6b7be0af5a91609b7e97c4fe0062b12f826a6c0be1c21b",
     "digest": "XSBOOT5WF7FHQADREBB5M7I7VQNYCCSR"
+  },
+  {
+    "filename": "tailor_1.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_1.gif",
+    "capturedAt": "20010831061741",
+    "sizeBytes": 5080,
+    "sha256": "00980479f5b1125da58df14e496b694f106ad0498801868d92e5861742f07cb7",
+    "digest": "NQTGQ5XQ4JFLHSHEGBXZMD7TVG5ITE5N"
+  },
+  {
+    "filename": "tailor_2.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_2.gif",
+    "capturedAt": "20010831064911",
+    "sizeBytes": 6460,
+    "sha256": "e6d8d23ab444a7f9d3f0fd4d802ddbe606f8dcd68e993b340ca1b1511ea51145",
+    "digest": "QR3AYRGHJPA7L3VZKYLXR7BKQVIE5JC2"
+  },
+  {
+    "filename": "tailor_3.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_3.gif",
+    "capturedAt": "20010831072015",
+    "sizeBytes": 5045,
+    "sha256": "c355632ddd3981b3a28200bb0ca15513077716d2b805bf10ebbe2bfe315f51a3",
+    "digest": "XFG3W3WEDIGCPBXBDZSBRZCJC2TOL5RB"
+  },
+  {
+    "filename": "tailor_4.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_4.gif",
+    "capturedAt": "20010831075058",
+    "sizeBytes": 6584,
+    "sha256": "9e11166072a4ad428d13e084fe1bf2f9e206d5290d747b06459428cee8e295aa",
+    "digest": "NZSFBHRQT3BA7NK2XIWYNENEQL7O5GGC"
+  },
+  {
+    "filename": "tailor_5.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_5.gif",
+    "capturedAt": "20010831082942",
+    "sizeBytes": 5066,
+    "sha256": "0abbdaeb7c07ad3da7852e0af6c82e40fb1b70c7b498c387a317b0fd59a6cb2d",
+    "digest": "FB373ZDFYIW4YH7Z3OVEDJQUA23MFBZO"
+  },
+  {
+    "filename": "tailor_6.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_6.gif",
+    "capturedAt": "20010831091108",
+    "sizeBytes": 5123,
+    "sha256": "f5fb9535da059dc3d079a5e6ab1a1bde32dfcad2bca117a91e037b0280a78803",
+    "digest": "3IKACT6OABEB34BICCMHJJZEGUXLULMC"
+  },
+  {
+    "filename": "tailor_7.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_7.gif",
+    "capturedAt": "20010831094002",
+    "sizeBytes": 5195,
+    "sha256": "0e352d666aec941dc0c380c5006b97830ac8d217fe96475d54a4c88a9757e7df",
+    "digest": "QMTPERI2ZO5JNMYADA52FVFN5I3UMBCI"
+  },
+  {
+    "filename": "tailor_8.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_8.gif",
+    "capturedAt": "20010831100337",
+    "sizeBytes": 5146,
+    "sha256": "9ac2b024dbdc1a5fb47695f8222d2b9fc57f7199ae16eff3d6820e899decb304",
+    "digest": "CS5JABNET2DDFPAX6BVTCLYJSVHWJT6W"
+  },
+  {
+    "filename": "tailor_9.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_9.gif",
+    "capturedAt": "20010831103244",
+    "sizeBytes": 2296,
+    "sha256": "823d1e3f15b2b7f4ce1da4f55e992fe8b26a22ec7355e1474d087d4f41a2adbc",
+    "digest": "7Q3IPZ2TV4ROZSJIJJCPIFPV27UZXS7S"
+  },
+  {
+    "filename": "tailor_logo.gif",
+    "originalUrl": "http://forg.co.kr:80/skill/images/uojobs/tailor/tailor_logo.gif",
+    "capturedAt": "20010831111002",
+    "sizeBytes": 78575,
+    "sha256": "898719735e8f9d157d8dda445d96657754843878d5994091459045eb4c5e6c19",
+    "digest": "LAG4LJENBCQSRX74K2VBZENOR753GB6R"
   },
   {
     "filename": "tallhat.gif",

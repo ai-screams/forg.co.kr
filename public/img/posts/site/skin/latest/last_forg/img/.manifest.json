@@ -14,5 +14,29 @@
     "sizeBytes": 838,
     "sha256": "b39d311d6dbcd549b61809ec40ae405493a993d01da9248256ecb85c827d64de",
     "digest": "PQRSECALHOEL3GUZRDKZBGTXCEGJVLQ4"
+  },
+  {
+    "filename": "icon_link.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/latest/last_forg/img/icon_link.gif",
+    "capturedAt": "20130204113954",
+    "sizeBytes": 75,
+    "sha256": "33a22f571c796ba423ba86326dde89e1b1c7b6b29471c5275a59c0cb2eda4970",
+    "digest": "DEVQI67R3H33WP77MCTDTDUSUPSRTHXC"
+  },
+  {
+    "filename": "icon_new.gif",
+    "originalUrl": "http://www.forg.co.kr/skin/latest/last_forg/img/icon_new.gif",
+    "capturedAt": "20130204113953",
+    "sizeBytes": 2530,
+    "sha256": "4330c02d6172952b51f34dca27cf27e2b629cfa4bbfcd6c030bd2b41579e0c46",
+    "digest": "4LP2O3HYMDUEYFM64V5XBU2ETPJ4JXJR"
+  },
+  {
+    "filename": "icon_reply.gif",
+    "originalUrl": "http://forg.co.kr/skin/latest/last_forg/img/icon_reply.gif",
+    "capturedAt": "20141228041426",
+    "sizeBytes": 1725,
+    "sha256": "bf1d23cda1bb3ab1b963a00720bda392d25767b4c0b7014d139e4e0f47b88c47",
+    "digest": "6OJLDMDA4DNFODPBATYWDGN7HOVTKHJI"
   }
 ]

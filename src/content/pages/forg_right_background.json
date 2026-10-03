@@ -8,63 +8,78 @@
   "versions": [
     {
       "capturedAt": "2002-04-07T15:45:51",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020407154551"
     },
     {
       "capturedAt": "2002-06-10T06:39:27",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020610063927"
     },
     {
       "capturedAt": "2002-12-08T08:09:50",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20021208080950"
     },
     {
       "capturedAt": "2003-02-07T16:05:02",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030207160502"
     },
     {
       "capturedAt": "2003-04-07T09:12:09",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030407091209"
     },
     {
       "capturedAt": "2003-04-09T07:38:22",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030409073822"
     },
     {
       "capturedAt": "2003-06-23T14:19:54",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030623141954"
     },
     {
       "capturedAt": "2003-08-12T22:29:46",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20030812222946"
     },
     {
       "capturedAt": "2003-10-03T22:19:53",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031003221953"
     },
     {
       "capturedAt": "2003-12-04T21:02:22",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20031204210222"
     },
     {
       "capturedAt": "2004-02-21T09:40:03",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20040221094003"
     },
     {
       "capturedAt": "2004-06-18T09:53:53",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20040618095353"
     },
     {
       "capturedAt": "2004-10-19T03:35:18",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20041019033518"
     },
     {
       "capturedAt": "2005-02-06T19:40:25",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20050206194025"
     },
     {
       "capturedAt": "2007-10-10T23:49:05",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20071010234905"
     },
     {
       "capturedAt": "2008-06-15T04:41:25",

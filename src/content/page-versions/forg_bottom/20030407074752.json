@@ -1,0 +1,12 @@
+{
+  "stem": "forg_bottom",
+  "ts": "20030407074752",
+  "capturedAt": "2003-04-07T07:47:52",
+  "originalPath": "/forg_bottom.html",
+  "originalUrl": "http://forg.uospace.net:80/forg_bottom.html",
+  "baseTarget": null,
+  "bodyStyle": {},
+  "mode": "quirks",
+  "css": "",
+  "html": "<br>\n<b>Warning</b>:  Failed opening 'count/kritzcount.php3' for inclusion (include_path='.:/usr/local/lib/php') in <b>/home/forg/public_html/forg_bottom.html</b> on line <b>1</b><br>\n<br>\n<b>Warning</b>:  Failed opening 'cast/status.inc.php' for inclusion (include_path='.:/usr/local/lib/php') in <b>/home/forg/public_html/forg_bottom.html</b> on line <b>4</b><br>\n<br>\n<b>Fatal error</b>:  Call to undefined function:  getscstatus() in <b>/home/forg/public_html/forg_bottom.html</b> on line <b>6</b><br>\n"
+}

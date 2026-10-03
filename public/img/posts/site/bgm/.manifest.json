@@ -1,0 +1,66 @@
+[
+  {
+    "filename": "bgm_casts.gif",
+    "originalUrl": "http://forg.co.kr/bgm/bgm_casts.gif",
+    "capturedAt": "20040209200141",
+    "sizeBytes": 1264,
+    "sha256": "6a6c548a612e1adab202ac46000e78d485f3e46ec7a083c17a52d66cf64d9c5b",
+    "digest": "NJDQ7GBVWMJ27UMQIOPCG7PMH3E2EA57"
+  },
+  {
+    "filename": "bgm_left.gif",
+    "originalUrl": "http://forg.co.kr:80/bgm/bgm_left.gif",
+    "capturedAt": "20021118133057",
+    "sizeBytes": 712,
+    "sha256": "a0b3037f554c9c8b4fcfe9b5d8b49b93aea0ff1cbf381432d1f6d25b741f21bd",
+    "digest": "62P4GXAS5SPFICL36PTLR43E46IVD67P"
+  },
+  {
+    "filename": "bgm_list.gif",
+    "originalUrl": "http://forg.co.kr/bgm/bgm_list.gif",
+    "capturedAt": "20040107015133",
+    "sizeBytes": 18585,
+    "sha256": "de49eba82b4a104c4bdb94042c6491c9250c7d639b1ab94bbcc0c1d0dd0a91f3",
+    "digest": "BJGYS63MF23T3T7ICNCPBDDC7ZBPPW7G"
+  },
+  {
+    "filename": "bgm_play.gif",
+    "originalUrl": "http://forg.co.kr:80/bgm/bgm_play.gif",
+    "capturedAt": "20021118134112",
+    "sizeBytes": 612,
+    "sha256": "e0761f98a3a0da94b76f550f43252d5489bca2b8e6e9348b9c8bf825cfeb6060",
+    "digest": "4SAKT3CSSYY5YBTCV2FWYUTGB53OBIO3"
+  },
+  {
+    "filename": "bgm_right.gif",
+    "originalUrl": "http://forg.co.kr:80/bgm/bgm_right.gif",
+    "capturedAt": "20021118134901",
+    "sizeBytes": 882,
+    "sha256": "300c059d184bbfc8da8a0fbc2c24f9e68b397105dd92236da511d2e90691b0fd",
+    "digest": "RQD7ACVQCIKFADXSRFSIOZVGCEKZKVAD"
+  },
+  {
+    "filename": "bgm_stop.gif",
+    "originalUrl": "http://forg.co.kr:80/bgm/bgm_stop.gif",
+    "capturedAt": "20021020040454",
+    "sizeBytes": 613,
+    "sha256": "d2f0a4691090944cf2ed5a05c4d54066bcf78abc7a4e07b36215452458429f8a",
+    "digest": "SOHWMDLTFMEEU5JQGINAODGZHVKBC6PJ"
+  },
+  {
+    "filename": "ser.gif",
+    "originalUrl": "http://forg.co.kr/bgm/ser.gif",
+    "capturedAt": "20040919174803",
+    "sizeBytes": 1323,
+    "sha256": "56211d364d3a1e7a7d8873ae2082669290ed047edd4141b97d2a83b488901391",
+    "digest": "J6JNECIK3DIQ544YBUXRE3PLMULB2VRC"
+  },
+  {
+    "filename": "winamp_play.gif",
+    "originalUrl": "http://forg.co.kr/bgm/winamp_play.gif",
+    "capturedAt": "20040203041616",
+    "sizeBytes": 391,
+    "sha256": "3dc78028dc8a88317c6fe90c869defd729ede3a7aea412141ea937aee67b712b",
+    "digest": "JR5I45ZTGAVU4KQDADMDYAE5DMPXQV5R"
+  }
+]

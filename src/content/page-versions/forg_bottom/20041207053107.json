@@ -1,0 +1,12 @@
+{
+  "stem": "forg_bottom",
+  "ts": "20041207053107",
+  "capturedAt": "2004-12-07T05:31:07",
+  "originalPath": "/forg_bottom.html",
+  "originalUrl": "http://forg.co.kr:80/forg_bottom.html",
+  "baseTarget": null,
+  "bodyStyle": {},
+  "mode": "quirks",
+  "css": "BODY,TD,input,form,TEXTAREA {color:black;font-size:9pt;font-family:Verdana,Arial ; line-height:100%}\n.f9 {font-family:Verdana,Arial;font-size:8pt ; height: 24px;}\n.pe {  color: #FFFF00; width: 1px ; height: 24px; background-color: #454E53; font-family:Verdana,Arial; font-size: 9pt; border-style: none; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width:1px}",
+  "html": "\n<table background=\"/img/posts/site/images/bgm_bg.gif\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"24\" width=\"100%\">\n<tbody><tr>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" valign=\"bottom\" width=\"50\"><img src=\"/img/posts/site/images/count.gif\"></td>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" width=\"70\"><font class=\"f9\" color=\"#fafafa\"><img src=\"/img/posts/site/images/5px.gif\"><br>6066984</font></td>\n<td background=\"/img/posts/site/images/bgm_bg.gif\" bgcolor=\"6B82A5\" height=\"24\" valign=\"absmiddle\">\n<img align=\"absmiddle\" border=\"0\" src=\"/img/posts/site/images/ser.gif\">\n\n<a><img align=\"absmiddle\" border=\"0\" src=\"/img/posts/site/images/en.gif\"></a>\n</td>\n<td align=\"right\" valign=\"absmiddle\"><img border=\"0\" src=\"/img/posts/site/images/bgm_right.gif\"></td>\n</tr>\n</tbody></table>\n"
+}

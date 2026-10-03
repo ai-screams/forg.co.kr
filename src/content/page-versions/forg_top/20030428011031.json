@@ -1,0 +1,12 @@
+{
+  "stem": "forg_top",
+  "ts": "20030428011031",
+  "capturedAt": "2003-04-28T01:10:31",
+  "originalPath": "/forg_top.html",
+  "originalUrl": "http://forg.uospace.net:80/forg_top.html",
+  "baseTarget": null,
+  "bodyStyle": {},
+  "mode": "quirks",
+  "css": "",
+  "html": "<br>\n<b>Fatal error</b>:  Failed opening required '/home/forg/public_html/_zb/lib.php' (include_path='.:/usr/local/lib/php') in <b>/home/forg/public_html/forg_top.html</b> on line <b>4</b><br>\n"
+}

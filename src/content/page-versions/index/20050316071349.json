@@ -1,0 +1,14 @@
+{
+  "stem": "index",
+  "ts": "20050316071349",
+  "capturedAt": "2005-03-16T07:13:49",
+  "originalPath": "/",
+  "originalUrl": "http://forg.uospace.net:80/",
+  "baseTarget": null,
+  "bodyStyle": {
+    "background-color": "FFFFFF"
+  },
+  "mode": "quirks",
+  "css": ".ver{\n\tfont : Verdana, Arial, 굴림;\n\tfont : 11px;\n\tpadding-top : -10px;\n\n}",
+  "html": "\n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\" width=\"100%\">\n<tbody><tr height=\"100%\">\n<td align=\"center\" height=\"100%\" valign=\"middle\" width=\"100%\"> <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n<tbody><tr>\n<td align=\"right\" bgcolor=\"#666666\" height=\"100%\" valign=\"middle\"><table align=\"center\" border=\"0\" cellpadding=\"5\" cellspacing=\"1\" height=\"100%\">\n<tbody><tr bgcolor=\"#FFFFFF\">\n<td align=\"center\" height=\"100%\" valign=\"top\" width=\"220\"> <img border=\"0\" data-original-src=\"http://forg.uospace.net:80/uo_banner.jpg\" data-recovery=\"missing\" height=\"120\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:220/120\" width=\"220\"></td>\n<td align=\"center\" valign=\"top\" width=\"220\"><img data-original-src=\"http://forg.uospace.net:80/daoc_banner.jpg\" data-recovery=\"missing\" height=\"120\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:220/120\" width=\"220\"></td>\n<td align=\"center\" height=\"100%\" valign=\"top\" width=\"220\"><img data-original-src=\"http://forg.uospace.net:80/dol_banner.jpg\" data-recovery=\"missing\" height=\"120\" src=\"/img/placeholder/missing-slot.svg\" style=\"aspect-ratio:220/120\" width=\"220\"></td>\n</tr>\n<tr bgcolor=\"#FFFFFF\">\n<td align=\"center\" height=\"100%\" valign=\"middle\">\n<a href=\"/site/index/\">forg.co.kr</a><br>\n<a href=\"http://kritz.uospace.net\">kritz.uospace.net</a><br>\n<a href=\"http://badaro.uospace.net\">badaro.uospace.net</a><br>\n<a href=\"http://role.uospace.net\">role.uospace.net</a><br>\n<a href=\"http://draco.uospace.net\">draco.uospace.net</a><br>\n<a href=\"http://sirl.uospace.net\">sirl.uospace.net</a> </td>\n<td align=\"center\" height=\"100%\" valign=\"middle\"><a href=\"http://daoc.mulple.com\">daoc.mulple.com</a><br>\n<a href=\"http://sl.mulple.com\">sl.mulple.com</a><br>\n<a href=\"http://school.mulple.com\">school.mulple.com</a><br>\n<a href=\"http://daocmall.mulple.com\">daocmall.mulple.com</a> </td>\n<td align=\"center\" height=\"100%\" valign=\"middle\"><a href=\"http://dol.mulple.com\">dol.mulple.com</a></td>\n</tr>\n</tbody></table></td>\n</tr>\n</tbody></table></td>\n</tr>\n</tbody></table>\n"
+}

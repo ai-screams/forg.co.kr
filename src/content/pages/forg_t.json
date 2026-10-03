@@ -8,39 +8,48 @@
   "versions": [
     {
       "capturedAt": "2001-02-08T09:24:49",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010208092449"
     },
     {
       "capturedAt": "2001-03-30T08:16:03",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010330081603"
     },
     {
       "capturedAt": "2001-04-05T06:33:36",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010405063336"
     },
     {
       "capturedAt": "2001-04-24T21:16:59",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010424211659"
     },
     {
       "capturedAt": "2001-06-13T14:53:22",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010613145322"
     },
     {
       "capturedAt": "2001-08-03T09:39:46",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010803093946"
     },
     {
       "capturedAt": "2001-08-03T10:05:51",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20010803100551"
     },
     {
       "capturedAt": "2001-12-17T11:37:26",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20011217113726"
     },
     {
       "capturedAt": "2002-02-06T05:55:21",
-      "kind": "page"
+      "kind": "page",
+      "ts": "20020206055521"
     },
     {
       "capturedAt": "2002-02-12T06:34:08",
