@@ -29,7 +29,7 @@ The 2001 era (ADR-0019) touched these; a new one touches the same:
 
 ## Mobile layout
 
-- Desktop (≥800px, where 10+100+680+7 fits) keeps each frame pixel-identical to the original; the shell switches at `min-[800px]`. Narrow-only fixes go behind `max-[799px]:`. The one chosen departure: every era's frame is centred, with slate on both sides in 2014/2003 where the originals sat left with a slate `1*` column (2026-10-03).
+- Desktop (≥800px, where 10+100+680+7 fits) keeps each frame pixel-identical to the original; the shell switches at `frame:` (`--breakpoint-frame: 800px` in `tokens.css`, px because the frame is; in custom CSS, `@variant frame`). Narrow-only fixes go behind `max-frame:` (`width < 800px`). Don't write `min-[800px]`/`max-[799px]`: Tailwind's `max-*` is exclusive, so that pair left 799–800px with neither. The one chosen departure: every era's frame is centred, with slate on both sides in 2014/2003 where the originals sat left with a slate `1*` column (2026-10-03).
 - Below 800px the layout is our own interpretation (keep the palette): `NarrowList` rows, `MobileMenu` `<details>`, `/site/` pages reflow via `NARROW_CSS` in `src/app/site/_render/assets.ts`.
 - Verify with `pnpm build && python3 -m http.server 8789 -d out` + puppeteer-core (`/usr/bin/chromium-browser`); diff desktop screenshots against production.
 - Prettier trims a leading space inside template-string class names (`overflow-hidden${x}` collapses) — build class lists with an array `.join(" ")`.

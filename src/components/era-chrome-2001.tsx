@@ -36,7 +36,7 @@ const TOP_MENU_2001: { asset: string; label: string; href: string }[] = [
 export function FrameTop2001() {
   return (
     <header className="bg-white">
-      <div className="flex bg-[#f8f8f8] max-[799px]:flex-col">
+      <div className="max-frame:flex-col flex bg-[#f8f8f8]">
         <Link href="/" aria-label="forg.co.kr 메인" className="block">
           <LazyImg
             src={chromeUrl("t_logo.gif", ERA)}
@@ -51,7 +51,7 @@ export function FrameTop2001() {
           alt="All Contents Copyright(C) 1999. FORG.COM. All right reserved."
           width={410}
           height={35}
-          className="block max-w-full max-[799px]:hidden"
+          className="max-frame:hidden block max-w-full"
         />
       </div>
       <nav aria-label="2001 상단 메뉴" className="flex flex-wrap bg-[#f8f8f8]">
@@ -60,7 +60,7 @@ export function FrameTop2001() {
           alt=""
           width={10}
           height={20}
-          className="block max-[799px]:hidden"
+          className="max-frame:hidden block"
         />
         {TOP_MENU_2001.map((item) => (
           <Link key={item.asset} href={item.href}>
@@ -79,7 +79,7 @@ export function FrameTop2001() {
           alt=""
           width={10}
           height={20}
-          className="block max-[799px]:hidden"
+          className="max-frame:hidden block"
         />
       </nav>
     </header>

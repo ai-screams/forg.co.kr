@@ -117,14 +117,18 @@
    * 2014 and 2003 frames (10/100/680/7) sat at the left with a slate `1*`
    * column filling the rest; by choice (2026-10-03) they are centred too, with
    * that slate on both sides. */
-  @media (min-width: 800px) {
-    .forg-shell {
+  .forg-shell {
+    @variant frame {
       justify-content: center;
     }
-    :root:not([data-era="2001"]) .forg-shell {
+  }
+  :root:not([data-era="2001"]) .forg-shell {
+    @variant frame {
       background-color: var(--color-forg-slate);
     }
-    :root[data-era="2001"] .forg-shell-main {
+  }
+  :root[data-era="2001"] .forg-shell-main {
+    @variant frame {
       width: 790px;
     }
   }

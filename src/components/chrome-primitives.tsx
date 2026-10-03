@@ -14,14 +14,14 @@ import type { Era } from "@/lib/era";
 
 /** The 10px slate rail left of the sidebar. */
 export function LeftRail() {
-  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
+  return <div className="bg-forg-slate frame:block hidden w-[10px] shrink-0" />;
 }
 
 /** The 7px rail right of the content column, tiled with the 2014 `right_bg.gif` in both eras. */
 export function RightRail() {
   return (
     <div
-      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
+      className="bg-forg-slate frame:block hidden w-[7px] shrink-0"
       style={tileStyle(chromeUrl("right_bg.gif", "2014"), "repeat")}
     />
   );
@@ -130,7 +130,7 @@ function ScrollFade() {
  */
 export function MobileMenu({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) min-[800px]:hidden">
+    <details className="group frame:hidden bg-(--era-sidebar-bg) text-(--era-sidebar-fg)">
       <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[13px] font-bold [&::-webkit-details-marker]:hidden">
         <span>메뉴 · {label}</span>
         <span aria-hidden className="transition-transform group-open:rotate-180">

@@ -304,7 +304,7 @@ export function FrameLeft2003() {
   return (
     <aside
       aria-label="2003 사이드바 — Information · Cooperation · Reminisce · Forg.Board · Friend Site"
-      className="hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg) min-[800px]:block"
+      className="frame:block hidden w-[100px] shrink-0 bg-(--era-sidebar-bg) py-2 pl-[3px] text-(--era-sidebar-fg)"
       style={tileStyle(tileUrl, "repeat")}
     >
       <nav className="flex flex-col gap-2.5">

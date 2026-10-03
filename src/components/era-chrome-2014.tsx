@@ -76,7 +76,7 @@ export function FrameLeft2014() {
   return (
     <aside
       aria-label="게임 카테고리"
-      className="hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg) min-[800px]:flex"
+      className="frame:flex hidden w-[100px] shrink-0 flex-col gap-[3px] bg-(--era-sidebar-bg) py-3 pl-[5px] text-(--era-sidebar-fg)"
       style={sidebarStyle}
     >
       {/* The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif

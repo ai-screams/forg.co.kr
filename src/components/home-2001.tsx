@@ -132,8 +132,8 @@ export async function Home2001Content() {
   return (
     <section aria-label="2001 메인 콘텐츠" className="bg-[#f8f8f8] py-2 text-[12px] leading-[1.35]">
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
-      <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-[#cccccc] min-[800px]:grid-cols-[150px_390px_200px]">
-        <div className="border-[#cccccc] p-[2px] max-[799px]:hidden min-[800px]:border-r">
+      <div className="frame:grid-cols-[150px_390px_200px] mx-auto grid w-full max-w-[740px] grid-cols-1 border border-[#cccccc]">
+        <div className="max-frame:hidden frame:border-r border-[#cccccc] p-[2px]">
           <LazyImg
             src={chromeUrl("left_logo_uo_1.gif", ERA)}
             alt=""
@@ -156,7 +156,7 @@ export async function Home2001Content() {
             ))}
           </map>
         </div>
-        <div className="border-[#cccccc] bg-[#fcfbe9] min-[800px]:border-r">
+        <div className="frame:border-r border-[#cccccc] bg-[#fcfbe9]">
           <LazyImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Honor & Sacrifice"
@@ -194,7 +194,7 @@ export async function Home2001Content() {
             </Link>
           </section>
         </div>
-        <div aria-hidden className="h-[20px] border-t border-[#cccccc] min-[800px]:col-span-3" />
+        <div aria-hidden className="frame:col-span-3 h-[20px] border-t border-[#cccccc]" />
       </div>
     </section>
   );
@@ -235,7 +235,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
           <li key={entry.postId} className="truncate">
             <Link
               href={`/${data.box.id}/${entry.postId}`}
-              className="text-(--era-link) hover:text-(--era-link-hover) max-[799px]:block max-[799px]:py-[5px] max-[799px]:text-[14px]"
+              className="max-frame:block max-frame:py-[5px] max-frame:text-[14px] text-(--era-link) hover:text-(--era-link-hover)"
             >
               <LazyImg
                 src={bullet}

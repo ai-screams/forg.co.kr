@@ -37,6 +37,14 @@
   --font-forg: Tahoma, Gulim, "맑은 고딕", "Malgun Gothic", sans-serif;
   --font-forg-eng: Verdana, sans-serif;
 
+  /* ── Breakpoint ──────────────────────────────────────────────────── */
+  /* Where the 10/100/680/7 frame fits (797px): `frame:` from here up,
+   * `max-frame:` below it (Tailwind's max-* is `width <`, so no gap). In
+   * px, not rem: the frame is fixed in pixels, and a rem media query
+   * follows the reader's default font size (20px text would make it
+   * 1000px). */
+  --breakpoint-frame: 800px;
+
   /* ── Layout (forg's original fixed dimensions) ───────────────────── */
   --spacing-forg-side: 100px;
   --spacing-forg-main: 680px;
