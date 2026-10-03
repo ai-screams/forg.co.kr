@@ -50,7 +50,7 @@
 
 /* ─────────────────────────────────────────────────────────────────────
  * L2: Era-specific overrides
- * Toggled by <html data-era="2003" | "2014">
+ * Toggled by <html data-era="2014" | "2003" | "2001">
  * Default (no attribute) === 2014.
  * ───────────────────────────────────────────────────────────────────── */
 @layer base {
@@ -90,6 +90,24 @@
     --era-accent: var(--color-forg-gold);
     --era-input-border: oklch(0.671 0 0);
   }
+
+  /* August 2001: a 790px column between `left.htm` and `right.htm`, whose
+   * background (`forg_1.gif`) was never captured, so white; the front page
+   * `forg_b.htm` sat on #F8F8F8 and set the same rgb(69,69,69) links as 2003
+   * (and the same silver hover, kept gold for the same reason). */
+  :root[data-era="2001"] {
+    --era-page-bg: oklch(1 0 0); /* white */
+    --era-content-bg: oklch(0.979 0 89.9); /* #F8F8F8 */
+    --era-sidebar-bg: var(--color-forg-sidebar);
+    --era-sidebar-fg: oklch(1 0 0); /* white */
+    --era-sidebar-link: oklch(1 0 0); /* white */
+    --era-footer-bg: oklch(0.443 0.012 247); /* #5A6269 */
+    --era-link: oklch(0.39 0 89.9); /* #454545 */
+    --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.686 0 0); /* #9A9A9A */
+    --era-accent: var(--color-forg-gold);
+    --era-input-border: oklch(0.845 0 89.9); /* #CCCCCC — forg_b's table border */
+  }
 }
 
 body {
@@ -110,6 +128,11 @@ body {
   font-family: Verdana, "굴림", Gulim, Tahoma, sans-serif;
 }
 
+/* forg_b.htm (2001): `.boolpae`, `.detail` and `td,a,p,b` are 9pt 굴림. */
+:root[data-era="2001"] body {
+  font-family: "굴림", Gulim, Tahoma, sans-serif;
+}
+
 /* ─────────────────────────────────────────────────────────────────────
  * Era-scoped visibility — used on the home page (and any future routes
  * that ship side-by-side 2003 / 2014 markup). Both era variants render
@@ -117,11 +140,22 @@ body {
  * picks which DOM subtree is visible. Pure CSS = instant toggle, no
  * React re-render, no FOUC.
  * ───────────────────────────────────────────────────────────────────── */
-:root[data-era="2003"] .era-2014-only {
+:root:not([data-era="2014"]) .era-2014-only,
+:root:not([data-era="2003"]) .era-2003-only,
+:root:not([data-era="2001"]) .era-2001-only,
+:root[data-era="2001"] .era-not-2001 {
   display: none !important;
 }
-:root[data-era="2014"] .era-2003-only {
-  display: none !important;
+
+/* 2001 has no side columns: the content column is 790px and centred
+ * (`frameset cols="1*, 790, 1*"`). The 2014 and 2003 frames keep 680px. */
+@media (min-width: 800px) {
+  :root[data-era="2001"] .forg-shell {
+    justify-content: center;
+  }
+  :root[data-era="2001"] .forg-shell-main {
+    width: 790px;
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────

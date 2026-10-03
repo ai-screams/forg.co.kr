@@ -19,6 +19,7 @@
 import Link from "@/components/link";
 
 import { EraShell } from "@/components/era-shell";
+import { Home2001Content } from "@/components/home-2001";
 import { Home2003Content } from "@/components/home-2003";
 import { getBoard, type BoardId } from "@/lib/boards";
 import { chromeUrl, type ChromeEra } from "@/lib/chrome";
@@ -103,7 +104,13 @@ export default async function HomePage() {
   // attribute hides one via CSS in globals.css (`.era-2014-only` /
   // `.era-2003-only`). This keeps the era toggle instantaneous (CSS-only,
   // no React re-render) and lets the static export ship both layouts.
-  return <EraShell content2014={<BoxGrid boxes={boxes} />} content2003={<Home2003Content />} />;
+  return (
+    <EraShell
+      content2014={<BoxGrid boxes={boxes} />}
+      content2003={<Home2003Content />}
+      content2001={<Home2001Content />}
+    />
+  );
 }
 
 /* ──────────────────────────────────────────────────────────────────── */

@@ -3,12 +3,13 @@ paths:
   - "src/**"
 ---
 
-# Era system and layout (ADR-0001, ADR-0005, ADR-0006, ADR-0016)
+# Era system and layout (ADR-0001, ADR-0005, ADR-0006, ADR-0016, ADR-0019)
 
 ## Era toggle
 
-- `<html data-era="2014" | "2003">` is the single source of truth: set by SSR (`src/app/layout.tsx`), patched before hydration by an inline script reading `localStorage["forg.era"]`.
+- `<html data-era="2014" | "2003" | "2001">` is the single source of truth: set by SSR (`src/app/layout.tsx`), patched before hydration by an inline script reading `localStorage["forg.era"]`.
 - Era-invariant tokens are in `@theme` in `src/app/globals.css` (`forg-gold`, `font-forg`, …); era-specific ones in `:root[data-era="…"]` (`--era-page-bg`, …). Use `bg-forg-gold` or `bg-(--era-page-bg)` — never both styles for one concept.
+- Visibility: `.era-2014-only` / `.era-2003-only` / `.era-2001-only`, plus `.era-not-2001` for the 2014/2003 side columns. 2001 centres a 790px column (`.forg-shell` / `.forg-shell-main` in `globals.css`); 2014 and 2003 keep the 10/100/680/7/\* frame.
 - `<EraToggle>` uses `useSyncExternalStore`, not `useEffect + setState` (the React Compiler lint flags the latter). Mirror it for any DOM-as-state subscription.
 - Colours are **OKLCH** with the original sRGB hex in an adjacent comment.
 

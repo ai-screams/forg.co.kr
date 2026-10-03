@@ -1,11 +1,11 @@
 /**
  * forg.co.kr era system — 시기별 디자인 토글
  *
- * 두 시기를 토글하여 같은 콘텐츠를 다른 시각 셸에서 렌더링한다.
- * 토글 메커니즘은 ADR-0005, 색공간은 ADR-0006 참조.
+ * 세 시기를 토글하여 같은 콘텐츠를 다른 시각 셸에서 렌더링한다.
+ * 토글 메커니즘은 ADR-0005, 색공간은 ADR-0006, 2001 시기는 ADR-0019 참조.
  */
 
-export const ERAS = ["2014", "2003"] as const;
+export const ERAS = ["2014", "2003", "2001"] as const;
 
 export type Era = (typeof ERAS)[number];
 
@@ -24,4 +24,5 @@ export function isEra(value: unknown): value is Era {
 export const ERA_LABELS: Record<Era, string> = {
   "2014": "2014",
   "2003": "2003",
+  "2001": "2001",
 };
