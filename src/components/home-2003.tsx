@@ -174,7 +174,11 @@ const SIDEBAR_SECTIONS: {
     fallback: "Friend Site",
     links: [
       { label: "SiteMap", href: "/site/skill/sitemap/" },
-      { label: "EA Korea", href: "https://www.ea.com" },
+      // frame-left-2003 links it to the official Korean UO site, kept by Wayback.
+      {
+        label: "EA Korea",
+        href: "https://web.archive.org/web/20030603171043/http://www.kr.uo.com/",
+      },
     ],
   },
 ];
@@ -363,18 +367,6 @@ export function FrameLeft2003() {
         {SIDEBAR_SECTIONS.map((section) => (
           <SidebarSection2003 key={section.fallback} section={section} />
         ))}
-        {/* Footer-of-sidebar links from frame-left-2003 (Login?(SP2), EA Korea) */}
-        <div className="mt-1 space-y-0.5 border-t border-white/15 pt-2 text-[10px]">
-          <p className="text-forg-gold-hover font-bold opacity-80">Login?(SP2)</p>
-          <Link
-            href="https://www.ea.com"
-            rel="noopener noreferrer external"
-            target="_blank"
-            className="hover:text-forg-gold-hover block text-white"
-          >
-            EA Korea
-          </Link>
-        </div>
       </nav>
     </aside>
   );
