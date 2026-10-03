@@ -32,6 +32,8 @@
 
 import type { ReactNode } from "react";
 
+import { FrameTop2001 } from "@/components/era-chrome-2001";
+import { FrameBottom2003, FrameLeft2003, FrameTop2003 } from "@/components/era-chrome-2003";
 import {
   GameCategorySidebar,
   LeftRail,
@@ -39,8 +41,6 @@ import {
   SiteHeader2014,
   VisitorCounter,
 } from "@/components/era-chrome-2014";
-import { FrameTop2001 } from "@/components/home-2001";
-import { FrameBottom2003, FrameLeft2003, FrameTop2003 } from "@/components/home-2003";
 
 interface EraShellProps {
   /** Rendered in every era. Ignored when the per-era contents are set. */
