@@ -13,10 +13,9 @@ import { withImgBase } from "@/lib/img-base";
 export function SanitizedHtml({ html, className }: { html: string; className: string }) {
   return (
     <div
-      className={[
-        className,
-        "max-[799px]:overflow-x-auto max-[799px]:[overflow-wrap:break-word]",
-      ].join(" ")}
+      className={[className, "max-frame:overflow-x-auto max-frame:[overflow-wrap:break-word]"].join(
+        " ",
+      )}
       dangerouslySetInnerHTML={{ __html: withImgBase(html) }}
     />
   );

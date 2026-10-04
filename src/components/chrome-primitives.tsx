@@ -14,14 +14,14 @@ import type { Era } from "@/lib/era";
 
 /** The 10px slate rail left of the sidebar. */
 export function LeftRail() {
-  return <div className="bg-forg-slate hidden w-[10px] shrink-0 min-[800px]:block" />;
+  return <div className="hidden w-[10px] shrink-0 bg-forg-slate frame:block" />;
 }
 
 /** The 7px rail right of the content column, tiled with the 2014 `right_bg.gif` in both eras. */
 export function RightRail() {
   return (
     <div
-      className="bg-forg-slate hidden w-[7px] shrink-0 min-[800px]:block"
+      className="hidden w-[7px] shrink-0 bg-forg-slate frame:block"
       style={tileStyle(chromeUrl("right_bg.gif", "2014"), "repeat")}
     />
   );
@@ -33,7 +33,7 @@ export function RightRail() {
  */
 export function LoginBar({ era, height }: { era: Era; height: number }) {
   return (
-    <div className="bg-forg-gold flex h-[18px] items-center justify-end gap-[2px] px-2">
+    <div className="flex h-[18px] items-center justify-end gap-[2px] bg-forg-gold px-2">
       <InertChrome
         era={era}
         asset="t_login.gif"
@@ -86,7 +86,7 @@ function InertChrome({
 export function TBarRow({ era }: { era: Era }) {
   return (
     <div
-      className="bg-forg-gold h-[4px] w-full"
+      className="h-[4px] w-full bg-forg-gold"
       style={tileStyle(chromeUrl("t_bar.gif", era), "repeat-x")}
     />
   );
@@ -101,7 +101,7 @@ export function MenuRow({ label, children }: { label: string; children: ReactNod
     <div className="relative min-w-0">
       <nav
         aria-label={label}
-        className="bg-forg-menu flex h-[20px] items-center overflow-x-auto overflow-y-hidden [contain:paint] [scrollbar-width:none]"
+        className="flex h-[20px] scrollbar-none items-center overflow-x-auto overflow-y-hidden bg-forg-menu [contain:paint]"
       >
         {children}
       </nav>
@@ -118,7 +118,7 @@ function ScrollFade() {
   return (
     <span
       aria-hidden
-      className="from-forg-menu pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l to-transparent min-[680px]:hidden"
+      className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-forg-menu to-transparent min-[680px]:hidden"
     />
   );
 }
@@ -130,7 +130,7 @@ function ScrollFade() {
  */
 export function MobileMenu({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) min-[800px]:hidden">
+    <details className="group bg-(--era-sidebar-bg) text-(--era-sidebar-fg) frame:hidden">
       <summary className="flex cursor-pointer list-none items-center justify-between px-3 py-2 text-[13px] font-bold [&::-webkit-details-marker]:hidden">
         <span>메뉴 · {label}</span>
         <span aria-hidden className="transition-transform group-open:rotate-180">

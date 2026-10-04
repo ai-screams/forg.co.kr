@@ -8,18 +8,19 @@ paths:
 ## Era toggle
 
 - `<html data-era="2014" | "2003" | "2001">` is the single source of truth: set by SSR (`src/app/layout.tsx`), patched before hydration by an inline script reading `localStorage["forg.era"]`.
-- Era-invariant tokens are in `@theme` in `src/app/globals.css` (`forg-gold`, `font-forg`, …); era-specific ones in `:root[data-era="…"]` (`--era-page-bg`, …). Use `bg-forg-gold` or `bg-(--era-page-bg)` — never both styles for one concept.
-- Visibility: `.era-2014-only` / `.era-2003-only` / `.era-2001-only`, plus `.era-not-2001` for the 2014/2003 side columns. 2001 centres a 790px column (`.forg-shell` / `.forg-shell-main` in `globals.css`); 2014 and 2003 keep the 10/100/680/7/\* frame.
-- `<EraToggle>` uses `useSyncExternalStore`, not `useEffect + setState` (the React Compiler lint flags the latter). Mirror it for any DOM-as-state subscription. Its pressed colour comes from the `[data-era-option]` rules in `globals.css`, so the saved era is lit before hydration; another tab's change arrives as a `storage` event that sets `data-era`.
+- Styles live in `src/styles/` (`tokens.css`, `eras.css`, `base.css`), imported by `src/app/globals.css`, which also declares the cascade layers; the museum's own rules go in `@layer museum`, after Tailwind's `utilities`.
+- Era-invariant tokens are in `@theme` in `src/styles/tokens.css` (`forg-gold`, `font-forg`, …); era-specific ones in `:root[data-era="…"]` (`--era-page-bg`, …). Use `bg-forg-gold` or `bg-(--era-page-bg)` — never both styles for one concept.
+- Visibility: `.era-2014-only` / `.era-2003-only` / `.era-2001-only`, plus `.era-not-2001` for the 2014/2003 side columns. 2001 centres a 790px column (`.forg-shell` / `.forg-shell-main` in `src/styles/eras.css`); 2014 and 2003 keep the 10/100/680/7/\* frame.
+- `<EraToggle>` uses `useSyncExternalStore`, not `useEffect + setState` (the React Compiler lint flags the latter). Mirror it for any DOM-as-state subscription. Its pressed colour comes from the `[data-era-option]` rules in `src/styles/eras.css`, so the saved era is lit before hydration; another tab's change arrives as a `storage` event that sets `data-era`.
 - Era-specific `<img>`s carry `loading="lazy"`: a hidden era's images then never load, and React does not emit `<link rel=preload>` for them.
-- Colours are **OKLCH** with the original sRGB hex in an adjacent comment.
+- Colours are **OKLCH** with the original sRGB hex in an adjacent comment — except the original skins' colours in `src/styles/skins.css`, which stay hex: they are read off the captures like the pixel sizes, and OKLCH would round through `lab()`. Name a skin colour there (`bg-zb40-rule`) instead of writing `bg-[#e0e0e0]` in a component; `pnpm lint` rejects a hex class in any string under `src/` (`eslint.config.mjs`).
 
 ## Adding an era
 
 The 2001 era (ADR-0019) touched these; a new one touches the same:
 
 1. `src/lib/era.ts` — `ERAS` (the layout's pre-hydration script and `<EraToggle>` read it) and `ERA_LABELS`.
-2. `src/app/globals.css` — the `:root[data-era="…"]` tokens, `.era-…-only` visibility, and the toggle's `[data-era-option]` pressed colour.
+2. `src/styles/eras.css` — the `:root[data-era="…"]` tokens, `.era-…-only` visibility, and the toggle's `[data-era-option]` pressed colour.
 3. The frame — `era-chrome-….tsx` with `FrameTop…` (plus `FrameLeft…` / `FrameBottom…` if the era had those frames), slotted into `era-shell.tsx`.
 4. The home — `home-….tsx` (`Home…Content`), handed to `<EraShell>` by `src/app/page.tsx` as a new `content…` prop.
 5. Lists and posts, if the era drew them differently — a view beside the others, built from the same `ListRow` / `Post` and shown with `.era-…-only` (as `list-skin-2001.tsx`, `PostHead2001`, `CommentList2001`).
@@ -28,7 +29,7 @@ The 2001 era (ADR-0019) touched these; a new one touches the same:
 
 ## Mobile layout
 
-- Desktop (≥800px, where 10+100+680+7 fits) keeps each frame pixel-identical to the original; the shell switches at `min-[800px]`. Narrow-only fixes go behind `max-[799px]:`. The one chosen departure: every era's frame is centred, with slate on both sides in 2014/2003 where the originals sat left with a slate `1*` column (2026-10-03).
+- Desktop (≥800px, where 10+100+680+7 fits) keeps each frame pixel-identical to the original; the shell switches at `frame:` (`--breakpoint-frame: 800px` in `tokens.css`, px because the frame is; in custom CSS, `@variant frame`). Narrow-only fixes go behind `max-frame:` (`width < 800px`). Don't write `min-[800px]`/`max-[799px]`: Tailwind's `max-*` is exclusive, so that pair left 799–800px with neither. The one chosen departure: every era's frame is centred, with slate on both sides in 2014/2003 where the originals sat left with a slate `1*` column (2026-10-03).
 - Below 800px the layout is our own interpretation (keep the palette): `NarrowList` rows, `MobileMenu` `<details>`, `/site/` pages reflow via `NARROW_CSS` in `src/app/site/_render/assets.ts`.
 - Verify with `pnpm build && python3 -m http.server 8789 -d out` + puppeteer-core (`/usr/bin/chromium-browser`); diff desktop screenshots against production.
 - Prettier trims a leading space inside template-string class names (`overflow-hidden${x}` collapses) — build class lists with an array `.join(" ")`.

@@ -12,7 +12,7 @@ export function BoardHeader({
 }) {
   return (
     <header className="pb-2">
-      <h1 className="text-forg-ink text-[14px] font-bold">{meta.nameKr}</h1>
+      <h1 className="text-[14px] font-bold text-forg-ink">{meta.nameKr}</h1>
       {meta.description && <BoardNote>{meta.description}</BoardNote>}
       {children}
     </header>
@@ -21,5 +21,5 @@ export function BoardHeader({
 
 /** One line of a list page's header. */
 export function BoardNote({ children }: { children: ReactNode }) {
-  return <p className="text-forg-muted mt-[2px] text-[11px]">{children}</p>;
+  return <p className="mt-[2px] text-[11px] text-forg-muted">{children}</p>;
 }

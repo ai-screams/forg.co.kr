@@ -51,7 +51,7 @@ function KritzComment({ comment, board, index }: ItemProps) {
   return (
     <li>
       <div
-        className="flex h-[20px] items-center border border-[#dfdfdf] bg-white bg-repeat-x px-[2px] font-[Verdana,sans-serif] text-[10px] text-black"
+        className="flex h-[20px] items-center border border-kritz-comment-border bg-white bg-repeat-x px-[2px] font-[Verdana,sans-serif] text-[10px] text-black"
         style={tileStyle(KRITZ_STRIP)}
       >
         comment by&nbsp;
@@ -63,7 +63,7 @@ function KritzComment({ comment, board, index }: ItemProps) {
       </div>
       <SanitizedHtml
         html={comment.bodyHtml}
-        className="p-[5px] text-[12px] leading-[1.4] text-[#363636]"
+        className="p-[5px] text-[12px] leading-[1.4] text-kritz-comment-text"
       />
     </li>
   );
@@ -71,8 +71,8 @@ function KritzComment({ comment, board, index }: ItemProps) {
 
 function WebbusComment({ comment, board, index }: ItemProps) {
   return (
-    <li className="border-b border-[#e3e3e3] pb-[2px]">
-      <div className="flex items-end justify-between bg-[#cbd1d4] p-[2px] text-[11px] text-black">
+    <li className="border-b border-webbus-comment-rule pb-[2px]">
+      <div className="flex items-end justify-between bg-webbus-comment-bar p-[2px] text-[11px] text-black">
         <b>
           <CommentAuthor board={board} comment={comment} index={index} />
         </b>
@@ -89,8 +89,8 @@ function WebbusComment({ comment, board, index }: ItemProps) {
 function PlainComment({ comment, board, index }: ItemProps) {
   return (
     <li className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2">
-      <div className="text-forg-muted mb-1 flex items-baseline gap-2 text-xs">
-        <span className="text-forg-ink font-bold">
+      <div className="mb-1 flex items-baseline gap-2 text-xs text-forg-muted">
+        <span className="font-bold text-forg-ink">
           <CommentAuthor board={board} comment={comment} index={index} />
         </span>
         <time dateTime={comment.createdAt}>{formatKoreanDateTime(comment.createdAt)}</time>

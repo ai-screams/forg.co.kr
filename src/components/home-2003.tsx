@@ -180,18 +180,21 @@ function MainHeading() {
 
 /** The solid colour each header art ends in (every row of its last columns),
  *  used to carry the bar across a phone-wide box: 350px m_*.gif, 185px r_*.gif. */
-const HEADER_TAIL: Record<string, string> = { m: "max-md:bg-[#c0c9cb]", r: "max-md:bg-[#e6e6e6]" };
+const HEADER_TAIL: Record<string, string> = {
+  m: "max-md:bg-forg2003-m-tail",
+  r: "max-md:bg-forg2003-r-tail",
+};
 
 function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: boolean }) {
   const tail = HEADER_TAIL[box.config.asset.charAt(0)] ?? "";
   return (
     <section
-      className="border-forg-gold/40 border-b bg-white max-md:mb-2"
+      className="border-b border-forg-gold/40 bg-white max-md:mb-2"
       aria-label={box.config.label}
     >
       <Link
         href={`/${box.config.id}`}
-        className={`bg-forg-gold/10 hover:bg-forg-gold/20 flex h-[22px] items-center px-1 ${tail}`}
+        className={`flex h-[22px] items-center bg-forg-gold/10 px-1 hover:bg-forg-gold/20 ${tail}`}
         style={tileStyle(chromeUrl(box.config.asset, ERA), "no-repeat", "left center")}
       >
         <span className="sr-only">{box.config.label}</span>
@@ -201,7 +204,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
           <li key={entry.postId}>
             <Link
               href={`/${box.config.id}/${entry.postId}`}
-              className="hover:text-forg-gold-hover block truncate text-[10.5px] leading-[1.45] text-(--era-link) max-md:border-b max-md:border-dotted max-md:border-[#e3e3e3] max-md:py-[6px] max-md:text-[14px]"
+              className="block truncate text-[10.5px] leading-[1.45] text-(--era-link) hover:text-forg-gold-hover max-md:border-b max-md:border-dotted max-md:border-phone-rule max-md:py-[6px] max-md:text-[14px]"
             >
               <LazyImg
                 src={chromeUrl(box.config.bullet, ERA)}
@@ -212,7 +215,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
               />
               {/* The 185px column had no room for a date and carried none. */}
               {!compact && (
-                <span className="text-forg-muted mr-1.5 font-mono text-[9px] max-md:text-[11px]">
+                <span className="mr-1.5 font-mono text-[9px] text-forg-muted max-md:text-[11px]">
                   {formatMonthDay(entry.createdAt)}
                 </span>
               )}
@@ -237,9 +240,9 @@ function BestScreenShotBox() {
   // ScreenShot board. The original served the header from
   // hosting27.interpia98.net/~forg/images/.
   return (
-    <section className="border-forg-gold/40 border-b bg-white" aria-label="BestScreenShot">
+    <section className="border-b border-forg-gold/40 bg-white" aria-label="BestScreenShot">
       <div
-        className="bg-forg-gold/10 flex h-[22px] items-center px-1 max-md:bg-[#e6e6e6]"
+        className="flex h-[22px] items-center bg-forg-gold/10 px-1 max-md:bg-forg2003-r-tail"
         style={tileStyle(chromeUrl("r_screen.gif", ERA), "no-repeat", "left center")}
       >
         <span className="sr-only">BestScreenShot</span>

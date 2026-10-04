@@ -130,10 +130,13 @@ export async function Home2001Content() {
     Promise.all(RIGHT_BOXES.map(loadBox)),
   ]);
   return (
-    <section aria-label="2001 메인 콘텐츠" className="bg-[#f8f8f8] py-2 text-[12px] leading-[1.35]">
+    <section
+      aria-label="2001 메인 콘텐츠"
+      className="bg-forg2001-page py-2 text-[12px] leading-[1.35]"
+    >
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
-      <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-[#cccccc] min-[800px]:grid-cols-[150px_390px_200px]">
-        <div className="border-[#cccccc] p-[2px] max-[799px]:hidden min-[800px]:border-r">
+      <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-forg2001-table frame:grid-cols-[150px_390px_200px]">
+        <div className="border-forg2001-table p-[2px] max-frame:hidden frame:border-r">
           <LazyImg
             src={chromeUrl("left_logo_uo_1.gif", ERA)}
             alt=""
@@ -156,7 +159,7 @@ export async function Home2001Content() {
             ))}
           </map>
         </div>
-        <div className="border-[#cccccc] bg-[#fcfbe9] min-[800px]:border-r">
+        <div className="border-forg2001-table bg-forg2001-middle frame:border-r">
           <LazyImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Honor & Sacrifice"
@@ -168,7 +171,7 @@ export async function Home2001Content() {
             <BoxSection2001 key={data.box.id} data={data} />
           ))}
         </div>
-        <div className="bg-[#f8f8f8]">
+        <div className="bg-forg2001-page">
           {right.map((data) => (
             <BoxSection2001 key={data.box.id} data={data} />
           ))}
@@ -194,7 +197,7 @@ export async function Home2001Content() {
             </Link>
           </section>
         </div>
-        <div aria-hidden className="h-[20px] border-t border-[#cccccc] min-[800px]:col-span-3" />
+        <div aria-hidden className="h-[20px] border-t border-forg2001-table frame:col-span-3" />
       </div>
     </section>
   );
@@ -215,7 +218,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
       ) : (
         // `uoessay.gif` and `screen.gif` were never captured.
         <span
-          className="mx-auto flex items-center bg-[#e6e6e6] px-2 font-bold text-[#404040]"
+          className="mx-auto flex items-center bg-forg2001-box-head px-2 font-bold text-forg2001-box-head-text"
           style={{ maxWidth: box.width, height: box.height }}
         >
           {box.label}
@@ -235,7 +238,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
           <li key={entry.postId} className="truncate">
             <Link
               href={`/${data.box.id}/${entry.postId}`}
-              className="text-(--era-link) hover:text-(--era-link-hover) max-[799px]:block max-[799px]:py-[5px] max-[799px]:text-[14px]"
+              className="text-(--era-link) hover:text-(--era-link-hover) max-frame:block max-frame:py-[5px] max-frame:text-[14px]"
             >
               <LazyImg
                 src={bullet}

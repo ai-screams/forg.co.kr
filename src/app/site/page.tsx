@@ -53,7 +53,7 @@ export default async function SiteIndexPage() {
       <article className="text-forg-ink">
         <header className="pb-3">
           <h1 className="text-[14px] font-bold">사이트 페이지</h1>
-          <p className="text-forg-muted mt-[2px] text-[11px]">
+          <p className="mt-[2px] text-[11px] text-forg-muted">
             게시판 밖에 있던 안내 페이지 {pages.length.toLocaleString("ko-KR")}쪽입니다. 원래 모습
             그대로 열리며, 페이지 안의 링크도 박물관 안에서 이어집니다.
           </p>
@@ -71,7 +71,7 @@ export default async function SiteIndexPage() {
                     <a href={`/site/${p.stem}/`} className="hover:underline">
                       {p.title}
                     </a>
-                    <span className="text-forg-muted ml-1 text-[10px]">
+                    <span className="ml-1 text-[10px] text-forg-muted">
                       {p.originalPath} · {p.capturedAt.slice(0, 4)}
                     </span>
                   </li>

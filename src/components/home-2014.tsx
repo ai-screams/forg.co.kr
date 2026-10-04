@@ -127,7 +127,7 @@ function BoxCard({ box }: { box: BoxData }) {
 
   return (
     <section
-      className="border-forg-gold/30 flex flex-col border-b max-sm:mb-3 max-sm:border max-sm:border-[#e3e3e3]"
+      className="flex flex-col border-b border-forg-gold/30 max-sm:mb-3 max-sm:border max-sm:border-phone-rule"
       aria-label={meta.nameKr}
     >
       <Link
@@ -149,7 +149,7 @@ function BoxCard({ box }: { box: BoxData }) {
       {/* Phones get the full-width tab above instead. */}
       <Link
         href={`/${box.config.id}`}
-        className="bg-forg-gold/10 hover:bg-forg-gold/20 group block h-[25px] w-full overflow-hidden max-sm:hidden"
+        className="group block h-[25px] w-full overflow-hidden bg-forg-gold/10 hover:bg-forg-gold/20 max-sm:hidden"
         style={tileStyle(headerUrl, "no-repeat")}
       >
         <span className="sr-only">{meta.nameKr}</span>
@@ -166,7 +166,7 @@ function BoxCard({ box }: { box: BoxData }) {
         {box.totalPosts > BOX_RECENT_COUNT && (
           <Link
             href={`/${box.config.id}`}
-            className="text-forg-muted hover:text-forg-gold-hover mt-1 inline-block text-[10px] max-sm:mt-2 max-sm:block max-sm:text-right max-sm:text-[12px]"
+            className="mt-1 inline-block text-[10px] text-forg-muted hover:text-forg-gold-hover max-sm:mt-2 max-sm:block max-sm:text-right max-sm:text-[12px]"
           >
             전체 {box.totalPosts.toLocaleString("ko-KR")}건 →
           </Link>
@@ -191,7 +191,7 @@ function BoxRow({
   return (
     <Link
       href={`/${board}/${entry.postId}`}
-      className="text-forg-muted max-sm:text-forg-ink flex items-center gap-[3px] text-[12px] leading-tight hover:underline max-sm:border-b max-sm:border-dotted max-sm:border-[#e3e3e3] max-sm:py-[7px] max-sm:text-[14px]"
+      className="flex items-center gap-[3px] text-[12px] leading-tight text-forg-muted hover:underline max-sm:border-b max-sm:border-dotted max-sm:border-phone-rule max-sm:py-[7px] max-sm:text-[14px] max-sm:text-forg-ink"
     >
       <span className="truncate">{entry.title}</span>
       {entry.commentCount > 0 && (

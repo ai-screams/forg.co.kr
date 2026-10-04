@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Shared React components for the museum's chrome, era shell, board listings, and post/comment rendering. All components here are era-invariant in their markup — the 2014/2003 visual difference comes from CSS (`--era-*` variables in `src/app/globals.css`), not from component branching, with `era-chrome-2014.tsx` and `home-2003.tsx` as the two exceptions that _hold_ each era's own chrome pieces.
+Shared React components for the museum's chrome, era shell, board listings, and post/comment rendering. All components here are era-invariant in their markup — the 2014/2003 visual difference comes from CSS (`--era-*` variables in `src/styles/eras.css`), not from component branching, with `era-chrome-2014.tsx` and `home-2003.tsx` as the two exceptions that _hold_ each era's own chrome pieces.
 
 ## Key Files
 
@@ -56,7 +56,7 @@ None.
 - `comment-list.tsx` and `post-view.tsx` render `bodyHtml` via `dangerouslySetInnerHTML`. That HTML is pre-sanitised by nh3 at ETL Stage 2 (ADR-0008) — don't re-sanitise on the client, and don't reuse this pattern for any HTML that hasn't gone through that ETL stage.
 - `post-view.tsx` puts `data-pagefind-meta="boardKr:…"` on the article; the search page reads its result labels from it. Changing it means rebuilding and uploading the search index (`pnpm deploy:search`) before the code ships.
 - Prev/next links in `post-view.tsx` go to `entry.board ?? board`: a continuing board (UoBoard2, Shop) lists rows carried in from older boards, and those posts live under their own board.
-- Mobile layout (below 800px) is the museum's own interpretation, not a faithful reproduction — keep the forg palette but build phone-only markup behind `max-[799px]:` (desktop stays pixel-identical above 800px). See `.claude/rules/era-and-ui.md`, including its Prettier template-string class-name gotcha.
+- Mobile layout (below 800px) is the museum's own interpretation, not a faithful reproduction — keep the forg palette but build phone-only markup behind `max-frame:` (desktop stays pixel-identical from 800px, `frame:`). See `.claude/rules/era-and-ui.md`, including its Prettier template-string class-name gotcha.
 
 ### Testing Requirements
 

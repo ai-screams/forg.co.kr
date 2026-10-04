@@ -16,7 +16,7 @@ import { DEFAULT_ERA, ERA_LABELS, ERA_STORAGE_KEY, ERAS, isEra, type Era } from 
  * (`forg:era-change`)를 dispatch한다. 다른 탭의 변경은 `storage` 이벤트로
  * 받아 이 탭의 `<html data-era>`에 옮긴다.
  *
- * 눌린 버튼의 색은 React 상태가 아니라 `globals.css`의 `data-era` 규칙이
+ * 눌린 버튼의 색은 React 상태가 아니라 `src/styles/eras.css`의 `data-era` 규칙이
  * 칠한다. 스크립트가 돌기 전(SSR 상태는 늘 2014)에도 저장된 시기가 켜져
  * 보이게 하기 위해서다.
  */
@@ -55,7 +55,7 @@ export function EraToggle() {
       className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs"
     >
       {/* Three eras and the search link share a 375px phone's header row. */}
-      <span className="text-forg-ghost px-1 font-mono uppercase max-[399px]:hidden">era</span>
+      <span className="px-1 font-mono text-forg-ghost uppercase max-[399px]:hidden">era</span>
       {ERAS.map((candidate) => {
         const active = era === candidate;
         return (
@@ -73,7 +73,7 @@ export function EraToggle() {
               }
               window.dispatchEvent(new Event(ERA_CHANGE_EVENT));
             }}
-            className="text-forg-muted hover:bg-forg-cream hover:text-forg-ink min-w-11 rounded-full px-2 py-0.5 font-mono text-xs transition-colors sm:min-w-12"
+            className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink sm:min-w-12"
           >
             {ERA_LABELS[candidate]}
           </button>

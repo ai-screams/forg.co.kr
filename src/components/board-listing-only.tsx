@@ -59,7 +59,7 @@ export function BoardListingOnly({ board, listing }: BoardListingOnlyProps) {
         }}
       />
 
-      <footer className="text-forg-muted mt-2 text-[10.5px]">
+      <footer className="mt-2 text-[10.5px] text-forg-muted">
         출처: Wayback Machine 목록 캡처{" "}
         {captures.map((ts, i) => (
           <span key={ts}>

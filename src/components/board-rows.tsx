@@ -51,7 +51,7 @@ function TitleCell({
 }) {
   const body = (
     <>
-      {category ? <span className="text-forg-muted shrink-0 text-[10px]">[{category}]</span> : null}
+      {category ? <span className="shrink-0 text-[10px] text-forg-muted">[{category}]</span> : null}
       <span className="truncate">{title}</span>
       <CommentCount count={commentCount} skin={skin} />
       <RowMarks skin={skin} board={board} attachmentCount={attachmentCount} hits={hits} />
@@ -168,7 +168,7 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
  */
 function NoBodyMark() {
   return (
-    <span className="text-forg-muted shrink-0 rounded-[2px] border border-current/40 px-[3px] text-[10px] leading-[14px] whitespace-nowrap">
+    <span className="shrink-0 rounded-[2px] border border-current/40 px-[3px] text-[10px] leading-[14px] whitespace-nowrap text-forg-muted">
       본문 없음
     </span>
   );
@@ -183,7 +183,7 @@ function CommentCount({ count, skin }: { count: number; skin: ListSkin }) {
   if (count <= 0) return null;
   if (skin === "webbus") {
     return (
-      <span className="text-webbus-comment shrink-0 font-[Tahoma,sans-serif] text-[10px] font-bold tabular-nums">
+      <span className="shrink-0 font-[Tahoma,sans-serif] text-[10px] font-bold text-webbus-comment tabular-nums">
         ({count})
       </span>
     );
@@ -231,7 +231,7 @@ function RowMarks({
   return (
     <span
       aria-label={`첨부 ${attachmentCount}개`}
-      className="text-forg-muted shrink-0 text-[10.5px] tabular-nums"
+      className="shrink-0 text-[10.5px] text-forg-muted tabular-nums"
     >
       ⊕{attachmentCount}
     </span>
