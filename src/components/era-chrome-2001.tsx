@@ -9,26 +9,9 @@ import Link from "@/components/link";
 import { LazyImg } from "@/components/lazy-img";
 import { chromeUrl } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
+import { TOP_MENU_2001 } from "@/lib/era-menus";
 
 const ERA: Era = "2001";
-
-// forg_t's menu row, left to right, with the alt text each button had.
-const TOP_MENU_2001: { asset: string; label: string; href: string }[] = [
-  { asset: "m_m.gif", label: ":::메인:::", href: "/" },
-  { asset: "m_n.gif", label: "초보자Guide", href: "/site/skill/uo_newbie/" },
-  { asset: "m_c.gif", label: "전투스킬", href: "/site/skill/uo_combat/" },
-  { asset: "m_j.gif", label: "직업스킬", href: "/site/skill/uo_jobs/" },
-  { asset: "m_t.gif", label: "울온관련팁", href: "/site/skill/uo_knowhow/" },
-  { asset: "m_map.gif", label: "울온지도", href: "/site/map/" },
-  { asset: "m_f.gif", label: "자유게시판", href: "/UoBoard" },
-  { asset: "m_q.gif", label: "질문란", href: "/Q_A" },
-  { asset: "m_r.gif", label: "울온여행기", href: "/Role" },
-  { asset: "m_e.gif", label: "Essay", href: "/UOForum" },
-  { asset: "m_b.gif", label: "장터란", href: "/Sell" },
-  { asset: "m_fun.gif", label: "유머게시판", href: "/FunBoard" },
-  { asset: "m_s.gif", label: "스크린샷&벤더광고란", href: "/ScreenShot" },
-  { asset: "m_k.gif", label: "자료실&울온여행", href: "/Recall" },
-];
 
 /* ────────────────────────────────────────────────────────────────────── */
 /*  Frame: top — banner and the 14-button menu (forg_t.htm)               */

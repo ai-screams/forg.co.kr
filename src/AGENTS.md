@@ -26,6 +26,6 @@ The Next.js 16 App Router site and the JSON it renders. Everything here is built
 
 ### Testing Requirements
 
-`pnpm test` runs the Vitest unit tests (`src/**/*.test.ts`, plain functions in `src/lib`). Also run `pnpm typecheck`, `pnpm lint` and `pnpm build`; layout changes are checked by screenshots and computed styles (see `.claude/rules/era-and-ui.md`).
+`pnpm test` runs the Vitest unit tests (`src/**/*.test.ts`: functions in `src/lib`, the era menus' links, and `InertJumpMenu` rendered to a string). Also run `pnpm typecheck`, `pnpm lint` and `pnpm build`; layout changes are checked by screenshots and computed styles (see `.claude/rules/era-and-ui.md`).
 
 <!-- MANUAL: Any manually added notes below this line are preserved on regeneration -->

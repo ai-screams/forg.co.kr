@@ -22,46 +22,13 @@ import {
   TBarRow,
 } from "@/components/chrome-primitives";
 import { LazyImg } from "@/components/lazy-img";
-import { type BoardId } from "@/lib/boards";
 import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
+import { FAMILY_SITES_2014, GAME_CATEGORIES_2014, TOP_MENU_2014 } from "@/lib/era-menus";
 
 /** This surface is the 2014 exhibit, so its assets are asked for at their
  *  2014 capture — see `lib/chrome` on why a filename alone is ambiguous. */
 const ERA: Era = "2014";
-
-interface MenuConfig {
-  id: BoardId;
-  asset: string;
-  hoverAsset: string;
-  label: string;
-}
-
-const TOP_MENU: MenuConfig[] = [
-  {
-    id: "UoBoard2",
-    asset: "t_b_freeboard.gif",
-    hoverAsset: "t_b_freeboard_1.gif",
-    label: "자유게시판",
-  },
-  { id: "porato", asset: "t_b_photo.gif", hoverAsset: "t_b_photo_1.gif", label: "포토갤러리" },
-  { id: "FunBoard", asset: "t_b_fun.gif", hoverAsset: "t_b_fun_1.gif", label: "펀보드" },
-  { id: "Reveal", asset: "t_b_movie.gif", hoverAsset: "t_b_movie_1.gif", label: "스포일러게시판" },
-  { id: "Boo", asset: "t_b_boo.gif", hoverAsset: "t_b_boo_1.gif", label: "뽐뿌" },
-  { id: "Shop", asset: "t_b_tra.gif", hoverAsset: "t_b_tra_1.gif", label: "거래" },
-  { id: "Trash", asset: "t_b_trash.gif", hoverAsset: "t_b_trash_1.gif", label: "휴지통게시판" },
-];
-
-// Labels and `title`s are the 2014-12-18 sidebar verbatim, including the
-// leading dash the original used as its bullet.
-const GAME_CATEGORIES: { id: BoardId; label: string; title: string }[] = [
-  { id: "Ultima", label: "-울티마온라인", title: ":::UltimaOnline:::" },
-  { id: "Diablo", label: "-디아블로3", title: ":::Diablo3:::" },
-  { id: "DF", label: "-던전앤파이터", title: ":::DF Board:::" },
-  { id: "LoL", label: "-리그오브레전드", title: ":::LoL:::" },
-  { id: "Star2", label: "-스타크래프트2", title: ":::Starcraft2:::" },
-  { id: "Console", label: "-콘솔게임", title: ":::XBOX,PS3,Wii,PSP:::" },
-];
 
 /** The 2014-12-18 footer's total, kept as the exhibit shows it. */
 const TOTAL_VISITORS = 52_916_713;
@@ -83,7 +50,7 @@ export function FrameLeft2014() {
           appears only in frame-left-2007 and never in 2014-12-18. */}
       <LazyImg src={chromeUrl("l_bar.gif", ERA)} alt="" width={86} height={2} className="block" />
       <nav className="flex flex-col text-left text-[12px]">
-        {GAME_CATEGORIES.map((cat, i) => (
+        {GAME_CATEGORIES_2014.map((cat, i) => (
           <Fragment key={cat.id}>
             {/* The original spaced these with blank_l_line.gif: 86×6 under the
                 rule, 86×4 between entries. */}
@@ -103,10 +70,6 @@ export function FrameLeft2014() {
   );
 }
 
-/** The three sites forg's sidebar linked as family, verbatim from the
- *  2014-12-18 capture. All three are gone; the museum keeps the names. */
-const FAMILY_SITES = ["Zeme", "Kritz", "Cindee"];
-
 /**
  * The sidebar's Family Site menu. The original opened the chosen site in a
  * new window; ncity.net, kritz.mulple.com and daoc.mulple.com have all been
@@ -118,12 +81,8 @@ function FamilySiteSelect() {
       <InertJumpMenu
         id="family-site-note"
         label="Family Site"
-        options={["Family Site", null, ...FAMILY_SITES, null]}
-        note={
-          <>
-            Family Site 목록: {FAMILY_SITES.join(", ")}. 세 사이트 모두 사라져 이동할 수 없습니다.
-          </>
-        }
+        options={["Family Site", null, ...FAMILY_SITES_2014, null]}
+        sites={FAMILY_SITES_2014}
         className="w-[88px] border border-forg-ink/30 bg-white text-[11px] text-forg-ink/70"
       />
     </p>
@@ -180,14 +139,14 @@ export function FrameTop2014() {
             cell exactly, as the original's left-floated images did. Padding
             pushed the cap 8px past the column edge. */}
         <MenuRow label="2014 상단 메뉴">
-          {TOP_MENU.map((item) => (
+          {TOP_MENU_2014.map((item) => (
             <MenuButton key={item.id} item={item} />
           ))}
           <MenuTailCap />
         </MenuRow>
       </div>
       <MobileMenu label="게임 카테고리">
-        {GAME_CATEGORIES.map((cat) => (
+        {GAME_CATEGORIES_2014.map((cat) => (
           <Link key={cat.id} href={`/${cat.id}`} title={cat.title} className="block py-[6px]">
             {cat.label}
           </Link>
@@ -220,7 +179,7 @@ function MenuTailCap() {
   );
 }
 
-function MenuButton({ item }: { item: MenuConfig }) {
+function MenuButton({ item }: { item: (typeof TOP_MENU_2014)[number] }) {
   // Wayback kept three of the seven hover images (freeboard, boo, trash).
   const hoverUrl = optionalChrome(item.hoverAsset, ERA);
   // CSS-only hover swap via background-image overlay (SSG-safe).

@@ -17,10 +17,10 @@ Shared React components for the museum's chrome, era shell, board listings, and 
 | `board-header.tsx`       | `BoardHeader` (a list page's board name and description, then its notes) and `BoardNote` (one note line); `BoardListing` and `BoardListingOnly` share them.                                                                                                                                                             |
 | `board-placeholder.tsx`  | The page of a documented board Wayback kept nothing readable of (no index, no captured list page).                                                                                                                                                                                                                      |
 | `board-rows.tsx`         | Builds each `ListRow` once for every view of a list: `indexRows`, `listingRows`, and the title cell with its comment count, marks and 본문 없음 (greyed on boards that keep posts).                                                                                                                                     |
-| `chrome-primitives.tsx`  | Pieces the 2014 and 2003 frames share: `LeftRail` / `RightRail`, `LoginBar` (the inert Login / Sign Up bar), `TBarRow`, `MenuRow`, `MobileMenu`, `InertJumpMenu` (the disabled friend-site selects).                                                                                                                    |
+| `chrome-primitives.tsx`  | Pieces the 2014 and 2003 frames share: `LeftRail` / `RightRail`, `LoginBar` (the inert Login / Sign Up bar), `TBarRow`, `MenuRow`, `MobileMenu`, `InertJumpMenu` (the disabled friend-site selects; its screen-reader note names the sites and counts them).                                                            |
 | `comment-list.tsx`       | Renders a post's comments in the skin of the capture they came from (`captureSkin`): `kritz` (Zeroboard), `webbus` (Gnuboard4), or `plain` (Gnuboard5/forg.kr).                                                                                                                                                         |
 | `daemon-name.tsx`        | Client component: one random daemon name per seed, drawn in the browser.                                                                                                                                                                                                                                                |
-| `era-chrome-2001.tsx`    | 2001-era chrome: `FrameTop2001` (forg_t, the banner and 14-button menu) that `era-shell.tsx` uses.                                                                                                                                                                                                                      |
+| `era-chrome-2001.tsx`    | 2001-era chrome: `FrameTop2001` (forg_t, the banner and 14-button menu) that `era-shell.tsx` uses. The menus of all three frames are data in `lib/era-menus.ts`.                                                                                                                                                        |
 | `era-chrome-2003.tsx`    | 2003-era chrome: `FrameTop2003`, `FrameLeft2003` (sidebar with its Friend Site menu) and `FrameBottom2003` (counter and search strip) that `era-shell.tsx` composes.                                                                                                                                                    |
 | `era-chrome-2014.tsx`    | 2014-era chrome: `FrameTop2014` (logo, login bar, 7-button menu, mobile menu), `FrameLeft2014` (game-category sidebar) and `FrameBottom2014` (visitor counter), from the 2014-12-18 capture.                                                                                                                            |
 | `era-shell.tsx`          | The five-column frame (`10 / 100 / 680 / 7 / *`) every route renders inside. Renders content once and swaps only the era chrome via `.era-2014-only` / `.era-2003-only` CSS classes.                                                                                                                                    |
@@ -60,9 +60,10 @@ None.
 
 ### Testing Requirements
 
-Components have no unit tests (`pnpm test` covers `src/lib`). Verify changes here with:
+`chrome-primitives.test.ts` renders `InertJumpMenu` with `react-dom/server` and checks its note; the other components are checked by the build. Verify changes here with:
 
 ```bash
+pnpm test        # vitest run
 pnpm typecheck   # tsc --noEmit
 pnpm lint        # eslint
 pnpm build       # next build — renders every board/post statically

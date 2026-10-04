@@ -48,7 +48,7 @@ All three board-shaped routes set `dynamicParams = false` and enumerate every pa
 
 ### Testing Requirements
 
-Routes have no unit tests (`pnpm test` covers `src/lib`). Verify changes here with:
+Routes have no unit tests (`pnpm test` covers `src/lib` and one shared component). Verify changes here with:
 
 ```bash
 pnpm typecheck   # tsc --noEmit
