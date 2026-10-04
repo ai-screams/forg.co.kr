@@ -63,6 +63,14 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           <FrameLeft2003 />
         </div>
 
+        {/* The right rail comes before the main column in the HTML and is put
+            last by `order`. The browser paints before the whole page has
+            arrived, and a rail parsed after the content widened the centred
+            frame by 7px when it came, moving the frame 3.5px left. */}
+        <div className="era-not-2001 contents *:order-last">
+          <RightRail />
+        </div>
+
         {/* Inside the layout's <main>, which also holds the search page and the 404. */}
         <div className="forg-shell-main flex w-full flex-col bg-(--era-content-bg) frame:w-[680px] frame:shrink-0">
           <div className="era-2014-only">
@@ -91,10 +99,6 @@ export function EraShell({ children, content2014, content2003, content2001 }: Er
           <div className="era-2003-only">
             <FrameBottom2003 />
           </div>
-        </div>
-
-        <div className="era-not-2001 contents">
-          <RightRail />
         </div>
       </div>
     </div>
