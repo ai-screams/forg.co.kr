@@ -17,5 +17,6 @@ var z=(Number(doc.style.zoom)||1)*(width-16)/(root.scrollWidth-8);
 doc.style.zoom=String(Math.floor(z*1000)/1000);}}
 function queue(){if(!queued){queued=true;window.requestAnimationFrame(fit);}}
 queue();
+window.addEventListener("load",queue);
 window.addEventListener("resize",function(){if(root.clientWidth!==width)queue();});
 })();

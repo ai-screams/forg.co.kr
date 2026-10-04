@@ -94,11 +94,12 @@ export const NARROW_CSS = read("narrow.css");
 // of 300px or less (a heading, a button) under 60% of its size, as on the
 // three-column pages. Whatever is still too wide is the document, not the
 // museum bar, scaled down to the screen's width with its layout kept. The
-// page is measured once it is parsed, before its images arrive: an image
-// that sets the layout carries its width, and with every image held back
-// until after that measure all 1,201 documents still fit at 390px once
-// they load (the unsized ones are bullets, or pictures inside wider
-// columns). It is measured again when the screen's width changes.
+// page is measured once it is parsed, before its images arrive (an image
+// that sets the layout carries its width), again once every image has
+// loaded or failed, and when the screen's width changes. A failed image is
+// drawn at its width attribute and does not shrink with its cell, so a page
+// that fitted by shrinking needs the zoom after all (PR previews have no
+// images; a phone may block them).
 // The documents in the museum's frames (`diablo`, `uo`, `wow`, `holy/index`,
 // all fixed-width columns) fit their frames, so there is no frame exception.
 export const FIT_SCRIPT = read("fit.js");
