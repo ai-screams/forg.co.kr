@@ -448,6 +448,13 @@ def parse_one(
     if not created_at_iso:
         raise ValueError("missing createdAt in meta line")
     created_at = datetime.fromisoformat(created_at_iso)
+    # Zeroboard drew the view for a post that no longer existed as an empty
+    # template dated "1970/01/01" (time 0, no record), with no title and no
+    # body; the author is no sign (Trash's skin printed a random daemon name
+    # for any guest). The board list printed under it is 02c's. A 1970 view
+    # with comments, a title or a body keeps them, so it stays a post.
+    if created_at.year == 1970 and not comments and not title and not body_text.strip():
+        raise _NonPostPage("empty_view")
 
     era = "2014" if created_at >= ERA_BREAKPOINT else "2003"
 

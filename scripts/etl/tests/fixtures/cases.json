@@ -1,292 +1,5 @@
 [
   {
-    "id": "zb/Events__17",
-    "parser": "zb",
-    "file": "Events__17.html",
-    "args": {
-      "board": "Events",
-      "post_id": "17",
-      "captured_at": "20030502172803"
-    },
-    "kinds": [
-      "category"
-    ],
-    "source": "archive-clean/A/Events/17.html"
-  },
-  {
-    "id": "zb/Events__423",
-    "parser": "zb",
-    "file": "Events__423.html",
-    "args": {
-      "board": "Events",
-      "post_id": "423",
-      "captured_at": "20030208062000"
-    },
-    "kinds": [
-      "skip:plugin_redirect"
-    ],
-    "source": "archive-clean/A/Events/423.html"
-  },
-  {
-    "id": "zb/Notice__387",
-    "parser": "zb",
-    "file": "Notice__387.html",
-    "args": {
-      "board": "Notice",
-      "post_id": "387",
-      "captured_at": "20020812084700"
-    },
-    "kinds": [
-      "body:span"
-    ],
-    "source": "archive-clean/A/Notice/387.html"
-  },
-  {
-    "id": "zb/Notice__86",
-    "parser": "zb",
-    "file": "Notice__86.html",
-    "args": {
-      "board": "Notice",
-      "post_id": "86",
-      "captured_at": "20071112063254"
-    },
-    "kinds": [
-      "body:center"
-    ],
-    "source": "archive-clean/A/Notice/86.html"
-  },
-  {
-    "id": "zb/Q_A__16838",
-    "parser": "zb",
-    "file": "Q_A__16838.html",
-    "args": {
-      "board": "Q_A",
-      "post_id": "16838",
-      "captured_at": "20030930150620"
-    },
-    "kinds": [
-      "skip:db_error_at_capture"
-    ],
-    "source": "archive-clean/A/Q_A/16838.html"
-  },
-  {
-    "id": "zb/Q_A__6521",
-    "parser": "zb",
-    "file": "Q_A__6521.html",
-    "args": {
-      "board": "Q_A",
-      "post_id": "6521",
-      "captured_at": "20071117151939"
-    },
-    "kinds": [
-      "comments",
-      "member",
-      "skin:kritz_normal2"
-    ],
-    "source": "archive-clean/A/Q_A/6521.html"
-  },
-  {
-    "id": "zb/ScreenShot__2951",
-    "parser": "zb",
-    "file": "ScreenShot__2951.html",
-    "args": {
-      "board": "ScreenShot",
-      "post_id": "2951",
-      "captured_at": "20021007235212"
-    },
-    "kinds": [
-      "body:div",
-      "skin:kritz_normal",
-      "unknown-date"
-    ],
-    "source": "archive-clean/A/ScreenShot/2951.html"
-  },
-  {
-    "id": "zb/UOForum__549",
-    "parser": "zb",
-    "file": "UOForum__549.html",
-    "args": {
-      "board": "UOForum",
-      "post_id": "549",
-      "captured_at": "20071014083215"
-    },
-    "kinds": [
-      "skip:permission_denied"
-    ],
-    "source": "archive-clean/A/UOForum/549.html"
-  },
-  {
-    "id": "zb/UOForum__888",
-    "parser": "zb",
-    "file": "UOForum__888.html",
-    "args": {
-      "board": "UOForum",
-      "post_id": "888",
-      "captured_at": "20051020055430"
-    },
-    "kinds": [
-      "skip:deleted_before_capture"
-    ],
-    "source": "archive-clean/A/UOForum/888.html"
-  },
-  {
-    "id": "zb/UoBoard__27295",
-    "parser": "zb",
-    "file": "UoBoard__27295.html",
-    "args": {
-      "board": "UoBoard",
-      "post_id": "27295",
-      "captured_at": "20030715074318"
-    },
-    "kinds": [
-      "body:table"
-    ],
-    "source": "archive-clean/A/UoBoard/27295.html"
-  },
-  {
-    "id": "zb/UoBoard__32376",
-    "parser": "zb",
-    "file": "UoBoard__32376.html",
-    "args": {
-      "board": "UoBoard",
-      "post_id": "32376",
-      "captured_at": "20030715071629"
-    },
-    "kinds": [
-      "body:a"
-    ],
-    "source": "archive-clean/A/UoBoard/32376.html"
-  },
-  {
-    "id": "zb/FunBoard__2561",
-    "parser": "zb",
-    "file": "FunBoard__2561.html",
-    "args": {
-      "board": "FunBoard",
-      "post_id": "2561",
-      "captured_at": "20071107023755"
-    },
-    "kinds": [
-      "body:font"
-    ],
-    "source": "archive-clean/B/FunBoard/2561.html"
-  },
-  {
-    "id": "zb/Shop__1091",
-    "parser": "zb",
-    "file": "Shop__1091.html",
-    "args": {
-      "board": "Shop",
-      "post_id": "1091",
-      "captured_at": "20130812101100"
-    },
-    "kinds": [
-      "skip:license_only_stub"
-    ],
-    "source": "archive-clean/B/Shop/1091.html"
-  },
-  {
-    "id": "zb/Trash__191",
-    "parser": "zb",
-    "file": "Trash__191.html",
-    "args": {
-      "board": "Trash",
-      "post_id": "191",
-      "captured_at": "20020723195617"
-    },
-    "kinds": [
-      "skin:kritz_trash"
-    ],
-    "source": "archive-clean/B/Trash/191.html"
-  },
-  {
-    "id": "zb/Trash__21463",
-    "parser": "zb",
-    "file": "Trash__21463.html",
-    "args": {
-      "board": "Trash",
-      "post_id": "21463",
-      "captured_at": "20130812105222"
-    },
-    "kinds": [
-      "skip:skin_gnuboard4_webbus"
-    ],
-    "source": "archive-clean/B/Trash/21463.html"
-  },
-  {
-    "id": "zb/Vendor__5",
-    "parser": "zb",
-    "file": "Vendor__5.html",
-    "args": {
-      "board": "Vendor",
-      "post_id": "5",
-      "captured_at": "20071030004050"
-    },
-    "kinds": [
-      "attachments",
-      "body:img"
-    ],
-    "source": "archive-clean/B/Vendor/5.html"
-  },
-  {
-    "id": "zb/monster__14",
-    "parser": "zb",
-    "file": "monster__14.html",
-    "args": {
-      "board": "monster",
-      "post_id": "14",
-      "captured_at": "20030716125957"
-    },
-    "kinds": [
-      "error"
-    ],
-    "source": "archive-clean/B/monster/14.html"
-  },
-  {
-    "id": "zb/monster__184",
-    "parser": "zb",
-    "file": "monster__184.html",
-    "args": {
-      "board": "monster",
-      "post_id": "184",
-      "captured_at": "20020704220546"
-    },
-    "kinds": [
-      "homepage"
-    ],
-    "source": "archive-clean/B/monster/184.html"
-  },
-  {
-    "id": "zb/events_date__86",
-    "parser": "zb",
-    "file": "events_date__86.html",
-    "args": {
-      "board": "events_date",
-      "post_id": "86",
-      "captured_at": "20020827102529"
-    },
-    "kinds": [
-      "hits",
-      "ok",
-      "skin:buzzard"
-    ],
-    "source": "archive-clean/V/events_date/86.html"
-  },
-  {
-    "id": "g4/UoBoard2__40586",
-    "parser": "g4",
-    "file": "UoBoard2__40586.html",
-    "args": {
-      "board": "UoBoard2",
-      "post_id": "40586",
-      "captured_at": "20160331123750"
-    },
-    "kinds": [
-      "body:div"
-    ],
-    "source": "archive-clean/A/UoBoard2/40586.html"
-  },
-  {
     "id": "g4/FunBoard__10677",
     "parser": "g4",
     "file": "FunBoard__10677.html",
@@ -430,6 +143,20 @@
     "source": "archive-clean/B/Trash/22832.html"
   },
   {
+    "id": "g4/UoBoard2__40586",
+    "parser": "g4",
+    "file": "UoBoard2__40586.html",
+    "args": {
+      "board": "UoBoard2",
+      "post_id": "40586",
+      "captured_at": "20160331123750"
+    },
+    "kinds": [
+      "body:div"
+    ],
+    "source": "archive-clean/A/UoBoard2/40586.html"
+  },
+  {
     "id": "g5/Ultima__2478",
     "parser": "g5",
     "file": "Ultima__2478.html",
@@ -503,6 +230,318 @@
       "site:forg.kr"
     ],
     "source": "archive-clean/B/screee/2.html"
+  },
+  {
+    "id": "listing/free__page-1",
+    "parser": "listing",
+    "file": "free__page-1.html",
+    "args": {
+      "engine": "gnuboard4"
+    },
+    "kinds": [
+      "page:gnuboard4"
+    ],
+    "source": "archive-clean/L/free/page-1.html"
+  },
+  {
+    "id": "listing/porato__page-41",
+    "parser": "listing",
+    "file": "porato__page-41.html",
+    "args": {
+      "engine": "zeroboard"
+    },
+    "kinds": [
+      "page:zeroboard"
+    ],
+    "source": "archive-clean/L/porato/page-41.html"
+  },
+  {
+    "id": "zb/Events__17",
+    "parser": "zb",
+    "file": "Events__17.html",
+    "args": {
+      "board": "Events",
+      "post_id": "17",
+      "captured_at": "20030502172803"
+    },
+    "kinds": [
+      "category"
+    ],
+    "source": "archive-clean/A/Events/17.html"
+  },
+  {
+    "id": "zb/Events__423",
+    "parser": "zb",
+    "file": "Events__423.html",
+    "args": {
+      "board": "Events",
+      "post_id": "423",
+      "captured_at": "20030208062000"
+    },
+    "kinds": [
+      "skip:plugin_redirect"
+    ],
+    "source": "archive-clean/A/Events/423.html"
+  },
+  {
+    "id": "zb/FunBoard__2561",
+    "parser": "zb",
+    "file": "FunBoard__2561.html",
+    "args": {
+      "board": "FunBoard",
+      "post_id": "2561",
+      "captured_at": "20071107023755"
+    },
+    "kinds": [
+      "body:font"
+    ],
+    "source": "archive-clean/B/FunBoard/2561.html"
+  },
+  {
+    "id": "zb/Notice__387",
+    "parser": "zb",
+    "file": "Notice__387.html",
+    "args": {
+      "board": "Notice",
+      "post_id": "387",
+      "captured_at": "20020812084700"
+    },
+    "kinds": [
+      "body:span"
+    ],
+    "source": "archive-clean/A/Notice/387.html"
+  },
+  {
+    "id": "zb/Notice__86",
+    "parser": "zb",
+    "file": "Notice__86.html",
+    "args": {
+      "board": "Notice",
+      "post_id": "86",
+      "captured_at": "20071112063254"
+    },
+    "kinds": [
+      "body:center"
+    ],
+    "source": "archive-clean/A/Notice/86.html"
+  },
+  {
+    "id": "zb/Q_A__16838",
+    "parser": "zb",
+    "file": "Q_A__16838.html",
+    "args": {
+      "board": "Q_A",
+      "post_id": "16838",
+      "captured_at": "20030930150620"
+    },
+    "kinds": [
+      "skip:db_error_at_capture"
+    ],
+    "source": "archive-clean/A/Q_A/16838.html"
+  },
+  {
+    "id": "zb/Q_A__6521",
+    "parser": "zb",
+    "file": "Q_A__6521.html",
+    "args": {
+      "board": "Q_A",
+      "post_id": "6521",
+      "captured_at": "20071117151939"
+    },
+    "kinds": [
+      "comments",
+      "member",
+      "skin:kritz_normal2",
+      "body:table"
+    ],
+    "source": "archive-clean/A/Q_A/6521.html"
+  },
+  {
+    "id": "zb/ScreenShot__2951",
+    "parser": "zb",
+    "file": "ScreenShot__2951.html",
+    "args": {
+      "board": "ScreenShot",
+      "post_id": "2951",
+      "captured_at": "20021007235212"
+    },
+    "kinds": [
+      "skip:empty_view"
+    ],
+    "source": "archive-clean/A/ScreenShot/2951.html"
+  },
+  {
+    "id": "zb/Shop__1091",
+    "parser": "zb",
+    "file": "Shop__1091.html",
+    "args": {
+      "board": "Shop",
+      "post_id": "1091",
+      "captured_at": "20130812101100"
+    },
+    "kinds": [
+      "skip:license_only_stub"
+    ],
+    "source": "archive-clean/B/Shop/1091.html"
+  },
+  {
+    "id": "zb/Tbalhae__7",
+    "parser": "zb",
+    "file": "Tbalhae__7.html",
+    "args": {
+      "board": "Tbalhae",
+      "post_id": "7",
+      "captured_at": "20030621050328"
+    },
+    "kinds": [
+      "body:div",
+      "skin:kritz_normal"
+    ],
+    "source": "archive-clean/B/Tbalhae/7.html"
+  },
+  {
+    "id": "zb/Trash__112",
+    "parser": "zb",
+    "file": "Trash__112.html",
+    "args": {
+      "board": "Trash",
+      "post_id": "112",
+      "captured_at": "20020620155952"
+    },
+    "kinds": [
+      "skin:kritz_trash"
+    ],
+    "source": "archive-clean/B/Trash/112.html"
+  },
+  {
+    "id": "zb/Trash__21463",
+    "parser": "zb",
+    "file": "Trash__21463.html",
+    "args": {
+      "board": "Trash",
+      "post_id": "21463",
+      "captured_at": "20130812105222"
+    },
+    "kinds": [
+      "skip:skin_gnuboard4_webbus"
+    ],
+    "source": "archive-clean/B/Trash/21463.html"
+  },
+  {
+    "id": "zb/Trash__384",
+    "parser": "zb",
+    "file": "Trash__384.html",
+    "args": {
+      "board": "Trash",
+      "post_id": "384",
+      "captured_at": "20020822031106"
+    },
+    "kinds": [
+      "unknown-date",
+      "empty-view-with-comments"
+    ],
+    "source": "archive-clean/B/Trash/384.html"
+  },
+  {
+    "id": "zb/UOForum__549",
+    "parser": "zb",
+    "file": "UOForum__549.html",
+    "args": {
+      "board": "UOForum",
+      "post_id": "549",
+      "captured_at": "20071014083215"
+    },
+    "kinds": [
+      "skip:permission_denied"
+    ],
+    "source": "archive-clean/A/UOForum/549.html"
+  },
+  {
+    "id": "zb/UOForum__888",
+    "parser": "zb",
+    "file": "UOForum__888.html",
+    "args": {
+      "board": "UOForum",
+      "post_id": "888",
+      "captured_at": "20051020055430"
+    },
+    "kinds": [
+      "skip:deleted_before_capture"
+    ],
+    "source": "archive-clean/A/UOForum/888.html"
+  },
+  {
+    "id": "zb/UoBoard__32376",
+    "parser": "zb",
+    "file": "UoBoard__32376.html",
+    "args": {
+      "board": "UoBoard",
+      "post_id": "32376",
+      "captured_at": "20030715071629"
+    },
+    "kinds": [
+      "body:a"
+    ],
+    "source": "archive-clean/A/UoBoard/32376.html"
+  },
+  {
+    "id": "zb/Vendor__5",
+    "parser": "zb",
+    "file": "Vendor__5.html",
+    "args": {
+      "board": "Vendor",
+      "post_id": "5",
+      "captured_at": "20071030004050"
+    },
+    "kinds": [
+      "attachments",
+      "body:img"
+    ],
+    "source": "archive-clean/B/Vendor/5.html"
+  },
+  {
+    "id": "zb/events_date__86",
+    "parser": "zb",
+    "file": "events_date__86.html",
+    "args": {
+      "board": "events_date",
+      "post_id": "86",
+      "captured_at": "20020827102529"
+    },
+    "kinds": [
+      "hits",
+      "ok",
+      "skin:buzzard"
+    ],
+    "source": "archive-clean/V/events_date/86.html"
+  },
+  {
+    "id": "zb/monster__14",
+    "parser": "zb",
+    "file": "monster__14.html",
+    "args": {
+      "board": "monster",
+      "post_id": "14",
+      "captured_at": "20030716125957"
+    },
+    "kinds": [
+      "error"
+    ],
+    "source": "archive-clean/B/monster/14.html"
+  },
+  {
+    "id": "zb/monster__184",
+    "parser": "zb",
+    "file": "monster__184.html",
+    "args": {
+      "board": "monster",
+      "post_id": "184",
+      "captured_at": "20020704220546"
+    },
+    "kinds": [
+      "homepage"
+    ],
+    "source": "archive-clean/B/monster/184.html"
   },
   {
     "id": "zb40/T__Events__33",
@@ -705,29 +744,5 @@
       "comments"
     ],
     "source": "archive-clean/Z/UoBoard/3201.html"
-  },
-  {
-    "id": "listing/free__page-1",
-    "parser": "listing",
-    "file": "free__page-1.html",
-    "args": {
-      "engine": "gnuboard4"
-    },
-    "kinds": [
-      "page:gnuboard4"
-    ],
-    "source": "archive-clean/L/free/page-1.html"
-  },
-  {
-    "id": "listing/porato__page-41",
-    "parser": "listing",
-    "file": "porato__page-41.html",
-    "args": {
-      "engine": "zeroboard"
-    },
-    "kinds": [
-      "page:zeroboard"
-    ],
-    "source": "archive-clean/L/porato/page-41.html"
   }
 ]
