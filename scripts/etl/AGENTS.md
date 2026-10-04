@@ -77,7 +77,9 @@ first and don't duplicate it here.
 
 ### Testing Requirements
 
-There is no automated test suite for this directory (pytest is pinned in `requirements.txt` but no test files exist here). Verification is manual:
+`scripts/etl/tests/` holds pytest tests, run in CI: `.venv/bin/python3 -m pytest scripts/etl/tests -q`. `conftest.py` puts `scripts/etl` on the path; a stage whose file name starts with a digit is loaded with `stages.load_stage("02c-parse-listing.py")`. They need only `scripts/` (no `.docs`, no captures). When you check that a test can fail by editing the source, run with `PYTHONDONTWRITEBYTECODE=1 python -B`: a same-length edit undone within a second leaves a stale `.pyc`.
+
+Beyond the tests:
 
 - Use `--dry-run` where the script supports it (see the add_argument list per file; `01-decode.py`, `02-parse-zeroboard.py`, `02b`, `02c`, `02d`, `02e`, `02f`, `02g`, `02h`, `03-build-index.py`, `04-rewrite-image-urls.py`, `05-repair-zeroboard-meta.py`, `cdx-image.py`, `cdx-image-fallback.py`, `download-images.py`, `migrate-emoticon-store.py`, `recover-chrome.py` all have it) before a destructive run.
 - Use `--limit N` / `--board ID` to smoke-test a parser change against a small slice before a full run.

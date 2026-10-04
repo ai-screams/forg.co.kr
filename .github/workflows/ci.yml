@@ -77,6 +77,28 @@ jobs:
         run: pnpm run size
         continue-on-error: true # advisory; ratchet later
 
+  etl:
+    name: ETL tests (pytest)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/etl/requirements.txt
+
+      - name: Install ETL dependencies
+        run: pip install -r scripts/etl/requirements.txt
+
+      - name: Unit and parser tests
+        run: python -m pytest scripts/etl/tests -q
+
   commitlint:
     name: Commit message lint
     runs-on: ubuntu-latest
