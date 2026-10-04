@@ -1,0 +1,310 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.1 pl 1 (2002. 02. 25)
+개발자 : zero 
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 http://zeroboard.com 에서 문의 방법을 찾아주시기 바랍니다.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 기타 의문사항은 http://zeroboard.com 에서 제로보드 채널을 이용해주십시요.
+    (질문등에 대한 내용은 메일로 받지 않습니다)
+--><html>
+<head>
+<title></title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/buzzard/style.css" rel="StyleSheet" title="style" type="text/css"/><script language="JavaScript">
+<!-- 
+var key = new Array();
+key['n'] = "/_zb/zboard.php?id=Notice";
+key['c'] = "/_zb/zboard.php?id=column";
+key['v'] = "/_zb/zboard.php?id=Events";
+key['f'] = "/_zb/zboard.php?id=UoBoard";
+key['q'] = "/_zb/zboard.php?id=Q_A";
+key['r'] = "/_zb/zboard.php?id=Role";
+key['e'] = "/_zb/zboard.php?id=UOForum";
+key['b'] = "/_zb/zboard.php?id=Sell";
+key['s'] = "/_zb/zboard.php?id=ScreenShot";
+key['k'] = "/_zb/zboard.php?category=1&id=Recall&page=1&page_num=5&sn=off&ss=off&sc=off&keyword=&select_arrange=headnum&desc=asc";
+key['t'] = "/_zb/zboard.php?id=Trash";
+key['u'] = "/_zb/zboard.php?id=FunBoard";
+key['d'] = "/_zb/zboard.php?id=events_date";
+
+function getKey(keyStroke) {
+   eventChooser = event.keyCode;
+   which = String.fromCharCode(eventChooser).toLowerCase();
+   for (var i in key) 
+   if ( (event.srcElement.tagName != 'INPUT') && (event.srcElement.tagName != 'TEXTAREA') ){ 
+   	if (which == i) {
+   		if (opener) opener.parent.frames[3].location = key[i];
+   		else parent.frames[3].location = key[i];
+   	}
+   }
+}
+document.onkeypress = getKey;
+// -->
+</script>
+<script language="JavaScript">
+var maxW,maxH,fromX,fromY,toX,toY,adjX,adjY,zBox,zStep=0,zLink,zNew;
+
+function zoomBox(evt,zlink,maxw,maxh,tox,toy) {
+if (arguments.length > 2) zNew=1;
+scrollH=(window.pageYOffset!=null)?window.pageYOffset:document.body.scrollTop;
+maxW=maxw?maxw:window.innerWidth?innerWidth:document.body.clientWidth;
+maxH=maxh?maxh:window.innerHeight?innerHeight:document.body.clientHeight;
+toX=tox?tox:0;
+toY=(toy?toy:0)+scrollH;
+fromX=evt.pageX?evt.pageX:evt.clientX;
+fromY=(evt.pageY?evt.pageY:evt.clientY)+(document.all?scrollH:0);
+adjX=toX+evt.screenX-fromX;
+adjY=toY+evt.screenY-fromY;
+if (document.createElement && document.body.appendChild && !zBox) {
+	zBox=document.createElement("div");
+	zBox.style.position="absolute";
+	document.body.appendChild(zBox);
+} else if (document.all && !zBox) {
+	document.all[document.all.length-1].outerHTML+='<div id="zBoxDiv" style="position:absolute"></div>';
+	zBox=document.all.zBoxDiv;
+} else if (document.layers && !zBox) {
+	zBox=new Layer(maxW);
+	zBox.style=zBox;
+	}
+zLink=zlink;
+doZoom();
+}
+
+function doZoom() {
+zStep+=1;
+zPct=(10-zStep)/10
+if (document.layers) {
+	zBox.moveTo(toX+zPct*(fromX-toX),toY+zPct*(fromY-toY));
+	zBox.document.open();
+	zBox.document.write("<table width='"+maxW*(1-zPct)+"' height="+maxH*(1-zPct)+" border=2 cellspacing=0><tr><td></td></tr></table>");
+	zBox.document.close();
+	} else {
+	zBox.style.border="2px solid #999999";
+	zBox.style.left=toX+zPct*(fromX-toX);
+	zBox.style.top=toY+zPct*(fromY-toY);
+	zBox.style.width=maxW*(1-zPct);
+	zBox.style.height=maxH*(1-zPct);
+	}
+zBox.style.visibility="visible";
+if (zStep < 10) setTimeout("doZoom("+fromX+","+fromY+","+toX+","+toY+")",30);
+else {
+	zBox.style.visibility='hidden';
+	zStep=0;
+	if (zLink && !zNew) location.href=zLink.href;
+	else if (zLink && zNew) {
+		var w=window.open(zLink.href,'','width='+maxW+',height='+maxH+',left='+adjX+',top='+adjY+',scrollbars=yes');
+		zNew=null;
+		}
+	}
+
+	
+}
+
+function loadImages() { 
+if (document.getElementById) {   
+document.getElementById('hidepage').style.visibility = 'hidden'; 
+} 
+else { 
+if (document.layers) {   
+document.hidepage.visibility = 'hidden'; 
+} 
+else {   
+document.all.hidepage.style.visibility = 'hidden'; 
+      } 
+   } 
+} 
+</script>
+</head>
+<body bgcolor="white" leftmargin="0" marginheight="0" marginwidth="0" onload="loadImages()" topmargin="0">
+<!--  페이지 로딩중 표시 -->
+<div id="hidepage" style="position:absolute;background-color:transparent;height:100%;width: 100%;">
+<table height="100%" width="100%"><tr><td></td></tr><tr><td align="right" height="1"><img src="/images/loading.gif"/></td></tr></table></div>
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+<div align="center">
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td>
+<font class="ver17px" color="#292929">Events. Schedule</font>
+<a href="javascript:na_open_window('Hunting', '/_zb/zboard.php?id=Hunting', 50, 50, 410, 500, 0, 0, 0, 0, 0)" onfocus="this.blur()"><img align="left" border="0" height="32" hspace="7" src="/images/screenshot_logo.gif" width="32"/></a><img border="0" height="3" src="/images/_cl.gif" width="1"/>
+<br/><font color="800080">이벤트일정표입니다.
+<br/><font color="636363">날짜를 눌러주시면 해당 일정을 올릴 수 있습니다. 글쓰실때는 해당 샤드를 꼭 선택해 주시길 바랍니다.</font>
+</font></td></tr>
+</table>
+<br/>
+<!-- 이부분도 회원가입 로그인 기능인데 일부러 막아 놓았습니다. 사용하시길 원하시면 본라인을 지우세요
+	<table border=0 cellspacing=0 cellpadding=0 width=560>
+	<tr>
+		<td align=right>
+			<a onfocus=blur() href='member_join.php?id=events_date&page=1&page_num=20&category=&sn=off&ss=on&sc=on&keyword=&prev_no=&select_arrange=&desc=' onclick="zoomBox(event,this,390,460,10,10);return false"><img src=skin/buzzard/btn_signup.gif border=0 alt="회원가입"></a>
+			<Zeroboard <img src=skin/buzzard/btn_myinfo.gif border=0 alt="정보수정"></a>
+						<Zeroboard <img src=skin/buzzard/btn_memobox.gif border=0 alt="쪽지사용"></a>
+			<a onfocus=blur() href='login.php?id=events_date&page=1&page_num=20&category=&sn=off&ss=on&sc=on&keyword=&prev_no=&select_arrange=&desc=&s_url=%2F_zb%2Fview.php%3Fid%3Devents_date%26page%3D1%26category%3D%26sn%3Doff%26ss%3Don%26sc%3Don%26keyword%3D%26no%3D86&no=86' onclick="zoomBox(event,this,280,170,10,10);return false"><img src=skin/buzzard/btn_login.gif border=0 alt="로그인"></a>
+			<Zeroboard <img src=skin/buzzard/btn_logout.gif border=0 alt="로그아웃"></a>
+			<Zeroboard <img src=skin/buzzard/btn_setup.gif border=0 alt="설정"></a>
+		</td>
+	</tr>
+	</table>
+-->
+<img src="skin/buzzard/view_top.gif"/>
+<table border="0" bordercolordark="#FFFFFF" bordercolorlight="#FF3F9F" cellpadding="0" cellspacing="0" width="560">
+<tr height="23">
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td align="right" height="30" width="50"><font size="2"><b>날 짜 : </b></font></td>
+<td><font size="2"> 2002/7/5</font></td>
+<td align="right" height="30" width="50"><font size="2"><b>조 회 : </b></font></td>
+<td><font size="2"> 149</font></td>
+</tr>
+<tr>
+<td bgcolor="#DBD8D8" colspan="4" height="2"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!--	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr height=23>
+		<td align=right width=70 background=skin/buzzard/background.gif><img src=skin/buzzard/file_1.gif border=0 vspace=3>&nbsp;&nbsp;</td>
+		<td ><img src=images/t.gif height=3><br>&nbsp;&nbsp; <font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-family:matchworks,tahoma;font-size:7pt>Download : <b>0</b></font></font></td>
+	</tr>
+	<tr><td bgcolor=#C6C6C6 height=1 colspan=2><img src=images/t.gif height=1></td></tr>
+	</table>
+-->
+<!--	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr height=23>
+		<td align=right width=70 background=skin/buzzard/background.gif><img src=skin/buzzard/file_2.gif border=0 vspace=3>&nbsp;&nbsp;</td>
+		<td ><img src=images/t.gif height=3><br>&nbsp;&nbsp; <font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-family:matchworks,tahoma;font-size:7pt>Download : <b>0</b></font></font></td>
+	</tr>
+	<tr><td bgcolor=#C6C6C6 height=1 colspan=2><img src=images/t.gif height=1></td></tr>
+	</table>
+
+-->
+<!--	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr height=23>
+		<td align=right width=70 background=skin/buzzard/background.gif><img src=skin/buzzard/link_1.gif border=0 vspace=3>&nbsp;&nbsp;</td>
+		<td ><img src=images/t.gif height=3><br>&nbsp;&nbsp; <font class=thm8></font></td>
+	</tr>
+	<tr><td bgcolor=#C6C6C6 height=1 colspan=2><img src=images/t.gif height=1></td></tr>
+	</table>
+
+-->
+<!--	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr height=23>
+		<td align=right width=70 background=skin/buzzard/background.gif><img src=skin/buzzard/link_2.gif border=0 vspace=3>&nbsp;&nbsp;</td>
+		<td ><img src=images/t.gif height=3><br>&nbsp;&nbsp; <font class=thm8></font></td>
+	</tr>
+	<tr><td bgcolor=#C6C6C6 height=1 colspan=2><img src=images/t.gif height=1></td></tr>
+	</table>
+
+-->
+</td></tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="560">
+<tr>
+<td bgcolor="#FFFFFF" height="120" style="word-break:break-all;padding:10px;" valign="top">
+<span style="line-height:150%">
+		 		 		  백볼이라는 울온에서의 축구....<br/>
+<br/>
+ 저번에 누가 올리셨던거 같은데 제가 지금 ea에 메일보내서<br/>
+ 협조 요청중입니다.<br/>
+<br/>
+ 좀더 자세한 사항있으면 알려드릴계요<br/>
+</span>
+</td>
+</tr>
+<tr>
+<td height="30" valign="middle"><div align="right" style="font-family:Tahoma;font-size:7pt;"></div></td>
+</tr>
+</table>
+<!-- 간단한 답글 시작하는 부분 -->
+<!----그냥 라인----------->
+<table border="0" cellpadding="0" cellspacing="0" width="560">
+<tr>
+<td></td>
+</tr>
+</table>
+<img src="skin/buzzard/view_bottom.gif"/>
+<!-- 버튼 관련 출력 -->
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="560">
+<tr>
+<td>
+<a class="menu" href="zboard.php?id=events_date&amp;page=1&amp;page_num=20&amp;no=86&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=86" onfocus="blur()"><img border="0" src="skin/buzzard/btn_list.gif"/></a>
+</td>
+<td align="right">
+<zeroboard <img="" border="0" src="skin/buzzard/btn_modify.gif">
+<zeroboard <img="" border="0" src="skin/buzzard/btn_delete.gif">
+</zeroboard></zeroboard></td>
+</tr>
+</table>
+<br/><br/><table border="0" cellpadding="0" cellspacing="0" height="20" width="560">
+<tr>
+<td align="right" style="font-family:verdana,굴림;font-size:8pt;line-height:150%;letter-spacing:0px">
+<font style="font-size:10px">Copyright 1999-2001 <a href="http://www.zeroboard.com" onfocus="blur()" style="font-family:verdana,굴림;font-size:10px;font-weight:bolder;" target="_blank">Zeroboard</a> 
+           / skin by <a href="http://ibuzzard.net" target="_blank" title="살며 사랑하며 배우며...buzzard">buzzard</a>  Remaked by  <font face="Tahoma"><span style="font-size:9pt;"><a href="http://www.designsalvia.net" target="_blank">designSalvia</a></span></font><table cellpadding="0" cellspacing="0" style="line-height:100%; margin-top:0; margin-bottom:0;"><tr><td bgcolor="#21AEDE" height="2" width="15"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="white" height="2" width="1"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="#4BC98A" height="2" width="15"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="white" height="2" width="1"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="#FFB84D" height="2" width="15"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="white" height="2" width="1"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td><td bgcolor="#CFB993" height="2" width="15"><p style="line-height:100%; margin-top:0; margin-bottom:0;"></p></td></tr></table>
+</font>
+</td>
+</tr>
+</table></div></body>
+</html>
+<!--
+      -------------------------------------------------------------------
+      Zero Board Executed Time
+      -------------------------------------------------------------------
+      All StartTime : 1030443980.4264
+      End DB Excute Time : 1030443980.4859
+      EndTime : 1030443980.9056
+      -------------------------------------------------------------------
+      DB Excute Time : 0.060
+      PHP Excute Time : 0.419 
+      Total Excuted Time : 0.479
+      -------------------------------------------------------------------
+      -->

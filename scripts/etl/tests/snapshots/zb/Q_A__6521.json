@@ -1,0 +1,45 @@
+{
+  "outcome": "ok",
+  "post": {
+    "board": "Q_A",
+    "boardKr": "Q_A",
+    "postId": "6521",
+    "title": "9주년 토큰 중 시중드는 사람 관리",
+    "categoryLabel": null,
+    "bodyHtml": "\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  시중드는 사람 클릭하면 나오는 박스메뉴 중<br>\n<br>\n맨 마지막 해산 누르면 사라져버리는지 아니면 다시 토큰으로 돌아가는지<br>\n<br>\n몰라서요 데리고 다니다가 죽기라도 하면 곤란해서 어떻게 관리할수있을까요?<br>\n<br>\n동물처럼 어디라도 맡길수 있다면 좋겠는데...</td></tr></tbody></table>\n",
+    "bodyText": "시중드는 사람 클릭하면 나오는 박스메뉴 중 맨 마지막 해산 누르면 사라져버리는지 아니면 다시 토큰으로 돌아가는지 몰라서요 데리고 다니다가 죽기라도 하면 곤란해서 어떻게 관리할수있을까요? 동물처럼 어디라도 맡길수 있다면 좋겠는데...",
+    "author": "cheshire0cat0",
+    "authorMemberNo": "8819",
+    "authorHomepage": null,
+    "createdAt": "2007-06-07T19:32:30",
+    "createdAtApprox": false,
+    "hits": null,
+    "recommend": null,
+    "attachments": [],
+    "comments": [
+      {
+        "author": "kokos",
+        "authorMemberNo": "4076",
+        "createdAt": "2007-06-07T21:02:05",
+        "bodyHtml": "*데려다녀도 사망안합니다.(노란색이름NPC로서 무적속성임)\n<br>\n<br>*플레이어가 사망했을경우 수행NPC 는 일시적으로 없어지지만, 부활후 잠시 후에 돌아오거나, 백팩안 에 디드로 돌아옵니다.\n<br>\n<br>*플레이어가 로그아웃 상태가 되었을 경우는, 수행NPC 는 플레이어와 함께 로그아웃되었다가,로그인시에 근처에 나타나던지, 백팩안에 디드로 돌아옵니다.\n<br>\n<br>*수행NPC는 주인 캐릭터가 삭제되면 소멸합니다.\n<br>\n<br>*컨트롤 슬롯(펫슬롯)을 차지하지 않습니다.\n<br>\n<br>*해산하면 디드로 돌아가며 다른종류의NPC를 불러낼 수 있습니다.\n<br>\n<br>단, 이 토큰을 사용하게 되면 '케릭터'에 소유권이 생기게 되어 같은계정이라도 다른케릭은 사용불가 입니다."
+      },
+      {
+        "author": "cheshire0cat0",
+        "authorMemberNo": "8819",
+        "createdAt": "2007-06-07T21:07:00",
+        "bodyHtml": "와~ 이런 정보를 가지고 계시다니 놀랍군요 감사합니다."
+      },
+      {
+        "author": "kokos",
+        "authorMemberNo": "4076",
+        "createdAt": "2007-06-07T21:13:12",
+        "bodyHtml": "테스트서버가서 실험해보면 금새 압니다;;;;"
+      }
+    ],
+    "era": "2003",
+    "capturedAt": "20071117151939",
+    "parsedAt": "2026-01-01T00:00:00",
+    "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Q_A&no=6521",
+    "sourceEngine": "zeroboard"
+  }
+}

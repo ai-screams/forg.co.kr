@@ -1,0 +1,318 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.1 pl 4 (2003. 8. 7)
+개발자 : zero 
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 http://zeroboard.com 에서 문의 방법을 찾아주시기 바랍니다.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 기타 의문사항은 http://zeroboard.com 을 이용해 주시기 바랍니다.
+    (질문등에 대한 내용은 메일로 받지 않습니다)
+
+--><html>
+<head>
+<title></title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/kritz_normal2/style.css" rel="StyleSheet" title="style" type="text/css"/>
+<script language="JavaScript">
+var maxW,maxH,fromX,fromY,toX,toY,adjX,adjY,zBox,zStep=0,zLink,zNew;
+
+function zoomBox(evt,zlink,maxw,maxh,tox,toy) {
+if (arguments.length > 2) zNew=1;
+scrollH=(window.pageYOffset!=null)?window.pageYOffset:document.body.scrollTop;
+maxW=maxw?maxw:window.innerWidth?innerWidth:document.body.clientWidth;
+maxH=maxh?maxh:window.innerHeight?innerHeight:document.body.clientHeight;
+toX=tox?tox:0;
+toY=(toy?toy:0)+scrollH;
+fromX=evt.pageX?evt.pageX:evt.clientX;
+fromY=(evt.pageY?evt.pageY:evt.clientY)+(document.all?scrollH:0);
+adjX=toX+evt.screenX-fromX;
+adjY=toY+evt.screenY-fromY;
+if (document.createElement && document.body.appendChild && !zBox) {
+	zBox=document.createElement("div");
+	zBox.style.position="absolute";
+	document.body.appendChild(zBox);
+} else if (document.all && !zBox) {
+	document.all[document.all.length-1].outerHTML+='<div id="zBoxDiv" style="position:absolute"></div>';
+	zBox=document.all.zBoxDiv;
+} else if (document.layers && !zBox) {
+	zBox=new Layer(maxW);
+	zBox.style=zBox;
+	}
+zLink=zlink;
+doZoom();
+}
+
+function doZoom() {
+zStep+=1;
+zPct=(10-zStep)/10
+if (document.layers) {
+	zBox.moveTo(toX+zPct*(fromX-toX),toY+zPct*(fromY-toY));
+	zBox.document.open();
+	zBox.document.write("<table width='"+maxW*(1-zPct)+"' height="+maxH*(1-zPct)+" border=2 cellspacing=0><tr><td></td></tr></table>");
+	zBox.document.close();
+	} else {
+	zBox.style.border="2px solid #999999";
+	zBox.style.left=toX+zPct*(fromX-toX);
+	zBox.style.top=toY+zPct*(fromY-toY);
+	zBox.style.width=maxW*(1-zPct);
+	zBox.style.height=maxH*(1-zPct);
+	}
+zBox.style.visibility="visible";
+if (zStep < 10) setTimeout("doZoom("+fromX+","+fromY+","+toX+","+toY+")",30);
+else {
+	zBox.style.visibility='hidden';
+	zStep=0;
+	if (zLink && !zNew) location.href=zLink.href;
+	else if (zLink && zNew) {
+		var w=window.open(zLink.href,'','width='+maxW+',height='+maxH+',left='+adjX+',top='+adjY+',scrollbars=yes');
+		zNew=null;
+		}
+	}
+
+	
+}
+
+function loadImages() { 
+if (document.getElementById) {   
+document.getElementById('hidepage').style.visibility = 'hidden'; 
+} 
+else { 
+if (document.layers) {   
+document.hidepage.visibility = 'hidden'; 
+} 
+else {   
+document.all.hidepage.style.visibility = 'hidden'; 
+      } 
+   } 
+} 
+
+</script>
+<object classid="clsid:5CE4817D-99EF-49AD-B0F3-BCFE6EE01A95" codebase="kwas.cab#version=1,0,7,0" id="kwas" name="kwas" standby="Downloading the Kritz Web Auth System...." style="position:absolute;left:0px;top:-3000px;visibility:visible;">
+<param name="id_code" value="EDB5FD6E87C"/>
+</object>
+<script>
+  parent.current_forg = kwas.GetMacAddress;
+</script>
+<script language="JavaScript">
+n=document.layers
+ie=document.all
+function init_load() {
+	if(ie || n){
+	if(n) document.Load.visibility='hidden'
+	else Load.style.visibility='hidden'
+	}
+	DynLayerInit();
+	bar.glideTo('fast', 'slow', 0, bar.y+20, 7, 10, 'bar.glideTo(\"slow\", \"fast\", 0, -100, 7, 10);');
+	isinit = true;
+	return true
+}  
+
+</script>
+<script language="javascript">
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if(browserName == "Netscape" && browserVer >= 3){ init = "net"; }
+else { init = "ie"; }
+
+
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+
+ sn_on=new Image;
+ sn_off=new Image;
+ sn_on.src= "skin/kritz_normal2/name_on.gif";
+ sn_off.src= "skin/kritz_normal2/name_off.gif";
+
+ ss_on=new Image;
+ ss_off=new Image;
+ ss_on.src= "skin/kritz_normal2/subject_on.gif";
+ ss_off.src= "skin/kritz_normal2/subject_off.gif";
+
+ sc_on=new Image;
+ sc_off=new Image;
+ sc_on.src= "skin/kritz_normal2/content_on.gif";
+ sc_off.src= "skin/kritz_normal2/content_off.gif";
+
+}
+
+function OnOff(name) {
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))) {
+  if(document.search[name].value=='on')
+  {
+   document.search[name].value='off';
+   ImgSrc=eval(name+"_off.src");
+   document[name].src=ImgSrc;
+  }
+  else
+  {
+   document.search[name].value='on';
+   ImgSrc=eval(name+"_on.src");
+   document[name].src=ImgSrc;
+  }
+ }
+}
+</script>
+<script language="javascript">
+  function reverse() {
+   var i, chked=0;
+   if(confirm('목록을 반전하시겠습니까?\n\n반전을 원하지 않는다면 취소를 누르시면 다음으로 넘어갑니다'))
+   {
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked) { document.list[i].checked=false; }
+      else { document.list[i].checked=true; }
+     }
+    }
+   }
+   for(i=0;i<document.list.length;i++)
+   {
+    if(document.list[i].type=='checkbox')
+    {
+     if(document.list[i].checked) chked=1;
+    }
+   }
+   if(chked) {
+    if(confirm('선택된 항목을 보시겠습니까?'))
+     {
+      document.list.selected.value='';
+      document.list.exec.value='view_all';
+      for(i=0;i<document.list.length;i++)
+      {
+       if(document.list[i].type=='checkbox')
+       {
+        if(document.list[i].checked)
+        {
+         document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+        }
+       }
+      }
+      document.list.submit();
+      return true;
+     }
+    }
+   }
+
+ function delete_all() {
+  var i, chked=0;
+  for(i=0;i<document.list.length;i++)
+  {
+   if(document.list[i].type=='checkbox')
+   {
+    if(document.list[i].checked) chked=1;
+    }
+   }
+  if(chked)
+  {
+    document.list.selected.value='';
+    document.list.exec.value='delete_all';
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked)
+      {
+       document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+      }
+     }
+    }
+    window.open("select_list_all.php?id=FunBoard&selected="+document.list.selected.value,"게시물정리","width=260,height=180,toolbars=no,resize=no,scrollbars=no");
+  }
+  else {alert('정리할 게시물을 선택하여 주십시요');}
+ }
+
+ function category_change(obj) {
+  var myindex=obj.selectedIndex;
+  document.search.category.value=obj.options[myindex].value;
+  document.search.submit();
+  return true;
+ }
+
+//-->
+</script>
+</head>
+<body bgcolor="white" leftmargin="3" marginheight="3" marginwidth="3" topmargin="3">
+<script src="/_zb/flash_no_border.js" type="text/javascript">
+</script><div align="center">
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td>
+<font class="ver17px" color="#292929">FunBoard</font>
+<img border="0" height="3" src="/images/_cl.gif" width="1"/>
+<br/><font color="636363">유머게시판<br/>
+생활의 활력소를 가져다 주는 펀보드입니다.</font>
+</td></tr>
+</table>
+<br/> <table border="0" cellpadding="0" cellspacing="0" height="1" style="table-layout:fixed;" width="95%"><col width="100%"/><tr><td><img border="0" height="1" name="zb_get_table_width" src="images/t.gif" width="98%"/><br/><img border="0" height="1" name="zb_target_resize" src="images/t.gif" width="1"/></td></tr></table>
+<!-- HTML 시작 -->
+<!-- 
+<table border=0 cellspacing=0 cellpadding=0 width=95%>
+<tr>
+  <td width=1></td>
+  <td valign=bottom style=font-family:Tahoma;font-size:7pt;color:black>
+    total <font color=#404040><b>2842</b></font>
+  </td>
+  <td valign=bottom nowrap width=5%>
+    <Zeroboard <span onClick="swapImage('memozzz','','skin/kritz_normal2/member_memo_off.gif',0)"></span></a><br>
+    <Zeroboard <img src=skin/kritz_normal2/images/setup_config.gif border=0 align=absmiddle></a><a onfocus=blur() href=# onclick="window.open('member_join.php?group_no=1','zbMemberJoin','width=560,height=590,toolbars=no,resizable=yes,scrollbars=yes')"><img src=skin/kritz_normal2/images/setup_signin.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal2/images/setup_userinfo.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal2/images/setup_memobox.gif border=0 align=absmiddle></a><a onfocus=blur() href='login.php?id=FunBoard&page=7&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&s_url=%2F_zb%2Fzboard.php%3Fid%3DFunBoard%26page%3D7%26sn1%3D%26divpage%3D1%26sn%3Doff%26ss%3Don%26sc%3Don%26select_arrange%3Dheadnum%26desc%3Dasc%26no%3D3281'><img src=skin/kritz_normal2/images/setup_login.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal2/images/setup_logout.gif border=0 align=absmiddle></a><img src=skin/kritz_normal2/last.gif width=1 height=14 border=0>
+  </td>
+</tr>
+</table>
+-->
+<script>
+self.document.title=":: Error !! ::";]
+</script>
+<form>
+<table align="center" cellpadding="5" cellspacing="0" height="100%">
+<tr><td align="center" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" height="18" style="border:1px solid #dfdfdf;width:250;background:white url(skin/kritz_normal2/title_bg.jpg);height:18px">
+<tr>
+<td>
+<font color="EF5900">  Error !!</font>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr>
+<td align="center" height="30">
+<br/>
+      선택하신 게시물이 존재하지 않습니다<br/><br/>
+</td>
+</tr>
+<tr><td align="right">
+<a href="zboard.php?id=FunBoard&amp;page=7&amp;sn1=&amp;divpage=1&amp;sn=off&amp;ss=on&amp;sc=on&amp;select_arrange=headnum&amp;desc=asc" onclick="zoomBox(event,this,280,170,10,10);return false" style="color:EF5900;">Login</a>
+<br/>
+</td>
+</tr>
+</table>
+<br/><br/>
+</td></tr></table></form></div></body></html>

@@ -37,6 +37,7 @@ first and don't duplicate it here.
 | `04-rewrite-image-urls.py`       | Phase F — rewrites gold `<img src>` to recovered path or placeholder                                                                                                                                                             |
 | `05-repair-zeroboard-meta.py`    | Targeted repair of comment/post author and date fields in existing Zeroboard gold posts                                                                                                                                          |
 | `06-merge-later-comments.py`     | Adds the comments a later capture of a post shows (phase `W`) to the museum's copy, parsing it with the post's own parser                                                                                                        |
+| `check_parsers.py`               | Local regression check: runs a git ref's post parsers (`--against`, default `HEAD`) and the working tree's over every silver capture and reports what differs, field by field. Exit 1 on any difference                          |
 | `etl_io.py`                      | `write_atomic` (via a sibling `.tmp`, text or bytes) and `append_jsonl` — the file writes every stage uses; each script still builds its own JSON                                                                                |
 | `post_parse.py`                  | What the post parsers share (`02`, `02b`, `02d`; `02f`, `02h` borrow the Zeroboard pieces): Wayback timestamp index, category split, attachments, `NonPostPage`, run stats and logs, capture walk, `write_post`                  |
 | `sanitise.py`                    | Shared nh3 HTML sanitiser config used by every parser                                                                                                                                                                            |
@@ -77,7 +78,9 @@ first and don't duplicate it here.
 
 ### Testing Requirements
 
-There is no automated test suite for this directory (pytest is pinned in `requirements.txt` but no test files exist here). Verification is manual:
+`scripts/etl/tests/` holds pytest tests, run in CI: `.venv/bin/python3 -m pytest scripts/etl/tests -q`. `conftest.py` puts `scripts/etl` on the path; a stage whose file name starts with a digit is loaded with `stages.load_stage("02c-parse-listing.py")`. They need only `scripts/` (no `.docs`, no captures): `test_parser_snapshots.py` runs each parser on a sample of real captures in `tests/fixtures/` (one per kind of result, picked from silver, personal data the parsers drop masked) and compares with `tests/snapshots/`. A parser change that means to alter the output regenerates them with `UPDATE_SNAPSHOTS=1` and the snapshot diff is reviewed with the change. Before committing a parser change, also run `.venv/bin/python3 scripts/etl/check_parsers.py` (every capture, needs the silver tier; about half a minute with all cores). When you check that a test can fail by editing the source, run with `PYTHONDONTWRITEBYTECODE=1 python -B`: a same-length edit undone within a second leaves a stale `.pyc`.
+
+Beyond the tests:
 
 - Use `--dry-run` where the script supports it (see the add_argument list per file; `01-decode.py`, `02-parse-zeroboard.py`, `02b`, `02c`, `02d`, `02e`, `02f`, `02g`, `02h`, `03-build-index.py`, `04-rewrite-image-urls.py`, `05-repair-zeroboard-meta.py`, `cdx-image.py`, `cdx-image-fallback.py`, `download-images.py`, `migrate-emoticon-store.py`, `recover-chrome.py` all have it) before a destructive run.
 - Use `--limit N` / `--board ID` to smoke-test a parser change against a small slice before a full run.

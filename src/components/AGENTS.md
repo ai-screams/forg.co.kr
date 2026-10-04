@@ -60,7 +60,7 @@ None.
 
 ### Testing Requirements
 
-There is no unit-test suite (no `test` script in `package.json`). Verify changes here with:
+Components have no unit tests (`pnpm test` covers `src/lib`). Verify changes here with:
 
 ```bash
 pnpm typecheck   # tsc --noEmit

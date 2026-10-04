@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Forg's World &gt; Trash &gt; 궁금한게 있는데</title>
+<link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<script type="text/javascript">
+//var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+//for (var word in mobileKeyWords){
+//    if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+//        location.href = "/m/index.html";
+//        break;
+//    }
+//
+//}
+</script>
+<script language="javascript">
+// 자바스크립트에서 사용하는 전역변수 선언
+var g4_path      = "..";
+var g4_bbs       = "bbs";
+var g4_bbs_img   = "img";
+var g4_url       = "http://forg.co.kr";
+var g4_is_member = "";
+var g4_is_admin  = "";
+var g4_bo_table  = "Trash";
+var g4_sca       = "";
+var g4_charset   = "euc-kr";
+var g4_cookie_domain = ".forg.co.kr";
+var g4_is_gecko  = navigator.userAgent.toLowerCase().indexOf("gecko") != -1;
+var g4_is_ie     = navigator.userAgent.toLowerCase().indexOf("msie") != -1;
+</script>
+<script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<body leftmargin="0" topmargin="0">
+<a name="g4_head"></a>
+<script language="JavaScript">
+function on_menu(no) {
+ if(no == 2) { free.src = "/images/t_b_freeboard_1.gif" ;}
+ if(no == 3) { photo.src = "/images/t_b_photo_1.gif" ;}
+ if(no == 4) { fun.src = "/images/t_b_fun_1.gif" ;}
+ if(no == 5) { movie.src = "/images/t_b_movie_1.gif" ;}
+ if(no == 6) { boo.src = "/images/t_b_boo_1.gif" ;}
+ if(no == 7) { tra.src = "/images/t_b_tra_1.gif" ;}
+ if(no == 8) { trash.src = "/images/t_b_trash_1.gif" ;}  
+}
+
+
+function off_menu(no) {
+ if(no == 2) { free.src = "/images/t_b_freeboard.gif" ;}
+ if(no == 3) { photo.src = "/images/t_b_photo.gif" ;}
+ if(no == 4) { fun.src = "/images/t_b_fun.gif" ;}
+ if(no == 5) { movie.src = "/images/t_b_movie.gif" ;}
+ if(no == 6) { boo.src = "/images/t_b_boo.gif" ;}
+ if(no == 7) { tra.src = "/images/t_b_tra.gif" ;}
+ if(no == 8) { trash.src = "/images/t_b_trash.gif" ;} 
+}
+
+function click_menu(no) {
+
+ if(no ==1){ location="/index.html"; }
+ if(no ==2){ location="/bbs/board.php?bo_table=UoBoard2"; }
+ if(no ==3){ location="/bbs/board.php?bo_table=porato"; }
+ if(no ==4){ location="/bbs/board.php?bo_table=FunBoard"; }
+ if(no ==5){ location="/bbs/board.php?bo_table=Reveal"; }
+ if(no ==6){ location="/bbs/board.php?bo_table=Boo"; }
+ if(no ==7){ location="/bbs/board.php?bo_table=Shop"; }
+ if(no ==8){ location="/bbs/board.php?bo_table=Trash"; }  
+}
+
+function flogin_submit(f)
+{
+    f.action = '/bbs/login_check.php';
+    return true;
+}
+</script>
+<script language="javascript" src="/skin/outlogin/forg/init.js"></script>
+<div id="LayLoginForm" style="display: none; z-index: 2; left: 0px; width: 364px; position: absolute; top: 0px; height: 370px">
+<table align="center" border="0" cellpadding="2" cellspacing="0" style="border: #FFC73B 3px solid;" width="364">
+<form autocomplete="off" method="post" name="lay_login_form" onsubmit="return flogin_submit(this);">
+<input name="url" type="hidden" value="/bbs/register.php"/>
+<tr>
+<td bgcolor="#ededed">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" style="padding:15px 5px 5px 25px;"><b> Forg's World Login </b></td>
+<td align="right" style="padding:5px;" valign="top"> <a href="javascript:;" onclick="cover_off('LayLoginForm')"><img align="absmiddle" border="0" height="11" src="../skin/outlogin/forg/img/close.gif" width="11"/></a></td>
+</tr>
+<tr>
+<td colspan="2">
+<table border="0" cellpadding="0" cellspacing="0" width="400">
+<tr>
+<td align="center" bgcolor="#ffffff" height="130" width="400"><iframe frameborder="0" mce_src="about:blank" scrolling="no" src="about:blank" style="position:absolute;width:364px;height:130px;top:3px;left:3px;z-index:-1;border:none;display:block"></iframe>
+<table border="0" cellpadding="0" cellspacing="0" width="350">
+<tr>
+<td width="250">
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr>
+<td width="10"><img height="3" src="../skin/outlogin/forg/img/icon.gif" width="3"/></td>
+<td align="left" height="26" width="90"><b>아이디</b></td>
+<td width="150"><input class="ed" itemname="아이디" maxlength="20" minlength="2" name="mb_id" required="" size="15" style="ime-mode:inactive"/></td>
+</tr>
+<tr>
+<td><img height="3" src="../skin/outlogin/forg/img/icon.gif" width="3"/></td>
+<td align="left" height="26"><b>패스워드</b></td>
+<td><input class="ed" itemname="패스워드" maxlength="20" name="mb_password" required="" size="15" style="ime-mode:inactive" type="password"/></td>
+</tr>
+</table>
+</td>
+<td valign="top" width="100"><input height="52" style="background-color:#efefef;width:65px;height:52px;border:1px solid #9A9A9A; border-right:1px solid #D8D8D8; border-bottom:1px solid #D8D8D8;" type="submit" value="로그인" width="65"/></td>
+</tr>
+<tr>
+<td colspan="2" height="10">
+					Auto Login <input name="auto_login" onclick="if (this.checked) { if (confirm('자동로그인을 사용하시면 다음부터 회원아이디와 패스워드를 입력하실 필요가 없습니다.\n\n\공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?')) { this.checked = true; } else { this.checked = false; } }" type="checkbox" value="1"/>
+</td>
+</tr>
+<tr>
+<td align="left" height="26"><img height="3" src="../skin/outlogin/forg/img/icon.gif" width="3"/> 아직 회원이 아니십니까?    </td>
+<td align="left"><a href="../bbs/register.php"><img align="absmiddle" border="0" height="20" src="../skin/outlogin/forg/img/btn_register.gif" width="72"/></a></td>
+</tr>
+<tr>
+<td align="left" height="26"><img height="3" src="../skin/outlogin/forg/img/icon.gif" width="3"/> 아이디/패스워드를 잊으셨습니까?    </td>
+<td align="left"><a href="javascript:;" onclick="win_password_forget('../bbs/password_forget.php');"><img align="absmiddle" border="0" height="20" src="../skin/outlogin/forg/img/btn_password_forget.gif" width="108"/></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</form>
+</table>
+</div>
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tr height="100%">
+<td bgcolor="61748b" width="10px"> </td>
+<td background="/images/left_bg.gif" bgcolor="#D6D6D6" valign="top" width="100px">
+<p> </p>
+<script language="JavaScript">
+<!--
+function namosw_goto_byselect(sel, targetstr)
+{
+  var index = sel.selectedIndex;
+  if (sel.options[index].value != '') {
+     if (targetstr == 'blank') {
+       window.open(sel.options[index].value, 'win1');
+     } else {
+       var frameobj;
+       if (targetstr == '') targetstr = 'self';
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = sel.options[index].value;
+     }
+  }
+}
+// -->
+</script>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="2" src="../images/l_bar.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="6" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=Ultima" title=":::UltimaOnline:::"><font color="#fafafa">-울티마온라인</font></a></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="4" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=Diablo" title=":::Diablo3:::"><font color="#fafafa">-디아블로3</font></a></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="4" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=DF" title=":::DF Board:::"><font color="#fafafa">-던전앤파이터</font></a></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="4" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=LoL" title=":::LoL:::"><font color="#fafafa">-리그오브레전드</font></a></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="4" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=Star2" title=":::Starcraft2:::"><font color="#fafafa">-스타크래프트2</font></a></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><img border="0" height="4" src="../images/blank_l_line.gif" width="86"/></p>
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0; margin-left:5px;"><a href="/bbs/board.php?bo_table=Console" title=":::XBOX,PS3,Wii,PSP:::"><font color="#fafafa">-콘솔게임</font></a></p>
+<p> </p>
+<form name="form">
+<p align="left" style="line-height:100%; margin-top:0; margin-bottom:0;"><select onchange="namosw_goto_byselect(this, 'blank')" size="1">
+<option>Family Site</option>
+<option>---------</option>
+<option value="http://ncity.net">Zeme</option>
+<option value="http://kritz.mulple.com">Kritz</option>
+<option value="http://daoc.mulple.com">Cindee</option>
+<option>---------</option>
+</select></p>
+</form>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></td>
+<td width="680px"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="53px">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="37px" rowspan="3" width="100px"><img height="42" onclick="click_menu(1);" src="/images/left_logo1.gif" style="cursor:hand" width="100"/></td>
+<td bgcolor="#FFC73B" height="18px"><div align="right">
+<a href="javascript:view_cover('LayLoginForm','','');" onfocus="this.blur()"><img alt="Welcome to Forg" border="0" height="15" name="image1" s="" src="/images/t_login.gif" width="70" world'=""/></a>
+<a href="../bbs/register.php" onfocus="this.blur()"><img alt="Forg" border="0" family'="" height="15" name="image2" s="" src="/images/t_sign.gif" width="70"/></a></div></td>
+</tr>
+<tr>
+<td background="/images/t_bar.gif" height="4px"></td>
+</tr>
+<tr>
+<td bgcolor="#F1F1F2" height="12px">
+<div align="center">
+<img align="left" alt="자유게시판" height="20" name="free" onclick="click_menu(2);" onmouseout="off_menu(2);" onmouseover="on_menu(2);" src="/images/t_b_freeboard.gif" style="cursor:hand" width="80"/>
+<img align="left" alt="포토갤러리" height="20" name="photo" onclick="click_menu(3);" onmouseout="off_menu(3);" onmouseover="on_menu(3);" src="/images/t_b_photo.gif" style="cursor:hand" width="80"/>
+<img align="left" alt="펀보드" height="20" name="fun" onclick="click_menu(4);" onmouseout="off_menu(4);" onmouseover="on_menu(4);" src="/images/t_b_fun.gif" style="cursor:hand" width="80"/>
+<img align="left" alt="스포일러게시판" height="20" name="movie" onclick="click_menu(5);" onmouseout="off_menu(5);" onmouseover="on_menu(5);" src="/images/t_b_movie.gif" style="cursor:hand" width="80"/>
+<img align="left" alt="뽐뿌" height="20" name="boo" onclick="click_menu(6);" onmouseout="off_menu(6);" onmouseover="on_menu(6);" src="/images/t_b_boo.gif" style="cursor:hand" width="80"/>
+<img align="left" height="20" name="tra" onclick="click_menu(7);" onmouseout="off_menu(7);" onmouseover="on_menu(7);" src="/images/t_b_tra.gif" style="cursor:hand" width="80"/>
+<img align="left" alt="휴지통게시판" height="20" name="trash" onclick="click_menu(8);" onmouseout="off_menu(8);" onmouseover="on_menu(8);" src="/images/t_b_trash.gif" style="cursor:hand" width="80"/>
+<img align="left" height="20" name="right" onclick="click_menu(9);" onmouseout="off_menu(9);" onmouseover="on_menu(9);" src="/images/t_b_right.gif" style="cursor:hand" width="20"/>
+</div>
+</td>
+</tr>
+<tr>
+<td background="/images/t_line.gif" colspan="2" height="12px"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#fafafa" height="*">
+<div><font color="#0000c8">
+<div width="95%"><br/><font color="#0000c8"><img align="top" alt="" border="0" height="18" src="http://forg.co.kr/data/cheditor4/1005/rPp5sxUVpxzBFRUIBshwN1JyI7K3qdl.gif" width="240"/></font></div></font><script language="javascript" src="../js/sideview.js"></script>
+<script src="../js/ajax.js" type="text/javascript"></script><style type="text/css">
+<!--
+@import url("../../../webbus01.css");
+-->
+</style>
+<!--프린트공간 시작 소스코드 시작-->
+<link href="css/webbus01.css" rel="stylesheet" type="text/css"/>
+<div id="print_table">
+<!--프린트공간 시작 소스코드 끝-->
+<table align="center" cellpadding="0" cellspacing="0" width="95%"><tr><td>
+<!-- 게시글 보기 시작 -->
+<table align="center" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div style="border-top:1px solid #ddd; border-bottom:1px solid #eee; clear:both; height:34px; background-color:FCFCFC; repeat-x;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="padding:8px 0 0 6px;">
+<div style="color:#333333; font-size:13px; font-family:돋움; font-weight:bold; word-break:break-all;">
+            궁금한게 있는데            </div>
+</td>
+<td align="right" style="padding:6px 6px 0 0;" width="250">
+</td>
+</tr>
+</table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="40">
+<div style="float:left;"><span class="gray8s">작성자:</span> <span class="gray6s"><strong>Morail</strong></span> <!--IP주소 부분숨기기소스-->
+<span class="gray6s">
+</span>
+<!--IP주소 부분숨기기소스 끝-->
+</div>
+<div class="gray6s" style="float:right;"> 조회 : <span class="gray8s"><strong>170</strong></span>
+                 </div>
+</td>
+</tr>
+<tr>
+<td style="height:1px; bgcolor:#eeeeee;"></td>
+</tr>
+<tr>
+<td style="height:3px; background:url(../skin/board/webbus2009_Trash/img/title_shadow.gif) repeat-x; line-height:1px; font-size:1px;"></td>
+</tr>
+<tr>
+<td height="150" style="word-break:break-all; padding:10px;">
+<!-- 내용 출력 -->
+<span id="writeContents">도대체 '굴욕없는' 이란 말이 무슨 뜻야? 어디서 나온 말?</span>
+<!-- 테러 태그 방지용 --><a href=""></a><a href=""></a>
+</td>
+</tr>
+</table>
+<!--########### 이전글, 다음글 시작 : yesmoa 님의 스킨 소스에서 발췌 ###############-->
+<!--########### 이전글, 다음글 끝 ###############-->
+<!--관련글출력-->
+<!--관련글출력 끝-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td height="10"></td></tr>
+<tr><td align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4987910996170078";
+/* 300x250, 작성됨 10. 6. 27 */
+google_ad_slot = "4021419366";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+</td>
+<td align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4987910996170078";
+/* 300x250, 작성됨 10. 6. 27 */
+google_ad_slot = "4021419366";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+</td>
+</tr>
+<tr><td height="10"></td></tr>
+</table>
+<script language="javascript"> var md5_norobot_key = 'd41d8cd98f00b204e9800998ecf8427e'; </script>
+<script language="JavaScript">
+// 글자수 제한
+var char_min = parseInt(0); // 최소
+var char_max = parseInt(0); // 최대
+
+function toggle(){
+  if(document.getElementById('ccall').style.display==""){
+    document.getElementById('ccall').style.display="none";
+  }else{
+    document.getElementById('ccall').style.display="";  
+  }
+}
+</script>
+<link href="../../../webbus01.css" rel="stylesheet" type="text/css"/>
+<!-- 코멘트 리스트 -->
+<div id="ccall" style="display:">
+<div id="commentContents">
+<a name="c_21418"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" bgcolor="#cbd1d4" style="padding:2px 2px 2px 2px;" valign="top" width="300"><font color="black">
+<b>Frimost</b></font>
+</td>
+<td align="right" bgcolor="#cbd1d4" valign="bottom" width="300">
+<!-- 코멘트 출력 -->
+<span id="edit_21418" style="display:none;"></span>
+<!-- 수정 -->
+<span id="reply_21418" style="display:none;"></span>
+<!-- 답변 -->
+                          <span>
+                          05-15 01:04                          </span> 
+                                                                                              </td>
+</tr>
+<tr>
+<td colspan="2" style="padding:5px 2px 2px 2px;"> <font class="12font">뭔 개소리같은 표현이지
+<br/>굴욕이 있다는 표현은 있어도 없다는 표현은 뭔 상황에서 나오는거야</font> </td>
+</tr>
+<tr>
+<td background="../skin/board/webbus2009_Trash/img/list_bg.gif" colspan="2" height="1"></td>
+</tr>
+<tr>
+<td colspan="2" height="10"><input id="hidden" name="hidden" type="hidden" value=""/>
+<textarea id="textarea" name="textarea" style="display:none;">뭔 개소리같은 표현이지
+굴욕이 있다는 표현은 있어도 없다는 표현은 뭔 상황에서 나오는거야                    </textarea>
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td bgcolor="#ffffff"></td></tr>
+<td bgcolor="#ffffff">
+<input id="secret_comment_21418" type="hidden" value=""/>
+<textarea id="save_comment_21418" style="display:none;">뭔 개소리같은 표현이지
+굴욕이 있다는 표현은 있어도 없다는 표현은 뭔 상황에서 나오는거야</textarea> </td>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!-- 코멘트 리스트 -->
+<br/>
+<script language="javascript"> var g4_cf_filter = 'vogee0808,vivi66.com        '; </script>
+<script language="javascript" src="../js/filter.js"></script>
+<script language="javascript" src="../js/md5.js"></script>
+<div style="height:1px; line-height:1px; font-size:1px; background-color:#ddd; clear:both;"> </div>
+<div style="clear:both; height:43px;">
+<div style="float:left; margin-top:10px;">
+<img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/btn_prev1no.gif" title="글이 없습니다"/><a href="./board.php?bo_table=Trash&amp;page=" id="btn_list"><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/btn_list1.gif" title="목록보기"/></a><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/btn_next1no.gif" title="글이 없습니다"/> </div>
+<!-- 링크 버튼 -->
+<div style="float:right; margin-top:10px;">
+<a href="./board.php?bo_table=Trash&amp;page="><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/btn_list.gif"/></a> </div>
+</div>
+<!--<div style="height:2px; line-height:1px; font-size:1px; background-color:#dedede; clear:both;">&nbsp;</div>-->
+</div></td></tr></table><br/>
+</td></tr></table>
+<!--프린트공간 끝 소스코드 시작-->
+</div>
+<!--프린트공간 끝 소스코드 끝-->
+<script language="JavaScript">
+function file_download(link, file) {
+        document.location.href=link;
+}
+</script>
+<script language="JavaScript" src="../js/board.js"></script>
+<script language="JavaScript">
+window.onload=function() {
+    resizeBoardImage(560);
+    drawFont();
+}
+</script>
+<!-- 게시글 보기 끝 -->
+<script language="JavaScript">
+// 검색창펼치기
+function togglelist(){
+  if(document.getElementById('hidden1').style.display==""){
+    document.getElementById('hidden1').style.display="none";
+  }else{
+    document.getElementById('hidden1').style.display="";  
+  }
+}
+</script>
+<table align="center" cellpadding="0" cellspacing="0" width="95%"><tr><td>
+<!-- 게시판 목록 시작 -->
+<link href="css/webbus01.css" rel="stylesheet" type="text/css"/>
+<!-- 제목 -->
+<form method="post" name="fboardlist" style="margin:0;">
+<input name="bo_table" type="hidden" value="Trash"/>
+<input name="sfl" type="hidden" value=""/>
+<input name="stx" type="hidden" value=""/>
+<input name="spt" type="hidden" value=""/>
+<input name="page" type="hidden" value="1"/>
+<input name="sw" type="hidden" value=""/>
+<div style="border-top:1px solid #ddd; border-bottom:1px solid #ddd; border-left:1px solid #ddd;border-right:1px solid #ddd;height:30px; background:url(../skin/board/webbus2009_Trash/img/title_bg.gif) repeat-x;">
+<table border="0" cellpadding="0" cellspacing="0" style="font-weight:bold; color:#505050;" width="100%">
+<tr align="center" height="28">
+<td class="gray8s" height="28" width="50"><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/w_1.gif"/></td>
+<td><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/w_2.gif"/></td>
+<td class="gray8s" width="90"><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/w_3.gif"/></td>
+<td width="65"><a href="/bbs/board.php?bo_table=Trash&amp;sop=and&amp;sst=wr_datetime&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1"> <img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/w_4.gif"/></a></td>
+<td width="60"><a href="/bbs/board.php?bo_table=Trash&amp;sop=and&amp;sst=wr_hit&amp;sod=desc&amp;sfl=&amp;stx=&amp;page=1"> <img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/w_5.gif"/></a></td>
+<!--<td width=40>날짜</td>
+    <td width=50>조회</td>-->
+<!--비추천 숨기기
+    	-->
+</tr>
+</table>
+</div>
+<div style="height:3px; background:url(../skin/board/webbus2009_Trash/img/title_shadow.gif) repeat-x; line-height:1px; font-size:1px;"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- 목록 -->
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     443    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21965">혹시 포그에</a></font> <img align="absmiddle" src="../skin/board/webbus2009_Trash/img/icon_new.gif"/> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Trimasel</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-12</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>10</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     442    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21961">7광구 봤는데...</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21961"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(1)</b></span></a> <img align="absmiddle" src="../skin/board/webbus2009_Trash/img/icon_new.gif"/> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Vaelfar</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-11</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>56</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     441    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21959">내가 오래 살진 않았지만...</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21959"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> <img align="absmiddle" src="../skin/board/webbus2009_Trash/img/icon_new.gif"/> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Trimasel</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-11</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>61</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     440    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21954">역시 포그는 떡밥하나 던져주면..</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21954"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> <img align="absmiddle" src="../skin/board/webbus2009_Trash/img/icon_new.gif"/> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Sergulath</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-10</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>59</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     439    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21947">aftermath</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21947"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Pursan</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-09</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>72</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     438    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21945">아 진짜 기레기새끼들</a></font> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Naberrs</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-08</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>77</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     437    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21942">남자도 유두 가리게가 필요하다!!!</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21942"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(4)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Musisin</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-08</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>115</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     436    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21940">다니엘헤니</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21940"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Moloch</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-07</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>84</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     435    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21934">일년에 책 50권 이상씩 몇년동안 계속 읽어오신 데몬 …</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21934"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(10)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Botis</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-06</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>122</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     434    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21932">순복음교회다닐때 생각난다...</a></font> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Khil</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-03</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>118</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     433    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21926">북한 어린이 만화의 미제 악역 묘사</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21926"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Barbatos</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-02</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>165</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     432    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21924">계약직으로 근무하다가 개인사정으로 회사를 관둘려고…</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21924"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(1)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Nyarlathotep</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-01</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>123</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     431    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21922">이력서쓰려는데 우대조건이 안되면 희망없나?</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21922"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(1)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Bechard</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-08-01</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>109</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     430    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21912">dd</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21912"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(1)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Khil</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-30</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>112</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     429    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21909">울티마 포에버 하는 사람들 없음?</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21909"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(2)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Bathim</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-30</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>181</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     428    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21904">난 이미 중독되어버렸어....</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21904"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(1)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Be'elzebubba</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-29</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>140</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     427    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21902">성재기 결국 고인됨.</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21902"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(10)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Tarihimal</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-29</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>208</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     426    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21901">안산 락페 다녀왔는데 올해 괜찮더라</a></font> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Bechard</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-29</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>75</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     425    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21896">자석 총알 보다가 문득 궁금한게 있는데</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21896"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(4)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Eliezer</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-28</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>151</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+<tr align="center" height="28">
+<td width="30">
+<span style="font:normal 9px tahoma; color:#B3B3B3;">     424    </span></td>
+<td align="left" height="23" style="word-break:break-all;">
+<font class="12font"><a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21885">유격 강화</a></font> <a href="../bbs/board.php?bo_table=Trash&amp;wr_id=21885"><span style="font-family:Tahoma;font-size:10px;color:#EE5A00;"><b>(10)</b></span></a> </td>
+<td align="center" width="90"><nobr style="display:block; overflow:hidden; width:90px;"><font class="smailfont1" color="5d5e5b">Aiwaz</font></nobr></td>
+<td class="gray8s" width="65"><span style="font:normal 9px tahoma; color:#888888;">2013-07-25</span></td>
+<td class="gray8s" width="60"><span style="font:normal 9px tahoma; color:#666666;"><strong>197</strong></span></td>
+<!--비추천 숨기기
+    	-->
+</tr>
+<tr><td bgcolor="#eeeeee" colspan="5" height="1"></td></tr>
+</table>
+</form>
+<div style="clear:both; margin-top:7px; height:31px;">
+<div style="float:left;">
+</div>
+<div style="float:right;">
+</div>
+</div>
+<!-- 아래라인 숨기기
+<div style="height:1px; line-height:1px; font-size:1px; background-color:#eee; clear:both;">&nbsp;</div>
+<div style="height:1px; line-height:1px; font-size:1px; background-color:#ddd; clear:both;">&nbsp;</div>
+-->
+<!-- 페이지 -->
+<div style="text-align:center; line-height:30px; clear:both; margin:5px 0 5px 0; padding:5px 0; font-family:gulim;">
+              <b><span style="color:#4D6185; font-size:12px; text-decoration:underline;">1</span></b>   <a href="./board.php?bo_table=Trash&amp;page=2"><b><span style="color:#B3B3B3; font-size:12px;">2</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=3"><b><span style="color:#B3B3B3; font-size:12px;">3</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=4"><b><span style="color:#B3B3B3; font-size:12px;">4</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=5"><b><span style="color:#B3B3B3; font-size:12px;">5</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=6"><b><span style="color:#B3B3B3; font-size:12px;">6</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=7"><b><span style="color:#B3B3B3; font-size:12px;">7</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=8"><b><span style="color:#B3B3B3; font-size:12px;">8</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=9"><b><span style="color:#B3B3B3; font-size:12px;">9</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=10"><b><span style="color:#B3B3B3; font-size:12px;">10</span></b></a>  <a href="./board.php?bo_table=Trash&amp;page=11"><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/page_next.gif" title="다음"/></a>  <a href="./board.php?bo_table=Trash&amp;page=23"><img align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/page_end.gif" title="맨끝"/></a>
+</div>
+<!-- 링크 버튼, 검색 -->
+<div style="text-align:center;">
+<form method="get" name="fsearch" style="margin:0px;">
+<table border="0" cellpadding="5" cellspacing="1" width="100%">
+<tr>
+<td align="center" bgcolor="fafafa">
+<input name="bo_table" type="hidden" value="Trash"/>
+<input name="sca" type="hidden" value=""/>
+<select name="sfl" style="background-color:#ffffff; border:1px solid #D9D9D9; height:18px;">
+<option value="wr_subject">제목</option>
+<option value="wr_content">내용</option>
+<option value="wr_subject||wr_content">제목+내용</option>
+</select>
+<input itemname="검색어" maxlength="15" name="stx" required="" style="width:150px; background-color:#ffffff; border:1px solid #D9D9D9; height:20px;" value=""/>
+<input align="absmiddle" border="0" src="../skin/board/webbus2009_Trash/img/btn_search.gif" type="image"/>
+</td>
+</tr>
+</table>
+</form></div>
+</td></tr></table>
+<!-- 게시판 목록 끝 --><p> </p>
+</div>
+</td></tr>
+<tr>
+<td background="/images/bgm_bg.gif" height="24px"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="24px" width="15"></td>
+<td height="24px" width="250"><font color="#fafafa">Total : 40459767</font></td>
+<td height="24px"><div align="right"><img height="24" src="/images/bgm_right.gif" width="150"/></div></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+<td background="/images/right_bg.gif" width="7px"> </td>
+<td bgcolor="61748b" valign="top" width="*">
+<br/><br/><br/><br/>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4987910996170078";
+/* 120x600, 작성됨 10. 6. 23 */
+google_ad_slot = "7795064943";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+</td>
+</tr>
+</table>
+</body></html>
+<html><script language="javascript" src="../js/wrest.js"></script>
+<!-- 새창 대신 사용하는 iframe -->
+<iframe height="0" name="hiddenframe" style="display:none;" width="0"></iframe>
+</html>
+<!-- 사용스킨 : webbus2009_Trash -->

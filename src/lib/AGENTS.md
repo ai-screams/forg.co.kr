@@ -52,10 +52,12 @@ helpers which run on both server and client.
 
 ### Testing Requirements
 
-There is no unit-test suite in this repo (no `test` script in
-`package.json`). Verify changes here with:
+Unit tests sit beside the module (`dates.test.ts`, `skins.test.ts`,
+`chrome.test.ts`) and run with `pnpm test` (Vitest, node environment, the
+`@/` alias from `vitest.config.mts`). Verify changes here with:
 
 ```bash
+pnpm test        # vitest run
 pnpm typecheck   # tsc --noEmit
 pnpm lint        # eslint
 pnpm build       # next build — exercises every loader via generateStaticParams

@@ -41,6 +41,7 @@ Details live in rule files. Rules with `paths:` frontmatter load once a matching
 pnpm dev               # Next.js dev server (Turbopack)
 pnpm build             # static export to out/
 pnpm typecheck         # tsc --noEmit
+pnpm test              # vitest run (src/**/*.test.ts)
 pnpm lint              # eslint
 pnpm lint:md           # markdownlint-cli2
 pnpm format:check      # prettier --check .

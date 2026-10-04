@@ -34,8 +34,7 @@ declarations for modules TypeScript cannot otherwise resolve.
 
 ### Testing Requirements
 
-There is no unit-test suite in this repo (no `test` script in
-`package.json`). Verify changes here with:
+Types have no unit tests of their own. Verify changes here with:
 
 ```bash
 pnpm typecheck   # tsc --noEmit — the primary check for this directory

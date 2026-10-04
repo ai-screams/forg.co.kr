@@ -1,0 +1,33 @@
+{
+  "outcome": "ok",
+  "post": {
+    "board": "kr_screee",
+    "boardKr": "kr_screee",
+    "postId": "2",
+    "title": "쌍둥이집...",
+    "categoryLabel": null,
+    "bodyHtml": "방금 여기저기 구경다니다 쌍둥이 집을 목격했습니다\n<br>일부러 이렇게 지으신건진.....\n<br>이뻐서 스샷하나 찍어봤습니다.",
+    "bodyText": "방금 여기저기 구경다니다 쌍둥이 집을 목격했습니다 일부러 이렇게 지으신건진..... 이뻐서 스샷하나 찍어봤습니다.",
+    "author": "runup",
+    "authorMemberNo": null,
+    "authorHomepage": null,
+    "createdAt": "2019-02-12T11:02:36",
+    "createdAtApprox": false,
+    "hits": 302,
+    "recommend": null,
+    "attachments": [],
+    "comments": [
+      {
+        "author": "향수병",
+        "authorMemberNo": null,
+        "createdAt": "2019-07-19T16:45:00+09:00",
+        "bodyHtml": "\n\t\t\t            아마 본계정과 부계정의 조합 아닐까요?ㅎㅎ        "
+      }
+    ],
+    "era": "2014",
+    "capturedAt": "20190818211450",
+    "parsedAt": "2026-01-01T00:00:00",
+    "originalUrl": "http://forg.kr/bbs/board.php?bo_table=screee&wr_id=2",
+    "sourceEngine": "gnuboard5"
+  }
+}

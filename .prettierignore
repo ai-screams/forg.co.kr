@@ -35,3 +35,7 @@ public/
 # Archive raw data
 archive/
 archive-utf8/
+
+# Parser regression fixtures: real captures and the parser's output, kept byte for byte
+scripts/etl/tests/fixtures/
+scripts/etl/tests/snapshots/

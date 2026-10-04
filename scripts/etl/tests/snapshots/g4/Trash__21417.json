@@ -1,0 +1,33 @@
+{
+  "outcome": "ok",
+  "post": {
+    "board": "Trash",
+    "boardKr": "Trash",
+    "postId": "21417",
+    "title": "궁금한게 있는데",
+    "categoryLabel": null,
+    "bodyHtml": "도대체 '굴욕없는' 이란 말이 무슨 뜻야? 어디서 나온 말?",
+    "bodyText": "도대체 '굴욕없는' 이란 말이 무슨 뜻야? 어디서 나온 말?",
+    "author": "Morail",
+    "authorMemberNo": null,
+    "authorHomepage": null,
+    "createdAt": "2013-05-15T01:04:00",
+    "createdAtApprox": true,
+    "hits": 170,
+    "recommend": null,
+    "attachments": [],
+    "comments": [
+      {
+        "author": "Frimost",
+        "authorMemberNo": null,
+        "createdAt": "2013-05-15T01:04:00",
+        "bodyHtml": "뭔 개소리같은 표현이지\n<br>굴욕이 있다는 표현은 있어도 없다는 표현은 뭔 상황에서 나오는거야"
+      }
+    ],
+    "era": "2014",
+    "capturedAt": "20130812101241",
+    "parsedAt": "2026-01-01T00:00:00",
+    "originalUrl": "http://forg.co.kr/bbs/board.php?bo_table=Trash&wr_id=21417",
+    "sourceEngine": "gnuboard4"
+  }
+}
