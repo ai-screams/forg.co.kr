@@ -22,6 +22,7 @@ helpers which run on both server and client.
 | `skins-2001.ts` | The 2001 era's board skins: board → skin (`skin2001Of`) and recovered skin images under `public/img/chrome/2001/zb/` (`skinAsset2001`). Their colours are CSS (`data-skin-2001` in `src/styles/skins.css`).                                                                                                                                                            |
 | `chrome.ts`     | Resolves recovered site-chrome assets under `public/img/chrome/` (era folder first, then the flat pool): `chromeUrl` (stops the build on a name that is not there), `optionalChrome` (for art Wayback never kept), `tileStyle`.                                                                                                                                        |
 | `img-base.ts`   | Rewrites `/img/posts/…` references in post/page HTML to `NEXT_PUBLIC_IMG_BASE` (R2 CDN) at render time: `withImgBase`, `withImgBaseEverywhere`.                                                                                                                                                                                                                        |
+| `era-menus.ts`  | What the era frames link to, in each original frame's order and wording: the 2014 top menu, game categories and family sites; the 2003 top menu and sidebar; the 2001 top menu. `era-menus.test.ts` checks every path link reaches the home, a board, a built `/site/` page or Wayback.                                                                                |
 | `era.ts`        | The `Era` type (`"2014" \| "2003" \| "2001"`), `ERAS`, `DEFAULT_ERA`, `ERA_STORAGE_KEY`, `isEra` guard, `ERA_LABELS`.                                                                                                                                                                                                                                                  |
 | `dates.ts`      | Date formatting for the UI: `isUnknownDate` (flags the 1970-epoch Zeroboard NULL-timestamp placeholder), `formatKoreanDateTime`, `formatShortDate`, `formatWaybackTs`.                                                                                                                                                                                                 |
 
@@ -53,7 +54,7 @@ helpers which run on both server and client.
 ### Testing Requirements
 
 Unit tests sit beside the module (`dates.test.ts`, `skins.test.ts`,
-`chrome.test.ts`) and run with `pnpm test` (Vitest, node environment, the
+`chrome.test.ts`, `era-menus.test.ts`) and run with `pnpm test` (Vitest, node environment, the
 `@/` alias from `vitest.config.mts`). Verify changes here with:
 
 ```bash

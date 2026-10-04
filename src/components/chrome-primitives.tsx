@@ -144,31 +144,37 @@ export function MobileMenu({ label, children }: { label: string; children: React
   );
 }
 
+/** Native Korean numbers as a counter takes them: 세 사이트, 일곱 사이트. */
+const COUNTERS = ["한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"];
+
 /**
  * A sidebar jump menu (`<select onchange="namosw_goto_byselect(…)">`) to
  * friend sites that have all been gone for years: the same control, with
  * nothing behind it, the way Login and Sign Up are inert. `options` are in
  * the capture's order; `null` is a `---------` divider. `disabled` takes the
- * control out of the tab order, so `note` repeats the names and why they are
- * dead for screen readers.
+ * control out of the tab order, so a note names the `sites` and says they
+ * are gone, for screen readers.
  */
 export function InertJumpMenu({
   id,
   label,
   options,
-  note,
+  sites,
   className,
 }: {
   id: string;
   label: string;
   options: readonly (string | null)[];
-  note: ReactNode;
+  sites: readonly string[];
   className: string;
 }) {
+  const count = COUNTERS[sites.length - 1] ?? String(sites.length);
   return (
     <>
       <span id={id} className="sr-only">
-        {note}
+        {`${label} 목록: `}
+        {sites.join(", ")}
+        {`. ${count} 사이트 모두 사라져 이동할 수 없습니다.`}
       </span>
       <select
         aria-label={label}

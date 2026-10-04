@@ -50,7 +50,8 @@ Counts as of 2026-10-01: 14,837 posts (`posts/`), 605 index chunks
 
 ### Testing Requirements
 
-The unit tests (`pnpm test`) do not read content. Content changes are
+Of the unit tests (`pnpm test`), only `src/lib/era-menus.test.ts` reads
+content: the frames' `/site/` links must have a page here. Content changes are
 verified by the build, since every
 route under `src/app/(board)/` sets `dynamicParams = false`:
 

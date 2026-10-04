@@ -32,6 +32,17 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  // The scripts /site/ documents carry (src/app/site/_render/assets.ts reads
+  // them): plain browser scripts, inserted as they are, so undefined and
+  // unused names are errors here rather than in a visitor's console.
+  {
+    files: ["src/app/site/_render/assets/*.js"],
+    languageOptions: {
+      sourceType: "script",
+      globals: { document: "readonly", window: "readonly" },
+    },
+    rules: { "no-undef": "error", "no-unused-vars": "error" },
+  },
   globalIgnores([
     ".next/**",
     "out/**",

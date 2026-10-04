@@ -1,0 +1,8 @@
+@media (max-width:799px){
+html:not(.in-frame) body{margin:8px!important;min-width:0!important}
+html:not(.in-frame) table{width:100%!important;max-width:100%!important;height:auto!important}
+html:not(.in-frame) td,html:not(.in-frame) th{width:auto!important;height:auto!important;white-space:normal!important}
+html:not(.in-frame) img{max-width:calc(100vw - 16px)!important;height:auto!important}
+html:not(.in-frame) [style*="position:absolute"],html:not(.in-frame) [style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
+body *{overflow-wrap:break-word;word-break:break-word}
+}

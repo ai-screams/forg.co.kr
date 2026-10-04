@@ -38,8 +38,6 @@
  * ENTER button, is drawn as a text button.
  */
 
-import type { ReactNode } from "react";
-
 import {
   InertJumpMenu,
   LoginBar,
@@ -50,9 +48,9 @@ import {
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
-import type { BoardId } from "@/lib/boards";
 import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
+import { SIDEBAR_2003, TOP_MENU_2003 } from "@/lib/era-menus";
 
 /** Every asset on this surface is asked for at its 2003 capture. Without it
  *  the newest capture wins and the exhibit wears 2007 artwork — see
@@ -62,131 +60,6 @@ const ERA: Era = "2003";
 /** Visitor total shown by frame-bottom-2003 on 2003-06-03. Frozen, like
  *  the 2014 counter's 52,916,713. */
 const VISITORS_2003 = 3399428;
-
-// Top 7-button menu (frame-top-2003.html) — 80×20 each + 20×20 FAQ icon.
-interface TopMenuConfig {
-  id: BoardId;
-  asset: string;
-  label: string;
-}
-const TOP_MENU_2003: TopMenuConfig[] = [
-  { id: "UoBoard", asset: "t_b_freeboard.gif", label: "자유게시판" },
-  { id: "Q_A", asset: "t_b_question.gif", label: "질답란" },
-  { id: "Role", asset: "t_b_roleplay.gif", label: "롤플레이게시판" },
-  { id: "UOForum", asset: "t_b_essay.gif", label: "울온에세이란" },
-  { id: "HouseScreenshot", asset: "t_hi.gif", label: "하우스인테리어란" },
-  { id: "ScreenShot", asset: "t_b_screenshot.gif", label: "스크린샷란" },
-  // frame-top-2003 wires t_b_kal.gif to `zboard.php?id=Recall`. The 2003
-  // art reads "Kal Ort Por" — the Ultima recall spell, which is the joke
-  // the board name is making. (The 2007 capture of the same filename reads
-  // "Hot Link"; that is a later redesign, not this era.)
-  { id: "Recall", asset: "t_b_kal.gif", label: "Kal Ort Por" },
-];
-
-// Sidebar (frame-left-2003) — 5 sections with English chrome-bar
-// headers and Korean dash-prefixed link rows. Hrefs follow the original
-// frame; the guide pages it opened are `/site/…` documents (ETL Stage 2g).
-// The guild directory was a popup (`/_zb/guild/index.html`), now a `/site/`
-// page. The vendor popup (`/_zb/vendor/list.php`) has only a redirect
-// capture, so that entry keeps the Vendor board. The cartoon lived on
-// another host (`hosting27.interpia98.net/~forg/lomo/`), now `/site/lomo/`.
-// The bulk-deed page survives only as its redirect to the FAQ, which
-// `/site/bod/bod/` repeats; the poll is `/_zb/kritz_vote/`.
-/** frame-left-2003's Friend Site select, in its order; null is a `---------` divider. */
-const FRIEND_SITE_MENU = [
-  "Uospace",
-  null,
-  "Kritz",
-  null,
-  "Badaro",
-  "Yui",
-  "Harp",
-  "Sazabi",
-  "SIRL",
-];
-
-const SIDEBAR_SECTIONS: {
-  /** Section header asset (English-titled GIF in chrome dir). */
-  asset: string;
-  /** The header's name: its alt text, and the phone menu's heading. */
-  label: string;
-  /** A jump menu under the header, before the links (`InertJumpMenu`). */
-  jumpMenu?: { id: string; options: (string | null)[]; note: ReactNode };
-  links: { label: string; href: string }[];
-}[] = [
-  {
-    asset: "m_info.gif",
-    label: "Information",
-    links: [
-      { label: "-초보자지침서", href: "/site/skill/uo_newbie/" },
-      { label: "-초보자게시판", href: "/Newbie" },
-      { label: "-쿠폰,시디구입처", href: "/site/skill/uoco/" },
-      { label: "-울온전투기술", href: "/site/skill/uo_combat/" },
-      { label: "-울온협력기술", href: "/site/skill/uo_veteran/" },
-      { label: "-울온직업기술", href: "/site/skill/uo_jobs/" },
-      { label: "-각종유용한정보", href: "/site/skill_knowhow/uo_knowhow/" },
-      { label: "-UO.퀘스트정보", href: "/site/uoquest/Ant_Quest/" },
-      { label: "-몬스터&던전란", href: "/site/dungeon/monster/" },
-      { label: "-울온지도란", href: "/site/map/britian/" },
-    ],
-  },
-  {
-    asset: "m_co.gif",
-    label: "Cooperation",
-    links: [
-      { label: "-벤더광고란", href: "/Vendor" },
-      { label: "-아리랑장터란", href: "/Tarirang" },
-      { label: "-발해장터란", href: "/Tbalhae" },
-      { label: "-길드정보란", href: "/site/_zb/guild/index/" },
-      { label: "-벌크디드정보란", href: "/site/bod/bod/" },
-    ],
-  },
-  {
-    asset: "m_remember.gif",
-    label: "Reminisce",
-    links: [
-      { label: "-UO.만화", href: "/site/lomo/index/" },
-      { label: "-UO.여행기", href: "/site/spotlight/spot_130/" },
-      { label: "-인테리어정보", href: "/site/decoration/deco/" },
-      { label: "-아이템스샷란", href: "/Items" },
-    ],
-  },
-  {
-    asset: "m_forg.gif",
-    label: "Forg.Board",
-    links: [
-      { label: "-공동작업란", href: "/monster" },
-      { label: "-포토갤러리", href: "/porato" },
-      { label: "-휴지통게시판", href: "/Trash" },
-      { label: "-유머게시판", href: "/FunBoard" },
-      { label: "-Forg.멤버란", href: "/" },
-      { label: "-울온설문조사란", href: "/site/_zb/kritz_vote/index/" },
-    ],
-  },
-  {
-    asset: "m_friend.gif",
-    label: "Friend Site",
-    // Every uospace.net friend site the select led to is gone.
-    jumpMenu: {
-      id: "friend-site-note",
-      options: FRIEND_SITE_MENU,
-      note: (
-        <>
-          Friend Site 목록: {FRIEND_SITE_MENU.filter((name) => name !== null).join(", ")}. 일곱
-          사이트 모두 사라져 이동할 수 없습니다.
-        </>
-      ),
-    },
-    links: [
-      { label: "SiteMap", href: "/site/skill/sitemap/" },
-      // frame-left-2003 links it to the official Korean UO site, kept by Wayback.
-      {
-        label: "EA Korea",
-        href: "https://web.archive.org/web/20030603171043/http://www.kr.uo.com/",
-      },
-    ],
-  },
-];
 
 /* ────────────────────────────────────────────────────────────────────── */
 /*  Frame: top — forg logo + small login/signup links + 7-button menu     */
@@ -230,7 +103,7 @@ export function FrameTop2003() {
         </MenuRow>
       </div>
       <MobileMenu label="사이드바">
-        {SIDEBAR_SECTIONS.map((section) => (
+        {SIDEBAR_2003.map((section) => (
           <div key={section.label} className="col-span-2 mt-1">
             <p className="mb-[2px] text-[11px] font-bold tracking-wide text-forg-gold-hover">
               {section.label}
@@ -255,7 +128,7 @@ export function FrameTop2003() {
   );
 }
 
-function TopMenuButton2003({ item }: { item: TopMenuConfig }) {
+function TopMenuButton2003({ item }: { item: (typeof TOP_MENU_2003)[number] }) {
   return (
     <Link
       href={`/${item.id}`}
@@ -308,7 +181,7 @@ export function FrameLeft2003() {
       style={tileStyle(tileUrl, "repeat")}
     >
       <nav className="flex flex-col gap-2.5">
-        {SIDEBAR_SECTIONS.map((section) => (
+        {SIDEBAR_2003.map((section) => (
           <SidebarSection2003 key={section.label} section={section} />
         ))}
       </nav>
@@ -316,7 +189,7 @@ export function FrameLeft2003() {
   );
 }
 
-function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[number] }) {
+function SidebarSection2003({ section }: { section: (typeof SIDEBAR_2003)[number] }) {
   return (
     <div>
       <LazyImg
@@ -332,7 +205,7 @@ function SidebarSection2003({ section }: { section: (typeof SIDEBAR_SECTIONS)[nu
             id={section.jumpMenu.id}
             label={section.label}
             options={section.jumpMenu.options}
-            note={section.jumpMenu.note}
+            sites={section.jumpMenu.options.filter((name) => name !== null)}
             className="border border-forg-ink/30 bg-white text-[11px] text-forg-ink/70"
           />
         </p>

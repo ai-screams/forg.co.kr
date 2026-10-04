@@ -21,7 +21,7 @@ The 2001 era (ADR-0019) touched these; a new one touches the same:
 
 1. `src/lib/era.ts` — `ERAS` (the layout's pre-hydration script and `<EraToggle>` read it) and `ERA_LABELS`.
 2. `src/styles/eras.css` — the `:root[data-era="…"]` tokens, `.era-…-only` visibility, and the toggle's `[data-era-option]` pressed colour.
-3. The frame — `era-chrome-….tsx` with `FrameTop…` (plus `FrameLeft…` / `FrameBottom…` if the era had those frames), slotted into `era-shell.tsx`.
+3. The frame — `era-chrome-….tsx` with `FrameTop…` (plus `FrameLeft…` / `FrameBottom…` if the era had those frames), slotted into `era-shell.tsx`; its menus and link lists go in `src/lib/era-menus.ts`, where `era-menus.test.ts` checks the paths.
 4. The home — `home-….tsx` (`Home…Content`), handed to `<EraShell>` by `src/app/page.tsx` as a new `content…` prop.
 5. Lists and posts, if the era drew them differently — a view beside the others, built from the same `ListRow` / `Post` and shown with `.era-…-only` (as `list-skin-2001.tsx`, `PostHead2001`, `CommentList2001`).
 6. Assets — `public/img/chrome/{era}/`, looked up with `chromeUrl(asset, era)`.
