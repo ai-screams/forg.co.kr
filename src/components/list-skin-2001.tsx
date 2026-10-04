@@ -105,7 +105,9 @@ export function ListTable2001({
   totalPages: number;
 }) {
   return (
-    <div data-skin-2001={skin} className="mx-auto w-[95%] bg-white text-[12px]">
+    // 95% as Zeroboard 4.0 drew it; below the frame width the column is the
+    // screen's, as for the 2001 post.
+    <div data-skin-2001={skin} className="mx-auto w-[95%] bg-white text-[12px] max-frame:w-full">
       <p className={`py-[2px] font-[Tahoma,sans-serif] text-[9px] text-black`}>
         total <b className="text-(--zb40-accent)">{totalPosts}</b> articles{" "}
         <b className="text-(--zb40-accent)">{totalPages}</b> page{" "}

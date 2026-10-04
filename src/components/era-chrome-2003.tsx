@@ -237,6 +237,8 @@ export function FrameBottom2003() {
   // right-aligned. The frame also started a Shoutcast stream on load
   // (`onload="cast()"`, mulple.com), which is the "bgm" in the filenames;
   // the museum keeps the counter and the search and drops the music.
+  // The four cells need 365px: on a narrower phone the text input gives
+  // way (`min-w-0`) so the submit button stays on the screen.
   const enUrl = optionalChrome("bgm_en.gif", ERA); // never captured
 
   return (
@@ -258,7 +260,11 @@ export function FrameBottom2003() {
       <span className="w-[70px] shrink-0 pt-[6px] font-mono text-[11px] tabular-nums">
         {VISITORS_2003}
       </span>
-      <form action="/search" method="get" className="flex h-[24px] grow items-center gap-[4px]">
+      <form
+        action="/search"
+        method="get"
+        className="flex h-[24px] min-w-0 grow items-center gap-[4px]"
+      >
         <LazyImg
           src={chromeUrl("bgm_ser.gif", ERA)}
           alt="SEARCH"
@@ -271,7 +277,7 @@ export function FrameBottom2003() {
           name="q"
           aria-label="검색어"
           placeholder="Forg's World"
-          className="h-[17px] w-[150px] border border-(--era-input-border) bg-(--era-content-bg) px-1 text-[12px] text-forg-ink"
+          className="h-[17px] w-[150px] min-w-0 border border-(--era-input-border) bg-(--era-content-bg) px-1 text-[12px] text-forg-ink"
         />
         {enUrl ? (
           <button type="submit" className="block">
