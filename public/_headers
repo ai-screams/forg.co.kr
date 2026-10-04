@@ -8,3 +8,21 @@
 # Pages may omit `charset=utf-8` on HTML (cloudflare/workers-sdk#9599). Korean
 # text still decodes correctly because Next.js emits `<meta charSet="utf-8"/>`
 # as the first element of every page's <head>.
+
+
+# Pages' default for every file is `max-age=0, must-revalidate`: each page
+# view asked again for the stylesheet, which holds back the first paint by a
+# round trip, and for the era pictures (31 on the 2014 home).
+
+# Named by their content: a new build gives a changed file a new name.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The era chrome, emoticons, placeholders and page scripts keep their names
+# when replaced, which is rare: a day without asking, then a week of using
+# the copy while it is checked in the background.
+/img/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/scripts/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
