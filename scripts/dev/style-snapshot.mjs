@@ -25,7 +25,9 @@
  *   loading — so a CSS change that only resizes an element is NOT caught
  *   here; compare screenshots as well;
  * - custom properties, which render only through the properties that use
- *   them (and a new token on :root would mark every element).
+ *   them (and a new token on :root would mark every element);
+ * - elements that render nothing (script, link, meta, style, title,
+ *   noscript, template), so moving or dropping a script is not a change.
  * Property names are sorted: Chrome lists custom properties in no fixed
  * order. `::before`/`::after` with content are hashed the same way.
  *
@@ -89,8 +91,10 @@ function collect() {
     "transform-origin",
     "perspective-origin",
   ]);
+  const unrendered = new Set(["SCRIPT", "LINK", "META", "STYLE", "TITLE", "NOSCRIPT", "TEMPLATE"]);
   const out = [];
   for (const el of document.querySelectorAll("*")) {
+    if (unrendered.has(el.tagName)) continue;
     const text = (cs) => {
       const names = [];
       for (let i = 0; i < cs.length; i++)
@@ -117,7 +121,8 @@ function collect() {
 
 /** Runs in the page: full computed style of the elements at these indices. */
 function details(indices) {
-  const all = document.querySelectorAll("*");
+  const unrendered = new Set(["SCRIPT", "LINK", "META", "STYLE", "TITLE", "NOSCRIPT", "TEMPLATE"]);
+  const all = [...document.querySelectorAll("*")].filter((el) => !unrendered.has(el.tagName));
   return indices.map((i) => {
     const el = all[i];
     const cs = getComputedStyle(el);
