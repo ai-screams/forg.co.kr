@@ -24,11 +24,13 @@
  * slots from its own boards, as the 2003 home does.
  */
 
+import type { CSSProperties } from "react";
+
 import Link from "@/components/link";
 
 import { LazyImg } from "@/components/lazy-img";
 import type { BoardId } from "@/lib/boards";
-import { chromeUrl } from "@/lib/chrome";
+import { chromeUrl, tileStyle } from "@/lib/chrome";
 import { formatMonthDay } from "@/lib/dates";
 import type { Era } from "@/lib/era";
 import { getRecentPostEntries } from "@/lib/posts";
@@ -45,6 +47,9 @@ interface Box2001 {
   height: number;
   count: number;
   dated: boolean;
+  /** Below the frame width, the colour a 390px header's flat ends carry
+   *  across the column (`skins.css`). */
+  band?: string;
 }
 
 const MIDDLE_BOXES: Box2001[] = [
@@ -54,6 +59,7 @@ const MIDDLE_BOXES: Box2001[] = [
     asset: "main_notice.gif",
     width: 390,
     height: 29,
+    band: "max-frame:bg-forg2001-notice",
     count: 8,
     dated: true,
   },
@@ -61,6 +67,7 @@ const MIDDLE_BOXES: Box2001[] = [
     id: "Events",
     label: "Roleplaying and Events",
     asset: "main_notice_1.gif",
+    band: "max-frame:bg-forg2001-events",
     width: 390,
     height: 30,
     count: 8,
@@ -136,28 +143,45 @@ export async function Home2001Content() {
     >
       {/* `<table align=center border=1 bordercolor=#CCCCCC cellspacing=0 width=740>` */}
       <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-forg2001-table frame:grid-cols-[150px_390px_200px]">
-        <div className="border-forg2001-table p-[2px] max-frame:hidden frame:border-r">
-          <LazyImg
-            src={chromeUrl("left_logo_uo_1.gif", ERA)}
-            alt=""
-            width={145}
-            height={609}
-            useMap="#forg2001left"
-            className="block"
-          />
-          <map name="forg2001left">
+        <div className="border-forg2001-table p-[2px] frame:border-r">
+          <div className="max-frame:hidden">
+            <LazyImg
+              src={chromeUrl("left_logo_uo_1.gif", ERA)}
+              alt=""
+              width={145}
+              height={609}
+              useMap="#forg2001left"
+              className="block"
+            />
+            <map name="forg2001left">
+              {LEFT_MAP.map((area) => (
+                <area
+                  key={area.coords}
+                  shape="rect"
+                  coords={area.coords}
+                  href={area.href}
+                  alt={area.label}
+                  title={area.label}
+                  {...(area.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
+                />
+              ))}
+            </map>
+          </div>
+          {/* Below the frame width the 145×609 art would push the boxes a
+              screen down, so its four links stand as a row instead. */}
+          <ul className="flex flex-wrap gap-x-3 gap-y-1 px-[2px] py-1 text-[13px] frame:hidden">
             {LEFT_MAP.map((area) => (
-              <area
-                key={area.coords}
-                shape="rect"
-                coords={area.coords}
-                href={area.href}
-                alt={area.label}
-                title={area.label}
-                {...(area.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
-              />
+              <li key={area.coords}>
+                <Link
+                  href={area.href}
+                  className="text-(--era-link) hover:text-(--era-link-hover)"
+                  {...(area.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
+                >
+                  {area.label}
+                </Link>
+              </li>
             ))}
-          </map>
+          </ul>
         </div>
         <div className="border-forg2001-table bg-forg2001-middle frame:border-r">
           <LazyImg
@@ -165,7 +189,7 @@ export async function Home2001Content() {
             alt="Honor & Sacrifice"
             width={390}
             height={200}
-            className="mx-auto block max-w-full"
+            className="mx-auto block max-w-full max-frame:w-full"
           />
           {middle.map((data) => (
             <BoxSection2001 key={data.box.id} data={data} />
@@ -205,9 +229,25 @@ export async function Home2001Content() {
 
 function BoxHeader2001({ box }: { box: Box2001 }) {
   const url = box.asset ? chromeUrl(box.asset, ERA) : null;
-  return (
-    <Link href={`/${box.id}`} className="block">
-      {url ? (
+  if (!url) {
+    // `uoessay.gif` and `screen.gif` were never captured. Below the frame
+    // width the bar runs the column's width.
+    return (
+      <Link href={`/${box.id}`} className="block">
+        <span
+          className="mx-auto flex items-center bg-forg2001-box-head px-2 font-bold text-forg2001-box-head-text frame:max-w-(--box-width)"
+          style={{ "--box-width": `${String(box.width)}px`, height: box.height } as CSSProperties}
+        >
+          {box.label}
+        </span>
+      </Link>
+    );
+  }
+  if (box.band !== undefined) {
+    // The 390px headers end flat on both sides: on a wider screen they sit
+    // on a band of that colour.
+    return (
+      <Link href={`/${box.id}`} className={`block ${box.band}`}>
         <LazyImg
           src={url}
           alt={box.label}
@@ -215,15 +255,37 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
           height={box.height}
           className="mx-auto block max-w-full"
         />
-      ) : (
-        // `uoessay.gif` and `screen.gif` were never captured.
+      </Link>
+    );
+  }
+  // The 200px headers have their title on the left and an arrow near the
+  // right end. Below the frame width they are drawn in three parts: the art
+  // up to x=140, its two-tone face as a gradient, and its last 60px (the
+  // arrow), so the bar runs the column's width with the arrow at its end.
+  return (
+    <Link href={`/${box.id}`} className="block">
+      <LazyImg
+        src={url}
+        alt={box.label}
+        width={box.width}
+        height={box.height}
+        className="mx-auto block max-w-full max-frame:hidden"
+      />
+      <span
+        aria-hidden
+        className="relative block bg-[linear-gradient(to_bottom,var(--color-forg2001-box-head)_25px,var(--color-forg2001-page)_25px)] frame:hidden"
+        style={{ height: box.height }}
+      >
         <span
-          className="mx-auto flex items-center bg-forg2001-box-head px-2 font-bold text-forg2001-box-head-text"
-          style={{ maxWidth: box.width, height: box.height }}
-        >
-          {box.label}
-        </span>
-      )}
+          className="absolute inset-y-0 left-0 w-[140px] max-w-[calc(100%-60px)]"
+          style={tileStyle(url, "no-repeat")}
+        />
+        <span
+          className="absolute inset-y-0 right-0 w-[60px]"
+          style={tileStyle(url, "no-repeat", "right top")}
+        />
+      </span>
+      <span className="sr-only frame:hidden">{box.label}</span>
     </Link>
   );
 }
