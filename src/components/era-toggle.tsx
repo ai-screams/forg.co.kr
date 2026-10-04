@@ -1,53 +1,20 @@
-"use client";
-
-import { useSyncExternalStore } from "react";
-
-import { DEFAULT_ERA, ERA_LABELS, ERA_STORAGE_KEY, ERAS, isEra, type Era } from "@/lib/era";
+import { DEFAULT_ERA, ERA_LABELS, ERAS } from "@/lib/era";
 
 /**
  * 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
  *
- * 외부 상태(`<html data-era>` 속성과 `localStorage`)와의 동기화는
- * React 19 표준인 `useSyncExternalStore`로 처리한다. `useEffect` +
- * `setState` 패턴은 React Compiler가 cascading render로 보고 경고하므로
- * 외부 상태 구독 패턴이 더 적합하다.
+ * Server markup only: content pages ship no React runtime
+ * (`scripts/postbuild/strip-react-runtime.mjs`), so the era script the
+ * layout inlines (`src/app/_scripts/era.js`) presses the button matching
+ * `<html data-era>`, switches and saves the era on a click and follows
+ * another tab's change. It runs before the buttons exist, so no click is lost.
  *
- * 같은 탭 안에서 여러 EraToggle 인스턴스가 동기화되도록 커스텀 이벤트
- * (`forg:era-change`)를 dispatch한다. 다른 탭의 변경은 `storage` 이벤트로
- * 받아 이 탭의 `<html data-era>`에 옮긴다.
- *
- * 눌린 버튼의 색은 React 상태가 아니라 `src/styles/eras.css`의 `data-era` 규칙이
- * 칠한다. 스크립트가 돌기 전(SSR 상태는 늘 2014)에도 저장된 시기가 켜져
- * 보이게 하기 위해서다.
+ * 눌린 버튼의 색은 `src/styles/eras.css`의 `data-era` 규칙이 칠한다. 스크립트가
+ * 돌기 전(SSR 상태는 늘 2014)에도 저장된 시기가 켜져 보이게 하기 위해서다.
+ * `aria-pressed` is the script's to set, so React leaves it alone where it
+ * still hydrates (the search page, `pnpm dev`): `suppressHydrationWarning`.
  */
-const ERA_CHANGE_EVENT = "forg:era-change";
-
-function getEraSnapshot(): Era {
-  const era = document.documentElement.dataset["era"];
-  return isEra(era) ? era : DEFAULT_ERA;
-}
-
-function getServerEraSnapshot(): Era {
-  return DEFAULT_ERA;
-}
-
-function subscribeEra(callback: () => void): () => void {
-  const onStorage = (e: StorageEvent) => {
-    if (e.key !== ERA_STORAGE_KEY || !isEra(e.newValue)) return;
-    document.documentElement.dataset["era"] = e.newValue;
-    callback();
-  };
-  window.addEventListener(ERA_CHANGE_EVENT, callback);
-  window.addEventListener("storage", onStorage);
-  return () => {
-    window.removeEventListener(ERA_CHANGE_EVENT, callback);
-    window.removeEventListener("storage", onStorage);
-  };
-}
-
 export function EraToggle() {
-  const era = useSyncExternalStore(subscribeEra, getEraSnapshot, getServerEraSnapshot);
-
   return (
     <div
       role="group"
@@ -56,29 +23,18 @@ export function EraToggle() {
     >
       {/* Three eras and the search link share a 375px phone's header row. */}
       <span className="px-1 font-mono text-forg-ghost uppercase max-[399px]:hidden">era</span>
-      {ERAS.map((candidate) => {
-        const active = era === candidate;
-        return (
-          <button
-            key={candidate}
-            type="button"
-            aria-pressed={active}
-            data-era-option={candidate}
-            onClick={() => {
-              document.documentElement.dataset["era"] = candidate;
-              try {
-                localStorage.setItem(ERA_STORAGE_KEY, candidate);
-              } catch {
-                // private mode 등 — 무시
-              }
-              window.dispatchEvent(new Event(ERA_CHANGE_EVENT));
-            }}
-            className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink sm:min-w-12"
-          >
-            {ERA_LABELS[candidate]}
-          </button>
-        );
-      })}
+      {ERAS.map((candidate) => (
+        <button
+          key={candidate}
+          type="button"
+          aria-pressed={candidate === DEFAULT_ERA}
+          data-era-option={candidate}
+          suppressHydrationWarning
+          className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink sm:min-w-12"
+        >
+          {ERA_LABELS[candidate]}
+        </button>
+      ))}
     </div>
   );
 }

@@ -18,6 +18,7 @@ Chrome assets are in git at `public/img/chrome/` (recovered by single-URL probes
 Everything in `public/` is copied into `out/` and served, so its guide lives here, not in it (an `AGENTS.md` there was published as `/AGENTS.md`). The one exception is the image sidecars (`.manifest.json` beside each image folder, which the ETL scripts read and write there): `scripts/postbuild/drop-image-sidecars.mjs` removes them from `out/`.
 
 - `_headers` — Cloudflare Pages response headers; its comment explains why no `Content-Type` is set there.
+- `scripts/` — behaviour content pages load in place of React (`daemon-names.js`), linted as a browser script.
 - `img/chrome/` (era sets in `2001/`, `2003/`, `2014/`, the rest flat) and `img/emoticon/` (ADR-0017) are tracked in git; `img/placeholder/` holds `missing.svg` for posts and `missing-slot.svg` for `/site/` pages, where the route frames the whole slot.
 - `img/posts/` — post and site-page images. Bytes are git-ignored and served from R2, only the `.manifest.json` sidecars are tracked. Don't add files by hand: `download-images.py` writes them and `pnpm deploy:img` uploads them. Gold refers to `/img/posts/…`; `src/lib/img-base.ts` adds the R2 host.
 

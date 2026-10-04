@@ -19,12 +19,12 @@ Shared React components for the museum's chrome, era shell, board listings, and 
 | `board-rows.tsx`         | Builds each `ListRow` once for every view of a list: `indexRows`, `listingRows`, and the title cell with its comment count, marks and 본문 없음 (greyed on boards that keep posts).                                                                                                                                     |
 | `chrome-primitives.tsx`  | Pieces the 2014 and 2003 frames share: `LeftRail` / `RightRail`, `LoginBar` (the inert Login / Sign Up bar), `TBarRow`, `MenuRow`, `MobileMenu`, `InertJumpMenu` (the disabled friend-site selects; its screen-reader note names the sites and counts them).                                                            |
 | `comment-list.tsx`       | Renders a post's comments in the skin of the capture they came from (`captureSkin`): `kritz` (Zeroboard), `webbus` (Gnuboard4), or `plain` (Gnuboard5/forg.kr).                                                                                                                                                         |
-| `daemon-name.tsx`        | Client component: one random daemon name per seed, drawn in the browser.                                                                                                                                                                                                                                                |
+| `daemon-name.tsx`        | A guest's name on a `daemonGuestNames` board: `<span data-daemon={seed}>`, which `public/scripts/daemon-names.js` redraws on every view, one name per seed.                                                                                                                                                             |
 | `era-chrome-2001.tsx`    | 2001-era chrome: `FrameTop2001` (forg_t, the banner and 14-button menu) that `era-shell.tsx` uses. The menus of all three frames are data in `lib/era-menus.ts`.                                                                                                                                                        |
 | `era-chrome-2003.tsx`    | 2003-era chrome: `FrameTop2003`, `FrameLeft2003` (sidebar with its Friend Site menu) and `FrameBottom2003` (counter and search strip) that `era-shell.tsx` composes.                                                                                                                                                    |
 | `era-chrome-2014.tsx`    | 2014-era chrome: `FrameTop2014` (logo, login bar, 7-button menu, mobile menu), `FrameLeft2014` (game-category sidebar) and `FrameBottom2014` (visitor counter), from the 2014-12-18 capture.                                                                                                                            |
 | `era-shell.tsx`          | The five-column frame (`10 / 100 / 680 / 7 / *`) every route renders inside. Renders content once and swaps only the era chrome via `.era-2014-only` / `.era-2003-only` CSS classes.                                                                                                                                    |
-| `era-toggle.tsx`         | Client component: the 2014 · 2003 · 2001 toggle button group. Reads/writes `<html data-era>` and `localStorage`.                                                                                                                                                                                                        |
+| `era-toggle.tsx`         | The 2014 · 2003 · 2001 toggle button group, server markup; the layout's inline `src/app/_scripts/era.js` presses the buttons and reads/writes `<html data-era>` and `localStorage`.                                                                                                                                     |
 | `home-2014.tsx`          | 2014-era home content (`Home2014Content`, the eight-box grid of latest posts from the 2014-12-18 capture). Box labels are the boards' `nameKr`.                                                                                                                                                                         |
 | `home-2001.tsx`          | 2001-era home content (`Home2001Content`, forg_b, the August 2001 front page). Artwork from `public/img/chrome/2001/`.                                                                                                                                                                                                  |
 | `home-2003.tsx`          | 2003-era home content (`Home2003Content`, frame-main-2003: the artwork between the m*\* and r*\* board boxes).                                                                                                                                                                                                          |
@@ -49,7 +49,7 @@ None.
 ### Working In This Directory
 
 - Don't branch a component on era in JS. Use `bg-forg-gold` (era-invariant Tailwind utility) or `bg-(--era-page-bg)` (era-specific CSS var) — never both styles for the same concept. See `.claude/rules/era-and-ui.md`.
-- `era-toggle.tsx` subscribes to DOM/`localStorage` state via `useSyncExternalStore`, not `useEffect` + `setState` — the React Compiler lint flags the latter as a cascading-render anti-pattern. Mirror this pattern for any other DOM-as-state subscription added here.
+- No component here is a client component: content pages ship without the React runtime (`scripts/postbuild/strip-react-runtime.mjs`), so `era-toggle.tsx` and `daemon-name.tsx` render server markup: the era buttons' behaviour is the layout's inline `src/app/_scripts/era.js`, and `daemon-name.tsx` loads `public/scripts/daemon-names.js` with `<script async src>` (React 19 hoists it into `<head>` once). Do the same for new behaviour (inline when a click must work before the page finishes loading); `src/client-components.test.ts` fails on a `"use client"` file outside `/search/`.
 - `era-shell.tsx` renders page content once; only the home page passes separate `content2014`/`content2003` props because its exhibit genuinely differs per era. Don't duplicate a post or board body per era — it doubles the HTML of thousands of static pages for nothing.
 - `link.tsx` renders a plain `<a>`, not next/link: the RSC payload `.txt` files are stripped at `postbuild` (Cloudflare Pages' 20,000-file cap), so client navigation could only 404 and fall back to a full load. Use the wrapper for in-app links; it reaches `/site/` pages (route-handler documents) like any other.
 - Skins come from `lib/skins.ts`: a board list from its board (`boardSkin(meta)`), a post's comments from the capture they came from (`captureSkin(post)`). The two differ for 919 posts — Zeroboard-era captures on boards indexed as Gnuboard4 — and that is deliberate; don't "fix" one to the other. Never hardcode a skin per board or per component.
@@ -84,7 +84,7 @@ Visual regressions (era toggle, mobile reflow) are checked manually per `.claude
 - `@/lib/boards` — board metadata, engine, `BoardId` type.
 - `@/lib/chrome` — `chromeUrl` for recovered Wayback chrome assets.
 - `@/lib/dates` — `formatShortDate`, `formatKoreanDateTime`, `formatWaybackTs`, `isUnknownDate`.
-- `@/lib/era` — `DEFAULT_ERA`, `ERA_STORAGE_KEY`, `ERAS`, `ERA_LABELS`, `isEra`, `Era` type.
+- `@/lib/era` — `DEFAULT_ERA`, `ERA_STORAGE_KEY`, `ERAS`, `ERA_LABELS`, `Era` type.
 - `@/lib/img-base` — `withImgBase` / `withImgBaseEverywhere` for rewriting recovered image URLs.
 - `@/lib/posts` — `getRecentPostEntries`, `AdjacentPosts` type.
 - `@/lib/skins` — `boardSkin`, `captureSkin`, `isHot`.
@@ -92,6 +92,6 @@ Visual regressions (era toggle, mobile reflow) are checked manually per `.claude
 
 ### External
 
-- `react` 19 (`useSyncExternalStore`, `Fragment`, `ReactNode`).
+- `react` 19 (`Fragment`, `ReactNode`).
 
 <!-- MANUAL: Any manually added notes below this line are preserved on regeneration -->

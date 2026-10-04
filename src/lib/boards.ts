@@ -46,7 +46,7 @@ export interface BoardMeta {
   continues?: readonly string[];
   /**
    * The board showed every non-member under a random Ultima Online daemon
-   * name, drawn again on each view (`src/lib/daemon-names.ts`).
+   * name, drawn again on each view (`public/scripts/daemon-names.js`).
    */
   daemonGuestNames?: true;
   /**

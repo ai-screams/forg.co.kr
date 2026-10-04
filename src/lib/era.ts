@@ -15,11 +15,6 @@ export const DEFAULT_ERA: Era = "2014";
 /** 사용자 선호를 영속화할 localStorage 키. */
 export const ERA_STORAGE_KEY = "forg.era";
 
-/** 알 수 없는 값을 안전하게 Era로 좁힌다. */
-export function isEra(value: unknown): value is Era {
-  return typeof value === "string" && (ERAS as readonly string[]).includes(value);
-}
-
 /** 사람이 읽는 시기 라벨 (UI 노출용). */
 export const ERA_LABELS: Record<Era, string> = {
   "2014": "2014",

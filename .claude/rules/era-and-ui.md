@@ -7,11 +7,11 @@ paths:
 
 ## Era toggle
 
-- `<html data-era="2014" | "2003" | "2001">` is the single source of truth: set by SSR (`src/app/layout.tsx`), patched before hydration by an inline script reading `localStorage["forg.era"]`.
+- `<html data-era="2014" | "2003" | "2001">` is the single source of truth: set by SSR (`src/app/layout.tsx`), patched before the page paints by the inline era script (`src/app/_scripts/era.js`) reading `localStorage["forg.era"]`.
 - Styles live in `src/styles/` (`tokens.css`, `eras.css`, `base.css`), imported by `src/app/globals.css`, which also declares the cascade layers; the museum's own rules go in `@layer museum`, after Tailwind's `utilities`.
 - Era-invariant tokens are in `@theme` in `src/styles/tokens.css` (`forg-gold`, `font-forg`, …); era-specific ones in `:root[data-era="…"]` (`--era-page-bg`, …). Use `bg-forg-gold` or `bg-(--era-page-bg)` — never both styles for one concept.
 - Visibility: `.era-2014-only` / `.era-2003-only` / `.era-2001-only`, plus `.era-not-2001` for the 2014/2003 side columns. 2001 centres a 790px column (`.forg-shell` / `.forg-shell-main` in `src/styles/eras.css`); 2014 and 2003 keep the 10/100/680/7/\* frame.
-- `<EraToggle>` uses `useSyncExternalStore`, not `useEffect + setState` (the React Compiler lint flags the latter). Mirror it for any DOM-as-state subscription. Its pressed colour comes from the `[data-era-option]` rules in `src/styles/eras.css`, so the saved era is lit before hydration; another tab's change arrives as a `storage` event that sets `data-era`.
+- Content pages ship no React runtime: `scripts/postbuild/strip-react-runtime.mjs` removes the RSC payload and the Next scripts from every page but `/search/`. So `<EraToggle>` and `<DaemonName>` are server markup and their behaviour is a plain script: `src/app/_scripts/era.js`, inlined at the top of every page by the layout, applies the saved era, handles the era buttons from the first click (switch, save, press) and follows another tab's `storage` event; `public/scripts/daemon-names.js` draws the guests' names. Add behaviour the same way: a client component outside `/search/` renders but never runs, and `src/client-components.test.ts` fails on one. The toggle's pressed colour comes from the `[data-era-option]` rules in `src/styles/eras.css`, so the saved era is lit before any script runs.
 - Era-specific `<img>`s carry `loading="lazy"`: a hidden era's images then never load, and React does not emit `<link rel=preload>` for them.
 - Colours are **OKLCH** with the original sRGB hex in an adjacent comment — except the original skins' colours in `src/styles/skins.css`, which stay hex: they are read off the captures like the pixel sizes, and OKLCH would round through `lab()`. Name a skin colour there (`bg-zb40-rule`) instead of writing `bg-[#e0e0e0]` in a component; `pnpm lint` rejects a hex class in any string under `src/` (`eslint.config.mjs`).
 
@@ -19,7 +19,7 @@ paths:
 
 The 2001 era (ADR-0019) touched these; a new one touches the same:
 
-1. `src/lib/era.ts` — `ERAS` (the layout's pre-hydration script and `<EraToggle>` read it) and `ERA_LABELS`.
+1. `src/lib/era.ts` — `ERAS` (the layout's inline script and `<EraToggle>`'s buttons come from it) and `ERA_LABELS`.
 2. `src/styles/eras.css` — the `:root[data-era="…"]` tokens, `.era-…-only` visibility, and the toggle's `[data-era-option]` pressed colour.
 3. The frame — `era-chrome-….tsx` with `FrameTop…` (plus `FrameLeft…` / `FrameBottom…` if the era had those frames), slotted into `era-shell.tsx`; its menus and link lists go in `src/lib/era-menus.ts`, where `era-menus.test.ts` checks the paths.
 4. The home — `home-….tsx` (`Home…Content`), handed to `<EraShell>` by `src/app/page.tsx` as a new `content…` prop.
