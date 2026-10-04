@@ -16,6 +16,14 @@ const PAGEFIND_BASE_RAW = process.env["NEXT_PUBLIC_PAGEFIND_BASE"] ?? "/pagefind
 const PAGEFIND_BASE = PAGEFIND_BASE_RAW.endsWith("/") ? PAGEFIND_BASE_RAW : `${PAGEFIND_BASE_RAW}/`;
 const PAGEFIND_JS = `${PAGEFIND_BASE}pagefind.js`;
 
+/** How long the runtime may take to load before the page calls it unavailable. */
+const LOAD_TIMEOUT_MS = 15_000;
+
+/** How long a search may run before the page says it failed. A slow first
+ *  search also loads the wasm and an index chunk; a runtime whose wasm did
+ *  not load never answers at all. */
+const SEARCH_TIMEOUT_MS = 15_000;
+
 /** Load the Pagefind runtime; it only exists after the postbuild step. */
 async function loadPagefind(): Promise<PagefindApi | null> {
   try {
@@ -25,7 +33,7 @@ async function loadPagefind(): Promise<PagefindApi | null> {
   }
 }
 
-type PagefindState =
+export type PagefindState =
   | { status: "loading" }
   | { status: "ready"; api: PagefindApi }
   | { status: "unavailable" };
@@ -38,12 +46,30 @@ type PagefindState =
 export function usePagefind(): PagefindState {
   const [pagefind, setPagefind] = useState<PagefindState>({ status: "loading" });
   preloadModule(PAGEFIND_JS);
-  useEffect(() => {
-    void loadPagefind().then((api) => {
-      setPagefind(api ? { status: "ready", api } : { status: "unavailable" });
-    });
-  }, []);
+  useEffect(() => watchLoad(loadPagefind(), setPagefind), []);
   return pagefind;
+}
+
+/**
+ * Reports the runtime's state once `load` settles. Past LOAD_TIMEOUT_MS
+ * without an answer it reports `unavailable`; a runtime that arrives after
+ * that still becomes `ready`. Returns the effect's cleanup, after which
+ * nothing is reported.
+ */
+export function watchLoad(
+  load: Promise<PagefindApi | null>,
+  report: (state: PagefindState) => void,
+): () => void {
+  let active = true;
+  const timer = setTimeout(() => report({ status: "unavailable" }), LOAD_TIMEOUT_MS);
+  void load.then((api) => {
+    clearTimeout(timer);
+    if (active) report(api ? { status: "ready", api } : { status: "unavailable" });
+  });
+  return () => {
+    active = false;
+    clearTimeout(timer);
+  };
 }
 
 // A static page's URL does not change under it, so there is nothing to
@@ -97,7 +123,7 @@ function toResult(item: PagefindResultData): SearchResult {
 }
 
 /** The last finished search. */
-interface Found {
+export interface Found {
   query: string;
   results: SearchResult[];
   failed?: true;
@@ -106,8 +132,6 @@ interface Found {
 /**
  * Runs `query` (debounced) once the runtime is ready and keeps the last
  * finished search; its results stay on screen while a newer one runs.
- * Pagefind answers searches in the order they were asked, so the last to
- * finish is the newest query.
  */
 export function usePagefindSearch(pagefind: PagefindState, query: string): Found | null {
   const [found, setFound] = useState<Found | null>(null);
@@ -115,15 +139,40 @@ export function usePagefindSearch(pagefind: PagefindState, query: string): Found
   useEffect(() => {
     const q = debouncedQuery.trim();
     if (!q || pagefind.status !== "ready") return;
-    pagefind.api
-      .search(q)
-      .then(({ results: raw }) => Promise.all(raw.slice(0, 30).map((r) => r.data())))
-      .then(
-        (items) => setFound({ query: q, results: items.map(toResult) }),
-        () => setFound({ query: q, results: [], failed: true }),
-      );
+    return startSearch(pagefind.api, q, setFound);
   }, [debouncedQuery, pagefind]);
   return found;
+}
+
+/**
+ * Runs one search and reports what it found. Past SEARCH_TIMEOUT_MS it
+ * reports a failure; results that arrive after that still replace it.
+ * Returns the effect's cleanup: once the query has moved on, this search
+ * reports nothing, so a slow older query cannot replace a newer one's
+ * results.
+ */
+export function startSearch(
+  api: PagefindApi,
+  query: string,
+  report: (found: Found) => void,
+): () => void {
+  let active = true;
+  const timer = setTimeout(() => report({ query, results: [], failed: true }), SEARCH_TIMEOUT_MS);
+  const settle = (found: Found) => {
+    clearTimeout(timer);
+    if (active) report(found);
+  };
+  api
+    .search(query)
+    .then(({ results: raw }) => Promise.all(raw.slice(0, 30).map((r) => r.data())))
+    .then(
+      (items) => settle({ query, results: items.map(toResult) }),
+      () => settle({ query, results: [], failed: true }),
+    );
+  return () => {
+    active = false;
+    clearTimeout(timer);
+  };
 }
 
 /**
