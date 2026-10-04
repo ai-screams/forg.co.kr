@@ -5,19 +5,25 @@
  * the HTML verbatim by `document.ts`.
  */
 
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
 import type { SitePage } from "@/lib/site-pages";
+
+/**
+ * The longer pieces are files in `assets/`, read once at build. They go into
+ * every document byte for byte, so Prettier leaves them alone (formatting
+ * them would change all 1,256 documents); ESLint still checks the scripts.
+ */
+const ASSETS = path.join(process.cwd(), "src", "app", "site", "_render", "assets");
+// Line endings as a template literal had them: LF, whatever the checkout.
+const read = (file: string) =>
+  readFileSync(path.join(ASSETS, file), "utf8").replaceAll("\r\n", "\n");
 
 // `!important` throughout: the archived page's own CSS follows this block and
 // must not be able to restyle or hide the bar (rules naming it are also
 // dropped by the ETL).
-export const BAR_CSS = `
-#forg-museum-bar{font:12px/1.6 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif!important;
-background:#2b2b2b!important;color:#eee!important;padding:4px 10px!important;display:flex!important;
-flex-wrap:wrap!important;gap:4px 12px!important;align-items:center!important;visibility:visible!important}
-#forg-museum-bar a{color:#ffc73b!important;text-decoration:underline!important}
-#forg-museum-bar b{color:#ffc73b!important}
-#forg-museum-bar select{font:inherit!important;color:#222!important;background:#eee!important;border:1px solid #888!important;margin:0 0 0 4px!important;padding:0 2px!important;width:auto!important;height:auto!important}
-html.in-frame #forg-museum-bar{display:none!important}`;
+export const BAR_CSS = read("bar.css");
 
 export const IN_FRAME_SCRIPT =
   "if(window.top!==window.self)document.documentElement.className+=' in-frame';";
@@ -27,11 +33,7 @@ export const IN_FRAME_SCRIPT =
 // did — this frame (`self`), the frame around it (`parent`) or the named
 // window `win1` (`blank`). Header and separator options carry no `value` and do
 // nothing, where the original would have tried to open their text.
-export const GOTO_SCRIPT = `document.querySelectorAll("select[data-goto]").forEach(function(s){
-s.addEventListener("change",function(){var o=s.options[s.selectedIndex];
-if(!o.hasAttribute("value"))return;
-var t=s.getAttribute("data-goto");
-if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:window).location.href=o.value;});});`;
+export const GOTO_SCRIPT = read("goto.js");
 
 // The "Catalog*******" pop-up list on the Diablo item and UO skill guides
 // (`font#combos` + `div#myDIV`, "FlatStyle PopUp ComboList" in their script).
@@ -57,26 +59,8 @@ if(t==="blank")window.open(o.value,"win1");else(t==="parent"?window.parent:windo
 // arrow cell on the right that turns the links' orange while the list is
 // open. Without script the class is never set and the list stays visible.
 export const COMBO_HEAD_SCRIPT = "document.documentElement.className+=' forg-combo';";
-export const COMBO_CSS = `#combos{display:inline-block;box-sizing:border-box;cursor:pointer;position:relative;text-align:left;padding-left:6px}
-#combos::before{content:"";position:absolute;top:0;bottom:0;right:14px;border-left:1px solid #666}
-#combos::after{content:"";position:absolute;right:3px;top:50%;margin-top:-2px;border:4px solid transparent;border-top-color:#666;border-bottom:0}
-#combos[aria-expanded=true]::after{border-top-color:#ef5900}
-#myDIV{box-sizing:border-box;height:auto}
-html.forg-combo #myDIV{visibility:hidden}
-html.forg-combo #myDIV.forg-open{visibility:visible}`;
-export const COMBO_SCRIPT = `(function(){var c=document.getElementById("combos"),m=document.getElementById("myDIV");
-c.tabIndex=0;m.tabIndex=-1;c.setAttribute("role","button");c.setAttribute("aria-controls","myDIV");c.setAttribute("aria-expanded","false");
-function show(){var r=c.getBoundingClientRect();m.style.left="0px";m.style.top="0px";var o=m.getBoundingClientRect();
-m.style.left=(r.left-o.left)+"px";m.style.top=(r.bottom-o.top)+"px";m.classList.add("forg-open");c.setAttribute("aria-expanded","true");}
-function hide(){m.classList.remove("forg-open");c.setAttribute("aria-expanded","false");}
-[c,m].forEach(function(e){
-e.addEventListener("pointerenter",show);
-e.addEventListener("pointerleave",function(v){if(v.pointerType==="mouse"&&!document.querySelector("#combos:focus-visible,#myDIV :focus-visible"))hide();});
-e.addEventListener("focusin",show);
-e.addEventListener("focusout",function(v){if(!m.contains(v.relatedTarget))hide();});});
-document.addEventListener("pointerdown",function(v){if(!c.contains(v.target)&&!m.contains(v.target))hide();});
-document.addEventListener("keydown",function(v){if(v.key!=="Escape")return;if(m.contains(document.activeElement))c.focus();hide();});
-window.addEventListener("resize",function(){if(m.classList.contains("forg-open"))show();});})();`;
+export const COMBO_CSS = read("combo.css");
+export const COMBO_SCRIPT = read("combo.js");
 
 // An image Wayback never kept fills the slot the page gave it, in the
 // placeholder's own colours, so a column of menu buttons keeps its rhythm
@@ -85,8 +69,7 @@ window.addEventListener("resize",function(){if(m.classList.contains("forg-open")
 // those words instead (02g). The box sits on the baseline as the picture did
 // (an inline block that hides its overflow has its bottom edge as its
 // baseline), with its words centred by a line height of the slot's (02g).
-export const PLACEHOLDER_CSS = `img[data-recovery="missing"]{background:#f5f1e8;outline:1px dashed #a89e85;outline-offset:-1px;object-fit:contain}
-.forg-missing{display:inline-block;text-align:center;box-sizing:border-box;max-width:100%;padding:0 2px;overflow:hidden;white-space:nowrap;vertical-align:baseline;background:#f5f1e8;outline:1px dashed #a89e85;outline-offset:-1px;color:#6b614b;font:bold 11px/1.2 Verdana,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}`;
+export const PLACEHOLDER_CSS = read("placeholder.css");
 
 // The archived documents are fixed-width table layouts (630px and up, some
 // over 2000px) made for a desktop window, and forg had no mobile site to be
@@ -97,14 +80,7 @@ export const PLACEHOLDER_CSS = `img[data-recovery="missing"]{background:#f5f1e8;
 // frame keeps its layout at any width: the frame sets it (the 2003
 // frameset's columns are 100 and 680px wide), not the phone.
 export const VIEWPORT = "width=device-width, initial-scale=1";
-export const NARROW_CSS = `@media (max-width:799px){
-html:not(.in-frame) body{margin:8px!important;min-width:0!important}
-html:not(.in-frame) table{width:100%!important;max-width:100%!important;height:auto!important}
-html:not(.in-frame) td,html:not(.in-frame) th{width:auto!important;height:auto!important;white-space:normal!important}
-html:not(.in-frame) img{max-width:calc(100vw - 16px)!important;height:auto!important}
-html:not(.in-frame) [style*="position:absolute"],html:not(.in-frame) [style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
-body *{overflow-wrap:break-word;word-break:break-word}
-}`;
+export const NARROW_CSS = read("narrow.css");
 
 // A doctype that puts the browser in the mode it drew the capture in (02g,
 // RENDERING MODE): none for quirks mode, as most of the originals had none.

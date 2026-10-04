@@ -1,0 +1,8 @@
+
+#forg-museum-bar{font:12px/1.6 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif!important;
+background:#2b2b2b!important;color:#eee!important;padding:4px 10px!important;display:flex!important;
+flex-wrap:wrap!important;gap:4px 12px!important;align-items:center!important;visibility:visible!important}
+#forg-museum-bar a{color:#ffc73b!important;text-decoration:underline!important}
+#forg-museum-bar b{color:#ffc73b!important}
+#forg-museum-bar select{font:inherit!important;color:#222!important;background:#eee!important;border:1px solid #888!important;margin:0 0 0 4px!important;padding:0 2px!important;width:auto!important;height:auto!important}
+html.in-frame #forg-museum-bar{display:none!important}
