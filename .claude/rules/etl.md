@@ -24,6 +24,7 @@ Korean decode: **CP949 first, EUC-KR fallback with `errors="replace"`** — capt
 
 - Don't re-run a post parser over existing gold (`--force`, or for `02`/`02b` a silver file newer than its post, as after `01-decode.py --force`) — it rewrites the body from the capture and undoes Phase F's image rewrites and, for Zeroboard comments, the emoticon store. Patch fields with a targeted script instead (`05-repair-zeroboard-meta.py` is the model).
 - A re-parsed post that lacks `createdAtApprox` also gains the key (the schema now always writes it), a diff on top of any body change. 13,191 of 14,837 gold posts lack it (`grep -L '"createdAtApprox"' -r src/content/posts --include='*.json' | wc -l`, 2026-10-04).
+- Changing a post parser: `scripts/etl/tests/` (CI) checks a sample of captures; `scripts/etl/check_parsers.py` compares the change with `HEAD` on every silver capture (local). Run both before committing.
 - Don't re-run `extract-image-urls.py` for a few new posts — the manifest drifts; append the entries instead.
 - A bad character can be in the capture itself (map coordinates' `?` is a literal 0x3F in every 2001–2007 capture) — check raw bronze bytes before blaming decoding.
 - Site captures after 2016-08-31 are a 2023 parking page of a new registrant — ignored by `LAST_TS`.
