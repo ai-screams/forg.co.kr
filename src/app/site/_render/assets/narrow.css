@@ -5,4 +5,5 @@ html:not(.in-frame) td,html:not(.in-frame) th{width:auto!important;height:auto!i
 html:not(.in-frame) img{max-width:calc(100vw - 16px)!important;height:auto!important}
 html:not(.in-frame) [style*="position:absolute"],html:not(.in-frame) [style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
+html.forg-fit-shrink img[data-forg-big],html.forg-fit-shrink input,html.forg-fit-shrink select,html.forg-fit-shrink textarea{max-width:100%!important}
 }

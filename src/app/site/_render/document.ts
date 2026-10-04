@@ -19,6 +19,7 @@ import {
   COMBO_HEAD_SCRIPT,
   COMBO_SCRIPT,
   DOCTYPE,
+  FIT_SCRIPT,
   GOTO_SCRIPT,
   IN_FRAME_SCRIPT,
   NARROW_CSS,
@@ -165,14 +166,16 @@ export function renderSitePage(page: SitePage, version: SitePageVersion | null =
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
   // redirects carry no body and stay out of the index. `display:contents`
-  // keeps the wrapper out of the page's own layout.
+  // keeps the wrapper out of the page's own layout; `FIT_SCRIPT` finds it by
+  // its id to scale the document on a phone.
   const wrapper = version
-    ? `<div style="display:contents">`
-    : `<div style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
+    ? `<div id="forg-doc" style="display:contents">`
+    : `<div id="forg-doc" style="display:contents" data-pagefind-body data-pagefind-meta="title:${escapeHtml(page.title)}" data-pagefind-filter="board:site">`;
   return `${DOCTYPE[shown.mode]}<html lang="ko">${head(shown, style)}<body${bodyAttrs(shown.bodyStyle)}>
 ${museumBar(page, version)}
 ${wrapper}
 ${shown.html}
 </div>${shown.html.includes("data-goto") ? `\n<script>${GOTO_SCRIPT}</script>` : ""}${combo ? `\n<script>${COMBO_SCRIPT}</script>` : ""}
+<script>${FIT_SCRIPT}</script>
 </body></html>`;
 }

@@ -82,6 +82,28 @@ export const PLACEHOLDER_CSS = read("placeholder.css");
 export const VIEWPORT = "width=device-width, initial-scale=1";
 export const NARROW_CSS = read("narrow.css");
 
+// What the reflow leaves wider than the screen (a quarter of the documents
+// at 390px) is a table of several columns: a picture capped at the screen's
+// width beside a column of menu buttons, or a main page's three columns.
+// Images keep the screen as their cap rather than their cell so that a 110px
+// button is not squeezed to 49px (a picture capped by its cell adds nothing
+// to its column's minimum width). Below 800px the script measures the page
+// after the reflow. If it is wider than the screen, images wider than 120px
+// shrink with their cells (`forg-fit-shrink`), which fits a map beside its
+// menu at the text's own size. Shrinking is undone when it leaves an image
+// of 300px or less (a heading, a button) under 60% of its size, as on the
+// three-column pages. Whatever is still too wide is the document, not the
+// museum bar, scaled down to the screen's width with its layout kept. The
+// page is measured once it is parsed, before its images arrive (an image
+// that sets the layout carries its width), again once every image has
+// loaded or failed, and when the screen's width changes. A failed image is
+// drawn at its width attribute and does not shrink with its cell, so a page
+// that fitted by shrinking needs the zoom after all (PR previews have no
+// images; a phone may block them).
+// The documents in the museum's frames (`diablo`, `uo`, `wow`, `holy/index`,
+// all fixed-width columns) fit their frames, so there is no frame exception.
+export const FIT_SCRIPT = read("fit.js");
+
 // A doctype that puts the browser in the mode it drew the capture in (02g,
 // RENDERING MODE): none for quirks mode, as most of the originals had none.
 export const DOCTYPE: Record<SitePage["mode"], string> = {
