@@ -16,4 +16,5 @@
 - pre-commit: `lint-staged` (eslint --fix, prettier, secretlint; markdownlint on `.md`). Hook scripts source `~/.nvm/nvm.sh`; copy that prelude into any new hook.
 - commit-msg: commitlint, Conventional Commits, header ≤100, body line ≤120.
 - pre-push: `pnpm typecheck && pnpm lint`.
-- CI (`.github/workflows/ci.yml`) runs lint, typecheck, format, build, knip and size on push/PR; `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` opts runner JS actions into Node 24.
+- Tests: `pnpm test` (Vitest, `src/**/*.test.ts`, node environment, `@/` alias in `vitest.config.mts`).
+- CI (`.github/workflows/ci.yml`) runs lint, typecheck, unit tests, format, build, knip and size on push/PR; `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` opts runner JS actions into Node 24.

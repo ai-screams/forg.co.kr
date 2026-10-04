@@ -50,8 +50,8 @@ Counts as of 2026-10-01: 14,837 posts (`posts/`), 605 index chunks
 
 ### Testing Requirements
 
-There is no unit-test suite in this repo (no `test` script in
-`package.json`). Content changes are verified by the build, since every
+The unit tests (`pnpm test`) do not read content. Content changes are
+verified by the build, since every
 route under `src/app/(board)/` sets `dynamicParams = false`:
 
 ```bash
