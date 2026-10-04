@@ -4,6 +4,7 @@
   "rows": [
     {
       "no": "42",
+      "board": "free",
       "title": "제가 알던 그 포그가 맞나요?",
       "author": "Binch",
       "member_no": null,
@@ -15,6 +16,7 @@
     },
     {
       "no": "10",
+      "board": "free",
       "title": "필요하다고 생각되시는 메뉴 또는 게시판을 알려주세요.",
       "author": "runup",
       "member_no": null,
@@ -26,6 +28,7 @@
     },
     {
       "no": "55",
+      "board": "free",
       "title": "십 수년 만에 오늘 울온 6개월 결제했습니다",
       "author": "사악한오공",
       "member_no": null,
@@ -37,6 +40,7 @@
     },
     {
       "no": "25",
+      "board": "free",
       "title": "복귀자분들 환영합니다.",
       "author": "태시로스",
       "member_no": null,
@@ -48,6 +52,7 @@
     },
     {
       "no": "9",
+      "board": "free",
       "title": "포그 홈페이지 리부트 중입니다.",
       "author": "runup",
       "member_no": null,
@@ -59,6 +64,7 @@
     },
     {
       "no": "71",
+      "board": "free",
       "title": "와~진짜 10년은 넘은 거 같은데요",
       "author": "anonymous",
       "member_no": null,
@@ -70,6 +76,7 @@
     },
     {
       "no": "51",
+      "board": "free",
       "title": "아니?! 포그?!",
       "author": "Pooh",
       "member_no": null,
@@ -81,6 +88,7 @@
     },
     {
       "no": "36",
+      "board": "free",
       "title": "루나 동쪽 밑에요..",
       "author": "십전서생",
       "member_no": null,
@@ -92,6 +100,7 @@
     },
     {
       "no": "28",
+      "board": "free",
       "title": "포그의 부활을 축하합니다",
       "author": "시리우스",
       "member_no": null,
@@ -103,6 +112,7 @@
     },
     {
       "no": "40",
+      "board": "free",
       "title": "헉 부활인가요^^?",
       "author": "비슈",
       "member_no": null,
@@ -114,6 +124,7 @@
     },
     {
       "no": "48",
+      "board": "free",
       "title": "헉 추억의 포그가 다시 열렸네요",
       "author": "사악한오공",
       "member_no": null,
@@ -125,6 +136,7 @@
     },
     {
       "no": "94",
+      "board": "free",
       "title": "외국서버 울온 Demise로 오세요",
       "author": "아틀라스8",
       "member_no": null,
@@ -136,6 +148,7 @@
     },
     {
       "no": "50",
+      "board": "free",
       "title": "계정이 남아있더군요",
       "author": "Pinky",
       "member_no": null,
@@ -147,6 +160,7 @@
     },
     {
       "no": "73",
+      "board": "free",
       "title": "안녕하세용~ 뉴비입니다.",
       "author": "kukin",
       "member_no": null,
@@ -158,6 +172,7 @@
     },
     {
       "no": "29",
+      "board": "free",
       "title": "축하..축하...^^",
       "author": "십전서생",
       "member_no": null,

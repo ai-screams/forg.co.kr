@@ -8,7 +8,7 @@
  * site recognisable.
  *
  * `<EraShell>` renders `children` once and swaps only the chrome per era,
- * which keeps 14,837 post pages from carrying their body twice. Every board,
+ * which keeps 14,218 post pages from carrying their body twice. Every board,
  * list page and post sits in the same padded content cell.
  */
 

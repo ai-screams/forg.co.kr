@@ -2,10 +2,26 @@
   "board": "column",
   "page": 5,
   "totalPages": 5,
-  "totalPosts": 211,
+  "totalPosts": 212,
   "totalWithPost": 167,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
+    {
+      "postId": "16",
+      "title": "여러분의 初心은?",
+      "categoryLabel": "소사리안통신",
+      "author": "공작",
+      "authorMemberNo": "2713",
+      "createdAt": "2002-04-01T19:26:35",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 250,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "15",
       "title": "울온의 게임성이 한국에서 그다지 성공을 못하는이유",

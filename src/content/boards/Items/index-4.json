@@ -2,9 +2,9 @@
   "board": "Items",
   "page": 4,
   "totalPages": 20,
-  "totalPosts": 959,
+  "totalPosts": 963,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-03T07:38:36Z",
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
     {
       "postId": "765",
@@ -567,6 +567,22 @@
       "hasPost": true
     },
     {
+      "postId": "709",
+      "title": "악세 감정 부탁드려요^^",
+      "categoryLabel": null,
+      "author": "엉덩이마왕",
+      "authorMemberNo": "5683",
+      "createdAt": "2006-09-25T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 192,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
       "postId": "708",
       "title": "팔찌 감정 부탁드립니다^^;",
       "categoryLabel": null,
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 1,
       "hits": 338,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "690",
-      "title": "반지 감정 부탁드립니다.",
-      "categoryLabel": null,
-      "author": "kima",
-      "authorMemberNo": "1029",
-      "createdAt": "2006-09-15T16:26:52",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 10,
-      "attachmentCount": 1,
-      "hits": 641,
       "recommend": null,
       "era": "2003",
       "hasPost": true

@@ -1,0 +1,684 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.1 pl 1 (2002. 02. 25)
+개발자 : zero 
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 http://zeroboard.com 에서 문의 방법을 찾아주시기 바랍니다.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 기타 의문사항은 http://zeroboard.com 에서 제로보드 채널을 이용해주십시요.
+    (질문등에 대한 내용은 메일로 받지 않습니다)
+--><html>
+<head>
+<title></title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/kritz_normal/style.css" rel="StyleSheet" title="style" type="text/css"/>
+<script language="JavaScript">
+var maxW,maxH,fromX,fromY,toX,toY,adjX,adjY,zBox,zStep=0,zLink,zNew;
+
+function zoomBox(evt,zlink,maxw,maxh,tox,toy) {
+if (arguments.length > 2) zNew=1;
+scrollH=(window.pageYOffset!=null)?window.pageYOffset:document.body.scrollTop;
+maxW=maxw?maxw:window.innerWidth?innerWidth:document.body.clientWidth;
+maxH=maxh?maxh:window.innerHeight?innerHeight:document.body.clientHeight;
+toX=tox?tox:0;
+toY=(toy?toy:0)+scrollH;
+fromX=evt.pageX?evt.pageX:evt.clientX;
+fromY=(evt.pageY?evt.pageY:evt.clientY)+(document.all?scrollH:0);
+adjX=toX+evt.screenX-fromX;
+adjY=toY+evt.screenY-fromY;
+if (document.createElement && document.body.appendChild && !zBox) {
+	zBox=document.createElement("div");
+	zBox.style.position="absolute";
+	document.body.appendChild(zBox);
+} else if (document.all && !zBox) {
+	document.all[document.all.length-1].outerHTML+='<div id="zBoxDiv" style="position:absolute"></div>';
+	zBox=document.all.zBoxDiv;
+} else if (document.layers && !zBox) {
+	zBox=new Layer(maxW);
+	zBox.style=zBox;
+	}
+zLink=zlink;
+doZoom();
+}
+
+function doZoom() {
+zStep+=1;
+zPct=(10-zStep)/10
+if (document.layers) {
+	zBox.moveTo(toX+zPct*(fromX-toX),toY+zPct*(fromY-toY));
+	zBox.document.open();
+	zBox.document.write("<table width='"+maxW*(1-zPct)+"' height="+maxH*(1-zPct)+" border=2 cellspacing=0><tr><td></td></tr></table>");
+	zBox.document.close();
+	} else {
+	zBox.style.border="2px solid #999999";
+	zBox.style.left=toX+zPct*(fromX-toX);
+	zBox.style.top=toY+zPct*(fromY-toY);
+	zBox.style.width=maxW*(1-zPct);
+	zBox.style.height=maxH*(1-zPct);
+	}
+zBox.style.visibility="visible";
+if (zStep < 10) setTimeout("doZoom("+fromX+","+fromY+","+toX+","+toY+")",30);
+else {
+	zBox.style.visibility='hidden';
+	zStep=0;
+	if (zLink && !zNew) location.href=zLink.href;
+	else if (zLink && zNew) {
+		var w=window.open(zLink.href,'','width='+maxW+',height='+maxH+',left='+adjX+',top='+adjY+',scrollbars=yes');
+		zNew=null;
+		}
+	}
+
+	
+}
+
+function loadImages() { 
+if (document.getElementById) {   
+document.getElementById('hidepage').style.visibility = 'hidden'; 
+} 
+else { 
+if (document.layers) {   
+document.hidepage.visibility = 'hidden'; 
+} 
+else {   
+document.all.hidepage.style.visibility = 'hidden'; 
+      } 
+   } 
+} 
+
+</script>
+<script language="javaScript" src="/_zb/script/script_dynlayer.js" type="text/javascript"></script>
+<script language="javaScript" src="/_zb/script/script_glide.js" type="text/javascript"></script>
+<script language="JavaScript">
+n=document.layers
+ie=document.all
+function init_load() {
+	if(ie || n){
+	if(n) document.Load.visibility='hidden'
+	else Load.style.visibility='hidden'
+	}
+	DynLayerInit();
+	bar.glideTo('fast', 'slow', 0, bar.y+20, 7, 10, 'bar.glideTo(\"slow\", \"fast\", 0, -100, 7, 10);');
+	isinit = true;
+	return true
+}  
+
+</script>
+<script language="javascript">
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if(browserName == "Netscape" && browserVer >= 3){ init = "net"; }
+else { init = "ie"; }
+
+
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+
+ sn_on=new Image;
+ sn_off=new Image;
+ sn_on.src= "skin/kritz_normal/name_on.gif";
+ sn_off.src= "skin/kritz_normal/name_off.gif";
+
+ ss_on=new Image;
+ ss_off=new Image;
+ ss_on.src= "skin/kritz_normal/subject_on.gif";
+ ss_off.src= "skin/kritz_normal/subject_off.gif";
+
+ sc_on=new Image;
+ sc_off=new Image;
+ sc_on.src= "skin/kritz_normal/content_on.gif";
+ sc_off.src= "skin/kritz_normal/content_off.gif";
+
+}
+
+function OnOff(name) {
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))) {
+  if(document.search[name].value=='on')
+  {
+   document.search[name].value='off';
+   ImgSrc=eval(name+"_off.src");
+   document[name].src=ImgSrc;
+  }
+  else
+  {
+   document.search[name].value='on';
+   ImgSrc=eval(name+"_on.src");
+   document[name].src=ImgSrc;
+  }
+ }
+}
+</script>
+<script language="javascript">
+  function reverse() {
+   var i, chked=0;
+   if(confirm('목록을 반전하시겠습니까?\n\n반전을 원하지 않는다면 취소를 누르시면 다음으로 넘어갑니다'))
+   {
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked) { document.list[i].checked=false; }
+      else { document.list[i].checked=true; }
+     }
+    }
+   }
+   for(i=0;i<document.list.length;i++)
+   {
+    if(document.list[i].type=='checkbox')
+    {
+     if(document.list[i].checked) chked=1;
+    }
+   }
+   if(chked) {
+    if(confirm('선택된 항목을 보시겠습니까?'))
+     {
+      document.list.selected.value='';
+      document.list.exec.value='view_all';
+      for(i=0;i<document.list.length;i++)
+      {
+       if(document.list[i].type=='checkbox')
+       {
+        if(document.list[i].checked)
+        {
+         document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+        }
+       }
+      }
+      document.list.submit();
+      return true;
+     }
+    }
+   }
+
+ function delete_all() {
+  var i, chked=0;
+  for(i=0;i<document.list.length;i++)
+  {
+   if(document.list[i].type=='checkbox')
+   {
+    if(document.list[i].checked) chked=1;
+    }
+   }
+  if(chked)
+  {
+    document.list.selected.value='';
+    document.list.exec.value='delete_all';
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked)
+      {
+       document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+      }
+     }
+    }
+    window.open("select_list_all.php?id=Tbalhae&selected="+document.list.selected.value,"Tbalhae_select_list","width=150,height=110,toolbars=no,resize=no,scrollbars=no");
+  }
+  else {alert('정리할 게시물을 선택하여 주십시요');}
+ }
+
+ function category_change() {
+  var myindex=list.category.selectedIndex;
+  document.search.category.value=list.category.options[myindex].value;
+  document.search.submit();
+  return true;
+ }
+</script>
+<script language="JavaScript">function killErrors() {return true;} window.onerror = killErrors; parent.frames[4].form1.stitle.value='지금은 방송안해요 -_-/'; parent.frames[4].on.style.display='none';</script>
+</head>
+<body bgcolor="white" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><script language="JavaScript">
+<!-- 
+var key = new Array();
+key['n'] = "/_zb/zboard.php?id=Notice";
+key['c'] = "/_zb/zboard.php?id=column";
+key['v'] = "/_zb/zboard.php?id=Events";
+key['f'] = "/_zb/zboard.php?id=UoBoard";
+key['q'] = "/_zb/zboard.php?id=Q_A";
+key['r'] = "/_zb/zboard.php?id=Role";
+key['e'] = "/_zb/zboard.php?id=UOForum";
+key['b'] = "/_zb/zboard.php?id=Sell";
+key['s'] = "/_zb/zboard.php?id=ScreenShot";
+key['k'] = "/_zb/zboard.php?category=1&id=Recall&page=1&page_num=5&sn=off&ss=off&sc=off&keyword=&select_arrange=headnum&desc=asc";
+key['t'] = "/_zb/zboard.php?id=Trash";
+key['u'] = "/_zb/zboard.php?id=FunBoard";
+key['d'] = "/_zb/zboard.php?id=events_date";
+
+function getKey(keyStroke) {
+   eventChooser = event.keyCode;
+   which = String.fromCharCode(eventChooser).toLowerCase();
+   for (var i in key) 
+   if ( (event.srcElement.tagName != 'INPUT') && (event.srcElement.tagName != 'TEXTAREA') ){ 
+   	if (which == i) {
+   		if (opener) opener.parent.frames[3].location = key[i];
+   		else parent.frames[3].location = key[i];
+   	}
+   }
+}
+document.onkeypress = getKey;
+// -->
+</script><div align="center">
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td>
+<font class="ver17px" color="#292929">Balhae Trade Board</font>
+<img align="left" border="0" height="32" hspace="7" src="/images/buy_logo.gif" width="32"/><img border="0" height="3" src="/images/_cl.gif" width="1"/>
+<br/><font color="636363">울온발해장터란입니다.
+<br/>아이템사기로 명예를 잃는 행위는 삼가 합시다.</font>
+</td></tr>
+</table>
+<br/>
+<!-- HTML 시작 -->
+<!-- 
+<table border=0 cellspacing=0 cellpadding=0 width=95%>
+<tr>
+  <td width=1></td>
+  <td valign=bottom style=font-family:Tahoma;font-size:7pt;color:black>
+    total <font color=#404040><b>693</b></font>
+  </td>
+  <td valign=bottom nowrap width=5%>
+    <Zeroboard <span onClick="swapImage('memozzz','','skin/kritz_normal/member_memo_off.gif',0)"></span></a><br>
+    <Zeroboard <img src=skin/kritz_normal/images/setup_config.gif border=0 align=absmiddle></a><a onfocus=blur() href='member_join.php?id=Tbalhae&page=32&category=&sn=off&ss=on&sc=on&keyword=&select_arrange=headnum&desc=asc' onclick="zoomBox(event,this,390,460,10,10);return false"><img src=skin/kritz_normal/images/setup_signin.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal/images/setup_userinfo.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal/images/setup_memobox.gif border=0 align=absmiddle></a><a onfocus=blur() href='login.php?id=Tbalhae&page=32&category=&sn=off&ss=on&sc=on&keyword=&select_arrange=headnum&desc=asc&s_url=%2F_zb%2Fzboard.php%3Fid%3DTbalhae%26page%3D32%26category%3D%26sn%3Doff%26ss%3Don%26sc%3Don%26keyword%3D%26select_arrange%3Dheadnum%26desc%3Dasc%26no%3D7' onclick="zoomBox(event,this,280,170,10,10);return false"><img src=skin/kritz_normal/images/setup_login.gif border=0 align=absmiddle></a><Zeroboard <img src=skin/kritz_normal/images/setup_logout.gif border=0 align=absmiddle></a><img src=skin/kritz_normal/last.gif width=1 height=14 border=0>
+  </td>
+</tr>
+</table>
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td bgcolor="#ffffff" colspan="2" height="1"><img height="1" src="images/t.gif"/></td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" height="20" style="border:1px solid #dfdfdf;width:100%;background:white url(skin/kritz_normal/title_bg.jpg);height:20px">
+<tr>
+<td width="3"></td><td align="left" nowrap="" style="padding-left:4px"><b>발해 지피 구합니다</b></td><td align="right"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td align="left" height="23" style="padding-left:10px" valign="center">
+<font style="font-family:Verdana;font-size:10px;"> write by  <font color="#EF5900"><a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=20059" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">changwonna</a></font> 
+ 			<!--
+ 			</b> in <b></b>
+
+ 			-->
+ 			 at <span title="2003년 03월 26일 22시 20분 59초">2003/03/26</span> </font>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td bgcolor="#ffffff" height="100" style="word-break:break-all;padding:10px;" valign="top">
+<span style="line-height:160%">
+
+     			
+     			
+     			 2000만~3000만  정도 살생각이구요 <br/>
+ 150:1 정도로 생각 하구 있습니다 <br/>
+ 쪽지 남겨 주시면 보는즉시 연락 드리겠습니다<br/>
+ 그럼 즐온 하십시요<br/>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+</td>
+</tr>
+</table>
+<div align="right" style="font-family:Tahoma;font-size:7pt;color:999999;"></div>
+</span>
+</td>
+</tr>
+<!--<tr><td height=1 background=skin/kritz_normal/dot_line.gif><img src=images/t.gif height=1></td></tr><tr><td ><img src=images/t.gif height=3><br>&nbsp;<img src=skin/kritz_normal/i_files.gif  border=0 align=absmiddle hspace=2><font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-size:7pt;>Download : <b>0</b></font></font></td></tr>	-->
+<!--	<tr>	<td ><img src=images/t.gif height=3><br>&nbsp;<img src=skin/kritz_normal/i_files.gif  border=0 align=absmiddle hspace=2><font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-size:7pt;>Download : <b>0</b></font></font></td></tr>-->
+<!--<tr><td ><img src=images/t.gif height=3><br>&nbsp;<img src=skin/kritz_normal/i_links.gif  border=0 align=absmiddle hspace=2><font class=thm8></font></td></tr>-->
+<!--<tr><td ><img src=images/t.gif height=3><br>&nbsp;<img src=skin/kritz_normal/i_links.gif  border=0 align=absmiddle hspace=2><font class=thm8></font></td></tr>-->
+</table>
+<br/>
+<!-- 간단한 답글 시작하는 부분 -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<!-- 이전 / 다음글 출력 -->
+<table border="0" cellpadding="" cellspacing="0" width="95%">
+<tr><td bgcolor="#404040" colspan="10"><img height="1" src="images/t.gif"/></td></tr>
+</table>
+<!--<table border=0 width=95% cellspacing=0 cellpadding=0>
+
+<tr align=center height=22>
+  <td width=8% style='word-break:break-all;' style=font-family:Tahoma;font-size:7pt; bgcolor=#f2f2f2><b>P</b>rev</td>
+  <td width=82% align=left style='word-break:break-all;'><img src=images/t.gif height=3><br>&nbsp; </a></td>
+  <td width=10% nowrap><img src=images/t.gif height=3><br> </td>
+</tr>
+</table>
+<table border=0 cellpadding cellspacing=0 width=95%>
+<td colspan=10 bgcolor=#404040><img src=images/t.gif height=1></td></tr>
+</table>
+-->
+<!--<table border=0 width=95% cellspacing=0 cellpadding=0>
+
+<tr align=center height=22>
+  <td width=8% style='word-break:break-all;' style=font-family:Tahoma;font-size:7pt; bgcolor=#f2f2f2><b>N</b>ext</td>
+  <td width=82% align=left style='word-break:break-all;'><img src=images/t.gif height=3><br>&nbsp; </a></td>
+  <td width=10% nowrap><img src=images/t.gif height=3><br> </td>
+</tr>
+</table>
+<table border=0 cellpadding cellspacing=0 width=95%>
+<td colspan=10 bgcolor=#404040><img src=images/t.gif height=1></td></tr>
+</table>
+-->
+<!-- 버튼 관련 출력 -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr height="23">
+<td><a class="menu" href="zboard.php?id=Tbalhae&amp;page=32&amp;page_num=22&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=7" onfocus="blur()"></a>  <zeroboard< a=""></zeroboard<></td>
+<td align="right"><zeroboard a="" edit<="">  <zeroboard a="" delete<="">  <zeroboard <="" a=""></zeroboard></zeroboard></zeroboard></td>
+</tr>
+</table>
+<!-- List Head Start -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td width="1">
+<form action="list_all.php" method="post" name="list">
+<input name="page" type="hidden" value="32"/>
+<input name="id" type="hidden" value="Tbalhae"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="22"/>
+<input name="selected" type="hidden"/>
+<input name="exec" type="hidden"/>
+<input name="keyword" type="hidden" value=""/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+</form></td></tr>
+<tr><td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;border:1px solid #dfdfdf;width:100%;background:white url(skin/kritz_normal/title_bg.jpg);height:20px">
+<tr align="center">
+<td align="center" width="20"><img border="0" src="skin/kritz_normal/title_icon.gif"/></td>
+<!--	<td align=center width=20><img src=skin/kritz_normal/title_bs.gif border=0 onclick=reverse() onfocus=blur() style=cursor:hand;></td>
+	-->
+<td align="center" width="90"><img border="0" height="1" src="images/t.gif"/><br/>Category</td>
+<td align="center" width="100"><img border="0" src="skin/kritz_normal/title_name.gif"/></td>
+<td align="left"><img border="0" src="skin/kritz_normal/title_title.gif"/></td>
+<td width="30"><img border="0" src="skin/kritz_normal/title_date.gif"/></td>
+<td width="30"><img border="0" src="skin/kritz_normal/title_hit.gif"/></td>
+</tr>
+</table>
+<!-- List Head End -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="20"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>파스</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=15143" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">hugo1000</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=20">뮤지... 프롭... 15 파스 구합니다...</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/27</td>
+<td align="center" class="thm8" width="30">53</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="18"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>일반</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=20059" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">changwonna</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=18">발해 지피 구합니다</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/27</td>
+<td align="center" class="thm8" width="30">59</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="14"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>파스</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=0" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">악동</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=14">파스 많아요 싸게팝니다</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/27</td>
+<td align="center" class="thm8" width="30">217</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="13"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>파스</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=14730" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">滅致{キㅡ-}</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=13">프로보 20파스 팝니다. 네크시약 삽니다.</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/27</td>
+<td align="center" class="thm8" width="30">73</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="12"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>부동산</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=19289" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">aim41c</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=12">말라스집터팝니다</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">113</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="11"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>일반</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=19289" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">aim41c</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=11">단창삽니다펜싱류</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">78</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="10"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>부동산</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=17085" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">어린왕자</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=10">발해 르네 캐슬 지피로 팝니다...</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">157</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="9"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>레어</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=14894" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">daha</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=9">레어및 파스, 기타 아이템 팝니다..</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">149</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/arrow.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="7"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>일반</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=20059" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">changwonna</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=7">발해 지피 구합니다</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">61</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="6"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>교환</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=18248" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">tornado9</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=6">아리랑샤드에 있는 케쓸 모형 디드</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">40</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 목록 부분 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#FEFDFD">
+<td align="center" width="20"><img align="absmiddle" border="0" src="skin/kritz_normal/old_head.gif"/></td>
+<!--           	<td align=center width=20><input type=checkbox name=cart value="4"></td>
+	-->
+<td align="center" width="90"><img height="3" src="images/t.gif"/><br/>레어</td>
+<td align="center" nowrap="" width="100"><img height="3" src="images/t.gif"/><br/> <a class="menu" href="view_info.php?id=Tbalhae&amp;member_no=18724" onclick="zoomBox(event,this,380,268,10,10);return false" onfocus="blur()" style="font-weight:normal;">balron</a></td>
+<td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><a href="zboard.php?id=Tbalhae&amp;page=32&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=4">텔러상품,골드잉갓판매</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td class="thm8" width="30">03/26</td>
+<td align="center" class="thm8" width="30">122</td>
+</tr>
+<tr>
+<td bgcolor="#F7F5F7" colspan="6" height="1"><img height="1" src="/images/t.gif"/></td>
+</tr>
+<!-- 목록 부분 끝 -->
+<!-- 마무리 부분입니다 -->
+<tr>
+<td bgcolor="#404040" colspan="7"><img height="1" src="images/t.gif"/></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td>
+<!-- 버튼 부분 -->
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+<tr>
+<td height="17" nowrap="" width="40%"><a class="menu" href="zboard.php?id=Tbalhae&amp;page=32&amp;page_num=22&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=7" onfocus="blur()">List  </a><zeroboard a="" delete&nbsp;&nbsp;<=""><a class="menu" href="/_zb/zboard.php?id=Tbalhae&amp;page=31&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()">Prev  </a><zeroboard a="" next<=""></zeroboard></zeroboard></td>
+<td align="center" class="thm8" colspan="2" nowrap="">
+<a href="/_zb/zboard.php?id=Tbalhae&amp;page=1&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[1]</font></a><font style="font-size:8pt">..<a href="/_zb/zboard.php?id=Tbalhae&amp;page=31&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[31]</font></a> <font style="font-size:8pt"><b>32</b> </font></font></td>
+<td align="right" width="40%"><zeroboardwrite< a=""></zeroboardwrite<></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!-- 검색폼 부분 ---------------------->
+<!-- 폼태그 부분;; 수정하지 않는 것이 좋습니다 -->
+<form action="/_zb/zboard.php" method="post" name="search">
+<input name="page" type="hidden" value="32"/>
+<input name="id" type="hidden" value="Tbalhae"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="22"/>
+<input name="selected" type="hidden"/>
+<input name="exec" type="hidden"/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+<input name="category" type="hidden" value=""/>
+<!----------------------------------------------->
+</form></td>
+<td>
+<table border="0" cellpadding="0" cellspcing="0" width="100%">
+<tr>
+<td align="center" colspan="2">
+<a href="javascript:OnOff('sn')" onfocus="this.blur();"><img border="0" name="sn" src="skin/kritz_normal/name_off.gif"/></a>
+<a href="javascript:OnOff('ss')" onfocus="this.blur();"><img border="0" name="ss" src="skin/kritz_normal/subject_on.gif"/></a>
+<a href="javascript:OnOff('sc')" onfocus="this.blur();"><img border="0" name="sc" src="skin/kritz_normal/content_on.gif"/></a><img height="1" src="images/t.gif" width="35"/><br/>
+<img align="absmiddle" src="skin/kritz_normal/images/search_left.gif"/><input class="input" name="keyword" size="9" style="font-size:8pt;font-family:Arial;vertical-align:top;border-left-color:#ffffff;border-right-color:#ffffff;border-top-color:black;border-bottom-color:black;height:18px;" type="text" value=""/><input align="absmiddle" border="0" src="skin/kritz_normal/images/search_right.gif" type="image"/><a class="menu" href="/_zb/zboard.php?id=Tbalhae" onfocus="blur()"><img align="absmiddle" border="0" src="skin/kritz_normal/images/search_right2.gif"/></a>
+</td>
+</tr>
+<!-- 페이지 출력 ---------------------->
+</table>
+</td></tr></table>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" height="20" width="95%">
+<tr>
+<td align="right" style="font-family:verdana,굴림;font-size:8pt;line-height:150%;letter-spacing:0px">
+<font style="font-size:10px">Copyright 1999-2001 <a href="http://www.zeroboard.com" onfocus="blur()" style="font-family:verdana,굴림;font-size:10px;font-weight:bolder;" target="_blank">Zeroboard</a> 
+           / skin by <a href="http://www.mywizz.com" onfocus="blur()" style="font-family:verdana,굴림;font-size:10px;font-weight:bolder;" target="_blank">Wizz Style</a>
+</font>
+</td>
+</tr>
+</table></table></table></table></table></table></table></table></table></table></td></tr></table></table></div></body>
+</html>
+<!--
+      -------------------------------------------------------------------
+      Zero Board Executed Time
+      -------------------------------------------------------------------
+      All StartTime : 1056171805.7537
+      End DB Excute Time : 1056171805.8022
+      EndTime : 1056171807.0313
+      -------------------------------------------------------------------
+      DB Excute Time : 0.048
+      PHP Excute Time : 1.230 
+      Total Excuted Time : 1.278
+      -------------------------------------------------------------------
+      -->

@@ -1,10 +1,10 @@
 {
   "board": "Trash",
   "page": 3,
-  "totalPages": 8,
-  "totalPosts": 368,
-  "totalWithPost": 206,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "totalPages": 9,
+  "totalPosts": 420,
+  "totalWithPost": 190,
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
     {
       "postId": "431",
@@ -114,6 +114,22 @@
       "commentCount": 19,
       "attachmentCount": 0,
       "hits": 310,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "422",
+      "title": "잡질도 플레이의 방식이다.",
+      "categoryLabel": null,
+      "author": "Sustugriel",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 14,
+      "attachmentCount": 0,
+      "hits": 214,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -295,6 +311,22 @@
       "hasPost": false
     },
     {
+      "postId": "400",
+      "title": "광복?",
+      "categoryLabel": null,
+      "author": "Eleogap",
+      "authorMemberNo": null,
+      "createdAt": "2002-08-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 16,
+      "attachmentCount": 0,
+      "hits": 197,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
       "postId": "399",
       "title": "어째서!!",
       "categoryLabel": null,
@@ -305,7 +337,7 @@
       "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 179,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -321,7 +353,7 @@
       "yearApprox": false,
       "commentCount": 13,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 172,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -759,52 +791,20 @@
       "hasPost": false
     },
     {
-      "postId": "291",
-      "title": "나의 우주관...",
+      "postId": "325",
+      "title": "다모임에서 이런 주제를 두고 투표를...",
       "categoryLabel": null,
-      "author": "Fleurety",
+      "author": "a cacodaemon",
       "authorMemberNo": null,
-      "createdAt": "2002-06-29T00:00:00",
+      "createdAt": "2002-07-11T00:00:00",
       "createdAtApprox": false,
       "yearApprox": false,
-      "commentCount": 13,
+      "commentCount": 0,
       "attachmentCount": 0,
-      "hits": 162,
+      "hits": 1,
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "290",
-      "title": "한국축구...진정한 붉은악마님들...읽어보세요!!",
-      "categoryLabel": null,
-      "author": "Fleurety",
-      "authorMemberNo": null,
-      "createdAt": "2002-06-29T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 118,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "288",
-      "title": "나무막대기에 고등학생은 10대? 그러면 나같으면",
-      "categoryLabel": null,
-      "author": "Rofocale",
-      "authorMemberNo": null,
-      "createdAt": "2002-06-28T14:01:46",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 265,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

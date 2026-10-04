@@ -27,7 +27,7 @@
  * Content is rendered **once**. Board and post routes pass `children`;
  * the home passes `content2014` / `content2003` / `content2001` because its exhibit
  * genuinely differs per era. Duplicating a post body per era would double
- * the HTML of 14,837 post pages for nothing.
+ * the HTML of 14,218 post pages for nothing.
  */
 
 import type { ReactNode } from "react";
