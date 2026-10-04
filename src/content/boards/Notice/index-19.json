@@ -3,9 +3,25 @@
   "page": 19,
   "totalPages": 20,
   "totalPosts": 983,
-  "totalWithPost": 892,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "totalWithPost": 891,
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
+    {
+      "postId": "92",
+      "title": "희생의 미덕",
+      "categoryLabel": "개발중",
+      "author": "녕이",
+      "authorMemberNo": "2278",
+      "createdAt": "2001-10-22T08:35:46",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 429,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "90",
       "title": "좌측메뉴바에 UO.Vendor란이 Open했습니다.",
@@ -789,22 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "37",
-      "title": "UO.Tip란에 비밀장소가 추가로 업뎃되었습니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2001-07-28T18:19:48",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 2302,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

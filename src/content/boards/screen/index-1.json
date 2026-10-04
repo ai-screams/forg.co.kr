@@ -2,9 +2,9 @@
   "board": "screen",
   "page": 1,
   "totalPages": 1,
-  "totalPosts": 4,
+  "totalPosts": 6,
   "totalWithPost": 4,
-  "generatedAt": "2026-09-25T11:30:56Z",
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
     {
       "postId": "6",
@@ -17,10 +17,26 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 1,
-      "hits": null,
+      "hits": 54,
       "recommend": null,
       "era": "2003",
       "hasPost": true
+    },
+    {
+      "postId": "5",
+      "title": "안냐세요 멀린이에요!! (노말에서 쓸어봤슴다!!!)",
+      "categoryLabel": null,
+      "author": "Merlin",
+      "authorMemberNo": null,
+      "createdAt": "2001-10-03T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 55,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     },
     {
       "postId": "4",
@@ -33,7 +49,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 2,
-      "hits": null,
+      "hits": 67,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -49,7 +65,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 2,
-      "hits": null,
+      "hits": 76,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -65,10 +81,26 @@
       "yearApprox": false,
       "commentCount": 1,
       "attachmentCount": 1,
-      "hits": null,
+      "hits": 150,
       "recommend": null,
       "era": "2003",
       "hasPost": true
+    },
+    {
+      "postId": "1",
+      "title": "추억에 남을 사진을 올려주시길 바랍니다^^",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "2001-09-17T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 18,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
     }
   ]
 }

@@ -4,7 +4,7 @@
   "pagesCaptured": 48,
   "capturesRead": 206,
   "totalReported": 163,
-  "generatedAt": "2026-10-03T07:42:39.795678Z",
+  "generatedAt": "2026-10-04T07:46:53.251440Z",
   "entries": [
     {
       "no": "4228",
@@ -18037,6 +18037,96 @@
       "hasPost": true
     },
     {
+      "no": "572",
+      "title": "캐릭을 키워보자 -스킬시스템편",
+      "categoryLabel": "백두",
+      "author": "만년뉴비_더존",
+      "authorMemberNo": "3275",
+      "createdAt": "2002-04-15",
+      "yearApprox": false,
+      "hits": 285,
+      "commentCount": 7,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "569",
+      "title": "7GM 전사 만들기",
+      "categoryLabel": "뉴비가이드",
+      "author": "Holy_MarS",
+      "authorMemberNo": "6917",
+      "createdAt": "2002-04-09",
+      "yearApprox": false,
+      "hits": 1143,
+      "commentCount": 14,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "568",
+      "title": "(초보자)가 상당히 중요하게 생각해야 할...",
+      "categoryLabel": "뉴비",
+      "author": "하느",
+      "authorMemberNo": "3709",
+      "createdAt": "2002-04-08",
+      "yearApprox": false,
+      "hits": 625,
+      "commentCount": 12,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "567",
+      "title": "게임 플레이 도중의 작은 팁.",
+      "categoryLabel": null,
+      "author": "yourbest",
+      "authorMemberNo": "5557",
+      "createdAt": "2002-04-08",
+      "yearApprox": false,
+      "hits": 484,
+      "commentCount": 1,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "566",
+      "title": "전사를 키워보자-1",
+      "categoryLabel": "뉴비가이드",
+      "author": "Holy_MarS",
+      "authorMemberNo": "6917",
+      "createdAt": "2002-04-08",
+      "yearApprox": false,
+      "hits": 396,
+      "commentCount": 6,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "565",
+      "title": "초보 전사를 위한 몇가지 마법 매크로",
+      "categoryLabel": null,
+      "author": "Tama",
+      "authorMemberNo": "2546",
+      "createdAt": "2002-04-08",
+      "yearApprox": false,
+      "hits": 395,
+      "commentCount": 11,
+      "isNotice": false,
+      "capturedAt": "20020416225405",
+      "listPage": 1,
+      "hasPost": true
+    },
+    {
       "no": "561",
       "title": "일쉐나 챔피언 스폰 지역에 관한 연구",
       "categoryLabel": null,
@@ -23062,6 +23152,21 @@
       "hasPost": false
     },
     {
+      "no": "81",
+      "title": "발견! 전사의 쿨한 셋트!!^^* writen by Judge",
+      "categoryLabel": "re",
+      "author": "ㅡ.ㅡ",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-02",
+      "yearApprox": false,
+      "hits": 227,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20010818130029",
+      "listPage": 3,
+      "hasPost": true
+    },
+    {
       "no": "80",
       "title": "템머를 키우면 좋은점과 나쁜점 몇가지 올립니다..",
       "categoryLabel": null,
@@ -23257,6 +23362,21 @@
       "hasPost": true
     },
     {
+      "no": "63",
+      "title": "스미스 기술 도표입니다...[Written by Judge R Jack]",
+      "categoryLabel": "re",
+      "author": "미쓰",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-18",
+      "yearApprox": false,
+      "hits": 180,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20010728011044",
+      "listPage": 4,
+      "hasPost": true
+    },
+    {
       "no": "62",
       "title": "레어아템을 버려버린 HolyPink",
       "categoryLabel": null,
@@ -23284,6 +23404,21 @@
       "isNotice": false,
       "capturedAt": "20040116211134",
       "listPage": 82,
+      "hasPost": true
+    },
+    {
+      "no": "60",
+      "title": "잴 첨 시작하면 모 부터 해야 하나요??",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-16",
+      "yearApprox": false,
+      "hits": 36,
+      "commentCount": 1,
+      "isNotice": false,
+      "capturedAt": "20010418093522",
+      "listPage": 1,
       "hasPost": true
     },
     {
@@ -23344,6 +23479,21 @@
       "isNotice": false,
       "capturedAt": "20040116211134",
       "listPage": 82,
+      "hasPost": true
+    },
+    {
+      "no": "53",
+      "title": "Essay란 Open입니다....",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-11",
+      "yearApprox": false,
+      "hits": 46,
+      "commentCount": 0,
+      "isNotice": true,
+      "capturedAt": "20010418093522",
+      "listPage": 1,
       "hasPost": true
     },
     {
@@ -23720,6 +23870,21 @@
       "capturedAt": "20031023105717",
       "listPage": 79,
       "hasPost": false
+    },
+    {
+      "no": "16",
+      "title": "끄적끄적-.-;;",
+      "categoryLabel": null,
+      "author": "Aruna",
+      "authorMemberNo": null,
+      "createdAt": "2001-03-20",
+      "yearApprox": false,
+      "hits": 276,
+      "commentCount": 1,
+      "isNotice": false,
+      "capturedAt": "20010728010103",
+      "listPage": 4,
+      "hasPost": true
     },
     {
       "no": "14",

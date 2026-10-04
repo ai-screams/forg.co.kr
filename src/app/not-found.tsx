@@ -6,7 +6,7 @@
  *
  * Kept small and outside `<EraShell>`: every page's RSC payload carries the
  * root not-found tree (the root layout's `notFound`), so the three eras'
- * frames here would ride along on all 17,183 pages. Drawn like the search
+ * frames here would ride along on all 16,692 pages. Drawn like the search
  * page instead, inside the root layout's header and footer.
  */
 

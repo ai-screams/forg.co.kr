@@ -4,8 +4,23 @@
   "pagesCaptured": 7,
   "capturesRead": 333,
   "totalReported": 76,
-  "generatedAt": "2026-10-03T07:43:00.880834Z",
+  "generatedAt": "2026-10-04T07:48:16.730782Z",
   "entries": [
+    {
+      "no": "258",
+      "title": "카트라이더 프로게이머 나온다",
+      "categoryLabel": null,
+      "author": "氷",
+      "authorMemberNo": "14888",
+      "createdAt": "2005-02-26",
+      "yearApprox": false,
+      "hits": 203,
+      "commentCount": 6,
+      "isNotice": false,
+      "capturedAt": "20050301090614",
+      "listPage": 1,
+      "hasPost": false
+    },
     {
       "no": "257",
       "title": "WoW약관 알고보면 불공정하지 않다",

@@ -2,10 +2,26 @@
   "board": "Diablo_Notice",
   "page": 1,
   "totalPages": 1,
-  "totalPosts": 1,
+  "totalPosts": 2,
   "totalWithPost": 1,
-  "generatedAt": "2026-09-25T11:30:56Z",
+  "generatedAt": "2026-10-04T07:49:08Z",
   "entries": [
+    {
+      "postId": "2",
+      "title": "아이템섹션에 Set Item이 업뎃되었습니다.",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2001-10-19T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 52,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "1",
       "title": "Diablo사이트를 Open하였습니다..",
@@ -17,7 +33,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": null,
+      "hits": 65,
       "recommend": null,
       "era": "2003",
       "hasPost": true

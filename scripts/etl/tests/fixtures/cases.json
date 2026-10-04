@@ -232,6 +232,18 @@
     "source": "archive-clean/B/screee/2.html"
   },
   {
+    "id": "listing/Q_A__z-page-122",
+    "parser": "listing",
+    "file": "Q_A__z-page-122.html",
+    "args": {
+      "engine": "zeroboard40"
+    },
+    "kinds": [
+      "page:zeroboard40"
+    ],
+    "source": "archive-clean/LZ/Q_A/z-page-122.html"
+  },
+  {
     "id": "listing/free__page-1",
     "parser": "listing",
     "file": "free__page-1.html",

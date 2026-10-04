@@ -4,7 +4,7 @@
   "pagesCaptured": 18,
   "capturesRead": 91,
   "totalReported": 721,
-  "generatedAt": "2026-10-03T07:41:55.816876Z",
+  "generatedAt": "2026-10-04T07:44:25.723609Z",
   "entries": [
     {
       "no": "4962",
@@ -10252,6 +10252,21 @@
       "hasPost": true
     },
     {
+      "no": "709",
+      "title": "악세 감정 부탁드려요^^",
+      "categoryLabel": null,
+      "author": "엉덩이마왕",
+      "authorMemberNo": "5683",
+      "createdAt": "2006-09-25",
+      "yearApprox": false,
+      "hits": 192,
+      "commentCount": 2,
+      "isNotice": false,
+      "capturedAt": "20061113041227",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
       "no": "708",
       "title": "팔찌 감정 부탁드립니다^^;",
       "categoryLabel": null,
@@ -11149,6 +11164,51 @@
       "isNotice": false,
       "capturedAt": "20071025235755",
       "listPage": 11,
+      "hasPost": false
+    },
+    {
+      "no": "562",
+      "title": "석궁인데",
+      "categoryLabel": null,
+      "author": "swc9292",
+      "authorMemberNo": "3795",
+      "createdAt": "2006-04-03",
+      "yearApprox": true,
+      "hits": 430,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20071024234130",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "561",
+      "title": "다이아몬드 메이스",
+      "categoryLabel": null,
+      "author": "swc9292",
+      "authorMemberNo": "3795",
+      "createdAt": "2006-04-03",
+      "yearApprox": true,
+      "hits": 623,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20071024234130",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "560",
+      "title": "임뷰안한 걍활...",
+      "categoryLabel": null,
+      "author": "swc9292",
+      "authorMemberNo": "3795",
+      "createdAt": "2006-04-03",
+      "yearApprox": true,
+      "hits": 553,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20071024234130",
+      "listPage": 1,
       "hasPost": false
     },
     {

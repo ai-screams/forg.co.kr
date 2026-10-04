@@ -12,12 +12,22 @@ captured, and for 43 boards the only trace of the board. Rows from every
 captured page of a board are merged by post number; when a post appears on
 several captures the newest capture wins (its hit count is the latest).
 
+Other captures print lists too (EXTRA_PHASES): Zeroboard 4.1 and Gnuboard4
+show, under a post, the list page it was opened from, and the 2001
+Zeroboard 4.0 installs did the same and kept list pages of their own (LZ).
+Their rows add the posts no list page above holds, newest capture first;
+they never replace a list page's row. Only dated rows whose link names the
+capture's own board are taken, for boards the museum already holds (a list
+page's or a post's).
+
 ROW SHAPES
     Zeroboard kritz_* skins — `<tr>` holding an `<a href="zboard.php?…no=N">`:
         icon | author (`view_info.php?…member_no=M`) | title [+ `[c]` comment
         count] | MM/DD | hits
     Gnuboard4 webbus2009 — `<tr>` holding `wr_id=N`:
         no | title (+ comment count) | author | YYYY-MM-DD | hits
+    Zeroboard 4.0 (2001) — `<tr>` holding `zboard.php?…no=N`:
+        running count | title (+ comment count) | author | YYYY/MM/DD | hits
 
 YEAR
     Zeroboard printed MM/DD only. The year comes from, in order:
@@ -55,6 +65,14 @@ POSTS_DIR = PROJECT_ROOT / "src" / "content" / "posts"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "listings"
 PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "listings-plan.json"
 MORE_PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "listings-more-plan.json"
+ARCHIVE_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
+CDX_DIR = PROJECT_ROOT / ".docs" / "research" / "cdx"
+PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
+# Captures that print a board list without being one of the list pages
+# above: Zeroboard 4.1 / Gnuboard4 post views (A, B, C, V, W), and the 2001
+# Zeroboard 4.0 list pages (LZ) and views (Z, Y, U, T).
+OLD_PHASES = ("LZ", "Z", "Y", "U", "T")
+EXTRA_PHASES = ("A", "B", "C", "V", "W", *OLD_PHASES)
 
 _ZB_NO_RE = re.compile(r"zboard\.php\?[^\"'>]*\bno=(\d+)")
 _G4_ID_RE = re.compile(r"board\.php\?[^\"'>]*\bwr_id=(\d+)")
@@ -67,6 +85,9 @@ _CART_RE = re.compile(r'name="?cart"? value="(\d+)"')
 # Row-status icons the kritz skins put in the first cell: age, admin post, notice.
 _ROW_ICON_RE = re.compile(r"(old|new)_head|level\d+_write|notice", re.I)
 _CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
+_LINK_BOARD_RE = re.compile(r"[?&;](?:amp;)?(?:id|bo_table)=([A-Za-z0-9_]+)")
+_ZB40_NO_RE = re.compile(r"(?:zboard\.php3?|view\.php)\?[^\"'>]*\bno=(\d+)")
+_SLASH_DATE_RE = re.compile(r"^(\d{4})/(\d{1,2})/(\d{1,2})$")
 
 
 # ── Gold tier lookups ─────────────────────────────────────────────────
@@ -233,6 +254,7 @@ def parse_zeroboard_rows(soup: BeautifulSoup) -> list[dict]:
         rows.append(
             {
                 "no": no,
+                "board": link_board(link),
                 "title": raw_title,
                 "author": author,
                 "member_no": member_no,
@@ -244,6 +266,14 @@ def parse_zeroboard_rows(soup: BeautifulSoup) -> list[dict]:
             }
         )
     return rows
+
+
+def link_board(link: Tag | None) -> str | None:
+    """The board id a row's link names (`id=` / `bo_table=`), if any."""
+    if link is None:
+        return None
+    m = _LINK_BOARD_RE.search(str(link.get("href", "")))
+    return m.group(1) if m else None
 
 
 def parse_gnuboard_rows(soup: BeautifulSoup) -> list[dict]:
@@ -286,6 +316,7 @@ def parse_gnuboard_rows(soup: BeautifulSoup) -> list[dict]:
         rows.append(
             {
                 "no": no,
+                "board": link_board(link),
                 "title": raw_title,
                 "author": author,
                 "member_no": None,
@@ -299,12 +330,135 @@ def parse_gnuboard_rows(soup: BeautifulSoup) -> list[dict]:
     return rows
 
 
+def parse_zeroboard40_rows(soup: BeautifulSoup) -> list[dict]:
+    """Rows of the 2001 Zeroboard 4.0 lists, on list pages and under views.
+
+    The first cell is a running count, not the post number (that is in the
+    link); the author follows the title; the date is a full YYYY/MM/DD.
+    A row without a date is not a list row and is left out.
+    """
+    rows: list[dict] = []
+    for tr in soup.find_all("tr"):
+        if not isinstance(tr, Tag) or tr.find("tr") is not None:
+            continue
+        link = None
+        for a in tr.find_all("a", href=True):
+            if isinstance(a, Tag) and isinstance(a["href"], str) and _ZB40_NO_RE.search(a["href"]):
+                link = a
+                break
+        if link is None:
+            continue
+        tds = [td for td in tr.find_all("td", recursive=False) if isinstance(td, Tag)]
+        title_td = link.find_parent("td")
+        if title_td not in tds:
+            continue
+        date_at, full_date = None, None
+        for i, td in enumerate(tds):
+            m = _SLASH_DATE_RE.match(cell_text(td))
+            if m:
+                date_at = i
+                try:
+                    full_date = date(*(int(x) for x in m.groups()))
+                except ValueError:
+                    full_date = None
+                break
+        if date_at is None or full_date is None:
+            continue
+        at = tds.index(title_td)
+        raw_title = link.get_text(" ", strip=True)
+        comments = _COMMENT_RE.search(cell_text(title_td)[len(raw_title):])
+        author = next(
+            (cell_text(td) for td in tds[at + 1 : date_at] if cell_text(td) and not cell_text(td).isdigit()),
+            "anonymous",
+        )
+        hits = next(
+            (int(cell_text(td).replace(",", "")) for td in tds[date_at + 1 :] if cell_text(td).replace(",", "").isdigit()),
+            None,
+        )
+        rows.append(
+            {
+                "no": _ZB40_NO_RE.search(link["href"]).group(1),  # type: ignore[union-attr]
+                "board": link_board(link),
+                "title": raw_title,
+                "author": author,
+                "member_no": None,
+                "month_day": None,
+                "full_date": full_date,
+                "hits": hits,
+                "comments": int(comments.group(1)) if comments else 0,
+                "notice": tr.find("img", src=re.compile(r"notice|noti", re.I)) is not None,
+            }
+        )
+    return rows
+
+
 def parse_page(html: str, engine: str) -> tuple[list[dict], int | None]:
     """Return `(rows, total_reported)` for a page of the given engine."""
     soup = BeautifulSoup(html, "lxml")
-    rows = parse_zeroboard_rows(soup) if engine == "zeroboard" else parse_gnuboard_rows(soup)
+    if engine == "zeroboard":
+        rows = parse_zeroboard_rows(soup)
+    elif engine == "zeroboard40":
+        rows = parse_zeroboard40_rows(soup)
+    else:
+        rows = parse_gnuboard_rows(soup)
     total = _TOTAL_RE.search(html)
     return rows, int(total.group(1).replace(",", "")) if total else None
+
+
+def extra_rows(html: str, kind: str, board: str, captured_at: str) -> list[dict]:
+    """The list rows another capture prints for `board` (see EXTRA_PHASES).
+
+    A row needs a date (anything else a post view links to, from the body
+    or the prev/next buttons, has none) and a link naming `board`; the
+    month/day rows get their page year from the rows around them.
+    """
+    rows, _total = parse_page(html, kind)
+    rows = [
+        r for r in rows
+        if r["board"] == board and (r["month_day"] is not None or r["full_date"] is not None)
+    ]
+    walk_page_years(rows, captured_at)
+    return rows
+
+
+def load_extra_captures() -> dict[str, list[tuple[Path, str, int, str]]]:
+    """`{board: [(path, ts, list page, engine)]}` for the EXTRA_PHASES captures.
+
+    The time comes from the downloader's record and the URL from the phase's
+    plan: the URL tells the engine (`bbs/board.php` is Gnuboard4) and the
+    list page shown under a view (`page=`).
+    """
+    ts_of: dict[tuple[str, str, str], str] = {}
+    for line in PROGRESS_FILE.read_text(encoding="utf-8").splitlines():
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if rec.get("status") == "ok" and rec.get("phase") in EXTRA_PHASES and rec.get("ts"):
+            ts_of[(rec["phase"], rec["board"], str(rec["post_id"]))] = rec["ts"]
+    url_of: dict[tuple[str, str, str], str] = {}
+    for plan in sorted(CDX_DIR.glob("*-plan.json")):
+        for e in json.loads(plan.read_text(encoding="utf-8")):
+            if e.get("phase") in EXTRA_PHASES:
+                url_of[(e["phase"], e["board"], str(e["post_id"]))] = e.get("url", "")
+    out: dict[str, list[tuple[Path, str, int, str]]] = {}
+    for phase in EXTRA_PHASES:
+        root = ARCHIVE_DIR / phase
+        if not root.is_dir():
+            continue
+        for f in sorted(root.glob("*/*.html")):
+            key = (phase, f.parent.name, f.stem)
+            ts, url = ts_of.get(key), url_of.get(key, "")
+            if not ts:
+                continue
+            if phase in OLD_PHASES:
+                kind = "zeroboard40"
+            else:
+                kind = "gnuboard4" if "bbs/board.php" in url else "zeroboard"
+            m = re.search(r"[?&]page=(\d+)", url) or re.search(r"page-(\d+)", f.stem)
+            page = int(m.group(1)) if m and int(m.group(1)) > 0 else 1
+            out.setdefault(f.parent.name, []).append((f, ts, page, kind))
+    return out
 
 
 # ── Driver ───────────────────────────────────────────────────────────
@@ -336,6 +490,7 @@ def load_capture_index() -> tuple[dict[tuple[str, str], str], set[str], dict[tup
 def build_listing(
     board: str, pages: list[Path], captures: dict[tuple[str, str], str],
     engines: dict[tuple[str, str], str], *, kr: bool = False,
+    extras: list[tuple[Path, str, int, str]] = (), report: dict | None = None,  # type: ignore[assignment]
 ) -> BoardListing | None:
     gold, gold_nos = load_gold_years(board)
     merged: dict[str, dict] = {}
@@ -365,8 +520,36 @@ def build_listing(
                 continue
             r.update(capturedAt=captured_at, listPage=page_no)
             merged[r["no"]] = r
+
+    # Other captures' rows add the posts the list pages do not hold.
+    extra: dict[str, dict] = {}
+    extra_pages: set[int] = set()
+    extra_read = 0
+    extra_engines: dict[str, int] = {}
+    for path, captured_at, page_no, kind in extras:
+        rows = extra_rows(path.read_text(encoding="utf-8"), kind, board, captured_at)
+        if not rows:
+            continue
+        extra_read += 1
+        extra_pages.add(page_no)
+        engine = "gnuboard4" if kind == "gnuboard4" else "zeroboard"
+        extra_engines[engine] = extra_engines.get(engine, 0) + len(rows)
+        for r in rows:
+            prev = extra.get(r["no"])
+            if prev is not None and prev["capturedAt"] >= captured_at:
+                continue
+            r.update(capturedAt=captured_at, listPage=page_no)
+            extra[r["no"]] = r
+    added = [no for no in extra if no not in merged]
+    for no in added:
+        merged[no] = extra[no]
+    if report is not None:
+        report["added"] = len(added)
     if not merged:
         return None
+    if not page_nos:
+        # A board known only from other captures: count those.
+        page_nos, captures_read, engine_of_rows = extra_pages, extra_read, extra_engines
 
     entries: list[BoardListingEntry] = []
     for r in sorted(merged.values(), key=lambda x: int(x["no"]), reverse=True):
@@ -420,14 +603,22 @@ def main() -> int:
         sys.exit(f"FATAL: {INPUT_DIR} not found — run the phase-L download and 01-decode first")
     captures, kr_boards, engines = load_capture_index()
     dirs = [d for root in (INPUT_DIR, MORE_DIR) if root.is_dir() for d in root.iterdir() if d.is_dir()]
-    boards = sorted({d.name for d in dirs if not args.board or d.name == args.board})
-    stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0}
+    list_boards = {d.name for d in dirs}
+    extras = load_extra_captures()
+    # Only boards the museum holds: a list page's or a post's.
+    extra_boards = {b for b in extras if b in list_boards or (POSTS_DIR / b).is_dir()}
+    boards = sorted({b for b in list_boards | extra_boards if not args.board or b == args.board})
+    stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0, "added": 0}
     for board in boards:
         pages = sorted(
             (p for d in dirs if d.name == board for p in d.glob("page-*.html")),
             key=lambda p: (page_no_of(p), p.stem),
         )
-        listing = build_listing(board, pages, captures, engines, kr=board in kr_boards)
+        report: dict = {}
+        listing = build_listing(
+            board, pages, captures, engines, kr=board in kr_boards,
+            extras=extras.get(board, []) if board in extra_boards else [], report=report,
+        )
         if listing is None:
             print(f"  {board}: no rows in {len(pages)} page(s)", file=sys.stderr)
             continue
@@ -436,8 +627,10 @@ def main() -> int:
         stats["with_post"] += sum(e.hasPost for e in listing.entries)
         stats["year_approx"] += sum(e.yearApprox for e in listing.entries)
         stats["no_date"] += sum(e.createdAt is None for e in listing.entries)
+        stats["added"] += report.get("added", 0)
         print(
             f"  {board:<16} pages={len(pages):>3} rows={len(listing.entries):>5} "
+            f"from_other_captures={report.get('added', 0):>4} "
             f"with_post={sum(e.hasPost for e in listing.entries):>5} "
             f"total_reported={listing.totalReported}",
             file=sys.stderr,
