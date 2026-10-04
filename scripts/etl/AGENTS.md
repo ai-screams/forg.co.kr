@@ -77,7 +77,7 @@ first and don't duplicate it here.
 
 ### Testing Requirements
 
-`scripts/etl/tests/` holds pytest tests, run in CI: `.venv/bin/python3 -m pytest scripts/etl/tests -q`. `conftest.py` puts `scripts/etl` on the path; a stage whose file name starts with a digit is loaded with `stages.load_stage("02c-parse-listing.py")`. They need only `scripts/` (no `.docs`, no captures). When you check that a test can fail by editing the source, run with `PYTHONDONTWRITEBYTECODE=1 python -B`: a same-length edit undone within a second leaves a stale `.pyc`.
+`scripts/etl/tests/` holds pytest tests, run in CI: `.venv/bin/python3 -m pytest scripts/etl/tests -q`. `conftest.py` puts `scripts/etl` on the path; a stage whose file name starts with a digit is loaded with `stages.load_stage("02c-parse-listing.py")`. They need only `scripts/` (no `.docs`, no captures): `test_parser_snapshots.py` runs each parser on a sample of real captures in `tests/fixtures/` (one per kind of result, picked from silver, personal data the parsers drop masked) and compares with `tests/snapshots/`. A parser change that means to alter the output regenerates them with `UPDATE_SNAPSHOTS=1` and the snapshot diff is reviewed with the change. When you check that a test can fail by editing the source, run with `PYTHONDONTWRITEBYTECODE=1 python -B`: a same-length edit undone within a second leaves a stale `.pyc`.
 
 Beyond the tests:
 

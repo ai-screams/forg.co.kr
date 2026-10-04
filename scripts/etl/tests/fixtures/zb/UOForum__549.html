@@ -1,0 +1,169 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.1 pl 4 (2003. 8. 7)
+개발자 : zero 
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 http://zeroboard.com 에서 문의 방법을 찾아주시기 바랍니다.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 기타 의문사항은 http://zeroboard.com 을 이용해 주시기 바랍니다.
+    (질문등에 대한 내용은 메일로 받지 않습니다)
+
+--><html>
+<head>
+<title></title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/kritz_normal2/style.css" rel="StyleSheet" title="style" type="text/css"/>
+<script language="JavaScript">
+var maxW,maxH,fromX,fromY,toX,toY,adjX,adjY,zBox,zStep=0,zLink,zNew;
+
+function zoomBox(evt,zlink,maxw,maxh,tox,toy) {
+if (arguments.length > 2) zNew=1;
+scrollH=(window.pageYOffset!=null)?window.pageYOffset:document.body.scrollTop;
+maxW=maxw?maxw:window.innerWidth?innerWidth:document.body.clientWidth;
+maxH=maxh?maxh:window.innerHeight?innerHeight:document.body.clientHeight;
+toX=tox?tox:0;
+toY=(toy?toy:0)+scrollH;
+fromX=evt.pageX?evt.pageX:evt.clientX;
+fromY=(evt.pageY?evt.pageY:evt.clientY)+(document.all?scrollH:0);
+adjX=toX+evt.screenX-fromX;
+adjY=toY+evt.screenY-fromY;
+if (document.createElement && document.body.appendChild && !zBox) {
+	zBox=document.createElement("div");
+	zBox.style.position="absolute";
+	document.body.appendChild(zBox);
+} else if (document.all && !zBox) {
+	document.all[document.all.length-1].outerHTML+='<div id="zBoxDiv" style="position:absolute"></div>';
+	zBox=document.all.zBoxDiv;
+} else if (document.layers && !zBox) {
+	zBox=new Layer(maxW);
+	zBox.style=zBox;
+	}
+zLink=zlink;
+doZoom();
+}
+
+function doZoom() {
+zStep+=1;
+zPct=(10-zStep)/10
+if (document.layers) {
+	zBox.moveTo(toX+zPct*(fromX-toX),toY+zPct*(fromY-toY));
+	zBox.document.open();
+	zBox.document.write("<table width='"+maxW*(1-zPct)+"' height="+maxH*(1-zPct)+" border=2 cellspacing=0><tr><td></td></tr></table>");
+	zBox.document.close();
+	} else {
+	zBox.style.border="2px solid #999999";
+	zBox.style.left=toX+zPct*(fromX-toX);
+	zBox.style.top=toY+zPct*(fromY-toY);
+	zBox.style.width=maxW*(1-zPct);
+	zBox.style.height=maxH*(1-zPct);
+	}
+zBox.style.visibility="visible";
+if (zStep < 10) setTimeout("doZoom("+fromX+","+fromY+","+toX+","+toY+")",30);
+else {
+	zBox.style.visibility='hidden';
+	zStep=0;
+	if (zLink && !zNew) location.href=zLink.href;
+	else if (zLink && zNew) {
+		var w=window.open(zLink.href,'','width='+maxW+',height='+maxH+',left='+adjX+',top='+adjY+',scrollbars=yes');
+		zNew=null;
+		}
+	}
+
+	
+}
+
+function loadImages() { 
+if (document.getElementById) {   
+document.getElementById('hidepage').style.visibility = 'hidden'; 
+} 
+else { 
+if (document.layers) {   
+document.hidepage.visibility = 'hidden'; 
+} 
+else {   
+document.all.hidepage.style.visibility = 'hidden'; 
+      } 
+   } 
+} 
+
+</script>
+<object classid="clsid:5CE4817D-99EF-49AD-B0F3-BCFE6EE01A95" codebase="kwas.cab#version=1,0,7,0" id="kwas" name="kwas" standby="Downloading the Kritz Web Auth System...." style="position:absolute;left:0px;top:-3000px;visibility:visible;">
+<param name="id_code" value="EDB5FD6E87C"/>
+</object>
+<script>
+  parent.current_forg = kwas.GetMacAddress;
+</script>
+<script language="JavaScript">
+n=document.layers
+ie=document.all
+function init_load() {
+	if(ie || n){
+	if(n) document.Load.visibility='hidden'
+	else Load.style.visibility='hidden'
+	}
+	DynLayerInit();
+	bar.glideTo('fast', 'slow', 0, bar.y+20, 7, 10, 'bar.glideTo(\"slow\", \"fast\", 0, -100, 7, 10);');
+	isinit = true;
+	return true
+}  
+
+</script>
+</head>
+<body bgcolor="white" leftmargin="3" marginheight="3" marginwidth="3" topmargin="3">
+<script>
+self.document.title=":: Error !! ::";]
+</script>
+<form>
+<table align="center" cellpadding="5" cellspacing="0" height="100%">
+<tr><td align="center" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" height="18" style="border:1px solid #dfdfdf;width:250;background:white url(skin/kritz_normal2/title_bg.jpg);height:18px">
+<tr>
+<td>
+<font color="EF5900">  Error !!</font>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="250">
+<tr>
+<td align="center" height="30">
+<br/>
+      사용권한이 없습니다<br/><br/>
+</td>
+</tr>
+<tr><td align="right">
+<a href="login.php?id=UOForum&amp;page=1&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;no=549&amp;s_url=%2F_zb%2Fzboard.php%3Fid%3DUOForum%26no%3D549" onclick="zoomBox(event,this,280,170,10,10);return false" style="color:EF5900;">Login</a>
+<br/>
+</td>
+</tr>
+</table>
+<br/><br/>
+</td></tr></table></form></body></html>

@@ -1,0 +1,707 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.0.0 pl4 (2001. 5. 24)
+개발자 : zero (user15@example.invalid)
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 user15@example.invalid으로 문의하여 주십시요.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 제로보드 구입에 대한 문의는 user12@example.invalid 으로 메일로 문의하여 주십시요.
+
+11. 기타 의문사항은 user15@example.invalid 으로 메일로 문의하여 주십시요.
+
+--><html>
+<head>
+<title></title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/board/style.css" rel="StyleSheet" title="style" type="text/css"/>
+<script language="javascript">
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if(browserName == "Netscape" && browserVer >= 3){ init = "net"; }
+else { init = "ie"; }
+
+
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+
+ sn_on=new Image;
+ sn_off=new Image;
+ sn_on.src= "skin/board/name_on.gif";
+ sn_off.src= "skin/board/name_off.gif";
+
+ ss_on=new Image;
+ ss_off=new Image;
+ ss_on.src= "skin/board/subject_on.gif";
+ ss_off.src= "skin/board/subject_off.gif";
+
+ sc_on=new Image;
+ sc_off=new Image;
+ sc_on.src= "skin/board/content_on.gif";
+ sc_off.src= "skin/board/content_off.gif";
+
+}
+
+function OnOff(name) {
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))) {
+  if(document.search[name].value=='on')
+  {
+   document.search[name].value='off';
+   ImgSrc=eval(name+"_off.src");
+   document[name].src=ImgSrc;
+  }
+  else
+  {
+   document.search[name].value='on';
+   ImgSrc=eval(name+"_on.src");
+   document[name].src=ImgSrc;
+  }
+ }
+}
+</script>
+<script language="javascript">
+  function reverse() {
+   var i, chked=0;
+   if(confirm('목록을 반전하시겠습니까?\n\n반전을 원하지 않는다면 취소를 누르시면 다음으로 넘어갑니다'))
+   {
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked) { document.list[i].checked=false; }
+      else { document.list[i].checked=true; }
+     }
+    }
+   }
+   for(i=0;i<document.list.length;i++)
+   {
+    if(document.list[i].type=='checkbox')
+    {
+     if(document.list[i].checked) chked=1;
+    }
+   }
+   if(chked) {
+    if(confirm('선택된 항목을 보시겠습니까?'))
+     {
+      document.list.selected.value='';
+      document.list.exec.value='view_all';
+      for(i=0;i<document.list.length;i++)
+      {
+       if(document.list[i].type=='checkbox')
+       {
+        if(document.list[i].checked)
+        {
+         document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+        }
+       }
+      }
+      document.list.submit();
+      return true;
+     }
+    }
+   }
+
+ function delete_all() {
+  var i, chked=0;
+  for(i=0;i<document.list.length;i++)
+  {
+   if(document.list[i].type=='checkbox')
+   {
+    if(document.list[i].checked) chked=1;
+    }
+   }
+  if(chked)
+  {
+    document.list.selected.value='';
+    document.list.exec.value='delete_all';
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked)
+      {
+       document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+      }
+     }
+    }
+    window.open("select_list_all.php?id=UoBoard&selected="+document.list.selected.value,"UoBoard_select_list","width=150,height=110,toolbars=no,resize=no,scrollbars=no");
+  }
+  else {alert('정리할 게시물을 선택하여 주십시요');}
+ }
+
+ function category_change() {
+  var myindex=list.category.selectedIndex;
+  document.search.category.value=list.category.options[myindex].value;
+  document.search.submit();
+  return true;
+ }
+</script>
+</head>
+<body bgcolor="white" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div align="center"><script language="JavaScript">
+function findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+function swapImage() {
+  var i,j=0,x,a=swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- HTML 시작 -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td width="1"></td>
+<td style="font-family:Tahoma;font-size:7pt;color:black" valign="bottom">
+    total <font color="#404040"><b>2030</b></font> articles <font color="#404040"><b>93</b></font> page <font color="#404040"><b>10</b></font>
+</td>
+<td nowrap="" valign="bottom" width="5%">
+<zeroboard <span="" onclick="swapImage('memozzz','','skin/board/member_memo_off.gif',0)"><br/>
+<zeroboard <img="" align="absmiddle" border="0" src="skin/board/images/setup_config.gif"><a href="member_join.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/images/setup_signin.gif"/></a><zeroboard <img="" align="absmiddle" border="0" src="skin/board/images/setup_userinfo.gif"><zeroboard <img="" align="absmiddle" border="0" src="skin/board/images/setup_memobox.gif"><a href="login.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;s_url=%2Fzboard%2Fzboard.php%3Fid%3DUoBoard%26page%3D10%26category%3D%26sn%3Doff%26ss%3Don%26sc%3Don%26keyword%3D%26select_arrange%3Dheadnum%26desc%3Dasc%26no%3D1707" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/images/setup_login.gif"/></a><zeroboard <img="" align="absmiddle" border="0" src="skin/board/images/setup_logout.gif"><img border="0" height="14" src="skin/board/last.gif" width="1"/></zeroboard></zeroboard></zeroboard></zeroboard></zeroboard></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td bgcolor="#ffffff" colspan="2" height="1"><img height="1" src="images/t.gif"/></td></tr>
+<tr>
+<td colspan="2"><table background="skin/board/title_bg.gif" border="0" cellpadding="0" cellspacing="0" height="23" width="100%">
+<tr>
+<td width="3"><img border="0" src="skin/board/last_left.gif"/></td><td align="left" nowrap="">  <img border="0" src="skin/board/view_article.gif"/></td><td align="right"><img border="0" src="skin/board/last_right.gif"/></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr height="23">
+<td align="right" bgcolor="#f2f2f2" class="thm8" style="color:#404040" width="100"><b>Name  </b></td>
+<td align="left"><table border="0" cellpadding="0" cellspacing="0"><tr><td><img height="3" src="images/t.gif"/></td></tr><tr><td>  </td><td><b> <a href="javascript:void(window.open('view_info.php?to=user9@example.invalid&amp;id=UoBoard&amp;member_no=1856','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">모기</a> </b></td></tr></table></td>
+</tr>
+<tr><td background="skin/board/dot_line.gif" colspan="2" height="1"><img height="1" src="images/t.gif"/></td></tr>
+<tr height="23">
+<td align="right" bgcolor="#f2f2f2" class="thm8" style="color:#404040" width="100"><b>Homepage  </b></td>
+<td><img height="3" src="images/t.gif"/><br/>  <font class="thm8"><a href="http://www.ndbm.net" target="_blank">http://www.ndbm.net</a></font></td>
+</tr>
+<tr><td background="skin/board/dot_line.gif" colspan="2" height="1"><img height="1" src="images/t.gif"/></td></tr>
+<!--<tr height=23>
+ <td align=right class=thm8 width=100 bgcolor=#f2f2f2 style=color:#404040><b>File #1&nbsp;&nbsp;</b></td>
+ <td ><img src=images/t.gif height=3><br>&nbsp;&nbsp;<font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-size:7pt;>Download : <b>0</b></font></font></td>
+</tr>
+<tr><td height=1 colspan=2 background=skin/board/dot_line.gif><img src=images/t.gif height=1></td></tr>
+-->
+<!--<tr height=23>
+ <td align=right class=thm8 width=100 bgcolor=#f2f2f2 style=color:#404040><b>File #2&nbsp;&nbsp;</b></td>
+ <td ><img src=images/t.gif height=3><br>&nbsp;&nbsp;<font class=thm8><Zeroboard (0)</a> &nbsp; <font style=font-size:7pt;>Download : <b>0</b></font></font></td>
+</tr>
+<tr><td height=1 colspan=2 background=skin/board/dot_line.gif><img src=images/t.gif height=1></td></tr>
+-->
+<!--<tr height=23>
+ <td align=right class=thm8 width=100 bgcolor=#f2f2f2 style=color:#404040><b>Link #1&nbsp;&nbsp;</b></td>
+ <td ><img src=images/t.gif height=3><br>&nbsp;&nbsp;<font class=thm8></font></td>
+</tr>
+<tr><td height=1 colspan=2 background=skin/board/dot_line.gif><img src=images/t.gif height=1></td></tr>
+-->
+<!--<tr height=23>
+ <td align=right class=thm8 width=100 bgcolor=#f2f2f2 style=color:#404040><b>Link #2&nbsp;&nbsp;</b></td>
+ <td ><img src=images/t.gif height=3><br>&nbsp;&nbsp;<font class=thm8></font></td>
+</tr>
+<tr><td height=1 colspan=2 background=skin/board/dot_line.gif><img src=images/t.gif height=1></td></tr>
+-->
+<tr height="23">
+<td align="right" bgcolor="#f2f2f2" class="thm8" style="word-break:break-all;color:#404040" width="100"><b>Subject  </b></td>
+<td><img height="3" src="images/t.gif"/><br/>  <b>미치겠다.. 오늘두 안돼넹.. IRC 도데체 왜 이런걸까 ?</b></td>
+</tr>
+<tr><td background="skin/board/dot_line.gif" colspan="2"><img height="1" src="images/t.gif"/></td></tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td bgcolor="#ffffff" height="100" style="word-break:break-all;padding:10px;" valign="top">
+<span style="line-height:160%">
+                훔.. 오늘두 IRC가 안돼네요. 또 하루종일 무언가 허전한 마음을
+<br/>
+ 갖고 하루일을 해야 겠네요. 쩝.. 
+<br/>
+<br/>
+ 제가 사는 지역 통신망이 뭔가 잘못된건지.. 흑..
+<br/>
+<br/>
+<div align="center">
+<br/>
+<img border="0" src="http://www.ndbm.net/uo/banner.gif"/>
+<br/>
+<br/> <br/>
+<div align="right" style="font-family:Tahoma;font-size:7pt;">IP Address : 192.0.2.2 </div>
+</div></span></td>
+</tr>
+</table>
+<!-- 간단한 답글 시작하는 부분 -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr>
+<td colspan="2">
+<table align="center" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr bgcolor="#f9f9f9">
+<td width="80"><b> <a href="javascript:void(window.open('view_info.php?id=UoBoard&amp;member_no=1944','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))" onfocus="blur()">김기태</a></b></td>
+<td> <font color="bbbbbb">:::</font>  지워따가 새로받아서 깔아보세여 ㅡ.ㅡ;     </td><td align="right" nowrap=""> <zeroboard <img="" border="0" src="skin/board/secret_head.gif"></zeroboard></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table align="center" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr bgcolor="#f9f9f9">
+<td width="80"><b> <a href="javascript:void(window.open('view_info.php?id=UoBoard&amp;member_no=2085','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))" onfocus="blur()">최재명</a></b></td>
+<td> <font color="bbbbbb">:::</font>  저도 그랫어염 아쿠아2아얄씨가.. 다시 깔아도 안돼길레 설정 다시 맞쳐 주니 돼더군요...     </td><td align="right" nowrap=""> <zeroboard <img="" border="0" src="skin/board/secret_head.gif"></zeroboard></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table align="center" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr bgcolor="#f9f9f9">
+<td width="80"><b> <a href="javascript:void(window.open('view_info.php?id=UoBoard&amp;member_no=2085','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))" onfocus="blur()">최재명</a></b></td>
+<td> <font color="bbbbbb">:::</font>  헉!! 왜 실명을 적히는거야!! 쿨럭..ㅡㅡ; 물려내뢋!     </td><td align="right" nowrap=""> <zeroboard <img="" border="0" src="skin/board/secret_head.gif"></zeroboard></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- 간단한 답변글 쓰기 -->
+<tr align="center" height="30">
+<td width="0">
+<form action="comment_ok.php" method="post" name="write">
+<input name="page" type="hidden" value="10"/>
+<input name="id" type="hidden" value="UoBoard"/>
+<input name="no" type="hidden" value="1707"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="22"/>
+<input name="keyword" type="hidden" value=""/>
+<input name="category" type="hidden" value=""/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+<input name="mode" type="hidden" value=""/>
+</form></td>
+<td align="center">
+<img border="0" height="10" src="images/t.gif"/><br/>
+<table bgcolor="#404040" border="0" cellpadding="10" cellspacing="1">
+<tr>
+<td bgcolor="#f2f2f2">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family:Tahoma;font-size:8pt;">Name</td>
+<td style="font-family:Tahoma;font-size:8pt;">Memo</td>
+<td style="font-family:Tahoma;font-size:8pt;">Password</td>
+<td> </td>
+</tr>
+<tr>
+<td><input class="input" maxlength="10" name="name" size="8" type="text" value=""/>  </td>
+<td><textarea class="input" maxlength="100" name="memo" size="18"></textarea>  </td>
+<td><input class="input" maxlength="20" name="password" size="6" type="password"/>  </td>
+<td><input class="submit" style="font-family:Tahoma;font-size:8pt;" type="submit" value="Comment"/></td>
+</tr>
+</table>
+</td></tr></table><br/>
+<img border="0" height="6" src="images/t.gif"/><br/>
+</td>
+</tr>
+</table>
+<!-- 이전 / 다음글 출력 -->
+<table border="0" cellpadding="" cellspacing="0" width="95%">
+<tr><td bgcolor="#404040" colspan="10"><img height="1" src="images/t.gif"/></td></tr>
+</table>
+<!--<table border=0 width=95% cellspacing=0 cellpadding=0>
+
+<tr align=center height=22>
+  <td width=8% style='word-break:break-all;' style=font-family:Tahoma;font-size:7pt; bgcolor=#f2f2f2><b>P</b>rev</td>
+  <td width=82% align=left style='word-break:break-all;'><img src=images/t.gif height=3><br>&nbsp; </a></td>
+  <td width=10% nowrap><img src=images/t.gif height=3><br> </td>
+</tr>
+</table>
+<table border=0 cellpadding cellspacing=0 width=95%>
+<td colspan=10 bgcolor=#404040><img src=images/t.gif height=1></td></tr>
+</table>
+-->
+<!--<table border=0 width=95% cellspacing=0 cellpadding=0>
+
+<tr align=center height=22>
+  <td width=8% style='word-break:break-all;' style=font-family:Tahoma;font-size:7pt; bgcolor=#f2f2f2><b>N</b>ext</td>
+  <td width=82% align=left style='word-break:break-all;'><img src=images/t.gif height=3><br>&nbsp; </a></td>
+  <td width=10% nowrap><img src=images/t.gif height=3><br> </td>
+</tr>
+</table>
+<table border=0 cellpadding cellspacing=0 width=95%>
+<td colspan=10 bgcolor=#404040><img src=images/t.gif height=1></td></tr>
+</table>
+
+-->
+<!-- 버튼 관련 출력 -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr height="23">
+<td><img border="0" src="skin/board/last.gif"/><a href="zboard.php?id=UoBoard&amp;page=10&amp;page_num=22&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=1707" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_list.gif"/></a><a href="write.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1707&amp;mode=write" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_write.gif"/></a><img border="0" src="skin/board/last.gif"/></td>
+<td align="right"><img border="0" src="skin/board/last.gif"/><zeroboard <img="" align="absmiddle" border="0" src="skin/board/i_modify.gif"><zeroboard <img="" align="absmiddle" border="0" src="skin/board/i_delete.gif"><zeroboard <img="" align="absmiddle" border="0" src="skin/board/i_reply.gif"><img border="0" src="skin/board/last.gif"/></zeroboard></zeroboard></zeroboard></td>
+</tr>
+</table>
+<br/><br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tr><td width="1">
+<form action="list_all.php" method="post" name="list">
+<input name="page" type="hidden" value="10"/>
+<input name="id" type="hidden" value="UoBoard"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="22"/>
+<input name="selected" type="hidden"/>
+<input name="exec" type="hidden"/>
+<input name="keyword" type="hidden" value=""/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+</form></td></tr><tr><td width="100%">
+<table background="skin/board/title_bg.gif" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr align="center">
+<td>
+<table border="0" cellpadding="0" cellspacing="0" height="23" width="100%">
+<tr>
+<td><img border="0" src="skin/board/last_left.gif"/></td><td align="center" nowrap="" width="30"><img border="0" src="skin/board/title_no.gif"/></td>
+</tr>
+</table>
+</td>
+<!--   <td>
+   <table width=100% border=0 cellspacing=0 cellpadding=0>
+  <tr>
+    <td align=center nowrap><img src=skin/board/title_bs.gif border=0></td>
+  </tr>
+</table>
+   </td>
+-->
+<!--   <td align=center><img src=images/t.gif border=0 height=1 border=0><br>Category</td>
+-->
+<td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left"><img border="0" src="skin/board/title_title.gif"/></td>
+</tr>
+</table>
+</td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100">
+<tr>
+<td style="word-break:break-all;"> </td>
+</tr>
+</table>
+</td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td> </td>
+</tr>
+</table>
+</td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="23">
+<tr>
+<td> </td><td align="right"><img border="0" src="skin/board/last_right.gif"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1832</td>
+<!--<td><input type=checkbox name=cart value="1925"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1925">볼라 볼 있자나여.......</a> <font style="font-family:Tahoma;font-size:7pt;">[1]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> <a href="javascript:void(window.open('view_info.php?to=user7@example.invalid&amp;id=UoBoard&amp;member_no=0','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">곰탱임다</a></td>
+<td class="thm8"><span title="2001년 06월 23일 22시 16분 05초">2001/06/23</span></td>
+<td class="thm8">76</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1831</td>
+<!--<td><input type=checkbox name=cart value="1924"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1924">얼마전 잇엇던 황당한일임돠..</a> <font style="font-family:Tahoma;font-size:7pt;">[2]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> 나그네</td>
+<td class="thm8"><span title="2001년 06월 23일 22시 05분 14초">2001/06/23</span></td>
+<td class="thm8">98</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1830</td>
+<!--<td><input type=checkbox name=cart value="1922"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1922">음..... 소노마에서 랜드는 무조건 갑옷을 무료로 ^-.-^;;</a> <font style="font-family:Tahoma;font-size:7pt;">[15]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user8@example.invalid&amp;id=UoBoard&amp;member_no=1886','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">랜드</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 20시 15분 39초">2001/06/23</span></td>
+<td class="thm8">124</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1829</td>
+<!--<td><input type=checkbox name=cart value="1921"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1921">밑에 글에 대한 저의 말 -김경태님글-</a> <font style="font-family:Tahoma;font-size:7pt;">[19]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user8@example.invalid&amp;id=UoBoard&amp;member_no=1886','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">랜드</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 20시 07분 41초">2001/06/23</span></td>
+<td class="thm8">85</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1828</td>
+<!--<td><input type=checkbox name=cart value="1920"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1920">외국플레이어들 정말 매너없네요 우린 그러지맙시다.</a> <font style="font-family:Tahoma;font-size:7pt;">[8]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> <a href="javascript:void(window.open('view_info.php?to=ktgongjak@yahoo.co.kr&amp;id=UoBoard&amp;member_no=0','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">김경태</a></td>
+<td class="thm8"><span title="2001년 06월 23일 19시 34분 14초">2001/06/23</span></td>
+<td class="thm8">144</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1827</td>
+<!--<td><input type=checkbox name=cart value="1923"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/>  <img align="absmiddle" border="0" src="skin/board/reply_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1923">한국사람도 만만 치 않습니다..</a> <font style="font-family:Tahoma;font-size:7pt;">[4]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> 초보</td>
+<td class="thm8"><span title="2001년 06월 23일 20시 30분 35초">2001/06/23</span></td>
+<td class="thm8">100</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1826</td>
+<!--<td><input type=checkbox name=cart value="1919"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1919">오늘 미녹에 갔슴다..</a> <font style="font-family:Tahoma;font-size:7pt;">[11]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user13@example.invalid&amp;id=UoBoard&amp;member_no=2100','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">루비안</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 18시 00분 15초">2001/06/23</span></td>
+<td class="thm8">103</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1825</td>
+<!--<td><input type=checkbox name=cart value="1918"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1918">엔피씨를 죽이면??</a> <font style="font-family:Tahoma;font-size:7pt;">[10]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user13@example.invalid&amp;id=UoBoard&amp;member_no=2100','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">루비안</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 16시 57분 50초">2001/06/23</span></td>
+<td class="thm8">95</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1824</td>
+<!--<td><input type=checkbox name=cart value="1916"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1916">에구 에구..</a> <font style="font-family:Tahoma;font-size:7pt;">[3]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user2@example.invalid&amp;id=UoBoard&amp;member_no=1647','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">sarevok</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 16시 38분 23초">2001/06/23</span></td>
+<td class="thm8">38</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1823</td>
+<!--<td><input type=checkbox name=cart value="1915"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1915">우띠 죄송여 도배해서 =_=</a> <font style="font-family:Tahoma;font-size:7pt;">[1]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user8@example.invalid&amp;id=UoBoard&amp;member_no=1886','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">랜드</a></b></td>
+<td class="thm8"><span title="2001년 06월 23일 15시 09분 11초">2001/06/23</span></td>
+<td class="thm8">34</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1822</td>
+<!--<td><input type=checkbox name=cart value="1914"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1914">울온 왕초보 다시 글올립니다..ㅜㅜ광부 어케 키워여 엉엉</a> <font style="font-family:Tahoma;font-size:7pt;">[7]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> 한미루</td>
+<td class="thm8"><span title="2001년 06월 23일 04시 40분 30초">2001/06/23</span></td>
+<td class="thm8">67</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1821</td>
+<!--<td><input type=checkbox name=cart value="1913"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1913">홀리핑크님 도와주셔서 감사.^^*</a> <font style="font-family:Tahoma;font-size:7pt;">[2]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> karin</td>
+<td class="thm8"><span title="2001년 06월 22일 23시 35분 00초">2001/06/22</span></td>
+<td class="thm8">60</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1820</td>
+<!--<td><input type=checkbox name=cart value="1912"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1912">음 어제에 이어서 소노마 보물탐험대 2차</a> <font style="font-family:Tahoma;font-size:7pt;">[9]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user8@example.invalid&amp;id=UoBoard&amp;member_no=1886','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">랜드</a></b></td>
+<td class="thm8"><span title="2001년 06월 22일 17시 35분 39초">2001/06/22</span></td>
+<td class="thm8">117</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1819</td>
+<!--<td><input type=checkbox name=cart value="1910"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1910">아뒤 바껐어염..</a> <font style="font-family:Tahoma;font-size:7pt;">[2]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user13@example.invalid&amp;id=UoBoard&amp;member_no=2100','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">루비안</a></b></td>
+<td class="thm8"><span title="2001년 06월 22일 15시 58분 43초">2001/06/22</span></td>
+<td class="thm8">45</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1818</td>
+<!--<td><input type=checkbox name=cart value="1909"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1909">[공고] &lt;발해&gt;  "노땅"게이머 길드...</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> <a href="javascript:void(window.open('view_info.php?to=user10@example.invalid&amp;id=UoBoard&amp;member_no=0','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">ZOZO</a></td>
+<td class="thm8"><span title="2001년 06월 22일 15시 30분 17초">2001/06/22</span></td>
+<td class="thm8">78</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1817</td>
+<!--<td><input type=checkbox name=cart value="1908"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1908">음...보물 첨 캐본날...ㅠ_ㅠ</a> <font style="font-family:Tahoma;font-size:7pt;">[17]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/> 나그네</td>
+<td class="thm8"><span title="2001년 06월 22일 12시 05분 48초">2001/06/22</span></td>
+<td class="thm8">135</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1816</td>
+<!--<td><input type=checkbox name=cart value="1907"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1907">글 쓰고 실수 한번에 다 날라 가다뉘..ㅜ.ㅜ</a> <font style="font-family:Tahoma;font-size:7pt;">[1]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user6@example.invalid&amp;id=UoBoard&amp;member_no=2078','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">[OF]럽</a></b></td>
+<td class="thm8"><span title="2001년 06월 22일 02시 06분 28초">2001/06/22</span></td>
+<td class="thm8">52</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1815</td>
+<!--<td><input type=checkbox name=cart value="1906"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1906">길드 레벨제~(아래글 보신분만 보세여 -_-;)</a> <font style="font-family:Tahoma;font-size:7pt;">[3]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user14@example.invalid&amp;id=UoBoard&amp;member_no=2079','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">DarkWave</a></b></td>
+<td class="thm8"><span title="2001년 06월 21일 22시 57분 23초">2001/06/21</span></td>
+<td class="thm8">124</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1814</td>
+<!--<td><input type=checkbox name=cart value="1905"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1905">제가 완전히 새로운 형식의 길드를 만들려고 합니다.^^;</a> <font style="font-family:Tahoma;font-size:7pt;">[14]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user14@example.invalid&amp;id=UoBoard&amp;member_no=2079','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">DarkWave</a></b></td>
+<td class="thm8"><span title="2001년 06월 21일 22시 36분 31초">2001/06/21</span></td>
+<td class="thm8">209</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1813</td>
+<!--<td><input type=checkbox name=cart value="1904"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1904">오늘 드뎌 오크마스크 얻었어여 ^^</a> <font style="font-family:Tahoma;font-size:7pt;">[7]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user13@example.invalid&amp;id=UoBoard&amp;member_no=2100','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">루비안</a></b></td>
+<td class="thm8"><span title="2001년 06월 21일 21시 55분 22초">2001/06/21</span></td>
+<td class="thm8">111</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1812</td>
+<!--<td><input type=checkbox name=cart value="1902"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1902">오늘 아리랑 에서..</a> <font style="font-family:Tahoma;font-size:7pt;"></font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user2@example.invalid&amp;id=UoBoard&amp;member_no=1647','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">sarevok</a></b></td>
+<td class="thm8"><span title="2001년 06월 21일 17시 48분 29초">2001/06/21</span></td>
+<td class="thm8">88</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 목록 부분 시작 -->
+<tr align="center" bgcolor="#FEFDFD">
+<td class="thm8" height="20">1811</td>
+<!--<td><input type=checkbox name=cart value="1901"></td>--><!--<td><img src=images/t.gif height=3><br>&nbsp;</td>--> <td align="left" style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><img align="absmiddle" border="0" src="skin/board/old_head.gif"/> <a href="zboard.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1901">음.. 소노마의 사람들 보십시요</a> <font style="font-family:Tahoma;font-size:7pt;">[3]</font></td>
+<td style="word-break:break-all;"><img height="3" src="images/t.gif"/><br/><b> <a href="javascript:void(window.open('view_info.php?to=user8@example.invalid&amp;id=UoBoard&amp;member_no=1886','mailform','width=400,height=510,statusbar=no,scrollbars=yes,toolbar=no'))">랜드</a></b></td>
+<td class="thm8"><span title="2001년 06월 21일 16시 47분 45초">2001/06/21</span></td>
+<td class="thm8">87</td>
+</tr>
+<tr><td bgcolor="#e0e0e0" colspan="10" height="1"><img height="1" src="/images/t.gif"/></td></tr>
+<!-- 마무리 부분입니다 -->
+<tr>
+<td bgcolor="#404040" colspan="10"><img height="1" src="images/t.gif"/></td></tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td>
+<!-- 버튼 부분 -->
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+<tr>
+<td height="17" nowrap="" width="40%"><img border="0" src="skin/board/last.gif"/><a href="zboard.php?id=UoBoard&amp;page=10&amp;page_num=22&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=1707" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_list.gif"/></a><zeroboard <img="" align="absmiddle" border="0" src="skin/board/i_delete.gif"><a href="/zboard/zboard.php?id=UoBoard&amp;page=9&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_prev.gif"/></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=11&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_next.gif"/></a><img border="0" src="skin/board/last.gif"/></zeroboard></td>
+<td align="center" class="thm8" colspan="2" nowrap="">
+<a href="/zboard/zboard.php?id=UoBoard&amp;page=1&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[1]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=2&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[2]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=3&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[3]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=4&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[4]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=5&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[5]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=6&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[6]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=7&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[7]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=8&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[8]</font></a><a href="/zboard/zboard.php?id=UoBoard&amp;page=9&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[9]</font></a> <font style="font-size:8pt"><b>10</b> <font style="font-size:8pt">..<a href="/zboard/zboard.php?id=UoBoard&amp;page=93&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[93]</font></a> </font></font></td>
+<td align="right" width="40%"><img border="0" src="skin/board/last.gif"/><a href="write.php?id=UoBoard&amp;page=10&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=1707&amp;mode=write" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/i_write2.gif"/></a><img border="0" src="skin/board/last.gif"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<!-- 검색폼 부분 ---------------------->
+<!-- 폼태그 부분;; 수정하지 않는 것이 좋습니다 -->
+<form action="/zboard/zboard.php" method="post" name="search">
+<input name="page" type="hidden" value="10"/>
+<input name="id" type="hidden" value="UoBoard"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="22"/>
+<input name="selected" type="hidden"/>
+<input name="exec" type="hidden"/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+<input name="category" type="hidden" value=""/>
+<!----------------------------------------------->
+</form></td>
+<td>
+<table border="0" cellpadding="0" cellspcing="0" width="100%">
+<tr>
+<td align="center" colspan="2">
+<a href="javascript:OnOff('sn')" onfocus="this.blur();"><img border="0" name="sn" src="skin/board/name_off.gif"/></a>
+<a href="javascript:OnOff('ss')" onfocus="this.blur();"><img border="0" name="ss" src="skin/board/subject_on.gif"/></a>
+<a href="javascript:OnOff('sc')" onfocus="this.blur();"><img border="0" name="sc" src="skin/board/content_on.gif"/></a><img height="1" src="images/t.gif" width="35"/><br/>
+<img align="absmiddle" src="skin/board/images/search_left.gif"/><input class="input" name="keyword" size="9" style="font-size:8pt;font-family:Arial;vertical-align:top;border-left-color:#ffffff;border-right-color:#ffffff;border-top-color:black;border-bottom-color:black;height:18px;" type="text" value=""/><input align="absmiddle" border="0" src="skin/board/images/search_right.gif" type="image"/><a href="/zboard/zboard.php?id=UoBoard" onfocus="blur()"><img align="absmiddle" border="0" src="skin/board/images/search_right2.gif"/></a>
+</td>
+</tr>
+<!-- 페이지 출력 ---------------------->
+</table>
+</td></tr></table>
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" height="20" width="95%">
+<tr>
+<td align="right" style="font-family:tahoma,굴림;font-size:8pt;line-height:150%;letter-spacing:0px">
+<font style="font-size:7pt">Copyright 1999-2001</font> <a href="http://www.zeroboard.com" onfocus="blur()" target="_blank"><font tyle="font-family:tahoma,굴림;font-size:5pt;">Zeroboard</font></a> 
+           / skin by <a href="http://yedong.com/ngine/" target="_blank">N+gine</a>
+</td>
+</tr>
+</table></div></body>
+</html>
+<!--
+      -------------------------------------------------------------------
+      Zero Board Executed Time
+      -------------------------------------------------------------------
+      All StartTime : 995557811.44683
+      End DB Excute Time : 995557811.47241
+      EndTime : 995557811.65581
+      -------------------------------------------------------------------
+      DB Excute Time : 0.026
+      PHP Excute Time : 0.183 
+      Total Excuted Time : 0.209
+      -------------------------------------------------------------------
+      -->
