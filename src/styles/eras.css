@@ -105,11 +105,38 @@
     width: 95%;
     margin-inline: auto;
     border-color: transparent;
+    /* Below the frame width the column is the screen's: no side margins. */
+    @variant max-frame {
+      width: 100%;
+    }
   }
   :root[data-era="2001"] .forg-post-body-cell {
     padding: 10px;
     line-height: 1.6;
     font-size: 12px;
+  }
+
+  /* The 2001 menu (forg_t's 14 buttons of 55×20): below the frame width they
+   * spread over the row, seven to a row from 385px (as many as fit below), each centred
+   * in its cell, and the gaps take the buttons' own face and bottom row
+   * (skins.css), one 20px row at a time. */
+  .forg2001-menu {
+    @variant max-frame {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(max(55px, calc(100% / 7)), 1fr));
+      background-image: linear-gradient(
+        to bottom,
+        var(--color-forg2001-menu) 19px,
+        var(--color-forg2001-menu-rule) 19px
+      );
+      background-size: 100% 20px;
+    }
+  }
+  .forg2001-menu > a {
+    @variant max-frame {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   /* Every era's frame is centred on a wide screen. 2001 was

@@ -26,6 +26,15 @@
   --color-forg2001-middle: #fcfbe9; /* the 390px middle column */
   --color-forg2001-box-head: #e6e6e6; /* stand-in for header art never captured */
   --color-forg2001-box-head-text: #404040;
+  /* What carries the 2001 art across a screen narrower than the frame but
+   * wider than the art: the menu buttons' face and bottom row (`m_*.gif`),
+   * and the flat ends of the 390px box headers (`main_notice.gif`,
+   * `main_notice_1.gif`). The 200px headers (`freeboard.gif`,
+   * `question.gif`) end in box-head over page, 25 and 5 rows. */
+  --color-forg2001-menu: #e3e7e6;
+  --color-forg2001-menu-rule: #646666;
+  --color-forg2001-notice: #ffba00;
+  --color-forg2001-events: #ffd44c;
 
   /* forg's 2003 front page: the colour each box-header image ends in,
    * carried across a phone-wide box (m_*.gif 350px, r_*.gif 185px) */
