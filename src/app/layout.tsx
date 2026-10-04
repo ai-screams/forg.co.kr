@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
 import type { Metadata } from "next";
 
 import { SiteFooter } from "@/components/site-footer";
@@ -12,21 +15,16 @@ export const metadata: Metadata = {
 };
 
 /**
- * Hydration 전에 저장된 시기를 <html data-era>에 적용 → FOUC 방지.
- * `dangerouslySetInnerHTML`로 인라인 삽입한다.
+ * The era script (`_scripts/era.js`, read once at build), inlined at the
+ * top of the head without its comment lines: it applies the saved era
+ * before the page paints and handles the era buttons from the first click,
+ * as the pages ship no React.
  */
-const noFlashScript = `
-(function() {
-  try {
-    var saved = localStorage.getItem(${JSON.stringify(ERA_STORAGE_KEY)});
-    if (${JSON.stringify(ERAS)}.indexOf(saved) >= 0) {
-      document.documentElement.dataset.era = saved;
-    }
-  } catch (_) {
-    /* private mode 등 — 기본 시기 유지 */
-  }
-})();
-`;
+const eraSource = readFileSync(
+  path.join(process.cwd(), "src", "app", "_scripts", "era.js"),
+  "utf8",
+);
+const eraScript = `(function (ERA_STORAGE_KEY, ERAS) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)});`;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -36,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
        element's own attributes only, not to the tree below it. */
     <html lang="ko" data-era={DEFAULT_ERA} className="h-full antialiased" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
+        <script dangerouslySetInnerHTML={{ __html: eraScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-(--era-page-bg)">
         <SiteHeader />

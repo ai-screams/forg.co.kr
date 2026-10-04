@@ -35,6 +35,39 @@ const eslintConfig = defineConfig([
   // The scripts /site/ documents carry (src/app/site/_render/assets.ts reads
   // them): plain browser scripts, inserted as they are, so undefined and
   // unused names are errors here rather than in a visitor's console.
+  // The scripts the content pages run in place of React (public/scripts/):
+  // the same checks, in the browser's current syntax.
+  {
+    files: ["public/scripts/*.js"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "script",
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        localStorage: "readonly",
+        Element: "readonly",
+      },
+    },
+    rules: { "no-undef": "error", "no-unused-vars": "error" },
+  },
+  // The era script the layout inlines with these two values (src/app/layout.tsx).
+  {
+    files: ["src/app/_scripts/*.js"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "script",
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        localStorage: "readonly",
+        Element: "readonly",
+        ERA_STORAGE_KEY: "readonly",
+        ERAS: "readonly",
+      },
+    },
+    rules: { "no-undef": "error", "no-unused-vars": "error" },
+  },
   {
     files: ["src/app/site/_render/assets/*.js"],
     languageOptions: {
