@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "22017",
+      "title": "겜탐기간 남았는데 다시 겜탐넣으면 어케되나여?",
+      "categoryLabel": null,
+      "author": "jeakwn",
+      "authorMemberNo": "22779",
+      "createdAt": "2003-11-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 131,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "22016",
       "title": "울티마 온라인",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 110,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "21945",
-      "title": "울온 등록 사이트 바뀌고 나서 계정 중지 해보시분 ..",
-      "categoryLabel": null,
-      "author": "yogurt",
-      "authorMemberNo": "17426",
-      "createdAt": "2003-11-03T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 80,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,7 +4,7 @@
   "pagesCaptured": 49,
   "capturesRead": 208,
   "totalReported": 163,
-  "generatedAt": "2026-10-05T10:45:02.561487Z",
+  "generatedAt": "2026-10-05T15:46:13.714032Z",
   "entries": [
     {
       "no": "4228",
@@ -23267,6 +23267,7 @@
       "hits": 227,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010818130029",
       "listPage": 3,
       "hasPost": true
@@ -23477,6 +23478,7 @@
       "hits": 180,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010728011044",
       "listPage": 4,
       "hasPost": true

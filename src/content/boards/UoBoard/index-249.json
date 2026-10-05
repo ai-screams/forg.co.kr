@@ -4,8 +4,24 @@
   "totalPages": 253,
   "totalPosts": 12618,
   "totalWithPost": 4255,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "378",
+      "title": "울온정품에대한질문",
+      "categoryLabel": null,
+      "author": "울온할랭",
+      "authorMemberNo": null,
+      "createdAt": "2000-11-09T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 50,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "377",
       "title": "님덜아 이거 한번씨간 꼭 봐주세염",
@@ -68,7 +84,8 @@
       "hits": 78,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "373",
@@ -84,7 +101,8 @@
       "hits": 124,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "372",
@@ -132,7 +150,8 @@
       "hits": 28,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "369",
@@ -180,7 +199,8 @@
       "hits": 52,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "366",
@@ -196,7 +216,8 @@
       "hits": 30,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "365",
@@ -260,7 +281,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "361",
@@ -292,7 +314,8 @@
       "hits": 99,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "359",
@@ -308,7 +331,8 @@
       "hits": 75,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 3
     },
     {
       "postId": "358",
@@ -356,7 +380,8 @@
       "hits": 114,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "355",
@@ -372,7 +397,8 @@
       "hits": 87,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "354",
@@ -420,7 +446,8 @@
       "hits": 205,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "351",
@@ -452,7 +479,8 @@
       "hits": 14,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "349",
@@ -468,7 +496,8 @@
       "hits": 199,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "348",
@@ -484,7 +513,8 @@
       "hits": 181,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "347",
@@ -516,7 +546,8 @@
       "hits": 8,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "345",
@@ -532,7 +563,8 @@
       "hits": 41,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "344",
@@ -612,7 +644,8 @@
       "hits": 79,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "339",
@@ -676,7 +709,8 @@
       "hits": 57,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "335",
@@ -708,7 +742,8 @@
       "hits": 96,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "333",
@@ -724,7 +759,8 @@
       "hits": 121,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "332",
@@ -786,22 +822,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 94,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "328",
-      "title": "저기 오른쪽 상단에 편지 클릭하면되내요-내용無-",
-      "categoryLabel": null,
-      "author": "silverwood",
-      "authorMemberNo": null,
-      "createdAt": "2000-11-07T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 3,
       "recommend": null,
       "era": "2003",
       "hasPost": false

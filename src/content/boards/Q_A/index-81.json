@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16820",
+      "title": "맞춤집 보통 비용이 얼마정도 드나요???",
+      "categoryLabel": null,
+      "author": "sagara1",
+      "authorMemberNo": "15493",
+      "createdAt": "2003-03-02T08:27:16",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 236,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "16818",
       "title": "아쳐 스킬 점검 좀 부탁 합니다",
@@ -786,22 +802,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 209,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "16766",
-      "title": "네크로 스킬을 올리는데",
-      "categoryLabel": null,
-      "author": "滅致{キㅡ-}",
-      "authorMemberNo": "14730",
-      "createdAt": "2003-02-28T20:45:17",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 151,
       "recommend": null,
       "era": "2003",
       "hasPost": true

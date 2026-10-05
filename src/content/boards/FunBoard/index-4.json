@@ -4,8 +4,24 @@
   "totalPages": 79,
   "totalPosts": 3946,
   "totalWithPost": 503,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "3419",
+      "title": "엔비댜의 기술력이 킹왕짱!",
+      "categoryLabel": null,
+      "author": "쟈나저씨",
+      "authorMemberNo": "643",
+      "createdAt": "2007-10-05T13:05:13",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 1,
+      "hits": 469,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "3417",
       "title": "매드무비 코드 에로스...",
@@ -786,22 +802,6 @@
       "commentCount": 12,
       "attachmentCount": 1,
       "hits": 1026,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "3367",
-      "title": "습격",
-      "categoryLabel": null,
-      "author": "김인문소프트웨어",
-      "authorMemberNo": "661",
-      "createdAt": "2007-09-16T15:48:53",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 12,
-      "attachmentCount": 1,
-      "hits": 605,
       "recommend": null,
       "era": "2003",
       "hasPost": true

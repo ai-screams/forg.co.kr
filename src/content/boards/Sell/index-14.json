@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "540",
+      "title": "로그케빈팔구요,룬북풀북 삽니다.",
+      "categoryLabel": null,
+      "author": "리폰이",
+      "authorMemberNo": null,
+      "createdAt": "2002-02-24T21:03:34",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 55,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "539",
       "title": "르네 타워 삽니다.,",
@@ -789,22 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "479",
-      "title": "용갈석상,블랙다이,브로즌로브 팝니다.",
-      "categoryLabel": null,
-      "author": "kypepperon",
-      "authorMemberNo": null,
-      "createdAt": "2002-02-18T11:59:40",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 125,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

@@ -4,8 +4,24 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "609",
+      "title": "시나리오 3주차 스토리 \"씨앗\"을 애써 해석한 ...",
+      "categoryLabel": null,
+      "author": "sos550",
+      "authorMemberNo": "5862",
+      "createdAt": "2002-05-04T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 451,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "608",
       "title": "병든 화분에 대한 임상기",
@@ -786,22 +802,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 954,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "582",
-      "title": "무기 스킬 올릴때 가장 좋은 무기는?",
-      "categoryLabel": null,
-      "author": "아리랑인",
-      "authorMemberNo": "2871",
-      "createdAt": "2002-04-18T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 564,
       "recommend": null,
       "era": "2003",
       "hasPost": false

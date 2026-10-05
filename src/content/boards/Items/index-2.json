@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "897",
+      "title": "팔지 감정요;;",
+      "categoryLabel": null,
+      "author": "jmjool",
+      "authorMemberNo": "587",
+      "createdAt": "2007-05-26T02:36:52",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 1,
+      "hits": 730,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "895",
       "title": "갑옷 몇 점...",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 1,
       "hits": 479,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "835",
-      "title": "그럭저럭 팔찌",
-      "categoryLabel": null,
-      "author": "NINA",
-      "authorMemberNo": "8188",
-      "createdAt": "2007-04-01T03:54:55",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 1,
-      "hits": 379,
       "recommend": null,
       "era": "2003",
       "hasPost": true

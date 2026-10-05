@@ -4,8 +4,24 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "582",
+      "title": "무기 스킬 올릴때 가장 좋은 무기는?",
+      "categoryLabel": null,
+      "author": "아리랑인",
+      "authorMemberNo": "2871",
+      "createdAt": "2002-04-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 564,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "581",
       "title": "◎무사의 일쉐나 가이드북 <1.자비>",
@@ -786,22 +802,6 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 1083,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "2006",
-      "title": "UO 자체 스킬 그룹 설정 정리.",
-      "categoryLabel": null,
-      "author": "Ragnarok",
-      "authorMemberNo": "19590",
-      "createdAt": "2002-04-06T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 10,
-      "attachmentCount": 0,
-      "hits": 775,
       "recommend": null,
       "era": "2003",
       "hasPost": false

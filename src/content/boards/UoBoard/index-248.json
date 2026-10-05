@@ -4,8 +4,25 @@
   "totalPages": 253,
   "totalPosts": 12618,
   "totalWithPost": 4255,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "436",
+      "title": "발가락님^^",
+      "categoryLabel": "RE",
+      "author": "발가락",
+      "authorMemberNo": null,
+      "createdAt": "2000-11-15T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 34,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false,
+      "replyDepth": 1
+    },
     {
       "postId": "432",
       "title": "어세신은 살인적인 사양을 요구하는 울티마9입니다.",
@@ -20,7 +37,8 @@
       "hits": 80,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "428",
@@ -36,7 +54,8 @@
       "hits": 24,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "427",
@@ -52,7 +71,8 @@
       "hits": 62,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "426",
@@ -84,7 +104,8 @@
       "hits": 55,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "424",
@@ -100,7 +121,8 @@
       "hits": 59,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "423",
@@ -132,7 +154,8 @@
       "hits": 111,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "421",
@@ -180,7 +203,8 @@
       "hits": 47,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "417",
@@ -196,7 +220,8 @@
       "hits": 52,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "416",
@@ -260,7 +285,8 @@
       "hits": 80,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "411",
@@ -276,7 +302,8 @@
       "hits": 108,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "410",
@@ -324,7 +351,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "407",
@@ -468,7 +496,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "398",
@@ -484,7 +513,8 @@
       "hits": 71,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "397",
@@ -532,7 +562,8 @@
       "hits": 60,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "394",
@@ -596,7 +627,8 @@
       "hits": 149,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "390",
@@ -676,7 +708,8 @@
       "hits": 39,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "385",
@@ -692,7 +725,8 @@
       "hits": 72,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "384",
@@ -708,7 +742,8 @@
       "hits": 26,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "383",
@@ -724,7 +759,8 @@
       "hits": 42,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "382",
@@ -786,22 +822,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 146,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "378",
-      "title": "울온정품에대한질문",
-      "categoryLabel": null,
-      "author": "울온할랭",
-      "authorMemberNo": null,
-      "createdAt": "2000-11-09T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 50,
       "recommend": null,
       "era": "2003",
       "hasPost": false

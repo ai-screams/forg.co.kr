@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1376,
   "totalWithPost": 395,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "876",
+      "title": "테일러,테임파스 판매합니다!!!미늘루닉,파스....",
+      "categoryLabel": null,
+      "author": "kakha",
+      "authorMemberNo": "16010",
+      "createdAt": "2003-06-08T02:17:29",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 111,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "872",
+      "title": "워럼잭전사용 무기/방어구/악세사리 삽니다.",
+      "categoryLabel": null,
+      "author": "dookey",
+      "authorMemberNo": "18929",
+      "createdAt": "2003-06-07T12:00:05",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 51,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "871",
       "title": "뮤지15 파스 삽니다",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "809",
-      "title": "뮤지 115 피스 120 파스 삽니다",
-      "categoryLabel": null,
-      "author": "kkokko",
-      "authorMemberNo": "0",
-      "createdAt": "2003-06-01T10:55:05",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 37,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "816",
-      "title": "5년차 아리랑계정 팝니다`",
-      "categoryLabel": null,
-      "author": "beatboxm",
-      "authorMemberNo": "20876",
-      "createdAt": "2003-06-01T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 124,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

@@ -4,8 +4,24 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "737",
+      "title": "몇몇 의복의 붉은악마 패치",
+      "categoryLabel": null,
+      "author": "sos550",
+      "authorMemberNo": "5862",
+      "createdAt": "2002-06-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 9,
+      "attachmentCount": 0,
+      "hits": 1004,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "2168",
       "title": "전체화면에서 한글안써질때 해결법",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 1351,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "2134",
-      "title": "보트피하기 매클",
-      "categoryLabel": null,
-      "author": "Jackc",
-      "authorMemberNo": "20353",
-      "createdAt": "2002-05-31T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 833,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16985",
+      "title": "아띠 왜 쉐임에서 어쓰가 100gp로 내렸져....ㅠ.ㅠ",
+      "categoryLabel": null,
+      "author": "veldandy",
+      "authorMemberNo": "16384",
+      "createdAt": "2003-03-07T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 170,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "16983",
       "title": "완드들고때리면...",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 114,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "16940",
-      "title": "챔피언에 대해서 알려주세요",
-      "categoryLabel": null,
-      "author": "bloodguy1",
-      "authorMemberNo": "17201",
-      "createdAt": "2003-03-05T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 336,
       "recommend": null,
       "era": "2003",
       "hasPost": false

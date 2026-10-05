@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "8193",
+      "title": "울온을 쉴려고 계정을 중지시킬려고 하는데 어떻게하나요",
+      "categoryLabel": null,
+      "author": "skyronjas",
+      "authorMemberNo": "5685",
+      "createdAt": "2002-05-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 81,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "8192",
       "title": "질문 좀 할게요..;;",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 63,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "8140",
-      "title": "브리타니아대륙의 여러분..안녕하십니까...",
-      "categoryLabel": null,
-      "author": "herdin",
-      "authorMemberNo": "4244",
-      "createdAt": "2002-05-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 108,
       "recommend": null,
       "era": "2003",
       "hasPost": false

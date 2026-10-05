@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "479",
+      "title": "용갈석상,블랙다이,브로즌로브 팝니다.",
+      "categoryLabel": null,
+      "author": "kypepperon",
+      "authorMemberNo": null,
+      "createdAt": "2002-02-18T11:59:40",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 125,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "478",
       "title": "아리랑계정 계정파라요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 58,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "424",
-      "title": "르네 타워팝니다..베습가드권타워입니당~!!",
-      "categoryLabel": null,
-      "author": "[MLW]SKY",
-      "authorMemberNo": null,
-      "createdAt": "2002-02-10T16:10:51",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 1,
-      "hits": 117,
       "recommend": null,
       "era": "2003",
       "hasPost": true

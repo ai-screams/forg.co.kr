@@ -4,8 +4,24 @@
   "totalPages": 7,
   "totalPosts": 323,
   "totalWithPost": 33,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "197",
+      "title": "마이에미 바이스",
+      "categoryLabel": null,
+      "author": "장포갈매기",
+      "authorMemberNo": "123",
+      "createdAt": "2007-08-22T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 6,
+      "attachmentCount": 0,
+      "hits": 271,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "196",
       "title": "센티널 (잭 바우어 출연)",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 385,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "324",
-      "title": "밀양",
-      "categoryLabel": null,
-      "author": "cl",
-      "authorMemberNo": "266",
-      "createdAt": "2007-06-13T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 258,
       "recommend": null,
       "era": "2003",
       "hasPost": false

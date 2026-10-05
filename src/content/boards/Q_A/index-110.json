@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "10765",
+      "title": "머더러 스탯로스 스킬로스에대해 질문...",
+      "categoryLabel": null,
+      "author": "김준형",
+      "authorMemberNo": "3866",
+      "createdAt": "2002-08-25T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 13,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "10764",
       "title": "Dragon Balding Deed 가 뭐에요??",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 53,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "10668",
-      "title": "생산캐릭 명성 달기 -_-!!",
-      "categoryLabel": null,
-      "author": "Banana Milk",
-      "authorMemberNo": "9899",
-      "createdAt": "2002-08-22T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 11,
-      "attachmentCount": 0,
-      "hits": 187,
       "recommend": null,
       "era": "2003",
       "hasPost": false

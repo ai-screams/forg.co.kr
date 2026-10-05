@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "10066",
+      "title": "락픽용 젬제 상자 파는 벤더 아시는 분..",
+      "categoryLabel": null,
+      "author": "air2300",
+      "authorMemberNo": "3296",
+      "createdAt": "2002-08-07T18:00:09",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 53,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "10065",
       "title": "레슈 서버 irc 서버 이름 아시는분?",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 33,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "9946",
-      "title": "하아..UOA가..어디서..-_-;;",
-      "categoryLabel": null,
-      "author": "㈜란™",
-      "authorMemberNo": "7988",
-      "createdAt": "2002-08-03T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 67,
       "recommend": null,
       "era": "2003",
       "hasPost": false

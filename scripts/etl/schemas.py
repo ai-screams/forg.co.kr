@@ -109,6 +109,10 @@ class BoardIndexEntry(BaseModel):
     # CONTINUES): the board whose `/{board}/{postId}` the row links to.
     # Omitted from the JSON when None.
     board: str | None = None
+    # A captured list showed the row as a notice / as a reply (its depth).
+    # Omitted from the JSON when false / 0.
+    isNotice: bool = False
+    replyDepth: int = Field(default=0, ge=0)
 
 
 class BoardIndexPage(BaseModel):
@@ -148,6 +152,9 @@ class BoardListingEntry(BaseModel):
     hits: int | None = None
     commentCount: int = Field(ge=0)
     isNotice: bool = False
+    # 0 for a post; for a reply, its depth (1 when the skin did not show it).
+    # Omitted from the JSON when 0.
+    replyDepth: int = Field(default=0, ge=0)
     # Wayback ts of the list page this row came from.
     capturedAt: str
     listPage: int = Field(ge=1)

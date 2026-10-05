@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "12821",
+      "title": "ㅜ_ㅜ 패링파스 105짜리",
+      "categoryLabel": "질문",
+      "author": "dleoska777",
+      "authorMemberNo": "12800",
+      "createdAt": "2002-11-07T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 70,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "12820",
       "title": "내구력 회복 파우더...",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 100,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "12770",
-      "title": "이동분말가루요~~",
-      "categoryLabel": null,
-      "author": "assali16",
-      "authorMemberNo": "12799",
-      "createdAt": "2002-11-06T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 68,
       "recommend": null,
       "era": "2003",
       "hasPost": false

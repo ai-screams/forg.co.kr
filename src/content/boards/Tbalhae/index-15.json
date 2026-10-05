@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1376,
   "totalWithPost": 395,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "1027",
+      "title": "[[[ 캐슬 팝니다]]]",
+      "categoryLabel": null,
+      "author": "JiSoo",
+      "authorMemberNo": "14611",
+      "createdAt": "2003-06-21T12:21:33",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 2,
+      "hits": 150,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "1026",
+      "title": "각종 파스 현에 구입합니다.",
+      "categoryLabel": null,
+      "author": "ahwa3333",
+      "authorMemberNo": "19295",
+      "createdAt": "2003-06-21T11:30:20",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 91,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "1025",
       "title": "가시가죽팝니다",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "963",
-      "title": "래지20파스삽니다. 발해",
-      "categoryLabel": null,
-      "author": "sonyjj",
-      "authorMemberNo": "17418",
-      "createdAt": "2003-06-15T10:33:26",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 46,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "972",
-      "title": "계정을 [발해]계정과 교환원함",
-      "categoryLabel": "리니지",
-      "author": "outcastmad",
-      "authorMemberNo": "21114",
-      "createdAt": "2003-06-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 50,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

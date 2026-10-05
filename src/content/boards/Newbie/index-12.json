@@ -4,8 +4,24 @@
   "totalPages": 16,
   "totalPosts": 772,
   "totalWithPost": 345,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "237",
+      "title": "집이 아직 다 안지어졌는데 락다운 시킬수있나요?",
+      "categoryLabel": null,
+      "author": "Bathim",
+      "authorMemberNo": null,
+      "createdAt": "2003-03-07T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 146,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "236",
       "title": "네크로 맨서 와 스킬제한",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 161,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "179",
-      "title": "- _ -;;;",
-      "categoryLabel": null,
-      "author": "a daemon",
-      "authorMemberNo": null,
-      "createdAt": "2003-02-13T09:45:19",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 45,
       "recommend": null,
       "era": "2003",
       "hasPost": true

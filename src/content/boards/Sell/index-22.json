@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "19",
+      "title": "라지마블 삽니다. 펠루카도 괜찮습니다.",
+      "categoryLabel": null,
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "2001-12-10T11:00:05",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 88,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "17",
       "title": "포스급 크리스,워폭 전부 다 삽니다.데들리독 통당 2만5천에 4통 삽니다.",
@@ -357,22 +373,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "장터란입니다[샤드별로 선택하신후 써주세영^^ 나머지는 일반입니다]",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": null,
-      "createdAt": "2001-03-16T22:39:31",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 6079,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     },
     {
       "postId": "417",

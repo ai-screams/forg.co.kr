@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "18109",
+      "title": "형님 검프 질문여~~~~",
+      "categoryLabel": null,
+      "author": "이쁜아이",
+      "authorMemberNo": "15706",
+      "createdAt": "2003-04-18T18:04:25",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 135,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "18108",
       "title": "피스전사 스킬을 어떻게 잡는게 좋을까요;;",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 118,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "18058",
-      "title": "개미퀘스트중에서 그 침입자불개미 말이에요.",
-      "categoryLabel": null,
-      "author": "dlshfkd",
-      "authorMemberNo": "17076",
-      "createdAt": "2003-04-16T18:04:44",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 185,
       "recommend": null,
       "era": "2003",
       "hasPost": true

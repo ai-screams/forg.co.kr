@@ -106,6 +106,8 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
       createdAt: entry.createdAt,
       dateApprox,
       hits: entry.hits,
+      notice: entry.isNotice === true,
+      replyDepth: entry.replyDepth ?? 0,
       cells: {
         title: (
           <TitleCell
@@ -126,9 +128,14 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
   });
 }
 
+/** Notices first, as the boards pinned them; the rest in the listing's order. */
 export function listingRows(board: BoardId, listing: BoardListing, skin: ListSkin): ListRow[] {
   const marked = listing.entries.some((e) => e.hasPost);
-  return listing.entries.map((entry) => {
+  const entries = [
+    ...listing.entries.filter((e) => e.isNotice),
+    ...listing.entries.filter((e) => !e.isNotice),
+  ];
+  return entries.map((entry) => {
     const href = entry.hasPost ? `/${board}/${entry.no}` : null;
     const dateApprox: DateApprox | null = entry.yearApprox ? "year" : null;
     return {
@@ -140,6 +147,8 @@ export function listingRows(board: BoardId, listing: BoardListing, skin: ListSki
       createdAt: entry.createdAt,
       dateApprox,
       hits: entry.hits,
+      notice: entry.isNotice,
+      replyDepth: entry.replyDepth ?? 0,
       cells: {
         title: (
           <TitleCell

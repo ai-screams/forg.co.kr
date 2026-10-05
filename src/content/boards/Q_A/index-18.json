@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "21945",
+      "title": "울온 등록 사이트 바뀌고 나서 계정 중지 해보시분 ..",
+      "categoryLabel": null,
+      "author": "yogurt",
+      "authorMemberNo": "17426",
+      "createdAt": "2003-11-03T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 80,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "21944",
       "title": "공동소유주가 있을때 자동이어받기 라고 있어서..",
@@ -786,22 +802,6 @@
       "commentCount": 8,
       "attachmentCount": 0,
       "hits": 177,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "21890",
-      "title": "금속박스란게 뭐죠?",
-      "categoryLabel": null,
-      "author": "hasi12",
-      "authorMemberNo": "14650",
-      "createdAt": "2003-10-31T18:32:20",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 59,
       "recommend": null,
       "era": "2003",
       "hasPost": true

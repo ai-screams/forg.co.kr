@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20353",
+      "title": "(질문)스킬 중에 \"정신집중\"",
+      "categoryLabel": null,
+      "author": "iypin",
+      "authorMemberNo": "22106",
+      "createdAt": "2003-08-14T18:53:57",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 97,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "20356",
       "title": "다른 분한테서 애완동물(?!) 을 얻을 때요..",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 19,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "20309",
-      "title": "메저리와 기사도.....",
-      "categoryLabel": null,
-      "author": "airgstring",
-      "authorMemberNo": "18236",
-      "createdAt": "2003-08-12T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 69,
       "recommend": null,
       "era": "2003",
       "hasPost": false

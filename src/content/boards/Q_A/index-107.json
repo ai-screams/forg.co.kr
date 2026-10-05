@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "12641",
+      "title": "Statue of Blackthorn 이란 석상 가격이 궁금 합니다...",
+      "categoryLabel": null,
+      "author": "goldfog",
+      "authorMemberNo": "11163",
+      "createdAt": "2002-10-31T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 123,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "12640",
       "title": "씨디롬이 자꾸'이동식 디스크'로 인식되네요...",
@@ -786,22 +802,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 165,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "7548",
-      "title": "수족관 관리 하는 법 알려주세요 ^^",
-      "categoryLabel": null,
-      "author": "bluemee",
-      "authorMemberNo": "3359",
-      "createdAt": "2002-10-30T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 52,
       "recommend": null,
       "era": "2003",
       "hasPost": false

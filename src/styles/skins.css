@@ -15,8 +15,10 @@
   --color-webbus-num: oklch(0.7668 0 0); /* #B3B3B3 — row number */
   --color-webbus-comment-bar: #cbd1d4; /* comment's name and date bar */
   --color-webbus-comment-rule: #e3e3e3; /* line under a comment */
+  --color-webbus-notice-row: #fafafa; /* notice row */
 
-  /* Zeroboard `kritz_*` comments */
+  /* Zeroboard `kritz_*` lists and comments */
+  --color-kritz-notice-row: #f2f2f2; /* notice row, in every kritz_* skin */
   --color-kritz-comment-border: #dfdfdf;
   --color-kritz-comment-text: #363636;
 

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "18432",
+      "title": "포이즌이 스킬에 관한 질문입니다!",
+      "categoryLabel": null,
+      "author": "ahja",
+      "authorMemberNo": "20711",
+      "createdAt": "2003-05-14T10:32:50",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 109,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "18431",
       "title": "인벌 베라플렛갑옷 저항총합이?",
@@ -786,22 +802,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 182,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "18378",
-      "title": "화이어 스티드 템하는 곳",
-      "categoryLabel": "질문",
-      "author": "inuyasha",
-      "authorMemberNo": "14672",
-      "createdAt": "2003-05-10T17:46:12",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 185,
       "recommend": null,
       "era": "2003",
       "hasPost": true

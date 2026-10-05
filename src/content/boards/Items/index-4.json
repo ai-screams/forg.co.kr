@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "766",
+      "title": "모 그냥 이런 활...",
+      "categoryLabel": null,
+      "author": "Zip",
+      "authorMemberNo": "573",
+      "createdAt": "2007-01-25T00:17:50",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 1,
+      "hits": 456,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "765",
       "title": "보쿠토,대석궁,그리고 숏보우몇개올려요.",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 1,
       "hits": 646,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "691",
-      "title": "이런 반지 얼마나 하나요?",
-      "categoryLabel": null,
-      "author": "sscream",
-      "authorMemberNo": "1576",
-      "createdAt": "2006-09-15T22:54:55",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 1,
-      "hits": 338,
       "recommend": null,
       "era": "2003",
       "hasPost": true

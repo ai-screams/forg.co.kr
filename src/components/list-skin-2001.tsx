@@ -19,6 +19,11 @@
  * Rows link where a post was kept and are plain text where only the list row
  * survives; dates print as the skins did, `YYYY/MM/DD`, with the full time as
  * a tooltip.
+ *
+ * N+gine marked a notice with `list_notice.gif` for its number,
+ * `notice_head.gif` before its title and the label colour behind its row; a
+ * reply with `reply_head.gif` before its title, indented `&nbsp; ` a level
+ * (`LZ/Q_A/z-page-1`, `Z/Q_A/109`).
  */
 
 import type { ReactNode } from "react";
@@ -71,9 +76,22 @@ function TitleCell({
   /** N+gine printed the comment count after a title; n_board did not. */
   withCount: boolean;
 }) {
+  const head = row.notice
+    ? "notice_head.gif"
+    : row.replyDepth > 0
+      ? "reply_head.gif"
+      : "old_head.gif";
+  // `y` and `yellow` share their header and notice images byte for byte
+  // (`last_left.gif`, `title_no.gif`, `list_notice.gif`); only yellow's
+  // `reply_head.gif` survives, so it stands for y's. board, pink and htred
+  // kept none, and their replies show the indent alone — so a reply is named
+  // in text for a screen reader, and the notice is named once, on its number.
+  const headSkin = head === "reply_head.gif" && skin === "y" ? "yellow" : skin;
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
-      <SkinImg2001 skin={skin} file="old_head.gif" />
+      {row.replyDepth > 0 && "\u00a0 ".repeat(row.replyDepth)}
+      <SkinImg2001 skin={headSkin} file={head} />
+      {row.replyDepth > 0 && <span className="sr-only">답글</span>}
       &nbsp;
       {row.href ? (
         <Link href={row.href} className="text-(--era-link) hover:text-(--era-link-hover)">
@@ -182,8 +200,16 @@ function NgineRows({
       <tbody>
         {rows.map((row, i) => (
           <RowWithRule key={row.key} span={5}>
-            <tr className="h-[20px] bg-zb40-row text-center">
-              <td className={THM8}>{firstNumber - i}</td>
+            <tr
+              className={`h-[20px] text-center ${row.notice ? "bg-(--zb40-label)" : "bg-zb40-row"}`}
+            >
+              <td className={THM8}>
+                {row.notice ? (
+                  <SkinImg2001 skin={skin} file="list_notice.gif" alt="공지" />
+                ) : (
+                  firstNumber - i
+                )}
+              </td>
               <TitleCell skin={skin} row={row} withCount />
               <td className="truncate break-all">
                 <AuthorName {...row.author} seed={row.key} />

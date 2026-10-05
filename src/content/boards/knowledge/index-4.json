@@ -4,8 +4,24 @@
   "totalPages": 5,
   "totalPosts": 238,
   "totalWithPost": 110,
-  "generatedAt": "2026-10-03T07:38:36Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "476",
+      "title": "FORG IE",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-09-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 20,
+      "attachmentCount": 0,
+      "hits": 1034,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "472",
       "title": "대포폰-_-;",
@@ -66,22 +82,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 517,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "잡식게시판이 Open하였습니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2004-07-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 656,
       "recommend": null,
       "era": "2003",
       "hasPost": false

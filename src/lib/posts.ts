@@ -149,6 +149,22 @@ export async function getBoardView(board: BoardId): Promise<BoardView> {
   return listing ? { kind: "listing", listing } : { kind: "placeholder" };
 }
 
+function postNumber(e: BoardIndexEntry): number {
+  return /^\d+$/.test(e.postId) ? Number(e.postId) : 0;
+}
+
+/**
+ * The index's order without the pinning: `createdAt` desc, then post number
+ * desc (`03-build-index.py` `index_order`). The home boxes and 이전글/다음글
+ * go by date, so a pinned notice takes its date's place there — by number
+ * among the rows of its date, which for an undated notice (Role 1) are the
+ * many 1970 rows.
+ */
+function newestFirst(a: BoardIndexEntry, b: BoardIndexEntry): number {
+  if (a.createdAt !== b.createdAt) return a.createdAt < b.createdAt ? 1 : -1;
+  return postNumber(b) - postNumber(a);
+}
+
 /**
  * The newest `count` rows of a board that the museum holds the post for.
  *
@@ -171,14 +187,19 @@ export async function getRecentPostEntries(
   // error to fix at build time, not an empty box.
   if (!firstPage) throw new Error(`home box: board ${board} has no index`);
 
-  const entries = firstPage.entries.filter((e) => e.hasPost);
+  // The board's notices lead page 1 and do not count toward the newest rows.
+  const notices = firstPage.entries.filter((e) => e.hasPost && e.isNotice);
+  const entries = firstPage.entries.filter((e) => e.hasPost && !e.isNotice);
   for (let page = 2; entries.length < count && page <= firstPage.totalPages; page++) {
     const next = await getBoardIndex(board, page);
     if (!next) break;
     entries.push(...next.entries.filter((e) => e.hasPost));
   }
 
-  return { entries: entries.slice(0, count), totalPosts: firstPage.totalPosts };
+  return {
+    entries: [...notices, ...entries].sort(newestFirst).slice(0, count),
+    totalPosts: firstPage.totalPosts,
+  };
 }
 
 export interface AdjacentPosts {
@@ -187,7 +208,7 @@ export interface AdjacentPosts {
 }
 
 interface BoardSequence {
-  /** Every row with a post page, in listing order (`createdAt` desc). */
+  /** Every row with a post page, newest first (`newestFirst`). */
   entries: BoardIndexEntry[];
   /** `postId` → position in `entries`. */
   position: Map<string, number>;
@@ -202,7 +223,8 @@ async function loadBoardSequence(board: BoardId): Promise<BoardSequence> {
     : [];
   const entries = [firstPage, ...rest]
     .flatMap((page) => page?.entries ?? [])
-    .filter((e) => e.hasPost);
+    .filter((e) => e.hasPost)
+    .sort(newestFirst);
   const position = new Map(entries.map((e, i) => [e.postId, i]));
   return { entries, position };
 }
@@ -227,8 +249,8 @@ function boardSequence(board: BoardId): Promise<BoardSequence> {
 
 /**
  * Return the chronologically adjacent posts (within the same board listing)
- * for the given postId. Ordering matches the board listing: `createdAt` desc
- * (newest first). `next` = one step newer, `prev` = one step older. A
+ * for the given postId: `createdAt` desc (newest first), the listing's order
+ * but for its pinned notices. `next` = one step newer, `prev` = one step older. A
  * neighbour carried in from an older board keeps its `board` field, so the
  * caller links it there.
  *

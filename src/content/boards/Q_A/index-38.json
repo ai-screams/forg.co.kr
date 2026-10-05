@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20641",
+      "title": "둠챔때는 어떤 무기 쓰시는지?",
+      "categoryLabel": null,
+      "author": "tearof",
+      "authorMemberNo": "20829",
+      "createdAt": "2003-08-29T09:39:11",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 234,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "20640",
       "title": "울온 카드결제를 타임쿠폰으로 바꾸려면..?",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 93,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "20589",
-      "title": "용갈 받으려면 스킬이 얼마나 되야 하나요?",
-      "categoryLabel": null,
-      "author": "icebath",
-      "authorMemberNo": "15315",
-      "createdAt": "2003-08-25T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 84,
       "recommend": null,
       "era": "2003",
       "hasPost": false

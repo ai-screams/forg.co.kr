@@ -4,8 +4,25 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
+    {
+      "postId": "2769",
+      "title": "더블 마법 쓰는법 갈켜주시면 감사하겠습니다",
+      "categoryLabel": "re",
+      "author": "HolyPink",
+      "authorMemberNo": null,
+      "createdAt": "2001-05-20T11:23:16",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 101,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true,
+      "replyDepth": 1
+    },
     {
       "postId": "2773",
       "title": "울온이 작동이 잘안되네요...",
@@ -20,7 +37,8 @@
       "hits": 6,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2771",
@@ -100,7 +118,8 @@
       "hits": 35,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2764",
@@ -116,7 +135,8 @@
       "hits": 38,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2763",
@@ -132,7 +152,8 @@
       "hits": 60,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2762",
@@ -180,7 +201,8 @@
       "hits": 71,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 3
     },
     {
       "postId": "2757",
@@ -196,7 +218,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 3
     },
     {
       "postId": "2760",
@@ -228,7 +251,8 @@
       "hits": 20,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "2754",
@@ -244,7 +268,8 @@
       "hits": 81,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2753",
@@ -356,7 +381,8 @@
       "hits": 55,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2745",
@@ -388,7 +414,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 3
     },
     {
       "postId": "2744",
@@ -404,7 +431,8 @@
       "hits": 69,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2743",
@@ -436,7 +464,8 @@
       "hits": 100,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2741",
@@ -452,7 +481,8 @@
       "hits": 36,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "2740",
@@ -468,7 +498,8 @@
       "hits": 42,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2739",
@@ -484,7 +515,8 @@
       "hits": 35,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2738",
@@ -548,7 +580,8 @@
       "hits": 43,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2735",
@@ -644,7 +677,8 @@
       "hits": 11,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2727",
@@ -708,7 +742,8 @@
       "hits": 23,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2723",
@@ -772,7 +807,8 @@
       "hits": 28,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2719",
@@ -786,22 +822,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 47,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "2718",
-      "title": "옛날에 돈버그가 어떻게 썻었죠? 패치됀거 그것이 좀 필요해서 (그거 안써염ㅡ.ㅡ; 패치됀거여)",
-      "categoryLabel": null,
-      "author": "랜드",
-      "authorMemberNo": null,
-      "createdAt": "2001-05-10T21:36:40",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 70,
       "recommend": null,
       "era": "2003",
       "hasPost": true

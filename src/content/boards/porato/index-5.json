@@ -4,8 +4,40 @@
   "totalPages": 32,
   "totalPosts": 1596,
   "totalWithPost": 240,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "4475",
+      "title": "쌍둥이 칼",
+      "categoryLabel": "칼",
+      "author": "selic",
+      "authorMemberNo": "122",
+      "createdAt": "2007-09-24T22:56:33",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 6,
+      "attachmentCount": 2,
+      "hits": 294,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "4474",
+      "title": "디펜더.. 드디어 다 깼다..ㅠㅠ",
+      "categoryLabel": null,
+      "author": "기픔",
+      "authorMemberNo": "839",
+      "createdAt": "2007-09-24T17:39:18",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 1,
+      "hits": 223,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "4473",
       "title": "이거 보세요",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "4415",
-      "title": "ㅠㅠ",
-      "categoryLabel": null,
-      "author": "goo1212",
-      "authorMemberNo": "6511",
-      "createdAt": "2007-08-19T00:37:40",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 1,
-      "hits": 491,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "4414",
-      "title": "이것들은...",
-      "categoryLabel": null,
-      "author": "데비루만",
-      "authorMemberNo": "302",
-      "createdAt": "2007-08-19T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 302,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

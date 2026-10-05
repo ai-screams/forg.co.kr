@@ -4,7 +4,7 @@
   "totalPages": 255,
   "totalPosts": 12707,
   "totalWithPost": 4277,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
     {
       "postId": "1830",
@@ -38,7 +38,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1828",
@@ -208,7 +209,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1794",
@@ -650,7 +652,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1742",

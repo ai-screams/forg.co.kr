@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "21677",
+      "title": "cloth 벌크디드 질문입니다",
+      "categoryLabel": null,
+      "author": "hpm82",
+      "authorMemberNo": "20864",
+      "createdAt": "2003-10-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 93,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "21674",
       "title": "대략",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 87,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "21621",
-      "title": "도둑 변장 마스크를?",
-      "categoryLabel": null,
-      "author": "발해사나이",
-      "authorMemberNo": "0",
-      "createdAt": "2003-10-16T10:09:33",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": 162,
       "recommend": null,
       "era": "2003",
       "hasPost": true

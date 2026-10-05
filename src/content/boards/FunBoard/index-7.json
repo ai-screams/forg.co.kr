@@ -4,8 +4,24 @@
   "totalPages": 79,
   "totalPosts": 3946,
   "totalWithPost": 503,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "3250",
+      "title": "액션영화 이럴 땐 이런다",
+      "categoryLabel": null,
+      "author": "로드까까",
+      "authorMemberNo": "131",
+      "createdAt": "2007-07-31T15:41:51",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 446,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "3249",
       "title": "디워 혹평 평론가들의 짜깁기 원문들",
@@ -658,22 +674,6 @@
       "commentCount": 12,
       "attachmentCount": 0,
       "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "1554",
-      "title": "만화나 기타 저작권이 있는 이미지,기사전문은 불펌하지 말아주시길...",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "2",
-      "createdAt": "2006-05-17T21:05:56",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": 1408,
       "recommend": null,
       "era": "2003",
       "hasPost": true

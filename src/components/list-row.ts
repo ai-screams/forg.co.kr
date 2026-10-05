@@ -40,6 +40,10 @@ export interface ListRow {
   /** Set when `createdAt` is not the post's own full date (`DATE_APPROX`). */
   dateApprox: DateApprox | null;
   hits: number | null;
+  /** A notice the board pinned: the rows above the rest on page 1. */
+  notice: boolean;
+  /** 0 for a post; a reply's depth, 1 and up. */
+  replyDepth: number;
   /**
    * The 2014/2003 cells, built once: the phone list and the table share each
    * element, which the RSC payload then carries once.

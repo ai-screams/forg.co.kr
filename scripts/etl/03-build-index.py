@@ -10,6 +10,10 @@ Rows from the board's captured list pages (`src/content/listings/{board}.json`,
 Stage 2c, ADR-0017 §4) are merged in: a row with no post becomes an
 entry with `hasPost: false` — a title the museum can show but not open —
 and a row for a post we hold fills `hits` when the post page had none.
+A row's notice and reply marks go onto the post only when the row is the
+post (`same_post`); a post whose subject starts `[RE]` is a reply as well
+(`reply_by_subject`). The board's own notices lead page 1, as the boards pinned
+them; rows carried from an older board are plain rows in date order.
 
 The index entries are deliberately lightweight — no `bodyHtml` /
 `bodyText` — so the listing page bundle stays tiny even when a board
@@ -27,8 +31,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -41,6 +47,7 @@ from schemas import (  # noqa: E402
     BoardIndexEntry,
     BoardIndexPage,
     BoardListing,
+    BoardListingEntry,
     Post,
 )
 
@@ -70,6 +77,12 @@ def _load_post(path: Path) -> Post:
     return Post.model_validate(raw)
 
 
+def reply_by_subject(category: str | None) -> int:
+    """1 for a 2001 reply, whose subject Zeroboard 4.0 started `[RE]` — a
+    prefix the parsers take for a category — else 0."""
+    return 1 if category is not None and category.strip().casefold() == "re" else 0
+
+
 def _entry_from_post(post: Post) -> BoardIndexEntry:
     return BoardIndexEntry(
         postId=post.postId,
@@ -84,7 +97,51 @@ def _entry_from_post(post: Post) -> BoardIndexEntry:
         hits=post.hits,
         recommend=post.recommend,
         era=post.era,
+        replyDepth=reply_by_subject(post.categoryLabel),
     )
+
+
+_RE_PREFIX = re.compile(r"^\[re\]", re.I)
+
+
+def _key(text: str) -> str:
+    """Case, width and spacing folded: a list's link text puts a space where
+    its markup broke the title (`Load Oaks [일쉐나챔피언]` for the post's
+    `Load Oaks[일쉐나챔피언]`)."""
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text)).casefold()
+
+
+def same_post(post: BoardIndexEntry, row: BoardListingEntry) -> bool:
+    """Whether a list row with the post's number is the post.
+
+    Post numbers repeat across forg's installs (Q_A no=272 is a 2000 reply
+    on one list and a 2001 question on another), so the number alone does
+    not say so. The titles agree, allowing for a list that cut the title
+    short with `..` and a 2001 reply's `[RE]`; or, for a notice, the author
+    does — the board's admin rewrote its notices' titles between captures
+    (Q_A 2429, Sell 1, Role 1, …).
+    """
+    title, row_title = _RE_PREFIX.sub("", _key(post.title)), _RE_PREFIX.sub("", _key(row.title))
+    if title == row_title:
+        return True
+    cut = row_title.rstrip(".")  # NFKC has made `…` three dots
+    if row_title.endswith("..") and cut and title.startswith(cut):
+        return True
+    return row.isNotice and _key(post.author) == _key(row.author)
+
+
+def index_order(e: BoardIndexEntry) -> tuple[bool, datetime, int]:
+    """Sort key, descending: the board's notices first, as it pinned them;
+    then newest first. A title-only row with no date carries the 1970
+    sentinel and sinks to the end like an undated post does."""
+    return (e.isNotice, e.createdAt, int(e.postId) if e.postId.isdigit() else 0)
+
+
+def carry(e: BoardIndexEntry, older: str) -> BoardIndexEntry:
+    """A row of the board this one continues (CONTINUES), linking to `older`.
+    It was that board's notice, not this one's: it stays a plain row in its
+    date's place."""
+    return e.model_copy(update={"board": older, "isNotice": False})
 
 
 def _load_listing(board: str) -> BoardListing | None:
@@ -112,6 +169,9 @@ def _merge_listing(
             if have.hits is None and row.hits is not None:
                 have.hits = row.hits
                 filled += 1
+            if same_post(have, row):
+                have.isNotice = row.isNotice
+                have.replyDepth = max(have.replyDepth, row.replyDepth)
             continue
         created = (
             datetime(row.createdAt.year, row.createdAt.month, row.createdAt.day)
@@ -133,6 +193,8 @@ def _merge_listing(
                 recommend=None,
                 era=era,  # type: ignore[arg-type]
                 hasPost=False,
+                isNotice=row.isNotice,
+                replyDepth=row.replyDepth or reply_by_subject(row.categoryLabel),
             )
         )
         added += 1
@@ -183,12 +245,16 @@ def _board_entries(board: str, post_files: list[Path], errors: list[str]) -> lis
 
 
 def _dump_page(page: BoardIndexPage) -> str:
-    """The chunk JSON, with `board` written only on rows that carry one, so
-    boards without a predecessor keep their files byte for byte."""
+    """The chunk JSON, with `board`, `isNotice` and `replyDepth` written only
+    on rows that carry them, so other rows keep their bytes."""
     data = page.model_dump(mode="json")
     for e in data["entries"]:
         if e.get("board") is None:
             e.pop("board", None)
+        if not e.get("isNotice"):
+            e.pop("isNotice", None)
+        if not e.get("replyDepth"):
+            e.pop("replyDepth", None)
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
@@ -224,9 +290,7 @@ def _build_board(
         entries += carried
         print(f"  {board}: +{len(carried)} rows carried from {', '.join(CONTINUES[board])}",
               file=sys.stderr)
-    # Newest first; a title-only row with no date carries the 1970 sentinel
-    # and sinks to the end like an undated post does.
-    entries.sort(key=lambda e: (e.createdAt, int(e.postId) if e.postId.isdigit() else 0), reverse=True)
+    entries.sort(key=index_order, reverse=True)
     total = len(entries)
     with_post = sum(e.hasPost for e in entries)
 
@@ -296,7 +360,7 @@ def main() -> int:
         carried = None
         if board_dir.name in CONTINUES:
             carried = [
-                e.model_copy(update={"board": older})
+                carry(e, older)
                 for older in CONTINUES[board_dir.name]
                 for e in _board_entries(older, sorted((POSTS_DIR / older).glob("*.json")), all_errors)
             ]

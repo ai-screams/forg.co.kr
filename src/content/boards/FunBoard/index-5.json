@@ -4,8 +4,24 @@
   "totalPages": 79,
   "totalPosts": 3946,
   "totalWithPost": 503,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "3367",
+      "title": "습격",
+      "categoryLabel": null,
+      "author": "김인문소프트웨어",
+      "authorMemberNo": "661",
+      "createdAt": "2007-09-16T15:48:53",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 12,
+      "attachmentCount": 1,
+      "hits": 605,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "3366",
       "title": "수업 빠지고 싶을 때에는...",
@@ -786,22 +802,6 @@
       "commentCount": 13,
       "attachmentCount": 0,
       "hits": 682,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "3310",
-      "title": "이런 X같은...",
-      "categoryLabel": null,
-      "author": "iamamber",
-      "authorMemberNo": "829",
-      "createdAt": "2007-08-23T22:45:12",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 1,
-      "hits": 524,
       "recommend": null,
       "era": "2003",
       "hasPost": true

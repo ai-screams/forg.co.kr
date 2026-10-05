@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "7656",
+      "title": "노란 이름은 뭐죠?",
+      "categoryLabel": null,
+      "author": "ment",
+      "authorMemberNo": "9851",
+      "createdAt": "2002-11-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 103,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "7655",
       "title": "요즘엔 지피가 많이 남나요???",
@@ -786,22 +802,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 75,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "12821",
-      "title": "ㅜ_ㅜ 패링파스 105짜리",
-      "categoryLabel": "질문",
-      "author": "dleoska777",
-      "authorMemberNo": "12800",
-      "createdAt": "2002-11-07T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 70,
       "recommend": null,
       "era": "2003",
       "hasPost": false

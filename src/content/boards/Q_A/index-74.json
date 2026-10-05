@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "17257",
+      "title": "동물 훈련시킬때요..",
+      "categoryLabel": null,
+      "author": "JeffKim",
+      "authorMemberNo": "18523",
+      "createdAt": "2003-03-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 219,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "17256",
       "title": "마사용 갑옷..",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 185,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "17202",
-      "title": "애완동물 훈련 어케 시키나요?",
-      "categoryLabel": null,
-      "author": "akesis",
-      "authorMemberNo": "17799",
-      "createdAt": "2003-03-14T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": 290,
       "recommend": null,
       "era": "2003",
       "hasPost": false

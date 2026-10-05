@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "17308",
+      "title": "팔라딘으로 하려는데 과연 어케 해야 될지...",
+      "categoryLabel": null,
+      "author": "Raktaviza",
+      "authorMemberNo": "16062",
+      "createdAt": "2003-03-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 256,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "17307",
       "title": "전사 스탯 질문요~ 인트를 올려야 겠는데..",
@@ -786,22 +802,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 277,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "17257",
-      "title": "동물 훈련시킬때요..",
-      "categoryLabel": null,
-      "author": "JeffKim",
-      "authorMemberNo": "18523",
-      "createdAt": "2003-03-16T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 219,
       "recommend": null,
       "era": "2003",
       "hasPost": false

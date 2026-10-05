@@ -4,8 +4,24 @@
   "totalPages": 81,
   "totalPosts": 4008,
   "totalWithPost": 1121,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "214",
+      "title": "오카리나, mp3처분합니다",
+      "categoryLabel": null,
+      "author": "가니메데",
+      "authorMemberNo": "21614",
+      "createdAt": "2005-02-01T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 136,
+      "recommend": null,
+      "era": "2014",
+      "hasPost": false
+    },
     {
       "postId": "213",
       "title": "만화책 몇권 처분합니다 'ㅁ'/",
@@ -804,22 +820,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 433,
-      "recommend": null,
-      "era": "2014",
-      "hasPost": false
-    },
-    {
-      "postId": "149",
-      "title": "7주년 기념 패키지 팝니다.",
-      "categoryLabel": null,
-      "author": "데르카즈",
-      "authorMemberNo": "31711",
-      "createdAt": "2004-10-12T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 537,
       "recommend": null,
       "era": "2014",
       "hasPost": false

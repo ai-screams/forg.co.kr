@@ -4,8 +4,40 @@
   "totalPages": 37,
   "totalPosts": 1833,
   "totalWithPost": 1241,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
+    {
+      "postId": "241",
+      "title": "우체부의 뉴비생활-길드 시작!!-",
+      "categoryLabel": null,
+      "author": "우체부",
+      "authorMemberNo": "1971",
+      "createdAt": "2001-05-20T14:02:34",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 1120,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "239",
+      "title": "랜드의 썰렁글...... ㅡ.ㅡ; 돌던지지 마셍 ㅠ_ㅠ",
+      "categoryLabel": null,
+      "author": "랜드",
+      "authorMemberNo": "1886",
+      "createdAt": "2001-05-20T13:38:29",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 414,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "238",
       "title": "요르의여행기-짧음-",
@@ -404,7 +436,8 @@
       "hits": 145,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "210",
@@ -500,7 +533,8 @@
       "hits": 85,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "203",
@@ -631,22 +665,6 @@
       "hasPost": true
     },
     {
-      "postId": "192",
-      "title": "작성자의 연재물을 쉽게 찿는 방법",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2001-03-08T20:50:21",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 48,
-      "attachmentCount": 0,
-      "hits": 2610,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
       "postId": "190",
       "title": "오늘있었던일..본나방에 한번이라도 가보신분은 알껍니다",
       "categoryLabel": "re",
@@ -660,7 +678,8 @@
       "hits": 133,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "186",
@@ -788,23 +807,8 @@
       "hits": 98,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "178",
-      "title": "난 아무 것두 몰라요~~",
-      "categoryLabel": "RE",
-      "author": "K.yo.Xu.Sey",
-      "authorMemberNo": null,
-      "createdAt": "2001-02-24T16:15:19",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 75,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     }
   ]
 }

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "18215",
+      "title": "아리랑 요즘 사람",
+      "categoryLabel": null,
+      "author": "dest21c",
+      "authorMemberNo": "14557",
+      "createdAt": "2003-04-23T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 116,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "18214",
       "title": "벤더 있는상태에서 집개조하면????",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 34,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "18161",
-      "title": "디스코",
-      "categoryLabel": null,
-      "author": "hdi2243",
-      "authorMemberNo": "20150",
-      "createdAt": "2003-04-20T19:48:10",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 95,
       "recommend": null,
       "era": "2003",
       "hasPost": true

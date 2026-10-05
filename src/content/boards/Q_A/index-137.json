@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "5480",
+      "title": "테임하는데.. 0.1정도씩 올라가는데 맞는건가여?",
+      "categoryLabel": null,
+      "author": "Z",
+      "authorMemberNo": "0",
+      "createdAt": "2001-12-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 167,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "5479",
       "title": "요즘은 르네나 펠루카에서 파워제네레이터랑 골렘 안나오나요",
@@ -68,7 +84,8 @@
       "hits": 136,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "5475",
@@ -786,22 +803,6 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 127,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "5243",
-      "title": "arms lore 에 관해서 질문을 ...ㅠ_ㅠ::",
-      "categoryLabel": null,
-      "author": "미르쿨",
-      "authorMemberNo": "2346",
-      "createdAt": "2001-11-27T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 10,
-      "attachmentCount": 0,
-      "hits": 61,
       "recommend": null,
       "era": "2003",
       "hasPost": false

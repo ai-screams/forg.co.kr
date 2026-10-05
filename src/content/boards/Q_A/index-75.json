@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "17202",
+      "title": "애완동물 훈련 어케 시키나요?",
+      "categoryLabel": null,
+      "author": "akesis",
+      "authorMemberNo": "17799",
+      "createdAt": "2003-03-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 8,
+      "attachmentCount": 0,
+      "hits": 290,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "17201",
       "title": "xirc문제",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 817,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "17092",
-      "title": "세미 레어가 왜 안훔쳐지나요?",
-      "categoryLabel": null,
-      "author": "strider_aragon",
-      "authorMemberNo": "14595",
-      "createdAt": "2003-03-10T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 269,
       "recommend": null,
       "era": "2003",
       "hasPost": false

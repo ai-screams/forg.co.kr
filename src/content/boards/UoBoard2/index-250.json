@@ -4,7 +4,7 @@
   "totalPages": 255,
   "totalPosts": 12707,
   "totalWithPost": 4277,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
     {
       "postId": "412",
@@ -21,7 +21,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "411",
@@ -38,7 +39,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "410",
@@ -89,7 +91,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "407",
@@ -242,7 +245,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "398",
@@ -259,7 +263,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 2
     },
     {
       "postId": "397",
@@ -310,7 +315,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "394",
@@ -378,7 +384,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "390",
@@ -463,7 +470,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 2
     },
     {
       "postId": "385",
@@ -480,7 +488,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "384",
@@ -497,7 +506,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 2
     },
     {
       "postId": "383",
@@ -514,7 +524,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 2
     },
     {
       "postId": "382",
@@ -667,7 +678,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "373",
@@ -684,7 +696,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "372",
@@ -735,7 +748,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "369",
@@ -786,7 +800,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "366",
@@ -803,7 +818,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "365",

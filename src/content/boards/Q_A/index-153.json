@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "2718",
+      "title": "옛날에 돈버그가 어떻게 썻었죠? 패치됀거 그것이 좀 필요해서 (그거 안써염ㅡ.ㅡ; 패치됀거여)",
+      "categoryLabel": null,
+      "author": "랜드",
+      "authorMemberNo": null,
+      "createdAt": "2001-05-10T21:36:40",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 70,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "2717",
       "title": "소드류 매직 어디서구하죠?",
@@ -20,7 +36,8 @@
       "hits": 83,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2716",
@@ -84,7 +101,8 @@
       "hits": 110,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2712",
@@ -132,7 +150,8 @@
       "hits": 54,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2708",
@@ -148,7 +167,8 @@
       "hits": 60,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2707",
@@ -292,7 +312,8 @@
       "hits": 47,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2698",
@@ -356,7 +377,8 @@
       "hits": 46,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2694",
@@ -404,7 +426,8 @@
       "hits": 51,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2691",
@@ -436,7 +459,8 @@
       "hits": 75,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2689",
@@ -468,7 +492,8 @@
       "hits": 78,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2687",
@@ -484,7 +509,8 @@
       "hits": 72,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2686",
@@ -564,7 +590,8 @@
       "hits": 108,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2681",
@@ -580,7 +607,8 @@
       "hits": 110,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2680",
@@ -660,7 +688,8 @@
       "hits": 72,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2674",
@@ -756,7 +785,8 @@
       "hits": 57,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2668",
@@ -786,22 +816,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 22,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "2665",
-      "title": "죄성하지만 하나만 더 질문여..",
-      "categoryLabel": null,
-      "author": "허니",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-25T17:51:23",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 27,
       "recommend": null,
       "era": "2003",
       "hasPost": true

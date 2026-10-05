@@ -4,8 +4,24 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "1895",
+      "title": "허접하지만 제가 사용하는 락단버그 퇴치법 입니다...",
+      "categoryLabel": null,
+      "author": "Zephy",
+      "authorMemberNo": "14666",
+      "createdAt": "2002-03-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 6,
+      "attachmentCount": 0,
+      "hits": 613,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "1894",
       "title": "AOS 사죄 아이템중 +5 스텟 디드에대한 짧은 코멘...",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 398,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1855",
-      "title": "보우크래프트 지엠을 향해~~",
-      "categoryLabel": null,
-      "author": "hybg486",
-      "authorMemberNo": "17958",
-      "createdAt": "2002-03-07T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": 953,
       "recommend": null,
       "era": "2003",
       "hasPost": false

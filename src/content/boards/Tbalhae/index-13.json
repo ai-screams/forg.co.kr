@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1376,
   "totalWithPost": 395,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "1257",
+      "title": "재산정리 총정리!!!팔리는거 지워 나가겠습니다!!",
+      "categoryLabel": null,
+      "author": "kakha",
+      "authorMemberNo": "16010",
+      "createdAt": "2003-07-10T11:26:28",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 242,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "1256",
+      "title": "발해 디싯 캐슬 팝니다.",
+      "categoryLabel": null,
+      "author": "kasa2000",
+      "authorMemberNo": "21313",
+      "createdAt": "2003-07-10T11:06:23",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 75,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "1254",
       "title": "업글코드팝니다.",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "1137",
-      "title": "메졀 20 과 레지 20 파스 현으로 삽니다.",
-      "categoryLabel": null,
-      "author": "penumbra",
-      "authorMemberNo": "19054",
-      "createdAt": "2003-06-30T05:36:59",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 60,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "1145",
-      "title": "아리랑 성기사의 갑옷과 발해, 아리랑 계정과 교환합니다",
-      "categoryLabel": null,
-      "author": "kyo71",
-      "authorMemberNo": "17013",
-      "createdAt": "2003-06-30T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 100,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

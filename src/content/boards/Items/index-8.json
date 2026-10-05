@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "4678",
+      "title": "여러가지 악세팝니다",
+      "categoryLabel": null,
+      "author": "mistra79",
+      "authorMemberNo": "31862",
+      "createdAt": "2004-12-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 113,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "4677",
       "title": "방증세팅하는 마사가 쓸만한 반지한점",
@@ -562,22 +578,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 254,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1495",
-      "title": "(제목 없음)",
-      "categoryLabel": null,
-      "author": "Pinky",
-      "authorMemberNo": "14545",
-      "createdAt": "2004-09-05T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 2501,
       "recommend": null,
       "era": "2003",
       "hasPost": false

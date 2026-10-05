@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "454",
+      "title": "혹시 소설 울티마",
+      "categoryLabel": null,
+      "author": "burnnnn",
+      "authorMemberNo": "561",
+      "createdAt": "2001-07-27T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 122,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "3469",
       "title": "테이밍이...64다되가는데여...어디서 해야되져?",
@@ -212,7 +228,8 @@
       "hits": 22,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3455",
@@ -786,22 +803,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 208,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "436",
-      "title": "다시 시작할까 하는데요.",
-      "categoryLabel": null,
-      "author": "에반",
-      "authorMemberNo": "2264",
-      "createdAt": "2001-07-25T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 393,
       "recommend": null,
       "era": "2003",
       "hasPost": false

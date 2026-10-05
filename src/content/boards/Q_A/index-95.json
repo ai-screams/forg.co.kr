@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "15731",
+      "title": "뉴비라서.ㅡㅡ; 사원이 어디죠?",
+      "categoryLabel": null,
+      "author": "kys8809",
+      "authorMemberNo": "19072",
+      "createdAt": "2003-02-12T16:17:48",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 184,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "15729",
       "title": "말라스 집짓기에 대해서 질문 있습니다..",
@@ -786,22 +802,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 222,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "15696",
-      "title": "마우스 문제 답변해주세요",
-      "categoryLabel": null,
-      "author": "likeys2",
-      "authorMemberNo": "18506",
-      "createdAt": "2003-02-11T21:34:10",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 48,
       "recommend": null,
       "era": "2003",
       "hasPost": true

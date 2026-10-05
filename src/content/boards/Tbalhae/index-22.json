@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1376,
   "totalWithPost": 395,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "543",
+      "title": "삽니다! [1주일밴]",
+      "categoryLabel": "활",
+      "author": "eunjoozang",
+      "authorMemberNo": "15500",
+      "createdAt": "2003-04-30T04:46:34",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 102,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "542",
+      "title": "특별세일중~*",
+      "categoryLabel": "깜장토끼",
+      "author": "에쥬마마",
+      "authorMemberNo": "14566",
+      "createdAt": "2003-04-30T03:12:49",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 1,
+      "hits": 132,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "541",
       "title": "나무 삽니다 나무 대량 구매 원해요~",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "498",
-      "title": "테일러보상품으로받은천으로만든샌달이랑로브삼[1주일밴]",
-      "categoryLabel": null,
-      "author": "aim41c",
-      "authorMemberNo": "19289",
-      "createdAt": "2003-04-26T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 109,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "497",
-      "title": "킾딸린 47개월 계정팝니다...",
-      "categoryLabel": null,
-      "author": "Britz",
-      "authorMemberNo": "20435",
-      "createdAt": "2003-04-26T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 193,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

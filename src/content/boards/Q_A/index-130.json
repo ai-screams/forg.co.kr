@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "7824",
+      "title": "집에상점 점원을 어떡해 대려다놓는지가르침받을려구합니다",
+      "categoryLabel": null,
+      "author": "sjgjung",
+      "authorMemberNo": "5742",
+      "createdAt": "2002-04-18T15:26:04",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 68,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "7828",
       "title": "집을지을려구합니다 지형이틀리다구자꾸나오내요",
@@ -789,22 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "7725",
-      "title": "보우크래프트 지엠이면 활연사소 솓도 빠르다!!??",
-      "categoryLabel": null,
-      "author": "레이크",
-      "authorMemberNo": "7031",
-      "createdAt": "2002-04-07T20:55:05",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 172,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

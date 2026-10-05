@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "8539",
+      "title": "메져리관련 질문!",
+      "categoryLabel": null,
+      "author": "thswlscjf85",
+      "authorMemberNo": "5456",
+      "createdAt": "2002-06-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 79,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "8538",
       "title": "님들 울티마온라인 비밀번호변경 안되나요?",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 96,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "8481",
-      "title": "플포에 탐쿠폰 주문했습니다. 언제 올까요?",
-      "categoryLabel": null,
-      "author": "원조닭갈비",
-      "authorMemberNo": "6624",
-      "createdAt": "2002-06-03T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 101,
       "recommend": null,
       "era": "2003",
       "hasPost": false

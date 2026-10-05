@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "1379",
+      "title": "지피 팝니다~~~오세요~오세...",
+      "categoryLabel": "발해",
+      "author": "無念無想",
+      "authorMemberNo": "2820",
+      "createdAt": "2002-05-29T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 119,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "1377",
       "title": "울온 34-36 넘은 계정[ 올드비 ...",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 122,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1319",
-      "title": "트라멜 브리튼 근처 큰 마블이나 2...",
-      "categoryLabel": null,
-      "author": "hrsoft",
-      "authorMemberNo": "8121",
-      "createdAt": "2002-05-24T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 40,
       "recommend": null,
       "era": "2003",
       "hasPost": false

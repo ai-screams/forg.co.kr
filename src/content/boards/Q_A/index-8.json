@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "22536",
+      "title": "말에 관하여..",
+      "categoryLabel": null,
+      "author": "codename417",
+      "authorMemberNo": "24307",
+      "createdAt": "2003-12-02T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 34,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "22535",
       "title": "리콜 룬 어떻게 쓰나요?",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 97,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "22472",
-      "title": "프로보케이션은...",
-      "categoryLabel": null,
-      "author": "tkyu23",
-      "authorMemberNo": "24095",
-      "createdAt": "2003-11-29T17:46:17",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 41,
       "recommend": null,
       "era": "2003",
       "hasPost": true

@@ -28,6 +28,8 @@ ROW SHAPES
         no | title (+ comment count) | author | YYYY-MM-DD | hits
     Zeroboard 4.0 (2001) — `<tr>` holding `zboard.php?…no=N`:
         running count | title (+ comment count) | author | YYYY/MM/DD | hits
+    In every shape a notice carries a notice icon (`isNotice`) and a reply a
+    reply icon (`replyDepth`, see `reply_depth`).
 
 YEAR
     Zeroboard printed MM/DD only. The year comes from, in order:
@@ -84,6 +86,12 @@ _TOTAL_RE = re.compile(r"total\s*<[^>]*>\s*<b>\s*([\d,]+)")
 _CART_RE = re.compile(r'name="?cart"? value="(\d+)"')
 # Row-status icons the kritz skins put in the first cell: age, admin post, notice.
 _ROW_ICON_RE = re.compile(r"(old|new)_head|level\d+_write|notice", re.I)
+# A notice's mark: Zeroboard's `list_notice.gif` / `notice_head.gif`,
+# Gnuboard4's `icon_notice.gif`.
+_NOTICE_ICON_RE = re.compile(r"notice|noti", re.I)
+# A reply's mark: Zeroboard's `reply_head.gif` (`reply_new_head.gif` for a
+# fresh one), Gnuboard4's `icon_reply.gif`.
+_REPLY_ICON_RE = re.compile(r"reply(_new)?_head|icon_reply", re.I)
 _CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
 _LINK_BOARD_RE = re.compile(r"[?&;](?:amp;)?(?:id|bo_table)=([A-Za-z0-9_]+)")
 _ZB40_NO_RE = re.compile(r"(?:zboard\.php3?|view\.php)\?[^\"'>]*\bno=(\d+)")
@@ -183,6 +191,26 @@ def cell_text(td: Tag) -> str:
     return re.sub(r"\s+", " ", td.get_text(" ", strip=True)).strip()
 
 
+def reply_depth(tr: Tag, per_level: int = 1) -> int:
+    """0 for a post; for a reply, how deep it sits.
+
+    A reply's icon follows its indent: `&nbsp; ` a level in the 2001
+    Zeroboard 4.0 skins, ` &nbsp;&nbsp; ` (`per_level=2`) in Gnuboard4. The
+    kritz_* skins put the icon in a cell of its own and show no depth, read
+    as 1. Only the `&nbsp;`s count: the plain spaces around them are also
+    the markup's own line breaks.
+    """
+    img = tr.find("img", src=_REPLY_ICON_RE)
+    if not isinstance(img, Tag):
+        return 0
+    lead = 0
+    for sib in img.previous_siblings:
+        if isinstance(sib, Tag):
+            break
+        lead += str(sib).count("\xa0")
+    return max(1, lead // per_level)
+
+
 def split_category(title: str) -> tuple[str | None, str]:
     m = _CATEGORY_PREFIX_RE.match(title)
     if m and m.group(2).strip():
@@ -250,7 +278,7 @@ def parse_zeroboard_rows(soup: BeautifulSoup) -> list[dict]:
                 month_day = tuple(int(x) for x in _MONTHDAY_RE.match(t).groups())  # type: ignore[union-attr]
             elif month_day is not None and t.replace(",", "").isdigit():
                 hits = int(t.replace(",", ""))
-        icon = tr.find("img", src=re.compile(r"notice|noti", re.I))
+        icon = tr.find("img", src=_NOTICE_ICON_RE)
         rows.append(
             {
                 "no": no,
@@ -263,6 +291,7 @@ def parse_zeroboard_rows(soup: BeautifulSoup) -> list[dict]:
                 "hits": hits,
                 "comments": int(comments.group(1)) if comments else 0,
                 "notice": icon is not None,
+                "reply": reply_depth(tr),
             }
         )
     return rows
@@ -324,7 +353,8 @@ def parse_gnuboard_rows(soup: BeautifulSoup) -> list[dict]:
                 "full_date": full_date,
                 "hits": hits,
                 "comments": int(comments.group(1)) if comments else 0,
-                "notice": False,
+                "notice": tr.find("img", src=_NOTICE_ICON_RE) is not None,
+                "reply": reply_depth(tr, per_level=2),
             }
         )
     return rows
@@ -386,7 +416,8 @@ def parse_zeroboard40_rows(soup: BeautifulSoup) -> list[dict]:
                 "full_date": full_date,
                 "hits": hits,
                 "comments": int(comments.group(1)) if comments else 0,
-                "notice": tr.find("img", src=re.compile(r"notice|noti", re.I)) is not None,
+                "notice": tr.find("img", src=_NOTICE_ICON_RE) is not None,
+                "reply": reply_depth(tr),
             }
         )
     return rows
@@ -573,6 +604,7 @@ def build_listing(
                     hits=r["hits"],
                     commentCount=r["comments"],
                     isNotice=r["notice"],
+                    replyDepth=r["reply"],
                     capturedAt=r["capturedAt"],
                     listPage=r["listPage"],
                     hasPost=(POSTS_DIR / board / f"{r['no']}.json").exists(),
@@ -591,6 +623,15 @@ def build_listing(
         generatedAt=datetime.now(timezone.utc),
         entries=entries,
     )
+
+
+def dump_listing(listing: BoardListing) -> dict:
+    """The listing JSON, with `replyDepth` written only on replies."""
+    data = json.loads(listing.model_dump_json())
+    for e in data["entries"]:
+        if not e.get("replyDepth"):
+            e.pop("replyDepth", None)
+    return data
 
 
 def main() -> int:
@@ -642,14 +683,14 @@ def main() -> int:
             out = OUTPUT_DIR / f"{board_id}.json"
             # Keep the previous stamp when nothing but the stamp would change,
             # so a re-run over the same pages leaves git quiet.
+            now = dump_listing(listing)
             if out.exists():
                 prev = json.loads(out.read_text(encoding="utf-8"))
-                now = json.loads(listing.model_dump_json())
                 if {k: v for k, v in prev.items() if k != "generatedAt"} == {
                     k: v for k, v in now.items() if k != "generatedAt"
                 }:
                     continue
-            write_atomic(out, listing.model_dump_json(indent=2) + "\n")
+            write_atomic(out, json.dumps(now, ensure_ascii=False, indent=2) + "\n")
     print(f"\n[02c-parse-listing] DONE {stats}", file=sys.stderr)
     return 0
 

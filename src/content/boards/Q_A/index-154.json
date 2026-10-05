@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "2665",
+      "title": "죄성하지만 하나만 더 질문여..",
+      "categoryLabel": null,
+      "author": "허니",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-25T17:51:23",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 27,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "2664",
       "title": "울온할려구 하는데염..프리섭어디서다운받나여??",
@@ -84,7 +100,8 @@
       "hits": 99,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2660",
@@ -164,7 +181,8 @@
       "hits": 61,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2655",
@@ -196,7 +214,8 @@
       "hits": 19,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2653",
@@ -388,7 +407,8 @@
       "hits": 19,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2641",
@@ -420,7 +440,8 @@
       "hits": 77,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2639",
@@ -468,7 +489,8 @@
       "hits": 16,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2636",
@@ -548,7 +570,8 @@
       "hits": 68,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2631",
@@ -644,7 +667,8 @@
       "hits": 20,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "2625",
@@ -676,7 +700,8 @@
       "hits": 33,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2623",
@@ -692,7 +717,8 @@
       "hits": 20,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2622",
@@ -708,7 +734,8 @@
       "hits": 11,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2621",
@@ -724,7 +751,8 @@
       "hits": 24,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2620",
@@ -786,22 +814,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 34,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "2616",
-      "title": "방어구(방패)나 무기는 어디서 수리하나요?",
-      "categoryLabel": null,
-      "author": "김경태",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-16T15:39:01",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 25,
       "recommend": null,
       "era": "2003",
       "hasPost": true

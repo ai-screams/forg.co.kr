@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "8666",
+      "title": "초보입니다. 벌크디드에 관해 질문좀 할께욥",
+      "categoryLabel": null,
+      "author": "lovely",
+      "authorMemberNo": "8502",
+      "createdAt": "2002-06-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 70,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "8665",
       "title": "저기핑퐁쓰려면어떻해야하져",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 57,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "8611",
-      "title": "700메가 넘는 이미지를 구워먹고잡다!!",
-      "categoryLabel": null,
-      "author": "Anna-_-",
-      "authorMemberNo": "3706",
-      "createdAt": "2002-06-10T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 102,
       "recommend": null,
       "era": "2003",
       "hasPost": false

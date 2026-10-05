@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "21040",
+      "title": "낚시해서 건진 생선은 팔때가 없나요?",
+      "categoryLabel": null,
+      "author": "mhand",
+      "authorMemberNo": "21796",
+      "createdAt": "2003-09-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 37,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "21039",
       "title": "음악씨디를 굴려고 하는데여",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 95,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "20974",
-      "title": "5렙 지도 스폰 질문",
-      "categoryLabel": null,
-      "author": "abcda",
-      "authorMemberNo": "22264",
-      "createdAt": "2003-09-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": 135,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1395,
   "totalWithPost": 324,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "1581",
+      "title": "원자재(발러잉갓,모든종류가죽)삽니다.",
+      "categoryLabel": null,
+      "author": "sexyfra",
+      "authorMemberNo": "18333",
+      "createdAt": "2003-05-10T14:16:18",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 41,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "1580",
+      "title": "벌크 삽니다.[냉 참조]교환가.",
+      "categoryLabel": "스미스",
+      "author": "sexyfra",
+      "authorMemberNo": "18333",
+      "createdAt": "2003-05-10T14:15:01",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 22,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "1579",
       "title": "브론즈 루닉해머, 미늘가죽 루닉해머, 베리때 특20 벌크 삽니다.",
@@ -773,38 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "1522",
-      "title": "계정팝니다.",
-      "categoryLabel": null,
-      "author": "Mac♨",
-      "authorMemberNo": "14704",
-      "createdAt": "2003-04-30T00:07:49",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 96,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "1540",
-      "title": "4년차 석상으로 이벨 또는 메절20 파스 구함",
-      "categoryLabel": null,
-      "author": "피스맨",
-      "authorMemberNo": "15090",
-      "createdAt": "2003-04-30T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 32,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }
