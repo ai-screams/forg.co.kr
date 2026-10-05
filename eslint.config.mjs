@@ -62,6 +62,7 @@ const eslintConfig = defineConfig([
         window: "readonly",
         localStorage: "readonly",
         Element: "readonly",
+        MutationObserver: "readonly",
         ERA_STORAGE_KEY: "readonly",
         ERAS: "readonly",
       },
