@@ -29,6 +29,16 @@ jobs:
     timeout-minutes: 15
 
     steps:
+      # A clean build writes about 6.4 GB to .next/server (195,000 files) and
+      # 1.2 GB to out/. With the toolchains the runner image ships, the disk
+      # filled during the build ("No space left on device", 2026-10-05). The
+      # museum uses none of these.
+      - name: Free disk space
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
