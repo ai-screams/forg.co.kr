@@ -16,6 +16,7 @@ import { readdirSync } from "node:fs";
 import { join } from "node:path";
 
 import type { BoardId } from "@/lib/boards";
+import { versioned } from "@/lib/chrome";
 
 const SKINS_2001 = ["skyblue", "board", "pink", "yellow", "y", "htred", "n_board"] as const;
 
@@ -64,5 +65,5 @@ const POOLS: ReadonlyMap<Skin2001, ReadonlySet<string>> = new Map(
 
 /** URL of a recovered skin image, or null when Wayback never kept it. */
 export function skinAsset2001(skin: Skin2001, file: string): string | null {
-  return POOLS.get(skin)?.has(file) ? `/img/chrome/2001/zb/${skin}/${file}` : null;
+  return POOLS.get(skin)?.has(file) ? versioned(`/img/chrome/2001/zb/${skin}/${file}`) : null;
 }

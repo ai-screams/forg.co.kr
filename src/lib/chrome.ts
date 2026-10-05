@@ -23,15 +23,40 @@
  *
  * Resolution happens at module load (Server Component build phase), so the
  * lookup is O(1) at render time and a build picks up newly-recovered assets.
+ *
+ * ## Why the URL carries `?v=`
+ *
+ * Safari revalidates every subresource on a reload unless it is `immutable`
+ * (WebKit bug 169756), and the chrome blinked on every reload while it
+ * waited. The URL carries a hash of the file's bytes and
+ * `public/_headers` serves `/img/chrome/` as immutable for a year: a changed
+ * picture gets a new URL, so the long cache never shows a stale one.
  */
 
-import { readdirSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import type { CSSProperties } from "react";
 
 import { ERAS, type Era } from "@/lib/era";
 
-const CHROME_ROOT = join(process.cwd(), "public", "img", "chrome");
+const PUBLIC_ROOT = join(process.cwd(), "public");
+const CHROME_ROOT = join(PUBLIC_ROOT, "img", "chrome");
+
+const VERSIONS = new Map<string, string>();
+
+/** A `/img/chrome/…` path with `?v=` and the first 10 hex of its bytes' SHA-256. */
+export function versioned(path: string): string {
+  let v = VERSIONS.get(path);
+  if (v === undefined) {
+    v = createHash("sha256")
+      .update(readFileSync(join(PUBLIC_ROOT, path)))
+      .digest("hex")
+      .slice(0, 10);
+    VERSIONS.set(path, v);
+  }
+  return `${path}?v=${v}`;
+}
 
 function readPool(dir: string): ReadonlySet<string> {
   try {
@@ -83,9 +108,9 @@ export function chromeUrl(filename: string, era?: Era): string {
  */
 export function optionalChrome(filename: string, era?: Era): string | null {
   if (era && ERA_POOLS[era].has(filename)) {
-    return `/img/chrome/${era}/${filename}`;
+    return versioned(`/img/chrome/${era}/${filename}`);
   }
-  return RECOVERED.has(filename) ? `/img/chrome/${filename}` : null;
+  return RECOVERED.has(filename) ? versioned(`/img/chrome/${filename}`) : null;
 }
 
 type Repeat = "repeat" | "repeat-x" | "repeat-y" | "no-repeat";
