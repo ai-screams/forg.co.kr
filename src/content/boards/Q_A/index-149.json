@@ -4,7 +4,7 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T16:01:40Z",
+  "generatedAt": "2026-10-05T16:36:22Z",
   "entries": [
     {
       "postId": "3179",
@@ -765,7 +765,8 @@
       "hits": 4,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3136",

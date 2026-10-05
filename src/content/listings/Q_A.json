@@ -4,7 +4,7 @@
   "pagesCaptured": 122,
   "capturesRead": 1541,
   "totalReported": 6608,
-  "generatedAt": "2026-10-05T15:45:03.218104Z",
+  "generatedAt": "2026-10-05T16:33:41.581292Z",
   "entries": [
     {
       "no": "28518",
@@ -101980,6 +101980,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010727030623",
       "listPage": 1,
       "hasPost": false
@@ -106795,6 +106796,7 @@
       "hits": 23,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010622011405",
       "listPage": 1,
       "hasPost": true
@@ -106810,6 +106812,7 @@
       "hits": 4,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010622011405",
       "listPage": 1,
       "hasPost": true
@@ -107160,6 +107163,7 @@
       "hits": 5,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222027",
       "listPage": 1,
       "hasPost": false
@@ -109018,6 +109022,7 @@
       "hits": 11,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512015434",
       "listPage": 1,
       "hasPost": true

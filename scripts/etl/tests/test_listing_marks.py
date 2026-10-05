@@ -27,10 +27,15 @@ OLD = """<table>
 <td>&nbsp;<img src="images/t.gif"><br>
    &nbsp; &nbsp; <img src="skin/skyblue/reply_head.gif"> <a href="zboard.php?id=Q_A&no=273">[RE] 질문</a></td>
 <td>kim</td><td>2000/10/25</td><td>20</td></tr>
+<tr><td>9</td>
+<td>&nbsp;<img src="images/t.gif"><br>
+   &nbsp; <img src="skin/skyblue/reply_new_head.gif"> <a href="zboard.php?id=Q_A&no=3137">감사합니다</a></td>
+<td>park</td><td>2001/05/27</td><td>3</td></tr>
 </table>"""
 
 
-# Fails if: the indent counts plain spaces or runs past the spacer `<br>`, or 4.0 rows drop the reply.
+# Fails if: the indent counts plain spaces or runs past the spacer `<br>`, 4.0 rows drop
+# the reply, or a fresh reply's `reply_new_head.gif` (`Z/Q_A/2987`) is not read.
 def test_a_2001_list_gives_notices_and_reply_depths():
     rows, _ = listing.parse_page(OLD, "zeroboard40")
     assert [(r["no"], r["notice"], r["reply"]) for r in rows] == [
@@ -38,6 +43,7 @@ def test_a_2001_list_gives_notices_and_reply_depths():
         ("270", False, 0),
         ("272", False, 1),
         ("273", False, 2),
+        ("3137", False, 1),
     ]
 
 
@@ -133,7 +139,8 @@ def test_a_row_is_its_post_when_the_titles_agree():
         assert index.same_post(post, _listing_entry(title=row_title, author="lee")), row_title
 
 
-# Fails if: an uncut prefix, a title of dots, or the number alone makes a match.
+# Fails if: an uncut prefix, one trailing dot, a title of dots, the number alone, or a
+# reply's author makes a match.
 def test_a_row_with_the_posts_number_but_another_title_and_author_is_not_it():
     # Q_A no=272: a 2000 reply on one install, a 2001 question on another.
     post = _index_entry(title="이런글 여기다 올려도 될지 모르겠지만..", author="sepirothzero")
@@ -141,8 +148,11 @@ def test_a_row_with_the_posts_number_but_another_title_and_author_is_not_it():
     assert not index.same_post(post, row)
     # An uncut row title that is only the start of the post's is another post.
     assert not index.same_post(_index_entry(title="질문입니다 2", author="kim"), _listing_entry(title="질문입니다", author="lee"))
-    # A row title of dots alone says nothing.
+    # A row title of dots alone says nothing; one dot is the title's own.
     assert not index.same_post(_index_entry(title="질문", author="kim"), _listing_entry(title="..", author="lee"))
+    assert not index.same_post(_index_entry(title="질문 있어요", author="kim"), _listing_entry(title="질문.", author="lee"))
+    # The author stands in for the title only for a notice.
+    assert not index.same_post(_index_entry(title="첫 질문", author="kim"), _listing_entry(title="둘째 질문", author="kim", replyDepth=1))
 
 
 # Fails if: the author fallback goes, or compares names case-sensitively.
@@ -213,10 +223,11 @@ def test_a_post_entry_takes_its_reply_from_the_subject():
     assert [index._entry_from_post(post(c)).replyDepth for c in ("RE", "질문", None)] == [1, 0, 0]
 
 
-# Fails if: notices are not pinned, or a carried board's notices are.
+# Fails if: notices are not pinned, or a carried board's notices stay notices.
 def test_own_notices_lead_and_carried_ones_keep_their_date():
     own_notice = _index_entry(postId="1", createdAt=datetime(2000, 6, 14), isNotice=True)
-    carried_notice = _index_entry(postId="5", createdAt=datetime(2004, 1, 1), isNotice=True, board="UoBoard")
+    carried_notice = index.carry(_index_entry(postId="5", createdAt=datetime(2004, 1, 1), isNotice=True, replyDepth=2), "UoBoard")
+    assert (carried_notice.board, carried_notice.isNotice, carried_notice.replyDepth) == ("UoBoard", False, 2)
     newest = _index_entry(postId="7", createdAt=datetime(2008, 1, 1))
     older = _index_entry(postId="3", createdAt=datetime(2002, 1, 1))
     got = sorted([older, carried_notice, newest, own_notice], key=index.index_order, reverse=True)

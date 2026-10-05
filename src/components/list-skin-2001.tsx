@@ -84,16 +84,14 @@ function TitleCell({
   // `y` and `yellow` share their header and notice images byte for byte
   // (`last_left.gif`, `title_no.gif`, `list_notice.gif`); only yellow's
   // `reply_head.gif` survives, so it stands for y's. board, pink and htred
-  // kept none, and their replies show the indent alone.
+  // kept none, and their replies show the indent alone — so a reply is named
+  // in text for a screen reader, and the notice is named once, on its number.
   const headSkin = head === "reply_head.gif" && skin === "y" ? "yellow" : skin;
   return (
     <td className="px-[2px] pt-[3px] text-left break-all">
       {row.replyDepth > 0 && "\u00a0 ".repeat(row.replyDepth)}
-      <SkinImg2001
-        skin={headSkin}
-        file={head}
-        alt={row.notice ? "공지" : row.replyDepth > 0 ? "답글" : ""}
-      />
+      <SkinImg2001 skin={headSkin} file={head} />
+      {row.replyDepth > 0 && <span className="sr-only">답글</span>}
       &nbsp;
       {row.href ? (
         <Link href={row.href} className="text-(--era-link) hover:text-(--era-link-hover)">

@@ -4,7 +4,7 @@
   "totalPages": 81,
   "totalPosts": 4008,
   "totalWithPost": 1121,
-  "generatedAt": "2026-10-05T15:48:06Z",
+  "generatedAt": "2026-10-05T16:36:22Z",
   "entries": [
     {
       "postId": "47",
@@ -682,8 +682,7 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "Tarirang",
-      "isNotice": true
+      "board": "Tarirang"
     },
     {
       "postId": "3765",
@@ -700,8 +699,7 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "Tbalhae",
-      "isNotice": true
+      "board": "Tbalhae"
     },
     {
       "postId": "10841",

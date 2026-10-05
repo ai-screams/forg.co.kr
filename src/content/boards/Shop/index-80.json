@@ -4,7 +4,7 @@
   "totalPages": 81,
   "totalPosts": 4008,
   "totalWithPost": 1121,
-  "generatedAt": "2026-10-05T15:49:06Z",
+  "generatedAt": "2026-10-05T16:36:22Z",
   "entries": [
     {
       "postId": "34",
@@ -412,8 +412,7 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "Tbalhae",
-      "isNotice": true
+      "board": "Tbalhae"
     },
     {
       "postId": "1",
@@ -430,8 +429,7 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "Tarirang",
-      "isNotice": true
+      "board": "Tarirang"
     },
     {
       "postId": "32",
@@ -635,8 +633,7 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "Sell",
-      "isNotice": true
+      "board": "Sell"
     },
     {
       "postId": "417",

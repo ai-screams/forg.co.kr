@@ -89,8 +89,9 @@ _ROW_ICON_RE = re.compile(r"(old|new)_head|level\d+_write|notice", re.I)
 # A notice's mark: Zeroboard's `list_notice.gif` / `notice_head.gif`,
 # Gnuboard4's `icon_notice.gif`.
 _NOTICE_ICON_RE = re.compile(r"notice|noti", re.I)
-# A reply's mark: Zeroboard's `reply_head.gif`, Gnuboard4's `icon_reply.gif`.
-_REPLY_ICON_RE = re.compile(r"reply_head|icon_reply", re.I)
+# A reply's mark: Zeroboard's `reply_head.gif` (`reply_new_head.gif` for a
+# fresh one), Gnuboard4's `icon_reply.gif`.
+_REPLY_ICON_RE = re.compile(r"reply(_new)?_head|icon_reply", re.I)
 _CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
 _LINK_BOARD_RE = re.compile(r"[?&;](?:amp;)?(?:id|bo_table)=([A-Za-z0-9_]+)")
 _ZB40_NO_RE = re.compile(r"(?:zboard\.php3?|view\.php)\?[^\"'>]*\bno=(\d+)")

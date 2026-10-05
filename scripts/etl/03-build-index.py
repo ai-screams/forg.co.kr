@@ -13,7 +13,7 @@ and a row for a post we hold fills `hits` when the post page had none.
 A row's notice and reply marks go onto the post only when the row is the
 post (`same_post`); a post whose subject starts `[RE]` is a reply as well
 (`reply_by_subject`). The board's own notices lead page 1, as the boards pinned
-them; rows carried from an older board stay in date order.
+them; rows carried from an older board are plain rows in date order.
 
 The index entries are deliberately lightweight — no `bodyHtml` /
 `bodyText` — so the listing page bundle stays tiny even when a board
@@ -117,23 +117,31 @@ def same_post(post: BoardIndexEntry, row: BoardListingEntry) -> bool:
     Post numbers repeat across forg's installs (Q_A no=272 is a 2000 reply
     on one list and a 2001 question on another), so the number alone does
     not say so. The titles agree, allowing for a list that cut the title
-    short with `..` and a 2001 reply's `[RE]`; or the author does, for a
-    board's notice whose title its admin rewrote between captures (Q_A 2429,
-    Sell 1, Role 1, …).
+    short with `..` and a 2001 reply's `[RE]`; or, for a notice, the author
+    does — the board's admin rewrote its notices' titles between captures
+    (Q_A 2429, Sell 1, Role 1, …).
     """
     title, row_title = _RE_PREFIX.sub("", _key(post.title)), _RE_PREFIX.sub("", _key(row.title))
-    cut = row_title.rstrip(".…")
-    if title == row_title or (cut and cut != row_title and title.startswith(cut)):
+    if title == row_title:
         return True
-    return _key(post.author) == _key(row.author)
+    cut = row_title.rstrip(".")  # NFKC has made `…` three dots
+    if row_title.endswith("..") and cut and title.startswith(cut):
+        return True
+    return row.isNotice and _key(post.author) == _key(row.author)
 
 
 def index_order(e: BoardIndexEntry) -> tuple[bool, datetime, int]:
-    """Sort key, descending: the board's own notices first, as it pinned
-    them (a notice carried from an older board stays in date order); then
-    newest first. A title-only row with no date carries the 1970 sentinel
-    and sinks to the end like an undated post does."""
-    return (e.isNotice and e.board is None, e.createdAt, int(e.postId) if e.postId.isdigit() else 0)
+    """Sort key, descending: the board's notices first, as it pinned them;
+    then newest first. A title-only row with no date carries the 1970
+    sentinel and sinks to the end like an undated post does."""
+    return (e.isNotice, e.createdAt, int(e.postId) if e.postId.isdigit() else 0)
+
+
+def carry(e: BoardIndexEntry, older: str) -> BoardIndexEntry:
+    """A row of the board this one continues (CONTINUES), linking to `older`.
+    It was that board's notice, not this one's: it stays a plain row in its
+    date's place."""
+    return e.model_copy(update={"board": older, "isNotice": False})
 
 
 def _load_listing(board: str) -> BoardListing | None:
@@ -352,7 +360,7 @@ def main() -> int:
         carried = None
         if board_dir.name in CONTINUES:
             carried = [
-                e.model_copy(update={"board": older})
+                carry(e, older)
                 for older in CONTINUES[board_dir.name]
                 for e in _board_entries(older, sorted((POSTS_DIR / older).glob("*.json")), all_errors)
             ]

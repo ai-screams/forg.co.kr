@@ -192,7 +192,7 @@ describe("phone list", () => {
   it("tags a notice and arrows a reply, indented past the first level", () => {
     expect(items[0]).toContain("공지");
     expect(items[0]).toContain("bg-(--era-content-bg)");
-    expect(items[1]).toContain('aria-label="답글"');
+    expect(items[1]).toContain('<span class="sr-only">답글</span>');
     expect(items[1]).toContain("padding-left:0.75rem");
     expect(items[2]).not.toMatch(/공지|답글/);
   });
@@ -210,6 +210,7 @@ describe("2001 N+gine list", () => {
     expect(notice).toContain("bg-(--zb40-label)");
     expect(notice).toMatch(/list_notice\.gif[\s\S]*notice_head\.gif/);
     expect(notice).not.toContain(">100<");
+    expect(notice?.match(/공지/g)).toHaveLength(1);
   });
 
   it("indents a reply &nbsp; a level before reply_head.gif", () => {
@@ -225,5 +226,6 @@ describe("2001 N+gine list", () => {
     const board = rows2001("board", rows)[1];
     expect(board).toContain("    ");
     expect(board).not.toContain("reply_head");
+    expect(board).toContain('<span class="sr-only">답글</span>');
   });
 });

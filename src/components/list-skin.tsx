@@ -224,13 +224,14 @@ function NarrowList({ rows, skin }: { rows: readonly ListRow[]; skin: ListSkin }
             )}
             {row.replyDepth > 0 && (
               <span
-                aria-label="답글"
+                aria-hidden
                 className="shrink-0 text-[11px] text-forg-muted"
                 style={{ paddingLeft: `${(row.replyDepth - 1) * 0.75}rem` }}
               >
                 ↳
               </span>
             )}
+            {row.replyDepth > 0 && <span className="sr-only">답글</span>}
             {/* The title link is inline-flex; capping it lets its truncate work. */}
             <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.cells.title}</div>
           </div>
