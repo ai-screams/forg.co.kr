@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "3289",
+      "title": "스킬창 밑에 나오는 스킬 총합은 리얼스킬 총합인가요? 아닌가요?",
+      "categoryLabel": null,
+      "author": "최고야",
+      "authorMemberNo": null,
+      "createdAt": "2001-07-04T20:18:56",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 29,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "3288",
       "title": "핑퐁할려면.. 스킬 총합이 690정도는 돼야 하나요?",
@@ -100,7 +116,8 @@
       "hits": 118,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3283",
@@ -436,7 +453,8 @@
       "hits": 46,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3261",
@@ -786,22 +804,6 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 75,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "3239",
-      "title": "덱스 떨어뜨리는 방어구에는 어떤것들이 있나요? 그리구..",
-      "categoryLabel": "re",
-      "author": "sarevok",
-      "authorMemberNo": null,
-      "createdAt": "2001-06-29T22:57:01",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 48,
       "recommend": null,
       "era": "2003",
       "hasPost": true

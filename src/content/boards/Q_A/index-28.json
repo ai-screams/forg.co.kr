@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "21252",
+      "title": "알케미...",
+      "categoryLabel": null,
+      "author": "diesel",
+      "authorMemberNo": "22216",
+      "createdAt": "2003-09-27T16:08:07",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 63,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "21250",
       "title": "focus 스킬이 뭡니까 =ㅅ=",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 98,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "21198",
-      "title": "특수기술 소비 마나량은...",
-      "categoryLabel": null,
-      "author": "daheesamo",
-      "authorMemberNo": "15931",
-      "createdAt": "2003-09-25T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 69,
       "recommend": null,
       "era": "2003",
       "hasPost": false

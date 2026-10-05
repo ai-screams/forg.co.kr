@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20589",
+      "title": "용갈 받으려면 스킬이 얼마나 되야 하나요?",
+      "categoryLabel": null,
+      "author": "icebath",
+      "authorMemberNo": "15315",
+      "createdAt": "2003-08-25T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 84,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "20588",
       "title": "Veterinary질문!!!!",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 41,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "20542",
-      "title": "전사스킬을 이렇게 했는데....",
-      "categoryLabel": null,
-      "author": "jinny",
-      "authorMemberNo": "20304",
-      "createdAt": "2003-08-23T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 89,
       "recommend": null,
       "era": "2003",
       "hasPost": false

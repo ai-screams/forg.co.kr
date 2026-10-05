@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16530",
+      "title": "다시 여쭤봅니다.",
+      "categoryLabel": null,
+      "author": "akadoaka",
+      "authorMemberNo": "17865",
+      "createdAt": "2003-02-24T12:45:33",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 92,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "16529",
       "title": "질문..테임된 동물 이름을..",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 52,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "16469",
-      "title": "피스테이머? 프롭테이머? 머가 좋아요?",
-      "categoryLabel": null,
-      "author": "killlyou",
-      "authorMemberNo": "19112",
-      "createdAt": "2003-02-23T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 7,
-      "attachmentCount": 0,
-      "hits": 293,
       "recommend": null,
       "era": "2003",
       "hasPost": false

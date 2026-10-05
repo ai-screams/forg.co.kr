@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "17828",
+      "title": "아머 AR에 관한 질문..",
+      "categoryLabel": null,
+      "author": "Elvan",
+      "authorMemberNo": "20028",
+      "createdAt": "2003-04-07T02:09:35",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 141,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "17836",
       "title": "외국쇼핑몰 이용하려면..",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 133,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "17795",
-      "title": "스텟보너스 아이템 챠지로 변하는 패치 되었나요??",
-      "categoryLabel": null,
-      "author": "Zephy",
-      "authorMemberNo": "14666",
-      "createdAt": "2003-04-05T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 185,
       "recommend": null,
       "era": "2003",
       "hasPost": false

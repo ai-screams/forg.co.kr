@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "18003",
+      "title": "죄송합니다 질문좀요...",
+      "categoryLabel": null,
+      "author": "dlgus111",
+      "authorMemberNo": "20071",
+      "createdAt": "2003-04-14T10:40:37",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 113,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "18002",
       "title": "죄송합니다....질문하나만....슴스관련....",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 85,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "17939",
-      "title": "기사도 스킬과 메저리 계열 마법 사용에 관한 질문",
-      "categoryLabel": null,
-      "author": "mars",
-      "authorMemberNo": "19291",
-      "createdAt": "2003-04-11T17:52:37",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 105,
       "recommend": null,
       "era": "2003",
       "hasPost": true

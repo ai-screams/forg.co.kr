@@ -4,7 +4,7 @@
   "totalPages": 255,
   "totalPosts": 12707,
   "totalWithPost": 4277,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
     {
       "postId": "2186",
@@ -208,7 +208,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "2138",

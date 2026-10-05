@@ -12,7 +12,8 @@
       "full_date": "2000-10-20",
       "hits": 87,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "186",
@@ -24,7 +25,8 @@
       "full_date": "2000-10-20",
       "hits": 45,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "194",
@@ -36,7 +38,8 @@
       "full_date": "2000-10-20",
       "hits": 73,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "197",
@@ -48,7 +51,8 @@
       "full_date": "2000-10-20",
       "hits": 44,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 2
     },
     {
       "no": "199",
@@ -60,7 +64,8 @@
       "full_date": "2000-10-20",
       "hits": 42,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 3
     },
     {
       "no": "185",
@@ -72,7 +77,8 @@
       "full_date": "2000-10-20",
       "hits": 37,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "187",
@@ -84,7 +90,8 @@
       "full_date": "2000-10-20",
       "hits": 95,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "191",
@@ -96,7 +103,8 @@
       "full_date": "2000-10-20",
       "hits": 89,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 2
     },
     {
       "no": "184",
@@ -108,7 +116,8 @@
       "full_date": "2000-10-20",
       "hits": 27,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "189",
@@ -120,7 +129,8 @@
       "full_date": "2000-10-20",
       "hits": 72,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "183",
@@ -132,7 +142,8 @@
       "full_date": "2000-10-19",
       "hits": 17,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "188",
@@ -144,7 +155,8 @@
       "full_date": "2000-10-20",
       "hits": 23,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "182",
@@ -156,7 +168,8 @@
       "full_date": "2000-10-19",
       "hits": 18,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "193",
@@ -168,7 +181,8 @@
       "full_date": "2000-10-20",
       "hits": 47,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "181",
@@ -180,7 +194,8 @@
       "full_date": "2000-10-19",
       "hits": 14,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "195",
@@ -192,7 +207,8 @@
       "full_date": "2000-10-20",
       "hits": 65,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "179",
@@ -204,7 +220,8 @@
       "full_date": "2000-10-19",
       "hits": 60,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "180",
@@ -216,7 +233,8 @@
       "full_date": "2000-10-19",
       "hits": 179,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "175",
@@ -228,7 +246,8 @@
       "full_date": "2000-10-19",
       "hits": 53,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "177",
@@ -240,7 +259,8 @@
       "full_date": "2000-10-19",
       "hits": 58,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     },
     {
       "no": "174",
@@ -252,7 +272,8 @@
       "full_date": "2000-10-19",
       "hits": 30,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "176",
@@ -264,7 +285,8 @@
       "full_date": "2000-10-19",
       "hits": 53,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 1
     }
   ]
 }

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "7548",
+      "title": "수족관 관리 하는 법 알려주세요 ^^",
+      "categoryLabel": null,
+      "author": "bluemee",
+      "authorMemberNo": "3359",
+      "createdAt": "2002-10-30T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 52,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "7546",
       "title": "이벤트아티 미덕셋 펠루카 던전에서 나오나요?",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 135,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "7501",
-      "title": "도서관 퀘 질문이요",
-      "categoryLabel": null,
-      "author": "neon5454",
-      "authorMemberNo": "9393",
-      "createdAt": "2002-10-27T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 42,
       "recommend": null,
       "era": "2003",
       "hasPost": false

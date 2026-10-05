@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "760",
+      "title": "헤어다이팔거나 집구합니...",
+      "categoryLabel": "아리랑",
+      "author": "Eun",
+      "authorMemberNo": "6545",
+      "createdAt": "2002-03-22T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 49,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "759",
       "title": "발해킵을 백두 캐슬로 교환합니다",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 56,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "616",
-      "title": "발해 르네 캐슬팝니다!!(현금거래)...",
-      "categoryLabel": null,
-      "author": "Marco",
-      "authorMemberNo": null,
-      "createdAt": "2002-03-05T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 63,
       "recommend": null,
       "era": "2003",
       "hasPost": false

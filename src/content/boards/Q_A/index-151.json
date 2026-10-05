@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "2828",
+      "title": "어스엘리에 대한 질문입니다.",
+      "categoryLabel": null,
+      "author": "김경태",
+      "authorMemberNo": null,
+      "createdAt": "2001-05-27T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 23,
+      "attachmentCount": 0,
+      "hits": 109,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "2825",
       "title": "제 개인 적인 질문 입니다만...",
@@ -68,7 +84,8 @@
       "hits": 77,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2817",
@@ -132,7 +149,8 @@
       "hits": 64,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2813",
@@ -164,7 +182,8 @@
       "hits": 57,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2811",
@@ -228,7 +247,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2807",
@@ -244,7 +264,8 @@
       "hits": 56,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2806",
@@ -308,7 +329,8 @@
       "hits": 24,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2798",
@@ -388,7 +410,8 @@
       "hits": 25,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2797",
@@ -404,7 +427,8 @@
       "hits": 59,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2796",
@@ -420,7 +444,8 @@
       "hits": 61,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2786",
@@ -436,7 +461,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2783",
@@ -468,7 +494,8 @@
       "hits": 51,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2794",
@@ -516,7 +543,8 @@
       "hits": 20,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2791",
@@ -532,7 +560,8 @@
       "hits": 25,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2790",
@@ -580,7 +609,8 @@
       "hits": 26,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "2785",
@@ -612,7 +642,8 @@
       "hits": 21,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "2781",
@@ -644,7 +675,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2779",
@@ -708,7 +740,8 @@
       "hits": 85,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2776",
@@ -788,23 +821,8 @@
       "hits": 76,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "2769",
-      "title": "더블 마법 쓰는법 갈켜주시면 감사하겠습니다",
-      "categoryLabel": "re",
-      "author": "HolyPink",
-      "authorMemberNo": null,
-      "createdAt": "2001-05-20T11:23:16",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 101,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     }
   ]
 }

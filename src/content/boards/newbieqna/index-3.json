@@ -4,8 +4,24 @@
   "totalPages": 3,
   "totalPosts": 117,
   "totalWithPost": 35,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "31",
+      "title": "Q>영캐릭터 상태면 뭐가 좋은가요?",
+      "categoryLabel": null,
+      "author": "vardalhug",
+      "authorMemberNo": "4356",
+      "createdAt": "2002-04-02T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 102,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "29",
       "title": "Q:말을 타고 다니다가 말이 주인없는 말(템 풀린)이 되어 버렸는데 모든 말들이 다 이런가요?",
@@ -258,22 +274,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 71,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "블랙쏜 상품타기 이벤트내용입니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2002-04-01T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 275,
       "recommend": null,
       "era": "2003",
       "hasPost": false

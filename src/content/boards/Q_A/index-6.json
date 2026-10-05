@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "22636",
+      "title": "gm-레젼까지 테이머를 키워보신분들께 묻습니다.",
+      "categoryLabel": null,
+      "author": "hereyou",
+      "authorMemberNo": "23611",
+      "createdAt": "2003-12-09T11:44:21",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 142,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "22635",
       "title": "발러루닉이 글케 비싼가요..?",
@@ -786,22 +802,6 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 189,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "22584",
-      "title": "pvp전사를 키워보려고 하는데요",
-      "categoryLabel": null,
-      "author": "Diction",
-      "authorMemberNo": "15249",
-      "createdAt": "2003-12-05T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 129,
       "recommend": null,
       "era": "2003",
       "hasPost": false

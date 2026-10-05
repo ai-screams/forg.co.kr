@@ -4,8 +4,40 @@
   "totalPages": 61,
   "totalPosts": 3025,
   "totalWithPost": 706,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "610",
+      "title": "이어서~투(반복돼는 말은 안됀다네영)",
+      "categoryLabel": null,
+      "author": "홀리 아트",
+      "authorMemberNo": null,
+      "createdAt": "2001-07-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 315,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "609",
+      "title": "갸속 보세영~",
+      "categoryLabel": null,
+      "author": "홀리 아트",
+      "authorMemberNo": null,
+      "createdAt": "2001-07-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 267,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "608",
       "title": "밑에거 이어서~~ ^^;;",
@@ -343,22 +375,6 @@
       "hasPost": false
     },
     {
-      "postId": "398",
-      "title": "추억에 남을 사진을 올려주시길 바랍니다^^",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": null,
-      "createdAt": "2001-06-06T22:06:47",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 2,
-      "hits": 412,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
       "postId": "334",
       "title": "이거 뭘까여?ㅡ.ㅡ;",
       "categoryLabel": null,
@@ -484,7 +500,8 @@
       "hits": 41,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "326",
@@ -564,7 +581,8 @@
       "hits": 74,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "321",
@@ -788,23 +806,8 @@
       "hits": 17,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "307",
-      "title": "저도 지엠블루님의 사진을-_-;;;",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": null,
-      "createdAt": "2001-05-13T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 130,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     }
   ]
 }

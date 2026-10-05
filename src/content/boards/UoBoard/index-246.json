@@ -4,8 +4,40 @@
   "totalPages": 253,
   "totalPosts": 12618,
   "totalWithPost": 4255,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "1764",
+      "title": "새로운 프리샤드 Laivla 모두 Mirc #laivla 채널루",
+      "categoryLabel": null,
+      "author": "크리스터",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-07T00:19:51",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 45,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
+    {
+      "postId": "1772",
+      "title": "새로운 오크의 사형도끼~~~~~~",
+      "categoryLabel": null,
+      "author": "Rainbow",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-07T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 7,
+      "attachmentCount": 0,
+      "hits": 205,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "1767",
       "title": "불꽃놀이 완드를 얻었어요..",
@@ -420,7 +452,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "1713",
@@ -644,7 +677,8 @@
       "hits": 27,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "1445",
@@ -660,7 +694,8 @@
       "hits": 66,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "1444",
@@ -724,7 +759,8 @@
       "hits": 64,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "1440",
@@ -773,38 +809,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "1437",
-      "title": "여기 분들 발해섭 분들인가요?",
-      "categoryLabel": null,
-      "author": "새벽지기",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-12T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 54,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "1436",
-      "title": "써드돈 겜방에서 해봤다..;;",
-      "categoryLabel": null,
-      "author": "새벽지기",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-12T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 148,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

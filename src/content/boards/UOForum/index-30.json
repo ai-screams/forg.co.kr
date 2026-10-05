@@ -4,8 +4,24 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "334",
+      "title": "락픽 지엠을 달며... 제가 돌았던 코스 소개..",
+      "categoryLabel": null,
+      "author": "KlaimX",
+      "authorMemberNo": "2716",
+      "createdAt": "2002-01-15T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 14,
+      "attachmentCount": 0,
+      "hits": 884,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "333",
       "title": "그것을 말해 버릴란다 -프로브 버그-",
@@ -786,22 +802,6 @@
       "commentCount": 12,
       "attachmentCount": 0,
       "hits": 1048,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "163",
-      "title": "아바타님이 쓰신글에 대한 뒷부분까지 나온 글이네요.^...",
-      "categoryLabel": null,
-      "author": "thot",
-      "authorMemberNo": "0",
-      "createdAt": "2001-10-06T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 455,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "8611",
+      "title": "700메가 넘는 이미지를 구워먹고잡다!!",
+      "categoryLabel": null,
+      "author": "Anna-_-",
+      "authorMemberNo": "3706",
+      "createdAt": "2002-06-10T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 102,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "8610",
       "title": "아이템하고 돈이 사라진듯?",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 41,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "8539",
-      "title": "메져리관련 질문!",
-      "categoryLabel": null,
-      "author": "thswlscjf85",
-      "authorMemberNo": "5456",
-      "createdAt": "2002-06-06T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 79,
       "recommend": null,
       "era": "2003",
       "hasPost": false

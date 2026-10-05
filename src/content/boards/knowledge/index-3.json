@@ -4,8 +4,24 @@
   "totalPages": 5,
   "totalPosts": 238,
   "totalWithPost": 110,
-  "generatedAt": "2026-10-03T07:38:36Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "27",
+      "title": "아래 야키소바 만들기>>개인적인 추가요소..",
+      "categoryLabel": null,
+      "author": "테일러",
+      "authorMemberNo": "638",
+      "createdAt": "2005-07-21T01:54:17",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 445,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "25",
       "title": "라면으로 간단하게 야키소바 만들기(수정)",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 358,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "476",
-      "title": "FORG IE",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2004-09-13T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 20,
-      "attachmentCount": 0,
-      "hits": 1034,
       "recommend": null,
       "era": "2003",
       "hasPost": false

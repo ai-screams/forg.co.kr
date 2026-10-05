@@ -4,8 +4,24 @@
   "totalPages": 79,
   "totalPosts": 3946,
   "totalWithPost": 503,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "8314",
+      "title": "숨막히는 뒤태",
+      "categoryLabel": null,
+      "author": "로드까까",
+      "authorMemberNo": null,
+      "createdAt": "2010-09-27T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 659,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "8307",
       "title": "대략 고인들의 페이스북..",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 564,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "3474",
-      "title": "혐오 자료 포함 - 미나미가",
-      "categoryLabel": null,
-      "author": "pian",
-      "authorMemberNo": "240",
-      "createdAt": "2007-10-25T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 13,
-      "attachmentCount": 0,
-      "hits": 577,
       "recommend": null,
       "era": "2003",
       "hasPost": false

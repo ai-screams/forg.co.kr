@@ -4,8 +4,25 @@
   "totalPages": 1,
   "totalPosts": 48,
   "totalWithPost": 1,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "1",
+      "title": "간단한 이미지 편집요령과 스샷란 이용정보에 관하여.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 117,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false,
+      "isNotice": true
+    },
     {
       "postId": "88",
       "title": "10월 21일 목요일 - 썬더블러프 - > 아이언포지 스샷 모음 86장",
@@ -757,22 +774,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "1",
-      "title": "간단한 이미지 편집요령과 스샷란 이용정보에 관하여.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2004-02-14T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 117,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

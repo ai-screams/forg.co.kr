@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20804",
+      "title": "디스코 레젼까지 어떻게 올리나요?",
+      "categoryLabel": null,
+      "author": "elfkayla",
+      "authorMemberNo": "16416",
+      "createdAt": "2003-09-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 90,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "20803",
       "title": "포이즌의 큐어 확률에 관하여",
@@ -786,22 +802,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 159,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "20747",
-      "title": "참 희한한 질문이용^^",
-      "categoryLabel": null,
-      "author": "whdhtjdWkd",
-      "authorMemberNo": "21824",
-      "createdAt": "2003-09-03T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 146,
       "recommend": null,
       "era": "2003",
       "hasPost": false

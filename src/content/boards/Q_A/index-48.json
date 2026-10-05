@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20095",
+      "title": "쉐도우웜에 대한 질문입니다...",
+      "categoryLabel": null,
+      "author": "selic",
+      "authorMemberNo": "15837",
+      "createdAt": "2003-08-03T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 187,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "20093",
       "title": "바드 - > 테이머",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 115,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "19526",
-      "title": "포이즈닝과 타 스킬...",
-      "categoryLabel": null,
-      "author": "Neolight",
-      "authorMemberNo": "19331",
-      "createdAt": "2003-07-12T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 71,
       "recommend": null,
       "era": "2003",
       "hasPost": false

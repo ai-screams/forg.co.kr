@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "23158",
+      "title": "아모이그노어",
+      "categoryLabel": null,
+      "author": "rladustlrqkqh",
+      "authorMemberNo": "19342",
+      "createdAt": "2003-01-02T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 13,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "23157",
       "title": "보통 네크로맨서는 조합을 어떻게 하나요?",
@@ -786,22 +802,6 @@
       "commentCount": 6,
       "attachmentCount": 0,
       "hits": 101,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "14074",
-      "title": "누가 좀 갈쳐주세요!!",
-      "categoryLabel": null,
-      "author": "tnlsdlfdl",
-      "authorMemberNo": "17342",
-      "createdAt": "2002-12-26T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 37,
       "recommend": null,
       "era": "2003",
       "hasPost": false

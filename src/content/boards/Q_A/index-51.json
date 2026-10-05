@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "19417",
+      "title": "생산직은 카르마를 어떻게 올리나요?",
+      "categoryLabel": null,
+      "author": "comiluv",
+      "authorMemberNo": "21317",
+      "createdAt": "2003-07-06T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 145,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "19416",
       "title": "스텔스..UO 루프 딜레이 설정은 어떻게...",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 93,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "25782",
-      "title": "디스마운트 잘하는법?",
-      "categoryLabel": null,
-      "author": "likeys2",
-      "authorMemberNo": "18506",
-      "createdAt": "2003-06-04T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 112,
       "recommend": null,
       "era": "2003",
       "hasPost": false

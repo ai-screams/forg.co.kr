@@ -4,7 +4,7 @@
   "totalPages": 255,
   "totalPosts": 12707,
   "totalWithPost": 4277,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
     {
       "postId": "1726",
@@ -191,7 +191,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1713",
@@ -429,7 +430,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1445",
@@ -446,7 +448,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1444",
@@ -514,7 +517,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "1440",
@@ -701,7 +705,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "isNotice": true
     },
     {
       "postId": "816",
@@ -718,7 +723,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "525",
@@ -735,7 +741,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "519",
@@ -752,7 +759,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "517",
@@ -803,7 +811,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 2
     },
     {
       "postId": "514",
@@ -820,7 +829,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "UoBoard"
+      "board": "UoBoard",
+      "replyDepth": 1
     },
     {
       "postId": "507",

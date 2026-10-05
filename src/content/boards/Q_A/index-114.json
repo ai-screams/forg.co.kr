@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "10252",
+      "title": "요즘 시약이 락다운이 안되더군요.",
+      "categoryLabel": null,
+      "author": "늘품",
+      "authorMemberNo": "2524",
+      "createdAt": "2002-08-12T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 34,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "10250",
       "title": "펜싱 스킬이 어디서 올라서 될지 몰라서...",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 69,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "10066",
-      "title": "락픽용 젬제 상자 파는 벤더 아시는 분..",
-      "categoryLabel": null,
-      "author": "air2300",
-      "authorMemberNo": "3296",
-      "createdAt": "2002-08-07T18:00:09",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 53,
       "recommend": null,
       "era": "2003",
       "hasPost": true

@@ -4,8 +4,40 @@
   "totalPages": 253,
   "totalPosts": 12618,
   "totalWithPost": 4255,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "1437",
+      "title": "여기 분들 발해섭 분들인가요?",
+      "categoryLabel": null,
+      "author": "새벽지기",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-12T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 54,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "1436",
+      "title": "써드돈 겜방에서 해봤다..;;",
+      "categoryLabel": null,
+      "author": "새벽지기",
+      "authorMemberNo": null,
+      "createdAt": "2001-04-12T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 148,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "1434",
       "title": "울온 프리샤드 아타나시아",
@@ -87,22 +119,6 @@
       "hasPost": false
     },
     {
-      "postId": "1258",
-      "title": "본홈 핫키 설정에 대한 설명입니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2001-03-07T20:21:53",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 219,
-      "attachmentCount": 0,
-      "hits": 5673,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
       "postId": "816",
       "title": "흐...무한항로...",
       "categoryLabel": "RE",
@@ -116,7 +132,8 @@
       "hits": 7,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "525",
@@ -132,7 +149,8 @@
       "hits": 52,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "519",
@@ -148,7 +166,8 @@
       "hits": 11,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "517",
@@ -196,7 +215,8 @@
       "hits": 27,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 2
     },
     {
       "postId": "514",
@@ -212,7 +232,8 @@
       "hits": 15,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "507",
@@ -276,7 +297,8 @@
       "hits": 107,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "492",
@@ -292,7 +314,8 @@
       "hits": 78,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 3
     },
     {
       "postId": "485",
@@ -388,7 +411,8 @@
       "hits": 142,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "479",
@@ -436,7 +460,8 @@
       "hits": 38,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "476",
@@ -452,7 +477,8 @@
       "hits": 72,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "475",
@@ -484,7 +510,8 @@
       "hits": 76,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "473",
@@ -500,7 +527,8 @@
       "hits": 87,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "472",
@@ -564,7 +592,8 @@
       "hits": 40,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "468",
@@ -580,7 +609,8 @@
       "hits": 35,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "467",
@@ -596,7 +626,8 @@
       "hits": 76,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "465",
@@ -644,7 +675,8 @@
       "hits": 59,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "461",
@@ -708,7 +740,8 @@
       "hits": 67,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "457",
@@ -724,7 +757,8 @@
       "hits": 125,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "456",
@@ -740,7 +774,8 @@
       "hits": 78,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "455",
@@ -786,22 +821,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 47,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "436",
-      "title": "발가락님^^",
-      "categoryLabel": "RE",
-      "author": "발가락",
-      "authorMemberNo": null,
-      "createdAt": "2000-11-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 34,
       "recommend": null,
       "era": "2003",
       "hasPost": false

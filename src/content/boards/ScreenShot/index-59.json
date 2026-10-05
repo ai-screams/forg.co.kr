@@ -4,8 +4,24 @@
   "totalPages": 61,
   "totalPosts": 3025,
   "totalWithPost": 706,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "307",
+      "title": "저도 지엠블루님의 사진을-_-;;;",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": null,
+      "createdAt": "2001-05-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 130,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "306",
       "title": "새로 활동을 시작하신 겜마 블루님과 함께",
@@ -100,7 +116,8 @@
       "hits": 44,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "299",
@@ -786,22 +803,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 68,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "139",
-      "title": "울온 여행기...7",
-      "categoryLabel": null,
-      "author": "야호",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-23T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 67,
       "recommend": null,
       "era": "2003",
       "hasPost": false

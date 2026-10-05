@@ -4,8 +4,24 @@
   "totalPages": 16,
   "totalPosts": 772,
   "totalWithPost": 345,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "2265",
+      "title": "이마뉴비가 어디죠?",
+      "categoryLabel": null,
+      "author": "Sergulath",
+      "authorMemberNo": null,
+      "createdAt": "2003-01-31T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 84,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "147",
       "title": "거..일반판 예약은 안하네여..쩝.냉무",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 154,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "87",
-      "title": "영(Young) 딱지 뗄려면 어캐 해야하나요?",
-      "categoryLabel": null,
-      "author": "Sirchade",
-      "authorMemberNo": null,
-      "createdAt": "2003-01-01T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 284,
       "recommend": null,
       "era": "2003",
       "hasPost": false

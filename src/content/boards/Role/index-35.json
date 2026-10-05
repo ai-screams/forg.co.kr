@@ -4,8 +4,25 @@
   "totalPages": 37,
   "totalPosts": 1833,
   "totalWithPost": 1241,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
+    {
+      "postId": "124",
+      "title": "디아네크75랑 울온 계정바꿀실분...",
+      "categoryLabel": "RE",
+      "author": "움",
+      "authorMemberNo": "0",
+      "createdAt": "2001-01-25T14:38:54",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 1101,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true,
+      "replyDepth": 1
+    },
     {
       "postId": "232",
       "title": "UO크래프트 - 악마들의 여제",
@@ -164,7 +181,8 @@
       "hits": 197,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "114",
@@ -196,7 +214,8 @@
       "hits": 184,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "111",
@@ -244,7 +263,8 @@
       "hits": 1515,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "108",
@@ -388,7 +408,8 @@
       "hits": 100,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "98",
@@ -628,7 +649,8 @@
       "hits": 666,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "55",
@@ -676,7 +698,8 @@
       "hits": 1102,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "56",
@@ -692,7 +715,8 @@
       "hits": 501,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "53",
@@ -786,22 +810,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 930,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "47",
-      "title": "냠의 울온여행기3",
-      "categoryLabel": null,
-      "author": "냠",
-      "authorMemberNo": "0",
-      "createdAt": "2000-10-15T00:29:09",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 773,
       "recommend": null,
       "era": "2003",
       "hasPost": true

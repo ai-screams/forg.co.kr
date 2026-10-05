@@ -4,8 +4,24 @@
   "totalPages": 9,
   "totalPosts": 420,
   "totalWithPost": 190,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "25",
+      "title": "더이상 덕지덕지 붙지않는 완성된 온라인 게임이란 없는 것일까!",
+      "categoryLabel": null,
+      "author": "Naberrs",
+      "authorMemberNo": null,
+      "createdAt": "2002-03-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 163,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "24",
       "title": "똥마려...",
@@ -258,22 +274,6 @@
       "commentCount": 12,
       "attachmentCount": 0,
       "hits": null,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "3",
-      "title": "보다 질적인 여러분의 토론을 기대합니다.",
-      "categoryLabel": null,
-      "author": "Fleurety",
-      "authorMemberNo": null,
-      "createdAt": "2002-03-09T23:23:12",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 7,
-      "attachmentCount": 0,
-      "hits": 449,
       "recommend": null,
       "era": "2003",
       "hasPost": true

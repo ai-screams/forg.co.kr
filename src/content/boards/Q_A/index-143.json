@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "3397",
+      "title": "스피어나오는몹은?",
+      "categoryLabel": null,
+      "author": "키스미",
+      "authorMemberNo": null,
+      "createdAt": "2001-07-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 10,
+      "attachmentCount": 0,
+      "hits": 157,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "3396",
       "title": "머더러풀리는거에 대해 물어볼께있어여",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 67,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "3371",
-      "title": "머더러카운트 창 어떻게 띠워여?",
-      "categoryLabel": null,
-      "author": "파비안",
-      "authorMemberNo": null,
-      "createdAt": "2001-07-16T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 73,
       "recommend": null,
       "era": "2003",
       "hasPost": false

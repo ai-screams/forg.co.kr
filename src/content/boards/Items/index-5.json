@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "691",
+      "title": "이런 반지 얼마나 하나요?",
+      "categoryLabel": null,
+      "author": "sscream",
+      "authorMemberNo": "1576",
+      "createdAt": "2006-09-15T22:54:55",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 1,
+      "hits": 338,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "690",
       "title": "반지 감정 부탁드립니다.",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 37,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "262",
-      "title": "몇일동안 임뷰한 활들 ㅠ.ㅠ",
-      "categoryLabel": null,
-      "author": "qquuoo",
-      "authorMemberNo": "808",
-      "createdAt": "2005-10-16T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 141,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,7 +4,7 @@
   "pagesCaptured": 1,
   "capturesRead": 3,
   "totalReported": null,
-  "generatedAt": "2026-10-04T07:48:10.444592Z",
+  "generatedAt": "2026-10-05T15:47:35.687149Z",
   "entries": [
     {
       "no": "40607",
@@ -1216,7 +1216,7 @@
       "yearApprox": false,
       "hits": 69858,
       "commentCount": 0,
-      "isNotice": false,
+      "isNotice": true,
       "capturedAt": "20160331123915",
       "listPage": 1,
       "hasPost": false

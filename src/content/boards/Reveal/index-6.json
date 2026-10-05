@@ -4,8 +4,24 @@
   "totalPages": 7,
   "totalPosts": 323,
   "totalWithPost": 33,
-  "generatedAt": "2026-10-03T07:38:36Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "264",
+      "title": "나나",
+      "categoryLabel": null,
+      "author": "얼빵군",
+      "authorMemberNo": "2210",
+      "createdAt": "2007-01-10T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 173,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "263",
       "title": "좋아해(好き)",
@@ -581,22 +597,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "영화관련내용은 상세하게 설명하여 주시길 바랍니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "2",
-      "createdAt": "2005-06-14T15:52:25",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 660,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     },
     {
       "postId": "177",

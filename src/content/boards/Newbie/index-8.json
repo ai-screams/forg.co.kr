@@ -4,8 +4,24 @@
   "totalPages": 16,
   "totalPosts": 772,
   "totalWithPost": 345,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "429",
+      "title": "구시대의 유물을...",
+      "categoryLabel": null,
+      "author": "Pentagnony",
+      "authorMemberNo": null,
+      "createdAt": "2003-07-21T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 197,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "427",
       "title": "챔피온에 대해 질문이 있습니다.",
@@ -789,22 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": true
-    },
-    {
-      "postId": "1625",
-      "title": "울티마3d인데요...",
-      "categoryLabel": null,
-      "author": "Azatoth",
-      "authorMemberNo": null,
-      "createdAt": "2003-06-10T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 112,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
     }
   ]
 }

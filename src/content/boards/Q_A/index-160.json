@@ -4,7 +4,7 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
     {
       "postId": "45",
@@ -20,7 +20,8 @@
       "hits": 59,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "44",
@@ -68,7 +69,8 @@
       "hits": 66,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "41",
@@ -100,7 +102,8 @@
       "hits": 68,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "39",
@@ -116,7 +119,8 @@
       "hits": 74,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "38",
@@ -164,7 +168,8 @@
       "hits": 39,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "35",
@@ -180,7 +185,8 @@
       "hits": 49,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "34",
@@ -212,7 +218,8 @@
       "hits": 114,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "32",
@@ -260,7 +267,8 @@
       "hits": 57,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "29",
@@ -276,7 +284,8 @@
       "hits": 43,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "28",
@@ -308,7 +317,8 @@
       "hits": 87,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "26",
@@ -340,7 +350,8 @@
       "hits": 50,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "23",
@@ -356,7 +367,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "24",
@@ -388,7 +400,8 @@
       "hits": 75,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "21",
@@ -420,7 +433,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "19",
@@ -436,7 +450,8 @@
       "hits": 48,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "18",
@@ -452,7 +467,8 @@
       "hits": 71,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "17",
@@ -484,7 +500,8 @@
       "hits": 102,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "13",
@@ -500,7 +517,8 @@
       "hits": 71,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "12",
@@ -564,7 +582,8 @@
       "hits": 105,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "8",
@@ -596,7 +615,8 @@
       "hits": 87,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "5",
@@ -612,7 +632,8 @@
       "hits": 135,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "4",
@@ -628,7 +649,8 @@
       "hits": 67,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3",

@@ -4,8 +4,25 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "3239",
+      "title": "덱스 떨어뜨리는 방어구에는 어떤것들이 있나요? 그리구..",
+      "categoryLabel": "re",
+      "author": "sarevok",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-29T22:57:01",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 48,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true,
+      "replyDepth": 1
+    },
     {
       "postId": "3238",
       "title": "죽으면 어캐 하나염??",
@@ -20,7 +37,8 @@
       "hits": 39,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3237",
@@ -292,7 +310,8 @@
       "hits": 60,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3213",
@@ -356,7 +375,8 @@
       "hits": 50,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3215",
@@ -372,7 +392,8 @@
       "hits": 18,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3211",
@@ -420,7 +441,8 @@
       "hits": 10,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "3203",
@@ -484,7 +506,8 @@
       "hits": 55,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3195",
@@ -548,7 +571,8 @@
       "hits": 17,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3208",
@@ -564,7 +588,8 @@
       "hits": 60,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3207",
@@ -580,7 +605,8 @@
       "hits": 87,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3206",
@@ -612,7 +638,8 @@
       "hits": 24,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3202",
@@ -660,7 +687,8 @@
       "hits": 57,
       "recommend": null,
       "era": "2003",
-      "hasPost": false
+      "hasPost": false,
+      "replyDepth": 1
     },
     {
       "postId": "3196",
@@ -708,7 +736,8 @@
       "hits": 19,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "3187",
@@ -740,7 +769,8 @@
       "hits": 11,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 2
     },
     {
       "postId": "3184",
@@ -786,22 +816,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 44,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "3179",
-      "title": "로스트 만든느 플그램 같은게 있나요?",
-      "categoryLabel": null,
-      "author": "edo",
-      "authorMemberNo": null,
-      "createdAt": "2001-06-25T15:37:20",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": 52,
       "recommend": null,
       "era": "2003",
       "hasPost": true

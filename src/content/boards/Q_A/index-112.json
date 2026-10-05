@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "10588",
+      "title": "3대 극악스킬이 뭐였죠?",
+      "categoryLabel": null,
+      "author": "Apple",
+      "authorMemberNo": "5608",
+      "createdAt": "2002-08-20T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 11,
+      "attachmentCount": 0,
+      "hits": 216,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "10587",
       "title": "당파 점수 왜 안올라가는지 아시는분?",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 89,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "10517",
-      "title": "집없는 유저인데...앞으로 집의 운명은 어케..",
-      "categoryLabel": null,
-      "author": "bloodrow",
-      "authorMemberNo": "9826",
-      "createdAt": "2002-08-18T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 122,
       "recommend": null,
       "era": "2003",
       "hasPost": false

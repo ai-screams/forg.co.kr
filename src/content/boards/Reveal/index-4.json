@@ -4,8 +4,24 @@
   "totalPages": 7,
   "totalPosts": 323,
   "totalWithPost": 33,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "324",
+      "title": "밀양",
+      "categoryLabel": null,
+      "author": "cl",
+      "authorMemberNo": "266",
+      "createdAt": "2007-06-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 258,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "323",
       "title": "z건담 극장판 1.2.3",
@@ -786,22 +802,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 521,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "294",
-      "title": "나루토 345화",
-      "categoryLabel": null,
-      "author": "[SoK]Pooh",
-      "authorMemberNo": "1410",
-      "createdAt": "2007-03-10T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 4,
-      "attachmentCount": 0,
-      "hits": 275,
       "recommend": null,
       "era": "2003",
       "hasPost": false

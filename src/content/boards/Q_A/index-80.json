@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16870",
+      "title": "easyuo 질문입니다..^^",
+      "categoryLabel": null,
+      "author": "alsgmdrl",
+      "authorMemberNo": "15417",
+      "createdAt": "2003-03-03T16:02:50",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 96,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "16868",
       "title": "아쳐 스킬...이렇게 하는거 괜찮을지요.",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 194,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "16820",
-      "title": "맞춤집 보통 비용이 얼마정도 드나요???",
-      "categoryLabel": null,
-      "author": "sagara1",
-      "authorMemberNo": "15493",
-      "createdAt": "2003-03-02T08:27:16",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 236,
       "recommend": null,
       "era": "2003",
       "hasPost": true

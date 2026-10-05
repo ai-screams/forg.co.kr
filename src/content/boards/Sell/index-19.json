@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "232",
+      "title": "계정팝니다 ㅜ_ㅜ A급계정 -_-",
+      "categoryLabel": "발해",
+      "author": "스틸-_-",
+      "authorMemberNo": null,
+      "createdAt": "2002-01-13T01:51:11",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 132,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "231",
       "title": "락픽 구함다..-_-;;",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 51,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "133",
-      "title": "광산근처집삽니다..어느집이...",
-      "categoryLabel": "아량",
-      "author": "Yan",
-      "authorMemberNo": null,
-      "createdAt": "2001-12-27T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 41,
       "recommend": null,
       "era": "2003",
       "hasPost": false

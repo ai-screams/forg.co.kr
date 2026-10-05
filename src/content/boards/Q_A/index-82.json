@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16766",
+      "title": "네크로 스킬을 올리는데",
+      "categoryLabel": null,
+      "author": "滅致{キㅡ-}",
+      "authorMemberNo": "14730",
+      "createdAt": "2003-02-28T20:45:17",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 151,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "16765",
       "title": "광산서 땅파다가 튕기는 증상",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 90,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "16716",
-      "title": "전사스킬이 왜 안 오르죠? 옛날이랑 너무 바뀌어서  ㅡ.ㅡ;;",
-      "categoryLabel": null,
-      "author": "in10ss",
-      "authorMemberNo": "19483",
-      "createdAt": "2003-02-27T21:55:43",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 267,
       "recommend": null,
       "era": "2003",
       "hasPost": true

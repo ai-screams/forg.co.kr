@@ -4,8 +4,25 @@
   "totalPages": 33,
   "totalPosts": 1608,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "81",
+      "title": "발견! 전사의 쿨한 셋트!!^^* writen by Judge",
+      "categoryLabel": "re",
+      "author": "ㅡ.ㅡ",
+      "authorMemberNo": null,
+      "createdAt": "2001-06-02T10:19:45",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 227,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true,
+      "replyDepth": 1
+    },
     {
       "postId": "80",
       "title": "템머를 키우면 좋은점과 나쁜점 몇가지 올립니다..",
@@ -228,7 +245,8 @@
       "hits": 180,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "62",
@@ -338,22 +356,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 2590,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "53",
-      "title": "Essay란 Open입니다....",
-      "categoryLabel": null,
-      "author": "anonymous",
-      "authorMemberNo": null,
-      "createdAt": "2001-04-11T21:35:42",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 46,
       "recommend": null,
       "era": "2003",
       "hasPost": true

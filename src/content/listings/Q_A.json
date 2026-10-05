@@ -4,7 +4,7 @@
   "pagesCaptured": 122,
   "capturesRead": 1541,
   "totalReported": 6608,
-  "generatedAt": "2026-10-05T10:43:53.970959Z",
+  "generatedAt": "2026-10-05T15:45:03.218104Z",
   "entries": [
     {
       "no": "28518",
@@ -97367,6 +97367,7 @@
       "hits": 27,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20020622043551",
       "listPage": 133,
       "hasPost": false
@@ -98027,6 +98028,7 @@
       "hits": 98,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20020622044833",
       "listPage": 139,
       "hasPost": false
@@ -99437,6 +99439,7 @@
       "hits": 136,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20020622054915",
       "listPage": 144,
       "hasPost": false
@@ -100337,6 +100340,7 @@
       "hits": 33,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010910045251",
       "listPage": 1,
       "hasPost": false
@@ -101177,6 +101181,7 @@
       "hits": 62,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010910030708",
       "listPage": 6,
       "hasPost": false
@@ -101297,6 +101302,7 @@
       "hits": 36,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010910020551",
       "listPage": 10,
       "hasPost": false
@@ -101807,6 +101813,7 @@
       "hits": 30,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729092045",
       "listPage": 1,
       "hasPost": false
@@ -101822,6 +101829,7 @@
       "hits": 21,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729092045",
       "listPage": 1,
       "hasPost": false
@@ -102167,6 +102175,7 @@
       "hits": 22,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010731044615",
       "listPage": 4,
       "hasPost": false
@@ -102827,6 +102836,7 @@
       "hits": 109,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010731044522",
       "listPage": 6,
       "hasPost": false
@@ -103742,6 +103752,7 @@
       "hits": 48,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010731044713",
       "listPage": 9,
       "hasPost": true
@@ -104327,6 +104338,7 @@
       "hits": 88,
       "commentCount": 4,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154811",
       "listPage": 4,
       "hasPost": false
@@ -104342,6 +104354,7 @@
       "hits": 74,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154811",
       "listPage": 4,
       "hasPost": true
@@ -104552,6 +104565,7 @@
       "hits": 54,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154811",
       "listPage": 4,
       "hasPost": true
@@ -104672,6 +104686,7 @@
       "hits": 118,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154619",
       "listPage": 5,
       "hasPost": false
@@ -105002,6 +105017,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155322",
       "listPage": 6,
       "hasPost": true
@@ -105332,6 +105348,7 @@
       "hits": 48,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155324",
       "listPage": 7,
       "hasPost": true
@@ -105347,6 +105364,7 @@
       "hits": 39,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155324",
       "listPage": 7,
       "hasPost": true
@@ -105632,6 +105650,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105647,6 +105666,7 @@
       "hits": 18,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105662,6 +105682,7 @@
       "hits": 60,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": true
@@ -105722,6 +105743,7 @@
       "hits": 17,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105752,6 +105774,7 @@
       "hits": 60,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105767,6 +105790,7 @@
       "hits": 87,
       "commentCount": 4,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105797,6 +105821,7 @@
       "hits": 10,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": true
@@ -105812,6 +105837,7 @@
       "hits": 24,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": false
@@ -105902,6 +105928,7 @@
       "hits": 57,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": false
@@ -105917,6 +105944,7 @@
       "hits": 55,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716155113",
       "listPage": 8,
       "hasPost": true
@@ -106007,6 +106035,7 @@
       "hits": 19,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": true
@@ -106067,6 +106096,7 @@
       "hits": 11,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": true
@@ -106142,6 +106172,7 @@
       "hits": 56,
       "commentCount": 5,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": false
@@ -106187,6 +106218,7 @@
       "hits": 66,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": true
@@ -106202,6 +106234,7 @@
       "hits": 23,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010716154843",
       "listPage": 9,
       "hasPost": true
@@ -106382,6 +106415,7 @@
       "hits": 25,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010625020853",
       "listPage": 1,
       "hasPost": true
@@ -106517,6 +106551,7 @@
       "hits": 52,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715120547",
       "listPage": 10,
       "hasPost": true
@@ -106622,6 +106657,7 @@
       "hits": 58,
       "commentCount": 4,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715120547",
       "listPage": 10,
       "hasPost": true
@@ -106682,6 +106718,7 @@
       "hits": 40,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715120547",
       "listPage": 10,
       "hasPost": true
@@ -106712,6 +106749,7 @@
       "hits": 28,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715120547",
       "listPage": 10,
       "hasPost": true
@@ -106892,6 +106930,7 @@
       "hits": 18,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010622011405",
       "listPage": 1,
       "hasPost": true
@@ -107012,6 +107051,7 @@
       "hits": 47,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010622011405",
       "listPage": 1,
       "hasPost": true
@@ -107057,6 +107097,7 @@
       "hits": 104,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012742",
       "listPage": 1,
       "hasPost": false
@@ -107072,6 +107113,7 @@
       "hits": 31,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010723012742",
       "listPage": 1,
       "hasPost": false
@@ -107087,6 +107129,7 @@
       "hits": 117,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012742",
       "listPage": 1,
       "hasPost": false
@@ -107192,6 +107235,7 @@
       "hits": 15,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222027",
       "listPage": 1,
       "hasPost": false
@@ -107222,6 +107266,7 @@
       "hits": 30,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222027",
       "listPage": 1,
       "hasPost": false
@@ -107267,6 +107312,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222027",
       "listPage": 1,
       "hasPost": false
@@ -107312,6 +107358,7 @@
       "hits": 64,
       "commentCount": 4,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222027",
       "listPage": 1,
       "hasPost": false
@@ -107432,6 +107479,7 @@
       "hits": 65,
       "commentCount": 18,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010531223834",
       "listPage": 3,
       "hasPost": false
@@ -107447,6 +107495,7 @@
       "hits": 32,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223834",
       "listPage": 3,
       "hasPost": false
@@ -107567,6 +107616,7 @@
       "hits": 54,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223834",
       "listPage": 3,
       "hasPost": true
@@ -107612,6 +107662,7 @@
       "hits": 65,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223834",
       "listPage": 3,
       "hasPost": true
@@ -107642,6 +107693,7 @@
       "hits": 77,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223834",
       "listPage": 3,
       "hasPost": true
@@ -107702,6 +107754,7 @@
       "hits": 64,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": false
@@ -107732,6 +107785,7 @@
       "hits": 57,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": true
@@ -107762,6 +107816,7 @@
       "hits": 44,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": false
@@ -107807,6 +107862,7 @@
       "hits": 56,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": false
@@ -107912,6 +107968,7 @@
       "hits": 24,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": true
@@ -107927,6 +107984,7 @@
       "hits": 25,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": false
@@ -107957,6 +108015,7 @@
       "hits": 59,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": true
@@ -107972,6 +108031,7 @@
       "hits": 61,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": true
@@ -107987,6 +108047,7 @@
       "hits": 51,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010601165130",
       "listPage": 4,
       "hasPost": false
@@ -108032,6 +108093,7 @@
       "hits": 20,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531141745",
       "listPage": 4,
       "hasPost": false
@@ -108047,6 +108109,7 @@
       "hits": 25,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531141745",
       "listPage": 4,
       "hasPost": false
@@ -108092,6 +108155,7 @@
       "hits": 26,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531141745",
       "listPage": 4,
       "hasPost": false
@@ -108107,6 +108171,7 @@
       "hits": 48,
       "commentCount": 15,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528185551",
       "listPage": 3,
       "hasPost": true
@@ -108137,6 +108202,7 @@
       "hits": 21,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": false
@@ -108197,6 +108263,7 @@
       "hits": 44,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": true
@@ -108242,6 +108309,7 @@
       "hits": 85,
       "commentCount": 8,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": true
@@ -108302,6 +108370,7 @@
       "hits": 6,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": false
@@ -108347,6 +108416,7 @@
       "hits": 76,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": true
@@ -108362,6 +108432,7 @@
       "hits": 101,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": true
@@ -108422,6 +108493,7 @@
       "hits": 35,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108437,6 +108509,7 @@
       "hits": 38,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108452,6 +108525,7 @@
       "hits": 60,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010528011126",
       "listPage": 3,
       "hasPost": true
@@ -108512,6 +108586,7 @@
       "hits": 71,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108527,6 +108602,7 @@
       "hits": 48,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108542,6 +108618,7 @@
       "hits": 20,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108557,6 +108634,7 @@
       "hits": 81,
       "commentCount": 5,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010526122919",
       "listPage": 3,
       "hasPost": true
@@ -108662,6 +108740,7 @@
       "hits": 44,
       "commentCount": 5,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": false
@@ -108677,6 +108756,7 @@
       "hits": 55,
       "commentCount": 8,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108707,6 +108787,7 @@
       "hits": 69,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108737,6 +108818,7 @@
       "hits": 100,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108752,6 +108834,7 @@
       "hits": 36,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108767,6 +108850,7 @@
       "hits": 42,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108782,6 +108866,7 @@
       "hits": 35,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524060413",
       "listPage": 3,
       "hasPost": true
@@ -108857,6 +108942,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010519104049",
       "listPage": 3,
       "hasPost": true
@@ -108992,6 +109078,7 @@
       "hits": 23,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512015434",
       "listPage": 1,
       "hasPost": true
@@ -109022,6 +109109,7 @@
       "hits": 28,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": false
@@ -109097,6 +109185,7 @@
       "hits": 83,
       "commentCount": 7,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": true
@@ -109157,6 +109246,7 @@
       "hits": 110,
       "commentCount": 1,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": true
@@ -109202,6 +109292,7 @@
       "hits": 54,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": true
@@ -109217,6 +109308,7 @@
       "hits": 60,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": true
@@ -109352,6 +109444,7 @@
       "hits": 47,
       "commentCount": 3,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531223528",
       "listPage": 8,
       "hasPost": true
@@ -109412,6 +109505,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505154643",
       "listPage": 1,
       "hasPost": true
@@ -109457,6 +109551,7 @@
       "hits": 51,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505154643",
       "listPage": 1,
       "hasPost": true
@@ -109487,6 +109582,7 @@
       "hits": 75,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109517,6 +109613,7 @@
       "hits": 78,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109532,6 +109629,7 @@
       "hits": 72,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109607,6 +109705,7 @@
       "hits": 108,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109622,6 +109721,7 @@
       "hits": 110,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109697,6 +109797,7 @@
       "hits": 72,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010512013443",
       "listPage": 3,
       "hasPost": true
@@ -109787,6 +109888,7 @@
       "hits": 57,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010502023019",
       "listPage": 1,
       "hasPost": true
@@ -109907,6 +110009,7 @@
       "hits": 99,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505155045",
       "listPage": 3,
       "hasPost": true
@@ -109982,6 +110085,7 @@
       "hits": 61,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505155045",
       "listPage": 3,
       "hasPost": true
@@ -110012,6 +110116,7 @@
       "hits": 29,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505155045",
       "listPage": 3,
       "hasPost": true
@@ -110192,6 +110297,7 @@
       "hits": 19,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010502010253",
       "listPage": 3,
       "hasPost": true
@@ -110222,6 +110328,7 @@
       "hits": 77,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010502010253",
       "listPage": 3,
       "hasPost": true
@@ -110267,6 +110374,7 @@
       "hits": 16,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010502010253",
       "listPage": 3,
       "hasPost": true
@@ -110342,6 +110450,7 @@
       "hits": 68,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010502010253",
       "listPage": 3,
       "hasPost": true
@@ -110432,6 +110541,7 @@
       "hits": 20,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010418065025",
       "listPage": 1,
       "hasPost": true
@@ -110462,6 +110572,7 @@
       "hits": 33,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010418065025",
       "listPage": 1,
       "hasPost": true
@@ -110477,6 +110588,7 @@
       "hits": 20,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010418065025",
       "listPage": 1,
       "hasPost": true
@@ -110492,6 +110604,7 @@
       "hits": 11,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010418065025",
       "listPage": 1,
       "hasPost": true
@@ -110507,6 +110620,7 @@
       "hits": 24,
       "commentCount": 2,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010418065025",
       "listPage": 1,
       "hasPost": true
@@ -110717,6 +110831,7 @@
       "hits": 34,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010522093230",
       "listPage": 1,
       "hasPost": false
@@ -110732,6 +110847,7 @@
       "hits": 53,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010522093230",
       "listPage": 1,
       "hasPost": false
@@ -111077,6 +111193,7 @@
       "hits": 22,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110348",
       "listPage": 131,
       "hasPost": false
@@ -111107,6 +111224,7 @@
       "hits": 54,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110348",
       "listPage": 131,
       "hasPost": false
@@ -111122,6 +111240,7 @@
       "hits": 41,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110348",
       "listPage": 131,
       "hasPost": false
@@ -111302,6 +111421,7 @@
       "hits": 68,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110348",
       "listPage": 131,
       "hasPost": false
@@ -111707,6 +111827,7 @@
       "hits": 17,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110933",
       "listPage": 133,
       "hasPost": false
@@ -111737,6 +111858,7 @@
       "hits": 9,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010910024101",
       "listPage": 170,
       "hasPost": false
@@ -111767,6 +111889,7 @@
       "hits": 34,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110933",
       "listPage": 133,
       "hasPost": false
@@ -111992,6 +112115,7 @@
       "hits": 35,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110933",
       "listPage": 133,
       "hasPost": false
@@ -112262,6 +112386,7 @@
       "hits": 19,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112322,6 +112447,7 @@
       "hits": 26,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010910024101",
       "listPage": 170,
       "hasPost": false
@@ -112352,6 +112478,7 @@
       "hits": 38,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112382,6 +112509,7 @@
       "hits": 31,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112472,6 +112600,7 @@
       "hits": 8,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112502,6 +112631,7 @@
       "hits": 61,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112517,6 +112647,7 @@
       "hits": 40,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112562,6 +112693,7 @@
       "hits": 77,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112592,6 +112724,7 @@
       "hits": 37,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111709",
       "listPage": 135,
       "hasPost": false
@@ -112652,6 +112785,7 @@
       "hits": 44,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715121220",
       "listPage": 136,
       "hasPost": false
@@ -112727,6 +112861,7 @@
       "hits": 59,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715121220",
       "listPage": 136,
       "hasPost": false
@@ -112832,6 +112967,7 @@
       "hits": 12,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -112847,6 +112983,7 @@
       "hits": 29,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715121220",
       "listPage": 136,
       "hasPost": false
@@ -113117,6 +113254,7 @@
       "hits": 125,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715110955",
       "listPage": 137,
       "hasPost": false
@@ -113402,6 +113540,7 @@
       "hits": 28,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111716",
       "listPage": 138,
       "hasPost": false
@@ -113492,6 +113631,7 @@
       "hits": 49,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715111716",
       "listPage": 138,
       "hasPost": false
@@ -113582,6 +113722,7 @@
       "hits": 36,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113597,6 +113738,7 @@
       "hits": 35,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113672,6 +113814,7 @@
       "hits": 194,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113687,6 +113830,7 @@
       "hits": 199,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113717,6 +113861,7 @@
       "hits": 58,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113732,6 +113877,7 @@
       "hits": 36,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -113957,6 +114103,7 @@
       "hits": 114,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011746",
       "listPage": 141,
       "hasPost": false
@@ -114062,6 +114209,7 @@
       "hits": 32,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012147",
       "listPage": 142,
       "hasPost": false
@@ -114167,6 +114315,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012147",
       "listPage": 142,
       "hasPost": false
@@ -114182,6 +114331,7 @@
       "hits": 33,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012147",
       "listPage": 142,
       "hasPost": false
@@ -114242,6 +114392,7 @@
       "hits": 18,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010715112446",
       "listPage": 140,
       "hasPost": false
@@ -114257,6 +114408,7 @@
       "hits": 40,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010715112446",
       "listPage": 140,
       "hasPost": false
@@ -114302,6 +114454,7 @@
       "hits": 54,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114317,6 +114470,7 @@
       "hits": 89,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114332,6 +114486,7 @@
       "hits": 36,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114347,6 +114502,7 @@
       "hits": 23,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114362,6 +114518,7 @@
       "hits": 56,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114377,6 +114534,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114422,6 +114580,7 @@
       "hits": 40,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114497,6 +114656,7 @@
       "hits": 67,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114512,6 +114672,7 @@
       "hits": 92,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114542,6 +114703,7 @@
       "hits": 53,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114557,6 +114719,7 @@
       "hits": 58,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114572,6 +114735,7 @@
       "hits": 90,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723012121",
       "listPage": 144,
       "hasPost": false
@@ -114677,6 +114841,7 @@
       "hits": 41,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114692,6 +114857,7 @@
       "hits": 113,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114722,6 +114888,7 @@
       "hits": 90,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 4,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -114782,6 +114949,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114797,6 +114965,7 @@
       "hits": 45,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114812,6 +114981,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114842,6 +115012,7 @@
       "hits": 69,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -114857,6 +115028,7 @@
       "hits": 81,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114872,6 +115044,7 @@
       "hits": 51,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -114887,6 +115060,7 @@
       "hits": 90,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114902,6 +115076,7 @@
       "hits": 95,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -114932,6 +115107,7 @@
       "hits": 82,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -114947,6 +115123,7 @@
       "hits": 26,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -114962,6 +115139,7 @@
       "hits": 100,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723011328",
       "listPage": 145,
       "hasPost": false
@@ -115067,6 +115245,7 @@
       "hits": 200,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -115097,6 +115276,7 @@
       "hits": 126,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -115112,6 +115292,7 @@
       "hits": 59,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -115127,6 +115308,7 @@
       "hits": 53,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010723005509",
       "listPage": 146,
       "hasPost": false
@@ -115172,6 +115354,7 @@
       "hits": 124,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -115187,6 +115370,7 @@
       "hits": 156,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -115202,6 +115386,7 @@
       "hits": 156,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -115247,6 +115432,7 @@
       "hits": 18,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115262,6 +115448,7 @@
       "hits": 115,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": true
@@ -115292,6 +115479,7 @@
       "hits": 100,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": false
@@ -115322,6 +115510,7 @@
       "hits": 20,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010724062723",
       "listPage": 147,
       "hasPost": true
@@ -115367,6 +115556,7 @@
       "hits": 67,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": true
@@ -115382,6 +115572,7 @@
       "hits": 69,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": true
@@ -115397,6 +115588,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115412,6 +115604,7 @@
       "hits": 58,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": true
@@ -115427,6 +115620,7 @@
       "hits": 84,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": true
@@ -115502,6 +115696,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115517,6 +115712,7 @@
       "hits": 69,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115532,6 +115728,7 @@
       "hits": 44,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115547,6 +115744,7 @@
       "hits": 12,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115592,6 +115790,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115607,6 +115806,7 @@
       "hits": 48,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091709",
       "listPage": 151,
       "hasPost": false
@@ -115697,6 +115897,7 @@
       "hits": 58,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115742,6 +115943,7 @@
       "hits": 63,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115757,6 +115959,7 @@
       "hits": 12,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115802,6 +116005,7 @@
       "hits": 103,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115817,6 +116021,7 @@
       "hits": 33,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 4,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": false
@@ -115832,6 +116037,7 @@
       "hits": 37,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115877,6 +116083,7 @@
       "hits": 66,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115892,6 +116099,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -115952,6 +116160,7 @@
       "hits": 131,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": false
@@ -115967,6 +116176,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": false
@@ -115982,6 +116192,7 @@
       "hits": 66,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010729091900",
       "listPage": 152,
       "hasPost": false
@@ -116042,6 +116253,7 @@
       "hits": 41,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": false
@@ -116057,6 +116269,7 @@
       "hits": 63,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": false
@@ -116087,6 +116300,7 @@
       "hits": 55,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531222007",
       "listPage": 125,
       "hasPost": true
@@ -116132,6 +116346,7 @@
       "hits": 42,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116147,6 +116362,7 @@
       "hits": 42,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116177,6 +116393,7 @@
       "hits": 46,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116207,6 +116424,7 @@
       "hits": 29,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116222,6 +116440,7 @@
       "hits": 14,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116267,6 +116486,7 @@
       "hits": 22,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116282,6 +116502,7 @@
       "hits": 34,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116312,6 +116533,7 @@
       "hits": 59,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010513163248",
       "listPage": 132,
       "hasPost": true
@@ -116357,6 +116579,7 @@
       "hits": 21,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116387,6 +116610,7 @@
       "hits": 16,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116402,6 +116626,7 @@
       "hits": 10,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 4,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116432,6 +116657,7 @@
       "hits": 84,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116447,6 +116673,7 @@
       "hits": 23,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 3,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116462,6 +116689,7 @@
       "hits": 25,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116492,6 +116720,7 @@
       "hits": 105,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116507,6 +116736,7 @@
       "hits": 60,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116522,6 +116752,7 @@
       "hits": 25,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010527211242",
       "listPage": 125,
       "hasPost": true
@@ -116717,6 +116948,7 @@
       "hits": 93,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531221640",
       "listPage": 128,
       "hasPost": true
@@ -116792,6 +117024,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531221640",
       "listPage": 128,
       "hasPost": true
@@ -116927,6 +117160,7 @@
       "hits": 107,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531221640",
       "listPage": 128,
       "hasPost": true
@@ -116942,6 +117176,7 @@
       "hits": 59,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010531221640",
       "listPage": 128,
       "hasPost": true
@@ -116987,6 +117222,7 @@
       "hits": 66,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524062217",
       "listPage": 125,
       "hasPost": true
@@ -117017,6 +117253,7 @@
       "hits": 68,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524062217",
       "listPage": 125,
       "hasPost": true
@@ -117032,6 +117269,7 @@
       "hits": 74,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524062217",
       "listPage": 125,
       "hasPost": true
@@ -117077,6 +117315,7 @@
       "hits": 39,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010524062217",
       "listPage": 125,
       "hasPost": true
@@ -117092,6 +117331,7 @@
       "hits": 49,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010524062217",
       "listPage": 125,
       "hasPost": true
@@ -117122,6 +117362,7 @@
       "hits": 114,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505145106",
       "listPage": 133,
       "hasPost": true
@@ -117167,6 +117408,7 @@
       "hits": 57,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010505144449",
       "listPage": 134,
       "hasPost": true
@@ -117182,6 +117424,7 @@
       "hits": 43,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505145106",
       "listPage": 133,
       "hasPost": true
@@ -117212,6 +117455,7 @@
       "hits": 87,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505144449",
       "listPage": 134,
       "hasPost": true
@@ -117242,6 +117486,7 @@
       "hits": 50,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010505144449",
       "listPage": 134,
       "hasPost": true
@@ -117272,6 +117517,7 @@
       "hits": 48,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117287,6 +117533,7 @@
       "hits": 75,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010519100952",
       "listPage": 134,
       "hasPost": true
@@ -117317,6 +117564,7 @@
       "hits": 48,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117332,6 +117580,7 @@
       "hits": 48,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 2,
       "capturedAt": "20010523101149",
       "listPage": 132,
       "hasPost": true
@@ -117347,6 +117596,7 @@
       "hits": 71,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010523101149",
       "listPage": 132,
       "hasPost": true
@@ -117377,6 +117627,7 @@
       "hits": 102,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117392,6 +117643,7 @@
       "hits": 71,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117452,6 +117704,7 @@
       "hits": 105,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117482,6 +117735,7 @@
       "hits": 87,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117497,6 +117751,7 @@
       "hits": 135,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true
@@ -117512,6 +117767,7 @@
       "hits": 67,
       "commentCount": 0,
       "isNotice": false,
+      "replyDepth": 1,
       "capturedAt": "20010525064340",
       "listPage": 134,
       "hasPost": true

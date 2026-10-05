@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "262",
+      "title": "몇일동안 임뷰한 활들 ㅠ.ㅠ",
+      "categoryLabel": null,
+      "author": "qquuoo",
+      "authorMemberNo": "808",
+      "createdAt": "2005-10-16T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 141,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "260",
       "title": "럭셔리 라이프를 위한 그날까지 -_- 모아보아요",
@@ -786,22 +802,6 @@
       "commentCount": 2,
       "attachmentCount": 0,
       "hits": 476,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "34",
-      "title": "이건 쓸수나 있는겁니까?",
-      "categoryLabel": null,
-      "author": "blacksazabi",
-      "authorMemberNo": "16",
-      "createdAt": "2005-06-25T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 484,
       "recommend": null,
       "era": "2003",
       "hasPost": false

@@ -4,8 +4,24 @@
   "totalPages": 16,
   "totalPosts": 772,
   "totalWithPost": 345,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "684",
+      "title": "초보 패링전사 입니다.",
+      "categoryLabel": null,
+      "author": "Hael",
+      "authorMemberNo": null,
+      "createdAt": "2003-11-07T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 76,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "683",
       "title": "스테이크 어떻게 구워야되는거죠??",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 113,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "632",
-      "title": "처음 시작하려하는데요",
-      "categoryLabel": null,
-      "author": "Be'elzebub",
-      "authorMemberNo": null,
-      "createdAt": "2003-10-24T16:29:38",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 114,
       "recommend": null,
       "era": "2003",
       "hasPost": true

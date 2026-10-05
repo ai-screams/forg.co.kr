@@ -4,8 +4,24 @@
   "totalPages": 7,
   "totalPosts": 323,
   "totalWithPost": 33,
-  "generatedAt": "2026-10-03T07:24:25Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "294",
+      "title": "나루토 345화",
+      "categoryLabel": null,
+      "author": "[SoK]Pooh",
+      "authorMemberNo": "1410",
+      "createdAt": "2007-03-10T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 275,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "141",
       "title": "웨딩 크래셔",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 223,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "264",
-      "title": "나나",
-      "categoryLabel": null,
-      "author": "얼빵군",
-      "authorMemberNo": "2210",
-      "createdAt": "2007-01-10T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 173,
       "recommend": null,
       "era": "2003",
       "hasPost": false

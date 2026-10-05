@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "20309",
+      "title": "메저리와 기사도.....",
+      "categoryLabel": null,
+      "author": "airgstring",
+      "authorMemberNo": "18236",
+      "createdAt": "2003-08-12T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 69,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "20308",
       "title": "알켐/인스 마사+ 피스마사가 가능할까요.",
@@ -786,22 +802,6 @@
       "commentCount": 13,
       "attachmentCount": 0,
       "hits": 124,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "20236",
-      "title": "섬머페스티발...그거. !",
-      "categoryLabel": null,
-      "author": "pian",
-      "authorMemberNo": "14691",
-      "createdAt": "2003-08-09T17:52:08",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 0,
-      "hits": 70,
       "recommend": null,
       "era": "2003",
       "hasPost": true

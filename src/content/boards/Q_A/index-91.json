@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "15976",
+      "title": "시큐어 상자에 관련한..",
+      "categoryLabel": null,
+      "author": "serpans",
+      "authorMemberNo": "18288",
+      "createdAt": "2003-02-15T17:58:28",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 65,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "15974",
       "title": "전사 스킬을 어떻게 올려야할까요??",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 37,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "15930",
-      "title": "이제 메디버리구 포커스를 키워야 되나요ㅠㅠ?",
-      "categoryLabel": null,
-      "author": "yongdae",
-      "authorMemberNo": "16872",
-      "createdAt": "2003-02-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 1,
-      "attachmentCount": 0,
-      "hits": 170,
       "recommend": null,
       "era": "2003",
       "hasPost": false

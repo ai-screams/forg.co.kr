@@ -4,8 +4,24 @@
   "totalPages": 16,
   "totalPosts": 772,
   "totalWithPost": 345,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "32",
+      "title": "더미치면 펜싱이랑 택틱몇까지올라여?",
+      "categoryLabel": null,
+      "author": "Buer",
+      "authorMemberNo": null,
+      "createdAt": "2002-12-03T20:03:57",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 245,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "31",
       "title": "저기 질문 있는데 답변좀 해주세여",
@@ -306,22 +322,6 @@
       "commentCount": 4,
       "attachmentCount": 0,
       "hits": 160,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "1",
-      "title": "초보자 게시판입니다.",
-      "categoryLabel": null,
-      "author": "Wormius",
-      "authorMemberNo": null,
-      "createdAt": "2002-11-27T08:51:07",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 1017,
       "recommend": null,
       "era": "2003",
       "hasPost": true

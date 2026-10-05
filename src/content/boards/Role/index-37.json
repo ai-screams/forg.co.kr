@@ -4,8 +4,24 @@
   "totalPages": 37,
   "totalPosts": 1833,
   "totalWithPost": 1241,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T16:01:40Z",
   "entries": [
+    {
+      "postId": "85",
+      "title": "파데트와 함께하는 울티마 온라인 - 계정",
+      "categoryLabel": "울온PR",
+      "author": "padet",
+      "authorMemberNo": "637",
+      "createdAt": "2000-02-10T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 4,
+      "attachmentCount": 0,
+      "hits": 690,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "84",
       "title": "파데트와 함께하는 울티마 온라인",
@@ -500,7 +516,8 @@
       "hits": null,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     },
     {
       "postId": "2",
@@ -516,23 +533,8 @@
       "hits": null,
       "recommend": null,
       "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "1",
-      "title": "롤플레이어 게시판입니다^^",
-      "categoryLabel": null,
-      "author": "forg",
-      "authorMemberNo": null,
-      "createdAt": "1970-01-01T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 435,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
+      "hasPost": true,
+      "replyDepth": 1
     }
   ]
 }

@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "21807",
+      "title": "게임 실행문제입니다 ㅠ_ㅠ",
+      "categoryLabel": null,
+      "author": "darkwolfs",
+      "authorMemberNo": "21330",
+      "createdAt": "2003-10-27T18:16:17",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 49,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "21804",
       "title": "밑에 글쓴 사람인데요 IRC에대해 궁굼한점이..",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 100,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "21754",
-      "title": "기사도 질문인데요..",
-      "categoryLabel": null,
-      "author": "hasi12",
-      "authorMemberNo": "14650",
-      "createdAt": "2003-10-24T20:29:10",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 71,
       "recommend": null,
       "era": "2003",
       "hasPost": true

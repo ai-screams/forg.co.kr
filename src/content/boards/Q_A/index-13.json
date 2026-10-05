@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "22268",
+      "title": "폴리 마사인데 택틱 올려야 하나여?",
+      "categoryLabel": null,
+      "author": "gunhoguns",
+      "authorMemberNo": "23940",
+      "createdAt": "2003-11-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 67,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "22267",
       "title": "카토Aos 이후에 올리는법좀..",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 66,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "22196",
-      "title": "레지 레지 레지 그노무 레지...",
-      "categoryLabel": null,
-      "author": "nonjapan",
-      "authorMemberNo": "22758",
-      "createdAt": "2003-11-15T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 169,
       "recommend": null,
       "era": "2003",
       "hasPost": false

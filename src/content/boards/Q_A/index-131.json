@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "7725",
+      "title": "보우크래프트 지엠이면 활연사소 솓도 빠르다!!??",
+      "categoryLabel": null,
+      "author": "레이크",
+      "authorMemberNo": "7031",
+      "createdAt": "2002-04-07T20:55:05",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 172,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "7720",
       "title": "계정 등록하고 괄성화 되는데...",
@@ -786,22 +802,6 @@
       "commentCount": 5,
       "attachmentCount": 0,
       "hits": 99,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "7601",
-      "title": "아나토미에 대해서;;;",
-      "categoryLabel": null,
-      "author": "crtfire",
-      "authorMemberNo": "4049",
-      "createdAt": "2002-03-29T23:44:32",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": 181,
       "recommend": null,
       "era": "2003",
       "hasPost": true

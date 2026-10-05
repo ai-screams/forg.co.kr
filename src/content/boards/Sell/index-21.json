@@ -4,8 +4,24 @@
   "totalPages": 22,
   "totalPosts": 1094,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "75",
+      "title": "케릭만잇는계정지피로팝니다+UOA",
+      "categoryLabel": null,
+      "author": "SanTa",
+      "authorMemberNo": null,
+      "createdAt": "2001-12-20T23:35:32",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 52,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "74",
       "title": "집사요.. 빌라 나 빌라크기 집 삽니다.",
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 97,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "19",
-      "title": "라지마블 삽니다. 펠루카도 괜찮습니다.",
-      "categoryLabel": null,
-      "author": "김경태",
-      "authorMemberNo": null,
-      "createdAt": "2001-12-10T11:00:05",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 5,
-      "attachmentCount": 0,
-      "hits": 88,
       "recommend": null,
       "era": "2003",
       "hasPost": true

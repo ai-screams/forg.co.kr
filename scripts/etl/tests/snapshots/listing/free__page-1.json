@@ -12,7 +12,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "10",
@@ -24,7 +25,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "55",
@@ -36,7 +38,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "25",
@@ -48,7 +51,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "9",
@@ -60,7 +64,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "71",
@@ -72,7 +77,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "51",
@@ -84,7 +90,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "36",
@@ -96,7 +103,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "28",
@@ -108,7 +116,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "40",
@@ -120,7 +129,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "48",
@@ -132,7 +142,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "94",
@@ -144,7 +155,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "50",
@@ -156,7 +168,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "73",
@@ -168,7 +181,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     },
     {
       "no": "29",
@@ -180,7 +194,8 @@
       "full_date": null,
       "hits": null,
       "comments": 0,
-      "notice": false
+      "notice": false,
+      "reply": 0
     }
   ]
 }

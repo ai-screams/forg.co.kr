@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "8020",
+      "title": "크리스마스 선물로 스노우글로부 받으신분?",
+      "categoryLabel": null,
+      "author": "Resurrection",
+      "authorMemberNo": "2413",
+      "createdAt": "2002-05-09T09:27:57",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 3,
+      "attachmentCount": 0,
+      "hits": 129,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "8030",
       "title": "업데이트한 몬스터어디에서 나와요????",
@@ -789,22 +805,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "7824",
-      "title": "집에상점 점원을 어떡해 대려다놓는지가르침받을려구합니다",
-      "categoryLabel": null,
-      "author": "sjgjung",
-      "authorMemberNo": "5742",
-      "createdAt": "2002-04-18T15:26:04",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 68,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

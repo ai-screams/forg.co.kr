@@ -4,8 +4,40 @@
   "totalPages": 28,
   "totalPosts": 1376,
   "totalWithPost": 395,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "10",
+      "title": "발해 르네 캐슬 지피로 팝니다...",
+      "categoryLabel": null,
+      "author": "어린왕자",
+      "authorMemberNo": "17085",
+      "createdAt": "2003-03-26T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 157,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "9",
+      "title": "레어및 파스, 기타 아이템 팝니다..",
+      "categoryLabel": null,
+      "author": "daha",
+      "authorMemberNo": "14894",
+      "createdAt": "2003-03-26T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 149,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "6",
       "title": "아리랑샤드에 있는 케쓸 모형 디드",
@@ -34,22 +66,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 122,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": false
-    },
-    {
-      "postId": "3",
-      "title": "1주일 기간 밴리스트 입니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2003-03-16T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 1198,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -405,22 +421,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "가격기입 안하시는 멤버분들은 일주일 출입금지입니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2001-12-08T21:24:30",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 8,
-      "attachmentCount": 0,
-      "hits": 9505,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     }
   ]
 }

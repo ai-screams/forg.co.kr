@@ -4,8 +4,24 @@
   "totalPages": 81,
   "totalPosts": 4008,
   "totalWithPost": 1121,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "47",
+      "title": "워크3 프론즈쓰론 삽니다~",
+      "categoryLabel": null,
+      "author": "embba",
+      "authorMemberNo": "25450",
+      "createdAt": "2004-04-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 149,
+      "recommend": null,
+      "era": "2014",
+      "hasPost": false
+    },
     {
       "postId": "44",
       "title": "KOF 테리모자 판매",
@@ -18,22 +34,6 @@
       "commentCount": 1,
       "attachmentCount": 0,
       "hits": 366,
-      "recommend": null,
-      "era": "2014",
-      "hasPost": false
-    },
-    {
-      "postId": "1",
-      "title": "멤버 중고장터란 이용규칙입니다.",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2004-03-20T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": true,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 198,
       "recommend": null,
       "era": "2014",
       "hasPost": false
@@ -682,7 +682,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "Tarirang"
+      "board": "Tarirang",
+      "isNotice": true
     },
     {
       "postId": "3765",
@@ -699,7 +700,8 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false,
-      "board": "Tbalhae"
+      "board": "Tbalhae",
+      "isNotice": true
     },
     {
       "postId": "10841",

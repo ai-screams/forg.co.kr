@@ -4,8 +4,24 @@
   "totalPages": 20,
   "totalPosts": 985,
   "totalWithPost": 229,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:48:06Z",
   "entries": [
+    {
+      "postId": "835",
+      "title": "그럭저럭 팔찌",
+      "categoryLabel": null,
+      "author": "NINA",
+      "authorMemberNo": "8188",
+      "createdAt": "2007-04-01T03:54:55",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 2,
+      "attachmentCount": 1,
+      "hits": 379,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "834",
       "title": "에쿠링~ ㅜㅜ 회복은 읍네여,,,",
@@ -786,22 +802,6 @@
       "commentCount": 1,
       "attachmentCount": 1,
       "hits": 541,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "766",
-      "title": "모 그냥 이런 활...",
-      "categoryLabel": null,
-      "author": "Zip",
-      "authorMemberNo": "573",
-      "createdAt": "2007-01-25T00:17:50",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 3,
-      "attachmentCount": 1,
-      "hits": 456,
       "recommend": null,
       "era": "2003",
       "hasPost": true

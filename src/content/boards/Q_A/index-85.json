@@ -4,8 +4,24 @@
   "totalPages": 165,
   "totalPosts": 8213,
   "totalWithPost": 3351,
-  "generatedAt": "2026-10-05T10:46:37Z",
+  "generatedAt": "2026-10-05T15:49:06Z",
   "entries": [
+    {
+      "postId": "16572",
+      "title": "xp  screen keybord?",
+      "categoryLabel": null,
+      "author": "rapel21",
+      "authorMemberNo": "15561",
+      "createdAt": "2003-02-25T01:44:07",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 74,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": true
+    },
     {
       "postId": "16571",
       "title": "둠 던전에 나오는 레어에 대해 질문 드리겠습니다...",
@@ -786,22 +802,6 @@
       "commentCount": 3,
       "attachmentCount": 0,
       "hits": 152,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "16530",
-      "title": "다시 여쭤봅니다.",
-      "categoryLabel": null,
-      "author": "akadoaka",
-      "authorMemberNo": "17865",
-      "createdAt": "2003-02-24T12:45:33",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 92,
       "recommend": null,
       "era": "2003",
       "hasPost": true
