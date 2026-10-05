@@ -1,7 +1,5 @@
 /**
- * The board-list table, drawn in the skin the board wore. `<BoardListing>`
- * (post-backed index) and `<BoardListingOnly>` (rows from captured list
- * pages) both render it and only differ in the rows they hand over.
+ * The board-list table, drawn in the skin the board wore, for `<BoardListing>`.
  *
  * The skin comes from the board's engine (`lib/skins.ts` `boardSkin`); its
  * columns, per the 707 captured list pages:

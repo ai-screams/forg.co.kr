@@ -1,0 +1,43 @@
+{
+  "board": "WowForum",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 2,
+  "totalWithPost": 0,
+  "generatedAt": "2026-10-05T16:53:27Z",
+  "entries": [
+    {
+      "postId": "1",
+      "title": "Essay란 이용시 주의사항입니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 5,
+      "attachmentCount": 0,
+      "hits": 171,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false,
+      "isNotice": true
+    },
+    {
+      "postId": "3",
+      "title": "종족별 직업별 초기스텟 및 가능한 직업들 & 스텟별 능력",
+      "categoryLabel": null,
+      "author": "MERU104",
+      "authorMemberNo": "15554",
+      "createdAt": "2004-04-13T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "hits": 548,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    }
+  ]
+}

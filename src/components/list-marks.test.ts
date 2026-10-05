@@ -2,19 +2,18 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
-import { indexRows, listingRows } from "@/components/board-rows";
+import { indexRows } from "@/components/board-rows";
 import type { ListRow } from "@/components/list-row";
 import { ListTable } from "@/components/list-skin";
 import { ListTable2001 } from "@/components/list-skin-2001";
 import type { ListSkin } from "@/lib/skins";
 import type { Skin2001 } from "@/lib/skins-2001";
-import type { BoardIndexPage, BoardListing } from "@/types/post";
+import type { BoardIndexPage } from "@/types/post";
 
 // Each mark below is pinned by a mutation that turns its test red: dropping
 // it, drawing it for another skin, or losing the depth.
 
 type IndexEntry = BoardIndexPage["entries"][number];
-type ListingEntry = BoardListing["entries"][number];
 
 function indexEntry(postId: string, extra: Partial<IndexEntry> = {}): IndexEntry {
   return {
@@ -32,25 +31,6 @@ function indexEntry(postId: string, extra: Partial<IndexEntry> = {}): IndexEntry
     recommend: null,
     era: "2003",
     hasPost: true,
-    ...extra,
-  };
-}
-
-function listingEntry(no: string, extra: Partial<ListingEntry> = {}): ListingEntry {
-  return {
-    no,
-    title: `목록 ${no}`,
-    categoryLabel: null,
-    author: "lee",
-    authorMemberNo: null,
-    createdAt: "2003-05-01",
-    yearApprox: false,
-    hits: 3,
-    commentCount: 0,
-    isNotice: false,
-    capturedAt: "20030601000000",
-    listPage: 1,
-    hasPost: false,
     ...extra,
   };
 }
@@ -114,28 +94,6 @@ describe("list rows", () => {
       [true, 0],
       [false, 2],
       [false, 0],
-    ]);
-  });
-
-  it("put a listing's notices first, the rest in its order", () => {
-    const listing: BoardListing = {
-      board: "DF",
-      engine: "gnuboard4",
-      pagesCaptured: 1,
-      capturesRead: 1,
-      totalReported: null,
-      generatedAt: "2026-10-06T00:00:00Z",
-      entries: [
-        listingEntry("30"),
-        listingEntry("2", { isNotice: true }),
-        listingEntry("29", { replyDepth: 1 }),
-      ],
-    };
-    const rows = listingRows("DF", listing, "webbus");
-    expect(rows.map((r) => [r.key, r.notice, r.replyDepth])).toEqual([
-      ["2", true, 0],
-      ["30", false, 0],
-      ["29", false, 1],
     ]);
   });
 });

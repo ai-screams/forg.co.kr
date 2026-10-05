@@ -2,9 +2,9 @@
  * The rows `ListTable` draws (`ListRow`), one per entry for every view of a
  * list: the phone list, the 2014/2003 table and the 2001 skin.
  *
- * - `indexRows` — a page of a board index: posts the museum keeps, plus the
- *   title-only rows the index carries in from captured list pages.
- * - `listingRows` — a board known only from its captured list pages.
+ * `indexRows` — a page of a board index: posts the museum keeps, plus the
+ * title-only rows the index carries in from captured list pages (all of
+ * them, for a board known only from its list pages).
  */
 
 import type { ReactNode } from "react";
@@ -16,7 +16,7 @@ import type { BoardId } from "@/lib/boards";
 import { chromeUrl } from "@/lib/chrome";
 import { formatShortDate } from "@/lib/dates";
 import { isHot, type ListSkin } from "@/lib/skins";
-import type { BoardIndexPage, BoardListing } from "@/types/post";
+import type { BoardIndexPage } from "@/types/post";
 
 const TITLE_LAYOUT = "inline-flex items-baseline gap-[4px] leading-[1.7]";
 
@@ -89,6 +89,9 @@ function shortDate(iso: string, approx: DateApprox | null): ReactNode {
 
 export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin): ListRow[] {
   const marked = page.totalWithPost > 0;
+  // Hits only where every row came from a list, which printed them; a board
+  // with posts has none to show (ADR-0016 §5), on the phone list either.
+  const listOnly = page.totalWithPost === 0;
   return page.entries.map((entry) => {
     const postBoard = entry.board ?? board;
     const href = entry.hasPost ? `/${postBoard}/${entry.postId}` : null;
@@ -123,48 +126,7 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
           />
         ),
         date: shortDate(entry.createdAt, dateApprox),
-      },
-    };
-  });
-}
-
-/** Notices first, as the boards pinned them; the rest in the listing's order. */
-export function listingRows(board: BoardId, listing: BoardListing, skin: ListSkin): ListRow[] {
-  const marked = listing.entries.some((e) => e.hasPost);
-  const entries = [
-    ...listing.entries.filter((e) => e.isNotice),
-    ...listing.entries.filter((e) => !e.isNotice),
-  ];
-  return entries.map((entry) => {
-    const href = entry.hasPost ? `/${board}/${entry.no}` : null;
-    const dateApprox: DateApprox | null = entry.yearApprox ? "year" : null;
-    return {
-      key: entry.no,
-      title: entry.title,
-      href,
-      commentCount: entry.commentCount,
-      author: { board, name: entry.author, memberNo: entry.authorMemberNo },
-      createdAt: entry.createdAt,
-      dateApprox,
-      hits: entry.hits,
-      notice: entry.isNotice,
-      replyDepth: entry.replyDepth ?? 0,
-      cells: {
-        title: (
-          <TitleCell
-            href={href}
-            marked={marked}
-            skin={skin}
-            board={board}
-            category={entry.categoryLabel}
-            title={entry.title}
-            commentCount={entry.commentCount}
-            attachmentCount={0}
-            hits={entry.hits}
-          />
-        ),
-        date: entry.createdAt === null ? "—" : shortDate(entry.createdAt, dateApprox),
-        hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR"),
+        ...(listOnly && { hits: entry.hits === null ? "—" : entry.hits.toLocaleString("ko-KR") }),
       },
     };
   });

@@ -120,8 +120,7 @@ export const getBoardIndex = cache(
 );
 
 /**
- * Load the merged list-page rows for a board (`src/content/listings/{board}.json`),
- * the museum's only record of boards whose post pages were never captured.
+ * Load the merged list-page rows for a board (`src/content/listings/{board}.json`).
  * Returns `null` when no list page of the board was captured. Cached per
  * render like `getPost`.
  */
@@ -135,18 +134,28 @@ const getBoardListing = cache(async (board: BoardId): Promise<BoardListing | nul
   }
 });
 
-/** What `/[board]` shows: its index, else its captured list pages, else a placeholder. */
+/**
+ * The captured list pages of a board the museum holds no post of — all its
+ * index rows came from them (`03-build-index.py` indexes such a board from
+ * its list rows alone) — for the museum bar to say where they came from.
+ * Null for a board with posts.
+ */
+export async function getListOnlyRecord(
+  board: BoardId,
+  page: Pick<BoardIndexPage, "totalWithPost">,
+): Promise<BoardListing | null> {
+  return page.totalWithPost === 0 ? getBoardListing(board) : null;
+}
+
+/** What `/[board]` shows: its index (`listing` for a list-only board), else a placeholder. */
 type BoardView =
-  | { kind: "index"; page: BoardIndexPage }
-  | { kind: "listing"; listing: BoardListing }
+  | { kind: "index"; page: BoardIndexPage; listing: BoardListing | null }
   | { kind: "placeholder" };
 
 export async function getBoardView(board: BoardId): Promise<BoardView> {
   const page = await getBoardIndex(board, 1);
-  if (page) return { kind: "index", page };
-  // No post page was ever captured; the list pages may still have been.
-  const listing = await getBoardListing(board);
-  return listing ? { kind: "listing", listing } : { kind: "placeholder" };
+  if (!page) return { kind: "placeholder" };
+  return { kind: "index", page, listing: await getListOnlyRecord(board, page) };
 }
 
 function postNumber(e: BoardIndexEntry): number {

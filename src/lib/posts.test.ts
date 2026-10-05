@@ -4,7 +4,13 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { isBoardId, type BoardId } from "@/lib/boards";
-import { getAdjacentPosts, getBoardIndex, getRecentPostEntries } from "@/lib/posts";
+import {
+  getAdjacentPosts,
+  getBoardIndex,
+  getBoardView,
+  getListOnlyRecord,
+  getRecentPostEntries,
+} from "@/lib/posts";
 import type { BoardIndexEntry } from "@/types/post";
 
 // Over the real index: a board's own notices lead page 1 (03-build-index.py
@@ -73,5 +79,20 @@ describe("getAdjacentPosts", () => {
       }
     }
     expect(checked).toBeGreaterThan(0);
+  });
+});
+
+describe("getListOnlyRecord", () => {
+  // Fails if: a board with posts gets a list record, or a list-only board
+  // loses it (the museum bar's "목록 N쪽(캡처 M번)").
+  it("gives the list pages of a board known only from them", async () => {
+    for (const board of BOARDS) {
+      const view = await getBoardView(board);
+      if (view.kind !== "index") continue;
+      const record = await getListOnlyRecord(board, view.page);
+      expect(record !== null, board).toBe(view.page.totalWithPost === 0);
+    }
+    const house = await getBoardView("HouseScreenshot");
+    expect(house.kind === "index" && house.listing?.entries.length).toBe(346);
   });
 });

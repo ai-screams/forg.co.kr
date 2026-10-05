@@ -1,5 +1,7 @@
 /**
- * Renders one paginated chunk of a board index as a semantic table.
+ * Renders one paginated chunk of a board index as a semantic table — a
+ * board's posts and the rows its captured list pages add, or for a board
+ * Wayback kept no post of, those list rows alone.
  *
  * Used by both `/[board]` (page 1) and `/[board]/page/[N]` (page 2+).
  * Era-invariant markup; visual delta comes from `--era-*` CSS vars.
@@ -48,13 +50,15 @@ function PostTable({
   page: BoardIndexPage;
   skin: ListSkin;
 }) {
-  // The 조회 column is dropped: `hits` is null for 99.2% of the archive, and
-  // a fabricated 0 would read as "nobody ever opened this" (ADR-0016 §5).
+  // The 조회 column is dropped where the board has posts: `hits` is null for
+  // 99.2% of the archive, and a fabricated 0 would read as "nobody ever
+  // opened this" (ADR-0016 §5). A board known only from its list pages keeps
+  // it: every row's count is what a list printed.
   return (
     <ListTable
       skin={skin}
       rows={indexRows(board, page, skin)}
-      withHits={false}
+      withHits={page.totalWithPost === 0}
       firstNumber={page.totalPosts - (page.page - 1) * BOARD_INDEX_PAGE_SIZE}
       era2001={{
         skin: skin2001Of(board),

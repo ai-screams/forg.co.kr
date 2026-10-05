@@ -24,14 +24,14 @@ Next.js App Router tree for the static-export museum: the root shell, the home p
 
 ## Subdirectories
 
-| Route                | File                                         | Renders                                                                                                                                                           |
-| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/{board}/`          | `(board)/[board]/page.tsx`                   | Board listing page 1 (canonical). Picks `BoardListing` (has a post-backed index), `BoardListingOnly` (captured list pages only), or `BoardPlaceholder` (neither). |
-| `/{board}/page/{N}/` | `(board)/[board]/page/[pageNumber]/page.tsx` | Board listing pages 2+. The literal `page` segment keeps this route from colliding with `/{board}/{postId}`. Page 1 is never generated here.                      |
-| `/{board}/{postId}/` | `(board)/[board]/[postId]/page.tsx`          | A single post via `<PostView>`, with adjacent-post navigation.                                                                                                    |
-| `/search`            | `search/page.tsx`                            | Full-text search UI.                                                                                                                                              |
-| `/site/`             | `site/page.tsx`                              | Index of static guide pages.                                                                                                                                      |
-| `/site/{stem}/`      | `site/[...path]/route.ts`                    | One recovered static document.                                                                                                                                    |
+| Route                | File                                         | Renders                                                                                                                                                            |
+| -------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/{board}/`          | `(board)/[board]/page.tsx`                   | Board listing page 1 (canonical). Picks `BoardListing` (the board's index, of its posts and list rows or of its list rows alone) or `BoardPlaceholder` (no index). |
+| `/{board}/page/{N}/` | `(board)/[board]/page/[pageNumber]/page.tsx` | Board listing pages 2+. The literal `page` segment keeps this route from colliding with `/{board}/{postId}`. Page 1 is never generated here.                       |
+| `/{board}/{postId}/` | `(board)/[board]/[postId]/page.tsx`          | A single post via `<PostView>`, with adjacent-post navigation.                                                                                                     |
+| `/search`            | `search/page.tsx`                            | Full-text search UI.                                                                                                                                               |
+| `/site/`             | `site/page.tsx`                              | Index of static guide pages.                                                                                                                                       |
+| `/site/{stem}/`      | `site/[...path]/route.ts`                    | One recovered static document.                                                                                                                                     |
 
 All three board-shaped routes set `dynamicParams = false` and enumerate every param via `generateStaticParams`, so an unregistered board, page number, or post id is a **build error**, not a runtime 404. See `.claude/rules/routing-and-pages.md` for the full routing/board/search contract and `.claude/rules/era-and-ui.md` for the era-toggle and mobile-layout rules — both are authoritative; this file only points at files.
 
@@ -69,7 +69,7 @@ pnpm build       # next build — this is what actually catches a bad generateSt
 
 ### Internal
 
-- `@/components/*` — `EraShell`, `SiteHeader`, `SiteFooter`, `BoardListing`, `BoardListingOnly`, `BoardPlaceholder`, `PostView`, `Home2014Content`, `Home2003Content`, `Home2001Content`, `Link`.
+- `@/components/*` — `EraShell`, `SiteHeader`, `SiteFooter`, `BoardListing`, `BoardPlaceholder`, `PostView`, `Home2014Content`, `Home2003Content`, `Home2001Content`, `Link`.
 - `@/lib/boards`, `@/lib/posts`, `@/lib/chrome`, `@/lib/site-pages`, `@/lib/img-base`, `@/lib/era` — data and config loaders consumed by pages and `generateStaticParams`.
 - `@/types/post` — shared post/board-index types.
 
