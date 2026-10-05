@@ -9,7 +9,7 @@
 
 import type { ReactNode } from "react";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import Link from "@/components/link";
 import { DATE_APPROX, NO_BODY_TOOLTIP, type DateApprox, type ListRow } from "@/components/list-row";
 import type { BoardId } from "@/lib/boards";
@@ -250,6 +250,12 @@ function MarkIcon({
   label: string;
 }) {
   return (
-    <LazyImg src={url} alt={label} width={width} height={height} className="shrink-0 self-center" />
+    <ChromeImg
+      src={url}
+      alt={label}
+      width={width}
+      height={height}
+      className="shrink-0 self-center"
+    />
   );
 }

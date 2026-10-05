@@ -18,11 +18,22 @@
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
-# The era chrome, emoticons, placeholders and page scripts keep their names
-# when replaced, which is rare: a day without asking, then a week of using
-# the copy while it is checked in the background.
-/img/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+# The era chrome: every URL carries a hash of the file's bytes
+# (`versioned` in src/lib/chrome.ts), so a changed picture gets a new URL.
+# Safari revalidates every subresource on a reload unless it is immutable
+# (WebKit bug 169756), and the chrome blinked on reload while it waited.
+/img/chrome/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Emoticons, placeholders and page scripts keep their names when replaced,
+# which is rare: a day without asking (a reload included), then a week of
+# using the copy while it is checked in the background. Rules do not
+# overlap: Pages joins the values of every rule that matches a path.
+/img/emoticon/*
+  Cache-Control: public, max-age=86400, immutable, stale-while-revalidate=604800
+
+/img/placeholder/*
+  Cache-Control: public, max-age=86400, immutable, stale-while-revalidate=604800
 
 /scripts/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Cache-Control: public, max-age=86400, immutable, stale-while-revalidate=604800

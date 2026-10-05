@@ -8,7 +8,7 @@
 
 import type { ReactNode } from "react";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 
@@ -71,7 +71,7 @@ function InertChrome({
   height: number;
 }) {
   return (
-    <LazyImg
+    <ChromeImg
       src={chromeUrl(asset, era)}
       alt={label}
       title={title}

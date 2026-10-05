@@ -14,6 +14,7 @@ import { Fragment } from "react";
 
 import Link from "@/components/link";
 
+import { ChromeImg } from "@/components/chrome-img";
 import {
   InertJumpMenu,
   LoginBar,
@@ -21,7 +22,6 @@ import {
   MobileMenu,
   TBarRow,
 } from "@/components/chrome-primitives";
-import { LazyImg } from "@/components/lazy-img";
 import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 import { FAMILY_SITES_2014, GAME_CATEGORIES_2014, TOP_MENU_2014 } from "@/lib/era-menus";
@@ -48,7 +48,7 @@ export function FrameLeft2014() {
     >
       {/* The 2014 sidebar opened with an 86×2 rule, not a mascot: l_forg_logo.gif
           appears only in frame-left-2007 and never in 2014-12-18. */}
-      <LazyImg src={chromeUrl("l_bar.gif", ERA)} alt="" width={86} height={2} className="block" />
+      <ChromeImg src={chromeUrl("l_bar.gif", ERA)} alt="" width={86} height={2} className="block" />
       <nav className="flex flex-col text-left text-[12px]">
         {GAME_CATEGORIES_2014.map((cat, i) => (
           <Fragment key={cat.id}>
@@ -91,7 +91,7 @@ function FamilySiteSelect() {
 
 function SidebarSpacer({ height }: { height: number }) {
   return (
-    <LazyImg
+    <ChromeImg
       src={chromeUrl("blank_l_line.gif", ERA)}
       alt=""
       width={86}
@@ -123,7 +123,7 @@ export function FrameTop2014() {
         {/* `<td height="37px" width="100px" rowspan="3">` held the 100×42 logo
             with no padding. */}
         <Link href="/" className="row-span-3 flex items-start justify-start">
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("left_logo1.gif", ERA)}
             alt="forg.co.kr"
             width={100}
@@ -168,7 +168,7 @@ export function FrameTop2014() {
  */
 function MenuTailCap() {
   return (
-    <LazyImg
+    <ChromeImg
       src={chromeUrl("t_b_right.gif", ERA)}
       alt=""
       aria-hidden
@@ -218,7 +218,7 @@ export function FrameBottom2014() {
       <span className="hidden text-[9px] text-forg-cream/60 sm:inline">
         2014-12-18 기준 · 박물관 박제
       </span>
-      <LazyImg
+      <ChromeImg
         src={chromeUrl("bgm_right.gif", ERA)}
         alt=""
         width={150}

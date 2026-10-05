@@ -9,7 +9,7 @@
 
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import { getBoard, type BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import { formatShortDate, isUnknownDate } from "@/lib/dates";
@@ -245,5 +245,7 @@ function StateIcon({
   height: number;
   label: string;
 }) {
-  return <LazyImg src={url} alt={label} width={width} height={height} className="block shrink-0" />;
+  return (
+    <ChromeImg src={url} alt={label} width={width} height={height} className="block shrink-0" />
+  );
 }

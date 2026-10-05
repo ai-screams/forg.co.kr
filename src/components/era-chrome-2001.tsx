@@ -8,7 +8,7 @@ import type { CSSProperties } from "react";
 
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import { chromeUrl } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 import { TOP_MENU_2001 } from "@/lib/era-menus";
@@ -36,7 +36,7 @@ export function FrameTop2001() {
           aria-label="forg.co.kr 메인"
           className="block max-frame:min-w-0 min-[476px]:max-frame:w-1/2"
         >
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("t_logo.gif", ERA)}
             alt="Ultima Online of Forg"
             width={380}
@@ -44,7 +44,7 @@ export function FrameTop2001() {
             className="block max-w-full min-[476px]:max-frame:w-full"
           />
         </Link>
-        <LazyImg
+        <ChromeImg
           src={right}
           alt="All Contents Copyright(C) 1999. FORG.COM. All right reserved."
           width={410}
@@ -55,7 +55,7 @@ export function FrameTop2001() {
       {/* `.forg2001-menu` (eras.css): below the frame width the buttons
           spread over the row in the buttons' own face. */}
       <nav aria-label="2001 상단 메뉴" className="forg2001-menu flex flex-wrap bg-forg2001-page">
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("t_l.gif", ERA)}
           alt=""
           width={10}
@@ -64,7 +64,7 @@ export function FrameTop2001() {
         />
         {TOP_MENU_2001.map((item) => (
           <Link key={item.asset} href={item.href}>
-            <LazyImg
+            <ChromeImg
               src={chromeUrl(item.asset, ERA)}
               alt={item.label}
               title={item.label}
@@ -74,7 +74,7 @@ export function FrameTop2001() {
             />
           </Link>
         ))}
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("t_r.gif", ERA)}
           alt=""
           width={10}
