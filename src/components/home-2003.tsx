@@ -7,7 +7,7 @@
 
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import { formatMonthDay } from "@/lib/dates";
@@ -94,7 +94,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
       <MainHeading />
       <div className="mx-auto grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
         <div className="space-y-2" style={tileStyle(chromeUrl("m_bar.gif", ERA), "repeat-y")}>
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Ultima Online — Honor & Sacrifice"
             width={350}
@@ -106,7 +106,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           ))}
         </div>
         <div aria-hidden className="hidden md:block">
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("m_middle_logo.gif", ERA)}
             alt=""
             width={30}
@@ -121,7 +121,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           <BestScreenShotBox />
         </div>
         <div aria-hidden className="hidden md:block">
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("r_logo_1.gif", ERA)}
             alt=""
             width={80}
@@ -133,7 +133,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
       {/* Closing rule row: m_bar_logo.gif 350×20 over the 350px column, the
           rest `bgcolor="#5A6269"`. */}
       <div className="mx-auto mt-2 grid w-full max-w-[645px] grid-cols-1 md:grid-cols-[350px_30px_185px_80px]">
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("m_bar_logo.gif", ERA)}
           alt=""
           width={350}
@@ -142,7 +142,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
         />
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block" />
         <div aria-hidden className="hidden h-[20px] bg-(--era-footer-bg) md:block">
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("r_bar_b.gif", ERA)}
             alt=""
             width={185}
@@ -156,7 +156,7 @@ function FrameMain2003({ leftBoxes, rightBoxes }: { leftBoxes: BoxData[]; rightB
           Copyright 1999-2002 Forg, All Rights Reserved." centred under the
           table. */}
       <p className="mt-2 flex justify-center">
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("logo_bottom.gif", ERA)}
           alt="All Contents Copyright 1999-2002 Forg, All Rights Reserved."
           width={380}
@@ -206,7 +206,7 @@ function SectionBox2003({ box, compact = false }: { box: BoxData; compact?: bool
               href={`/${box.config.id}/${entry.postId}`}
               className="block truncate text-[10.5px] leading-[1.45] text-(--era-link) hover:text-forg-gold-hover max-md:border-b max-md:border-dotted max-md:border-phone-rule max-md:py-[6px] max-md:text-[14px]"
             >
-              <LazyImg
+              <ChromeImg
                 src={chromeUrl(box.config.bullet, ERA)}
                 alt=""
                 width={compact ? 10 : 5}
@@ -251,7 +251,7 @@ function BestScreenShotBox() {
           highest id Wayback archived for that board (6212), so the link goes
           to the board itself. */}
       <Link href="/ScreenShot" className="flex justify-center py-1">
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("best_22.gif", ERA)}
           alt="2003년 베스트 스크린샷"
           width={160}

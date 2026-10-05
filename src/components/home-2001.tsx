@@ -28,7 +28,7 @@ import type { CSSProperties } from "react";
 
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import type { BoardId } from "@/lib/boards";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
 import { formatMonthDay } from "@/lib/dates";
@@ -145,7 +145,7 @@ export async function Home2001Content() {
       <div className="mx-auto grid w-full max-w-[740px] grid-cols-1 border border-forg2001-table frame:grid-cols-[150px_390px_200px]">
         <div className="border-forg2001-table p-[2px] frame:border-r">
           <div className="max-frame:hidden">
-            <LazyImg
+            <ChromeImg
               src={chromeUrl("left_logo_uo_1.gif", ERA)}
               alt=""
               width={145}
@@ -184,7 +184,7 @@ export async function Home2001Content() {
           </ul>
         </div>
         <div className="border-forg2001-table bg-forg2001-middle frame:border-r">
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("forg_main_logo_1.gif", ERA)}
             alt="Honor & Sacrifice"
             width={390}
@@ -212,7 +212,7 @@ export async function Home2001Content() {
               }}
             />
             <Link href="/ScreenShot" className="flex justify-center py-1">
-              <LazyImg
+              <ChromeImg
                 src={chromeUrl("best_screen.gif", ERA)}
                 alt="2001년 베스트 스크린샷"
                 width={160}
@@ -248,7 +248,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
     // on a band of that colour.
     return (
       <Link href={`/${box.id}`} className={`block ${box.band}`}>
-        <LazyImg
+        <ChromeImg
           src={url}
           alt={box.label}
           width={box.width}
@@ -264,7 +264,7 @@ function BoxHeader2001({ box }: { box: Box2001 }) {
   // arrow), so the bar runs the column's width with the arrow at its end.
   return (
     <Link href={`/${box.id}`} className="block">
-      <LazyImg
+      <ChromeImg
         src={url}
         alt={box.label}
         width={box.width}
@@ -302,7 +302,7 @@ function BoxSection2001({ data }: { data: BoxData }) {
               href={`/${data.box.id}/${entry.postId}`}
               className="text-(--era-link) hover:text-(--era-link-hover) max-frame:block max-frame:py-[5px] max-frame:text-[14px]"
             >
-              <LazyImg
+              <ChromeImg
                 src={bullet}
                 alt=""
                 width={5}

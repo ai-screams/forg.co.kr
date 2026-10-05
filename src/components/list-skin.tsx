@@ -18,7 +18,7 @@
  */
 
 import { AuthorName } from "@/components/author-name";
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import type { ListRow } from "@/components/list-row";
 import { ListTable2001 } from "@/components/list-skin-2001";
 import { chromeUrl, tileStyle } from "@/lib/chrome";
@@ -246,7 +246,9 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
 
 /** `<img src=t.gif height=N>` — the spacer the original used for row height. */
 function RowSpacer({ height }: { height: number }) {
-  return <LazyImg src={chromeUrl("zb_t.gif")} alt="" width={1} height={height} className="block" />;
+  return (
+    <ChromeImg src={chromeUrl("zb_t.gif")} alt="" width={1} height={height} className="block" />
+  );
 }
 
 /**
@@ -272,7 +274,7 @@ function HeadRow({ skin, columns }: { skin: ListSkin; columns: readonly Column[]
         return (
           <th key={c.key} scope="col" className={`py-[3px] font-normal ${c.th ?? ""}`}>
             {url ? (
-              <LazyImg
+              <ChromeImg
                 src={url}
                 alt={c.head.label}
                 width={c.head.width}

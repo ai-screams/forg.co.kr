@@ -48,37 +48,3 @@ window.addEventListener("storage", function (event) {
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", press);
 else press();
-
-// The shown era's chrome loads eagerly. Every <img> is lazy so that the
-// hidden eras' art (display: none) is never fetched, but Safari makes a lazy
-// picture wait for its viewport check even when it is cached (WebKit PR
-// 67352), so the header, buttons and sidebar art blinked on every reload. As
-// the parser adds them, lazy pictures outside the hidden eras' containers
-// turn eager; the hidden eras' stay lazy. Only <LazyImg> is lazy, and it
-// draws only chrome and skin art.
-var era = root.getAttribute("data-era");
-var hidden = ERAS.filter(function (e) {
-  return e !== era;
-})
-  .map(function (e) {
-    return ".era-" + e + "-only";
-  })
-  .concat(".era-not-" + era)
-  .join(",");
-
-function wake(img) {
-  if (img.loading === "lazy" && !img.closest(hidden)) img.loading = "eager";
-}
-
-var parsing = new MutationObserver(function (records) {
-  records.forEach(function (record) {
-    record.addedNodes.forEach(function (node) {
-      if (node.nodeName === "IMG") wake(node);
-      else if (node.querySelectorAll) node.querySelectorAll("img").forEach(wake);
-    });
-  });
-});
-parsing.observe(root, { childList: true, subtree: true });
-document.addEventListener("DOMContentLoaded", function () {
-  parsing.disconnect();
-});

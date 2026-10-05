@@ -47,7 +47,7 @@ import {
 } from "@/components/chrome-primitives";
 import Link from "@/components/link";
 
-import { LazyImg } from "@/components/lazy-img";
+import { ChromeImg } from "@/components/chrome-img";
 import { chromeUrl, optionalChrome, tileStyle } from "@/lib/chrome";
 import type { Era } from "@/lib/era";
 import { SIDEBAR_2003, TOP_MENU_2003 } from "@/lib/era-menus";
@@ -81,7 +81,7 @@ export function FrameTop2003() {
           aria-label="forg.co.kr 메인"
           className="row-span-3 flex items-start justify-start"
         >
-          <LazyImg
+          <ChromeImg
             src={chromeUrl("left_logo.gif", ERA)}
             alt="Forg's World"
             width={100}
@@ -138,7 +138,7 @@ function TopMenuButton2003({ item }: { item: (typeof TOP_MENU_2003)[number] }) {
       {/* `mix-blend-mode: multiply` turns the GIF's opaque white background
          into the chrome bar's gray (white × gray = gray), so the buttons
          blend instead of floating as white tiles. */}
-      <LazyImg
+      <ChromeImg
         src={chromeUrl(item.asset, ERA)}
         alt={item.label}
         width={80}
@@ -157,7 +157,7 @@ function FaqIcon2003() {
       title="Site FAQ"
       className="inline-block shrink-0 opacity-80"
     >
-      <LazyImg
+      <ChromeImg
         src={chromeUrl("t_b_right.gif", ERA)}
         alt="Site FAQ"
         width={20}
@@ -192,7 +192,7 @@ export function FrameLeft2003() {
 function SidebarSection2003({ section }: { section: (typeof SIDEBAR_2003)[number] }) {
   return (
     <div>
-      <LazyImg
+      <ChromeImg
         src={chromeUrl(section.asset, ERA)}
         alt={section.label}
         width={100}
@@ -249,7 +249,7 @@ export function FrameBottom2003() {
       style={tileStyle(chromeUrl("bgm_bg.gif", ERA), "repeat-x")}
     >
       <div className="flex h-[24px] w-[50px] shrink-0 items-end">
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("count.gif", ERA)}
           alt="Total :"
           width={50}
@@ -265,7 +265,7 @@ export function FrameBottom2003() {
         method="get"
         className="flex h-[24px] min-w-0 grow items-center gap-[4px]"
       >
-        <LazyImg
+        <ChromeImg
           src={chromeUrl("bgm_ser.gif", ERA)}
           alt="SEARCH"
           width={50}
@@ -281,7 +281,7 @@ export function FrameBottom2003() {
         />
         {enUrl ? (
           <button type="submit" className="block">
-            <LazyImg src={enUrl} alt="ENTER" className="block" />
+            <ChromeImg src={enUrl} alt="ENTER" className="block" />
           </button>
         ) : (
           <button
@@ -292,7 +292,7 @@ export function FrameBottom2003() {
           </button>
         )}
       </form>
-      <LazyImg
+      <ChromeImg
         src={chromeUrl("bgm_right.gif", ERA)}
         alt=""
         width={150}
