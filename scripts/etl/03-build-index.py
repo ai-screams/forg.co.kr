@@ -9,7 +9,9 @@ Each chunk contains up to BOARD_INDEX_PAGE_SIZE entries, sorted by
 Rows from the board's captured list pages (`src/content/listings/{board}.json`,
 Stage 2c, ADR-0017 §4) are merged in: a row with no post becomes an
 entry with `hasPost: false` — a title the museum can show but not open —
-and a row for a post we hold fills `hits` when the post page had none.
+and a row for a post we hold fills `hits` when the post page had none. A
+board Wayback kept no post page of, only list pages, gets an index of its
+list rows alone (`board_names`), paged like any other.
 A row's notice and reply marks go onto the post only when the row is the
 post (`same_post`); a post whose subject starts `[RE]` is a reply as well
 (`reply_by_subject`). The board's own notices lead page 1, as the boards pinned
@@ -70,6 +72,9 @@ CONTINUES: dict[str, tuple[str, ...]] = {
     "Shop": ("Tbalhae", "Tarirang", "Sell"),
 }
 SUMMARY_FILE = PROJECT_ROOT / "scripts" / "etl" / ".index-summary.json"
+# The era a board known only from its list pages is filed under: what its
+# posts would carry (Zeroboard 2003, Gnuboard 2014).
+ERA_OF_ENGINE = {"zeroboard": "2003", "gnuboard4": "2014", "gnuboard5": "2014"}
 
 
 def _load_post(path: Path) -> Post:
@@ -244,6 +249,14 @@ def _board_entries(board: str, post_files: list[Path], errors: list[str]) -> lis
     return entries
 
 
+def board_names() -> list[str]:
+    """The boards to index: every board with post pages, and every board
+    known only from its captured list pages."""
+    with_posts = {d.name for d in POSTS_DIR.iterdir() if d.is_dir()}
+    listed = {f.stem for f in LISTINGS_DIR.glob("*.json")} if LISTINGS_DIR.is_dir() else set()
+    return sorted(with_posts | listed)
+
+
 def _dump_page(page: BoardIndexPage) -> str:
     """The chunk JSON, with `board`, `isNotice` and `replyDepth` written only
     on rows that carry them, so other rows keep their bytes."""
@@ -279,11 +292,14 @@ def _build_board(
         except (json.JSONDecodeError, ValidationError, OSError) as exc:
             errors.append(f"{f.relative_to(PROJECT_ROOT)}: {exc}")
 
-    if not posts:
-        return 0, 0, 0, errors
-
-    entries = [_entry_from_post(p) for p in posts]
-    entries, added, filled = _merge_listing(board, entries, posts[0].era)
+    if posts:
+        entries, era = [_entry_from_post(p) for p in posts], posts[0].era
+    else:
+        listing = _load_listing(board)
+        if listing is None:
+            return 0, 0, 0, errors
+        entries, era = [], ERA_OF_ENGINE[listing.engine]
+    entries, added, filled = _merge_listing(board, entries, era)
     if added or filled:
         print(f"  {board}: +{added} list-only rows, {filled} hits filled", file=sys.stderr)
     if carried:
@@ -340,7 +356,7 @@ def main() -> int:
         print(f"error: {POSTS_DIR} does not exist", file=sys.stderr)
         return 1
 
-    boards = sorted(d for d in POSTS_DIR.iterdir() if d.is_dir())
+    boards = [POSTS_DIR / name for name in board_names()]
     if args.board:
         boards = [b for b in boards if b.name == args.board]
         if not boards:

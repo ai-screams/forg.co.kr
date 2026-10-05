@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
 
   return {
     title: `${meta.nameKr} (${n}/${index.totalPages}) — forg.co.kr`,
-    description: `${meta.nameKr} ${n}페이지 — ${index.totalPosts.toLocaleString("ko-KR")}개 게시글 중 ${n}페이지`,
+    description: `${meta.nameKr} ${n}페이지 — ${index.totalPosts.toLocaleString("ko-KR")}개 ${index.totalWithPost === 0 ? "제목" : "게시글"} 중 ${n}페이지`,
   };
 }
 

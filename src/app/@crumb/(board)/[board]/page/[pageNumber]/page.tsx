@@ -1,8 +1,8 @@
 /** The museum bar's board name and notes for `/[board]/page/[N]`. */
 
-import { BoardCrumb, IndexNotes } from "@/components/board-info";
+import { BoardCrumb, BoardNotes } from "@/components/board-info";
 import { getBoard, isBoardId } from "@/lib/boards";
-import { getBoardIndex } from "@/lib/posts";
+import { getBoardIndex, getListOnlyRecord } from "@/lib/posts";
 
 export { generateStaticParams } from "@/app/(board)/[board]/page/[pageNumber]/page";
 
@@ -19,7 +19,7 @@ export default async function BoardCrumbPageN({ params }: RouteProps) {
   if (!index) return null;
   return (
     <BoardCrumb meta={getBoard(board)}>
-      <IndexNotes board={board} page={index} />
+      <BoardNotes board={board} page={index} listing={await getListOnlyRecord(board, index)} />
     </BoardCrumb>
   );
 }

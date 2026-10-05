@@ -1,0 +1,26 @@
+{
+  "board": "WOWEvents",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 1,
+  "totalWithPost": 0,
+  "generatedAt": "2026-10-05T16:53:27Z",
+  "entries": [
+    {
+      "postId": "1",
+      "title": "WOW이벤트란이 Open하였습니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-14T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 116,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    }
+  ]
+}

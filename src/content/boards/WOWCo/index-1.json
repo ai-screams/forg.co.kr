@@ -1,0 +1,27 @@
+{
+  "board": "WOWCo",
+  "page": 1,
+  "totalPages": 1,
+  "totalPosts": 1,
+  "totalWithPost": 0,
+  "generatedAt": "2026-10-05T16:53:27Z",
+  "entries": [
+    {
+      "postId": "1",
+      "title": "레벨과 직업별 퀘스트를 적어주시면 됩니다.",
+      "categoryLabel": null,
+      "author": "Forg",
+      "authorMemberNo": "1",
+      "createdAt": "2004-02-15T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 127,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false,
+      "isNotice": true
+    }
+  ]
+}

@@ -54,7 +54,7 @@ export function BoardCrumb({
 }
 
 /** Notes for a board the museum holds posts of. */
-export function IndexNotes({
+function IndexNotes({
   board,
   page,
 }: {
@@ -88,8 +88,24 @@ export function IndexNotes({
   );
 }
 
+/**
+ * The notes for a board's list: where its rows came from when it is known
+ * only from its captured list pages (`getListOnlyRecord`), else its counts.
+ */
+export function BoardNotes({
+  board,
+  page,
+  listing,
+}: {
+  board: BoardId;
+  page: Pick<BoardIndexPage, "totalPosts" | "totalWithPost">;
+  listing: BoardListing | null;
+}) {
+  return listing ? <ListingNotes listing={listing} /> : <IndexNotes board={board} page={page} />;
+}
+
 /** Notes for a board known only from its captured list pages. */
-export function ListingNotes({ listing }: { listing: BoardListing }) {
+function ListingNotes({ listing }: { listing: BoardListing }) {
   const withPost = listing.entries.filter((e) => e.hasPost).length;
   const captures = [...new Set(listing.entries.map((e) => e.capturedAt))].sort();
   return (

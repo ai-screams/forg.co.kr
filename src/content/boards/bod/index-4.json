@@ -1,0 +1,58 @@
+{
+  "board": "bod",
+  "page": 4,
+  "totalPages": 4,
+  "totalPosts": 153,
+  "totalWithPost": 0,
+  "generatedAt": "2026-10-05T16:53:27Z",
+  "entries": [
+    {
+      "postId": "55",
+      "title": "골드 카이트쉴드 익셉20",
+      "categoryLabel": null,
+      "author": "어부",
+      "authorMemberNo": "2628",
+      "createdAt": "2002-08-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 47,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "54",
+      "title": "베라이트 브론즈쉴드 익셉20",
+      "categoryLabel": null,
+      "author": "어부",
+      "authorMemberNo": "2628",
+      "createdAt": "2002-08-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 42,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "53",
+      "title": "발러라이트 히터쉴드 익셉15",
+      "categoryLabel": null,
+      "author": "어부",
+      "authorMemberNo": "2628",
+      "createdAt": "2002-08-18T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": 49,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    }
+  ]
+}

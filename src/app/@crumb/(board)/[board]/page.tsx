@@ -4,7 +4,7 @@
  * has its own page that says so, and no notes here.
  */
 
-import { BoardCrumb, IndexNotes, ListingNotes } from "@/components/board-info";
+import { BoardCrumb, BoardNotes } from "@/components/board-info";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardView } from "@/lib/posts";
 
@@ -25,11 +25,7 @@ export default async function BoardCrumbPageOne({ params }: RouteProps) {
   if (view.kind === "placeholder") return null;
   return (
     <BoardCrumb meta={getBoard(board)}>
-      {view.kind === "index" ? (
-        <IndexNotes board={board} page={view.page} />
-      ) : (
-        <ListingNotes listing={view.listing} />
-      )}
+      <BoardNotes board={board} page={view.page} listing={view.listing} />
     </BoardCrumb>
   );
 }
