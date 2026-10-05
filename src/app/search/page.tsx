@@ -14,8 +14,11 @@
  * this file draws the box, the one notice `searchView` allows and the
  * results.
  *
- * Tailwind v4 era-aware tokens (`bg-(--era-content-bg)` etc.) are used
- * throughout — no era-specific branching in JS, pure CSS variable resolution.
+ * Tailwind v4 era-aware tokens (`bg-(--era-content-bg)` etc.) draw the panel
+ * and its borders — no era-specific branching in JS, pure CSS variable
+ * resolution. The boxes inside the panel (the input, the notice, each
+ * result) are white in every era: `--era-page-bg` is white in 2003 and 2001
+ * but slate in 2014, where it buried the dark text.
  */
 
 "use client";
@@ -61,7 +64,7 @@ export default function SearchPage() {
               onChange={(e) => setTyped(e.target.value)}
               placeholder="제목·본문·작성자·댓글에서 검색…"
               autoFocus
-              className="w-full rounded border border-(--era-input-border) bg-(--era-page-bg) px-3 py-2 text-sm text-forg-ink outline-none placeholder:text-(--era-input-border) focus:border-forg-gold focus:ring-1 focus:ring-forg-gold"
+              className="w-full rounded border border-(--era-input-border) bg-white px-3 py-2 text-sm text-forg-ink outline-none placeholder:text-(--era-input-border) focus:border-forg-gold focus:ring-1 focus:ring-forg-gold"
             />
           </div>
         </div>
@@ -69,7 +72,7 @@ export default function SearchPage() {
         {/* Results area */}
         <div className="px-6 py-5">
           {(notice === "unavailable" || notice === "failed") && (
-            <p className="rounded border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3 text-sm text-forg-muted">
+            <p className="rounded border border-(--era-input-border) bg-white px-4 py-3 text-sm text-forg-muted">
               {NOTICE_TEXT[notice]} 잠시 뒤에 다시 시도해 주세요.
             </p>
           )}
@@ -101,7 +104,7 @@ export default function SearchPage() {
 
 function ResultItem({ result: r }: { result: SearchResult }) {
   return (
-    <li className="rounded-md border border-(--era-input-border) bg-(--era-page-bg) px-4 py-3">
+    <li className="rounded-md border border-(--era-input-border) bg-white px-4 py-3">
       <a
         href={r.url}
         className="block text-sm leading-snug font-bold text-(--era-link) hover:text-(--era-link-hover)"
