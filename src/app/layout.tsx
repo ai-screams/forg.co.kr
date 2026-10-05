@@ -26,7 +26,10 @@ const eraSource = readFileSync(
 );
 const eraScript = `(function (ERA_STORAGE_KEY, ERAS) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)});`;
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+  crumb,
+}: Readonly<{ children: React.ReactNode; crumb: React.ReactNode }>) {
   return (
     /* `suppressHydrationWarning` covers exactly the attribute the script
        above rewrites: React would otherwise log a mismatch on every visit
@@ -37,7 +40,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: eraScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-(--era-page-bg)">
-        <SiteHeader />
+        {/* `crumb` (app/@crumb): a board list's name and notes, else nothing. */}
+        <SiteHeader crumb={crumb} />
         <main className="flex flex-1 flex-col">{children}</main>
         <SiteFooter />
       </body>
