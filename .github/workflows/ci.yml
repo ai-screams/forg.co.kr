@@ -23,22 +23,17 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
+  # The site is not built here. Cloudflare Pages builds every push (its check
+  # on the PR), and the same build on this 2-core runner took 11 of 15
+  # minutes: page generation gets one worker, writing and pruning ~195,000
+  # export files is slow, and the disk had to be cleared first
+  # (2026-10-06). `pnpm build` and `pnpm size` still run locally.
   quality:
-    name: Quality (lint · typecheck · test · format · build · knip · size)
+    name: Quality (lint · typecheck · test · format · knip)
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
-      # A clean build writes about 6.4 GB to .next/server (195,000 files) and
-      # 1.2 GB to out/. With the toolchains the runner image ships, the disk
-      # filled during the build ("No space left on device", 2026-10-05). The
-      # museum uses none of these.
-      - name: Free disk space
-        run: |
-          df -h /
-          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
-          df -h /
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -76,16 +71,9 @@ jobs:
       - name: Secret scan (Secretlint)
         run: pnpm run secret
 
-      - name: Build
-        run: pnpm run build
-
       - name: Find unused code (Knip)
         run: pnpm run knip
         continue-on-error: true # advisory; do not fail CI yet
-
-      - name: Bundle size budget
-        run: pnpm run size
-        continue-on-error: true # advisory; ratchet later
 
   etl:
     name: ETL tests (pytest)
