@@ -7,7 +7,8 @@
  * Kept small and outside `<EraShell>`: every page's RSC payload carries the
  * root not-found tree (the root layout's `notFound`), so the three eras'
  * frames here would ride along on all 16,692 pages. Drawn like the search
- * page instead, inside the root layout's header and footer.
+ * page instead, inside the root layout's header and footer, with the same
+ * white input box.
  */
 
 import type { Metadata } from "next";
@@ -32,7 +33,7 @@ export default function NotFound() {
             name="q"
             aria-label="검색어"
             placeholder="제목·본문·작성자·댓글에서 검색…"
-            className="min-w-0 flex-1 rounded border border-(--era-input-border) bg-(--era-page-bg) px-3 py-2"
+            className="min-w-0 flex-1 rounded border border-(--era-input-border) bg-white px-3 py-2"
           />
           <button type="submit" className="rounded bg-forg-gold px-3 font-bold">
             검색
