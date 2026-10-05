@@ -1,10 +1,10 @@
 {
   "board": "Sell",
   "engine": "zeroboard",
-  "pagesCaptured": 17,
-  "capturesRead": 47,
+  "pagesCaptured": 18,
+  "capturesRead": 48,
   "totalReported": 1906,
-  "generatedAt": "2026-10-04T07:46:34.152533Z",
+  "generatedAt": "2026-10-05T10:44:42.844844Z",
   "entries": [
     {
       "no": "5161",
@@ -6002,8 +6002,8 @@
       "hits": 75,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6017,8 +6017,8 @@
       "hits": 139,
       "commentCount": 5,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6032,8 +6032,8 @@
       "hits": 56,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": true
     },
     {
@@ -6047,8 +6047,8 @@
       "hits": 85,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": true
     },
     {
@@ -6059,11 +6059,11 @@
       "authorMemberNo": "3455",
       "createdAt": "2002-04-19",
       "yearApprox": false,
-      "hits": 120,
+      "hits": 121,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6077,8 +6077,8 @@
       "hits": 125,
       "commentCount": 1,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6092,8 +6092,8 @@
       "hits": 138,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": true
     },
     {
@@ -6107,8 +6107,8 @@
       "hits": 119,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6119,11 +6119,11 @@
       "authorMemberNo": "6200",
       "createdAt": "2002-04-18",
       "yearApprox": false,
-      "hits": 224,
+      "hits": 225,
       "commentCount": 4,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6137,8 +6137,8 @@
       "hits": 166,
       "commentCount": 0,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {
@@ -6152,8 +6152,8 @@
       "hits": 186,
       "commentCount": 1,
       "isNotice": false,
-      "capturedAt": "20020523084410",
-      "listPage": 11,
+      "capturedAt": "20020524174747",
+      "listPage": 12,
       "hasPost": false
     },
     {

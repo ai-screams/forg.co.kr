@@ -4,7 +4,7 @@
   "totalPages": 37,
   "totalPosts": 1833,
   "totalWithPost": 1241,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T10:46:37Z",
   "entries": [
     {
       "postId": "372",
@@ -705,7 +705,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": 232,
+      "hits": 235,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -753,7 +753,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": 385,
+      "hits": 403,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -769,7 +769,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": 463,
+      "hits": 485,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -785,7 +785,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": 119,
+      "hits": 120,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -801,7 +801,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": 486,
+      "hits": 507,
       "recommend": null,
       "era": "2003",
       "hasPost": true

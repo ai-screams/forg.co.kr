@@ -4,7 +4,7 @@
   "totalPages": 9,
   "totalPosts": 420,
   "totalWithPost": 190,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T10:46:37Z",
   "entries": [
     {
       "postId": "249",
@@ -602,7 +602,7 @@
       "postId": "207",
       "title": "게시판에 쓰는 글에 관해...",
       "categoryLabel": null,
-      "author": "Marbas",
+      "author": "Wormius",
       "authorMemberNo": null,
       "createdAt": "2002-05-18T00:00:00",
       "createdAtApprox": false,
@@ -657,7 +657,7 @@
       "yearApprox": false,
       "commentCount": 18,
       "attachmentCount": 0,
-      "hits": 384,
+      "hits": 386,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -673,7 +673,7 @@
       "yearApprox": false,
       "commentCount": 11,
       "attachmentCount": 0,
-      "hits": 201,
+      "hits": 203,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -689,7 +689,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": 115,
+      "hits": 116,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -705,7 +705,7 @@
       "yearApprox": false,
       "commentCount": 15,
       "attachmentCount": 0,
-      "hits": 331,
+      "hits": 334,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -721,7 +721,7 @@
       "yearApprox": false,
       "commentCount": 7,
       "attachmentCount": 0,
-      "hits": 296,
+      "hits": 301,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -737,7 +737,7 @@
       "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": 303,
+      "hits": 305,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -753,7 +753,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": 165,
+      "hits": 166,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -769,7 +769,7 @@
       "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": 229,
+      "hits": 230,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -778,14 +778,14 @@
       "postId": "195",
       "title": "a plague beast 왜 지웠나요?",
       "categoryLabel": null,
-      "author": "Satanciae",
+      "author": "Azatoth",
       "authorMemberNo": null,
       "createdAt": "2002-05-12T00:00:00",
       "createdAtApprox": false,
       "yearApprox": false,
       "commentCount": 9,
       "attachmentCount": 0,
-      "hits": 198,
+      "hits": 199,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -801,7 +801,7 @@
       "yearApprox": false,
       "commentCount": 11,
       "attachmentCount": 0,
-      "hits": 183,
+      "hits": 184,
       "recommend": null,
       "era": "2003",
       "hasPost": true

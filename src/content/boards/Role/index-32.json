@@ -4,7 +4,7 @@
   "totalPages": 37,
   "totalPosts": 1833,
   "totalWithPost": 1241,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-05T10:46:37Z",
   "entries": [
     {
       "postId": "295",
@@ -17,7 +17,7 @@
       "yearApprox": false,
       "commentCount": 8,
       "attachmentCount": 0,
-      "hits": 492,
+      "hits": 510,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -33,7 +33,7 @@
       "yearApprox": false,
       "commentCount": 4,
       "attachmentCount": 0,
-      "hits": 588,
+      "hits": 613,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -49,7 +49,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": 714,
+      "hits": 738,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -113,7 +113,7 @@
       "yearApprox": false,
       "commentCount": 6,
       "attachmentCount": 0,
-      "hits": 385,
+      "hits": 389,
       "recommend": null,
       "era": "2003",
       "hasPost": false
@@ -177,7 +177,7 @@
       "yearApprox": false,
       "commentCount": 0,
       "attachmentCount": 0,
-      "hits": 122,
+      "hits": 123,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -209,7 +209,7 @@
       "yearApprox": false,
       "commentCount": 3,
       "attachmentCount": 0,
-      "hits": 271,
+      "hits": 273,
       "recommend": null,
       "era": "2003",
       "hasPost": true
@@ -225,7 +225,7 @@
       "yearApprox": false,
       "commentCount": 2,
       "attachmentCount": 0,
-      "hits": 209,
+      "hits": 210,
       "recommend": null,
       "era": "2003",
       "hasPost": true
