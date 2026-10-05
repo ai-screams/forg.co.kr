@@ -5,9 +5,13 @@ Two forg boards ran skins that print every post in full on the list page
 instead of a row per post: `Recall` (skin/link — a UO link directory:
 title, URL, date, hits, description) and the BOD trade boards `bod_b_s`,
 `bod_b_t`, `bod_s_s`, `bod_s_t` (skin/zetyx_diary_Esee). No view page of
-theirs was ever captured, so the list page is the post. Reads
-`.docs/research/archive-clean/L/{board}/page-*.html` and writes gold
-`src/content/posts/{board}/{no}.json` like Stage 2 does (ADR-0017 §4).
+theirs was ever captured, so the list page is the post. Reads every list
+capture of the board in `.docs/research/archive-clean/`: `L/{board}/page-N.html`
+(one per page), `L2/{board}/page-N~TS.html` (every other distinct capture)
+and `LZ/{board}/*.html` (the Zeroboard 4.0 install's own list pages), and
+writes gold `src/content/posts/{board}/{no}.json` like Stage 2 does
+(ADR-0017 §4). A post shown on several captures is taken from the newest
+one that dates it.
 
 ENTRY SHAPE (both skins)
     <!--<input type=checkbox name=cart value="NO">-->   post number
@@ -41,9 +45,19 @@ from sanitise import sanitise_html  # noqa: E402
 from schemas import Attachment, Post  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INPUT_DIR = PROJECT_ROOT / ".docs" / "research" / "archive-clean" / "L"
+RESEARCH = PROJECT_ROOT / ".docs" / "research"
+CLEAN_DIR = RESEARCH / "archive-clean"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
-PLAN_FILE = PROJECT_ROOT / ".docs" / "research" / "cdx" / "listings-plan.json"
+# The phases holding list captures and the plan that dates each phase's pages.
+PHASE_PLANS = {
+    "L": RESEARCH / "cdx" / "listings-plan.json",
+    "L2": RESEARCH / "cdx" / "listings-more-plan.json",
+    "LZ": RESEARCH / "cdx" / "oldpath-listpages-plan.json",
+}
+# Where a post's view lived: the 4.1 install for L and L2; for an LZ page,
+# the Zeroboard 4.0 install its file name names (`z-…` /zboard/, `y-…` /zb/).
+ORIGIN_41 = "http://forg.co.kr/_zb/zboard.php"
+ORIGIN_40 = {"z": "http://forg.co.kr/zboard/zboard.php", "y": "http://forg.co.kr/zb/zboard.php"}
 
 BOARDS: dict[str, str] = {
     "Recall": "link",
@@ -57,22 +71,44 @@ _CART_RE = re.compile(r'name="?cart"? value="(\d+)"')
 _DATE_TITLE_RE = re.compile(r"(\d{4})년 (\d{2})월 (\d{2})일 (\d{2})시 (\d{2})분 (\d{2})초")
 _SITELINK_RE = re.compile(r"sitelink=([^&]+)")
 _HIT_RE = re.compile(r"Hit\s*:\s*([\d,]+)")
+_VISIT_RE = re.compile(r"Visit\s*:\s*([\d,]+)")
 _FILENUM_RE = re.compile(r"download\.php\?[^\"']*filenum=(\d+)")
 _SIZE_RE = re.compile(r"Size\s*:\s*([\d.,]+)\s*(KB|MB|GB|B)", re.I)
 _DOWNLOADS_RE = re.compile(r"Download\s*:\s*([\d,]+)")
 
 
-def _capture_index() -> tuple[dict[tuple[str, str], str], dict[tuple[str, str], str | None]]:
-    """`{(board, page): ts}` and `{(board, page): category number}` from the
-    plan's list URL — a category view prints its own name as plain text,
-    so the number has to come from the URL."""
-    plan = json.loads(PLAN_FILE.read_text(encoding="utf-8"))
-    ts = {(e["board"], e["post_id"]): e["ts"] for e in plan}
-    cats = {}
-    for e in plan:
-        m = re.search(r"[?&]category=(\d+)", e["url"])
-        cats[(e["board"], e["post_id"])] = m.group(1) if m else None
+def _capture_index() -> tuple[dict[tuple[str, str, str], str], dict[tuple[str, str, str], str | None]]:
+    """`{(phase, board, page): ts}` and `{(phase, board, page): category
+    number}` from each phase's plan: a category view prints its own name as
+    plain text, so the number has to come from the list URL."""
+    ts: dict[tuple[str, str, str], str] = {}
+    cats: dict[tuple[str, str, str], str | None] = {}
+    for phase, plan_file in PHASE_PLANS.items():
+        for e in json.loads(plan_file.read_text(encoding="utf-8")):
+            if e.get("phase", phase) != phase:
+                continue
+            key = (phase, e["board"], e["post_id"])
+            ts[key] = e["ts"]
+            m = re.search(r"[?&]category=(\d+)", e["url"])
+            cats[key] = m.group(1) if m else None
     return ts, cats
+
+
+def origin_of(phase: str, page: str) -> str:
+    """The view URL's script for a post read off `page` of `phase`."""
+    return ORIGIN_40.get(page[:1], ORIGIN_41) if phase == "LZ" else ORIGIN_41
+
+
+def better(prev: dict | None, e: dict) -> bool:
+    """Whether `e` should replace `prev` for the same post: a capture that
+    dates the post beats one that does not (some captures print a bare `*`
+    with no date in the post's place), then the newer capture wins, as a
+    post's title was sometimes edited later."""
+    if prev is None:
+        return True
+    if (e["created"] is None) != (prev["created"] is None):
+        return e["created"] is not None
+    return e["capturedAt"] > prev["capturedAt"]
 
 
 def _entries(soup: BeautifulSoup) -> list[Tag]:
@@ -99,8 +135,21 @@ def _body_td(header_td: Tag) -> Tag | None:
     return None
 
 
+def _book_header(header_td: Tag) -> tuple[str, str] | None:
+    """The Zeroboard 4.0 install's link skin (zetyx_book_Esee, the LZ pages)
+    heads an entry with a grey `[category]` in one `<b>` and the title in the
+    next: `(category, title)`, or None for the 4.1 skin."""
+    bs = [b for b in header_td.find_all("b") if isinstance(b, Tag)]
+    if len(bs) >= 2 and bs[0].find("font", color="#9f9f9f") is not None:
+        return bs[0].get_text(strip=True).strip("[] "), bs[1].get_text(" ", strip=True)
+    return None
+
+
 def parse_link_entry(header_td: Tag, captured_at: str) -> dict:
     no = _CART_RE.search(str(header_td)).group(1)  # type: ignore[union-attr]
+    book = _book_header(header_td)
+    if book is not None:
+        return _parse_book_entry(header_td, no, *book)
     title_b = header_td.find("b")
     title = title_b.get_text(" ", strip=True) if isinstance(title_b, Tag) else ""
     date_span = header_td.find_next("span", title=_DATE_TITLE_RE)
@@ -171,6 +220,30 @@ def _size_bytes(num: str, unit: str) -> int:
     return int(float(num.replace(",", "")) * scale)
 
 
+def _parse_book_entry(header_td: Tag, no: str, category: str, title: str) -> dict:
+    """An LZ entry: a site cell (home.gif and the bare link), the date beside
+    it, then the description in the next cell; `Visit : N` beside the
+    title. The category is the name itself, not a number."""
+    site_td = _body_td(header_td)
+    sitelink = None
+    body_td = site_td
+    if isinstance(site_td, Tag) and site_td.find("img", src=re.compile("home\\.gif")) is not None:
+        link = site_td.find("a", href=True)
+        sitelink = str(link["href"]) if isinstance(link, Tag) else None
+        body_td = _body_td(site_td)
+    date_span = header_td.find_next("span", title=_DATE_TITLE_RE)
+    visit = header_td.find_next(string=_VISIT_RE)
+    body = body_td.decode_contents() if isinstance(body_td, Tag) else ""
+    if sitelink:
+        body = f'<p><a href="{sitelink}">{sitelink}</a></p>\n' + body
+    return {
+        "no": no, "title": title, "author": "Forg", "member_no": "1",
+        "category": category, "created": _parse_date(date_span),
+        "hits": int(_VISIT_RE.search(str(visit)).group(1).replace(",", "")) if visit else None,  # type: ignore[union-attr]
+        "body": body, "attachments": [],
+    }
+
+
 def parse_diary_entry(header_td: Tag, captured_at: str) -> dict:
     """The diary skin prints no author cell. The BOD boards' own rules post
     tells members to file under their id in the category ("Special항목에
@@ -235,25 +308,24 @@ def main() -> int:
 
     captures, page_cats = _capture_index()
     now = datetime.now(timezone.utc)
-    stats = {"pages": 0, "entries": 0, "written": 0, "skipped_existing": 0, "errors": 0}
+    stats = {"pages": 0, "entries": 0, "written": 0, "skipped_existing": 0, "undated": 0, "errors": 0}
     for board, skin in BOARDS.items():
         if args.board and board != args.board:
             continue
-        board_dir = INPUT_DIR / board
-        if not board_dir.is_dir():
-            continue
+        pages = [p for phase in PHASE_PLANS for p in sorted((CLEAN_DIR / phase / board).glob("*.html"))]
         seen: dict[str, dict] = {}
         cat_names: dict[str, str] = {}
-        for page_path in sorted(board_dir.glob("page-*.html")):
-            captured_at = captures.get((board, page_path.stem))
+        for page_path in pages:
+            key = (page_path.parent.parent.name, board, page_path.stem)
+            captured_at = captures.get(key)
             if not captured_at:
-                print(f"  WARN {board}/{page_path.stem}: no capture ts, skipped", file=sys.stderr)
+                print(f"  WARN {'/'.join(key)}: no capture ts, skipped", file=sys.stderr)
                 continue
             stats["pages"] += 1
             soup = BeautifulSoup(page_path.read_text(encoding="utf-8"), "lxml")
             if skin == "link":
                 cat_names.update(link_categories(soup))
-            page_cat = page_cats.get((board, page_path.stem))
+            page_cat = page_cats.get(key)
             for header_td in _entries(soup):
                 try:
                     e = parse_link_entry(header_td, captured_at) if skin == "link" else parse_diary_entry(header_td, captured_at)
@@ -264,12 +336,17 @@ def main() -> int:
                 if skin == "link":
                     e["category"] = e["category"] or page_cat
                 e["capturedAt"] = captured_at
+                e["origin"] = origin_of(key[0], page_path.stem)
                 stats["entries"] += 1
-                # A post shown on several captured pages: keep the newest capture.
-                prev = seen.get(e["no"])
-                if prev is None or prev["capturedAt"] < captured_at:
+                if better(seen.get(e["no"]), e):
                     seen[e["no"]] = e
         for no, e in seen.items():
+            if e["created"] is None:
+                # No capture dates it (the 2006 file-library skin printed
+                # none): a 1970 post would be the empty shell again.
+                stats["undated"] += 1
+                print(f"  SKIP {board}/{no}: no capture dates it", file=sys.stderr)
+                continue
             if skin == "link" and e["category"]:
                 # Number → name from whichever page listed it as a link.
                 e["category"] = cat_names.get(e["category"], e["category"])
@@ -299,7 +376,7 @@ def main() -> int:
                     era="2003",
                     capturedAt=e["capturedAt"],
                     parsedAt=now,
-                    originalUrl=f"http://forg.co.kr/_zb/zboard.php?id={board}&no={no}",
+                    originalUrl=f"{e['origin']}?id={board}&no={no}",
                     sourceEngine="zeroboard",
                 )
             except ValidationError as exc:

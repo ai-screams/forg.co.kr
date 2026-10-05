@@ -1,10 +1,10 @@
 {
   "board": "FunBoard",
   "engine": "zeroboard",
-  "pagesCaptured": 65,
-  "capturesRead": 330,
+  "pagesCaptured": 71,
+  "capturesRead": 339,
   "totalReported": 2853,
-  "generatedAt": "2026-10-04T07:44:21.622759Z",
+  "generatedAt": "2026-10-05T10:42:25.760729Z",
   "entries": [
     {
       "no": "18439",
@@ -23504,11 +23504,11 @@
       "authorMemberNo": "14643",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 537,
+      "hits": 544,
       "commentCount": 13,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23519,11 +23519,11 @@
       "authorMemberNo": "14853",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 566,
+      "hits": 588,
       "commentCount": 6,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23534,11 +23534,11 @@
       "authorMemberNo": "17132",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 518,
+      "hits": 530,
       "commentCount": 10,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23549,11 +23549,11 @@
       "authorMemberNo": "14853",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 477,
+      "hits": 483,
       "commentCount": 2,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23564,11 +23564,11 @@
       "authorMemberNo": "14682",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 446,
+      "hits": 456,
       "commentCount": 5,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23579,11 +23579,11 @@
       "authorMemberNo": "14643",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 614,
+      "hits": 626,
       "commentCount": 13,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23594,11 +23594,11 @@
       "authorMemberNo": "14585",
       "createdAt": "2003-06-29",
       "yearApprox": true,
-      "hits": 501,
+      "hits": 508,
       "commentCount": 6,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23609,11 +23609,11 @@
       "authorMemberNo": "15196",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 557,
+      "hits": 564,
       "commentCount": 7,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23624,11 +23624,11 @@
       "authorMemberNo": "14853",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 560,
+      "hits": 569,
       "commentCount": 16,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23639,11 +23639,11 @@
       "authorMemberNo": "14853",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 528,
+      "hits": 538,
       "commentCount": 11,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23654,11 +23654,11 @@
       "authorMemberNo": "14685",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 561,
+      "hits": 594,
       "commentCount": 7,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23669,11 +23669,11 @@
       "authorMemberNo": "16553",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 555,
+      "hits": 570,
       "commentCount": 22,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23684,11 +23684,11 @@
       "authorMemberNo": "19876",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 423,
+      "hits": 429,
       "commentCount": 2,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23699,11 +23699,11 @@
       "authorMemberNo": "17950",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 488,
+      "hits": 498,
       "commentCount": 6,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23714,11 +23714,11 @@
       "authorMemberNo": "15577",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 558,
+      "hits": 570,
       "commentCount": 11,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23729,11 +23729,11 @@
       "authorMemberNo": "14973",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 509,
+      "hits": 516,
       "commentCount": 10,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23744,11 +23744,11 @@
       "authorMemberNo": "19721",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 466,
+      "hits": 472,
       "commentCount": 3,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23759,11 +23759,11 @@
       "authorMemberNo": "20719",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 505,
+      "hits": 511,
       "commentCount": 4,
       "isNotice": false,
-      "capturedAt": "20030716094105",
-      "listPage": 15,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23774,11 +23774,11 @@
       "authorMemberNo": "20719",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 579,
+      "hits": 595,
       "commentCount": 28,
       "isNotice": false,
-      "capturedAt": "20030716094125",
-      "listPage": 16,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23789,11 +23789,11 @@
       "authorMemberNo": "16352",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 596,
+      "hits": 607,
       "commentCount": 17,
       "isNotice": false,
-      "capturedAt": "20030716094125",
-      "listPage": 16,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23804,11 +23804,11 @@
       "authorMemberNo": "15659",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 578,
+      "hits": 593,
       "commentCount": 10,
       "isNotice": false,
-      "capturedAt": "20030716094125",
-      "listPage": 16,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
@@ -23819,11 +23819,11 @@
       "authorMemberNo": "15659",
       "createdAt": "2003-06-28",
       "yearApprox": true,
-      "hits": 563,
+      "hits": 588,
       "commentCount": 7,
       "isNotice": false,
-      "capturedAt": "20030716094125",
-      "listPage": 16,
+      "capturedAt": "20030822105101",
+      "listPage": 53,
       "hasPost": false
     },
     {
