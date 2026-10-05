@@ -15,6 +15,13 @@
  *   글쓴이 · 날짜.
  * - `plain` — Gnuboard5 (forg.kr, 2019); no list capture wears a skin the
  *   museum holds, so text headers.
+ *
+ * Notices and replies are marked as each skin marked them, on the rows a
+ * captured list showed as such (`ListRow.notice`, `replyDepth`): `kritz` puts
+ * `list_notice.gif` or `reply_head.gif` in the status cell and greys a
+ * notice's row (#F2F2F2); `webbus` prints `icon_notice.gif` for a notice's
+ * number on a #FAFAFA row and `icon_reply.gif` before a reply's title,
+ * indented two `&nbsp;` a level.
  */
 
 import { AuthorName } from "@/components/author-name";
@@ -147,7 +154,7 @@ export function ListTable({
 
   return (
     <>
-      <NarrowList rows={rows} />
+      <NarrowList rows={rows} skin={skin} />
       <div className="era-2001-only hidden sm:block">
         <ListTable2001 rows={rows} firstNumber={firstNumber} {...era2001} />
       </div>
@@ -164,9 +171,15 @@ export function ListTable({
           </thead>
           <tbody>
             {rows.map((row, i) => (
-              <tr key={row.key} className="border-b border-(--era-input-border)/25 last:border-0">
+              <tr
+                key={row.key}
+                className={[
+                  "border-b border-(--era-input-border)/25 last:border-0",
+                  row.notice ? NOTICE_ROW[skin] : "",
+                ].join(" ")}
+              >
                 {columns.map((c) => (
-                  <Cell key={c.key} column={c.key} row={row} number={firstNumber - i} />
+                  <Cell key={c.key} column={c.key} skin={skin} row={row} number={firstNumber - i} />
                 ))}
               </tr>
             ))}
@@ -177,22 +190,50 @@ export function ListTable({
   );
 }
 
+/** A notice's row, in the skin's own grey; `plain` borrows the era's panel. */
+const NOTICE_ROW: Readonly<Record<ListSkin, string>> = {
+  kritz: "bg-kritz-notice-row",
+  webbus: "bg-webbus-notice-row",
+  plain: "bg-(--era-content-bg)",
+};
+
 /**
  * Below `sm` (640px) the fixed-column table has no room: the title ran over
  * the date and the number column squeezed both. A phone gets one row per
  * post in two lines — the title, then name · date — and the skins' header
- * art is left to wider screens, where the table is exactly as before.
+ * art is left to wider screens, where the table is exactly as before. A
+ * notice keeps its row colour and gets a 공지 tag, a reply an arrow: the
+ * museum's marks, since the skins' icons sat in columns a phone drops.
  */
-function NarrowList({ rows }: { rows: readonly ListRow[] }) {
+function NarrowList({ rows, skin }: { rows: readonly ListRow[]; skin: ListSkin }) {
   return (
     <ul className="border border-(--era-input-border)/50 bg-white sm:hidden">
       {rows.map((row) => (
         <li
           key={row.key}
-          className="border-b border-(--era-input-border)/25 px-2 py-[6px] text-[13px] last:border-0"
+          className={[
+            "border-b border-(--era-input-border)/25 px-2 py-[6px] text-[13px] last:border-0",
+            row.notice ? NOTICE_ROW[skin] : "",
+          ].join(" ")}
         >
-          {/* The title link is inline-flex; capping it lets its truncate work. */}
-          <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.cells.title}</div>
+          <div className="flex min-w-0 items-baseline gap-1">
+            {row.notice && (
+              <span className="shrink-0 rounded-[2px] bg-forg-gold/30 px-[3px] text-[10px] leading-[14px] font-bold text-forg-ink">
+                공지
+              </span>
+            )}
+            {row.replyDepth > 0 && (
+              <span
+                aria-label="답글"
+                className="shrink-0 text-[11px] text-forg-muted"
+                style={{ paddingLeft: `${(row.replyDepth - 1) * 0.75}rem` }}
+              >
+                ↳
+              </span>
+            )}
+            {/* The title link is inline-flex; capping it lets its truncate work. */}
+            <div className="min-w-0 overflow-hidden [&>*]:max-w-full">{row.cells.title}</div>
+          </div>
           <div className="mt-[2px] flex gap-2 text-[11px] text-forg-muted tabular-nums">
             <span className="truncate">
               <AuthorName {...row.author} seed={row.key} />
@@ -208,25 +249,57 @@ function NarrowList({ rows }: { rows: readonly ListRow[] }) {
   );
 }
 
-function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number: number }) {
+function Cell({
+  column,
+  skin,
+  row,
+  number,
+}: {
+  column: ColumnKey;
+  skin: ListSkin;
+  row: ListRow;
+  number: number;
+}) {
   const meta = "text-forg-muted text-center align-middle text-[11px] tabular-nums";
   switch (column) {
     case "status":
-      // Empty on purpose. The column's one visible icon, `new_head.gif`
-      // ("따끈 따근한글"), marked a post written the day the page was served
-      // — 58 of the 71 rows that carry it across 707 captured list pages —
-      // and every other row got `old_head.gif`, a 1×13 blank. Seen from the
-      // museum no post is that fresh.
+      // A notice's `list_notice.gif` or a reply's `reply_head.gif`, else
+      // blank. The column's other icon, `new_head.gif` ("따끈 따근한글"),
+      // marked a post written the day the page was served — 58 of the 71
+      // rows that carry it across 707 captured list pages — and every other
+      // row got `old_head.gif`, a 1×13 blank. Seen from the museum no post
+      // is that fresh. `plain` (forg.kr) has no icons of its own.
       return (
         <td className="text-center align-middle">
-          <RowSpacer height={3} />
+          {skin === "kritz" && row.notice ? (
+            <MarkIcon
+              url={chromeUrl("zb_kritz_list_notice.gif")}
+              width={10}
+              height={10}
+              label="공지"
+            />
+          ) : skin === "kritz" && row.replyDepth > 0 ? (
+            <MarkIcon
+              url={chromeUrl("zb_kritzn_reply_head.gif")}
+              width={15}
+              height={16}
+              label="답글"
+            />
+          ) : (
+            <RowSpacer height={3} />
+          )}
         </td>
       );
     case "num":
-      // `<span style='font:normal 9px tahoma; color:#B3B3B3;'>594</span>`
+      // `<span style='font:normal 9px tahoma; color:#B3B3B3;'>594</span>`;
+      // a notice's number is `icon_notice.gif`.
       return (
         <td className="text-center align-middle font-[Tahoma,sans-serif] text-[9px] text-webbus-num tabular-nums">
-          {number}
+          {row.notice ? (
+            <MarkIcon url={chromeUrl("gb_icon_notice.gif")} width={34} height={9} label="공지" />
+          ) : (
+            number
+          )}
         </td>
       );
     case "name":
@@ -236,12 +309,44 @@ function Cell({ column, row, number }: { column: ColumnKey; row: ListRow; number
         </td>
       );
     case "title":
-      return <td className="px-1 align-middle break-all">{row.cells.title}</td>;
+      return (
+        <td className="px-1 align-middle break-all">
+          {skin === "webbus" && row.replyDepth > 0 && (
+            <>
+              {"\u00a0\u00a0".repeat(row.replyDepth)}
+              <MarkIcon url={chromeUrl("gb_icon_reply.gif")} width={9} height={9} label="답글" />
+            </>
+          )}
+          {row.cells.title}
+        </td>
+      );
     case "date":
       return <td className={meta}>{row.cells.date}</td>;
     case "hits":
       return <td className={meta}>{row.cells.hits}</td>;
   }
+}
+
+function MarkIcon({
+  url,
+  width,
+  height,
+  label,
+}: {
+  url: string;
+  width: number;
+  height: number;
+  label: string;
+}) {
+  return (
+    <ChromeImg
+      src={url}
+      alt={label}
+      width={width}
+      height={height}
+      className="inline-block align-middle"
+    />
+  );
 }
 
 /** `<img src=t.gif height=N>` — the spacer the original used for row height. */

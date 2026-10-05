@@ -139,6 +139,13 @@ export interface BoardIndexEntry {
    * (`BoardMeta.continues`): the board the row's post lives in.
    */
   board?: string;
+  /**
+   * Present (true) on a row a captured list showed as a notice. The board's
+   * own notices lead page 1, as the boards pinned them.
+   */
+  isNotice?: boolean;
+  /** Present on a row a captured list showed as a reply: its depth, 1 and up. */
+  replyDepth?: number;
 }
 
 /**
@@ -187,6 +194,8 @@ interface BoardListingEntry {
   hits: number | null;
   commentCount: number;
   isNotice: boolean;
+  /** Present on a reply: its depth, 1 and up (1 when the skin did not show it). */
+  replyDepth?: number;
   /** Wayback ts of the list page this row came from. */
   capturedAt: string;
   listPage: number;
