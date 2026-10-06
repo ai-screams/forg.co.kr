@@ -204,11 +204,11 @@ forg/
 이 프로젝트는 **한국 게임 문화의 보존**을 목적으로 합니다.
 영리 활동을 하지 않으며, 광고를 게재하지 않습니다.
 
-- 게시글 작성자가 본인 글의 삭제를 요청하시면 **즉시 비공개 처리**합니다.
+- 게시글 작성자가 본인 글의 삭제를 요청하시면 확인하는 대로 사이트에서 내립니다.
 - 원 운영자, 관리자 계정 **Forg**, Kritz 관계자 또는 forg.kr 후속 운영자의 의견을 존중합니다.
 - 콘텐츠 자체에 대한 저작권은 각 작성자에게 있습니다.
 
-문의 / 삭제 요청: pignuante &lt;[hanyul.ryu@hanyul.xyz](mailto:hanyul.ryu@hanyul.xyz)&gt;
+문의 / 삭제 요청: pignuante &lt;[commander@ai-scream.ai](mailto:commander@ai-scream.ai)&gt;
 
 ---
 
@@ -257,16 +257,10 @@ forg/
 
 원 작성자 / 저작권 보유자 / 영향받는 당사자의 콘텐츠 삭제 요청은 다음으로 접수합니다:
 
-- **이메일**: `hanyul.ryu@hanyul.xyz`
-- **GitHub Issues**: 본 저장소 Issues
+- **이메일**: `commander@ai-scream.ai`
 
-박물관 운영자의 대응 약속:
-
-- 수신 확인 24시간 이내
-- 처리 결정 영업일 3일 (72시간) 이내
-- 실 제거 결정 후 24시간 이내 (git commit + 재배포)
-
-자세한 절차는 [LICENSE](./LICENSE) 또는 박물관 운영자 contact.
+요청을 받으면 회신하고 확인하는 대로 처리합니다. 요청 방법과 처리는 박물관 사이트의
+"저작권과 삭제 요청" 쪽(`/policy/`, `src/app/policy/page.tsx`)에 있습니다.
 
 ---
 
