@@ -47,7 +47,7 @@ BLOCK_THRESHOLD = 5        # N consecutive connection-refused → long sleep
 BLOCK_SLEEP = 3600         # 1 hour
 TIMEOUT = 60
 USER_AGENT = (
-    "forg-archive/1.0 (hanyul.ryu@gmail.com; "
+    "forg-archive/1.0 (commander@ai-scream.ai; "
     "Korean MMORPG community preservation)"
 )
 
