@@ -10,7 +10,7 @@ import type { ReactNode } from "react";
 
 import Link from "@/components/link";
 
-import { EraToggle } from "@/components/era-toggle";
+import { EraHint, EraToggle } from "@/components/era-toggle";
 
 /**
  * `crumb` follows "디지털 박물관" on the second line: a board list's name
@@ -20,7 +20,7 @@ import { EraToggle } from "@/components/era-toggle";
 export function SiteHeader({ crumb }: { crumb?: ReactNode }) {
   return (
     <header role="banner" className="border-b border-(--era-input-border) bg-(--era-content-bg)">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6">
+      <div className="relative mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6">
         <div className="flex min-w-0 flex-col font-forg leading-tight">
           <Link
             href="/"
@@ -44,6 +44,7 @@ export function SiteHeader({ crumb }: { crumb?: ReactNode }) {
           </Link>
           <EraToggle />
         </div>
+        <EraHint />
       </div>
     </header>
   );

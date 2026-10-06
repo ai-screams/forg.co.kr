@@ -19,6 +19,7 @@
   --color-forg-ghost: oklch(0.671 0 0); /* #9A9A9A */
   --color-forg-cloudy: oklch(0.628 0 0); /* #888888 */
   --color-forg-cream: oklch(0.985 0 0); /* #FAFAFA */
+  --color-forg-hint: oklch(0.993 0.011 95.2); /* #FFFDF5 — the first-visit note (EraHint) */
   --color-forg-slate: oklch(0.512 0.034 247.4); /* #61748B — 2014 page bg */
   /* Sidebar tile base. Era-invariant on purpose: the 2014 tile
    * (left_bg.gif, #405062 + #61748B) and the 2003 one (left_background.gif,
