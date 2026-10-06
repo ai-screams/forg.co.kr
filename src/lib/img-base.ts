@@ -14,7 +14,9 @@
 import { absoluteUrl } from "@/lib/seo";
 
 const IMG_BASE_RAW = process.env["NEXT_PUBLIC_IMG_BASE"] ?? "";
-const IMG_BASE = IMG_BASE_RAW.replace(/\/+$/, "");
+// Trimmed: the production value once carried a leading space, which browsers
+// forgave in an `src` but which made the structured data's addresses invalid.
+const IMG_BASE = IMG_BASE_RAW.trim().replace(/\/+$/, "");
 
 const POSTS_SRC = /(<img\b[^>]*?\ssrc=")\/img\/posts\//g;
 
