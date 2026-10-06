@@ -79,13 +79,16 @@ describe("robots.txt and the pages.dev headers", () => {
   const groups = robots.split(/\n\s*\n/);
   const blocked = groups.find((g) => g.includes("Disallow: /")) ?? "";
 
-  // Fails if: search engines or AI search are shut out, a training crawler
-  // is let in, or the sitemap is not named on the public host.
+  // Fails if: search engines, AI search or a crawler that also feeds AI
+  // answers is shut out, a training-only crawler is let in, or the sitemap
+  // is not named on the public host.
   it("welcomes search and AI search, not AI training", () => {
     expect(robots).toMatch(/User-agent: \*\nContent-Signal: [^\n]*ai-train=no[^\n]*\nAllow: \//);
-    for (const bot of ["GPTBot", "ClaudeBot", "Google-Extended", "CCBot"]) {
+    for (const bot of ["GPTBot", "ClaudeBot", "CCBot"]) {
       expect(blocked).toContain(`User-agent: ${bot}\n`);
     }
+    // Google-Extended and meta-externalagent also feed Gemini's and Meta AI's
+    // answers: let in, as finding the museum comes first (2026-10-07).
     for (const bot of [
       "Googlebot",
       "Yeti",
@@ -93,18 +96,21 @@ describe("robots.txt and the pages.dev headers", () => {
       "bingbot",
       "OAI-SearchBot",
       "Claude-SearchBot",
+      "Google-Extended",
+      "meta-externalagent",
     ]) {
       expect(blocked).not.toContain(bot);
     }
     expect(robots).toContain("Sitemap: https://forg.co.kr/sitemap.xml");
   });
 
-  // Fails if: pages.dev (production or a preview) can be indexed beside forg.co.kr.
-  it("keeps pages.dev out of search engines", () => {
+  // Fails if: a preview deployment can be indexed, or the production alias
+  // gets noindex beside its canonical to forg.co.kr.
+  it("keeps previews out of search engines, the alias to its canonical", () => {
     const headers = readFileSync(path.join(process.cwd(), "public", "_headers"), "utf8");
-    expect(headers).toMatch(/https:\/\/:project\.pages\.dev\/\*\n\s+X-Robots-Tag: noindex/);
     expect(headers).toMatch(
       /https:\/\/:version\.:project\.pages\.dev\/\*\n\s+X-Robots-Tag: noindex/,
     );
+    expect(headers).not.toMatch(/^https:\/\/:project\.pages\.dev/m);
   });
 });

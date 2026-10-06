@@ -75,8 +75,9 @@ describe("for search engines", () => {
   it("gives the latest capture its address, words and preview", () => {
     const html = renderSitePage({ ...PAGE, html: "<p>던전&amp;지도</p><p>안내</p>" });
     expect(html).toContain('<link rel="canonical" href="https://forg.co.kr/site/index/">');
-    expect(html).toContain('<meta name="description" content="던전&amp;지도 안내">');
+    expect(html).toContain('<meta name="description" content="forg.co.kr — 던전&amp;지도 안내">');
     expect(html).toContain('<meta property="og:image" content="https://forg.co.kr/og.png">');
+    expect(html).toContain('<meta property="og:image:width" content="1200">');
     expect(html).not.toContain('content="noindex"');
     const pictures = renderSitePage({ ...PAGE, html: '<p><img src="/img/posts/site/a.gif"></p>' });
     expect(pictures).toContain(
@@ -84,8 +85,9 @@ describe("for search engines", () => {
     );
   });
 
-  // Fails if: an older capture, a redirect or a member-only notice can be
-  // indexed, or an older capture points anywhere but the latest's public address.
+  // Fails if: an older capture, a redirect, a member-only notice or a frameset
+  // can be indexed, or an older capture points anywhere but the latest's
+  // public address.
   it("keeps older captures, redirects and member-only notices out", () => {
     const older = renderSitePage(PAGE, {
       stem: "index",
@@ -105,7 +107,8 @@ describe("for search engines", () => {
     expect(older).not.toContain('<meta name="description"');
     const redirect = renderSitePage({ ...PAGE, kind: "redirect", redirectTo: "/site/faq/" });
     const member = renderSitePage({ ...PAGE, memberOnly: true });
-    for (const html of [redirect, member]) {
+    const frameset = renderSitePage({ ...PAGE, kind: "frameset", html: FRAMESET.html });
+    for (const html of [redirect, member, frameset]) {
       expect(html).toContain('<meta name="robots" content="noindex">');
       expect(html).not.toContain('rel="canonical"');
     }

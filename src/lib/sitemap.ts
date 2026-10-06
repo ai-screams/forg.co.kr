@@ -1,9 +1,10 @@
 /**
  * The pages `sitemap.xml` lists (`src/app/sitemap.ts`): every page worth
- * finding, by its canonical path. Left out: the search page (kept out of
- * search engines), a board Wayback kept nothing of, the older captures of a
- * `/site/` page (canonical to the latest), and `/site/` documents that hold
- * no text of their own — framesets, redirects and member-only notices.
+ * finding, by its canonical path. Left out, as they are out of search
+ * engines: the search page, a board Wayback kept nothing of, the older
+ * captures of a `/site/` page (canonical to the latest), and the `/site/`
+ * framesets, redirects and member-only notices. A `/site/` page's latest
+ * capture is listed whatever it holds (some are pictures alone).
  */
 
 import { listBoards } from "@/lib/boards";

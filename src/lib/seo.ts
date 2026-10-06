@@ -1,7 +1,6 @@
 /**
  * The museum's public address and the metadata every page shares: its
- * canonical URL, the link-preview card and the site's name (TODO D4,
- * `.docs/decisions/2026-10-06-seo.md`).
+ * canonical URL, the link-preview card and the site's name.
  *
  * A route builds its metadata with `pageMeta`, not by hand: Next.js replaces
  * a parent's `openGraph` and `twitter` wholesale when a page sets its own, so
@@ -25,6 +24,15 @@ export const OG_IMAGE = {
   alt: "forg.co.kr 디지털 박물관 — 한국 울티마 온라인 팬사이트, 1998–2016",
 } as const;
 
+/**
+ * A forg timestamp with its time zone. forg's clock was Korean time and the
+ * content keeps it without an offset; a date alone, or one that already has
+ * an offset, is left as it is.
+ */
+export function kst(iso: string): string {
+  return /T\d{2}:\d{2}(:\d{2})?$/.test(iso) ? `${iso}+09:00` : iso;
+}
+
 /** `path` (from the site root, with its trailing slash) on the public address. */
 export function absoluteUrl(path: string): string {
   return new URL(path, SITE_URL).href;
@@ -40,6 +48,8 @@ interface PageMetaInput {
   shareTitle?: string;
   /** `article` for a post, with its date and author. */
   article?: { publishedTime?: string | undefined; authors: string[] };
+  /** Out of search engines, its links still followed (a board with nothing in it). */
+  noindex?: boolean;
 }
 
 export function pageMeta({
@@ -48,6 +58,7 @@ export function pageMeta({
   path,
   shareTitle = title,
   article,
+  noindex = false,
 }: PageMetaInput): Metadata {
   const shared = {
     title: shareTitle,
@@ -60,13 +71,14 @@ export function pageMeta({
     title,
     description,
     alternates: { canonical: path },
+    ...(noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: article
       ? {
           ...shared,
           type: "article",
           images: [OG_IMAGE],
           authors: article.authors,
-          publishedTime: article.publishedTime,
+          publishedTime: article.publishedTime && kst(article.publishedTime),
         }
       : { ...shared, type: "website", images: [OG_IMAGE] },
     twitter: {

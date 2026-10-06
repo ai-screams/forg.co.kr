@@ -37,9 +37,9 @@ Pagefind indexes `data-pagefind-body` only (the `/site/` route wraps each page i
 
 Result labels come from the `boardKr` meta on post pages. When a change adds or renames meta the search page reads, upload the new index first, then merge the code: the live code ignores meta it does not know, but new code against the old index shows board ids.
 
-## Search engines (TODO D4)
+## Search engines
 
 - The public address is `https://forg.co.kr` (`SITE_URL`, `src/lib/seo.ts`); the root layout sets `metadataBase` and the defaults. Every route builds its metadata with `pageMeta({ title, description, path })`: its canonical path, and Open Graph/Twitter with the preview picture, which a page's own `openGraph` would otherwise drop (Next replaces it wholesale). Never set a canonical in a layout: every page without its own would inherit it.
 - `sitemap.xml` comes from `src/app/sitemap.ts` (`sitemapPaths` in `src/lib/sitemap.ts`, about 16,200 addresses, no `lastmod`). A new route worth finding goes there.
 - JSON-LD: `WebSite` on the home page, `DiscussionForumPosting` + `BreadcrumbList` on posts (`src/lib/structured-data.ts`, `<JsonLd>`); a post with no date gets the breadcrumb only. The postbuild keeps these inline scripts.
-- Kept out of search engines: `/search/` (`search/layout.tsx`, noindex, follow), the 404 (Next adds noindex), a `/site/` page's older captures, redirects and member-only notices (`document.ts`), and all of `*.pages.dev` (`public/_headers`). A `/site/` page's latest capture gets its canonical, a description from its text (its title for a page of pictures) and the preview tags.
+- Kept out of search engines: `/search/` (`search/layout.tsx`, noindex, follow), the 404 (Next adds noindex), a board Wayback kept nothing of (`pageMeta` `noindex`), a `/site/` page's older captures, its framesets, redirects and member-only notices (`document.ts`), and preview deployments (`*.*.pages.dev`, `public/_headers`). The production alias `forg-archive.pages.dev` is not marked: its canonicals name forg.co.kr, and a dashboard redirect sends it there. A `/site/` page's latest capture gets its canonical, a description led by its title (pages of a section open with the same menu) and the preview tags. JSON-LD dates carry `+09:00` (`kst`): forg's clock was Korean time.

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { getBoard } from "@/lib/boards";
 import { getPost } from "@/lib/posts";
+import { kst } from "@/lib/seo";
 import {
   breadcrumbJsonLd,
   plainText,
@@ -28,29 +29,50 @@ describe("a post's structured data", () => {
       "@type": "DiscussionForumPosting",
       url: "https://forg.co.kr/UoBoard/26397/",
       headline: "아 액땜인가... ㅠㅜ",
-      datePublished: "2007-10-19T21:05:03",
+      datePublished: "2007-10-19T21:05:03+09:00",
       author: { "@type": "Person", name: "santiago" },
       isPartOf: { url: "https://forg.co.kr/UoBoard/" },
     });
     expect(data?.["text"]).toContain("샤워");
+    expect(data).not.toHaveProperty("image");
   });
 
-  // Fails if: a post without a date gets markup Google would reject.
-  it("gives a post without a date none", async () => {
+  // Fails if: a post without a date, or one of lost pictures alone, gets
+  // markup Google would reject, or a post of pictures loses them.
+  it("gives a post with nothing Google can show none", async () => {
     expect(postJsonLd(await post("1745"), BOARD)).toBeNull();
+    const events = getBoard("Events");
+    const lost = await getPost("Events", "365");
+    const kept = await getPost("Events", "436");
+    if (!lost || !kept) throw new Error("Events/365 or 436 is gone from the content");
+    expect(postJsonLd(lost, events)).toBeNull();
+    const pictures = postJsonLd(kept, events)?.["image"] as string[];
+    expect(pictures.length).toBeGreaterThan(0);
+    expect(pictures.every((u) => /^https:\/\/[^/]+\/(img\/)?posts\/Events\/436\//.test(u))).toBe(
+      true,
+    );
   });
 
-  // Fails if: an undated comment is listed, or a comment keeps its markup.
-  it("lists the dated comments as text", async () => {
+  // Fails if: an undated comment or one with no words (an emoticon alone) is
+  // listed, a comment keeps its markup, or its date lacks Korean time.
+  it("lists the dated comments with words, as text", async () => {
     const p = await post("26397");
-    const first = p.comments[0];
-    if (!first) throw new Error("UoBoard/26397 lost its comments");
+    const [first, second] = p.comments;
+    if (!first || !second) throw new Error("UoBoard/26397 lost its comments");
     const data = postJsonLd(
-      { ...p, comments: [{ ...first, createdAt: "1970-01-01T00:00:00" }, ...p.comments.slice(1)] },
+      {
+        ...p,
+        comments: [
+          { ...first, createdAt: "1970-01-01T00:00:00" },
+          { ...second, bodyHtml: '<img src="/img/emoticon/m_smile.gif">' },
+          ...p.comments.slice(2),
+        ],
+      },
       BOARD,
     );
     const comments = data?.["comment"] as { datePublished: string; text: string }[];
-    expect(comments).toHaveLength(p.comments.length - 1);
+    expect(comments).toHaveLength(p.comments.length - 2);
+    expect(comments.every((c) => c.datePublished.endsWith("+09:00"))).toBe(true);
     expect(data?.["commentCount"]).toBe(p.comments.length);
     expect(comments.every((c) => !c.datePublished.startsWith("1970"))).toBe(true);
     expect(comments.some((c) => /<[a-z]/i.test(c.text))).toBe(false);
@@ -95,13 +117,23 @@ it("keeps a post's text inside its script tag", () => {
   expect(serializeJsonLd({ text: "</script><script>alert(1)</script>" })).not.toContain("</");
 });
 
+// Fails if: a forg time goes out without Korean time, or a date alone or one
+// that has its offset gets a second.
+it("marks forg's times as Korean time", () => {
+  expect(kst("2007-10-19T21:05:03")).toBe("2007-10-19T21:05:03+09:00");
+  expect(kst("2007-10-19T21:05")).toBe("2007-10-19T21:05+09:00");
+  expect(kst("2007-10-19")).toBe("2007-10-19");
+  expect(kst("2019-01-28T15:38:00+09:00")).toBe("2019-01-28T15:38:00+09:00");
+});
+
 describe("plainText", () => {
   // Fails if: a style's rules, a tag or an entity reaches a description, two
   // lines run together, or an impossible character reference stops the build.
   it("keeps the words only", () => {
     expect(plainText("<style>p{color:red}</style><p>가&amp;나</p><p>다<br>라&middot;</p>")).toBe(
-      "가&나 다 라",
+      "가&나 다 라·",
     );
     expect(plainText("a&#65;b&#x42;c&#0;d")).toBe("aAbBc d");
+    expect(plainText("가&mdash;나 &starf;")).toBe("가—나 ★");
   });
 });

@@ -5,13 +5,17 @@
  *
  * Google reads a forum post's markup only with an author and a date
  * (developers.google.com/search/docs/appearance/structured-data/discussion-forum),
- * so a post whose date the captures did not keep gets none, and a comment
- * without its date is left out of the list.
+ * and with words or a picture, so a post whose date the captures did not keep
+ * gets none, a post of lost pictures alone gets none, and a comment without
+ * its date or its words (an emoticon alone) is left out of the list. Dates
+ * are forg's own clock, Korean time; they carry `+09:00` so Google does not
+ * read them in its own time zone (`kst`).
  */
 
 import type { Board } from "@/lib/boards";
 import { isUnknownDate } from "@/lib/dates";
-import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { postImageUrl } from "@/lib/img-base";
+import { absoluteUrl, kst, SITE_NAME, SITE_URL } from "@/lib/seo";
 import type { Post } from "@/types/post";
 
 type JsonLd = Record<string, unknown>;
@@ -22,6 +26,17 @@ const ENTITIES: Record<string, string> = {
   gt: ">",
   quot: '"',
   nbsp: " ",
+  mdash: "—",
+  ndash: "–",
+  hellip: "…",
+  middot: "·",
+  lsquo: "‘",
+  rsquo: "’",
+  ldquo: "“",
+  rdquo: "”",
+  star: "☆",
+  starf: "★",
+  hearts: "♥",
 };
 
 /** A numeric character reference's character; a space for one that names none. */
@@ -60,18 +75,26 @@ function person(name: string): JsonLd {
   return { "@type": "Person", name };
 }
 
-/** The post, or null when the captures kept no date for it. */
+const RECOVERED = /<img\b[^>]*?(?<![-\w])src="(\/img\/posts\/[^"]+)"/g;
+
+/**
+ * The post, or null when Google would reject it: no date, or neither words
+ * nor a recovered picture.
+ */
 export function postJsonLd(post: Post, board: Board): JsonLd | null {
   if (isUnknownDate(post.createdAt)) return null;
+  const images = [...post.bodyHtml.matchAll(RECOVERED)].map((m) => postImageUrl(m[1] ?? ""));
+  if (!post.bodyText.trim() && images.length === 0) return null;
   const url = absoluteUrl(`/${board.id}/${post.postId}/`);
   const comments = post.comments
     .filter((c) => !isUnknownDate(c.createdAt))
     .map((c) => ({
       "@type": "Comment",
       author: person(c.author),
-      datePublished: c.createdAt,
+      datePublished: kst(c.createdAt),
       text: plainText(c.bodyHtml),
-    }));
+    }))
+    .filter((c) => c.text !== "");
   return {
     "@context": "https://schema.org",
     "@type": "DiscussionForumPosting",
@@ -79,8 +102,9 @@ export function postJsonLd(post: Post, board: Board): JsonLd | null {
     url,
     headline: post.title,
     text: post.bodyText,
+    ...(images.length > 0 ? { image: images } : {}),
     author: person(post.author),
-    datePublished: post.createdAt,
+    datePublished: kst(post.createdAt),
     inLanguage: "ko",
     isPartOf: { "@type": "WebPage", name: board.nameKr, url: absoluteUrl(`/${board.id}/`) },
     commentCount: post.comments.length,

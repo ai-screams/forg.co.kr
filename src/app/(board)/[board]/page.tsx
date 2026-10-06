@@ -58,6 +58,8 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
         title: `${nameKr} — forg.co.kr`,
         description: `${nameKr} 게시판 — Wayback Machine에 읽을 수 있는 글이나 목록이 남지 않았습니다.`,
         path: `/${board}/`,
+        // Nothing here to find: kept out of search engines and the sitemap.
+        noindex: true,
       });
   }
 }

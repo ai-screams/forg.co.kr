@@ -170,15 +170,17 @@ const DESCRIPTION_LENGTH = 150;
 
 /**
  * The latest capture of a page, for search engines and link previews: its
- * canonical address on forg.co.kr, the start of its text as the description,
- * and the museum's preview picture.
+ * canonical address on forg.co.kr, its title and the start of its text as the
+ * description (pages of one section open with the same left menu, so the text
+ * alone repeats), and the museum's preview picture.
  */
 function shareHead(page: SitePage): string {
   const url = escapeHtml(canonicalOf(page));
   const title = escapeHtml(page.title);
   // A page of pictures alone has no words: its title says what it is.
+  const text = plainText(page.html);
   const description = escapeHtml(
-    plainText(page.html).slice(0, DESCRIPTION_LENGTH) || `${page.title} — forg.co.kr 안내 페이지`,
+    `${page.title} — ${text || "forg.co.kr 안내 페이지"}`.slice(0, DESCRIPTION_LENGTH),
   );
   return [
     `<link rel="canonical" href="${url}">`,
@@ -190,6 +192,9 @@ function shareHead(page: SitePage): string {
     `<meta property="og:description" content="${description}">`,
     `<meta property="og:url" content="${url}">`,
     `<meta property="og:image" content="${escapeHtml(absoluteUrl(OG_IMAGE.url))}">`,
+    `<meta property="og:image:width" content="${String(OG_IMAGE.width)}">`,
+    `<meta property="og:image:height" content="${String(OG_IMAGE.height)}">`,
+    `<meta property="og:image:alt" content="${escapeHtml(OG_IMAGE.alt)}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
   ].join("");
 }
@@ -225,7 +230,8 @@ export function renderSitePage(page: SitePage, version: SitePageVersion | null =
       )}<body><p>이 주소는 원래 <a href="${escapeHtml(to)}">다른 페이지</a>로 넘어가는 곳이었습니다.</p></body></html>`;
     }
     if (page.kind === "frameset") {
-      return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
+      // Its frames are pages of their own, indexed there; the frameset holds no words.
+      return `<!doctype html><html lang="ko">${head(page, NOINDEX)}${page.html}</html>`;
     }
   }
   // An older capture here is a `page` and borrows the latest's name.

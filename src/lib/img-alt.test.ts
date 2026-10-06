@@ -27,6 +27,13 @@ describe("withAltText", () => {
     expect(
       withAltText('<img data-original-src="http://x/e.gif" src="/img/emoticon/e.gif">', "x"),
     ).toContain('alt=""');
+    // A lost emoticon is still decoration, not a lost picture.
+    expect(
+      withAltText(
+        '<img data-original-src="http://forg.co.kr/_zb/emoticon/a.gif" data-recovery="failed" src="/img/placeholder/missing.svg">',
+        "x",
+      ),
+    ).toContain('alt=""');
     expect(withAltText('<img src="/img/posts/a.jpg">', 'say "hi" <b>')).toContain(
       'alt="say &quot;hi&quot; &lt;b>"',
     );
