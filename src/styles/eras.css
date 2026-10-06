@@ -100,7 +100,8 @@
   }
 
   /* A 2001 post: the skins' 95% table on white, no box, and the body cell
-   * `style='word-break:break-all;padding:10px;'` with `line-height:160%`. */
+   * `style='word-break:break-all;padding:10px;'` (the padding is every era's,
+   * post-view.tsx) with `line-height:160%`. */
   :root[data-era="2001"] .forg-post {
     width: 95%;
     margin-inline: auto;
@@ -111,7 +112,6 @@
     }
   }
   :root[data-era="2001"] .forg-post-body-cell {
-    padding: 10px;
     line-height: 1.6;
     font-size: 12px;
   }

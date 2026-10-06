@@ -8,7 +8,8 @@
  *   unboxed, in `#363636`.
  * - `webbus` (Gnuboard4, 2008–2016): a `#cbd1d4` bar with the name in bold on
  *   the left and "MM-DD HH:mm" on the right, the text below it and a 1px rule.
- * - `plain` (forg.kr, Gnuboard5): the museum's own card layout.
+ * - `plain` (forg.kr, Gnuboard5): the museum's own layout, each comment
+ *   between two rules across the post box, its text on the body's 10px edge.
  *
  * Dates are cut from the ISO text, not through `Date`, so the build's time
  * zone cannot move them; the full time is in the `title`.
@@ -88,7 +89,7 @@ function WebbusComment({ comment, board, index }: ItemProps) {
 
 function PlainComment({ comment, board, index }: ItemProps) {
   return (
-    <li className="border border-(--era-input-border)/50 bg-(--era-content-bg) px-3 py-2">
+    <li className="border-y border-(--era-input-border)/50 bg-(--era-content-bg) px-[10px] py-2">
       <div className="mb-1 flex items-baseline gap-2 text-xs text-forg-muted">
         <span className="font-bold text-forg-ink">
           <CommentAuthor board={board} comment={comment} index={index} />
