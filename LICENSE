@@ -16,7 +16,7 @@
 ```
 MIT License
 
-Copyright (c) 2026 pignuante <hanyul.ryu@hanyul.xyz>
+Copyright (c) 2026 pignuante <commander@ai-scream.ai>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -87,16 +87,10 @@ Creative Commons 등의 명시적 재배포 권한 부여 또한 하지 않습�
 
 원 작성자, 저작권 보유자, 또는 영향받는 당사자가 콘텐츠 삭제를 요청하는 경우:
 
-- **이메일**: `hanyul.ryu@hanyul.xyz`
-- **GitHub Issues**: `https://github.com/ai-screams/forg.co.kr` (공개 — 개인정보 무관 사유 시)
+- **이메일**: `commander@ai-scream.ai`
 
-박물관 운영자의 대응 약속:
-
-- **수신 확인**: 24시간 이내
-- **처리 결정**: 영업일 기준 3일 (72시간) 이내
-- **실 제거**: 결정 후 24시간 이내 git commit + 재배포
-
-자세한 절차는 `.docs/policies/takedown-policy.md` 참조 (요청 시 공개 가능).
+요청을 받으면 회신하고 확인하는 대로 처리합니다. 요청 방법과 처리는 박물관 사이트의
+"저작권과 삭제 요청" 쪽(`/policy/`)에 있습니다.
 
 ### 출처 표시 가이드 (선의 인용 시)
 
@@ -142,4 +136,4 @@ Wayback ToS (`https://archive.org/about/terms.php`) 의 학술·보존 목적 �
 
 ---
 
-**Effective: 2026-05-12 · Maintainer: pignuante (`hanyul.ryu@hanyul.xyz`)**
+**Effective: 2026-05-12 · Maintainer: pignuante (`commander@ai-scream.ai`)**

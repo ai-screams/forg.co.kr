@@ -13,6 +13,7 @@ paths:
 - `/[board]/`, `/[board]/page/[N]/`, `/[board]/[postId]/` under the `(board)` group. The literal `page` segment keeps pagination from colliding with post ids.
 - The root layout's `@crumb` slot (`src/app/@crumb/`) mirrors the two list routes and puts the board's name and notes (`board-info.tsx`) in the museum bar; `default.tsx` leaves it empty everywhere else. The era frame holds only the list: the museum's words about a board go outside it. A new list route needs its slot page too.
 - All set `dynamicParams = false` + `generateStaticParams`: an unknown board/page/post is a **build error**, not a runtime 404.
+- `/policy/` (`src/app/policy/page.tsx`) is the copyright and takedown page; the footer links to it and it holds the request address. It promises no response times (user decision, 2026-10-06).
 - `src/app/not-found.tsx` is the 404 (`out/404.html`, served by Pages for any path not written). Every page's RSC payload carries it, so keep it small and outside `<EraShell>`.
 - `<SiteHeader>`/`<SiteFooter>` are in the root layout; `<EraShell>` (`src/components/era-shell.tsx`) is the five-column frame pages render inside.
 
