@@ -1,9 +1,9 @@
 /**
  * Bottom-of-page chrome shared by every route.
  *
- * Era-invariant markup. The dark slate footer color is the same across
- * both eras (`--era-footer-bg`), so the only thing that changes is the
- * border above it (driven by `--era-input-border`). Its last line leads to
+ * Era-invariant markup. The dark slate footer color is the same in every
+ * era (`--era-footer-bg`), so the only thing that changes is the border
+ * above it (driven by `--era-input-border`). Its last line leads to
  * the copyright and takedown page (`/policy/`).
  */
 

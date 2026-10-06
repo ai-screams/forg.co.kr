@@ -51,7 +51,7 @@ All three board-shaped routes set `dynamicParams = false` and enumerate every pa
 
 ### Testing Requirements
 
-Routes have no unit tests (`pnpm test` covers `src/lib` and one shared component). Verify changes here with:
+A few routes have unit tests beside them (`search/use-pagefind.test.ts`, `site/[...path]/route.test.ts`, `site/_render/document.test.ts`, `policy/policy.test.ts`, `_scripts/era.test.ts`); most do not. Verify changes here with:
 
 ```bash
 pnpm typecheck   # tsc --noEmit
