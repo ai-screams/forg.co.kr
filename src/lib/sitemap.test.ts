@@ -26,10 +26,9 @@ describe("the sitemap", () => {
     ]) {
       expect(paths).toContain(p);
     }
+    const listed = new Set(paths);
     const posts = await getAllPostParams();
-    expect(paths.filter((p) => posts.some((q) => p === `/${q.board}/${q.postId}/`))).toHaveLength(
-      posts.length,
-    );
+    expect(posts.filter((q) => listed.has(`/${q.board}/${q.postId}/`))).toHaveLength(posts.length);
   });
 
   // Fails if: the sitemap lists a page kept out of search engines or one
