@@ -134,22 +134,40 @@ def pin_year(
     UTC stamp as a Korean date, the boards' own clock).
     Neighbours can: FunBoard's numbering restarted, and the 2012–2015 posts
     numbered in the 10,000s would date the 2003–2005 rows 11013–18439.
+    The year the gold neighbours share (one side, or both agreeing) stands
+    unless it puts the row before its lower neighbour or after its upper one,
+    which the numbering rules out (Newbie 2281 as 2003-02-05, below it 638
+    of 2003-10-26); then the page's year is taken instead, as when they
+    disagree.
     """
     if no in gold:
         return gold[no], False
     i = bisect_left(gold_nos, no)
-    lo = gold[gold_nos[i - 1]].year if i > 0 else None
-    hi = gold[gold_nos[i]].year if i < len(gold_nos) else None
+    lo_date = gold[gold_nos[i - 1]] if i > 0 else None
+    hi_date = gold[gold_nos[i]] if i < len(gold_nos) else None
+    lo = lo_date.year if lo_date else None
+    hi = hi_date.year if hi_date else None
     candidates = [y for y in (lo, hi) if y is not None]
-    if candidates and len(set(candidates)) == 1:
-        year, approx = candidates[0], False
-    else:
-        year, approx = page_year, True
+
+    def from_page() -> int:
         # A neighbour on one side still bounds the guess.
+        year = page_year
         if lo is not None and year < lo:
             year = lo
         if hi is not None and year > hi:
             year = hi
+        return year
+
+    if candidates and len(set(candidates)) == 1:
+        year, approx = candidates[0], False
+        try:
+            pinned = date(year, month, day)
+            if (lo_date and pinned < lo_date) or (hi_date and pinned > hi_date):
+                year, approx = from_page(), True
+        except ValueError:
+            pass
+    else:
+        year, approx = from_page(), True
     try:
         pinned = date(year, month, day)
     except ValueError:
