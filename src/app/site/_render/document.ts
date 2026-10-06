@@ -52,7 +52,7 @@ function head(page: SitePage, extra = ""): string {
 // the older ones keep the page as it looked before (a redesign, a section
 // still to be written). Captures that were only a redirect or a blank page
 // are not offered.
-function captures(page: SitePage, version: SitePageVersion | null): string {
+function captures(page: SitePage, version: SitePageVersion | null, nav: string): string {
   const older = olderCaptures(page);
   if (older.length === 0) {
     const others = page.versions.length - 1;
@@ -68,17 +68,25 @@ function captures(page: SitePage, version: SitePageVersion | null): string {
           `<option value="${escapeHtml(`${base}${v.ts}/`)}"${version?.ts === v.ts ? " selected" : ""}>${formatDate(v.capturedAt)}</option>`,
       ),
   ];
-  return `<label>캡처<select onchange="location.href=this.value">${options.join("")}</select></label>`;
+  return `<label>캡처<select onchange="${nav}.href=this.value">${options.join("")}</select></label>`;
 }
 
-function museumBar(page: SitePage, version: SitePageVersion | null = null): string {
+/**
+ * `nav` is what the picker moves: `location` in a page, `top.location` in the
+ * bar frame over an older frameset (`renderSiteBar`).
+ */
+function museumBar(
+  page: SitePage,
+  version: SitePageVersion | null = null,
+  nav = "location",
+): string {
   const shown = version ?? page;
   const wayback = `https://web.archive.org/web/${shown.capturedAt.replace(/\D/g, "")}/${shown.originalUrl}`;
   return `<div id="forg-museum-bar" role="note">
 <a href="/">forg.co.kr 박물관</a>
 <span><b>${escapeHtml(page.title)}</b></span>
 <span>원래 주소 <code>${escapeHtml(shown.originalPath)}</code></span>
-${captures(page, version)}
+${captures(page, version, nav)}
 <a href="/site/">사이트 페이지 목록</a>
 <a href="${escapeHtml(wayback)}" target="_blank" rel="noopener">Wayback 원본</a>
 </div>`;
@@ -140,7 +148,36 @@ ${nearby(page)}
 </body></html>`;
 }
 
+// An older frameset capture (the front page before 2011, 02g): a frameset has
+// no body to carry the museum bar, so a thin frame above the frameset holds
+// it (`renderSiteBar`) and the frameset below is as it was.
+const BAR_FRAME_ROWS = 28;
+
+function olderHead(page: SitePage): string {
+  return `<link rel="canonical" href="/site/${escapeHtml(page.stem)}/"><meta name="robots" content="noindex">`;
+}
+
+function framesetCapture(page: SitePage, version: SitePageVersion): string {
+  const bar = `/site/${page.stem}/${version.ts}/bar/`;
+  return `<!doctype html><html lang="ko">${head({ ...page, baseTarget: null }, olderHead(page))}<frameset rows="${String(BAR_FRAME_ROWS)},*" border="0" frameborder="0" framespacing="0"><frame src="${escapeHtml(bar)}" name="forg-museum-bar" scrolling="no" noresize marginwidth="0" marginheight="0">${version.html}</frameset></html>`;
+}
+
+/**
+ * The bar frame over an older frameset: the museum bar alone, on one line
+ * (it scrolls sideways on a phone rather than outgrow the frame), every link
+ * and the capture picker changing the whole window.
+ */
+export function renderSiteBar(page: SitePage, version: SitePageVersion): string {
+  const style = `${olderHead(page)}<style>${BAR_CSS}
+html,body{margin:0;height:100%;background:#2b2b2b}
+#forg-museum-bar{flex-wrap:nowrap!important;white-space:nowrap;overflow-x:auto;height:100%;box-sizing:border-box}</style>`;
+  return `<!doctype html><html lang="ko">${head({ ...page, baseTarget: "_top" }, style)}<body>
+${museumBar(page, version, "top.location")}
+</body></html>`;
+}
+
 export function renderSitePage(page: SitePage, version: SitePageVersion | null = null): string {
+  if (version?.kind === "frameset") return framesetCapture(page, version);
   if (!version) {
     if (page.memberOnly) return memberOnly(page);
     if (page.kind === "redirect") {
@@ -154,14 +191,12 @@ export function renderSitePage(page: SitePage, version: SitePageVersion | null =
       return `<!doctype html><html lang="ko">${head(page)}${page.html}</html>`;
     }
   }
-  // An older capture is always a `page` (02g) and borrows the latest's name.
-  const shown: SitePage = version ? { ...page, ...version } : page;
+  // An older capture here is a `page` and borrows the latest's name.
+  const shown: SitePage = version ? { ...page, ...version, kind: "page" } : page;
   const combo = shown.html.includes('id="myDIV"');
   // An older capture points search engines at the latest and stays out of
   // the museum's own search, which indexes each page once.
-  const older = version
-    ? `<link rel="canonical" href="/site/${escapeHtml(page.stem)}/"><meta name="robots" content="noindex">`
-    : "";
+  const older = version ? olderHead(page) : "";
   const style = `${older}<style>${BAR_CSS}\n${linkColours(shown.bodyStyle)}\n${shown.css}\n${combo ? `${COMBO_CSS}\n` : ""}${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}${combo ? COMBO_HEAD_SCRIPT : ""}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and
