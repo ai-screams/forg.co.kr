@@ -31,6 +31,16 @@
     }
   }
 
+  /* The first-visit note under the era buttons (EraHint): shown only when the
+   * era script, before the page paints, finds no era saved and the note never
+   * shown (src/app/_scripts/era.js). */
+  .forg-era-hint {
+    display: none;
+  }
+  html.forg-era-hint-on .forg-era-hint {
+    display: flex;
+  }
+
   /* Where the browser has no popover, its notes stay hidden rather than
    * sitting open in the bar. */
   @supports not selector(:popover-open) {

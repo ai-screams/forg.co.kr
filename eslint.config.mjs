@@ -51,7 +51,7 @@ const eslintConfig = defineConfig([
     },
     rules: { "no-undef": "error", "no-unused-vars": "error" },
   },
-  // The era script the layout inlines with these two values (src/app/layout.tsx).
+  // The era script the layout inlines with these three values (src/app/layout.tsx).
   {
     files: ["src/app/_scripts/*.js"],
     languageOptions: {
@@ -63,6 +63,7 @@ const eslintConfig = defineConfig([
         localStorage: "readonly",
         Element: "readonly",
         ERA_STORAGE_KEY: "readonly",
+        ERA_HINT_KEY: "readonly",
         ERAS: "readonly",
       },
     },

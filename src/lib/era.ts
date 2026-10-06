@@ -15,6 +15,9 @@ export const DEFAULT_ERA: Era = "2014";
 /** 사용자 선호를 영속화할 localStorage 키. */
 export const ERA_STORAGE_KEY = "forg.era";
 
+/** 첫 방문 안내(`<EraHint>`)를 이미 보였다는 표시의 localStorage 키. */
+export const ERA_HINT_KEY = "forg.era-hint";
+
 /** 사람이 읽는 시기 라벨 (UI 노출용). */
 export const ERA_LABELS: Record<Era, string> = {
   "2014": "2014",

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { DEFAULT_ERA, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
+import { DEFAULT_ERA, ERA_HINT_KEY, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
 
 import "./globals.css";
 
@@ -24,7 +24,7 @@ const eraSource = readFileSync(
   path.join(process.cwd(), "src", "app", "_scripts", "era.js"),
   "utf8",
 );
-const eraScript = `(function (ERA_STORAGE_KEY, ERAS) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)});`;
+const eraScript = `(function (ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)}, ${JSON.stringify(ERA_HINT_KEY)});`;
 
 export default function RootLayout({
   children,
