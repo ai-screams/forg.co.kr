@@ -30,12 +30,17 @@ LINKS (resolved against the capture's own URL)
 Scripts, event handlers and forms are dropped (nh3 allowlist below).
 
 OLDER CAPTURES
-    Every other `page` version of a page shown as a `page` (a frameset has
-    no museum bar to pick from) is rendered the same way to
-    `src/content/page-versions/{stem}/{ts}.json` (`ts` = the capture time the
-    museum shows), and the page's `versions` entry carries that `ts`; the route
-    serves it at `/site/{stem}/{ts}/` and the museum bar lets a visitor pick
-    it. Their images join the download queue with the shown pages'.
+    Every other `page` or `frameset` version of a page shown as a `page` (a
+    frameset shown as the latest has no museum bar to pick from) is rendered
+    the same way to `src/content/page-versions/{stem}/{ts}.json` (`ts` = the
+    capture time the museum shows), and the page's `versions` entry carries
+    that `ts`; the route serves it at `/site/{stem}/{ts}/` and the museum bar
+    lets a visitor pick it. Their images join the download queue with the
+    shown pages'. An older frameset (the front page `index` before 2011) opens
+    each frame on that frame page's capture current at the date the museum
+    shows for it (`CaptureClock`), so a 2001 frame set shows 2001 frames; a
+    frame with no capture page (a board list, a page Wayback kept but the
+    museum did not) opens Wayback's own capture of that date (`if_`).
 
 RENDERING MODE
     A `page`'s `mode` is the mode a browser draws its capture in, and the
@@ -709,7 +714,37 @@ def base_target(soup: BeautifulSoup) -> str | None:
     return t if FRAME_NAME.fullmatch(t) else None
 
 
-def frameset_html(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> str:
+# What may stay as it is in the original URL a Wayback address carries: a
+# space or other byte `safe_url` refuses is percent-encoded, as browsers did.
+WAYBACK_SAFE = ":/?#[]@!$&'()*+,;=%~"
+
+
+class CaptureClock:
+    """Which capture of a page was current at a given time, as a museum path.
+
+    A frame page's captures are its shown one (`/site/{stem}/`) and its
+    older viewable ones (`/site/{stem}/{shown_ts}/`), each current from its
+    first capture (`ts`). At `when`, the one that started last before it is
+    current; before the first, the first.
+    """
+
+    def __init__(self) -> None:
+        self.starts: dict[str, list[tuple[str, str]]] = {}
+
+    def add(self, stem: str, first_ts: str, path: str) -> None:
+        self.starts.setdefault(stem, []).append((first_ts, path))
+
+    def at(self, href: str | None, when: str) -> str | None:
+        m = re.fullmatch(r"/site/(.+)/", href or "")
+        starts = sorted(self.starts.get(m.group(1), [])) if m else []
+        if not starts:
+            return href
+        before = [path for first, path in starts if first <= when]
+        return before[-1] if before else starts[0][1]
+
+
+def frameset_html(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str,
+                  clock: CaptureClock | None = None) -> str:
     def walk(node) -> str:
         if node.name == "frameset":
             attrs = "".join(f' {k}="{html.escape(str(v))}"' for k, v in node.attrs.items()
@@ -718,7 +753,16 @@ def frameset_html(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, p
             return f"<frameset{attrs}>{inner}</frameset>"
         attrs = "".join(f' {k}="{html.escape(str(v))}"' for k, v in node.attrs.items()
                         if k.lower() in FRAME_ATTRS)
-        href, _ = resolver.link(node.get("src", ""), base, ts, page) if node.get("src") else (None, False)
+        src = node.get("src", "")
+        href, _ = resolver.link(src, base, ts, page) if src else (None, False)
+        if clock and href:
+            href = clock.at(href, ts)
+            if not href.startswith("/site/"):
+                # A board list or a page the museum holds no capture of: in
+                # a frame the museum's own page would nest its header, so
+                # the frame opens Wayback's capture of that date, framed.
+                original = urllib.parse.quote(urllib.parse.urljoin(base, src.strip()), safe=WAYBACK_SAFE)
+                href = f"https://web.archive.org/web/{ts}if_/{original}"
         href = safe_url(href)
         src = f' src="{html.escape(href)}"' if href else ""
         return f"<frame{attrs}{src}>"
@@ -889,9 +933,10 @@ def main() -> None:
         v, soup, kind = shown[-1]
         v = {**v, "kind": kind}
         chosen[stem] = (v, soup)
-        # A frameset has no museum bar to pick a capture from (`holy/index`).
-        older[stem] = [(k[0], k[1]) for k in kinds
-                       if kind == "page" and k[2] == "page" and k[0] is not shown[-1][0]]
+        # A frameset shown as the latest has no museum bar to pick a capture
+        # from (`holy/index`); a page's older framesets get one (the route).
+        older[stem] = [(k[0], k[1], k[2]) for k in kinds
+                       if kind == "page" and k[2] in ("page", "frameset") and k[0] is not shown[-1][0]]
         viewable = {id(o[0]) for o in older[stem]}
         history[stem] = [
             {"capturedAt": iso(k[0]["shown_ts"]), "kind": k[2],
@@ -899,6 +944,11 @@ def main() -> None:
             for k in kinds
         ]
 
+    clock = CaptureClock()
+    for stem, (v, _soup) in chosen.items():
+        clock.add(stem, v["ts"], f"/site/{stem}/")
+        for ov, _osoup, _okind in older[stem]:
+            clock.add(stem, ov["ts"], f"/site/{stem}/{ov['shown_ts']}/")
     resolver = Resolver(set(chosen), boards)
     link_titles = collect_link_titles(every)
     # Before `rewrite` turns the shown versions' links into museum paths.
@@ -946,8 +996,13 @@ def main() -> None:
             stats[doc["mode"]] = stats.get(doc["mode"], 0) + 1
         docs[stem] = doc
         stats[kind] = stats.get(kind, 0) + 1
-        for ov, osoup in older[stem]:
+        for ov, osoup, okind in older[stem]:
             obase = ov["url"]
+            if okind == "frameset":
+                body = {"kind": "frameset", "mode": "no-quirks", "css": "", "bodyStyle": {},
+                        "html": frameset_html(osoup, resolver, obase, ov["shown_ts"], stem, clock)}
+            else:
+                body = render_page(osoup, resolver, obase, ov["ts"], stem, titles, {})
             versions[f"{stem}/{ov['shown_ts']}"] = {
                 "stem": stem,
                 "ts": ov["shown_ts"],
@@ -955,7 +1010,7 @@ def main() -> None:
                 "originalPath": original_path(ov, forg_pages),
                 "originalUrl": obase,
                 "baseTarget": base_target(osoup),
-                **render_page(osoup, resolver, obase, ov["ts"], stem, titles, {}),
+                **body,
             }
     stats["older_captures"] = len(versions)
 

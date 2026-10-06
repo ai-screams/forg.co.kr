@@ -8,11 +8,13 @@
   "versions": [
     {
       "capturedAt": "2000-11-10T09:51:00",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20001110095100"
     },
     {
       "capturedAt": "2001-02-04T09:42:00",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20010204094200"
     },
     {
       "capturedAt": "2001-03-01T21:35:53",
@@ -21,31 +23,38 @@
     },
     {
       "capturedAt": "2001-04-05T06:21:57",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20010405062157"
     },
     {
       "capturedAt": "2001-04-18T18:04:59",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20010418180459"
     },
     {
       "capturedAt": "2001-05-18T10:30:27",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20010518103027"
     },
     {
       "capturedAt": "2001-09-27T08:36:44",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20010927083644"
     },
     {
       "capturedAt": "2001-11-27T07:46:23",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20011127074623"
     },
     {
       "capturedAt": "2002-01-21T21:10:11",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20020121211011"
     },
     {
       "capturedAt": "2002-02-23T14:57:02",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20020223145702"
     },
     {
       "capturedAt": "2002-08-12T03:59:34",
@@ -54,7 +63,8 @@
     },
     {
       "capturedAt": "2002-09-24T16:25:35",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20020924162535"
     },
     {
       "capturedAt": "2002-11-22T06:15:46",
@@ -63,7 +73,8 @@
     },
     {
       "capturedAt": "2002-11-24T17:11:56",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20021124171156"
     },
     {
       "capturedAt": "2003-02-21T07:15:22",
@@ -72,11 +83,13 @@
     },
     {
       "capturedAt": "2003-09-02T13:32:38",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20030902133238"
     },
     {
       "capturedAt": "2003-11-29T18:08:56",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20031129180856"
     },
     {
       "capturedAt": "2003-12-05T06:05:17",
@@ -85,7 +98,8 @@
     },
     {
       "capturedAt": "2003-12-13T01:44:28",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20031213014428"
     },
     {
       "capturedAt": "2004-05-18T14:46:29",
@@ -118,7 +132,8 @@
     },
     {
       "capturedAt": "2005-03-13T01:41:35",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20050313014135"
     },
     {
       "capturedAt": "2005-03-16T07:13:49",
@@ -127,23 +142,28 @@
     },
     {
       "capturedAt": "2006-08-09T21:56:09",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20060809215609"
     },
     {
       "capturedAt": "2006-08-18T12:37:35",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20060818123735"
     },
     {
       "capturedAt": "2006-12-05T05:37:59",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20061205053759"
     },
     {
       "capturedAt": "2006-12-07T05:15:15",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20061207051515"
     },
     {
       "capturedAt": "2010-04-20T12:08:38",
-      "kind": "frameset"
+      "kind": "frameset",
+      "ts": "20100420120838"
     },
     {
       "capturedAt": "2010-10-19T00:25:13",

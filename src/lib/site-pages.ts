@@ -62,6 +62,8 @@ export interface SitePage {
 
 /** An older capture of a page, served at `/site/{stem}/{ts}/` (02g OLDER CAPTURES). */
 export interface SitePageVersion {
+  /** Present on an older frameset (the front page before 2011): `html` is its `<frameset>`. */
+  kind?: "frameset";
   stem: string;
   /** The capture time the museum shows, `YYYYMMDDhhmmss`. */
   ts: string;
@@ -139,8 +141,8 @@ export async function getAllSitePages(): Promise<SitePage[]> {
  * versions with a `ts`, in the order the page lists them. Captures that were
  * only a redirect or a blank page have none.
  */
-export function olderCaptures(page: SitePage): { ts: string; capturedAt: string }[] {
+export function olderCaptures(page: SitePage): { ts: string; capturedAt: string; kind: string }[] {
   return page.versions.flatMap((v) =>
-    v.ts === undefined ? [] : [{ ts: v.ts, capturedAt: v.capturedAt }],
+    v.ts === undefined ? [] : [{ ts: v.ts, capturedAt: v.capturedAt, kind: v.kind }],
   );
 }

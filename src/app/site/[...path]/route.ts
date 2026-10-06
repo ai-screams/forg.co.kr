@@ -10,13 +10,14 @@
  *
  * A thin museum bar names the page, its original path and capture date. It
  * hides itself inside a frame — a frameset page shows several documents at
- * once and one bar at the top is enough.
+ * once and one bar at the top is enough. An older frameset capture has it in
+ * a frame of its own, `/site/{stem}/{ts}/bar/`.
  */
 
 import { withImgBaseEverywhere } from "@/lib/img-base";
 import { getAllSitePages, getSitePage, getSitePageVersion, olderCaptures } from "@/lib/site-pages";
 
-import { renderSitePage } from "../_render/document";
+import { renderSiteBar, renderSitePage } from "../_render/document";
 
 export const dynamicParams = false;
 
@@ -31,7 +32,10 @@ export async function generateStaticParams(): Promise<RouteParams[]> {
   const pages = await getAllSitePages();
   return pages.flatMap((page) => {
     const stem = page.stem.split("/");
-    const older = olderCaptures(page).map((v) => ({ path: [...stem, v.ts, "index.html"] }));
+    const older = olderCaptures(page).flatMap((v) => [
+      { path: [...stem, v.ts, "index.html"] },
+      ...(v.kind === "frameset" ? [{ path: [...stem, v.ts, "bar", "index.html"] }] : []),
+    ]);
     return [{ path: [...stem, "index.html"] }, ...older];
   });
 }
@@ -41,7 +45,10 @@ export async function GET(
   { params }: { params: Promise<RouteParams> },
 ): Promise<Response> {
   const { path } = await params;
-  const rest = path.slice(0, -1);
+  // `{stem}/{ts}/bar/` — a stem may itself end in `bar`, so the capture
+  // time before it decides.
+  const bar = path.at(-2) === "bar" && CAPTURE_TS.test(path.at(-3) ?? "");
+  const rest = path.slice(0, bar ? -2 : -1);
   const ts = rest.at(-1) ?? "";
   const older = CAPTURE_TS.test(ts);
   const stem = (older ? rest.slice(0, -1) : rest).join("/");
@@ -53,7 +60,9 @@ export async function GET(
   // Every `ts` a page lists has its file (02g writes both), so a gap is a
   // broken run, not a missing page.
   if (older && !version) throw new Error(`no older capture ${stem}/${ts}`);
-  return new Response(withImgBaseEverywhere(renderSitePage(page, version)), {
+  if (bar && version?.kind !== "frameset") throw new Error(`no frameset capture ${stem}/${ts}`);
+  const html = bar && version ? renderSiteBar(page, version) : renderSitePage(page, version);
+  return new Response(withImgBaseEverywhere(html), {
     headers: { "content-type": "text/html; charset=utf-8" },
   });
 }

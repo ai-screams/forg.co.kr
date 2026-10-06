@@ -1,0 +1,13 @@
+{
+  "stem": "index",
+  "ts": "20061207051515",
+  "capturedAt": "2006-12-07T05:15:15",
+  "originalPath": "/",
+  "originalUrl": "http://www.forg.co.kr:80/",
+  "baseTarget": null,
+  "kind": "frameset",
+  "mode": "no-quirks",
+  "css": "",
+  "bodyStyle": {},
+  "html": "<frameset border=\"0\" cols=\"10, 100, 680, 7, 1*\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20061207051515if_/http://www.forg.co.kr:80/forg_left_background.html\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"left\" scrolling=\"no\" src=\"/site/forg_left/20050908183139/\"><frameset rows=\"53, 80%, 24\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"header\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_top/20050205221633/\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"detail\" scrolling=\"yes\" src=\"/site/forg_main/20061127125834/\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"footer\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_bottom/20050206192411/\"></frameset><frame marginheight=\"0\" marginwidth=\"0\" name=\"right\" noresize=\"\" scrolling=\"no\" src=\"https://web.archive.org/web/20061207051515if_/http://www.forg.co.kr:80/forg_right.html\"><frame marginheight=\"0\" marginwidth=\"0\" noresize=\"\" scrolling=\"no\" src=\"/site/forg_right_background/20050206194025/\"></frameset>"
+}

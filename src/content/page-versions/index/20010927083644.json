@@ -1,0 +1,13 @@
+{
+  "stem": "index",
+  "ts": "20010927083644",
+  "capturedAt": "2001-09-27T08:36:44",
+  "originalPath": "/",
+  "originalUrl": "http://forg.co.kr:80/",
+  "baseTarget": null,
+  "kind": "frameset",
+  "mode": "no-quirks",
+  "css": "",
+  "bodyStyle": {},
+  "html": "<frameset border=\"0\" cols=\"1*, 790, 1*\" rows=\"1*\"><frame marginheight=\"14\" marginwidth=\"10\" scrolling=\"no\" src=\"https://web.archive.org/web/20010927083644if_/http://forg.co.kr:80/left.htm\"><frameset cols=\"1*\" rows=\"56, 1*\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"forg_t\" scrolling=\"no\" src=\"/site/forg_t/20010803100551/\"><frame marginheight=\"0\" marginwidth=\"0\" name=\"forg_b\" noresize=\"\" scrolling=\"yes\" src=\"/site/forg_b/20010803094010/\"></frameset><frame marginheight=\"14\" marginwidth=\"10\" scrolling=\"no\" src=\"https://web.archive.org/web/20010927083644if_/http://forg.co.kr:80/right.htm\"></frameset>"
+}
