@@ -59,6 +59,14 @@ describe("PostView", () => {
     expect(sidePadding(li)).toEqual(["px-[10px]"]);
   });
 
+  // Fails if: a recovered picture in a post's body is not named after the post.
+  it("names a post's pictures after the post", async () => {
+    const html = await render("UoBoard", "10657");
+    expect(html).toMatch(
+      /<img alt="\.\.\.오메 -0-;의 그림"[^>]*src="[^"]*\/posts\/UoBoard\/10657\//,
+    );
+  });
+
   // Fails if: the 2001 name cell cuts a name mid-word where it has a space.
   it("wraps a 2001 commenter's name at its spaces", async () => {
     const html = await render("Events", "160");

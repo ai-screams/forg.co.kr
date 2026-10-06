@@ -14,9 +14,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { JsonLd } from "@/components/json-ld";
 import { PostView } from "@/components/post-view";
 import { getBoard, isBoardId } from "@/lib/boards";
+import { isUnknownDate } from "@/lib/dates";
 import { getAdjacentPosts, getAllPostParams, getPost } from "@/lib/posts";
+import { pageMeta } from "@/lib/seo";
+import { breadcrumbJsonLd, postJsonLd } from "@/lib/structured-data";
 
 export const dynamicParams = false;
 
@@ -40,20 +44,20 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const post = await getPost(board, postId);
   if (!post) return {};
 
-  const titleSuffix = ` · ${getBoard(board).nameKr}`;
-  const description = post.bodyText.slice(0, 160).trim();
+  const { nameKr } = getBoard(board);
+  // A post of pictures alone has no text: say where it is from instead.
+  const description = post.bodyText.slice(0, 160).trim() || `${nameKr}에 올라온 글 — forg.co.kr`;
 
-  return {
-    title: `${post.title}${titleSuffix} — forg.co.kr`,
-    description: description || undefined,
-    openGraph: {
-      title: post.title,
-      description: description || undefined,
-      type: "article",
+  return pageMeta({
+    title: `${post.title} · ${nameKr} — forg.co.kr`,
+    shareTitle: post.title,
+    description,
+    path: `/${board}/${postId}/`,
+    article: {
       authors: [post.author],
-      publishedTime: post.createdAt,
+      publishedTime: isUnknownDate(post.createdAt) ? undefined : post.createdAt,
     },
-  };
+  });
 }
 
 export default async function PostPage({ params }: RouteProps) {
@@ -67,5 +71,13 @@ export default async function PostPage({ params }: RouteProps) {
   ]);
   if (!post) notFound();
 
-  return <PostView post={post} adjacent={adjacent} />;
+  const meta = getBoard(board);
+  const forum = postJsonLd(post, meta);
+  return (
+    <>
+      {forum && <JsonLd data={forum} />}
+      <JsonLd data={breadcrumbJsonLd(post, meta)} />
+      <PostView post={post} adjacent={adjacent} />
+    </>
+  );
 }

@@ -11,6 +11,7 @@
     "deploy:search": "node scripts/deploy/upload-search-to-r2.mjs",
     "deploy:img": "node scripts/deploy/upload-images-to-r2.mjs",
     "img:pull": "node scripts/deploy/pull-images-from-r2.mjs",
+    "indexnow": "node scripts/deploy/indexnow.mjs",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",

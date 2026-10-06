@@ -57,7 +57,11 @@ export function PostView({ post, adjacent }: PostViewProps) {
       {/* The originals' body cell had `padding:10px` (kritz, webbus and the 2001
           skins alike); the head, attachments and prev/next keep its edge. */}
       <div className="forg-post-body-cell p-[10px]">
-        <SanitizedHtml html={post.bodyHtml} className="post-body leading-relaxed text-forg-ink" />
+        <SanitizedHtml
+          html={post.bodyHtml}
+          className="post-body leading-relaxed text-forg-ink"
+          picture={`${post.title}의 그림`}
+        />
       </div>
 
       <PostAttachments post={post} />

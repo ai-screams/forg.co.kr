@@ -5,6 +5,7 @@
  * small documents.
  */
 
+import { absoluteUrl, OG_IMAGE, SITE_NAME } from "@/lib/seo";
 import {
   olderCaptures,
   sectionAnchor,
@@ -12,6 +13,7 @@ import {
   type SitePage,
   type SitePageVersion,
 } from "@/lib/site-pages";
+import { plainText } from "@/lib/structured-data";
 
 import {
   BAR_CSS,
@@ -133,7 +135,7 @@ function memberOnly(page: SitePage): string {
 .forg-member-only a{color:#8a6100}
 .forg-member-only ul{margin:0 0 12px;padding-left:20px}
 .forg-member-only .forg-path{color:#888;font-size:12px}</style><script>${IN_FRAME_SCRIPT}</script>`;
-  return `<!doctype html><html lang="ko">${head(page, style)}<body>
+  return `<!doctype html><html lang="ko">${head(page, `${NOINDEX}${style}`)}<body>
 ${museumBar(page)}
 <div class="forg-member-only">
 <h1>${escapeHtml(page.title)}</h1>
@@ -153,8 +155,43 @@ ${nearby(page)}
 // it (`renderSiteBar`) and the frameset below is as it was.
 const BAR_FRAME_ROWS = 28;
 
+function canonicalOf(page: SitePage): string {
+  return absoluteUrl(`/site/${page.stem}/`);
+}
+
 function olderHead(page: SitePage): string {
-  return `<link rel="canonical" href="/site/${escapeHtml(page.stem)}/"><meta name="robots" content="noindex">`;
+  return `<link rel="canonical" href="${escapeHtml(canonicalOf(page))}"><meta name="robots" content="noindex">`;
+}
+
+const NOINDEX = `<meta name="robots" content="noindex">`;
+
+/** How many characters of a page's text its description carries. */
+const DESCRIPTION_LENGTH = 150;
+
+/**
+ * The latest capture of a page, for search engines and link previews: its
+ * canonical address on forg.co.kr, the start of its text as the description,
+ * and the museum's preview picture.
+ */
+function shareHead(page: SitePage): string {
+  const url = escapeHtml(canonicalOf(page));
+  const title = escapeHtml(page.title);
+  // A page of pictures alone has no words: its title says what it is.
+  const description = escapeHtml(
+    plainText(page.html).slice(0, DESCRIPTION_LENGTH) || `${page.title} — forg.co.kr 안내 페이지`,
+  );
+  return [
+    `<link rel="canonical" href="${url}">`,
+    `<meta name="description" content="${description}">`,
+    `<meta property="og:type" content="website">`,
+    `<meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">`,
+    `<meta property="og:locale" content="ko_KR">`,
+    `<meta property="og:title" content="${title}">`,
+    `<meta property="og:description" content="${description}">`,
+    `<meta property="og:url" content="${url}">`,
+    `<meta property="og:image" content="${escapeHtml(absoluteUrl(OG_IMAGE.url))}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+  ].join("");
 }
 
 function framesetCapture(page: SitePage, version: SitePageVersion): string {
@@ -184,7 +221,7 @@ export function renderSitePage(page: SitePage, version: SitePageVersion | null =
       const to = page.redirectTo ?? "/site/";
       return `<!doctype html><html lang="ko">${head(
         page,
-        `<meta http-equiv="refresh" content="0; url=${escapeHtml(to)}">`,
+        `${NOINDEX}<meta http-equiv="refresh" content="0; url=${escapeHtml(to)}">`,
       )}<body><p>이 주소는 원래 <a href="${escapeHtml(to)}">다른 페이지</a>로 넘어가는 곳이었습니다.</p></body></html>`;
     }
     if (page.kind === "frameset") {
@@ -195,8 +232,9 @@ export function renderSitePage(page: SitePage, version: SitePageVersion | null =
   const shown: SitePage = version ? { ...page, ...version, kind: "page" } : page;
   const combo = shown.html.includes('id="myDIV"');
   // An older capture points search engines at the latest and stays out of
-  // the museum's own search, which indexes each page once.
-  const older = version ? olderHead(page) : "";
+  // the museum's own search, which indexes each page once; the latest tells
+  // them its address and what it is about.
+  const older = version ? olderHead(page) : shareHead(page);
   const style = `${older}<style>${BAR_CSS}\n${linkColours(shown.bodyStyle)}\n${shown.css}\n${combo ? `${COMBO_CSS}\n` : ""}${PLACEHOLDER_CSS}\n${NARROW_CSS}</style><script>${IN_FRAME_SCRIPT}${combo ? COMBO_HEAD_SCRIPT : ""}</script>`;
   // Search: the page body only (the bar stays out), titled and filed under
   // board "site" so results can say it is a guide page. Framesets and

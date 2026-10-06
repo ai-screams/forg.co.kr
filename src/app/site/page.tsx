@@ -9,12 +9,14 @@
 import type { Metadata } from "next";
 
 import { EraShell } from "@/components/era-shell";
+import { pageMeta } from "@/lib/seo";
 import { getAllSitePages, sectionAnchor, sectionOf } from "@/lib/site-pages";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "사이트 페이지 — forg.co.kr",
   description: "게시판 밖의 forg.co.kr — 스킬·던전·지도·여행기 같은 안내 페이지와 첫 화면 프레임",
-};
+  path: "/site/",
+});
 
 /** Section names as the 2003 left menu called them (`frame-left-2003.html`). */
 const SECTION_NAMES: Record<string, string> = {

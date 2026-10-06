@@ -12,10 +12,13 @@
 
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+import { pageMeta } from "@/lib/seo";
+
+export const metadata: Metadata = pageMeta({
   title: "저작권과 삭제 요청 — forg.co.kr",
   description: "forg.co.kr 디지털 박물관의 저작권 안내와 글 삭제 요청 방법",
-};
+  path: "/policy/",
+});
 
 const CONTACT_EMAIL = "commander@ai-scream.ai";
 

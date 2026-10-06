@@ -13,6 +13,7 @@ import { notFound } from "next/navigation";
 import { BoardListing } from "@/components/board-listing";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardIndex } from "@/lib/posts";
+import { pageMeta } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -52,10 +53,11 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const index = await getBoardIndex(board, n);
   if (!index) return {};
 
-  return {
+  return pageMeta({
     title: `${meta.nameKr} (${n}/${index.totalPages}) — forg.co.kr`,
     description: `${meta.nameKr} ${n}페이지 — ${index.totalPosts.toLocaleString("ko-KR")}개 ${index.totalWithPost === 0 ? "제목" : "게시글"} 중 ${n}페이지`,
-  };
+    path: `/${board}/page/${n}/`,
+  });
 }
 
 export default async function BoardPaginatedPage({ params }: RouteProps) {

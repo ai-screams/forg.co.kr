@@ -37,3 +37,13 @@
 
 /scripts/*
   Cache-Control: public, max-age=86400, immutable, stale-while-revalidate=604800
+
+# The museum's address is forg.co.kr. The same pages on pages.dev (the
+# production alias and every preview) stay out of search engines, so the
+# two addresses do not split the pages' standing (Cloudflare Pages docs,
+# "Prevent your pages.dev deployments showing in search results").
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
