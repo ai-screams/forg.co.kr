@@ -54,7 +54,9 @@ export function PostView({ post, adjacent }: PostViewProps) {
       </div>
       <PostHead post={post} board={board} />
 
-      <div className="forg-post-body-cell px-6 py-6">
+      {/* The originals' body cell had `padding:10px` (kritz, webbus and the 2001
+          skins alike); the head, attachments and prev/next keep its edge. */}
+      <div className="forg-post-body-cell p-[10px]">
         <SanitizedHtml html={post.bodyHtml} className="post-body leading-relaxed text-forg-ink" />
       </div>
 
@@ -82,7 +84,7 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
   const author = <PostAuthor post={post} />;
 
   return (
-    <header className="era-not-2001 border-b border-(--era-input-border) px-6 py-5">
+    <header className="era-not-2001 border-b border-(--era-input-border) px-[10px] py-5">
       <p className="text-xs text-forg-muted" data-pagefind-ignore>
         <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
           {board.nameKr}
@@ -154,7 +156,7 @@ function PostAttachments({ post }: { post: Post }) {
   return (
     <section
       aria-labelledby={`attachments-${post.postId}`}
-      className="border-t border-(--era-input-border) px-6 py-4"
+      className="border-t border-(--era-input-border) px-[10px] py-4"
     >
       <h2 id={`attachments-${post.postId}`} className="mb-2 text-sm font-bold text-forg-ink">
         첨부파일
@@ -183,9 +185,10 @@ function PostComments({ post }: { post: Post }) {
       {post.comments.length > 0 && (
         <section
           aria-labelledby={`comments-${post.postId}`}
-          className="era-not-2001 border-t border-(--era-input-border) px-6 py-5"
+          className="era-not-2001 border-t border-(--era-input-border) py-5"
         >
-          {/* The originals printed no heading over the comments. */}
+          {/* The originals printed no heading over the comments, and their
+              comment tables spanned the board (98–100%): no side inset here. */}
           <h2 id={`comments-${post.postId}`} className="sr-only">
             댓글 {post.comments.length}
           </h2>
@@ -214,7 +217,10 @@ function PostNavigation({
   next: BoardIndexEntry | null;
 }) {
   return (
-    <nav aria-label="게시글 네비게이션" className="border-t border-(--era-input-border) px-6 py-4">
+    <nav
+      aria-label="게시글 네비게이션"
+      className="border-t border-(--era-input-border) px-[10px] py-4"
+    >
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         {/* 이전글 — older, higher array index */}
         <div className="flex min-w-0 flex-col gap-0.5">

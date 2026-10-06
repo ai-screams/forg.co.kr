@@ -2,7 +2,7 @@
  * A post's head and comments as the 2001 Zeroboard 4.0 skins drew them
  * (ADR-0019), shown in the 2001 era in place of `<PostView>`'s own. The body
  * between them is the same element in every era; `src/styles/eras.css` gives it the
- * skin's padding and line height.
+ * skin's line height and font size, and its 10px padding is every era's (`post-view.tsx`).
  *
  * N+gine (`Z/Q_A/3106`, 2001-07-15):
  *
@@ -83,7 +83,8 @@ export function CommentList2001({ post }: { post: Post }) {
     >
       {post.comments.map((c, i) => (
         <div key={commentSeed(i)} className="mt-px flex gap-1 bg-zb40-comment p-[2px]">
-          <b className="w-[80px] shrink-0 break-all">
+          {/* The original's 80px name cell wrapped a name at its spaces. */}
+          <b className="w-[80px] shrink-0 wrap-anywhere">
             <CommentAuthor board={post.board} comment={c} index={i} />
           </b>
           <span className="shrink-0 text-zb40-dots">:::</span>
