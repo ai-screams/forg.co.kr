@@ -54,6 +54,12 @@ export interface BoardMeta {
    * row hot (`lib/skins.ts` `isHot`; 500 when unset).
    */
   hotHits?: number;
+  /**
+   * Open to members only: Wayback, visiting as a guest, kept nothing but
+   * Zeroboard's "사용권한이 없습니다", so its page says so
+   * (`board-placeholder.tsx`).
+   */
+  memberOnly?: true;
 }
 
 /**
@@ -607,6 +613,58 @@ const BOARDS = {
     engine: "zeroboard",
     era: "2003",
     description: "길드 아리랑의 테일러 벌크 오더 디드 교환란 (2002)",
+  },
+  // ── members-only boards: a guest got "Error !! 사용권한이 없습니다" ──
+  // The captures hold that page, an empty one (sign 2002-12), or, after
+  // daoc_free and sign were deleted, "생성되지 않은 게시판입니다". Names are
+  // the front page's menus': the right frame (`forg_right_background`,
+  // 2003 sign, 2007 MoNgBaT) and the left image map (`forg_left` 2003-12,
+  // daoc_free). Ooo's link there was a bare "." and forg had none, so their
+  // ids stand. The description gives the capture dates (listings-plan, zb-posts CDX).
+  MoNgBaT: {
+    id: "MoNgBaT",
+    nameKr: "MongBat Guild",
+    category: "community",
+    engine: "zeroboard",
+    era: "2003",
+    memberOnly: true,
+    description: "회원 전용 게시판. 2007-10 캡처",
+  },
+  Ooo: {
+    id: "Ooo",
+    nameKr: "Ooo",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    memberOnly: true,
+    description: "회원 전용 게시판. 2007-10 캡처",
+  },
+  daoc_free: {
+    id: "daoc_free",
+    nameKr: "길드자유게시판",
+    category: "community",
+    engine: "zeroboard",
+    era: "2003",
+    memberOnly: true,
+    description: "회원 전용 게시판. 2003-10 캡처, 2004-01에는 지워진 게시판",
+  },
+  forg: {
+    id: "forg",
+    nameKr: "forg",
+    category: "other",
+    engine: "zeroboard",
+    era: "2003",
+    memberOnly: true,
+    description: "회원 전용 게시판. 2002-11–2003-12 캡처",
+  },
+  sign: {
+    id: "sign",
+    nameKr: "멤버 시그니쳐란",
+    category: "community",
+    engine: "zeroboard",
+    era: "2003",
+    memberOnly: true,
+    description: "회원 전용 게시판. 2003-04 캡처, 2003-07에는 지워진 게시판",
   },
 } as const satisfies Record<string, BoardMeta>;
 
