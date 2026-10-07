@@ -98,6 +98,9 @@ class BoardIndexEntry(BaseModel):
     # Row came from a captured list page (ADR-0017 §4): the year of its
     # MM/DD date was inferred, see `02c-parse-listing.py`.
     yearApprox: bool = False
+    # The row printed no date; `createdAt` is a day it precedes (the
+    # listing's `datedByCapture`). Omitted from the JSON when false.
+    datedByCapture: bool = False
     commentCount: int = Field(ge=0)
     attachmentCount: int = Field(ge=0)
     hits: int | None = None
@@ -155,8 +158,13 @@ class BoardListingEntry(BaseModel):
     # 0 for a post; for a reply, its depth (1 when the skin did not show it).
     # Omitted from the JSON when 0.
     replyDepth: int = Field(default=0, ge=0)
+    # True when the row printed no date and `createdAt` is a day it is known
+    # to precede: a capture that linked to it, or a newer post beside it
+    # there (02c's linked rows). Omitted from the JSON when false.
+    datedByCapture: bool = False
     # Wayback ts of the list page this row came from.
     capturedAt: str
+    # 1 for a linked row, which no list page held.
     listPage: int = Field(ge=1)
     # True when the museum holds the post itself (`src/content/posts`).
     hasPost: bool = False

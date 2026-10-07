@@ -124,6 +124,11 @@ export interface BoardIndexEntry {
   createdAtApprox: boolean;
   /** Row came from a list page and the year of its MM/DD was inferred. */
   yearApprox: boolean;
+  /**
+   * Present (true) on a row no capture printed a date for: `createdAt` is a
+   * day the post precedes, that of a capture showing it.
+   */
+  datedByCapture?: boolean;
   commentCount: number;
   attachmentCount: number;
   hits: number | null;
@@ -190,6 +195,8 @@ interface BoardListingEntry {
   createdAt: string | null;
   /** The list printed MM/DD only and the year came from the capture date. */
   yearApprox: boolean;
+  /** Present (true) on a row seen outside any list: `createdAt` is a day it precedes. */
+  datedByCapture?: boolean;
   /** As printed in the list's 조회 column — real for these rows. */
   hits: number | null;
   commentCount: number;

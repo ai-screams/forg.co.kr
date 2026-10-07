@@ -4,8 +4,24 @@
   "pagesCaptured": 1,
   "capturesRead": 10,
   "totalReported": 31,
-  "generatedAt": "2026-10-04T07:46:34.373390Z",
+  "generatedAt": "2026-10-07T11:00:58.207301Z",
   "entries": [
+    {
+      "no": "1091",
+      "title": "wowow.net 판매.",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2013-05-21",
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 1,
+      "isNotice": false,
+      "datedByCapture": true,
+      "capturedAt": "20130521122534",
+      "listPage": 1,
+      "hasPost": false
+    },
     {
       "no": "1088",
       "title": "d700 팔아봐요",
@@ -138,6 +154,22 @@
       "commentCount": 0,
       "isNotice": false,
       "capturedAt": "20160331123731",
+      "listPage": 1,
+      "hasPost": false
+    },
+    {
+      "no": "1059",
+      "title": "미쯔비시 60인치 프로젝션타입 tv 팜니다",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2011-07-21",
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "datedByCapture": true,
+      "capturedAt": "20111129214844",
       "listPage": 1,
       "hasPost": false
     },

@@ -187,3 +187,25 @@ describe("2001 N+gine list", () => {
     expect(board).toContain('<span class="sr-only">답글</span>');
   });
 });
+
+describe("a row no capture dated", () => {
+  // Fails if: `datedByCapture` is not read (the row shows a bare date), or
+  // reads as the year guess or the first-comment stand-in.
+  const rows = indexRows(
+    "Q_A",
+    page([
+      indexEntry("7", { hasPost: false, datedByCapture: true }),
+      indexEntry("6", { hasPost: false, yearApprox: true }),
+    ]),
+    "kritz",
+  );
+
+  it("marks its date as one the post precedes, with its own tooltip", () => {
+    expect(rows.map((r) => r.dateApprox)).toEqual(["capture", "year"]);
+    const [dated] = tableRows(table("kritz", rows));
+    expect(dated).toContain(
+      'title="작성일이 캡처에 없어 이 글이 실린 화면이나 함께 실린 더 새 글의 날짜로 대신함"',
+    );
+    expect(dated).toContain("≤");
+  });
+});

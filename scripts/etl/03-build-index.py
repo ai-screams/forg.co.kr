@@ -192,6 +192,7 @@ def _merge_listing(
                 authorMemberNo=row.authorMemberNo,
                 createdAt=created,
                 yearApprox=row.yearApprox,
+                datedByCapture=row.datedByCapture,
                 commentCount=row.commentCount,
                 attachmentCount=0,
                 hits=row.hits,
@@ -258,12 +259,15 @@ def board_names() -> list[str]:
 
 
 def _dump_page(page: BoardIndexPage) -> str:
-    """The chunk JSON, with `board`, `isNotice` and `replyDepth` written only
-    on rows that carry them, so other rows keep their bytes."""
+    """The chunk JSON, with `board`, `isNotice`, `replyDepth` and
+    `datedByCapture` written only on rows that carry them, so other rows keep
+    their bytes."""
     data = page.model_dump(mode="json")
     for e in data["entries"]:
         if e.get("board") is None:
             e.pop("board", None)
+        if not e.get("datedByCapture"):
+            e.pop("datedByCapture", None)
         if not e.get("isNotice"):
             e.pop("isNotice", None)
         if not e.get("replyDepth"):

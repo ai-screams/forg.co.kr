@@ -4,7 +4,7 @@
   "pagesCaptured": 23,
   "capturesRead": 775,
   "totalReported": 520,
-  "generatedAt": "2026-10-05T10:42:15.624823Z",
+  "generatedAt": "2026-10-07T11:44:16.088832Z",
   "entries": [
     {
       "no": "590",
@@ -2090,6 +2090,21 @@
       "capturedAt": "20031228173338",
       "listPage": 2,
       "hasPost": true
+    },
+    {
+      "no": "423",
+      "title": "치킨 파이터......!!!!!(수..",
+      "categoryLabel": "발해",
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2003-02-05",
+      "yearApprox": true,
+      "hits": null,
+      "commentCount": 2,
+      "isNotice": false,
+      "capturedAt": "20030207152109",
+      "listPage": 1,
+      "hasPost": false
     },
     {
       "no": "421",
@@ -7565,6 +7580,21 @@
       "capturedAt": "20031109091528",
       "listPage": 20,
       "hasPost": true
+    },
+    {
+      "no": "26",
+      "title": "Decisions Over Dinner",
+      "categoryLabel": "BNN",
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2006-04-28",
+      "yearApprox": true,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20061127123428",
+      "listPage": 1,
+      "hasPost": false
     },
     {
       "no": "25",
