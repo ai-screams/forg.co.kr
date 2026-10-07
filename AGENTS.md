@@ -22,7 +22,8 @@ A read-only digital museum of forg.co.kr (1998–2016): Wayback captures turned 
 | `package.json`                                            | pnpm scripts (build, quality tools, R2 deploy); `postbuild` runs Pagefind and the `scripts/postbuild/` steps |
 | `next.config.ts`                                          | `output: "export"`, Turbopack root, Pagefind base default for Cloudflare Pages                               |
 | `eslint.config.mjs`, `knip.json`, `commitlint.config.mjs` | Lint, unused-code and commit-message rules                                                                   |
-| `LICENSE`                                                 | MIT for code; original authors keep the content                                                              |
+| `LICENSE`                                                 | MIT, for the code and docs                                                                                   |
+| `CONTENT-NOTICE.md`                                       | The content: original authors keep their rights; fair use, takedowns, game IP                                |
 
 ## Subdirectories
 
