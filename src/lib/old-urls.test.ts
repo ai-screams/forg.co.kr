@@ -8,6 +8,8 @@ import { forgPath, oldCandidates, stemOf } from "@/lib/old-urls";
 import { onRequest } from "../../functions/[[path]]";
 import {
   folderOf,
+  imageHostProblem,
+  pictureAddress,
   pictureSource,
   planOldAddresses,
   sourcesOf,
@@ -106,10 +108,21 @@ describe("the old-address Function", () => {
       JSON.stringify({ "/_zb/data/a.jpg": "https://img.example/posts/UoBoard/1/a.jpg" }),
     ],
   ]);
+  // As Pages does: a missing `/x/index/` is a 308 to `/x/`, which a followed
+  // fetch reports as the page it lands on.
+  const moved = new Set(["/site/skill/index/"]);
   const env = {
     ASSETS: {
       fetch: (input: Request | URL) => {
+        const req = input instanceof Request ? input : null;
         const p = new URL(input instanceof Request ? input.url : input).pathname;
+        if (moved.has(p)) {
+          return Promise.resolve(
+            req?.redirect === "manual"
+              ? new Response(null, { status: 308, headers: { location: "/site/skill/" } })
+              : new Response("page", { status: 200 }),
+          );
+        }
         const body = files.get(p);
         return Promise.resolve(new Response(body ?? "missing", { status: body ? 200 : 404 }));
       },
@@ -139,6 +152,12 @@ describe("the old-address Function", () => {
     expect(await ask("/skill/attack.htm")).toEqual([301, "https://forg.co.kr/site/skill/attack/"]);
     expect(await ask("/skill/nothing.htm")).toEqual([404, null]);
   });
+
+  // Fails if: the Function counts a page Pages reaches only by redirecting as
+  // the museum having it, so a folder forg never had lands on another page.
+  it("takes only a page the museum serves as it is", async () => {
+    expect(await ask("/skill/")).toEqual([404, null]);
+  });
 });
 
 describe("the build's plan", () => {
@@ -163,10 +182,19 @@ describe("the build's plan", () => {
   const plan = planOldAddresses({ pages, pictures, museum, isServed: (p: string) => p === "/" });
 
   // Fails if: a folder a museum board uses (or a museum page) would run the
-  // Function, an old folder or a board script's would not, or Pages' limits
+  // Function, an old folder, a board script's or one that holds only pages
+  // with a query (`/drawing/picture.cgi?sort=0`) would not, or Pages' limits
   // are passed.
   it("routes the old folders no museum path uses", () => {
-    for (const r of ["/_zb/*", "/zboard/*", "/zb/*", "/bbs/*", "/skill/*", "/~forg/*"]) {
+    for (const r of [
+      "/_zb/*",
+      "/zboard/*",
+      "/zb/*",
+      "/bbs/*",
+      "/skill/*",
+      "/drawing/*",
+      "/~forg/*",
+    ]) {
       expect(plan.routes).toContain(r);
     }
     for (const name of museum) expect(plan.routes).not.toContain(`/${name}/*`);
@@ -219,6 +247,35 @@ describe("reading old addresses", () => {
     for (const raw of ["/_zb/data/%ba%b9%b1%c7.jpg", "/_zb/data/%EB%B3%B5%EA%B6%8C.jpg"]) {
       expect(forgPath(raw)).toBe(pictureSource(`http://forg.co.kr${raw}`));
     }
+  });
+
+  // Fails if: a chrome picture the probes recorded only by its path (on
+  // forg.co.kr, or as a mirror address) gets no old address, or a recorded
+  // `originalUrl` stops coming first.
+  it("reads a picture recorded only by its path", () => {
+    expect(pictureSource(pictureAddress({ originalPath: "/images/main_logo_forg.gif" }))).toBe(
+      "/images/main_logo_forg.gif",
+    );
+    expect(
+      pictureSource(
+        pictureAddress({ originalPath: "http://hosting27.interpia98.net/~forg/skin/a.gif" }),
+      ),
+    ).toBe("/skin/a.gif");
+    expect(pictureAddress({ originalUrl: "http://forg.co.kr/a.gif", originalPath: "/b.gif" })).toBe(
+      "http://forg.co.kr/a.gif",
+    );
+  });
+});
+
+describe("the production build", () => {
+  // Fails if: a production build without the image host goes through (its
+  // picture links and redirects would point at files not deployed), or a
+  // preview or local build is stopped for it.
+  it("stops without the image host", () => {
+    expect(imageHostProblem({ imgBase: "", branch: "main" })).toMatch(/NEXT_PUBLIC_IMG_BASE/);
+    expect(imageHostProblem({ imgBase: "https://img.forg.co.kr", branch: "main" })).toBeNull();
+    expect(imageHostProblem({ imgBase: "", branch: "fix/x" })).toBeNull();
+    expect(imageHostProblem({ imgBase: "", branch: undefined })).toBeNull();
   });
 });
 

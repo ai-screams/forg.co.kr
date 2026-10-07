@@ -82,6 +82,35 @@ export function pictureSource(originalUrl) {
   return null;
 }
 
+/**
+ * Where forg served a recovered picture: the manifest's `originalUrl`, or its
+ * `originalPath` — the chrome probes (`recover-chrome.py`, `era-2001-chrome.py`)
+ * record only that, server-relative on forg.co.kr or a full mirror address.
+ */
+export function pictureAddress(entry) {
+  if (entry.originalUrl) return entry.originalUrl;
+  const path = entry.originalPath ?? "";
+  return path.startsWith("/") ? `http://forg.co.kr${path}` : path;
+}
+
+/** A guide page's path on forg's own paths with its query dropped, or null for another host's. */
+function pathOf(originalPath) {
+  const bare = originalPath.split("?")[0] ?? "";
+  const mirror = /^[a-z0-9.-]+(\/~forg\/.*)$/i.exec(bare);
+  return mirror?.[1] ? unmirror(mirror[1]) : bare.startsWith("/") ? bare : null;
+}
+
+/**
+ * Stops a production build without the image host: every post picture and
+ * every old picture's redirect would point at `/img/posts/…`, which is not
+ * deployed (the bytes are on R2), and the 301s would be cached.
+ */
+export function imageHostProblem({ imgBase, branch }) {
+  return !imgBase && branch === "main"
+    ? "NEXT_PUBLIC_IMG_BASE is empty on the production branch: post pictures and old picture redirects would point at /img/posts/, which is not deployed"
+    : null;
+}
+
 /** A `_redirects` path: spaces and non-ASCII percent-encoded, the rest as it was. */
 function encodePath(path) {
   return encodeURI(path);
@@ -94,6 +123,11 @@ function encodePath(path) {
 export function planOldAddresses({ pages, pictures, museum, isServed }) {
   const folders = new Set(SCRIPT_FOLDERS);
   for (const p of pages) for (const s of sourcesOf(p.originalPath)) folders.add(folderOf(s));
+  // A page with a query has no static line, so only the Function reaches it.
+  for (const p of pages) {
+    const path = p.originalPath.includes("?") ? pathOf(p.originalPath) : null;
+    if (path) folders.add(folderOf(path));
+  }
   for (const p of pictures) folders.add(folderOf(p.source));
   folders.delete("");
   const routed = [...folders].filter((f) => !museum.has(f)).sort();
@@ -136,7 +170,7 @@ function readPictures(imgBase) {
     for (const m of manifests) {
       const folder = relative(root, dirname(join(root, m)));
       for (const entry of JSON.parse(readFileSync(join(root, m), "utf8"))) {
-        const source = pictureSource(entry.originalUrl ?? "");
+        const source = pictureSource(pictureAddress(entry));
         if (!source) continue;
         const file = encodeURI([folder, entry.filename].filter(Boolean).join("/"));
         const target =
@@ -161,6 +195,11 @@ function served(out, path) {
 
 if (import.meta.main) {
   const imgBase = (process.env.NEXT_PUBLIC_IMG_BASE ?? "").trim().replace(/\/+$/, "");
+  const problem = imageHostProblem({ imgBase, branch: process.env.CF_PAGES_BRANCH });
+  if (problem) {
+    console.error(`[postbuild] old-addresses: ${problem}`);
+    process.exit(1);
+  }
   const plan = planOldAddresses({
     pages: readPages(PAGES),
     pictures: readPictures(imgBase),
