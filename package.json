@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/postbuild/strip-react-runtime.mjs && pagefind --site out --force-language ko && node scripts/postbuild/strip-rsc-payloads.mjs && node scripts/postbuild/drop-image-sidecars.mjs && node scripts/postbuild/separate-search-bundle.mjs",
+    "postbuild": "node scripts/postbuild/strip-react-runtime.mjs && pagefind --site out --force-language ko && node scripts/postbuild/strip-rsc-payloads.mjs && node scripts/postbuild/drop-image-sidecars.mjs && node scripts/postbuild/separate-search-bundle.mjs && node scripts/postbuild/old-page-redirects.mjs",
     "deploy:search": "node scripts/deploy/upload-search-to-r2.mjs",
     "deploy:img": "node scripts/deploy/upload-images-to-r2.mjs",
     "img:pull": "node scripts/deploy/pull-images-from-r2.mjs",

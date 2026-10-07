@@ -1,7 +1,12 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
-  "entry": ["src/app/**/page.tsx", "src/app/**/layout.tsx", "scripts/**/*.mjs"],
-  "project": ["src/**/*.{ts,tsx}", "scripts/**/*.mjs"],
+  "entry": [
+    "src/app/**/page.tsx",
+    "src/app/**/layout.tsx",
+    "scripts/**/*.mjs",
+    "functions/**/*.ts"
+  ],
+  "project": ["src/**/*.{ts,tsx}", "scripts/**/*.mjs", "functions/**/*.ts"],
   "ignoreDependencies": [
     "tailwindcss",
     "postcss",

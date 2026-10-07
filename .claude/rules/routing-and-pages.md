@@ -43,3 +43,11 @@ Result labels come from the `boardKr` meta on post pages. When a change adds or 
 - `sitemap.xml` comes from `src/app/sitemap.ts` (`sitemapPaths` in `src/lib/sitemap.ts`, about 16,200 addresses, no `lastmod`). A new route worth finding goes there.
 - JSON-LD: `WebSite` on the home page, `DiscussionForumPosting` + `BreadcrumbList` on posts (`src/lib/structured-data.ts`, `<JsonLd>`); a post with no date gets the breadcrumb only. The postbuild keeps these inline scripts.
 - Kept out of search engines: `/search/` (`search/layout.tsx`, noindex, follow), the 404 (Next adds noindex), a board Wayback kept nothing of (`pageMeta` `noindex`), a `/site/` page's older captures, its framesets, redirects and member-only notices (`document.ts`), and preview deployments (`*.*.pages.dev`, `public/_headers`). The production alias `forg-archive.pages.dev` is not marked: its canonicals name forg.co.kr, and a dashboard redirect sends it there. A `/site/` page's latest capture gets its canonical, a description led by its title (pages of a section open with the same menu) and the preview tags. JSON-LD dates carry `+09:00` (`kst`): forg's clock was Korean time.
+
+## Old forg.co.kr addresses
+
+forg.co.kr is the old site's own domain, so its old links still arrive (ADR-0022).
+
+- Board posts: `functions/[[path]].ts`, the one Pages Function, run only for `/_zb/*`, `/zboard/*`, `/zb/*`, `/~forg/*`, `/bbs/*` (`public/_routes.json`). `zboard.php`/`view.php?id=X&no=N` and `/bbs/board.php?bo_table=X&wr_id=N` go to `/X/N/` (every forg.co.kr post kept its board id and number), else `/X/`, with 301; else the 404 page. Each target is checked as a static file (`env.ASSETS`), so there is no table to keep in step.
+- Guide pages: `out/_redirects`, one static 301 per old address to `/site/{stem}/` (`scripts/postbuild/old-page-redirects.mjs`; addresses with a query are left out).
+- A new route whose path starts with one of those folders would run the Function: don't add one.

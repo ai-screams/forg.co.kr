@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/_zb/*", "/zboard/*", "/zb/*", "/~forg/*", "/bbs/*"],
+  "exclude": []
+}

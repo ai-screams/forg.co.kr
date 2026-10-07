@@ -26,14 +26,15 @@ A read-only digital museum of forg.co.kr (1998–2016): Wayback captures turned 
 
 ## Subdirectories
 
-| Directory            | Purpose                                                               |
-| -------------------- | --------------------------------------------------------------------- |
-| `src/`               | The Next.js site and its generated content (see `src/AGENTS.md`)      |
-| `scripts/`           | ETL, deploy, post-build and dev scripts (see `scripts/AGENTS.md`)     |
-| `public/`            | Static files served as they are (see `.claude/rules/repo-hygiene.md`) |
-| `.claude/rules/`     | Topic rules loaded by Claude Code                                     |
-| `.github/workflows/` | CI (`ci.yml`)                                                         |
-| `.husky/`            | pre-commit, commit-msg and pre-push hooks                             |
+| Directory            | Purpose                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `src/`               | The Next.js site and its generated content (see `src/AGENTS.md`)                                                                     |
+| `scripts/`           | ETL, deploy, post-build and dev scripts (see `scripts/AGENTS.md`)                                                                    |
+| `public/`            | Static files served as they are (see `.claude/rules/repo-hygiene.md`)                                                                |
+| `functions/`         | The one Cloudflare Pages Function: old forg.co.kr board addresses to the museum's (`public/_routes.json` limits it to those folders) |
+| `.claude/rules/`     | Topic rules loaded by Claude Code                                                                                                    |
+| `.github/workflows/` | CI (`ci.yml`)                                                                                                                        |
+| `.husky/`            | pre-commit, commit-msg and pre-push hooks                                                                                            |
 
 Build output (`out/`, `dist-search/`) and `.docs/` are not tracked.
 
