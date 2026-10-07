@@ -22,6 +22,8 @@
 .aider*
 .agents/
 skills-lock.json
+# `wrangler pages dev out` (trying the Pages Function locally)
+.wrangler/
 
 # Local download artifacts (large, rebuildable from Wayback CDX)
 archive/

@@ -43,3 +43,11 @@ Result labels come from the `boardKr` meta on post pages. When a change adds or 
 - `sitemap.xml` comes from `src/app/sitemap.ts` (`sitemapPaths` in `src/lib/sitemap.ts`, about 16,200 addresses, no `lastmod`). A new route worth finding goes there.
 - JSON-LD: `WebSite` on the home page, `DiscussionForumPosting` + `BreadcrumbList` on posts (`src/lib/structured-data.ts`, `<JsonLd>`); a post with no date gets the breadcrumb only. The postbuild keeps these inline scripts.
 - Kept out of search engines: `/search/` (`search/layout.tsx`, noindex, follow), the 404 (Next adds noindex), a board Wayback kept nothing of (`pageMeta` `noindex`), a `/site/` page's older captures, its framesets, redirects and member-only notices (`document.ts`), and preview deployments (`*.*.pages.dev`, `public/_headers`). The production alias `forg-archive.pages.dev` is not marked: its canonicals name forg.co.kr, and a dashboard redirect sends it there. A `/site/` page's latest capture gets its canonical, a description led by its title (pages of a section open with the same menu) and the preview tags. JSON-LD dates carry `+09:00` (`kst`): forg's clock was Korean time.
+
+## Old forg.co.kr addresses
+
+forg.co.kr is the old site's own domain, so its old links still arrive (ADR-0022).
+
+- Board posts: `functions/[[path]].ts`, the one Pages Function, runs only for the nine old board-script addresses in `public/_routes.json` (`/_zb/`, `/zboard/`, `/zb/`, `/~forg/zboard/` × `zboard.php`/`view.php`, and `/bbs/board.php`). `?id=X&no=N` and `?bo_table=X&wr_id=N` go to `/X/N/` with 301 (every forg.co.kr post kept its board id and number), else to `/X/` with 302 (the post may be collected later); a list address `?id=X` goes to `/X/` with 301; else the 404 page. Each target is checked as a static file (`env.ASSETS`), so there is no table to keep in step.
+- Guide pages: `out/_redirects`, a static 301 per old address to `/site/{stem}/` (`scripts/postbuild/old-page-redirects.mjs`, 872 lines on 2026-10-07): pages only (`.htm`, `.html`, folders, with and without the slash), a `hosting27…/~forg/` mirror page at `/~forg/X` and `/X`, no address with a query.
+- Pages applies no `_redirects` line to a path the Function serves; the postbuild stops on one. Keep `_routes.json` to exact script paths: a folder wildcard there swallowed the guide pages under it.
