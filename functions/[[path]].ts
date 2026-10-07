@@ -1,31 +1,50 @@
 /**
- * Cloudflare Pages Function: old forg.co.kr board addresses, sent on to the
- * museum's pages (ADR-0022). `public/_routes.json` hands it only the nine old
- * board-script addresses; every other request is a static file and never
- * runs this.
+ * Cloudflare Pages Function: old forg.co.kr addresses, sent on to the
+ * museum's pages (ADR-0022). The build's `_routes.json`
+ * (`scripts/postbuild/old-addresses.mjs`) hands it only the old site's
+ * folders that no museum path uses; the museum's own pages never run this.
  *
- * The post if the museum has it (301), else its board (302: the post may be
- * collected later), each checked as a static file (`src/lib/old-urls.ts`);
- * with neither, the museum's 404 page.
+ * - An old picture: the build's table `/_old-images.json` names its copy
+ *   (on img.forg.co.kr, or the museum's own chrome and emoticons), 301.
+ * - Anything else: the first of `oldCandidates` (`src/lib/old-urls.ts`)
+ *   the museum has as a static file — 301 where the address now lives, 302
+ *   where a page stands in.
+ * - Nothing: the request as a static file (the museum's 404 page).
  */
 
-import { oldPostCandidates } from "../src/lib/old-urls";
+import { forgPath, oldCandidates } from "../src/lib/old-urls";
 
 interface Context {
   request: Request;
-  env: { ASSETS: { fetch: (input: URL) => Promise<Response> } };
+  env: { ASSETS: { fetch: (input: Request | URL) => Promise<Response> } };
 }
 
-/** A path no page has: the static handler answers it with 404.html and 404. */
-const MISSING = "/_old-address-not-found/";
+const IMAGES = "/_old-images.json";
+
+/** The picture table, read once per instance; a failed read is tried again next time. */
+let images: Promise<Record<string, string>> | null = null;
+
+function imageTable(env: Context["env"], origin: string): Promise<Record<string, string>> {
+  images ??= env.ASSETS.fetch(new URL(IMAGES, origin)).then(async (r) =>
+    r.ok
+      ? ((await r.json()) as Record<string, string>)
+      : Promise.reject(new Error(String(r.status))),
+  );
+  return images.catch(() => {
+    images = null;
+    return {};
+  });
+}
 
 export async function onRequest({ request, env }: Context): Promise<Response> {
   const url = new URL(request.url);
-  for (const { path, permanent } of oldPostCandidates(url)) {
+  const picture = (await imageTable(env, url.origin))[forgPath(url.pathname)];
+  if (picture) return Response.redirect(new URL(picture, url.origin).href, 301);
+  for (const { path, permanent } of oldCandidates(url)) {
     const target = new URL(path, url.origin);
     if ((await env.ASSETS.fetch(target)).ok) {
       return Response.redirect(target.href, permanent ? 301 : 302);
     }
   }
-  return env.ASSETS.fetch(new URL(MISSING, url.origin));
+  return env.ASSETS.fetch(request);
 }
