@@ -43,11 +43,11 @@ describe("the copyright and takedown page", () => {
     );
   });
 
-  // Fails if: the page, or the takedown part of LICENSE or README, promises a
-  // response time (decided against, 2026-10-06).
-  it("promises no response time, here or in LICENSE and README", () => {
+  // Fails if: the page, or the takedown part of CONTENT-NOTICE or README,
+  // promises a response time (decided against, 2026-10-06).
+  it("promises no response time, here or in CONTENT-NOTICE and README", () => {
     expect(pageText()).not.toMatch(DEADLINE);
-    for (const file of ["LICENSE", "README.md"]) {
+    for (const file of ["CONTENT-NOTICE.md", "README.md"]) {
       const sections = takedownSections(file);
       expect(sections).toContain("commander@ai-scream.ai");
       expect(sections).not.toMatch(DEADLINE);
