@@ -50,4 +50,5 @@ pnpm knip              # unused exports/files/deps
 pnpm size              # size-limit (200KB JS / 50KB CSS budgets)
 pnpm deploy:img        # R2 image upload (--dry-run available)
 pnpm deploy:search     # R2 search index upload — --dry-run only counts
+pnpm indexnow          # IndexNow (Bing, Naver) for every sitemap URL — --dry-run only counts
 ```

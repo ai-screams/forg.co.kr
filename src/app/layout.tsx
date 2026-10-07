@@ -6,12 +6,19 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { DEFAULT_ERA, ERA_HINT_KEY, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
+import { OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 import "./globals.css";
 
+// The defaults a page without its own keeps. No canonical here: a page that
+// set none would inherit the home page's (`pageMeta` in src/lib/seo.ts).
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "forg.co.kr — 디지털 박물관",
-  description: "한국 울티마 온라인 최대 팬사이트 forg.co.kr (1998–2016) 재현 아카이브",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: { siteName: SITE_NAME, locale: "ko_KR", type: "website", images: [OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE.url] },
 };
 
 /**

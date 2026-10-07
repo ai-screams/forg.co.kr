@@ -37,3 +37,12 @@
 
 /scripts/*
   Cache-Control: public, max-age=86400, immutable, stale-while-revalidate=604800
+
+# The museum's address is forg.co.kr. A preview deployment stays out of
+# search engines (Cloudflare Pages docs, "Prevent your pages.dev deployments
+# showing in search results"). The production alias forg-archive.pages.dev
+# is not marked: its pages name forg.co.kr as canonical, which gathers their
+# standing there, and noindex beside a canonical sends search engines two
+# signals. A redirect of the alias to forg.co.kr is set in the dashboard.
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

@@ -19,6 +19,7 @@ import { BoardListing } from "@/components/board-listing";
 import { BoardPlaceholder } from "@/components/board-placeholder";
 import { getBoard, isBoardId, listBoards } from "@/lib/boards";
 import { getBoardView } from "@/lib/posts";
+import { pageMeta } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -44,18 +45,22 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   switch (view.kind) {
     case "index": {
       const count = view.page.totalPosts.toLocaleString("ko-KR");
-      return {
+      return pageMeta({
         title: `${nameKr} — forg.co.kr`,
         description: view.listing
-          ? `${nameKr} 게시판 — 목록에 남은 ${count}개 제목이 보존되어 있습니다.`
-          : `${nameKr} 게시판 — ${count}개 게시글이 보존되어 있습니다.`,
-      };
+          ? `${nameKr} 게시판 — 한국 울티마 온라인 팬사이트 forg.co.kr의 목록에 남은 ${count}개 제목이 보존되어 있습니다.`
+          : `${nameKr} 게시판 — 한국 울티마 온라인 팬사이트 forg.co.kr의 게시글 ${count}개가 보존되어 있습니다.`,
+        path: `/${board}/`,
+      });
     }
     case "placeholder":
-      return {
+      return pageMeta({
         title: `${nameKr} — forg.co.kr`,
         description: `${nameKr} 게시판 — Wayback Machine에 읽을 수 있는 글이나 목록이 남지 않았습니다.`,
-      };
+        path: `/${board}/`,
+        // Nothing here to find: kept out of search engines and the sitemap.
+        noindex: true,
+      });
   }
 }
 

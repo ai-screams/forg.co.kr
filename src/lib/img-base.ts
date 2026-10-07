@@ -11,10 +11,19 @@
  * Inlined at build time like `NEXT_PUBLIC_PAGEFIND_BASE` (bracket access
  * is substituted too — verified 2026-09-17).
  */
+import { absoluteUrl } from "@/lib/seo";
+
 const IMG_BASE_RAW = process.env["NEXT_PUBLIC_IMG_BASE"] ?? "";
-const IMG_BASE = IMG_BASE_RAW.replace(/\/+$/, "");
+// Trimmed: the production value once carried a leading space, which browsers
+// forgave in an `src` but which made the structured data's addresses invalid.
+const IMG_BASE = IMG_BASE_RAW.trim().replace(/\/+$/, "");
 
 const POSTS_SRC = /(<img\b[^>]*?\ssrc=")\/img\/posts\//g;
+
+/** A recovered picture's full address, for structured data. */
+export function postImageUrl(src: string): string {
+  return IMG_BASE ? src.replace(/^\/img\/posts\//, `${IMG_BASE}/posts/`) : absoluteUrl(src);
+}
 
 /** Rewrite `/img/posts/…` image sources in sanitised body HTML to the CDN. */
 export function withImgBase(html: string): string {

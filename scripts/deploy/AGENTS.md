@@ -13,12 +13,13 @@ Pages file-count constraint are documented in `.claude/rules/repo-hygiene.md`
 
 ## Key Files
 
-| File                      | Description                                                                                                                                                                                                                         |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `r2-client.mjs`           | Shared R2 client — SigV4 signing via `aws4fetch`, made on the first request; `putObject`, `getObject`, `listKeys` (all through a retry that covers network errors aws4fetch's own 5xx/429 retry doesn't), `runPool`, `walk`, `mime` |
-| `upload-images-to-r2.mjs` | Uploads `public/img/posts/` to R2 bucket `forg-img` under key prefix `posts/`, skipping files whose MD5 matches the existing ETag. Wired as `pnpm deploy:img`                                                                       |
-| `pull-images-from-r2.mjs` | Reverse of the above — downloads the `posts/` keys missing from `public/img/posts/` for a clone that needs the bytes locally; never overwrites a local file (one of another size is listed). Wired as `pnpm img:pull`               |
-| `upload-search-to-r2.mjs` | Uploads `dist-search/` (the separated Pagefind bundle) to R2 bucket `forg-search`. Wired as `pnpm deploy:search`                                                                                                                    |
+| File                      | Description                                                                                                                                                                                                                           |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `r2-client.mjs`           | Shared R2 client — SigV4 signing via `aws4fetch`, made on the first request; `putObject`, `getObject`, `listKeys` (all through a retry that covers network errors aws4fetch's own 5xx/429 retry doesn't), `runPool`, `walk`, `mime`   |
+| `upload-images-to-r2.mjs` | Uploads `public/img/posts/` to R2 bucket `forg-img` under key prefix `posts/`, skipping files whose MD5 matches the existing ETag. Wired as `pnpm deploy:img`                                                                         |
+| `pull-images-from-r2.mjs` | Reverse of the above — downloads the `posts/` keys missing from `public/img/posts/` for a clone that needs the bytes locally; never overwrites a local file (one of another size is listed). Wired as `pnpm img:pull`                 |
+| `indexnow.mjs`            | Submits every `out/sitemap.xml` address to IndexNow (Bing, Naver, Yandex…) after checking `https://forg.co.kr/{key}.txt` serves the key in `public/`. `--dry-run` counts. Wired as `pnpm indexnow`; run after a deploy, with approval |
+| `upload-search-to-r2.mjs` | Uploads `dist-search/` (the separated Pagefind bundle) to R2 bucket `forg-search`. Wired as `pnpm deploy:search`                                                                                                                      |
 
 ## For AI Agents
 
