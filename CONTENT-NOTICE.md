@@ -19,7 +19,7 @@ MIT License는 다음에만 적용됩니다.
 - `functions/` — Cloudflare Pages Function
 - `.github/` — CI 워크플로
 - 최상위 설정 파일 (`next.config.ts`, `tsconfig.json`, `package.json`, `pnpm-lock.yaml`, `eslint.config.mjs`, `commitlint.config.mjs` 등)
-- 문서: `README.md`, `CLAUDE.md`, `AGENTS.md`, `LICENSE`, 이 파일
+- 문서: `README.md`, `DEVELOPMENT.md`, `CLAUDE.md`, `AGENTS.md`, `LICENSE`, 이 파일
 
 ### MIT License에서 명시적으로 제외하는 것
 
@@ -53,7 +53,7 @@ MIT License는 다음에만 적용됩니다.
 
 - **한국 저작권법 제35조의5** — 저작물의 공정한 이용
 - **17 U.S.C. §107** (미국 fair use) — 호스팅 위치에 따라 함께 적용될 수 있음
-- Internet Archive의 보존 활동과 관련 판례 (Hachette v. IA 2nd Cir. 2024 등)
+- Internet Archive의 웹 보존 활동
 
 ### 삭제 요청 / Takedown
 
