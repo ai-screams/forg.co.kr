@@ -48,6 +48,6 @@ Result labels come from the `boardKr` meta on post pages. When a change adds or 
 
 forg.co.kr is the old site's own domain, so its old links still arrive (ADR-0022).
 
-- Board posts: `functions/[[path]].ts`, the one Pages Function, run only for `/_zb/*`, `/zboard/*`, `/zb/*`, `/~forg/*`, `/bbs/*` (`public/_routes.json`). `zboard.php`/`view.php?id=X&no=N` and `/bbs/board.php?bo_table=X&wr_id=N` go to `/X/N/` (every forg.co.kr post kept its board id and number), else `/X/`, with 301; else the 404 page. Each target is checked as a static file (`env.ASSETS`), so there is no table to keep in step.
-- Guide pages: `out/_redirects`, one static 301 per old address to `/site/{stem}/` (`scripts/postbuild/old-page-redirects.mjs`; addresses with a query are left out).
-- A new route whose path starts with one of those folders would run the Function: don't add one.
+- Board posts: `functions/[[path]].ts`, the one Pages Function, runs only for the nine old board-script addresses in `public/_routes.json` (`/_zb/`, `/zboard/`, `/zb/`, `/~forg/zboard/` × `zboard.php`/`view.php`, and `/bbs/board.php`). `?id=X&no=N` and `?bo_table=X&wr_id=N` go to `/X/N/` with 301 (every forg.co.kr post kept its board id and number), else to `/X/` with 302 (the post may be collected later); a list address `?id=X` goes to `/X/` with 301; else the 404 page. Each target is checked as a static file (`env.ASSETS`), so there is no table to keep in step.
+- Guide pages: `out/_redirects`, a static 301 per old address to `/site/{stem}/` (`scripts/postbuild/old-page-redirects.mjs`, 872 lines on 2026-10-07): pages only (`.htm`, `.html`, folders, with and without the slash), a `hosting27…/~forg/` mirror page at `/~forg/X` and `/X`, no address with a query.
+- Pages applies no `_redirects` line to a path the Function serves; the postbuild stops on one. Keep `_routes.json` to exact script paths: a folder wildcard there swallowed the guide pages under it.

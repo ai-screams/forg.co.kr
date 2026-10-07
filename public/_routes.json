@@ -1,5 +1,15 @@
 {
   "version": 1,
-  "include": ["/_zb/*", "/zboard/*", "/zb/*", "/~forg/*", "/bbs/*"],
+  "include": [
+    "/_zb/zboard.php",
+    "/_zb/view.php",
+    "/zboard/zboard.php",
+    "/zboard/view.php",
+    "/zb/zboard.php",
+    "/zb/view.php",
+    "/~forg/zboard/zboard.php",
+    "/~forg/zboard/view.php",
+    "/bbs/board.php"
+  ],
   "exclude": []
 }
