@@ -42,7 +42,10 @@ export async function onRequest({ request, env }: Context): Promise<Response> {
   if (picture) return Response.redirect(new URL(picture, url.origin).href, 301);
   for (const { path, permanent } of oldCandidates(url)) {
     const target = new URL(path, url.origin);
-    if ((await env.ASSETS.fetch(target)).ok) {
+    // Manual: Pages answers a missing `/x/index/` with a 308 to `/x/`, which a
+    // followed fetch reports as 200, so a made-up folder would land on a page.
+    const res = await env.ASSETS.fetch(new Request(target, { redirect: "manual" }));
+    if (res.ok) {
       return Response.redirect(target.href, permanent ? 301 : 302);
     }
   }
