@@ -97,9 +97,11 @@ export function indexRows(board: BoardId, page: BoardIndexPage, skin: ListSkin):
     const href = entry.hasPost ? `/${postBoard}/${entry.postId}` : null;
     const dateApprox: DateApprox | null = entry.createdAtApprox
       ? "firstComment"
-      : entry.yearApprox
-        ? "year"
-        : null;
+      : entry.datedByCapture
+        ? "capture"
+        : entry.yearApprox
+          ? "year"
+          : null;
     return {
       key: `${postBoard}/${entry.postId}`,
       title: entry.title,

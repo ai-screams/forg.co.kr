@@ -1,11 +1,27 @@
 {
   "board": "UoBoard",
   "page": 24,
-  "totalPages": 253,
-  "totalPosts": 12618,
+  "totalPages": 254,
+  "totalPosts": 12689,
   "totalWithPost": 4255,
-  "generatedAt": "2026-10-05T15:48:06Z",
+  "generatedAt": "2026-10-07T11:04:02Z",
   "entries": [
+    {
+      "postId": "51646",
+      "title": "운동되는컨트롤러",
+      "categoryLabel": null,
+      "author": "secrit",
+      "authorMemberNo": "24897",
+      "createdAt": "2003-12-25T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 10,
+      "attachmentCount": 0,
+      "hits": 78,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
     {
       "postId": "51645",
       "title": "링크가 깨져서..",
@@ -786,22 +802,6 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 24,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "50044",
-      "title": "Good Morning -0-",
-      "categoryLabel": null,
-      "author": "secrit",
-      "authorMemberNo": "20426",
-      "createdAt": "2003-12-16T04:56:16",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": 32,
       "recommend": null,
       "era": "2003",
       "hasPost": true

@@ -4,7 +4,7 @@
   "pagesCaptured": 45,
   "capturesRead": 1247,
   "totalReported": 98,
-  "generatedAt": "2026-10-06T04:27:44.006139Z",
+  "generatedAt": "2026-10-07T11:45:01.726926Z",
   "entries": [
     {
       "no": "1083",
@@ -1655,6 +1655,21 @@
       "capturedAt": "20031106143029",
       "listPage": 1,
       "hasPost": true
+    },
+    {
+      "no": "939",
+      "title": "Publish 20 Rescheduled/Vendor Issue",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2003-10-03",
+      "yearApprox": true,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "capturedAt": "20031003220121",
+      "listPage": 1,
+      "hasPost": false
     },
     {
       "no": "938",

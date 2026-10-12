@@ -14,13 +14,18 @@ export const NO_BODY_TOOLTIP = "본문은 캡처되지 않았습니다 — 목�
  * How a row's date was arrived at when no capture printed it whole, and how
  * every era marks it: `year` — the list printed MM/DD and the year was
  * inferred; `firstComment` — the post's own date was missing and its first
- * comment's time stands in.
+ * comment's time stands in; `capture` — no capture printed a date, and the
+ * day of one that showed the post (or of a newer post beside it) stands in.
  */
-export type DateApprox = "year" | "firstComment";
+export type DateApprox = "year" | "firstComment" | "capture";
 
 export const DATE_APPROX: Readonly<Record<DateApprox, { mark: string; tooltip: string }>> = {
   year: { mark: "≈", tooltip: "목록에는 월/일만 있어 연도는 추정" },
   firstComment: { mark: "≤", tooltip: "작성일이 캡처에 없어 첫 댓글 시각으로 대신함" },
+  capture: {
+    mark: "≤",
+    tooltip: "작성일이 캡처에 없어 이 글이 실린 화면이나 함께 실린 더 새 글의 날짜로 대신함",
+  },
 };
 
 /**

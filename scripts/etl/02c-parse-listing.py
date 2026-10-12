@@ -20,6 +20,22 @@ they never replace a list page's row. Only dated rows whose link names the
 capture's own board are taken, for boards the museum already holds (a list
 page's or a post's).
 
+LINKED ROWS
+    Some captures name posts by title outside any list: the front page and
+    its frames (`S/_root`, 2000–2016) show each board's latest posts, the
+    2001 list pages (LZ) a latest-posts box of other boards (`zzun_notice`),
+    and a 2001 view its Prev/Next posts with their authors. Such a link gives
+    a post's board, number, title (often cut, `..` / `…`) and comment count;
+    the 2001–2007 frames also print `MM/DD` (Notice, Events) or the author
+    (column) before it. A row with `MM/DD` is dated like a list row
+    (`pin_year`, `yearApprox`). Any other row's `createdAt` is a day the post
+    precedes — the capture's Korean date, or the date of a newer post the
+    same capture shows (the museum's, titles agreeing; a view's own post),
+    whichever is earlier — flagged `datedByCapture`. They add only numbers
+    no list row and no gold post holds, to boards that already have a
+    listing; forg.kr boards and the event calendar (its cells mix a title
+    with the start of the text) are left out.
+
 ROW SHAPES
     Zeroboard kritz_* skins — `<tr>` holding an `<a href="zboard.php?…no=N">`:
         icon | author (`view_info.php?…member_no=M`) | title [+ `[c]` comment
@@ -53,7 +69,7 @@ from bisect import bisect_left
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -75,6 +91,13 @@ PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jso
 # Zeroboard 4.0 list pages (LZ) and views (Z, Y, U, T).
 OLD_PHASES = ("LZ", "Z", "Y", "U", "T")
 EXTRA_PHASES = ("A", "B", "C", "V", "W", *OLD_PHASES)
+# LINKED ROWS: the front page and its frames; of the views, the 2001 ones
+# whose Prev/Next rows carry titles.
+SITE_ROOT_DIR = ARCHIVE_DIR / "S" / "_root"
+PREV_NEXT_PHASES = ("Z", "Y", "U", "T")
+# Site captures after this are a 2023 parking page of a new registrant.
+LAST_TS = "20160831235959"
+NOT_TITLES = frozenset({"events_date"})
 
 _ZB_NO_RE = re.compile(r"zboard\.php\?[^\"'>]*\bno=(\d+)")
 _G4_ID_RE = re.compile(r"board\.php\?[^\"'>]*\bwr_id=(\d+)")
@@ -96,6 +119,15 @@ _CATEGORY_PREFIX_RE = re.compile(r"^\s*\[\s*([^\[\]]{1,12})\s*\]\s*(.*)$", re.S)
 _LINK_BOARD_RE = re.compile(r"[?&;](?:amp;)?(?:id|bo_table)=([A-Za-z0-9_]+)")
 _ZB40_NO_RE = re.compile(r"(?:zboard\.php3?|view\.php)\?[^\"'>]*\bno=(\d+)")
 _SLASH_DATE_RE = re.compile(r"^(\d{4})/(\d{1,2})/(\d{1,2})$")
+# A link that is only a comment count: Gnuboard's latest box `(3)` after the title.
+_COMMENT_ONLY_RE = re.compile(r"^[(\[](\d+)[)\]]$")
+_TRAILING_COMMENTS_RE = re.compile(r"\s*\[(\d+)\]$")
+_PREV_NEXT_RE = re.compile(r"^(?:prev|next|이전글|다음글)$", re.I)
+# Beside a front-page frame's link: `[N]` comments after it, `[author]` before it.
+_BRACKET_COUNT_RE = re.compile(r"\s*\[(\d+)\]\s*")
+_BRACKET_NAME_RE = re.compile(r"\[[^\[\]]{1,30}\]")
+# A title cut through a Korean character: the cut half decoded as U+FFFD.
+_CUT_CHAR_RE = re.compile(r"\ufffd+(?=(?:\.\.|…)?$)")
 
 
 # ── Gold tier lookups ─────────────────────────────────────────────────
@@ -116,6 +148,21 @@ def load_gold_years(board: str) -> tuple[dict[int, date], list[int]]:
         if d.year > 1990 and not post.get("createdAtApprox"):
             years[int(post["postId"])] = d
     return years, sorted(years)
+
+
+def load_gold_titles(board: str) -> dict[int, str]:
+    """`{no: title}` for every gold post of the board."""
+    titles: dict[int, str] = {}
+    board_dir = POSTS_DIR / board
+    if not board_dir.is_dir():
+        return titles
+    for f in board_dir.glob("*.json"):
+        try:
+            post = json.loads(f.read_text(encoding="utf-8"))
+            titles[int(post["postId"])] = post["title"]
+        except (OSError, ValueError, KeyError, json.JSONDecodeError):
+            continue
+    return titles
 
 
 # Wayback stamps are UTC; the boards printed Korean dates.
@@ -510,6 +557,244 @@ def load_extra_captures() -> dict[str, list[tuple[Path, str, int, str]]]:
     return out
 
 
+def _around(a: Tag) -> tuple[tuple[int, int] | None, str | None, int | None]:
+    """What a 2001–2007 front-page frame prints beside a link: `MM/DD` or
+    `[author]` (the column box) just before it, `[N]` comments just after —
+    before the next link, which is the next row's."""
+    month_day, author, comments = None, None, None
+    before = a.previous_sibling
+    if isinstance(before, NavigableString):
+        t = str(before).strip()
+        md = _MONTHDAY_RE.match(t)
+        if md:
+            month_day = (int(md.group(1)), int(md.group(2)))
+        elif _BRACKET_NAME_RE.fullmatch(t):
+            author = t[1:-1].strip()
+    after = a.next_sibling
+    for _ in range(3):
+        if after is None or (isinstance(after, Tag) and after.name == "a"):
+            break
+        n = _BRACKET_COUNT_RE.fullmatch(after.get_text() if isinstance(after, Tag) else str(after))
+        if n:
+            comments = int(n.group(1))
+            break
+        after = after.next_sibling
+    return month_day, author, comments
+
+
+def linked_rows(html: str, *, prev_next_only: bool = False) -> list[dict]:
+    """The posts a capture links to by title (LINKED ROWS), in page order.
+
+    One row per post: its board and number from the link, the link's text
+    as the title, the comment count in the link (`[3]`), in the link after
+    it (`(3)`) or printed after it (`[3]`), and what a frame prints before
+    it (`MM/DD`, `[author]`). With `prev_next_only` (a view) only a
+    Prev/Next row counts — a link in the post's text may say anything — and
+    the cell after the title is the author.
+    """
+    soup = BeautifulSoup(html, "lxml")
+    rows: list[dict] = []
+    seen: dict[tuple[str, str], dict] = {}
+    for a in soup.find_all("a", href=True):
+        if not isinstance(a, Tag) or not isinstance(a["href"], str):
+            continue
+        m = _ZB40_NO_RE.search(a["href"]) or _G4_ID_RE.search(a["href"])
+        board = link_board(a)
+        if m is None or board is None or board in NOT_TITLES:
+            continue
+        key = (board, m.group(1))
+        text = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
+        count = _COMMENT_ONLY_RE.match(text)
+        if count:
+            if key in seen:
+                seen[key]["comments"] = int(count.group(1))
+            continue
+        if key in seen:
+            continue
+        month_day, author, comments = _around(a)
+        author = author or "anonymous"
+        if prev_next_only:
+            tr = a.find_parent("tr")
+            if not isinstance(tr, Tag) or not any(
+                _PREV_NEXT_RE.match(td.get_text("", strip=True))
+                for td in tr.find_all("td", recursive=False)
+                if isinstance(td, Tag)
+            ):
+                continue
+            td = a.find_parent("td")
+            after = td.find_next_sibling("td") if isinstance(td, Tag) else None
+            if isinstance(after, Tag) and cell_text(after):
+                author = cell_text(after)
+        trailing = _TRAILING_COMMENTS_RE.search(text)
+        if trailing:
+            comments, text = int(trailing.group(1)), text[: trailing.start()].rstrip()
+        text = _CUT_CHAR_RE.sub("", text).strip()
+        # Nothing to show, a link written as its address, or a title that did
+        # not decode (a spam run of double-encoded text) is no title.
+        if not text or "\ufffd" in text or text.isdigit() or re.match(r"https?://", text):
+            continue
+        row = {
+            "no": key[1], "board": board, "title": text, "author": author,
+            "comments": comments or 0, "month_day": month_day, "notice": False,
+        }
+        seen[key] = row
+        rows.append(row)
+    return rows
+
+
+def linked_sources(extras: dict[str, list[tuple[Path, str, int, str]]]) -> list[tuple[Path, str, bool]]:
+    """Every capture LINKED ROWS reads, as `(path, ts, prev_next_only)`.
+
+    The L/L2 list pages are not among them: what they link to outside their
+    own rows is forg.kr's or the event calendar's.
+    """
+    out: list[tuple[Path, str, bool]] = []
+    if SITE_ROOT_DIR.is_dir():
+        for f in sorted(SITE_ROOT_DIR.glob("*.html")):
+            ts = f.stem.rpartition("~")[2]
+            if re.fullmatch(r"\d{14}", ts) and ts <= LAST_TS:
+                out.append((f, ts, False))
+    for items in extras.values():
+        for path, ts, _page, _kind in items:
+            phase = path.parent.parent.name
+            if phase == "LZ" or phase in PREV_NEXT_PHASES:
+                out.append((path, ts, phase != "LZ"))
+    return out
+
+
+def collect_linked(sources: list[tuple[Path, str, bool]]) -> dict[str, list[tuple[str, list[dict]]]]:
+    """`{board: [(ts, that board's linked rows in one capture)]}`.
+
+    A view's own post joins its board's rows as `context`: newer than its
+    Prev, older than its Next, it bounds them (`date_linked`) but is no row.
+    A frame's `MM/DD` rows get their page year as a list page's would.
+    """
+    out: dict[str, list[tuple[str, list[dict]]]] = {}
+    for path, ts, prev_next_only in sources:
+        html = path.read_text(encoding="utf-8")
+        if not (_ZB40_NO_RE.search(html) or _G4_ID_RE.search(html)):
+            continue
+        by_board: dict[str, list[dict]] = {}
+        for r in linked_rows(html, prev_next_only=prev_next_only):
+            by_board.setdefault(r["board"], []).append(r)
+        if prev_next_only and path.parent.name in by_board:
+            own = {"no": path.stem.split("~")[0], "board": path.parent.name, "title": None, "context": True}
+            by_board[path.parent.name].append(own)
+        for board, rows in by_board.items():
+            walk_page_years([r for r in rows if not r.get("context")], ts)
+            out.setdefault(board, []).append((ts, rows))
+    return out
+
+
+def cut(title: str) -> bool:
+    """A title the box or frame shortened."""
+    return title.endswith(("..", "…"))
+
+
+def bare(title: str) -> str:
+    """A title to compare: no category prefix, no cut mark, no spaces."""
+    _category, rest = split_category(title)
+    return re.sub(r"\s+", "", rest.rstrip(".…"))
+
+
+def same_title(shown: str, known: str) -> bool:
+    """Whether a capture's (maybe cut) title is the museum's post's title."""
+    a, b = bare(shown), bare(known)
+    return bool(a) and b.startswith(a)
+
+
+def known_dates(
+    gold: dict[int, date], gold_titles: dict[int, str], merged: dict[str, dict],
+) -> dict[int, tuple[date, str]]:
+    """The board's dates a linked row may be bounded by, with their titles:
+    gold posts' own, and list rows that printed the full date. A list row's
+    MM/DD whose year was worked out is left out — a gold neighbour far
+    below can set it years early (UOForum 3017–3024 as 2002)."""
+    known = {no: (d, gold_titles[no]) for no, d in gold.items() if no in gold_titles}
+    for r in merged.values():
+        if r["full_date"] is not None:
+            known.setdefault(int(r["no"]), (r["full_date"], r["title"]))
+    return known
+
+
+def date_linked(
+    linked: list[tuple[str, list[dict]]], held: set[str], known: dict[int, tuple[date, str]],
+) -> dict[str, dict]:
+    """The linked rows of numbers not in `held`, one per number, each with
+    `bound`: the earliest day it is known to precede (LINKED ROWS).
+
+    `known` holds the board's known dates and titles by number. A newer
+    number in the same capture was posted later, so its date bounds the row
+    too — when the capture's title for it is the museum's: boards numbered
+    again (UOForum, FunBoard) hold another, older post under that number.
+    A view's own post (`context`) bounds without a title to check.
+    Over several captures the earliest bound wins; the title is the longest
+    uncut one, the comment count the highest, the author any named one, the
+    printed `MM/DD` the earliest capture's. A capture whose title for the
+    number is another post's is left out.
+    """
+    found: dict[str, dict] = {}
+    for ts, rows in linked:
+        day = (datetime.strptime(ts, "%Y%m%d%H%M%S") + KST).date()
+        for r in rows:
+            if r.get("context") or r["no"] in held:
+                continue
+            no = int(r["no"])
+            newer = [
+                known[n][0]
+                for o in rows
+                if (n := int(o["no"])) > no
+                and n in known
+                and (o.get("context") or same_title(o["title"], known[n][1]))
+            ]
+            bound = min([day, *newer])
+            dated = {"month_day": r["month_day"], "page_year": r.get("page_year"), "dated_at": ts}
+            prev = found.get(r["no"])
+            if prev is None:
+                found[r["no"]] = {**r, "bound": bound, "capturedAt": ts, **(dated if r["month_day"] else {})}
+                continue
+            if not (same_title(prev["title"], r["title"]) or same_title(r["title"], prev["title"])):
+                continue
+            if bound < prev["bound"]:
+                prev["bound"], prev["capturedAt"] = bound, ts
+            if r["month_day"] and (not prev["month_day"] or ts < prev["dated_at"]):
+                prev.update(dated)
+            if (cut(prev["title"]), -len(prev["title"])) > (cut(r["title"]), -len(r["title"])):
+                prev["title"] = r["title"]
+            prev["comments"] = max(prev["comments"], r["comments"])
+            if prev["author"] == "anonymous":
+                prev["author"] = r["author"]
+    return found
+
+
+def linked_entry(no: str, r: dict) -> BoardListingEntry:
+    """A linked row as a listing entry. A printed `MM/DD` takes its year from
+    the box's own order back from the capture (`yearApprox`), not from gold
+    neighbours — a latest box shows recent posts, and boards numbered again
+    (Events 26: 04/28 on the 2006 front page, gold 25 and 27 of 2001) would
+    move it years — unless that lands after its bound; otherwise the bound
+    stands in, `datedByCapture`."""
+    created, approx, by_capture = r["bound"], False, True
+    if r["month_day"]:
+        cap = (datetime.strptime(r["dated_at"], "%Y%m%d%H%M%S") + KST).date()
+        pinned, _approx = pin_year(int(no), *r["month_day"], r["page_year"], cap, {}, [])
+        if pinned is not None and pinned <= r["bound"]:
+            created, approx, by_capture = pinned, True, False
+    category, title = split_category(r["title"])
+    return BoardListingEntry(
+        no=no,
+        title=title or "(제목 없음)",
+        categoryLabel=category,
+        author=r["author"],
+        createdAt=created,
+        yearApprox=approx,
+        datedByCapture=by_capture,
+        commentCount=r["comments"],
+        capturedAt=r["dated_at"] if not by_capture else r["capturedAt"],
+        listPage=1,
+    )
+
+
 # ── Driver ───────────────────────────────────────────────────────────
 
 
@@ -540,6 +825,7 @@ def build_listing(
     board: str, pages: list[Path], captures: dict[tuple[str, str], str],
     engines: dict[tuple[str, str], str], *, kr: bool = False,
     extras: list[tuple[Path, str, int, str]] = (), report: dict | None = None,  # type: ignore[assignment]
+    linked: list[tuple[str, list[dict]]] = (),  # type: ignore[assignment]
 ) -> BoardListing | None:
     gold, gold_nos = load_gold_years(board)
     merged: dict[str, dict] = {}
@@ -630,6 +916,20 @@ def build_listing(
             )
         except ValidationError as e:
             print(f"  WARN {board} no={r['no']}: {e.errors()[0]['msg']}", file=sys.stderr)
+
+    # Linked rows: the posts no list row and no gold post holds.
+    gold_titles = load_gold_titles(board)
+    held = set(merged) | {str(no) for no in gold_titles}
+    found = date_linked(linked, held, known_dates(gold, gold_titles, merged))
+    for no, r in found.items():
+        try:
+            entries.append(linked_entry(no, r))
+        except ValidationError as e:
+            print(f"  WARN {board} linked no={no}: {e.errors()[0]['msg']}", file=sys.stderr)
+    if found:
+        entries.sort(key=lambda e: int(e.no), reverse=True)
+    if report is not None:
+        report["linked"] = len(found)
     # The engine most rows came from — what the listing looks like.
     engine = max(engine_of_rows, key=engine_of_rows.get)  # type: ignore[arg-type]
     return BoardListing(
@@ -644,11 +944,14 @@ def build_listing(
 
 
 def dump_listing(listing: BoardListing) -> dict:
-    """The listing JSON, with `replyDepth` written only on replies."""
+    """The listing JSON, with `replyDepth` written only on replies and
+    `datedByCapture` only on the rows it marks."""
     data = json.loads(listing.model_dump_json())
     for e in data["entries"]:
         if not e.get("replyDepth"):
             e.pop("replyDepth", None)
+        if not e.get("datedByCapture"):
+            e.pop("datedByCapture", None)
     return data
 
 
@@ -667,7 +970,8 @@ def main() -> int:
     # Only boards the museum holds: a list page's or a post's.
     extra_boards = {b for b in extras if b in list_boards or (POSTS_DIR / b).is_dir()}
     boards = sorted({b for b in list_boards | extra_boards if not args.board or b == args.board})
-    stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0, "added": 0}
+    linked = collect_linked(linked_sources(extras))
+    stats = {"boards": 0, "entries": 0, "with_post": 0, "year_approx": 0, "no_date": 0, "added": 0, "linked": 0}
     for board in boards:
         pages = sorted(
             (p for d in dirs if d.name == board for p in d.glob("page-*.html")),
@@ -677,6 +981,8 @@ def main() -> int:
         listing = build_listing(
             board, pages, captures, engines, kr=board in kr_boards,
             extras=extras.get(board, []) if board in extra_boards else [], report=report,
+            # forg.kr reused names a 2001 board had (`notice`): its rows stay its own.
+            linked=[] if board in kr_boards else linked.get(board, []),
         )
         if listing is None:
             print(f"  {board}: no rows in {len(pages)} page(s)", file=sys.stderr)
@@ -687,9 +993,10 @@ def main() -> int:
         stats["year_approx"] += sum(e.yearApprox for e in listing.entries)
         stats["no_date"] += sum(e.createdAt is None for e in listing.entries)
         stats["added"] += report.get("added", 0)
+        stats["linked"] += report.get("linked", 0)
         print(
             f"  {board:<16} pages={len(pages):>3} rows={len(listing.entries):>5} "
-            f"from_other_captures={report.get('added', 0):>4} "
+            f"from_other_captures={report.get('added', 0):>4} linked={report.get('linked', 0):>3} "
             f"with_post={sum(e.hasPost for e in listing.entries):>5} "
             f"total_reported={listing.totalReported}",
             file=sys.stderr,

@@ -4,7 +4,7 @@
   "pagesCaptured": 52,
   "capturesRead": 897,
   "totalReported": 186,
-  "generatedAt": "2026-10-06T04:29:08.579983Z",
+  "generatedAt": "2026-10-07T11:00:36.137001Z",
   "entries": [
     {
       "no": "2475",
@@ -6920,6 +6920,22 @@
       "capturedAt": "20030913121803",
       "listPage": 10,
       "hasPost": true
+    },
+    {
+      "no": "1636",
+      "title": "맞춤집?",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2003-06-23",
+      "yearApprox": false,
+      "hits": null,
+      "commentCount": 0,
+      "isNotice": false,
+      "datedByCapture": true,
+      "capturedAt": "20030623141404",
+      "listPage": 1,
+      "hasPost": false
     },
     {
       "no": "1635",

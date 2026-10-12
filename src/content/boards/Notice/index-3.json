@@ -2,9 +2,9 @@
   "board": "Notice",
   "page": 3,
   "totalPages": 20,
-  "totalPosts": 983,
+  "totalPosts": 984,
   "totalWithPost": 891,
-  "generatedAt": "2026-10-04T07:49:08Z",
+  "generatedAt": "2026-10-07T11:48:47Z",
   "entries": [
     {
       "postId": "964",
@@ -407,6 +407,22 @@
       "hasPost": true
     },
     {
+      "postId": "939",
+      "title": "Publish 20 Rescheduled/Vendor Issue",
+      "categoryLabel": null,
+      "author": "anonymous",
+      "authorMemberNo": null,
+      "createdAt": "2003-10-03T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": true,
+      "commentCount": 0,
+      "attachmentCount": 0,
+      "hits": null,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
       "postId": "936",
       "title": "울티마 온라인 6주년 기념!",
       "categoryLabel": null,
@@ -786,22 +802,6 @@
       "commentCount": 0,
       "attachmentCount": 0,
       "hits": 2032,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
-      "postId": "910",
-      "title": "Publish 19 업데이트 내용 (수정)",
-      "categoryLabel": null,
-      "author": "Forg",
-      "authorMemberNo": "1",
-      "createdAt": "2003-07-25T11:37:45",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 0,
-      "attachmentCount": 0,
-      "hits": 1722,
       "recommend": null,
       "era": "2003",
       "hasPost": true
