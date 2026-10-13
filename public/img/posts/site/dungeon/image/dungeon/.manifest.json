@@ -8,6 +8,22 @@
     "digest": "Q3Y7GTAXZ6WSHLLNAP2XMFFTGWVPLE34"
   },
   {
+    "filename": "cyclopsvally.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/cyclopsvally.gif",
+    "capturedAt": "20030911210726",
+    "sizeBytes": 77558,
+    "sha256": "6e1a4a3a033950fc05907bde0f057248c72cdd4d839a3f5d82b2229754b3c038",
+    "digest": "SVOOIIWF5AAWEKJQHL2CQHH5J6L56VVG"
+  },
+  {
+    "filename": "dead_2.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/dead_2.gif",
+    "capturedAt": "20030911221844",
+    "sizeBytes": 33484,
+    "sha256": "1f78a4093aa942fdbb7d349a45e9e23ff11857d52f980215316db2d7f2bf67d6",
+    "digest": "DSZNDXFLIVAZOX7COPUBXWDPJQJ5RDWY"
+  },
+  {
     "filename": "deceit_4.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/deceit_4.gif",
     "capturedAt": "20030912010914",
@@ -48,12 +64,92 @@
     "digest": "6VPQONTYKQU2RMSCMPHTOQXH4BALUH5I"
   },
   {
+    "filename": "firedungeon_1.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/firedungeon_1.gif",
+    "capturedAt": "20030912052110",
+    "sizeBytes": 61137,
+    "sha256": "f43d2ee94b355fd8d2f62449f90b69fc5e3abb9611d0a82c36caf7f747ac6ab8",
+    "digest": "G4JKNTIR3YWISYIQHEO6R6BZK7VTTC2G"
+  },
+  {
+    "filename": "firedungeon_2.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/firedungeon_2.gif",
+    "capturedAt": "20030912054226",
+    "sizeBytes": 29277,
+    "sha256": "dbbb297f163c61746402a028b7dfbe374fed637b720bfd88f526aeca11e6bb2e",
+    "digest": "RCLRXAKV2HFHDDGFWE4JA6CZKQI2MJMX"
+  },
+  {
+    "filename": "firedungeon_map.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/firedungeon_map.gif",
+    "capturedAt": "20030912060525",
+    "sizeBytes": 80274,
+    "sha256": "9f2e124dfdae865eeef6febf874e10bfa602fb39afdc797eb6cfc8e33d384298",
+    "digest": "7BF52RJCWYJYKCQWNVSQKA2KSFL5ALDW"
+  },
+  {
+    "filename": "firedungeon_map_1.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/firedungeon_map_1.gif",
+    "capturedAt": "20030912062643",
+    "sizeBytes": 40978,
+    "sha256": "dad170e407ca858fac0d54039a730d9aa703c3c57471556d5b50bb00777b5dfe",
+    "digest": "JLFBEJSTQLYQ664IJK5IE7OK7HJEVHD6"
+  },
+  {
     "filename": "hyth_4.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/hyth_4.gif",
     "capturedAt": "20030912075111",
     "sizeBytes": 10578,
     "sha256": "d560eb0f3e3ef4f509ab9479caeb1bac69666f27d60fce322bfce891058b6eb8",
     "digest": "PV3RDQR4KLMMLZ23JQNHFLI3PGIR5ABJ"
+  },
+  {
+    "filename": "icedungeon_1.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/icedungeon_1.gif",
+    "capturedAt": "20030912091852",
+    "sizeBytes": 45440,
+    "sha256": "32a6ab5caea41f42acfba981af528f712359c162a87c8c4ad4348c081393dafb",
+    "digest": "YRPMPEE4CVA5HO73VANE2NLO7E57S3J2"
+  },
+  {
+    "filename": "icedungeon_3.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/icedungeon_3.gif",
+    "capturedAt": "20030912114801",
+    "sizeBytes": 8596,
+    "sha256": "4a1c9ce37dfe1a2692a085d04c5a21f2d611af5c9c4c31c636744474c1352bba",
+    "digest": "TABQVGUG4MLCGTVD4JQYQRUR2OBSOQNN"
+  },
+  {
+    "filename": "icedungeon_4.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/icedungeon_4.gif",
+    "capturedAt": "20030912102502",
+    "sizeBytes": 42715,
+    "sha256": "5f5ef216ac30de714bd6b1423bf5c79c000f141245949d44f2a1c2c16d58c222",
+    "digest": "SQXAOJVXQ47XOVL73SNZTFA52J5K3ASL"
+  },
+  {
+    "filename": "icedungeon_map.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/icedungeon_map.gif",
+    "capturedAt": "20030912104428",
+    "sizeBytes": 65073,
+    "sha256": "28b8746419e92a387422578e694e5595759962db6ecd67bfb9cf7fd2e3219cd4",
+    "digest": "BVST22LZYJHVLWDVIGQTPBG7WNZF253Y"
+  },
+  {
+    "filename": "ohpidianlair.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/ohpidianlair.gif",
+    "capturedAt": "20030903220217",
+    "sizeBytes": 81138,
+    "sha256": "5946c91908c95072ac2e20294668b57d9ca74349126e67d48ddd441d552505d5",
+    "digest": "HWTZVOBZBSCHRQNJ7FSWUTMH5DCDD3MA"
+  },
+  {
+    "filename": "ohpidianlair_1.gif",
+    "originalUrl": "http://forg.co.kr:80/dungeon/image/dungeon/ohpidianlair_1.gif",
+    "capturedAt": "20030903223059",
+    "sizeBytes": 30203,
+    "sha256": "1e37f6176270d54c5ea490567c2feaed06482dd34cadf36906636da3ec7f78c6",
+    "digest": "BOMUNAUH7EA7MJ7OPFURXTLQCEOB2VL3"
   },
   {
     "filename": "orc_1.gif",

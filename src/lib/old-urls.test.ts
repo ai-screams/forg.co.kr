@@ -69,11 +69,12 @@ describe("oldCandidates", () => {
     expect(at("/_zb/zboard.php?id=UoBoard&page=3")).toContainEqual(["/UoBoard/", true]);
   });
 
-  // Fails if: an old guide page, its query view, its mirror address or its
-  // folder without the slash misses its /site/ copy, or a page standing in
-  // for a query view is permanent.
+  // Fails if: an old guide page, its query view, its mirror address, its
+  // folder without the slash or a name with a space misses its /site/ copy,
+  // or a page standing in for a query view is permanent.
   it("reads every old guide page", () => {
     expect(at("/skill/attack.htm")[0]).toEqual(["/site/skill/attack/", true]);
+    expect(at("/dungeon/Fire%20Dungeon.html")[0]).toEqual(["/site/dungeon/Fire_Dungeon/", true]);
     expect(at("/~forg/Diablo2/diablo.htm")[0]).toEqual(["/site/Diablo2/diablo/", true]);
     expect(at("/holy")).toContainEqual(["/site/holy/index/", true]);
     expect(at("/_zb/guild/index.html?id=104&mode=detail&page=1&page_num=13&shard=")).toEqual([
@@ -203,14 +204,22 @@ describe("the build's plan", () => {
   });
 
   // Fails if: what lies outside the routed folders gets no static line, a
-  // line lands under one (Pages would never apply it), or a routed picture is
-  // missing from the Function's table or listed twice.
+  // line lands under one (Pages would never apply it), a routed picture is
+  // missing from the Function's table or listed twice, or a page's escaped
+  // address (`a%20b.htm`) is escaped again (`a%2520b.htm`).
   it("leaves only what the Function cannot reach to static redirects", () => {
     expect(plan.redirects).toContain("/Diablo/diablo.htm /site/Diablo/diablo/ 301");
     expect(plan.redirects).toContain(
       "/Diablo/images/gem.gif https://img.example/posts/site/Diablo/images/gem.gif 301",
     );
     expect(plan.redirects).toContain("/best_19.gif https://img.example/posts/site/best_19.gif 301");
+    const spaced = planOldAddresses({
+      pages: [{ stem: "Diablo/a_b", originalPath: "/Diablo/a%20b.htm" }],
+      pictures: [],
+      museum,
+      isServed: () => false,
+    });
+    expect(spaced.redirects).toEqual(["/Diablo/a%20b.htm /site/Diablo/a_b/ 301"]);
     const routed = new Set(plan.routes.map((r: string) => r.slice(1, -2)));
     expect(
       (plan.redirects as string[]).every((l) => !routed.has(folderOf(l.split(" ")[0] ?? ""))),
@@ -222,13 +231,17 @@ describe("the build's plan", () => {
 });
 
 describe("reading old addresses", () => {
-  // Fails if: a mirror page is not on forg's own paths, a folder answers only
+  // Fails if: a mirror page is not on forg's own paths, an escaped address
+  // stays escaped (the redirect writer escapes it again), a folder answers only
   // with its slash, or a file that is not a page, or an address with a query,
   // gets a static line.
   it("reads a guide page's addresses", () => {
     expect(sourcesOf("/skill/attack.htm")).toEqual(["/skill/attack.htm"]);
     expect(sourcesOf("hosting27.interpia98.net/~forg/Diablo2/diablo.htm")).toEqual([
       "/Diablo2/diablo.htm",
+    ]);
+    expect(sourcesOf("hosting27.interpia98.net/~forg/dungeon/Fire%20Dungeon.html")).toEqual([
+      "/dungeon/Fire Dungeon.html",
     ]);
     expect(sourcesOf("/guest/")).toEqual(["/guest/", "/guest"]);
     expect(sourcesOf("/sounds/fly.wma")).toEqual([]);
