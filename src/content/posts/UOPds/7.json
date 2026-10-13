@@ -1,0 +1,29 @@
+{
+  "board": "UOPds",
+  "boardKr": "UOPds",
+  "postId": "7",
+  "title": "GhostMouse",
+  "categoryLabel": "유용한Program",
+  "bodyHtml": "&nbsp; 마우스가 저절로 움직이네영^^<br>\n<p><img data-original-src=\"http://forg.co.kr/zboard/data/aa0007.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/zboard/data/aa0007.gif\"></p>",
+  "bodyText": "마우스가 저절로 움직이네영^^",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-03-04T15:49:31",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "Gmouse20.zip",
+      "fileNum": 1,
+      "sizeBytes": 698572
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010421034313",
+  "parsedAt": "2026-10-07T14:52:34.885541Z",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOPds&no=7",
+  "sourceEngine": "zeroboard"
+}
