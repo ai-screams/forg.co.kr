@@ -69,11 +69,12 @@ describe("oldCandidates", () => {
     expect(at("/_zb/zboard.php?id=UoBoard&page=3")).toContainEqual(["/UoBoard/", true]);
   });
 
-  // Fails if: an old guide page, its query view, its mirror address or its
-  // folder without the slash misses its /site/ copy, or a page standing in
-  // for a query view is permanent.
+  // Fails if: an old guide page, its query view, its mirror address, its
+  // folder without the slash or a name with a space misses its /site/ copy,
+  // or a page standing in for a query view is permanent.
   it("reads every old guide page", () => {
     expect(at("/skill/attack.htm")[0]).toEqual(["/site/skill/attack/", true]);
+    expect(at("/dungeon/Fire%20Dungeon.html")[0]).toEqual(["/site/dungeon/Fire_Dungeon/", true]);
     expect(at("/~forg/Diablo2/diablo.htm")[0]).toEqual(["/site/Diablo2/diablo/", true]);
     expect(at("/holy")).toContainEqual(["/site/holy/index/", true]);
     expect(at("/_zb/guild/index.html?id=104&mode=detail&page=1&page_num=13&shard=")).toEqual([

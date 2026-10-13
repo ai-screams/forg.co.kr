@@ -45,7 +45,7 @@ OLDER CAPTURES
 RENDERING MODE
     A `page`'s `mode` is the mode a browser draws its capture in, and the
     route gives it a doctype that selects the same one. No doctype is
-    `quirks` (537 pages): `margin-left:30` and `color:EF5900` apply, and
+    `quirks` (572 pages): `margin-left:30` and `color:EF5900` apply, and
     sliced menu images in table cells sit flush. XHTML 1.0 Transitional (the
     2016 home) is `limited-quirks`: images alone in a cell sit flush too.
     HTML 4.0 Strict, XHTML 1.0 Strict and XHTML Mobile 1.2 are `no-quirks`.
@@ -161,7 +161,12 @@ def stem_of(page: str) -> str:
     directory pages with `?page=2` and filters with `?mode=search&shard=1`
     (`_zb/guild/index--mode-search--shard-1`). Empty parameters and the
     session id are dropped and the rest sorted, so every spelling of one
-    view — as captured and as linked — gets one stem."""
+    view — as captured and as linked — gets one stem.
+
+    A space becomes `_`: the monster and dungeon guides were named
+    `Fire%20Dungeon.html` (`dungeon/Fire_Dungeon`), and a museum path keeps
+    to `safe_stem`'s letters, digits and `._-`. No page in the site plan
+    has both spellings of one name."""
     path_part, _, query = page.partition("?")
     path = urllib.parse.unquote(path_part).lstrip("/")
     if not path or path.endswith("/"):
@@ -170,7 +175,7 @@ def stem_of(page: str) -> str:
     params = sorted((k, v) for k, v in urllib.parse.parse_qsl(query) if v and k != "PHPSESSID")
     if params:
         stem += "".join(f"--{k}-{v}" for k, v in params)
-    return stem
+    return stem.replace(" ", "_")
 
 
 def safe_stem(stem: str) -> bool:

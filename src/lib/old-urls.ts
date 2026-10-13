@@ -61,7 +61,10 @@ function viewParams(query: URLSearchParams): [string, string][] {
   return [...query].filter(([k, v]) => v !== "" && k !== "PHPSESSID").sort(byKeyThenValue);
 }
 
-/** `/Diablo/uarmor.htm` → `Diablo/uarmor`; `/` → `index`; `/holy/` → `holy/index`; a query joins it. */
+/**
+ * `/Diablo/uarmor.htm` → `Diablo/uarmor`; `/` → `index`; `/holy/` → `holy/index`; a query joins it;
+ * a space becomes `_` (`/dungeon/Fire Dungeon.html` → `dungeon/Fire_Dungeon`).
+ */
 export function stemOf(path: string, query = new URLSearchParams()): string {
   let p = path.replace(/^\/+/, "");
   if (!p || p.endsWith("/")) p += "index";
@@ -71,7 +74,7 @@ export function stemOf(path: string, query = new URLSearchParams()): string {
     viewParams(query)
       .map(([k, v]) => `--${k}-${v}`)
       .join("")
-  );
+  ).replaceAll(" ", "_");
 }
 
 function safe(stem: string): boolean {
