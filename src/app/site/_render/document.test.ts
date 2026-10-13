@@ -67,6 +67,30 @@ describe("a page", () => {
   it("keeps its picker on its own window", () => {
     expect(renderSitePage(PAGE)).toContain('onchange="location.href=this.value"');
   });
+
+  // Fails if: a capture the museum painted (02g `museumFill`) does not say so
+  // in its bar, or the note follows the latest capture onto an older one it
+  // was not on (Lizard man: the 2007 page is filled, its 2003 one is not).
+  it("says where the museum filled a missing background", () => {
+    const note = "빈 배경 그림 자리는 박물관이 양피지색으로 칠함";
+    const filled: SitePage = { ...PAGE, museumFill: true };
+    const older: SitePageVersion = {
+      stem: "index",
+      ts: "20021204185904",
+      capturedAt: "2002-12-04T18:59:04",
+      originalPath: "/index.htm",
+      originalUrl: "http://forg.co.kr/index.htm",
+      baseTarget: null,
+      mode: "no-quirks",
+      css: "",
+      bodyStyle: {},
+      html: "<p>2002</p>",
+    };
+    expect(renderSitePage(filled)).toContain(note);
+    expect(renderSitePage(PAGE)).not.toContain(note);
+    expect(renderSitePage(filled, older)).not.toContain(note);
+    expect(renderSitePage(PAGE, { ...older, museumFill: true })).toContain(note);
+  });
 });
 
 describe("for search engines", () => {

@@ -73,6 +73,9 @@ function captures(page: SitePage, version: SitePageVersion | null, nav: string):
   return `<label>캡처<select onchange="${nav}.href=this.value">${options.join("")}</select></label>`;
 }
 
+/** On a page 02g gave a colour where a background picture is missing (`museumFill`). */
+const FILL_NOTE = "\n<span>빈 배경 그림 자리는 박물관이 양피지색으로 칠함</span>";
+
 /**
  * `nav` is what the picker moves: `location` in a page, `top.location` in the
  * bar frame over an older frameset (`renderSiteBar`).
@@ -87,7 +90,7 @@ function museumBar(
   return `<div id="forg-museum-bar" role="note">
 <a href="/">forg.co.kr 박물관</a>
 <span><b>${escapeHtml(page.title)}</b></span>
-<span>원래 주소 <code>${escapeHtml(shown.originalPath)}</code></span>
+<span>원래 주소 <code>${escapeHtml(shown.originalPath)}</code></span>${shown.museumFill ? FILL_NOTE : ""}
 ${captures(page, version, nav)}
 <a href="/site/">사이트 페이지 목록</a>
 <a href="${escapeHtml(wayback)}" target="_blank" rel="noopener">Wayback 원본</a>

@@ -8,6 +8,21 @@
     "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5"
   },
   {
+    "filename": "alpha_background_1.gif",
+    "originalUrl": "http://www.forg.co.kr/dungeon/image/alpha_background_1.gif",
+    "capturedAt": null,
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH",
+    "borrowedFrom": [
+      "map/images/left_menu/alpha/alpha_background_1.gif",
+      "skill/images/left_menu/alpha/alpha_background_1.gif",
+      "skill_knowhow/images/alpha_background_1.gif",
+      "skill_newbie/images/alpha_background_1.gif",
+      "uocraft/images/alpha_background_1.gif"
+    ]
+  },
+  {
     "filename": "b_logo.gif",
     "originalUrl": "http://forg.co.kr:80/dungeon/image/b_logo.gif",
     "capturedAt": "20030911200522",

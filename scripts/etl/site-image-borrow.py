@@ -7,7 +7,8 @@ sections' copies and not others: nothing under `skill/images/left_menu/` for
 these seven names was captured as an image (the single-URL probe of
 2026-10-03 found only redirects, error pages served as 200, and 404s), while
 the copies under `map/`, `uocraft/`, `skill_newbie/`, `skill_knowhow/` and
-`dungeon/` are byte-identical to each other.
+`dungeon/` are byte-identical to each other. `dungeon/` itself lost one: the
+panel behind the monster book's text, `alpha_background_1.gif`.
 
 Only the files listed in BORROW: a name shared across sections is no proof on
 its own (90 of the 221 names recovered in more than one folder differ;
@@ -48,6 +49,9 @@ BORROW = [
     "skill/images/left_menu/alpha/alpha_background.gif",
     "skill/images/left_menu/alpha/alpha_background_1.gif",
     "skill/images/left_menu/alpha/alpha_background_2.gif",
+    # The text panel of the 2007 monster book and the dungeon maps (87 pages);
+    # `dungeon/image/alpha_background.gif` beside it is the shared copy too.
+    "dungeon/image/alpha_background_1.gif",
 ]
 
 MIRRORED = [("skill/images/uohistory", "skill_newbie/images/uohistory")]

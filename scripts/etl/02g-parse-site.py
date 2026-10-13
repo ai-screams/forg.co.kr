@@ -91,6 +91,12 @@ LAST_TS = "20160831235959"
 # The posts' placeholder minus its dashed frame: the /site/ route draws the
 # frame round the whole slot, and a second one inside it doubled up.
 MISSING_IMG = "/img/placeholder/missing-slot.svg"
+# The 2007 monster book wrote black text on a black page over parchment
+# pictures, and Wayback kept few of them. A cell whose picture is missing on
+# such a page gets the parchment's commonest colour (in the shared
+# `alpha_background_1.gif`), and the page says the museum filled it
+# (`museumFill`).
+PARCHMENT = "#c7b88f"
 IMG_EXT = re.compile(r"\.(gif|jpe?g|png|bmp)$", re.I)
 PAGE_EXT = re.compile(r"\.(?:html?|php)$", re.I)
 BOARD_SCRIPT = re.compile(r"/(?:_zb|zboard|zb|~forg/zboard)/(?:zboard|view)\.php$")
@@ -620,7 +626,8 @@ def render_page(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, ste
     stats["goto_selects"] = stats.get("goto_selects", 0) + goto_selects(soup, resolver, base, ts, stem)
     stats["degree_signs"] = stats.get("degree_signs", 0) + restore_degree_signs(soup)
     stats["catalog_labels"] = stats.get("catalog_labels", 0) + tidy_catalog_labels(soup)
-    rewrite(soup, resolver, base, ts, stem)
+    if rewrite(soup, resolver, base, ts, stem):
+        out["museumFill"] = True
     stats["buttons_named"] = stats.get("buttons_named", 0) + label_missing_buttons(soup, titles)
     out["css"] = head_css(soup)
     inner = soup.body.decode_contents() if soup.body else str(soup)
@@ -661,7 +668,17 @@ def label_missing_buttons(soup: BeautifulSoup, titles: dict[str, str]) -> int:
     return n
 
 
-def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> None:
+def ink_on_ink(body) -> bool:
+    """Black text on a black page, readable only over its background pictures:
+    `<body bgcolor="black" text="black">`, spelled so on all 45 such pages."""
+    return body.get("bgcolor") == "black" and body.get("text") == "black"
+
+
+def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> int:
+    """Resolve the body's links and pictures; the number of cells given the
+    parchment colour (PARCHMENT)."""
+    fill = ink_on_ink(soup.body)
+    filled = 0
     for el in soup.find_all(True):
         for attr in [a for a in el.attrs if a.lower().startswith("on")]:
             del el[attr]
@@ -689,6 +706,11 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
         src, _ = resolver.image(el["background"], base, ts, page)
         if src == MISSING_IMG:
             del el["background"]
+            # A cell that names its own colour keeps it, and so does the
+            # black body (its colours went to `body_style` before this).
+            if fill and not el.get("bgcolor"):
+                el["bgcolor"] = PARCHMENT
+                filled += 1
         else:
             el["background"] = src
     for a in soup.find_all(["a", "area"]):
@@ -701,6 +723,7 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
         a["href"] = href
         if new_window or href.startswith("https://web.archive.org/"):
             a["target"] = "_blank"
+    return filled
 
 
 def safe_url(href: str | None) -> str | None:
