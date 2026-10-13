@@ -671,7 +671,7 @@ def label_missing_buttons(soup: BeautifulSoup, titles: dict[str, str]) -> int:
 def ink_on_ink(body) -> bool:
     """Black text on a black page, readable only over its background pictures:
     `<body bgcolor="black" text="black">`, spelled so on all 45 such pages."""
-    return body.get("bgcolor") == "black" and body.get("text") == "black"
+    return body is not None and body.get("bgcolor") == "black" and body.get("text") == "black"
 
 
 def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: str) -> int:
@@ -707,8 +707,10 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
         if src == MISSING_IMG:
             del el["background"]
             # A cell that names its own colour keeps it, and so does the
-            # black body (its colours went to `body_style` before this).
-            if fill and not el.get("bgcolor"):
+            # black body (its colours went to `body_style` before this). Only
+            # where nh3 keeps `bgcolor` (tables, rows, cells): elsewhere the page
+            # would announce a fill nothing shows.
+            if fill and not el.get("bgcolor") and "bgcolor" in ATTRS.get(el.name, ()):
                 el["bgcolor"] = PARCHMENT
                 filled += 1
         else:
