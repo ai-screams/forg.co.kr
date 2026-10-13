@@ -78,7 +78,7 @@ Wayback 캡처 원본은 저장소에 없고, CDX로 다시 받을 수 있습니
 
 # 3) 엔진·스킨마다 파서 하나 → src/content/ (gold)
 #    02 Zeroboard 4.1 · 02b Gnuboard4 · 02c 목록 · 02d Gnuboard5
-#    02e link/diary 스킨 · 02f Zeroboard 4.0 · 02g 안내 페이지 · 02h 답글 양식
+#    02e 목록이 곧 글인 스킨 · 02f Zeroboard 4.0 · 02g 안내 페이지 · 02h 답글 양식
 .venv/bin/python3 scripts/etl/02-parse-zeroboard.py
 
 # 4) 게시판 목록 쪽 만들기

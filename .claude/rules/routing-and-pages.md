@@ -19,7 +19,7 @@ paths:
 
 ## Boards
 
-All 72 boards in `src/lib/boards.ts` are built. `(board)/[board]/page.tsx` picks: an index → `BoardListing` (a board known only from its list pages has one too, with the 조회 column, and the museum bar names its list captures: `getListOnlyRecord`, `BoardNotes`); none → `BoardPlaceholder` (a members-only board, `memberOnly`, says why nothing survives). Comments render per skin in `comment-list.tsx` (kritz / webbus / plain). The home route `src/app/page.tsx` hands `<EraShell>` each era's front page: `home-2014.tsx` (eight board boxes), `home-2003.tsx` and `home-2001.tsx`; each era's frame is `era-chrome-2014.tsx` / `-2003.tsx` / `-2001.tsx`, assembled by `<EraShell>`.
+All 76 boards in `src/lib/boards.ts` are built. `(board)/[board]/page.tsx` picks: an index → `BoardListing` (a board known only from its list pages has one too, with the 조회 column, and the museum bar names its list captures: `getListOnlyRecord`, `BoardNotes`); none → `BoardPlaceholder` (a members-only board, `memberOnly`, says why nothing survives). Comments render per skin in `comment-list.tsx` (kritz / webbus / plain). The home route `src/app/page.tsx` hands `<EraShell>` each era's front page: `home-2014.tsx` (eight board boxes), `home-2003.tsx` and `home-2001.tsx`; each era's frame is `era-chrome-2014.tsx` / `-2003.tsx` / `-2001.tsx`, assembled by `<EraShell>`.
 
 ## Static pages (`/site/`)
 

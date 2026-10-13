@@ -1,0 +1,29 @@
+{
+  "board": "UOPds",
+  "boardKr": "UOPds",
+  "postId": "10",
+  "title": "Coin_Mania",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "&nbsp; 벤더가방을 꾸밀때 아주 좋은 프로그램입니다...\n<br>\n 한글프로그램이므로 쉽게 사용하실수 있고...\n<br>\n 프로그램 우측하단의 그림을 누르시면 제작자의 사이트로 가실수 있습니다...<br>\n<p><img data-original-src=\"http://forg.co.kr/zboard/data/A.gif\" data-recovery=\"failed\" src=\"/img/placeholder/missing.svg\" title=\"복원 실패 &mdash; 원본: forg.co.kr/zboard/data/A.gif\"></p>",
+  "bodyText": "벤더가방을 꾸밀때 아주 좋은 프로그램입니다... 한글프로그램이므로 쉽게 사용하실수 있고... 프로그램 우측하단의 그림을 누르시면 제작자의 사이트로 가실수 있습니다...",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-03-08T09:21:02",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "coin_mania.exe",
+      "fileNum": 1,
+      "sizeBytes": 182784
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010421034313",
+  "parsedAt": "2026-10-07T14:52:34.885541Z",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOPds&no=10",
+  "sourceEngine": "zeroboard"
+}

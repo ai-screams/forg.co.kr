@@ -130,6 +130,30 @@ const BOARDS = {
     era: "2003",
     description: "2001년 forg.uospace.net 시절의 스크린샷 게시판 (이름은 캡처에 남지 않음)",
   },
+  UO_Notice: {
+    id: "UO_Notice",
+    // The 2001 front page opened on this board (index.html's main frame,
+    // /zboard/zboard.php?id=UO_Notice). Its zzun_notice skin printed every
+    // post in full on the list, which is all Wayback kept (02e). No capture
+    // names it; the name says what it was.
+    nameKr: "첫 화면 공지 (2001)",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description:
+      "2001년 3–6월 첫 화면 가운데 칸의 공지, 목록에 본문까지 남음 (이름은 캡처에 남지 않음)",
+  },
+  Today: {
+    id: "Today",
+    // A screenshot board: UO_Notice's side box ("ː Best_UO ː", zzun_screenshot)
+    // showed its newest picture with the post's text as the alt. Its list
+    // survives (LZ, Z); the box kept two posts (02e BEST_UO).
+    nameKr: "Best_UO",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 베스트 스크린샷 — 첫 화면 공지 옆 상자에 남은 두 장과 목록",
+  },
   HouseScreenshot: {
     id: "HouseScreenshot",
     nameKr: "하우스 스크린샷",
@@ -158,6 +182,17 @@ const BOARDS = {
     engine: "zeroboard",
     era: "2003",
   },
+  UOPds: {
+    id: "UOPds",
+    // The 2001 install's file room, "자료실" on the 2001 menu (zetyx_pds_Esee):
+    // its list printed each file's description, picture and uploader (02e).
+    // The files are gone.
+    nameKr: "자료실 (2001)",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+    description: "2001년 3월 UO 프로그램 자료실 — 설명과 그림 일부, 파일은 없음",
+  },
   Recall: {
     id: "Recall",
     // The 2003 menu button reads "Kal Ort Por" (the UO recall spell) and
@@ -168,6 +203,19 @@ const BOARDS = {
     engine: "zeroboard",
     era: "2003",
     description: "UO 사이트 링크 디렉터리 — 정보·자료·배경화면·공식 홈 (2001–2003)",
+  },
+  Recall2006: {
+    id: "Recall2006",
+    // Recall emptied and opened again as a file library (ruvin_cubic_pds),
+    // still the front page's "k" key: five re-uploaded programs numbered
+    // 1, 2, 6, 7, 8, three of them 2001 posts' numbers (02e REBORN). Its
+    // addresses were Recall's, so the old-address redirect cannot tell them.
+    nameKr: "Kal Ort Por (자료실, 2006)",
+    category: "guide",
+    engine: "zeroboard",
+    era: "2003",
+    description:
+      "2006년 캡처의 Kal Ort Por — 번호를 새로 매긴 UO 프로그램 다섯 (작성일은 캡처에 없음)",
   },
 
   // ── uo (UO core, 2014 era — Gnuboard4) ──

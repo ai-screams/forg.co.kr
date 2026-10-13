@@ -1,0 +1,29 @@
+{
+  "board": "Recall2006",
+  "boardKr": "Recall2006",
+  "postId": "6",
+  "title": "울온캡쳐프로그램입니다.",
+  "categoryLabel": "Ultima Online",
+  "bodyHtml": "<span class=\"cu\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"table-layout:fixed;\" width=\"100%\"><tbody><tr><td valign=\"top\">  키설정과 파일명을 설정하여 캡쳐하시면 편리하며<br>\nQuality를 100%로 마추시면 화질이 좋아집니다.</td></tr></tbody></table></span>\n<p><img data-original-src=\"http://forg.co.kr/_zb/data/Recall/uosu.gif\" data-recovery=\"ok\" src=\"/img/posts/Recall2006/6/uosu.gif\"></p>",
+  "bodyText": "키설정과 파일명을 설정하여 캡쳐하시면 편리하며 Quality를 100%로 마추시면 화질이 좋아집니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "Uosu.zip",
+      "fileNum": 1,
+      "sizeBytes": 364134
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20060822022749",
+  "parsedAt": "2026-10-12T09:15:13.279530Z",
+  "originalUrl": "http://forg.co.kr/_zb/zboard.php?id=Recall&no=6",
+  "sourceEngine": "zeroboard"
+}

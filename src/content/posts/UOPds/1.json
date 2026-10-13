@@ -1,0 +1,29 @@
+{
+  "board": "UOPds",
+  "boardKr": "UOPds",
+  "postId": "1",
+  "title": "UONAV (배항해 프로그램)",
+  "categoryLabel": "UO자료실",
+  "bodyHtml": "&nbsp; 배타실 때 멀미하시는분,항해가 순조로와집니다.<br>\n<p><img data-original-src=\"http://forg.co.kr/zboard/data/aa0002.gif\" data-recovery=\"ok\" src=\"/img/posts/UOPds/1/aa0002.gif\"></p>",
+  "bodyText": "배타실 때 멀미하시는분,항해가 순조로와집니다.",
+  "author": "Forg",
+  "authorMemberNo": "1",
+  "authorHomepage": null,
+  "createdAt": "2001-03-02T22:19:40",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [
+    {
+      "name": "UONav.exe",
+      "fileNum": 1,
+      "sizeBytes": 50688
+    }
+  ],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20010421025757",
+  "parsedAt": "2026-10-07T14:52:34.885541Z",
+  "originalUrl": "http://forg.co.kr/zboard/zboard.php?id=UOPds&no=1",
+  "sourceEngine": "zeroboard"
+}
