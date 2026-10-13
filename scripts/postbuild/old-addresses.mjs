@@ -57,11 +57,19 @@ export function folderOf(path) {
   return path.endsWith("/") || parts.length > 1 ? (parts[0] ?? "") : "";
 }
 
-/** A guide page's old addresses on forg's own paths. */
+/**
+ * A guide page's old addresses on forg's own paths, decoded like a picture's:
+ * `originalPath` keeps the capture's escapes (`/dungeon/Fire%20Dungeon.html`),
+ * and `encodePath` writes them once.
+ */
 export function sourcesOf(originalPath) {
   if (originalPath.includes("?")) return [];
   const mirror = /^[a-z0-9.-]+(\/~forg\/.*)$/i.exec(originalPath);
-  const path = mirror ? unmirror(mirror[1]) : originalPath.startsWith("/") ? originalPath : null;
+  const path = mirror
+    ? decoded(unmirror(mirror[1]))
+    : originalPath.startsWith("/")
+      ? decoded(originalPath)
+      : null;
   if (!path || !PAGE.test(path)) return [];
   return path.endsWith("/") && path !== "/" ? [path, path.slice(0, -1)] : [path];
 }
