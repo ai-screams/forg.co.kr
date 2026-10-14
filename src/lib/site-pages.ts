@@ -54,6 +54,11 @@ export interface SitePage {
   /** `<base target>` — the frame every link opens in (`detail`, `forg_b`). */
   baseTarget: string | null;
   /**
+   * Black text on a black page whose background pictures Wayback did not
+   * keep: 02g gave those cells the parchment's colour, and the bar says so.
+   */
+  museumFill?: true;
+  /**
    * Kind `page`: the mode a browser draws the capture in, which the route's
    * doctype selects again. Framesets and redirects carry `no-quirks`.
    */
@@ -75,6 +80,7 @@ export interface SitePageVersion {
   css: string;
   bodyStyle: Record<string, string>;
   html: string;
+  museumFill?: true;
 }
 
 function assertIsSitePage(value: unknown): asserts value is SitePage {

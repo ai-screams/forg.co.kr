@@ -7,7 +7,8 @@ sections' copies and not others: nothing under `skill/images/left_menu/` for
 these seven names was captured as an image (the single-URL probe of
 2026-10-03 found only redirects, error pages served as 200, and 404s), while
 the copies under `map/`, `uocraft/`, `skill_newbie/`, `skill_knowhow/` and
-`dungeon/` are byte-identical to each other.
+`dungeon/` are byte-identical to each other. `dungeon/` itself lost one: the
+panel behind the monster book's text, `alpha_background_1.gif`.
 
 Only the files listed in BORROW: a name shared across sections is no proof on
 its own (90 of the 221 names recovered in more than one folder differ;
@@ -48,6 +49,9 @@ BORROW = [
     "skill/images/left_menu/alpha/alpha_background.gif",
     "skill/images/left_menu/alpha/alpha_background_1.gif",
     "skill/images/left_menu/alpha/alpha_background_2.gif",
+    # The text panel of the 2007 monster book and the dungeon maps (87 pages);
+    # `dungeon/image/alpha_background.gif` beside it is the shared copy too.
+    "dungeon/image/alpha_background_1.gif",
 ]
 
 MIRRORED = [("skill/images/uohistory", "skill_newbie/images/uohistory")]
@@ -58,16 +62,25 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def borrow(root: Path, target: str) -> tuple[bytes, list[str]] | None:
-    """The bytes every copy of `target`'s name shares, and the copies' paths.
+def borrowed(path: Path) -> bool:
+    """Whether `path` was itself filled from copies (its sidecar entry says
+    `borrowedFrom`): it proves nothing more than they do."""
+    manifest = path.parent / ".manifest.json"
+    entries = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else []
+    return any(e.get("filename") == path.name and e.get("borrowedFrom") for e in entries)
 
-    None when the target already exists. Raises when fewer than two copies
-    exist or they differ.
+
+def borrow(root: Path, target: str) -> tuple[bytes, list[str]] | None:
+    """The bytes every captured copy of `target`'s name shares, and the
+    copies' paths.
+
+    None when the target already exists. Raises when fewer than two captured
+    copies exist or they differ.
     """
     if (root / target).is_file():
         return None
     name = target.rsplit("/", 1)[-1]
-    copies = sorted(p for p in root.rglob(name) if p.is_file())
+    copies = sorted(p for p in root.rglob(name) if p.is_file() and not borrowed(p))
     digests = {sha256(p.read_bytes()) for p in copies}
     if len(copies) < 2 or len(digests) != 1:
         raise ValueError(f"{target}: {len(copies)} copies with {len(digests)} different contents")
