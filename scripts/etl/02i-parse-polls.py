@@ -4,7 +4,8 @@
 The board held polls, not posts: a question, its options, a vote count per
 option and comments under it (Zeroboard 4.1, the Allure vote skin, first
 under /zboard/ then /zb/). 02 skips its views (`poll_page`). Wayback kept its
-list pages, which print every poll with its options but no counts, and two
+list pages, which print every poll with its options but no counts (ten of
+the fourteen: the pages holding 1, 2, 7 and 8 were never captured), and two
 views with the results and the comments (no 58 on 2001-11-23, no 83 on
 2002-01-14; the vote-result pages only refresh to a view). Each poll becomes
 a post: the question as the title; as the body the options, with each one's
@@ -169,7 +170,7 @@ def build(lists: list[tuple[str, str, str]], views: list[tuple[str, str, str]], 
     """A post for every poll a list prints, its view's results where one
     survives."""
     known: dict[str, dict] = {}
-    for ts, url, text in lists:
+    for ts, url, text in sorted(lists):  # the newest list printing a poll wins
         for poll in list_polls(text):
             known[poll["no"]] = {**poll, "capturedAt": ts, "originalUrl": url}
     viewed: dict[str, dict] = {}
@@ -214,8 +215,9 @@ def main() -> None:
     plan = json.loads(PLAN.read_text(encoding="utf-8"))
     posts = build(captures(plan, "zboard"), captures(plan, "view"), datetime.now())
     for post in posts:
-        if zb40.ip_like_fields(post):
-            raise ValueError(f"{BOARD}/{post.postId}: IP-shaped text in {zb40.ip_like_fields(post)}")
+        where = zb40.ip_like_fields(post) + (["title"] if zb40.has_ip(post.title) else [])
+        if where:
+            raise ValueError(f"{BOARD}/{post.postId}: IP-shaped text in {where}")
     written = 0
     for post in posts:
         out = OUTPUT_DIR / f"{post.postId}.json"

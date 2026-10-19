@@ -78,12 +78,15 @@ def test_every_poll_is_a_post_undated_and_unsigned():
 
 
 # Fails if: a poll's options come from an older list than the newest one
-# printing it (options were added over time).
-def test_the_newest_list_gives_a_polls_options():
+# printing it (options were added over time), whatever order the lists come in
+# (the site plan's are not in time order).
+@pytest.mark.parametrize("newest_first", [False, True])
+def test_the_newest_list_gives_a_polls_options(newest_first):
     older = LIST_6.replace("고조선", "옛 항목")
     lists = [("20020101000000", LIST_URL, older), ("20020126074754", LIST_URL, LIST_6)]
-    got = {p.postId: p for p in polls.build(lists, [], datetime(2026, 10, 20))}
+    got = {p.postId: p for p in polls.build(lists[::-1] if newest_first else lists, [], datetime(2026, 10, 20))}
     assert "고조선" in got["45"].bodyHtml and "옛 항목" not in got["45"].bodyHtml
+    assert got["45"].capturedAt == "20020126074754"
 
 
 # Fails if: a poll whose list printed no comment count is said to have lost
@@ -93,10 +96,20 @@ def test_a_poll_without_listed_comments_says_only_its_votes_are_gone():
     assert "투표 수는 남아 있지 않습니다" in note and "댓글" not in note
 
 
-# Fails if: an option's text reaches the page unescaped.
+# Fails if: an option's text reaches the page unescaped, in the results or
+# in a list's options.
 def test_an_option_is_escaped():
-    body = polls.results_html({"total": 1, "options": [("<b>x</b>", 1, 100)]})
-    assert "&lt;b&gt;x&lt;/b&gt;" in body and "<b>x</b>" not in body
+    for body in (polls.results_html({"total": 1, "options": [("<b>x</b>", 1, 100)]}),
+                 polls.options_html({"options": ["<b>x</b>"]})):
+        assert "&lt;b&gt;x&lt;/b&gt;" in body and "<b>x</b>" not in body
+
+
+# Fails if: a comment's markup reaches the page unsanitised (a script link, an
+# event handler).
+def test_a_comment_is_sanitised():
+    view = polls.view_poll(VIEW_83.replace("한표씩 ^-^~", '<a href="javascript:x()" onclick="y()">한표씩</a>'))
+    body = view["comments"][1]["bodyHtml"]
+    assert "한표씩" in body and "javascript" not in body and "onclick" not in body
 
 
 @pytest.fixture
@@ -126,12 +139,18 @@ def test_captures_reads_the_s_phase_pages_of_the_board(silver):
 def test_captures_stops_without_exactly_one_silver_file(silver):
     with pytest.raises(ValueError, match="0 silver files"):
         polls.captures([row("20020126074754")], "zboard")
+    for name in ("zboard.php_id_UO_Vote_page_6~20020126074754.html", "zboard.php_id_UO_Vote_page_7~20020126074754.html"):
+        (silver / "zb" / name).write_text("x", encoding="utf-8")
+    with pytest.raises(ValueError, match="2 silver files"):
+        polls.captures([row("20020126074754")], "zboard")
 
 
-# Fails if: IP-shaped text in a poll reaches the gold tier.
-def test_ip_shaped_text_stops_the_run(silver, tmp_path, monkeypatch):
+# Fails if: IP-shaped text in a poll, its options or its question, reaches
+# the gold tier.
+@pytest.mark.parametrize("where", ["고조선", "선택될것 같은 새샤드의 이름은."])
+def test_ip_shaped_text_stops_the_run(silver, tmp_path, monkeypatch, where):
     (silver / "zb" / "zboard.php_id_UO_Vote_page_6~20020126074754.html").write_text(
-        LIST_6.replace("고조선", "211.104.1.25"), encoding="utf-8")
+        LIST_6.replace(where, "211.104.1.25"), encoding="utf-8")
     plan = tmp_path / "plan.json"
     plan.write_text(json.dumps([row("20020126074754")]), encoding="utf-8")
     monkeypatch.setattr(polls, "PLAN", plan)
