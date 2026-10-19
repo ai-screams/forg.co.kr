@@ -20,7 +20,7 @@ LINKS (resolved against the capture's own URL)
     forg page we emit           → /site/{stem}/
     board post / board          → /{board}/{no}/ when gold has it, else /{board}/
                                   (Zeroboard `zboard.php?id&no`, Gnuboard `bbs/board.php?bo_table&wr_id`)
-    forg image                  → /img/posts/site/{path} once recovered,
+    forg image                  → /img/posts/site/{path} once recovered (a space → `_`),
                                   else the missing-image placeholder
                                   (`data-original-src` keeps the original)
     other forg URL              → its Wayback capture at the page's date
@@ -292,6 +292,7 @@ class Resolver:
         self.stems = stems
         self.boards = boards
         self.image_refs: dict[str, dict] = {}
+        self.spellings: dict[str, str] = {}
 
     @staticmethod
     def forg_path(absolute: str) -> tuple[bool, urllib.parse.SplitResult]:
@@ -315,10 +316,14 @@ class Resolver:
                 return MISSING_IMG, absolute
             return raw, None
         # A space becomes `_`, as in a page's stem (`stem_of`): the item
-        # pictures of `skill/news` (`magic%20staff_1.jpg`). The URL keeps it.
-        rel = urllib.parse.unquote(u.path).lstrip("/").replace(" ", "_")
+        # pictures of `skill/news` (`magic staff_1.jpg`), `My%20Home/`. The URL
+        # keeps it. Two names that become one would share a file: stop.
+        name = urllib.parse.unquote(u.path).lstrip("/")
+        rel = name.replace(" ", "_")
         if not safe_stem(rel):
             return MISSING_IMG, absolute
+        if self.spellings.setdefault(rel, name) != name:
+            raise ValueError(f"{self.spellings[rel]!r} and {name!r} would both be {rel}")
         self.image_refs.setdefault(rel, {"path": rel, "url": absolute, "ts": ts, "page": page})
         if (IMG_ROOT / rel).is_file():
             return f"/img/posts/site/{rel}", None
