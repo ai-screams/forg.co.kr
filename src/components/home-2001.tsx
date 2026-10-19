@@ -110,7 +110,7 @@ const LEFT_MAP: { coords: string; label: string; href: string }[] = [
     label: "Forg.Members",
     href: "https://web.archive.org/web/20010803094010/http://forg.co.kr/zboard/linuz_member.php?category=8&id=member&status=&keyword=&arrange=no&desc=desc",
   },
-  { coords: "76,239,124,254", label: "UO.Poll", href: "/site/zboard/zboard--id-UO_Vote/" },
+  { coords: "76,239,124,254", label: "UO.Poll", href: "/UO_Vote/" },
   {
     coords: "31,554,130,578",
     label: "We create worlds. Origin System Inc.",

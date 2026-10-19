@@ -55,8 +55,9 @@ describe("stemOf", () => {
 
 describe("oldCandidates", () => {
   // Fails if: a board script's id and number are not the museum's board and
-  // post, the board standing in for a missing post is permanent, or a list
-  // address is not its board for good.
+  // post, the board standing in for a missing post is permanent, a list
+  // address is not its board for good, or a list kept as a guide page
+  // (UO_Vote's) goes to that copy before the board.
   it("reads every old board script", () => {
     expect(at("/_zb/zboard.php?id=UoBoard&no=26397").slice(0, 2)).toEqual([
       ["/UoBoard/26397/", true],
@@ -67,6 +68,11 @@ describe("oldCandidates", () => {
     expect(at("/~forg/zboard/zboard.php?id=Events&no=33")[0]).toEqual(["/Events/33/", true]);
     expect(at("/bbs/board.php?bo_table=Reveal&wr_id=2593")[0]).toEqual(["/Reveal/2593/", true]);
     expect(at("/_zb/zboard.php?id=UoBoard&page=3")).toContainEqual(["/UoBoard/", true]);
+    expect(at("/zb/zboard.php?id=UO_Vote").slice(0, 2)).toEqual([
+      ["/UO_Vote/", true],
+      ["/site/zb/zboard--id-UO_Vote/", true],
+    ]);
+    expect(at("/zb/view.php?id=UO_Vote&no=83")[0]).toEqual(["/UO_Vote/83/", true]);
   });
 
   // Fails if: an old guide page, its query view, its mirror address, its

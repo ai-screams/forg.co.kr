@@ -143,6 +143,20 @@ const BOARDS = {
     description:
       "2001년 3–6월 첫 화면 가운데 칸의 공지, 목록에 본문까지 남음 (이름은 캡처에 남지 않음)",
   },
+  UO_Vote: {
+    id: "UO_Vote",
+    // forg's poll board, "UO.POLL" on its own page (2001–2002, /zboard/ then
+    // /zb/, the Allure vote skin): a question and options per entry, voted by
+    // a click. 02 skips its views; 02i makes each poll a post. The name is
+    // the left menu's for it (forg_left, 2002-04: "-울온설문조사란", titled
+    // ":::UO.Poll:::"); from 2002-06 that label opens /_zb/kritz_vote/.
+    nameKr: "울온설문조사란",
+    category: "uo",
+    engine: "zeroboard",
+    era: "2003",
+    description:
+      "2001–2002년 설문 게시판(UO.POLL) — 설문 14개 중 10개가 남았고, 투표 수와 댓글은 두 설문에만 남음. 2002년 6월부터 같은 이름의 메뉴는 kritz_vote 설문으로 감",
+  },
   Today: {
     id: "Today",
     // A screenshot board: UO_Notice's side box ("ː Best_UO ː", zzun_screenshot)

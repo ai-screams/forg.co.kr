@@ -115,10 +115,12 @@ function pageCandidates(url: URL): { exact: Candidate[]; stand: Candidate[] } {
 
 /**
  * Every place an old address may lead, best first: the post, the exact
- * guide page, the post's board, the guide page without its query.
+ * guide page, the post's board, the guide page without its query. A board's
+ * list goes to the board before a guide-page copy of that list (the UO_Vote
+ * lists, kept under /site/ before the board was built).
  */
 export function oldCandidates(url: URL): Candidate[] {
   const { post, board } = postCandidates(url);
   const { exact, stand } = pageCandidates(url);
-  return [...post, ...exact, ...board, ...stand];
+  return post.length ? [...post, ...exact, ...board, ...stand] : [...board, ...exact, ...stand];
 }
