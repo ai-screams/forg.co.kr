@@ -13,7 +13,7 @@ Diablo2 guides lost the whole frame of their left menu.
 
 Only the files listed in BORROW: a name shared across sections is no proof on
 its own (90 of the 221 names recovered in more than one folder differ;
-`b_logo.gif` is each section's logo). A target is filled only when at least
+`b_logo.gif` has two contents). A target is filled only when at least
 two recovered copies exist and all have one SHA-256; anything else stops the
 run. The target folder's `.manifest.json` gets an entry with no `capturedAt`
 and the copies it was taken from in `borrowedFrom`.
@@ -140,6 +140,11 @@ def main() -> None:
         if line.strip():
             ref = json.loads(line)
             urls[ref["path"]] = ref["url"]
+    # Checked before anything is written, in a dry run too: a picture written
+    # without its sidecar entry would count as a captured copy next time.
+    unknown = [t for t in BORROW if t not in urls]
+    if unknown:
+        raise ValueError(f"not in {MISSES.name}: {', '.join(unknown)}")
     filled = 0
     for target in BORROW:
         found = borrow(SITE_IMG, target)
