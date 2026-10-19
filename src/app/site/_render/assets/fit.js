@@ -5,9 +5,18 @@ function size(img){return Number(img.getAttribute("width"))||img.naturalWidth;}
 function crushed(){var imgs=doc.querySelectorAll("img[data-forg-big]");
 for(var i=0;i<imgs.length;i++){var w=size(imgs[i]),shown=imgs[i].getBoundingClientRect().width;
 if(w<=300&&shown<w*0.6)return true;}return false;}
+function stack(){var tds=doc.getElementsByTagName("td");
+for(var i=0;i<tds.length;i++){var td=tds[i],box=td.getBoundingClientRect();
+if(box.width>=90||box.height<=3*box.width||(td.innerText||"").trim().length<20)continue;
+var cells=td.parentNode.children;
+for(var j=0;j<cells.length;j++)if(cells[j].getBoundingClientRect().width>=200)td.closest("table").setAttribute("data-forg-stack","");}}
 function fit(){queued=false;width=root.clientWidth;
 root.classList.remove("forg-fit-shrink");doc.style.removeProperty("zoom");doc.style.display="contents";
-if(!narrow.matches||root.scrollWidth<=width)return;
+var stacked=doc.querySelectorAll("table[data-forg-stack]");
+for(var i=0;i<stacked.length;i++)stacked[i].removeAttribute("data-forg-stack");
+if(!narrow.matches)return;
+stack();
+if(root.scrollWidth<=width)return;
 var imgs=doc.getElementsByTagName("img");
 for(var i=0;i<imgs.length;i++)if(size(imgs[i])>120)imgs[i].setAttribute("data-forg-big","");
 root.classList.add("forg-fit-shrink");
