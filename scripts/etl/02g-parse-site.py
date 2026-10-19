@@ -20,6 +20,7 @@ LINKS (resolved against the capture's own URL)
     forg page we emit           → /site/{stem}/
     board post / board          → /{board}/{no}/ when gold has it, else /{board}/
                                   (Zeroboard `zboard.php?id&no`, Gnuboard `bbs/board.php?bo_table&wr_id`)
+                                  in the whole window (`_top`), not a frame
     forg image                  → /img/posts/site/{path} once recovered (a space → `_`),
                                   else the missing-image placeholder
                                   (`data-original-src` keeps the original)
@@ -732,7 +733,18 @@ def rewrite(soup: BeautifulSoup, resolver: Resolver, base: str, ts: str, page: s
         a["href"] = href
         if new_window or href.startswith("https://web.archive.org/"):
             a["target"] = "_blank"
+        elif museum_page(href) and a.get("target") != "_blank":
+            # A board or a post is the museum's own page, header and all: in
+            # the frame the link named (`detail`, or the page's own frame) it
+            # would nest a second museum. Outside frames `_top` is this window.
+            a["target"] = "_top"
     return filled
+
+
+def museum_page(href: str) -> bool:
+    """A museum board or post (`/Q_A/`, `/Q_A/3106/`), not a `/site/` page,
+    which knows when it is in a frame, nor a picture."""
+    return href.startswith("/") and not href.startswith(("/site/", "/img/"))
 
 
 def safe_url(href: str | None) -> str | None:
