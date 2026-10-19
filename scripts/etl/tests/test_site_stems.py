@@ -14,3 +14,15 @@ def test_a_space_in_a_page_name_becomes_an_underscore():
     href, _ = resolver.link("Fire%20Dungeon.html", "http://forg.co.kr/dungeon/monster.html",
                             "20030902151242", "dungeon/monster")
     assert href == "/site/dungeon/Fire_Dungeon/"
+
+
+# Fails if: a picture whose name has a space is dropped as unsafe (it never
+# reaches the download queue), or its download URL loses the space.
+def test_a_space_in_a_picture_name_becomes_an_underscore():
+    resolver = site.Resolver(set(), set())
+    resolver.image("images/news/weapon/magic%20staff_1.jpg", "http://forg.co.kr/skill/news.html",
+                   "20030913035859", "skill/news")
+    assert resolver.image_refs == {"skill/images/news/weapon/magic_staff_1.jpg": {
+        "path": "skill/images/news/weapon/magic_staff_1.jpg",
+        "url": "http://forg.co.kr/skill/images/news/weapon/magic%20staff_1.jpg",
+        "ts": "20030913035859", "page": "skill/news"}}

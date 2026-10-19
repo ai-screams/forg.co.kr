@@ -314,7 +314,9 @@ class Resolver:
             if urllib.parse.urlsplit(raw.strip()).scheme not in ("http", "https"):
                 return MISSING_IMG, absolute
             return raw, None
-        rel = urllib.parse.unquote(u.path).lstrip("/")
+        # A space becomes `_`, as in a page's stem (`stem_of`): the item
+        # pictures of `skill/news` (`magic%20staff_1.jpg`). The URL keeps it.
+        rel = urllib.parse.unquote(u.path).lstrip("/").replace(" ", "_")
         if not safe_stem(rel):
             return MISSING_IMG, absolute
         self.image_refs.setdefault(rel, {"path": rel, "url": absolute, "ts": ts, "page": page})
