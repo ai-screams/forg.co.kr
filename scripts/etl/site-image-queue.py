@@ -5,8 +5,9 @@
 `site-image-refs.jsonl` (path, original URL, the page capture's timestamp).
 This joins them against the image CDX sweeps (`cdx-image.py`, prefixes
 [3], [5] and [7]) and writes `site-image-queue.json` in Phase D's format,
-each image saved once at `public/img/posts/site/{original path}` — pages
-of one section share their backgrounds and menu buttons.
+each image saved once at `public/img/posts/site/{path}` (the original
+path, a space as `_`) — pages of one section share their backgrounds and
+menu buttons.
 
 USAGE
     python3 scripts/etl/cdx-image.py --prefix forg-diablo,…   # sweep first

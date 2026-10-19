@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "magic_staff_1.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_1.jpg",
+    "capturedAt": "20030913035859",
+    "sizeBytes": 1797,
+    "sha256": "c972ca66bd6cd33e14fdf154662b74a91b1213a3b4c56b583ab63360280a250b",
+    "digest": "FGSFER255RNPI7TTKQZY3MCR4PHFLJUS"
+  },
+  {
+    "filename": "magic_staff_2.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_2.jpg",
+    "capturedAt": "20030914160510",
+    "sizeBytes": 1543,
+    "sha256": "bc7f5c5d58e9874dcaa93d10971890c6a849a816ae852adc47b93fd24d99ded8",
+    "digest": "M4NGJATMHLW5Y3QAZ6UQEHQYYZEP54EI"
+  },
+  {
+    "filename": "magic_staff_3.jpg",
+    "originalUrl": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_3.jpg",
+    "capturedAt": "20030914192517",
+    "sizeBytes": 1725,
+    "sha256": "877617b3de736db4d554f67ff91b941304730968a1db5e846b3d0f87db588fee",
+    "digest": "YTEQWMZLKWLUI5YXSDE5CSEJ7HQAL7HR"
+  }
+]

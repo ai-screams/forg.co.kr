@@ -8821,6 +8821,42 @@
   },
   {
     "board": "site",
+    "post_id": "skill/images/news/weapon",
+    "source": "site-page",
+    "page": "skill/news",
+    "normalized_url": "http://forg.co.kr:80/skill/images/news/weapon/magic staff_1.jpg",
+    "wayback_ts": "20030913035859",
+    "wayback_original": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_1.jpg",
+    "cdx_digest": "FGSFER255RNPI7TTKQZY3MCR4PHFLJUS",
+    "target_path": "public/img/posts/site/skill/images/news/weapon/magic_staff_1.jpg",
+    "filename": "magic_staff_1.jpg"
+  },
+  {
+    "board": "site",
+    "post_id": "skill/images/news/weapon",
+    "source": "site-page",
+    "page": "skill/news",
+    "normalized_url": "http://forg.co.kr:80/skill/images/news/weapon/magic staff_2.jpg",
+    "wayback_ts": "20030914160510",
+    "wayback_original": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_2.jpg",
+    "cdx_digest": "M4NGJATMHLW5Y3QAZ6UQEHQYYZEP54EI",
+    "target_path": "public/img/posts/site/skill/images/news/weapon/magic_staff_2.jpg",
+    "filename": "magic_staff_2.jpg"
+  },
+  {
+    "board": "site",
+    "post_id": "skill/images/news/weapon",
+    "source": "site-page",
+    "page": "skill/news",
+    "normalized_url": "http://forg.co.kr:80/skill/images/news/weapon/magic staff_3.jpg",
+    "wayback_ts": "20030914192517",
+    "wayback_original": "http://forg.co.kr:80/skill/images/news/weapon/magic%20staff_3.jpg",
+    "cdx_digest": "YTEQWMZLKWLUI5YXSDE5CSEJ7HQAL7HR",
+    "target_path": "public/img/posts/site/skill/images/news/weapon/magic_staff_3.jpg",
+    "filename": "magic_staff_3.jpg"
+  },
+  {
+    "board": "site",
     "post_id": "skill/images",
     "source": "site-page",
     "page": "skill/newbie_faq",
