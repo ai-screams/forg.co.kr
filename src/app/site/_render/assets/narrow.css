@@ -6,4 +6,5 @@ html:not(.in-frame) img{max-width:calc(100vw - 16px)!important;height:auto!impor
 html:not(.in-frame) [style*="position:absolute"],html:not(.in-frame) [style*="position: absolute"]{position:static!important;width:auto!important;height:auto!important}
 body *{overflow-wrap:break-word;word-break:break-word}
 html.forg-fit-shrink img[data-forg-big],html.forg-fit-shrink input,html.forg-fit-shrink select,html.forg-fit-shrink textarea{max-width:100%!important}
+html:not(.in-frame) table[data-forg-stack]>*>tr>td,html:not(.in-frame) table[data-forg-stack]>*>tr>th{display:block!important}
 }

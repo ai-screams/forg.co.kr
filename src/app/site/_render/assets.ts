@@ -100,6 +100,16 @@ export const NARROW_CSS = read("narrow.css");
 // drawn at its width attribute and does not shrink with its cell, so a page
 // that fitted by shrinking needs the zoom after all (PR previews have no
 // images; a phone may block them).
+// Before the overflow check, a table that keeps a picture or a wide column
+// at its size and squeezes the text beside it into a strip, the page no
+// wider than the screen (a dungeon map's description, 320px map, at 54px),
+// has its cells stacked (`data-forg-stack`): a cell holding 20 or more
+// characters, under 90px wide, whose text runs from its first line to its
+// last over twice its width (a picture in the cell does not count), in a row
+// with a cell of 150px or more. Stacking one table can squeeze a cell
+// measured before it, so the check repeats until it stacks nothing more
+// (four passes at most). The Diablo jewel tables' short 79px cells, and the
+// item tables at a landscape phone's width, stay as they are.
 // The documents in the museum's frames (`diablo`, `uo`, `wow`, `holy/index`,
 // all fixed-width columns) fit their frames, so there is no frame exception.
 export const FIT_SCRIPT = read("fit.js");
