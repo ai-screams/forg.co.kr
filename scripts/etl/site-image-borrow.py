@@ -8,7 +8,8 @@ these seven names was captured as an image (the single-URL probe of
 2026-10-03 found only redirects, error pages served as 200, and 404s), while
 the copies under `map/`, `uocraft/`, `skill_newbie/`, `skill_knowhow/` and
 `dungeon/` are byte-identical to each other. `dungeon/` itself lost one: the
-panel behind the monster book's text, `alpha_background_1.gif`.
+panel behind the monster book's text, `alpha_background_1.gif`. The Diablo and
+Diablo2 guides lost the whole frame of their left menu.
 
 Only the files listed in BORROW: a name shared across sections is no proof on
 its own (90 of the 221 names recovered in more than one folder differ;
@@ -41,6 +42,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 SITE_IMG = PROJECT_ROOT / "public" / "img" / "posts" / "site"
 MISSES = PROJECT_ROOT / "scripts" / "etl" / "site-image-unrecoverable.jsonl"
 
+# The Diablo and Diablo2 guides' left menu (110 pages) is the same frame, its
+# panel `alpha_background_1.gif` both in `left_menu/` and in `left_menu/alpha/`.
+# Their `b_logo.gif` and `top_up.gif` are not here: the copies differ.
+DIABLO_MENU = ["memo_t.gif", "memo_m.gif", "memo_b.gif", "forg_background.gif", "alpha_background.gif",
+               "alpha_background_1.gif", "alpha_background_2.gif", "alpha/alpha_background_1.gif"]
+
 BORROW = [
     "skill/images/left_menu/memo_t.gif",
     "skill/images/left_menu/memo_m.gif",
@@ -52,6 +59,7 @@ BORROW = [
     # The text panel of the 2007 monster book and the dungeon maps (87 pages);
     # `dungeon/image/alpha_background.gif` beside it is the shared copy too.
     "dungeon/image/alpha_background_1.gif",
+    *(f"{game}/images/left_menu/{name}" for game in ("Diablo", "Diablo2") for name in DIABLO_MENU),
 ]
 
 MIRRORED = [("skill/images/uohistory", "skill_newbie/images/uohistory")]
