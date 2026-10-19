@@ -1,0 +1,23 @@
+{
+  "board": "UO_Vote",
+  "boardKr": "UO_Vote",
+  "postId": "45",
+  "title": "선택될것 같은 새샤드의 이름은.",
+  "categoryLabel": null,
+  "bodyHtml": "<table width=\"100%\" border=\"0\" cellpadding=\"2\" cellspacing=\"0\"><tr><td>알려줄수 없는 뭔가 다른 이름</td></tr><tr><td>고조선</td></tr><tr><td>조선</td></tr><tr><td>고구려</td></tr><tr><td>고려</td></tr><tr><td>신라</td></tr></table>\n<p style=\"color:#888;font-size:11px\">이 설문은 목록 화면에 남은 질문과 항목으로 복원했습니다. 투표 수와 댓글(9개)은 남아 있지 않습니다.</p>",
+  "bodyText": "알려줄수 없는 뭔가 다른 이름 고조선 조선 고구려 고려 신라",
+  "author": "anonymous",
+  "authorMemberNo": null,
+  "authorHomepage": null,
+  "createdAt": "1970-01-01T00:00:00",
+  "createdAtApprox": false,
+  "hits": null,
+  "recommend": null,
+  "attachments": [],
+  "comments": [],
+  "era": "2003",
+  "capturedAt": "20020126074754",
+  "parsedAt": "2026-10-20T01:17:26.256499",
+  "originalUrl": "http://forg.uospace.net/zb/zboard.php?id=UO_Vote&page=6&select_arrange=headnum&desc=asc&category=&sn=off&ss=on&sc=on&keyword=",
+  "sourceEngine": "zeroboard"
+}

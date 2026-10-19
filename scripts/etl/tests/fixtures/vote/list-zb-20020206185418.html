@@ -1,0 +1,425 @@
+<!--
+
+ZeroBoard에 대한 라이센스 명시입니다.
+
+아래 라이센스에 동의하시는 분만 제로보드를 사용할수 있습니다.
+    
+프로그램명 : Zeroboard
+배포버젼 : 4.0.0 pl4 (2001. 5. 24)
+개발자 : zero (zero@zeroboard.com)
+Homepage : http://zeroboard.com
+
+1. 제로보드의 배포권은 ZEROBOARD.COM에서 허용한 곳에만 있습니다.
+   (허락 맡지 않은 재배포는 허용하지 않습니다.)
+
+2. 제로보드는 저작권을 아래 3번항목에 의해 표기하는 한도내에서
+   개인홈페이지 및 학교나 교회등의 비영리단체, 기업이나 기타 영리단체에서 사용할수 있습니다.
+   (반국가 단체나 불법 싸이트에서의 사용은 금지합니다)
+
+3. 제로보드 사용시 저작권 명시부분을 훼손하면 안됩니다.
+   프로그램 소스, html소스상의 라이센스 및 웹상 출력물 하단에 있는 카피라이트와 링크를 수정하지 마십시요.
+   (저작권 표시는 게시판 배포시 작성된 형식만을 허용합니다. 임의 수정은 금지합니다)
+
+4. 단, 정식 등록버젼은 저작권 표시를 삭제할수 있습니다.
+   정식 등록버젼에 대한 문의는 zero@zeroboard.com으로 문의하여 주십시요.
+
+5. 링크서비스등의 기본 용도에 맞지 않는 사용은 금지합니다.
+
+6. 제로보드의 사용으로 인한 데이타 손실 및 기타 손해등 어떠한 사고나 문제에 대해서 ZEROBOARD.COM은 절대 책임을 지지 않습니다.
+
+7. 제로보드에 대해 ZEROBOARD.COM은 유지/ 보수의 의무가 없습니다.
+
+8. 제로보드 소스는 개인적으로 사용시 수정하여 사용할수 있지만 수정된 프로그램의 재배포는 금지합니다.
+   (저작권 관련 부분은 수정금지입니다)
+
+9. 제로보드에 쓰인 스킨의 저작권은 스킨 제작자에게 있으며 제작자의 동의하에 수정배포가 가능합니다.
+
+10. 제로보드 구입에 대한 문의는 register@nzeo.com 으로 메일로 문의하여 주십시요.
+
+11. 기타 의문사항은 zero@zeroboard.com 으로 메일로 문의하여 주십시요.
+
+--><html>
+<head>
+<title>UO.POLL</title>
+<meta charset="utf-8" content="text/html;" http-equiv="Content-Type"/>
+<link href="skin/vote/style.css" rel="StyleSheet" title="style" type="text/css"/>
+<script language="javascript">
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if(browserName == "Netscape" && browserVer >= 3){ init = "net"; }
+else { init = "ie"; }
+
+
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+
+ sn_on=new Image;
+ sn_off=new Image;
+ sn_on.src= "skin/vote/name_on.gif";
+ sn_off.src= "skin/vote/name_off.gif";
+
+ ss_on=new Image;
+ ss_off=new Image;
+ ss_on.src= "skin/vote/subject_on.gif";
+ ss_off.src= "skin/vote/subject_off.gif";
+
+ sc_on=new Image;
+ sc_off=new Image;
+ sc_on.src= "skin/vote/content_on.gif";
+ sc_off.src= "skin/vote/content_off.gif";
+
+}
+
+function OnOff(name) {
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))) {
+  if(document.search[name].value=='on')
+  {
+   document.search[name].value='off';
+   ImgSrc=eval(name+"_off.src");
+   document[name].src=ImgSrc;
+  }
+  else
+  {
+   document.search[name].value='on';
+   ImgSrc=eval(name+"_on.src");
+   document[name].src=ImgSrc;
+  }
+ }
+}
+</script>
+<script language="javascript">
+  function reverse() {
+   var i, chked=0;
+   if(confirm('목록을 반전하시겠습니까?\n\n반전을 원하지 않는다면 취소를 누르시면 다음으로 넘어갑니다'))
+   {
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked) { document.list[i].checked=false; }
+      else { document.list[i].checked=true; }
+     }
+    }
+   }
+   for(i=0;i<document.list.length;i++)
+   {
+    if(document.list[i].type=='checkbox')
+    {
+     if(document.list[i].checked) chked=1;
+    }
+   }
+   if(chked) {
+    if(confirm('선택된 항목을 보시겠습니까?'))
+     {
+      document.list.selected.value='';
+      document.list.exec.value='view_all';
+      for(i=0;i<document.list.length;i++)
+      {
+       if(document.list[i].type=='checkbox')
+       {
+        if(document.list[i].checked)
+        {
+         document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+        }
+       }
+      }
+      document.list.submit();
+      return true;
+     }
+    }
+   }
+
+ function delete_all() {
+  var i, chked=0;
+  for(i=0;i<document.list.length;i++)
+  {
+   if(document.list[i].type=='checkbox')
+   {
+    if(document.list[i].checked) chked=1;
+    }
+   }
+  if(chked)
+  {
+    document.list.selected.value='';
+    document.list.exec.value='delete_all';
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked)
+      {
+       document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+      }
+     }
+    }
+    window.open("select_list_all.php?id=UO_Vote&selected="+document.list.selected.value,"UO_Vote_select_list","width=150,height=110,toolbars=no,resize=no,scrollbars=no");
+  }
+  else {alert('정리할 게시물을 선택하여 주십시요');}
+ }
+
+ function category_change() {
+  var myindex=list.category.selectedIndex;
+  document.search.category.value=list.category.options[myindex].value;
+  document.search.submit();
+  return true;
+ }
+</script>
+</head>
+<body bgcolor="white" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><div align="center"><script language="JavaScript">
+function findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+function swapImage() {
+  var i,j=0,x,a=swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- HTML 시작 -->
+<font style="cursor:default;">
+<table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr>
+<td width="100%"></td>
+<td class="allure2" nowrap="" valign="top">
+<zeroboard a="" info<="">
+<zeroboard <span="" onclick="swapImage('memozzz','','skin/vote/member_memo_off.gif',0)">
+<zeroboard a="" memo<="">
+<a href="login.php?id=UO_Vote&amp;page=1&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;s_url=%2Fzb%2Fzboard.php%3Fid%3DUO_Vote" onfocus="blur()">Login</a>
+<zeroboard a="" logout<="">
+<zeroboard a="" setup<="">
+<zeroboard a="" stat<="">
+<a href="member_join.php?id=UO_Vote&amp;page=1&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc" onfocus="blur()">Join</a><br/><br/>
+</zeroboard></zeroboard></zeroboard></zeroboard></zeroboard></zeroboard></td>
+</tr>
+<tr height="1"><td background="skin/vote/dot.gif" colspan="10" width="100%"></td></tr>
+</table><table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tr><td width="1">
+<form action="list_all.php" method="post" name="list">
+<input name="page" type="hidden" value="1"/>
+<input name="id" type="hidden" value="UO_Vote"/>
+<input name="select_arrange" type="hidden" value="headnum"/>
+<input name="desc" type="hidden" value="asc"/>
+<input name="page_num" type="hidden" value="2"/>
+<input name="selected" type="hidden"/>
+<input name="exec" type="hidden"/>
+<input name="keyword" type="hidden" value=""/>
+<input name="sn" type="hidden" value="off"/>
+<input name="ss" type="hidden" value="on"/>
+<input name="sc" type="hidden" value="on"/>
+</form></td><td width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr height="1">
+<td background="skin/vote/dot_cross.gif" height="1"></td>
+</tr>
+<tr>
+<td bgcolor="#ffffff">
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="word-break:break-all;">
+<table border="0" cellpadding="5" width="100%">
+<tr>
+<td align="left" valign="top" width="50"><img border="0" src="skin/vote/clover.gif"/><font face="tahoma" size="1"> Notice</font>
+</td>
+<td width="10"></td>
+<td>7렙 이상이신분들은 Add a Articles를 누르시면 설문란에 항목을 추가하실수 있습니다 원하시는분은 주저 하지 마시고 항목도 추가해주시길~ :::각항목을 누르면 선택하여 투표를 하는것이오니 염두해주시길 바랍니다:::  투표보다 더중요한거는 코멘트를 달수 있다는 � 
+  
+     </td>
+</tr>
+</table>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="word-break:break-all;">
+</td>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="right" class="allure1" nowrap=""> 
+<zeroboard:: ::<="" a="" add="" an="" article="">
+<zeroboard&nbsp:: ::<="" a="" modify="">
+<zeroboard&nbsp:: ::<="" a="" delete="">
+</zeroboard&nbsp::></zeroboard&nbsp::></zeroboard::></td>
+</tr>
+</table>
+<table width="100%">
+<tr height="1">
+<td background="skin/vote/dot_cross.gif" height="1" width="90%"></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" height="5" width="100%"><tr><td> </td></tr></table>
+<table background="http://allure.sshel.com/img/dot_cross.gif" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td>
+<table bgcolor="#ffffff" border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<col/> <col/> <col/>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="right" class="allure1" nowrap=""> 
+<zeroboard:: ::<="" a="" add="" an="" article="">
+<zeroboard&nbsp:: ::<="" a="" modify="">
+<zeroboard&nbsp:: ::<="" a="" delete="">
+</zeroboard&nbsp::></zeroboard&nbsp::></zeroboard::></td>
+</tr>
+</table>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="word-break:break-all;">
+<table border="0" width="width=100%">
+<tr>
+<td class="allure2" width="60">Subject 14.
+     </td>
+<td> <a href="view.php?id=UO_Vote&amp;page=1&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;select_arrange=headnum&amp;desc=asc&amp;no=113">울온을 접고 다른 것을 한다면-_-;</a> <font class="allure2"> [4]</font>
+</td>
+</tr>
+</table>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="word-break:break-all;">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td background="skin/vote/line.gif"><img border="0" src="skin/vote/line.gif"/></td>
+</tr>
+<tr>
+<td colspan="2" style="word-break:break-all;" width="100%">
+<img border="0" src="skin/vote/mouse.gif"/> <a href="apply_vote.php?id=UO_Vote&amp;no=113&amp;sub_no=121&amp;page=1&amp;page_num=2&amp;select_arrange=headnum&amp;desc=&amp;cn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;category=">울온접으면 온라인 게임 안한다 -_-a</a> <zeroboard<img align="absmiddle" border="0" src="skin/vote/v.gif"> <zeroboard<img align="absmiddle" border="0" src="skin/vote/x.gif">
+</zeroboard<img></zeroboard<img></td>
+</tr>
+<tr>
+<td width="100%">
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td background="skin/vote/line.gif"><img border="0" src="skin/vote/line.gif"/></td>
+</tr>
+<tr>
+<td colspan="2" style="word-break:break-all;" width="100%">
+<img border="0" src="skin/vote/mouse.gif"/> <a href="apply_vote.php?id=UO_Vote&amp;no=113&amp;sub_no=117&amp;page=1&amp;page_num=2&amp;select_arrange=headnum&amp;desc=&amp;cn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;category=">Asherons Call</a> <zeroboard<img align="absmiddle" border="0" src="skin/vote/v.gif"> <zeroboard<img align="absmiddle" border="0" src="skin/vote/x.gif">
+</zeroboard<img></zeroboard<img></td>
+</tr>
+<tr>
+<td width="100%">
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td background="skin/vote/line.gif"><img border="0" src="skin/vote/line.gif"/></td>
+</tr>
+<tr>
+<td colspan="2" style="word-break:break-all;" width="100%">
+<img border="0" src="skin/vote/mouse.gif"/> <a href="apply_vote.php?id=UO_Vote&amp;no=113&amp;sub_no=118&amp;page=1&amp;page_num=2&amp;select_arrange=headnum&amp;desc=&amp;cn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;category=">Everquest</a> <zeroboard<img align="absmiddle" border="0" src="skin/vote/v.gif"> <zeroboard<img align="absmiddle" border="0" src="skin/vote/x.gif">
+</zeroboard<img></zeroboard<img></td>
+</tr>
+<tr>
+<td width="100%">
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td background="skin/vote/line.gif"><img border="0" src="skin/vote/line.gif"/></td>
+</tr>
+<tr>
+<td colspan="2" style="word-break:break-all;" width="100%">
+<img border="0" src="skin/vote/mouse.gif"/> <a href="apply_vote.php?id=UO_Vote&amp;no=113&amp;sub_no=119&amp;page=1&amp;page_num=2&amp;select_arrange=headnum&amp;desc=&amp;cn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;category=">WOW</a> <zeroboard<img align="absmiddle" border="0" src="skin/vote/v.gif"> <zeroboard<img align="absmiddle" border="0" src="skin/vote/x.gif">
+</zeroboard<img></zeroboard<img></td>
+</tr>
+<tr>
+<td width="100%">
+</td>
+</tr>
+</table>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" height="5"><tr><td> </td></tr></table>
+</td></tr></table></td></tr></table><br/></td>
+</tr>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="21" nowrap="" width="100%">
+<tr>
+<td align="center" height="21" width="100%">
+<font face="tahoma" size="1">
+<zeroboard &nbsp<="" a=""> 
+  <font style="font-size:8pt"><b>1</b> <a href="/zb/zboard.php?id=UO_Vote&amp;page=2&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[2]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=3&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[3]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=4&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[4]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=5&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[5]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=6&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[6]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=7&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[7]</font></a><a href="/zb/zboard.php?id=UO_Vote&amp;page=8&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"><font style="font-size:8pt">[8]</font></a> 
+<font face="tahoma" size="1">
+<a href="/zb/zboard.php?id=UO_Vote&amp;page=2&amp;select_arrange=headnum&amp;desc=asc&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=" onfocus="blur()"> {Next+}</a>
+</font></font></zeroboard></font></td>
+</tr>
+</table>
+<!-- 버튼 부분 -->
+<table border="0" cellpadding="1" cellspacing="1" width="90%">
+<tr>
+<td align="right" class="allure1">
+<a href="/zb/zboard.php?id=UO_Vote&amp;page=1&amp;category=&amp;sn=off&amp;ss=on&amp;sc=on&amp;keyword=&amp;prev_no=" onfocus="blur()">:: List ::</a>
+<zeroboard &nbsp::="" ::<="" a="" makenewquestion="">
+</zeroboard></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" height="20" width="90%">
+<tr>
+<td align="right" style="font-family:tahoma,굴림;font-size:8pt;line-height:150%;letter-spacing:0px">
+<font style="font-size:7pt">Copyright 1999-2001</font> <a href="http://www.zeroboard.com" onfocus="blur()" target="_blank"><font tyle="font-family:tahoma,굴림;font-size:5pt;">Zeroboard</font></a> 
+           / skin by <font color="#2d2d2d" face="tahoma" size="1"><a href="http://allure.sshel.com" onfocus="this.blur()" target="_blank">{+Allure.Sshel.Com}</a>
+</font></td>
+</tr>
+</table></font></div></body>
+</html>
+<!--
+      -------------------------------------------------------------------
+      Zero Board Executed Time
+      -------------------------------------------------------------------
+      All StartTime : 1013021655.5704
+      End DB Excute Time : 1013021655.607
+      EndTime : 1013021655.6546
+      -------------------------------------------------------------------
+      DB Excute Time : 0.037
+      PHP Excute Time : 0.047 
+      Total Excuted Time : 0.084
+      -------------------------------------------------------------------
+      -->

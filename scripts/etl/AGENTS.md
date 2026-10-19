@@ -33,6 +33,7 @@ first and don't duplicate it here.
 | `02f-parse-zeroboard40.py`       | Stage 2f — Zeroboard 4.0 posts from forg's pre-`/_zb/` board paths (phases Z/Y/U/T)                                                                                                                                              |
 | `02g-parse-site.py`              | Stage 2g — static guide/map/frameset pages to `src/content/pages/{stem}.json`                                                                                                                                                    |
 | `02h-parse-reply-forms.py`       | Stage 2h — posts recovered only from a captured Zeroboard reply form                                                                                                                                                             |
+| `02i-parse-polls.py`             | Stage 2i — UO_Vote's polls (forg's "UO.POLL" board) as posts, from its list pages and two views with results                                                                                                                     |
 | `03-build-index.py`              | Stage 3 — aggregates gold posts + listings into paginated `src/content/boards/{board}/index-{N}.json`                                                                                                                            |
 | `04-rewrite-image-urls.py`       | Phase F — rewrites gold `<img src>` to recovered path or placeholder                                                                                                                                                             |
 | `05-repair-zeroboard-meta.py`    | Targeted repair of comment/post author and date fields in existing Zeroboard gold posts                                                                                                                                          |
@@ -66,12 +67,12 @@ first and don't duplicate it here.
 ### Working In This Directory
 
 - Run everything through the project venv: `.venv/bin/python3 scripts/etl/<script>.py`. Create it first if missing (`python3 -m venv .venv && .venv/bin/pip install -r scripts/etl/requirements.txt`), per the root `CLAUDE.md`.
-- Most stage scripts (`01`, `02*`, `03`, `04`) take `--board`, `--limit`, `--force`, `--print-every`; check each file's own `--help` before assuming a flag exists (e.g. `02c`/`02e`/`02g`/`02h`/`05` take only `--dry-run` and sometimes `--board`).
+- Most stage scripts (`01`, `02*`, `03`, `04`) take `--board`, `--limit`, `--force`, `--print-every`; check each file's own `--help` before assuming a flag exists (e.g. `02c`/`02e`/`02g`/`02h`/`05` take only `--dry-run` and sometimes `--board`; `02i` takes `--dry-run` and `--force`).
 - Follow the re-run traps in `.claude/rules/etl.md` before re-running a stage over existing gold output — several stages are not safe to blindly re-run (`02-parse-zeroboard.py` undoes later image/emoticon rewrites; `extract-image-urls.py` drifts the manifest if re-run for a subset).
 - Re-running, by what each script does or says of itself:
   - Repeatable, leaving done work alone: `download.py` (resumable), `01-decode.py` without `--force`, `cdx-image.py`, `cdx-image-fallback.py`, `download-images.py`, `recover-chrome.py`, `04-rewrite-image-urls.py` (leaves recovered addresses alone), `02c-parse-listing.py` (an unchanged re-run leaves git quiet), `migrate-emoticon-store.py` (a second run finds nothing to move), `run-phase-g-chain.sh`.
   - Writes only when asked: `analyze_cdx.py` (`--out`; overwriting takes `--force`).
-  - Post parsers: `02` and `02b` re-parse with `--force`, a missing or empty post, or a silver file newer than the post; `02d` and `02f` with `--force` or a missing post; `02e` and `02h` leave existing posts. Re-parsing existing gold undoes later rewrites — see the re-run traps in `.claude/rules/etl.md`.
+  - Post parsers: `02` and `02b` re-parse with `--force`, a missing or empty post, or a silver file newer than the post; `02d` and `02f` with `--force` or a missing post; `02e`, `02h` and `02i` leave existing posts (`02i` rewrites them with `--force`). Re-parsing existing gold undoes later rewrites — see the re-run traps in `.claude/rules/etl.md`.
   - Read the docstring first: `03-build-index.py`, `05-repair-zeroboard-meta.py`, `06-merge-later-comments.py`, `02g-parse-site.py`, `extract-image-urls.py`, `era-2001-chrome.py`, `site-image-queue.py`, `site-image-borrow.py`, `cdx-site.py`, `measure-recovery.py`.
 - Respect the single-worker Wayback politeness policy (`wayback_client.global_polite_slot`) — never run two downloader/probe scripts expecting higher concurrency.
 - `.image-*-summary.json`, `.parse-*.json`, `.parse-failures*.jsonl`, `.quarantine-*.tsv`, and `.omc/`, `__pycache__/` in this directory are gitignored scratch/state — don't try to commit them.
@@ -82,7 +83,7 @@ first and don't duplicate it here.
 
 Beyond the tests:
 
-- Use `--dry-run` where the script supports it (see the add_argument list per file; `01-decode.py`, `02-parse-zeroboard.py`, `02b`, `02c`, `02d`, `02e`, `02f`, `02g`, `02h`, `03-build-index.py`, `04-rewrite-image-urls.py`, `05-repair-zeroboard-meta.py`, `cdx-image.py`, `cdx-image-fallback.py`, `download-images.py`, `migrate-emoticon-store.py`, `recover-chrome.py` all have it) before a destructive run.
+- Use `--dry-run` where the script supports it (see the add_argument list per file; `01-decode.py`, `02-parse-zeroboard.py`, `02b`, `02c`, `02d`, `02e`, `02f`, `02g`, `02h`, `02i`, `03-build-index.py`, `04-rewrite-image-urls.py`, `05-repair-zeroboard-meta.py`, `cdx-image.py`, `cdx-image-fallback.py`, `download-images.py`, `migrate-emoticon-store.py`, `recover-chrome.py` all have it) before a destructive run.
 - Use `--limit N` / `--board ID` to smoke-test a parser change against a small slice before a full run.
 - Validate gold output against `schemas.py` — a parser script raising `pydantic.ValidationError` is the schema check; there is no separate linter for the JSON shape.
 
@@ -90,7 +91,7 @@ Beyond the tests:
 
 - Stage numbering encodes pipeline order: `01` decode, `02*` parse (one file per skin/engine), `03` index, `04`/`05` post-process gold. Image recovery is its own lettered phase sequence (B/C/D/E/F/G) layered on top, cross-referenced in `.claude/rules/etl.md`.
 - Scripts that share helpers import them with `sys.path.insert(0, str(Path(__file__).resolve().parent))` followed by a local import (`etl_io.py`, `post_parse.py`, `sanitise.py`, `schemas.py`, `wayback_client.py`) rather than a package — this directory is not an installed package. A helper more than one stage needs goes in one of these modules, not in a stage script.
-- Scripts that reuse another stage's own logic (`02g`, `02h`, `05-repair-zeroboard-meta.py`, `06-merge-later-comments.py`, `cdx-image.py`, `site-image-queue.py`) load that script as a module via `importlib.util.spec_from_file_location`, because its file name starts with a digit; this runs the whole script's top level, so it is for engine-specific code (a parser's `parse_one`, its selectors), not for shared helpers.
+- Scripts that reuse another stage's own logic (`02g`, `02h`, `02i`, `05-repair-zeroboard-meta.py`, `06-merge-later-comments.py`, `cdx-image.py`, `site-image-queue.py`) load that script as a module via `importlib.util.spec_from_file_location`, because its file name starts with a digit; this runs the whole script's top level, so it is for engine-specific code (a parser's `parse_one`, its selectors), not for shared helpers.
 
 ## Dependencies
 
