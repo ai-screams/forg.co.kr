@@ -85,13 +85,6 @@ export const NARROW_CSS = read("narrow.css");
 // What the reflow leaves wider than the screen (a quarter of the documents
 // at 390px) is a table of several columns: a picture capped at the screen's
 // width beside a column of menu buttons, or a main page's three columns.
-// A table that keeps a picture or a wide column at its size can squeeze the
-// text beside it into a strip instead, the page no wider than the screen: a
-// dungeon map's description (320px map) at 54px. Below 800px the script
-// stacks such a table's cells (`data-forg-stack`) when a cell holding 20 or
-// more characters is under 90px wide, over three times as tall as wide, and
-// shares its row with a cell of 200px or more (35 pages at 390px; the Diablo
-// jewel tables' short 79px cells, three lines tall, stay as they are).
 // Images keep the screen as their cap rather than their cell so that a 110px
 // button is not squeezed to 49px (a picture capped by its cell adds nothing
 // to its column's minimum width). Below 800px the script measures the page
@@ -107,6 +100,16 @@ export const NARROW_CSS = read("narrow.css");
 // drawn at its width attribute and does not shrink with its cell, so a page
 // that fitted by shrinking needs the zoom after all (PR previews have no
 // images; a phone may block them).
+// Before the overflow check, a table that keeps a picture or a wide column
+// at its size and squeezes the text beside it into a strip, the page no
+// wider than the screen (a dungeon map's description, 320px map, at 54px),
+// has its cells stacked (`data-forg-stack`): a cell holding 20 or more
+// characters, under 90px wide, whose text runs from its first line to its
+// last over twice its width (a picture in the cell does not count), in a row
+// with a cell of 150px or more. Stacking one table can squeeze a cell
+// measured before it, so the check repeats until it stacks nothing more
+// (four passes at most). The Diablo jewel tables' short 79px cells, and the
+// item tables at a landscape phone's width, stay as they are.
 // The documents in the museum's frames (`diablo`, `uo`, `wow`, `holy/index`,
 // all fixed-width columns) fit their frames, so there is no frame exception.
 export const FIT_SCRIPT = read("fit.js");
