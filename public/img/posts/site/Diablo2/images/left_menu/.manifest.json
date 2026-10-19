@@ -1,0 +1,103 @@
+[
+  {
+    "filename": "alpha_background.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/alpha_background.gif",
+    "capturedAt": null,
+    "sizeBytes": 1598,
+    "sha256": "63151c51d7668ff09af65d3687f6606a532f6fd2aa45c25637ed14ab50d4df41",
+    "digest": "VZRC6X3LA2I6K27UPCLV3SDAIYVOVJG5",
+    "borrowedFrom": [
+      "dungeon/image/alpha_background.gif",
+      "map/images/left_menu/alpha/alpha_background.gif",
+      "skill_knowhow/images/alpha_background.gif",
+      "skill_newbie/images/alpha_background.gif",
+      "uocraft/images/alpha_background.gif"
+    ]
+  },
+  {
+    "filename": "alpha_background_1.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/alpha_background_1.gif",
+    "capturedAt": null,
+    "sizeBytes": 1553,
+    "sha256": "76ae75bebba4835e7f0574cbc6d164cba42904a829da6a52823c6bcddd8c10f0",
+    "digest": "NVPKJPHQ56BZXHRU33UBEO7GS4WTPAOH",
+    "borrowedFrom": [
+      "map/images/left_menu/alpha/alpha_background_1.gif",
+      "skill_knowhow/images/alpha_background_1.gif",
+      "skill_newbie/images/alpha_background_1.gif",
+      "uocraft/images/alpha_background_1.gif"
+    ]
+  },
+  {
+    "filename": "alpha_background_2.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/alpha_background_2.gif",
+    "capturedAt": null,
+    "sizeBytes": 1110,
+    "sha256": "b3752e3d3b0e440f113beab558d2a212562ddf5c9ee5b93c94eda3abf080a71c",
+    "digest": "TSTXZWO2VIUYQIQYH6LY43FIENLNN7IE",
+    "borrowedFrom": [
+      "skill_index/images/alpha_background_2.gif",
+      "skill_newbie/images/alpha_background_2.gif"
+    ]
+  },
+  {
+    "filename": "forg_background.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/forg_background.gif",
+    "capturedAt": null,
+    "sizeBytes": 149,
+    "sha256": "fedf603ff9a65c2af4055a8c3d6b6cbd8cccd4313e1720080370fda3434e94bb",
+    "digest": "2XEH7C2UFTQEUJWI7IFWLURAS5TIQGME",
+    "borrowedFrom": [
+      "dungeon/image/forg_background.gif",
+      "map/images/left_menu/forg_background.gif",
+      "skill_knowhow/images/forg_background.gif",
+      "skill_newbie/images/forg_background.gif",
+      "uocraft/images/forg_background.gif"
+    ]
+  },
+  {
+    "filename": "memo_b.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/memo_b.gif",
+    "capturedAt": null,
+    "sizeBytes": 255,
+    "sha256": "c2da548631243b0be69c7ed611dc38ae0c4453cde424b949f2382954b718344d",
+    "digest": "AJYBFCLQ5AYRQH6LCW3TO43KM75TR6L2",
+    "borrowedFrom": [
+      "dungeon/image/memo_b.gif",
+      "map/images/left_menu/memo_b.gif",
+      "skill_knowhow/images/memo_b.gif",
+      "skill_newbie/images/memo_b.gif",
+      "uocraft/images/memo_b.gif"
+    ]
+  },
+  {
+    "filename": "memo_m.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/memo_m.gif",
+    "capturedAt": null,
+    "sizeBytes": 97,
+    "sha256": "e1f25d7eb6883b5b6b149a17f06c13a5f624a3b71ce77142465df5b5525d9587",
+    "digest": "B6MNOQCJSLDRKYTLSTSOIB5P2YMFT75I",
+    "borrowedFrom": [
+      "dungeon/image/memo_m.gif",
+      "map/images/left_menu/memo_m.gif",
+      "skill_knowhow/images/memo_m.gif",
+      "skill_newbie/images/memo_m.gif",
+      "uocraft/images/memo_m.gif"
+    ]
+  },
+  {
+    "filename": "memo_t.gif",
+    "originalUrl": "http://hosting27.interpia98.net:80/~forg/Diablo2/images/left_menu/memo_t.gif",
+    "capturedAt": null,
+    "sizeBytes": 15751,
+    "sha256": "fd56a6d6a4481cd30de974a535de1456844de5439a574a1aee19128750ffba42",
+    "digest": "OHPVJWZFKHDEVLUCWJ7FJWYVQA7F7DAK",
+    "borrowedFrom": [
+      "dungeon/image/memo_t.gif",
+      "map/images/left_menu/memo_t.gif",
+      "skill_knowhow/images/memo_t.gif",
+      "skill_newbie/images/memo_t.gif",
+      "uocraft/images/memo_t.gif"
+    ]
+  }
+]
