@@ -101,9 +101,9 @@ describe("the 2026 notes in a post", () => {
   // or 작성일 미상 with the capture's date.
   it("keeps the head's honest dates", async () => {
     expect(await render("Ultima", "4802")).toContain("(이전 — 첫 댓글 시각, 작성일은 캡처에 없음)");
-    const undated = await render("ScreenShot", "74");
+    const undated = await render("Q_A", "100");
     expect(undated).toContain("작성일 미상");
-    expect(undated).toContain("(캡처 2001.04.23)");
+    expect(undated).toContain("(캡처 2001.07.23)");
   });
 
   // Fails if: the comment count over the comments is a screen reader's alone in 2026 too.
