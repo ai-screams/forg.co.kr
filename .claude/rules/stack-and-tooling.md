@@ -19,4 +19,5 @@
 - commit-msg: commitlint, Conventional Commits, header ≤100, body line ≤120.
 - pre-push: `pnpm typecheck && pnpm lint`.
 - Tests: `pnpm test` (Vitest, `src/**/*.test.ts`, node environment, `@/` alias in `vitest.config.mts`).
+- The postbuild ends with `scripts/postbuild/check-page-weight.mjs`: a 2026 bar over 3,072 bytes, 2026 notes over their page kind's limit (a post 1,024, a list 2,048, the front page 10,240, others 512) or a deploy over 19,500 files fails the build, and so the Pages deploy; sample pages that outgrow main's bytes plus 2026's share only warn. Its sample bases are main c789b673a's (2026-10-20); rebuild main to move them.
 - CI (`.github/workflows/ci.yml`) runs lint, typecheck, unit tests, format and knip on push/PR. It does not build: Cloudflare Pages builds every push (its PR check), and the build on the 2-core runner hit the job limit. Run `pnpm build` and `pnpm size` locally before a PR that changes pages or bundles; `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` opts runner JS actions into Node 24.
