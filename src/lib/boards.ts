@@ -21,7 +21,16 @@
 import type { PostEra, SourceEngine } from "@/types/post";
 
 /** Top-level grouping used for sidebar sections and listings. */
-type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
+export type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
+
+/** The categories' names on screen, in the order the 2026 pages list them. */
+export const BOARD_CATEGORY_LABELS: Readonly<Record<BoardCategory, string>> = {
+  uo: "울티마 온라인",
+  community: "커뮤니티",
+  trade: "거래",
+  guide: "안내·자료",
+  other: "다른 게임·기타",
+};
 
 export interface BoardMeta {
   /** Stable id matching `Post.board` and post directory names. */
