@@ -39,7 +39,7 @@ export default async function BoardsPage() {
     <EraShell>
       <article className="px-3 py-4 text-forg-ink">
         <header className="pb-3">
-          <h1 className="text-[14px] font-bold">옛 게시판</h1>
+          <h1 className="forg-page-title text-[14px] font-bold">옛 게시판</h1>
           <p className="mt-[2px] text-[11px] text-forg-muted">
             forg.co.kr에 있던 게시판 {boards.length}곳입니다. 목록이 남은 곳은 {summaries.size}
             곳, 본문까지 남은 글은 {count(posts)}개입니다. 줄마다 엔진, 날짜가 남은 글의 연도,

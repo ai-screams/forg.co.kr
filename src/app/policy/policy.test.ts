@@ -43,6 +43,19 @@ describe("the copyright and takedown page", () => {
     );
   });
 
+  // Fails if: the 2026 fonts' row goes, or loses their names or the licence
+  // it links to (public/fonts/OFL.txt).
+  it("names the 2026 fonts, their holders and their licence", () => {
+    const html = renderToStaticMarkup(createElement(PolicyPage));
+    const row =
+      /<tr><th scope="row"[^>]*>2026 모습의 글꼴<\/th><td[^>]*>([\s\S]*?)<\/td><\/tr>/.exec(
+        html,
+      )?.[1];
+    expect(row).toMatch(/IBM Plex Sans KR[\s\S]*Do Hyeon[\s\S]*D2Coding/);
+    expect(row).toContain("SIL Open Font License 1.1");
+    expect(row).toContain('href="/fonts/OFL.txt"');
+  });
+
   // Fails if: the page, or the takedown part of CONTENT-NOTICE or README,
   // promises a response time (decided against, 2026-10-06).
   it("promises no response time, here or in CONTENT-NOTICE and README", () => {

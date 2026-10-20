@@ -1,3 +1,6 @@
+import { readdirSync } from "node:fs";
+import path from "node:path";
+
 import { describe, expect, it } from "vitest";
 
 import { cssRules } from "@/styles/css-rules";
@@ -72,6 +75,20 @@ const PAIRS: [fg: string, bg: string, min: number][] = [
   ["--w26-rec-rail", "--w26-surface", 3],
   ["--w26-input-line", "--w26-surface", 3],
 ];
+
+// Fails if: a stylesheet names a 2026 font outside the 2026 tokens
+// (`font-family: "Forg Sans KR"` on `body` in base.css), where another era
+// could ask for it.
+it("names the 2026 fonts only in the 2026 tokens", () => {
+  const FAMILY = /"(Forg Sans KR|Do Hyeon|Forg Digits)"/;
+  const naming = readdirSync(path.join(process.cwd(), "src", "styles"))
+    .filter((f) => f.endsWith(".css"))
+    .flatMap((f) => cssRules(f).map((r) => ({ f, ...r })))
+    .filter((r) => FAMILY.test(r.body));
+  expect(naming.map((r) => `${r.f} ${r.selectors.join(", ")}`)).toEqual([
+    `era-2026.css ${ERA_2026}`,
+  ]);
+});
 
 describe("2026 colours", () => {
   // Fails if: a pair drops below its ratio in either theme (the dark

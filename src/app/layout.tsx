@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { versioned } from "@/lib/chrome";
 import { DEFAULT_ERA, ERA_HINT_KEY, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
 import { OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
@@ -25,13 +26,14 @@ export const metadata: Metadata = {
  * The era script (`_scripts/era.js`, read once at build), inlined at the
  * top of the head without its comment lines: it applies the saved era
  * before the page paints and handles the era buttons from the first click,
- * as the pages ship no React.
+ * as the pages ship no React. It links the 2026 fonts while the era is 2026,
+ * by a URL that carries the stylesheet's hash (`versioned`).
  */
 const eraSource = readFileSync(
   path.join(process.cwd(), "src", "app", "_scripts", "era.js"),
   "utf8",
 );
-const eraScript = `(function (ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)}, ${JSON.stringify(ERA_HINT_KEY)});`;
+const eraScript = `(function (ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY, FONTS_2026) {\n${eraSource.replace(/^\s*\/\/.*\n/gm, "")}})(${JSON.stringify(ERA_STORAGE_KEY)}, ${JSON.stringify(ERAS)}, ${JSON.stringify(ERA_HINT_KEY)}, ${JSON.stringify(versioned("/fonts/2026/2026.css"))});`;
 
 export default function RootLayout({
   children,

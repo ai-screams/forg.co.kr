@@ -29,6 +29,7 @@ class FakeElement {
 
 function run(stored: Record<string, string> | "blocked", { pressed = true } = {}) {
   const focused: string[] = [];
+  const links: Map<string, string>[] = [];
   const classes = new Set<string>();
   const attrs = new Map<string, string>();
   const listeners: Record<string, (event: unknown) => void> = {};
@@ -51,11 +52,20 @@ function run(stored: Record<string, string> | "blocked", { pressed = true } = {}
   const document = {
     documentElement: root,
     readyState: "complete",
+    head: { appendChild: (link: Map<string, string>) => links.push(link) },
+    createElement: () => {
+      const link = new Map<string, string>();
+      return Object.assign(link, { setAttribute: (k: string, v: string) => link.set(k, v) });
+    },
     querySelectorAll: () => [],
-    querySelector: (selector: string) =>
-      pressed && selector.includes('[aria-pressed="true"]')
+    querySelector: (selector: string) => {
+      if (selector === "link[data-fonts-2026]") {
+        return links.find((l) => l.has("data-fonts-2026")) ?? null;
+      }
+      return pressed && selector.includes('[aria-pressed="true"]')
         ? { focus: () => focused.push(selector) }
-        : null,
+        : null;
+    },
     addEventListener: (type: string, fn: (event: unknown) => void) => (listeners[type] = fn),
   };
   const window = {
@@ -70,10 +80,12 @@ function run(stored: Record<string, string> | "blocked", { pressed = true } = {}
     "ERA_STORAGE_KEY",
     "ERAS",
     "ERA_HINT_KEY",
+    "FONTS_2026",
     SOURCE,
-  )(document, window, localStorage, FakeElement, ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY);
+  )(document, window, localStorage, FakeElement, ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY, FONTS);
   return {
     era: () => attrs.get("data-era") ?? null,
+    links,
     hinted: () => classes.has("forg-era-hint-on"),
     focused,
     store,
@@ -87,6 +99,40 @@ function run(stored: Record<string, string> | "blocked", { pressed = true } = {}
 it("applies a saved 2026 and ignores a value that is no era", () => {
   expect(run({ [ERA_STORAGE_KEY]: "2026" }).era()).toBe("2026");
   expect(run({ [ERA_STORAGE_KEY]: "1999" }).era()).toBeNull();
+});
+
+const FONTS = "/fonts/2026/2026.css?v=0123456789";
+const ERA_2014 = new FakeElement("button[data-era-option]", { "data-era-option": "2014" });
+const ERA_2026 = new FakeElement("button[data-era-option]", { "data-era-option": "2026" });
+
+describe("the 2026 fonts", () => {
+  const hrefs = (page: ReturnType<typeof run>) => page.links.map((l) => l.get("href"));
+
+  // Fails if: a page in another era links the 2026 fonts (the era check
+  // dropped), so every visit would fetch them.
+  it("are not linked in another era", () => {
+    expect(hrefs(run({ [ERA_STORAGE_KEY]: "2014" }))).toEqual([]);
+    expect(hrefs(run({}))).toEqual([]);
+  });
+
+  // Fails if: a saved 2026 does not link them as the page starts, with
+  // their versioned URL.
+  it("are linked once 2026 is the saved era", () => {
+    const page = run({ [ERA_STORAGE_KEY]: "2026" });
+    expect(hrefs(page)).toEqual([FONTS]);
+    expect(page.links[0]?.get("rel")).toBe("stylesheet");
+  });
+
+  // Fails if: choosing 2026 does not link them, or choosing it again links
+  // them twice (the check for the existing link dropped).
+  it("are linked by choosing 2026, and only once", () => {
+    const page = run({ [ERA_STORAGE_KEY]: "2014" });
+    page.click(ERA_2026);
+    page.click(ERA_2014);
+    page.click(ERA_2026);
+    expect(hrefs(page)).toEqual([FONTS]);
+    expect(page.era()).toBe("2026");
+  });
 });
 
 const CLOSE = new FakeElement("[data-era-hint-close]");

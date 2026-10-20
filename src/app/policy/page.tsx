@@ -11,6 +11,7 @@
  */
 
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 import { pageMeta } from "@/lib/seo";
 
@@ -22,7 +23,13 @@ export const metadata: Metadata = pageMeta({
 
 const CONTACT_EMAIL = "commander@ai-scream.ai";
 
-const OWNERS: readonly (readonly [string, string])[] = [
+const h2 = "mt-6 mb-2 border-b-2 border-forg-gold pb-1 text-base font-bold";
+const h3 = "mt-4 mb-1 font-bold";
+const list = "mb-3 space-y-0.5 pl-5";
+const cell = "border border-(--era-input-border) px-2 py-1.5 text-left align-top";
+const link = "text-(--era-link) underline underline-offset-2 hover:text-(--era-link-hover)";
+
+const OWNERS: readonly (readonly [string, ReactNode])[] = [
   ["글·댓글·글에 붙은 그림", "각 작성자"],
   ["사이트 모양(로고·단추·배경 그림)", "forg.co.kr 원 운영자"],
   [
@@ -30,13 +37,18 @@ const OWNERS: readonly (readonly [string, string])[] = [
     "각 게임사 — Ultima Online © Electronic Arts, World of Warcraft © Blizzard Entertainment 등. 박물관은 게임사와 관계가 없습니다.",
   ],
   ["박물관 프로그램 코드", "박물관 운영자 (MIT 라이선스로 공개)"],
+  [
+    "2026 모습의 글꼴",
+    <>
+      IBM Corp.(IBM Plex Sans KR) · The Do Hyeon Project Authors(Do Hyeon) · NAVER
+      Corporation(D2Coding) — SIL Open Font License 1.1. 박물관은 IBM Plex Sans KR을 Forg Sans KR로,
+      D2Coding의 숫자와 영문을 Forg Digits로 이름을 바꿔 냅니다.{" "}
+      <a href="/fonts/OFL.txt" className={link}>
+        라이선스 전문
+      </a>
+    </>,
+  ],
 ];
-
-const h2 = "mt-6 mb-2 border-b-2 border-forg-gold pb-1 text-base font-bold";
-const h3 = "mt-4 mb-1 font-bold";
-const list = "mb-3 space-y-0.5 pl-5";
-const cell = "border border-(--era-input-border) px-2 py-1.5 text-left align-top";
-const link = "text-(--era-link) underline underline-offset-2 hover:text-(--era-link-hover)";
 
 export default function PolicyPage() {
   return (

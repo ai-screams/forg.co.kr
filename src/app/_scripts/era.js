@@ -1,13 +1,16 @@
 // The era, without React: content pages ship no React runtime
 // (scripts/postbuild/strip-react-runtime.mjs). src/app/layout.tsx inlines
 // this at the top of every page with ERA_STORAGE_KEY and ERAS from
-// src/lib/era.ts, so it runs before the page paints and before any era
-// button can be clicked:
+// src/lib/era.ts and FONTS_2026, so it runs before the page paints and
+// before any era button can be clicked:
 // - <html data-era> takes the saved era, so the page never shows the default
 //   first (the pressed button's colour follows it, src/styles/eras.css);
 // - a click on an era button (<EraToggle>, [data-era-option]) switches and
 //   saves the era, and another tab's change arrives as a storage event;
 // - aria-pressed follows, once the buttons exist;
+// - while the era is 2026 the page links its fonts (public/fonts/2026/2026.css,
+//   FONTS_2026 with its version), once: no other era fetches them, and the
+//   link stays when the era changes again;
 // - the first page a visitor opens (no era saved, the hint never shown) shows
 //   the hint under the era buttons (<EraHint>, `html.forg-era-hint-on`) and
 //   remembers it was shown, so no later page does; on that page, closing it
@@ -22,14 +25,27 @@ function press() {
   });
 }
 
+function fonts() {
+  if (root.getAttribute("data-era") !== "2026" || document.querySelector("link[data-fonts-2026]")) {
+    return;
+  }
+  var link = document.createElement("link");
+  link.setAttribute("rel", "stylesheet");
+  link.setAttribute("href", FONTS_2026);
+  link.setAttribute("data-fonts-2026", "");
+  document.head.appendChild(link);
+}
+
 function show(era) {
   root.setAttribute("data-era", era);
+  fonts();
   press();
 }
 
 try {
   var saved = localStorage.getItem(ERA_STORAGE_KEY);
   if (ERAS.indexOf(saved) >= 0) root.setAttribute("data-era", saved);
+  fonts();
   if (saved === null && localStorage.getItem(ERA_HINT_KEY) === null) {
     localStorage.setItem(ERA_HINT_KEY, "shown");
     root.classList.add(HINT);

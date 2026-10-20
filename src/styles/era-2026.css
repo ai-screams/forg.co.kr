@@ -34,6 +34,14 @@
     --w26-rec-rail: oklch(0.552 0.043 253.4); /* #61748B */
     /* Text on the gold, in either theme. */
     --w26-on-gold: oklch(0.194 0.027 87.4); /* #1A1406 */
+    /* Type (ADR-0023 §6): the body in Forg Sans KR (IBM Plex Sans KR, renamed
+     * as its licence asks of a subset), titles in Do Hyeon, the record's
+     * figures in Forg Digits (D2Coding's digits; Hangul on the same line falls
+     * back to the body's). public/fonts/2026/2026.css declares them and the
+     * era script links it only in 2026. */
+    --w26-font-body: "Forg Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    --w26-font-display: "Do Hyeon", var(--w26-font-body);
+    --w26-font-digits: "Forg Digits", var(--w26-font-body);
     /* Paper: taken here, on :root, before the frame turns the ink and links
      * to its own below. */
     --paper-bg: oklch(1 0 0); /* white */
@@ -69,6 +77,7 @@
    * (`@theme`, tokens.css), so inside the frame they take its colours, in
    * either theme, without new markup; the paper turns them back. */
   :root[data-era="2026"] .forg-shell-main {
+    font-family: var(--w26-font-body);
     --color-forg-ink: var(--w26-ink);
     --color-forg-muted: var(--w26-muted);
     --era-input-border: var(--w26-input-line);
@@ -166,11 +175,7 @@
     border-top: 4px solid var(--color-forg-gold);
     background-color: var(--w26-bar);
     color: var(--w26-bar-ink);
-    font:
-      400 13px/1.4 "Apple SD Gothic Neo",
-      "Malgun Gothic",
-      system-ui,
-      sans-serif;
+    font: 400 13px/1.4 var(--w26-font-body);
     @variant max-sm {
       gap: 8px;
       padding: 0 6px 0 14px;
@@ -248,7 +253,7 @@
   }
   .w26-pop > summary,
   .w26-pop button {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-family: var(--w26-font-digits);
     font-size: 12px;
   }
   /* What a summary opens drops under the bar, across it. */
@@ -377,7 +382,7 @@
     border-radius: 6px;
   }
   .w26-era-row b {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-family: var(--w26-font-digits);
     font-size: 13px;
     font-weight: 500;
   }
@@ -410,6 +415,8 @@
   /* "기록": the archive's mark, in the slate of its rails. */
   .w26-tag {
     padding: 4px 7px;
+    font-family: var(--w26-font-body);
+    font-weight: 600;
     border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--w26-rec);
@@ -529,11 +536,7 @@
     border-radius: 999px;
     background-color: var(--w26-soft);
     color: var(--w26-soft-ink);
-    font:
-      500 12px/1 ui-monospace,
-      SFMono-Regular,
-      Menlo,
-      monospace;
+    font: 500 12px/1 var(--w26-font-digits);
   }
   :root[data-era="2026"] .forg-pages {
     padding-inline: 4px;
@@ -615,5 +618,18 @@
     border: 1px solid var(--w26-line);
     border-radius: 10px;
     background-color: var(--w26-surface);
+  }
+
+  /* Titles in Do Hyeon; the record's figures in Forg Digits. */
+  :root[data-era="2026"]
+    :is(.w26-word, .w26-hero h1, .forg-board > h1, .forg-post-head h1, .forg-page-title) {
+    font-family: var(--w26-font-display);
+  }
+  :root[data-era="2026"] .forg-page-title {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  :root[data-era="2026"] :is(.forg-num, .forg-pages, .w26-stats b, .w26-cats small) {
+    font-family: var(--w26-font-digits);
   }
 }
