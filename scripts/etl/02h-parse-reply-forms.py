@@ -11,8 +11,10 @@ Author and date come from the board list Zeroboard printed under other
 captured views (`02f.list_row_dates` reads the same rows): the author is the
 cell after the subject link, the time the row's `title` timestamp, hits the
 last cell. The row's subject also tells whether the form's `[re]` is the
-post's own (see `form_title`). A post no list row mentions gets 02f's unknown-date sentinel and
-"anonymous", like 02f. The comments are gone: the form carries none. A line
+post's own (see `form_title`). The date is 02f's (`zb40.date_of`): only a
+row whose title is the post's counts, numbers repeating across installs. A
+post no list row mentions gets 02f's unknown-date sentinel and "anonymous",
+like 02f. The comments are gone: the form carries none. A line
 at the end of the body says where the text came from.
 
 Input `.docs/research/archive-clean/R/{board}/{no}.html` (plan
@@ -122,14 +124,14 @@ def main() -> None:
     args = ap.parse_args()
 
     plan = {(e["board"], e["post_id"]): e for e in json.loads(PLAN.read_text())}
-    dates: dict[tuple[str, str], datetime] = {}
+    dated_rows: dict[tuple[str, str], list[tuple[str, datetime]]] = {}
     rows: dict[tuple[str, str], dict] = {}
     for f in sorted(ALL_CLEAN.glob("*/*/*.html")):
         if f.parts[-3] in ("S", "R"):
             continue
         text = f.read_text(encoding="utf-8", errors="replace")
-        for k, v in zb40.list_row_dates(text).items():
-            dates.setdefault(k, v)
+        for k, row in zb40.list_row_dates(text).items():
+            dated_rows.setdefault(k, []).append(row)
         for k, v in list_rows(text).items():
             rows.setdefault(k, v)
 
@@ -158,6 +160,7 @@ def main() -> None:
             continue
         category, title = split_category_prefix(raw_title)
         e = plan[key]
+        created, how = zb40.date_of(title, e["ts"], dated_rows.get(key, []))
         try:
             post = Post(
                 board=board,
@@ -170,7 +173,7 @@ def main() -> None:
                 author=row.get("author") or "anonymous",
                 authorMemberNo=None,
                 authorHomepage=None,
-                createdAt=dates.get(key, zb40.UNKNOWN_DATE),
+                createdAt=created,
                 hits=row.get("hits"),
                 recommend=None,
                 attachments=[],
@@ -189,7 +192,7 @@ def main() -> None:
             quarantined.append(f"{board}\t{post_id}\t{','.join(zb40.ip_like_fields(post))}")
             continue
         stats["written"] = stats.get("written", 0) + 1
-        stats["dated" if key in dates else "undated"] = stats.get("dated" if key in dates else "undated", 0) + 1
+        stats["undated" if how == "unknown" else "dated"] = stats.get("undated" if how == "unknown" else "dated", 0) + 1
         if not args.dry_run:
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(post.model_dump_json(indent=2) + "\n", encoding="utf-8")

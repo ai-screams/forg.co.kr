@@ -49,12 +49,20 @@ ROW SHAPES
 
 YEAR
     Zeroboard printed MM/DD only. The year comes from, in order:
-      1. the gold post itself (`src/content/posts/{board}/{no}.json`)
+      1. the gold post itself (`src/content/posts/{board}/{no}.json`), when
+         the row is that post (`is_its_post`). A gold post of the number
+         that is another post puts the row in another install, where
+         neither it nor its neighbours by number say anything: the page's
+         order (3) decides
       2. gold neighbours by post number on both sides sharing one year
       3. the page's own order — rows descend by date, so walking down a
          page the year rolls back each time month/day jumps forward; the
-         first non-notice row is anchored to the capture date — flagged
-         `yearApprox`
+         first non-notice row is anchored to the capture's Korean date —
+         flagged `yearApprox`
+    A board numbered again from 1 (`RESTARTS`) has its rows captured since
+    dated only by gold posts as new, and never before the restart; a row
+    whose printed MM/DD fits only one day between the restart and the first
+    capture showing its number or a higher one takes that day.
 
 USAGE
     python3 scripts/etl/02c-parse-listing.py [--board ID] [--dry-run]
@@ -74,6 +82,7 @@ from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from etl_io import write_atomic  # noqa: E402
+from post_parse import same_title, title_key  # noqa: E402
 from schemas import BoardListing, BoardListingEntry  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -150,30 +159,133 @@ def load_gold_years(board: str) -> tuple[dict[int, date], list[int]]:
     return years, sorted(years)
 
 
-def load_gold_titles(board: str) -> dict[int, str]:
-    """`{no: title}` for every gold post of the board."""
-    titles: dict[int, str] = {}
+def load_gold_heads(board: str) -> dict[int, tuple[str, str]]:
+    """`{no: (title, author)}` for every gold post of the board."""
+    heads: dict[int, tuple[str, str]] = {}
     board_dir = POSTS_DIR / board
     if not board_dir.is_dir():
-        return titles
+        return heads
     for f in board_dir.glob("*.json"):
         try:
             post = json.loads(f.read_text(encoding="utf-8"))
-            titles[int(post["postId"])] = post["title"]
+            heads[int(post["postId"])] = (post["title"], post["author"])
         except (OSError, ValueError, KeyError, json.JSONDecodeError):
             continue
-    return titles
+    return heads
 
 
 # Wayback stamps are UTC; the boards printed Korean dates.
 KST = timedelta(hours=9)
 
+# Boards numbered again from 1, by the Korean day the new install's posts
+# start no earlier than. A row captured on a later day is the new install's:
+# a gold post dated before the restart, or after the board's next one, is
+# another install's and dates neither the row nor its neighbours, and the
+# row's page year is never earlier. The evidence: the board's highest number
+# on its first list page before and after the drop (`L`, `L2`; capture time
+# UTC), and every number both sides show carries another title. The day is
+# the new install's No. 1 post where the museum holds it, otherwise the
+# Korean day of the last capture, of any page or view, still showing the old
+# numbering. Most boards started again on 2005-06-14.
+RESTARTS: dict[str, tuple[date, ...]] = {
+    # 18439 at 2005-02-06 18:10, 611 at 2005-10-16 18:55; No. 1 2005-06-14
+    # 16:34:28 (gold, `영광의 첫 유머`).
+    "FunBoard": (date(2005, 6, 14),),
+    # 620 at 2003-10-27 01:33, old pages to 2003-11-18 07:12; 173 at
+    # 2007-10-10 23:46.
+    "HouseScreenshot": (date(2003, 11, 18),),
+    # 4962 at 2005-02-06 03:11, 266 at 2005-10-16 19:00; No. 1 2005-06-14
+    # 17:14:42 (gold).
+    "Items": (date(2005, 6, 14),),
+    # 1082 at 2005-02-06 18:22, old views to 2005-02-28 05:50; 10 by
+    # 2005-08-24, 103 at 2007-10-14 08:27.
+    "Notice": (date(2005, 2, 28),),
+    # 28518 at 2005-02-06 18:25 (02-07 in Korea), 7346 at 2007-10-10 23:47.
+    # No. 2 is 2005-06-14; No. 1 is not held.
+    "Q_A": (date(2005, 2, 7),),
+    # 183 at 2005-02-06 03:19, 65 at 2005-10-16 19:03; No. 1 2005-06-14
+    # 15:52:25 (gold).
+    "Reveal": (date(2005, 6, 14),),
+    # 2439 at 2005-02-06 18:37, old views to 2005-04-22 02:28; 122 at
+    # 2006-05-18 02:51.
+    "Role": (date(2005, 4, 22),),
+    # 11794 at 2005-02-06 18:43 (02-07 in Korea), 1360 at 2007-10-10 23:45.
+    "ScreenShot": (date(2005, 2, 7),),
+    # 221 at 2005-02-06 03:24, 64 at 2005-10-16 18:55.
+    "Shop": (date(2005, 2, 6),),
+    # 10958 at 2004-10-23 18:25 (10-24 in Korea), 1423 at 2005-10-16 19:07.
+    "Tbalhae": (date(2004, 10, 24),),
+    # 77699 at 2005-02-06 19:10, old views to 2005-05-24 02:59; 3389 at
+    # 2005-08-24 03:53.
+    "UoBoard": (date(2005, 5, 24),),
+    # 87 at 2005-02-06 03:38, 9 at 2005-10-16 19:03; No. 1 2005-06-15
+    # 16:23:19 (gold).
+    "Vendor": (date(2005, 6, 15),),
+    # 213 at 2002-08-03 13:41, 72 at 2002-08-20 05:46.
+    "bod": (date(2002, 8, 3),),
+    # 544 at 2005-02-06 03:47, 57 at 2005-10-16 19:11.
+    "knowledge": (date(2005, 2, 6),),
+    # 200 at 2002-07-13 21:48, old views to 2002-07-23 20:27 (07-24 in
+    # Korea); 18 at 2003-04-28 21:25.
+    "monster": (date(2002, 7, 24),),
+    # 10094 at 2005-02-06 05:01, 815 at 2005-10-16 19:05.
+    "porato": (date(2005, 2, 6),),
+    # The 2001 Zeroboard 4.0 installs, each opened by a No. 1 notice whose
+    # full date its list printed:
+    #   /zboard/: no earlier capture or post; No. 1 2001-03-16 22:39:31.
+    #   uospace: /zboard/ 160–182 at 2001-06-09 07:34, uospace 31–52 at
+    #     2001-08-06 00:59; No. 1 2001-06-22 12:43:44.
+    #   /zb/: uospace 31–52 at 2001-08-06, /zb/ 427–447 at 2002-02-13 15:20
+    #     and down to No. 3 on its page 22 (2002-02-21); No. 1 2001-12-08
+    #     21:24:30.
+    "Sell": (date(2001, 3, 16), date(2001, 6, 22), date(2001, 12, 8)),
+}
+
+
+def is_its_post(title: str, author: str, month: int, day: int, head: tuple[str, str], when: date | None) -> bool:
+    """Whether the museum's post of a row's number, with title and author
+    `head` and date `when`, is the row's post (`title`, `author`, printed
+    `month`/`day`). The titles agree (`same_title`); or the row printed the
+    post's own month and day and the title was edited since: the authors
+    agree (Q_A 2429, a notice its author rewrote), or one title starts with
+    the other, six folded characters at least (UOForum 19 lost
+    `Written by J^^U`)."""
+    gold_title, gold_author = head
+    if same_title(gold_title, title):
+        return True
+    if when is None or (when.month, when.day) != (month, day):
+        return False
+    if title_key(author) == title_key(gold_author):
+        return True
+    short, long = sorted((title_key(title), title_key(gold_title)), key=len)
+    return len(short) >= 6 and long.startswith(short)
+
 
 def pin_year(
     no: int, month: int, day: int, page_year: int, captured: date,
-    gold: dict[int, date], gold_nos: list[int],
+    gold: dict[int, date], gold_nos: list[int], *, title: str, author: str,
+    gold_heads: dict[int, tuple[str, str]], not_before: date | None = None, not_later: date | None = None,
 ) -> tuple[date | None, bool]:
     """Resolve a MM/DD row date to a full date. Returns `(date, yearApprox)`.
+
+    `title` and `author` are the row's (category split off), `gold_heads`
+    every gold post's by number. The gold post with the row's number dates
+    it only when it is the row's post (`is_its_post`): forg's boards were
+    numbered again (`RESTARTS`), and FunBoard 239 on a 2007 list is
+    `개그 뉴스기사`, 07/26, while the museum's 239 is a 2001 post. A row whose
+    number holds another post belongs to another install, so the gold
+    neighbours by number are not its neighbours either: it takes the page's
+    year (`yearApprox`).
+
+    `not_before` is the start of the install the row's capture belongs to
+    (`RESTARTS`); `gold` then holds only posts since. The page's year is
+    raised to put the row no earlier, unless that puts it after its own
+    capture (01/20 captured 2005-10-16 after a 2005-02-07 restart): the
+    page's year then stands. `not_later` is the first day a capture
+    of that install showed the row's number or a higher one, by when the
+    post was up. When exactly one day between the two has the printed
+    MM/DD, it is the row's, without `yearApprox`, as a year the gold
+    neighbours agree on is; when none or several do, the rest decides.
 
     `page_year` is what the page's own descending order implies for this
     row (see `walk_page_years`); gold evidence overrides it, except that a
@@ -187,8 +299,29 @@ def pin_year(
     of 2003-10-26); then the page's year is taken instead, as when they
     disagree.
     """
-    if no in gold:
+    if not_before is not None and (page_year, month, day) < (not_before.year, not_before.month, not_before.day):
+        raised = not_before.year + ((month, day) < (not_before.month, not_before.day))
+        if (raised, month, day) <= (captured.year, captured.month, captured.day):
+            page_year = raised
+    other = no in gold_heads and not is_its_post(title, author, month, day, gold_heads[no], gold.get(no))
+    if not other and no in gold:
         return gold[no], False
+    if not_before is not None and not_later is not None:
+        fits = []
+        for year in range(not_before.year, not_later.year + 1):
+            try:
+                fit = date(year, month, day)
+            except ValueError:
+                continue
+            if not_before <= fit <= not_later:
+                fits.append(fit)
+        if len(fits) == 1:
+            return fits[0], False
+    if other:
+        try:
+            return date(page_year, month, day), True
+        except ValueError:
+            return None, True
     i = bisect_left(gold_nos, no)
     lo_date = gold[gold_nos[i - 1]] if i > 0 else None
     hi_date = gold[gold_nos[i]] if i < len(gold_nos) else None
@@ -233,8 +366,10 @@ def walk_page_years(rows: list[dict], captured_at: str) -> None:
     The first dated non-notice row cannot postdate the capture; every later
     row is older, so a month/day that jumps forward means the year rolled
     back. Notices sit pinned at the top and are dated off the capture alone.
+    The capture's day is Korea's, the boards' clock: a page captured at
+    2005-02-06 18:43 UTC lists ScreenShot 11794 at 02/07, that day.
     """
-    cap = datetime.strptime(captured_at[:8], "%Y%m%d").date()
+    cap = (datetime.strptime(captured_at, "%Y%m%d%H%M%S") + KST).date()
     prev: tuple[int, int, int] | None = None  # (year, month, day) of the row above
     for r in rows:
         md = r["month_day"]
@@ -697,20 +832,20 @@ def bare(title: str) -> str:
     return re.sub(r"\s+", "", rest.rstrip(".…"))
 
 
-def same_title(shown: str, known: str) -> bool:
+def cut_title_matches(shown: str, known: str) -> bool:
     """Whether a capture's (maybe cut) title is the museum's post's title."""
     a, b = bare(shown), bare(known)
     return bool(a) and b.startswith(a)
 
 
 def known_dates(
-    gold: dict[int, date], gold_titles: dict[int, str], merged: dict[str, dict],
+    gold: dict[int, date], gold_heads: dict[int, tuple[str, str]], merged: dict[str, dict],
 ) -> dict[int, tuple[date, str]]:
     """The board's dates a linked row may be bounded by, with their titles:
     gold posts' own, and list rows that printed the full date. A list row's
     MM/DD whose year was worked out is left out — a gold neighbour far
     below can set it years early (UOForum 3017–3024 as 2002)."""
-    known = {no: (d, gold_titles[no]) for no, d in gold.items() if no in gold_titles}
+    known = {no: (d, gold_heads[no][0]) for no, d in gold.items() if no in gold_heads}
     for r in merged.values():
         if r["full_date"] is not None:
             known.setdefault(int(r["no"]), (r["full_date"], r["title"]))
@@ -745,7 +880,7 @@ def date_linked(
                 for o in rows
                 if (n := int(o["no"])) > no
                 and n in known
-                and (o.get("context") or same_title(o["title"], known[n][1]))
+                and (o.get("context") or cut_title_matches(o["title"], known[n][1]))
             ]
             bound = min([day, *newer])
             dated = {"month_day": r["month_day"], "page_year": r.get("page_year"), "dated_at": ts}
@@ -753,7 +888,7 @@ def date_linked(
             if prev is None:
                 found[r["no"]] = {**r, "bound": bound, "capturedAt": ts, **(dated if r["month_day"] else {})}
                 continue
-            if not (same_title(prev["title"], r["title"]) or same_title(r["title"], prev["title"])):
+            if not (cut_title_matches(prev["title"], r["title"]) or cut_title_matches(r["title"], prev["title"])):
                 continue
             if bound < prev["bound"]:
                 prev["bound"], prev["capturedAt"] = bound, ts
@@ -777,7 +912,7 @@ def linked_entry(no: str, r: dict) -> BoardListingEntry:
     created, approx, by_capture = r["bound"], False, True
     if r["month_day"]:
         cap = (datetime.strptime(r["dated_at"], "%Y%m%d%H%M%S") + KST).date()
-        pinned, _approx = pin_year(int(no), *r["month_day"], r["page_year"], cap, {}, [])
+        pinned, _approx = pin_year(int(no), *r["month_day"], r["page_year"], cap, {}, [], title=r["title"], author="", gold_heads={})
         if pinned is not None and pinned <= r["bound"]:
             created, approx, by_capture = pinned, True, False
     category, title = split_category(r["title"])
@@ -828,7 +963,16 @@ def build_listing(
     linked: list[tuple[str, list[dict]]] = (),  # type: ignore[assignment]
 ) -> BoardListing | None:
     gold, gold_nos = load_gold_years(board)
+    gold_heads = load_gold_heads(board)
+    # Each install's own gold posts, for the rows captured since it began.
+    installs = {None: (gold, gold_nos)}
+    restarts = RESTARTS.get(board, ())
+    for start, end in zip(restarts, (*restarts[1:], date.max)):
+        since = {no: d for no, d in gold.items() if start <= d <= end}
+        installs[start] = (since, sorted(since))
     merged: dict[str, dict] = {}
+    # Each capture's time and the highest number its rows show.
+    shown: list[tuple[str, int]] = []
     total_reported: int | None = None
     engine_of_rows: dict[str, int] = {}
     newest_ts = ""
@@ -847,6 +991,8 @@ def build_listing(
         if rows:
             engine_of_rows[engine] = engine_of_rows.get(engine, 0) + len(rows)
         walk_page_years(rows, captured_at)
+        if rows:
+            shown.append((captured_at, max(int(r["no"]) for r in rows)))
         if total is not None and captured_at > newest_ts:
             newest_ts, total_reported = captured_at, total
         for r in rows:
@@ -867,6 +1013,7 @@ def build_listing(
             continue
         extra_read += 1
         extra_pages.add(page_no)
+        shown.append((captured_at, max(int(r["no"]) for r in rows)))
         engine = "gnuboard4" if kind == "gnuboard4" else "zeroboard"
         extra_engines[engine] = extra_engines.get(engine, 0) + len(rows)
         for r in rows:
@@ -886,15 +1033,35 @@ def build_listing(
         # A board known only from other captures: count those.
         page_nos, captures_read, engine_of_rows = extra_pages, extra_read, extra_engines
 
+    # For each restart, the Korean days of the captures since and the
+    # highest number shown by each day: a post of that install numbered n was
+    # up by the first day that shows n or higher.
+    shown_since: dict[date, tuple[list[date], list[int]]] = {}
+    for start in RESTARTS.get(board, ()):
+        days: list[date] = []
+        tops: list[int] = []
+        for day, top in sorted(((datetime.strptime(ts, "%Y%m%d%H%M%S") + KST).date(), top) for ts, top in shown):
+            if day > start:
+                days.append(day)
+                tops.append(max(top, tops[-1]) if tops else top)
+        shown_since[start] = (days, tops)
+
     entries: list[BoardListingEntry] = []
     for r in sorted(merged.values(), key=lambda x: int(x["no"]), reverse=True):
+        category, title = split_category(r["title"])
         created, approx = r["full_date"], False
         if created is None and r["month_day"]:
+            captured = (datetime.strptime(r["capturedAt"], "%Y%m%d%H%M%S") + KST).date()
+            start = max((s for s in RESTARTS.get(board, ()) if s < captured), default=None)
+            not_later = None
+            if start is not None:
+                days, tops = shown_since[start]
+                i = bisect_left(tops, int(r["no"]))
+                not_later = days[i] if i < len(days) else None
             created, approx = pin_year(
-                int(r["no"]), r["month_day"][0], r["month_day"][1], r["page_year"],
-                (datetime.strptime(r["capturedAt"], "%Y%m%d%H%M%S") + KST).date(), gold, gold_nos,
+                int(r["no"]), r["month_day"][0], r["month_day"][1], r["page_year"], captured, *installs[start],
+                title=title, author=r["author"] or "", gold_heads=gold_heads, not_before=start, not_later=not_later,
             )
-        category, title = split_category(r["title"])
         try:
             entries.append(
                 BoardListingEntry(
@@ -918,9 +1085,8 @@ def build_listing(
             print(f"  WARN {board} no={r['no']}: {e.errors()[0]['msg']}", file=sys.stderr)
 
     # Linked rows: the posts no list row and no gold post holds.
-    gold_titles = load_gold_titles(board)
-    held = set(merged) | {str(no) for no in gold_titles}
-    found = date_linked(linked, held, known_dates(gold, gold_titles, merged))
+    held = set(merged) | {str(no) for no in gold_heads}
+    found = date_linked(linked, held, known_dates(gold, gold_heads, merged))
     for no, r in found.items():
         try:
             entries.append(linked_entry(no, r))

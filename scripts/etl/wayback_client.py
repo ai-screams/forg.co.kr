@@ -231,11 +231,15 @@ def global_polite_slot() -> Generator[dict, None, None]:
       2. Read .wayback-rate-limit.json (next_allowed_at, consecutive_blocks)
       3. Sleep until next_allowed_at (polite gap from previous fetch)
       4. Yield to caller (caller runs the urllib fetch)
-      5. Update next_allowed_at = now + DELAY_BETWEEN + jitter
+      5. Update next_allowed_at = now + DELAY_BETWEEN + jitter, whether the
+         fetch returned or raised
       6. Release the lock
 
-    The state dict is yielded so callers can update consecutive_blocks
-    after detecting a block. Caller must NOT close the file handle.
+    The yielded dict is the state as read on entry, for reading only:
+    `fetch_with_retry` keeps consecutive_blocks in the state file itself.
+    Step 5 reads the file again, so it keeps what the fetch wrote there; it
+    once wrote the entry dict back, which undid the reset on every success
+    and left the counter at 4 for good (2026-10-20).
     """
     WAYBACK_RATE_LOCK.parent.mkdir(parents=True, exist_ok=True)
     with open(WAYBACK_RATE_LOCK, "w") as lock_fh:
@@ -245,11 +249,14 @@ def global_polite_slot() -> Generator[dict, None, None]:
             wait = state["next_allowed_at"] - time.time()
             if wait > 0:
                 time.sleep(wait)
-            yield state
-            state["next_allowed_at"] = (
-                time.time() + DELAY_BETWEEN + random.uniform(*JITTER)
-            )
-            _write_state(state)
+            try:
+                yield state
+            finally:
+                after = _read_state()
+                after["next_allowed_at"] = (
+                    time.time() + DELAY_BETWEEN + random.uniform(*JITTER)
+                )
+                _write_state(after)
         finally:
             fcntl.flock(lock_fh, fcntl.LOCK_UN)
 

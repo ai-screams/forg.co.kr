@@ -4,7 +4,7 @@
   "pagesCaptured": 1,
   "capturesRead": 35,
   "totalReported": 17,
-  "generatedAt": "2026-10-06T04:31:25.009094Z",
+  "generatedAt": "2026-10-20T05:43:41.733219Z",
   "entries": [
     {
       "no": "200",
@@ -882,8 +882,8 @@
       "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": "1",
-      "createdAt": "2002-03-21",
-      "yearApprox": true,
+      "createdAt": "2003-03-21",
+      "yearApprox": false,
       "hits": 188,
       "commentCount": 2,
       "isNotice": false,

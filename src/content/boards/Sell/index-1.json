@@ -2,9 +2,9 @@
   "board": "Sell",
   "page": 1,
   "totalPages": 22,
-  "totalPosts": 1094,
+  "totalPosts": 1099,
   "totalWithPost": 393,
-  "generatedAt": "2026-10-05T15:49:06Z",
+  "generatedAt": "2026-10-20T02:15:47Z",
   "entries": [
     {
       "postId": "1",
@@ -12,7 +12,7 @@
       "categoryLabel": null,
       "author": "Forg",
       "authorMemberNo": null,
-      "createdAt": "2001-03-16T22:39:31",
+      "createdAt": "2001-06-22T12:43:44",
       "createdAtApprox": false,
       "yearApprox": false,
       "commentCount": 0,

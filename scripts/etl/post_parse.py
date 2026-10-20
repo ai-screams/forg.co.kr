@@ -1,6 +1,8 @@
 """What the post parsers share: `02` (Zeroboard 4.1), `02b` (Gnuboard4) and
 `02d` (Gnuboard5), with `02f` (Zeroboard 4.0) and `02h` (reply forms)
-borrowing the Zeroboard pieces.
+borrowing the Zeroboard pieces. `same_title` — whether a list row with a
+post's number is that post — is also what `02c` dates a row by and `03`
+marks one by (`02c`'s linked rows use their own `cut_title_matches`).
 
 Each parser keeps its own selectors and its own driver — they walk different
 phases and key captures differently — and imports these. The parsers keep the
@@ -13,6 +15,7 @@ import json
 import re
 import sys
 import time
+import unicodedata
 from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass, field
@@ -92,6 +95,27 @@ def split_category_prefix(raw_title: str) -> tuple[str | None, str]:
         # `[xxx]` with no body, or empty bracket — keep title as-is.
         return None, raw_title.strip()
     return label, rest
+
+
+_RE_PREFIX = re.compile(r"^\[re\]", re.I)
+
+
+def title_key(text: str) -> str:
+    """Case, width and spacing folded: a list's link text puts a space where
+    its markup broke the title (`Load Oaks [일쉐나챔피언]` for the post's
+    `Load Oaks[일쉐나챔피언]`)."""
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text)).casefold()
+
+
+def same_title(title: str, row_title: str) -> bool:
+    """Whether a list row's title is the post's: equal once folded
+    (`title_key`), allowing for a list that cut it short with `..` and a 2001
+    reply's `[RE]`. Both titles come with their category split off."""
+    title, row_title = _RE_PREFIX.sub("", title_key(title)), _RE_PREFIX.sub("", title_key(row_title))
+    if title == row_title:
+        return True
+    cut = row_title.rstrip(".")  # NFKC has made `…` three dots
+    return row_title.endswith("..") and bool(cut) and title.startswith(cut)
 
 
 # ── Attachments (`download.php?…&filenum=N`, Zeroboard and Gnuboard4) ─────

@@ -33,10 +33,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 import time
-import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -44,6 +42,7 @@ from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from etl_io import write_atomic  # noqa: E402
+from post_parse import same_title, title_key  # noqa: E402
 from schemas import (  # noqa: E402
     BOARD_INDEX_PAGE_SIZE,
     BoardIndexEntry,
@@ -106,16 +105,6 @@ def _entry_from_post(post: Post) -> BoardIndexEntry:
     )
 
 
-_RE_PREFIX = re.compile(r"^\[re\]", re.I)
-
-
-def _key(text: str) -> str:
-    """Case, width and spacing folded: a list's link text puts a space where
-    its markup broke the title (`Load Oaks [일쉐나챔피언]` for the post's
-    `Load Oaks[일쉐나챔피언]`)."""
-    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", text)).casefold()
-
-
 def same_post(post: BoardIndexEntry, row: BoardListingEntry) -> bool:
     """Whether a list row with the post's number is the post.
 
@@ -126,13 +115,9 @@ def same_post(post: BoardIndexEntry, row: BoardListingEntry) -> bool:
     does — the board's admin rewrote its notices' titles between captures
     (Q_A 2429, Sell 1, Role 1, …).
     """
-    title, row_title = _RE_PREFIX.sub("", _key(post.title)), _RE_PREFIX.sub("", _key(row.title))
-    if title == row_title:
+    if same_title(post.title, row.title):
         return True
-    cut = row_title.rstrip(".")  # NFKC has made `…` three dots
-    if row_title.endswith("..") and cut and title.startswith(cut):
-        return True
-    return row.isNotice and _key(post.author) == _key(row.author)
+    return row.isNotice and title_key(post.author) == title_key(row.author)
 
 
 def index_order(e: BoardIndexEntry) -> tuple[bool, datetime, int]:
