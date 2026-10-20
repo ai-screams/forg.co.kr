@@ -28,10 +28,14 @@ A 4.0 view shows no date for the post or its comments. The post's date comes
 from the board list Zeroboard prints under every view: each row carries
 `title='2001년 09월 18일 17시 53분 02초'`, and the rows of every downloaded
 capture are pooled, so a post whose own capture lists a different page can
-still be dated from another capture's list. Failing that, the date a merged
-list page gave the index row is used; failing both, the 1970 sentinel the
-site renders as "작성일 미상". Comment dates were never printed and take the
-sentinel too.
+still be dated from another capture's list. A row is the post only when its
+title agrees with the post's (`date_of`): numbers repeat — Sell started
+again at 1 in 2001-03, 2001-06 and 2001-12, and many boards in 2005 (`02c`'s
+`RESTARTS`) — and a number alone gave posts other posts' dates, some after
+their own capture. A post no row agrees with takes the
+1970 sentinel the site renders as "작성일 미상". Comment dates were never
+printed and take the sentinel too. `05b-repair-zeroboard40-dates.py` applies
+this rule to posts already parsed.
 """
 
 from __future__ import annotations
@@ -42,7 +46,7 @@ import re
 import sys
 import unicodedata
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -50,14 +54,13 @@ from bs4 import BeautifulSoup, Tag
 from pydantic import ValidationError
 
 from etl_io import write_atomic
-from post_parse import find_attachments, split_category_prefix
+from post_parse import find_attachments, same_title, split_category_prefix, title_key
 from schemas import Attachment, Comment, Post
 from sanitise import sanitise_html
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 INPUT_BASE = PROJECT_ROOT / ".docs" / "research" / "archive-clean"
 OUTPUT_DIR = PROJECT_ROOT / "src" / "content" / "posts"
-INDEX_DIR = PROJECT_ROOT / "src" / "content" / "boards"
 PROGRESS_FILE = PROJECT_ROOT / ".docs" / "research" / "archive" / ".progress.jsonl"
 FAILURES_FILE = PROJECT_ROOT / "scripts" / "etl" / ".parse-failures-zb40.jsonl"
 QUARANTINE_FILE = PROJECT_ROOT / "scripts" / "etl" / ".quarantine-ip-zb40.tsv"
@@ -69,6 +72,7 @@ ORIGIN_BY_PHASE = {
     "T": "http://forg.co.kr/~forg/zboard/zboard.php",
 }
 UNKNOWN_DATE = datetime(1970, 1, 1)
+KST = timedelta(hours=9)  # Wayback times are UTC; the boards printed Korean time
 
 # The attachment reader and category split come from `post_parse`: the
 # `download.php?…&filenum=N` link and the `[말머리]` title prefix are the same
@@ -117,16 +121,19 @@ def _label(td: Tag) -> str:
 # ── dates ───────────────────────────────────────────────────────────────
 
 
-def list_row_dates(html: str) -> dict[tuple[str, str], datetime]:
-    """(board, no) → timestamp for every row of the list printed under a view.
+def list_row_dates(html: str) -> dict[tuple[str, str], tuple[str, datetime]]:
+    """(board, no) → (title, timestamp) for every row of the list printed
+    under a view.
 
     Each date element is paired with a view link whose nearest `<tr>` is the
     date's own nearest `<tr>`, so a layout table inside a row neither hides
     the row nor lends it another row's date. The board and number come from
-    the link's query; the time from a `title` attribute that is nothing but
-    the timestamp. A date that does not exist (`13월`) drops that row only.
+    the link's query and the title from its text, as the list printed it
+    (category and all, perhaps cut short with `..`); the time from a `title`
+    attribute that is nothing but the timestamp. A date that does not exist
+    (`13월`) drops that row only.
     """
-    out: dict[tuple[str, str], datetime] = {}
+    out: dict[tuple[str, str], tuple[str, datetime]] = {}
     m = LIST_START_RE.search(html)
     if not m:
         return out
@@ -137,38 +144,68 @@ def list_row_dates(html: str) -> dict[tuple[str, str], datetime]:
         row = el.find_parent("tr")
         if not isinstance(row, Tag):
             continue
-        key = None
+        key, title = None, ""
         for a in row.find_all("a", href=True):
             if a.find_parent("tr") is not row:
                 continue
             q = parse_qs(urlparse(str(a["href"])).query)
             if q.get("id") and q.get("no") and q["no"][0].isdigit():
-                key = (q["id"][0], q["no"][0])
+                key, title = (q["id"][0], q["no"][0]), _text(a)
                 break
         date = _ROW_DATE_RE.match(str(el["title"]))
         if key is None or date is None:
             continue
         try:
-            out[key] = datetime(*(int(x) for x in date.groups()))
+            out[key] = (title, datetime(*(int(x) for x in date.groups())))
         except ValueError:
             continue
     return out
 
 
-def index_row_dates() -> dict[tuple[str, str], datetime]:
-    """Dates the board index already holds for rows known from list pages."""
-    out: dict[tuple[str, str], datetime] = {}
-    for f in INDEX_DIR.glob("*/index-*.json"):
-        for e in json.loads(f.read_text(encoding="utf-8"))["entries"]:
-            if e.get("createdAtApprox"):
-                continue
-            try:
-                when = datetime.fromisoformat(e["createdAt"])
-            except ValueError:
-                continue
-            if when.year >= 1990:
-                out[(f.parent.name, str(e["postId"]))] = when
+def pooled_rows() -> dict[tuple[str, str], list[tuple[str, datetime]]]:
+    """(board, no) → one (title, time) per capture that lists it: every list
+    printed under an old-path view, and the old paths' own list pages (LZ).
+
+    Each row is keyed by its own link's board id, so another board's list
+    can only date that board.
+    """
+    out: dict[tuple[str, str], list[tuple[str, datetime]]] = {}
+    for phase in (*ORIGIN_BY_PHASE, "LZ"):
+        for f in sorted((INPUT_BASE / phase).glob("*/*.html")):
+            for key, row in list_row_dates(f.read_text(encoding="utf-8")).items():
+                out.setdefault(key, []).append(row)
     return out
+
+
+def _extends(title: str, row_title: str) -> bool:
+    """Whether a row's title is the post's with more after it: a 2001 list
+    shows a byline the post's title lost later — UOForum 42's
+    `에헤랴~ 땅을 파세~......` is listed as
+    `에헤랴~ 땅을 파세~......   -- 검은사자비`. Six folded characters at
+    least, so a short title (`질문`) is not the start of any longer one."""
+    title, row_title = title_key(title), title_key(row_title)
+    return len(title) >= 6 and row_title.startswith(title)
+
+
+def date_of(title: str, captured_at: str, rows: list[tuple[str, datetime]]) -> tuple[datetime, str]:
+    """The post's date and where it came from, for a post titled `title`
+    (its category split off) and captured at Wayback time `captured_at`,
+    given the list rows with its number (`rows`, from `pooled_rows`).
+
+    A row later than the post's own capture (Korean time) is another post's.
+    Of the rest, those whose title agrees with the post's count
+    (`same_title`); only when none does, those whose title is the post's
+    with more after it (`_extends`). When the rows that count disagree on
+    the time, the time most captures show wins, and of times shown equally
+    often, the earliest. No row counts: `UNKNOWN_DATE`.
+    """
+    latest = datetime.strptime(captured_at, "%Y%m%d%H%M%S") + KST
+    rows = [(split_category_prefix(row_title)[1], when) for row_title, when in rows if when <= latest]
+    for agrees, how in ((same_title, "list row"), (_extends, "list row, longer title")):
+        times = Counter(when for row_title, when in rows if agrees(title, row_title))
+        if times:
+            return min(times, key=lambda when: (-times[when], when)), how
+    return UNKNOWN_DATE, "unknown"
 
 
 def capture_ts_index() -> dict[tuple[str, str, str], str]:
@@ -389,15 +426,8 @@ def main() -> None:
                 continue
             files.append((phase, f.parent.name, f.stem, f))
 
-    # Pool every list row printed under any old-path capture — and on the
-    # old paths' own list pages (phase LZ) — then fall back to the index.
-    # Pooled from all boards even on a `--board` run: each row is keyed by its
-    # own link's board id, so another board's list can only date that board.
-    row_dates: dict[tuple[str, str], datetime] = {}
-    pool = [f for phase in (*ORIGIN_BY_PHASE, "LZ") for f in sorted((INPUT_BASE / phase).glob("*/*.html"))]
-    for f in pool:
-        row_dates.update(list_row_dates(f.read_text(encoding="utf-8")))
-    index_dates = index_row_dates()
+    # Pooled from all boards even on a `--board` run (see `pooled_rows`).
+    rows = pooled_rows()
     ts_index = capture_ts_index()
 
     stats: Counter[str] = Counter()
@@ -416,13 +446,6 @@ def main() -> None:
         if out.exists() and not args.force:
             stats["exists"] += 1
             continue
-        key = (board, post_id)
-        if key in row_dates:
-            created, how = row_dates[key], "list row"
-        elif key in index_dates:
-            created, how = index_dates[key], "index row"
-        else:
-            created, how = UNKNOWN_DATE, "unknown"
         failures.pop(str(f), None)
         try:
             captured = ts_index[(phase, board, post_id)]
@@ -431,7 +454,7 @@ def main() -> None:
                 board=board,
                 post_id=post_id,
                 phase=phase,
-                created_at=created,
+                created_at=UNKNOWN_DATE,
                 captured_at=captured,
                 parsed_at=parsed_at,
             )
@@ -442,6 +465,8 @@ def main() -> None:
             stats["failed"] += 1
             failures[str(f)] = {"input": str(f), "error": f"{type(e).__name__}: {e}"[:400]}
             continue
+        key = (board, post_id)
+        post.createdAt, how = date_of(post.title, captured, rows.get(key, []))
         # A post that still shows an IPv4-looking string is not published
         # until someone has read it: it may be a poster's address.
         if where := ip_like_fields(post):
@@ -453,7 +478,7 @@ def main() -> None:
         if not args.dry_run:
             write_atomic(out, post.model_dump_json(indent=2) + "\n")
 
-    print(f"[02f-zb40] files={len(files)} list-row dates pooled={len(row_dates)} dry_run={args.dry_run}")
+    print(f"[02f-zb40] files={len(files)} numbers with list rows={len(rows)} dry_run={args.dry_run}")
     print(f"[02f-zb40] {dict(stats)}")
     print(f"[02f-zb40] dates from: {dict(dated)}")
     FAILURES_FILE.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in failures.values()), encoding="utf-8")

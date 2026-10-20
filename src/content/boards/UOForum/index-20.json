@@ -4,7 +4,7 @@
   "totalPages": 33,
   "totalPosts": 1640,
   "totalWithPost": 93,
-  "generatedAt": "2026-10-07T11:13:35Z",
+  "generatedAt": "2026-10-20T02:15:47Z",
   "entries": [
     {
       "postId": "919",
@@ -553,22 +553,6 @@
       "hasPost": false
     },
     {
-      "postId": "129",
-      "title": "시약 1000셋으로 메져리를 올려봤습니다",
-      "categoryLabel": null,
-      "author": "골덕",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-02T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 6,
-      "attachmentCount": 0,
-      "hits": 4223,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
-    },
-    {
       "postId": "2271",
       "title": "무기대미지+속도 총정리",
       "categoryLabel": null,
@@ -647,22 +631,6 @@
       "recommend": null,
       "era": "2003",
       "hasPost": false
-    },
-    {
-      "postId": "127",
-      "title": "kalli의 울온여행기(3)",
-      "categoryLabel": null,
-      "author": "kalli",
-      "authorMemberNo": null,
-      "createdAt": "2002-08-01T00:00:00",
-      "createdAtApprox": false,
-      "yearApprox": false,
-      "commentCount": 2,
-      "attachmentCount": 0,
-      "hits": 1129,
-      "recommend": null,
-      "era": "2003",
-      "hasPost": true
     },
     {
       "postId": "2269",
@@ -804,6 +772,38 @@
       "commentCount": 7,
       "attachmentCount": 0,
       "hits": 725,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "875",
+      "title": "명령어 안보이게하기!!!",
+      "categoryLabel": null,
+      "author": "son_ye_jin",
+      "authorMemberNo": "2477",
+      "createdAt": "2002-07-31T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 1,
+      "attachmentCount": 0,
+      "hits": 412,
+      "recommend": null,
+      "era": "2003",
+      "hasPost": false
+    },
+    {
+      "postId": "874",
+      "title": "캐릭터이름 쉽게짓기",
+      "categoryLabel": null,
+      "author": "son_ye_jin",
+      "authorMemberNo": "2477",
+      "createdAt": "2002-07-31T00:00:00",
+      "createdAtApprox": false,
+      "yearApprox": false,
+      "commentCount": 13,
+      "attachmentCount": 0,
+      "hits": 611,
       "recommend": null,
       "era": "2003",
       "hasPost": false

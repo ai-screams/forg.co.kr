@@ -188,7 +188,7 @@ def test_only_gold_and_printed_full_dates_bound():
         "3024": {"no": "3024", "title": "UOSE 잡팁", "full_date": None},
         "2500": {"no": "2500", "title": "그누보드 글", "full_date": date(2004, 10, 1)},
     }
-    known = stage.known_dates({100: date(2002, 1, 1)}, {100: "골드 글"}, merged)
+    known = stage.known_dates({100: date(2002, 1, 1)}, {100: ("골드 글", "lee")}, merged)
     assert known == {100: (date(2002, 1, 1), "골드 글"), 2500: (date(2004, 10, 1), "그누보드 글")}
 
 
