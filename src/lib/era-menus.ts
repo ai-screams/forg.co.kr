@@ -193,10 +193,10 @@ export const TOP_MENU_2001: readonly { asset: string; label: string; href: strin
 /*  2026 (the museum's own frame, ADR-0023)                              */
 /* ──────────────────────────────────────────────────────────────────── */
 
-// The 2026 bar's menu: the museum's own pages. The list of the old boards
-// joins it with its page, `/boards/`; FreeBoard comes with the boards people
-// write to (ADR-0023, step 2).
+// The 2026 bar's menu: the museum's own pages. FreeBoard comes with the
+// boards people write to (ADR-0023, step 2).
 export const MENU_2026: readonly { label: string; href: string }[] = [
+  { label: "옛 게시판", href: "/boards/" },
   { label: "안내 문서", href: "/site/" },
   { label: "검색", href: "/search/" },
 ];

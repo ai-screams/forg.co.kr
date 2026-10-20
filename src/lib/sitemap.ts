@@ -29,5 +29,5 @@ export async function sitemapPaths(): Promise<string[]> {
   const sitePages = (await getAllSitePages())
     .filter((p) => p.kind === "page" && !p.memberOnly)
     .map((p) => `/site/${p.stem}/`);
-  return ["/", "/policy/", "/site/", ...boards.flat(), ...posts, ...sitePages];
+  return ["/", "/policy/", "/site/", "/boards/", ...boards.flat(), ...posts, ...sitePages];
 }

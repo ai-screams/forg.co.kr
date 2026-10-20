@@ -23,6 +23,13 @@ import type { PostEra, SourceEngine } from "@/types/post";
 /** Top-level grouping used for sidebar sections and listings. */
 export type BoardCategory = "uo" | "community" | "trade" | "guide" | "other";
 
+/** The engines' names on screen. */
+export const ENGINE_LABELS: Readonly<Record<SourceEngine, string>> = {
+  zeroboard: "Zeroboard 4.1pl4",
+  gnuboard4: "Gnuboard4",
+  gnuboard5: "Gnuboard5",
+};
+
 /** The categories' names on screen, in the order the 2026 pages list them. */
 export const BOARD_CATEGORY_LABELS: Readonly<Record<BoardCategory, string>> = {
   uo: "울티마 온라인",

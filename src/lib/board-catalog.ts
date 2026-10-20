@@ -18,7 +18,7 @@ import type { BoardIndexEntry, BoardIndexPage } from "@/types/post";
 
 const BOARDS_ROOT = path.join(process.cwd(), "src", "content", "boards");
 
-interface BoardSummary {
+export interface BoardSummary {
   board: BoardId;
   /** Its own index rows, list-page rows included. */
   rows: number;
