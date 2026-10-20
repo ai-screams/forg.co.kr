@@ -1,11 +1,13 @@
 /**
  * forg.co.kr era system — 시기별 디자인 토글
  *
- * 세 시기를 토글하여 같은 콘텐츠를 다른 시각 셸에서 렌더링한다.
+ * 네 시기를 토글하여 같은 콘텐츠를 다른 시각 셸에서 렌더링한다. 2014·2003·2001은
+ * 원본을 재현한 것이고, 2026은 박물관이 새로 만든 틀이다(ADR-0023).
  * 토글 메커니즘은 ADR-0005, 색공간은 ADR-0006, 2001 시기는 ADR-0019 참조.
  */
 
-export const ERAS = ["2014", "2003", "2001"] as const;
+/** In the era buttons' order: ERA 2026 · 2014 · 2003 · 2001. */
+export const ERAS = ["2026", "2014", "2003", "2001"] as const;
 
 export type Era = (typeof ERAS)[number];
 
@@ -20,6 +22,7 @@ export const ERA_HINT_KEY = "forg.era-hint";
 
 /** 사람이 읽는 시기 라벨 (UI 노출용). */
 export const ERA_LABELS: Record<Era, string> = {
+  "2026": "2026",
   "2014": "2014",
   "2003": "2003",
   "2001": "2001",

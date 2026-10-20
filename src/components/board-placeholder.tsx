@@ -7,21 +7,15 @@
 
 import Link from "@/components/link";
 
-import { type BoardMeta } from "@/lib/boards";
+import { ENGINE_LABELS, type BoardMeta } from "@/lib/boards";
 
 interface BoardPlaceholderProps {
   meta: BoardMeta;
 }
 
-const ENGINE_LABEL: Record<BoardMeta["engine"], string> = {
-  zeroboard: "Zeroboard 4.1pl4",
-  gnuboard4: "Gnuboard4",
-  gnuboard5: "Gnuboard5",
-};
-
 export function BoardPlaceholder({ meta }: BoardPlaceholderProps) {
   return (
-    <article className="border border-(--era-input-border)/50 bg-white text-forg-ink">
+    <article className="forg-placeholder border border-(--era-input-border)/50 bg-white text-forg-ink">
       <header className="border-b border-(--era-input-border) px-6 py-5">
         <p className="font-mono text-[10px] tracking-wider text-forg-muted uppercase">
           {meta.id} · {meta.engine} · {meta.era}
@@ -47,7 +41,7 @@ export function BoardPlaceholder({ meta }: BoardPlaceholderProps) {
           </p>
           <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-forg-muted">
             <dt className="text-right font-bold">엔진</dt>
-            <dd className="text-left">{ENGINE_LABEL[meta.engine]}</dd>
+            <dd className="text-left">{ENGINE_LABELS[meta.engine]}</dd>
             {/* A members-only board's era is a skin hint, not a fact anyone has
                 (MoNgBaT is a 2007 capture); its description gives the dates. */}
             {!meta.memberOnly && (

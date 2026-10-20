@@ -45,7 +45,7 @@ const CHROME_ROOT = join(PUBLIC_ROOT, "img", "chrome");
 
 const VERSIONS = new Map<string, string>();
 
-/** A `/img/chrome/…` path with `?v=` and the first 10 hex of its bytes' SHA-256. */
+/** A path under `public/` (`/img/chrome/…`, the 2026 fonts' stylesheet) with `?v=` and the first 10 hex of its bytes' SHA-256. */
 export function versioned(path: string): string {
   let v = VERSIONS.get(path);
   if (v === undefined) {

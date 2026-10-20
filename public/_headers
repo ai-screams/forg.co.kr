@@ -25,6 +25,12 @@
 /img/chrome/*
   Cache-Control: public, max-age=31536000, immutable
 
+# The 2026 fonts: each slice is named by a hash of its bytes, Forg Digits and
+# 2026.css are asked for with one (scripts/dev/fetch-fonts-2026.mjs, `versioned`
+# in src/lib/chrome.ts).
+/fonts/2026/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Emoticons, placeholders and page scripts keep their names when replaced,
 # which is rare: a day without asking (a reload included), then a week of
 # using the copy while it is checked in the background. Rules do not

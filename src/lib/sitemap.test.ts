@@ -9,8 +9,8 @@ import { getAllSitePages } from "@/lib/site-pages";
 import { sitemapPaths } from "@/lib/sitemap";
 
 describe("the sitemap", () => {
-  // Fails if: a post, a board's later list page or a /site/ page goes
-  // missing, a path repeats, or one lacks the trailing slash the canonical
+  // Fails if: a post, a board's later list page, a /site/ page or the list
+  // of boards goes missing, a path repeats, or one lacks the trailing slash the canonical
   // address has (the sitemap would list a redirect).
   it("lists every page worth finding once, by its canonical path", async () => {
     const paths = await sitemapPaths();
@@ -20,6 +20,7 @@ describe("the sitemap", () => {
       "/",
       "/policy/",
       "/site/",
+      "/boards/",
       "/UoBoard/",
       "/UoBoard/page/2/",
       "/UoBoard/26397/",

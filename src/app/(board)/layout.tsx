@@ -19,7 +19,7 @@ import { EraShell } from "@/components/era-shell";
 export default function BoardLayout({ children }: { children: ReactNode }) {
   return (
     <EraShell>
-      <div className="w-full flex-1 px-3 py-4">{children}</div>
+      <div className="forg-content-cell w-full flex-1 px-3 py-4">{children}</div>
     </EraShell>
   );
 }

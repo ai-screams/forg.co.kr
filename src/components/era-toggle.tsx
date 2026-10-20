@@ -1,7 +1,7 @@
 import { DEFAULT_ERA, ERA_LABELS, ERAS } from "@/lib/era";
 
 /**
- * 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
+ * 2026 · 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
  *
  * Server markup only: content pages ship no React runtime
  * (`scripts/postbuild/strip-react-runtime.mjs`), so the era script the
@@ -19,10 +19,13 @@ export function EraToggle() {
     <div
       role="group"
       aria-label="디자인 시기 전환"
-      className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs"
+      className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs max-[360px]:hidden"
     >
-      {/* Three eras and the search link share a 375px phone's header row. */}
-      <span className="px-1 font-mono text-forg-ghost uppercase max-[399px]:hidden">era</span>
+      {/* Four eras and the search link share a phone's header row with
+          "forg.co.kr": below 410px the buttons narrow to their digits, the
+          search link is a magnifier (`<SiteHeader>`) and the "era" label
+          goes; below 360px the buttons fold into `<EraFold>`. */}
+      <span className="px-1 font-mono text-forg-ghost uppercase max-[410px]:hidden">era</span>
       {ERAS.map((candidate) => (
         <button
           key={candidate}
@@ -30,12 +33,49 @@ export function EraToggle() {
           aria-pressed={candidate === DEFAULT_ERA}
           data-era-option={candidate}
           suppressHydrationWarning
-          className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink sm:min-w-12"
+          className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink max-[410px]:min-w-10 max-[410px]:px-1.5 sm:min-w-12"
         >
           {ERA_LABELS[candidate]}
         </button>
       ))}
     </div>
+  );
+}
+
+/**
+ * Below 360px (a small phone, or 400% zoom) four buttons leave "forg.co.kr"
+ * no room: they fold into one control naming the era shown ("ERA 2014 ▾",
+ * from `.era-…-only`, so it is right before any script runs), and open as a
+ * row of 44px buttons. They carry `data-era-option` like `<EraToggle>`'s, so
+ * the era script presses and switches them alike. Looks: `.forg-era-fold`
+ * in `src/styles/base.css`.
+ */
+export function EraFold() {
+  return (
+    <details className="forg-era-fold">
+      <summary>
+        ERA
+        {ERAS.map((era) => (
+          <b key={era} className={`era-${era}-only`}>
+            {ERA_LABELS[era]}
+          </b>
+        ))}
+        <span aria-hidden="true">▾</span>
+      </summary>
+      <div role="group" aria-label="디자인 시기 전환">
+        {ERAS.map((era) => (
+          <button
+            key={era}
+            type="button"
+            aria-pressed={era === DEFAULT_ERA}
+            data-era-option={era}
+            suppressHydrationWarning
+          >
+            {ERA_LABELS[era]}
+          </button>
+        ))}
+      </div>
+    </details>
   );
 }
 
@@ -54,7 +94,9 @@ export function EraHint() {
       className="forg-era-hint absolute top-[calc(100%-0.375rem)] right-4 z-40 w-[min(17rem,calc(100vw-2rem))] flex-col gap-1 rounded-md border border-forg-gold bg-forg-hint px-3 py-2.5 text-xs leading-relaxed text-forg-ink shadow-lg before:absolute before:-top-[7px] before:right-16 before:size-3 before:rotate-45 before:border-t before:border-l before:border-forg-gold before:bg-forg-hint sm:right-6"
     >
       <b className="text-[13px]">옛 모습으로 보기</b>
-      <span>2003·2001을 누르면 그 시절 forg 모습으로 바뀝니다.</span>
+      <span>
+        2003·2001을 누르면 그 시절 forg 모습으로 바뀝니다. 2026은 박물관이 새로 만든 모습입니다.
+      </span>
       <button
         type="button"
         data-era-hint-close

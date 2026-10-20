@@ -3,13 +3,15 @@
  * Headless screenshots + a few render facts, for comparing the museum
  * against the original captures or checking a deploy.
  *
- *   node scripts/dev/shot.mjs <base-url> <out-dir> "<era>|<path>|<name>" ...
+ *   node scripts/dev/shot.mjs <base-url> <out-dir> "<era>|<path>|<name>[|<width>[|dark]]" ...
  *
  *   node scripts/dev/shot.mjs http://localhost:3000 /tmp/shots \
- *     "2014|/|home-2014" "2003|/UoBoard/|board-2003"
+ *     "2014|/|home-2014" "2003|/UoBoard/|board-2003" "2026|/|home-2026-390-dark|390|dark"
  *
  * Each spec sets localStorage["forg.era"] before the page loads, so the
- * FOUC script picks that era. Output: <out-dir>/<name>.png at 1280×900 and
+ * FOUC script picks that era. Output: <out-dir>/<name>.png, 900px high and
+ * 1280px wide unless the spec gives a width (below 640px as a phone: touch,
+ * device scale 1), in the dark colour scheme when it ends with `dark`, and
  * one line of facts (era applied, CSS rule count, hydration, image count,
  * broken images, console errors).
  *
@@ -46,7 +48,7 @@ if (!executablePath) {
 
 const [base, outDir, ...specs] = process.argv.slice(2);
 if (!base || !outDir || specs.length === 0) {
-  console.error('usage: shot.mjs <base-url> <out-dir> "<era>|<path>|<name>" ...');
+  console.error('usage: shot.mjs <base-url> <out-dir> "<era>|<path>|<name>[|<width>[|dark]]" ...');
   process.exit(2);
 }
 await mkdir(outDir, { recursive: true });
@@ -61,9 +63,13 @@ const browser = await puppeteer.launch({
 });
 try {
   for (const spec of specs) {
-    const [era, path, name] = spec.split("|");
+    const [era, path, name, width, scheme] = spec.split("|");
     const page = await browser.newPage();
-    await page.setViewport({ width: 1280, height: 900 });
+    const w = Number(width || 1280);
+    await page.setViewport({ width: w, height: 900, isMobile: w < 640, hasTouch: w < 640 });
+    if (scheme === "dark") {
+      await page.emulateMediaFeatures([{ name: "prefers-color-scheme", value: "dark" }]);
+    }
     const errors = [];
     page.on("console", (m) => m.type() === "error" && errors.push(m.text().slice(0, 120)));
     page.on("pageerror", (e) => errors.push("pageerror: " + e.message.slice(0, 120)));

@@ -6,6 +6,9 @@
  *
  * The popover is the native one (`popover`, `popovertarget`): the content
  * pages ship no script for it, and it closes on Escape or a press outside.
+ *
+ * 2026, the museum's own frame, puts the same notes inside it
+ * (`<BoardListing>`) and hides the (i) and its popover (ADR-0023 §2).
  */
 
 import type { ReactNode } from "react";
@@ -36,7 +39,7 @@ export function BoardCrumb({
         type="button"
         popoverTarget="forg-board-info"
         aria-label={`${meta.nameKr} 안내`}
-        className="inline-flex size-[15px] shrink-0 cursor-pointer items-center justify-center rounded-full border border-forg-muted text-[10px] leading-none font-semibold text-forg-muted hover:text-forg-ink"
+        className="forg-crumb-info inline-flex size-[15px] shrink-0 cursor-pointer items-center justify-center rounded-full border border-forg-muted text-[10px] leading-none font-semibold text-forg-muted hover:text-forg-ink"
       >
         i
       </button>
@@ -104,10 +107,31 @@ export function BoardNotes({
   return listing ? <ListingNotes listing={listing} /> : <IndexNotes board={board} page={page} />;
 }
 
+/** Capture days listed one by one; more are given as first – last. */
+const LISTED_DAYS = 6;
+
+/**
+ * The days a board's list captures were taken, each once with its count of
+ * captures; beyond LISTED_DAYS days, the first and last with the counts, so
+ * the line stays short however many captures the ETL finds.
+ */
+function captureDays(entries: BoardListing["entries"]): string {
+  const days = new Map<string, number>();
+  for (const ts of [...new Set(entries.map((e) => e.capturedAt))].sort()) {
+    const day = formatWaybackTs(ts);
+    days.set(day, (days.get(day) ?? 0) + 1);
+  }
+  const list = [...days];
+  if (list.length > LISTED_DAYS) {
+    const captures = list.reduce((sum, [, n]) => sum + n, 0);
+    return `${list[0]?.[0]} – ${list.at(-1)?.[0]} · ${count(list.length)}일, ${count(captures)}번`;
+  }
+  return list.map(([day, n]) => (n > 1 ? `${day} (${count(n)}번)` : day)).join(" · ");
+}
+
 /** Notes for a board known only from its captured list pages. */
 function ListingNotes({ listing }: { listing: BoardListing }) {
   const withPost = listing.entries.filter((e) => e.hasPost).length;
-  const captures = [...new Set(listing.entries.map((e) => e.capturedAt))].sort();
   return (
     <>
       <p className="mt-2">
@@ -124,13 +148,7 @@ function ListingNotes({ listing }: { listing: BoardListing }) {
           : '"본문 없음" 표시가 붙은 글은 목록에 제목만 남았습니다.'}
       </p>
       <p className="mt-2 text-forg-muted">
-        출처: Wayback Machine 목록 캡처{" "}
-        {captures.map((ts, i) => (
-          <span key={ts}>
-            {i > 0 ? " · " : ""}
-            {formatWaybackTs(ts)}
-          </span>
-        ))}
+        출처: Wayback Machine 목록 캡처 {captureDays(listing.entries)}
       </p>
     </>
   );

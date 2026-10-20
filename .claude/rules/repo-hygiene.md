@@ -10,18 +10,20 @@
 
 - Wayback captures (bronze/silver) — in `.docs/research/`, reproducible from CDX.
 - Post image bytes — R2 (`pnpm img:pull` hydrates a clone with the files it lacks; it never overwrites one).
+- The fonts' sources: the D2Coding release zip and Google's CSS; `public/fonts/2026/.manifest.json` names each file's source URL and SHA-256.
 
 Chrome assets are in git at `public/img/chrome/` (recovered by single-URL probes because prefix CDX returned nothing). A name `chromeUrl` asks for that is not there stops the build; `optionalChrome` marks the few Wayback never kept.
 
 ## `public/`
 
-Everything in `public/` is copied into `out/` and served, so its guide lives here, not in it (an `AGENTS.md` there was published as `/AGENTS.md`). The one exception is the image sidecars (`.manifest.json` beside each image folder, which the ETL scripts read and write there): `scripts/postbuild/drop-image-sidecars.mjs` removes them from `out/`.
+Everything in `public/` is copied into `out/` and served, so its guide lives here, not in it (an `AGENTS.md` there was published as `/AGENTS.md`). The one exception is the sidecars (`.manifest.json` beside each image folder, which the ETL scripts read and write there, and beside the 2026 fonts): `scripts/postbuild/drop-image-sidecars.mjs` removes every file of that name from `out/`.
 
-- `_headers` — Cloudflare Pages response headers; its comment explains why no `Content-Type` is set there. It also sends `X-Robots-Tag: noindex` on preview deployments (`https://:version.:project.pages.dev/*`); the production alias carries none, its canonicals name forg.co.kr.
+- `_headers` — Cloudflare Pages response headers; its comment explains why no `Content-Type` is set there. Files whose URL carries their hash (`/_next/static/`, `/img/chrome/`, `/fonts/2026/`) are cached for a year. It also sends `X-Robots-Tag: noindex` on preview deployments (`https://:version.:project.pages.dev/*`); the production alias carries none, its canonicals name forg.co.kr.
 - `_routes.json` is not here: the postbuild (`scripts/postbuild/old-addresses.mjs`) writes it, with `_redirects` and `_old-images.json`, into `out/` from the content — the old site's folders no museum path uses run the Pages Function (`functions/[[path]].ts`); everything else, museum pages included, stays a static file, free and fast.
 - `robots.txt` — static, not `app/robots.ts`: it carries a `Content-Signal` line (search and AI search yes, AI training no) and names the training crawlers to keep out; a search console's verification line (Daum's PIN) goes here too. `og.png` is the link-preview picture (`src/lib/seo.ts`), `{hex}.txt` the IndexNow key (`scripts/deploy/indexnow.mjs`).
 - `scripts/` — behaviour content pages load in place of React (`daemon-names.js`), linted as a browser script.
-- `img/chrome/` (era sets in `2001/`, `2003/`, `2014/`, the rest flat) and `img/emoticon/` (ADR-0017) are tracked in git; `img/placeholder/` holds `missing.svg` for posts and `missing-slot.svg` for `/site/` pages, where the route frames the whole slot.
+- `fonts/` — `2026/`: the 2026 era's fonts and `2026.css` (`.claude/rules/stack-and-tooling.md`); `OFL.txt`: their licence and copyright lines, linked from the policy page.
+- `img/chrome/` (era sets in `2001/`, `2003/`, `2014/`, the rest flat) and `img/emoticon/` (ADR-0017) are tracked in git; `img/chrome/2026/` holds the museum's own shots of the three old front pages for the 2026 era cards, with no manifest, as they are not old addresses; `img/placeholder/` holds `missing.svg` for posts and `missing-slot.svg` for `/site/` pages, where the route frames the whole slot.
 - `img/posts/` — post and site-page images. Bytes are git-ignored and served from R2, only the `.manifest.json` sidecars are tracked. Don't add files by hand: `download-images.py` writes them and `pnpm deploy:img` uploads them. Gold refers to `/img/posts/…`; `src/lib/img-base.ts` adds the R2 host.
 
 ## Deploy

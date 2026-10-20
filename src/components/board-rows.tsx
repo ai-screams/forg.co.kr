@@ -156,13 +156,15 @@ function CommentCount({ count, skin }: { count: number; skin: ListSkin }) {
   if (count <= 0) return null;
   if (skin === "webbus") {
     return (
-      <span className="shrink-0 font-[Tahoma,sans-serif] text-[10px] font-bold text-webbus-comment tabular-nums">
+      <span className="forg-cc shrink-0 font-[Tahoma,sans-serif] text-[10px] font-bold text-webbus-comment tabular-nums">
         ({count})
       </span>
     );
   }
   return (
-    <span className="shrink-0 font-[Tahoma,sans-serif] text-[7pt] tabular-nums">[{count}]</span>
+    <span className="forg-cc shrink-0 font-[Tahoma,sans-serif] text-[7pt] tabular-nums">
+      [{count}]
+    </span>
   );
 }
 

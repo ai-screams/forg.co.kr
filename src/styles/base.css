@@ -31,6 +31,67 @@
     }
   }
 
+  /* The era buttons below 360px, folded into one control (EraFold,
+   * era-toggle.tsx), in the toggle's own colours; the pressed one lit by
+   * the `[data-era-option]` rules in eras.css. */
+  .forg-era-fold {
+    position: relative;
+    @media (width >= 360px) {
+      display: none;
+    }
+  }
+  .forg-era-fold > summary {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 44px;
+    padding-inline: 12px;
+    border: 1px solid var(--era-input-border);
+    border-radius: 999px;
+    background-color: var(--era-content-bg);
+    color: var(--color-forg-ghost);
+    font:
+      12px/1 ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      monospace;
+    cursor: pointer;
+    list-style: none;
+  }
+  .forg-era-fold > summary::-webkit-details-marker {
+    display: none;
+  }
+  .forg-era-fold > summary b {
+    color: var(--color-forg-ink);
+    font-weight: 400;
+  }
+  .forg-era-fold > div {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    /* Above the first-visit note (z-40), which the fold's opening takes down too. */
+    z-index: 50;
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--era-input-border);
+    border-radius: 999px;
+    background-color: var(--era-content-bg);
+    box-shadow: 0 4px 12px oklch(0 0 0 / 0.15); /* black at 15% */
+  }
+  .forg-era-fold button {
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 999px;
+    color: var(--color-forg-muted);
+    font:
+      12px/1 ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      monospace;
+    cursor: pointer;
+  }
+
   /* The first-visit note under the era buttons (EraHint): shown only when the
    * era script, before the page paints, finds no era saved and the note never
    * shown (src/app/_scripts/era.js). */

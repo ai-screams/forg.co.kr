@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
 import { indexRows } from "@/components/board-rows";
-import type { ListRow } from "@/components/list-row";
+import { DATE_APPROX, type ListRow } from "@/components/list-row";
 import { ListTable } from "@/components/list-skin";
 import { ListTable2001 } from "@/components/list-skin-2001";
 import type { ListSkin } from "@/lib/skins";
@@ -68,7 +68,7 @@ function table(skin: ListSkin, rows: ListRow[]): string {
 /** The desktop table's body rows (not the phone list or the 2001 view). */
 function tableRows(html: string): string[] {
   const body =
-    /<tbody>([\s\S]*?)<\/tbody>/.exec(html.slice(html.indexOf("era-not-2001")))?.[1] ?? "";
+    /<tbody>([\s\S]*?)<\/tbody>/.exec(html.slice(html.indexOf("forg-skin-table")))?.[1] ?? "";
   return body.split("</tr>").filter((r) => r.includes("<tr"));
 }
 
@@ -207,5 +207,48 @@ describe("a row no capture dated", () => {
       'title="작성일이 캡처에 없어 이 글이 실린 화면이나 함께 실린 더 새 글의 날짜로 대신함"',
     );
     expect(dated).toContain("≤");
+  });
+});
+
+describe("the phone list, which 2026 draws at every width", () => {
+  const listOnly: BoardIndexPage = {
+    ...page([
+      indexEntry("7", { hasPost: false, datedByCapture: true }),
+      indexEntry("6", { hasPost: false, yearApprox: true }),
+      indexEntry("5", { hasPost: false, commentCount: 3 }),
+    ]),
+    totalWithPost: 0,
+  };
+  const phone = (rows: ListRow[]) =>
+    /<ul class="forg-narrow-list[^>]*>([\s\S]*?)<\/ul>/.exec(table("kritz", rows))?.[1] ?? "";
+  const items = (rows: ListRow[]) =>
+    phone(rows)
+      .split("</li>")
+      .filter((li) => li.includes("<li"));
+
+  // Fails if: the list loses the class 2026 shows it by, or its date, hits
+  // or either skin's comment count lose the hook the 2026 digits take.
+  it("carries the hooks 2026 dresses it by", () => {
+    const [, , plain] = items(indexRows("Q_A", listOnly, "kritz"));
+    expect(plain).toMatch(/<span class="forg-num shrink-0">03\.05\.01\.<\/span>/);
+    expect(plain).toMatch(/<span class="forg-num shrink-0">조회 10<\/span>/);
+    expect(plain).toMatch(/<span class="forg-cc /);
+    const [, , webbus] = items(indexRows("Q_A", listOnly, "webbus"));
+    expect(webbus).toMatch(/<span class="forg-cc [^"]*text-webbus-comment/);
+  });
+
+  // Fails if: a notice's row in the phone list loses the hook 2026 colours it by.
+  it("marks a notice's row for 2026", () => {
+    const [notice, reply] = items(indexRows("Q_A", page(ROWS_INDEX), "kritz"));
+    expect(notice).toMatch(/<li class="[^"]* forg-notice /);
+    expect(reply).not.toContain("forg-notice");
+  });
+
+  // Fails if: the phone list prints a bare date where the table marks it
+  // (`NarrowList` formatting `createdAt` itself).
+  it("marks a stand-in date as the table does", () => {
+    const [capture, year] = items(indexRows("Q_A", listOnly, "kritz"));
+    expect(capture).toContain(`title="${DATE_APPROX.capture.tooltip}">≤`);
+    expect(year).toContain(`title="${DATE_APPROX.year.tooltip}">≈`);
   });
 });

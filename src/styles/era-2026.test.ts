@@ -1,0 +1,172 @@
+import { readdirSync } from "node:fs";
+import path from "node:path";
+
+import { describe, expect, it } from "vitest";
+
+import { cssRules } from "@/styles/css-rules";
+
+// The 2026 frame's colours as era-2026.css sets them, light and dark.
+
+const DARK = "@media (prefers-color-scheme: dark)";
+const ERA_2026 = ':root[data-era="2026"]';
+
+const RULES = cssRules("era-2026.css");
+/** The style rules in the dark theme's media query (not the query itself). */
+const DARK_RULES = RULES.filter((r) => r.at.includes(DARK) && r.selectors.length > 0);
+
+/** `--name: value` pairs of these rules, later ones winning. */
+function declarations(rules: typeof RULES): Map<string, string> {
+  return new Map(
+    rules.flatMap((r) =>
+      [...r.body.matchAll(/(--[\w-]+):\s*([^;]+);/g)].map((m): [string, string] => [
+        m[1] ?? "",
+        (m[2] ?? "").trim(),
+      ]),
+    ),
+  );
+}
+
+const THEME = declarations(cssRules("tokens.css").filter((r) => r.at.includes("@theme")));
+const LIGHT = declarations(
+  RULES.filter((r) => r.selectors.includes(ERA_2026) && !r.at.includes(DARK)),
+);
+const THEMES = {
+  light: new Map([...THEME, ...LIGHT]),
+  dark: new Map([...THEME, ...LIGHT, ...declarations(DARK_RULES)]),
+};
+
+/** WCAG relative luminance of an `oklch(L C h)` colour, through linear sRGB. */
+function luminance(colour: string): number {
+  const m = /^oklch\(([\d.]+) ([\d.]+) ([\d.]+)\)$/.exec(colour);
+  if (!m) throw new Error(`not an opaque oklch(): ${colour}`);
+  const [L, C, h] = [m[1], m[2], m[3]].map(Number) as [number, number, number];
+  const a = C * Math.cos((h * Math.PI) / 180);
+  const b = C * Math.sin((h * Math.PI) / 180);
+  const l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3;
+  const mm = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3;
+  const s = (L - 0.0894841775 * a - 1.291485548 * b) ** 3;
+  const clamp = (x: number) => Math.min(Math.max(x, 0), 1);
+  const red = clamp(4.0767416621 * l - 3.3077115913 * mm + 0.2309699292 * s);
+  const green = clamp(-1.2684380046 * l + 2.6097574011 * mm - 0.3413193965 * s);
+  const blue = clamp(-0.0041960863 * l - 0.7034186147 * mm + 1.707614701 * s);
+  return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+}
+
+/** A value with its `var(--…)` followed through `theme`. */
+function resolve(theme: Map<string, string>, value: string): string {
+  const ref = /^var\((--[\w-]+)\)$/.exec(value)?.[1];
+  if (ref === undefined) return value;
+  const next = theme.get(ref);
+  if (next === undefined) throw new Error(`${ref} is not set`);
+  return resolve(theme, next);
+}
+
+/**
+ * The paper's values (old bodies and comments): its own declarations, each
+ * read where it is declared, against the frame's.
+ */
+function onPaper(theme: Map<string, string>): Map<string, string> {
+  const paper = declarations(
+    RULES.filter((r) => r.selectors.some((s) => s.includes(".forg-post-body-cell"))),
+  );
+  return new Map([
+    ...theme,
+    ...[...paper].map(([k, v]): [string, string] => [k, resolve(theme, v)]),
+  ]);
+}
+
+function contrast(theme: Map<string, string>, fg: string, bg: string): number {
+  const value = (name: string) => {
+    const v = theme.get(name);
+    if (v === undefined) throw new Error(`${name} is not set`);
+    return luminance(resolve(theme, v));
+  };
+  const [x, y] = [value(fg), value(bg)].sort((p, q) => q - p) as [number, number];
+  return (x + 0.05) / (y + 0.05);
+}
+
+// Text 4.5:1, a rail or a field's border 3:1 (WCAG 1.4.3, 1.4.11).
+const PAIRS: [fg: string, bg: string, min: number][] = [
+  ["--w26-ink", "--w26-surface", 4.5],
+  ["--w26-muted", "--w26-surface", 4.5],
+  ["--w26-muted", "--w26-bg", 4.5],
+  ["--w26-bar-ink", "--w26-bar", 4.5],
+  ["--color-forg-gold", "--w26-bar", 4.5],
+  ["--w26-on-gold", "--color-forg-gold", 4.5],
+  ["--w26-soft-ink", "--w26-soft", 4.5],
+  ["--w26-rec", "--w26-surface", 4.5],
+  ["--w26-rec-rail", "--w26-surface", 3],
+  ["--w26-input-line", "--w26-surface", 3],
+  ["--w26-input-line", "--w26-bg", 3],
+  ["--w26-input-line", "--w26-record", 3],
+];
+
+// The focus line (`outline` in --w26-ink) on the paper, 3:1 (WCAG 2.4.11).
+const PAPER_PAIRS: [fg: string, bg: string, min: number][] = [["--w26-ink", "--paper-bg", 3]];
+
+// Fails if: a stylesheet names a 2026 font outside the 2026 tokens
+// (`font-family: "Forg Sans KR"` on `body` in base.css), where another era
+// could ask for it.
+it("names the 2026 fonts only in the 2026 tokens", () => {
+  const FAMILY = /"(Forg Sans KR|Do Hyeon|Forg Digits)"/;
+  const naming = readdirSync(path.join(process.cwd(), "src", "styles"))
+    .filter((f) => f.endsWith(".css"))
+    .flatMap((f) => cssRules(f).map((r) => ({ f, ...r })))
+    .filter((r) => FAMILY.test(r.body));
+  expect(naming.map((r) => `${r.f} ${r.selectors.join(", ")}`)).toEqual([
+    `era-2026.css ${ERA_2026}`,
+  ]);
+});
+
+// Fails if: the museum bar hides on a 2026 phone page without the 2026 bar
+// (`body:has([data-era-frame="2026"])` dropped), leaving search, the policy
+// and the 404 without a way home, to search or to the eras.
+it("hides the museum bar on a phone only where the 2026 bar is", () => {
+  const hides = RULES.filter(
+    (r) =>
+      /display:\s*none/.test(r.body) &&
+      r.selectors.some((s) => s.includes('header[role="banner"]')),
+  );
+  expect(hides.flatMap((r) => r.selectors)).toEqual([
+    ':root:not([data-era="2014"], [data-era="2003"], [data-era="2001"]) body:has([data-era-frame="2026"]) header[role="banner"]',
+  ]);
+  expect(hides[0]?.at.at(-1)).toBe("@variant max-sm");
+});
+
+describe("2026 colours", () => {
+  // Fails if: a pair drops below its ratio in either theme (the dark
+  // `--w26-muted` set to the light one's #5E6B7B, 2.7:1 on the dark card), or
+  // the paper keeps the frame's light ink for its focus line in the dark.
+  it.each(["light", "dark"] as const)("read in the %s theme", (theme) => {
+    const low = [
+      ...PAIRS.map(([fg, bg, min]) => ({ fg, bg, min, ratio: contrast(THEMES[theme], fg, bg) })),
+      ...PAPER_PAIRS.map(([fg, bg, min]) => ({
+        fg: `${fg} (paper)`,
+        bg,
+        min,
+        ratio: contrast(onPaper(THEMES[theme]), fg, bg),
+      })),
+    ]
+      .filter((p) => p.ratio < p.min)
+      .map((p) => `${p.fg} on ${p.bg}: ${p.ratio.toFixed(2)} < ${p.min}`);
+    expect(low).toEqual([]);
+  });
+
+  // Fails if: the dark values reach beyond 2026 (the block on `:root`), the
+  // dark theme darkens a museum token such as `--era-content-bg`, whose bar
+  // keeps text colours that are the same in every era, or turns the whole
+  // page's native controls dark (`color-scheme: dark` on `:root`: the search
+  // field on its light card) instead of the frame's alone.
+  it("turns dark only the 2026 frame's own tokens", () => {
+    expect(DARK_RULES).toHaveLength(1);
+    for (const rule of DARK_RULES) {
+      expect(rule.selectors).toEqual([ERA_2026]);
+      const names = [...rule.body.matchAll(/([\w-]+):/g)].map((m) => m[1]);
+      expect(names.filter((n) => !n?.startsWith("--w26-"))).toEqual([]);
+    }
+    const frame = RULES.filter(
+      (r) => r.selectors.includes(`${ERA_2026} .forg-shell-main`) && r.at.length === 1,
+    );
+    expect(frame.map((r) => /color-scheme:\s*light dark;/.test(r.body))).toContain(true);
+  });
+});

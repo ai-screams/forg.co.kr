@@ -2,11 +2,12 @@
 
 이 저장소는 forg.co.kr(1998–2016)의 디지털 박물관 재현 프로젝트입니다. 저작권을 가진 쪽이 다른 자산이 함께 있어서, 코드와 콘텐츠의 조건이 다릅니다.
 
-| 대상                                                                                           | 조건                                       | 비고                                           |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------- |
-| **코드와 문서** (`src/`, `scripts/`, `functions/`, `.github/`, 최상위 설정·문서)               | **MIT License** ([LICENSE](./LICENSE))     | 박물관 운영자가 작성한 코드와 문서             |
-| **콘텐츠** (`src/content/`, `public/img/posts/`, `public/img/chrome/`, `public/img/emoticon/`) | **원저작자 권리 보유**                     | 박물관은 콘텐츠에 라이선스를 부여하지 않습니다 |
-| **Wayback 원본 캡처** (저장소에 없음)                                                          | Internet Archive 이용 약관 + 원저작자 권리 | 박물관을 만드는 과정에서만 사용                |
+| 대상                                                                                           | 조건                                                                           | 비고                                                                                                        |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **코드와 문서** (`src/`, `scripts/`, `functions/`, `.github/`, 최상위 설정·문서)               | **MIT License** ([LICENSE](./LICENSE))                                         | 박물관 운영자가 작성한 코드와 문서                                                                          |
+| **콘텐츠** (`src/content/`, `public/img/posts/`, `public/img/chrome/`, `public/img/emoticon/`) | **원저작자 권리 보유**                                                         | 박물관은 콘텐츠에 라이선스를 부여하지 않습니다                                                              |
+| **Wayback 원본 캡처** (저장소에 없음)                                                          | Internet Archive 이용 약관 + 원저작자 권리                                     | 박물관을 만드는 과정에서만 사용                                                                             |
+| **글꼴** (`public/fonts/`)                                                                     | **SIL Open Font License 1.1** ([public/fonts/OFL.txt](./public/fonts/OFL.txt)) | 2026 모습의 글꼴: IBM Plex Sans KR(Forg Sans KR로 이름을 바꿈), Do Hyeon, D2Coding의 숫자·영문(Forg Digits) |
 
 ---
 
@@ -28,6 +29,7 @@ MIT License는 다음에만 적용됩니다.
 - `src/content/pages/`, `src/content/page-versions/` — 원본 사이트의 안내 페이지 (§2)
 - `public/img/posts/` — 본문 첨부 그림 (§2)
 - `public/img/chrome/`, `public/img/emoticon/` — 사이트 디자인 자산과 이모티콘 (§2)
+- `public/fonts/` — 2026 모습의 글꼴. 각 저작권자의 SIL Open Font License 1.1을 따릅니다 (`public/fonts/OFL.txt`)
 - Wayback 원본 캡처 HTML (저장소에 없음, §2)
 
 ---

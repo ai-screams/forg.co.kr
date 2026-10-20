@@ -1,9 +1,10 @@
 /**
  * What the era frames link to: the top menus, the 2014 game categories, the
  * 2003 sidebar and the friend-site selects, in each original frame's order
- * and wording. The frames (`src/components/era-chrome-{2014,2003,2001}.tsx`)
- * draw them; `era-menus.test.ts` checks that every link reaches a board, a
- * `/site/` page or Wayback.
+ * and wording, and the 2026 bar's menu. The frames
+ * (`src/components/era-chrome-{2014,2003,2001,2026}.tsx`) draw them;
+ * `era-menus.test.ts` checks that every link reaches a board, a museum
+ * page, a `/site/` page or Wayback.
  */
 
 import type { BoardId } from "@/lib/boards";
@@ -186,4 +187,16 @@ export const TOP_MENU_2001: readonly { asset: string; label: string; href: strin
   { asset: "m_fun.gif", label: "유머게시판", href: "/FunBoard" },
   { asset: "m_s.gif", label: "스크린샷&벤더광고란", href: "/ScreenShot" },
   { asset: "m_k.gif", label: "자료실&울온여행", href: "/Recall" },
+];
+
+/* ──────────────────────────────────────────────────────────────────── */
+/*  2026 (the museum's own frame, ADR-0023)                              */
+/* ──────────────────────────────────────────────────────────────────── */
+
+// The 2026 bar's menu: the museum's own pages. FreeBoard comes with the
+// boards people write to (ADR-0023, step 2).
+export const MENU_2026: readonly { label: string; href: string }[] = [
+  { label: "옛 게시판", href: "/boards/" },
+  { label: "안내 문서", href: "/site/" },
+  { label: "검색", href: "/search/" },
 ];

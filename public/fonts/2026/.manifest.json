@@ -1,0 +1,3768 @@
+{
+  "fetched": "2026-10-20T09:31:48.159Z",
+  "css": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Do+Hyeon&display=swap",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "renamed": {
+    "IBM Plex Sans KR": {
+      "name": "Forg Sans KR",
+      "reserved": "Plex"
+    }
+  },
+  "digits": {
+    "file": "forg-digits.woff2",
+    "sha256": "e946dd3c218c90560f91534ad626c3aa511beee6e88ce080a7f657abd949eee3",
+    "script": "scripts/dev/subset-digits-font.sh"
+  },
+  "files": [
+    {
+      "file": "do-hyeon-400-0-3f7ece33.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.0.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "3f7ece33acb91238db78db3bb8ba18a552ea898daf3e94d78ab6ccba04746721",
+      "sha256": "3f7ece33acb91238db78db3bb8ba18a552ea898daf3e94d78ab6ccba04746721",
+      "bytes": 4824
+    },
+    {
+      "file": "do-hyeon-400-1-0c54e425.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.2.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0c54e4258f0567c6f7f5dc9479f3496f7cdcfe8efaee19f3886fde431c57185f",
+      "sha256": "0c54e4258f0567c6f7f5dc9479f3496f7cdcfe8efaee19f3886fde431c57185f",
+      "bytes": 2288
+    },
+    {
+      "file": "do-hyeon-400-2-8f2a3868.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.3.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "8f2a38688d5e0abadefc3f4cc98889b02056500d7487332c0efa7fbe5ad6b52b",
+      "sha256": "8f2a38688d5e0abadefc3f4cc98889b02056500d7487332c0efa7fbe5ad6b52b",
+      "bytes": 2720
+    },
+    {
+      "file": "do-hyeon-400-3-89475d53.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.4.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "89475d53a0fca4ce0a3eb27607dcda9d53c4aea041f32eef12b40004b4737892",
+      "sha256": "89475d53a0fca4ce0a3eb27607dcda9d53c4aea041f32eef12b40004b4737892",
+      "bytes": 2468
+    },
+    {
+      "file": "do-hyeon-400-4-dc48d93d.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.5.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "dc48d93d4c33d3ee7e2c343ea53f4ef4d3aeddd8f6ddfd36440035a46344fdc4",
+      "sha256": "dc48d93d4c33d3ee7e2c343ea53f4ef4d3aeddd8f6ddfd36440035a46344fdc4",
+      "bytes": 1532
+    },
+    {
+      "file": "do-hyeon-400-5-5301f801.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.6.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "5301f801484fe605c4bc91fcef842368fe14945f344e5bcb170a29f412d987c7",
+      "sha256": "5301f801484fe605c4bc91fcef842368fe14945f344e5bcb170a29f412d987c7",
+      "bytes": 1860
+    },
+    {
+      "file": "do-hyeon-400-6-b6103207.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.7.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "b6103207523c8190b71b55a83af028c496bab5a7e8f4c06d1089933fe9d980ef",
+      "sha256": "b6103207523c8190b71b55a83af028c496bab5a7e8f4c06d1089933fe9d980ef",
+      "bytes": 1564
+    },
+    {
+      "file": "do-hyeon-400-7-5430fde4.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.8.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "5430fde4e84beb3ccf1dfa5abab03846d06b4706efbbb1168bc56cdeabdda9c7",
+      "sha256": "5430fde4e84beb3ccf1dfa5abab03846d06b4706efbbb1168bc56cdeabdda9c7",
+      "bytes": 1292
+    },
+    {
+      "file": "do-hyeon-400-8-44000464.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.9.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "44000464a7975bb878b7d637ed61d5050097a162e1202c343d9417ae0e287c86",
+      "sha256": "44000464a7975bb878b7d637ed61d5050097a162e1202c343d9417ae0e287c86",
+      "bytes": 1928
+    },
+    {
+      "file": "do-hyeon-400-9-d7140cea.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.10.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d7140cea5fc4830572d4b50f39040fbc33fd30840baf0b414fc59d1416f4951f",
+      "sha256": "d7140cea5fc4830572d4b50f39040fbc33fd30840baf0b414fc59d1416f4951f",
+      "bytes": 1436
+    },
+    {
+      "file": "do-hyeon-400-10-717e5bd2.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.11.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "717e5bd24ea3c2667bee34dd692343ccf9b9b2e9b1e5b9ce235fefad412f0706",
+      "sha256": "717e5bd24ea3c2667bee34dd692343ccf9b9b2e9b1e5b9ce235fefad412f0706",
+      "bytes": 1408
+    },
+    {
+      "file": "do-hyeon-400-11-05c2c7d6.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.12.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "05c2c7d660e5a46864237762d4c27c307ad1fca5eb49c37e1ec0d5a9309e99df",
+      "sha256": "05c2c7d660e5a46864237762d4c27c307ad1fca5eb49c37e1ec0d5a9309e99df",
+      "bytes": 1332
+    },
+    {
+      "file": "do-hyeon-400-12-7cf09109.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.13.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "7cf0910955b255ec1644327d58de4ec7b67a8ec51be4ce7d62dc4d7404d5e81b",
+      "sha256": "7cf0910955b255ec1644327d58de4ec7b67a8ec51be4ce7d62dc4d7404d5e81b",
+      "bytes": 1388
+    },
+    {
+      "file": "do-hyeon-400-13-0d007bed.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.14.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0d007bed1385efb7ac86711ccf17d8b1942894a4d4cc57718fc286d3aae8531d",
+      "sha256": "0d007bed1385efb7ac86711ccf17d8b1942894a4d4cc57718fc286d3aae8531d",
+      "bytes": 1708
+    },
+    {
+      "file": "do-hyeon-400-14-220fd087.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.15.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "220fd087e43269645c6786cfa03b12252b530a26d208f86a6519e2fd2f0f4bb5",
+      "sha256": "220fd087e43269645c6786cfa03b12252b530a26d208f86a6519e2fd2f0f4bb5",
+      "bytes": 1464
+    },
+    {
+      "file": "do-hyeon-400-15-a27df6d8.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.16.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "a27df6d8a03200b001f1fdce4f1122f296d565f622b50494f08ef76ab5e69ff8",
+      "sha256": "a27df6d8a03200b001f1fdce4f1122f296d565f622b50494f08ef76ab5e69ff8",
+      "bytes": 1960
+    },
+    {
+      "file": "do-hyeon-400-16-d1b61f2c.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.17.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d1b61f2cfeeb1d54e5e4ef7e005594113084a1401a9418174613121b65309d6e",
+      "sha256": "d1b61f2cfeeb1d54e5e4ef7e005594113084a1401a9418174613121b65309d6e",
+      "bytes": 1812
+    },
+    {
+      "file": "do-hyeon-400-17-55e0ce47.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.18.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "55e0ce477c230e3b0a3e98e6e688f71348b6c8f1f1235f65d387793e93c0c2ef",
+      "sha256": "55e0ce477c230e3b0a3e98e6e688f71348b6c8f1f1235f65d387793e93c0c2ef",
+      "bytes": 1940
+    },
+    {
+      "file": "do-hyeon-400-18-276f7b7e.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.19.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "276f7b7e3006ea872d99931b58c00dd74ded3ec2f9f639bfd5def9acecaa674c",
+      "sha256": "276f7b7e3006ea872d99931b58c00dd74ded3ec2f9f639bfd5def9acecaa674c",
+      "bytes": 1264
+    },
+    {
+      "file": "do-hyeon-400-19-8f223c19.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.20.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "8f223c199bf013c9c476f2b6fd2c9efb0417a5e327661c7bc8771ecbb5ac432e",
+      "sha256": "8f223c199bf013c9c476f2b6fd2c9efb0417a5e327661c7bc8771ecbb5ac432e",
+      "bytes": 2200
+    },
+    {
+      "file": "do-hyeon-400-20-90653636.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.21.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "906536365f560fa78e26912e057d38c419716483a9007305dc55266ecf28daf4",
+      "sha256": "906536365f560fa78e26912e057d38c419716483a9007305dc55266ecf28daf4",
+      "bytes": 2040
+    },
+    {
+      "file": "do-hyeon-400-21-64bab806.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.22.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "64bab80626bd0eb1e6b55e414dae30ffe9005ebeee3b6381cdb733ff54666200",
+      "sha256": "64bab80626bd0eb1e6b55e414dae30ffe9005ebeee3b6381cdb733ff54666200",
+      "bytes": 1952
+    },
+    {
+      "file": "do-hyeon-400-22-fadf2885.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.23.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "fadf28852a4dab71e8acff1f062b9593a33ccd1fff141299bace881c14cab3d6",
+      "sha256": "fadf28852a4dab71e8acff1f062b9593a33ccd1fff141299bace881c14cab3d6",
+      "bytes": 1364
+    },
+    {
+      "file": "do-hyeon-400-23-818b9ee7.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.24.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "818b9ee7fe6b857e281f582ff348e570405db70d07b9e96f7f2c4cb7fad0a004",
+      "sha256": "818b9ee7fe6b857e281f582ff348e570405db70d07b9e96f7f2c4cb7fad0a004",
+      "bytes": 2424
+    },
+    {
+      "file": "do-hyeon-400-24-0d889b8e.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.25.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0d889b8e3cd581c26e55ac09aa8125e6c0665e549ee32b7977647ee0df66b3a0",
+      "sha256": "0d889b8e3cd581c26e55ac09aa8125e6c0665e549ee32b7977647ee0df66b3a0",
+      "bytes": 2064
+    },
+    {
+      "file": "do-hyeon-400-25-87072385.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.26.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "870723854deda7b5c66205ddae5a3938c852e5ae6590625a5d40017c93cfd5e4",
+      "sha256": "870723854deda7b5c66205ddae5a3938c852e5ae6590625a5d40017c93cfd5e4",
+      "bytes": 2956
+    },
+    {
+      "file": "do-hyeon-400-26-0d4ede04.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.27.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0d4ede041258afa37931dc8f85fdbbb0acf8a3c73727bad935ce019d8495fb47",
+      "sha256": "0d4ede041258afa37931dc8f85fdbbb0acf8a3c73727bad935ce019d8495fb47",
+      "bytes": 3184
+    },
+    {
+      "file": "do-hyeon-400-27-50511962.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.28.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "5051196245c3d5140f314423e6dcaf682e0343bdd045bb5493104e17d5a7d6df",
+      "sha256": "5051196245c3d5140f314423e6dcaf682e0343bdd045bb5493104e17d5a7d6df",
+      "bytes": 1772
+    },
+    {
+      "file": "do-hyeon-400-28-12fef04e.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.29.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "12fef04e3367e6f785430193045657a0fdef7d0b291f92018e2141a32087a74a",
+      "sha256": "12fef04e3367e6f785430193045657a0fdef7d0b291f92018e2141a32087a74a",
+      "bytes": 1704
+    },
+    {
+      "file": "do-hyeon-400-29-68bfac95.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.30.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "68bfac9547bd872b0c7607b30099dfd2791170dea2b8873f47e6a9e429af3022",
+      "sha256": "68bfac9547bd872b0c7607b30099dfd2791170dea2b8873f47e6a9e429af3022",
+      "bytes": 1888
+    },
+    {
+      "file": "do-hyeon-400-30-ae77f86b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.31.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ae77f86b29e6bb356f34dc9c987ecfcf9c33a41dea0c20861a1e26a4db4b4bc4",
+      "sha256": "ae77f86b29e6bb356f34dc9c987ecfcf9c33a41dea0c20861a1e26a4db4b4bc4",
+      "bytes": 1248
+    },
+    {
+      "file": "do-hyeon-400-31-e90cf71a.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.32.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "e90cf71a1439c341c4d6069aa74e742e5f4a46e0eeb2beaa842449653642ffac",
+      "sha256": "e90cf71a1439c341c4d6069aa74e742e5f4a46e0eeb2beaa842449653642ffac",
+      "bytes": 1680
+    },
+    {
+      "file": "do-hyeon-400-32-128af37a.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.33.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "128af37a3346a99f3dace5092c6df6c642a26c8e58bfb146a8a01b4959f7aa39",
+      "sha256": "128af37a3346a99f3dace5092c6df6c642a26c8e58bfb146a8a01b4959f7aa39",
+      "bytes": 2184
+    },
+    {
+      "file": "do-hyeon-400-33-925015ff.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.34.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "925015ffe229a81e9f44d52e4e17e250c05275e6b492f58832bd38199bf4926d",
+      "sha256": "925015ffe229a81e9f44d52e4e17e250c05275e6b492f58832bd38199bf4926d",
+      "bytes": 2240
+    },
+    {
+      "file": "do-hyeon-400-34-e6f6e33d.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.35.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "e6f6e33d4ac9f3352f96ad7e8844125bc51749d6396d56ecf56f514ffde11323",
+      "sha256": "e6f6e33d4ac9f3352f96ad7e8844125bc51749d6396d56ecf56f514ffde11323",
+      "bytes": 1996
+    },
+    {
+      "file": "do-hyeon-400-35-70b533ef.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.36.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "70b533ef549552b0bc5eedc01f431e411b6a988a6c60b82b8ed5aa7276594f77",
+      "sha256": "70b533ef549552b0bc5eedc01f431e411b6a988a6c60b82b8ed5aa7276594f77",
+      "bytes": 1120
+    },
+    {
+      "file": "do-hyeon-400-36-a5c11ae0.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.37.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "a5c11ae0c8ac6248528e4f64d92d0bd7b3827e1ba20da8ceece3f7d07cd98a2b",
+      "sha256": "a5c11ae0c8ac6248528e4f64d92d0bd7b3827e1ba20da8ceece3f7d07cd98a2b",
+      "bytes": 1412
+    },
+    {
+      "file": "do-hyeon-400-37-2d1b3144.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.38.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "2d1b3144b9be2f8fa2119f186115304c619f17fbe140731b7fafa8d3371d91d9",
+      "sha256": "2d1b3144b9be2f8fa2119f186115304c619f17fbe140731b7fafa8d3371d91d9",
+      "bytes": 1896
+    },
+    {
+      "file": "do-hyeon-400-38-03e8f998.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.39.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "03e8f998cda7027d713773f4e8e870bafd0b9557ee84b1e57a13b0b594d56fa4",
+      "sha256": "03e8f998cda7027d713773f4e8e870bafd0b9557ee84b1e57a13b0b594d56fa4",
+      "bytes": 1792
+    },
+    {
+      "file": "do-hyeon-400-39-28427f4b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.40.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "28427f4b2400632ba76504f7bfbb4e5f4e50270e32a1e6dc31cf62c1bae3ed5c",
+      "sha256": "28427f4b2400632ba76504f7bfbb4e5f4e50270e32a1e6dc31cf62c1bae3ed5c",
+      "bytes": 1592
+    },
+    {
+      "file": "do-hyeon-400-40-02a346a8.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.41.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "02a346a84055073424ca2a2a527274a24e5a0297a7dc82559ff6fe59b6a095b4",
+      "sha256": "02a346a84055073424ca2a2a527274a24e5a0297a7dc82559ff6fe59b6a095b4",
+      "bytes": 1496
+    },
+    {
+      "file": "do-hyeon-400-41-fb4d3be7.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.42.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "fb4d3be7738c85e6d095d95f540d451d17710d9cefb3a98acd0a7b35dc39b69a",
+      "sha256": "fb4d3be7738c85e6d095d95f540d451d17710d9cefb3a98acd0a7b35dc39b69a",
+      "bytes": 1588
+    },
+    {
+      "file": "do-hyeon-400-42-05012cd8.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.43.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "05012cd8a9e5ed04e1e1e4c573b355dbd75f1688f441e26fd4a7ce8cfe709a05",
+      "sha256": "05012cd8a9e5ed04e1e1e4c573b355dbd75f1688f441e26fd4a7ce8cfe709a05",
+      "bytes": 1720
+    },
+    {
+      "file": "do-hyeon-400-43-c7855f7b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.44.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "c7855f7bbbd53d8ab9905db3fe7b8cb0f16d23f03a7232d8cacaf97301be309f",
+      "sha256": "c7855f7bbbd53d8ab9905db3fe7b8cb0f16d23f03a7232d8cacaf97301be309f",
+      "bytes": 1736
+    },
+    {
+      "file": "do-hyeon-400-44-ce9d5672.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.45.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ce9d56727296dc8721da73f1e2bb5dda824f198c47a6e41b11cdf08c5887dd99",
+      "sha256": "ce9d56727296dc8721da73f1e2bb5dda824f198c47a6e41b11cdf08c5887dd99",
+      "bytes": 1316
+    },
+    {
+      "file": "do-hyeon-400-45-ade59072.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.46.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ade5907201ba5abee79f4be09a521b819a2a388639890a459669bdc6cb051247",
+      "sha256": "ade5907201ba5abee79f4be09a521b819a2a388639890a459669bdc6cb051247",
+      "bytes": 1624
+    },
+    {
+      "file": "do-hyeon-400-46-54b033aa.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.47.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "54b033aafe5c5422ebaf198bb26aa06ed662b3eb6638c9791e33659cc4df7bc1",
+      "sha256": "54b033aafe5c5422ebaf198bb26aa06ed662b3eb6638c9791e33659cc4df7bc1",
+      "bytes": 1400
+    },
+    {
+      "file": "do-hyeon-400-47-d1ade28f.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.48.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d1ade28f9143f79d819a439d7fa88831dbff723da359288373070ee848ca6e61",
+      "sha256": "d1ade28f9143f79d819a439d7fa88831dbff723da359288373070ee848ca6e61",
+      "bytes": 1300
+    },
+    {
+      "file": "do-hyeon-400-48-5c8f7bd8.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.49.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "5c8f7bd811602f77adc03090435f5ab28df91308e3cbaf62a6dbce10f3a565a5",
+      "sha256": "5c8f7bd811602f77adc03090435f5ab28df91308e3cbaf62a6dbce10f3a565a5",
+      "bytes": 1588
+    },
+    {
+      "file": "do-hyeon-400-49-0e04d5a4.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.50.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0e04d5a432ec4e4ec307e697fe012e47e88153287b2a5ab4065812a17d0ba220",
+      "sha256": "0e04d5a432ec4e4ec307e697fe012e47e88153287b2a5ab4065812a17d0ba220",
+      "bytes": 1576
+    },
+    {
+      "file": "do-hyeon-400-50-d02b7bc7.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.51.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d02b7bc73e9938d43f01cce003294f9437230a4e20f432eb2290513e40d7137e",
+      "sha256": "d02b7bc73e9938d43f01cce003294f9437230a4e20f432eb2290513e40d7137e",
+      "bytes": 1764
+    },
+    {
+      "file": "do-hyeon-400-51-14a1fe88.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.52.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "14a1fe8805baaf8fcf8e2042fdda0cdfac3db93e212728d144c0329e5ff4f7bb",
+      "sha256": "14a1fe8805baaf8fcf8e2042fdda0cdfac3db93e212728d144c0329e5ff4f7bb",
+      "bytes": 1776
+    },
+    {
+      "file": "do-hyeon-400-52-16130f8d.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.53.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "16130f8d8a5508877bcfa675097e85336315543ef62b296857e66a7894ead051",
+      "sha256": "16130f8d8a5508877bcfa675097e85336315543ef62b296857e66a7894ead051",
+      "bytes": 984
+    },
+    {
+      "file": "do-hyeon-400-53-d4230288.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.54.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d423028807fd1fa460ff2b11b08d9dc453e21128c3a6cae1d198778abfebfc6a",
+      "sha256": "d423028807fd1fa460ff2b11b08d9dc453e21128c3a6cae1d198778abfebfc6a",
+      "bytes": 1728
+    },
+    {
+      "file": "do-hyeon-400-54-25e11e4d.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.55.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "25e11e4d41d65bceb186dd644186b3e7abf11f8f2d498491b2b7b51e52da9655",
+      "sha256": "25e11e4d41d65bceb186dd644186b3e7abf11f8f2d498491b2b7b51e52da9655",
+      "bytes": 1632
+    },
+    {
+      "file": "do-hyeon-400-55-cacee2ba.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.56.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "cacee2baacb2e94d5f43f0d04d4871e17aae4e108ea8b87226ad049c7c258192",
+      "sha256": "cacee2baacb2e94d5f43f0d04d4871e17aae4e108ea8b87226ad049c7c258192",
+      "bytes": 1648
+    },
+    {
+      "file": "do-hyeon-400-56-92bc27c8.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.57.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "92bc27c85fa2b90a8baefbb041cd96477ad31d178a2f392ce4a25131d9b85635",
+      "sha256": "92bc27c85fa2b90a8baefbb041cd96477ad31d178a2f392ce4a25131d9b85635",
+      "bytes": 1316
+    },
+    {
+      "file": "do-hyeon-400-57-c34cbe4a.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.58.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "c34cbe4a9e665b739948fcc2c78cbdc57715899e94af2f014744e8bd4fc40ac6",
+      "sha256": "c34cbe4a9e665b739948fcc2c78cbdc57715899e94af2f014744e8bd4fc40ac6",
+      "bytes": 1484
+    },
+    {
+      "file": "do-hyeon-400-58-ebcac58c.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.59.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ebcac58cdb96af39c22dacdaa4faab259e8d6cd79459d740a46001e8ad699aff",
+      "sha256": "ebcac58cdb96af39c22dacdaa4faab259e8d6cd79459d740a46001e8ad699aff",
+      "bytes": 2004
+    },
+    {
+      "file": "do-hyeon-400-59-0cc9d4ce.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.60.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0cc9d4cef495c33191cea6103cc5d9d400d51e282c588951feafd46f04960bbd",
+      "sha256": "0cc9d4cef495c33191cea6103cc5d9d400d51e282c588951feafd46f04960bbd",
+      "bytes": 1864
+    },
+    {
+      "file": "do-hyeon-400-60-83d031a3.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.61.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "83d031a3507d2b8c4377ad4b39473c7bef48fa2038430cc8bce4dc8a705def86",
+      "sha256": "83d031a3507d2b8c4377ad4b39473c7bef48fa2038430cc8bce4dc8a705def86",
+      "bytes": 2172
+    },
+    {
+      "file": "do-hyeon-400-61-abc47fee.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.62.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "abc47fee4c43a53d712f751d49050a95af6c4a6985b3b00325b5047da701856b",
+      "sha256": "abc47fee4c43a53d712f751d49050a95af6c4a6985b3b00325b5047da701856b",
+      "bytes": 1284
+    },
+    {
+      "file": "do-hyeon-400-62-8ede6a6f.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.63.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "8ede6a6f09c3e8da704223d5f01f90018e03b725bfeccd157c02d3081528feb8",
+      "sha256": "8ede6a6f09c3e8da704223d5f01f90018e03b725bfeccd157c02d3081528feb8",
+      "bytes": 2232
+    },
+    {
+      "file": "do-hyeon-400-63-cfa029f3.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.64.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "cfa029f3921f6cb05823f1cc858f216100a6512953de9f6748acba928c797da7",
+      "sha256": "cfa029f3921f6cb05823f1cc858f216100a6512953de9f6748acba928c797da7",
+      "bytes": 2012
+    },
+    {
+      "file": "do-hyeon-400-64-55d6a5a6.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.65.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "55d6a5a66535f9b207b6b81683af216d4649eb4c410a5eb025d5d402e7b5de7e",
+      "sha256": "55d6a5a66535f9b207b6b81683af216d4649eb4c410a5eb025d5d402e7b5de7e",
+      "bytes": 940
+    },
+    {
+      "file": "do-hyeon-400-65-07ec59c3.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.93.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "07ec59c398d94aff2af90e9a2b6edce4077d0cf415d236aad81d8fa2de772c38",
+      "sha256": "07ec59c398d94aff2af90e9a2b6edce4077d0cf415d236aad81d8fa2de772c38",
+      "bytes": 1160
+    },
+    {
+      "file": "do-hyeon-400-66-aa7cbb72.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.94.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "aa7cbb72f85ac8f631e7c32bea9f18d289821b9d2dd003add573b75a025b7db6",
+      "sha256": "aa7cbb72f85ac8f631e7c32bea9f18d289821b9d2dd003add573b75a025b7db6",
+      "bytes": 5132
+    },
+    {
+      "file": "do-hyeon-400-67-8705ebbe.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.95.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "8705ebbe559367cfcf0712cf43c6ebd398d07d96338c55c765da1ebb037a524c",
+      "sha256": "8705ebbe559367cfcf0712cf43c6ebd398d07d96338c55c765da1ebb037a524c",
+      "bytes": 756
+    },
+    {
+      "file": "do-hyeon-400-68-75a1edd0.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.96.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "75a1edd0332895b52673e675e12b9747470a27b6f13fdc44b4eb0ba5e5786c20",
+      "sha256": "75a1edd0332895b52673e675e12b9747470a27b6f13fdc44b4eb0ba5e5786c20",
+      "bytes": 3380
+    },
+    {
+      "file": "do-hyeon-400-69-dda13786.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.97.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "dda13786f3766b11f53ba49b973e16aa1af8475ef5acb5ad92e97e4a77baa2c8",
+      "sha256": "dda13786f3766b11f53ba49b973e16aa1af8475ef5acb5ad92e97e4a77baa2c8",
+      "bytes": 3932
+    },
+    {
+      "file": "do-hyeon-400-70-ae325a41.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.98.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ae325a413b09f45eac7dd331f0fc9a8b23d9ee42ea4a042e0e12e97346912cf0",
+      "sha256": "ae325a413b09f45eac7dd331f0fc9a8b23d9ee42ea4a042e0e12e97346912cf0",
+      "bytes": 5828
+    },
+    {
+      "file": "do-hyeon-400-71-abe7a6db.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.99.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "abe7a6db7fc59c2fdbaedbd026ba615d2c1935fe0ba276b22139dd03805da9e6",
+      "sha256": "abe7a6db7fc59c2fdbaedbd026ba615d2c1935fe0ba276b22139dd03805da9e6",
+      "bytes": 2768
+    },
+    {
+      "file": "do-hyeon-400-72-0da29e0d.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.100.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "0da29e0de91dc9521f3a41e234bdf5dde495225b630cb4a12301752524ea30f4",
+      "sha256": "0da29e0de91dc9521f3a41e234bdf5dde495225b630cb4a12301752524ea30f4",
+      "bytes": 3380
+    },
+    {
+      "file": "do-hyeon-400-73-65c79a3c.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.101.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "65c79a3cb8edbb86bf8c28ade3fadbc9ff9344f1eb38d1d66d814ecd37456490",
+      "sha256": "65c79a3cb8edbb86bf8c28ade3fadbc9ff9344f1eb38d1d66d814ecd37456490",
+      "bytes": 3936
+    },
+    {
+      "file": "do-hyeon-400-74-d78944fb.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.102.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d78944fb4adcfd7607362de20b67166ab94eebd4160824b50f8b53552648ae42",
+      "sha256": "d78944fb4adcfd7607362de20b67166ab94eebd4160824b50f8b53552648ae42",
+      "bytes": 4148
+    },
+    {
+      "file": "do-hyeon-400-75-be70ef52.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.103.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "be70ef52ea74adddab4a460eb12f233d1b7f703f5d3858ad8fe41d2317cef8b9",
+      "sha256": "be70ef52ea74adddab4a460eb12f233d1b7f703f5d3858ad8fe41d2317cef8b9",
+      "bytes": 4880
+    },
+    {
+      "file": "do-hyeon-400-76-06807e8e.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.104.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "06807e8ed57f122fe5531fe02fdbf71f4dbaf151c744d963f3c98e3d9c4ca627",
+      "sha256": "06807e8ed57f122fe5531fe02fdbf71f4dbaf151c744d963f3c98e3d9c4ca627",
+      "bytes": 4184
+    },
+    {
+      "file": "do-hyeon-400-77-86ca51be.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.105.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "86ca51bec3131d115c36586b7237ea0c84f147905ea1cdd14105ccadc6390213",
+      "sha256": "86ca51bec3131d115c36586b7237ea0c84f147905ea1cdd14105ccadc6390213",
+      "bytes": 4896
+    },
+    {
+      "file": "do-hyeon-400-78-7416c2be.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.106.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "7416c2be3e65e43450b28a35f6b83a4a336634ea16588e16f96d9fda467b7161",
+      "sha256": "7416c2be3e65e43450b28a35f6b83a4a336634ea16588e16f96d9fda467b7161",
+      "bytes": 5164
+    },
+    {
+      "file": "do-hyeon-400-79-346e3951.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.107.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "346e395149b05020e9af9eee1c66615f6eeb3a5b053c49418ed11da63cc7f2bc",
+      "sha256": "346e395149b05020e9af9eee1c66615f6eeb3a5b053c49418ed11da63cc7f2bc",
+      "bytes": 6588
+    },
+    {
+      "file": "do-hyeon-400-80-f325c904.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.108.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "f325c904748b850ebbf8c137e8ec373ecf5bf15d9b4f0f9a55e964e8bef15f65",
+      "sha256": "f325c904748b850ebbf8c137e8ec373ecf5bf15d9b4f0f9a55e964e8bef15f65",
+      "bytes": 5996
+    },
+    {
+      "file": "do-hyeon-400-81-9251237b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.109.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "9251237b3423c35d7d4a9d6fcf61d36bc22b9e76021580f8b169bebdf7f5f377",
+      "sha256": "9251237b3423c35d7d4a9d6fcf61d36bc22b9e76021580f8b169bebdf7f5f377",
+      "bytes": 6448
+    },
+    {
+      "file": "do-hyeon-400-82-3493b3c6.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.110.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "3493b3c68969ce46fc8cb849d4175d20d114227b80221a72b68b762720987000",
+      "sha256": "3493b3c68969ce46fc8cb849d4175d20d114227b80221a72b68b762720987000",
+      "bytes": 6296
+    },
+    {
+      "file": "do-hyeon-400-83-bdd6919b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.111.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "bdd6919b28bfc9b441231888d436bef9664a572268c9fc8d2fa2c498f0309eb6",
+      "sha256": "bdd6919b28bfc9b441231888d436bef9664a572268c9fc8d2fa2c498f0309eb6",
+      "bytes": 6576
+    },
+    {
+      "file": "do-hyeon-400-84-6d4da3a0.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.112.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "6d4da3a0c49a7bfca22192b7aaff3d661b80897a89e19bc9316eb2d4eea8e552",
+      "sha256": "6d4da3a0c49a7bfca22192b7aaff3d661b80897a89e19bc9316eb2d4eea8e552",
+      "bytes": 6024
+    },
+    {
+      "file": "do-hyeon-400-85-78cda81c.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.113.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "78cda81cb1b7913f83c63b191a15940f9374e3d75f04dd0bc89859362226d70d",
+      "sha256": "78cda81cb1b7913f83c63b191a15940f9374e3d75f04dd0bc89859362226d70d",
+      "bytes": 6380
+    },
+    {
+      "file": "do-hyeon-400-86-d2f6fa1a.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.114.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "d2f6fa1a7305d6cd772f9e1558d8c5e5fe94310049eda08f7db70865a9cf1402",
+      "sha256": "d2f6fa1a7305d6cd772f9e1558d8c5e5fe94310049eda08f7db70865a9cf1402",
+      "bytes": 6560
+    },
+    {
+      "file": "do-hyeon-400-87-ecc97f7b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.115.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "ecc97f7b4f9338013bbe2b1ba16323ba9be05b1bb0301127151f54e48c40fc9f",
+      "sha256": "ecc97f7b4f9338013bbe2b1ba16323ba9be05b1bb0301127151f54e48c40fc9f",
+      "bytes": 6520
+    },
+    {
+      "file": "do-hyeon-400-88-f4141420.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.116.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "f4141420cb1036105572e7255292f664e17fbe0c748cad5cfa8d5512a9b005d5",
+      "sha256": "f4141420cb1036105572e7255292f664e17fbe0c748cad5cfa8d5512a9b005d5",
+      "bytes": 6564
+    },
+    {
+      "file": "do-hyeon-400-89-1e4fa832.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.117.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "1e4fa83277592557e583320948a4a04ac7442d510213d86aebcf096fba68f94d",
+      "sha256": "1e4fa83277592557e583320948a4a04ac7442d510213d86aebcf096fba68f94d",
+      "bytes": 6196
+    },
+    {
+      "file": "do-hyeon-400-90-16387f4b.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.118.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "16387f4b0ed07c9cb25e51bfb8297af60c3ad045a9a7c409cd3d0e99188f5ada",
+      "sha256": "16387f4b0ed07c9cb25e51bfb8297af60c3ad045a9a7c409cd3d0e99188f5ada",
+      "bytes": 6236
+    },
+    {
+      "file": "do-hyeon-400-91-489927be.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HFEyZwCH_qWR1BNaD-iarMAYI6JMm0j1RnPy.119.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "489927be5fa7488e3f1d294fc052e22110a6fcd2a0ae26c918d2ac94ecaddb6b",
+      "sha256": "489927be5fa7488e3f1d294fc052e22110a6fcd2a0ae26c918d2ac94ecaddb6b",
+      "bytes": 4740
+    },
+    {
+      "file": "do-hyeon-400-92-29c584ba.woff2",
+      "family": "Do Hyeon",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/dohyeon/v21/TwMN-I8CRRU2zM86HGEwbQel_O-D.woff2",
+      "sourceFamily": "Do Hyeon",
+      "sourceSha256": "29c584ba7e6e2fab69e9bfb459a4da398d9adf99b0d109211ac606483beaf872",
+      "sha256": "29c584ba7e6e2fab69e9bfb459a4da398d9adf99b0d109211ac606483beaf872",
+      "bytes": 6476
+    },
+    {
+      "file": "forg-sans-kr-400-0-b6aeff2e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.0.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "506baf287ebb4ba7e4022756549b03dba1c2a50be98d895ff136a93c507cfb83",
+      "sha256": "b6aeff2ea294d4359f50578a1128de92b4d724387acb7869c0d22625495dbec4",
+      "bytes": 4580
+    },
+    {
+      "file": "forg-sans-kr-400-1-d67a5eb3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.2.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "297402f8093475ca995b28efcbd2775da941a8bb63ea5779a1dec8db17f67eec",
+      "sha256": "d67a5eb3a0ed7b3ab90b9624e2fe79581320a4e90433c2baa73db5ab41884fe1",
+      "bytes": 8692
+    },
+    {
+      "file": "forg-sans-kr-400-2-43570eff.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.3.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "aee632d682ae8eca75c3098963064aca106a7a715bc89e7c14a2e453e2b97310",
+      "sha256": "43570eff50aba957481816451b1bbccfebaf0915eb95fe1abef0c79a02c12d39",
+      "bytes": 11796
+    },
+    {
+      "file": "forg-sans-kr-400-3-ade57a89.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.4.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "28d567db90721b7e7ee6ccaa6277f82318ab2f2f09bc9fb88ecf4b805adc3136",
+      "sha256": "ade57a890a73885c80196e408b633de8d51bda0a1ef796ff84ed076e268f8c84",
+      "bytes": 11164
+    },
+    {
+      "file": "forg-sans-kr-400-4-8c940a63.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.5.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a20127f26b66bac904569189cbfaf6a12442aa872368185a51a32733535e3554",
+      "sha256": "8c940a63eee273c7e3b386fe96f708045f36c0285b34d55e3a9dc2220753c583",
+      "bytes": 9880
+    },
+    {
+      "file": "forg-sans-kr-400-5-2cfcb7d0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.6.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cd4513d0f25aae6a66f12ecb96489e6dc65ec731871689ee3aa6b91352a7052c",
+      "sha256": "2cfcb7d000717e1d8bf9717fc7def677329384e858598b62239c5551fde3e1c9",
+      "bytes": 9416
+    },
+    {
+      "file": "forg-sans-kr-400-6-b94330bb.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.7.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "64c45ca47cc7b78eeb55dc50197afae7d3318f6fd6004402043aa11e4d713ce4",
+      "sha256": "b94330bb8bfbdbf7e6b211ee1db12605e08e32a7ba445b129b034a8a08662b3a",
+      "bytes": 10212
+    },
+    {
+      "file": "forg-sans-kr-400-7-5a20ad4d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.8.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8a10400590070555f6557511349054f066b64b9e26ba312e43236f973384eb42",
+      "sha256": "5a20ad4d05acecfc2341404562f9634e418fb15fbfd690975114b3b22e328e3b",
+      "bytes": 8548
+    },
+    {
+      "file": "forg-sans-kr-400-8-5eee5f78.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.9.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1500b486022be5009b37bd78ac6903e19d0261c8ce296d9312ee563368050dd8",
+      "sha256": "5eee5f782a46599ecbf592bdde511644f086830cf1a4a2ea4a40e875bdafa45a",
+      "bytes": 9988
+    },
+    {
+      "file": "forg-sans-kr-400-9-b89b746a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.10.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "610a09ccacd4946ffceb2c0bde064d868e8b4dc07d63ba95baccb4657ae904e8",
+      "sha256": "b89b746a7488bfb68265d4e7e0500f40d518d7a7a01c07457e1d0e917eaeef6d",
+      "bytes": 8904
+    },
+    {
+      "file": "forg-sans-kr-400-10-6c35b4df.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.11.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f6405362cca74962ca0dfbf0e9083bcd6269dbcab3d5e31bbd249621d2a7b217",
+      "sha256": "6c35b4dfdccee86d1e0582d7469891d96e4969f1371ff7695afe1c09213231aa",
+      "bytes": 7980
+    },
+    {
+      "file": "forg-sans-kr-400-11-2f2aaddb.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.12.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "945370808853c98ea61e896cf9a73d48b5de0509db2ac94880ea3a16be140503",
+      "sha256": "2f2aaddb7deb26f1c5e9935aa7a37d37306b8479e6a256429b2625007305e119",
+      "bytes": 10136
+    },
+    {
+      "file": "forg-sans-kr-400-12-608a7ae2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.13.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "307e2343d9110073b307c62c205ebbe5f4c68481850a40a634a3d9667d8cf7bf",
+      "sha256": "608a7ae29313253d2012e3846463b03a055a1f6bb6cd05960e927c68cc008952",
+      "bytes": 10520
+    },
+    {
+      "file": "forg-sans-kr-400-13-866b75c7.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.14.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "60fa3d42565ec007b618f777784a3d316fb0972945d583a2302dfba1f87a13ff",
+      "sha256": "866b75c781d8322aceff26942b2938c535ad5ff285cc73ddee4fedac208e2948",
+      "bytes": 10316
+    },
+    {
+      "file": "forg-sans-kr-400-14-c7425f42.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.15.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "95c5c697e945314496683f9da750c1e28eac9773fe8d7ee149a1ff74b5f6b29f",
+      "sha256": "c7425f42d6c10d4ee175531b64bfbba559993ac854dba1ae8767b9e437da4f64",
+      "bytes": 9560
+    },
+    {
+      "file": "forg-sans-kr-400-15-b84d0543.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.16.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d90be373019706dd3157d7219078977362b1f09645fd119ab5116a2bf39f5590",
+      "sha256": "b84d05431b75a51fc1fd5e6665249fb87d92a864b1ef99fb1e0332f4d8c111bd",
+      "bytes": 11004
+    },
+    {
+      "file": "forg-sans-kr-400-16-bca28e24.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.17.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "93acca5917b5224104c438d5d010f8b4ba8d15567f928ccf67f47f2eeb58a2bf",
+      "sha256": "bca28e24b35bb76a9e9c1401c1e82fe554a6d3588cc0d7bfeac8899ebd93e824",
+      "bytes": 10636
+    },
+    {
+      "file": "forg-sans-kr-400-17-c44282bb.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.18.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "84964b50445abde3f984f6e522e4d813390c0e72909601b741c83c12c195c7d6",
+      "sha256": "c44282bb6b50e174f87d7ddf1d1f348632b565763cd2637cbe5e27eff2a6fe5b",
+      "bytes": 9284
+    },
+    {
+      "file": "forg-sans-kr-400-18-4a8c02f5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.19.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2eef36b31111954d052e058d3be88a3faedeeaa4abe7e77da92b33edee80c20e",
+      "sha256": "4a8c02f5af85a3c85e76762fc2e7e2be2b3db352ca93226a8828ca0e002c5757",
+      "bytes": 12676
+    },
+    {
+      "file": "forg-sans-kr-400-19-7c061418.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.20.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a46978d6a84221687a113e51e4b235abfdd39636883e1ba2152a94c777010f5e",
+      "sha256": "7c0614187983c7f18e2304265d2dd2ac69dce2756aa2ec27d1fc17b06ccc4b0a",
+      "bytes": 12536
+    },
+    {
+      "file": "forg-sans-kr-400-20-4b85e4e1.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.21.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ead9cedc68dbaa9cf2fdc0cac5501e1a1eea24f9b072f1745c65a9e9a31d47c7",
+      "sha256": "4b85e4e1f8e2342d3376568f1800b535c6013c5af8911e08347e2f5fd37ec5d4",
+      "bytes": 11868
+    },
+    {
+      "file": "forg-sans-kr-400-21-14fb793d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.22.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8bec8546d30e99dacf4e9ce07e1d27169ebab8b8ee5ce212356a34503ae10b0b",
+      "sha256": "14fb793d957230b108a631932f2f19c85338158b960848d596e27f19d438ca66",
+      "bytes": 11044
+    },
+    {
+      "file": "forg-sans-kr-400-22-92a6b9d8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.23.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cde5d3488bfc2ec425093e4b6e575ee58a56ade49840f2b2d75866f1d04c72fa",
+      "sha256": "92a6b9d81de8fda1d9169dc2c1177ec82cf6eb5e2009eb44a97bb4bbcdb891eb",
+      "bytes": 10300
+    },
+    {
+      "file": "forg-sans-kr-400-23-139986d6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.24.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d3707778ce1ba75b9d203bd09fa97cdbad64bea85177de734c98757002030136",
+      "sha256": "139986d6611ab0a2651005437fd62d241da79ebf0659866b47d68cdac67c2f9f",
+      "bytes": 11376
+    },
+    {
+      "file": "forg-sans-kr-400-24-424db76c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.25.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "46c7f8649bf618050044c46f3e58d28737a94c04aadef6cd43b194d16f7b942c",
+      "sha256": "424db76c542fc8069efb92a437661b821529a0681442b531b6b03e4ad9403b02",
+      "bytes": 9164
+    },
+    {
+      "file": "forg-sans-kr-400-25-3bec7b2f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.26.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "efab3b240559b5ffeb75a93f1900be595b788d15a727ac379b929fd275975495",
+      "sha256": "3bec7b2fda0f527dad4065212eaa2308950582c47166810dffe2a3d9151d7a2f",
+      "bytes": 11296
+    },
+    {
+      "file": "forg-sans-kr-400-26-df43ed93.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.27.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "04c4572bbfd123f3da0620d4f6aaddab6507f3b586dad59835fadaa8c3d06316",
+      "sha256": "df43ed93c9cf2f8d3b7c0515f5f194ff8274843d8f4ff0adcb678fd4a36ea750",
+      "bytes": 11292
+    },
+    {
+      "file": "forg-sans-kr-400-27-66b09be6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.28.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "823fda81007f62cb4061e40c9e9d2b88191f768965dd1cc7a1cca14eb6f7a09e",
+      "sha256": "66b09be693e3c72508ab88816d4fb39af9b0f621d38017511df2f1dba2646a42",
+      "bytes": 9732
+    },
+    {
+      "file": "forg-sans-kr-400-28-e759fec3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.29.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "515cac4439597b631a50dc496048e220c79db7a31e615351bb83fbce12751a05",
+      "sha256": "e759fec318887d3f2521668a62d1631d58c7f6582faffadd235549d1b87cddfc",
+      "bytes": 12096
+    },
+    {
+      "file": "forg-sans-kr-400-29-a623e06c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.30.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "372123b4fc30d43bf7bd7c04f97a7482f343bd59d5cdd9ea5757d8c7e67a17ea",
+      "sha256": "a623e06cef11236dab2dc164658b8a93d24b041a21da3e9dc08a0d387bb9bea8",
+      "bytes": 12224
+    },
+    {
+      "file": "forg-sans-kr-400-30-219b9fe6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.31.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "85618b8f8c8c815a354505c9ef24dc132b92e1b310087b44aa32236c5b3aa232",
+      "sha256": "219b9fe69ead1762618243cfdb86e8ef2e20a3999f2bc2a6ec2fcacebbf9c3ce",
+      "bytes": 10336
+    },
+    {
+      "file": "forg-sans-kr-400-31-b15c3a31.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.32.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "19c558464ccdee02119fefba031f5a826ca0d2bf72a4e1f9cd060b13c5c406fa",
+      "sha256": "b15c3a319490d25d92e99f177a645e9f642045c3b607251639afc02b49957144",
+      "bytes": 12092
+    },
+    {
+      "file": "forg-sans-kr-400-32-c98ee873.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.33.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "51b6f5c77913edee6bb7883d36296256dd1ac153a9da89f7fa5ade920784f278",
+      "sha256": "c98ee873245c8f6b95c4d1c00ee093a4a8ac089691912a7d287b4b0e810dd6a4",
+      "bytes": 11520
+    },
+    {
+      "file": "forg-sans-kr-400-33-ec175842.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.34.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b24265f0ffeec40488931089add2f9050e33467feccb79caf0e32ef171c52e0c",
+      "sha256": "ec17584276abecee465afdc156c0cba71dd851e027d1e1ea258affe1b09fd844",
+      "bytes": 9884
+    },
+    {
+      "file": "forg-sans-kr-400-34-4b6a729d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.35.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2a4d59ebd7f0d8fb9895298c9f0241fd47596341e152aa696cf66edaff174a71",
+      "sha256": "4b6a729d34eace3a93f3d2e9c199c8968b5519061d538ceec7091ac141e20b07",
+      "bytes": 10116
+    },
+    {
+      "file": "forg-sans-kr-400-35-6f7d978a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.36.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "dd9a0cfaff3f9d69c6d9fac40e6694b05803cf6c6c6b345b5f28bb9ca0b4818c",
+      "sha256": "6f7d978a147afb90db67020f2a8612e33cd4cb851da2d418037cbc09971af2c9",
+      "bytes": 10048
+    },
+    {
+      "file": "forg-sans-kr-400-36-4c3d9f7a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.37.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ced6aea6d00a0d92b4157217fefa6b9b96eed5241e211308c5f0487ebf98bb48",
+      "sha256": "4c3d9f7a5fa34c65cf6603ef7056bd544b0fd37c020eba15948180f6f4e11d96",
+      "bytes": 10376
+    },
+    {
+      "file": "forg-sans-kr-400-37-d6a977d0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.38.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "927b4be79035111a8a3548c4995ec080c68a1c127138deda29d5da107ca5c43e",
+      "sha256": "d6a977d01bda90f387da45d98be799639e256fbeafd3ba91bd4568cda62a1479",
+      "bytes": 7920
+    },
+    {
+      "file": "forg-sans-kr-400-38-fc42c1a2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.39.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "960b735155b235f6fb8837648c0e4d2cc0df1422788a583691c079cebbed4eb7",
+      "sha256": "fc42c1a26c24335d177e732d2c44363f26a3b7e0d456942afbf6be2ce5db854e",
+      "bytes": 10008
+    },
+    {
+      "file": "forg-sans-kr-400-39-14c42a3a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.40.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "78353976eb26eb0da938fdf4911c4413d9574d1d890341949570ec0cbc4aba2e",
+      "sha256": "14c42a3a957b6fc4fa64d42a095f1462cbb0741830e8f76498aad33bc13ac385",
+      "bytes": 9548
+    },
+    {
+      "file": "forg-sans-kr-400-40-8fbd104f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.41.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "3fe9eb09d31b4b3b96ecc066e158f6016cb970553a98f1f4e3ab88eef2d087d5",
+      "sha256": "8fbd104f5b5c6b1d0e5fd3c4474af3210153220fab20e7c681bfdebc45986e7d",
+      "bytes": 7940
+    },
+    {
+      "file": "forg-sans-kr-400-41-5374be41.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.42.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bf7633d68d524cad7083539feea5eabd08774feda31cc6e1cd8f1347a278a360",
+      "sha256": "5374be41c58bd7606b2f60237a3e6c5468a277eeedd74cf01daff5447a617354",
+      "bytes": 9920
+    },
+    {
+      "file": "forg-sans-kr-400-42-8d5302f9.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.43.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8ec46e22a9d5c6aa6a2edd603fb6516d2dbe74d70eefbb558d821d81040257aa",
+      "sha256": "8d5302f9df27554740758251e1422a401304505e3e34bea8248c440f26f282f3",
+      "bytes": 9752
+    },
+    {
+      "file": "forg-sans-kr-400-43-4f918d44.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.44.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c281df42fd22cfee494f834abedb10c01d9d297a76479b55243182ed8c96a932",
+      "sha256": "4f918d449e0c44537c155252c34b152ff1a66b7fa3799fdba83c9eceed6f82c6",
+      "bytes": 8628
+    },
+    {
+      "file": "forg-sans-kr-400-44-c2453181.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.45.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "539f91946c668782b0069a4c37bd39c76378f5eb191ae2b16ff2c1a04df6a31e",
+      "sha256": "c2453181c27095493a3c7380750c979f797cd82f9c893102c96344bacf033c49",
+      "bytes": 9076
+    },
+    {
+      "file": "forg-sans-kr-400-45-44ff3bce.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.46.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fed5c1183405a52621071b3331844ae280a85201f31e2056296b50048e10fef9",
+      "sha256": "44ff3bcec8fe5af407077f8b9ac0853177f1d5faf725d44067d43fab1853af12",
+      "bytes": 9496
+    },
+    {
+      "file": "forg-sans-kr-400-46-492dcbc6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.47.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bb6ec906cc507091d3611ebd681813b49b26341d28fce224a2ff4f7579c9305c",
+      "sha256": "492dcbc6812377bd9420da0b8a1d0076867bb0960d67ea7607b1a6e3f89d1209",
+      "bytes": 9524
+    },
+    {
+      "file": "forg-sans-kr-400-47-7e218c47.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.48.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "73899528f5387dc91a40d127086715394700e9ba884578d0340eca3b5f7f5130",
+      "sha256": "7e218c47f2a8659d2c5e973e2115622a47fe479bb627fca4f451e858979f9b95",
+      "bytes": 8724
+    },
+    {
+      "file": "forg-sans-kr-400-48-d24e601c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.49.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d27bca55dc71a8e8e24ba7d6144b80d8b42246770dd518061648991d7d63c0cd",
+      "sha256": "d24e601c8b3167f49f88cdc1bd2e205bb9488ba2d22f3a5479ae840a6d9a1f7c",
+      "bytes": 9960
+    },
+    {
+      "file": "forg-sans-kr-400-49-306102d0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.50.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "04ef0ee6c76b16e60c11cd746663f3c5bbaa174a655c2661c160e797df9247fd",
+      "sha256": "306102d08d2ba3a14c93f747fea92a8463c3e7421f0a498b2fec5bc99e082971",
+      "bytes": 9544
+    },
+    {
+      "file": "forg-sans-kr-400-50-e4ee0250.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.51.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6289cede288c7126a0533888638d01c171b74d1febd10638c235b04cb5acb695",
+      "sha256": "e4ee0250bc1fb789997791bfe185e1c820c6257567f5300fddb4a825cf5bbc61",
+      "bytes": 9020
+    },
+    {
+      "file": "forg-sans-kr-400-51-baf95b60.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.52.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1d04a8a7aaf71363259703d3f02c41b3948558c5eeaa3836a3f7843b9efa354f",
+      "sha256": "baf95b6049341a1f5088cf36992f5212008de8e16e4ca791668b0f7b23e0518c",
+      "bytes": 9740
+    },
+    {
+      "file": "forg-sans-kr-400-52-8c5de81b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.53.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "920c7d7666664255de8b8516610fbe798d3196de29d1ad30301a25ececa3be6d",
+      "sha256": "8c5de81be7df6774196a96af109a0e2f1c57927d8e7c9b9caf62095c317c423a",
+      "bytes": 9552
+    },
+    {
+      "file": "forg-sans-kr-400-53-f10f3ced.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.54.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5ea7440259fd8adaecb88b9dab88e3001f030b5f8f3a4d4a6110d1767b2e10ba",
+      "sha256": "f10f3ced240bb8878675e6332974e81dc170036c252eeae3d9d860a11f45a592",
+      "bytes": 9488
+    },
+    {
+      "file": "forg-sans-kr-400-54-41cac1ff.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.55.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "575dc0d4761cebd7c7e20bd79752ed064f6bcad55821520872e5da3984174e79",
+      "sha256": "41cac1ffe816f4da9572717f08317991a476f3cc4f0fa388194af264b2f60bb3",
+      "bytes": 9036
+    },
+    {
+      "file": "forg-sans-kr-400-55-9ddb35fa.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.56.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "95a4be759aa1aa6963946c843930868e5887b842a74329457d92bf29756670f4",
+      "sha256": "9ddb35faea79e522cc531b815b2a6dceef87ce95697872bc6bf04e2b793e1f93",
+      "bytes": 9452
+    },
+    {
+      "file": "forg-sans-kr-400-56-f3146cc3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.57.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4c64a9662aab0d931fc9fa3bb11197f15a000e6e0036117a8d013857e07112d9",
+      "sha256": "f3146cc3a4d23b00c14b6e0084b0f17455ffe48e6e16d3d5be34d7da993aed85",
+      "bytes": 9828
+    },
+    {
+      "file": "forg-sans-kr-400-57-4e3f6cb5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.58.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f5847f24a7d15a950d2f511bfb05b1693d1086e71710c644e1a1723e262d5cb6",
+      "sha256": "4e3f6cb520fd50ec53f48344c884028b9d6e286b150f95243bb510c0963d4a0e",
+      "bytes": 8760
+    },
+    {
+      "file": "forg-sans-kr-400-58-b6f97c91.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.59.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6adc7fddb26c9b896c46ec43a93b91701dd7d8391b890c936b3adfa7b9b7f4d0",
+      "sha256": "b6f97c9143451a2ebbf5a86cb8346537ca53835c99741cad52be1bcf40ff3a4c",
+      "bytes": 10760
+    },
+    {
+      "file": "forg-sans-kr-400-59-58e8dbd9.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.60.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bfbe6eecebbad18d11ffbcf912aef1ef09eebc042049a5e8107deaad0b5cedc7",
+      "sha256": "58e8dbd94a55b187e92132131e551de4b48e7cdbf3a3fdd00dda14a2cad97a0b",
+      "bytes": 10976
+    },
+    {
+      "file": "forg-sans-kr-400-60-e77ad0db.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.61.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "eece655c5498ec06eba99ef6831e53fb60d5cb81867199f25e874243e4d6eb0b",
+      "sha256": "e77ad0dbb5061d3bfe8b9f1462df9381d513ea4391f03653eb1aa12ba93d6633",
+      "bytes": 9036
+    },
+    {
+      "file": "forg-sans-kr-400-61-743dcf65.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.62.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "3e791782496a968d64d63ae350d04a0c72b617fb1d200caa168d69ef874dc2d3",
+      "sha256": "743dcf657d15bbf7a3e235d2c1e394cb40e9bea78338e2e7949b7bc2e6f9ee16",
+      "bytes": 10840
+    },
+    {
+      "file": "forg-sans-kr-400-62-b2763e61.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.63.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f9c90c3a611246b7613defc7cd05a4c26cab029437946fcd36c412783f703e84",
+      "sha256": "b2763e61e50e81ef6820dcbe157e1a272e96d77b3de5ad92e84ca109c61050ad",
+      "bytes": 10032
+    },
+    {
+      "file": "forg-sans-kr-400-63-b010055d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.64.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2eb956ce6303b140a293e07d811f298befd230d4aa7b7d7ddb33e69277a07850",
+      "sha256": "b010055d7a158fbeaff17dc1bfe26165c08e1e1336c15dc1475bf7a15835c780",
+      "bytes": 8256
+    },
+    {
+      "file": "forg-sans-kr-400-64-246fedd0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.65.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8ca527ae4f01d407604c1ca181201fa07ae0b0b116bf92d7536fa2f806bc1b52",
+      "sha256": "246fedd01c338035ebb4ee5858d44075ad8412aa8b18cf724e07b94a8940ce06",
+      "bytes": 2244
+    },
+    {
+      "file": "forg-sans-kr-400-65-067a990c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.93.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cf215c5d22ab909d94979cc6ead2b1907a05bbcb28e769416b5361767aa7c26d",
+      "sha256": "067a990c382a10f902828f7a643b7c6d1318a877e3ef608fe4dcdb6719eb12ee",
+      "bytes": 3724
+    },
+    {
+      "file": "forg-sans-kr-400-66-7fe6f0b3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.94.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5a35a63faa9e77516d5d4a9de16ea7e15a1886a0e50a9fc85b6fafd3e0d4181d",
+      "sha256": "7fe6f0b3b1d7a1f05d882ec7e991047019033e3bea6766ac47c8d6191657647d",
+      "bytes": 7416
+    },
+    {
+      "file": "forg-sans-kr-400-67-6fbe9e2c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.95.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "79208d8b65f6f2dba14d17ce795e6a9554ed51a795455f01e873f5c218dfeff2",
+      "sha256": "6fbe9e2c272175cbdf0b928c9c95fc84963bdba0c90e6fe6d5e7d22ffdbab610",
+      "bytes": 1160
+    },
+    {
+      "file": "forg-sans-kr-400-68-e72997cd.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.96.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9220f29c0f53c2ef1be6f6fcef5d681817e7ffeefd306b158081576f72d842eb",
+      "sha256": "e72997cd4ed2d85eb5b22cbc9f2f2d21893657824fed3cb50875d50dbda485d5",
+      "bytes": 3440
+    },
+    {
+      "file": "forg-sans-kr-400-69-27db9947.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.97.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c5e068dcd5bbeff2634bdfd78d3f520e9e5c4c29c5e24e86ac3c5ce4aad11a76",
+      "sha256": "27db994737dcb0ec475121cedcbcda6a3040fbef1d16803aa7c9cb60064bd4f7",
+      "bytes": 5184
+    },
+    {
+      "file": "forg-sans-kr-400-70-5058140a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.98.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "761f322a74ebb063655c7ea6b97b9c28fb27632832a1b4f790ecca36841bbbb8",
+      "sha256": "5058140a400483b5fc840904cd39c2c526b8df253318fd437c873a075798e8a8",
+      "bytes": 4356
+    },
+    {
+      "file": "forg-sans-kr-400-71-23fd26fe.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.99.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "08e5586e427d6a9995bf7878989a736ed96f8794d53fea4a921aab37e2956c69",
+      "sha256": "23fd26fe19265c39ada95b8b799ca246261521c03e8a381cf004005a71b09502",
+      "bytes": 2888
+    },
+    {
+      "file": "forg-sans-kr-400-72-1baeb23f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.100.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c186ce7dc1f407dc7ac31eeb578250e068d7b24a0efd3b6311a8850a3f02ad7a",
+      "sha256": "1baeb23faa2e1d48c550501714b7dd83e71b38d59b221a8ac76c9c135c42626c",
+      "bytes": 4800
+    },
+    {
+      "file": "forg-sans-kr-400-73-c5071ee2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.101.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6fd0fa2c112b1e6d8546b3a23200c36d0353c00dd24e78cc010db83766d8ab6c",
+      "sha256": "c5071ee283cf3484e6f17e4a028f708180b934046fcf81ba85f21f61921e7441",
+      "bytes": 4612
+    },
+    {
+      "file": "forg-sans-kr-400-74-e32a1039.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.102.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a6ada1b85e2b3f54baa18591408c99eaac119192c2583deaaf81173afd17cb6a",
+      "sha256": "e32a10397a5b0f7d851f54b93900139b32c625e06d324e5673a20cfff47bf754",
+      "bytes": 5424
+    },
+    {
+      "file": "forg-sans-kr-400-75-33cb5e59.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.103.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0aaa1f447edf0c8e5adb025eb43cd9a33a8cc805efeb72a138c9802e388c01b3",
+      "sha256": "33cb5e597f89dc00285ea54ab8766a293bee3080ebfb1915d8e9054bc5e1c093",
+      "bytes": 5984
+    },
+    {
+      "file": "forg-sans-kr-400-76-3c16796d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.104.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6ae56cc010834e89a473a6d88175c7b5bd776bda27642cb6b85f364324c58c36",
+      "sha256": "3c16796d89e0062ff35f92ce8b82ab93e18d05a5f425634d036234c319e683be",
+      "bytes": 5620
+    },
+    {
+      "file": "forg-sans-kr-400-77-bede4de8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.105.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "62bdef4283af82afa6ca5fe9de952ca095a447a051f75cbd741a3a0e6c4049a0",
+      "sha256": "bede4de85de645cec90cef8a6007f56fabe07ae75a7b5c186d846208a567349c",
+      "bytes": 6460
+    },
+    {
+      "file": "forg-sans-kr-400-78-85aabcaa.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.106.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4a9359e117256489bd23d7d8dbe2252030587a8137ed00f10076467850cfe0cd",
+      "sha256": "85aabcaa6b3c822f89278a9f2b72fc02ec142be3dd02c37ef8c74b1174a8e846",
+      "bytes": 6996
+    },
+    {
+      "file": "forg-sans-kr-400-79-02efe325.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.107.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0d5976c111cff44be26c19c3a5746a99146bc182302c5040350632fdedfc816b",
+      "sha256": "02efe3252b342a64eb79a253c188bd5e981bcba517f62e3ed3d0980348594000",
+      "bytes": 7736
+    },
+    {
+      "file": "forg-sans-kr-400-80-be65ee6b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.108.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ed75159a978a738942bd50fa860dcd485fb2f9fb0b8d31c531794facea7a62fa",
+      "sha256": "be65ee6b4e4feb59d2eea6cfd9615103555f886a15ffc50e632adbecaa447d56",
+      "bytes": 7876
+    },
+    {
+      "file": "forg-sans-kr-400-81-4932b4cc.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.109.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "179a6bb7dc03c2b1125adf53bb5c7112eea01b57fbba33058a69500d4ac1b00c",
+      "sha256": "4932b4cc669b2c3272cd5181722fbc72d06a0b5341a443758eb963fb33d0a1f1",
+      "bytes": 8080
+    },
+    {
+      "file": "forg-sans-kr-400-82-312bc57b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.110.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1b0f2dc9af502049f0c24f0c521d68376d4fc8b88d329f845337a1eb84e6e489",
+      "sha256": "312bc57b55e4a9063bd9df570b4a337af52669fdc9e2456110af8ddbecbad9ad",
+      "bytes": 7912
+    },
+    {
+      "file": "forg-sans-kr-400-83-1164193b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.111.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "31922bd267cdb50580c574c0780a0316bae19fbd2d5cb759d979387e8ee54518",
+      "sha256": "1164193b49191934f3db093a3ba6096352a17ff462589d5c2060df2e2b7047fb",
+      "bytes": 8092
+    },
+    {
+      "file": "forg-sans-kr-400-84-145be802.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.112.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4b60cd8ab5fe4b94d6824627bdfda218bfd10ec4f06a0a0f189dc690165b63f7",
+      "sha256": "145be802e817ad390016f98184aa9fbd9f740fa05c69caa1951ce331cc6b9318",
+      "bytes": 7584
+    },
+    {
+      "file": "forg-sans-kr-400-85-54938a02.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.113.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6155a9f6e66cb5e58d2c04c9ba4727a10be1d3a0ef07d698f478e9c303e8e0de",
+      "sha256": "54938a02c8a2c8f4c76c2e763f38457f38993bd7ba3407bb1f1ad2ecbfe83aa1",
+      "bytes": 7776
+    },
+    {
+      "file": "forg-sans-kr-400-86-387936b4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.114.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "238d334f666b502cc300e10489e77415e935841bb878ac77cb77dd9ef0df6700",
+      "sha256": "387936b415633c8620fcde85af8696419feb7d17991ecb0e6f968dc476a005b8",
+      "bytes": 7912
+    },
+    {
+      "file": "forg-sans-kr-400-87-bd51957e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.115.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fb889e9bbf8e826b599012b0127e3b1b813c31932455ad7fa9ad25522403868c",
+      "sha256": "bd51957e8f5e7468d0df2ab50d3f35eead349fff7be1f758095806cf328e991e",
+      "bytes": 7648
+    },
+    {
+      "file": "forg-sans-kr-400-88-789ce797.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.116.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9c9ea4a196d2e4094f94e4eaf6c28b47199c95bbc928e44239652744188d75e2",
+      "sha256": "789ce797e232a1127c002257d69af93f7d9f95762200907e21d4829f24752364",
+      "bytes": 7776
+    },
+    {
+      "file": "forg-sans-kr-400-89-36751fc0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.117.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "57e61bfa39f3b3732c1186d87160b02599cb9bdadb022c0e6bb720392f4975a2",
+      "sha256": "36751fc014a6cacae72fc7032de84c16712a91e8342a10c5ab2f38d612dcb5f6",
+      "bytes": 6796
+    },
+    {
+      "file": "forg-sans-kr-400-90-994a7da7.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.118.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ad58508332acfc4ee080cdae659f510923cbdf83eb92edbd2c335f63cfd8cdee",
+      "sha256": "994a7da71d17bf0acb32a8f0f63a2b8eb14a580ec7bc3e7102e5109d75bd89a8",
+      "bytes": 6648
+    },
+    {
+      "file": "forg-sans-kr-400-91-2527fbd8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8te1Xb7G7tnec9TbeD-cJyfcqH9C_7Ndnhw.119.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "7591f87ed982662708bb0c6f88f8715a69b70af56cb8a4491f1c45dcbd793a78",
+      "sha256": "2527fbd87e5b426650cbbb4bbbfd141cc39f8231233e9ce3b776652794c849d8",
+      "bytes": 8900
+    },
+    {
+      "file": "forg-sans-kr-400-92-65685c1e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNOwtu_WpzEpMvsfA.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d4cf697c6583d29bf69c7fd29113a3b834e93f7ad87a3a4bcd5f51a030fdcc18",
+      "sha256": "65685c1ec548fb37cbea08982ec68ae37b6006c9e848bc130d79890a13734e3a",
+      "bytes": 984
+    },
+    {
+      "file": "forg-sans-kr-400-93-558c6807.woff2",
+      "family": "Forg Sans KR",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFK2-VJISZe3O_rc3ZVYh4aTwNOwtW_WpzEpMs.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "380a027478930015c1b6440f4e928d41709f6dc0f7e94caa7b61472434c0bee2",
+      "sha256": "558c68074e2175c30eec9936adc3580ac9e9b38ced87389e156165ce28e35e78",
+      "bytes": 10652
+    },
+    {
+      "file": "forg-sans-kr-500-0-7a9a14ec.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.0.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "573ba7944acf3a274d409d3588c967552d8c660c47d19f1f2cc92a2560b9de0a",
+      "sha256": "7a9a14eca5cc44b44cbc0ed2ef3845048fd124b61f23c143ef78ce656ad7a4b8",
+      "bytes": 4600
+    },
+    {
+      "file": "forg-sans-kr-500-1-b722ae87.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.2.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5f9a36c6c1fab1775c37e3cbcd3ae85230b53f191056ce2f6f865718d627757e",
+      "sha256": "b722ae87acf3ba349a7e1dd1655ec9acdcbe56f6a85f36ed923a65508232f0ac",
+      "bytes": 8656
+    },
+    {
+      "file": "forg-sans-kr-500-2-a61ea566.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.3.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0bf0e4a2c1c847b63a5b77bd80f8889a97e4f31151a46277f4f44d7908ceb4a4",
+      "sha256": "a61ea566c3d90039afbf5db036835f1bad7ae8adf3ee1084c51939bc272d06a3",
+      "bytes": 11936
+    },
+    {
+      "file": "forg-sans-kr-500-3-bd1bb639.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.4.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "173aac87cb115c1733918fc6d23d23f1bd671ac7d0748b0b90f127f611e8510b",
+      "sha256": "bd1bb639354a3ffb83a17a8b5442316780c7e9aa4fc8ad392e00df1680177b47",
+      "bytes": 11180
+    },
+    {
+      "file": "forg-sans-kr-500-4-523815e6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.5.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "237ef74eec218b3554d11cf0e4d5f9a42135cf0d65e0786e869ea4d687938029",
+      "sha256": "523815e63323457df959ad21a6359efa2990fad604be7bc57b8a430deed5ebba",
+      "bytes": 9908
+    },
+    {
+      "file": "forg-sans-kr-500-5-5ec88470.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.6.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5cc846d0a86bb7c9b5e68e45508c84783f70d28a0d262efe2299c099b8f1712b",
+      "sha256": "5ec8847001d2648921c3267fcef85fb53f3cc9a7afb9832894e6a17cc0388666",
+      "bytes": 9572
+    },
+    {
+      "file": "forg-sans-kr-500-6-f379e532.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.7.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ec508dddcd5ef6714753402c5988b319611e06eee53d45309c1438b7ddeaffb3",
+      "sha256": "f379e5325db7319b5dec84abe60a7605c31b3f3b67b41de91e65a52ece827d93",
+      "bytes": 10244
+    },
+    {
+      "file": "forg-sans-kr-500-7-efe2d460.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.8.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0b24e523b250c20aa82ec5d8bc8de14e076841094818140c0f22678d87c7daed",
+      "sha256": "efe2d460a018e2d2991af6b18a5a0c0901a3e351de3c4f6e754f2e4cdf8c9a2b",
+      "bytes": 8408
+    },
+    {
+      "file": "forg-sans-kr-500-8-bba03628.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.9.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bbb552095d34d00139568edb9502b37374c1555e1a1b51e3cd1a6bf6db66eadb",
+      "sha256": "bba036285667e4d54d0d532db9bc0033e68afca69564eb23c9d0e3395c17a877",
+      "bytes": 9992
+    },
+    {
+      "file": "forg-sans-kr-500-9-0a627bba.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.10.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "81fb950335c396100c777e7b5d739b55386f31148e37877dab3693df2a51c556",
+      "sha256": "0a627bba16a84c9465b4976a27d0968aa6a2ffb659b49403d8e52cb0f17e6794",
+      "bytes": 8732
+    },
+    {
+      "file": "forg-sans-kr-500-10-6f33eeb2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.11.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "21e29aa3585da948a74c769fcc8a3d341866c429056c8fa5986f6edcae8d6e97",
+      "sha256": "6f33eeb29bb34217857fbfa70c85bf39d1cc0e6c3955e2ccbaea21ac8fd574e2",
+      "bytes": 7932
+    },
+    {
+      "file": "forg-sans-kr-500-11-2f0dd940.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.12.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "59680cd485e660b7ea6ef534401076e92d1aea7f8f0794373fe05892d90264d3",
+      "sha256": "2f0dd940ce65f15a29c9350dbdb96b0f1381af98791163fe71f3bb15d0f70e92",
+      "bytes": 10108
+    },
+    {
+      "file": "forg-sans-kr-500-12-b32afd8e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.13.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1825ea43329d655df6bc26f20db6d1b1a8638530fb8d5af5bdcee9f580013495",
+      "sha256": "b32afd8eaaf10104c664c5f70df15ab44d9837bf60df5245c2c5f7e408870e02",
+      "bytes": 10772
+    },
+    {
+      "file": "forg-sans-kr-500-13-a6a43cf2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.14.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ab7d56bcb861310bc0d32ad5958b8b34408d3acdc82be10347f88716cd4a3264",
+      "sha256": "a6a43cf2ef1c46cf61c1bb495e8572ed120e3adb4bf5861ca92e194a0b3eba7a",
+      "bytes": 10464
+    },
+    {
+      "file": "forg-sans-kr-500-14-00e3daef.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.15.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "aafa1cb2acb95fa7c76feaa9b430b3c3d7ef769d82ef19bbdc2c71e574f85780",
+      "sha256": "00e3daefb12086e654b96e9d89e8450b77014d2bc198a9c5a9bbe229a010a26f",
+      "bytes": 9596
+    },
+    {
+      "file": "forg-sans-kr-500-15-60e6ea9b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.16.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8984e5ab4eeb92f66ece1c3434ab3b860764a2b0447226430587e4185727c165",
+      "sha256": "60e6ea9b4cdf215749badbbe27646e576f48505d964ef268d21c75892f2a5d38",
+      "bytes": 11176
+    },
+    {
+      "file": "forg-sans-kr-500-16-da2d7746.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.17.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "aea9974b8dae3b4a0c92d87147f35c0a5c2c4be35089aca8eada835f051af06e",
+      "sha256": "da2d77462df39b8c31ed765703b3d9d63a9d1db8bbfabc5a36a8e78649c5c5cc",
+      "bytes": 10576
+    },
+    {
+      "file": "forg-sans-kr-500-17-c36ac88e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.18.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "65debce4ae554e6bedcd75b3bd9aa1927477b41de0acd700d85a7d2e804ac763",
+      "sha256": "c36ac88e30dd6cab6d38b80ecb99ad3a9bd1b8abd56024e74a813cc52c8e85ad",
+      "bytes": 9256
+    },
+    {
+      "file": "forg-sans-kr-500-18-d51af25b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.19.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "00ba7196e3358f42ae7a326924ab0060cd719228856515b8333f8f52bea8b66a",
+      "sha256": "d51af25b577e65ca5c59885fcd764d50ab063d7ae2d13e50146c0d3029758a59",
+      "bytes": 12664
+    },
+    {
+      "file": "forg-sans-kr-500-19-2e94ba80.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.20.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cd94d09348835a933766e5b0ba54a42b741246a032b6e2722303f92fbe047456",
+      "sha256": "2e94ba80cd708d47776dde07d6725c36db7c005a6e55e11abef38abc25e0d8de",
+      "bytes": 12636
+    },
+    {
+      "file": "forg-sans-kr-500-20-5b1967a8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.21.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ac02b6015e0bf3ecbbf8d04e083c8236325d57181ac669dfed44914b92658cda",
+      "sha256": "5b1967a838f9ba7eddf87ead86801570f52347a9f5de2398bd73fadc22e66999",
+      "bytes": 11812
+    },
+    {
+      "file": "forg-sans-kr-500-21-6bab34fe.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.22.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "688682d189ef0f523de6900f0eab2c8276fc97b759a88f3e32ca6b07f1239503",
+      "sha256": "6bab34feddde52768bacbe5fc6c5a5f3d877219a4b53b9069994f62eb81de8c0",
+      "bytes": 10980
+    },
+    {
+      "file": "forg-sans-kr-500-22-06ee9084.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.23.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ae439f5782bb89e93b9a94dc518d62df23b1170dfe64906c4d362e052e240671",
+      "sha256": "06ee908468223fe65e3cd26f80f8283abf92f9aca01d95cd9254bbc8f97da76c",
+      "bytes": 10364
+    },
+    {
+      "file": "forg-sans-kr-500-23-dec4cc45.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.24.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d235978f5d0a0186226fd3b4ebe3ee279cd1b15bc1a9929771d9a9a13a8c1d57",
+      "sha256": "dec4cc455a24c0d75c5a326a4cea89f7e6f0a27c0406132a0bb87e861235a80f",
+      "bytes": 11172
+    },
+    {
+      "file": "forg-sans-kr-500-24-db705555.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.25.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cb0022987a02f5c115728bed2ef17086f91384605421e007879fc196ef83dc51",
+      "sha256": "db70555538fc8a1e19fa873b1009b9b566857515e1141f9d1c7d63cc51fcfc62",
+      "bytes": 9200
+    },
+    {
+      "file": "forg-sans-kr-500-25-bb1f3106.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.26.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "35c6cb08a2dd4a3671568cbc75fbb9a30354a2a54ac7ced24a919dbcfbc9a65c",
+      "sha256": "bb1f31069014eb9a004746612d708ed69c8329f319e36834a418b1183285a37d",
+      "bytes": 11336
+    },
+    {
+      "file": "forg-sans-kr-500-26-3435d736.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.27.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d82a2fb27549b6d67e8c247c623100f80d8ab4bb28271c9c5e1564cf545b3965",
+      "sha256": "3435d736f2afcdceb89819f7d3921cb666f3a8d0fb63b2ee7f74101e6db4a3a4",
+      "bytes": 11140
+    },
+    {
+      "file": "forg-sans-kr-500-27-c3dfd090.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.28.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "de58cc49824fa45567bc3017d62c48bbfda149c2592cae845de7e79349db87af",
+      "sha256": "c3dfd0901b0c70219e7251d0e7d3ba3781d72af06bed8f545318906733b1aacd",
+      "bytes": 9724
+    },
+    {
+      "file": "forg-sans-kr-500-28-216e39bd.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.29.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "06fd7ab2c1d2fe8a32271bd44f1cb1ac6f55bd7c206f46f2028a5a775487779f",
+      "sha256": "216e39bd39c237e81c551eeff2a9d6c63990e3f0a98b59abb2182154b8adedf6",
+      "bytes": 12160
+    },
+    {
+      "file": "forg-sans-kr-500-29-906aa328.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.30.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f5e2c8bb2c918363883ab457238c57bf31fa90c321e8d83ec9b9dbb636c5b745",
+      "sha256": "906aa328fd5c9581783e137a42bba802f950fe672870d2503b8c12d9a16a05de",
+      "bytes": 12004
+    },
+    {
+      "file": "forg-sans-kr-500-30-f84990c2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.31.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4f4b4b67db5c00941d80c48c55fe653bf72645a2c9faf5bc4e5a1bb032496cf9",
+      "sha256": "f84990c22f105f6117f54afdcfe1cabc1324b473da124fee00176a3517bbf5a4",
+      "bytes": 10196
+    },
+    {
+      "file": "forg-sans-kr-500-31-d0cbcd32.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.32.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6505f066c4dc15247bcf81d05cb8b9f81c8a6fdd943f1e13a09c859a9ab6efea",
+      "sha256": "d0cbcd327e2d4f170b159711f4a59b9fe3e9e98bb601342a548ad1ad67dcdfb2",
+      "bytes": 12144
+    },
+    {
+      "file": "forg-sans-kr-500-32-f47d2daa.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.33.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ce991512242db502cc51346d6dc153364f7977b2034f10684128faa1499d8e05",
+      "sha256": "f47d2daa5727434c37ff923d8d89b50efbebfeaba2fa7b5f38665ff2e9649182",
+      "bytes": 11520
+    },
+    {
+      "file": "forg-sans-kr-500-33-9fb3d674.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.34.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8cbf147b38cd86f12c08f4f39059dac3413660d85f48e4a0f931b0a3e2d2065d",
+      "sha256": "9fb3d674123d768fd334b01fd333bab468d512f6572d12d368768ac6ebb8bbd8",
+      "bytes": 9928
+    },
+    {
+      "file": "forg-sans-kr-500-34-1e67efbb.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.35.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1dd2d830958d8527a4d2aed4045d6ae926e676da8aedb0af4b57f61dd1f9ebf7",
+      "sha256": "1e67efbb5441ddead2f4d231cccd9cfba8ad4a8fd2527a9eab4e8ee9c33e9887",
+      "bytes": 10204
+    },
+    {
+      "file": "forg-sans-kr-500-35-a70bb10d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.36.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "abbfad299bd020509030898ba1f0aff1dc3e480caeaf482f60f0a618f0c8f5a7",
+      "sha256": "a70bb10d98ecba4340280cdbb8721ed97b24bd5953d6e62ad2646bed0d8d20da",
+      "bytes": 10156
+    },
+    {
+      "file": "forg-sans-kr-500-36-65393955.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.37.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "7f82665432c8734bf4b2d6f381cc70ac4f372dbdab3faea0ae497a529cd6b544",
+      "sha256": "653939557e1138a42986c5bc084cae484d3f4d472850b08719049fc9c3f61ddc",
+      "bytes": 10292
+    },
+    {
+      "file": "forg-sans-kr-500-37-00391f3b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.38.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "55e8215306bd8df76ecf701755283af0c89ade5a0f9b18f613b3a8001799ac1d",
+      "sha256": "00391f3bbc0a5c11018c095fc3f29572677fb8a956711b74506fa92038901d5b",
+      "bytes": 7872
+    },
+    {
+      "file": "forg-sans-kr-500-38-2e47cec9.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.39.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "19da927212fc1d467b7270fbaa4a350397b57bca83bc9140148aebdb5f167fd9",
+      "sha256": "2e47cec9a49b83f20a1e09a3d72c2086909efda2c94e909349a6c18d990c4536",
+      "bytes": 10148
+    },
+    {
+      "file": "forg-sans-kr-500-39-f18f1918.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.40.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f9a02cf4724b799c186bd4d3736ce64c45503402d689b87452442ed26773d11d",
+      "sha256": "f18f1918e9aa4c62a3805eda7421b29d13dd81d0ea5c6b2af46811cbddb09209",
+      "bytes": 9496
+    },
+    {
+      "file": "forg-sans-kr-500-40-1c843c8a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.41.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cac4bd78b148f54625f9a62b3045aa9c8b15b3e3ab2477d7f5dbbbcc718addc0",
+      "sha256": "1c843c8a6e115e7bb90decfad71a4cec15e56e64f7ef8847514259fb04592083",
+      "bytes": 7972
+    },
+    {
+      "file": "forg-sans-kr-500-41-cfaa7215.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.42.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "20f6cbc0650050ae386111b0a80468deb54e6250aa6a0c69db87d82aec00e542",
+      "sha256": "cfaa7215a2fc1ac7fb8c098c58cf250ab5bd1474a4c174910042bfbfb315a8ea",
+      "bytes": 9920
+    },
+    {
+      "file": "forg-sans-kr-500-42-25a13c48.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.43.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9d2589f9e1ab03314fe580e4102defec7af85784d075a29660e6d010620734fd",
+      "sha256": "25a13c48fbeb3ae506831e3e356d1a3e8269170c2154a75089d56e52c9281cc1",
+      "bytes": 9864
+    },
+    {
+      "file": "forg-sans-kr-500-43-f6a653d2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.44.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f1a1021a40fdb31cf7929b4001af8e8e88820efb06814bf60de64543bf0fe43d",
+      "sha256": "f6a653d20b0cf4e9ebe34af3a58bf12e12758cf218fa12f952f7ac926a2cc407",
+      "bytes": 8588
+    },
+    {
+      "file": "forg-sans-kr-500-44-e3792c70.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.45.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9dcda4803476d652153bf7f01a9028c63f793567ed25ac759c63204be995f3f7",
+      "sha256": "e3792c707d1e4d939b9de3235682517700cd124fe1e05c3a933242c1ff080ddc",
+      "bytes": 9132
+    },
+    {
+      "file": "forg-sans-kr-500-45-5dc97052.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.46.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "984c02293617d6bc98faf941b68ed63fa76d4d06290020a2b99dbfdb30c7dab8",
+      "sha256": "5dc9705260492a32c5c3d3ca7bcd0e77e9f709164bb80745eb6176fe9368820a",
+      "bytes": 9560
+    },
+    {
+      "file": "forg-sans-kr-500-46-2b767a84.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.47.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6b09f63bbb9a0246a66514ba0e1f67bd801b434275fd036c9d4609b814a9cf07",
+      "sha256": "2b767a845064e78f0ea4e59aad92abcdc31f65a193f98dbff76824be88411c4d",
+      "bytes": 9348
+    },
+    {
+      "file": "forg-sans-kr-500-47-6b92d185.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.48.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "96c71551de5541674fc7a3f61a21067375379f63f4ac338baeb076bfe42184f2",
+      "sha256": "6b92d18595a7818d98e3f1f95ed8721a169e4a67ee72aded1fb8fe463265714f",
+      "bytes": 8712
+    },
+    {
+      "file": "forg-sans-kr-500-48-016d63f0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.49.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "82677a467e50b5e740dff4604fde423ba56ac974aa5333f5e32eea1bea5bf478",
+      "sha256": "016d63f06785a2c59eedc0547ca96488c2e83e4b020d361d0f9afa37a373b610",
+      "bytes": 10236
+    },
+    {
+      "file": "forg-sans-kr-500-49-6ad5139f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.50.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e2e01dcc5805e8f23aa33ea2d41befdf85c47e8c76a17c5173012dca20aff7fa",
+      "sha256": "6ad5139fa37202d61b1be9f5533960bc5113b8a679ae83241acc84488870818d",
+      "bytes": 9624
+    },
+    {
+      "file": "forg-sans-kr-500-50-68146cbe.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.51.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "32d763334ef215b5f5bb62e4118747b756a1fbe64b18f129cf6abfcd6e5f78d4",
+      "sha256": "68146cbe8bf7e82f323d50790c10e937296fb60b3727ad0121f242158f6e0fe5",
+      "bytes": 8968
+    },
+    {
+      "file": "forg-sans-kr-500-51-cf0ba511.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.52.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "75a7409547cdd555bcac63952b58bb7689ff5e22346ebb6b0651c4f6a96805fa",
+      "sha256": "cf0ba5113282ecac787dbde205d36abc73625f49d80a9b1cb5f495a0ac2008ad",
+      "bytes": 9772
+    },
+    {
+      "file": "forg-sans-kr-500-52-b7630329.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.53.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4d5d5616cd7e3bd01cfbb70174a9df0f50491bf5e6288f19473be409ada161e1",
+      "sha256": "b7630329795683ad1d9cccdf0912d3cb59bc1595f27e1f99a1a7ea3da528315a",
+      "bytes": 9560
+    },
+    {
+      "file": "forg-sans-kr-500-53-54d6b29b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.54.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a70dd0a8ac6c3259d188aa3a5e5cb91cbea66cf3b525edf9d3f3047fa46136c3",
+      "sha256": "54d6b29b6d43b7668bca2a24f2e68ed6a22684adf221b95b34059ae5b49782c8",
+      "bytes": 9488
+    },
+    {
+      "file": "forg-sans-kr-500-54-bbc0ffe6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.55.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "06697bbe6ce4867b40251c4b563aa0a16060a36b0e7f5edc6454fcc754c25394",
+      "sha256": "bbc0ffe668f13084161216bb855a0a4245af13089aab51bd59847731e733cef2",
+      "bytes": 9148
+    },
+    {
+      "file": "forg-sans-kr-500-55-e20faebf.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.56.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "7bea3264873fc5a6a2ec53445f9b58fe835455e60366e55dbacb39e666b97586",
+      "sha256": "e20faebf3da5c5df7d1c8f7555e6b244efb30882fc80c5920817e93adcd253b6",
+      "bytes": 9588
+    },
+    {
+      "file": "forg-sans-kr-500-56-97b80671.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.57.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b8f10f46bc44d22e96d31f891883efb64596743eade6ed321c1e6a91362907ff",
+      "sha256": "97b806719160862229901ecc84c287a933a7697a911b8ccf6172b3c23faa3579",
+      "bytes": 9828
+    },
+    {
+      "file": "forg-sans-kr-500-57-8938659d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.58.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "379ad44d330da05886d0c1ed04a3d426d65520965df9a3684e190681a243f1e7",
+      "sha256": "8938659df279f48e2106d342fedd4e3ce2d08333ac34f715f85115976979c473",
+      "bytes": 8852
+    },
+    {
+      "file": "forg-sans-kr-500-58-52a4fd00.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.59.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bd7b6eb8475ed063c2674ddbcb1d4e701a95c46dfc6a244c1315a091cc3b3ed2",
+      "sha256": "52a4fd00d4793ff71638da88674593a2946232683cdf1de0b26a8d2813ca42a4",
+      "bytes": 10656
+    },
+    {
+      "file": "forg-sans-kr-500-59-8c893df3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.60.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8c1440b07581ffb514b77c65d2a68453ef639feb10f051964fa0dfcd832f5e96",
+      "sha256": "8c893df3bad3a747c971afc2e00d75479ebac4e1dcefb993367cd4f8dd3a6b6c",
+      "bytes": 11084
+    },
+    {
+      "file": "forg-sans-kr-500-60-d5913cfe.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.61.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "abe79f848616bd0caae268e3da2828caa8e5f802e7d438829dda478a9879ee6f",
+      "sha256": "d5913cfe1959964647cb03cf47007df74dcee166b6a2a2f6d74da75784e4322d",
+      "bytes": 9052
+    },
+    {
+      "file": "forg-sans-kr-500-61-3d9f8359.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.62.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4f0820ccf8a7adf7ad314c0dad537fe2b4eac8bb73988f0c6c065f90accca818",
+      "sha256": "3d9f8359e2b9058deec1ec1a98b89e984c5d722795abb4ac0adaf5192c227606",
+      "bytes": 10824
+    },
+    {
+      "file": "forg-sans-kr-500-62-2aa1d9b0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.63.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2168fc9935ff86f3ca81e8eb94f65b1ddeef76c92c9f73f8e82b340b238b8630",
+      "sha256": "2aa1d9b04f1c0534c1fbdd3030e3db3b9117646090aa66399aa57ea35b867db9",
+      "bytes": 10060
+    },
+    {
+      "file": "forg-sans-kr-500-63-6ac18604.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.64.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4a77eef52494e32804cc7c74f55557f57b87d90cd52f5243661fa2c4e210c6ae",
+      "sha256": "6ac186041c7de1f94e3a3826c62378d517205d4748c08d6ea672ab4bd8766c59",
+      "bytes": 8300
+    },
+    {
+      "file": "forg-sans-kr-500-64-fc125913.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.65.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "db735904c1d49b0b22f575360bc412de7c81ba872fe578475b6efe54e78d59db",
+      "sha256": "fc125913ee2826a96b9a22bf25e90c7419280c8e4aa1f500299ee6e7bf985ad5",
+      "bytes": 2284
+    },
+    {
+      "file": "forg-sans-kr-500-65-0815eb47.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.93.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ab26d4c6094cde643d4f2442333ba1cdf12d51cb0964b61cdd88e8609084efc3",
+      "sha256": "0815eb47bc4947ad34b0eae99778dfc72b0d44e49fae54d26a7e83640501831a",
+      "bytes": 3692
+    },
+    {
+      "file": "forg-sans-kr-500-66-f216f50f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.94.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e4285f206d6e3b45d13b46a86bf39cc46d37b36b53644966b1c6416b8a997727",
+      "sha256": "f216f50f91175b673e7814f5e632fa9b29fd41a01446d8402067ecaf56f189b1",
+      "bytes": 7508
+    },
+    {
+      "file": "forg-sans-kr-500-67-4e7073a5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.95.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "81766bd77c7f0aab7b5f14605203af9f9c184f470b5a849920ca8a0d5af4bf4c",
+      "sha256": "4e7073a587a73df9fcd4131d3c804327ac1b11f183b04d69e4c4a2716c773bf3",
+      "bytes": 1148
+    },
+    {
+      "file": "forg-sans-kr-500-68-1bbd0f19.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.96.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6abe1f2c9b694872d5d010d22c0d8ca4295c5e4685a1f752177acc93a8e45026",
+      "sha256": "1bbd0f19918364c12007b07a0d3585753cb499372c34570301c12e94b240945c",
+      "bytes": 3444
+    },
+    {
+      "file": "forg-sans-kr-500-69-e509868d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.97.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6df46d404533ff5221c2e33cb7ea998dc80fe6caf8bbb5ea6f9992062ea51a38",
+      "sha256": "e509868df132def90cae62e69a55fb9ad64d5da77c4efa37d4d8b61b0d78e187",
+      "bytes": 5272
+    },
+    {
+      "file": "forg-sans-kr-500-70-d509284a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.98.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fc481698bb8538197ac4fef6ac11ac05627331d6101304997310d23a43bde5c7",
+      "sha256": "d509284a6e5b848cbc507e3a50d0aa3407dd884ff488f75de964869f2f0e9815",
+      "bytes": 4324
+    },
+    {
+      "file": "forg-sans-kr-500-71-57a35795.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.99.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "7e3406dce733c532da614510e5bd5a493fa0d91da891ef65e38227459938f74c",
+      "sha256": "57a357956a73929e3b45511970cbd083ccbea1b76686cb72d6051a8bd092bbf5",
+      "bytes": 2944
+    },
+    {
+      "file": "forg-sans-kr-500-72-253c3484.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.100.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0fc5bd94562096a9aceb91900dd5652841d7fd9a569b0c4e4591bb1eed452c81",
+      "sha256": "253c3484c55734b881c3df966cbcc79b26888c0030019a82752429277a6c8b1f",
+      "bytes": 4760
+    },
+    {
+      "file": "forg-sans-kr-500-73-a4663b86.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.101.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fa646c76d6deea9431dc363d4b3c5ca1d42627bb1f62ec6b4dd93cd13859ae97",
+      "sha256": "a4663b86595b8c5600dd8a8858e1c6962c37a0867c0b8c007f6fb58b7b54c50c",
+      "bytes": 4604
+    },
+    {
+      "file": "forg-sans-kr-500-74-95efb3cc.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.102.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fc0922d42c09f11bca29bbfafd1ba18e74c702762832aa1a00945e64ff9ac45c",
+      "sha256": "95efb3ccdf3130d3ab8a3c21ae6aa43c96ee82f835b809a5e27648ee66ec3d10",
+      "bytes": 5328
+    },
+    {
+      "file": "forg-sans-kr-500-75-ec20fd5b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.103.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "85057b6901a4417e638d0b9196aa53d320d634a510d459fc403874def63ce4ce",
+      "sha256": "ec20fd5b694bcde2fe6b7d942d4e6add80f0992790a8b29e6cb0d5a08f82f70d",
+      "bytes": 5940
+    },
+    {
+      "file": "forg-sans-kr-500-76-d8b8c63f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.104.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6e60affed11f92f4902b1c8a0b90d47a5475a3ece694414c24c41c350dbf4aca",
+      "sha256": "d8b8c63f2cf6a3b7a9459921d5ac59c08c8e98954b1bc9812aba439931695780",
+      "bytes": 5604
+    },
+    {
+      "file": "forg-sans-kr-500-77-cf405207.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.105.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4cf2c26465b3c5bc40f6ed55de3788602739c7425db4c60deb4274007cb3e2b6",
+      "sha256": "cf405207ce0b1df9d7ca49fbf3e05c5529925ff2224f352023eb69d02f8716c8",
+      "bytes": 6492
+    },
+    {
+      "file": "forg-sans-kr-500-78-5058c7c5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.106.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b2cc7033e430ade5998026d3fb0625688f73ee38ac160fa0d950c608870d03f1",
+      "sha256": "5058c7c50378ac4f5fe310c6a2012888dc9ce14495c2d8fa2a48280a35baa4c2",
+      "bytes": 7004
+    },
+    {
+      "file": "forg-sans-kr-500-79-05322b18.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.107.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0a058351cd063c3b1a84e78cb0d6c06f7340279511bbaf9a70eeb08d99d74fef",
+      "sha256": "05322b184546d77b564815e866396b29e7c97a225f0c000f511becb91d4768aa",
+      "bytes": 7768
+    },
+    {
+      "file": "forg-sans-kr-500-80-788fad2b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.108.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "436fc14ddbd270d0751c970d83e36113ad7d30a7fb2dd2ab8e41ecdd8a94dc96",
+      "sha256": "788fad2b97d164036babb067958d81f4a87aa4efb1d9f8accf2c2bdb1052d0dc",
+      "bytes": 7912
+    },
+    {
+      "file": "forg-sans-kr-500-81-13b1feab.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.109.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ba47428eba894635b65873f8363a2ce3be17030189cb30fac620156d1faa5a0c",
+      "sha256": "13b1feab4300d78a6f38513962599fcc2e9356897b8ec1aeb2a6112fc1d6b41e",
+      "bytes": 8060
+    },
+    {
+      "file": "forg-sans-kr-500-82-04a5c798.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.110.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "3a14cb045b55baf034a6fc42081f7ae1f25b29a9443536ca00c42a6a563a2366",
+      "sha256": "04a5c798252db4d5989661fd7a581ee9947ab30d4de6fb04c869b5f0a720c772",
+      "bytes": 7904
+    },
+    {
+      "file": "forg-sans-kr-500-83-e183bddd.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.111.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "37a284930fc6f6aad0b99ef329bcd85c0829fc7c701c97634b7d100334d2e853",
+      "sha256": "e183bdddd16564d161b101d1be8fa146f5d9517306f25518c493f74674944b33",
+      "bytes": 8032
+    },
+    {
+      "file": "forg-sans-kr-500-84-845282ca.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.112.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b08eae0ff506ae80eb2ebf0a21a0442deac354bac8208c9f65c7e5c864e18596",
+      "sha256": "845282cac108afcb09e0d75b245c0d8800a06b2e881019fd1550530780a616dc",
+      "bytes": 7528
+    },
+    {
+      "file": "forg-sans-kr-500-85-8e814712.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.113.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "96de68f83b9f753b8739ae8ff5624e96af513f7676667b25908949b44fdb92fa",
+      "sha256": "8e814712996da5ab8d9cd80c5ddceb0c4edf7067bb78ddf16ddd12ff0f869f8c",
+      "bytes": 7852
+    },
+    {
+      "file": "forg-sans-kr-500-86-d0419d0a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.114.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5b19fc58309d254b50855e8c2a5d6e1dc85b051b8fbb963ff370d0c9adc3f26e",
+      "sha256": "d0419d0ace588216d8dbfd30d7f5a0e01a17b0e35e5c06536d49479dc2f35056",
+      "bytes": 7844
+    },
+    {
+      "file": "forg-sans-kr-500-87-5cc1979b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.115.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "db656ec7b61c2a6f9228753efebf23ae958d1e77451141ca4d8722b9a773e3ad",
+      "sha256": "5cc1979b73ef33b568f7cec08c97777c6de63b9ad5a0062cbe9e0684a40c81a5",
+      "bytes": 7584
+    },
+    {
+      "file": "forg-sans-kr-500-88-d934c083.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.116.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "63f1018deab79c263d2a4a0913f238f5f8badcf025ee8faa8cc73c7239415123",
+      "sha256": "d934c083da27db1572ddab840e993623c3bba11614fb244da3cb5abd88e4705c",
+      "bytes": 7748
+    },
+    {
+      "file": "forg-sans-kr-500-89-6fda8594.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.117.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e48563322d89eeb46c00bf7f8f66f6f06294f799d91ea231f54b4c9d92df5271",
+      "sha256": "6fda8594cd9a1423cfa566db5e1391d2a6d840899f9da243e2f1947cf558ca71",
+      "bytes": 6784
+    },
+    {
+      "file": "forg-sans-kr-500-90-5a8e2e51.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.118.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "225e64014bf860653f8f236c317d5cebb0231c6a72c5e6d042c7b7535b5ec208",
+      "sha256": "5a8e2e51829e2cfb42d32df975ecf8a0ffe01a39b8735dfad637686a583f0986",
+      "bytes": 6688
+    },
+    {
+      "file": "forg-sans-kr-500-91-51a62389.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.119.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "55bb90d83e309de5bbf356d9e1f13d05336322a569a7bfb47a89dced1e046e01",
+      "sha256": "51a62389f65b233c761a794aa3173962c9fc31ba338cfd49fc75142708184dd4",
+      "bytes": 9744
+    },
+    {
+      "file": "forg-sans-kr-500-92-118ace29.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacT7_mqeHWdb-MCw.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8b2ca39bcfa42e4903f6a1cab419ae81bbd3b1a29125a93ca1a1a5002f203f20",
+      "sha256": "118ace29bee0d5e1cb5fddf5a93807ca983bfecc4c02a063436adda27e141ee8",
+      "bytes": 992
+    },
+    {
+      "file": "forg-sans-kr-500-93-a5c7bdc4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 500,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOyiacT7HmqeHWdb8.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "115575b2d5fbbf6fd2ad4329bf24e9a38f403dce1a17e0558c1d75c18ca78046",
+      "sha256": "a5c7bdc418a51fbac18f193dac5367d5d2d33e41289bf75c89b06f553a0f369f",
+      "bytes": 11868
+    },
+    {
+      "file": "forg-sans-kr-600-0-10094121.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.0.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a5dafab3a33c5130e4458f3acfe820861ace41c366da9029f814a47435c490de",
+      "sha256": "10094121a2fbd4cb1119bf6dd3263cb75721ea92e6591947aa9bb666c581d1cd",
+      "bytes": 4716
+    },
+    {
+      "file": "forg-sans-kr-600-1-c3a2c13b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.2.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "473bb9ed1f46233bda9564df3b36000a128bac26941727ee31eb6d5acd3eea1c",
+      "sha256": "c3a2c13b01d0c9f13a4a154326e580aa1cec3c6f11b982db3ec1d00cfae8bc91",
+      "bytes": 8492
+    },
+    {
+      "file": "forg-sans-kr-600-2-116408d0.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.3.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "23ed40977ef45d315a82465dc57d1ac6d5a2d73a19b31af68da510333f5083df",
+      "sha256": "116408d03c7927b20b1ddc8119ae2f457e4fd622ce20a8b1e0c25a52695b4353",
+      "bytes": 11712
+    },
+    {
+      "file": "forg-sans-kr-600-3-c965e744.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.4.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "94fcf6e35348653afc97a1ee2f1d5c79c71797ca1f9ae84a90f9cd3bd7096712",
+      "sha256": "c965e74498e99627639ae5ebfef7ad6b8d98c6941398eb7cb4e945948e49c3e1",
+      "bytes": 10880
+    },
+    {
+      "file": "forg-sans-kr-600-4-1fe39114.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.5.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "de3c2a99febf0ae867b0661b2c4be6a915d5b473b7059872b41c8e67c384735d",
+      "sha256": "1fe3911442ae7a328dccae1ea4d9bf68e2b0ce1270e3f0509e3e86803c24ecbe",
+      "bytes": 9776
+    },
+    {
+      "file": "forg-sans-kr-600-5-63633ff3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.6.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "3cf319c1f197fd7a4c5cc237fc1419d5b30eedea922257356495353ef6f38d65",
+      "sha256": "63633ff330a180a5b1ade856427b160f05b34f993461fd1c6ae1ed79c31b4498",
+      "bytes": 9500
+    },
+    {
+      "file": "forg-sans-kr-600-6-9bd25c43.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.7.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b963894e85aecd80a02db67628fe0fa73028ef09644f2eaaf6423676b16951d3",
+      "sha256": "9bd25c439f55a22c91b923f8dba6851f0be891c1ff473cf9a9634e067ca9802a",
+      "bytes": 10232
+    },
+    {
+      "file": "forg-sans-kr-600-7-34ea3a04.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.8.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5cc283bfd1bc29299bd4da689d1c5fa59f1fb1aecfdd095eed67f89bd46e8bd7",
+      "sha256": "34ea3a043756d2f3046bb1caeae33c23a2368a5d1160c1eb005bf354c90a77b8",
+      "bytes": 8292
+    },
+    {
+      "file": "forg-sans-kr-600-8-fe8fdca4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.9.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "285f8d4fb04f5f3aa28d701b4db5ea0b543ff5c176aeed932df876f1d166361f",
+      "sha256": "fe8fdca4829342af6b114e06126b2cd46577c235bddea29c16311b6adfd0408b",
+      "bytes": 10000
+    },
+    {
+      "file": "forg-sans-kr-600-9-99e21d45.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.10.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cc5859da2b6b78e4dd4f051e2d802c19a51e60451efa35e026853eae990de988",
+      "sha256": "99e21d45e0dfdd69b3820d2f408039ff7393bb3083ea563be1bb1013acd0630a",
+      "bytes": 8932
+    },
+    {
+      "file": "forg-sans-kr-600-10-9adafe8a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.11.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b6ad2d5a580139f6f724b11996058d132bcd527608a6aa0dbfa6bbc9c9d18110",
+      "sha256": "9adafe8ac1a9fc96813158501d1ca85764d023068328ab0f68933fd456889cca",
+      "bytes": 7808
+    },
+    {
+      "file": "forg-sans-kr-600-11-a75cc563.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.12.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c5f951e79e61ed2b25b2955e9f02791bd73e29c42b2f9f1a81de2698aa2c5c04",
+      "sha256": "a75cc5633de071a93e14f91f1a15e7f8f4cae4daf49f4726c86b3acaf1f6d4f6",
+      "bytes": 10044
+    },
+    {
+      "file": "forg-sans-kr-600-12-3b509412.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.13.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b65531b98e7ef492a867e687e38183ec21250893315c0e78de484e09492e2dc8",
+      "sha256": "3b50941235ff81f19e67de66fbca1dbfbdb11b4e0519587037273d114f70f754",
+      "bytes": 10712
+    },
+    {
+      "file": "forg-sans-kr-600-13-f4122aa4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.14.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a826e229ba55d9557cc4867c10e64390478ad130b6945d3cf93916e997c6da18",
+      "sha256": "f4122aa4854e45dc34d9ece2f630cba1041d779e6a4c4ee6b5de256a292a2a95",
+      "bytes": 10336
+    },
+    {
+      "file": "forg-sans-kr-600-14-0cc21def.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.15.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e6771cddc066575d4f4961adec36094503cb4395824f01276b5e5122a726eb5f",
+      "sha256": "0cc21def4a09fd6326cd73640f2377aeb2b733d111e59df766ddec3d1604c27e",
+      "bytes": 9556
+    },
+    {
+      "file": "forg-sans-kr-600-15-ca9e9658.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.16.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "972ae89e253f214312dc285690a613cf46b8f839a50d43f60f7256d1c777074d",
+      "sha256": "ca9e965846bf9f13826fc900ecc5213a15f68664cb3c49d00cc58de9e6940fb8",
+      "bytes": 11120
+    },
+    {
+      "file": "forg-sans-kr-600-16-f71dcb96.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.17.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "22c88f75bcd85d8a986cb68b58bd59b46eef0ea1771239549e64323ff9d55727",
+      "sha256": "f71dcb967714dc1d00f4b4318b7007f7660447b9b7daf0aa5bdff0888a9eb7a9",
+      "bytes": 10804
+    },
+    {
+      "file": "forg-sans-kr-600-17-67075441.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.18.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2aa79327ec99f293ac613052afae938242b887d538a85119c564f6c74daca2aa",
+      "sha256": "67075441dff3c91313a639b30c4d19b7d14155ff8397c3cd9076b5ad8252c4fc",
+      "bytes": 9264
+    },
+    {
+      "file": "forg-sans-kr-600-18-0d47e3a8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.19.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "59c3ddccd2d469ed5930f011d0d27f59715d43a3bc13bd64263e344cf036e990",
+      "sha256": "0d47e3a8bb2ab9269ce0f1126463f9c151238517b1624d3a51263fe1e418c5d5",
+      "bytes": 12468
+    },
+    {
+      "file": "forg-sans-kr-600-19-dfdfc2fd.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.20.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "56a64e35932f08b5207855baa39c9bb2830824287b9aac611ee96ba023432f2d",
+      "sha256": "dfdfc2fd3ec85b72a08636d0c9d809a5c65d995523886bfbb510fad5156fe763",
+      "bytes": 12352
+    },
+    {
+      "file": "forg-sans-kr-600-20-49108832.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.21.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d864db8e1f034560eb66ed036d36ff339aeff4ecbee1a7c456c56865f51267f8",
+      "sha256": "49108832c10ae57acebb3ded2abb25ff9cf1d958cacb465694937847ab4ed61c",
+      "bytes": 11844
+    },
+    {
+      "file": "forg-sans-kr-600-21-b718d44a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.22.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6ec5f0ee27fe9f8cb34312a6bda6b77145d122dec611e7c874fbd0de4dc4c864",
+      "sha256": "b718d44af2692a232e33e713ae42b0d21aecee2948b150fc6d2bdc9c0f6e522c",
+      "bytes": 10780
+    },
+    {
+      "file": "forg-sans-kr-600-22-cd45b6d1.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.23.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "075d77dec7b673292103a2f83539834153df74e33f8476fa1e73f9e2012d0233",
+      "sha256": "cd45b6d1390fc4be68f93d72db7455c8fa6ea4b4c256e34f6476aa97e6964046",
+      "bytes": 10356
+    },
+    {
+      "file": "forg-sans-kr-600-23-33d3d466.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.24.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e6eb3886c5ae18609dca05907791045948d8984449597cafc64e7ec3851e4dd6",
+      "sha256": "33d3d466e8d6e171652b6e1425ed2e9b4ade70a48fc735863b879aa5d0e58fb7",
+      "bytes": 11480
+    },
+    {
+      "file": "forg-sans-kr-600-24-4416d90c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.25.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "94551d484310e335e331126fa184a97000544c3c981e49eb37ce5f0771de41c2",
+      "sha256": "4416d90ca0fe970ea671503eb35dd5a02d85cf58ef490490a229a56e9ff6cff5",
+      "bytes": 9268
+    },
+    {
+      "file": "forg-sans-kr-600-25-46f9ddb6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.26.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ba730d042de8a861dd8267190519213b6a82e5e2a41caed93eb24eb292adaca7",
+      "sha256": "46f9ddb69790359cb68a503f89d8a8d3bca831ea57c7ef0b16277d78012525a6",
+      "bytes": 11216
+    },
+    {
+      "file": "forg-sans-kr-600-26-e45726f8.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.27.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b8d473f26aa2d5a883f82ca53190a7eeb75eda57c71f9a5daf526247179f6e9e",
+      "sha256": "e45726f8abdcdb690cd0e5c1ac5c9992b7239f5b7f0c42f333146dece7cfdc6d",
+      "bytes": 11272
+    },
+    {
+      "file": "forg-sans-kr-600-27-3f454247.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.28.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5f9a5672561b3d2da223e160f74b11651aac01f7455b4e9c5a26a892cefa9ca9",
+      "sha256": "3f45424738ec166ebf190b94ac44e7fd68534620e5b93000e985e4dfc79f7cda",
+      "bytes": 9844
+    },
+    {
+      "file": "forg-sans-kr-600-28-d1404777.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.29.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "bd3b3f3789b645e1058100db2a6530945ff7b28f533f96272c802d450cc1c51c",
+      "sha256": "d1404777948d7b865bbdc1418b5b909cfd4b4a644a7601ba2c6801b7863e90ea",
+      "bytes": 11852
+    },
+    {
+      "file": "forg-sans-kr-600-29-e5493cad.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.30.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a1f50584ac60330a73356bf92dfe9a9aee78c7d072cc3dd75824a587f1f4d303",
+      "sha256": "e5493cadbc4d9cbeb196a1f4d2f789f0a47845a8f514aed0f3c0dfdc08e34695",
+      "bytes": 11932
+    },
+    {
+      "file": "forg-sans-kr-600-30-1be86942.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.31.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4bfd7c1f7444bb23f7c6b4bdb6750a9bb9477008191675d66567e962b98f8bce",
+      "sha256": "1be869425f7727b0b77f4b238739082924fa0e98fe4bf92e7f5522e9c867a2fd",
+      "bytes": 10088
+    },
+    {
+      "file": "forg-sans-kr-600-31-78e3e87e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.32.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "23d6283f523495525770c798e4c99a12c0de6929b67b91c1e1f469c76ef539e6",
+      "sha256": "78e3e87e57750e061fe78ebe5dce15a507f80fd0202b788b75ad2543d482d38e",
+      "bytes": 12076
+    },
+    {
+      "file": "forg-sans-kr-600-32-5e135f38.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.33.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "04415cf1dd6cb3b49f53355ee9766444ca5f66e6ab4754554d8ad0b56fe4ce25",
+      "sha256": "5e135f3811a52f27df7e40881c7044aa2877bf98301d8df4a441ee0f1630efae",
+      "bytes": 11464
+    },
+    {
+      "file": "forg-sans-kr-600-33-f46ec4e5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.34.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fafa6ffcbee1518eac6fe66edc328bb5b52383c7039e3745da71e6c833540bdd",
+      "sha256": "f46ec4e59b494c6de62cef8069c776634bcae8c42e9733436eff07102775bf19",
+      "bytes": 9776
+    },
+    {
+      "file": "forg-sans-kr-600-34-4e90cae4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.35.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "dd6d492fbe92f39d9523f1544e8210771dd355621845b86ccec0fe5a49ca8ebe",
+      "sha256": "4e90cae442ccbd21c1c86acef3fe844d56ba99aeeb099bd32f127ce36889d3a0",
+      "bytes": 9984
+    },
+    {
+      "file": "forg-sans-kr-600-35-220e6c69.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.36.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "84fa2c7ae7875d37765e4587c2ee9c0b4d020b0ded3fc9f547440a457db50747",
+      "sha256": "220e6c692627cbce94c3c860706abcf6420f5e98e8f4bda236b6a3906782dacf",
+      "bytes": 10180
+    },
+    {
+      "file": "forg-sans-kr-600-36-e9eea45c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.37.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "8f300ecab9866edbf66aca44031c189334628b6e1a1e409840d4b32d6237781c",
+      "sha256": "e9eea45c4d33b27b2031e60a292b87f590069a9e00be8a06241363f9a4e67257",
+      "bytes": 10248
+    },
+    {
+      "file": "forg-sans-kr-600-37-7441452c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.38.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a4f4913339f372a96ad28c65195f1cc8849825e053b97e029269b31535ea27a4",
+      "sha256": "7441452cb36fdb96154ffd1963701d1bfc1aadf6cb3e4dfe58aa5a65441e463e",
+      "bytes": 7776
+    },
+    {
+      "file": "forg-sans-kr-600-38-a9e24877.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.39.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "59ac0e9cea3bfda38b4d2bcc365ec93850c3dbb670f122157eb1ce87cd383ab8",
+      "sha256": "a9e248779b1eb8ac58e375ef4987b410daf61013689ae7d000a6ef17c27af44c",
+      "bytes": 10068
+    },
+    {
+      "file": "forg-sans-kr-600-39-23e605f7.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.40.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "4c4834f2c2c4aaa56e63498ab97e8d62213868c8b5cf41ff310ffbe190350f2b",
+      "sha256": "23e605f79f7e9c23dccf851ead8515d2b110daee78115bdd46b9948df3b65ab1",
+      "bytes": 9524
+    },
+    {
+      "file": "forg-sans-kr-600-40-b5c7a1e4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.41.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6ba641df4d846055465360f48b7220b62823b8107ded7451dde5db5661d122d6",
+      "sha256": "b5c7a1e4a12cdc325d45a445f44c4943bd7198604ca4122b417c1ab4b3c4a8d5",
+      "bytes": 8048
+    },
+    {
+      "file": "forg-sans-kr-600-41-a5b4ee5e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.42.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "168404d7ca1b7248d489f241b06211c57bb7fb1988bbe750e2e53dc54c015b76",
+      "sha256": "a5b4ee5ec3de544b07e5cf5e38a98e80165fd9d038790376023cf85a79ec7542",
+      "bytes": 9812
+    },
+    {
+      "file": "forg-sans-kr-600-42-2939d70f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.43.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a074f99a8febbf2091ba2697008f53a76b0c06a7d99d3f48f8a8446a8b9f42bc",
+      "sha256": "2939d70f15ed8e27c4a737f7613af1442fa347f0ae9bb7fb3ac5801c0923add3",
+      "bytes": 9868
+    },
+    {
+      "file": "forg-sans-kr-600-43-fe6026fb.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.44.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c361ed11d9fb6a5d3857c54b5f167011006321200e7a1a8e31e25d5941443cfb",
+      "sha256": "fe6026fb48a2afb6838463763b1da8634bbdaa803b65d594192efd8eeece07ea",
+      "bytes": 8776
+    },
+    {
+      "file": "forg-sans-kr-600-44-507141fa.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.45.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "453f81ddc4d0183f2e95678c1d3c02f4272121d59ed1c6c8301111753669e30f",
+      "sha256": "507141faed394ea396bbed8ea19e546834567f9a8b9b60faaefccea1c8ab187b",
+      "bytes": 9052
+    },
+    {
+      "file": "forg-sans-kr-600-45-c48437a3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.46.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "1418f3b7f38a0d1a8f6624aa659b632a7870bffce7a25f755a2fefaeb96cdb06",
+      "sha256": "c48437a37557ac8920316f56f261247ea88ea14dcd5de8e425dbbe621ab204c6",
+      "bytes": 9564
+    },
+    {
+      "file": "forg-sans-kr-600-46-dd4f36f5.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.47.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "42ed06123a31a056e8fb33828cf914fb7b1da9f1f532601ff9a4a4a5e76c7041",
+      "sha256": "dd4f36f5860cc95d87402e2e4145cf24b7d5b212c8c72239571c299aa6ababce",
+      "bytes": 9332
+    },
+    {
+      "file": "forg-sans-kr-600-47-85c3ef9d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.48.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "37fc8ff9cc4a6f17a8362b0a18e42c9de56d91173bba91ffdb8dd6702b8a189d",
+      "sha256": "85c3ef9de4332c436ace2353d325b0d9424b354748e6a6352ff939828612dae2",
+      "bytes": 8772
+    },
+    {
+      "file": "forg-sans-kr-600-48-fdc73dd4.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.49.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "05853e6f8829bd3ed38faa9b5cadf315dac1c063b7f8b559c71172f430e216c1",
+      "sha256": "fdc73dd433d193163f480d2976787b70c56f4549c175f802140def1882d0b9bc",
+      "bytes": 10020
+    },
+    {
+      "file": "forg-sans-kr-600-49-c96fe2c7.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.50.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d9c5e9030f644a5db7390e0a01dd9b87188a553548f308ef3072ade52e73ed50",
+      "sha256": "c96fe2c736d38b91d55912265beb6076f7bb63dd8c08b958ef61b1be7aecf2bd",
+      "bytes": 9744
+    },
+    {
+      "file": "forg-sans-kr-600-50-b77a9772.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.51.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "98ac20d9e254c1706a85023fc6333d4806473bab8b3005062a7e5657d6aa8993",
+      "sha256": "b77a9772e0311c901503c7e6484565124a683f39d50ff184c9323d821be60b91",
+      "bytes": 8792
+    },
+    {
+      "file": "forg-sans-kr-600-51-4fb2bd6a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.52.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9218a21fda60a97df5e4b8b6f460246e228721b3cd2a3f64d31d472c72734d68",
+      "sha256": "4fb2bd6ac0797895683b3eaf4e1c0b622eadccac415fe764b2e14ce59770d39f",
+      "bytes": 9792
+    },
+    {
+      "file": "forg-sans-kr-600-52-58630e89.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.53.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "023ebf420e5e0a83b5457e5807072f4332a228c5c8bf3a83e0096609a91e142b",
+      "sha256": "58630e89d03a6d43b203eaaef414100c1a92e5fac201d163dcff77651fee7ab4",
+      "bytes": 9508
+    },
+    {
+      "file": "forg-sans-kr-600-53-3b48f30a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.54.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5d7812ad241b0f226d47808b7be3eeffefb5a4a44e97dfe76b3be72de2a3fbed",
+      "sha256": "3b48f30ac8cbefaaea8da30126fc4692a70452bb5c60c4388d94115ab2fdea39",
+      "bytes": 9364
+    },
+    {
+      "file": "forg-sans-kr-600-54-5a89ea6f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.55.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "6a505ee5145402557a5578d25643fa37baca8a216c93f344c49fa321e01aabc9",
+      "sha256": "5a89ea6f172fcd0bc6266cecd0730b37f3940a2438dd470bf9e70706ceb3dc12",
+      "bytes": 9092
+    },
+    {
+      "file": "forg-sans-kr-600-55-d7b2b23d.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.56.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5c98bac42ac6fb3bb7dd44f4dca442d4c4f04b0c7032d5a0068a1affc5dd4d45",
+      "sha256": "d7b2b23d52decef2d4c98b6fe37a209e137c23989850702c77cc350785d80b59",
+      "bytes": 9548
+    },
+    {
+      "file": "forg-sans-kr-600-56-0494083f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.57.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "dd4ce73c3dc99650207527e78342824567d47c9c2e962593fd9b50f3e9e78fb3",
+      "sha256": "0494083f2bace3c880476ec02e426a64ecc6b93afa23601481c3a19fc4790169",
+      "bytes": 9768
+    },
+    {
+      "file": "forg-sans-kr-600-57-46027cbc.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.58.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "7c7b0d02edf51bc29d59d30cf9b8145afc1ad02d8b54583b83b851f039eb4afc",
+      "sha256": "46027cbc8e9ee346bbf9d100bbf5faf58c2982ffb08697fdabc9eef8bcd20b32",
+      "bytes": 8820
+    },
+    {
+      "file": "forg-sans-kr-600-58-1ccd1a28.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.59.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "220dbbc8ac0b6fd20b036dffb6d21c8de9d4fbd877bfa7893c69f4dc1d341c62",
+      "sha256": "1ccd1a28d858fd6ef23a735845bd7fba18f5b338af389852fc2f05cbe27fff2d",
+      "bytes": 10472
+    },
+    {
+      "file": "forg-sans-kr-600-59-b8ddaa54.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.60.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "fdac69234da7d28534cc772865587e3b3a29126e712d87422c6f61dad1aa7d56",
+      "sha256": "b8ddaa541a4dc99b194bf71440efc3dca465646968da511d9bdbe2bd595a5705",
+      "bytes": 11120
+    },
+    {
+      "file": "forg-sans-kr-600-60-b93e0626.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.61.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d4a8b4b768869cac2b64f2ca34e67eacdf8101cfa8abace04bba559d26e6d54e",
+      "sha256": "b93e0626495159d33868ed169d0a0dbeb123f6ea573cb7b884b565c95d1d43ca",
+      "bytes": 9036
+    },
+    {
+      "file": "forg-sans-kr-600-61-ba3a6462.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.62.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "22977249a1e33b125db2edb4277136bc53d84809960a48cff4458222e60fa55c",
+      "sha256": "ba3a646209519948bba3ae5cf8c8f05184333e5263ac14c1178b367a687fdc30",
+      "bytes": 10888
+    },
+    {
+      "file": "forg-sans-kr-600-62-4b5a2ffa.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.63.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "743add0258037458a45a5702508b591384afb24b01775e417ffecb105725636a",
+      "sha256": "4b5a2ffabfd283b984e5f9eae8ca503d7fc3e566614520b1c2a41fadda58f566",
+      "bytes": 10156
+    },
+    {
+      "file": "forg-sans-kr-600-63-87964071.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.64.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "e79ef65ebfd915d7b1a7ed518a79df2309f688d267d2411f7ffa34b315570aa0",
+      "sha256": "87964071c0ea16fd1f919b14b1e49587093a2d1b53dd9be2b2462adadee6cefc",
+      "bytes": 8696
+    },
+    {
+      "file": "forg-sans-kr-600-64-2cf5fcc7.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.65.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "657ad4a586816d93f3eef791678620f42e442299c42dd486810d759236ad7df0",
+      "sha256": "2cf5fcc7c998e90b1f331340c79718c633775923843147cefdca1b30f1bc1d83",
+      "bytes": 2324
+    },
+    {
+      "file": "forg-sans-kr-600-65-4554d81a.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.93.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "659761b99c3e8afec7deca8b05864219f36ce49f8e4dac56657f709afed92d9d",
+      "sha256": "4554d81aadea439bb12727ce95b38d459122e303b3fe15d8759811385eeb0c75",
+      "bytes": 3800
+    },
+    {
+      "file": "forg-sans-kr-600-66-8740191c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.94.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ae3181c2fd7370799733c260fd3d3467e52433ecddab33f39efab96f380574ca",
+      "sha256": "8740191c88a4459bc6cfd35d50c981f1cacc638a3047aacd3d1be2374a40fcaf",
+      "bytes": 7552
+    },
+    {
+      "file": "forg-sans-kr-600-67-ec5d4179.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.95.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "144f7098237daa5276b5705660d309dc983558524111ba2d3161a7239f4e071d",
+      "sha256": "ec5d417948875484324c00cd14d04456900b9817e8c6cb199be0ea89ac4ceaaf",
+      "bytes": 1168
+    },
+    {
+      "file": "forg-sans-kr-600-68-112f8c8e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.96.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "749fb45c0d628853c67b3643426b8059e241abee9a41a275ab32fd59ae79752c",
+      "sha256": "112f8c8e054323fcfa48008626ca691356689d593b62c13d7362a4634ba81377",
+      "bytes": 3368
+    },
+    {
+      "file": "forg-sans-kr-600-69-9a18ea88.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.97.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5254141772d0e0ad3c590d5badd65f3b22bca14e376b839e91585c37c0b0d5fa",
+      "sha256": "9a18ea8872b5a4489a253a1ef19154ec71972f5b19c1be6a5487358ed53eece0",
+      "bytes": 5232
+    },
+    {
+      "file": "forg-sans-kr-600-70-8e33cc68.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.98.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "9d4893490ab7e602a14b02b1d6461695d4e4692d3bc9454d62ca7e73aa53913b",
+      "sha256": "8e33cc68610e96feb1c9a23c824dc06ca9550b28e2f81655de5979c72968867e",
+      "bytes": 4416
+    },
+    {
+      "file": "forg-sans-kr-600-71-b3c24fd9.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.99.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "921ee4fe20cdbda237eb309e77dc3a654484d649842ef35184ec7818309fc659",
+      "sha256": "b3c24fd96f1c1ed24989286ff7e8fafeaebffb6a3c916269c3623b075ac8d5bb",
+      "bytes": 2924
+    },
+    {
+      "file": "forg-sans-kr-600-72-69b61b51.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.100.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "0658545e92255178a6523cb69472746e9928b65c75296984bbf3076f0c37d165",
+      "sha256": "69b61b51cc02df67a13ddae560bbcf7df9cff346ca6821b8a5224a75c8b333fa",
+      "bytes": 4732
+    },
+    {
+      "file": "forg-sans-kr-600-73-2b0b43d2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.101.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "34ce1941d729d39a90a3c103737643f07e4f31f66edddd69d756465f0feac5ea",
+      "sha256": "2b0b43d24fafa53042710f2d61bf6502a82cb6d070eb64db8041ae6db66e2420",
+      "bytes": 4544
+    },
+    {
+      "file": "forg-sans-kr-600-74-78e920fe.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.102.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cdb8f824b2dccf02bb2e1315c9933a024a4b6bad0703ab2aa5573e91c3bd22b2",
+      "sha256": "78e920fe2b793baab76d124dfa761c08342a286db4dc26b4943a6925922ce993",
+      "bytes": 5316
+    },
+    {
+      "file": "forg-sans-kr-600-75-37612a7b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.103.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "863bc26dcbe80da7e8dd23f110e11893653d6feeb0085a82558653163163c973",
+      "sha256": "37612a7bf6d3fd85a1490a5f766b6e0152e3a2ce627648b22bb54d12308d0ecb",
+      "bytes": 5808
+    },
+    {
+      "file": "forg-sans-kr-600-76-804eec0b.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.104.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2c2788bc8dd99b6ccbdf62c6f47a86caac56bcdaf49dce40d08f52854b1ef3cd",
+      "sha256": "804eec0bed622817e03b267dfdd2a3866f75a1b360f80828c20710e43b452556",
+      "bytes": 5632
+    },
+    {
+      "file": "forg-sans-kr-600-77-13a993d3.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.105.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "f13bbb48e7898b23a56851ba20937a27b45fd75f5019e02c398862f0c67272ef",
+      "sha256": "13a993d3a36957b1af2f15a52838f275f1edfe3b0f3cd8d49eb1a31d3882b79f",
+      "bytes": 6424
+    },
+    {
+      "file": "forg-sans-kr-600-78-96109a79.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.106.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "99e3944b3b887e3a01c1d999d52027db0c91e9da50f3982ecd54a177e08378f3",
+      "sha256": "96109a795a5ee0960275d3417f15361156fb8fd53a34ee02ddaf9e799a1770bc",
+      "bytes": 6952
+    },
+    {
+      "file": "forg-sans-kr-600-79-02a4370f.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.107.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "c796f6d78d1f7123e05e6040fcb10a16fc9fd985c4c30bdfcbb886c9523ed17a",
+      "sha256": "02a4370f7b225b2d2f97e07316523c2855e95574012af35983ec30c3c0ea2cd0",
+      "bytes": 7716
+    },
+    {
+      "file": "forg-sans-kr-600-80-7c76903e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.108.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "08562f754b18bcfd26be0b3ef8a4d8baa394f2fcdfe1c21751a3ef47ed55d8af",
+      "sha256": "7c76903eb1364b80e730fedd81f93972afd35f65969196eafc867e71759a7bbb",
+      "bytes": 7796
+    },
+    {
+      "file": "forg-sans-kr-600-81-40fee69e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.109.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5ee03dffebf68ccb73cc9f6d61e86862edecd71e74560bfc86f063c6a8f7f6c2",
+      "sha256": "40fee69e15b73da8822f851d0decc30cb664648b3d51305f0e5f99af1831f747",
+      "bytes": 7980
+    },
+    {
+      "file": "forg-sans-kr-600-82-2a0ad3b6.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.110.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "d0f60379e0ab9cdcb22bd9cdb14a420e314388177745a2bc0faab73c220861fb",
+      "sha256": "2a0ad3b698956d48f20d8711c4070d3f96712cceef03c5f02f230d193d6385c3",
+      "bytes": 7920
+    },
+    {
+      "file": "forg-sans-kr-600-83-a18af195.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.111.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "2110492671c5996ed44cd95fd61db663550c5ab47ac31ab97d172b3041979036",
+      "sha256": "a18af195cd89eb46412ca0a78448e99974a050b3c2ac49e1d1e7558ac14ca998",
+      "bytes": 8100
+    },
+    {
+      "file": "forg-sans-kr-600-84-0506cd26.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.112.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "b7de8b1cbf1b25fce2c505d334fc17fe053ca4d58b2522aad11b1f5fe0ccca46",
+      "sha256": "0506cd26d5f4e603daf3ef71292e7ea10ac05fc9d9fdfef0aa5e69d8e8e87539",
+      "bytes": 7524
+    },
+    {
+      "file": "forg-sans-kr-600-85-ad972008.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.113.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "366b6087bf9639a910f292be3acfcaf49268326da470b2b65afe8822011156e5",
+      "sha256": "ad972008526f54ecebb06411ab054f0bb1a8b01d7ecc2aad0b1af2ddec53c799",
+      "bytes": 7824
+    },
+    {
+      "file": "forg-sans-kr-600-86-c31066db.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.114.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "3d7ce38924660ec8b08787c6c7b9b4e656c91c2c0c9887dc0f0cdf02e7d8add3",
+      "sha256": "c31066db8cbd6e651e194204debd7fe27e1f9a6c6a86b38d29198dee75f92315",
+      "bytes": 7892
+    },
+    {
+      "file": "forg-sans-kr-600-87-c1111765.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.115.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "a32af8473a2610ee5f504d9a6a3fd09525864a39ec3b6bbc4a273cafcfe33d8d",
+      "sha256": "c1111765852c0c18fb73e42e55f3b4be639f16e921ffc1daa4239505e0120f0d",
+      "bytes": 7760
+    },
+    {
+      "file": "forg-sans-kr-600-88-98854a04.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.116.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "5e3cbedeb89dc7c20e1b5a0a7c61ddc19988407a0288cf3695a5d3a988d01d32",
+      "sha256": "98854a04dd37d3ec95646e019d1e1906f4f5c33dc21562247616cb026dcc2f61",
+      "bytes": 7736
+    },
+    {
+      "file": "forg-sans-kr-600-89-190313a2.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.117.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "85afefdd123c42ac839682c58fb9371381b62d69a704a1b8e9f9de4888ad81a2",
+      "sha256": "190313a231946ce48400c981fb100114e85170812592fa9448f4c1e60f128ab1",
+      "bytes": 6816
+    },
+    {
+      "file": "forg-sans-kr-600-90-fc665edc.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.118.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "cfbeda5dc701a78f3d9fe68a831fa41099da3df3b4f50326becf15b5f4e1ce1c",
+      "sha256": "fc665edc86d43e6f21fb6922adfb3a19aef482d3241a917cbc31ef956a5ec5e7",
+      "bytes": 6780
+    },
+    {
+      "file": "forg-sans-kr-600-91-6b76a524.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbf7PsrsPUP62-BDGSOx3Zo0ZH77lI-3AJG-Q.119.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ace6f8466b836deb85df24bffd4f7762298d616722372d84e7248ed2fc561f3e",
+      "sha256": "6b76a52499eb01b080cdb4d81ea5fdabd1ac86191931bdc55cb248cf02f41d57",
+      "bytes": 9896
+    },
+    {
+      "file": "forg-sans-kr-600-92-edfec49c.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbT7_mqeHWdb-MCw.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "ecaa3d09d118be7000e7001ee27264aa039b9e6e6da9da75768142f59698fc72",
+      "sha256": "edfec49c011eb62e91bf64c54647488a132b9c3d7faad1c151111138fc869b46",
+      "bytes": 1012
+    },
+    {
+      "file": "forg-sans-kr-600-93-30d83b5e.woff2",
+      "family": "Forg Sans KR",
+      "weight": 600,
+      "source": "https://fonts.gstatic.com/s/ibmplexsanskr/v11/vEFN2-VJISZe3O_rc3ZVYh4aTwNOygqbT7HmqeHWdb8.woff2",
+      "sourceFamily": "IBM Plex Sans KR",
+      "sourceSha256": "50619472bf914fab270ea5f37046cbc39dc7338899e707f1a8f1a16e7a4ac7d2",
+      "sha256": "30d83b5e39147700cc79ff50487b82ffb1c50e8fd2ba2cddb8413ae21fc75364",
+      "bytes": 12020
+    }
+  ]
+}
