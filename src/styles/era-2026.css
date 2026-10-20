@@ -1,0 +1,210 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * The 2026 era (ADR-0023): the museum's own frame, not a capture, so its
+ * colours are its own (`--w26-*`), light by default and dark under
+ * `prefers-color-scheme: dark`. Only the frame follows the theme: the
+ * museum bar and footer keep their `--era-*` tokens (eras.css), light in
+ * both, as their text colours are the same in every era.
+ *
+ * The frame is one column of up to 1024px (the museum bar's inner width,
+ * `max-w-5xl`) with the 2026 bar on top (`FrameTop2026`,
+ * `era-chrome-2026.tsx`). On a phone that bar is the only one on a page
+ * that has it: it carries the home link, the eras and the menu, and the
+ * museum bar hides. The search page, the policy and the 404 sit outside
+ * the frame and keep the museum bar.
+ * ───────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root[data-era="2026"] {
+    --w26-bg: oklch(0.973 0.003 264.5); /* #F5F6F8 */
+    --w26-surface: oklch(1 0 0); /* #FFFFFF */
+    --w26-ink: oklch(0.244 0.025 253.8); /* #18212C */
+    --w26-muted: oklch(0.523 0.03 253.7); /* #5E6B7B */
+    --w26-line: oklch(0.924 0.008 260.7); /* #E3E6EB */
+    --w26-input-line: oklch(0.666 0.024 254.5); /* #8A95A3 */
+    --w26-bar: oklch(0.244 0.025 253.8); /* #18212C */
+    --w26-bar-ink: oklch(0.972 0.005 258.3); /* #F4F6F9 */
+    --w26-soft: oklch(0.973 0.035 91.1); /* #FFF6DC */
+    --w26-soft-ink: oklch(0.436 0.09 80.5); /* #6B4B00 */
+    --w26-record: oklch(0.957 0.006 255.5); /* #EEF1F5 */
+    /* The archive's mark: the 2014 slate as a rail, darkened for small text. */
+    --w26-rec: oklch(0.514 0.045 253.3); /* #556981 */
+    --w26-rec-rail: oklch(0.552 0.043 253.4); /* #61748B */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root[data-era="2026"] {
+      --w26-bg: oklch(0.189 0.015 253.2); /* #0F141A */
+      --w26-surface: oklch(0.232 0.02 254.9); /* #171E27 */
+      --w26-ink: oklch(0.941 0.008 253.9); /* #E8ECF1 */
+      --w26-muted: oklch(0.714 0.026 254); /* #98A4B3 */
+      --w26-line: oklch(0.309 0.026 253.2); /* #27313D */
+      --w26-input-line: oklch(0.568 0.029 253.7); /* #6B7888 */
+      --w26-bar: oklch(0.162 0.012 254.2); /* #0A0E13 */
+      --w26-bar-ink: oklch(0.941 0.008 253.9); /* #E8ECF1 */
+      --w26-soft: oklch(0.31 0.047 88.7); /* #3A2F12 */
+      --w26-soft-ink: oklch(0.896 0.124 87.9); /* #FFD877 */
+      --w26-record: oklch(0.258 0.025 258.3); /* #1C2430 */
+      --w26-rec: oklch(0.715 0.038 253.5); /* #93A5BB */
+      --w26-rec-rail: oklch(0.665 0.038 251); /* #8396AB */
+      color-scheme: dark;
+    }
+  }
+}
+
+@layer museum {
+  /* `color` here, not only on `body`: `base.css` gives `body` the ink of
+   * every era, which the frame's text would inherit in the dark. */
+  :root[data-era="2026"] .forg-shell-main {
+    background-color: var(--w26-bg);
+    color: var(--w26-ink);
+    @variant frame {
+      width: min(100%, 1024px);
+    }
+  }
+
+  /* Focus: a line in the frame's ink with a gold band around it, seen on the
+   * bar and on a card alike, in either theme. */
+  :root[data-era="2026"] .forg-shell-main :focus-visible {
+    outline: 2px solid var(--w26-ink);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px var(--color-forg-gold);
+  }
+
+  /* The museum bar shows on a phone in the eras listed; in 2026 the 2026
+   * bar takes its place, where the page has one. */
+  @variant max-sm {
+    :root:not([data-era="2014"], [data-era="2003"], [data-era="2001"])
+      body:has([data-era-frame="2026"])
+      header[role="banner"] {
+      display: none;
+    }
+  }
+
+  /* The bar: the wordmark and the menu from 640px; on a phone the wordmark,
+   * where you are, and the eras and the menu folded into `<details>`. */
+  .w26-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-inline: 20px;
+    border-top: 4px solid var(--color-forg-gold);
+    background-color: var(--w26-bar);
+    color: var(--w26-bar-ink);
+    font:
+      400 13px/1.4 "Apple SD Gothic Neo",
+      "Malgun Gothic",
+      system-ui,
+      sans-serif;
+    @variant max-sm {
+      gap: 8px;
+      padding: 0 6px 0 14px;
+    }
+  }
+  .w26-top a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .w26-top .w26-word {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--color-forg-gold);
+    @variant max-sm {
+      font-size: 22px;
+    }
+  }
+  .w26-nav {
+    display: flex;
+    gap: 18px;
+  }
+  .w26-nav a {
+    padding-block: 12px 10px;
+    border-bottom: 2px solid transparent;
+  }
+  .w26-nav a:hover {
+    color: var(--color-forg-gold);
+    border-color: var(--color-forg-gold);
+  }
+  .w26-place,
+  .w26-pop {
+    display: none;
+  }
+  @variant max-sm {
+    .w26-nav {
+      display: none;
+    }
+    .w26-place {
+      display: block;
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      opacity: 0.85;
+    }
+    .w26-pop {
+      display: block;
+    }
+  }
+  .w26-pop > summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline: 4px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .w26-pop > summary::-webkit-details-marker {
+    display: none;
+  }
+  .w26-pop > summary b {
+    padding: 5px 9px;
+    border-radius: 999px;
+    background-color: var(--color-forg-gold);
+    color: var(--color-forg-ink);
+    font-weight: 500;
+  }
+  .w26-pop > summary,
+  .w26-pop button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+  }
+  /* What a summary opens drops under the bar, across it. */
+  .w26-pop > :last-child {
+    position: absolute;
+    inset-inline: 0;
+    top: 100%;
+    z-index: 30;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 14px 14px;
+    background-color: var(--w26-bar);
+  }
+  .w26-pop nav {
+    flex-direction: column;
+    gap: 0;
+    padding-block: 0 6px;
+  }
+  .w26-pop nav a {
+    padding-block: 12px;
+    border-top: 1px solid oklch(1 0 0 / 0.15); /* white at 15% */
+  }
+  /* The pressed one takes the gold of every era's toggle (eras.css). */
+  .w26-pop button {
+    min-width: 64px;
+    min-height: 44px;
+    border: 1px solid oklch(1 0 0 / 0.4); /* white at 40% */
+    border-radius: 999px;
+    background-color: transparent;
+    color: var(--w26-bar-ink);
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────────────
- * What changes with `<html data-era="2014" | "2003" | "2001">`: the
+ * What changes with `<html data-era="2026" | "2014" | "2003" | "2001">`: the
  * `--era-*` variables (semantic tokens), each era's body font, which era's
  * markup shows, the toggle's lit button, the 2001 post layout and the
  * centred frame. Default (no attribute) === 2014.
@@ -60,6 +60,25 @@
     --era-accent: var(--color-forg-gold);
     --era-input-border: oklch(0.845 0 89.9); /* #CCCCCC — forg_b's table border */
   }
+
+  /* 2026 (ADR-0023) is the museum's own frame; its colours are `--w26-*` in
+   * era-2026.css. These are the museum's: the bar above the frame, the
+   * footer and the cards outside it, light in the dark theme too (their text
+   * colours do not follow the theme). Only the page behind them does. The
+   * frame has no sidebar; its tokens are set all the same. */
+  :root[data-era="2026"] {
+    --era-page-bg: var(--w26-bg);
+    --era-content-bg: oklch(0.988 0.001 286.4); /* #FBFBFC */
+    --era-sidebar-bg: var(--color-forg-sidebar);
+    --era-sidebar-fg: oklch(1 0 0); /* white */
+    --era-sidebar-link: oklch(1 0 0); /* white */
+    --era-footer-bg: oklch(0.244 0.025 253.8); /* #18212C — the 2026 bar */
+    --era-link: oklch(0.514 0.045 253.3); /* #556981 — the archive's slate */
+    --era-link-hover: var(--color-forg-gold);
+    --era-meta-fg: oklch(0.523 0.03 253.7); /* #5E6B7B */
+    --era-accent: var(--color-forg-gold);
+    --era-input-border: oklch(0.666 0.024 254.5); /* #8A95A3 — 3:1 on white */
+  }
 }
 
 @layer museum {
@@ -83,6 +102,7 @@
    * picks which DOM subtree is visible. Pure CSS = instant toggle, no
    * React re-render, no FOUC.
    * ───────────────────────────────────────────────────────────────────── */
+  :root:not([data-era="2026"]) .era-2026-only,
   :root:not([data-era="2014"]) .era-2014-only,
   :root:not([data-era="2003"]) .era-2003-only,
   :root:not([data-era="2001"]) .era-2001-only {
@@ -103,6 +123,7 @@
 
   /* The era toggle's pressed button, lit from `data-era` like the subtrees
    * above: the saved era shows before `<EraToggle>`'s script runs. */
+  :root[data-era="2026"] [data-era-option="2026"],
   :root[data-era="2014"] [data-era-option="2014"],
   :root[data-era="2003"] [data-era-option="2003"],
   :root[data-era="2001"] [data-era-option="2001"] {

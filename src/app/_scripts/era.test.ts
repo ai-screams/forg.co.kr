@@ -73,6 +73,7 @@ function run(stored: Record<string, string> | "blocked", { pressed = true } = {}
     SOURCE,
   )(document, window, localStorage, FakeElement, ERA_STORAGE_KEY, ERAS, ERA_HINT_KEY);
   return {
+    era: () => attrs.get("data-era") ?? null,
     hinted: () => classes.has("forg-era-hint-on"),
     focused,
     store,
@@ -80,6 +81,13 @@ function run(stored: Record<string, string> | "blocked", { pressed = true } = {}
     otherTab: (key: string, newValue: string) => listeners["window:storage"]?.({ key, newValue }),
   };
 }
+
+// Fails if: the script does not know 2026 (left out of ERAS), or applies a
+// saved value that is no era.
+it("applies a saved 2026 and ignores a value that is no era", () => {
+  expect(run({ [ERA_STORAGE_KEY]: "2026" }).era()).toBe("2026");
+  expect(run({ [ERA_STORAGE_KEY]: "1999" }).era()).toBeNull();
+});
 
 const CLOSE = new FakeElement("[data-era-hint-close]");
 const ERA_2003 = new FakeElement("button[data-era-option]", { "data-era-option": "2003" });

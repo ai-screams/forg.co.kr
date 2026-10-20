@@ -4,6 +4,7 @@
  *   src/styles/tokens.css — era-invariant tokens (`@theme`)
  *   src/styles/skins.css  — the original skins' colours (`@theme`, hex)
  *   src/styles/eras.css   — everything `<html data-era>` switches
+ *   src/styles/era-2026.css — the 2026 frame: its tokens, light and dark
  *   src/styles/base.css   — page-wide rules that are not per era
  *
  * Cascade order is declared here, before Tailwind adds its own: the
@@ -19,4 +20,5 @@
 @import "../styles/tokens.css";
 @import "../styles/skins.css";
 @import "../styles/eras.css";
+@import "../styles/era-2026.css";
 @import "../styles/base.css";

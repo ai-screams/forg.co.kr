@@ -34,7 +34,7 @@ export function SiteHeader({ crumb }: { crumb?: ReactNode }) {
             {crumb}
           </div>
         </div>
-        <div className="flex shrink-0 items-center gap-3 sm:gap-4">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-4">
           <Link
             href="/search"
             className="text-sm whitespace-nowrap text-forg-muted hover:text-(--era-link-hover)"

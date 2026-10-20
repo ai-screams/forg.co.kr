@@ -1,7 +1,7 @@
 import { DEFAULT_ERA, ERA_LABELS, ERAS } from "@/lib/era";
 
 /**
- * 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
+ * 2026 · 2014 · 2003 · 2001 시기를 즉시 전환하는 토글.
  *
  * Server markup only: content pages ship no React runtime
  * (`scripts/postbuild/strip-react-runtime.mjs`), so the era script the
@@ -21,7 +21,9 @@ export function EraToggle() {
       aria-label="디자인 시기 전환"
       className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs"
     >
-      {/* Three eras and the search link share a 375px phone's header row. */}
+      {/* Four eras and the search link share a 360px phone's header row with
+          "forg.co.kr": the "era" label goes below 399px, and `<SiteHeader>`
+          sets the search link 8px from the buttons below 640px. */}
       <span className="px-1 font-mono text-forg-ghost uppercase max-[399px]:hidden">era</span>
       {ERAS.map((candidate) => (
         <button
@@ -54,7 +56,9 @@ export function EraHint() {
       className="forg-era-hint absolute top-[calc(100%-0.375rem)] right-4 z-40 w-[min(17rem,calc(100vw-2rem))] flex-col gap-1 rounded-md border border-forg-gold bg-forg-hint px-3 py-2.5 text-xs leading-relaxed text-forg-ink shadow-lg before:absolute before:-top-[7px] before:right-16 before:size-3 before:rotate-45 before:border-t before:border-l before:border-forg-gold before:bg-forg-hint sm:right-6"
     >
       <b className="text-[13px]">옛 모습으로 보기</b>
-      <span>2003·2001을 누르면 그 시절 forg 모습으로 바뀝니다.</span>
+      <span>
+        2003·2001을 누르면 그 시절 forg 모습으로 바뀝니다. 2026은 박물관이 새로 만든 모습입니다.
+      </span>
       <button
         type="button"
         data-era-hint-close

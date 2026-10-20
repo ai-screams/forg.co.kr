@@ -1,6 +1,6 @@
 /**
  * The rules of a stylesheet in `src/styles/`, for the tests that check what
- * the stylesheets say (`eras.test.ts`): each rule's selectors, the at-rules
+ * the stylesheets say (`eras.test.ts`, `era-2026.test.ts`): each rule's selectors, the at-rules
  * around it and its own declarations. A rule nested in another
  * (`@variant frame { … }` inside `.forg-shell { … }`) is read under the
  * outer rule's selectors, as the browser applies it.

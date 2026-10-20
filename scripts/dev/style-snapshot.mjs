@@ -12,10 +12,16 @@
  *   node scripts/dev/style-snapshot.mjs detail 8789 2014 800 /Notice/ 275 278
  *
  * A dump covers PAGES in each era at 1280, 375, 799 and 800px (the frame
- * breakpoint and the pixel below it; `--widths` overrides). Each element is
- * recorded as its tag and a hash of its computed style; `compare` lists
- * the page views whose elements differ, `detail` prints an element's full
- * style. Exit 1 from `compare` when anything differs.
+ * breakpoint and the pixel below it; `--widths` overrides, `--eras` picks
+ * eras, so a build from before an era existed is not dumped in it). Serve
+ * both builds on the same port: a background picture's computed URL
+ * carries it. Each element is recorded as its tag and a hash of its
+ * computed style; `compare` matches the two lists in order (their longest
+ * common run) and prints, per page view, the elements only in the first
+ * (removed) and only in the second (added) — a changed style is one of
+ * each, a new element only an added one. `--eras` limits it too. `detail`
+ * prints an element's full style by its index. Exit 1 from `compare` when
+ * anything differs.
  *
  * What the hash leaves out, so a build compared with itself is identical:
  * - transitions and animations, stopped before measuring (the body fades
@@ -27,7 +33,9 @@
  * - custom properties, which render only through the properties that use
  *   them (and a new token on :root would mark every element);
  * - elements that render nothing (script, link, meta, style, title,
- *   noscript, template), so moving or dropping a script is not a change.
+ *   noscript, template), so moving or dropping a script is not a change;
+ * - a `display: none` element and everything in it: it draws nothing, so
+ *   an era's markup hidden in the others is not a change there.
  * Property names are sorted: Chrome lists custom properties in no fixed
  * order. `::before`/`::after` with content are hashed the same way.
  *
@@ -58,7 +66,7 @@ const PAGES = [
   "/UoBoard2/40006/",
   "/search/?q=%EC%9A%B8%ED%8B%B0%EB%A7%88",
 ];
-const ERAS = ["2014", "2003", "2001"];
+const ERAS = ["2026", "2014", "2003", "2001"];
 const DEFAULT_WIDTHS = [1280, 375, 799, 800];
 
 const CANDIDATES = [
@@ -81,7 +89,7 @@ function launch() {
   return puppeteer.launch({ executablePath, headless: true, args: ["--no-sandbox"] });
 }
 
-/** Runs in the page: tag and style hash of every element. */
+/** Runs in the page: tag and style hash of every element drawn. */
 function collect() {
   const skip = new Set([
     "width",
@@ -93,8 +101,14 @@ function collect() {
   ]);
   const unrendered = new Set(["SCRIPT", "LINK", "META", "STYLE", "TITLE", "NOSCRIPT", "TEMPLATE"]);
   const out = [];
+  const hidden = new Set();
   for (const el of document.querySelectorAll("*")) {
     if (unrendered.has(el.tagName)) continue;
+    // Document order: a parent comes before what it holds.
+    if (hidden.has(el.parentElement) || getComputedStyle(el).display === "none") {
+      hidden.add(el);
+      continue;
+    }
     const text = (cs) => {
       const names = [];
       for (let i = 0; i < cs.length; i++)
@@ -122,7 +136,15 @@ function collect() {
 /** Runs in the page: full computed style of the elements at these indices. */
 function details(indices) {
   const unrendered = new Set(["SCRIPT", "LINK", "META", "STYLE", "TITLE", "NOSCRIPT", "TEMPLATE"]);
-  const all = [...document.querySelectorAll("*")].filter((el) => !unrendered.has(el.tagName));
+  const hidden = new Set();
+  const all = [...document.querySelectorAll("*")].filter((el) => {
+    if (unrendered.has(el.tagName)) return false;
+    if (hidden.has(el.parentElement) || getComputedStyle(el).display === "none") {
+      hidden.add(el);
+      return false;
+    }
+    return true;
+  });
   return indices.map((i) => {
     const el = all[i];
     const cs = getComputedStyle(el);
@@ -147,19 +169,70 @@ async function open(browser, port, era, width, path) {
 const key = (era, width, path) => `${era}-${width}-${path.replace(/[^a-z0-9]/gi, "_")}`;
 const [mode, ...rest] = process.argv.slice(2);
 
+/** `--name a,b` from the arguments, or undefined. */
+function flag(name) {
+  const at = rest.indexOf(name);
+  return at >= 0 ? (rest[at + 1] ?? "").split(",") : undefined;
+}
+const eras = flag("--eras") ?? ERAS;
+if (!eras.every((e) => ERAS.includes(e))) {
+  console.error(`[style-snapshot] --eras takes ${ERAS.join(",")}`);
+  process.exit(2);
+}
+
+/**
+ * The elements of `a` and of `b` outside their longest common subsequence
+ * (by tag and hash): what `b` removed and what it added. The common head and
+ * tail are cut first, so the table covers only the part that differs.
+ */
+function difference(a, b) {
+  const same = (x, y) => x[0] === y[0] && x[1] === y[1];
+  let head = 0;
+  while (head < a.length && head < b.length && same(a[head], b[head])) head++;
+  let tail = 0;
+  while (
+    tail < a.length - head &&
+    tail < b.length - head &&
+    same(a[a.length - 1 - tail], b[b.length - 1 - tail])
+  )
+    tail++;
+  const n = a.length - head - tail;
+  const m = b.length - head - tail;
+  // lcs[i][j]: longest common run of a[head+i..] and b[head+j..].
+  const lcs = Array.from({ length: n + 1 }, () => new Uint32Array(m + 1));
+  for (let i = n - 1; i >= 0; i--)
+    for (let j = m - 1; j >= 0; j--)
+      lcs[i][j] = same(a[head + i], b[head + j])
+        ? lcs[i + 1][j + 1] + 1
+        : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
+  const removed = [];
+  const added = [];
+  let i = 0;
+  let j = 0;
+  while (i < n || j < m) {
+    if (i < n && j < m && same(a[head + i], b[head + j])) {
+      i++;
+      j++;
+    } else if (j < m && (i === n || lcs[i][j + 1] >= lcs[i + 1][j])) added.push(head + j++);
+    else removed.push(head + i++);
+  }
+  return { removed, added };
+}
+
 if (mode === "dump") {
   const [port, dir] = rest;
-  const flag = rest.indexOf("--widths");
-  const widths = flag >= 0 ? (rest[flag + 1] ?? "").split(",").map(Number) : DEFAULT_WIDTHS;
+  const widths = flag("--widths")?.map(Number) ?? DEFAULT_WIDTHS;
   if (!port || !dir || !widths.every((w) => Number.isInteger(w) && w > 0)) {
-    console.error("usage: style-snapshot.mjs dump <port> <dir> [--widths 1280,375]");
+    console.error(
+      "usage: style-snapshot.mjs dump <port> <dir> [--widths 1280,375] [--eras 2014,2003]",
+    );
     process.exit(2);
   }
   mkdirSync(dir, { recursive: true });
   rmSync(`${dir}/.complete`, { force: true });
   const browser = await launch();
   try {
-    for (const era of ERAS) {
+    for (const era of eras) {
       for (const width of widths) {
         for (const path of PAGES) {
           const page = await open(browser, port, era, width, path);
@@ -185,8 +258,14 @@ if (mode === "dump") {
     }
   }
   const views = [...new Set([...readdirSync(a), ...readdirSync(b)])]
-    .filter((f) => f.endsWith(".json"))
+    .filter((f) => f.endsWith(".json") && eras.some((e) => f.startsWith(`${e}-`)))
     .sort();
+  /** "3: 12 DIV 40 A …", the first eight. */
+  const list = (indices, dump) =>
+    `${indices.length}: ${indices
+      .slice(0, 8)
+      .map((k) => `${k} ${dump[k][0]}`)
+      .join(" ")}`;
   let same = 0;
   let elements = 0;
   for (const file of views) {
@@ -198,18 +277,9 @@ if (mode === "dump") {
     const A = JSON.parse(readFileSync(`${a}/${file}`, "utf8"));
     const B = JSON.parse(readFileSync(`${b}/${file}`, "utf8"));
     elements += A.length;
-    if (A.length !== B.length) {
-      console.log(`${file}: element count ${A.length} → ${B.length}`);
-      continue;
-    }
-    const differ = [];
-    for (let i = 0; i < A.length; i++)
-      if (A[i][0] !== B[i][0] || A[i][1] !== B[i][1]) differ.push(i);
-    if (differ.length === 0) same++;
-    else
-      console.log(
-        `${file}: ${differ.length} elements differ (first ${differ.slice(0, 8).join(" ")})`,
-      );
+    const { removed, added } = difference(A, B);
+    if (removed.length === 0 && added.length === 0) same++;
+    else console.log(`${file}: removed ${list(removed, A)}; added ${list(added, B)}`);
   }
   console.log(
     `[style-snapshot] ${views.length} page views, ${elements} elements; identical ${same}`,
@@ -226,8 +296,8 @@ if (mode === "dump") {
   }
 } else {
   console.error(
-    "usage: style-snapshot.mjs dump <port> <dir> [--widths 1280,375]\n" +
-      "       style-snapshot.mjs compare <dir-before> <dir-after>\n" +
+    "usage: style-snapshot.mjs dump <port> <dir> [--widths 1280,375] [--eras 2014,2003]\n" +
+      "       style-snapshot.mjs compare <dir-before> <dir-after> [--eras 2014,2003]\n" +
       "       style-snapshot.mjs detail <port> <era> <width> <path> <index>...",
   );
   process.exit(2);
