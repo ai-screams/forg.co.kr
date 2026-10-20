@@ -101,6 +101,67 @@ describe("BoardNotes", () => {
   });
 });
 
+/** A list-only board's record whose rows came from these captures, a row each. */
+function capturedAt(stamps: string[]): Listing {
+  return {
+    ...LISTING,
+    entries: stamps.map((ts, i) => ({
+      no: String(i + 1),
+      title: "집 구경 오세요",
+      categoryLabel: null,
+      author: "lee",
+      authorMemberNo: null,
+      createdAt: null,
+      yearApprox: false,
+      hits: null,
+      commentCount: 0,
+      isNotice: false,
+      capturedAt: ts,
+      listPage: 1,
+      hasPost: false,
+    })),
+  };
+}
+
+/** The notes' line naming the captures. */
+function sources(stamps: string[]): string | undefined {
+  const html = renderToStaticMarkup(
+    createElement(BoardNotes, {
+      board: "HouseScreenshot",
+      page: page(0),
+      listing: capturedAt(stamps),
+    }),
+  );
+  return /출처: Wayback Machine 목록 캡처 ([^<]*)</.exec(html)?.[1];
+}
+
+describe("the captures a list-only board's rows came from", () => {
+  // Fails if: a day is named once per capture, a capture once per row, a
+  // single capture gets a count, or the days are out of order.
+  it("names each day once, with its count of captures when several", () => {
+    const rows = ["20071031120000", "20031118010000", "20031118010000", "20031118020000"];
+    expect(sources([...rows, "20030516000000", "20031118030000", "20071031130000"])).toBe(
+      "2003.05.16 · 2003.11.18 (3번) · 2007.10.31 (2번)",
+    );
+  });
+
+  // Fails if: more than six days are named one by one, so the notes grow with
+  // every capture the ETL finds (2026 puts them in the board's head, which the
+  // page-weight check bounds), or six days are cut short.
+  it("gives the first and last day and the counts beyond six days", () => {
+    const day = (d: number) => `200301${String(d).padStart(2, "0")}`;
+    const forty = Array.from(
+      { length: 40 },
+      (_, i) => `${day((i % 12) + 1)}00${String(i).padStart(2, "0")}00`,
+    );
+    expect(sources(forty)).toBe("2003.01.01 – 2003.01.12 · 12일, 40번");
+    const six = Array.from({ length: 6 }, (_, i) => `${day(i + 1)}000000`);
+    expect(sources(six)).toBe(
+      "2003.01.01 · 2003.01.02 · 2003.01.03 · 2003.01.04 · 2003.01.05 · 2003.01.06",
+    );
+  });
+});
+
 describe("the 2026 head", () => {
   type Entry = BoardIndexPage["entries"][number];
   function head(board: "Notice" | "HouseScreenshot", entries: Partial<Entry>[] = [{}]): string {

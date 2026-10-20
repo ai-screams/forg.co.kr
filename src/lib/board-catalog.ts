@@ -73,7 +73,7 @@ async function summarise(board: BoardId): Promise<BoardSummary | null> {
 
 let summaries: Promise<ReadonlyMap<BoardId, BoardSummary>> | undefined;
 
-/** Every board with an index, by id; read once per process (1,243 files). */
+/** Every board with an index, by id; its index files are read once per process. */
 export function boardSummaries(): Promise<ReadonlyMap<BoardId, BoardSummary>> {
   summaries ??= Promise.all(listBoards().map((b) => summarise(b.id))).then(
     (list) => new Map(list.filter((s) => s !== null).map((s) => [s.board, s])),
