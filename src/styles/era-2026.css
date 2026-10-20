@@ -23,7 +23,8 @@
     --w26-ink: oklch(0.244 0.025 253.8); /* #18212C */
     --w26-muted: oklch(0.523 0.03 253.7); /* #5E6B7B */
     --w26-line: oklch(0.924 0.008 260.7); /* #E3E6EB */
-    --w26-input-line: oklch(0.666 0.024 254.5); /* #8A95A3 */
+    /* 3:1 on the card, the page and the record line (a field, a ghost button). */
+    --w26-input-line: oklch(0.622 0.025 254.5); /* #7D8896 */
     --w26-bar: oklch(0.244 0.025 253.8); /* #18212C */
     --w26-bar-ink: oklch(0.972 0.005 258.3); /* #F4F6F9 */
     --w26-soft: oklch(0.973 0.035 91.1); /* #FFF6DC */
@@ -65,7 +66,6 @@
       --w26-record: oklch(0.258 0.025 258.3); /* #1C2430 */
       --w26-rec: oklch(0.715 0.038 253.5); /* #93A5BB */
       --w26-rec-rail: oklch(0.665 0.038 251); /* #8396AB */
-      color-scheme: dark;
     }
   }
 }
@@ -76,7 +76,10 @@
    * components' ink, muted, border and link utilities read these variables
    * (`@theme`, tokens.css), so inside the frame they take its colours, in
    * either theme, without new markup; the paper turns them back. */
+  /* The frame's native controls and scroll bars follow the theme; the museum
+   * bar and the cards outside the frame stay light, as their colours do. */
   :root[data-era="2026"] .forg-shell-main {
+    color-scheme: light dark;
     font-family: var(--w26-font-body);
     --color-forg-ink: var(--w26-ink);
     --color-forg-muted: var(--w26-muted);

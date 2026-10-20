@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { boardSummaries, datedRow, museumTotals } from "@/lib/board-catalog";
+import { listBoards } from "@/lib/boards";
 import { getAllPostParams } from "@/lib/posts";
 import { getAllSitePages } from "@/lib/site-pages";
 import type { BoardIndexEntry } from "@/types/post";
@@ -16,6 +17,12 @@ describe("board summaries", () => {
   it("dates a board by its own rows", async () => {
     const years = (await boardSummaries()).get("UoBoard2")?.years;
     expect(years?.[0]).toBeGreaterThanOrEqual(2010);
+  });
+
+  // Fails if: the front page counts only the boards with an index (71),
+  // while its button opens /boards/, which lists every board.
+  it("counts every board, as /boards/ lists them", async () => {
+    expect((await museumTotals()).boards).toBe(listBoards().length);
   });
 
   // Fails if: the redirect pages count as guide pages (the /site/ list leaves them out).

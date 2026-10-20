@@ -97,6 +97,8 @@ const PAIRS: [fg: string, bg: string, min: number][] = [
   ["--w26-rec", "--w26-surface", 4.5],
   ["--w26-rec-rail", "--w26-surface", 3],
   ["--w26-input-line", "--w26-surface", 3],
+  ["--w26-input-line", "--w26-bg", 3],
+  ["--w26-input-line", "--w26-record", 3],
 ];
 
 // The focus line (`outline` in --w26-ink) on the paper, 3:1 (WCAG 2.4.11).
@@ -150,15 +152,21 @@ describe("2026 colours", () => {
     expect(low).toEqual([]);
   });
 
-  // Fails if: the dark values reach beyond 2026 (the block on `:root`), or
-  // the dark theme darkens a museum token such as `--era-content-bg`, whose
-  // bar keeps text colours that are the same in every era.
+  // Fails if: the dark values reach beyond 2026 (the block on `:root`), the
+  // dark theme darkens a museum token such as `--era-content-bg`, whose bar
+  // keeps text colours that are the same in every era, or turns the whole
+  // page's native controls dark (`color-scheme: dark` on `:root`: the search
+  // field on its light card) instead of the frame's alone.
   it("turns dark only the 2026 frame's own tokens", () => {
     expect(DARK_RULES).toHaveLength(1);
     for (const rule of DARK_RULES) {
       expect(rule.selectors).toEqual([ERA_2026]);
       const names = [...rule.body.matchAll(/([\w-]+):/g)].map((m) => m[1]);
-      expect(names.filter((n) => !n?.startsWith("--w26-") && n !== "color-scheme")).toEqual([]);
+      expect(names.filter((n) => !n?.startsWith("--w26-"))).toEqual([]);
     }
+    const frame = RULES.filter(
+      (r) => r.selectors.includes(`${ERA_2026} .forg-shell-main`) && r.at.length === 1,
+    );
+    expect(frame.map((r) => /color-scheme:\s*light dark;/.test(r.body))).toContain(true);
   });
 });

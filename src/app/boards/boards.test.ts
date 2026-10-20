@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
 import BoardsPage from "@/app/boards/page";
+import SiteIndexPage from "@/app/site/page";
 import { listBoards } from "@/lib/boards";
 
 const html = renderToStaticMarkup(await BoardsPage());
@@ -39,4 +40,11 @@ describe("the list of boards", () => {
   it("says when nothing of a board is left", () => {
     expect(rows.get("bod_s_s")).toBe("Zeroboard 4.1pl4 · 남은 글 없음");
   });
+});
+
+// Fails if: a museum page's title loses the hook 2026 sets it in its
+// display type by (`/boards/` or the `/site/` index).
+it("marks the museum pages' titles for 2026", async () => {
+  const site = renderToStaticMarkup(await SiteIndexPage());
+  for (const page of [html, site]) expect(page).toMatch(/<h1 class="forg-page-title /);
 });

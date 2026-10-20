@@ -54,7 +54,7 @@ export default async function SiteIndexPage() {
     <EraShell>
       <article className="text-forg-ink">
         <header className="pb-3">
-          <h1 className="text-[14px] font-bold">사이트 페이지</h1>
+          <h1 className="forg-page-title text-[14px] font-bold">사이트 페이지</h1>
           <p className="mt-[2px] text-[11px] text-forg-muted">
             게시판 밖에 있던 안내 페이지 {pages.length.toLocaleString("ko-KR")}쪽입니다. 원래 모습
             그대로 열리며, 페이지 안의 링크도 박물관 안에서 이어집니다.

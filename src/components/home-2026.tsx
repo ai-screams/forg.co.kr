@@ -61,7 +61,7 @@ export async function Home2026Content() {
           </p>
           <p className="w26-stats">
             박물관 글 <b>{count(totals.posts)}</b> · 댓글 <b>{count(totals.comments)}</b> · 옛
-            게시판 <b>{count(totals.boards)}</b> · 안내 문서 <b>{count(totals.guidePages)}</b>쪽
+            게시판 <b>{count(totals.boards)}</b>곳 · 안내 문서 <b>{count(totals.guidePages)}</b>쪽
           </p>
           <Link href="/boards/" className="w26-btn">
             옛 게시판 보기

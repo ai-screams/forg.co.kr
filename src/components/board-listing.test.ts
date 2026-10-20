@@ -75,8 +75,12 @@ describe("a list-only board's index", () => {
     expect(phone(render(12))).not.toContain("조회");
   });
 
+  // Fails if: the page links lose the hook 2026 gives its 44px targets and
+  // digits by, or the board's name is a screen reader's alone in 2026 too.
   it("pages like any board", () => {
     expect(render(0)).toContain("2 / 7");
+    expect(render(0)).toMatch(/<nav aria-label="페이지 네비게이션" class="forg-pages /);
+    expect(render(0)).toMatch(/<h1 class="forg-sr-except-2026">/);
   });
 });
 

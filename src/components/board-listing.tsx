@@ -137,7 +137,7 @@ function Pagination({
   return (
     <nav
       aria-label="페이지 네비게이션"
-      className="flex items-center justify-between gap-3 border-t border-(--era-input-border) px-6 py-4 text-xs"
+      className="forg-pages flex items-center justify-between gap-3 border-t border-(--era-input-border) px-6 py-4 text-xs"
     >
       <PageLink href={prevHref} disabled={!hasPrev} label="← 이전" />
       <span className="font-mono text-forg-muted tabular-nums">

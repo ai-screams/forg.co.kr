@@ -226,13 +226,15 @@ describe("the phone list, which 2026 draws at every width", () => {
       .split("</li>")
       .filter((li) => li.includes("<li"));
 
-  // Fails if: the list loses the class 2026 shows it by, or its date and
-  // hits lose the hook the 2026 digits take.
+  // Fails if: the list loses the class 2026 shows it by, or its date, hits
+  // or either skin's comment count lose the hook the 2026 digits take.
   it("carries the hooks 2026 dresses it by", () => {
     const [, , plain] = items(indexRows("Q_A", listOnly, "kritz"));
     expect(plain).toMatch(/<span class="forg-num shrink-0">03\.05\.01\.<\/span>/);
     expect(plain).toMatch(/<span class="forg-num shrink-0">조회 10<\/span>/);
     expect(plain).toMatch(/<span class="forg-cc /);
+    const [, , webbus] = items(indexRows("Q_A", listOnly, "webbus"));
+    expect(webbus).toMatch(/<span class="forg-cc [^"]*text-webbus-comment/);
   });
 
   // Fails if: a notice's row in the phone list loses the hook 2026 colours it by.

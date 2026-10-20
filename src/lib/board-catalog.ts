@@ -81,7 +81,7 @@ export function boardSummaries(): Promise<ReadonlyMap<BoardId, BoardSummary>> {
   return summaries;
 }
 
-/** The museum in four numbers, for the 2026 front page. */
+/** The museum in four numbers, for the 2026 front page: every board has a page (ADR-0013). */
 export async function museumTotals(): Promise<{
   posts: number;
   comments: number;
@@ -94,7 +94,7 @@ export async function museumTotals(): Promise<{
   return {
     posts: all.reduce((n, s) => n + s.posts, 0),
     comments: all.reduce((n, s) => n + s.comments, 0),
-    boards: all.length,
+    boards: listBoards().length,
     guidePages: pages.length,
   };
 }
