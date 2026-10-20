@@ -11,15 +11,16 @@ paths:
 ## Routes (App Router, `output: "export"`)
 
 - `/[board]/`, `/[board]/page/[N]/`, `/[board]/[postId]/` under the `(board)` group. The literal `page` segment keeps pagination from colliding with post ids.
-- The root layout's `@crumb` slot (`src/app/@crumb/`) mirrors the two list routes and puts the board's name and notes (`board-info.tsx`) in the museum bar; `default.tsx` leaves it empty everywhere else. The era frame holds only the list: the museum's words about a board go outside it. A new list route needs its slot page too.
+- The root layout's `@crumb` slot (`src/app/@crumb/`) mirrors the two list routes and puts the board's name and notes (`board-info.tsx`) in the museum bar; `default.tsx` leaves it empty everywhere else. The era frame holds only the list: the museum's words about a board go outside it. 2026 is the exception, the museum's own frame (ADR-0023 §2): it holds the notes above the list and hides the museum bar's (i). A new list route needs its slot page too.
+- `/boards/` (`src/app/boards/page.tsx`) lists every board by category with what is left of it (`src/lib/board-catalog.ts`), the members-only ones too; it is the 2026 menu's 옛 게시판 and opens in every era, in the frame's content column like the `/site/` index.
 - All set `dynamicParams = false` + `generateStaticParams`: an unknown board/page/post is a **build error**, not a runtime 404.
 - `/policy/` (`src/app/policy/page.tsx`) is the copyright and takedown page; the footer links to it and it holds the request address. It promises no response times (user decision, 2026-10-06).
 - `src/app/not-found.tsx` is the 404 (`out/404.html`, served by Pages for any path not written). Every page's RSC payload carries it, so keep it small and outside `<EraShell>`.
-- `<SiteHeader>`/`<SiteFooter>` are in the root layout; `<EraShell>` (`src/components/era-shell.tsx`) is the five-column frame pages render inside.
+- `<SiteHeader>`/`<SiteFooter>` are in the root layout; `<EraShell>` (`src/components/era-shell.tsx`) is the era frame pages render inside.
 
 ## Boards
 
-All 77 boards in `src/lib/boards.ts` are built. `(board)/[board]/page.tsx` picks: an index → `BoardListing` (a board known only from its list pages has one too, with the 조회 column, and the museum bar names its list captures: `getListOnlyRecord`, `BoardNotes`); none → `BoardPlaceholder` (a members-only board, `memberOnly`, says why nothing survives). Comments render per skin in `comment-list.tsx` (kritz / webbus / plain). The home route `src/app/page.tsx` hands `<EraShell>` each era's front page: `home-2014.tsx` (eight board boxes), `home-2003.tsx` and `home-2001.tsx`; each era's frame is `era-chrome-2014.tsx` / `-2003.tsx` / `-2001.tsx`, assembled by `<EraShell>`.
+All 77 boards in `src/lib/boards.ts` are built. `(board)/[board]/page.tsx` picks: an index → `BoardListing` (a board known only from its list pages has one too, with the 조회 column, and the museum bar names its list captures: `getListOnlyRecord`, `BoardNotes`); none → `BoardPlaceholder` (a members-only board, `memberOnly`, says why nothing survives). Comments render per skin in `comment-list.tsx` (kritz / webbus / plain). The home route `src/app/page.tsx` hands `<EraShell>` each era's front page: `home-2026.tsx` (the museum's numbers, era cards and the boards by category), `home-2014.tsx` (eight board boxes), `home-2003.tsx` and `home-2001.tsx`; each era's frame is `era-chrome-2026.tsx` / `-2014.tsx` / `-2003.tsx` / `-2001.tsx`, assembled by `<EraShell>`.
 
 ## Static pages (`/site/`)
 

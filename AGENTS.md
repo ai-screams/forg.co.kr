@@ -12,7 +12,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## Purpose
 
-A read-only digital museum of forg.co.kr (1998–2016): Wayback captures turned into JSON by a Python ETL, served by a Next.js static export that switches between the 2014, 2003 and 2001 looks. Project context and topic rules: `CLAUDE.md` and `.claude/rules/`.
+A read-only digital museum of forg.co.kr (1998–2016): Wayback captures turned into JSON by a Python ETL, served by a Next.js static export that switches between the 2014, 2003 and 2001 looks and the museum's own 2026 frame. Project context and topic rules: `CLAUDE.md` and `.claude/rules/`.
 
 ## Key Files
 

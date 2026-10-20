@@ -12,10 +12,13 @@ showing a CSS change changed nothing it should not.
 
 ## Key Files
 
-| File                 | Description                                                                                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `shot.mjs`           | Headless Chrome screenshots + render facts (era applied, CSS rule count, hydration, image count, broken images, console errors) via `puppeteer-core`                                   |
-| `style-snapshot.mjs` | Computed style of every element drawn on 13 pages × 4 eras × 4 widths: `dump` a served build, `compare` two dumps in order (exit 1 on a difference), `detail` one element's full style |
+| File                    | Description                                                                                                                                                                                                                                    |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shot.mjs`              | Headless Chrome screenshots + render facts (era applied, CSS rule count, hydration, image count, broken images, console errors) via `puppeteer-core`                                                                                           |
+| `style-snapshot.mjs`    | Computed style of every element drawn on 13 pages × 4 eras × 4 widths: `dump` a served build, `compare` two dumps in order (exit 1 on a difference), `detail` one element's full style                                                         |
+| `fetch-fonts-2026.mjs`  | Fetches the 2026 fonts' slices from Google Fonts once into `public/fonts/2026/` with `2026.css` and `.manifest.json` (source URL and SHA-256); renames Plex's slices Forg Sans KR (OFL Reserved Font Name). Run after `subset-digits-font.sh`. |
+| `subset-digits-font.sh` | Cuts Forg Digits (D2Coding's digits, Latin and a few signs, renamed) into `public/fonts/2026/forg-digits.woff2` from the checked release zip.                                                                                                  |
+| `rename-font.py`        | Renames a font's family in its name table and saves it as WOFF2, for the two scripts above (uv, fonttools).                                                                                                                                    |
 
 ## For AI Agents
 
