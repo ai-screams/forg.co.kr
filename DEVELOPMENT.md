@@ -94,18 +94,18 @@ Wayback 캡처 원본은 저장소에 없고, CDX로 다시 받을 수 있습니
 ```text
 forg/
 ├── src/
-│   ├── app/              # 라우트: 첫 화면, 게시판·글, /site/, /search/, /policy/
+│   ├── app/              # 라우트: 첫 화면, 게시판·글, /boards/, /site/, /search/, /policy/
 │   ├── components/       # 시대 틀(era-chrome-*), 첫 화면(home-*), 목록·글 스킨
 │   ├── lib/              # 데이터 읽기, 시대·스킨·메뉴, 날짜, 옛 주소, SEO
 │   ├── styles/           # 토큰·시대·스킨 CSS
 │   ├── types/            # Post 등 (scripts/etl/schemas.py와 짝)
 │   └── content/          # ETL 결과 JSON: posts, boards, listings, pages, page-versions
 ├── functions/            # Pages Function: 옛 forg.co.kr 주소 → 박물관
-├── public/               # _headers, robots.txt, og.png, img/chrome·emoticon (img/posts는 R2)
+├── public/               # _headers, robots.txt, og.png, img/chrome·emoticon (img/posts는 R2), fonts/ (2026 글꼴과 OFL.txt)
 ├── scripts/
 │   ├── etl/              # Python 파이프라인과 pytest
 │   ├── postbuild/        # 빌드 뒤 단계 (React 런타임 제거, 옛 주소 계획 등)
 │   ├── deploy/           # R2 업로드·받기, IndexNow
-│   └── dev/              # 로컬 화면 확인 도구
+│   └── dev/              # 로컬 화면 확인 도구, 2026 글꼴 받기·자르기 (fetch-fonts-2026.mjs, subset-digits-font.sh)
 └── .github/workflows/    # CI
 ```
