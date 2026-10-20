@@ -37,3 +37,13 @@ it("folds the era buttons into one control below 360px", () => {
   );
   expect(shown.map((r) => r.at.at(-1))).toEqual(["@media (width >= 360px)"]);
 });
+
+// Fails if: the open fold's panel sits at or below the first-visit hint's
+// layer, where the hint, later in the header, covers its buttons on a phone.
+it("lays the open fold's buttons above the first-visit hint", () => {
+  const html = renderToStaticMarkup(createElement(SiteHeader));
+  const hint = /<div role="note" class="forg-era-hint [^"]* z-(\d+) /.exec(html)?.[1];
+  const panel = cssRules("base.css").find((r) => r.selectors.includes(".forg-era-fold > div"));
+  const z = /z-index:\s*(\d+)/.exec(panel?.body ?? "")?.[1];
+  expect(Number(z)).toBeGreaterThan(Number(hint));
+});

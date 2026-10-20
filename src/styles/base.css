@@ -69,7 +69,8 @@
     position: absolute;
     top: calc(100% + 4px);
     right: 0;
-    z-index: 40;
+    /* Above the first-visit note (z-40), which the fold's opening takes down too. */
+    z-index: 50;
     display: flex;
     gap: 4px;
     padding: 4px;

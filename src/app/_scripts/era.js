@@ -16,10 +16,15 @@
 //   link stays when the era changes again;
 // - the first page a visitor opens (no era saved, the hint never shown) shows
 //   the hint under the era buttons (<EraHint>, `html.forg-era-hint-on`) and
-//   remembers it was shown, so no later page does; on that page, closing it
-//   or choosing an era takes it down, in every tab.
+//   remembers it was shown, so no later page does; on that page, closing it,
+//   opening a fold of era buttons (which it would cover) or choosing an era
+//   takes it down, in every tab;
+// - a fold (<EraFold>, the 2026 bar's `.w26-pop`) closes once an era is
+//   chosen from it, on Escape (focus back on its summary) and on a tap
+//   outside it.
 var root = document.documentElement;
 var HINT = "forg-era-hint-on";
+var OPEN_FOLDS = ".forg-era-fold[open], .w26-pop[open]";
 
 function press() {
   var era = root.getAttribute("data-era");
@@ -78,6 +83,11 @@ try {
 
 document.addEventListener("click", function (event) {
   var target = event.target instanceof Element ? event.target : null;
+  // A tap outside an open fold closes it; one on its own summary is left to
+  // close it itself.
+  document.querySelectorAll(OPEN_FOLDS).forEach(function (fold) {
+    if (!fold.contains(target)) fold.open = false;
+  });
   if (target && target.closest("[data-era-hint-close]")) {
     root.classList.remove(HINT);
     // The button is gone; keyboard focus goes back to the buttons it was about.
@@ -93,7 +103,27 @@ document.addEventListener("click", function (event) {
     // private mode and the like: the choice lasts for this page only
   }
   show(era);
+  var fold = button.closest(OPEN_FOLDS);
+  if (fold) fold.open = false;
   if (!visible(button)) focusEra();
+});
+
+// `toggle` does not bubble: caught on its way down.
+document.addEventListener(
+  "toggle",
+  function (event) {
+    if (event.target.matches(OPEN_FOLDS)) root.classList.remove(HINT);
+  },
+  true,
+);
+
+document.addEventListener("keydown", function (event) {
+  if (event.key !== "Escape") return;
+  var active = document.activeElement;
+  document.querySelectorAll(OPEN_FOLDS).forEach(function (fold) {
+    fold.open = false;
+    if (fold.contains(active)) fold.querySelector("summary").focus();
+  });
 });
 
 window.addEventListener("storage", function (event) {

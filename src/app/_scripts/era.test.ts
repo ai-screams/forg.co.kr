@@ -5,7 +5,8 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
-import { EraHint } from "@/components/era-toggle";
+import { FrameTop2026 } from "@/components/era-chrome-2026";
+import { EraFold, EraHint } from "@/components/era-toggle";
 import { ERA_HINT_KEY, ERA_STORAGE_KEY, ERAS } from "@/lib/era";
 
 // The era script as the layout inlines it, run against a stand-in page: only
@@ -19,14 +20,13 @@ class FakeElement {
   constructor(
     private readonly selectorPart: string,
     private readonly attrs: Record<string, string> = {},
-    /** Whether it renders; `summary`: that of the `<details>` it sits in. */
-    private readonly shown: { visible?: boolean; summary?: FakeElement } = {},
+    /** Whether it renders; `fold`: the `<details>` it sits in. */
+    readonly shown: { visible?: boolean; fold?: FakeFold } = {},
   ) {}
-  closest(selector: string): FakeElement | { querySelector: () => FakeElement } | null {
-    if (selector === "details") {
-      const summary = this.shown.summary;
-      return summary ? { querySelector: () => summary } : null;
-    }
+  closest(selector: string): FakeElement | null {
+    const fold = this.shown.fold;
+    if (selector === "details") return fold ?? null;
+    if (selector.includes("[open]")) return fold?.open && fold.matches(selector) ? fold : null;
     return selector.includes(this.selectorPart) ? this : null;
   }
   getAttribute(name: string): string | null {
@@ -35,21 +35,53 @@ class FakeElement {
   setAttribute(name: string, value: string) {
     this.attrs[name] = value;
   }
-  checkVisibility() {
-    return this.shown.visible ?? true;
+  checkVisibility(): boolean {
+    const fold = this.shown.fold;
+    const inside = fold !== undefined && this !== fold.summary;
+    return (this.shown.visible ?? true) && (!inside || (fold.open && fold.checkVisibility()));
   }
   focus() {
     this.focused = true;
   }
 }
 
+/** A `<details>`: a fold of era buttons, or with `fold: false` any other. */
+class FakeFold extends FakeElement {
+  open: boolean;
+  readonly summary: FakeElement;
+  readonly items: FakeElement[] = [];
+  private readonly isFold: boolean;
+  constructor({ open = false, visible = true, fold = true } = {}) {
+    super("details", {}, { visible });
+    this.open = open;
+    this.isFold = fold;
+    this.summary = new FakeElement("summary", {}, { visible, fold: this });
+  }
+  matches(selector: string) {
+    return this.isFold && this.open && selector.includes("[open]");
+  }
+  querySelector(selector: string) {
+    return selector === "summary" ? this.summary : null;
+  }
+  contains(element: unknown) {
+    return (
+      element === this || element === this.summary || this.items.includes(element as FakeElement)
+    );
+  }
+}
+
 /** An era button on the stand-in page. */
-function eraButton(era: string, shown: { visible?: boolean; summary?: FakeElement } = {}) {
-  return new FakeElement("button[data-era-option]", { "data-era-option": era }, shown);
+function eraButton(era: string, shown: { visible?: boolean; fold?: FakeFold } = {}) {
+  const button = new FakeElement("button[data-era-option]", { "data-era-option": era }, shown);
+  shown.fold?.items.push(button);
+  return button;
 }
 
 /** The page starts as the server renders it, in the default era. */
-function run(stored: Record<string, string> | "blocked", { buttons = [] as FakeElement[] } = {}) {
+function run(
+  stored: Record<string, string> | "blocked",
+  { buttons = [] as FakeElement[], folds = [] as FakeFold[] } = {},
+) {
   const links: Map<string, string>[] = [];
   const classes = new Set<string>();
   const attrs = new Map<string, string>([["data-era", "2014"]]);
@@ -78,11 +110,15 @@ function run(stored: Record<string, string> | "blocked", { buttons = [] as FakeE
       const link = new Map<string, string>();
       return Object.assign(link, { setAttribute: (k: string, v: string) => link.set(k, v) });
     },
-    querySelectorAll: (selector: string) =>
-      buttons.filter(
-        (b) =>
-          !selector.includes('[aria-pressed="true"]') || b.getAttribute("aria-pressed") === "true",
-      ),
+    activeElement: null as unknown,
+    querySelectorAll: (selector: string): FakeElement[] =>
+      selector.includes("[open]")
+        ? folds.filter((f) => f.matches(selector))
+        : buttons.filter(
+            (b) =>
+              !selector.includes('[aria-pressed="true"]') ||
+              b.getAttribute("aria-pressed") === "true",
+          ),
     querySelector: (selector: string) =>
       selector === "link[data-fonts-2026]"
         ? (links.find((l) => l.has("data-fonts-2026")) ?? null)
@@ -110,6 +146,15 @@ function run(stored: Record<string, string> | "blocked", { buttons = [] as FakeE
     hinted: () => classes.has("forg-era-hint-on"),
     store,
     click: (target: FakeElement) => listeners["click"]?.({ target }),
+    /** The fold opens (a tap on its summary), and its `toggle` follows. */
+    open: (fold: FakeFold) => {
+      fold.open = true;
+      listeners["toggle"]?.({ target: fold });
+    },
+    key: (key: string, on: FakeElement | null) => {
+      document.activeElement = on;
+      listeners["keydown"]?.({ key });
+    },
     otherTab: (key: string, newValue: string) => listeners["window:storage"]?.({ key, newValue }),
   };
 }
@@ -171,22 +216,26 @@ describe("keyboard focus after an era change", () => {
   // A pressed button in a fold hidden itself (the 2026 bar on a desktop)
   // comes first in the page and is passed over.
   it("moves to a pressed button that shows", () => {
-    const hiddenFold = new FakeElement("summary", {}, { visible: false });
-    const bar = eraButton("2003", { visible: false, summary: hiddenFold });
+    const hiddenFold = new FakeFold({ visible: false });
+    const bar = eraButton("2003", { fold: hiddenFold });
     const toolbar = eraButton("2003");
     const note = eraButton("2003", { visible: false });
     run({ [ERA_STORAGE_KEY]: "2026" }, { buttons: [bar, toolbar, note] }).click(note);
-    expect([hiddenFold.focused, toolbar.focused, note.focused]).toEqual([false, true, false]);
+    expect([hiddenFold.summary.focused, toolbar.focused, note.focused]).toEqual([
+      false,
+      true,
+      false,
+    ]);
   });
 
   // Fails if: with every pressed button in a closed fold (the museum bar
   // hidden on a 2026 phone), focus does not move to that fold's summary.
   it("moves to the summary of a closed fold holding the pressed button", () => {
-    const summary = new FakeElement("summary");
+    const fold = new FakeFold();
     const header = eraButton("2026", { visible: false });
-    const bar = eraButton("2026", { visible: false, summary });
+    const bar = eraButton("2026", { fold });
     run({}, { buttons: [header, bar] }).click(header);
-    expect([header.focused, bar.focused, summary.focused]).toEqual([false, false, true]);
+    expect([header.focused, bar.focused, fold.summary.focused]).toEqual([false, false, true]);
   });
 
   // Fails if: focus moves though the button clicked still shows.
@@ -258,6 +307,70 @@ describe("the first-visit hint", () => {
     other.otherTab("something-else", "1");
     expect(other.hinted()).toBe(true);
   });
+});
+
+describe("a fold of era buttons", () => {
+  /** The museum bar's fold open below 360px, the four buttons beside it hidden. */
+  function phone() {
+    const fold = new FakeFold({ open: true });
+    const header = eraButton("2003", { visible: false });
+    const inFold = eraButton("2003", { fold });
+    return { fold, header, inFold, page: run({}, { buttons: [header, inFold], folds: [fold] }) };
+  }
+
+  // Fails if: opening a fold leaves the first-visit hint over it (the hint
+  // and the fold's panel share the header's corner below 360px), or any other
+  // <details> opening takes the hint down.
+  it("takes the first-visit hint down when it opens", () => {
+    const page = run({});
+    page.open(new FakeFold({ fold: false }));
+    expect(page.hinted()).toBe(true);
+    page.open(new FakeFold());
+    expect(page.hinted()).toBe(false);
+  });
+
+  // Fails if: the fold stays open after an era is chosen from it, or focus
+  // stays on the button it hid instead of moving to its summary.
+  it("closes once an era is chosen from it, focus on its summary", () => {
+    const { fold, header, inFold, page } = phone();
+    page.click(inFold);
+    expect(page.era()).toBe("2003");
+    expect(fold.open).toBe(false);
+    expect([header.focused, inFold.focused, fold.summary.focused]).toEqual([false, false, true]);
+  });
+
+  // Fails if: Escape leaves it open, another key closes it, or focus is
+  // pulled back to the summary from outside the fold.
+  it("closes on Escape, focus back on its summary when it was inside", () => {
+    const { fold, inFold, page } = phone();
+    page.key("Enter", inFold);
+    expect(fold.open).toBe(true);
+    page.key("Escape", inFold);
+    expect([fold.open, fold.summary.focused]).toEqual([false, true]);
+    const outside = phone();
+    outside.page.key("Escape", null);
+    expect([outside.fold.open, outside.fold.summary.focused]).toEqual([false, false]);
+  });
+
+  // Fails if: a tap outside leaves it open, or a tap on its own summary
+  // closes it first (the summary's own toggle would then open it again).
+  it("closes on a tap outside it, not on its summary", () => {
+    const { fold, page } = phone();
+    page.click(fold.summary);
+    expect(fold.open).toBe(true);
+    page.click(CLOSE);
+    expect(fold.open).toBe(false);
+  });
+});
+
+// Fails if: the script's folds stop naming the classes the museum bar's fold
+// and the 2026 bar's folds carry.
+it("joins the folds' markup and the script by class", () => {
+  expect(renderToStaticMarkup(createElement(EraFold))).toMatch(/^<details class="forg-era-fold">/);
+  expect(renderToStaticMarkup(createElement(FrameTop2026))).toContain(
+    '<details name="w26" class="w26-pop">',
+  );
+  expect(SOURCE).toContain('".forg-era-fold[open], .w26-pop[open]"');
 });
 
 // Fails if: the hint's markup, the script and the stylesheet stop naming the
