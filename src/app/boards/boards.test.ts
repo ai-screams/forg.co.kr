@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import BoardsPage from "@/app/boards/page";
 import SiteIndexPage from "@/app/site/page";
 import { listBoards } from "@/lib/boards";
+import { cssRules } from "@/styles/css-rules";
 
 const html = renderToStaticMarkup(await BoardsPage());
 /** Each board's row: its link's text and the line under it. */
@@ -43,8 +44,15 @@ describe("the list of boards", () => {
 });
 
 // Fails if: a museum page's title loses the hook 2026 sets it in its
-// display type by (`/boards/` or the `/site/` index).
+// display type by (`/boards/` or the `/site/` index), or the /site/ index
+// loses the inset 2026 gives it, where /boards/ has its own in every era.
 it("marks the museum pages' titles for 2026", async () => {
   const site = renderToStaticMarkup(await SiteIndexPage());
   for (const page of [html, site]) expect(page).toMatch(/<h1 class="forg-page-title /);
+  expect(html).toMatch(/<article class="px-3 py-4 /);
+  expect(site).toMatch(/<article class="forg-site-index /);
+  const inset = cssRules("era-2026.css").filter((r) =>
+    r.selectors.includes(':root[data-era="2026"] .forg-site-index'),
+  );
+  expect(inset.map((r) => /padding:\s*16px 12px;/.test(r.body))).toEqual([true]);
 });

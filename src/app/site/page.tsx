@@ -52,7 +52,7 @@ export default async function SiteIndexPage() {
 
   return (
     <EraShell>
-      <article className="text-forg-ink">
+      <article className="forg-site-index text-forg-ink">
         <header className="pb-3">
           <h1 className="forg-page-title text-[14px] font-bold">사이트 페이지</h1>
           <p className="mt-[2px] text-[11px] text-forg-muted">

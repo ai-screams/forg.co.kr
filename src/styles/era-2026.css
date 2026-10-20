@@ -630,6 +630,11 @@
     :is(.w26-word, .w26-hero h1, .forg-board > h1, .forg-post-head h1, .forg-page-title) {
     font-family: var(--w26-font-display);
   }
+  /* The /site/ index sits in the frame without the cell the boards have; in
+   * 2026 it takes /boards/'s inset (px-3 py-4), the old eras keep it flush. */
+  :root[data-era="2026"] .forg-site-index {
+    padding: 16px 12px;
+  }
   :root[data-era="2026"] .forg-page-title {
     font-size: 26px;
     font-weight: 400;
