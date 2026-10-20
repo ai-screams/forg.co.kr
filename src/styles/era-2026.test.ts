@@ -52,11 +52,34 @@ function luminance(colour: string): number {
   return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
 }
 
+/** A value with its `var(--…)` followed through `theme`. */
+function resolve(theme: Map<string, string>, value: string): string {
+  const ref = /^var\((--[\w-]+)\)$/.exec(value)?.[1];
+  if (ref === undefined) return value;
+  const next = theme.get(ref);
+  if (next === undefined) throw new Error(`${ref} is not set`);
+  return resolve(theme, next);
+}
+
+/**
+ * The paper's values (old bodies and comments): its own declarations, each
+ * read where it is declared, against the frame's.
+ */
+function onPaper(theme: Map<string, string>): Map<string, string> {
+  const paper = declarations(
+    RULES.filter((r) => r.selectors.some((s) => s.includes(".forg-post-body-cell"))),
+  );
+  return new Map([
+    ...theme,
+    ...[...paper].map(([k, v]): [string, string] => [k, resolve(theme, v)]),
+  ]);
+}
+
 function contrast(theme: Map<string, string>, fg: string, bg: string): number {
   const value = (name: string) => {
     const v = theme.get(name);
     if (v === undefined) throw new Error(`${name} is not set`);
-    return luminance(v);
+    return luminance(resolve(theme, v));
   };
   const [x, y] = [value(fg), value(bg)].sort((p, q) => q - p) as [number, number];
   return (x + 0.05) / (y + 0.05);
@@ -75,6 +98,9 @@ const PAIRS: [fg: string, bg: string, min: number][] = [
   ["--w26-rec-rail", "--w26-surface", 3],
   ["--w26-input-line", "--w26-surface", 3],
 ];
+
+// The focus line (`outline` in --w26-ink) on the paper, 3:1 (WCAG 2.4.11).
+const PAPER_PAIRS: [fg: string, bg: string, min: number][] = [["--w26-ink", "--paper-bg", 3]];
 
 // Fails if: a stylesheet names a 2026 font outside the 2026 tokens
 // (`font-family: "Forg Sans KR"` on `body` in base.css), where another era
@@ -107,14 +133,18 @@ it("hides the museum bar on a phone only where the 2026 bar is", () => {
 
 describe("2026 colours", () => {
   // Fails if: a pair drops below its ratio in either theme (the dark
-  // `--w26-muted` set to the light one's #5E6B7B, 2.7:1 on the dark card).
+  // `--w26-muted` set to the light one's #5E6B7B, 2.7:1 on the dark card), or
+  // the paper keeps the frame's light ink for its focus line in the dark.
   it.each(["light", "dark"] as const)("read in the %s theme", (theme) => {
-    const low = PAIRS.map(([fg, bg, min]) => ({
-      fg,
-      bg,
-      min,
-      ratio: contrast(THEMES[theme], fg, bg),
-    }))
+    const low = [
+      ...PAIRS.map(([fg, bg, min]) => ({ fg, bg, min, ratio: contrast(THEMES[theme], fg, bg) })),
+      ...PAPER_PAIRS.map(([fg, bg, min]) => ({
+        fg: `${fg} (paper)`,
+        bg,
+        min,
+        ratio: contrast(onPaper(THEMES[theme]), fg, bg),
+      })),
+    ]
       .filter((p) => p.ratio < p.min)
       .map((p) => `${p.fg} on ${p.bg}: ${p.ratio.toFixed(2)} < ${p.min}`);
     expect(low).toEqual([]);

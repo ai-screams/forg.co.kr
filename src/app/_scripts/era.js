@@ -7,7 +7,10 @@
 //   first (the pressed button's colour follows it, src/styles/eras.css);
 // - a click on an era button (<EraToggle>, [data-era-option]) switches and
 //   saves the era, and another tab's change arrives as a storage event;
-// - aria-pressed follows, once the buttons exist;
+// - aria-pressed follows, once the buttons exist; when the button pressed
+//   hides with the era it left (a 2026 note, the 2026 bar, the museum bar on
+//   a phone), keyboard focus moves to a pressed button that shows, or to the
+//   summary of the closed fold that holds one;
 // - while the era is 2026 the page links its fonts (public/fonts/2026/2026.css,
 //   FONTS_2026 with its version), once: no other era fetches them, and the
 //   link stays when the era changes again;
@@ -36,6 +39,24 @@ function fonts() {
   document.head.appendChild(link);
 }
 
+// A browser without checkVisibility (Safari before 17.4) is taken to show
+// everything: focus then stays where the click left it.
+function visible(element) {
+  return typeof element.checkVisibility !== "function" || element.checkVisibility();
+}
+
+function focusEra() {
+  var pressed = document.querySelectorAll('button[data-era-option][aria-pressed="true"]');
+  for (var i = 0; i < pressed.length; i++) {
+    var details = pressed[i].closest("details");
+    var target = visible(pressed[i]) ? pressed[i] : details && details.querySelector("summary");
+    if (target && visible(target)) {
+      target.focus();
+      return;
+    }
+  }
+}
+
 function show(era) {
   root.setAttribute("data-era", era);
   fonts();
@@ -60,8 +81,7 @@ document.addEventListener("click", function (event) {
   if (target && target.closest("[data-era-hint-close]")) {
     root.classList.remove(HINT);
     // The button is gone; keyboard focus goes back to the buttons it was about.
-    var pressed = document.querySelector('button[data-era-option][aria-pressed="true"]');
-    if (pressed) pressed.focus();
+    focusEra();
   }
   var button = target ? target.closest("button[data-era-option]") : null;
   if (!button) return;
@@ -73,6 +93,7 @@ document.addEventListener("click", function (event) {
     // private mode and the like: the choice lasts for this page only
   }
   show(era);
+  if (!visible(button)) focusEra();
 });
 
 window.addEventListener("storage", function (event) {

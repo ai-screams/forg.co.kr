@@ -94,6 +94,8 @@
    * inside it; a picture shrinks to it. */
   :root[data-era="2026"] :is(.forg-post-body-cell, .forg-post-comments) {
     --color-forg-ink: var(--paper-ink);
+    /* The focus line too: the frame's ink is light in the dark. */
+    --w26-ink: var(--paper-ink);
     --color-forg-muted: var(--paper-muted);
     width: min(680px, calc(100% - 28px));
     margin: 14px;
