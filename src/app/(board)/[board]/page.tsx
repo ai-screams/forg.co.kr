@@ -70,7 +70,7 @@ export default async function BoardPageOne({ params }: RouteProps) {
 
   const view = await getBoardView(board);
   return view.kind === "index" ? (
-    <BoardListing board={board} page={view.page} />
+    <BoardListing board={board} page={view.page} listing={view.listing} />
   ) : (
     <BoardPlaceholder meta={getBoard(board)} />
   );

@@ -202,16 +202,19 @@ const NOTICE_ROW: Readonly<Record<ListSkin, string>> = {
  * art is left to wider screens, where the table is exactly as before. A
  * notice keeps its row colour and gets a 공지 tag, a reply an arrow: the
  * museum's marks, since the skins' icons sat in columns a phone drops.
+ *
+ * 2026 draws a list this way at every width (`.forg-narrow-list` in
+ * `src/styles/era-2026.css`); `forg-notice` and `forg-num` are its hooks.
  */
 function NarrowList({ rows, skin }: { rows: readonly ListRow[]; skin: ListSkin }) {
   return (
-    <ul className="border border-(--era-input-border)/50 bg-white sm:hidden">
+    <ul className="forg-narrow-list border border-(--era-input-border)/50 bg-white sm:hidden">
       {rows.map((row) => (
         <li
           key={row.key}
           className={[
             "border-b border-(--era-input-border)/25 px-2 py-[6px] text-[13px] last:border-0",
-            row.notice ? NOTICE_ROW[skin] : "",
+            row.notice ? `forg-notice ${NOTICE_ROW[skin]}` : "",
           ].join(" ")}
         >
           <div className="flex min-w-0 items-baseline gap-1">
@@ -237,9 +240,9 @@ function NarrowList({ rows, skin }: { rows: readonly ListRow[]; skin: ListSkin }
             <span className="truncate">
               <AuthorName {...row.author} seed={row.key} />
             </span>
-            <span className="shrink-0">{row.cells.date}</span>
+            <span className="forg-num shrink-0">{row.cells.date}</span>
             {row.cells.hits !== undefined && row.cells.hits !== null && (
-              <span className="shrink-0">조회 {row.cells.hits}</span>
+              <span className="forg-num shrink-0">조회 {row.cells.hits}</span>
             )}
           </div>
         </li>

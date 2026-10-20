@@ -66,6 +66,7 @@ const PAIRS: [fg: string, bg: string, min: number][] = [
   ["--w26-muted", "--w26-bg", 4.5],
   ["--w26-bar-ink", "--w26-bar", 4.5],
   ["--color-forg-gold", "--w26-bar", 4.5],
+  ["--w26-on-gold", "--color-forg-gold", 4.5],
   ["--w26-soft-ink", "--w26-soft", 4.5],
   ["--w26-rec", "--w26-surface", 4.5],
   ["--w26-rec-rail", "--w26-surface", 3],

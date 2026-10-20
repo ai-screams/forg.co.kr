@@ -6,6 +6,9 @@
  *
  * The popover is the native one (`popover`, `popovertarget`): the content
  * pages ship no script for it, and it closes on Escape or a press outside.
+ *
+ * 2026, the museum's own frame, puts the same notes inside it
+ * (`<BoardListing>`) and hides the (i) and its popover (ADR-0023 §2).
  */
 
 import type { ReactNode } from "react";
@@ -36,7 +39,7 @@ export function BoardCrumb({
         type="button"
         popoverTarget="forg-board-info"
         aria-label={`${meta.nameKr} 안내`}
-        className="inline-flex size-[15px] shrink-0 cursor-pointer items-center justify-center rounded-full border border-forg-muted text-[10px] leading-none font-semibold text-forg-muted hover:text-forg-ink"
+        className="forg-crumb-info inline-flex size-[15px] shrink-0 cursor-pointer items-center justify-center rounded-full border border-forg-muted text-[10px] leading-none font-semibold text-forg-muted hover:text-forg-ink"
       >
         i
       </button>

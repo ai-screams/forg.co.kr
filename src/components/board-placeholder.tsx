@@ -15,7 +15,7 @@ interface BoardPlaceholderProps {
 
 export function BoardPlaceholder({ meta }: BoardPlaceholderProps) {
   return (
-    <article className="border border-(--era-input-border)/50 bg-white text-forg-ink">
+    <article className="forg-placeholder border border-(--era-input-border)/50 bg-white text-forg-ink">
       <header className="border-b border-(--era-input-border) px-6 py-5">
         <p className="font-mono text-[10px] tracking-wider text-forg-muted uppercase">
           {meta.id} · {meta.engine} · {meta.era}

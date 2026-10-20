@@ -75,3 +75,40 @@ describe("PostView", () => {
     expect(classOf(rows, "<b ")).not.toContain("break-all");
   });
 });
+
+describe("the 2026 notes in a post", () => {
+  // Fails if: one of the museum's 2026 notes reaches the search index (its
+  // `data-pagefind-ignore` dropped), where it would show in every excerpt.
+  it("keeps the museum's notes out of search", async () => {
+    const html = await render("UoBoard", "29831");
+    const notes = [...html.matchAll(/<[a-z0-9]+ [^>]*class="[^"]*era-2026-only[^"]*"[^>]*>/g)].map(
+      (m) => m[0],
+    );
+    expect(notes.length).toBeGreaterThanOrEqual(4);
+    expect(notes.filter((tag) => !tag.includes("data-pagefind-ignore"))).toEqual([]);
+  });
+
+  // Fails if: the record line gives the post's date for its capture's, or
+  // its button leads to another era than the post's.
+  it("names the capture the post came from and the era it was written in", async () => {
+    const html = await render("UoBoard", "29831");
+    const line = /<p class="era-2026-only forg-post-record"[\s\S]*?<\/p>/.exec(html)?.[0] ?? "";
+    expect(line).toContain("2003.05.12</span> Wayback 캡처에서 옮김");
+    expect(line).toMatch(/data-era-option="2003"[^>]*>2003 모습으로</);
+  });
+
+  // Fails if: a post's date notes go: the first comment's time standing in,
+  // or 작성일 미상 with the capture's date.
+  it("keeps the head's honest dates", async () => {
+    expect(await render("Ultima", "4802")).toContain("(이전 — 첫 댓글 시각, 작성일은 캡처에 없음)");
+    const undated = await render("ScreenShot", "74");
+    expect(undated).toContain("작성일 미상");
+    expect(undated).toContain("(캡처 2001.04.23)");
+  });
+
+  // Fails if: the comment count over the comments is a screen reader's alone in 2026 too.
+  it("shows the comment count in 2026", async () => {
+    const html = await render("UoBoard", "29831");
+    expect(classOf(html, '<h2 id="comments-').split(" ")).toEqual(["forg-sr-except-2026"]);
+  });
+});

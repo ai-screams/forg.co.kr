@@ -84,12 +84,32 @@ describe("era rules", () => {
   });
 
   // Fails if: the rails or the skin's list table show in an era beyond 2014
-  // and 2003 (2001 added to their list), or the post head or the skin's
-  // comments lose one (2003 dropped from theirs).
-  it("shows each part of the 2014/2003 frame in the eras listed for it", () => {
+  // and 2003 (2001 added to their list), the post head or the skin's
+  // comments lose one (2026 dropped from theirs), or the museum bar's (i)
+  // shows in 2026, whose frame holds the board's notes.
+  it("shows each part of the frame in the eras listed for it", () => {
     expect(shownIn("forg-rail")).toEqual(["2003", "2014"]);
     expect(shownIn("forg-skin-table")).toEqual(["2003", "2014"]);
-    expect(shownIn("forg-post-head")).toEqual(["2003", "2014"]);
-    expect(shownIn("forg-post-comments")).toEqual(["2003", "2014"]);
+    expect(shownIn("forg-post-head")).toEqual(["2003", "2014", "2026"]);
+    expect(shownIn("forg-post-comments")).toEqual(["2003", "2014", "2026"]);
+    expect(shownIn("forg-crumb-info")).toEqual(["2001", "2003", "2014"]);
+    expect(
+      HIDING.filter((s) => s.includes("#forg-board-info") && s.startsWith(":root:not(")),
+    ).toEqual([
+      ':root:not([data-era="2014"], [data-era="2003"], [data-era="2001"]) :is(.forg-crumb-info, #forg-board-info)',
+    ]);
+  });
+
+  // Fails if: the board's name over its list or the count over a post's
+  // comments shows in an era but 2026, or is hidden from screen readers
+  // there (the rule turned to display: none).
+  it("keeps the 2026-only headings for screen readers in the other eras", () => {
+    const rule = ALL.filter((r) =>
+      r.selectors.includes(':root:not([data-era="2026"]) .forg-sr-except-2026'),
+    );
+    expect(rule).toHaveLength(1);
+    expect(rule[0]?.body).toMatch(/position:\s*absolute;/);
+    expect(rule[0]?.body).toMatch(/clip-path:\s*inset\(50%\);/);
+    expect(rule[0]?.body).not.toMatch(/display:\s*none/);
   });
 });

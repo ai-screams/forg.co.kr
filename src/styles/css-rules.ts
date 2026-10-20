@@ -55,8 +55,9 @@ export function cssRules(file: string): CssRule[] {
   return rules;
 }
 
+/** A selector list's selectors, each on one line as Prettier may have wrapped it. */
 function split(list: string): string[] {
-  return list.split(/,(?![^(]*\))/).map((s) => s.trim());
+  return list.split(/,(?![^(]*\))/).map((s) => s.trim().replace(/\s+/g, " "));
 }
 
 /**

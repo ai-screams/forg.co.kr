@@ -5,7 +5,10 @@
  * driven entirely by `<html data-era>` and the CSS variables defined in
  * `src/styles/eras.css`. The 2001 era (ADR-0019) draws the head and comments as the
  * 2001 skins did (`post-view-2001`) beside these, which it hides; the body
- * is rendered once for every era.
+ * is rendered once for every era. 2026, the museum's own frame, adds its
+ * notes (`.era-2026-only`, ADR-0023 §2): the post's place in the museum, the
+ * capture it came from and a button to the era it was written in, and that
+ * it takes no comments. Search leaves them out (`data-pagefind-ignore`).
  *
  * `bodyHtml` and comment `bodyHtml` are pre-sanitised by nh3 (ETL Stage 2,
  * ADR-0008). We render them with `dangerouslySetInnerHTML`; React 19 ships
@@ -19,8 +22,9 @@ import Link from "@/components/link";
 import { CommentList2001, PostHead2001 } from "@/components/post-view-2001";
 
 import { SanitizedHtml } from "@/components/sanitized-html";
-import { getBoardOrThrow, type Board, type BoardId } from "@/lib/boards";
+import { BOARD_CATEGORY_LABELS, getBoardOrThrow, type Board, type BoardId } from "@/lib/boards";
 import { formatKoreanDateTime, formatWaybackTs, isUnknownDate } from "@/lib/dates";
+import { DEFAULT_ERA } from "@/lib/era";
 import type { AdjacentPosts } from "@/lib/posts";
 import { captureSkin } from "@/lib/skins";
 import { skin2001Of } from "@/lib/skins-2001";
@@ -66,6 +70,9 @@ export function PostView({ post, adjacent }: PostViewProps) {
 
       <PostAttachments post={post} />
       <PostComments post={post} />
+      <p className="era-2026-only forg-post-readonly" data-pagefind-ignore>
+        박물관의 기록이라 댓글을 더할 수 없습니다.
+      </p>
 
       {(adjacent.prev ?? adjacent.next) ? (
         <div data-pagefind-ignore>
@@ -90,9 +97,15 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
   return (
     <header className="forg-post-head border-b border-(--era-input-border) px-[10px] py-5">
       <p className="text-xs text-forg-muted" data-pagefind-ignore>
+        <span className="era-2026-only" data-pagefind-ignore>
+          옛 게시판 › {BOARD_CATEGORY_LABELS[board.category]} ›{" "}
+        </span>
         <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
           {board.nameKr}
         </Link>
+        <span className="era-2026-only w26-tag" data-pagefind-ignore>
+          기록
+        </span>
       </p>
       <h1
         className="mt-2 text-2xl font-bold text-forg-ink"
@@ -123,21 +136,25 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
         <div className="flex gap-1">
           <dt className="font-bold">날짜</dt>
           <dd>
-            <time dateTime={post.createdAt}>{formatKoreanDateTime(post.createdAt)}</time>
+            <time dateTime={post.createdAt} className="forg-num">
+              {formatKoreanDateTime(post.createdAt)}
+            </time>
             {post.createdAtApprox && (
-              <span className="ml-1.5 text-[0.7rem] text-forg-muted/70">
+              <span className="forg-date-note ml-1.5 text-[0.7rem] text-forg-muted/70">
                 (이전 — 첫 댓글 시각, 작성일은 캡처에 없음)
               </span>
             )}
             {capturedDate && (
-              <span className="ml-1.5 text-[0.7rem] text-forg-muted/70">(캡처 {capturedDate})</span>
+              <span className="forg-date-note ml-1.5 text-[0.7rem] text-forg-muted/70">
+                (캡처 {capturedDate})
+              </span>
             )}
           </dd>
         </div>
         {post.hits !== null && (
           <div className="flex gap-1">
             <dt className="font-bold">조회</dt>
-            <dd>{post.hits.toLocaleString("ko-KR")}</dd>
+            <dd className="forg-num">{post.hits.toLocaleString("ko-KR")}</dd>
           </div>
         )}
         {post.recommend !== null && post.recommend > 0 && (
@@ -151,6 +168,20 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
           <dd>{post.era}</dd>
         </div>
       </dl>
+      <p className="era-2026-only forg-post-record" data-pagefind-ignore>
+        <span>
+          <span className="forg-num">{formatWaybackTs(post.capturedAt)}</span> Wayback 캡처에서 옮김
+        </span>
+        <button
+          type="button"
+          aria-pressed={post.era === DEFAULT_ERA}
+          data-era-option={post.era}
+          suppressHydrationWarning
+          className="w26-ghost"
+        >
+          {post.era} 모습으로
+        </button>
+      </p>
     </header>
   );
 }
@@ -193,7 +224,7 @@ function PostComments({ post }: { post: Post }) {
         >
           {/* The originals printed no heading over the comments, and their
               comment tables spanned the board (98–100%): no side inset here. */}
-          <h2 id={`comments-${post.postId}`} className="sr-only">
+          <h2 id={`comments-${post.postId}`} className="forg-sr-except-2026">
             댓글 {post.comments.length}
           </h2>
           <CommentList board={post.board} comments={post.comments} skin={captureSkin(post)} />

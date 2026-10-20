@@ -5,6 +5,9 @@
  * museum bar and footer keep their `--era-*` tokens (eras.css), light in
  * both, as their text colours are the same in every era.
  *
+ * Old bodies and comments sit on paper (`--paper-*`): the original's white
+ * and ink in either theme, as their inline colours were picked for white.
+ *
  * The frame is one column of up to 1024px (the museum bar's inner width,
  * `max-w-5xl`) with the 2026 bar on top (`FrameTop2026`,
  * `era-chrome-2026.tsx`). On a phone that bar is the only one on a page
@@ -29,6 +32,14 @@
     /* The archive's mark: the 2014 slate as a rail, darkened for small text. */
     --w26-rec: oklch(0.514 0.045 253.3); /* #556981 */
     --w26-rec-rail: oklch(0.552 0.043 253.4); /* #61748B */
+    /* Text on the gold, in either theme. */
+    --w26-on-gold: oklch(0.194 0.027 87.4); /* #1A1406 */
+    /* Paper: taken here, on :root, before the frame turns the ink and links
+     * to its own below. */
+    --paper-bg: oklch(1 0 0); /* white */
+    --paper-ink: var(--color-forg-ink);
+    --paper-muted: var(--color-forg-muted);
+    --paper-line: oklch(0.922 0 0); /* #E5E5E5 */
   }
 
   @media (prefers-color-scheme: dark) {
@@ -53,13 +64,77 @@
 
 @layer museum {
   /* `color` here, not only on `body`: `base.css` gives `body` the ink of
-   * every era, which the frame's text would inherit in the dark. */
+   * every era, which the frame's text would inherit in the dark. The
+   * components' ink, muted, border and link utilities read these variables
+   * (`@theme`, tokens.css), so inside the frame they take its colours, in
+   * either theme, without new markup; the paper turns them back. */
   :root[data-era="2026"] .forg-shell-main {
+    --color-forg-ink: var(--w26-ink);
+    --color-forg-muted: var(--w26-muted);
+    --era-input-border: var(--w26-input-line);
+    --era-link: var(--w26-rec);
     background-color: var(--w26-bg);
     color: var(--w26-ink);
     @variant frame {
       width: min(100%, 1024px);
     }
+  }
+
+  /* Old bodies and comments on paper, in the original's colours and type,
+   * the original column's width or the screen's. A wide table scrolls
+   * inside it; a picture shrinks to it. */
+  :root[data-era="2026"] :is(.forg-post-body-cell, .forg-post-comments) {
+    --color-forg-ink: var(--paper-ink);
+    --color-forg-muted: var(--paper-muted);
+    width: min(680px, calc(100% - 28px));
+    margin: 14px;
+    padding: 14px;
+    overflow-x: auto;
+    border: 1px solid var(--paper-line);
+    border-radius: 6px;
+    background-color: var(--paper-bg);
+    color: var(--paper-ink);
+    font-family: var(--font-forg);
+    overflow-wrap: anywhere;
+    color-scheme: light;
+    @variant md {
+      width: min(680px, calc(100% - 48px));
+      margin-inline: 24px;
+    }
+  }
+  :root[data-era="2026"] .forg-post-comments {
+    margin-top: 0;
+    padding: 0;
+  }
+  :root[data-era="2026"] .forg-post-comments > h2 {
+    padding: 10px 12px 4px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  :root[data-era="2026"] :is(.forg-post-body-cell, .forg-post-comments) img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Read aloud in every era, shown in 2026 only: a board's name over its
+   * list, the count over a post's comments (Tailwind's sr-only). */
+  :root:not([data-era="2026"]) .forg-sr-except-2026 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border-width: 0;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* The board's notes are in the 2026 frame (BoardListing), so the museum
+   * bar's (i) and its popover show in the other eras only. */
+  :root:not([data-era="2014"], [data-era="2003"], [data-era="2001"])
+    :is(.forg-crumb-info, #forg-board-info) {
+    display: none;
   }
 
   /* Focus: a line in the frame's ink with a gold band around it, seen on the
@@ -168,7 +243,7 @@
     padding: 5px 9px;
     border-radius: 999px;
     background-color: var(--color-forg-gold);
-    color: var(--color-forg-ink);
+    color: var(--w26-on-gold);
     font-weight: 500;
   }
   .w26-pop > summary,
@@ -197,7 +272,11 @@
     padding-block: 12px;
     border-top: 1px solid oklch(1 0 0 / 0.15); /* white at 15% */
   }
-  /* The pressed one takes the gold of every era's toggle (eras.css). */
+  /* The pressed one takes the gold of every era's toggle (eras.css), and
+   * the dark text on it: the frame's own ink turns light in the dark. */
+  :root[data-era="2026"] .forg-shell-main [data-era-option="2026"] {
+    color: var(--w26-on-gold);
+  }
   .w26-pop button {
     min-width: 64px;
     min-height: 44px;
@@ -262,7 +341,7 @@
     padding-inline: 16px;
     border-radius: 8px;
     background-color: var(--color-forg-gold);
-    color: var(--color-forg-ink);
+    color: var(--w26-on-gold);
     font-weight: 600;
   }
   .w26-eras {
@@ -370,5 +449,171 @@
   .w26-more a {
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  /* A board's list (board-listing.tsx, list-skin.tsx): the head in the
+   * frame, then the rows the phone list draws, at every width, on a card,
+   * each with the archive's slate rail on its left. */
+  :root[data-era="2026"] .forg-content-cell {
+    padding: 12px;
+    @variant md {
+      padding: 16px;
+    }
+  }
+  .forg-board-path {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 10px;
+    color: var(--w26-muted);
+    font-size: 12px;
+  }
+  :root[data-era="2026"] .forg-board > h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-block: 6px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  .forg-board-head {
+    display: grid;
+    gap: 4px;
+    margin-bottom: 12px;
+    color: var(--w26-muted);
+    font-size: 13px;
+  }
+  .forg-board-head > p:first-child {
+    max-width: 68ch;
+  }
+  :root[data-era="2026"] .forg-narrow-list {
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--w26-line);
+    border-radius: 10px;
+    background-color: var(--w26-surface);
+  }
+  :root[data-era="2026"] .forg-narrow-list > li {
+    position: relative;
+    padding: 11px 14px 11px 17px;
+    border-color: var(--w26-line);
+    font-size: 14px;
+    @variant md {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: 12px;
+      padding-inline: 23px 20px;
+    }
+  }
+  :root[data-era="2026"] .forg-narrow-list > li::before {
+    position: absolute;
+    inset-block: 0;
+    left: 0;
+    width: 3px;
+    background-color: var(--w26-rec-rail);
+    content: "";
+  }
+  :root[data-era="2026"] .forg-narrow-list > li > div:last-child {
+    font-size: 12px;
+  }
+  :root[data-era="2026"] .forg-narrow-list > .forg-notice {
+    background-color: var(--w26-soft);
+  }
+  /* A title's comment count, as a pill. */
+  :root[data-era="2026"] .forg-cc {
+    padding: 3px 7px;
+    border-radius: 999px;
+    background-color: var(--w26-soft);
+    color: var(--w26-soft-ink);
+    font:
+      500 12px/1 ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      monospace;
+  }
+  :root[data-era="2026"] .forg-pages {
+    padding-inline: 4px;
+    border-color: var(--w26-line);
+  }
+  :root[data-era="2026"] .forg-pages > * {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* A post (post-view.tsx): a card with the archive's rail, its head, the
+   * paper above, and the museum's notes. */
+  :root[data-era="2026"] .forg-post {
+    max-width: 820px;
+    margin-inline: auto;
+    overflow: hidden;
+    border: 1px solid var(--w26-line);
+    border-radius: 10px;
+    background-color: var(--w26-surface);
+    box-shadow: inset 3px 0 0 var(--w26-rec-rail);
+  }
+  :root[data-era="2026"] .forg-post-head {
+    padding: 16px;
+    border-color: var(--w26-line);
+    @variant md {
+      padding-inline: 24px;
+    }
+  }
+  :root[data-era="2026"] .forg-post-head h1 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .forg-post-record {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 12px;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: var(--w26-record);
+    color: var(--w26-muted);
+    font-size: 12px;
+  }
+  .forg-post-head .w26-tag {
+    margin-left: 6px;
+  }
+  /* The head's date notes (첫 댓글 시각, 캡처), at full strength. */
+  :root[data-era="2026"] .forg-date-note {
+    color: var(--w26-muted);
+  }
+  .forg-post-readonly {
+    padding: 4px 16px 16px;
+    color: var(--w26-muted);
+    font-size: 13px;
+    @variant md {
+      padding-inline: 24px;
+    }
+  }
+  .w26-ghost {
+    min-height: 36px;
+    padding-inline: 12px;
+    border: 1px solid var(--w26-input-line);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--w26-ink);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  /* A board with nothing left (board-placeholder.tsx): a card. */
+  :root[data-era="2026"] .forg-placeholder {
+    overflow: hidden;
+    border: 1px solid var(--w26-line);
+    border-radius: 10px;
+    background-color: var(--w26-surface);
   }
 }
