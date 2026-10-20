@@ -90,6 +90,21 @@ it("names the 2026 fonts only in the 2026 tokens", () => {
   ]);
 });
 
+// Fails if: the museum bar hides on a 2026 phone page without the 2026 bar
+// (`body:has([data-era-frame="2026"])` dropped), leaving search, the policy
+// and the 404 without a way home, to search or to the eras.
+it("hides the museum bar on a phone only where the 2026 bar is", () => {
+  const hides = RULES.filter(
+    (r) =>
+      /display:\s*none/.test(r.body) &&
+      r.selectors.some((s) => s.includes('header[role="banner"]')),
+  );
+  expect(hides.flatMap((r) => r.selectors)).toEqual([
+    ':root:not([data-era="2014"], [data-era="2003"], [data-era="2001"]) body:has([data-era-frame="2026"]) header[role="banner"]',
+  ]);
+  expect(hides[0]?.at.at(-1)).toBe("@variant max-sm");
+});
+
 describe("2026 colours", () => {
   // Fails if: a pair drops below its ratio in either theme (the dark
   // `--w26-muted` set to the light one's #5E6B7B, 2.7:1 on the dark card).

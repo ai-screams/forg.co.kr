@@ -10,7 +10,7 @@ import type { ReactNode } from "react";
 
 import Link from "@/components/link";
 
-import { EraHint, EraToggle } from "@/components/era-toggle";
+import { EraFold, EraHint, EraToggle } from "@/components/era-toggle";
 
 /**
  * `crumb` follows "디지털 박물관" on the second line: a board list's name
@@ -34,14 +34,14 @@ export function SiteHeader({ crumb }: { crumb?: ReactNode }) {
             {crumb}
           </div>
         </div>
-        <div className="flex shrink-0 items-center gap-2 sm:gap-4">
-          {/* Below 400px "검색" is a magnifier, its word kept for screen
+        <div className="flex shrink-0 items-center gap-3 max-[410px]:gap-2 sm:gap-4">
+          {/* Below 410px "검색" is a magnifier, its word kept for screen
               readers: beside four era buttons the word ran into "forg.co.kr".
               The box is 28px wide and its ::before widens the target to 44px,
               into the gaps on either side. */}
           <Link
             href="/search"
-            className="text-sm whitespace-nowrap text-forg-muted hover:text-(--era-link-hover) max-[400px]:relative max-[400px]:flex max-[400px]:h-11 max-[400px]:w-7 max-[400px]:items-center max-[400px]:justify-center max-[400px]:before:absolute max-[400px]:before:-inset-x-2 max-[400px]:before:inset-y-0"
+            className="text-sm whitespace-nowrap text-forg-muted hover:text-(--era-link-hover) max-[410px]:relative max-[410px]:flex max-[410px]:h-11 max-[410px]:w-7 max-[410px]:items-center max-[410px]:justify-center max-[410px]:before:absolute max-[410px]:before:-inset-x-2 max-[410px]:before:inset-y-0"
           >
             <svg
               aria-hidden
@@ -51,14 +51,15 @@ export function SiteHeader({ crumb }: { crumb?: ReactNode }) {
               stroke="currentColor"
               strokeWidth={2}
               strokeLinecap="round"
-              className="size-5 min-[400px]:hidden"
+              className="size-5 min-[410px]:hidden"
             >
               <circle cx="8.5" cy="8.5" r="5.5" />
               <path d="m13 13 4.5 4.5" />
             </svg>
-            <span className="max-[400px]:sr-only">검색</span>
+            <span className="max-[410px]:sr-only">검색</span>
           </Link>
           <EraToggle />
+          <EraFold />
         </div>
         <EraHint />
       </div>
