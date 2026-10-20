@@ -634,7 +634,7 @@
     font-size: 26px;
     font-weight: 400;
   }
-  :root[data-era="2026"] :is(.forg-num, .forg-pages, .w26-stats b, .w26-cats small) {
+  :root[data-era="2026"] :is(.forg-num, .forg-pages, .forg-pages *, .w26-stats b, .w26-cats small) {
     font-family: var(--w26-font-digits);
   }
 }
