@@ -22,8 +22,9 @@ export function EraToggle() {
       className="inline-flex items-center gap-1 rounded-full border border-(--era-input-border) bg-(--era-content-bg) px-2 py-1 text-xs"
     >
       {/* Four eras and the search link share a 360px phone's header row with
-          "forg.co.kr": the "era" label goes below 399px, and `<SiteHeader>`
-          sets the search link 8px from the buttons below 640px. */}
+          "forg.co.kr": below 400px the buttons narrow to their digits, the
+          search link is a magnifier (`<SiteHeader>`), and the "era" label goes
+          below 399px. */}
       <span className="px-1 font-mono text-forg-ghost uppercase max-[399px]:hidden">era</span>
       {ERAS.map((candidate) => (
         <button
@@ -32,7 +33,7 @@ export function EraToggle() {
           aria-pressed={candidate === DEFAULT_ERA}
           data-era-option={candidate}
           suppressHydrationWarning
-          className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink sm:min-w-12"
+          className="min-w-11 rounded-full px-2 py-0.5 font-mono text-xs text-forg-muted transition-colors hover:bg-forg-cream hover:text-forg-ink max-[400px]:min-w-10 max-[400px]:px-1.5 sm:min-w-12"
         >
           {ERA_LABELS[candidate]}
         </button>
