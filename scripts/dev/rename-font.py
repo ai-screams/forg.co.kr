@@ -31,7 +31,8 @@ def main() -> int:
     args = parser.parse_args()
     bare = (args.old.replace(" ", ""), args.new.replace(" ", ""))
     for path in args.files:
-        font = TTFont(path)
+        # The source's timestamp kept, so the same source gives the same bytes.
+        font = TTFont(path, recalcTimestamp=False)
         for record in font["name"].names:
             if record.nameID in KEPT:
                 continue

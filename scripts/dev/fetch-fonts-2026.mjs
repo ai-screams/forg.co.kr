@@ -8,7 +8,9 @@
  *
  *   node scripts/dev/fetch-fonts-2026.mjs
  *
- * It replaces what is in `public/fonts/2026/`: the slices, named by their
+ * Everything is fetched and renamed in a temporary folder first; only when
+ * that has all worked does it replace what is in `public/fonts/2026/`: the
+ * slices, named by their
  * family, weight, order and a hash of their bytes; `2026.css`, their
  * `@font-face` rules with relative URLs and `font-display: swap`; and
  * `.manifest.json`, each file's source URL and SHA-256 (`drop-image-sidecars`
@@ -25,7 +27,17 @@
 
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 
 const OUT = "public/fonts/2026";
@@ -78,10 +90,8 @@ if (faces.length === 0 || faces.some((f) => !f.family || !f.url.endsWith(".woff2
   process.exit(1);
 }
 
-mkdirSync(OUT, { recursive: true });
-for (const name of readdirSync(OUT)) {
-  if (name.endsWith(".woff2") && name !== DIGITS) rmSync(join(OUT, name));
-}
+const work = mkdtempSync(join(tmpdir(), "fonts-2026-"));
+process.on("exit", () => rmSync(work, { recursive: true, force: true }));
 
 const order = new Map();
 const files = [];
@@ -90,7 +100,7 @@ for (const face of faces) {
   const n = order.get(key) ?? 0;
   order.set(key, n + 1);
   const bytes = Buffer.from(await (await fetchOk(face.url)).arrayBuffer());
-  const temp = join(OUT, `${slug(face.family)}-${face.weight}-${n}.tmp.woff2`);
+  const temp = join(work, `${slug(face.family)}-${face.weight}-${n}.woff2`);
   writeFileSync(temp, bytes);
   files.push({ ...face, n, temp, sourceSha256: sha256(bytes) });
 }
@@ -115,8 +125,7 @@ for (const f of files) {
   const bytes = readFileSync(f.temp);
   const hash = sha256(bytes);
   const file = `${slug(family)}-${f.weight}-${f.n}-${hash.slice(0, 8)}.woff2`;
-  writeFileSync(join(OUT, file), bytes);
-  rmSync(f.temp);
+  f.file = file;
   rules.push(
     `@font-face{font-family:"${family}";font-style:${f.style};font-weight:${f.weight};font-display:swap;` +
       `src:url(${file}) format("woff2");unicode-range:${f.range}}`,
@@ -139,6 +148,12 @@ rules.push(
     `src:url(${DIGITS}?v=${sha256(digits).slice(0, 10)}) format("woff2");unicode-range:${DIGITS_RANGE}}`,
 );
 
+// Everything is in hand: swap the old slices for the new ones.
+mkdirSync(OUT, { recursive: true });
+for (const name of readdirSync(OUT)) {
+  if (name.endsWith(".woff2") && name !== DIGITS) rmSync(join(OUT, name));
+}
+for (const f of files) copyFileSync(f.temp, join(OUT, f.file));
 writeFileSync(
   join(OUT, "2026.css"),
   "/* The 2026 era's fonts: scripts/dev/fetch-fonts-2026.mjs wrote this. Licences: /fonts/OFL.txt */\n" +

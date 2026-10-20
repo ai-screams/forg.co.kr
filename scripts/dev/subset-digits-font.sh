@@ -33,7 +33,7 @@ fi
 unzip -q -j "$work/d2.zip" "D2Coding/D2Coding-Ver${VERSION}-${BUILD}.ttf" -d "$work"
 
 uvx --quiet --from fonttools --with brotli pyftsubset "$work/D2Coding-Ver${VERSION}-${BUILD}.ttf" \
-  --unicodes="$RANGE" --flavor=woff2 --output-file="$work/digits.woff2"
+  --unicodes="$RANGE" --name-IDs='*' --flavor=woff2 --output-file="$work/digits.woff2"
 uv run --quiet --with fonttools --with brotli python scripts/dev/rename-font.py \
   --from D2Coding --to "Forg Digits" --reserved D2Coding "$work/digits.woff2"
 
