@@ -34,7 +34,7 @@ describe("PostView", () => {
   // side inset again, on their section or on their list.
   it("keeps the original's 10px edge, with the comments across the box", async () => {
     const html = await render("Events", "160");
-    expect(sidePadding(classOf(html, '<header class="era-not-2001'))).toEqual(["px-[10px]"]);
+    expect(sidePadding(classOf(html, '<header class="forg-post-head'))).toEqual(["px-[10px]"]);
     expect(sidePadding(classOf(html, '<div class="forg-post-body-cell'))).toEqual(["p-[10px]"]);
     expect(sidePadding(classOf(html, '<section aria-labelledby="attachments-'))).toEqual([
       "px-[10px]",

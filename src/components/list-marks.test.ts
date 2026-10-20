@@ -68,7 +68,7 @@ function table(skin: ListSkin, rows: ListRow[]): string {
 /** The desktop table's body rows (not the phone list or the 2001 view). */
 function tableRows(html: string): string[] {
   const body =
-    /<tbody>([\s\S]*?)<\/tbody>/.exec(html.slice(html.indexOf("era-not-2001")))?.[1] ?? "";
+    /<tbody>([\s\S]*?)<\/tbody>/.exec(html.slice(html.indexOf("forg-skin-table")))?.[1] ?? "";
   return body.split("</tr>").filter((r) => r.includes("<tr"));
 }
 

@@ -88,7 +88,7 @@ function PostHead({ post, board }: { post: Post; board: Board }) {
   const author = <PostAuthor post={post} />;
 
   return (
-    <header className="era-not-2001 border-b border-(--era-input-border) px-[10px] py-5">
+    <header className="forg-post-head border-b border-(--era-input-border) px-[10px] py-5">
       <p className="text-xs text-forg-muted" data-pagefind-ignore>
         <Link href={`/${board.id}`} className="text-(--era-link) hover:text-(--era-link-hover)">
           {board.nameKr}
@@ -189,7 +189,7 @@ function PostComments({ post }: { post: Post }) {
       {post.comments.length > 0 && (
         <section
           aria-labelledby={`comments-${post.postId}`}
-          className="era-not-2001 border-t border-(--era-input-border) py-5"
+          className="forg-post-comments border-t border-(--era-input-border) py-5"
         >
           {/* The originals printed no heading over the comments, and their
               comment tables spanned the board (98–100%): no side inset here. */}

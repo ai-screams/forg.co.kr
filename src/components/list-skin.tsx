@@ -156,7 +156,7 @@ export function ListTable({
       <div className="era-2001-only hidden sm:block">
         <ListTable2001 rows={rows} firstNumber={firstNumber} {...era2001} />
       </div>
-      <div className="era-not-2001 hidden border border-(--era-input-border)/50 bg-white sm:block">
+      <div className="forg-skin-table hidden border border-(--era-input-border)/50 bg-white sm:block">
         <table className="w-full table-fixed border-collapse text-[12px]">
           <colgroup>
             {columns.map((c) => (

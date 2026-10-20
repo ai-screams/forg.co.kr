@@ -85,8 +85,19 @@
    * ───────────────────────────────────────────────────────────────────── */
   :root:not([data-era="2014"]) .era-2014-only,
   :root:not([data-era="2003"]) .era-2003-only,
-  :root:not([data-era="2001"]) .era-2001-only,
-  :root[data-era="2001"] .era-not-2001 {
+  :root:not([data-era="2001"]) .era-2001-only {
+    display: none !important;
+  }
+
+  /* Parts of the frame named for what they are, shown in the eras listed and
+   * hidden in every other: an era added later shows none of them until it is
+   * listed here. The 10px and 7px rails and the skin's list table belong to
+   * the 2014/2003 frame; the post head and the skin's comments too (2001
+   * draws its own, `PostHead2001`, `CommentList2001`). */
+  :root:not([data-era="2014"], [data-era="2003"]) :is(.forg-rail, .forg-skin-table) {
+    display: none !important;
+  }
+  :root:not([data-era="2014"], [data-era="2003"]) :is(.forg-post-head, .forg-post-comments) {
     display: none !important;
   }
 
@@ -149,7 +160,7 @@
       justify-content: center;
     }
   }
-  :root:not([data-era="2001"]) .forg-shell {
+  :root:is([data-era="2014"], [data-era="2003"]) .forg-shell {
     @variant frame {
       background-color: var(--color-forg-slate);
     }
